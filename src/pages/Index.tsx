@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react';
 import { LoginScreen } from '@/components/auth/LoginScreen';
 import { RegisterScreen } from '@/components/auth/RegisterScreen';
 import { UserProfileScreen } from '@/components/auth/UserProfileScreen';
 import { MainApp } from '@/components/app/MainApp';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
 export type AuthFlow = 'login' | 'register' | 'profile' | 'app';
 
@@ -56,10 +58,16 @@ const Index = () => {
     }
   };
 
+  if (currentScreen === 'app') {
+    return renderScreen();
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
-      {renderScreen()}
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 dark:from-neutral-900 dark:to-neutral-800">
+        {renderScreen()}
+      </div>
+    </ThemeProvider>
   );
 };
 

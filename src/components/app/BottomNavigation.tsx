@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Home, DollarSign, History, Users, User } from 'lucide-react';
 import { AppScreen } from './MainApp';
+import { FloatingDock } from '@/components/ui/floating-dock';
 
 interface BottomNavigationProps {
   currentScreen: AppScreen;
@@ -12,36 +14,36 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
   onScreenChange 
 }) => {
   const navItems = [
-    { id: 'home' as AppScreen, icon: Home, label: 'Partidas' },
-    { id: 'balance' as AppScreen, icon: DollarSign, label: 'Balanço' },
-    { id: 'history' as AppScreen, icon: History, label: 'Histórico' },
-    { id: 'friends' as AppScreen, icon: Users, label: 'Amigos' },
-    { id: 'profile' as AppScreen, icon: User, label: 'Perfil' },
+    { 
+      title: 'Partidas', 
+      icon: <Home className={`w-full h-full ${currentScreen === 'home' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
+      onClick: () => onScreenChange('home')
+    },
+    { 
+      title: 'Balanço', 
+      icon: <DollarSign className={`w-full h-full ${currentScreen === 'balance' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
+      onClick: () => onScreenChange('balance')
+    },
+    { 
+      title: 'Histórico', 
+      icon: <History className={`w-full h-full ${currentScreen === 'history' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
+      onClick: () => onScreenChange('history')
+    },
+    { 
+      title: 'Amigos', 
+      icon: <Users className={`w-full h-full ${currentScreen === 'friends' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
+      onClick: () => onScreenChange('friends')
+    },
+    { 
+      title: 'Perfil', 
+      icon: <User className={`w-full h-full ${currentScreen === 'profile' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
+      onClick: () => onScreenChange('profile')
+    },
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
-      <div className="flex justify-around py-2">
-        {navItems.map((item) => {
-          const Icon = item.icon;
-          const isActive = currentScreen === item.id;
-          
-          return (
-            <button
-              key={item.id}
-              onClick={() => onScreenChange(item.id)}
-              className={`flex flex-col items-center py-2 px-3 rounded-lg transition-colors ${
-                isActive 
-                  ? 'text-blue-600 bg-blue-50' 
-                  : 'text-gray-600 hover:text-blue-600'
-              }`}
-            >
-              <Icon className="w-5 h-5 mb-1" />
-              <span className="text-xs font-medium">{item.label}</span>
-            </button>
-          );
-        })}
-      </div>
+    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+      <FloatingDock items={navItems} />
     </div>
   );
 };
