@@ -1,12 +1,23 @@
-
+"use client";
 import React, { useState } from 'react';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarProvider,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+  SidebarHeader,
+  SidebarInset,
+} from '@/components/ui/sidebar';
+import { BottomNavigation } from './BottomNavigation';
 import { HomeScreen } from './HomeScreen';
 import { FinancialBalanceScreen } from './FinancialBalanceScreen';
 import { BettingHistoryScreen } from './BettingHistoryScreen';
 import { FriendsBetsScreen } from './FriendsBetsScreen';
 import { ProfileRankingScreen } from './ProfileRankingScreen';
-import { BottomNavigation } from './BottomNavigation';
-import { ThemeProvider } from '@/contexts/ThemeContext';
+import { Home, DollarSign, History, Users, User } from 'lucide-react';
 
 export type AppScreen = 'home' | 'balance' | 'history' | 'friends' | 'profile';
 
@@ -32,13 +43,77 @@ export const MainApp: React.FC = () => {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-gray-50 dark:bg-neutral-950 pb-24">
-        {renderScreen()}
-        <BottomNavigation 
-          currentScreen={currentScreen} 
-          onScreenChange={setCurrentScreen} 
-        />
-      </div>
+      <SidebarProvider>
+        <div className="flex min-h-screen w-full">
+          {/* Sidebar desktop */}
+          <Sidebar className="hidden md:flex">
+            <SidebarContent>
+              <SidebarHeader>
+                <span className="font-bold text-lg">BISS</span>
+              </SidebarHeader>
+              <SidebarMenu>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    onClick={() => setCurrentScreen('home')}
+                    isActive={currentScreen === 'home'}
+                  >
+                    <Home className="h-4 w-4" />
+                    <span>Partidas</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    onClick={() => setCurrentScreen('balance')}
+                    isActive={currentScreen === 'balance'}
+                  >
+                    <DollarSign className="h-4 w-4" />
+                    <span>Balanço</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    onClick={() => setCurrentScreen('history')}
+                    isActive={currentScreen === 'history'}
+                  >
+                    <History className="h-4 w-4" />
+                    <span>Histórico</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    onClick={() => setCurrentScreen('friends')}
+                    isActive={currentScreen === 'friends'}
+                  >
+                    <Users className="h-4 w-4" />
+                    <span>Amigos</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    onClick={() => setCurrentScreen('profile')}
+                    isActive={currentScreen === 'profile'}
+                  >
+                    <User className="h-4 w-4" />
+                    <span>Perfil</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </SidebarMenu>
+            </SidebarContent>
+          </Sidebar>
+
+          {/* Conteúdo principal */}
+          <SidebarInset className="bg-gray-50 dark:bg-neutral-950 pb-24">
+            <div className="p-4">{renderScreen()}</div>
+
+            <div className="md:hidden">
+              <BottomNavigation
+                currentScreen={currentScreen}
+                onScreenChange={setCurrentScreen}
+              />
+            </div>
+          </SidebarInset>
+        </div>
+      </SidebarProvider>
     </ThemeProvider>
   );
 };
