@@ -1,9 +1,9 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
 interface LoginScreenProps {
   onLogin: () => void;
@@ -17,7 +17,6 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onGoToRegiste
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simular login
     onLogin();
   };
 
@@ -33,8 +32,21 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onGoToRegiste
             />
           </div>
           <CardTitle className="text-2xl font-bold text-blue-800">BISS</CardTitle>
-          <p className="text-blue-600 text-sm font-medium">Inteligência que joga do seu lado</p>
+
+          {/* 🎯 Aqui entra o Typewriter */}
+          <TypewriterEffectSmooth
+            words={[
+              { text: "Inteligência" },
+              { text: "que" },
+              { text: "joga" },
+              { text: "do" },
+              { text: "seu" },
+              { text: "lado", className: "text-blue-600 dark:text-blue-400" },
+            ]}
+            className="text-sm justify-center"
+          />
         </CardHeader>
+
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="relative">
@@ -48,7 +60,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onGoToRegiste
                 required
               />
             </div>
-            
+
             <div className="relative">
               <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input
