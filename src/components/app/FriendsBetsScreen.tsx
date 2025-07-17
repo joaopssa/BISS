@@ -22,9 +22,9 @@ export const FriendsBetsScreen: React.FC = () => {
       points: 1890, rank: 4, isFollowing: true, followsBack: false
     },
     {
-      id: 3, name: 'Pedro Costa', username: '@pedrocosta', avatar: 'PC', winRate: 82.1, totalBets: 28, currentStreak: 4, roi: 15.3,
+      id: 3, name: 'Pedro Costa', username: '@pedrocosta', avatar: 'PC', winRate: 82.1, totalBets: 28, currentStreak: 5, roi: 15.3,
       lastBet: { match: 'Manchester City x Liverpool', bet: 'Casa', odds: 1.9, status: 'won' },
-      recentResults: ['lost', 'won', 'won', 'won', 'won'],
+      recentResults: ['won', 'won', 'won', 'won', 'won'],
       points: 3120, rank: 1, isFollowing: false, followsBack: true
     },
     {
@@ -112,52 +112,48 @@ export const FriendsBetsScreen: React.FC = () => {
 
             {/* Seus Amigos */}
       <div className="space-y-4">
-        <h2 className="text-lg font-semibold text-gray-800">Seus Amigos</h2>
-        {friends.map((friend) => (
-          <Card key={friend.id}>
-            <CardContent className="p-4">
-              <div className="flex items-start gap-4">
-                <Avatar className="w-12 h-12">
-                  <AvatarFallback className="bg-blue-100 text-blue-600 font-semibold">{friend.avatar}</AvatarFallback>
-                </Avatar>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-semibold text-gray-800">{friend.name}</h3>
-                    {getRankIcon(friend.rank)}
-                  </div>
-                  <p className="text-sm text-gray-600 mb-2">{friend.username}</p>
-                  <div className="grid grid-cols-3 gap-4 mb-3">
-                    <div className="text-center">
-                      <p className="text-xs text-gray-600">Taxa de Acerto</p>
-                      <p className="font-bold text-green-600">{friend.winRate}%</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-xs text-gray-600">Apostas</p>
-                      <p className="font-bold text-gray-800">{friend.totalBets}</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-xs text-gray-600">Sequência</p>
-                      <p className="font-bold text-blue-600">{friend.currentStreak}</p>
-                    </div>
-                  </div>
-                  <div className="bg-gray-50 rounded-lg p-3">
-                    <div className="flex items-center justify-between mb-1">
-                      <p className="text-sm font-medium text-gray-800">Última Aposta</p>
-                      <Badge className={`text-xs ${friend.lastBet.status === 'won' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
-                        {friend.lastBet.status === 'won' ? 'Ganhou' : 'Perdeu'}
-                      </Badge>
-                    </div>
-                    <p className="text-xs text-gray-600">{friend.lastBet.match} • {friend.lastBet.bet} • {friend.lastBet.odds}</p>
-                  </div>
-                  <div className="flex mt-3">
-                    <Button size="sm" className="flex-1 bg-blue-600 hover:bg-blue-700">Ver Perfil</Button>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+  <h2 className="text-lg font-semibold text-gray-800">Seus Amigos</h2>
+  <div className="flex gap-4 overflow-x-auto pb-2">
+    {friends.map((friend) => (
+      <Card key={friend.id} className="min-w-[240px] w-[240px]">
+        <CardContent className="p-4 flex flex-col items-center">
+          <Avatar className="w-16 h-16 mb-2">
+            <AvatarFallback className="bg-blue-100 text-blue-600 font-semibold text-lg">
+              {friend.avatar}
+            </AvatarFallback>
+          </Avatar>
+          <div className="text-center mb-2">
+            <h3 className="font-semibold text-gray-800">{friend.name}</h3>
+            <p className="text-sm text-gray-500">{friend.username}</p>
+          </div>
+          <div className="bg-gray-50 rounded-md p-2 w-full text-center mb-2">
+            <p className="text-xs text-gray-600">Última Aposta</p>
+            <p className="text-xs text-gray-700 mt-1">{friend.lastBet.match}</p>
+            <p className="text-xs text-gray-700">{friend.lastBet.bet} • {friend.lastBet.odds}</p>
+            <Badge className={`text-xs mt-1 ${friend.lastBet.status === 'won' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+              {friend.lastBet.status === 'won' ? 'Ganhou' : 'Perdeu'}
+            </Badge>
+          </div>
+          <div className="grid grid-cols-3 gap-2 text-center w-full text-xs text-gray-600 mb-2">
+            <div>
+              <p>Taxa</p>
+              <p className="font-bold text-green-600">{friend.winRate}%</p>
+            </div>
+            <div>
+              <p>Apostas</p>
+              <p className="font-bold text-gray-800">{friend.totalBets}</p>
+            </div>
+            <div>
+              <p>Seq</p>
+              <p className="font-bold text-blue-600">{friend.currentStreak}</p>
+            </div>
+          </div>
+          <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700">Ver perfil</Button>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</div>
 
       {/* Seguindo */}
       <div className="space-y-4">
