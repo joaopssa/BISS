@@ -4,9 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { TrendingUp, Trophy, Target } from 'lucide-react';
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 
 export const BettingHistoryScreen: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState('all');
+  const [dateFilter, setDateFilter] = useState('all');
   const [oddsRange, setOddsRange] = useState<[number, number]>([1.01, 3.0]);
   const [confidenceRange, setConfidenceRange] = useState<[number, number]>([0, 100]);
 
@@ -18,113 +20,49 @@ export const BettingHistoryScreen: React.FC = () => {
     { id: 5, match: 'Bayern x Dortmund', bet: 'Over 1.5 gols', odds: 1.45, stake: 120.0, return: 174.0, status: 'won', date: '2024-05-31', competition: 'Bundesliga', aiConfidence: 88 }
   ];
 
-  const stats = {
-    totalBets: bets.length,
-    wonBets: bets.filter(b => b.status === 'won').length,
-    lostBets: bets.filter(b => b.status === 'lost').length,
-    winRate: (bets.filter(b => b.status === 'won').length / bets.length * 100).toFixed(1),
-    totalStaked: bets.reduce((acc, b) => acc + b.stake, 0),
-    totalReturns: bets.reduce((acc, b) => acc + b.return, 0),
-    profit: bets.reduce((acc, b) => acc + b.return, 0) - bets.reduce((acc, b) => acc + b.stake, 0),
-    averageOdds: (bets.reduce((acc, b) => acc + b.odds, 0) / bets.length).toFixed(2),
-    avgReturnOdds: (bets.filter(b => b.status === 'won').reduce((acc, b) => acc + b.odds, 0) / bets.filter(b => b.status === 'won').length).toFixed(2)
+  const isWithinDateRange = (dateStr: string): boolean => {
+    const now = new Date();
+    const betDate = new Date(dateStr);
+    switch (dateFilter) {
+      case '24h': return betDate >= new Date(now.getTime() - 24 * 60 * 60 * 1000);
+      case 'week': return betDate >= new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+      case 'month': return betDate >= new Date(new Date().setMonth(now.getMonth() - 1));
+      case 'year': return betDate >= new Date(new Date().setFullYear(now.getFullYear() - 1));
+      default: return true;
+    }
   };
 
   const filteredBets = bets.filter(bet => {
     const byStatus = statusFilter === 'won' ? bet.status === 'won' : statusFilter === 'lost' ? bet.status === 'lost' : true;
     const byOdds = bet.odds >= oddsRange[0] && bet.odds <= oddsRange[1];
     const byConfidence = bet.aiConfidence >= confidenceRange[0] && bet.aiConfidence <= confidenceRange[1];
-    return byStatus && byOdds && byConfidence;
+    const byDate = isWithinDateRange(bet.date);
+    return byStatus && byOdds && byConfidence && byDate;
   });
+
+  const stats = {
+    totalBets: filteredBets.length,
+    wonBets: filteredBets.filter(b => b.status === 'won').length,
+    lostBets: filteredBets.filter(b => b.status === 'lost').length,
+    winRate: filteredBets.length > 0 ? (filteredBets.filter(b => b.status === 'won').length / filteredBets.length * 100).toFixed(1) : '0.0',
+    totalStaked: filteredBets.reduce((acc, b) => acc + b.stake, 0),
+    totalReturns: filteredBets.reduce((acc, b) => acc + b.return, 0),
+    profit: filteredBets.reduce((acc, b) => acc + b.return, 0) - filteredBets.reduce((acc, b) => acc + b.stake, 0),
+    averageOdds: filteredBets.length > 0 ? (filteredBets.reduce((acc, b) => acc + b.odds, 0) / filteredBets.length).toFixed(2) : '0.00',
+    avgReturnOdds: filteredBets.filter(b => b.status === 'won').length > 0
+      ? (filteredBets.filter(b => b.status === 'won').reduce((acc, b) => acc + b.odds, 0) / filteredBets.filter(b => b.status === 'won').length).toFixed(2)
+      : '0.00'
+  };
+
+  const chartData = [
+    { name: 'Ganhos', value: stats.wonBets },
+    { name: 'Perdas', value: stats.lostBets }
+  ];
+
+  const COLORS = ['#4ade80', '#f87171'];
 
   return (
     <div className="p-4 space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">Histórico de Apostas</h1>
-          <p className="text-blue-600 flex items-center gap-1">
-            <Trophy className="w-4 h-4" />
-            {stats.totalBets} apostas realizadas
-          </p>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 gap-4">
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex items-center gap-2 mb-2">
-              <Target className="w-5 h-5 text-green-600" />
-              <span className="text-sm font-medium text-gray-600">Taxa de Acerto</span>
-            </div>
-            <p className="text-2xl font-bold text-green-600">{stats.winRate}%</p>
-            <p className="text-xs text-gray-600">{stats.wonBets} vitórias</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex items-center gap-2 mb-2">
-              <TrendingUp className="w-5 h-5 text-blue-600" />
-              <span className="text-sm font-medium text-gray-600">ROI</span>
-            </div>
-            <p className="text-2xl font-bold text-blue-600">
-              {((stats.profit / stats.totalStaked) * 100).toFixed(1)}%
-            </p>
-            <p className="text-xs text-gray-600">Odd média de retorno: {stats.avgReturnOdds}</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg flex items-center gap-2">
-              <Trophy className="w-5 h-5" /> Estatísticas Detalhadas
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <p className="text-gray-600">Total Apostado</p>
-                <p className="font-bold">R$ {stats.totalStaked.toFixed(2)}</p>
-              </div>
-              <div>
-                <p className="text-gray-600">Total Retornado</p>
-                <p className="font-bold">R$ {stats.totalReturns.toFixed(2)}</p>
-              </div>
-              <div>
-                <p className="text-gray-600">Odds Média</p>
-                <p className="font-bold">{stats.averageOdds}</p>
-              </div>
-              <div>
-                <p className="text-gray-600">Apostas Perdidas</p>
-                <p className="font-bold text-red-600">{stats.lostBets}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg flex items-center gap-2">💸 Cashouts</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <p className="text-gray-600">Cashouts Totais</p>
-                <p className="font-bold">12</p>
-              </div>
-              <div>
-                <p className="text-gray-600">Cashouts Evitaram Perda</p>
-                <p className="font-bold text-green-600">8</p>
-              </div>
-              <div>
-                <p className="text-gray-600">Taxa de Acerto Cashout</p>
-                <p className="font-bold">66.7%</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
       <div className="flex flex-wrap gap-6 items-center">
         <Select value={statusFilter} onValueChange={setStatusFilter}>
           <SelectTrigger className="w-48">
@@ -134,6 +72,19 @@ export const BettingHistoryScreen: React.FC = () => {
             <SelectItem value="all">Todas as apostas</SelectItem>
             <SelectItem value="won">Apostas ganhas</SelectItem>
             <SelectItem value="lost">Apostas perdidas</SelectItem>
+          </SelectContent>
+        </Select>
+
+        <Select value={dateFilter} onValueChange={setDateFilter}>
+          <SelectTrigger className="w-60">
+            <SelectValue placeholder="Filtrar por período" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">Todos os períodos</SelectItem>
+            <SelectItem value="24h">Últimas 24h</SelectItem>
+            <SelectItem value="week">Última semana</SelectItem>
+            <SelectItem value="month">Último mês</SelectItem>
+            <SelectItem value="year">Último ano</SelectItem>
           </SelectContent>
         </Select>
 
@@ -166,6 +117,48 @@ export const BettingHistoryScreen: React.FC = () => {
             <span>{confidenceRange[1]}%</span>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card>
+          <CardHeader>
+            <CardTitle>Taxa de Acerto</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-3xl font-bold text-green-600">{stats.winRate}%</p>
+            <p className="text-sm text-gray-500">{stats.wonBets} de {stats.totalBets} apostas</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Retorno Sobre Investimento (ROI)</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-3xl font-bold text-blue-600">
+              {stats.totalStaked > 0 ? ((stats.profit / stats.totalStaked) * 100).toFixed(1) : '0.0'}%
+            </p>
+            <p className="text-sm text-gray-500">Lucro: R$ {stats.profit.toFixed(2)}</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Distribuição de Resultados</CardTitle>
+          </CardHeader>
+          <CardContent style={{ height: 200 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie data={chartData} dataKey="value" nameKey="name" outerRadius={60} label>
+                  {chartData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip />
+              </PieChart>
+            </ResponsiveContainer>
+          </CardContent>
+        </Card>
       </div>
 
       <div className="overflow-x-auto pb-4">
