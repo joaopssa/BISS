@@ -34,17 +34,19 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onGoToRegiste
           <CardTitle className="text-2xl font-bold text-blue-800">BISS</CardTitle>
 
           {/* 🎯 Aqui entra o Typewriter */}
+          <div className="max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto overflow-hidden">
           <TypewriterEffectSmooth
-            words={[
-              { text: "Inteligência" },
-              { text: "que" },
-              { text: "joga" },
-              { text: "do" },
-              { text: "seu" },
-              { text: "lado", className: "text-blue-600 dark:text-blue-400" },
-            ]}
-            className="text-sm justify-center"
-          />
+              words={[
+                { text: "Inteligência" },
+                { text: "que" },
+                { text: "joga" },
+                { text: "do" },
+                { text: "seu" },
+                { text: "lado", className: "text-blue-600 dark:text-blue-400" },
+              ]}
+            />
+
+</div>
         </CardHeader>
 
         <CardContent>

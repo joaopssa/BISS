@@ -1,4 +1,3 @@
-
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
@@ -46,9 +45,11 @@ interface Match {
 
 interface ExpandableMatchCardProps {
   matches: Match[];
+  logos: Record<string, string>;
 }
 
-export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matches }) => {
+
+export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matches, logos }) => {
   const [active, setActive] = useState<Match | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -140,37 +141,34 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
                 </div>
 
                 <div className="grid grid-cols-3 items-center gap-4 mb-6">
-                  <div className="text-center">
-                    <motion.h3
-                      layoutId={`home-team-${active.id}-${id}`}
-                      className="font-semibold text-gray-800 dark:text-gray-200 mb-2"
-                    >
-                      {active.homeTeam}
-                    </motion.h3>
-                    <Button variant="outline" size="sm" className="text-xs">
-                      {active.odds.home}
-                    </Button>
-                  </div>
-                  
-                  <div className="text-center">
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">VS</p>
-                    <Button variant="outline" size="sm" className="text-xs">
-                      {active.odds.draw}
-                    </Button>
-                  </div>
-                  
-                  <div className="text-center">
-                    <motion.h3
-                      layoutId={`away-team-${active.id}-${id}`}
-                      className="font-semibold text-gray-800 dark:text-gray-200 mb-2"
-                    >
-                      {active.awayTeam}
-                    </motion.h3>
-                    <Button variant="outline" size="sm" className="text-xs">
-                      {active.odds.away}
-                    </Button>
-                  </div>
-                </div>
+  <div className="text-center flex flex-col items-center">
+    <img src={logos[active.homeTeam]} alt="logo home" className="w-8 h-8 mb-2 object-contain" />
+    <motion.h3 layoutId={`home-team-${active.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+      {active.homeTeam}
+    </motion.h3>
+    <Button variant="outline" size="sm" className="text-xs">
+      {active.odds.home}
+    </Button>
+  </div>
+
+  <div className="text-center">
+    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">VS</p>
+    <Button variant="outline" size="sm" className="text-xs">
+      {active.odds.draw}
+    </Button>
+  </div>
+
+  <div className="text-center flex flex-col items-center">
+    <img src={logos[active.awayTeam]} alt="logo away" className="w-8 h-8 mb-2 object-contain" />
+    <motion.h3 layoutId={`away-team-${active.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+      {active.awayTeam}
+    </motion.h3>
+    <Button variant="outline" size="sm" className="text-xs">
+      {active.odds.away}
+    </Button>
+  </div>
+</div>
+
 
                 <motion.div
                   layout
@@ -247,37 +245,34 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
             </div>
 
             <div className="grid grid-cols-3 items-center gap-4 mb-3">
-              <div className="text-center">
-                <motion.p
-                  layoutId={`home-team-${match.id}-${id}`}
-                  className="font-semibold text-gray-800 dark:text-gray-200 text-sm"
-                >
-                  {match.homeTeam}
-                </motion.p>
-                <Button variant="outline" size="sm" className="mt-1 text-xs">
-                  {match.odds.home}
-                </Button>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">VS</p>
-                <Button variant="outline" size="sm" className="text-xs">
-                  {match.odds.draw}
-                </Button>
-              </div>
-              
-              <div className="text-center">
-                <motion.p
-                  layoutId={`away-team-${match.id}-${id}`}
-                  className="font-semibold text-gray-800 dark:text-gray-200 text-sm"
-                >
-                  {match.awayTeam}
-                </motion.p>
-                <Button variant="outline" size="sm" className="mt-1 text-xs">
-                  {match.odds.away}
-                </Button>
-              </div>
-            </div>
+  <div className="text-center flex flex-col items-center">
+    <img src={logos[match.homeTeam]} alt="logo home" className="w-6 h-6 mb-1 object-contain" />
+    <motion.p layoutId={`home-team-${match.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 text-sm">
+      {match.homeTeam}
+    </motion.p>
+    <Button variant="outline" size="sm" className="mt-1 text-xs">
+      {match.odds.home}
+    </Button>
+  </div>
+
+  <div className="text-center">
+    <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">VS</p>
+    <Button variant="outline" size="sm" className="text-xs">
+      {match.odds.draw}
+    </Button>
+  </div>
+
+  <div className="text-center flex flex-col items-center">
+    <img src={logos[match.awayTeam]} alt="logo away" className="w-6 h-6 mb-1 object-contain" />
+    <motion.p layoutId={`away-team-${match.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 text-sm">
+      {match.awayTeam}
+    </motion.p>
+    <Button variant="outline" size="sm" className="mt-1 text-xs">
+      {match.odds.away}
+    </Button>
+  </div>
+</div>
+
 
             <div className={`rounded-lg p-2 ${getRecommendationColor(match.aiRecommendation.type)}`}>
               <div className="flex items-center gap-2">
