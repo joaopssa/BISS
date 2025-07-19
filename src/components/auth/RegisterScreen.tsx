@@ -1,9 +1,9 @@
-
+// Atualização da tela de cadastro com as modificações solicitadas (ajustes de fallback e botão de foto simplificado)
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { User, Mail, Lock, Calendar, Eye, EyeOff } from 'lucide-react';
+import { User, Mail, Lock, Calendar, Eye, EyeOff, Camera } from 'lucide-react';
 
 interface RegisterScreenProps {
   onRegister: () => void;
@@ -12,6 +12,7 @@ interface RegisterScreenProps {
 
 export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onRegister, onGoToLogin }) => {
   const [formData, setFormData] = useState({
+    name: '',
     username: '',
     email: '',
     birthDate: '',
@@ -20,12 +21,40 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onRegister, onGo
   });
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [acceptedDeclaration, setAcceptedDeclaration] = useState(false);
+
+  const isAdult = (dateStr: string) => {
+    const birthDate = new Date(dateStr);
+    const today = new Date();
+    const age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (
+      monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      return age - 1 >= 18;
+    }
+    return age >= 18;
+  };
+
+  const getInitials = () => {
+    const parts = formData.name.trim().split(' ').filter(Boolean);
+    if (parts.length === 0) return '??';
+    if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Validar dados
+    if (!isAdult(formData.birthDate)) {
+      alert('Você deve ter pelo menos 18 anos.');
+      return;
+    }
     if (formData.password !== formData.confirmPassword) {
       alert('Senhas não coincidem');
+      return;
+    }
+    if (!acceptedDeclaration) {
+      alert('Você deve declarar que as informações são verdadeiras.');
       return;
     }
     onRegister();
@@ -39,18 +68,29 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onRegister, onGo
     <div className="min-h-screen flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="mx-auto mb-4 w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center">
-            <img 
-              src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png" 
-              alt="BISS Logo" 
-              className="w-16 h-16 object-contain"
-            />
-          </div>
           <CardTitle className="text-2xl font-bold text-blue-800">Criar Conta</CardTitle>
           <p className="text-blue-600 text-sm">Junte-se à comunidade BISS</p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="flex justify-center">
+              <div className="w-20 h-20 rounded-full bg-blue-500 text-white font-bold flex items-center justify-center text-xl">
+                {getInitials()}
+              </div>
+            </div>
+
+            <div className="relative">
+              <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+              <Input
+                type="text"
+                placeholder="Nome completo"
+                value={formData.name}
+                onChange={(e) => handleInputChange('name', e.target.value)}
+                className="pl-10"
+                required
+              />
+            </div>
+
             <div className="relative">
               <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input
@@ -79,14 +119,13 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onRegister, onGo
               <Calendar className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input
                 type="date"
-                placeholder="Data de nascimento"
                 value={formData.birthDate}
                 onChange={(e) => handleInputChange('birthDate', e.target.value)}
                 className="pl-10"
                 required
               />
             </div>
-            
+
             <div className="relative">
               <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input
@@ -124,6 +163,18 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onRegister, onGo
                 {showConfirmPassword ? <EyeOff /> : <Eye />}
               </button>
             </div>
+
+            <label className="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                checked={acceptedDeclaration}
+                onChange={(e) => setAcceptedDeclaration(e.target.checked)}
+                required
+              />
+              <span className="text-sm text-gray-700">
+                Declaro que todas as informações acima são verdadeiras.
+              </span>
+            </label>
 
             <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
               Registrar

@@ -46,7 +46,7 @@ export const MainApp: React.FC = () => {
       <SidebarProvider>
         <div className="flex min-h-screen w-full">
           {/* Sidebar desktop */}
-          <Sidebar className="hidden md:flex">
+          <Sidebar collapsible="icon" className="hidden md:flex">
             <SidebarContent>
               <SidebarHeader>
                 <span className="font-bold text-lg">BISS</span>
