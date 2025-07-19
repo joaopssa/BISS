@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { TrendingUp, Trophy, Target } from 'lucide-react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
+import { fetchTeamLogo } from './services/teamLogoService';
+import { useEffect } from 'react';
 
 export const BettingHistoryScreen: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState('all');
@@ -60,6 +62,28 @@ export const BettingHistoryScreen: React.FC = () => {
   ];
 
   const COLORS = ['#4ade80', '#f87171'];
+
+  const [logos, setLogos] = useState<Record<string, string>>({});
+
+useEffect(() => {
+  const fetchLogos = async () => {
+    const uniqueTeams = new Set<string>();
+    bets.forEach(b => {
+      const [teamA, teamB] = b.match.split(' x ');
+      if (teamA) uniqueTeams.add(teamA.trim());
+      if (teamB) uniqueTeams.add(teamB.trim());
+    });
+
+    const logoEntries = await Promise.all([...uniqueTeams].map(async (team) => {
+      const logo = await fetchTeamLogo(team);
+      return [team, logo];
+    }));
+
+    setLogos(Object.fromEntries(logoEntries));
+  };
+
+  fetchLogos();
+}, []);
 
   return (
     <div className="p-4 space-y-6">
@@ -166,10 +190,23 @@ export const BettingHistoryScreen: React.FC = () => {
           {filteredBets.map(bet => (
             <Card key={bet.id} className="min-w-[calc(100%/3-1rem)] max-w-[calc(100%/3-1rem)] snap-start shrink-0">
               <CardContent className="p-4 flex flex-col items-center">
-                <div className="text-center mb-2">
-                  <h3 className="font-semibold text-gray-800 text-sm">{bet.match}</h3>
-                  <p className="text-xs text-gray-500">{bet.date}</p>
-                </div>
+                <div className="flex items-center justify-between w-full mb-2 gap-2">
+  <img
+    src={logos[bet.match.split(' x ')[0]?.trim()]}
+    alt="Logo Time A"
+    className="w-8 h-8 object-contain"
+  />
+  <div className="flex flex-col items-center">
+    <p className="text-sm font-semibold text-gray-800">{bet.match}</p>
+    <p className="text-xs text-gray-500">{bet.date}</p>
+  </div>
+  <img
+    src={logos[bet.match.split(' x ')[1]?.trim()]}
+    alt="Logo Time B"
+    className="w-8 h-8 object-contain"
+  />
+</div>
+
                 <div className="bg-gray-50 rounded-md p-2 w-full text-center mb-2">
                   <p className="text-xs text-gray-600">Palpite</p>
                   <p className="text-xs text-gray-700 mt-1">{bet.bet} • {bet.odds}</p>

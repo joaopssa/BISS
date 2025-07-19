@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Users, Trophy, UserPlus, Crown, Medal, Circle } from 'lucide-react';
+import { fetchTeamLogo } from './services/teamLogoService';
+import { useEffect } from 'react';
+
 
 export const FriendsBetsScreen: React.FC = () => {
   const [rankingFilter, setRankingFilter] = useState<'points' | 'roi' | 'winRate' | 'streak'>('points');
@@ -28,8 +31,8 @@ export const FriendsBetsScreen: React.FC = () => {
       points: 3120, rank: 1, isFollowing: false, followsBack: true
     },
     {
-      id: 4, name: 'Ana Oliveira', username: '@anaoliveira', avatar: 'AO', winRate: 59.4, totalBets: 53, currentStreak: 1, roi: 5.1,
-      lastBet: { match: 'PSG x Marseille', bet: 'Fora', odds: 3.2, status: 'lost' },
+      id: 4, name: 'Ana Oliveira', username: '@anaoliveira', avatar: 'AO', winRate: 59.4, totalBets: 53, currentStreak: 0, roi: 5.1,
+      lastBet: { match: 'Paris x Marseille', bet: 'Fora', odds: 3.2, status: 'lost' },
       recentResults: ['won', 'lost', 'lost', 'won', 'lost'],
       points: 1650, rank: 5, isFollowing: true, followsBack: false
     }
@@ -64,6 +67,27 @@ export const FriendsBetsScreen: React.FC = () => {
 
   const followingOnly = friends.filter(f => f.isFollowing && !f.followsBack && !friends.some(fr => fr.name === f.name));
 
+  const [logos, setLogos] = useState<Record<string, string>>({});
+
+useEffect(() => {
+  const fetchLogos = async () => {
+    const uniqueTeams = new Set<string>();
+    friends.forEach(f => {
+      const [teamA, teamB] = f.lastBet.match.split(' x ');
+      if (teamA) uniqueTeams.add(teamA.trim());
+      if (teamB) uniqueTeams.add(teamB.trim());
+    });
+
+    const logoEntries = await Promise.all([...uniqueTeams].map(async (team) => {
+      const logo = await fetchTeamLogo(team);
+      return [team, logo];
+    }));
+
+    setLogos(Object.fromEntries(logoEntries));
+  };
+
+  fetchLogos();
+}, []);
   return (
     <div className="p-4 space-y-6">
       {/* ...código anterior omitido para brevidade... */}
@@ -127,13 +151,18 @@ export const FriendsBetsScreen: React.FC = () => {
             <p className="text-sm text-gray-500">{friend.username}</p>
           </div>
           <div className="bg-gray-50 rounded-md p-2 w-full text-center mb-2">
-            <p className="text-xs text-gray-600">Última Aposta</p>
-            <p className="text-xs text-gray-700 mt-1">{friend.lastBet.match}</p>
-            <p className="text-xs text-gray-700">{friend.lastBet.bet} • {friend.lastBet.odds}</p>
-            <Badge className={`text-xs mt-1 ${friend.lastBet.status === 'won' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
-              {friend.lastBet.status === 'won' ? 'Ganhou' : 'Perdeu'}
-            </Badge>
-          </div>
+  <p className="text-xs text-gray-600">Última Aposta</p>
+  <div className="flex justify-between items-center gap-1 my-1">
+    <img src={logos[friend.lastBet.match.split(' x ')[0]?.trim()]} alt="Logo A" className="w-6 h-6 object-contain" />
+    <p className="text-xs text-gray-700">{friend.lastBet.match}</p>
+    <img src={logos[friend.lastBet.match.split(' x ')[1]?.trim()]} alt="Logo B" className="w-6 h-6 object-contain" />
+  </div>
+  <p className="text-xs text-gray-700">{friend.lastBet.bet} • {friend.lastBet.odds}</p>
+  <Badge className={`text-xs mt-1 ${friend.lastBet.status === 'won' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+    {friend.lastBet.status === 'won' ? 'Ganhou' : 'Perdeu'}
+  </Badge>
+</div>
+
           <div className="grid grid-cols-3 gap-2 text-center w-full text-xs text-gray-600 mb-2">
             <div>
               <p>Taxa</p>
