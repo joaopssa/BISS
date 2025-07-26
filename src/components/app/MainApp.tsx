@@ -49,8 +49,9 @@ export const MainApp: React.FC = () => {
           <Sidebar collapsible="icon" className="hidden md:flex">
             <SidebarContent>
               <SidebarHeader>
-                <span className="font-bold text-lg">BISS</span>
-              </SidebarHeader>
+  <img src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png" alt="Logo do App" className="h-10 w-auto" />
+</SidebarHeader>
+
               <SidebarMenu>
                 <SidebarMenuItem>
                   <SidebarMenuButton

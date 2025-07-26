@@ -33,27 +33,34 @@ export const HomeScreen: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       
-      {/* Top Bar estilo Betano - corrigida */}
-      <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-white dark:bg-neutral-900 shadow">
-        {/* Navegação à esquerda */}
-        <div className="flex items-center space-x-4 flex-wrap">
-          <Button variant="ghost">Apostas Esportivas</Button>
-          <Button variant="ghost">Apostas Ao Vivo</Button>
-          <Button variant="ghost">Bilhetes em Andamento</Button>
-        </div>
+      {/* Top Bar com "Em Alta" e perfil resumido */}
+<div className="flex flex-wrap items-center justify-between px-6 py-4 bg-white dark:bg-neutral-900 shadow">
+  {/* Navegação principal */}
+  <div className="flex flex-wrap items-center gap-4">
+    <Button variant="ghost">Apostas Esportivas</Button>
+    <Button variant="ghost">Apostas Ao Vivo</Button>
+    <Button variant="ghost">Bilhetes</Button>
+    <Button variant="ghost">Em Alta</Button>
+    <Input
+      placeholder="Encontre aqui seu jogo"
+      className="w-64 border-gray-300 dark:border-neutral-700"
+    />
+  </div>
 
-        {/* Input + Avatar à direita */}
-        <div className="flex items-center space-x-4 mt-2 sm:mt-0">
-          <Input
-            placeholder="Encontre aqui seu jogo"
-            className="w-64 border-gray-300 dark:border-neutral-700"
-          />
-          <Avatar>
-            <AvatarImage src="/usuario.jpg" alt="Usuário" />
-            <AvatarFallback>US</AvatarFallback>
-          </Avatar>
-        </div>
-      </div>
+  {/* Avatar + Info do perfil */}
+  <div className="flex items-center gap-4 mt-2 sm:mt-0">
+    <div className="text-right text-sm leading-4 hidden sm:block">
+      <p className="text-blue-600 font-semibold">61.7% acerto</p>
+      <p className="text-gray-600">Sequência 4</p>
+      <p className="text-gray-800 font-bold">2580 pts</p>
+    </div>
+    <Avatar>
+      <AvatarImage src="/usuario.jpg" alt="Usuário" />
+      <AvatarFallback>US</AvatarFallback>
+    </Avatar>
+  </div>
+</div>
+
 
       {/* Conteúdo principal */}
       <div className="p-4 space-y-6">
