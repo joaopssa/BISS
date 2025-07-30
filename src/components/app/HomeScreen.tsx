@@ -34,29 +34,30 @@ export const HomeScreen: React.FC = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       
       {/* Top Bar com "Em Alta" e perfil resumido */}
-<div className="flex flex-wrap items-center justify-between px-6 py-4 bg-white dark:bg-neutral-900 shadow">
+<div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[hsl(220,100%,50%)] text-white shadow">
   {/* Navegação principal */}
   <div className="flex flex-wrap items-center gap-4">
     <Button variant="ghost">Apostas Esportivas</Button>
     <Button variant="ghost">Apostas Ao Vivo</Button>
     <Button variant="ghost">Bilhetes</Button>
     <Button variant="ghost">Em Alta</Button>
-    <Input
+    <input
+      type="text"
       placeholder="Encontre aqui seu jogo"
-      className="w-64 border-gray-300 dark:border-neutral-700"
+      className="w-64 h-10 px-3 py-2 text-sm font-medium text-white placeholder-white bg-blue-600 border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
     />
   </div>
 
   {/* Avatar + Info do perfil */}
   <div className="flex items-center gap-4 mt-2 sm:mt-0">
     <div className="text-right text-sm leading-4 hidden sm:block">
-      <p className="text-blue-600 font-semibold">61.7% acerto</p>
-      <p className="text-gray-600">Sequência 4</p>
-      <p className="text-gray-800 font-bold">2580 pts</p>
+      <p className="text-green-400 font-semibold">61.7% acerto</p>
+      <p className="text-orange-400 font-semibold">Sequência 4</p>
+      <p className="text-yellow-300 font-bold">2580 pts</p>
     </div>
     <Avatar>
       <AvatarImage src="/usuario.jpg" alt="Usuário" />
-      <AvatarFallback>US</AvatarFallback>
+      <AvatarFallback className="text-black">US</AvatarFallback>
     </Avatar>
   </div>
 </div>
