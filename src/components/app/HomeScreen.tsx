@@ -34,7 +34,7 @@ export const HomeScreen: React.FC = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       
       {/* Top Bar com "Em Alta" e perfil resumido */}
-<div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[hsl(220,100%,50%)] text-white shadow">
+<div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
   {/* Navegação principal */}
   <div className="flex flex-wrap items-center gap-4">
     <Button variant="ghost">Apostas Esportivas</Button>
@@ -44,7 +44,7 @@ export const HomeScreen: React.FC = () => {
     <input
       type="text"
       placeholder="Encontre aqui seu jogo"
-      className="w-64 h-10 px-3 py-2 text-sm font-medium text-white placeholder-white bg-blue-600 border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
+      className="w-64 h-10 px-3 py-2 text-sm font-medium text-white placeholder-white bg-[#014a8f] border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
     />
   </div>
 
