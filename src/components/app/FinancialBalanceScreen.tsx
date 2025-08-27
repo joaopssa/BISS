@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
   TrendingUp, 
-  TrendingDown, 
   DollarSign, 
   Target, 
   AlertTriangle, 
@@ -19,7 +18,8 @@ import { LineChart as RechartsLineChart, Line, XAxis, YAxis, CartesianGrid, Tool
 
 export const FinancialBalanceScreen: React.FC = () => {
   const [projectionPeriod, setProjectionPeriod] = useState<string>('1 semana');
-  const [showChart, setShowChart] = useState(false);
+  // Alterado para true para o gráfico aparecer por padrão
+  const [showChart, setShowChart] = useState(true); 
   
   const balance = {
     current: 2450.75,
@@ -30,7 +30,6 @@ export const FinancialBalanceScreen: React.FC = () => {
     baseProjection: 2890.00
   };
 
-  // Dados para o gráfico de projeção
   const projectionData = [
     { name: 'Atual', value: balance.current },
     { name: '1 semana', value: balance.baseProjection },
@@ -40,53 +39,9 @@ export const FinancialBalanceScreen: React.FC = () => {
     { name: '1 ano', value: balance.current + ((balance.baseProjection - balance.current) * 52) }
   ];
 
-  // Dados fictícios do extrato (MANTIDOS EXATAMENTE COMO ESTAVAM)
   const financialStatement = [
-    {
-      id: 1,
-      type: 'deposit',
-      amount: 500.00,
-      description: 'Depósito via PIX',
-      date: '2024-06-05',
-      time: '09:15',
-      method: 'PIX'
-    },
-    {
-      id: 2,
-      type: 'withdrawal',
-      amount: -300.00,
-      description: 'Saque para conta bancária',
-      date: '2024-06-04',
-      time: '14:30',
-      method: 'TED'
-    },
-    {
-      id: 3,
-      type: 'deposit',
-      amount: 200.00,
-      description: 'Recarga de saldo',
-      date: '2024-06-03',
-      time: '11:45',
-      method: 'Cartão de Crédito'
-    },
-    {
-      id: 4,
-      type: 'withdrawal',
-      amount: -150.00,
-      description: 'Saque solicitado',
-      date: '2024-06-02',
-      time: '16:20',
-      method: 'PIX'
-    },
-    {
-      id: 5,
-      type: 'deposit',
-      amount: 1000.00,
-      description: 'Bônus de fidelidade',
-      date: '2024-06-01',
-      time: '10:00',
-      method: 'Bônus'
-    }
+    { id: 1, type: 'deposit', amount: 500.00, description: 'Depósito via PIX', date: '2024-06-05', time: '09:15', method: 'PIX' },
+    { id: 2, type: 'withdrawal', amount: -300.00, description: 'Saque para conta bancária', date: '2024-06-04', time: '14:30', method: 'TED' },
   ];
 
   const getProjectionValue = () => {
@@ -96,7 +51,7 @@ export const FinancialBalanceScreen: React.FC = () => {
 
   return (
     <div className="p-4 space-y-6">
-      {/* Header - Mantido idêntico */}
+      {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-gray-800">Balanço Financeiro</h1>
@@ -107,8 +62,10 @@ export const FinancialBalanceScreen: React.FC = () => {
         </div>
       </div>
 
-      {/* Balance Overview - Mantido idêntico */}
-      <div className="grid grid-cols-2 gap-4">
+      {/* --- NOVO LAYOUT DA GRADE --- */}
+      {/* Linha com os 3 cards principais */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Card: Saldo Atual */}
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-2 mb-2">
@@ -127,6 +84,7 @@ export const FinancialBalanceScreen: React.FC = () => {
           </CardContent>
         </Card>
 
+        {/* Card: Lucro Total */}
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-2 mb-2">
@@ -136,16 +94,10 @@ export const FinancialBalanceScreen: React.FC = () => {
             <p className="text-2xl font-bold text-green-600">
               R$ {balance.profit.toFixed(2)}
             </p>
-            <div className="flex items-center gap-1 mt-1">
-              <span className="text-xs text-gray-600">
-              </span>
-            </div>
           </CardContent>
         </Card>
-      </div>
 
-      {/* Financial Metrics */}
-      <div className="grid grid-cols-2 gap-4">
+        {/* Card: Média Mensal */}
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-2 mb-2">
@@ -157,8 +109,10 @@ export const FinancialBalanceScreen: React.FC = () => {
             </p>
           </CardContent>
         </Card>
+      </div>
 
-        {/* Card de Projeção com Gráfico Adicionado */}
+      {/* Linha com o Card de Projeção grande */}
+      <div>
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center justify-between mb-2">
@@ -201,7 +155,6 @@ export const FinancialBalanceScreen: React.FC = () => {
               </span>
             </div>
 
-            {/* Gráfico de Projeção (aparece quando showChart = true) */}
             {showChart && (
               <div className="mt-4 h-[200px]">
                 <ResponsiveContainer width="100%" height="100%">
@@ -214,11 +167,10 @@ export const FinancialBalanceScreen: React.FC = () => {
                       tick={{ fontSize: 12 }}
                     />
                     <YAxis 
-                      domain={[balance.current - 500, projectionData[projectionData.length - 1].value + 500]}
                       axisLine={false} 
                       tickLine={false} 
                       tick={{ fontSize: 12 }}
-                      tickFormatter={(value) => `R$ ${(value / 1000).toFixed(1)}k`}
+                      tickFormatter={(value) => `R$${(value / 1000).toFixed(0)}k`}
                     />
                     <Tooltip 
                       formatter={(value) => [`R$ ${Number(value).toFixed(2)}`, 'Valor']}
@@ -239,8 +191,8 @@ export const FinancialBalanceScreen: React.FC = () => {
           </CardContent>
         </Card>
       </div>
-
-      {/* Risk Alert - Mantido idêntico */}
+      
+      {/* Risk Alert */}
       <Card className="border-orange-200 bg-orange-50">
         <CardContent className="p-4">
           <div className="flex items-center gap-2 mb-2">
@@ -256,9 +208,7 @@ export const FinancialBalanceScreen: React.FC = () => {
         </CardContent>
       </Card>
 
-
-
-      {/* Extrato Financeiro - Mantido EXATAMENTE como estava com os dados fictícios originais */}
+      {/* Extrato Financeiro */}
       <Card>
         <CardHeader>
           <CardTitle className="text-lg flex items-center gap-2">
@@ -277,30 +227,22 @@ export const FinancialBalanceScreen: React.FC = () => {
                     <ArrowUpCircle className="w-5 h-5 text-red-600" />
                   )}
                   <div className="flex-1">
-                    <p className="font-medium text-sm text-gray-800">
-                      {transaction.description}
-                    </p>
-                    <div className="flex gap-2">
-                      <p className="text-xs text-gray-600">
-                        {transaction.date} • {transaction.time}
-                      </p>
-                      <Badge variant="outline" className="text-xs py-0 px-2">
-                        {transaction.method}
-                      </Badge>
+                    <p className="font-medium text-sm text-gray-800">{transaction.description}</p>
+                    <div className="flex gap-2 items-center mt-1">
+                      <p className="text-xs text-gray-600">{transaction.date} • {transaction.time}</p>
+                      <Badge variant="outline" className="text-xs py-0 px-2">{transaction.method}</Badge>
                     </div>
                   </div>
                 </div>
                 <div>
                   <Badge 
-                    variant={transaction.type === 'deposit' ? 'default' : 'destructive'}
-                    className={`text-xs ${
+                    className={`text-xs font-semibold ${
                       transaction.type === 'deposit' 
-                        ? 'bg-green-100 text-green-700 hover:bg-green-100' 
-                        : 'bg-red-100 text-red-700 hover:bg-red-100'
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-red-100 text-red-800'
                     }`}
                   >
-                    {transaction.type === 'deposit' ? '+' : '-'}
-                    R$ {Math.abs(transaction.amount).toFixed(2)}
+                    {transaction.type === 'deposit' ? '+' : ''} R$ {Math.abs(transaction.amount).toFixed(2)}
                   </Badge>
                 </div>
               </div>
