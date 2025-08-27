@@ -6,7 +6,7 @@ export const matchesData = [
     awayTeam: 'Palmeiras',
     time: '16:00',
     date: 'Hoje',
-    competition: 'Brasileirão',
+    competition: 'Serie A (Brasil)',
     odds: {
       home: 2.1,
       draw: 3.2,
