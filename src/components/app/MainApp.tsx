@@ -1,12 +1,23 @@
-
+"use client";
 import React, { useState } from 'react';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarProvider,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+  SidebarHeader,
+  SidebarInset,
+} from '@/components/ui/sidebar';
+import { BottomNavigation } from './BottomNavigation';
 import { HomeScreen } from './HomeScreen';
 import { FinancialBalanceScreen } from './FinancialBalanceScreen';
 import { BettingHistoryScreen } from './BettingHistoryScreen';
 import { FriendsBetsScreen } from './FriendsBetsScreen';
 import { ProfileRankingScreen } from './ProfileRankingScreen';
-import { BottomNavigation } from './BottomNavigation';
-import { ThemeProvider } from '@/contexts/ThemeContext';
+import { Home, DollarSign, History, Users, User, Rocket } from 'lucide-react'; // Adicionei o Rocket como exemplo da conversa anterior
 
 export type AppScreen = 'home' | 'balance' | 'history' | 'friends' | 'profile';
 
@@ -32,27 +43,19 @@ export const MainApp: React.FC = () => {
 
   return (
     <ThemeProvider>
-<<<<<<< Updated upstream
-      <div className="min-h-screen bg-gray-50 dark:bg-neutral-950 pb-24">
-        {renderScreen()}
-        <BottomNavigation 
-          currentScreen={currentScreen} 
-          onScreenChange={setCurrentScreen} 
-        />
-      </div>
-=======
       <SidebarProvider>
         <div className="flex min-h-screen w-full">
           {/* Sidebar desktop */}
           <Sidebar collapsible="icon" className="hidden md:flex">
             <SidebarContent>
               <SidebarHeader>
-  <img
-  src="public\lovable-uploads\logonormal.jpg"
-  alt="Logo do App"
-  className="h-10 w-10 object-contain transition-all duration-300"
-/>
-</SidebarHeader>
+                {/* Lembre-se que você pode alterar o logo aqui */}
+                <img
+                  src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png"
+                  alt="Logo do App"
+                  className="h-10 w-10 object-contain transition-all duration-300"
+                />
+              </SidebarHeader>
 
               <SidebarMenu>
                 <SidebarMenuItem>
@@ -105,9 +108,10 @@ export const MainApp: React.FC = () => {
           </Sidebar>
 
           {/* Conteúdo principal */}
-          <SidebarInset className="bg-gray-50 dark:bg-neutral-950 pb-24">
+          <SidebarInset className="flex-1 bg-gray-50 dark:bg-neutral-950 pb-24 md:pb-0">
             <div className="p-4">{renderScreen()}</div>
 
+            {/* Navegação mobile (só aparece em telas menores) */}
             <div className="md:hidden">
               <BottomNavigation
                 currentScreen={currentScreen}
@@ -117,7 +121,6 @@ export const MainApp: React.FC = () => {
           </SidebarInset>
         </div>
       </SidebarProvider>
->>>>>>> Stashed changes
     </ThemeProvider>
-  );
+  );
 };
