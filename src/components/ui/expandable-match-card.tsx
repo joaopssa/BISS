@@ -1,10 +1,10 @@
-
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Star, Trophy, Target, TrendingUp, Brain, X } from 'lucide-react';
+import { competitionToCountryCode, getFlagUrl } from '@/utils/flags';
 
 interface Match {
   id: number;
@@ -46,9 +46,10 @@ interface Match {
 
 interface ExpandableMatchCardProps {
   matches: Match[];
+  logos: Record<string, string>;
 }
 
-export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matches }) => {
+export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matches, logos }) => {
   const [active, setActive] = useState<Match | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -90,6 +91,26 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
     }
   };
 
+  const renderCompetitionWithFlag = (competition: string) => {
+    const code = competitionToCountryCode[competition];
+    return (
+      <div className="flex items-center gap-1">
+        <Badge variant="outline" className="text-xs">
+          {competition}
+        </Badge>
+        {code ? (
+          <img
+            src={getFlagUrl(code)}
+            alt={`Bandeira de ${competition}`}
+            className="w-7 h-5 rounded-sm"
+          />
+        ) : (
+          <span className="text-xs text-gray-400">🌐</span>
+        )}
+      </div>
+    );
+  };
+
   return (
     <>
       <AnimatePresence>
@@ -102,7 +123,7 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
           />
         )}
       </AnimatePresence>
-      
+
       <AnimatePresence>
         {active && (
           <div className="fixed inset-0 grid place-items-center z-[100] p-4">
@@ -117,7 +138,7 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
             >
               <X className="h-4 w-4 text-black dark:text-white" />
             </motion.button>
-            
+
             <motion.div
               layoutId={`card-${active.id}-${id}`}
               ref={ref}
@@ -126,9 +147,7 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2">
-                    <Badge variant="outline" className="text-xs">
-                      {active.competition}
-                    </Badge>
+                    {renderCompetitionWithFlag(active.competition)}
                     {active.isFavorite && (
                       <Star className="w-4 h-4 text-yellow-500 fill-current" />
                     )}
@@ -140,30 +159,26 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
                 </div>
 
                 <div className="grid grid-cols-3 items-center gap-4 mb-6">
-                  <div className="text-center">
-                    <motion.h3
-                      layoutId={`home-team-${active.id}-${id}`}
-                      className="font-semibold text-gray-800 dark:text-gray-200 mb-2"
-                    >
+                  <div className="text-center flex flex-col items-center">
+                    <img src={logos[active.homeTeam]} alt="logo home" className="w-8 h-8 mb-2 object-contain" />
+                    <motion.h3 layoutId={`home-team-${active.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
                       {active.homeTeam}
                     </motion.h3>
                     <Button variant="outline" size="sm" className="text-xs">
                       {active.odds.home}
                     </Button>
                   </div>
-                  
+
                   <div className="text-center">
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">VS</p>
                     <Button variant="outline" size="sm" className="text-xs">
                       {active.odds.draw}
                     </Button>
                   </div>
-                  
-                  <div className="text-center">
-                    <motion.h3
-                      layoutId={`away-team-${active.id}-${id}`}
-                      className="font-semibold text-gray-800 dark:text-gray-200 mb-2"
-                    >
+
+                  <div className="text-center flex flex-col items-center">
+                    <img src={logos[active.awayTeam]} alt="logo away" className="w-8 h-8 mb-2 object-contain" />
+                    <motion.h3 layoutId={`away-team-${active.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
                       {active.awayTeam}
                     </motion.h3>
                     <Button variant="outline" size="sm" className="text-xs">
@@ -233,9 +248,7 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
           >
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
-                <Badge variant="outline" className="text-xs">
-                  {match.competition}
-                </Badge>
+                {renderCompetitionWithFlag(match.competition)}
                 {match.isFavorite && (
                   <Star className="w-4 h-4 text-yellow-500 fill-current" />
                 )}
@@ -247,30 +260,26 @@ export const ExpandableMatchCard: React.FC<ExpandableMatchCardProps> = ({ matche
             </div>
 
             <div className="grid grid-cols-3 items-center gap-4 mb-3">
-              <div className="text-center">
-                <motion.p
-                  layoutId={`home-team-${match.id}-${id}`}
-                  className="font-semibold text-gray-800 dark:text-gray-200 text-sm"
-                >
+              <div className="text-center flex flex-col items-center">
+                <img src={logos[match.homeTeam]} alt="logo home" className="w-6 h-6 mb-1 object-contain" />
+                <motion.p layoutId={`home-team-${match.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 text-sm">
                   {match.homeTeam}
                 </motion.p>
                 <Button variant="outline" size="sm" className="mt-1 text-xs">
                   {match.odds.home}
                 </Button>
               </div>
-              
+
               <div className="text-center">
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">VS</p>
                 <Button variant="outline" size="sm" className="text-xs">
                   {match.odds.draw}
                 </Button>
               </div>
-              
-              <div className="text-center">
-                <motion.p
-                  layoutId={`away-team-${match.id}-${id}`}
-                  className="font-semibold text-gray-800 dark:text-gray-200 text-sm"
-                >
+
+              <div className="text-center flex flex-col items-center">
+                <img src={logos[match.awayTeam]} alt="logo away" className="w-6 h-6 mb-1 object-contain" />
+                <motion.p layoutId={`away-team-${match.id}-${id}`} className="font-semibold text-gray-800 dark:text-gray-200 text-sm">
                   {match.awayTeam}
                 </motion.p>
                 <Button variant="outline" size="sm" className="mt-1 text-xs">

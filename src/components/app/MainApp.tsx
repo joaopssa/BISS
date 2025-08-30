@@ -17,7 +17,7 @@ import { FinancialBalanceScreen } from './FinancialBalanceScreen';
 import { BettingHistoryScreen } from './BettingHistoryScreen';
 import { FriendsBetsScreen } from './FriendsBetsScreen';
 import { ProfileRankingScreen } from './ProfileRankingScreen';
-import { Home, DollarSign, History, Users, User, Rocket } from 'lucide-react'; // Adicionei o Rocket como exemplo da conversa anterior
+import { Home, DollarSign, History, Users, User } from 'lucide-react';
 
 export type AppScreen = 'home' | 'balance' | 'history' | 'friends' | 'profile';
 
@@ -49,13 +49,12 @@ export const MainApp: React.FC = () => {
           <Sidebar collapsible="icon" className="hidden md:flex">
             <SidebarContent>
               <SidebarHeader>
-                {/* Lembre-se que você pode alterar o logo aqui */}
-                <img
-                  src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png"
-                  alt="Logo do App"
-                  className="h-10 w-10 object-contain transition-all duration-300"
-                />
-              </SidebarHeader>
+  <img
+  src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png"
+  alt="Logo do App"
+  className="h-10 w-10 object-contain transition-all duration-300"
+/>
+</SidebarHeader>
 
               <SidebarMenu>
                 <SidebarMenuItem>
@@ -108,10 +107,9 @@ export const MainApp: React.FC = () => {
           </Sidebar>
 
           {/* Conteúdo principal */}
-          <SidebarInset className="flex-1 bg-gray-50 dark:bg-neutral-950 pb-24 md:pb-0">
+          <SidebarInset className="bg-gray-50 dark:bg-neutral-950 pb-24">
             <div className="p-4">{renderScreen()}</div>
 
-            {/* Navegação mobile (só aparece em telas menores) */}
             <div className="md:hidden">
               <BottomNavigation
                 currentScreen={currentScreen}
@@ -122,5 +120,5 @@ export const MainApp: React.FC = () => {
         </div>
       </SidebarProvider>
     </ThemeProvider>
-  );
+  );
 };
