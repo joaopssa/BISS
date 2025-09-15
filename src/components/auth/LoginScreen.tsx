@@ -31,16 +31,14 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
       
       auth.login(token, user);
       
-      toast({
-        title: "Login bem-sucedido!",
-        description: `Bem-vindo de volta, ${user.name}!`,
-      });
+      // REMOVIDO: Bloco do toast de sucesso
       
-      navigate('/'); // Isto DEVE redirecionar. Vamos garantir que o resto do código permita isso.
+      window.location.href = '/';
 
     } catch (err: any) {
        const message = err.response?.data?.message || "Ocorreu um erro no login.";
        setError(message);
+       // O toast de erro foi mantido
        toast({
           title: "Erro no Login",
           description: message,

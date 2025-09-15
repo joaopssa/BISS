@@ -33,34 +33,26 @@ export const HomeScreen: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       
-      {/* Top Bar com "Em Alta" e perfil resumido */}
-<div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
-  {/* Navegação principal */}
-  <div className="flex flex-wrap items-center gap-4">
-    <Button variant="ghost">Apostas Esportivas</Button>
-    <Button variant="ghost">Apostas Ao Vivo</Button>
-    <Button variant="ghost">Bilhetes</Button>
-    <Button variant="ghost">Em Alta</Button>
-    <input
-      type="text"
-      placeholder="Encontre aqui seu jogo"
-      className="w-64 h-10 px-3 py-2 text-sm font-medium text-white placeholder-white bg-[#014a8f] border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
-    />
-  </div>
+      {/* --- A ESTRUTURA DESTE CABEÇALHO FOI AJUSTADA --- */}
+      <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
+        
+        {/* Bloco 1: Botões de Navegação (Esquerda) */}
+        <div className="flex flex-wrap items-center gap-4">
+          <Button variant="ghost">Apostas Esportivas</Button>
+          <Button variant="ghost">Apostas Ao Vivo</Button>
+          <Button variant="ghost">Bilhetes</Button>
+          <Button variant="ghost">Em Alta</Button>
+        </div>
 
-  {/* Avatar + Info do perfil */}
-  <div className="flex items-center gap-4 mt-2 sm:mt-0">
-    <div className="text-right text-sm leading-4 hidden sm:block">
-      <p className="text-green-400 font-semibold">61.7% acerto</p>
-      <p className="text-orange-400 font-semibold">Sequência 4</p>
-      <p className="text-yellow-300 font-bold">2580 pts</p>
-    </div>
-    <Avatar>
-      <AvatarImage src="/usuario.jpg" alt="Usuário" />
-      <AvatarFallback className="text-black">US</AvatarFallback>
-    </Avatar>
-  </div>
-</div>
+        {/* Bloco 2: Barra de Busca (Direita) */}
+        <div className="mt-2 sm:mt-0">
+          <input
+            type="text"
+            placeholder="Encontre aqui seu jogo"
+            className="w-64 h-10 px-3 py-2 text-sm font-medium text-white placeholder-white bg-[#014a8f] border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
+          />
+        </div>
+      </div>
 
 
       {/* Conteúdo principal */}

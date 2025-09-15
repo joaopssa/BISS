@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-// --- (NOVA IMPORTAÇÃO) Adicionando os ícones de olho e componentes do formulário ---
 import { Mail, Lock, User, Calendar, Eye, EyeOff } from 'lucide-react';
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-// --- FIM DA NOVA IMPORTAÇÃO ---
-import { useToast } from "@/components/ui/use-toast";
+// REMOVIDO: import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from 'react-router-dom';
 
 interface RegisterScreenProps {
@@ -19,23 +17,18 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
   const [email, setEmail] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
   const [senha, setSenha] = useState('');
-  
-  // --- NOVOS ESTADOS ---
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [termosAceitos, setTermosAceitos] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  // --- FIM DOS NOVOS ESTADOS ---
-
   const [error, setError] = useState('');
-  const { toast } = useToast();
+  // REMOVIDO: const { toast } = useToast();
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
 
-    // --- LÓGICA DE VALIDAÇÃO ATUALIZADA ---
     if (!nomeCompleto || !email || !dataNascimento || !senha || !confirmarSenha) {
         setError('Todos os campos são obrigatórios.');
         return;
@@ -50,16 +43,12 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
         setError('Você deve aceitar os termos de consentimento para continuar.');
         return;
     }
-    // --- FIM DA LÓGICA DE VALIDAÇÃO ---
 
     const registrationData = { nomeCompleto, email, dataNascimento, senha };
     localStorage.setItem('registrationData', JSON.stringify(registrationData));
-
-    toast({
-      title: "Quase lá!",
-      description: "Agora, personalize sua experiência para continuarmos.",
-    });
     
+    // REMOVIDO: Bloco do toast de "Quase lá!"
+
     navigate('/profile-setup');
   };
 
@@ -85,7 +74,6 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
               <Input type="date" placeholder="Data de Nascimento" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} className="pl-10" required />
             </div>
             
-            {/* --- CAMPO DE SENHA COM OLHO --- */}
             <div className="relative">
               <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input 
@@ -105,7 +93,6 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
               </button>
             </div>
             
-            {/* --- NOVO CAMPO DE CONFIRMAR SENHA COM OLHO --- */}
             <div className="relative">
               <Lock className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input 
@@ -125,7 +112,6 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
               </button>
             </div>
 
-            {/* --- NOVO CAMPO DE TERMOS DE CONSENTIMENTO --- */}
             <div className="items-top flex space-x-2 pt-2">
               <Checkbox id="terms1" checked={termosAceitos} onCheckedChange={(checked) => setTermosAceitos(checked as boolean)} />
               <div className="grid gap-1.5 leading-none">

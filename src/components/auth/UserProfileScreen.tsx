@@ -26,7 +26,6 @@ export const UserProfileScreen: React.FC = () => {
     betOnlyFavoriteLeagues: false,
     oddsRange: [1.5, 3.0] as [number, number],
     investmentLimit: 'abaixo-100',
-    // A linha 'investmentAwareness' foi removida daqui.
   });
 
   const [teamSearchTerm, setTeamSearchTerm] = useState('');
@@ -105,8 +104,7 @@ export const UserProfileScreen: React.FC = () => {
         setFormError("Você deve selecionar pelo menos uma liga favorita."); 
         return; 
     }
-    // A validação do termo de consentimento foi removida daqui.
-
+    
     const storedData = localStorage.getItem('registrationData');
     if (!storedData) {
         setFormError("Dados de registro não encontrados. Por favor, volte e comece o cadastro novamente.");
@@ -128,10 +126,7 @@ export const UserProfileScreen: React.FC = () => {
     try {
       await api.post('/auth/register-complete', completeUserData);
       
-      toast({
-        title: "Cadastro Concluído!",
-        description: "Sua conta foi criada com sucesso. Agora você pode fazer o login.",
-      });
+      // REMOVIDO: Bloco do toast de "Cadastro Concluído!"
       
       localStorage.removeItem('registrationData');
       navigate('/login');
@@ -139,6 +134,7 @@ export const UserProfileScreen: React.FC = () => {
     } catch (err: any) {
       const message = err.response?.data?.message || "Não foi possível concluir seu cadastro.";
       setFormError(message);
+      // O toast de erro foi mantido
       toast({
         title: "Erro no Cadastro",
         description: message,
@@ -219,9 +215,6 @@ export const UserProfileScreen: React.FC = () => {
                     <div className="flex items-center space-x-2"><RadioGroupItem value="acima-500" id="r4" /><Label htmlFor="r4">Acima de R$500</Label></div>
                 </RadioGroup>
               </div>
-              
-              {/* O bloco do checkbox/termo de consentimento foi removido daqui. */}
-              
             </div>
 
             {formError && (<p className="text-red-500 text-sm text-center">{formError}</p>)}
