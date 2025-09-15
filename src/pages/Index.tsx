@@ -1,73 +1,36 @@
-
-import React, { useState } from 'react';
-import { LoginScreen } from '@/components/auth/LoginScreen';
-import { RegisterScreen } from '@/components/auth/RegisterScreen';
-import { UserProfileScreen } from '@/components/auth/UserProfileScreen';
-import { MainApp } from '@/components/app/MainApp';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-
-export type AuthFlow = 'login' | 'register' | 'profile' | 'app';
+import { MainApp } from "@/components/app/MainApp";
+import { useAuth } from "@/contexts/AuthContexts";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
-  const [currentScreen, setCurrentScreen] = useState<AuthFlow>('login');
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
 
-  const handleLogin = () => {
-    setIsAuthenticated(true);
-    setCurrentScreen('app');
+  const handleLogout = () => {
+    logout();
+    // A navegação para /login é opcional, pois o ProtectedRoute já fará isso.
+    // Mas é uma boa prática para garantir o redirecionamento imediato.
+    navigate('/login'); 
   };
-
-  const handleRegister = () => {
-    setCurrentScreen('profile');
-  };
-
-  const handleProfileComplete = () => {
-    setIsAuthenticated(true);
-    setCurrentScreen('app');
-  };
-
-  const renderScreen = () => {
-    switch (currentScreen) {
-      case 'login':
-        return (
-          <LoginScreen 
-            onLogin={handleLogin}
-            onGoToRegister={() => setCurrentScreen('register')}
-          />
-        );
-      case 'register':
-        return (
-          <RegisterScreen 
-            onRegister={handleRegister}
-            onGoToLogin={() => setCurrentScreen('login')}
-          />
-        );
-      case 'profile':
-        return (
-          <UserProfileScreen onComplete={handleProfileComplete} />
-        );
-      case 'app':
-        return <MainApp />;
-      default:
-        return (
-          <LoginScreen 
-            onLogin={handleLogin}
-            onGoToRegister={() => setCurrentScreen('register')}
-          />
-        );
-    }
-  };
-
-  if (currentScreen === 'app') {
-    return renderScreen();
-  }
 
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 dark:from-neutral-900 dark:to-neutral-800">
-        {renderScreen()}
-      </div>
-    </ThemeProvider>
+    <div>
+      {/* Botão de Logout para teste (opcional, mas recomendado) */}
+      <header className="absolute top-4 right-4 z-50">
+        <div className="flex items-center gap-4">
+          <span className="text-sm text-gray-600 hidden sm:inline">
+            Olá, {user?.name || 'Usuário'}
+          </span>
+          <Button variant="outline" onClick={handleLogout}>
+            Sair
+          </Button>
+        </div>
+      </header>
+      
+      {/* Aqui é a mágica: renderizamos o seu aplicativo principal */}
+      <MainApp />
+    </div>
   );
 };
 

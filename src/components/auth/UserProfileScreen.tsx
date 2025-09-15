@@ -8,13 +8,14 @@ import { Heart, Trophy, Users, Shield, DollarSign, Search, X, Building } from 'l
 import { Slider } from '@/components/ui/slider';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
+import api from '@/services/api';
+import { useToast } from "@/components/ui/use-toast";
+import { useNavigate } from 'react-router-dom';
 
+export const UserProfileScreen: React.FC = () => {
+  const { toast } = useToast();
+  const navigate = useNavigate();
 
-interface UserProfileScreenProps {
-  onComplete: () => void;
-}
-
-export const UserProfileScreen: React.FC<UserProfileScreenProps> = ({ onComplete }) => {
   const [profile, setProfile] = useState({
     favoriteTeam: '',
     favoriteLeagues: [] as string[],
@@ -25,7 +26,7 @@ export const UserProfileScreen: React.FC<UserProfileScreenProps> = ({ onComplete
     betOnlyFavoriteLeagues: false,
     oddsRange: [1.5, 3.0] as [number, number],
     investmentLimit: 'abaixo-100',
-    investmentAwareness: false,
+    // A linha 'investmentAwareness' foi removida daqui.
   });
 
   const [teamSearchTerm, setTeamSearchTerm] = useState('');
@@ -96,13 +97,54 @@ export const UserProfileScreen: React.FC<UserProfileScreenProps> = ({ onComplete
   const removePlayer = (playerName: string, e: React.MouseEvent) => { e.stopPropagation(); setProfile({...profile, favoritePlayers: profile.favoritePlayers.filter(name => name !== playerName)}); };
   const removeBettingHouse = (houseName: string, e: React.MouseEvent) => { e.stopPropagation(); setProfile({...profile, favoriteBettingHouses: profile.favoriteBettingHouses.filter(name => name !== houseName)}); };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError(null);
-    if (profile.betOnlyFavoriteLeagues && profile.favoriteLeagues.length === 0) { setFormError("Você deve selecionar pelo menos uma liga favorita."); return; }
-    if (profile.investmentLimit === 'acima-500' && !profile.investmentAwareness) { setFormError("Você deve concordar com o termo de responsabilidade para continuar."); return; }
-    console.log("Perfil Salvo:", profile);
-    onComplete();
+
+    if (profile.betOnlyFavoriteLeagues && profile.favoriteLeagues.length === 0) { 
+        setFormError("Você deve selecionar pelo menos uma liga favorita."); 
+        return; 
+    }
+    // A validação do termo de consentimento foi removida daqui.
+
+    const storedData = localStorage.getItem('registrationData');
+    if (!storedData) {
+        setFormError("Dados de registro não encontrados. Por favor, volte e comece o cadastro novamente.");
+        toast({
+          title: "Erro",
+          description: "Dados de registro não encontrados. Tente novamente.",
+          variant: "destructive",
+        });
+        navigate('/register');
+        return;
+    }
+    const registrationData = JSON.parse(storedData);
+
+    const completeUserData = {
+        ...registrationData,
+        ...profile
+    };
+
+    try {
+      await api.post('/auth/register-complete', completeUserData);
+      
+      toast({
+        title: "Cadastro Concluído!",
+        description: "Sua conta foi criada com sucesso. Agora você pode fazer o login.",
+      });
+      
+      localStorage.removeItem('registrationData');
+      navigate('/login');
+      
+    } catch (err: any) {
+      const message = err.response?.data?.message || "Não foi possível concluir seu cadastro.";
+      setFormError(message);
+      toast({
+        title: "Erro no Cadastro",
+        description: message,
+        variant: "destructive",
+      });
+    }
   };
 
   const clearTeamSearch = () => { setTeamSearchTerm(''); setProfile({...profile, favoriteTeam: ''}); setShowTeamSuggestions(false); };
@@ -168,20 +210,22 @@ export const UserProfileScreen: React.FC<UserProfileScreenProps> = ({ onComplete
               <div className="flex items-center justify-between"><div className="space-y-1"><Label>Controle de Apostas</Label><p className="text-sm text-gray-600">Ativar alertas e limites</p></div><Switch checked={profile.bettingControl} onCheckedChange={(checked) => setProfile({...profile, bettingControl: checked})}/></div>
               <div className="flex items-center justify-between"><div className="space-y-1"><Label className="flex items-center gap-2"><DollarSign className="w-4 h-4 text-green-500" />Monitoramento Financeiro</Label><p className="text-sm text-gray-600">Controle de bankroll automático</p></div><Switch checked={profile.financialMonitoring} onCheckedChange={(checked) => setProfile({...profile, financialMonitoring: checked})}/></div>
               <div className="space-y-3"><div className="flex justify-between items-center"><Label>Intervalo de odds para apostar</Label><span className="text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded">{profile.oddsRange[0].toFixed(2)} - {profile.oddsRange[1].toFixed(2)}</span></div><Slider value={profile.oddsRange} onValueChange={(newRange: [number, number]) => setProfile({ ...profile, oddsRange: newRange })} max={10} min={1.01} step={0.1}/></div>
-              <div className="space-y-3"><Label>Limite de Investimento por mês</Label><RadioGroup value={profile.investmentLimit} onValueChange={(value) => setProfile({ ...profile, investmentLimit: value, investmentAwareness: false })}><div className="flex items-center space-x-2"><RadioGroupItem value="abaixo-100" id="r1" /><Label htmlFor="r1">Abaixo de R$100</Label></div><div className="flex items-center space-x-2"><RadioGroupItem value="100-200" id="r2" /><Label htmlFor="r2">Entre R$100 e R$200</Label></div><div className="flex items-center space-x-2"><RadioGroupItem value="200-500" id="r3" /><Label htmlFor="r3">Entre R$200 e R$500</Label></div><div className="flex items-center space-x-2"><RadioGroupItem value="acima-500" id="r4" /><Label htmlFor="r4">Acima de R$500</Label></div></RadioGroup></div>
+              <div className="space-y-3">
+                <Label>Limite de Investimento por mês</Label>
+                <RadioGroup value={profile.investmentLimit} onValueChange={(value) => setProfile({ ...profile, investmentLimit: value })}>
+                    <div className="flex items-center space-x-2"><RadioGroupItem value="abaixo-100" id="r1" /><Label htmlFor="r1">Abaixo de R$100</Label></div>
+                    <div className="flex items-center space-x-2"><RadioGroupItem value="100-200" id="r2" /><Label htmlFor="r2">Entre R$100 e R$200</Label></div>
+                    <div className="flex items-center space-x-2"><RadioGroupItem value="200-500" id="r3" /><Label htmlFor="r3">Entre R$200 e R$500</Label></div>
+                    <div className="flex items-center space-x-2"><RadioGroupItem value="acima-500" id="r4" /><Label htmlFor="r4">Acima de R$500</Label></div>
+                </RadioGroup>
+              </div>
               
-              {profile.investmentLimit === 'acima-500' && (
-                <div className="flex items-start space-x-3 pl-2 pt-2 border-l-2 border-yellow-400">
-                    <Checkbox id="awareness-check" checked={profile.investmentAwareness} onCheckedChange={(checked) => setProfile({ ...profile, investmentAwareness: !!checked })} className="mt-1"/>
-                    <Label htmlFor="awareness-check" className="text-sm text-gray-700 leading-relaxed cursor-pointer">
-                        Declaro que sou maior de 18 anos e entendo que apostas esportivas envolvem riscos financeiros. Reconheço que esta ferramenta serve como um auxílio para análise e não garante lucros. Comprometo-me a jogar com responsabilidade.
-                    </Label>
-                </div>
-              )}
+              {/* O bloco do checkbox/termo de consentimento foi removido daqui. */}
+              
             </div>
 
             {formError && (<p className="text-red-500 text-sm text-center">{formError}</p>)}
-            <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 mt-6">Concluir</Button>
+            <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 mt-6">Concluir Cadastro</Button>
           </form>
         </CardContent>
       </Card>
