@@ -113,7 +113,12 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
               Entrar
             </Button>
 
-            <Button type="button" variant="ghost" className="w-full text-blue-600">
+           <Button
+              type="button"
+              variant="ghost"
+              className="w-full text-blue-600"
+              onClick={() => navigate('/forgot-password')}
+              >
               Esqueci a senha
             </Button>
 
