@@ -1,21 +1,17 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { ExpandableMatchCard } from "@/components/ui/expandable-match-card";
-import { SportSelector } from "./SportSelector";
-import { matchesData } from "@/data/matchData";
-import { fetchTeamLogo } from "./services/teamLogoService";
-import { Button } from "@/components/ui/button";
+"use client";
 
-// Se tiver types no seu projeto, ajuste esse tipo ao seu schema real
-type Match = {
-  id: string | number;
-  homeTeam?: string;
-  awayTeam?: string;
+import React, { useEffect, useMemo, useState } from "react";
+import ExpandableMatchCard from "../ui/expandable-match-card";
+import { SportSelector } from "./SportSelector";
+import LiveTab from "./LiveTab";
+import { useUpcomingData } from "../../data/matchData";
+import type { UIMatch } from "../../data/matchData";
+import { fetchTeamLogo } from "./services/teamLogoService";
+import { Button } from "../ui/button";
+
+type UIMatchWithMeta = UIMatch & {
   sport?: string;
-  status?: string;        // "live", "finished", etc.
-  isLive?: boolean;       // algumas fontes usam boolean
-  isFavorite?: boolean;   // flag local ou vinda da API
-  popularity?: number;    // ranking/score para "Em Alta"
-  [key: string]: any;
+  popularity?: number;
 };
 
 type Ticket = {
@@ -28,42 +24,50 @@ type Ticket = {
 
 type TabKey = "favoritos" | "ao-vivo" | "em-alta" | "bilhetes";
 
+const PER_PAGE = 10;
+
 export const HomeScreen: React.FC = () => {
   const [selectedSport, setSelectedSport] = useState("futebol");
   const [logos, setLogos] = useState<Record<string, string>>({});
-  // 👇 Começa na aba de Favoritos
   const [tab, setTab] = useState<TabKey>("favoritos");
   const [query, setQuery] = useState("");
-  // Placeholder de bilhetes (substitua por dados reais quando integrar)
   const [tickets] = useState<Ticket[]>([]);
+  const [page, setPage] = useState(1);
 
-  // Busca logos uma única vez
+  // resetar página ao trocar aba ou filtros
   useEffect(() => {
-    const fetchLogos = async () => {
-      const uniqueTeams = new Set<string>();
-      (matchesData as Match[]).forEach((m) => {
-        if (m.homeTeam) uniqueTeams.add(m.homeTeam.trim());
-        if (m.awayTeam) uniqueTeams.add(m.awayTeam.trim());
+    setPage(1);
+  }, [tab, query, selectedSport]);
+
+  const {
+    matches: upcoming,
+    loading: loadingUpcoming,
+    error: errorUpcoming,
+  } = useUpcomingData();
+
+  // buscar logos
+  useEffect(() => {
+    const run = async () => {
+      if (!upcoming?.length) return;
+      const unique = new Set<string>();
+      (upcoming as UIMatch[]).forEach((m) => {
+        if (m.homeTeam) unique.add(m.homeTeam.trim());
+        if (m.awayTeam) unique.add(m.awayTeam.trim());
       });
-
-      const logoEntries = await Promise.all(
-        [...uniqueTeams].map(async (team) => {
-          const logo = await fetchTeamLogo(team);
-          return [team, logo] as const;
-        })
+      const entries = await Promise.all(
+        [...unique].map(async (team) => [team, await fetchTeamLogo(team)] as const)
       );
-
-      setLogos(Object.fromEntries(logoEntries));
+      setLogos((prev) => ({ ...prev, ...Object.fromEntries(entries) }));
     };
+    run();
+  }, [upcoming]);
 
-    fetchLogos();
-  }, []);
-
-  // Filtro básico por esporte / busca
-  const filtered = useMemo(() => {
+  // filtro por esporte e busca
+  const filtered: UIMatchWithMeta[] = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return (matchesData as Match[]).filter((m) => {
-      const sportOk = !selectedSport || (m.sport ?? "futebol") === selectedSport;
+    return (upcoming as UIMatchWithMeta[]).filter((m) => {
+      const sportOf = (m.sport ?? "futebol").toLowerCase();
+      const sportOk = !selectedSport || sportOf === selectedSport.toLowerCase();
       const textOk =
         !q ||
         [m.homeTeam, m.awayTeam]
@@ -71,51 +75,83 @@ export const HomeScreen: React.FC = () => {
           .some((t) => String(t).toLowerCase().includes(q));
       return sportOk && textOk;
     });
-  }, [query, selectedSport]);
+  }, [query, selectedSport, upcoming]);
 
-  // “Views” por aba
+  // paginação
+  function paginate<T>(arr: T[], pageNum: number, perPage: number) {
+    const start = (pageNum - 1) * perPage;
+    return arr.slice(start, start + perPage);
+  }
+
+  // views por aba
   const viewMatches = useMemo(() => {
     switch (tab) {
       case "favoritos": {
-        const favorites = filtered.filter((m) => m.isFavorite);
+        // até implementar favoritos de verdade, mostramos os próximos jogos filtrados
+        const upcomingList = filtered as UIMatchWithMeta[];
+        const totalPages = Math.max(1, Math.ceil(upcomingList.length / PER_PAGE));
+        const pageItems = paginate(upcomingList, page, PER_PAGE);
+
         return (
-          <Section title="Jogos Favoritos" subtitle="Seus jogos marcados como favoritos">
-            {favorites.length > 0 ? (
-              <ExpandableMatchCard matches={favorites} logos={logos} />
+          <Section title="Próximos Jogos" subtitle="Partidas que ainda não começaram">
+            {loadingUpcoming ? (
+              <EmptyState text="Carregando partidas…" />
+            ) : errorUpcoming ? (
+              <EmptyState text={`Erro: ${errorUpcoming}`} />
+            ) : upcomingList.length > 0 ? (
+              <>
+                <ExpandableMatchCard matches={pageItems} logos={logos} />
+                <Paginator
+                  page={page}
+                  totalPages={totalPages}
+                  onPrev={() => setPage((p) => Math.max(1, p - 1))}
+                  onNext={() => setPage((p) => Math.min(totalPages, p + 1))}
+                />
+              </>
             ) : (
-              <EmptyState text="Nenhum favorito ainda. Marque partidas como favoritas para vê-las aqui." />
+              <EmptyState text="Não há próximos jogos no momento." />
             )}
           </Section>
         );
       }
+
       case "ao-vivo": {
-        const live = filtered.filter(
-          (m) => m.isLive || String(m.status || "").toLowerCase() === "live"
-        );
         return (
           <Section title="Jogos Ao Vivo" subtitle="Acompanhe em tempo real">
-            {live.length > 0 ? (
-              <ExpandableMatchCard matches={live} logos={logos} />
-            ) : (
-              <EmptyState text="Nenhuma partida ao vivo no momento." />
-            )}
+            <LiveTab logos={logos} setLogos={setLogos} fetchTeamLogo={fetchTeamLogo} />
           </Section>
         );
       }
+
       case "em-alta": {
-        const trending = [...filtered]
-          .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))
-          .slice(0, 10);
+        const sorted: UIMatchWithMeta[] = [...filtered].sort(
+          (a, b) => (b.popularity ?? 0) - (a.popularity ?? 0)
+        );
+        const totalPages = Math.max(1, Math.ceil(sorted.length / PER_PAGE));
+        const pageItems = paginate(sorted, page, PER_PAGE);
         return (
           <Section title="Em Alta" subtitle="Partidas com maior interesse">
-            {trending.length > 0 ? (
-              <ExpandableMatchCard matches={trending} logos={logos} />
+            {loadingUpcoming ? (
+              <EmptyState text="Carregando partidas…" />
+            ) : errorUpcoming ? (
+              <EmptyState text={`Erro: ${errorUpcoming}`} />
+            ) : sorted.length > 0 ? (
+              <>
+                <ExpandableMatchCard matches={pageItems} logos={logos} />
+                <Paginator
+                  page={page}
+                  totalPages={totalPages}
+                  onPrev={() => setPage((p) => Math.max(1, p - 1))}
+                  onNext={() => setPage((p) => Math.min(totalPages, p + 1))}
+                />
+              </>
             ) : (
               <EmptyState text="Sem partidas em alta no momento." />
             )}
           </Section>
         );
       }
+
       case "bilhetes": {
         return (
           <Section title="Bilhetes" subtitle="Gerencie seus slips de apostas">
@@ -158,24 +194,22 @@ export const HomeScreen: React.FC = () => {
           </Section>
         );
       }
+
       default:
         return null;
     }
-  }, [tab, filtered, logos, tickets]);
+  }, [tab, filtered, logos, tickets, loadingUpcoming, errorUpcoming, page]);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
-      {/* Topo com navegação (mesma cara, mas agora troca o estado de aba) */}
+      {/* topo */}
       <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
-        {/* Abas */}
         <div className="flex flex-wrap items-center gap-2">
           <TopTab label="Jogos Favoritos" active={tab === "favoritos"} onClick={() => setTab("favoritos")} />
-          <TopTab label="Jogos Ao Vivo"   active={tab === "ao-vivo"}   onClick={() => setTab("ao-vivo")} />
-          <TopTab label="Em Alta"         active={tab === "em-alta"}   onClick={() => setTab("em-alta")} />
-          <TopTab label="Bilhetes"        active={tab === "bilhetes"}  onClick={() => setTab("bilhetes")} />
+          <TopTab label="Jogos Ao Vivo" active={tab === "ao-vivo"} onClick={() => setTab("ao-vivo")} />
+          <TopTab label="Em Alta" active={tab === "em-alta"} onClick={() => setTab("em-alta")} />
+          <TopTab label="Bilhetes" active={tab === "bilhetes"} onClick={() => setTab("bilhetes")} />
         </div>
-
-        {/* Busca */}
         <div className="mt-2 sm:mt-0">
           <input
             type="text"
@@ -187,10 +221,9 @@ export const HomeScreen: React.FC = () => {
         </div>
       </div>
 
-      {/* Conteúdo principal comum a todas as abas (título, seletor, etc.) */}
+      {/* conteúdo */}
       <div className="p-4 space-y-6">
         <div>
-          {/* Título dinâmico por aba (além do título da seção) */}
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
             Partidas do Dia
           </h1>
@@ -199,19 +232,15 @@ export const HomeScreen: React.FC = () => {
           </p>
         </div>
 
-        <SportSelector
-          selectedSport={selectedSport}
-          onSportChange={setSelectedSport}
-        />
+        <SportSelector selectedSport={selectedSport} onSportChange={setSelectedSport} />
 
-        {/* Render da view da aba atual */}
         {viewMatches}
       </div>
     </div>
   );
 };
 
-/* -------------------- Componentes auxiliares locais -------------------- */
+/* -------------------- Auxiliares -------------------- */
 
 function TopTab({
   label,
@@ -268,6 +297,33 @@ function EmptyState({
           <Button onClick={onCta}>{ctaLabel}</Button>
         </div>
       )}
+    </div>
+  );
+}
+
+function Paginator({
+  page,
+  totalPages,
+  onPrev,
+  onNext,
+}: {
+  page: number;
+  totalPages: number;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  if (totalPages <= 1) return null;
+  return (
+    <div className="mt-4 flex items-center justify-center gap-2">
+      <Button variant="outline" disabled={page <= 1} onClick={onPrev}>
+        Anterior
+      </Button>
+      <span className="text-sm text-gray-600 dark:text-gray-300">
+        Página {page} de {totalPages}
+      </span>
+      <Button variant="outline" disabled={page >= totalPages} onClick={onNext}>
+        Próxima
+      </Button>
     </div>
   );
 }
