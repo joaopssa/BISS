@@ -1,17 +1,27 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
-import ExpandableMatchCard from "../ui/expandable-match-card";
-import { SportSelector } from "./SportSelector";
-import LiveTab from "./LiveTab";
-import { useUpcomingData } from "../../data/matchData";
-import type { UIMatch } from "../../data/matchData";
-import { fetchTeamLogo } from "./services/teamLogoService";
-import { Button } from "../ui/button";
+import ExpandableMatchCard from "@/components/ui/expandable-match-card";
+import LiveTab from "@/components/app/LiveTab";
+import { SportSelector } from "@/components/app/SportSelector";
+import { useUpcomingData } from "@/data/matchData";
+import { fetchTeamLogo } from "@/components/app/services/teamLogoService";
+import { Button } from "@/components/ui/button";
 
-type UIMatchWithMeta = UIMatch & {
+type UIMatch = {
+  id: number | string;
+  homeTeam: string;
+  awayTeam: string;
+  time: string;
+  date: string;
+  competition: string;
+  odds: { home: number; draw: number; away: number };
+  isFavorite?: boolean;
   sport?: string;
   popularity?: number;
+  live?: { status?: string; minute?: number; score?: { home?: number; away?: number } };
+  logos?: { home?: string; away?: string };
+  _dt?: string | Date;
 };
 
 type Ticket = {
@@ -22,35 +32,22 @@ type Ticket = {
   selections: Array<{ match: string; market: string; pick: string; odd: number }>;
 };
 
-type TabKey = "favoritos" | "ao-vivo" | "em-alta" | "bilhetes";
-
-const PER_PAGE = 10;
-
 export const HomeScreen: React.FC = () => {
   const [selectedSport, setSelectedSport] = useState("futebol");
   const [logos, setLogos] = useState<Record<string, string>>({});
-  const [tab, setTab] = useState<TabKey>("favoritos");
+  const [tab, setTab] = useState<"favoritos" | "ao-vivo" | "em-alta" | "bilhetes">("favoritos");
   const [query, setQuery] = useState("");
   const [tickets] = useState<Ticket[]>([]);
-  const [page, setPage] = useState(1);
 
-  // resetar página ao trocar aba ou filtros
+  // 🔸 Busca jogos do dia (sem filtro adicional de “não iniciados”)
+  const { matches: upcoming, loading: loadingUpcoming, error: errorUpcoming } = useUpcomingData();
+
+  // Carrega logos para times listados
   useEffect(() => {
-    setPage(1);
-  }, [tab, query, selectedSport]);
-
-  const {
-    matches: upcoming,
-    loading: loadingUpcoming,
-    error: errorUpcoming,
-  } = useUpcomingData();
-
-  // buscar logos
-  useEffect(() => {
-    const run = async () => {
+    (async () => {
       if (!upcoming?.length) return;
       const unique = new Set<string>();
-      (upcoming as UIMatch[]).forEach((m) => {
+      upcoming.forEach((m) => {
         if (m.homeTeam) unique.add(m.homeTeam.trim());
         if (m.awayTeam) unique.add(m.awayTeam.trim());
       });
@@ -58,16 +55,16 @@ export const HomeScreen: React.FC = () => {
         [...unique].map(async (team) => [team, await fetchTeamLogo(team)] as const)
       );
       setLogos((prev) => ({ ...prev, ...Object.fromEntries(entries) }));
-    };
-    run();
+    })();
   }, [upcoming]);
 
-  // filtro por esporte e busca
-  const filtered: UIMatchWithMeta[] = useMemo(() => {
+  // filtro por esporte + busca (NÃO exclui partidas já iniciadas/finalizadas)
+  const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return (upcoming as UIMatchWithMeta[]).filter((m) => {
-      const sportOf = (m.sport ?? "futebol").toLowerCase();
-      const sportOk = !selectedSport || sportOf === selectedSport.toLowerCase();
+    const list = (upcoming ?? []).slice(); // cópia
+
+    return list.filter((m) => {
+      const sportOk = !selectedSport || (m.sport ?? "futebol") === selectedSport;
       const textOk =
         !q ||
         [m.homeTeam, m.awayTeam]
@@ -77,39 +74,20 @@ export const HomeScreen: React.FC = () => {
     });
   }, [query, selectedSport, upcoming]);
 
-  // paginação
-  function paginate<T>(arr: T[], pageNum: number, perPage: number) {
-    const start = (pageNum - 1) * perPage;
-    return arr.slice(start, start + perPage);
-  }
-
-  // views por aba
   const viewMatches = useMemo(() => {
     switch (tab) {
       case "favoritos": {
-        // até implementar favoritos de verdade, mostramos os próximos jogos filtrados
-        const upcomingList = filtered as UIMatchWithMeta[];
-        const totalPages = Math.max(1, Math.ceil(upcomingList.length / PER_PAGE));
-        const pageItems = paginate(upcomingList, page, PER_PAGE);
-
+        const favorites = filtered.filter((m) => m.isFavorite);
         return (
-          <Section title="Próximos Jogos" subtitle="Partidas que ainda não começaram">
+          <Section title="Jogos Favoritos" subtitle="Seus jogos marcados como favoritos">
             {loadingUpcoming ? (
               <EmptyState text="Carregando partidas…" />
             ) : errorUpcoming ? (
               <EmptyState text={`Erro: ${errorUpcoming}`} />
-            ) : upcomingList.length > 0 ? (
-              <>
-                <ExpandableMatchCard matches={pageItems} logos={logos} />
-                <Paginator
-                  page={page}
-                  totalPages={totalPages}
-                  onPrev={() => setPage((p) => Math.max(1, p - 1))}
-                  onNext={() => setPage((p) => Math.min(totalPages, p + 1))}
-                />
-              </>
+            ) : favorites.length > 0 ? (
+              <ExpandableMatchCard matches={favorites as any} logos={logos} />
             ) : (
-              <EmptyState text="Não há próximos jogos no momento." />
+              <EmptyState text="Nenhum favorito ainda. Marque partidas como favoritas para vê-las aqui." />
             )}
           </Section>
         );
@@ -124,27 +102,17 @@ export const HomeScreen: React.FC = () => {
       }
 
       case "em-alta": {
-        const sorted: UIMatchWithMeta[] = [...filtered].sort(
-          (a, b) => (b.popularity ?? 0) - (a.popularity ?? 0)
-        );
-        const totalPages = Math.max(1, Math.ceil(sorted.length / PER_PAGE));
-        const pageItems = paginate(sorted, page, PER_PAGE);
+        const trending = [...filtered]
+          .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))
+          .slice(0, 10);
         return (
           <Section title="Em Alta" subtitle="Partidas com maior interesse">
             {loadingUpcoming ? (
               <EmptyState text="Carregando partidas…" />
             ) : errorUpcoming ? (
               <EmptyState text={`Erro: ${errorUpcoming}`} />
-            ) : sorted.length > 0 ? (
-              <>
-                <ExpandableMatchCard matches={pageItems} logos={logos} />
-                <Paginator
-                  page={page}
-                  totalPages={totalPages}
-                  onPrev={() => setPage((p) => Math.max(1, p - 1))}
-                  onNext={() => setPage((p) => Math.min(totalPages, p + 1))}
-                />
-              </>
+            ) : trending.length > 0 ? (
+              <ExpandableMatchCard matches={trending as any} logos={logos} />
             ) : (
               <EmptyState text="Sem partidas em alta no momento." />
             )}
@@ -164,15 +132,10 @@ export const HomeScreen: React.FC = () => {
             ) : (
               <ul className="space-y-4">
                 {tickets.map((t) => (
-                  <li
-                    key={t.id}
-                    className="rounded-xl border bg-white dark:bg-neutral-900 p-4"
-                  >
+                  <li key={t.id} className="rounded-xl border bg-white dark:bg-neutral-900 p-4">
                     <div className="flex items-center justify-between">
                       <span className="font-semibold">Bilhete #{t.id}</span>
-                      <span className="text-sm text-gray-500">
-                        {new Date(t.createdAt).toLocaleString()}
-                      </span>
+                      <span className="text-sm text-gray-500">{new Date(t.createdAt).toLocaleString()}</span>
                     </div>
                     <div className="mt-2 text-sm">
                       Aposta: <b>R${t.stake.toFixed(2)}</b> • Retorno potencial:{" "}
@@ -198,11 +161,10 @@ export const HomeScreen: React.FC = () => {
       default:
         return null;
     }
-  }, [tab, filtered, logos, tickets, loadingUpcoming, errorUpcoming, page]);
+  }, [tab, filtered, logos, tickets, loadingUpcoming, errorUpcoming]);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
-      {/* topo */}
       <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
         <div className="flex flex-wrap items-center gap-2">
           <TopTab label="Jogos Favoritos" active={tab === "favoritos"} onClick={() => setTab("favoritos")} />
@@ -210,6 +172,7 @@ export const HomeScreen: React.FC = () => {
           <TopTab label="Em Alta" active={tab === "em-alta"} onClick={() => setTab("em-alta")} />
           <TopTab label="Bilhetes" active={tab === "bilhetes"} onClick={() => setTab("bilhetes")} />
         </div>
+
         <div className="mt-2 sm:mt-0">
           <input
             type="text"
@@ -221,15 +184,10 @@ export const HomeScreen: React.FC = () => {
         </div>
       </div>
 
-      {/* conteúdo */}
       <div className="p-4 space-y-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-            Partidas do Dia
-          </h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            IA analisou 47 partidas hoje
-          </p>
+          <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Partidas do Dia</h1>
+          <p className="text-sm text-gray-500 dark:text-gray-400">IA analisou 47 partidas hoje</p>
         </div>
 
         <SportSelector selectedSport={selectedSport} onSportChange={setSelectedSport} />
@@ -239,8 +197,6 @@ export const HomeScreen: React.FC = () => {
     </div>
   );
 };
-
-/* -------------------- Auxiliares -------------------- */
 
 function TopTab({
   label,
@@ -271,9 +227,7 @@ function Section({
     <section className="space-y-4">
       <div>
         <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>
-        {subtitle && (
-          <p className="text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>
-        )}
+        {subtitle && <p className="text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>}
       </div>
       {children}
     </section>
@@ -301,29 +255,4 @@ function EmptyState({
   );
 }
 
-function Paginator({
-  page,
-  totalPages,
-  onPrev,
-  onNext,
-}: {
-  page: number;
-  totalPages: number;
-  onPrev: () => void;
-  onNext: () => void;
-}) {
-  if (totalPages <= 1) return null;
-  return (
-    <div className="mt-4 flex items-center justify-center gap-2">
-      <Button variant="outline" disabled={page <= 1} onClick={onPrev}>
-        Anterior
-      </Button>
-      <span className="text-sm text-gray-600 dark:text-gray-300">
-        Página {page} de {totalPages}
-      </span>
-      <Button variant="outline" disabled={page >= totalPages} onClick={onNext}>
-        Próxima
-      </Button>
-    </div>
-  );
-}
+export default HomeScreen;

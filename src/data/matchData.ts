@@ -9,41 +9,32 @@ export type UIMatch = {
   date: string;
   competition: string;
   odds: { home: number; draw: number; away: number };
-  aiRecommendation: { type: string; confidence: number; suggestion: string; reasoning: string };
   isFavorite: boolean;
   sport?: string;
   popularity?: number;
   live?: { status?: string; minute?: number; score?: { home?: number; away?: number } };
   logos?: { home?: string; away?: string };
-  _dt?: Date;
+  _dt?: string; // ISO vindo do backend
 };
 
-// lê a URL do backend a partir do .env do FRONT (Opção A)
-const { VITE_BACKEND_URL } = (import.meta.env as { VITE_BACKEND_URL?: string });
+const BASE = (import.meta as any).env?.VITE_BACKEND_URL || "http://localhost:3001";
 
-// normaliza a base
-function normalizeBase(url?: string) {
-  if (!url || !url.trim()) return "http://localhost:3001";
-  return url.endsWith("/") ? url.slice(0, -1) : url;
-}
-const BASE = normalizeBase(VITE_BACKEND_URL);
-
-/** Busca os jogos de HOJE que ainda não começaram */
 export async function fetchUpcoming(): Promise<UIMatch[]> {
-  const url = `${BASE}/api/football/upcoming`;
-  const res = await fetch(url, {
-    cache: "no-store",
-    // mode: "cors", // (opcional) útil quando o backend está em outro domínio
-  });
-  if (!res.ok) {
-    const txt = await res.text().catch(() => "");
-    throw new Error(`GET /api/football/upcoming → HTTP ${res.status}: ${txt.slice(0, 180)}`);
-  }
+  const res = await fetch(`${BASE}/api/football/upcoming`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const js = await res.json();
-  return Array.isArray(js?.response) ? js.response : [];
+  const list: UIMatch[] = Array.isArray(js?.response) ? js.response : [];
+
+  // 🔒 Filtro extra no cliente: hoje + não iniciados/ainda por começar
+  const now = Date.now();
+  const okStatus = new Set(["NS", "TBD", "PST"]);
+  return list.filter((m) => {
+    const st = String(m?.live?.status || "").toUpperCase();
+    const t = m?._dt ? new Date(m._dt).getTime() : now + 1;
+    return okStatus.has(st) || t > now;
+  });
 }
 
-/** Hook com auto-refresh (default 2min) */
 export function useUpcomingData(refreshMs = 120000) {
   const [matches, setMatches] = React.useState<UIMatch[]>([]);
   const [loading, setLoading] = React.useState(false);
