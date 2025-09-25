@@ -187,7 +187,7 @@ export const HomeScreen: React.FC = () => {
       <div className="p-4 space-y-6">
         <div>
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Partidas do Dia</h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400">IA analisou 47 partidas hoje</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Acompanhe aqui os melhores jogos</p>
         </div>
 
         <SportSelector selectedSport={selectedSport} onSportChange={setSelectedSport} />

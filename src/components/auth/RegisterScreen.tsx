@@ -122,7 +122,7 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
                   Termo de Consentimento
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  Declaro que todas as informações aqui contidas são verdadeiras e que sou maior de 18 anos.
+                  Declaro que todas as informações aqui contidas são verdadeiras.
                 </p>
               </div>
             </div>
