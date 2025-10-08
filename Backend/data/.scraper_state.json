@@ -1,0 +1,15 @@
+{
+  "status": "running",
+  "startedAt": 1759866336752,
+  "headless": true,
+  "windowHours": 24,
+  "limitPerLeague": 0,
+  "fastMode": true,
+  "fastSplit": 3,
+  "quickMode": false,
+  "usingLigas": "C:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\scraper\\ligas_auto.csv",
+  "strategy": "full",
+  "finishedAt": 1759866335665,
+  "csvPath": "C:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\data\\odds_betano.csv",
+  "lastSuccessAt": 1759866335665
+}

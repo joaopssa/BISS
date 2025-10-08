@@ -1,118 +1,99 @@
-import * as React from "react";
-
-export type UIMatch = {
-  id: string | number;
-  homeTeam: string;
-  awayTeam: string;
-  time: string;      // "HH:MM"
-  date: string;      // "DD/MM/YYYY" (locale)
-  competition: string;
-  logos?: { home?: string; away?: string };
-  live?: { status?: string; minute?: number; score?: { home?: number; away?: number } };
-  _dt?: Date;
-};
+// src/components/ui/expandable-match-card.tsx
+import React, { useState } from "react";
+import type { UIMatch } from "@/data/matchData";
 
 type Props = {
   matches: UIMatch[];
-  logos?: Record<string, string>; // dicionário "nome do time" -> url logo
+  logos?: Record<string, string>;
 };
 
-function TeamBlock({
-  name,
-  logo,
-  align = "left",
-}: {
-  name: string;
-  logo?: string;
-  align?: "left" | "right";
-}) {
-  return (
-    <div className={`flex items-center gap-3 ${align === "right" ? "justify-end" : ""}`}>
-      {align === "right" ? null : (
-        <img
-          src={logo || "/placeholder-team.svg"}
-          alt={name}
-          className="h-8 w-8 rounded-full object-contain bg-white"
-          loading="lazy"
-        />
-      )}
-      <span className="font-semibold text-gray-900 dark:text-gray-100 truncate">{name}</span>
-      {align === "right" ? (
-        <img
-          src={logo || "/placeholder-team.svg"}
-          alt={name}
-          className="h-8 w-8 rounded-full object-contain bg-white"
-          loading="lazy"
-        />
-      ) : null}
-    </div>
-  );
-}
+const SafeOdd: React.FC<{ value: number | null | undefined }> = ({ value }) => {
+  if (value == null || Number.isNaN(value)) return <span>-</span>;
+  return <span>{Number(value).toFixed(2)}</span>;
+};
 
-function LiveBadge({ status, minute }: { status?: string; minute?: number }) {
-  const st = (status || "").toUpperCase();
-  const isLive = ["1H", "2H", "HT", "ET", "BT", "P"].includes(st);
-  const text = isLive ? (typeof minute === "number" ? `${minute}'` : st || "LIVE") : st || "NS";
-  const color = isLive ? "bg-red-500" : "bg-gray-400";
-  return (
-    <span className={`ml-2 inline-flex h-6 items-center rounded-full px-2 text-xs font-semibold text-white ${color}`}>
-      {text}
-    </span>
-  );
-}
-
-export default function ExpandableMatchCard({ matches, logos = {} }: Props) {
-  if (!matches?.length) return null;
+export default function ExpandableMatchCard({ matches }: Props) {
+  const [openId, setOpenId] = useState<string | number | null>(null);
 
   return (
     <div className="space-y-4">
       {matches.map((m) => {
-        const st = (m.live?.status || "").toUpperCase();
-        const isLive = ["1H", "2H", "HT", "ET", "BT", "P"].includes(st);
-        const scoreHome = m.live?.score?.home;
-        const scoreAway = m.live?.score?.away;
+        const isOpen = openId === m.id;
+        const dc = m._oddsDetail?.DuplaChance || {};
+        const hasDC = ["1X", "12", "X2"].some((k) => typeof (dc as any)[k] === "number");
 
-        const homeLogo = m.logos?.home || logos[m.homeTeam];
-        const awayLogo = m.logos?.away || logos[m.awayTeam];
+        // nomes (sem mexer nos dados), apenas apresentação com "x"
+        const home = m.homeTeam;
+        const away = m.awayTeam;
 
         return (
-          <article
-            key={m.id}
-            className="rounded-2xl border bg-white p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900"
-          >
-            {/* Cabeçalho do card */}
-            <div className="mb-3 flex flex-wrap items-center gap-2 text-sm text-gray-600 dark:text-gray-300">
-              <span className="font-medium text-gray-800 dark:text-gray-200">{m.competition}</span>
-              <span className="opacity-60">•</span>
-              <span>{m.date}</span>
-              <span className="opacity-60">•</span>
-              <span>{m.time}</span>
-              <LiveBadge status={st} minute={m.live?.minute} />
-            </div>
-
-            {/* Times + centro (VS / placar) */}
-            <div className="grid grid-cols-3 items-center gap-3">
-              <div className="justify-self-start">
-                <TeamBlock name={m.homeTeam} logo={homeLogo} />
+          <div key={String(m.id)} className="rounded-2xl border bg-white dark:bg-neutral-900 shadow-sm">
+            <div className="p-4">
+              {/* Header */}
+              <div className="flex items-center justify-between text-sm text-gray-500">
+                <span>{m.competition}</span>
+                <span>{m.date} • {m.time}</span>
               </div>
 
-              <div className="justify-self-center text-center">
-                {isLive ? (
-                  <div className="text-xl font-bold text-gray-900 dark:text-gray-100">
-                    {typeof scoreHome === "number" ? scoreHome : "-"}{" "}
-                    <span className="mx-1 text-gray-400 dark:text-gray-500">–</span>{" "}
-                    {typeof scoreAway === "number" ? scoreAway : "-"}
-                  </div>
+              {/* Nomes alinhados sobre 1 / X / 2 */}
+              <div className="mt-3 grid grid-cols-3 items-end text-center gap-3">
+                <div className="text-base font-semibold text-gray-800 dark:text-gray-100">{home}</div>
+                <div className="text-sm font-medium text-gray-600 dark:text-gray-300">x</div>
+                <div className="text-base font-semibold text-gray-800 dark:text-gray-100">{away}</div>
+
+                {/* Odds 1/X/2 */}
+                <div className="rounded-xl border px-4 py-3 text-center mt-2">
+                  <div className="text-xs uppercase text-gray-500 mb-1">1</div>
+                  <SafeOdd value={m.odds?.home} />
+                </div>
+                <div className="rounded-xl border px-4 py-3 text-center mt-2">
+                  <div className="text-xs uppercase text-gray-500 mb-1">X</div>
+                  <SafeOdd value={m.odds?.draw} />
+                </div>
+                <div className="rounded-xl border px-4 py-3 text-center mt-2">
+                  <div className="text-xs uppercase text-gray-500 mb-1">2</div>
+                  <SafeOdd value={m.odds?.away} />
+                </div>
+              </div>
+
+              {/* Link de detalhes à ESQUERDA, azul, com > / ^ */}
+              <div className="mt-3 flex items-center justify-between">
+                <button
+                  className="text-xs font-medium text-blue-600 hover:text-blue-700"
+                  onClick={() => setOpenId(isOpen ? null : m.id)}
+                >
+                  {isOpen ? "^ Ocultar" : "> Detalhes"}
+                </button>
+                <div />
+              </div>
+            </div>
+
+            {isOpen && (
+              <div className="p-4 border-t">
+                {hasDC ? (
+                  <>
+                    <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Dupla Chance</div>
+                    <div className="grid grid-cols-3 gap-3 mb-4">
+                      <div className="rounded-xl border px-4 py-3 text-center">
+                        <div className="text-[10px] uppercase text-gray-500 mb-1">1X</div>
+                        <SafeOdd value={dc["1X"] as number | null | undefined} />
+                      </div>
+                      <div className="rounded-xl border px-4 py-3 text-center">
+                        <div className="text-[10px] uppercase text-gray-500 mb-1">12</div>
+                        <SafeOdd value={dc["12"] as number | null | undefined} />
+                      </div>
+                      <div className="rounded-xl border px-4 py-3 text-center">
+                        <div className="text-[10px] uppercase text-gray-500 mb-1">X2</div>
+                        <SafeOdd value={dc["X2"] as number | null | undefined} />
+                      </div>
+                    </div>
+                  </>
                 ) : (
-                  <div className="text-sm font-semibold text-gray-500 dark:text-gray-400">VS</div>
+                  <div className="text-xs text-gray-500">Nenhum mercado extra disponível.</div>
                 )}
               </div>
-
-              <div className="justify-self-end">
-                <TeamBlock name={m.awayTeam} logo={awayLogo} align="right" />
-              </div>
-            </div>
-          </article>
+            )}
+          </div>
         );
       })}
     </div>

@@ -3,16 +3,14 @@ import * as Slider from '@radix-ui/react-slider';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { TrendingUp, Trophy, Target } from 'lucide-react';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
-import { fetchTeamLogo } from './services/teamLogoService';
-import { useEffect } from 'react';
 
 export const BettingHistoryScreen: React.FC = () => {
   const [statusFilter, setStatusFilter] = useState('all');
   const [dateFilter, setDateFilter] = useState('all');
-  const [oddsRange, setOddsRange] = useState<[number, number]>([1.01, 3.0]);
-  const [confidenceRange, setConfidenceRange] = useState<[number, number]>([0, 100]);
+  const [oddsRange, setOddsRange] = useState<number[]>([1.01, 3.0]);
+  const [confidenceRange, setConfidenceRange] = useState<number[]>([0, 100]);
 
   const bets = [
     { id: 1, match: 'Flamengo x Corinthians', bet: 'Casa', odds: 2.1, stake: 75.0, return: 157.5, status: 'won', date: '2024-06-04', competition: 'Brasileirão', aiConfidence: 85 },
@@ -63,27 +61,13 @@ export const BettingHistoryScreen: React.FC = () => {
 
   const COLORS = ['#4ade80', '#f87171'];
 
-  const [logos, setLogos] = useState<Record<string, string>>({});
-
-useEffect(() => {
-  const fetchLogos = async () => {
-    const uniqueTeams = new Set<string>();
-    bets.forEach(b => {
-      const [teamA, teamB] = b.match.split(' x ');
-      if (teamA) uniqueTeams.add(teamA.trim());
-      if (teamB) uniqueTeams.add(teamB.trim());
-    });
-
-    const logoEntries = await Promise.all([...uniqueTeams].map(async (team) => {
-      const logo = await fetchTeamLogo(team);
-      return [team, logo];
-    }));
-
-    setLogos(Object.fromEntries(logoEntries));
+  const teamInitials = (name?: string) => {
+    const n = (name || '').trim();
+    if (!n) return '??';
+    const parts = n.split(/\s+/);
+    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
   };
-
-  fetchLogos();
-}, []);
 
   return (
     <div className="p-4 space-y-6">
@@ -187,55 +171,58 @@ useEffect(() => {
 
       <div className="overflow-x-auto pb-4">
         <div className="flex gap-x-4 min-w-full" style={{ scrollSnapType: 'x mandatory' }}>
-          {filteredBets.map(bet => (
-            <Card key={bet.id} className="min-w-[calc(100%/3-1rem)] max-w-[calc(100%/3-1rem)] snap-start shrink-0">
-              <CardContent className="p-4 flex flex-col items-center">
-                <div className="flex items-center justify-between w-full mb-2 gap-2">
-  <img
-    src={logos[bet.match.split(' x ')[0]?.trim()]}
-    alt="Logo Time A"
-    className="w-8 h-8 object-contain"
-  />
-  <div className="flex flex-col items-center">
-    <p className="text-sm font-semibold text-gray-800">{bet.match}</p>
-    <p className="text-xs text-gray-500">{bet.date}</p>
-  </div>
-  <img
-    src={logos[bet.match.split(' x ')[1]?.trim()]}
-    alt="Logo Time B"
-    className="w-8 h-8 object-contain"
-  />
-</div>
-
-                <div className="bg-gray-50 rounded-md p-2 w-full text-center mb-2">
-                  <p className="text-xs text-gray-600">Palpite</p>
-                  <p className="text-xs text-gray-700 mt-1">{bet.bet} • {bet.odds}</p>
-                  <Badge className={`text-xs mt-1 ${bet.status === 'won' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
-                    {bet.status === 'won' ? 'Ganhou' : 'Perdeu'}
-                  </Badge>
-                </div>
-                <div className="grid grid-cols-2 gap-2 text-center w-full text-xs text-gray-600 mb-2">
-                  <div>
-                    <p>Valor</p>
-                    <p className="font-bold text-gray-800">R$ {bet.stake.toFixed(2)}</p>
-                  </div>
-                  <div>
-                    <p>Retorno</p>
-                    <p className={`font-bold ${bet.status === 'won' ? 'text-green-600' : 'text-red-600'}`}>R$ {bet.return.toFixed(2)}</p>
-                  </div>
-                </div>
-                <div className="w-full">
-                  <p className="text-xs text-gray-600 text-left mb-1">Confiança IA</p>
-                  <div className="flex items-center gap-2">
-                    <div className="w-full bg-gray-200 rounded-full h-1.5">
-                      <div className="bg-blue-600 h-1.5 rounded-full" style={{ width: `${bet.aiConfidence}%` }}></div>
+          {filteredBets.map(bet => {
+            const [teamA, teamB] = bet.match.split(' x ').map(s => (s || '').trim());
+            return (
+              <Card key={bet.id} className="min-w-[calc(100%/3-1rem)] max-w-[calc(100%/3-1rem)] snap-start shrink-0">
+                <CardContent className="p-4 flex flex-col items-center">
+                  <div className="flex items-center justify-between w-full mb-2 gap-2">
+                    <Avatar className="w-8 h-8">
+                      <AvatarFallback className="text-[10px] bg-gray-100 text-gray-700">
+                        {teamInitials(teamA)}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="flex flex-col items-center">
+                      <p className="text-sm font-semibold text-gray-800">{bet.match}</p>
+                      <p className="text-xs text-gray-500">{bet.date}</p>
                     </div>
-                    <span className="text-xs font-medium">{bet.aiConfidence}%</span>
+                    <Avatar className="w-8 h-8">
+                      <AvatarFallback className="text-[10px] bg-gray-100 text-gray-700">
+                        {teamInitials(teamB)}
+                      </AvatarFallback>
+                    </Avatar>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+
+                  <div className="bg-gray-50 rounded-md p-2 w-full text-center mb-2">
+                    <p className="text-xs text-gray-600">Palpite</p>
+                    <p className="text-xs text-gray-700 mt-1">{bet.bet} • {bet.odds}</p>
+                    <Badge className={`text-xs mt-1 ${bet.status === 'won' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                      {bet.status === 'won' ? 'Ganhou' : 'Perdeu'}
+                    </Badge>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-center w-full text-xs text-gray-600 mb-2">
+                    <div>
+                      <p>Valor</p>
+                      <p className="font-bold text-gray-800">R$ {bet.stake.toFixed(2)}</p>
+                    </div>
+                    <div>
+                      <p>Retorno</p>
+                      <p className={`font-bold ${bet.status === 'won' ? 'text-green-600' : 'text-red-600'}`}>R$ {bet.return.toFixed(2)}</p>
+                    </div>
+                  </div>
+                  <div className="w-full">
+                    <p className="text-xs text-gray-600 text-left mb-1">Confiança IA</p>
+                    <div className="flex items-center gap-2">
+                      <div className="w-full bg-gray-200 rounded-full h-1.5">
+                        <div className="bg-blue-600 h-1.5 rounded-full" style={{ width: `${bet.aiConfidence}%` }}></div>
+                      </div>
+                      <span className="text-xs font-medium">{bet.aiConfidence}%</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </div>

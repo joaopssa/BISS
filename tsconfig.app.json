@@ -24,7 +24,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    /* 👇 silencia o aviso depreciação até migrar */
+    "ignoreDeprecations": "6.0"
   },
   "include": ["src"]
 }

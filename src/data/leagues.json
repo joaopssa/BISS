@@ -1,0 +1,1290 @@
+[
+  {
+    "id": "Ligas",
+    "name": "Brasileirao Serie A Betano",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Libertadores",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Sul Americana",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Brasileirao Serie B",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Do Mundo",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Torneo Betano",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Brasil",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Betano Do Brasil",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Brasileirao Serie C",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Campeonato Potiguar Segunda Divisao",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Santa Catarina",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Maria Bonita F",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Copa Do Brasil F",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Conmebol Clubes",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Liga Dos Campeoes",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Liga Europa",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Liga Conferencia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Inglaterra",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Espanha",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Italia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Alemanha",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Franca",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Arabia Saudita",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Argentina",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Chile",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Colombia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Mexico",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Austria",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Belgica",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Bulgaria",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Chipre",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Croacia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Dinamarca",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Escocia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Eslovaquia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Finlandia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Gales",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Grecia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Paises Baixos",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Hungria",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Irlanda",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Irlanda Do Norte",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Kosovo",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Luxemburgo",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Montenegro",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Noruega",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Polonia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Portugal",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Republica Tcheca",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Romenia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Servia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Suecia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Suica",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Turquia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Ucrania",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Bolivia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Canada",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Costa Rica",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Equador",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Eua",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Guatemala",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Jamaica",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Panama",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Paraguai",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Peru",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "El Salvador",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Uruguai",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Africa Do Sul",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Australia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Camboja",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Catar",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "China",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Coreia Do Sul",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Egito",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Fiji",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Hong Kong",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "India",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Ira",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Iraque",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Japao",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Jordania",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Mauritania",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Quirguistao",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Singapura",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Tailandia",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Zanzibar",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Eurocopa",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Fifa Clubes",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Uefa Clubes",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Caf",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Internacional",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Ligas",
+    "name": "Clubes Internacionais",
+    "country": "Ligas",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Brasileirao Serie A Betano",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Copa Libertadores",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Copa Sudamericana",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Brasileirao Serie B",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "World Cup",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Torneo Betano",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Brazil",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Copa Betano Do Brasil",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Brasileirao Serie C",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Campeonato Potiguar Segunda Divisao",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Copa Santa Catarina",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Copa Maria Bonita W",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Copa Do Brasil W",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Conmebol Clubs",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Champions League",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Europa League",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Conference League",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "England",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Spain",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Italy",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Germany",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "France",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Saudi Arabia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Argentina",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Chile",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Colombia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Mexico",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Austria",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Belgium",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Bulgaria",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Cyprus",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Croatia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Denmark",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Scotland",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Slovakia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Finland",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Wales",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Greece",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Netherlands",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Hungary",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Ireland",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Northern Ireland",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Kosovo",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Luxembourg",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Montenegro",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Norway",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Poland",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Portugal",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Czechia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Romania",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Serbia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Sweden",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Switzerland",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Turkey",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Ukraine",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Bolivia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Canada",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Costa Rica",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Ecuador",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Usa",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Guatemala",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Jamaica",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Panama",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Paraguay",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Peru",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "El Salvador",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Uruguay",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "South Africa",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Australia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Cambodia",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Qatar",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "China",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "South Korea",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Egypt",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Fiji",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Hong Kong",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "India",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Iran",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Iraq",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Japan",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Jordan",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Mauritania",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Kyrgyzstan",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Singapore",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Thailand",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Zanzibar",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Euro",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Fifa Clubs",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Uefa Clubs",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "Caf",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "International",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  },
+  {
+    "id": "Leagues",
+    "name": "International Clubs",
+    "country": "Leagues",
+    "type": null,
+    "logo": null
+  }
+]

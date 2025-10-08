@@ -26,7 +26,7 @@ export default function LiveMatchCard({ match, logos = {} }: Props) {
   return (
     <div className="rounded-xl border bg-white dark:bg-neutral-900 p-4 mb-3">
       <div className="flex items-center justify-between text-sm text-gray-500">
-        <span>Competição</span>
+        <span>{match.competition}</span>
         <span>{match.date} • {match.time}</span>
         <span className="px-2 py-0.5 rounded-full bg-gray-100 dark:bg-neutral-800 text-gray-700 dark:text-gray-200">
           {minute}

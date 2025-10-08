@@ -1,29 +1,42 @@
-import fs from 'fs';
-import fetch from 'node-fetch';
+// generateFlagsMap.ts
+// Uso: npx ts-node generateFlagsMap.ts
+import fs from "fs";
+import path from "path";
+import { normalizeISO2, countryNameToISO2, flagUrl } from "./flags";
 
-const API_KEY = '58bfaee3bd005386cb021cf4dde184e8'; 
-async function generateFlagsMap() {
-  try {
-    const response = await fetch('https://v3.football.api-sports.io/leagues', {
-      headers: { 'x-apisports-key': API_KEY }
-    });
+type League = {
+  id: string | number | null;
+  name: string;
+  country?: string | null;
+  type?: string | null;
+  logo?: string | null;
+  iso2?: string | null;
+  flag?: string | null;
+};
 
-    const data = await response.json();
+const flagsMapPath = path.resolve(process.cwd(), "flags-map.json");
+const leaguesPath  = path.resolve(process.cwd(), "leagues.json");
 
-    const map: Record<string, string> = {};
+const flagsMap: Record<string, string> = JSON.parse(fs.readFileSync(flagsMapPath, "utf-8"));
+const leagues: League[] = JSON.parse(fs.readFileSync(leaguesPath, "utf-8"));
 
-    data.response.forEach((item: any) => {
-      const leagueName = item.league.name;
-      const countryCode = item.country.code || item.country.name.slice(0, 2).toUpperCase();
-      map[leagueName] = countryCode;
-    });
+function getISO2ForLeague(leagueName: string, country?: string | null): string | null {
+  // 1) se já tem country por nome -> ISO2
+  const fromCountry = countryNameToISO2(country || "");
+  if (fromCountry) return fromCountry;
 
-    const path = './src/utils/flags-map.json';
-    fs.writeFileSync(path, JSON.stringify(map, null, 2));
-    console.log(`✅ Mapeamento salvo em ${path}`);
-  } catch (error) {
-    console.error('Erro ao gerar mapa de bandeiras:', error);
-  }
+  // 2) tenta flags-map.json por nome exato
+  const code = flagsMap[leagueName] || flagsMap[leagueName.trim()];
+  if (code) return normalizeISO2(code);
+
+  return null;
 }
 
-generateFlagsMap();
+const out = leagues.map(lg => {
+  const iso2 = getISO2ForLeague(lg.name, lg.country);
+  const flag = flagUrl(iso2, 16);
+  return { ...lg, iso2: iso2 || null, flag: flag || null };
+});
+
+fs.writeFileSync(leaguesPath, JSON.stringify(out, null, 2), "utf-8");
+console.log(`OK: enriquecidas ${out.length} ligas em ${path.basename(leaguesPath)}`);

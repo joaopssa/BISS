@@ -1,28 +1,13 @@
+// src/screens/HomeScreen.tsx
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
 import ExpandableMatchCard from "@/components/ui/expandable-match-card";
 import LiveTab from "@/components/app/LiveTab";
-import { SportSelector } from "@/components/app/SportSelector";
 import { useUpcomingData } from "@/data/matchData";
-import { fetchTeamLogo } from "@/components/app/services/teamLogoService";
 import { Button } from "@/components/ui/button";
 
-type UIMatch = {
-  id: number | string;
-  homeTeam: string;
-  awayTeam: string;
-  time: string;
-  date: string;
-  competition: string;
-  odds: { home: number; draw: number; away: number };
-  isFavorite?: boolean;
-  sport?: string;
-  popularity?: number;
-  live?: { status?: string; minute?: number; score?: { home?: number; away?: number } };
-  logos?: { home?: string; away?: string };
-  _dt?: string | Date;
-};
+type UIMatch = import("@/data/matchData").UIMatch;
 
 type Ticket = {
   id: string;
@@ -32,103 +17,79 @@ type Ticket = {
   selections: Array<{ match: string; market: string; pick: string; odd: number }>;
 };
 
+const Badge = ({ children }: React.PropsWithChildren) => (
+  <span className="inline-flex items-center rounded-full bg-blue-100 text-blue-800 px-3 py-1 text-xs font-semibold dark:bg-blue-800/30 dark:text-blue-200">
+    {children}
+  </span>
+);
+
 export const HomeScreen: React.FC = () => {
-  const [selectedSport, setSelectedSport] = useState("futebol");
-  const [logos, setLogos] = useState<Record<string, string>>({});
-  const [tab, setTab] = useState<"favoritos" | "ao-vivo" | "em-alta" | "bilhetes">("favoritos");
+  const [tab, setTab] = useState<"favoritos" | "ao-vivo" | "em-alta" | "bilhetes">("em-alta");
   const [query, setQuery] = useState("");
   const [tickets] = useState<Ticket[]>([]);
+  const { matches: upcoming, lastUpdated, loading, error } = useUpcomingData();
+  const [logos] = useState<Record<string, string>>({}); // no logos loaded
 
-  // 🔸 Busca jogos do dia (sem filtro adicional de “não iniciados”)
-  const { matches: upcoming, loading: loadingUpcoming, error: errorUpcoming } = useUpcomingData();
-
-  // Carrega logos para times listados
-  useEffect(() => {
-    (async () => {
-      if (!upcoming?.length) return;
-      const unique = new Set<string>();
-      upcoming.forEach((m) => {
-        if (m.homeTeam) unique.add(m.homeTeam.trim());
-        if (m.awayTeam) unique.add(m.awayTeam.trim());
-      });
-      const entries = await Promise.all(
-        [...unique].map(async (team) => [team, await fetchTeamLogo(team)] as const)
-      );
-      setLogos((prev) => ({ ...prev, ...Object.fromEntries(entries) }));
-    })();
-  }, [upcoming]);
-
-  // filtro por esporte + busca (NÃO exclui partidas já iniciadas/finalizadas)
+  // text search filter
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const list = (upcoming ?? []).slice(); // cópia
+    return (upcoming ?? []).filter((m) =>
+      [m.homeTeam, m.awayTeam, m.competition].some((t) => t?.toLowerCase().includes(q))
+    );
+  }, [query, upcoming]);
 
-    return list.filter((m) => {
-      const sportOk = !selectedSport || (m.sport ?? "futebol") === selectedSport;
-      const textOk =
-        !q ||
-        [m.homeTeam, m.awayTeam]
-          .filter(Boolean)
-          .some((t) => String(t).toLowerCase().includes(q));
-      return sportOk && textOk;
-    });
-  }, [query, selectedSport, upcoming]);
+  const updatedTime =
+    lastUpdated != null
+      ? new Date(lastUpdated).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+      : "—";
 
   const viewMatches = useMemo(() => {
     switch (tab) {
-      case "favoritos": {
-        const favorites = filtered.filter((m) => m.isFavorite);
+      case "favoritos":
+        const favs = filtered.filter((m) => m.isFavorite);
         return (
           <Section title="Jogos Favoritos" subtitle="Seus jogos marcados como favoritos">
-            {loadingUpcoming ? (
+            {loading ? (
               <EmptyState text="Carregando partidas…" />
-            ) : errorUpcoming ? (
-              <EmptyState text={`Erro: ${errorUpcoming}`} />
-            ) : favorites.length > 0 ? (
-              <ExpandableMatchCard matches={favorites as any} logos={logos} />
+            ) : error ? (
+              <EmptyState text={`Erro: ${error}`} />
+            ) : favs.length > 0 ? (
+              <ExpandableMatchCard matches={favs} logos={logos} />
             ) : (
-              <EmptyState text="Nenhum favorito ainda. Marque partidas como favoritas para vê-las aqui." />
+              <EmptyState text="Nenhum favorito ainda." />
             )}
           </Section>
         );
-      }
 
-      case "ao-vivo": {
+      case "ao-vivo":
         return (
           <Section title="Jogos Ao Vivo" subtitle="Acompanhe em tempo real">
-            <LiveTab logos={logos} setLogos={setLogos} fetchTeamLogo={fetchTeamLogo} />
+            <LiveTab logos={logos} setLogos={() => {}} fetchTeamLogo={async () => null} />
           </Section>
         );
-      }
 
-      case "em-alta": {
-        const trending = [...filtered]
-          .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0))
-          .slice(0, 10);
+      case "em-alta":
+        const trending = filtered.slice(0, 30);
         return (
           <Section title="Em Alta" subtitle="Partidas com maior interesse">
-            {loadingUpcoming ? (
+            {loading ? (
               <EmptyState text="Carregando partidas…" />
-            ) : errorUpcoming ? (
-              <EmptyState text={`Erro: ${errorUpcoming}`} />
+            ) : error ? (
+              <EmptyState text={`Erro: ${error}`} />
             ) : trending.length > 0 ? (
-              <ExpandableMatchCard matches={trending as any} logos={logos} />
+              <ExpandableMatchCard matches={trending} logos={logos} />
             ) : (
               <EmptyState text="Sem partidas em alta no momento." />
             )}
           </Section>
         );
-      }
 
-      case "bilhetes": {
+      case "bilhetes":
+      default:
         return (
           <Section title="Bilhetes" subtitle="Gerencie seus slips de apostas">
             {tickets.length === 0 ? (
-              <EmptyState
-                text="Você ainda não possui bilhetes."
-                ctaLabel="Explorar partidas"
-                onCta={() => setTab("favoritos")}
-              />
+              <EmptyState text="Você ainda não possui bilhetes." />
             ) : (
               <ul className="space-y-4">
                 {tickets.map((t) => (
@@ -156,23 +117,18 @@ export const HomeScreen: React.FC = () => {
             )}
           </Section>
         );
-      }
-
-      default:
-        return null;
     }
-  }, [tab, filtered, logos, tickets, loadingUpcoming, errorUpcoming]);
+  }, [tab, filtered, loading, error, tickets, logos]);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap gap-2">
           <TopTab label="Jogos Favoritos" active={tab === "favoritos"} onClick={() => setTab("favoritos")} />
           <TopTab label="Jogos Ao Vivo" active={tab === "ao-vivo"} onClick={() => setTab("ao-vivo")} />
           <TopTab label="Em Alta" active={tab === "em-alta"} onClick={() => setTab("em-alta")} />
           <TopTab label="Bilhetes" active={tab === "bilhetes"} onClick={() => setTab("bilhetes")} />
         </div>
-
         <div className="mt-2 sm:mt-0">
           <input
             type="text"
@@ -183,30 +139,21 @@ export const HomeScreen: React.FC = () => {
           />
         </div>
       </div>
-
       <div className="p-4 space-y-6">
         <div>
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Partidas do Dia</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">Acompanhe aqui os melhores jogos</p>
+          <div className="mt-2">
+            <Badge>Atualizado em {updatedTime}</Badge>
+          </div>
         </div>
-
-        <SportSelector selectedSport={selectedSport} onSportChange={setSelectedSport} />
-
         {viewMatches}
       </div>
     </div>
   );
 };
 
-function TopTab({
-  label,
-  active,
-  onClick,
-}: {
-  label: string;
-  active: boolean;
-  onClick: () => void;
-}) {
+function TopTab({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
   return (
     <Button
       variant="ghost"
@@ -234,23 +181,10 @@ function Section({
   );
 }
 
-function EmptyState({
-  text,
-  ctaLabel,
-  onCta,
-}: {
-  text: string;
-  ctaLabel?: string;
-  onCta?: () => void;
-}) {
+function EmptyState({ text }: { text: string }) {
   return (
     <div className="rounded-xl border border-dashed p-8 text-center text-gray-600 dark:text-gray-300">
       {text}
-      {ctaLabel && onCta && (
-        <div className="mt-4">
-          <Button onClick={onCta}>{ctaLabel}</Button>
-        </div>
-      )}
     </div>
   );
 }
