@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Betano Multi-Ligas + Multi-Mercados Scraper (v1.3)
-- Descoberta baseada em Mapa de Ligas (CSV)
-- Mercados: 1X2, Dupla Chance, Total de Gols (Over/Under)
-- Filtro por janela em horas (JSON-LD startDate)
-Requer: seleniumbase, pandas
-"""
-
 from __future__ import annotations
 import argparse, json, re, sys, time, csv
 from dataclasses import dataclass, asdict
@@ -17,6 +9,7 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 from seleniumbase import SB
 
+# -------------------- Constantes --------------------
 ODD_MIN, ODD_MAX = 1.01, 100.0
 TIT_1X2 = ["Resultado Final","1x2","Resultado 1X2","Resultado","Match Result","Full Time Result"]
 TIT_DC  = ["Chance Dupla","Dupla Chance","Double Chance"]
@@ -37,6 +30,7 @@ class LinhaMercado:
     url_evento: str
     url_liga: str
 
+# -------------------- Utils --------------------
 def _norm(s:str)->str:
     return re.sub(r"\s+"," ",(s or "").strip())
 
@@ -56,54 +50,99 @@ def _split_teams(title:str)->Tuple[str,str,str]:
 
 def _iso_now()->str: return datetime.now(UTC).isoformat()
 
+# -------------------- Funções otimizadas --------------------
+def _safe_open(sb, url:str, tries:int=2)->bool:
+    """Abre URL com retry leve e timeout curto"""
+    for _ in range(tries):
+        try:
+            sb.open(url)
+            sb.wait_for_ready_state_complete()
+            return True
+        except Exception:
+            time.sleep(0.8)
+    return False
+
+def _smart_scroll(sb, max_steps:int=10, pause:float=0.4):
+    """Scroll inteligente: para quando altura estabiliza"""
+    last1 = last2 = 0
+    for _ in range(max_steps):
+        try:
+            sb.scroll_to_bottom()
+            time.sleep(pause)
+            cur = sb.execute_script("return document.body.scrollHeight||0") or 0
+            if cur in (last1, last2): break
+            last2, last1 = last1, cur
+        except Exception:
+            break
+
+# -------------------- Classe Principal --------------------
 class BetanoScraper:
     def __init__(self, headless:bool, janela_horas:int, dump:bool):
-        self.headless=headless; self.janela_horas=janela_horas; self.dump=dump
+        self.headless=headless
+        self.janela_horas=janela_horas
+        self.dump=dump
 
     def run(self, liga_urls: List[str], limite_eventos:int)->pd.DataFrame:
         with SB(uc=True, headed=not self.headless, locale_code="pt-BR",
                 ad_block_on=True, incognito=True, do_not_track=True,
                 disable_csp=True, pls="none") as sb:
 
-            # Ajustes de sessão
+            # -------- Configuração da sessão Chrome --------
             try:
-                if getattr(sb,"driver",None): sb.driver.set_page_load_timeout(25)
+                if getattr(sb,"driver",None): sb.driver.set_page_load_timeout(20)
                 sb.set_window_size(1400,900)
                 sb.activate_cdp_mode()
+
+                # Bloqueia assets pesados
+                sb.execute_cdp_cmd("Network.enable", {})
+                sb.execute_cdp_cmd("Network.setBlockedURLs", {
+                    "urls": ["*.png","*.jpg","*.jpeg","*.gif","*.webp","*.svg",
+                             "*.woff","*.woff2","*.ttf","*.otf","*.mp4","*.webm"]
+                })
+
+                # User-Agent e Geolocalização
                 sb.driver.execute_cdp_cmd("Network.setUserAgentOverride", {
-                    "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
-                    "acceptLanguage":"pt-BR,pt;q=0.9"
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                 "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                 "Chrome/141.0.0.0 Safari/537.36",
+                    "acceptLanguage": "pt-BR,pt;q=0.9"
                 })
                 sb.driver.execute_cdp_cmd("Browser.grantPermissions", {
-                    "origin":"https://www.betano.bet.br","permissions":["geolocation"]
+                    "origin": "https://www.betano.bet.br",
+                    "permissions": ["geolocation"]
                 })
                 sb.driver.execute_cdp_cmd("Emulation.setGeolocationOverride", {
-                    "latitude":-23.55,"longitude":-46.63,"accuracy":100
+                    "latitude": -23.55, "longitude": -46.63, "accuracy": 100
                 })
             except Exception:
                 pass
 
-            now_utc = datetime.now(UTC); cutoff = now_utc + timedelta(hours=self.janela_horas)
+            now_utc = datetime.now(UTC)
+            cutoff = now_utc + timedelta(hours=self.janela_horas)
             regs: List[LinhaMercado] = []
 
+            # -------- Loop de Ligas --------
             for liga_url in liga_urls:
                 try:
-                    sb.open(liga_url); sb.wait_for_ready_state_complete(); time.sleep(1.0)
-                    self._dismiss(sb); self._cookies(sb); self._scroll(sb,6,0.5)
+                    _safe_open(sb, liga_url)
+                    time.sleep(1.0)
+                    self._dismiss(sb); self._cookies(sb); _smart_scroll(sb)
                     links, meta = self._league_events_jsonld(sb)
 
-                    # filtro pela janela
+                    # Filtra pela janela
                     eventos=[]
                     for href in links:
                         start_iso = meta.get(href,{}).get("startDate","")
-                        dt=None
-                        try: dt = datetime.fromisoformat(start_iso.replace("Z","+00:00"))
-                        except: pass
+                        try:
+                            dt = datetime.fromisoformat(start_iso.replace("Z","+00:00"))
+                        except Exception:
+                            dt=None
                         if dt and now_utc <= dt <= cutoff:
                             eventos.append(href)
                     if self.dump:
-                        print(f"[liga] {liga_url} -> {len(eventos)} eventos na janela")
+                        print(f"[liga] {liga_url} -> {len(eventos)} eventos válidos")
 
+                    # -------- Loop de Eventos --------
                     for href in eventos[:limite_eventos] if limite_eventos>0 else eventos:
                         try:
                             casa = meta.get(href,{}).get("homeTeam","")
@@ -112,8 +151,12 @@ class BetanoScraper:
                             data_hora = meta.get(href,{}).get("startDate","")
                             campeonato = meta.get(href,{}).get("league","")
 
-                            sb.open(href); sb.wait_for_ready_state_complete(); time.sleep(0.8)
+                            _safe_open(sb, href)
+                            time.sleep(0.8)
                             self._dismiss(sb); self._cookies(sb)
+
+                            # Intercepta fetch/XHR (captura JSON interno)
+                            self._inject_capture(sb)
 
                             titulo = self._first_text(sb, [
                                 "//h1","//h2","//*[@data-event-title]"
@@ -123,23 +166,25 @@ class BetanoScraper:
                                 partida = partida or p2; casa=casa or c2; fora=fora or f2
 
                             extracao=_iso_now()
-                            # 1X2
+
+                            # ---- Mercados ----
                             oc,oe,ofor = self._extract_1x2(sb)
                             regs += self._linhas(extracao,campeonato,partida,casa,fora,data_hora,
                                                  "1X2",[("1",None,oc),("X",None,oe),("2",None,ofor)],href,liga_url)
-                            # Dupla Chance
                             dc = self._extract_dc(sb)
                             if any(_in_odd_range(v) for v in dc.values()):
                                 regs += self._linhas(extracao,campeonato,partida,casa,fora,data_hora,
                                                      "Dupla Chance",[("1X",None,dc.get("1X")),("12",None,dc.get("12")),("X2",None,dc.get("X2"))],
                                                      href,liga_url)
-                            # Totais O/U
                             for linha,(ov,un) in self._extract_totais(sb):
                                 regs += self._linhas(extracao,campeonato,partida,casa,fora,data_hora,
                                                      "Total de Gols",[("Over",linha,ov),("Under",linha,un)],href,liga_url)
-                        except Exception:
+
+                        except Exception as e:
+                            if self.dump: print(f"[evento erro] {href}: {e}")
                             continue
-                except Exception:
+                except Exception as e:
+                    if self.dump: print(f"[liga erro] {liga_url}: {e}")
                     continue
 
             cols=["data_extracao","campeonato","partida","casa","fora","data_hora",
@@ -148,7 +193,7 @@ class BetanoScraper:
             df["odd"]=pd.to_numeric(df["odd"],errors="coerce")
             return df
 
-    # ---------- JSON-LD ----------
+    # ---------------- JSON-LD ----------------
     def _league_events_jsonld(self, sb:SB)->Tuple[List[str], Dict[str,Dict[str,str]]]:
         links=set(); meta={}
         try:
@@ -170,21 +215,36 @@ class BetanoScraper:
                                 "startDate": it.get("startDate",""),
                                 "league": (it.get("location") or {}).get("name","") if isinstance(it.get("location"),dict) else "Liga"
                             }
-                    elif isinstance(it,list):
-                        for ev in it:
-                            if isinstance(ev,dict) and ev.get("@type")=="SportsEvent":
-                                url=ev.get("url") or ""
-                                if "/odds/" in url:
-                                    links.add(url)
-                                    meta[url]={
-                                        "homeTeam": (ev.get("homeTeam") or {}).get("name","") if isinstance(ev.get("homeTeam"),dict) else (ev.get("homeTeam") or ""),
-                                        "awayTeam": (ev.get("awayTeam") or {}).get("name","") if isinstance(ev.get("awayTeam"),dict) else (ev.get("awayTeam") or ""),
-                                        "startDate": ev.get("startDate",""),
-                                        "league": (ev.get("location") or {}).get("name","") if isinstance(ev.get("location"),dict) else "Liga"
-                                    }
         except Exception:
             pass
         return list(dict.fromkeys(links)), meta
+
+    # ---------------- XHR Capture ----------------
+    def _inject_capture(self, sb:SB):
+        """Injeta JS para capturar fetch/XHR responses"""
+        try:
+            sb.execute_script("""
+            (function(){
+              if (window._BISS) return;
+              window._BISS = { dumps: [] };
+              const push = (u,b)=>{try{_BISS.dumps.push({url:u,body:b});}catch(e){}};
+              const _fetch = window.fetch;
+              window.fetch = async function(u,opt){
+                const r = await _fetch(u,opt);
+                try{const c=r.clone();c.text().then(t=>push(u,t));}catch(e){}
+                return r;
+              };
+              const _open=XMLHttpRequest.prototype.open;
+              const _send=XMLHttpRequest.prototype.send;
+              XMLHttpRequest.prototype.open=function(m,u){this._url=u;return _open.apply(this,arguments);};
+              XMLHttpRequest.prototype.send=function(){
+                this.addEventListener('load',()=>{try{push(this._url,this.responseText);}catch(e){}});
+                return _send.apply(this,arguments);
+              };
+            })();
+            """)
+        except Exception:
+            pass
 
     # ---------- mercados ----------
     def _extract_1x2(self, sb:SB)->Tuple[Optional[float],Optional[float],Optional[float]]:

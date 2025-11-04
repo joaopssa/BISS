@@ -100,21 +100,23 @@ async function run() {
 
     // QUICK: só roda se não houver CSV recente
     if (!csvFresh) {
-      const quickArgs = [
-        "--headless", HEADLESS,
-        "--janela_horas", WINDOW_HOURS,
-        "--ligas_csv", fs.existsSync(LIGAS_QUICK) ? LIGAS_QUICK : LIGAS_FULL,
-        "--saida", OUT_TMP,
-        "--limite_eventos", String(QUICK_LIMIT),
-        "--dump", "0",
-      ];
-      ok = await runPython(quickArgs, "Running quick scrape...");
-      if (ok && fs.existsSync(OUT_TMP)) {
-        fs.copyFileSync(OUT_TMP, OUT_CSV);
-      }
-    } else {
-      console.log("[scraper] CSV recente encontrado — pulando quick.");
-    }
+  const quickArgs = [
+    "--headless", HEADLESS,
+    "--janela_horas", WINDOW_HOURS,
+    "--ligas_csv", fs.existsSync(LIGAS_QUICK) ? LIGAS_QUICK : LIGAS_FULL,
+    "--saida", OUT_TMP,
+    "--limite_eventos", String(QUICK_LIMIT),
+    "--dump", "0",
+  ];
+  ok = await runPython(quickArgs, "Running quick scrape...");
+
+  // 🟩 Garante que o frontend receba o CSV mesmo se só o quick rodar
+  if (fs.existsSync(OUT_TMP)) {
+    fs.copyFileSync(OUT_TMP, OUT_CSV);
+  }
+} else {
+  console.log("[scraper] CSV recente encontrado — pulando quick.");
+}
 
     // FULL: roda se quick OK (ou se pulamos o quick)
     if (ok) {
