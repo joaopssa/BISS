@@ -28,22 +28,31 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
     try {
       const response = await api.post('/auth/login', { email, password });
       const { token, user } = response.data;
-      
+
+      // 🔐 Salva token e dados localmente
+      localStorage.setItem("biss_token", token);
+      localStorage.setItem("biss_user", JSON.stringify(user));
+
+      // Atualiza contexto de autenticação
       auth.login(token, user);
-      
-      // REMOVIDO: Bloco do toast de sucesso
-      
-      window.location.href = '/';
+
+      // Exibe mensagem de sucesso
+      toast({
+        title: "Login realizado com sucesso!",
+        description: `Bem-vindo de volta, ${user.nome || user.name || 'usuário'}.`,
+      });
+
+      // Redireciona para Home sem recarregar
+      navigate('/');
 
     } catch (err: any) {
-       const message = err.response?.data?.message || "Ocorreu um erro no login.";
-       setError(message);
-       // O toast de erro foi mantido
-       toast({
-          title: "Erro no Login",
-          description: message,
-          variant: "destructive",
-       });
+      const message = err.response?.data?.message || "Ocorreu um erro no login.";
+      setError(message);
+      toast({
+        title: "Erro no Login",
+        description: message,
+        variant: "destructive",
+      });
     }
   };
 
@@ -62,15 +71,15 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
 
           <div className="max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto overflow-hidden">
             <TypewriterEffectSmooth
-                words={[
-                  { text: "Inteligência" },
-                  { text: "que" },
-                  { text: "joga" },
-                  { text: "do" },
-                  { text: "seu" },
-                  { text: "lado", className: "text-blue-600 dark:text-blue-400" },
-                ]}
-              />
+              words={[
+                { text: "Inteligência" },
+                { text: "que" },
+                { text: "joga" },
+                { text: "do" },
+                { text: "seu" },
+                { text: "lado", className: "text-blue-600 dark:text-blue-400" },
+              ]}
+            />
           </div>
         </CardHeader>
 
@@ -113,12 +122,12 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
               Entrar
             </Button>
 
-           <Button
+            <Button
               type="button"
               variant="ghost"
               className="w-full text-blue-600"
               onClick={() => navigate('/forgot-password')}
-              >
+            >
               Esqueci a senha
             </Button>
 

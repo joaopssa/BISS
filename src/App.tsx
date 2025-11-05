@@ -8,38 +8,50 @@ import ProtectedRoute from "./components/auth/ProtectedRoute";
 import ForgotPasswordScreen from "./components/auth/ForgotPasswordScreen";
 import ResetPasswordScreen from "./components/auth/ResetPasswordScreen";
 
-// Importe suas páginas/telas
+// Páginas / Telas
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import UserProfilePage from "./pages/UserProfilePage";
+import React, { useEffect, useState } from "react";
 
 const queryClient = new QueryClient();
 
+// ---------------------------------------------------------
+// Controle inicial de autenticação
+// ---------------------------------------------------------
 const AppRoutes = () => {
-  const { isAuthenticated, loading } = useAuth();
+  const { isAuthenticated, loading, setAuthenticated } = useAuth();
+  const [initialCheck, setInitialCheck] = useState(true);
 
-  if (loading) {
-    return <div>Carregando aplicação...</div>; // Ou um componente de spinner
+  useEffect(() => {
+    // Verifica se há token salvo (login persistente)
+    const token = localStorage.getItem("biss_token");
+    if (token) {
+      setAuthenticated(true);
+    }
+    setInitialCheck(false);
+  }, [setAuthenticated]);
+
+  if (loading || initialCheck) {
+    return <div>Carregando aplicação...</div>;
   }
 
   return (
     <Routes>
-      {/* Rotas Públicas: Login, Registro e AGORA a configuração de perfil */}
+      {/* Rotas Públicas */}
       <Route path="/login" element={isAuthenticated ? <Navigate to="/" /> : <LoginPage />} />
       <Route path="/register" element={isAuthenticated ? <Navigate to="/" /> : <RegisterPage />} />
       <Route path="/profile-setup" element={isAuthenticated ? <Navigate to="/" /> : <UserProfilePage />} />
 
-
-      {/* Rotas Protegidas (Área VIP) */}
+      {/* Rotas Protegidas */}
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={<Index />} />
-        {/* Adicione outras rotas que precisam de login aqui */}
       </Route>
 
       <Route path="*" element={<NotFound />} />
-    
+
       <Route
         path="/forgot-password"
         element={isAuthenticated ? <Navigate to="/" /> : <ForgotPasswordScreen />}
@@ -52,7 +64,9 @@ const AppRoutes = () => {
   );
 };
 
-
+// ---------------------------------------------------------
+// Estrutura principal
+// ---------------------------------------------------------
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
