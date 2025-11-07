@@ -23,9 +23,9 @@ app.get("/health", (_req, res) => {
       PORT: 3001,
       BETANO_CSV_PATH: "./data/odds_betano.csv",
       BETANO_LIGAS_PATH: "./scraper/ligas_auto.csv",
-      BETANO_WINDOW_HOURS: "24",
-      BETANO_QUICK_LIMIT: "2",
-      BETANO_CRON: "5 * * * *", // minuto 5 de cada hora
+      BETANO_WINDOW_HOURS: "48",
+      BETANO_QUICK_LIMIT: "0",
+      BETANO_CRON: "*/15 * * * *",
     },
   });
 });
@@ -41,21 +41,30 @@ app.use("/api/football", footballRoutes);
 function runScraperOnce(reason = "manual", overridesEnv = {}) {
   const scriptPath = path.resolve(__dirname, "scripts", "run-scraper.js");
   console.log(`[cron] disparando run-scraper.js (motivo: ${reason})`);
+
   const child = spawn(process.execPath, [scriptPath], {
     stdio: "inherit",
-    env: { ...process.env, ...overridesEnv },
+    env: {
+      ...process.env,
+      BETANO_WINDOW_HOURS: "48",
+      BETANO_QUICK_LIMIT: "0",
+      BETANO_LIGAS_PATH: "./scraper/ligas_auto.csv",
+      ...overridesEnv,
+    },
   });
+
   child.on("close", (code) => {
     console.log(`[cron] run-scraper.js terminou com código: ${code}`);
   });
 }
 
-// 1) Boot: execute apenas uma vez
-runScraperOnce("boot");
+// 1️⃣ Executa automaticamente no boot (imediato)
+runScraperOnce("boot inicial");
 
-// 2) Agendamento: hora em hora, no minuto 5
-cron.schedule("5 * * * *", () => runScraperOnce("cron 1h"));
+// 2️⃣ Agenda para rodar a cada 15 minutos
+cron.schedule("*/15 * * * *", () => runScraperOnce("cron 15m"));
 
+// Inicia servidor
 const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);

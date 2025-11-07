@@ -9,7 +9,6 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 from seleniumbase import SB
 
-# -------------------- Constantes --------------------
 ODD_MIN, ODD_MAX = 1.01, 100.0
 TIT_1X2 = ["Resultado Final","1x2","Resultado 1X2","Resultado","Match Result","Full Time Result"]
 TIT_DC  = ["Chance Dupla","Dupla Chance","Double Chance"]
@@ -30,13 +29,14 @@ class LinhaMercado:
     url_evento: str
     url_liga: str
 
-# -------------------- Utils --------------------
 def _norm(s:str)->str:
     return re.sub(r"\s+"," ",(s or "").strip())
 
 def _to_float(s:str)->Optional[float]:
-    try: return float(s.replace(",",".").strip())
-    except: return None
+    try:
+        return float(s.replace(",",".").strip())
+    except:
+        return None
 
 def _in_odd_range(v:Optional[float])->bool:
     return v is not None and ODD_MIN <= v <= ODD_MAX
@@ -45,14 +45,14 @@ def _split_teams(title:str)->Tuple[str,str,str]:
     t=_norm(title)
     for sep in [" - "," x "," X "," – "," vs "," VS "]:
         if sep in t:
-            a,b=t.split(sep,1); return f"{a} x {b}",a.strip(),b.strip()
+            a,b=t.split(sep,1)
+            return f"{a} x {b}",a.strip(),b.strip()
     return t,"",""
 
-def _iso_now()->str: return datetime.now(UTC).isoformat()
+def _iso_now()->str:
+    return datetime.now(UTC).isoformat()
 
-# -------------------- Funções otimizadas --------------------
 def _safe_open(sb, url:str, tries:int=2)->bool:
-    """Abre URL com retry leve e timeout curto"""
     for _ in range(tries):
         try:
             sb.open(url)
@@ -63,19 +63,18 @@ def _safe_open(sb, url:str, tries:int=2)->bool:
     return False
 
 def _smart_scroll(sb, max_steps:int=10, pause:float=0.4):
-    """Scroll inteligente: para quando altura estabiliza"""
     last1 = last2 = 0
     for _ in range(max_steps):
         try:
             sb.scroll_to_bottom()
             time.sleep(pause)
             cur = sb.execute_script("return document.body.scrollHeight||0") or 0
-            if cur in (last1, last2): break
+            if cur in (last1, last2):
+                break
             last2, last1 = last1, cur
         except Exception:
             break
 
-# -------------------- Classe Principal --------------------
 class BetanoScraper:
     def __init__(self, headless:bool, janela_horas:int, dump:bool):
         self.headless=headless
@@ -86,21 +85,16 @@ class BetanoScraper:
         with SB(uc=True, headed=not self.headless, locale_code="pt-BR",
                 ad_block_on=True, incognito=True, do_not_track=True,
                 disable_csp=True, pls="none") as sb:
-
-            # -------- Configuração da sessão Chrome --------
             try:
-                if getattr(sb,"driver",None): sb.driver.set_page_load_timeout(20)
+                if getattr(sb,"driver",None):
+                    sb.driver.set_page_load_timeout(20)
                 sb.set_window_size(1400,900)
                 sb.activate_cdp_mode()
-
-                # Bloqueia assets pesados
                 sb.execute_cdp_cmd("Network.enable", {})
                 sb.execute_cdp_cmd("Network.setBlockedURLs", {
                     "urls": ["*.png","*.jpg","*.jpeg","*.gif","*.webp","*.svg",
                              "*.woff","*.woff2","*.ttf","*.otf","*.mp4","*.webm"]
                 })
-
-                # User-Agent e Geolocalização
                 sb.driver.execute_cdp_cmd("Network.setUserAgentOverride", {
                     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                                  "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -121,7 +115,6 @@ class BetanoScraper:
             cutoff = now_utc + timedelta(hours=self.janela_horas)
             regs: List[LinhaMercado] = []
 
-            # -------- Loop de Ligas --------
             for liga_url in liga_urls:
                 try:
                     _safe_open(sb, liga_url)
@@ -129,7 +122,6 @@ class BetanoScraper:
                     self._dismiss(sb); self._cookies(sb); _smart_scroll(sb)
                     links, meta = self._league_events_jsonld(sb)
 
-                    # Filtra pela janela
                     eventos=[]
                     for href in links:
                         start_iso = meta.get(href,{}).get("startDate","")
@@ -139,10 +131,10 @@ class BetanoScraper:
                             dt=None
                         if dt and now_utc <= dt <= cutoff:
                             eventos.append(href)
+
                     if self.dump:
                         print(f"[liga] {liga_url} -> {len(eventos)} eventos válidos")
 
-                    # -------- Loop de Eventos --------
                     for href in eventos[:limite_eventos] if limite_eventos>0 else eventos:
                         try:
                             casa = meta.get(href,{}).get("homeTeam","")
@@ -154,37 +146,37 @@ class BetanoScraper:
                             _safe_open(sb, href)
                             time.sleep(0.8)
                             self._dismiss(sb); self._cookies(sb)
-
-                            # Intercepta fetch/XHR (captura JSON interno)
                             self._inject_capture(sb)
 
-                            titulo = self._first_text(sb, [
-                                "//h1","//h2","//*[@data-event-title]"
-                            ])
+                            titulo = self._first_text(sb, ["//h1","//h2","//*[@data-event-title]"])
                             if titulo and (not casa or not fora):
                                 p2,c2,f2=_split_teams(titulo)
-                                partida = partida or p2; casa=casa or c2; fora=fora or f2
+                                partida = partida or p2
+                                casa=casa or c2
+                                fora=fora or f2
 
                             extracao=_iso_now()
 
-                            # ---- Mercados ----
                             oc,oe,ofor = self._extract_1x2(sb)
                             regs += self._linhas(extracao,campeonato,partida,casa,fora,data_hora,
                                                  "1X2",[("1",None,oc),("X",None,oe),("2",None,ofor)],href,liga_url)
+
                             dc = self._extract_dc(sb)
                             if any(_in_odd_range(v) for v in dc.values()):
                                 regs += self._linhas(extracao,campeonato,partida,casa,fora,data_hora,
                                                      "Dupla Chance",[("1X",None,dc.get("1X")),("12",None,dc.get("12")),("X2",None,dc.get("X2"))],
                                                      href,liga_url)
+
                             for linha,(ov,un) in self._extract_totais(sb):
                                 regs += self._linhas(extracao,campeonato,partida,casa,fora,data_hora,
                                                      "Total de Gols",[("Over",linha,ov),("Under",linha,un)],href,liga_url)
-
                         except Exception as e:
-                            if self.dump: print(f"[evento erro] {href}: {e}")
+                            if self.dump:
+                                print(f"[evento erro] {href}: {e}")
                             continue
                 except Exception as e:
-                    if self.dump: print(f"[liga erro] {liga_url}: {e}")
+                    if self.dump:
+                        print(f"[liga erro] {liga_url}: {e}")
                     continue
 
             cols=["data_extracao","campeonato","partida","casa","fora","data_hora",
@@ -193,16 +185,19 @@ class BetanoScraper:
             df["odd"]=pd.to_numeric(df["odd"],errors="coerce")
             return df
 
-    # ---------------- JSON-LD ----------------
     def _league_events_jsonld(self, sb:SB)->Tuple[List[str], Dict[str,Dict[str,str]]]:
-        links=set(); meta={}
+        links:set[str]=set()
+        meta:Dict[str,Dict[str,str]]={}
         try:
             scripts=sb.find_elements("css selector","script[type='application/ld+json']")
             for sc in scripts:
                 raw=sc.get_attribute("innerText") or sc.get_attribute("textContent") or ""
-                if not raw.strip(): continue
-                try: data=json.loads(raw.strip())
-                except Exception: continue
+                if not raw.strip():
+                    continue
+                try:
+                    data=json.loads(raw.strip())
+                except Exception:
+                    continue
                 items = data if isinstance(data,list) else [data]
                 for it in items:
                     if isinstance(it,dict) and it.get("@type")=="SportsEvent":
@@ -219,9 +214,7 @@ class BetanoScraper:
             pass
         return list(dict.fromkeys(links)), meta
 
-    # ---------------- XHR Capture ----------------
     def _inject_capture(self, sb:SB):
-        """Injeta JS para capturar fetch/XHR responses"""
         try:
             sb.execute_script("""
             (function(){
@@ -246,20 +239,26 @@ class BetanoScraper:
         except Exception:
             pass
 
-    # ---------- mercados ----------
     def _extract_1x2(self, sb:SB)->Tuple[Optional[float],Optional[float],Optional[float]]:
         region=self._find_region(sb,TIT_1X2)
         got={"1":None,"X":None,"2":None}
         items=[]
         if region is not None:
-            try: items=region.find_elements("xpath",".//button|.//*[@role='button']|.//a|.//*[@data-testid][contains(@data-testid,'selection')]")
-            except Exception: items=[]
+            try:
+                items=region.find_elements("xpath",".//button|.//*[@role='button']|.//a|.//*[@data-testid][contains(@data-testid,'selection')]")
+            except Exception:
+                items=[]
         if not items:
-            try: items=sb.find_elements("xpath","//button|//*[@role='button']|//a|//*[@data-testid][contains(@data-testid,'selection')]")
-            except Exception: items=[]
+            try:
+                items=sb.find_elements("xpath","//button|//*[@role='button']|//a|//*[@data-testid][contains(@data-testid,'selection')]")
+            except Exception:
+                items=[]
         for it in items[:150]:
-            txt=_norm(it.text); lab=self._lab_1x2(txt); price=self._last_price(txt)
-            if lab and _in_odd_range(price) and got[lab] is None: got[lab]=price
+            txt=_norm(it.text)
+            lab=self._lab_1x2(txt)
+            price=self._last_price(txt)
+            if lab and _in_odd_range(price) and got[lab] is None:
+                got[lab]=price
         return got["1"],got["X"],got["2"]
 
     def _extract_dc(self, sb:SB)->Dict[str,Optional[float]]:
@@ -267,60 +266,71 @@ class BetanoScraper:
         region=self._find_region(sb,TIT_DC)
         items=[]
         if region is not None:
-            try: items=region.find_elements("xpath",".//button|.//*[@role='button']|.//a|.//*[@data-testid][contains(@data-testid,'selection')]")
-            except Exception: items=[]
+            try:
+                items=region.find_elements("xpath",".//button|.//*[@role='button']|.//a|.//*[@data-testid][contains(@data-testid,'selection')]")
+            except Exception:
+                items=[]
         if not items:
-            try: items=sb.find_elements("xpath","//button|//*[@role='button']|//a|//*[@data-testid][contains(@data-testid,'selection')]")
-            except Exception: items=[]
+            try:
+                items=sb.find_elements("xpath","//button|//*[@role='button']|//a|//*[@data-testid][contains(@data-testid,'selection')]")
+            except Exception:
+                items=[]
         for it in items[:150]:
-            txt=_norm(it.text); lab=self._lab_dc(txt); price=self._last_price(txt)
-            if lab and _in_odd_range(price) and out[lab] is None: out[lab]=price
+            txt=_norm(it.text)
+            lab=self._lab_dc(txt)
+            price=self._last_price(txt)
+            if lab and _in_odd_range(price) and out[lab] is None:
+                out[lab]=price
         return out
 
     def _extract_totais(self, sb:SB)->List[Tuple[str,Tuple[Optional[float],Optional[float]]]]:
-        res=[]; region=self._find_region(sb,TIT_OU)
+        res=[]
+        region=self._find_region(sb,TIT_OU)
         containers=[region] if region is not None else []
         if not containers:
-            try: containers=[sb.driver]
-            except Exception: containers=[]
+            try:
+                containers=[sb.driver]
+            except Exception:
+                containers=[]
         for cont in containers:
-            try: rows=cont.find_elements("xpath",".//div|.//section|.//li")
-            except Exception: rows=[]
+            try:
+                rows=cont.find_elements("xpath",".//div|.//section|.//li")
+            except Exception:
+                rows=[]
             for r in rows[:250]:
                 try:
                     txt=_norm(r.text)
                 except Exception:
                     continue
                 linha=self._first_line_total(txt)
-                if not linha: 
+                if not linha:
                     continue
-
-                # Procura explicitamente Over e Under (sem fallback “dois primeiros números”)
                 over=under=None
-                try: btns=r.find_elements("xpath",".//button|.//*[@role='button']|.//a")
-                except Exception: btns=[]
+                try:
+                    btns=r.find_elements("xpath",".//button|.//*[@role='button']|.//a")
+                except Exception:
+                    btns=[]
                 for b in btns[:16]:
-                    btxt=_norm(b.text); p=self._last_price(btxt)
-                    if not _in_odd_range(p): 
+                    btxt=_norm(b.text)
+                    p=self._last_price(btxt)
+                    if not _in_odd_range(p):
                         continue
                     if re.search(r"\b(over|mais|over\s*de|mais\s*de)\b",btxt,re.I):
                         over = over or p
                     elif re.search(r"\b(under|menos|under\s*de|menos\s*de)\b",btxt,re.I):
                         under = under or p
-
-                # Só registra se encontrou os dois
                 if (over is not None) and (under is not None):
                     res.append((linha,(over,under)))
-
-        # dedup
-        seen=set(); uniq=[]
+        seen=set()
+        uniq=[]
         for ln,pair in res:
             key=(ln,pair[0],pair[1])
-            if key in seen: continue
-            seen.add(key); uniq.append((ln,pair))
+            if key in seen:
+                continue
+            seen.add(key)
+            uniq.append((ln,pair))
         return uniq
 
-    # ---------- helpers UI/parse ----------
     def _find_region(self, sb:SB, titles:List[str]):
         for t in titles:
             t_low = t.lower()
@@ -340,43 +350,41 @@ class BetanoScraper:
         return None
 
     def _lab_1x2(self,text:str)->Optional[str]:
-        if re.search(r"(^|\s)1(\s|$)",text): return "1"
-        if re.search(r"(^|\s)X(\s|$)",text,re.I) or re.search(r"\bempate\b",text,re.I): return "X"
-        if re.search(r"(^|\s)2(\s|$)",text): return "2"
+        if re.search(r"(^|\s)1(\s|$)",text):
+            return "1"
+        if re.search(r"(^|\s)X(\s|$)",text,re.I) or re.search(r"\bempate\b",text,re.I):
+            return "X"
+        if re.search(r"(^|\s)2(\s|$)",text):
+            return "2"
         return None
 
     def _lab_dc(self,text:str)->Optional[str]:
         for lab in ["1X","12","X2","1x","x2"]:
-            if re.search(rf"(^|\s){lab}(\s|$)",text,re.I): return lab.upper()
-        if re.search(r"(casa\s+ou\s+empate|home\s+or\s+draw)",text,re.I): return "1X"
-        if re.search(r"(casa\s+ou\s+fora|home\s+or\s+away)",text,re.I): return "12"
-        if re.search(r"(empate\s+ou\s+fora|draw\s+or\s+away)",text,re.I): return "X2"
+            if re.search(rf"(^|\s){lab}(\s|$)",text,re.I):
+                return lab.upper()
+        if re.search(r"(casa\s+ou\s+empate|home\s+or\s+draw)",text,re.I):
+            return "1X"
+        if re.search(r"(casa\s+ou\s+fora|home\s+or\s+away)",text,re.I):
+            return "12"
+        if re.search(r"(empate\s+ou\s+fora|draw\s+or\s+away)",text,re.I):
+            return "X2"
         return None
 
     def _last_price(self,text:str)->Optional[float]:
         found=re.findall(r"\b(\d{1,2}(?:[.,]\d{1,2})?)\b",text)
         for raw in reversed(found):
             v=_to_float(raw)
-            if _in_odd_range(v): return v
+            if _in_odd_range(v):
+                return v
         return None
 
-    def _all_prices(self,text:str)->List[float]:
-        out=[]
-        for raw in re.findall(r"\b(\d{1,2}(?:[.,]\d{1,2})?)\b",text):
-            v=_to_float(raw)
-            if _in_odd_range(v): out.append(v)
-        return out
-
     def _first_line_total(self, text:str) -> Optional[str]:
-        cand = re.findall(
-            r"(?:over|under|mais|menos|total|gols?).{0,20}?(\d+(?:[.,]\d)?)",
-            text, re.I
-        )
+        cand = re.findall(r"(?:over|under|mais|menos|total|gols?).{0,20}?(\d+(?:[.,]\d)?)", text, re.I)
         if not cand:
             return None
         def ok(x:str)->bool:
             try:
-                v=float(x.replace(",",".")); 
+                v=float(x.replace(",",".")) 
                 return 0.5 <= v <= 7.5 and abs(v*2 - round(v*2)) < 1e-9
             except:
                 return False
@@ -389,7 +397,8 @@ class BetanoScraper:
                 mercado,triplets,url_evento,url_liga)->List[LinhaMercado]:
         out=[]
         for selecao,linha,odd in triplets:
-            if odd is None: continue
+            if odd is None:
+                continue
             out.append(LinhaMercado(
                 data_extracao=_iso_now(),
                 campeonato=_norm(campeonato),
@@ -411,7 +420,8 @@ class BetanoScraper:
             try:
                 if sb.is_element_visible(xp, timeout=0.6):
                     txt = _norm(sb.get_text(xp))
-                    if txt: return txt
+                    if txt:
+                        return txt
             except Exception:
                 continue
         return ""
@@ -425,11 +435,14 @@ class BetanoScraper:
             try:
                 if sb.is_element_visible(xp, timeout=1.0):
                     sb.click(xp); time.sleep(0.2); break
-            except Exception: pass
+            except Exception:
+                pass
 
     def _dismiss(self,sb:SB):
-        try: sb.send_keys("body","\u001B")
-        except Exception: pass
+        try:
+            sb.send_keys("body","\u001B")
+        except Exception:
+            pass
         closers = [
             "//button[contains(.,'Fechar') or contains(.,'Close')]",
             "//*[@data-testid and contains(@data-testid,'close')]",
@@ -439,7 +452,8 @@ class BetanoScraper:
             try:
                 if sb.is_element_visible(xp, timeout=0.8):
                     sb.click(xp); time.sleep(0.2)
-            except Exception: pass
+            except Exception:
+                pass
 
     def _scroll(self,sb:SB,steps=8,pause=0.7):
         last=0
@@ -447,18 +461,19 @@ class BetanoScraper:
             try:
                 sb.scroll_to_bottom(); time.sleep(pause)
                 cur=sb.execute_script("return document.body.scrollHeight")
-                if cur==last: break
+                if cur==last:
+                    break
                 last=cur
             except Exception:
                 break
 
-# ------------------- CLI -------------------
 def _read_ligas_csv(path:str)->List[str]:
     urls=[]
     with open(path,"r",encoding="utf-8") as f:
         for row in csv.DictReader(f):
             u=_norm(row.get("url_liga",""))
-            if u: urls.append(u)
+            if u:
+                urls.append(u)
     return list(dict.fromkeys(urls))
 
 def main():

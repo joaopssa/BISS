@@ -5,21 +5,18 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { Heart, Trophy, Users, Shield, DollarSign, Search, X, Building, Globe } from "lucide-react";
+import { Heart, Trophy, Users, Shield, DollarSign, Search, X, Globe } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import api from "@/services/api";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
-
-// Base de ligas já existente
 import leaguesJson from "@/data/leagues.json";
-
-// Utilitários/Mapas de país
 import { flagUrl, normalizeISO2, countryNameToISO2 } from "@/utils/flags";
 import flagsMap from "@/utils/flags-map.json";
 
 type TeamOpt = { id: number | string; name: string; logo?: string; country?: string };
+type PlayerOpt = { id: number | string; name: string; photo?: string; age?: number; nationality?: string };
 
 type LeagueOpt = {
   id: number | string;
@@ -31,27 +28,26 @@ type LeagueOpt = {
   flag?: string | null;
 };
 
-type PlayerOpt = { id: number | string; name: string; photo?: string; age?: number; nationality?: string };
-
 type CountryBucket = {
-  displayName: string;    // ex.: "Brasil"
-  iso2: string | null;    // ex.: "BR"
-  flagUrl: string | null; // url da bandeira
+  displayName: string;
+  iso2: string | null;
+  flagUrl: string | null;
   leagues: LeagueOpt[];
 };
 
-// === Logos estáticas "óbvias"
+// === Logos locais das ligas ===
 const STATIC_LEAGUE_LOGOS: Record<string, string> = {
-  "premier league": "https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg",
-  "la liga": "https://upload.wikimedia.org/wikipedia/en/4/49/LaLiga_logo.svg",
-  "serie a": "https://upload.wikimedia.org/wikipedia/en/e/e1/Serie_A_logo_%282019%29.svg",
-  "bundesliga": "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
-  "ligue 1": "https://upload.wikimedia.org/wikipedia/en/c/cf/Ligue_1_logo.png",
-  "campeonato brasileiro série a": "https://upload.wikimedia.org/wikipedia/pt/f/fd/Campeonato_Brasileiro_S%C3%A9rie_A_logo.png",
-  "brasileirão": "https://upload.wikimedia.org/wikipedia/pt/f/fd/Campeonato_Brasileiro_S%C3%A9rie_A_logo.png",
-  "uefa champions league": "https://upload.wikimedia.org/wikipedia/commons/2/2e/UEFA_Champions_League_logo_2.svg",
-  "uefa europa league": "https://upload.wikimedia.org/wikipedia/en/4/46/UEFA_Europa_League_logo_2021.svg",
+  "brasileirao serie a": "/src/logos/Ligas/BrasileiraoSerieA.webp",
+  "brasileirao serie b": "/src/logos/Ligas/BrasileiraoSerieB.png",
+  "bundesliga": "/src/logos/Ligas/Bundesliga.png",
+  "champions league": "/src/logos/Ligas/ChampionsLeague.png",
+  "la liga": "/src/logos/Ligas/Laliga.png",
+  "libertadores": "/src/logos/Ligas/Libertadores.png",
+  "ligue 1": "/src/logos/Ligas/Ligue1.png",
+  "premier league": "/src/logos/Ligas/PremierLeague.png",
+  "serie a": "/src/logos/Ligas/SerieATIM.png",
 };
+
 
 function pickStaticLogoByName(name: string): string | null {
   const key = name.toLowerCase();
@@ -61,7 +57,6 @@ function pickStaticLogoByName(name: string): string | null {
   return null;
 }
 
-// Cache fino (localStorage) para logos via Wikipedia
 async function resolveLeagueLogoWithCache(title: string): Promise<string | null> {
   const cacheKey = `lgLogo:${title.toLowerCase()}`;
   const hit = localStorage.getItem(cacheKey);
@@ -80,7 +75,6 @@ async function resolveLeagueLogoWithCache(title: string): Promise<string | null>
   }
 }
 
-/** Linha da sugestão de liga (evita hooks dentro do .map do pai) */
 const LeagueRow: React.FC<{
   lg: LeagueOpt;
   onSelect: (id: string | number, name: string) => void;
@@ -115,7 +109,6 @@ const LeagueRow: React.FC<{
   );
 };
 
-/** Cabeçalho de país no dropdown */
 const CountryHeader: React.FC<{ name: string; iso2: string | null }> = ({ name, iso2 }) => {
   const f = flagUrl(iso2, 16);
   return (
@@ -142,13 +135,11 @@ export const UserProfileScreen: React.FC = () => {
     investmentLimit: "abaixo-100",
   });
 
-  // termos de busca
   const [teamSearchTerm, setTeamSearchTerm] = useState("");
   const [leagueSearchTerm, setLeagueSearchTerm] = useState("");
   const [playerSearchTerm, setPlayerSearchTerm] = useState("");
   const [bettingHouseSearchTerm, setBettingHouseSearchTerm] = useState("");
 
-  // controle dropdowns
   const [showTeamSuggestions, setShowTeamSuggestions] = useState(false);
   const [showLeagueSuggestions, setShowLeagueSuggestions] = useState(false);
   const [showPlayerSuggestions, setShowPlayerSuggestions] = useState(false);
@@ -156,17 +147,14 @@ export const UserProfileScreen: React.FC = () => {
 
   const [formError, setFormError] = useState<string | null>(null);
 
-  // resultados
   const [teamResults, setTeamResults] = useState<TeamOpt[]>([]);
   const [leagueResultsFlat, setLeagueResultsFlat] = useState<LeagueOpt[]>([]);
   const [playerResults, setPlayerResults] = useState<PlayerOpt[]>([]);
 
-  // debounce
   const teamDebRef = useRef<number | undefined>(undefined);
   const leagueDebRef = useRef<number | undefined>(undefined);
   const playerDebRef = useRef<number | undefined>(undefined);
 
-  // === Reconhece quais itens do JSON são "país"
   const countryEntries = useMemo(() => {
     const names = new Set<string>();
     (leaguesJson as any[]).forEach((it) => {
@@ -177,7 +165,6 @@ export const UserProfileScreen: React.FC = () => {
     return Array.from(names);
   }, []);
 
-  // === Normaliza ligas locais (com ISO/flag inferidos)
   const allLeagues: LeagueOpt[] = useMemo(() => {
     const arr = Array.isArray(leaguesJson) ? (leaguesJson as any[]) : [];
     return arr
@@ -206,27 +193,22 @@ export const UserProfileScreen: React.FC = () => {
       .filter((l): l is LeagueOpt => !!l);
   }, []);
 
-  // === Mapa país->displayName/iso2 (com base nas entradas de países do JSON)
   const countryBucketsBase = useMemo(() => {
     const map = new Map<string, { displayName: string; iso2: string | null }>();
     countryEntries.forEach((name) => {
       const iso2 = countryNameToISO2(name) || null;
       map.set(name.toLowerCase(), { displayName: name, iso2 });
     });
-    // Buckets "globais"
     if (!map.has("internacional")) map.set("internacional", { displayName: "Internacional", iso2: null });
     if (!map.has("international")) map.set("international", { displayName: "International", iso2: null });
     return map;
   }, [countryEntries]);
 
-  // === Busca de Ligas (local, com agrupamento por país)
   useEffect(() => {
     if (!showLeagueSuggestions) return;
     window.clearTimeout(leagueDebRef.current);
     leagueDebRef.current = window.setTimeout(() => {
       const q = leagueSearchTerm.trim().toLowerCase();
-
-      // Filtra ligas por termo (nome/tipo/país textual)
       const filtered = (!q
         ? allLeagues
         : allLeagues.filter((l) => {
@@ -235,36 +217,29 @@ export const UserProfileScreen: React.FC = () => {
             const inCountryTxt = (l.country ?? "").toLowerCase().includes(q);
             return inName || inType || inCountryTxt;
           })
-      ).slice(0, 500); // buffer maior p/ agrupar
-
+      ).slice(0, 500);
       setLeagueResultsFlat(filtered);
     }, 150);
     return () => window.clearTimeout(leagueDebRef.current);
   }, [leagueSearchTerm, showLeagueSuggestions, allLeagues]);
 
-  // === Agrupa por país (ordem: país -> ligas)
   const leagueResultsGrouped: CountryBucket[] = useMemo(() => {
-    // 1) monta buckets a partir dos países conhecidos
     const buckets = new Map<string, CountryBucket>();
     countryBucketsBase.forEach(({ displayName, iso2 }, key) => {
       buckets.set(key, { displayName, iso2, flagUrl: flagUrl(iso2, 16), leagues: [] });
     });
 
-    // 2) aloca cada liga no bucket pelo ISO2; se não houver, tenta inferir pelo nome ("Brasil"/"Brazil"/etc)
     const getCountryKeyForLeague = (lg: LeagueOpt): string => {
       if (lg.iso2) {
-        // encontra o primeiro bucket com mesmo iso2
         for (const [key, b] of buckets) {
           if (b.iso2 && b.iso2 === lg.iso2) return key;
         }
       }
-      // tenta por nome do país em PT/EN
       for (const [key, b] of buckets) {
         if (!b.iso2) continue;
         const display = b.displayName.toLowerCase();
         if (lg.name.toLowerCase().includes(display)) return key;
       }
-      // competições intercontinentais (UEFA/CONMEBOL/etc)
       const n = lg.name.toLowerCase();
       if (n.includes("champions") || n.includes("europa") || n.includes("conferencia") || n.includes("conference") || n.includes("libertador") || n.includes("sul americana") || n.includes("sudamericana") || n.includes("world cup") || n.includes("copa do mundo") || n.includes("fifa")) {
         return buckets.has("internacional") ? "internacional" : "international";
@@ -278,17 +253,12 @@ export const UserProfileScreen: React.FC = () => {
       if (b) b.leagues.push(lg);
     }
 
-    // remove buckets vazios para não poluir
     const out = Array.from(buckets.values()).filter((b) => b.leagues.length > 0);
-
-    // ordena países por nome e, dentro, ligas por nome
     out.sort((a, b) => a.displayName.localeCompare(b.displayName, "pt-BR"));
     out.forEach((b) => b.leagues.sort((a, c) => a.name.localeCompare(c.name, "pt-BR")));
-
     return out;
   }, [leagueResultsFlat, countryBucketsBase]);
 
-  /* ===== Times (API) ===== */
   useEffect(() => {
     if (!showTeamSuggestions) return;
     window.clearTimeout(teamDebRef.current);
@@ -303,7 +273,6 @@ export const UserProfileScreen: React.FC = () => {
     return () => window.clearTimeout(teamDebRef.current);
   }, [teamSearchTerm, showTeamSuggestions]);
 
-  /* ===== Jogadores (API) ===== */
   useEffect(() => {
     if (!showPlayerSuggestions) return;
     window.clearTimeout(playerDebRef.current);
@@ -319,7 +288,6 @@ export const UserProfileScreen: React.FC = () => {
     return () => window.clearTimeout(playerDebRef.current);
   }, [playerSearchTerm, showPlayerSuggestions]);
 
-  /* ===== HANDLERS ===== */
   const handleTeamSelect = (id: string | number, name: string) => {
     setProfile((p) => ({ ...p, favoriteTeam: name }));
     setTeamSearchTerm(name);
@@ -353,7 +321,6 @@ export const UserProfileScreen: React.FC = () => {
     setProfile((p) => ({ ...p, favoritePlayers: p.favoritePlayers.filter((n) => n !== playerName) }));
   };
 
-  // Casas de apostas (mock)
   const bettingHouses = [
     { id: "bet365", name: "Bet365" }, { id: "betano", name: "Betano" }, { id: "sportingbet", name: "Sportingbet" },
     { id: "pixbet", name: "Pixbet" }, { id: "betfair", name: "Betfair" }, { id: "1xbet", name: "1xBet" },
@@ -380,7 +347,6 @@ export const UserProfileScreen: React.FC = () => {
     }));
   };
 
-  /* ===== SUBMIT ===== */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError(null);
@@ -417,7 +383,6 @@ export const UserProfileScreen: React.FC = () => {
   const clearPlayerSearch = () => { setPlayerSearchTerm(""); setShowPlayerSuggestions(false); };
   const clearBettingHouseSearch = () => { setBettingHouseSearchTerm(""); setShowBettingHouseSuggestions(false); };
 
-  /* ===== RENDER ===== */
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-gray-100">
       <Card className="w-full max-w-lg shadow-xl">
@@ -431,7 +396,6 @@ export const UserProfileScreen: React.FC = () => {
 
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* toggle */}
             <div className="flex items-center justify-between">
               <div className="space-y-1">
                 <Label>Apostar apenas nas ligas favoritas</Label>
@@ -443,7 +407,6 @@ export const UserProfileScreen: React.FC = () => {
               />
             </div>
 
-            {/* Times */}
             <div className="space-y-2">
               <Label className="flex items-center gap-2">
                 <Heart className="w-4 h-4 text-red-500" /> Clube Favorito
@@ -481,7 +444,6 @@ export const UserProfileScreen: React.FC = () => {
               </div>
             </div>
 
-            {/* Ligas */}
             <div className="space-y-2">
               <Label className="flex items-center gap-2">
                 <Trophy className="w-4 h-4 text-yellow-500" />
@@ -535,7 +497,6 @@ export const UserProfileScreen: React.FC = () => {
               )}
             </div>
 
-            {/* Jogadores */}
             <div className="space-y-2">
               <Label className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-gray-700" />
@@ -591,7 +552,6 @@ export const UserProfileScreen: React.FC = () => {
               )}
             </div>
 
-            {/* Segurança / financeiro */}
             <div className="space-y-6 pt-4 border-t">
               <h3 className="font-semibold text-gray-800 flex items-center gap-2">
                 <Shield className="w-4 h-4 text-blue-600" /> Configurações de Segurança e Financeiro
@@ -658,6 +618,52 @@ export const UserProfileScreen: React.FC = () => {
               Concluir Cadastro
             </Button>
           </form>
+
+          {profile.favoriteBettingHouses.length > 0 && (
+            <div className="mt-6">
+              <p className="text-sm text-gray-600">Casas de aposta favoritas:</p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {profile.favoriteBettingHouses.map((bh) => (
+                  <div key={bh} className="flex items-center bg-green-100 text-green-800 rounded-full px-3 py-1 text-sm">
+                    {bh}
+                    <X className="ml-1 h-3 w-3 cursor-pointer" onClick={(e) => removeBettingHouse(bh, e)} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {showBettingHouseSuggestions && filteredBettingHouses.length > 0 && (
+            <div className="mt-4">
+              <Label className="flex items-center gap-2">Adicionar Casa de Apostas</Label>
+              <div className="relative">
+                <div className="relative">
+                  <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+                  <Input
+                    placeholder="Digite o nome (ex.: Betano, Bet365)"
+                    className="pl-10 pr-10"
+                    value={bettingHouseSearchTerm}
+                    onChange={(e) => setBettingHouseSearchTerm(e.target.value)}
+                    onFocus={() => setShowBettingHouseSuggestions(true)}
+                  />
+                  {bettingHouseSearchTerm && (
+                    <X className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer" onClick={clearBettingHouseSearch} />
+                  )}
+                </div>
+                <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-auto">
+                  {filteredBettingHouses.map((h) => (
+                    <div
+                      key={h.id}
+                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                      onClick={() => handleBettingHouseSelect(h.id, h.name)}
+                    >
+                      {h.name}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </CardContent>
       </Card>
     </div>
