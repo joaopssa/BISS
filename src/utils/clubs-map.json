@@ -1,0 +1,782 @@
+{
+  "Cruzeiro": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Cruzeiro.png"
+  },
+  "Flamengo": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Flamengo.png"
+  },
+  "Fluminense": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Fluminense.png"
+  },
+  "Fortaleza": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Fortaleza.png"
+  },
+  "Grêmio": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Grêmio.png"
+  },
+  "Internacional": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Internacional.png"
+  },
+  "Juventude": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Juventude.png"
+  },
+  "Mirassol-SP": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Mirassol-SP.png"
+  },
+  "Palmeiras": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Palmeiras.png"
+  },
+  "Red Bull Bragantino": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Red Bull Bragantino.png"
+  },
+  "Santos": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Santos.png"
+  },
+  "São Paulo": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/São Paulo.png"
+  },
+  "Sport Recife": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Sport Recife.png"
+  },
+  "Vasco da Gama": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Vasco da Gama.png"
+  },
+  "Vitória": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Vitória.png"
+  },
+  "Atlético Mineiro": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Atlético Mineiro.png"
+  },
+  "Bahia": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Bahia.png"
+  },
+  "Botafogo": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Botafogo.png"
+  },
+  "Ceará": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Ceará.png"
+  },
+  "Corinthians": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Corinthians.png"
+  },
+
+  "Amazonas FC-AM": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Amazonas FC-AM.png"
+  },
+  "América Mineiro": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/América Mineiro.png"
+  },
+  "Athletic Club-MG": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Athletic Club-MG.png"
+  },
+  "Athletico Paranaense": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Athletico Paranaense.png"
+  },
+  "Atlético Goianiense": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Atlético Goianiense.png"
+  },
+  "Avaí": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Avaí.png"
+  },
+  "Botafogo-SP": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Botafogo-SP.png"
+  },
+  "Chapecoense": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Chapecoense.png"
+  },
+  "Coritiba": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Coritiba.png"
+  },
+  "CRB": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/CRB.png"
+  },
+  "Criciúma": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Criciúma.png"
+  },
+  "Cuiabá": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Cuiabá.png"
+  },
+  "Ferroviária-SP": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Ferroviária-SP.png"
+  },
+  "Goiás Esporte Clube-GO": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Goiás Esporte Clube-GO.png"
+  },
+  "Grêmio Novorizontino": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Grêmio Novorizontino.png"
+  },
+  "Operário Ferroviário-PR": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Operário Ferroviário-PR.png"
+  },
+  "Paysandu": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Paysandu.png"
+  },
+  "Remo": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Remo.png"
+  },
+  "Vila Nova-GO": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Vila Nova-GO.png"
+  },
+  "Volta Redonda": {
+    "league": "Brasileirao Serie B",
+    "logo": "logos/Brasileirao Serie B/Volta Redonda.png"
+  },
+
+  "Udinese Calcio": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Udinese Calcio.png"
+  },
+  "US Cremonese": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/US Cremonese.png"
+  },
+  "US Lecce": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/US Lecce.png"
+  },
+  "US Sassuolo": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/US Sassuolo.png"
+  },
+  "AC Milan": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/AC Milan.png"
+  },
+  "ACF Fiorentina": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/ACF Fiorentina.png"
+  },
+  "AS Roma": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/AS Roma.png"
+  },
+  "Atalanta BC": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Atalanta BC.png"
+  },
+  "Bologna FC 1909": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Bologna FC 1909.png"
+  },
+  "Cagliari Calcio": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Cagliari Calcio.png"
+  },
+  "Como 1907": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Como 1907.png"
+  },
+  "Genoa CFC": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Genoa CFC.png"
+  },
+  "Hellas Verona": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Hellas Verona.png"
+  },
+  "Inter Milan": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Inter Milan.png"
+  },
+  "Juventus FC": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Juventus FC.png"
+  },
+  "Parma Calcio 1913": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Parma Calcio 1913.png"
+  },
+  "Pisa Sporting Club": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Pisa Sporting Club.png"
+  },
+  "SS Lazio": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/SS Lazio.png"
+  },
+  "SSC Napoli": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/SSC Napoli.png"
+  },
+  "Torino FC": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Torino FC.png"
+  },
+
+  "AFC Bournemouth": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/AFC Bournemouth.png"
+  },
+  "Arsenal FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Arsenal FC.png"
+  },
+  "Aston Villa": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Aston Villa.png"
+  },
+  "Brentford FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Brentford FC.png"
+  },
+  "Brighton & Hove Albion": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Brighton & Hove Albion.png"
+  },
+  "Burnley FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Burnley FC.png"
+  },
+  "Chelsea FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Chelsea FC.png"
+  },
+  "Crystal Palace": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Crystal Palace.png"
+  },
+  "Everton FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Everton FC.png"
+  },
+  "Fulham FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Fulham FC.png"
+  },
+  "Leeds United": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Leeds United.png"
+  },
+  "Liverpool FC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Liverpool FC.png"
+  },
+  "Manchester City": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Manchester City.png"
+  },
+  "Manchester United": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Manchester United.png"
+  },
+  "Newcastle United": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Newcastle United.png"
+  },
+  "Nottingham Forest": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Nottingham Forest.png"
+  },
+  "Sunderland AFC": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Sunderland AFC.png"
+  },
+  "Tottenham Hotspur": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Tottenham Hotspur.png"
+  },
+  "West Ham United": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/West Ham United.png"
+  },
+  "Wolverhampton Wanderers": {
+    "league": "Premier League",
+    "logo": "logos/Premier League/Wolverhampton Wanderers.png"
+  },
+
+  "Athletic Bilbao": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Athletic Bilbao.png"
+  },
+  "Atlético de Madrid": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Atlético de Madrid.png"
+  },
+  "CA Osasuna": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/CA Osasuna.png"
+  },
+  "Celta de Vigo": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Celta de Vigo.png"
+  },
+  "Deportivo Alavés": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Deportivo Alavés.png"
+  },
+  "Elche CF": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Elche CF.png"
+  },
+  "FC Barcelona": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/FC Barcelona.png"
+  },
+  "Getafe CF": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Getafe CF.png"
+  },
+  "Girona FC": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Girona FC.png"
+  },
+  "Levante UD": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Levante UD.png"
+  },
+  "Rayo Vallecano": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Rayo Vallecano.png"
+  },
+  "RCD Espanyol Barcelona": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/RCD Espanyol Barcelona.png"
+  },
+  "RCD Mallorca": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/RCD Mallorca.png"
+  },
+  "Real Betis Balompié": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Real Betis Balompié.png"
+  },
+  "Real Madrid": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Real Madrid.png"
+  },
+  "Real Oviedo": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Real Oviedo.png"
+  },
+  "Real Sociedad": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Real Sociedad.png"
+  },
+  "Sevilla FC": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Sevilla FC.png"
+  },
+  "Valencia CF": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Valencia CF.png"
+  },
+  "Villarreal CF": {
+    "league": "LaLiga",
+    "logo": "logos/LaLiga/Villarreal CF.png"
+  },
+
+  "Olympique Marseille": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Olympique Marseille.png"
+  },
+  "Paris FC": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Paris FC.png"
+  },
+  "Paris Saint-Germain": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Paris Saint-Germain.png"
+  },
+  "RC Lens": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/RC Lens.png"
+  },
+  "RC Strasbourg Alsace": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/RC Strasbourg Alsace.png"
+  },
+  "Stade Brestois 29": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Stade Brestois 29.png"
+  },
+  "Stade Rennais FC": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Stade Rennais FC.png"
+  },
+  "AJ Auxerre": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/AJ Auxerre.png"
+  },
+  "Angers SCO": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Angers SCO.png"
+  },
+  "AS Monaco": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/AS Monaco.png"
+  },
+  "FC Lorient": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/FC Lorient.png"
+  },
+  "FC Metz": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/FC Metz.png"
+  },
+  "FC Nantes": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/FC Nantes.png"
+  },
+  "FC Toulouse": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/FC Toulouse.png"
+  },
+  "Le Havre AC": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Le Havre AC.png"
+  },
+  "LOSC Lille": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/LOSC Lille.png"
+  },
+  "OGC Nice": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/OGC Nice.png"
+  },
+  "Olympique Lyon": {
+    "league": "Ligue 1",
+    "logo": "logos/Ligue 1/Olympique Lyon.png"
+  },
+
+  "1.FC Heidenheim 1846": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/1.FC Heidenheim 1846.png"
+  },
+  "1.FC Köln": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/1.FC Köln.png"
+  },
+  "1.FC Union Berlin": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/1.FC Union Berlin.png"
+  },
+  "1.FSV Mainz 05": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/1.FSV Mainz 05.png"
+  },
+  "Bayer 04 Leverkusen": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/Bayer 04 Leverkusen.png"
+  },
+  "Bayern Munich": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/Bayern Munich.png"
+  },
+  "Borussia Dortmund": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/Borussia Dortmund.png"
+  },
+  "Borussia Mönchengladbach": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/Borussia Mönchengladbach.png"
+  },
+  "Eintracht Frankfurt": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/Eintracht Frankfurt.png"
+  },
+  "FC Augsburg": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/FC Augsburg.png"
+  },
+  "FC St. Pauli": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/FC St. Pauli.png"
+  },
+  "Hamburger SV": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/Hamburger SV.png"
+  },
+  "RB Leipzig": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/RB Leipzig.png"
+  },
+  "SC Freiburg": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/SC Freiburg.png"
+  },
+  "SV Werder Bremen": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/SV Werder Bremen.png"
+  },
+  "TSG 1899 Hoffenheim": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/TSG 1899 Hoffenheim.png"
+  },
+  "VfB Stuttgart": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/VfB Stuttgart.png"
+  },
+  "VfL Wolfsburg": {
+    "league": "Bundesliga",
+    "logo": "logos/Bundesliga/VfL Wolfsburg.png"
+  },
+
+  "Qarabag": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Qarabag.png"
+  },
+  "Rangers FC": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Rangers FC.png"
+  },
+  "Red Bull Salzburg": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Red Bull Salzburg.png"
+  },
+  "Red Star Belgrade": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Red Star Belgrade.png"
+  },
+  "Servette FC": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Servette FC.png"
+  },
+  "SK Brann": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/SK Brann.png"
+  },
+  "SK Slavia Prague": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/SK Slavia Prague.png"
+  },
+  "SK Sturm Graz": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/SK Sturm Graz.png"
+  },
+  "SL Benfica": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/SL Benfica.png"
+  },
+  "Sporting CP": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Sporting CP.png"
+  },
+  "Union Saint-Gilloise": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Union Saint-Gilloise.png"
+  },
+  "Ajax Amsterdam": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Ajax Amsterdam.png"
+  },
+  "Celtic FC": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Celtic FC.png"
+  },
+  "Club Brugge KV": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Club Brugge KV.png"
+  },
+  "Dynamo Kyiv": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Dynamo Kyiv.png"
+  },
+  "FC Basel 1893": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/FC Basel 1893.png"
+  },
+  "FC Copenhagen": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/FC Copenhagen.png"
+  },
+  "FC Viktoria Plzen": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/FC Viktoria Plzen.png"
+  },
+  "FCSB": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/FCSB.png"
+  },
+  "Fenerbahce": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Fenerbahce.png"
+  },
+  "Feyenoord Rotterdam": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Feyenoord Rotterdam.png"
+  },
+  "FK BodoGlimt": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/FK BodoGlimt.png"
+  },
+  "Galatasaray": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Galatasaray.png"
+  },
+  "HNK Rijeka": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/HNK Rijeka.png"
+  },
+  "Kairat": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Kairat.png"
+  },
+  "Lech Poznan": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Lech Poznan.png"
+  },
+  "Ludogorets Razgrad": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Ludogorets Razgrad.png"
+  },
+  "Malmö FF": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Malmö FF.png"
+  },
+  "Olympiacos": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Olympiacos.png"
+  },
+  "Pafos": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Pafos.png"
+  },
+  "Panathinaikos FC": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/Panathinaikos FC.png"
+  },
+  "PSV Eindhoven": {
+    "league": "ChampionsLeague",
+    "logo": "logos/ChampionsLeague/PSV Eindhoven.png"
+  },
+
+  "Carabobo": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Carabobo.png"
+  },
+  "Central Cordoba": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Central Cordoba.png"
+  },
+  "Cerro Porteno": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Cerro Porteno.png"
+  },
+  "Colo Colo": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Colo Colo.png"
+  },
+  "Deportivo Tachira": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Deportivo Tachira.png"
+  },
+  "Estudiantes": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Estudiantes.png"
+  },
+  "Independiente del Valle": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Independiente del Valle.png"
+  },
+  "LDU": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/LDU.png"
+  },
+  "Libertad": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Libertad.png"
+  },
+  "Nacional": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Nacional.png"
+  },
+  "Olimpia": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Olimpia.png"
+  },
+  "Penarol": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Penarol.png"
+  },
+  "Racing": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Racing.png"
+  },
+  "River Plate": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/River Plate.png"
+  },
+  "San Antonio": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/San Antonio.png"
+  },
+  "Sporting Cristal": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Sporting Cristal.png"
+  },
+  "Talleres": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Talleres.png"
+  },
+  "Universidade de Chile": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Universidade de Chile.png"
+  },
+  "Universitario": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Universitario.png"
+  },
+  "Velez": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Velez.png"
+  },
+  "Alianza Lima": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Alianza Lima.png"
+  },
+  "Atletico Bucaramanga": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Atletico Bucaramanga.png"
+  },
+  "Atletico Nacional": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Atletico Nacional.png"
+  },
+  "Barcelona": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Barcelona.png"
+  },
+  "Bolivar": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Bolivar.png"
+  }
+}
