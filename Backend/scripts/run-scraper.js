@@ -15,7 +15,7 @@ const PY_BIN = process.env.PYTHON_BIN || "C:\\Python313\\python.exe";
 
 // CSVs (sempre relativos ao ROOT)
 const OUT_CSV = path.resolve(ROOT, process.env.BETANO_CSV_PATH || "./data/odds_betano.csv");
-const OUT_TMP = path.resolve(ROOT, "./data/odds_betano.tmp.csv");
+const OUT_TMP = path.resolve(ROOT, "./data/odds_betano.csv");
 const LIGAS_FULL = path.resolve(ROOT, process.env.BETANO_LIGAS_CSV || "./scraper/ligas_auto.csv");
 const LIGAS_QUICK = path.resolve(ROOT, process.env.BETANO_LIGAS_QUICK || "./data/ligas_quick.csv");
 
@@ -134,8 +134,10 @@ async function run() {
       }
     }
 
-    // limpa tmp
-    if (fs.existsSync(OUT_TMP)) fs.unlinkSync(OUT_TMP);
+    // limpa tmp apenas se OUT_TMP for diferente de OUT_CSV
+    if (OUT_TMP !== OUT_CSV && fs.existsSync(OUT_TMP)) {
+      fs.unlinkSync(OUT_TMP);
+    }
 
     if (!ok) {
       console.error("[scraper] terminou com falha.");

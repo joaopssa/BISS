@@ -30,7 +30,7 @@ export type UpcomingPayload = {
 };
 
 export async function fetchUpcoming(): Promise<UpcomingPayload> {
-  const res = await fetch(`${BASE}/api/football/upcoming`, { cache: "no-store" });
+  const res = await fetch(`${BASE}/football/upcoming`, { cache: "no-store" });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const js = await res.json();
 

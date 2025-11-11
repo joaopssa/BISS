@@ -8,9 +8,9 @@ const Papa = require("papaparse");
  * data_extracao,campeonato,partida,casa,fora,data_hora,mercado,selecao,linha,odd,url_evento,url_liga
  */
 const CSV_PATH =
-  process.env.BETANO_CSV_PATH || path.join(__dirname, "../../data/odds_betano_multiligas.csv");
+  process.env.BETANO_CSV_PATH || path.join(__dirname, "../../data/odds_betano.csv");
 
-const WINDOW_HOURS = parseInt(process.env.BETANO_WINDOW_HOURS || "24", 10);
+const WINDOW_HOURS = parseInt(process.env.BETANO_WINDOW_HOURS || "72", 10);
 const TTL_MS = parseInt(process.env.BETANO_CACHE_TTL_MS || "60000", 10);
 
 let CACHE = { at: 0, rows: [], byEvent: new Map(), csvStat: null };
