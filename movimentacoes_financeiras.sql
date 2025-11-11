@@ -1,9 +1,12 @@
 DROP TABLE IF EXISTS `movimentacoes_financeiras`;
+
 CREATE TABLE `movimentacoes_financeiras` (
   `id_movimentacao` INT NOT NULL AUTO_INCREMENT,
   `id_usuario` INT NOT NULL,
-  `tipo` ENUM('deposito', 'saque') NOT NULL,
+  `tipo` ENUM('deposito', 'saque', 'aposta', 'premio', 'ajuste') NOT NULL,
   `valor` DECIMAL(10,2) NOT NULL,
+  `descricao` VARCHAR(255) DEFAULT NULL,               -- Ex: "Aposta no jogo Real Madrid x Barça"
+  `referencia` VARCHAR(100) DEFAULT NULL,              -- Ex: id_aposta ou id_bilhete
   `data_movimentacao` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_movimentacao`),
   KEY `fk_movimentacoes_usuarios_idx` (`id_usuario`),
@@ -12,4 +15,6 @@ CREATE TABLE `movimentacoes_financeiras` (
     REFERENCES `usuarios` (`id_usuario`)
     ON DELETE CASCADE
     ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;

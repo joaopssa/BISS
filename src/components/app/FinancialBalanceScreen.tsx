@@ -1,196 +1,238 @@
-import React, { useMemo, useState } from 'react';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import {
-  TrendingUp,
-  TrendingDown,
-  DollarSign,
-  Target,
-  AlertTriangle,
-} from 'lucide-react';
-import {
-  ResponsiveContainer,
-  LineChart,
-  Line,
-  CartesianGrid,
-  XAxis,
-  YAxis,
-  Tooltip,
-} from 'recharts';
+// src/components/app/FinancialBalanceScreen.tsx
+"use client";
 
-export const FinancialBalanceScreen: React.FC = () => {
-  const [projectionPeriod, setProjectionPeriod] = useState<string>('1 semana');
-  const [showChart, setShowChart] = useState(false);
+import React, { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import api from "@/services/api";
 
-  const balance = {
-    current: 2450.75,
-    baseProjection: 2890.0,
-  };
-
-  // Dados para o gráfico de projeção
-  const projectionData = useMemo(
-    () => [
-      { name: 'Atual', value: balance.current },
-      { name: '1 semana', value: balance.baseProjection },
-      {
-        name: '1 mês',
-        value: balance.current + (balance.baseProjection - balance.current) * 4,
-      },
-      {
-        name: '6 meses',
-        value: balance.current + (balance.baseProjection - balance.current) * 24,
-      },
-      {
-        name: '1 ano',
-        value: balance.current + (balance.baseProjection - balance.current) * 52,
-      },
-    ],
-    [balance.current, balance.baseProjection]
-  );
-
-  // Dados fictícios do extrato (MANTIDOS EXATAMENTE COMO ESTAVAM)
-  const financialStatement = [
-    {
-      id: 1,
-      type: 'deposit' as const,
-      amount: 500.0,
-      description: 'Depósito via PIX',
-      date: '2024-06-03',
-      time: '09:12',
-      method: 'PIX',
-    },
-    {
-      id: 2,
-      type: 'withdrawal' as const,
-      amount: -300.0,
-      description: 'Saque para conta bancária',
-      date: '2024-06-04',
-      time: '14:30',
-      method: 'TED',
-    },
-  ];
-
-  const selectedPoint = useMemo(
-    () => projectionData.find((p) => p.name === projectionPeriod) ?? projectionData[1],
-    [projectionData, projectionPeriod]
-  );
-
-  const growth = selectedPoint.value - balance.current;
-  const growthPct = (growth / balance.current) * 100;
-
-  return (
-    <div className="p-4 space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Saldo & Projeções</h1>
-        <div className="flex items-center gap-2">
-          <Badge variant="secondary" className="gap-1">
-            <DollarSign className="w-4 h-4" />
-            R$ {balance.current.toFixed(2)}
-          </Badge>
-          {growth >= 0 ? (
-            <Badge className="gap-1">
-              <TrendingUp className="w-4 h-4" />
-              {growthPct.toFixed(1)}%
-            </Badge>
-          ) : (
-            <Badge variant="destructive" className="gap-1">
-              <TrendingDown className="w-4 h-4" />
-              {growthPct.toFixed(1)}%
-            </Badge>
-          )}
-        </div>
-      </div>
-
-      <Card className="rounded-2xl">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0">
-          <CardTitle className="text-lg">Projeção de saldo</CardTitle>
-          <div className="flex items-center gap-2">
-            <select
-              className="border rounded-xl px-3 py-1 text-sm"
-              value={projectionPeriod}
-              onChange={(e) => setProjectionPeriod(e.target.value)}
-            >
-              <option>1 semana</option>
-              <option>1 mês</option>
-              <option>6 meses</option>
-              <option>1 ano</option>
-            </select>
-            <Button variant="outline" onClick={() => setShowChart((v) => !v)}>
-              {showChart ? 'Ocultar gráfico' : 'Mostrar gráfico'}
-            </Button>
-          </div>
-        </CardHeader>
-        <CardContent>
-          {showChart ? (
-            <div className="h-64">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={projectionData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
-                  <Tooltip formatter={(v: number) => `R$ ${v.toFixed(2)}`} />
-                  <Line type="monotone" dataKey="value" dot />
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Target className="w-4 h-4" />
-              Gráfico oculto. Clique em “Mostrar gráfico” para visualizar.
-            </div>
-          )}
-          <div className="mt-4 text-sm">
-            Projeção selecionada ({projectionPeriod}):{' '}
-            <span className="font-medium">R$ {selectedPoint.value.toFixed(2)}</span>
-          </div>
-        </CardContent>
-      </Card>
-
-      <Card className="rounded-2xl">
-        <CardHeader>
-          <CardTitle className="text-lg">Extrato recente</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-3">
-          {financialStatement.map((item) => (
-            <div
-              key={item.id}
-              className="grid grid-cols-1 md:grid-cols-4 gap-2 items-center border rounded-xl p-3"
-            >
-              <div className="flex items-center gap-2">
-                {item.type === 'deposit' ? (
-                  <TrendingUp className="w-4 h-4" />
-                ) : (
-                  <TrendingDown className="w-4 h-4" />
-                )}
-                <span className="font-medium">
-                  {item.type === 'deposit' ? 'Entrada' : 'Saída'}
-                </span>
-              </div>
-              <div className="text-sm md:text-base">
-                {item.description} • {item.method}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                {item.date} {item.time}
-              </div>
-              <div
-                className={`text-right font-semibold ${
-                  item.amount >= 0 ? 'text-emerald-600' : 'text-rose-600'
-                }`}
-              >
-                {item.amount >= 0 ? '+' : '-'} R$ {Math.abs(item.amount).toFixed(2)}
-              </div>
-            </div>
-          ))}
-
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-            <AlertTriangle className="w-3 h-3" />
-            Valores meramente ilustrativos.
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
+type Movimentacao = {
+  id_movimentacao: number;
+  tipo: "deposito" | "saque" | "aposta" | "premio" | "ajuste";
+  valor: number;
+  descricao?: string;
+  data_movimentacao: string;
 };
 
-export default FinancialBalanceScreen;
+export default function FinancialBalanceScreen() {
+  const [saldo, setSaldo] = useState<number>(0);
+  const [extrato, setExtrato] = useState<Movimentacao[]>([]);
+  const [valor, setValor] = useState<number>(0);
+  const [modo, setModo] = useState<"deposito" | "saque">("deposito");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [feedback, setFeedback] = useState<string | null>(null);
+
+  const fetchSaldo = async () => {
+    try {
+      const res = await api.get("/api/financeiro/saldo");
+      const s = typeof res.data?.saldo === "number" ? res.data.saldo : 0;
+      setSaldo(s);
+    } catch {
+      setFeedback("Erro ao carregar saldo.");
+    }
+  };
+
+  const fetchExtrato = async () => {
+    try {
+      const res = await api.get("/api/financeiro/extrato");
+      const data = Array.isArray(res.data) ? res.data : [];
+      const mapped: Movimentacao[] = data.map((m: any) => ({
+        id_movimentacao: m.id_movimentacao ?? m.id ?? 0,
+        tipo: m.tipo,
+        valor: Number(m.valor) || 0,
+        descricao: m.descricao || "",
+        data_movimentacao: m.data_movimentacao || new Date().toISOString(),
+      }));
+      setExtrato(mapped);
+    } catch {
+      setFeedback("Erro ao carregar extrato.");
+    }
+  };
+
+  useEffect(() => {
+    fetchSaldo();
+    fetchExtrato();
+  }, []);
+
+  const handleTransacao = async () => {
+    if (!valor || valor <= 0) {
+      setFeedback("Informe um valor válido para a operação.");
+      return;
+    }
+    if (modo === "saque" && valor > saldo) {
+      setFeedback("Saldo insuficiente para saque.");
+      return;
+    }
+
+    setLoading(true);
+    setFeedback(null);
+    try {
+      const endpoint =
+        modo === "deposito" ? "/api/financeiro/deposito" : "/api/financeiro/saque";
+      await api.post(endpoint, { valor });
+
+      setFeedback(
+        modo === "deposito"
+          ? `Depósito de R$ ${valor.toFixed(2)} realizado com sucesso!`
+          : `Saque de R$ ${valor.toFixed(2)} realizado com sucesso!`
+      );
+
+      setValor(0);
+      await fetchSaldo();
+      await fetchExtrato();
+    } catch (err: any) {
+      const msg = err?.response?.data?.error || "Erro na operação.";
+      setFeedback(msg);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
+      <header className="bg-[#014a8f] text-white p-4 shadow">
+        <h1 className="text-xl font-bold">Saldo e Movimentações</h1>
+      </header>
+
+      <main className="p-6 space-y-6">
+        {/* SALDO ATUAL */}
+        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4 flex items-center justify-between">
+          <div>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Saldo atual</p>
+            <h2 className="text-3xl font-bold text-[#014a8f]">
+              R$ {saldo.toFixed(2)}
+            </h2>
+          </div>
+          <Button
+            onClick={() => {
+              fetchSaldo();
+              fetchExtrato();
+            }}
+            className="bg-[#014a8f] hover:bg-[#003b70] text-white"
+          >
+            Atualizar
+          </Button>
+        </div>
+
+        {/* DEPÓSITO / SAQUE */}
+        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4 space-y-4">
+          <h2 className="text-lg font-semibold">Operação</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+            <div className="flex gap-2">
+              <Button
+                variant={modo === "deposito" ? "default" : "outline"}
+                className={`${
+                  modo === "deposito"
+                    ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                    : ""
+                }`}
+                onClick={() => setModo("deposito")}
+              >
+                Depósito
+              </Button>
+              <Button
+                variant={modo === "saque" ? "default" : "outline"}
+                className={`${
+                  modo === "saque"
+                    ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                    : ""
+                }`}
+                onClick={() => setModo("saque")}
+              >
+                Saque
+              </Button>
+            </div>
+            <input
+              type="number"
+              min={0}
+              value={valor || ""}
+              onChange={(e) => setValor(Number(e.target.value))}
+              placeholder="Valor em R$"
+              className="border rounded-md px-3 py-2 text-sm w-full sm:w-40"
+            />
+            <Button
+              className="bg-[#014a8f] hover:bg-[#003b70] text-white"
+              onClick={handleTransacao}
+              disabled={loading}
+            >
+              {loading
+                ? "Processando..."
+                : modo === "deposito"
+                ? "Depositar"
+                : "Sacar"}
+            </Button>
+          </div>
+
+          {feedback && (
+            <div
+              className={`rounded-lg border px-4 py-2 text-sm ${
+                /sucesso|realizado/i.test(feedback)
+                  ? "bg-green-50 border-green-200 text-green-800"
+                  : "bg-blue-50 border-blue-200 text-blue-800"
+              }`}
+            >
+              {feedback}
+            </div>
+          )}
+        </div>
+
+        {/* HISTÓRICO / EXTRATO */}
+        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4">
+          <h2 className="text-lg font-semibold mb-2">Histórico de Movimentações</h2>
+
+          {extrato.length === 0 ? (
+            <p className="text-sm text-gray-500 text-center">
+              Nenhuma movimentação registrada.
+            </p>
+          ) : (
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left border-b border-gray-200 dark:border-neutral-700">
+                  <th className="py-2">Data</th>
+                  <th className="py-2">Tipo</th>
+                  <th className="py-2">Valor</th>
+                  <th className="py-2">Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                {extrato.map((m) => (
+                  <tr
+                    key={m.id_movimentacao}
+                    className="border-b border-gray-100 dark:border-neutral-800"
+                  >
+                    <td className="py-2 text-gray-500">
+                      {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
+                    </td>
+                    <td className="capitalize">
+                      {m.tipo === "deposito"
+                        ? "Depósito"
+                        : m.tipo === "saque"
+                        ? "Saque"
+                        : m.tipo === "aposta"
+                        ? "Aposta"
+                        : m.tipo === "premio"
+                        ? "Prêmio"
+                        : "Ajuste"}
+                    </td>
+                    <td
+                      className={`font-semibold ${
+                        m.tipo === "deposito" || m.tipo === "premio"
+                          ? "text-green-600"
+                          : "text-red-600"
+                      }`}
+                    >
+                      {m.tipo === "deposito" || m.tipo === "premio" ? "+" : "-"} R${" "}
+                      {m.valor.toFixed(2)}
+                    </td>
+                    <td className="text-gray-600 dark:text-gray-400">
+                      {m.descricao || "—"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </main>
+    </div>
+  );
+}

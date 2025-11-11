@@ -33,6 +33,8 @@ app.get("/health", (_req, res) => {
 // 🧩 Rotas da API principal
 app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
+app.use("/api/apostas", require("./routes/betSlipRoutes"));
+app.use("/api/financeiro", require("./routes/financeRoutes"));
 
 // ⚽ Rotas públicas de futebol (sem /api prefix)
 app.use("/football", footballRoutes);

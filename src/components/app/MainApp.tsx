@@ -13,8 +13,8 @@ import {
 } from '@/components/ui/sidebar';
 import { BottomNavigation } from './BottomNavigation';
 import { HomeScreen } from './HomeScreen';
-import { FinancialBalanceScreen } from './FinancialBalanceScreen';
-import { BettingHistoryScreen } from './BettingHistoryScreen';
+import FinancialBalanceScreen  from './FinancialBalanceScreen';
+import  BettingHistoryScreen  from './BettingHistoryScreen';
 import { FriendsBetsScreen } from './FriendsBetsScreen';
 import { ProfileRankingScreen } from './ProfileRankingScreen';
 // --- (1/3) IMPORTAÇÕES ADICIONADAS ---

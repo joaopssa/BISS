@@ -1,114 +1,204 @@
-// src/components/ui/expandable-match-card.tsx
 import React, { useState } from "react";
 import type { UIMatch } from "@/data/matchData";
+import clubsMap from "@/utils/clubs-map.json";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 type Props = {
   matches: UIMatch[];
-  logos?: Record<string, string>;
+  onSelectOdd?: (params: {
+    matchId: string | number;
+    homeTeam: string;
+    awayTeam: string;
+    competition: string;
+    market: string;
+    selection: string;
+    odd: number;
+  }) => void;
 };
 
-const SafeOdd: React.FC<{ value: number | null | undefined }> = ({ value }) => {
+// ===== Helpers =====
+const normalize = (str: string) =>
+  str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/-/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+
+const findClubLogo = (teamName: string): string | null => {
+  const target = normalize(teamName);
+  for (const [key, data] of Object.entries(clubsMap)) {
+    const normKey = normalize(key);
+    if (target.includes(normKey) || normKey.includes(target)) return data.logo;
+  }
+  return null;
+};
+
+const SafeOdd: React.FC<{ value?: number | null }> = ({ value }) => {
   if (value == null || Number.isNaN(value)) return <span>-</span>;
-  return <span>{Number(value).toFixed(2)}</span>;
+  return (
+    <span className="font-semibold text-gray-800 dark:text-gray-100">
+      {Number(value).toFixed(2)}
+    </span>
+  );
 };
 
-export default function ExpandableMatchCard({ matches }: Props) {
+// ===== Componente principal =====
+export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
   const [openId, setOpenId] = useState<string | number | null>(null);
 
+  const toggleExpand = (id: string | number) => {
+    setOpenId(openId === id ? null : id);
+  };
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
       {matches.map((m) => {
         const isOpen = openId === m.id;
-        const home = m.homeTeam;
-        const away = m.awayTeam;
+
+        // tipagem explícita para odds e extras
+        const main: UIMatch["odds"] = m.odds || {
+          home: null,
+          draw: null,
+          away: null,
+        };
+        const extra = m._extraMarkets || {};
+
+        const logoHome = findClubLogo(m.homeTeam);
+        const logoAway = findClubLogo(m.awayTeam);
 
         return (
           <div
-            key={String(m.id)}
-            className="rounded-2xl border bg-white dark:bg-neutral-900 shadow-sm"
+            key={m.id}
+            className="bg-white dark:bg-neutral-900 rounded-xl shadow border border-gray-200 dark:border-neutral-800 overflow-hidden"
           >
-            <div className="p-4">
-              {/* Header */}
-              <div className="flex items-center justify-between text-sm text-gray-500">
-                <span>{m.competition}</span>
-                <span>
-                  {m.date} • {m.time}
-                </span>
+            {/* Cabeçalho */}
+            <div className="flex items-center justify-between p-4">
+              <div className="flex flex-col items-center justify-center w-full">
+                <div className="flex items-center justify-center gap-3">
+                  <div className="flex items-center gap-2">
+                    {logoHome && (
+                      <img
+                        src={logoHome}
+                        alt={m.homeTeam}
+                        className="w-5 h-5 object-contain"
+                      />
+                    )}
+                    <span className="font-semibold text-gray-900 dark:text-gray-100">
+                      {m.homeTeam}
+                    </span>
+                  </div>
+
+                  <span className="text-gray-500 font-medium">x</span>
+
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-gray-900 dark:text-gray-100">
+                      {m.awayTeam}
+                    </span>
+                    {logoAway && (
+                      <img
+                        src={logoAway}
+                        alt={m.awayTeam}
+                        className="w-5 h-5 object-contain"
+                      />
+                    )}
+                  </div>
+                </div>
+
+                <div className="mt-1 text-xs text-gray-500 text-center">
+                  {m.competition} • {m.date} • {m.time}
+                </div>
               </div>
 
-              {/* Times + Odds 1/X/2 */}
-              <div className="mt-3 grid grid-cols-3 items-end text-center gap-3">
-                <div className="text-base font-semibold text-gray-800 dark:text-gray-100">
-                  {home}
-                </div>
-                <div className="text-sm font-medium text-gray-600 dark:text-gray-300">x</div>
-                <div className="text-base font-semibold text-gray-800 dark:text-gray-100">
-                  {away}
-                </div>
+              <button
+                className="p-2 hover:bg-gray-50 rounded-full transition ml-2"
+                onClick={() => toggleExpand(m.id)}
+              >
+                {isOpen ? (
+                  <ChevronUp size={16} className="text-gray-500" />
+                ) : (
+                  <ChevronDown size={16} className="text-gray-500" />
+                )}
+              </button>
+            </div>
 
-                <div className="rounded-xl border px-4 py-3 text-center mt-2">
-                  <div className="text-xs uppercase text-gray-500 mb-1">1</div>
-                  <SafeOdd value={m.odds?.home} />
-                </div>
-                <div className="rounded-xl border px-4 py-3 text-center mt-2">
-                  <div className="text-xs uppercase text-gray-500 mb-1">X</div>
-                  <SafeOdd value={m.odds?.draw} />
-                </div>
-                <div className="rounded-xl border px-4 py-3 text-center mt-2">
-                  <div className="text-xs uppercase text-gray-500 mb-1">2</div>
-                  <SafeOdd value={m.odds?.away} />
-                </div>
-              </div>
-
-              {/* Botão de detalhes */}
-              <div className="mt-3 flex items-center justify-between">
+            {/* Mercado principal 1X2 */}
+            <div className="grid grid-cols-3 divide-x divide-gray-200 border-t border-gray-100">
+              {[
+                { label: "1", val: main.home },
+                { label: "X", val: main.draw },
+                { label: "2", val: main.away },
+              ].map(({ label, val }) => (
                 <button
-                  className="text-xs font-medium text-blue-600 hover:text-blue-700"
-                  onClick={() => setOpenId(isOpen ? null : m.id)}
+                  key={label}
+                  onClick={() => {
+                    if (typeof val === "number" && onSelectOdd) {
+                      onSelectOdd({
+                        matchId: m.id,
+                        homeTeam: m.homeTeam,
+                        awayTeam: m.awayTeam,
+                        competition: m.competition,
+                        market: "1X2",
+                        selection: label,
+                        odd: val,
+                      });
+                    }
+                  }}
+                  className="p-3 flex flex-col items-center hover:bg-gray-50 transition"
                 >
-                  {isOpen ? "^ Ocultar" : "> Detalhes"}
+                  <span className="font-semibold text-gray-700">{label}</span>
+                  <SafeOdd value={val} />
                 </button>
-              </div>
+              ))}
             </div>
 
             {/* Mercados adicionais */}
-            {isOpen && (
-              <div className="p-4 border-t space-y-4">
-                {m._extraMarkets && Object.keys(m._extraMarkets).length > 0 ? (
-                  Object.entries(m._extraMarkets).map(([marketName, options]) => {
-                    // oculta mercados completamente vazios
-                    const validOptions = Object.entries(
-                      options as Record<string, number | null>
-                    ).filter(([_, v]) => v != null && !Number.isNaN(v));
+            {isOpen && Object.keys(extra).length > 0 && (
+              <div className="p-4 border-t border-gray-100 text-sm text-gray-700 space-y-4">
+                <div className="border-b border-gray-200 pb-2 mb-3">
+                  <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    Mercados adicionais
+                  </h3>
+                  <p className="text-xs text-gray-500">
+                    Explore mais opções de apostas (Over/Under, Ambas Marcam, etc)
+                  </p>
+                </div>
 
-                    if (validOptions.length === 0) return null;
-
-                    return (
-                      <div key={marketName}>
-                        <div className="text-xs font-semibold text-gray-500 uppercase mb-2">
-                          {marketName}
-                        </div>
-                        <div className="grid grid-cols-3 gap-3 mb-4">
-                          {validOptions.map(([label, odd]) => (
-                            <div
-                              key={label}
-                              className="rounded-xl border px-4 py-3 text-center"
-                            >
-                              <div className="text-[10px] uppercase text-gray-500 mb-1">
-                                {label}
-                              </div>
-                              <SafeOdd value={odd} />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    );
-                  })
-                ) : (
-                  <div className="text-xs text-gray-500">
-                    Nenhum mercado extra disponível.
+                {Object.entries(extra).map(([market, options]) => (
+                  <div key={market}>
+                    <p className="font-semibold mb-1 text-gray-800 dark:text-gray-200">
+                      {market}
+                    </p>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                      {Object.entries(options as Record<string, number | null>)
+                        .filter(([_, val]) => val != null)
+                        .map(([sel, val]) => (
+                          <button
+                            key={sel}
+                            onClick={() =>
+                              onSelectOdd &&
+                              onSelectOdd({
+                                matchId: m.id,
+                                homeTeam: m.homeTeam,
+                                awayTeam: m.awayTeam,
+                                competition: m.competition,
+                                market,
+                                selection: sel,
+                                odd: val!,
+                              })
+                            }
+                            className="border rounded-lg py-2 text-center hover:bg-gray-50 dark:hover:bg-neutral-800 transition"
+                          >
+                            <span className="block font-medium text-gray-700 dark:text-gray-200">
+                              {sel}
+                            </span>
+                            <SafeOdd value={val} />
+                          </button>
+                        ))}
+                    </div>
                   </div>
-                )}
+                ))}
               </div>
             )}
           </div>
