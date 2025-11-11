@@ -40,7 +40,7 @@ const SAMPLE: UIMatch[] = [
 
 export async function fetchLiveMatches(): Promise<UIMatch[]> {
   // usando mesma base do axios (`/api`), evita CORS/baseURL divergente
-  const res = await api.get("/api/football/live", { timeout: 20000 });
+  const res = await api.get("/football/live", { timeout: 20000 });
 
 
   if (res.status !== 200) {
