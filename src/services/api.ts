@@ -1,7 +1,11 @@
 import axios from 'axios';
 
 const api = axios.create({
+<<<<<<< Updated upstream
   baseURL: 'http://localhost:3001/api', // URL base do seu backend
+=======
+  baseURL: 'http://localhost:3001/api', // URL base CORRIGIDA
+>>>>>>> Stashed changes
 });
 
 // Interceptor para adicionar o token em todas as requisições autenticadas
