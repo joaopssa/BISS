@@ -60,7 +60,7 @@ export const HomeScreen: React.FC = () => {
 
   const fetchSaldo = async () => {
     try {
-      const res = await api.get("/api/financeiro/saldo");
+      const res = await api.get("/financeiro/saldo");
       const s = typeof res.data?.saldo === "number" ? res.data.saldo : 0;
       setSaldo(s);
     } catch {
@@ -70,7 +70,7 @@ export const HomeScreen: React.FC = () => {
 
   const fetchTickets = async () => {
     try {
-      const res = await api.get("/api/apostas/bilhetes");
+      const res = await api.get("/apostas/bilhetes");
       const data = Array.isArray(res.data) ? res.data : [];
 
       const mapped: Ticket[] = data.map((raw: any, idx: number) => {
@@ -280,7 +280,7 @@ export const HomeScreen: React.FC = () => {
         })),
       };
 
-      const res = await api.post("/api/apostas/bilhetes", payload);
+      const res = await api.post("/apostas/bilhetes", payload);
 
       if (res.data?.error) {
         setFeedback(res.data.error);

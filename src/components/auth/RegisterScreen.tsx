@@ -55,14 +55,29 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
       senha: password, // O backend espera "senha", não "password"
     });
 
-        // ✅ Mostra o toast com nome personalizado
+    // ✅ Mostra o toast com nome personalizado
     toast({
       title: `Conta criada com sucesso, ${nomeCompleto}!`,
       description: "Personalize suas preferências na próxima tela.",
     });
 
-    // 🔁 Redireciona após o toast
+    // 💾 Salva temporariamente os dados no localStorage
+    const registrationData = {
+      nomeCompleto,
+      email,
+      dataNascimento,
+      senha: password,
+    };
+    localStorage.setItem("registrationData", JSON.stringify(registrationData));
+    const resp = await api.post('/auth/login', { email, password });
+    const { token, user } = resp.data;
+
+    // 🔐 Salva token e dados localmente
+    localStorage.setItem("token", token);
+    localStorage.setItem("user", JSON.stringify(user));
+    // 🔁 Redireciona para completar o perfil
     navigate('/profile-setup');
+
   } catch (error: any) {
     const message =
       error.response?.data?.message || "Erro ao registrar usuário.";

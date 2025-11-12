@@ -30,8 +30,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
       const { token, user } = response.data;
 
       // 🔐 Salva token e dados localmente
-      localStorage.setItem("biss_token", token);
-      localStorage.setItem("biss_user", JSON.stringify(user));
+      localStorage.setItem("token", token);
+      localStorage.setItem("user", JSON.stringify(user));
 
       // Atualiza contexto de autenticação
       auth.login(token, user);

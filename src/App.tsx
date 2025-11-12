@@ -27,7 +27,7 @@ const AppRoutes = () => {
 
   useEffect(() => {
     // Verifica se há token salvo (login persistente)
-    const token = localStorage.getItem("biss_token");
+    const token = localStorage.getItem("token");
     if (token) {
       setAuthenticated(true);
     }

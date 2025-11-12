@@ -23,7 +23,7 @@ export default function FinancialBalanceScreen() {
 
   const fetchSaldo = async () => {
     try {
-      const res = await api.get("/api/financeiro/saldo");
+      const res = await api.get("/financeiro/saldo");
       const s = typeof res.data?.saldo === "number" ? res.data.saldo : 0;
       setSaldo(s);
     } catch {
@@ -33,7 +33,7 @@ export default function FinancialBalanceScreen() {
 
   const fetchExtrato = async () => {
     try {
-      const res = await api.get("/api/financeiro/extrato");
+      const res = await api.get("/financeiro/extrato");
       const data = Array.isArray(res.data) ? res.data : [];
       const mapped: Movimentacao[] = data.map((m: any) => ({
         id_movimentacao: m.id_movimentacao ?? m.id ?? 0,
@@ -67,7 +67,7 @@ export default function FinancialBalanceScreen() {
     setFeedback(null);
     try {
       const endpoint =
-        modo === "deposito" ? "/api/financeiro/deposito" : "/api/financeiro/saque";
+        modo === "deposito" ? "/financeiro/deposito" : "/financeiro/saque";
       await api.post(endpoint, { valor });
 
       setFeedback(

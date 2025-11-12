@@ -31,6 +31,8 @@ exports.updateProfile = async (req, res) => {
             limite_investimento_mensal: investmentLimit,
         };
 
+        console.log('Dados do perfil a serem atualizados:', profileData);
+
         await pool.query('UPDATE usuarios SET ? WHERE id_usuario = ?', [profileData, userId]);
         
         res.json({ message: "Perfil atualizado com sucesso!" });

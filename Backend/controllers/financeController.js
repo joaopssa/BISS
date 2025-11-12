@@ -38,6 +38,7 @@ exports.getExtrato = async (req, res) => {
 exports.deposito = async (req, res) => {
   const id_usuario = req.user.id_usuario;
   const { valor } = req.body;
+  //console.log(id_usuario, valor);
   if (!valor || valor <= 0) return res.status(400).json({ error: "Valor inválido." });
 
   try {

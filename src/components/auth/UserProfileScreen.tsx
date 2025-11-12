@@ -267,7 +267,8 @@ export const UserProfileScreen: React.FC = () => {
     const completeUserData = { ...registrationData, ...profile };
 
     try {
-      await api.post("/auth/register-complete", completeUserData);
+      const token = localStorage.getItem("token");
+      await api.put("/user/profile", {token, completeUserData});
       localStorage.removeItem("registrationData");
       navigate("/login");
     } catch (err: any) {

@@ -27,7 +27,7 @@ export default function BettingHistoryScreen() {
     setLoading(true);
     setErro(null);
     try {
-      const res = await api.get("/api/apostas/historico");
+      const res = await api.get("/apostas/historico");
       const data = Array.isArray(res.data) ? res.data : [];
 
       const mapped: Aposta[] = data.map((a: any) => ({

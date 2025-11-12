@@ -25,8 +25,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   // 🔐 Verifica se há login persistente ao iniciar o app
   useEffect(() => {
-    const token = localStorage.getItem("biss_token");
-    const storedUser = localStorage.getItem("biss_user");
+    const token = localStorage.getItem("token");
+    const storedUser = localStorage.getItem("user");
 
     if (token && storedUser) {
       api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
@@ -41,8 +41,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   // 🔑 Login e persistência local
   const login = (token: string, userData: User) => {
-    localStorage.setItem("biss_token", token);
-    localStorage.setItem("biss_user", JSON.stringify(userData));
+    localStorage.setItem("token", token);
+    localStorage.setItem("user", JSON.stringify(userData));
     api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
     setUser(userData);
     setAuthenticated(true);
@@ -50,8 +50,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   // 🚪 Logout total (limpa sessão e token)
   const logout = () => {
-    localStorage.removeItem("biss_token");
-    localStorage.removeItem("biss_user");
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
     delete api.defaults.headers.common["Authorization"];
     setUser(null);
     setAuthenticated(false);
