@@ -43,17 +43,21 @@ exports.registerComplete = async (req, res) => {
             email,
             data_nascimento: dataNascimento,
             hash_senha,
-            clubes_favoritos: favoriteTeam,
+            clubes_favoritos: favoriteTeam || null,
             ligas_favoritas: JSON.stringify(favoriteLeagues || []),
             jogadores_favoritos: JSON.stringify(favoritePlayers || []),
             casas_apostas_favoritas: JSON.stringify(favoriteBettingHouses || []),
-            controle_apostas_ativo: bettingControl,
-            monitoramento_financeiro_ativo: financialMonitoring,
-            apostar_apenas_ligas_favoritas: betOnlyFavoriteLeagues,
+
+            // ✅ valores padrão para evitar erro
+            controle_apostas_ativo: bettingControl !== undefined ? bettingControl : 1,
+            monitoramento_financeiro_ativo: financialMonitoring !== undefined ? financialMonitoring : 1,
+            apostar_apenas_ligas_favoritas: betOnlyFavoriteLeagues !== undefined ? betOnlyFavoriteLeagues : 0,
+
             odd_minima: oddsRange ? oddsRange[0] : 1.50,
             odd_maxima: oddsRange ? oddsRange[1] : 3.00,
-            limite_investimento_mensal: investmentLimit,
+            limite_investimento_mensal: investmentLimit || null,
         };
+
 
         const [result] = await pool.query('INSERT INTO usuarios SET ?', newUser);
 

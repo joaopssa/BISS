@@ -1,11 +1,11 @@
 {
-  "Cruzeiro": {
-    "league": "Brasileirao Serie A",
-    "logo": "logos/Brasileirao Serie A/Cruzeiro.png"
-  },
   "Flamengo": {
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Flamengo.png"
+  },
+  "Cruzeiro": {
+    "league": "Brasileirao Serie A",
+    "logo": "logos/Brasileirao Serie A/Cruzeiro.png"
   },
   "Fluminense": {
     "league": "Brasileirao Serie A",
@@ -23,11 +23,11 @@
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Internacional.png"
   },
-  "Juventude": {
+  "Juventude-RS": {
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Juventude.png"
   },
-  "Mirassol-SP": {
+  "Mirassol": {
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Mirassol-SP.png"
   },
@@ -35,7 +35,7 @@
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Palmeiras.png"
   },
-  "Red Bull Bragantino": {
+  "Bragantino": {
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Red Bull Bragantino.png"
   },
@@ -67,7 +67,7 @@
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Bahia.png"
   },
-  "Botafogo": {
+  "Botafogo-RJ": {
     "league": "Brasileirao Serie A",
     "logo": "logos/Brasileirao Serie A/Botafogo.png"
   },
@@ -80,23 +80,23 @@
     "logo": "logos/Brasileirao Serie A/Corinthians.png"
   },
 
-  "Amazonas FC-AM": {
+  "Amazonas AM": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Amazonas FC-AM.png"
   },
-  "América Mineiro": {
+  "América-MG": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/América Mineiro.png"
   },
-  "Athletic Club-MG": {
+  "Athletic Club MG": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Athletic Club-MG.png"
   },
-  "Athletico Paranaense": {
+  "Athletico-PR": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Athletico Paranaense.png"
   },
-  "Atlético Goianiense": {
+  "Atlético-GO": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Atlético Goianiense.png"
   },
@@ -128,11 +128,11 @@
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Cuiabá.png"
   },
-  "Ferroviária-SP": {
+  "Ferroviária": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Ferroviária-SP.png"
   },
-  "Goiás Esporte Clube-GO": {
+  "Goiás": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Goiás Esporte Clube-GO.png"
   },
@@ -140,7 +140,7 @@
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Grêmio Novorizontino.png"
   },
-  "Operário Ferroviário-PR": {
+  "Operário-PR": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Operário Ferroviário-PR.png"
   },
@@ -152,7 +152,7 @@
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Remo.png"
   },
-  "Vila Nova-GO": {
+  "Vila Nova": {
     "league": "Brasileirao Serie B",
     "logo": "logos/Brasileirao Serie B/Vila Nova-GO.png"
   },
@@ -161,7 +161,7 @@
     "logo": "logos/Brasileirao Serie B/Volta Redonda.png"
   },
 
-  "Udinese Calcio": {
+  "Udinese": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Udinese Calcio.png"
   },
@@ -173,7 +173,7 @@
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/US Lecce.png"
   },
-  "US Sassuolo": {
+  "Sassuolo": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/US Sassuolo.png"
   },
@@ -181,23 +181,23 @@
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/AC Milan.png"
   },
-  "ACF Fiorentina": {
+  "Fiorentina": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/ACF Fiorentina.png"
   },
-  "AS Roma": {
+  "Roma": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/AS Roma.png"
   },
-  "Atalanta BC": {
+  "Atalanta": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Atalanta BC.png"
   },
-  "Bologna FC 1909": {
+  "Bologna FC": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Bologna FC 1909.png"
   },
-  "Cagliari Calcio": {
+  "Cagliari": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Cagliari Calcio.png"
   },
@@ -213,7 +213,7 @@
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Hellas Verona.png"
   },
-  "Inter Milan": {
+  "Inter de Milão": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Inter Milan.png"
   },
@@ -225,19 +225,19 @@
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Parma Calcio 1913.png"
   },
-  "Pisa Sporting Club": {
+  "AC Pisa 1909": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Pisa Sporting Club.png"
   },
-  "SS Lazio": {
+  "Lazio": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/SS Lazio.png"
   },
-  "SSC Napoli": {
+  "Napoli": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/SSC Napoli.png"
   },
-  "Torino FC": {
+  "Torino": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/Torino FC.png"
   },
@@ -246,7 +246,7 @@
     "league": "Premier League",
     "logo": "logos/Premier League/AFC Bournemouth.png"
   },
-  "Arsenal FC": {
+  "Arsenal": {
     "league": "Premier League",
     "logo": "logos/Premier League/Arsenal FC.png"
   },
@@ -254,7 +254,7 @@
     "league": "Premier League",
     "logo": "logos/Premier League/Aston Villa.png"
   },
-  "Brentford FC": {
+  "Brentford": {
     "league": "Premier League",
     "logo": "logos/Premier League/Brentford FC.png"
   },
@@ -262,11 +262,11 @@
     "league": "Premier League",
     "logo": "logos/Premier League/Brighton & Hove Albion.png"
   },
-  "Burnley FC": {
+  "Burnley": {
     "league": "Premier League",
     "logo": "logos/Premier League/Burnley FC.png"
   },
-  "Chelsea FC": {
+  "Chelsea": {
     "league": "Premier League",
     "logo": "logos/Premier League/Chelsea FC.png"
   },
@@ -274,7 +274,7 @@
     "league": "Premier League",
     "logo": "logos/Premier League/Crystal Palace.png"
   },
-  "Everton FC": {
+  "Everton": {
     "league": "Premier League",
     "logo": "logos/Premier League/Everton FC.png"
   },
@@ -286,7 +286,7 @@
     "league": "Premier League",
     "logo": "logos/Premier League/Leeds United.png"
   },
-  "Liverpool FC": {
+  "Liverpool": {
     "league": "Premier League",
     "logo": "logos/Premier League/Liverpool FC.png"
   },
@@ -306,11 +306,11 @@
     "league": "Premier League",
     "logo": "logos/Premier League/Nottingham Forest.png"
   },
-  "Sunderland AFC": {
+  "Sunderland": {
     "league": "Premier League",
     "logo": "logos/Premier League/Sunderland AFC.png"
   },
-  "Tottenham Hotspur": {
+  "Tottenham": {
     "league": "Premier League",
     "logo": "logos/Premier League/Tottenham Hotspur.png"
   },
@@ -318,7 +318,7 @@
     "league": "Premier League",
     "logo": "logos/Premier League/West Ham United.png"
   },
-  "Wolverhampton Wanderers": {
+  "Wolverhampton": {
     "league": "Premier League",
     "logo": "logos/Premier League/Wolverhampton Wanderers.png"
   },
@@ -331,7 +331,7 @@
     "league": "LaLiga",
     "logo": "logos/LaLiga/Atlético de Madrid.png"
   },
-  "CA Osasuna": {
+  "Osasuna": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/CA Osasuna.png"
   },
@@ -343,11 +343,11 @@
     "league": "LaLiga",
     "logo": "logos/LaLiga/Deportivo Alavés.png"
   },
-  "Elche CF": {
+  "Elche": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/Elche CF.png"
   },
-  "FC Barcelona": {
+  "Barcelona": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/FC Barcelona.png"
   },
@@ -359,7 +359,7 @@
     "league": "LaLiga",
     "logo": "logos/LaLiga/Girona FC.png"
   },
-  "Levante UD": {
+  "Levante": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/Levante UD.png"
   },
@@ -367,15 +367,15 @@
     "league": "LaLiga",
     "logo": "logos/LaLiga/Rayo Vallecano.png"
   },
-  "RCD Espanyol Barcelona": {
+  "Espanyol": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/RCD Espanyol Barcelona.png"
   },
-  "RCD Mallorca": {
+  "Mallorca": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/RCD Mallorca.png"
   },
-  "Real Betis Balompié": {
+  "Bétis": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/Real Betis Balompié.png"
   },
@@ -391,11 +391,11 @@
     "league": "LaLiga",
     "logo": "logos/LaLiga/Real Sociedad.png"
   },
-  "Sevilla FC": {
+  "Sevilha FC": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/Sevilla FC.png"
   },
-  "Valencia CF": {
+  "Valencia": {
     "league": "LaLiga",
     "logo": "logos/LaLiga/Valencia CF.png"
   },
@@ -404,7 +404,7 @@
     "logo": "logos/LaLiga/Villarreal CF.png"
   },
 
-  "Olympique Marseille": {
+  "Olympique de Marseille": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Olympique Marseille.png"
   },
@@ -412,23 +412,23 @@
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Paris FC.png"
   },
-  "Paris Saint-Germain": {
+  "Paris Saint Germain": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Paris Saint-Germain.png"
   },
-  "RC Lens": {
+  "Lens": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/RC Lens.png"
   },
-  "RC Strasbourg Alsace": {
+  "Estrasburgo": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/RC Strasbourg Alsace.png"
   },
-  "Stade Brestois 29": {
+  "Brestois": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Stade Brestois 29.png"
   },
-  "Stade Rennais FC": {
+  "Rennes": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Stade Rennais FC.png"
   },
@@ -436,11 +436,11 @@
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/AJ Auxerre.png"
   },
-  "Angers SCO": {
+  "Angers": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Angers SCO.png"
   },
-  "AS Monaco": {
+  "Monaco": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/AS Monaco.png"
   },
@@ -452,11 +452,11 @@
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/FC Metz.png"
   },
-  "FC Nantes": {
+  "Nantes": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/FC Nantes.png"
   },
-  "FC Toulouse": {
+  "Toulouse FC": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/FC Toulouse.png"
   },
@@ -464,20 +464,20 @@
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Le Havre AC.png"
   },
-  "LOSC Lille": {
+  "Lille": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/LOSC Lille.png"
   },
-  "OGC Nice": {
+  "Nice": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/OGC Nice.png"
   },
-  "Olympique Lyon": {
+  "Lyon": {
     "league": "Ligue 1",
     "logo": "logos/Ligue 1/Olympique Lyon.png"
   },
 
-  "1.FC Heidenheim 1846": {
+  "1.FC Heidenheim": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/1.FC Heidenheim 1846.png"
   },
@@ -489,15 +489,15 @@
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/1.FC Union Berlin.png"
   },
-  "1.FSV Mainz 05": {
+  "Mainz 05": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/1.FSV Mainz 05.png"
   },
-  "Bayer 04 Leverkusen": {
+  "Bayer Leverkusen": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/Bayer 04 Leverkusen.png"
   },
-  "Bayern Munich": {
+  "Bayern de Munique": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/Bayern Munich.png"
   },
@@ -505,7 +505,7 @@
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/Borussia Dortmund.png"
   },
-  "Borussia Mönchengladbach": {
+  "Borussia Monchengladbach": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/Borussia Mönchengladbach.png"
   },
@@ -513,7 +513,7 @@
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/Eintracht Frankfurt.png"
   },
-  "FC Augsburg": {
+  "Augsburg": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/FC Augsburg.png"
   },
@@ -521,7 +521,7 @@
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/FC St. Pauli.png"
   },
-  "Hamburger SV": {
+  "Hamburgo": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/Hamburger SV.png"
   },
@@ -529,15 +529,15 @@
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/RB Leipzig.png"
   },
-  "SC Freiburg": {
+  "Freiburg": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/SC Freiburg.png"
   },
-  "SV Werder Bremen": {
+  "Werder Bremen": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/SV Werder Bremen.png"
   },
-  "TSG 1899 Hoffenheim": {
+  "Hoffenheim": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/TSG 1899 Hoffenheim.png"
   },
@@ -545,12 +545,12 @@
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/VfB Stuttgart.png"
   },
-  "VfL Wolfsburg": {
+  "Wolfsburg": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/VfL Wolfsburg.png"
   },
 
-  "Qarabag": {
+  "Qarabağ FK": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Qarabag.png"
   },
@@ -558,11 +558,11 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Rangers FC.png"
   },
-  "Red Bull Salzburg": {
+  "Salzburg": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Red Bull Salzburg.png"
   },
-  "Red Star Belgrade": {
+  "Estrela Vermelha": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Red Star Belgrade.png"
   },
@@ -574,7 +574,7 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/SK Brann.png"
   },
-  "SK Slavia Prague": {
+  "Slavia Praga": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/SK Slavia Prague.png"
   },
@@ -594,11 +594,11 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Union Saint-Gilloise.png"
   },
-  "Ajax Amsterdam": {
+  "AFC Ajax": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Ajax Amsterdam.png"
   },
-  "Celtic FC": {
+  "Celtic": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Celtic FC.png"
   },
@@ -606,11 +606,11 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Club Brugge KV.png"
   },
-  "Dynamo Kyiv": {
+  "Dínamo Kiev": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Dynamo Kyiv.png"
   },
-  "FC Basel 1893": {
+  "Basel": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/FC Basel 1893.png"
   },
@@ -626,15 +626,15 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/FCSB.png"
   },
-  "Fenerbahce": {
+  "Fenerbahce SK": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Fenerbahce.png"
   },
-  "Feyenoord Rotterdam": {
+  "Feyenoord": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Feyenoord Rotterdam.png"
   },
-  "FK BodoGlimt": {
+  "FK Bodo/Glimt": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/FK BodoGlimt.png"
   },
@@ -646,7 +646,7 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/HNK Rijeka.png"
   },
-  "Kairat": {
+  "FC Kairat": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Kairat.png"
   },
@@ -654,11 +654,11 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Lech Poznan.png"
   },
-  "Ludogorets Razgrad": {
+  "Ludogorets": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Ludogorets Razgrad.png"
   },
-  "Malmö FF": {
+  "Malmo FF": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Malmö FF.png"
   },
@@ -666,11 +666,11 @@
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Olympiacos.png"
   },
-  "Pafos": {
+  "Pafos FC": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Pafos.png"
   },
-  "Panathinaikos FC": {
+  "Panathinaikos": {
     "league": "ChampionsLeague",
     "logo": "logos/ChampionsLeague/Panathinaikos FC.png"
   },
@@ -687,7 +687,7 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Central Cordoba.png"
   },
-  "Cerro Porteno": {
+  "Cerro Porteño": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Cerro Porteno.png"
   },
@@ -699,7 +699,7 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Deportivo Tachira.png"
   },
-  "Estudiantes": {
+  "Estudiantes de La Plata": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Estudiantes.png"
   },
@@ -707,11 +707,11 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Independiente del Valle.png"
   },
-  "LDU": {
+  "LDU Quito": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/LDU.png"
   },
-  "Libertad": {
+  "Libertad Asunción": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Libertad.png"
   },
@@ -719,15 +719,15 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Nacional.png"
   },
-  "Olimpia": {
+  "Olimpia Asunción": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Olimpia.png"
   },
-  "Penarol": {
+  "CA Peñarol Montevideo": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Penarol.png"
   },
-  "Racing": {
+  "Racing Club": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Racing.png"
   },
@@ -735,7 +735,7 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/River Plate.png"
   },
-  "San Antonio": {
+  "San Antonio Bulo Bulo": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/San Antonio.png"
   },
@@ -743,11 +743,11 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Sporting Cristal.png"
   },
-  "Talleres": {
+  "CA Talleres de Cordoba": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Talleres.png"
   },
-  "Universidade de Chile": {
+  "Universidad de Chile": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Universidade de Chile.png"
   },
@@ -755,7 +755,7 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Universitario.png"
   },
-  "Velez": {
+  "Velez Sarsfield": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Velez.png"
   },
@@ -767,15 +767,15 @@
     "league": "Libertadores",
     "logo": "logos/Libertadores/Atletico Bucaramanga.png"
   },
-  "Atletico Nacional": {
+  "Atlético Nacional": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Atletico Nacional.png"
   },
-  "Barcelona": {
+  "Barcelona Guayaquil": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Barcelona.png"
   },
-  "Bolivar": {
+  "Bolívar La Paz": {
     "league": "Libertadores",
     "logo": "logos/Libertadores/Bolivar.png"
   }

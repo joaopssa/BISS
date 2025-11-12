@@ -6,6 +6,9 @@ import { Mail, Lock, User, Calendar, Eye, EyeOff } from 'lucide-react';
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { useNavigate } from 'react-router-dom';
+import { useToast } from "@/components/ui/use-toast";
+import api from "@/services/api";
+
 
 interface RegisterScreenProps {
   onGoToLogin: () => void;
@@ -22,32 +25,57 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
 
-    if (!nomeCompleto || !email || !dataNascimento || !password || !confirmPassword) {
-      setError('Todos os campos são obrigatórios.');
-      return;
-    }
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setError('');
 
-    if (password !== confirmPassword) {
-      setError('As senhas não coincidem.');
-      return;
-    }
+  if (!nomeCompleto || !email || !dataNascimento || !password || !confirmPassword) {
+    setError('Todos os campos são obrigatórios.');
+    return;
+  }
 
-    if (!termosAceitos) {
-      setError('Você deve aceitar os termos de consentimento para continuar.');
-      return;
-    }
+  if (password !== confirmPassword) {
+    setError('As senhas não coincidem.');
+    return;
+  }
 
-    // 🔹 Agora o campo salvo é password, não senha
-    const registrationData = { nomeCompleto, email, dataNascimento, password };
-    localStorage.setItem('registrationData', JSON.stringify(registrationData));
+  if (!termosAceitos) {
+    setError('Você deve aceitar os termos de consentimento para continuar.');
+    return;
+  }
 
+  try {
+    const response = await api.post('/auth/register-complete', {
+      nomeCompleto,
+      email,
+      dataNascimento,
+      senha: password, // O backend espera "senha", não "password"
+    });
+
+        // ✅ Mostra o toast com nome personalizado
+    toast({
+      title: `Conta criada com sucesso, ${nomeCompleto}!`,
+      description: "Personalize suas preferências na próxima tela.",
+    });
+
+    // 🔁 Redireciona após o toast
     navigate('/profile-setup');
-  };
+  } catch (error: any) {
+    const message =
+      error.response?.data?.message || "Erro ao registrar usuário.";
+    setError(message);
+
+    toast({
+      title: "Erro no cadastro",
+      description: message,
+      variant: "destructive",
+    });
+  }
+};
+
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
