@@ -1,13 +1,12 @@
-const pool = require('../db');
+// Backend/controllers/userController.js
+const pool = require("../db");
 
 exports.updateProfile = async (req, res) => {
-    // O ID do usuário vem do token verificado pelo middleware
-    const userId = req.user.id; 
+    const userId = req.user.id;
 
-    // Mapeia os nomes do frontend para as colunas do banco de dados
     const {
         favoriteTeam,
-        favoriteLeagues, // Lembre-se de adicionar a coluna `ligas_favoritas` no seu BD
+        favoriteLeagues,
         favoritePlayers,
         favoriteBettingHouses,
         bettingControl,
@@ -19,26 +18,29 @@ exports.updateProfile = async (req, res) => {
 
     try {
         const profileData = {
-            clubes_favoritos: favoriteTeam,
+            clubes_favoritos: favoriteTeam || null,
             ligas_favoritas: JSON.stringify(favoriteLeagues || []),
             jogadores_favoritos: JSON.stringify(favoritePlayers || []),
             casas_apostas_favoritas: JSON.stringify(favoriteBettingHouses || []),
-            controle_apostas_ativo: bettingControl,
-            monitoramento_financeiro_ativo: financialMonitoring,
-            apostar_apenas_ligas_favoritas: betOnlyFavoriteLeagues,
-            odd_minima: oddsRange[0],
-            odd_maxima: oddsRange[1],
-            limite_investimento_mensal: investmentLimit,
+            controle_apostas_ativo: bettingControl ? 1 : 0,
+            monitoramento_financeiro_ativo: financialMonitoring ? 1 : 0,
+            apostar_apenas_ligas_favoritas: betOnlyFavoriteLeagues ? 1 : 0,
+            odd_minima: oddsRange ? oddsRange[0] : 1.50,
+            odd_maxima: oddsRange ? oddsRange[1] : 3.00,
+            limite_investimento_mensal: investmentLimit || null,
         };
 
-        console.log('Dados do perfil a serem atualizados:', profileData);
+        await pool.query(
+            "UPDATE usuarios SET ? WHERE id_usuario = ?",
+            [profileData, userId]
+        );
 
-        await pool.query('UPDATE usuarios SET ? WHERE id_usuario = ?', [profileData, userId]);
-        
         res.json({ message: "Perfil atualizado com sucesso!" });
 
     } catch (error) {
-        console.error("Erro ao atualizar perfil:", error);
+        console.error("❌ Erro ao atualizar perfil:", error);
         res.status(500).json({ message: "Erro no servidor ao atualizar o perfil." });
     }
 };
+
+

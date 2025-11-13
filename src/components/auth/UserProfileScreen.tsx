@@ -264,11 +264,9 @@ export const UserProfileScreen: React.FC = () => {
     }
 
     const registrationData = JSON.parse(storedData);
-    const completeUserData = { ...registrationData, ...profile };
 
     try {
-      const token = localStorage.getItem("token");
-      await api.put("/user/profile", {token, completeUserData});
+      await api.put("/user/profile", profile); // 🔥 manda só o profile
       localStorage.removeItem("registrationData");
       navigate("/login");
     } catch (err: any) {
@@ -281,6 +279,7 @@ export const UserProfileScreen: React.FC = () => {
         variant: "destructive",
       });
     }
+
   };
 
   return (
