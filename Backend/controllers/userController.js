@@ -43,4 +43,62 @@ exports.updateProfile = async (req, res) => {
     }
 };
 
+exports.getPreferences = async (req, res) => {
+    const userId = req.user.id;
 
+    try {
+        const [rows] = await pool.query(
+            "SELECT ligas_favoritas FROM usuarios WHERE id_usuario = ?",
+            [userId]
+        );
+
+        if (!rows.length) {
+            return res.status(404).json({ message: "Usuário não encontrado." });
+        }
+
+        let raw = rows[0].ligas_favoritas;
+        let ligas = [];
+
+        // Caso 1: null, undefined ou vazio
+        if (!raw) {
+            ligas = [];
+        }
+        // Caso 2: já é array (MySQL pode retornar JSON direto como array JS)
+        else if (Array.isArray(raw)) {
+            ligas = raw;
+        }
+        // Caso 3: é string
+        else if (typeof raw === "string") {
+            // tenta JSON.parse
+            try {
+                const parsed = JSON.parse(raw);
+
+                // se o parsed for array → perfeito
+                if (Array.isArray(parsed)) {
+                    ligas = parsed;
+                }
+                // se for string simples → vira array
+                else if (typeof parsed === "string") {
+                    ligas = [parsed];
+                }
+                // qualquer outro tipo → ignora
+                else {
+                    ligas = [];
+                }
+            } catch {
+                // string NÃO-JSON → vira array com 1 item
+                ligas = [raw];
+            }
+        }
+        // Caso 4: tipo inesperado → tenta converter para string
+        else {
+            ligas = [String(raw)];
+        }
+
+        res.json({ ligasFavoritas: ligas });
+
+    } catch (error) {
+        console.error("Erro ao obter preferências:", error);
+        res.status(500).json({ message: "Erro no servidor ao carregar preferências." });
+    }
+};

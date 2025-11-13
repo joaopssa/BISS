@@ -7,6 +7,8 @@ import LiveTab from "@/components/app/LiveTab";
 import { useUpcomingData } from "@/data/matchData";
 import { Button } from "@/components/ui/button";
 import api from "@/services/api";
+import { resolveLeagueName } from "@/utils/resolveLeagueName";
+
 
 type UIMatch = import("@/data/matchData").UIMatch;
 
@@ -55,6 +57,7 @@ export const HomeScreen: React.FC = () => {
   const [saldo, setSaldo] = useState<number>(0);
   const [placingBet, setPlacingBet] = useState(false);
   const [feedback, setFeedback] = useState<string | null>(null);
+  const [userLeagues, setUserLeagues] = useState<string[]>([]);
 
   // ========= Helpers =========
 
@@ -133,6 +136,24 @@ export const HomeScreen: React.FC = () => {
       // se der erro, mantemos lista vazia silenciosamente
     }
   };
+
+  const fetchUserLeagues = async () => {
+    try {
+      const res = await api.get("/user/preferences");
+      if (Array.isArray(res.data?.ligasFavoritas)) {
+        setUserLeagues(res.data.ligasFavoritas);
+      }
+    } catch (err) {
+      console.log("Erro ao carregar ligas favoritas:", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchTickets();
+    fetchSaldo();
+    fetchUserLeagues(); // ⬅️ adicionar
+  }, []);
+
 
   useEffect(() => {
     fetchTickets();
@@ -305,40 +326,49 @@ export const HomeScreen: React.FC = () => {
   const viewMatches = useMemo(() => {
     switch (tab) {
       case "favoritos": {
-        const favs = filtered.filter((m) => m.isFavorite);
-        return (
-          <Section
-            title="Jogos Favoritos"
-            subtitle="Seus jogos marcados como favoritos"
-          >
-            {loading ? (
-              <EmptyState text="Carregando partidas…" />
-            ) : error ? (
-              <EmptyState text={`Erro: ${error}`} />
-            ) : favs.length > 0 ? (
-              <ExpandableMatchCard
-                matches={favs}
-                onSelectOdd={(params) => {
-                  const sel: BetSelection = {
-                    matchId: params.matchId,
-                    partida: `${params.homeTeam} x ${params.awayTeam}`,
-                    campeonato: params.competition,
-                    time_casa: params.homeTeam,
-                    time_fora: params.awayTeam,
-                    mercado: params.market,
-                    selecao: params.selection,
-                    odd: params.odd,
-                  };
-                  handleAddSelection(sel);
-                }}
-              />
+      // Exibe apenas jogos das ligas favoritas do usuário
+      // Converter ligas favoritas em nomes oficiais da Betano
+      const mappedLeagues = userLeagues
+        .map(resolveLeagueName)
+        .filter(Boolean) as string[];
 
-            ) : (
-              <EmptyState text="Nenhum favorito ainda." />
-            )}
-          </Section>
-        );
-      }
+      // Mostrar apenas partidas da liga oficial mapeada
+      const favMatches = filtered.filter(m =>
+        mappedLeagues.includes(m.competition)
+      );
+
+      return (
+        <Section
+          title="Ligas Favoritas"
+          subtitle="Partidas das suas ligas escolhidas"
+        >
+          {loading ? (
+            <EmptyState text="Carregando partidas…" />
+          ) : error ? (
+            <EmptyState text={`Erro: ${error}`} />
+          ) : favMatches.length > 0 ? (
+            <ExpandableMatchCard
+              matches={favMatches}
+              onSelectOdd={(params) => {
+                const sel: BetSelection = {
+                  matchId: params.matchId,
+                  partida: `${params.homeTeam} x ${params.awayTeam}`,
+                  campeonato: params.competition,
+                  time_casa: params.homeTeam,
+                  time_fora: params.awayTeam,
+                  mercado: params.market,
+                  selecao: params.selection,
+                  odd: params.odd,
+                };
+                handleAddSelection(sel);
+              }}
+            />
+          ) : (
+            <EmptyState text="Nenhuma partida das suas ligas favoritas no momento." />
+          )}
+        </Section>
+      );
+    }
 
       case "ao-vivo":
         return (

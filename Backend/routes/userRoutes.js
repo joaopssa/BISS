@@ -3,9 +3,12 @@ const express = require("express");
 const router = express.Router();
 
 const authMiddleware = require("../middleware/authMiddleware");
-const { updateProfile } = require("../controllers/userController");
+const { updateProfile, getPreferences } = require("../controllers/userController");
 
-// Rota protegida para atualizar o perfil
+// Atualizar perfil
 router.put("/profile", authMiddleware, updateProfile);
+
+// Obter preferências do usuário
+router.get("/preferences", authMiddleware, getPreferences);
 
 module.exports = router;
