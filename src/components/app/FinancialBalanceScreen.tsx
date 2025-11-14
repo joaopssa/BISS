@@ -1,4 +1,3 @@
-// src/components/app/FinancialBalanceScreen.tsx
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -23,8 +22,10 @@ export default function FinancialBalanceScreen() {
 
   const fetchSaldo = async () => {
     try {
-      const res = await api.get("/financeiro/saldo");
-      const s = typeof res.data?.saldo === "number" ? res.data.saldo : 0;
+      const res = await api.get("/financeiro/saldo", {
+        headers: { "Cache-Control": "no-cache" },
+      });
+      const s = Number(res.data?.saldo || 0);
       setSaldo(s);
     } catch {
       setFeedback("Erro ao carregar saldo.");
@@ -33,15 +34,19 @@ export default function FinancialBalanceScreen() {
 
   const fetchExtrato = async () => {
     try {
-      const res = await api.get("/financeiro/extrato");
+      const res = await api.get("/financeiro/extrato", {
+        headers: { "Cache-Control": "no-cache" },
+      });
       const data = Array.isArray(res.data) ? res.data : [];
+
       const mapped: Movimentacao[] = data.map((m: any) => ({
         id_movimentacao: m.id_movimentacao ?? m.id ?? 0,
         tipo: m.tipo,
         valor: Number(m.valor) || 0,
         descricao: m.descricao || "",
-        data_movimentacao: m.data_movimentacao || new Date().toISOString(),
+        data_movimentacao: m.data_movimentacao,
       }));
+
       setExtrato(mapped);
     } catch {
       setFeedback("Erro ao carregar extrato.");
@@ -55,9 +60,10 @@ export default function FinancialBalanceScreen() {
 
   const handleTransacao = async () => {
     if (!valor || valor <= 0) {
-      setFeedback("Informe um valor válido para a operação.");
+      setFeedback("Informe um valor válido.");
       return;
     }
+
     if (modo === "saque" && valor > saldo) {
       setFeedback("Saldo insuficiente para saque.");
       return;
@@ -65,10 +71,18 @@ export default function FinancialBalanceScreen() {
 
     setLoading(true);
     setFeedback(null);
+
     try {
       const endpoint =
         modo === "deposito" ? "/financeiro/deposito" : "/financeiro/saque";
+
       await api.post(endpoint, { valor });
+
+      // Atualiza tudo imediatamente
+      await fetchSaldo();
+      await fetchExtrato();
+
+      setValor(0);
 
       setFeedback(
         modo === "deposito"
@@ -76,9 +90,6 @@ export default function FinancialBalanceScreen() {
           : `Saque de R$ ${valor.toFixed(2)} realizado com sucesso!`
       );
 
-      setValor(0);
-      await fetchSaldo();
-      await fetchExtrato();
     } catch (err: any) {
       const msg = err?.response?.data?.error || "Erro na operação.";
       setFeedback(msg);
@@ -141,14 +152,15 @@ export default function FinancialBalanceScreen() {
                 Saque
               </Button>
             </div>
+
             <input
               type="number"
-              min={0}
               value={valor || ""}
               onChange={(e) => setValor(Number(e.target.value))}
               placeholder="Valor em R$"
               className="border rounded-md px-3 py-2 text-sm w-full sm:w-40"
             />
+
             <Button
               className="bg-[#014a8f] hover:bg-[#003b70] text-white"
               onClick={handleTransacao}
@@ -175,7 +187,7 @@ export default function FinancialBalanceScreen() {
           )}
         </div>
 
-        {/* HISTÓRICO / EXTRATO */}
+        {/* HISTÓRICO */}
         <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4">
           <h2 className="text-lg font-semibold mb-2">Histórico de Movimentações</h2>
 
@@ -186,7 +198,7 @@ export default function FinancialBalanceScreen() {
           ) : (
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-left border-b border-gray-200 dark:border-neutral-700">
+                <tr className="text-left border-b">
                   <th className="py-2">Data</th>
                   <th className="py-2">Tipo</th>
                   <th className="py-2">Valor</th>
@@ -195,37 +207,15 @@ export default function FinancialBalanceScreen() {
               </thead>
               <tbody>
                 {extrato.map((m) => (
-                  <tr
-                    key={m.id_movimentacao}
-                    className="border-b border-gray-100 dark:border-neutral-800"
-                  >
-                    <td className="py-2 text-gray-500">
+                  <tr key={m.id_movimentacao} className="border-b">
+                    <td className="py-2">
                       {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
                     </td>
-                    <td className="capitalize">
-                      {m.tipo === "deposito"
-                        ? "Depósito"
-                        : m.tipo === "saque"
-                        ? "Saque"
-                        : m.tipo === "aposta"
-                        ? "Aposta"
-                        : m.tipo === "premio"
-                        ? "Prêmio"
-                        : "Ajuste"}
+                    <td>{m.tipo}</td>
+                    <td className={m.tipo === "deposito" ? "text-green-600" : "text-red-600"}>
+                      {m.tipo === "deposito" ? "+" : "-"} R$ {m.valor.toFixed(2)}
                     </td>
-                    <td
-                      className={`font-semibold ${
-                        m.tipo === "deposito" || m.tipo === "premio"
-                          ? "text-green-600"
-                          : "text-red-600"
-                      }`}
-                    >
-                      {m.tipo === "deposito" || m.tipo === "premio" ? "+" : "-"} R${" "}
-                      {m.valor.toFixed(2)}
-                    </td>
-                    <td className="text-gray-600 dark:text-gray-400">
-                      {m.descricao || "—"}
-                    </td>
+                    <td>{m.descricao || "—"}</td>
                   </tr>
                 ))}
               </tbody>

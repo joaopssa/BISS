@@ -31,7 +31,7 @@ function validarCombinacoes(apostas) {
 
 exports.criarBilhete = async (req, res) => {
   const { apostas, stake } = req.body;
-  const id_usuario = req.user.id_usuario;
+  const id_usuario = req.user.id;
 
   if (!Array.isArray(apostas) || apostas.length === 0) {
     return res.status(400).json({ error: "Nenhuma aposta selecionada." });
@@ -138,7 +138,7 @@ exports.criarBilhete = async (req, res) => {
 };
 
 exports.listarBilhetes = async (req, res) => {
-  const id_usuario = req.user.id_usuario;
+  const id_usuario = req.user.id;
 
   try {
     const [bilhetes] = await db.query(
@@ -169,7 +169,7 @@ exports.listarBilhetes = async (req, res) => {
 };
 
 exports.historicoApostas = async (req, res) => {
-  const id_usuario = req.user.id_usuario;
+  const id_usuario = req.user.id;
   try {
     const [rows] = await db.query(
       `SELECT a.*, b.odd_total, b.stake_total, b.possivel_retorno, b.status AS status_bilhete

@@ -149,10 +149,17 @@ export const HomeScreen: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchTickets();
+  fetchTickets();
+  fetchSaldo();
+  fetchUserLeagues();
+
+  const interval = setInterval(() => {
     fetchSaldo();
-    fetchUserLeagues(); // ⬅️ adicionar
-  }, []);
+  }, 5000); // atualiza a cada 5s
+
+  return () => clearInterval(interval);
+}, []);
+
 
 
   useEffect(() => {
