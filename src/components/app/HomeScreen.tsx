@@ -62,14 +62,15 @@ export const HomeScreen: React.FC = () => {
   // ========= Helpers =========
 
   const fetchSaldo = async () => {
-    try {
-      const res = await api.get("/financeiro/saldo");
-      const s = typeof res.data?.saldo === "number" ? res.data.saldo : 0;
-      setSaldo(s);
-    } catch {
-      // silencioso na Home; tela financeira trata melhor
-    }
-  };
+  try {
+    const res = await api.get("/financeiro/saldo", {
+      headers: { "Cache-Control": "no-cache" }
+    });
+    const s = Number(res.data?.saldo || 0);
+    setSaldo(s);
+  } catch {}
+};
+
 
   const fetchTickets = async () => {
     try {
@@ -159,13 +160,6 @@ export const HomeScreen: React.FC = () => {
 
   return () => clearInterval(interval);
 }, []);
-
-
-
-  useEffect(() => {
-    fetchTickets();
-    fetchSaldo();
-  }, []);
 
   // ========= Filtro de Partidas =========
 
