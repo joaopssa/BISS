@@ -1,6 +1,23 @@
 const db = require("../db"); // se o seu arquivo é Backend/db.js
 // ajuste o caminho se for ../config/db
 
+function toMySQLDatetime(date) {
+  if (!date) return null;
+
+  // se vier objeto Date, converte para ISO
+  if (date instanceof Date) {
+    return date.toISOString().slice(0, 19).replace('T', ' ');
+  }
+
+  // se já for string ISO (com T e Z)
+  if (typeof date === "string") {
+    return date.replace('T', ' ').replace('Z', '').split('.')[0];
+  }
+
+  return null;
+}
+
+
 function validarCombinacoes(apostas) {
   const porJogo = new Map();
 
@@ -104,7 +121,7 @@ exports.criarBilhete = async (req, res) => {
           a.partida,
           a.time_casa,
           a.time_fora,
-          a.data_hora_partida || a.dataPartida || new Date(),
+          toMySQLDatetime(a.data_hora_partida || a.dataPartida || new Date()),
           a.mercado,
           a.selecao,
           a.linha || null,
