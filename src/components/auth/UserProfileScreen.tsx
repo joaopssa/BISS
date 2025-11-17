@@ -1,6 +1,14 @@
 // src/screens/UserProfileScreen.tsx
-import React, { useState, useEffect, useRef, useMemo } from "react";
-import { Globe, Heart, Trophy, Users, Shield, DollarSign, Search, X, Building } from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+import {
+  Heart,
+  Trophy,
+  Users,
+  Search,
+  X,
+  Building,
+} from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,16 +16,28 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+
 import api from "@/services/api";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
+
 import clubsMap from "@/utils/clubs-map.json";
-import { flagUrl, normalizeISO2, countryNameToISO2 } from "@/utils/flags";
 import { getLocalLogo } from "@/utils/getLocalLogo";
 
+// 🔥 novo util para bandeiras (agora usando countryCode)
+import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+
 // ====================== Tipos ======================
-type TeamOpt = { id: string; name: string; logo?: string | null; country?: string };
-type LeagueOpt = { id: string; name: string; logo?: string | null; country?: string | null };
+type TeamOpt = {
+  id: string;
+  name: string;
+  logo?: string | null;
+  country?: string | null;
+  countryCode?: string | null;
+  flag?: string | null;
+};
+
+type LeagueOpt = { id: string; name: string; logo?: string | null };
 type PlayerOpt = { id: string; name: string; nationality?: string };
 type BettingHouseOpt = { id: string; name: string };
 
@@ -33,7 +53,7 @@ function normalizeKeyForLookup(s?: string | null): string {
     .trim();
 }
 
-// ====================== Ligas conhecidas ======================
+// ====================== Ligas ======================
 const KNOWN_LEAGUES: LeagueOpt[] = [
   { id: "brasileirao-serie-a", name: "Brasileirão Série A", logo: "/logos/Ligas/BrasileiraoSerieA.webp" },
   { id: "brasileirao-serie-b", name: "Brasileirão Série B", logo: "/logos/Ligas/BrasileiraoSerieB.png" },
@@ -45,11 +65,9 @@ const KNOWN_LEAGUES: LeagueOpt[] = [
   { id: "ligue-1", name: "Ligue 1", logo: "/logos/Ligas/Ligue1.png" },
   { id: "bundesliga", name: "Bundesliga", logo: "/logos/Ligas/Bundesliga.png" },
 ];
+const ALL_LEAGUES = KNOWN_LEAGUES;
 
-
-const ALL_LEAGUES: LeagueOpt[] = KNOWN_LEAGUES;
-
-// ====================== Jogadores e Casas fixos ======================
+// ====================== Jogadores / Casas ======================
 const ALL_PLAYERS: PlayerOpt[] = [
   { id: "messi", name: "Lionel Messi", nationality: "Argentina" },
   { id: "cr7", name: "Cristiano Ronaldo", nationality: "Portugal" },
@@ -71,7 +89,7 @@ const BETTING_HOUSES: BettingHouseOpt[] = [
   { id: "sportingbet", name: "SportingBet" },
 ];
 
-// ====================== Componente Principal ======================
+// ====================== Componente ======================
 export const UserProfileScreen: React.FC = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
@@ -88,13 +106,12 @@ export const UserProfileScreen: React.FC = () => {
     investmentLimit: "abaixo-100",
   });
 
-  // Estados de busca
+  // ======= STATES =======
   const [teamSearchTerm, setTeamSearchTerm] = useState("");
   const [leagueSearchTerm, setLeagueSearchTerm] = useState("");
   const [playerSearchTerm, setPlayerSearchTerm] = useState("");
   const [bettingHouseSearchTerm, setBettingHouseSearchTerm] = useState("");
 
-  // Exibição de sugestões
   const [showTeamSuggestions, setShowTeamSuggestions] = useState(false);
   const [showLeagueSuggestions, setShowLeagueSuggestions] = useState(false);
   const [showPlayerSuggestions, setShowPlayerSuggestions] = useState(false);
@@ -111,71 +128,97 @@ export const UserProfileScreen: React.FC = () => {
   const playerDebRef = useRef<number>();
   const houseDebRef = useRef<number>();
 
-  // ---------- Times ----------
+  // ====================== Times ======================
   useEffect(() => {
     if (!showTeamSuggestions) return;
     window.clearTimeout(teamDebRef.current);
+
     teamDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(teamSearchTerm);
       const results: TeamOpt[] = [];
+
       for (const cname in clubsMap as Record<string, any>) {
-        const club = (clubsMap as Record<string, any>)[cname];
+        const club = clubsMap[cname];
         const nk = normalizeKeyForLookup(cname);
+
         if (!q || nk.includes(q)) {
           const logo = club?.logo ? getLocalLogo(club.logo) : null;
-          results.push({ id: cname, name: cname, logo, country: club?.league });
+          const flag = getFlagByCountryCode(club?.countryCode);
+
+          results.push({
+            id: cname,
+            name: cname,
+            logo,
+            country: club?.country,
+            countryCode: club?.countryCode,
+            flag,
+          });
         }
       }
+
       setTeamResults(results.slice(0, 200));
     }, 150);
+
     return () => window.clearTimeout(teamDebRef.current);
   }, [teamSearchTerm, showTeamSuggestions]);
 
-  // ---------- Ligas ----------
+  // ====================== Ligas ======================
   useEffect(() => {
     if (!showLeagueSuggestions) return;
     window.clearTimeout(leagueDebRef.current);
+
     leagueDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(leagueSearchTerm);
+
       const filtered = ALL_LEAGUES.filter((l) =>
         normalizeKeyForLookup(l.name).includes(q)
       ).slice(0, 100);
+
       setLeagueResults(filtered);
     }, 150);
+
     return () => window.clearTimeout(leagueDebRef.current);
   }, [leagueSearchTerm, showLeagueSuggestions]);
 
-  // ---------- Jogadores ----------
+  // ====================== Jogadores ======================
   useEffect(() => {
     if (!showPlayerSuggestions) return;
     window.clearTimeout(playerDebRef.current);
+
     playerDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(playerSearchTerm);
+
       const filtered = ALL_PLAYERS.filter(
         (p) =>
           normalizeKeyForLookup(p.name).includes(q) ||
           normalizeKeyForLookup(p.nationality).includes(q)
       ).slice(0, 20);
+
       setPlayerResults(filtered);
     }, 150);
+
     return () => window.clearTimeout(playerDebRef.current);
   }, [playerSearchTerm, showPlayerSuggestions]);
 
-  // ---------- Casas ----------
+  // ====================== Casas ======================
   useEffect(() => {
     if (!showBettingHouseSuggestions) return;
     window.clearTimeout(houseDebRef.current);
+
     houseDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(bettingHouseSearchTerm);
+
       const filtered = BETTING_HOUSES.filter((h) =>
         normalizeKeyForLookup(h.name).includes(q)
       );
+
       setBettingHouseResults(filtered);
     }, 150);
+
     return () => window.clearTimeout(houseDebRef.current);
   }, [bettingHouseSearchTerm, showBettingHouseSuggestions]);
 
-  // ---------- Seletores ----------
+  // ====================== Seleção ======================
   const handleTeamSelect = (team: TeamOpt) => {
     setProfile({ ...profile, favoriteTeam: team.name });
     setTeamSearchTerm(team.name);
@@ -224,24 +267,26 @@ export const UserProfileScreen: React.FC = () => {
     setShowBettingHouseSuggestions(false);
   };
 
-  // ---------- Remoções ----------
+  // ====================== Remoções ======================
   const removeLeague = (name: string) =>
     setProfile({
       ...profile,
       favoriteLeagues: profile.favoriteLeagues.filter((l) => l !== name),
     });
+
   const removePlayer = (name: string) =>
     setProfile({
       ...profile,
       favoritePlayers: profile.favoritePlayers.filter((p) => p !== name),
     });
+
   const removeHouse = (name: string) =>
     setProfile({
       ...profile,
       favoriteBettingHouses: profile.favoriteBettingHouses.filter((h) => h !== name),
     });
 
-  // ---------- Envio ----------
+  // ====================== Submit ======================
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError(null);
@@ -263,15 +308,15 @@ export const UserProfileScreen: React.FC = () => {
       return;
     }
 
-    const registrationData = JSON.parse(storedData);
-
     try {
-      await api.put("/user/profile", profile); // 🔥 manda só o profile
+      await api.put("/user/profile", profile);
       localStorage.removeItem("registrationData");
       navigate("/login");
     } catch (err: any) {
       const message =
-        err.response?.data?.message || "Não foi possível concluir seu cadastro.";
+        err.response?.data?.message ||
+        "Não foi possível concluir seu cadastro.";
+
       setFormError(message);
       toast({
         title: "Erro no Cadastro",
@@ -279,9 +324,9 @@ export const UserProfileScreen: React.FC = () => {
         variant: "destructive",
       });
     }
-
   };
 
+  // ====================== RENDER ======================
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-gray-100">
       <Card className="w-full max-w-lg shadow-xl">
@@ -294,15 +339,19 @@ export const UserProfileScreen: React.FC = () => {
           </CardTitle>
           <p className="text-blue-600 text-sm">Personalize sua experiência</p>
         </CardHeader>
+
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* === Clube Favorito === */}
+
+            {/* ===== Clube Favorito ===== */}
             <div>
               <Label className="flex items-center gap-2">
                 <Heart className="w-4 h-4 text-red-500" /> Clube Favorito
               </Label>
+
               <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+
                 <Input
                   placeholder="Digite o nome do seu time"
                   className="pl-10 pr-10"
@@ -313,6 +362,7 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowTeamSuggestions(true)}
                 />
+
                 {teamSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
@@ -322,6 +372,7 @@ export const UserProfileScreen: React.FC = () => {
                     }}
                   />
                 )}
+
                 {showTeamSuggestions && teamResults.length > 0 && (
                   <div className="absolute z-40 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {teamResults.map((t) => (
@@ -330,8 +381,12 @@ export const UserProfileScreen: React.FC = () => {
                         className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleTeamSelect(t)}
                       >
-                        {t.logo && <img src={t.logo} alt="" className="h-4 w-4" />}
+                        {t.logo && <img src={t.logo} className="h-4 w-4" />}
                         <span>{t.name}</span>
+
+                        {t.flag && (
+                          <img src={t.flag} className="h-4 w-4 ml-auto" />
+                        )}
                       </div>
                     ))}
                   </div>
@@ -341,11 +396,22 @@ export const UserProfileScreen: React.FC = () => {
               {profile.favoriteTeam && (
                 <div className="mt-2 flex items-center bg-green-50 text-green-800 rounded-full px-3 py-1 text-sm gap-2">
                   {(() => {
-                    const club = (clubsMap as Record<string, any>)[profile.favoriteTeam];
-                    const logo = club?.logo ? getLocalLogo(club.logo) : null;
-                    return logo ? <img src={logo} alt="" className="h-5 w-5" /> : null;
+                    const club = clubsMap[profile.favoriteTeam];
+                    if (!club) return null;
+
+                    const logo = club.logo ? getLocalLogo(club.logo) : null;
+                    const flag = getFlagByCountryCode(club.countryCode);
+
+                    return (
+                      <>
+                        {logo && <img src={logo} className="h-5 w-5" />}
+                        {flag && <img src={flag} className="h-4 w-4 ml-1" />}
+                      </>
+                    );
                   })()}
+
                   <span>{profile.favoriteTeam}</span>
+
                   <X
                     className="ml-1 h-3 w-3 cursor-pointer"
                     onClick={() => setProfile({ ...profile, favoriteTeam: "" })}
@@ -354,13 +420,15 @@ export const UserProfileScreen: React.FC = () => {
               )}
             </div>
 
-            {/* === Ligas Favoritas === */}
+            {/* ===== Ligas ===== */}
             <div>
               <Label className="flex items-center gap-2">
                 <Trophy className="w-4 h-4 text-yellow-500" /> Ligas Favoritas
               </Label>
+
               <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+
                 <Input
                   placeholder="Digite o nome de uma liga"
                   className="pl-10 pr-10"
@@ -371,27 +439,30 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowLeagueSuggestions(true)}
                 />
+
                 {leagueSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
                     onClick={() => setLeagueSearchTerm("")}
                   />
                 )}
+
                 {showLeagueSuggestions && leagueResults.length > 0 && (
                   <div className="absolute z-30 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {leagueResults.map((l) => (
                       <div
                         key={l.id}
-                        className="flex items-center gap-2 px...2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                        className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleLeagueSelect(l)}
                       >
-                        {l.logo && <img src={l.logo} alt="" className="h-4 w-4" />}
+                        {l.logo && <img src={l.logo} className="h-4 w-4" />}
                         <span>{l.name}</span>
                       </div>
                     ))}
                   </div>
                 )}
               </div>
+
               {profile.favoriteLeagues.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-2">
                   {profile.favoriteLeagues.map((league) => (
@@ -410,13 +481,15 @@ export const UserProfileScreen: React.FC = () => {
               )}
             </div>
 
-            {/* === Jogadores === */}
+            {/* ===== Jogadores ===== */}
             <div>
               <Label className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-gray-700" /> Jogadores Favoritos
               </Label>
+
               <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+
                 <Input
                   placeholder="Digite o nome de um jogador"
                   className="pl-10 pr-10"
@@ -427,12 +500,14 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowPlayerSuggestions(true)}
                 />
+
                 {playerSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
                     onClick={() => setPlayerSearchTerm("")}
                   />
                 )}
+
                 {showPlayerSuggestions && playerResults.length > 0 && (
                   <div className="absolute z-20 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {playerResults.map((p) => (
@@ -447,6 +522,7 @@ export const UserProfileScreen: React.FC = () => {
                   </div>
                 )}
               </div>
+
               {profile.favoritePlayers.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-2">
                   {profile.favoritePlayers.map((player) => (
@@ -465,13 +541,15 @@ export const UserProfileScreen: React.FC = () => {
               )}
             </div>
 
-            {/* === Casas de Apostas === */}
+            {/* ===== Casas ===== */}
             <div>
               <Label className="flex items-center gap-2">
                 <Building className="w-4 h-4 text-gray-700" /> Casas de Apostas
               </Label>
+
               <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+
                 <Input
                   placeholder="Digite o nome da casa de apostas"
                   className="pl-10 pr-10"
@@ -482,12 +560,14 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowBettingHouseSuggestions(true)}
                 />
+
                 {bettingHouseSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
                     onClick={() => setBettingHouseSearchTerm("")}
                   />
                 )}
+
                 {showBettingHouseSuggestions && bettingHouseResults.length > 0 && (
                   <div className="absolute z-10 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {bettingHouseResults.map((h) => (
@@ -502,6 +582,7 @@ export const UserProfileScreen: React.FC = () => {
                   </div>
                 )}
               </div>
+
               {profile.favoriteBettingHouses.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-2">
                   {profile.favoriteBettingHouses.map((house) => (
@@ -520,7 +601,7 @@ export const UserProfileScreen: React.FC = () => {
               )}
             </div>
 
-            {/* === Configurações === */}
+            {/* ===== Configurações ===== */}
             <div className="space-y-4 border-t pt-4">
               <div className="flex justify-between items-center">
                 <Label>Controle de Apostas</Label>
@@ -553,6 +634,7 @@ export const UserProfileScreen: React.FC = () => {
                   max={10}
                   step={0.1}
                 />
+
                 <p className="text-sm text-gray-600 mt-1">
                   {profile.oddsRange[0].toFixed(2)} –{" "}
                   {profile.oddsRange[1].toFixed(2)}
@@ -561,6 +643,7 @@ export const UserProfileScreen: React.FC = () => {
 
               <div>
                 <Label>Limite de investimento mensal</Label>
+
                 <RadioGroup
                   value={profile.investmentLimit}
                   onValueChange={(v) =>
@@ -572,14 +655,17 @@ export const UserProfileScreen: React.FC = () => {
                       <RadioGroupItem value="abaixo-100" id="r1" />
                       <Label htmlFor="r1">Abaixo de R$100</Label>
                     </div>
+
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="100-200" id="r2" />
                       <Label htmlFor="r2">Entre R$100 e R$200</Label>
                     </div>
+
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="200-500" id="r3" />
                       <Label htmlFor="r3">Entre R$200 e R$500</Label>
                     </div>
+
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="acima-500" id="r4" />
                       <Label htmlFor="r4">Acima de R$500</Label>
@@ -589,10 +675,16 @@ export const UserProfileScreen: React.FC = () => {
               </div>
             </div>
 
+            {/* ===== Erros ===== */}
             {formError && (
               <p className="text-red-500 text-sm text-center">{formError}</p>
             )}
-            <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 mt-6">
+
+            {/* ===== Botão ===== */}
+            <Button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 mt-6"
+            >
               Concluir Cadastro
             </Button>
           </form>

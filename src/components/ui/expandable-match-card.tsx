@@ -3,20 +3,11 @@ import type { UIMatch } from "@/data/matchData";
 import clubsMap from "@/utils/clubs-map.json";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-type Props = {
-  matches: UIMatch[];
-  onSelectOdd?: (params: {
-    matchId: string | number;
-    homeTeam: string;
-    awayTeam: string;
-    competition: string;
-    market: string;
-    selection: string;
-    odd: number;
-  }) => void;
-};
+// 👉 novo import
+import { leagueCountries } from "@/utils/league-countries";
+import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
 
-// ===== Helpers =====
+// ========= Helpers =========
 const normalize = (str: string) =>
   str
     .normalize("NFD")
@@ -26,12 +17,17 @@ const normalize = (str: string) =>
     .trim()
     .toLowerCase();
 
+// encontra logo no clubs-map
 const findClubLogo = (teamName: string): string | null => {
   const target = normalize(teamName);
+
   for (const [key, data] of Object.entries(clubsMap)) {
     const normKey = normalize(key);
-    if (target.includes(normKey) || normKey.includes(target)) return data.logo;
+    if (target.includes(normKey) || normKey.includes(target)) {
+      return data.logo ? data.logo : null;
+    }
   }
+
   return null;
 };
 
@@ -44,8 +40,8 @@ const SafeOdd: React.FC<{ value?: number | null }> = ({ value }) => {
   );
 };
 
-// ===== Componente principal =====
-export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
+// ========= Componente principal =========
+export default function ExpandableMatchCard({ matches, onSelectOdd }) {
   const [openId, setOpenId] = useState<string | number | null>(null);
 
   const toggleExpand = (id: string | number) => {
@@ -57,7 +53,6 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
       {matches.map((m) => {
         const isOpen = openId === m.id;
 
-        // tipagem explícita para odds e extras
         const main: UIMatch["odds"] = m.odds || {
           home: null,
           draw: null,
@@ -68,6 +63,12 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
         const logoHome = findClubLogo(m.homeTeam);
         const logoAway = findClubLogo(m.awayTeam);
 
+        // 👉 agora pegamos o countryCode correto
+        const leagueCountryCode = leagueCountries[m.competition];
+        const leagueFlag = leagueCountryCode
+          ? getFlagByCountryCode(leagueCountryCode)
+          : null;
+
         return (
           <div
             key={m.id}
@@ -77,6 +78,7 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
             <div className="flex items-center justify-between p-4">
               <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex items-center justify-center gap-3">
+                  {/* Home */}
                   <div className="flex items-center gap-2">
                     {logoHome && (
                       <img
@@ -92,6 +94,7 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
 
                   <span className="text-gray-500 font-medium">x</span>
 
+                  {/* Away */}
                   <div className="flex items-center gap-2">
                     <span className="font-semibold text-gray-900 dark:text-gray-100">
                       {m.awayTeam}
@@ -106,8 +109,18 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
                   </div>
                 </div>
 
-                <div className="mt-1 text-xs text-gray-500 text-center">
-                  {m.competition} • {m.date} • {m.time}
+                {/* Liga + Bandeira */}
+                <div className="mt-1 text-xs text-gray-500 text-center flex items-center gap-1 justify-center">
+                  {leagueFlag && (
+                    <img
+                      src={leagueFlag}
+                      className="w-4 h-4 object-contain"
+                    />
+                  )}
+
+                  <span>
+                    {m.competition} • {m.date} • {m.time}
+                  </span>
                 </div>
               </div>
 
@@ -170,6 +183,7 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }: Props) {
                     <p className="font-semibold mb-1 text-gray-800 dark:text-gray-200">
                       {market}
                     </p>
+
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {Object.entries(options as Record<string, number | null>)
                         .filter(([_, val]) => val != null)
