@@ -1,18 +1,30 @@
 const db = require("../db");
 
+/**
+ * Calcula saldo corretamente considerando:
+ *  + deposito
+ *  + premio
+ *  - saque
+ *  - aposta
+ */
 exports.getSaldo = async (req, res) => {
-  const id_usuario = req.user.id;   // <--- CORRETO
+  const id_usuario = req.user.id;
+
   try {
     const [rows] = await db.query(
       `SELECT COALESCE(SUM(
-         CASE WHEN tipo='deposito' THEN valor
-              WHEN tipo='saque' THEN -valor
+         CASE
+           WHEN tipo='deposito' THEN valor
+           WHEN tipo='premio' THEN valor
+           WHEN tipo='saque' THEN -valor
+           WHEN tipo='aposta' THEN -valor
          END
        ),0) AS saldo
        FROM movimentacoes_financeiras
        WHERE id_usuario = ?`,
       [id_usuario]
     );
+
     res.json({ saldo: rows[0].saldo || 0 });
   } catch (err) {
     res.status(500).json({ error: "Erro ao calcular saldo." });
@@ -20,10 +32,11 @@ exports.getSaldo = async (req, res) => {
 };
 
 exports.getExtrato = async (req, res) => {
-  const id_usuario = req.user.id;   // <--- CORRETO
+  const id_usuario = req.user.id;
   try {
     const [rows] = await db.query(
-      `SELECT * FROM movimentacoes_financeiras
+      `SELECT *
+       FROM movimentacoes_financeiras
        WHERE id_usuario = ?
        ORDER BY data_movimentacao DESC
        LIMIT 200`,
@@ -36,7 +49,7 @@ exports.getExtrato = async (req, res) => {
 };
 
 exports.deposito = async (req, res) => {
-  const id_usuario = req.user.id;   // <--- CORRETO
+  const id_usuario = req.user.id;
   const { valor } = req.body;
 
   if (!valor || valor <= 0)
@@ -66,8 +79,11 @@ exports.saque = async (req, res) => {
     // calcular saldo
     const [rows] = await db.query(
       `SELECT COALESCE(SUM(
-         CASE WHEN tipo='deposito' THEN valor
-              WHEN tipo='saque' THEN -valor
+         CASE
+           WHEN tipo='deposito' THEN valor
+           WHEN tipo='premio' THEN valor
+           WHEN tipo='saque' THEN -valor
+           WHEN tipo='aposta' THEN -valor
          END
        ),0) AS saldo
        FROM movimentacoes_financeiras
@@ -95,4 +111,3 @@ exports.saque = async (req, res) => {
     res.status(500).json({ error: "Erro no saque." });
   }
 };
-
