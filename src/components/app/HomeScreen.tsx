@@ -8,8 +8,6 @@ import React, { useEffect, useMemo, useState } from "react";
 
 import ExpandableMatchCard from "@/components/ui/expandable-match-card";
 
-import LiveTab from "@/components/app/LiveTab";
-
 import { useUpcomingData } from "@/data/matchData";
 
 import { Button } from "@/components/ui/button";
@@ -94,7 +92,7 @@ const Badge = ({ children }: React.PropsWithChildren) => (
 
 export const HomeScreen: React.FC = () => {
 
-  const [tab, setTab] = useState<"favoritos" | "ao-vivo" | "em-alta" | "bilhetes">("em-alta");
+  const [tab, setTab] = useState<"favoritos" | "em-alta" | "bilhetes">("em-alta");
 
   const [query, setQuery] = useState("");
 
@@ -776,38 +774,6 @@ export const HomeScreen: React.FC = () => {
 
     }
 
- 
-
-      case "ao-vivo":
-
-        return (
-
-          <Section
-
-            title="Jogos Ao Vivo"
-
-            subtitle="Acompanhe em tempo real"
-
-          >
-
-            {/* Ajuste LiveTab futuramente para receber onSelectOdd se necessário */}
-
-            <LiveTab
-
-              logos={logos}
-
-              setLogos={() => {}}
-
-              fetchTeamLogo={async () => null}
-
-            />
-
-          </Section>
-
-        );
-
- 
-
       case "em-alta": {
 
         const trending = filtered.slice(0, 30);
@@ -1029,16 +995,6 @@ export const HomeScreen: React.FC = () => {
             active={tab === "favoritos"}
 
             onClick={() => setTab("favoritos")}
-
-          />
-
-          <TopTab
-
-            label="Jogos Ao Vivo"
-
-            active={tab === "ao-vivo"}
-
-            onClick={() => setTab("ao-vivo")}
 
           />
 

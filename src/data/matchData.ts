@@ -57,11 +57,9 @@ export async function fetchUpcoming(): Promise<UpcomingPayload> {
 
   // 🧹 Filtro “sanidade”: mantém apenas partidas futuras ou sem status inválido
   const now = Date.now();
-  const okStatus = new Set(["NS", "TBD", "PST", "", "LIVE"]);
   const clean = withExtraMarkets.filter((m) => {
-    const st = String(m?.live?.status || "").toUpperCase();
     const t = m?._dt ? new Date(m._dt).getTime() : now + 1;
-    return okStatus.has(st) || t > now;
+    return t > now;
   });
 
   return { matches: clean, lastUpdated };

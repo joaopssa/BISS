@@ -13,7 +13,7 @@ import {
 import { BottomNavigation } from "@/components/app/BottomNavigation";
 import { Home, DollarSign, History, Users, User } from "lucide-react";
 
-export type AppScreen = "home" | "balance" | "history" | "friends" | "profile";
+export type AppScreen = "home" | "balance" | "history" | "profile";
 
 export default function MainLayout() {
   const [screen, setScreen] = useState<AppScreen>("home");
@@ -57,15 +57,6 @@ export default function MainLayout() {
               </SidebarMenuItem>
               <SidebarMenuItem>
                 <SidebarMenuButton
-                  onClick={() => setScreen("friends")}
-                  isActive={screen === "friends"}
-                >
-                  <Users className="h-4 w-4" />
-                  <span>Amigos</span>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton
                   onClick={() => setScreen("profile")}
                   isActive={screen === "profile"}
                 >
@@ -101,8 +92,6 @@ function renderScreen(screen: AppScreen) {
       return <div>💰 Tela Balanço</div>;
     case "history":
       return <div>📜 Tela Histórico</div>;
-    case "friends":
-      return <div>👥 Tela Amigos</div>;
     case "profile":
       return <div>👤 Tela Perfil</div>;
     default:

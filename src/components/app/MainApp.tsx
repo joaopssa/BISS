@@ -15,14 +15,13 @@ import { BottomNavigation } from './BottomNavigation';
 import { HomeScreen } from './HomeScreen';
 import FinancialBalanceScreen  from './FinancialBalanceScreen';
 import  BettingHistoryScreen  from './BettingHistoryScreen';
-import { FriendsBetsScreen } from './FriendsBetsScreen';
 import { ProfileRankingScreen } from './ProfileRankingScreen';
 // --- (1/3) IMPORTAÇÕES ADICIONADAS ---
 import { Home, DollarSign, History, Users, User, LogOut } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContexts';
 import { useNavigate } from 'react-router-dom';
 
-export type AppScreen = 'home' | 'balance' | 'history' | 'friends' | 'profile';
+export type AppScreen = 'home' | 'balance' | 'history' | 'profile';
 
 export const MainApp: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<AppScreen>('home');
@@ -43,8 +42,6 @@ export const MainApp: React.FC = () => {
         return <FinancialBalanceScreen />;
       case 'history':
         return <BettingHistoryScreen />;
-      case 'friends':
-        return <FriendsBetsScreen />;
       case 'profile':
         return <ProfileRankingScreen />;
       default:
@@ -82,11 +79,6 @@ export const MainApp: React.FC = () => {
                 <SidebarMenuItem>
                   <SidebarMenuButton onClick={() => setCurrentScreen('history')} isActive={currentScreen === 'history'}>
                     <History className="h-4 w-4" /> <span>Histórico</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                  <SidebarMenuButton onClick={() => setCurrentScreen('friends')} isActive={currentScreen === 'friends'}>
-                    <Users className="h-4 w-4" /> <span>Amigos</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
                 <SidebarMenuItem>

@@ -30,11 +30,6 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
       onClick: () => onScreenChange('history')
     },
     { 
-      title: 'Amigos', 
-      icon: <Users className={`w-full h-full ${currentScreen === 'friends' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
-      onClick: () => onScreenChange('friends')
-    },
-    { 
       title: 'Perfil', 
       icon: <User className={`w-full h-full ${currentScreen === 'profile' ? 'text-blue-600' : 'text-gray-600 dark:text-gray-400'}`} />, 
       onClick: () => onScreenChange('profile')
