@@ -8,6 +8,7 @@ import { leagueCountries } from "@/utils/league-countries";
 import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
 
 // ========= Helpers =========
+
 const normalize = (str: string) =>
   str
     .normalize("NFD")
@@ -59,7 +60,7 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }) {
           away: null,
         };
         const extra = m._extraMarkets || {};
-
+        const hasExtraMarkets = Object.keys(extra).length > 0;
         const logoHome = findClubLogo(m.homeTeam);
         const logoAway = findClubLogo(m.awayTeam);
 
@@ -124,16 +125,18 @@ export default function ExpandableMatchCard({ matches, onSelectOdd }) {
                 </div>
               </div>
 
-              <button
-                className="p-2 hover:bg-gray-50 rounded-full transition ml-2"
-                onClick={() => toggleExpand(m.id)}
-              >
-                {isOpen ? (
-                  <ChevronUp size={16} className="text-gray-500" />
-                ) : (
-                  <ChevronDown size={16} className="text-gray-500" />
-                )}
-              </button>
+              {hasExtraMarkets && (
+                <button
+                  className="p-2 hover:bg-gray-50 rounded-full transition ml-2"
+                  onClick={() => toggleExpand(m.id)}
+                >
+                  {isOpen ? (
+                    <ChevronUp size={16} className="text-gray-500" />
+                  ) : (
+                    <ChevronDown size={16} className="text-gray-500" />
+                  )}
+                </button>
+              )}
             </div>
 
             {/* Mercado principal 1X2 */}

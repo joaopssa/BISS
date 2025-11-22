@@ -239,6 +239,12 @@
   "country": "Brasil",
   "countryCode": "br"
 },
+ "Udinese": {
+    "league": "Serie A TIM",
+    "logo": "logos/Serie A TIM/Udinese Calcio.png",
+    "country": "Italy",
+    "countryCode": "it"
+  },
   "US Cremonese": {
     "league": "Serie A TIM",
     "logo": "logos/Serie A TIM/US Cremonese.png",
@@ -701,7 +707,7 @@
     "country": "France",
     "countryCode": "fr"
   },
-    "1.FC Heidenheim": {
+    "1. FC Heidenheim": {
     "league": "Bundesliga",
     "logo": "logos/Bundesliga/1.FC Heidenheim 1846.png",
     "country": "Germany",

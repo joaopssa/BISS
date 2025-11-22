@@ -18,23 +18,52 @@ import { resolveLeagueName } from "@/utils/resolveLeagueName";
 
 import clubsMap from "@/utils/clubs-map.json";
 
- 
+ // ========= Helpers (copiados do MatchCard) =========
+
+const normalize = (str: string) =>
+  str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/-/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+
+const findClubLogo = (teamName: string): string | null => {
+  const target = normalize(teamName);
+
+  for (const [key, data] of Object.entries(clubsMap)) {
+    const normKey = normalize(key);
+    if (target.includes(normKey) || normKey.includes(target)) {
+      return data.logo ? data.logo : null;
+    }
+  }
+
+  return null;
+};
+
+import { leagueCountries } from "@/utils/league-countries";
+import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+
 
 type UIMatch = import("@/data/matchData").UIMatch;
 
  
 
 type TicketSelection = {
-
-  match: string;
-
-  market: string;
-
-  pick: string;
-
+  // formato do backend
+  mercado?: string;     
+  selecao?: string;      
+  partida?: string;      
+  time_casa?: string;
+  time_fora?: string;
+  campeonato?: string;
   odd: number;
-
+  market?: string;
+  pick?: string;
+  match?: string;
 };
+
 
  
 
@@ -115,6 +144,9 @@ export const HomeScreen: React.FC = () => {
   const [feedback, setFeedback] = useState<string | null>(null);
 
   const [userLeagues, setUserLeagues] = useState<string[]>([]);
+
+  const [ticketFilter, setTicketFilter] = useState<"todos" | "pendentes" | "liquidados">("todos");
+
 
  
 
@@ -224,21 +256,22 @@ export const HomeScreen: React.FC = () => {
 
  
 
-        const selections: TicketSelection[] = selecoesRaw.map((s, i) => ({
+        const selections: TicketSelection[] = selecoesRaw.map((s) => ({
+          partida: s.partida,
+          time_casa: s.time_casa,
+          time_fora: s.time_fora,
+          campeonato: s.campeonato,
 
-          match:
+          mercado: s.mercado,
+          selecao: s.selecao,
 
-            s.partida ??
-
-            `${s.time_casa || "Time A"} x ${s.time_fora || "Time B"}`,
-
-          market: s.mercado || "Mercado",
-
-          pick: s.selecao || "Seleção",
+          match: s.partida,
+          market: s.mercado,
+          pick: s.selecao,
 
           odd: Number(s.odd) || 0,
-
         }));
+
 
  
 
@@ -378,21 +411,14 @@ export const HomeScreen: React.FC = () => {
 
  
 
-  const updatedTime =
-
-    lastUpdated != null
-
-      ? new Date(lastUpdated).toLocaleTimeString("pt-BR", {
-
-          hour: "2-digit",
-
-          minute: "2-digit",
-
-          second: "2-digit",
-
-        })
-
-      : "—";
+ const updatedTime =
+  lastUpdated != null
+    ? `${new Date(lastUpdated).toLocaleDateString("pt-BR")} - ${new Date(lastUpdated).toLocaleTimeString("pt-BR", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      })}`
+    : "—";
 
  
 
@@ -677,6 +703,29 @@ export const HomeScreen: React.FC = () => {
   };
 
  
+  const filteredTickets = useMemo(() => {
+    const normalize = (s?: string) =>
+      (s || "").toUpperCase().trim();
+
+    if (ticketFilter === "pendentes") {
+      return tickets.filter((t) => {
+        const st = normalize(t.status);
+        return st === "" || st === "PENDENTE" || st === "EM ABERTO" || st === null;
+      });
+    }
+
+    if (ticketFilter === "liquidados") {
+      return tickets.filter((t) => {
+        const st = normalize(t.status);
+        return st !== "" && st !== "PENDENTE" && st !== "EM ABERTO";
+      });
+    }
+
+    return tickets;
+  }, [tickets, ticketFilter]);
+
+
+
 
   // ========= View das Abas =========
 
@@ -846,128 +895,149 @@ export const HomeScreen: React.FC = () => {
 
  
 
-      case "bilhetes":
+     case "bilhetes":
+    default:
+      return (
+        <Section title="Bilhetes" subtitle="Histórico de apostas registradas">
+          
+          {/* Botões de filtro */}
+          <div className="flex gap-2 mb-6">
+            {[
+              { key: "todos", label: "Todos" },
+              { key: "pendentes", label: "Pendentes" },
+              { key: "liquidados", label: "Liquidados" },
+            ].map(btn => (
+              <button
+                key={btn.key}
+                onClick={() => setTicketFilter(btn.key as any)}
+                className={`
+                  px-4 py-2 text-sm rounded-full border transition
+                  ${
+                    ticketFilter === btn.key
+                      ? "bg-[#014a8f] text-white border-[#014a8f]"
+                      : "bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-200 border-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700"
+                  }
+                `}
+              >
+                {btn.label}
+              </button>
+            ))}
+          </div>
 
-      default:
+          {filteredTickets.length === 0 ? (
+            <EmptyState text="Nenhum bilhete encontrado." />
+          ) : (
+            <ul className="space-y-6">
+              {filteredTickets.map((t) => {
+                const isPending = !t.status || t.status === "PENDENTE";
 
-        return (
-
-          <Section
-
-            title="Bilhetes"
-
-            subtitle="Seus bilhetes registrados no sistema"
-
-          >
-
-            {tickets.length === 0 ? (
-
-              <EmptyState text="Você ainda não possui bilhetes." />
-
-            ) : (
-
-              <ul className="space-y-4">
-
-                {tickets.map((t) => (
-
+                return (
                   <li
-
                     key={t.id}
-
-                    className="rounded-xl border bg-white dark:bg-neutral-900 p-4"
-
+                    className={`
+                      rounded-xl bg-white dark:bg-neutral-900 p-5 shadow-sm
+                      ${isPending ? "border border-gray-300 dark:border-neutral-700" : ""}
+                    `}
                   >
 
-                    <div className="flex items-center justify-between gap-2">
-
-                      <div className="flex flex-col">
-
-                        <span className="font-semibold">
-
-                          Bilhete #{t.id}
-
-                        </span>
-
-                        {t.status && (
-
-                          <span className="text-xs mt-0.5">
-
-                            Status:{" "}
-
-                            <span className="font-medium uppercase">
-
-                              {t.status}
-
-                            </span>
-
-                          </span>
-
-                        )}
-
-                      </div>
-
+                    {/* Topo com data + badge */}
+                    <div className="flex items-center justify-between mb-4">
                       <span className="text-xs text-gray-500">
-
                         {new Date(t.createdAt).toLocaleString("pt-BR")}
+                      </span>
 
+                      <span
+                        className={`
+                          text-[10px] font-semibold uppercase px-2 py-1 rounded-full
+                          ${
+                            isPending
+                              ? "bg-yellow-100 text-yellow-700"
+                              : "bg-green-100 text-green-700"
+                          }
+                        `}
+                      >
+                        {t.status || "PENDENTE"}
                       </span>
 
                     </div>
 
-                    <div className="mt-2 text-sm">
-
-                      Aposta:{" "}
-
-                      <b>R$ {t.stake.toFixed(2)}</b> • Retorno
-
-                      potencial:{" "}
-
-                      <b>
-
-                        R$ {t.potentialReturn.toFixed(2)}
-
-                      </b>
-
-                    </div>
-
-                    {t.selections?.length > 0 && (
-
-                      <div className="mt-3">
-
-                        <ul className="list-disc pl-5 text-xs sm:text-sm">
-
-                          {t.selections.map((s, i) => (
-
-                            <li key={i}>
-
-                              {s.match} — {s.market}:{" "}
-
-                              <b>{s.pick}</b> @{" "}
-
-                              {s.odd.toFixed(2)}
-
-                            </li>
-
-                          ))}
-
-                        </ul>
-
+                    {/* Valores */}
+                    <div className="grid grid-cols-2 mb-5 text-sm">
+                      <div>
+                        <span className="text-gray-500">Aposta</span>
+                        <p className="font-semibold">R$ {t.stake.toFixed(2)}</p>
                       </div>
 
-                    )}
+                      <div>
+                        <span className="text-gray-500">Retorno potencial</span>
+                        <p className="font-semibold text-green-600">
+                          R$ {t.potentialReturn.toFixed(2)}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Seleções — ESTILO LUXO (logo + bandeira + mercado) */}
+                    <div className="space-y-4">
+                      {t.selections?.map((s, i) => {
+                        const logoHome = findClubLogo(s.time_casa || s.match?.split(" x ")[0]);
+                        const logoAway = findClubLogo(s.time_fora || s.match?.split(" x ")[1]);
+
+                        const leagueCode = leagueCountries[s.campeonato];
+                        const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
+
+                        return (
+                          <div
+                            key={i}
+                            className="bg-gray-50 dark:bg-neutral-800 p-4 rounded-lg shadow-sm"
+                          >
+                            {/* Linha dos times (AGORA COM A BANDEIRA À ESQUERDA) */}
+                            <div className="flex items-center gap-3 mb-2">
+
+                              {/* BANDEIRA DA LIGA */}
+                              {leagueFlag && (
+                                <img src={leagueFlag} className="w-5 h-5 object-contain" />
+                              )}
+
+                              {/* TIME CASA */}
+                              <div className="flex items-center gap-2">
+                                {logoHome && (
+                                  <img src={logoHome} className="w-5 h-5 object-contain" />
+                                )}
+                                <span className="font-semibold">{s.time_casa}</span>
+                              </div>
+
+                              <span className="text-gray-500">x</span>
+
+                              {/* TIME FORA */}
+                              <div className="flex items-center gap-2">
+                                <span className="font-semibold">{s.time_fora}</span>
+                                {logoAway && (
+                                  <img src={logoAway} className="w-5 h-5 object-contain" />
+                                )}
+                              </div>
+                            </div>
+
+                            {/* Mercado / Pick */}
+                            <div className="flex justify-between text-sm">
+                              <div>
+                                <p className="text-gray-600">{s.mercado}</p>
+                                <p className="font-semibold">{s.selecao}</p>
+                              </div>
+
+                              <p className="font-semibold">Odd {s.odd.toFixed(2)}</p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
 
                   </li>
-
-                ))}
-
-              </ul>
-
-            )}
-
-          </Section>
-
-        );
-
+                );
+              })}
+            </ul>
+          )}
+        </Section>
+      );
     }
 
   }, [tab, filtered, loading, error, tickets, logos, handleAddSelection]);
@@ -1125,224 +1195,176 @@ export const HomeScreen: React.FC = () => {
       {/* Modal simples do Bilhete */}
 
       {isSlipOpen && (
-
         <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50">
+          <div className="w-full sm:max-w-md bg-white dark:bg-neutral-900 rounded-t-2xl sm:rounded-2xl p-4 space-y-4 shadow-2xl">
 
-          <div className="w-full sm:max-w-md bg-white dark:bg-neutral-900 rounded-t-2xl sm:rounded-2xl p-4 space-y-3 shadow-2xl">
-
-            <div className="flex items-center justify-between">
-
-              <h2 className="text-lg font-semibold">
-
-                Seu Bilhete
-
-              </h2>
-
+            {/* Header */}
+            <div className="flex items-center justify-between pb-2 border-b border-gray-200 dark:border-neutral-700">
+              <h2 className="text-lg font-semibold">Seu Bilhete</h2>
               <button
-
                 className="text-sm text-gray-500 hover:text-gray-800"
-
                 onClick={() => setIsSlipOpen(false)}
-
               >
-
                 Fechar
-
               </button>
-
             </div>
 
- 
-
+            {/* Se não tiver nada */}
             {selections.length === 0 ? (
-
-              <p className="text-sm text-gray-500">
-
-                Nenhuma seleção no bilhete.
-
-              </p>
-
+              <p className="text-sm text-gray-500">Nenhuma seleção no bilhete.</p>
             ) : (
-
               <>
+                {/* LISTA DE SELEÇÕES */}
+                <div className="max-h-64 overflow-y-auto space-y-3 pr-1">
 
-                <div className="max-h-40 overflow-y-auto space-y-2">
+                  {selections.map((s, i) => {
+                    const logoHome = findClubLogo(s.time_casa);
+                    const logoAway = findClubLogo(s.time_fora);
 
-                  {selections.map((s, i) => (
+                    const leagueCode = leagueCountries[s.campeonato];
+                    const leagueFlag = leagueCode
+                      ? getFlagByCountryCode(leagueCode)
+                      : null;
 
-                    <div
-
-                      key={i}
-
-                      className="flex items-start justify-between gap-2 border-b pb-2 text-xs sm:text-sm"
-
-                    >
-
-                      <div>
-
-                        <div className="font-semibold">
-
-                          {s.partida}
-
-                        </div>
-
-                        <div className="text-gray-500">
-
-                          {s.mercado} • {s.selecao}
-
-                        </div>
-
-                        <div className="text-gray-700">
-
-                          Odd: {s.odd.toFixed(2)}
-
-                        </div>
-
-                      </div>
-
-                      <button
-
-                        className="text-red-500 text-[10px] hover:underline"
-
-                        onClick={() =>
-
-                          handleRemoveSelection(i)
-
-                        }
-
+                    return (
+                      <div
+                        key={i}
+                        className="rounded-xl border border-gray-200 dark:border-neutral-700 bg-gray-50 dark:bg-neutral-800 p-3"
                       >
+                        {/* Linha superior com times */}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            {logoHome && (
+                              <img
+                                src={logoHome}
+                                className="w-5 h-5 object-contain"
+                              />
+                            )}
+                            <span className="font-semibold text-sm">
+                              {s.time_casa}
+                            </span>
+                            <span className="text-gray-400 font-medium">x</span>
+                            <span className="font-semibold text-sm">
+                              {s.time_fora}
+                            </span>
+                            {logoAway && (
+                              <img
+                                src={logoAway}
+                                className="w-5 h-5 object-contain"
+                              />
+                            )}
+                          </div>
 
-                        remover
+                          {/* Botão remover (ícone lixeira) */}
+                          <button
+                            onClick={() => handleRemoveSelection(i)}
+                            className="text-gray-500 hover:text-red-500 transition"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-4 h-4"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                            >
+                              <path d="M3 6h18" />
+                              <path d="M8 6V4h8v2" />
+                              <path d="M10 11v6" />
+                              <path d="M14 11v6" />
+                              <path d="M5 6l1 14h12l1-14" />
+                            </svg>
+                          </button>
+                        </div>
 
-                      </button>
+                        {/* Informações da liga + horário */}
+                        <div className="flex items-center gap-1 mt-1 text-xs text-gray-500">
+                          {leagueFlag && (
+                            <img src={leagueFlag} className="w-4 h-4" />
+                          )}
+                          <span>{s.campeonato}</span>
+                        </div>
 
-                    </div>
+                        {/* Mercado / Seleção / Odd */}
+                        <div className="mt-2 flex items-center justify-between">
+                          <div className="text-xs">
+                            <div className="text-gray-500">{s.mercado}</div>
+                            <div className="font-semibold text-gray-800 dark:text-gray-100">
+                              {s.selecao}
+                            </div>
+                          </div>
 
-                  ))}
-
+                          <div className="text-right">
+                            <span className="text-xs text-gray-500">Odd</span>
+                            <div className="text-sm font-bold">
+                              {s.odd.toFixed(2)}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
 
- 
-
-                <div className="pt-2 space-y-2 text-sm">
+                {/* Totais */}
+                <div className="pt-2 space-y-3 text-sm border-t border-gray-200 dark:border-neutral-700">
 
                   <div className="flex justify-between">
-
                     <span>Odd Total</span>
-
-                    <span className="font-semibold">
-
-                      {oddTotal.toFixed(2)}
-
-                    </span>
-
+                    <span className="font-semibold">{oddTotal.toFixed(2)}</span>
                   </div>
 
-                  <div className="flex items-center gap-2">
-
+                  <div className="flex items-center justify-between">
                     <span>Valor da aposta (R$)</span>
-
                     <input
-
                       type="number"
-
                       min={0}
-
                       step={1}
-
                       value={stake || ""}
-
-                      onChange={(e) =>
-
-                        setStake(
-
-                          Number(e.target.value) || 0
-
-                        )
-
-                      }
-
+                      onChange={(e) => setStake(Number(e.target.value) || 0)}
                       className="w-28 border rounded-md px-2 py-1 text-sm"
-
                     />
-
                   </div>
 
                   <div className="flex justify-between">
-
                     <span>Retorno potencial</span>
-
                     <span className="font-semibold">
-
                       R$ {possibleReturn.toFixed(2)}
-
                     </span>
-
                   </div>
 
                   <div className="flex justify-between text-xs text-gray-500">
-
                     <span>Saldo disponível:</span>
-
-                    <span>
-
-                      R$ {saldo.toFixed(2)}
-
-                    </span>
-
+                    <span>R$ {saldo.toFixed(2)}</span>
                   </div>
-
                 </div>
 
- 
-
+                {/* Botões */}
                 <div className="pt-2 flex gap-2">
-
                   <Button
-
                     variant="outline"
-
                     className="w-1/3 text-xs"
-
                     onClick={resetSlip}
-
                     disabled={placingBet}
-
                   >
-
                     Limpar
-
                   </Button>
 
                   <Button
-
                     className="w-2/3 bg-[#014a8f] hover:bg-[#003b70] text-xs"
-
                     onClick={handleConfirmBet}
-
                     disabled={placingBet}
-
                   >
-
-                    {placingBet
-
-                      ? "Registrando..."
-
-                      : "Apostar agora"}
-
+                    {placingBet ? "Registrando..." : "Apostar agora"}
                   </Button>
-
                 </div>
-
               </>
-
             )}
 
           </div>
-
         </div>
-
       )}
+
 
     </div>
 
