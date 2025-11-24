@@ -97,6 +97,68 @@ export default function BettingHistoryScreen() {
     setFilterStatus(null);
   };
 
+  // --- MÉTRICAS DO HISTÓRICO ---
+
+  // Normaliza nomes (remove acentos e mantém padrão)
+  // --- MÉTRICAS BASEADAS NO FILTRO ---
+  const base = filteredApostas; // <<--- AGORA O CARD USA SOMENTE APOSTAS FILTRADAS
+
+  const normalize = (s: string) =>
+    s.toLowerCase()
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .trim();
+
+  const parseTeams = (partida: string) => {
+    if (!partida) return [];
+    const sep = /\s+vs\.?\s+|\s+x\s+|\s+X\s+|\s+-\s+|\s+vs\s+/i;
+    const parts = partida.split(sep).map(s => s.trim());
+    return parts.length >= 2 ? parts.slice(0, 2) : [];
+  };
+
+  // Total de jogos (não duplica)
+  const uniqueGames = new Set(base.map(a => normalize(a.partida)));
+  const totalGames = uniqueGames.size;
+
+  // Times distintos
+  const allTeams = base.flatMap(a => parseTeams(a.partida));
+  const distinctTeams = new Set(allTeams.map(t => normalize(t))).size;
+
+  // Estatísticas por clube
+  const clubStats: Record<string, { apostas: number; ganha: number; perdida: number }> = {};
+
+  base.forEach(a => {
+    const teams = parseTeams(a.partida);
+    teams.forEach(team => {
+      if (!team) return;
+      const key = normalize(team);
+      if (!clubStats[key]) clubStats[key] = { apostas: 0, ganha: 0, perdida: 0 };
+      clubStats[key].apostas++;
+      if (a.status_aposta === "ganha") clubStats[key].ganha++;
+      if (a.status_aposta === "perdida") clubStats[key].perdida++;
+    });
+  });
+
+  // Ordena clubes por quantidade de apostas
+  const sortedClubs = Object.entries(clubStats)
+    .sort((a, b) => b[1].apostas - a[1].apostas)
+    .map(([name, stats]) => ({ name, ...stats }));
+
+  const top4 = sortedClubs.slice(0, 4);
+
+
+
+  const [showAllClubs, setShowAllClubs] = useState(false);
+
+  // Busca logo do clube
+  const findLogo = (teamName: string) => {
+    for (const key in clubsMap) {
+      const normalized = normalize(key);
+      if (normalized === teamName) return getLocalLogo(clubsMap[key].logo);
+    }
+    return null;
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       <header className="bg-[#014a8f] text-white p-4 shadow sticky top-0 z-40">
@@ -198,6 +260,101 @@ export default function BettingHistoryScreen() {
                 {filterStatus && <span className="px-2 py-1 bg-gray-200 text-gray-800 rounded-full border border-gray-300">Status: {filterStatus}</span>}
             </div>
         )}
+
+        {/* DASHBOARD SUPERIOR */}
+        <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 mb-6">
+
+          {/* Cabeçalho */}
+          <div className="flex justify-between items-center mb-4">
+            <div>
+              <h2 className="text-2xl font-bold text-[#014a8f]">Apostas</h2>
+              <p className="text-gray-500 text-sm">Seu desempenho</p>
+            </div>
+
+            <button
+              onClick={() => setShowAllClubs(!showAllClubs)}
+              className="text-[#014a8f] text-sm font-medium hover:underline"
+            >
+              {showAllClubs ? "Ver menos" : "Ver todos"}
+            </button>
+          </div>
+
+          {/* MÉTRICAS */}
+          <div className="flex items-center gap-8">
+
+            {/* Total de apostas */}
+            <div className="text-center">
+              <div className="text-6xl font-extrabold text-[#014a8f] leading-none">
+                {totalGames}
+              </div>
+              <div className="text-gray-500 text-sm mt-1">Apostas</div>
+            </div>
+
+            {/* Times */}
+            <div className="flex-1">
+              <p className="text-gray-600 font-semibold text-sm">
+                Times ({distinctTeams})
+              </p>
+
+              {/* Top 4 clubes */}
+              <div className="grid grid-cols-4 gap-3 mt-3">
+                {top4.map(club => {
+                  const logo = findLogo(club.name);
+
+                  return (
+                    <div
+                      key={club.name}
+                      className="bg-[#f3f6f9] border border-[#dce3ea] rounded-xl py-4 flex flex-col items-center"
+                    >
+                      <div className="w-12 h-12 mb-2 flex items-center justify-center">
+                        {logo ? (
+                          <img src={logo} className="w-full h-full object-contain" />
+                        ) : (
+                          <div className="text-gray-400 text-xs">?</div>
+                        )}
+                      </div>
+
+                      <span className="font-bold text-gray-800">{club.apostas}x</span>
+                      <span className="text-xs text-gray-500">
+                        {club.ganha}-{club.perdida}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* EXPANDIDO (Todos os clubes) */}
+              {showAllClubs && (
+                <div className="grid grid-cols-4 gap-3 mt-4">
+                  {sortedClubs.slice(4).map(club => {
+                    const logo = findLogo(club.name);
+                    return (
+                      <div
+                        key={club.name}
+                        className="bg-[#f3f6f9] border border-[#dce3ea] rounded-xl p-4 flex flex-col items-center"
+                      >
+                        <div className="w-12 h-12 mb-2 flex items-center justify-center">
+                          {logo ? (
+                            <img src={logo} className="w-full h-full object-contain" />
+                          ) : (
+                            <div className="text-gray-400">?</div>
+                          )}
+                        </div>
+
+                        <p className="font-bold text-gray-800">{club.apostas}x</p>
+                        <p className="text-xs text-gray-500">
+                          {club.ganha}-{club.perdida}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+            </div>
+          </div>
+        </div>
+
 
         {loading ? (
           <div className="text-center py-12 text-gray-600 dark:text-gray-300 animate-pulse">
