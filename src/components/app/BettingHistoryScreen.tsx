@@ -165,7 +165,17 @@ export default function BettingHistoryScreen() {
         <div className="flex justify-between items-center max-w-5xl mx-auto">
           <h1 className="text-xl font-bold">Histórico de Apostas</h1>
           
-          <div className="relative">
+          <div className="flex items-center gap-3 relative">
+            <Button
+              className="bg-white text-[#014a8f] ml-3"
+              onClick={async () => {
+                await api.post("/apostas/verificar");
+                fetchHistorico(); // recarrega tela
+              }}
+            >
+              Atualizar resultados
+            </Button>
+
             <Button
               onClick={() => setShowFilters(!showFilters)}
               className={`text-sm flex items-center gap-2 ${

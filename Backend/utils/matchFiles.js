@@ -1,8 +1,8 @@
 const path = require("path");
 
 module.exports = {
-  "Brasileirão Série A": path.join(__dirname, "../data/matches/brasileirao-serie-a/2025_br1.txt"),
-  "Brasileirão Série B": path.join(__dirname, "../data/matches/brasileirao-serie-b/2025_br2.txt"),
+  "Brasileirão - Série A Betano": path.join(__dirname, "../data/matches/brasileirao-serie-a/2025_br1.txt"),
+  "Brasileirão - Série B": path.join(__dirname, "../data/matches/brasileirao-serie-b/2025_br2.txt"),
   "Bundesliga": path.join(__dirname, "../data/matches/bundesliga/2025_26_bundesliga.txt"),
   "Liga dos Campeões": path.join(__dirname, "../data/matches/champions/2025_26_cl.txt"),
   "La Liga": path.join(__dirname, "../data/matches/laliga/2025_26_liga.txt"),

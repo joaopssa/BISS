@@ -772,8 +772,14 @@ export default function FinancialBalanceScreen() {
                   <tr key={m.id_movimentacao} className="border-b">
                     <td className="py-2">{new Date(m.data_movimentacao).toLocaleString("pt-BR")}</td>
                     <td>{m.tipo}</td>
-                    <td className={m.tipo === "deposito" ? "text-green-600" : "text-red-600"}>
-                      {m.tipo === "deposito" ? "+" : "-"} R$ {m.valor.toFixed(2)}
+                    <td
+                      className={
+                        m.tipo === "deposito" || m.tipo === "premio"
+                          ? "text-green-600"
+                          : "text-red-600"
+                      }
+                    >
+                      {(m.tipo === "deposito" || m.tipo === "premio") ? "+" : "-"} R$ {m.valor.toFixed(2)}
                     </td>
                     <td>{m.descricao || "—"}</td>
                   </tr>

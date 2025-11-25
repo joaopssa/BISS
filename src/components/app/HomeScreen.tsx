@@ -901,6 +901,17 @@ export const HomeScreen: React.FC = () => {
         <Section title="Bilhetes" subtitle="Histórico de apostas registradas">
           
           {/* Botões de filtro */}
+          <Button
+            className="bg-[#014a8f] text-white mb-4"
+            onClick={async () => {
+              await api.post("/apostas/verificar");
+              fetchTickets();
+              fetchSaldo();
+            }}
+          >
+            Atualizar bilhetes
+          </Button>
+
           <div className="flex gap-2 mb-6">
             {[
               { key: "todos", label: "Todos" },
