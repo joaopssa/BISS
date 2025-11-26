@@ -13,7 +13,7 @@
            Criciúma SC             v Operário Ferroviário PR  1-2 (1-1)
   Sat Apr/5
     16.00  Coritiba PR             v Vila Nova GO             1-0 (0-0)
-           CR Brasil AL            v Chapecoense              1-0 (1-0)
+           CR Brasil AL            v Chapecoense AF              1-0 (1-0)
     18.30  América MG              v Botafogo SP              1-0 (0-0)
   Sun Apr/6
     19.00  Ferroviária SP          v Remo PA                  1-1 (0-1)
@@ -28,7 +28,7 @@
     19.00  Athletico Paranaense    v Criciúma SC              2-1 (1-0)
     21.30  Cuiabá MT               v Avaí SC                  2-2 (1-0)
   Sat Apr/12
-    16.00  Chapecoense             v Coritiba PR              1-2 (0-0)
+    16.00  Chapecoense AF             v Coritiba PR              1-2 (0-0)
     18.00  Vila Nova GO            v Paysandu PA              1-0 (1-0)
     19.00  Amazonas FC AM          v Ferroviária SP           0-0
            Grêmio Novorizontino SP v Volta Redonda RJ         1-0 (0-0)
@@ -43,7 +43,7 @@
   Tue Apr/15
     19.00  Cuiabá MT               v Athletico Paranaense     2-1 (0-1)
   Wed Apr/16
-    20.00  Paysandu PA             v Chapecoense              0-2 (0-2)
+    20.00  Paysandu PA             v Chapecoense AF              0-2 (0-2)
            Avaí SC                 v Operário Ferroviário PR  1-0 (1-0)
     21.00  Coritiba PR             v Grêmio Novorizontino SP  0-0
   Thu Apr/17
@@ -60,7 +60,7 @@
     16.00  Operário Ferroviário PR v Paysandu PA              0-0
   Sun Apr/20
     16.00  Vila Nova GO            v Botafogo SP              2-0 (2-0)
-    18.00  Chapecoense             v Athletic MG              1-0 (0-0)
+    18.00  Chapecoense AF             v Athletic MG              1-0 (0-0)
     19.00  Athletico Paranaense    v CR Brasil AL             2-0 (1-0)
     20.00  América MG              v Goiás GO                 1-0 (1-0)
   Mon Apr/21
@@ -77,7 +77,7 @@
     21.35  Grêmio Novorizontino SP v Athletico Paranaense     2-1 (1-0)
   Fri Apr/25
     19.00  Criciúma SC             v Remo PA                  1-1 (0-0)
-    21.00  Vila Nova GO            v Chapecoense              1-0 (0-0)
+    21.00  Vila Nova GO            v Chapecoense AF              1-0 (0-0)
   Sat Apr/26
     16.00  Coritiba PR             v Operário Ferroviário PR  2-0 (2-0)
     20.00  Avaí SC                 v América MG               3-0 (1-0)
@@ -99,7 +99,7 @@
   Sun May/4
     16.00  Atlético Goianiense     v Grêmio Novorizontino SP  1-0 (1-0)
     18.30  Athletico Paranaense    v Botafogo SP              1-4 (1-2)
-           Chapecoense             v Criciúma SC              2-1 (1-1)
+           Chapecoense AF             v Criciúma SC              2-1 (1-1)
     20.30  Operário Ferroviário PR v América MG               1-0 (1-0)
   Mon May/5
     19.00  Goiás GO                v Avaí SC
@@ -110,7 +110,7 @@
 
 » Matchday 7
   Thu May/8
-    21.35  Athletico Paranaense    v Chapecoense
+    21.35  Athletico Paranaense    v Chapecoense AF
   Sat May/10
     16.00  Avaí SC                 v Atlético Goianiense
     18.30  Goiás GO                v Coritiba PR
@@ -130,7 +130,7 @@
   Thu May/15
     21.35  Ferroviária SP          v Avaí SC
   Fri May/16
-    19.00  Chapecoense             v Cuiabá MT
+    19.00  Chapecoense AF             v Cuiabá MT
   Sat May/17
     16.00  Operário Ferroviário PR v Botafogo SP
     18.30  Vila Nova GO            v Athletico Paranaense
@@ -149,7 +149,7 @@
     21.35  Goiás GO                v Ferroviária SP
   Sat May/24
     16.00  Athletico Paranaense    v Athletic MG
-    18.30  Avaí SC                 v Chapecoense
+    18.30  Avaí SC                 v Chapecoense AF
     20.30  Remo PA                 v Volta Redonda RJ
   Sun May/25
     18.30  Grêmio Novorizontino SP v Paysandu PA
@@ -176,13 +176,13 @@
     18.00  CR Brasil AL            v Remo PA
     20.30  Volta Redonda RJ        v América MG
   Mon Jun/2
-    19.00  Chapecoense             v Amazonas FC AM
+    19.00  Chapecoense AF             v Amazonas FC AM
     21.00  Paysandu PA             v Criciúma SC
 
 
 » Matchday 11
   Fri Jun/6
-    19.00  Grêmio Novorizontino SP v Chapecoense
+    19.00  Grêmio Novorizontino SP v Chapecoense AF
     21.35  Cuiabá MT               v Paysandu PA
   Sat Jun/7
     16.00  América MG              v Ferroviária SP
@@ -203,7 +203,7 @@
            Vila Nova GO            v América MG
            Atlético Goianiense     v Coritiba PR
            Paysandu PA             v Botafogo SP
-           Chapecoense             v Ferroviária SP
+           Chapecoense AF             v Ferroviária SP
            Criciúma SC             v Amazonas FC AM
            CR Brasil AL            v Goiás GO
            Athletic MG             v Operário Ferroviário PR
@@ -222,7 +222,7 @@
            Amazonas FC AM          v Vila Nova GO
            América MG              v Criciúma SC
            Ferroviária SP          v CR Brasil AL
-           Botafogo SP             v Chapecoense
+           Botafogo SP             v Chapecoense AF
 
 
 » Matchday 14
@@ -231,7 +231,7 @@
            Vila Nova GO            v Atlético Goianiense
            Cuiabá MT               v Botafogo SP
            Paysandu PA             v Ferroviária SP
-           Chapecoense             v Goiás GO
+           Chapecoense AF             v Goiás GO
            Criciúma SC             v Avaí SC
            CR Brasil AL            v América MG
            Athletic MG             v Remo PA
@@ -246,7 +246,7 @@
            Atlético Goianiense     v CR Brasil AL
            Remo PA                 v Cuiabá MT
            Avaí SC                 v Paysandu PA
-           Operário Ferroviário PR v Chapecoense
+           Operário Ferroviário PR v Chapecoense AF
            Amazonas FC AM          v Athletico Paranaense
            América MG              v Athletic MG
            Ferroviária SP          v Vila Nova GO
@@ -259,7 +259,7 @@
            Vila Nova GO            v Operário Ferroviário PR
            Cuiabá MT               v Amazonas FC AM
            Paysandu PA             v Atlético Goianiense
-           Chapecoense             v Remo PA
+           Chapecoense AF             v Remo PA
            Criciúma SC             v Ferroviária SP
            CR Brasil AL            v Coritiba PR
            Athletic MG             v Avaí SC
@@ -276,7 +276,7 @@
            Avaí SC                 v Vila Nova GO
            Operário Ferroviário PR v CR Brasil AL
            Amazonas FC AM          v Botafogo SP
-           América MG              v Chapecoense
+           América MG              v Chapecoense AF
            Ferroviária SP          v Athletic MG
            Volta Redonda RJ        v Athletico Paranaense
 
@@ -287,7 +287,7 @@
            Vila Nova GO            v CR Brasil AL
            Cuiabá MT               v América MG
            Remo PA                 v Avaí SC
-           Chapecoense             v Volta Redonda RJ
+           Chapecoense AF             v Volta Redonda RJ
            Operário Ferroviário PR v Atlético Goianiense
            Amazonas FC AM          v Paysandu PA
            Athletic MG             v Coritiba PR
@@ -299,7 +299,7 @@
   Fri Jul/25
            Coritiba PR             v Amazonas FC AM
            Goiás GO                v Remo PA
-           Atlético Goianiense     v Chapecoense
+           Atlético Goianiense     v Chapecoense AF
            Paysandu PA             v Athletic MG
            Avaí SC                 v Botafogo SP
            Criciúma SC             v Cuiabá MT
@@ -315,7 +315,7 @@
            Vila Nova GO            v Coritiba PR
            Cuiabá MT               v Volta Redonda RJ
            Remo PA                 v Ferroviária SP
-           Chapecoense             v CR Brasil AL
+           Chapecoense AF             v CR Brasil AL
            Operário Ferroviário PR v Criciúma SC
            Amazonas FC AM          v Goiás GO
            Athletic MG             v Atlético Goianiense
@@ -325,7 +325,7 @@
 
 » Matchday 21
   Fri Aug/8
-           Coritiba PR             v Chapecoense
+           Coritiba PR             v Chapecoense AF
            Goiás GO                v Operário Ferroviário PR
            Atlético Goianiense     v Botafogo SP
            Paysandu PA             v Vila Nova GO
@@ -343,7 +343,7 @@
            Vila Nova GO            v Goiás GO
            Atlético Goianiense     v Ferroviária SP
            Remo PA                 v Botafogo SP
-           Chapecoense             v Paysandu PA
+           Chapecoense AF             v Paysandu PA
            Operário Ferroviário PR v Avaí SC
            Amazonas FC AM          v América MG
            Athletic MG             v Criciúma SC
@@ -360,7 +360,7 @@
            Avaí SC                 v Amazonas FC AM
            Criciúma SC             v Grêmio Novorizontino SP
            CR Brasil AL            v Athletico Paranaense
-           Athletic MG             v Chapecoense
+           Athletic MG             v Chapecoense AF
            Ferroviária SP          v Volta Redonda RJ
            Botafogo SP             v Vila Nova GO
 
@@ -371,7 +371,7 @@
            Goiás GO                v Botafogo SP
            Atlético Goianiense     v Amazonas FC AM
            Remo PA                 v Criciúma SC
-           Chapecoense             v Vila Nova GO
+           Chapecoense AF             v Vila Nova GO
            Operário Ferroviário PR v Coritiba PR
            CR Brasil AL            v Paysandu PA
            América MG              v Avaí SC
@@ -386,7 +386,7 @@
            Cuiabá MT               v CR Brasil AL
            Paysandu PA             v Volta Redonda RJ
            Avaí SC                 v Goiás GO
-           Criciúma SC             v Chapecoense
+           Criciúma SC             v Chapecoense AF
            Amazonas FC AM          v Remo PA
            América MG              v Operário Ferroviário PR
            Grêmio Novorizontino SP v Atlético Goianiense
@@ -399,7 +399,7 @@
            Vila Nova GO            v Remo PA
            Atlético Goianiense     v Avaí SC
            Paysandu PA             v América MG
-           Chapecoense             v Athletico Paranaense
+           Chapecoense AF             v Athletico Paranaense
            Operário Ferroviário PR v Cuiabá MT
            CR Brasil AL            v Amazonas FC AM
            Athletic MG             v Botafogo SP
@@ -411,7 +411,7 @@
   Tue Sep/23
            Athletico Paranaense    v Vila Nova GO
            Goiás GO                v Paysandu PA
-           Cuiabá MT               v Chapecoense
+           Cuiabá MT               v Chapecoense AF
            Remo PA                 v Atlético Goianiense
            Avaí SC                 v Ferroviária SP
            Criciúma SC             v CR Brasil AL
@@ -427,7 +427,7 @@
            Vila Nova GO            v Cuiabá MT
            Atlético Goianiense     v América MG
            Paysandu PA             v Grêmio Novorizontino SP
-           Chapecoense             v Avaí SC
+           Chapecoense AF             v Avaí SC
            Operário Ferroviário PR v Amazonas FC AM
            CR Brasil AL            v Botafogo SP
            Athletic MG             v Athletico Paranaense
@@ -443,7 +443,7 @@
            Remo PA                 v CR Brasil AL
            Avaí SC                 v Coritiba PR
            Criciúma SC             v Paysandu PA
-           Amazonas FC AM          v Chapecoense
+           Amazonas FC AM          v Chapecoense AF
            América MG              v Volta Redonda RJ
            Grêmio Novorizontino SP v Vila Nova GO
            Botafogo SP             v Ferroviária SP
@@ -455,7 +455,7 @@
            Vila Nova GO            v Criciúma SC
            Atlético Goianiense     v Athletico Paranaense
            Paysandu PA             v Cuiabá MT
-           Chapecoense             v Grêmio Novorizontino SP
+           Chapecoense AF             v Grêmio Novorizontino SP
            Operário Ferroviário PR v Remo PA
            CR Brasil AL            v Avaí SC
            Athletic MG             v Amazonas FC AM
@@ -473,7 +473,7 @@
            Operário Ferroviário PR v Athletic MG
            Amazonas FC AM          v Criciúma SC
            América MG              v Vila Nova GO
-           Ferroviária SP          v Chapecoense
+           Ferroviária SP          v Chapecoense AF
            Botafogo SP             v Paysandu PA
 
 
@@ -483,7 +483,7 @@
            Vila Nova GO            v Amazonas FC AM
            Cuiabá MT               v Coritiba PR
            Paysandu PA             v Remo PA
-           Chapecoense             v Botafogo SP
+           Chapecoense AF             v Botafogo SP
            Criciúma SC             v América MG
            CR Brasil AL            v Ferroviária SP
            Athletic MG             v Goiás GO
@@ -494,7 +494,7 @@
 » Matchday 33
   Fri Oct/24
            Coritiba PR             v Athletico Paranaense
-           Goiás GO                v Chapecoense
+           Goiás GO                v Chapecoense AF
            Atlético Goianiense     v Vila Nova GO
            Remo PA                 v Athletic MG
            Avaí SC                 v Criciúma SC
@@ -511,7 +511,7 @@
            Vila Nova GO            v Ferroviária SP
            Cuiabá MT               v Remo PA
            Paysandu PA             v Avaí SC
-           Chapecoense             v Operário Ferroviário PR
+           Chapecoense AF             v Operário Ferroviário PR
            Criciúma SC             v Goiás GO
            CR Brasil AL            v Atlético Goianiense
            Athletic MG             v América MG
@@ -524,7 +524,7 @@
            Coritiba PR             v CR Brasil AL
            Goiás GO                v Athletico Paranaense
            Atlético Goianiense     v Paysandu PA
-           Remo PA                 v Chapecoense
+           Remo PA                 v Chapecoense AF
            Avaí SC                 v Athletic MG
            Operário Ferroviário PR v Vila Nova GO
            Amazonas FC AM          v Cuiabá MT
@@ -539,7 +539,7 @@
            Vila Nova GO            v Avaí SC
            Cuiabá MT               v Goiás GO
            Paysandu PA             v Coritiba PR
-           Chapecoense             v América MG
+           Chapecoense AF             v América MG
            Criciúma SC             v Atlético Goianiense
            CR Brasil AL            v Operário Ferroviário PR
            Athletic MG             v Ferroviária SP
@@ -558,7 +558,7 @@
            CR Brasil AL            v Vila Nova GO
            América MG              v Cuiabá MT
            Ferroviária SP          v Athletico Paranaense
-           Volta Redonda RJ        v Chapecoense
+           Volta Redonda RJ        v Chapecoense AF
 
 
 » Matchday 38
@@ -567,7 +567,7 @@
            Vila Nova GO            v Volta Redonda RJ
            Cuiabá MT               v Criciúma SC
            Remo PA                 v Goiás GO
-           Chapecoense             v Atlético Goianiense
+           Chapecoense AF             v Atlético Goianiense
            Operário Ferroviário PR v Ferroviária SP
            Amazonas FC AM          v Coritiba PR
            Athletic MG             v Paysandu PA

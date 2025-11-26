@@ -8,600 +8,600 @@
 
 » Matchday 1
   Sat Apr/14 2018
-    16.00  Cruzeiro                v Grêmio Porto Alegre      0-1 (0-0)
-    19.00  Vitória BA              v Flamengo RJ              2-2 (1-1)
-    21.00  Santos FC               v Ceará CE                 2-0 (1-0)
+    16.00  Cruzeiro EC                v Grêmio FBPA      0-1 (0-0)
+    19.00  EC Vitória              v CR Flamengo              2-2 (1-1)
+    21.00  Santos FC               v Ceará SC                 2-0 (1-0)
   Sun Apr/15
-    11.00  América MG              v Sport Recife PE          3-0 (3-0)
-    16.00  Vasco da Gama RJ        v Atlético Mineiro         2-1 (0-1)
-           Corinthians SP          v Fluminense RJ            2-1 (1-0)
-           Internacional           v Bahia BA                 2-0 (1-0)
-    19.00  Athletico Paranaense    v Chapecoense              5-1 (0-0)
+    11.00  América MG              v SC Recife          3-0 (3-0)
+    16.00  CR Vasco da Gama        v CA Mineiro         2-1 (0-1)
+           SC Corinthians Paulista          v Fluminense FC            2-1 (1-0)
+           SC Internacional           v EC Bahia                 2-0 (1-0)
+    19.00  Athletico Paranaense    v Chapecoense AF              5-1 (0-0)
   Mon Apr/16
-    20.00  Botafogo RJ             v Palmeiras                1-1 (0-0)
+    20.00  Botafogo FR             v SE Palmeiras                1-1 (0-0)
            São Paulo FC            v Paraná Clube             1-0 (1-0)
 
 
 » Matchday 2
   Sat Apr/21
-    16.00  Bahia BA                v Santos FC                1-0 (0-0)
-    19.00  Flamengo RJ             v América MG               2-0 (2-0)
+    16.00  EC Bahia                v Santos FC                1-0 (0-0)
+    19.00  CR Flamengo             v América MG               2-0 (2-0)
   Sun Apr/22
-    11.00  Paraná Clube            v Corinthians SP           0-4 (0-2)
-    16.00  Atlético Mineiro        v Vitória BA               2-1 (1-0)
-           Chapecoense             v Vasco da Gama RJ         1-1 (1-0)
-           Fluminense RJ           v Cruzeiro                 1-0 (0-0)
-           Ceará CE                v São Paulo FC             0-0
-           Palmeiras               v Internacional            1-0 (1-0)
-    19.00  Grêmio Porto Alegre     v Athletico Paranaense     0-0
+    11.00  Paraná Clube            v SC Corinthians Paulista           0-4 (0-2)
+    16.00  CA Mineiro        v EC Vitória               2-1 (1-0)
+           Chapecoense AF             v CR Vasco da Gama         1-1 (1-0)
+           Fluminense FC           v Cruzeiro EC                 1-0 (0-0)
+           Ceará SC                v São Paulo FC             0-0
+           SE Palmeiras               v SC Internacional            1-0 (1-0)
+    19.00  Grêmio FBPA     v Athletico Paranaense     0-0
   Mon Apr/23
-    20.00  Sport Recife PE         v Botafogo RJ              1-1 (0-0)
+    20.00  SC Recife         v Botafogo FR              1-1 (0-0)
 
 
 » Matchday 3
   Sat Apr/28
-    16.00  Botafogo RJ             v Grêmio Porto Alegre      2-1 (1-1)
+    16.00  Botafogo FR             v Grêmio FBPA      2-1 (1-1)
   Sun Apr/29
-    16.00  Atlético Mineiro        v Corinthians SP           1-0 (0-0)
-           Paraná Clube            v Sport Recife PE          1-2 (0-1)
-           Bahia BA                v Athletico Paranaense     0-0
-           Fluminense RJ           v São Paulo FC             1-1 (0-1)
-           Ceará CE                v Flamengo RJ              0-3 (0-1)
-           Palmeiras               v Chapecoense              0-0
-    19.00  Internacional           v Cruzeiro                 0-0
+    16.00  CA Mineiro        v SC Corinthians Paulista           1-0 (0-0)
+           Paraná Clube            v SC Recife          1-2 (0-1)
+           EC Bahia                v Athletico Paranaense     0-0
+           Fluminense FC           v São Paulo FC             1-1 (0-1)
+           Ceará SC                v CR Flamengo              0-3 (0-1)
+           SE Palmeiras               v Chapecoense AF              0-0
+    19.00  SC Internacional           v Cruzeiro EC                 0-0
   Mon Apr/30
-    20.00  América MG              v Vitória BA               2-1 (2-0)
+    20.00  América MG              v EC Vitória               2-1 (2-0)
   Thu Sep/27
-    20.00  Santos FC               v Vasco da Gama RJ         1-1 (1-0)
+    20.00  Santos FC               v CR Vasco da Gama         1-1 (1-0)
 
 
 » Matchday 4
   Sat May/5
-    19.00  Vasco da Gama RJ        v América MG               4-1 (0-1)
-           São Paulo FC            v Atlético Mineiro         2-2 (1-0)
+    19.00  CR Vasco da Gama        v América MG               4-1 (0-1)
+           São Paulo FC            v CA Mineiro         2-2 (1-0)
   Sun May/6
-    11.00  Corinthians SP          v Ceará CE                 1-1 (1-1)
-    16.00  Cruzeiro                v Botafogo RJ              1-0 (0-0)
-           Athletico Paranaense    v Palmeiras                1-3 (0-1)
-           Vitória BA              v Fluminense RJ            1-2 (1-0)
-           Flamengo RJ             v Internacional            2-0 (0-0)
-    19.00  Sport Recife PE         v Bahia BA                 2-0 (1-0)
-           Grêmio Porto Alegre     v Santos FC                5-1 (2-1)
+    11.00  SC Corinthians Paulista          v Ceará SC                 1-1 (1-1)
+    16.00  Cruzeiro EC                v Botafogo FR              1-0 (0-0)
+           Athletico Paranaense    v SE Palmeiras                1-3 (0-1)
+           EC Vitória              v Fluminense FC            1-2 (1-0)
+           CR Flamengo             v SC Internacional            2-0 (0-0)
+    19.00  SC Recife         v EC Bahia                 2-0 (1-0)
+           Grêmio FBPA     v Santos FC                5-1 (2-1)
   Mon May/7
-    20.00  Chapecoense             v Paraná Clube             1-1 (0-0)
+    20.00  Chapecoense AF             v Paraná Clube             1-1 (0-0)
 
 
 » Matchday 5
   Sat May/12
-    16.00  Grêmio Porto Alegre     v Internacional            0-0
+    16.00  Grêmio FBPA     v SC Internacional            0-0
   Sun May/13
-    11.00  Cruzeiro                v Sport Recife PE          2-0 (1-0)
-    16.00  Athletico Paranaense    v Atlético Mineiro         1-2 (1-0)
-           Chapecoense             v Flamengo RJ              3-2 (1-0)
-           Bahia BA                v São Paulo FC             2-2 (2-1)
-           Vasco da Gama RJ        v Vitória BA               2-3 (1-1)
-           Corinthians SP          v Palmeiras                1-0 (1-0)
+    11.00  Cruzeiro EC                v SC Recife          2-0 (1-0)
+    16.00  Athletico Paranaense    v CA Mineiro         1-2 (1-0)
+           Chapecoense AF             v CR Flamengo              3-2 (1-0)
+           EC Bahia                v São Paulo FC             2-2 (2-1)
+           CR Vasco da Gama        v EC Vitória               2-3 (1-1)
+           SC Corinthians Paulista          v SE Palmeiras                1-0 (1-0)
     19.00  Santos FC               v Paraná Clube             3-1 (0-0)
   Mon May/14
-    20.00  Botafogo RJ             v Fluminense RJ            2-1 (1-1)
-           Ceará CE                v América MG               2-2 (1-2)
+    20.00  Botafogo FR             v Fluminense FC            2-1 (1-1)
+           Ceará SC                v América MG               2-2 (1-2)
 
 
 » Matchday 6
   Sat May/19
-    16.00  Atlético Mineiro        v Cruzeiro                 1-0 (0-0)
-    19.00  Flamengo RJ             v Vasco da Gama RJ         1-1 (1-1)
-    21.00  Palmeiras               v Bahia BA                 3-0 (3-0)
+    16.00  CA Mineiro        v Cruzeiro EC                 1-0 (0-0)
+    19.00  CR Flamengo             v CR Vasco da Gama         1-1 (1-1)
+    21.00  SE Palmeiras               v EC Bahia                 3-0 (3-0)
   Sun May/20
-    11.00  Vitória BA              v Ceará CE                 2-1 (1-0)
-    16.00  Paraná Clube            v Grêmio Porto Alegre      0-0
-           América MG              v Botafogo RJ              1-0 (0-0)
+    11.00  EC Vitória              v Ceará SC                 2-1 (1-0)
+    16.00  Paraná Clube            v Grêmio FBPA      0-0
+           América MG              v Botafogo FR              1-0 (0-0)
            São Paulo FC            v Santos FC                1-0 (0-0)
-           Sport Recife PE         v Corinthians SP           1-1 (0-0)
-    19.00  Fluminense RJ           v Athletico Paranaense     2-0 (2-0)
+           SC Recife         v SC Corinthians Paulista           1-1 (0-0)
+    19.00  Fluminense FC           v Athletico Paranaense     2-0 (2-0)
   Mon May/21
-    20.00  Internacional           v Chapecoense              3-0 (1-0)
+    20.00  SC Internacional           v Chapecoense AF              3-0 (1-0)
 
 
 » Matchday 7
   Sat May/26
-    16.00  Fluminense RJ           v Chapecoense              3-1 (2-0)
-    19.00  Palmeiras               v Sport Recife PE          2-3 (1-0)
-    21.00  Atlético Mineiro        v Flamengo RJ              0-1 (0-0)
+    16.00  Fluminense FC           v Chapecoense AF              3-1 (2-0)
+    19.00  SE Palmeiras               v SC Recife          2-3 (1-0)
+    21.00  CA Mineiro        v CR Flamengo              0-1 (0-0)
   Sun May/27
     11.00  Paraná Clube            v Athletico Paranaense     0-0
-    16.00  Bahia BA                v Vasco da Gama RJ         3-0 (0-0)
-           Botafogo RJ             v Vitória BA               1-1 (1-1)
-           Santos FC               v Cruzeiro                 0-1 (0-0)
-           Internacional           v Corinthians SP           2-1 (0-1)
+    16.00  EC Bahia                v CR Vasco da Gama         3-0 (0-0)
+           Botafogo FR             v EC Vitória               1-1 (1-1)
+           Santos FC               v Cruzeiro EC                 0-1 (0-0)
+           SC Internacional           v SC Corinthians Paulista           2-1 (0-1)
     19.00  América MG              v São Paulo FC             1-3 (1-2)
-           Ceará CE                v Grêmio Porto Alegre      0-1 (0-0)
+           Ceará SC                v Grêmio FBPA      0-1 (0-0)
 
 
 » Matchday 8
   Wed May/30
-    19.30  Vitória BA              v Internacional            2-3 (1-2)
-           Vasco da Gama RJ        v Paraná Clube             1-0 (1-0)
-           Sport Recife PE         v Atlético Mineiro         3-2 (1-0)
-    21.00  Chapecoense             v Ceará CE                 2-0 (0-0)
-           São Paulo FC            v Botafogo RJ              3-2 (3-1)
-    21.45  Cruzeiro                v Palmeiras                1-0 (0-0)
-           Grêmio Porto Alegre     v Fluminense RJ            0-0
+    19.30  EC Vitória              v SC Internacional            2-3 (1-2)
+           CR Vasco da Gama        v Paraná Clube             1-0 (1-0)
+           SC Recife         v CA Mineiro         3-2 (1-0)
+    21.00  Chapecoense AF             v Ceará SC                 2-0 (0-0)
+           São Paulo FC            v Botafogo FR              3-2 (3-1)
+    21.45  Cruzeiro EC                v SE Palmeiras                1-0 (0-0)
+           Grêmio FBPA     v Fluminense FC            0-0
   Thu May/31
-    16.00  Flamengo RJ             v Bahia BA                 2-0 (2-0)
-    18.00  Corinthians SP          v América MG               1-0 (0-0)
+    16.00  CR Flamengo             v EC Bahia                 2-0 (2-0)
+    18.00  SC Corinthians Paulista          v América MG               1-0 (0-0)
     21.00  Athletico Paranaense    v Santos FC                2-0 (1-0)
 
 
 » Matchday 9
   Sat Jun/2
-    16.00  Atlético Mineiro        v Chapecoense              3-3 (2-2)
-           Internacional           v Sport Recife PE          0-0
-    19.00  Vasco da Gama RJ        v Botafogo RJ              1-2 (0-2)
-    21.00  Palmeiras               v São Paulo FC             3-1 (0-1)
+    16.00  CA Mineiro        v Chapecoense AF              3-3 (2-2)
+           SC Internacional           v SC Recife          0-0
+    19.00  CR Vasco da Gama        v Botafogo FR              1-2 (0-2)
+    21.00  SE Palmeiras               v São Paulo FC             3-1 (0-1)
   Sun Jun/3
     16.00  América MG              v Athletico Paranaense     3-1 (1-1)
-           Bahia BA                v Grêmio Porto Alegre      0-2 (0-1)
-           Flamengo RJ             v Corinthians SP           1-0 (0-0)
-           Santos FC               v Vitória BA               5-2 (4-0)
-    19.00  Ceará CE                v Cruzeiro                 0-1 (0-1)
+           EC Bahia                v Grêmio FBPA      0-2 (0-1)
+           CR Flamengo             v SC Corinthians Paulista           1-0 (0-0)
+           Santos FC               v EC Vitória               5-2 (4-0)
+    19.00  Ceará SC                v Cruzeiro EC                 0-1 (0-1)
   Mon Jun/4
-    20.00  Paraná Clube            v Fluminense RJ            2-1 (0-0)
+    20.00  Paraná Clube            v Fluminense FC            2-1 (0-0)
 
 
 » Matchday 10
   Tue Jun/5
-    21.30  São Paulo FC            v Internacional            0-0
+    21.30  São Paulo FC            v SC Internacional            0-0
   Wed Jun/6
-    19.30  Vitória BA              v Chapecoense              1-0 (0-0)
-           Botafogo RJ             v Ceará CE                 0-0
-    21.00  Sport Recife PE         v Athletico Paranaense     1-0 (0-0)
-           Corinthians SP          v Santos FC                1-1 (0-0)
-    21.45  Cruzeiro                v Vasco da Gama RJ         1-1 (0-1)
-           Grêmio Porto Alegre     v Palmeiras                0-2 (0-0)
+    19.30  EC Vitória              v Chapecoense AF              1-0 (0-0)
+           Botafogo FR             v Ceará SC                 0-0
+    21.00  SC Recife         v Athletico Paranaense     1-0 (0-0)
+           SC Corinthians Paulista          v Santos FC                1-1 (0-0)
+    21.45  Cruzeiro EC                v CR Vasco da Gama         1-1 (0-1)
+           Grêmio FBPA     v SE Palmeiras                0-2 (0-0)
   Thu Jun/7
-    20.00  Paraná Clube            v Bahia BA                 1-0 (0-0)
-           Fluminense RJ           v Flamengo RJ              0-2 (0-1)
-    21.00  América MG              v Atlético Mineiro         1-3 (0-2)
+    20.00  Paraná Clube            v EC Bahia                 1-0 (0-0)
+           Fluminense FC           v CR Flamengo              0-2 (0-1)
+    21.00  América MG              v CA Mineiro         1-3 (0-2)
 
 
 » Matchday 11
   Sat Jun/9
     16.00  Athletico Paranaense    v São Paulo FC             0-1 (0-0)
-    19.00  Chapecoense             v Cruzeiro                 2-0 (0-0)
-           Vasco da Gama RJ        v Sport Recife PE          3-2 (2-1)
-    21.00  Corinthians SP          v Vitória BA               0-0
+    19.00  Chapecoense AF             v Cruzeiro EC                 2-0 (0-0)
+           CR Vasco da Gama        v SC Recife          3-2 (2-1)
+    21.00  SC Corinthians Paulista          v EC Vitória               0-0
   Sun Jun/10
-    16.00  Atlético Mineiro        v Fluminense RJ            5-2 (2-2)
-           Bahia BA                v Botafogo RJ              3-3 (1-1)
-           Ceará CE                v Palmeiras                2-2 (1-2)
-           Grêmio Porto Alegre     v América MG               1-0 (1-0)
-    19.00  Flamengo RJ             v Paraná Clube             2-0 (1-0)
-           Santos FC               v Internacional            1-2 (0-1)
+    16.00  CA Mineiro        v Fluminense FC            5-2 (2-2)
+           EC Bahia                v Botafogo FR              3-3 (1-1)
+           Ceará SC                v SE Palmeiras                2-2 (1-2)
+           Grêmio FBPA     v América MG               1-0 (1-0)
+    19.00  CR Flamengo             v Paraná Clube             2-0 (1-0)
+           Santos FC               v SC Internacional            1-2 (0-1)
 
 
 » Matchday 12
   Tue Jun/12
-    21.30  São Paulo FC            v Vitória BA               3-0 (2-0)
+    21.30  São Paulo FC            v EC Vitória               3-0 (2-0)
   Wed Jun/13
-    16.00  América MG              v Chapecoense              0-0
-    19.00  Fluminense RJ           v Santos FC                0-1 (0-0)
-    19.30  Paraná Clube            v Cruzeiro                 1-1 (0-0)
-           Sport Recife PE         v Grêmio Porto Alegre      0-0
-    21.00  Botafogo RJ             v Athletico Paranaense     2-0 (1-0)
-           Palmeiras               v Flamengo RJ              1-1 (1-0)
-    21.45  Atlético Mineiro        v Ceará CE                 2-1 (0-0)
-           Bahia BA                v Corinthians SP           1-0 (0-0)
-           Internacional           v Vasco da Gama RJ         3-1 (2-0)
+    16.00  América MG              v Chapecoense AF              0-0
+    19.00  Fluminense FC           v Santos FC                0-1 (0-0)
+    19.30  Paraná Clube            v Cruzeiro EC                 1-1 (0-0)
+           SC Recife         v Grêmio FBPA      0-0
+    21.00  Botafogo FR             v Athletico Paranaense     2-0 (1-0)
+           SE Palmeiras               v CR Flamengo              1-1 (1-0)
+    21.45  CA Mineiro        v Ceará SC                 2-1 (0-0)
+           EC Bahia                v SC Corinthians Paulista           1-0 (0-0)
+           SC Internacional           v CR Vasco da Gama         3-1 (2-0)
 
 
 » Matchday 13
   Wed Jul/18
-    19.30  Ceará CE                v Sport Recife PE          1-0 (0-0)
-    21.00  Vitória BA              v Paraná Clube             1-0 (1-0)
-    21.45  Flamengo RJ             v São Paulo FC             0-1 (0-0)
-           Corinthians SP          v Botafogo RJ              2-0 (1-0)
-           Grêmio Porto Alegre     v Atlético Mineiro         2-0 (0-0)
+    19.30  Ceará SC                v SC Recife          1-0 (0-0)
+    21.00  EC Vitória              v Paraná Clube             1-0 (1-0)
+    21.45  CR Flamengo             v São Paulo FC             0-1 (0-0)
+           SC Corinthians Paulista          v Botafogo FR              2-0 (1-0)
+           Grêmio FBPA     v CA Mineiro         2-0 (0-0)
   Thu Jul/19
-    19.30  Cruzeiro                v América MG               3-1 (1-1)
-           Chapecoense             v Bahia BA                 1-1 (0-0)
-    20.00  Vasco da Gama RJ        v Fluminense RJ            1-1 (0-0)
-           Santos FC               v Palmeiras                1-1 (0-1)
-    21.00  Athletico Paranaense    v Internacional            2-2 (1-1)
+    19.30  Cruzeiro EC                v América MG               3-1 (1-1)
+           Chapecoense AF             v EC Bahia                 1-1 (0-0)
+    20.00  CR Vasco da Gama        v Fluminense FC            1-1 (0-0)
+           Santos FC               v SE Palmeiras                1-1 (0-1)
+    21.00  Athletico Paranaense    v SC Internacional            2-2 (1-1)
 
 
 » Matchday 14
   Sat Jul/21
-    19.00  Flamengo RJ             v Botafogo RJ              2-0 (2-0)
-    21.00  São Paulo FC            v Corinthians SP           3-1 (0-0)
+    19.00  CR Flamengo             v Botafogo FR              2-0 (2-0)
+    21.00  São Paulo FC            v SC Corinthians Paulista           3-1 (0-0)
   Sun Jul/22
     16.00  Paraná Clube            v América MG               1-0 (1-0)
-           Bahia BA                v Vitória BA               4-1 (2-0)
-           Vasco da Gama RJ        v Grêmio Porto Alegre      1-0 (1-0)
-           Sport Recife PE         v Fluminense RJ            1-2 (1-1)
-           Palmeiras               v Atlético Mineiro         3-2 (1-0)
-    19.00  Cruzeiro                v Athletico Paranaense     2-1 (0-1)
-           Chapecoense             v Santos FC                0-0
+           EC Bahia                v EC Vitória               4-1 (2-0)
+           CR Vasco da Gama        v Grêmio FBPA      1-0 (1-0)
+           SC Recife         v Fluminense FC            1-2 (1-1)
+           SE Palmeiras               v CA Mineiro         3-2 (1-0)
+    19.00  Cruzeiro EC                v Athletico Paranaense     2-1 (0-1)
+           Chapecoense AF             v Santos FC                0-0
   Mon Jul/23
-    20.00  Internacional           v Ceará CE                 1-0 (0-0)
+    20.00  SC Internacional           v Ceará SC                 1-0 (0-0)
 
 
 » Matchday 15
   Wed Jul/25
-    19.30  Fluminense RJ           v Palmeiras                1-0 (1-0)
-    21.00  Atlético Mineiro        v Paraná Clube             2-0 (1-0)
-    21.45  Santos FC               v Flamengo RJ              1-1 (1-1)
-           Corinthians SP          v Cruzeiro                 2-0 (0-0)
+    19.30  Fluminense FC           v SE Palmeiras                1-0 (1-0)
+    21.00  CA Mineiro        v Paraná Clube             2-0 (1-0)
+    21.45  Santos FC               v CR Flamengo              1-1 (1-1)
+           SC Corinthians Paulista          v Cruzeiro EC                 2-0 (0-0)
   Thu Jul/26
-    19.30  Vitória BA              v Sport Recife PE          1-0 (0-0)
-           Botafogo RJ             v Chapecoense              1-0 (0-0)
-           Grêmio Porto Alegre     v São Paulo FC             2-1 (1-1)
-    20.00  América MG              v Internacional            2-1 (2-0)
+    19.30  EC Vitória              v SC Recife          1-0 (0-0)
+           Botafogo FR             v Chapecoense AF              1-0 (0-0)
+           Grêmio FBPA     v São Paulo FC             2-1 (1-1)
+    20.00  América MG              v SC Internacional            2-1 (2-0)
   Wed Aug/29
-    19.30  Athletico Paranaense    v Vasco da Gama RJ         1-0 (0-0)
-           Ceará CE                v Bahia BA                 0-2 (0-1)
+    19.30  Athletico Paranaense    v CR Vasco da Gama         1-0 (0-0)
+           Ceará SC                v EC Bahia                 0-2 (0-1)
 
 
 » Matchday 16
   Sat Jul/28
-    16.00  Ceará CE                v Fluminense RJ            1-0 (1-0)
+    16.00  Ceará SC                v Fluminense FC            1-0 (1-0)
   Sun Jul/29
-    11.00  Vasco da Gama RJ        v Corinthians SP           1-4 (1-0)
-           Palmeiras               v Paraná Clube             3-0 (2-0)
-    16.00  Cruzeiro                v São Paulo FC             0-2 (0-1)
-           Athletico Paranaense    v Vitória BA               4-0 (3-0)
-           Flamengo RJ             v Sport Recife PE          4-1 (1-1)
-           Internacional           v Botafogo RJ              3-0 (2-0)
-    19.00  Chapecoense             v Grêmio Porto Alegre      1-1 (0-1)
+    11.00  CR Vasco da Gama        v SC Corinthians Paulista           1-4 (1-0)
+           SE Palmeiras               v Paraná Clube             3-0 (2-0)
+    16.00  Cruzeiro EC                v São Paulo FC             0-2 (0-1)
+           Athletico Paranaense    v EC Vitória               4-0 (3-0)
+           CR Flamengo             v SC Recife          4-1 (1-1)
+           SC Internacional           v Botafogo FR              3-0 (2-0)
+    19.00  Chapecoense AF             v Grêmio FBPA      1-1 (0-1)
            Santos FC               v América MG               0-1 (0-1)
   Mon Jul/30
-    20.00  Bahia BA                v Atlético Mineiro         2-2 (0-1)
+    20.00  EC Bahia                v CA Mineiro         2-2 (0-1)
 
 
 » Matchday 17
   Sat Aug/4
-    16.00  Botafogo RJ             v Santos FC                0-0
-    19.00  Grêmio Porto Alegre     v Flamengo RJ              2-0 (1-0)
-    21.00  Corinthians SP          v Athletico Paranaense     0-0
+    16.00  Botafogo FR             v Santos FC                0-0
+    19.00  Grêmio FBPA     v CR Flamengo              2-0 (1-0)
+    21.00  SC Corinthians Paulista          v Athletico Paranaense     0-0
   Sun Aug/5
-    16.00  Paraná Clube            v Ceará CE                 0-1 (0-1)
-           América MG              v Palmeiras                0-0
-           Vitória BA              v Cruzeiro                 1-1 (0-0)
-           São Paulo FC            v Vasco da Gama RJ         2-1 (1-0)
-    19.00  Fluminense RJ           v Bahia BA                 1-1 (1-0)
-           Sport Recife PE         v Chapecoense              1-1 (0-1)
+    16.00  Paraná Clube            v Ceará SC                 0-1 (0-1)
+           América MG              v SE Palmeiras                0-0
+           EC Vitória              v Cruzeiro EC                 1-1 (0-0)
+           São Paulo FC            v CR Vasco da Gama         2-1 (1-0)
+    19.00  Fluminense FC           v EC Bahia                 1-1 (1-0)
+           SC Recife         v Chapecoense AF              1-1 (0-1)
   Mon Aug/6
-    20.00  Atlético Mineiro        v Internacional            0-1 (0-0)
+    20.00  CA Mineiro        v SC Internacional            0-1 (0-0)
 
 
 » Matchday 18
   Sat Aug/11
-    16.00  Ceará CE                v Athletico Paranaense     0-0
-    19.00  Bahia BA                v América MG               1-0 (0-0)
+    16.00  Ceará SC                v Athletico Paranaense     0-0
+    19.00  EC Bahia                v América MG               1-0 (0-0)
   Sun Aug/12
-    11.00  Atlético Mineiro        v Santos FC                3-1 (1-1)
-           Paraná Clube            v Botafogo RJ              1-1 (0-0)
-    16.00  Chapecoense             v Corinthians SP           2-1 (0-1)
-           Flamengo RJ             v Cruzeiro                 1-0 (1-0)
-           Sport Recife PE         v São Paulo FC             1-3 (0-1)
-    19.00  Palmeiras               v Vasco da Gama RJ         1-0 (0-0)
-           Grêmio Porto Alegre     v Vitória BA               4-0 (2-0)
+    11.00  CA Mineiro        v Santos FC                3-1 (1-1)
+           Paraná Clube            v Botafogo FR              1-1 (0-0)
+    16.00  Chapecoense AF             v SC Corinthians Paulista           2-1 (0-1)
+           CR Flamengo             v Cruzeiro EC                 1-0 (1-0)
+           SC Recife         v São Paulo FC             1-3 (0-1)
+    19.00  SE Palmeiras               v CR Vasco da Gama         1-0 (0-0)
+           Grêmio FBPA     v EC Vitória               4-0 (2-0)
   Mon Aug/13
-    20.00  Fluminense RJ           v Internacional            0-3 (0-3)
+    20.00  Fluminense FC           v SC Internacional            0-3 (0-3)
 
 
 » Matchday 19
   Sat Aug/18
-    16.00  Santos FC               v Sport Recife PE          3-0 (1-0)
-    19.00  Corinthians SP          v Grêmio Porto Alegre      0-1 (0-0)
+    16.00  Santos FC               v SC Recife          3-0 (1-0)
+    19.00  SC Corinthians Paulista          v Grêmio FBPA      0-1 (0-0)
   Sun Aug/19
-    11.00  Athletico Paranaense    v Flamengo RJ              3-0 (3-0)
-           Internacional           v Paraná Clube             1-0 (0-0)
-    16.00  Cruzeiro                v Bahia BA                 1-1 (0-0)
-           Vitória BA              v Palmeiras                0-3 (0-2)
-           Botafogo RJ             v Atlético Mineiro         0-3 (0-0)
-    19.00  América MG              v Fluminense RJ            0-0
-           São Paulo FC            v Chapecoense              2-0 (1-0)
+    11.00  Athletico Paranaense    v CR Flamengo              3-0 (3-0)
+           SC Internacional           v Paraná Clube             1-0 (0-0)
+    16.00  Cruzeiro EC                v EC Bahia                 1-1 (0-0)
+           EC Vitória              v SE Palmeiras                0-3 (0-2)
+           Botafogo FR             v CA Mineiro         0-3 (0-0)
+    19.00  América MG              v Fluminense FC            0-0
+           São Paulo FC            v Chapecoense AF              2-0 (1-0)
   Mon Aug/20
-    20.00  Vasco da Gama RJ        v Ceará CE                 1-1 (0-0)
+    20.00  CR Vasco da Gama        v Ceará SC                 1-1 (0-0)
 
 
 » Matchday 20
   Wed Aug/8
-    19.30  Ceará CE                v Santos FC                1-1 (0-0)
+    19.30  Ceará SC                v Santos FC                1-1 (0-0)
   Wed Aug/22
     19.30  Paraná Clube            v São Paulo FC             1-1 (1-1)
-           Bahia BA                v Internacional            0-1 (0-1)
-    21.00  Sport Recife PE         v América MG               0-2 (0-0)
-           Palmeiras               v Botafogo RJ              2-0 (0-0)
-    21.45  Fluminense RJ           v Corinthians SP           1-0 (1-0)
-           Grêmio Porto Alegre     v Cruzeiro                 1-1 (0-1)
+           EC Bahia                v SC Internacional            0-1 (0-1)
+    21.00  SC Recife         v América MG               0-2 (0-0)
+           SE Palmeiras               v Botafogo FR              2-0 (0-0)
+    21.45  Fluminense FC           v SC Corinthians Paulista           1-0 (1-0)
+           Grêmio FBPA     v Cruzeiro EC                 1-1 (0-1)
   Thu Aug/23
-    19.30  Flamengo RJ             v Vitória BA               1-0 (1-0)
-    20.00  Atlético Mineiro        v Vasco da Gama RJ         0-0
+    19.30  CR Flamengo             v EC Vitória               1-0 (1-0)
+    20.00  CA Mineiro        v CR Vasco da Gama         0-0
   Thu Sep/13
-    20.00  Chapecoense             v Athletico Paranaense     2-1 (0-0)
+    20.00  Chapecoense AF             v Athletico Paranaense     2-1 (0-0)
 
 
 » Matchday 21
   Sat Aug/25
-    16.00  Santos FC               v Bahia BA                 2-0 (0-0)
-    19.00  Athletico Paranaense    v Grêmio Porto Alegre      2-1 (1-1)
-           Corinthians SP          v Paraná Clube             1-0 (1-0)
-    21.00  Cruzeiro                v Fluminense RJ            2-1 (1-1)
-           Botafogo RJ             v Sport Recife PE          2-0 (0-0)
+    16.00  Santos FC               v EC Bahia                 2-0 (0-0)
+    19.00  Athletico Paranaense    v Grêmio FBPA      2-1 (1-1)
+           SC Corinthians Paulista          v Paraná Clube             1-0 (1-0)
+    21.00  Cruzeiro EC                v Fluminense FC            2-1 (1-1)
+           Botafogo FR             v SC Recife          2-0 (0-0)
   Sun Aug/26
-    11.00  São Paulo FC            v Ceará CE                 1-0 (0-0)
-    16.00  América MG              v Flamengo RJ              2-2 (1-1)
-           Vitória BA              v Atlético Mineiro         1-0 (0-0)
-           Internacional           v Palmeiras                0-0
-    19.00  Vasco da Gama RJ        v Chapecoense              3-1 (0-0)
+    11.00  São Paulo FC            v Ceará SC                 1-0 (0-0)
+    16.00  América MG              v CR Flamengo              2-2 (1-1)
+           EC Vitória              v CA Mineiro         1-0 (0-0)
+           SC Internacional           v SE Palmeiras                0-0
+    19.00  CR Vasco da Gama        v Chapecoense AF              3-1 (0-0)
 
 
 » Matchday 22
   Sat Sep/1
-    16.00  Vitória BA              v América MG               1-0 (0-0)
-           Grêmio Porto Alegre     v Botafogo RJ              4-0 (2-0)
-    19.00  Vasco da Gama RJ        v Santos FC                0-3 (0-1)
-    21.00  Corinthians SP          v Atlético Mineiro         1-1 (1-1)
+    16.00  EC Vitória              v América MG               1-0 (0-0)
+           Grêmio FBPA     v Botafogo FR              4-0 (2-0)
+    19.00  CR Vasco da Gama        v Santos FC                0-3 (0-1)
+    21.00  SC Corinthians Paulista          v CA Mineiro         1-1 (1-1)
   Sun Sep/2
-    11.00  Flamengo RJ             v Ceará CE                 0-1 (0-0)
-    16.00  Athletico Paranaense    v Bahia BA                 2-0 (0-0)
-           São Paulo FC            v Fluminense RJ            1-1 (0-0)
-           Sport Recife PE         v Paraná Clube             1-0 (1-0)
-    19.00  Cruzeiro                v Internacional            0-0
-           Chapecoense             v Palmeiras                1-2 (0-1)
+    11.00  CR Flamengo             v Ceará SC                 0-1 (0-0)
+    16.00  Athletico Paranaense    v EC Bahia                 2-0 (0-0)
+           São Paulo FC            v Fluminense FC            1-1 (0-0)
+           SC Recife         v Paraná Clube             1-0 (1-0)
+    19.00  Cruzeiro EC                v SC Internacional            0-0
+           Chapecoense AF             v SE Palmeiras                1-2 (0-1)
 
 
 » Matchday 23
   Wed Sep/5
-    19.30  Bahia BA                v Sport Recife PE          2-0 (0-0)
-           Botafogo RJ             v Cruzeiro                 1-1 (1-1)
-    20.00  Ceará CE                v Corinthians SP           2-1 (1-0)
-    21.00  Paraná Clube            v Chapecoense              1-1 (1-0)
-           Palmeiras               v Athletico Paranaense     2-0 (0-0)
-    21.45  Atlético Mineiro        v São Paulo FC             1-0 (1-0)
-           Internacional           v Flamengo RJ              2-1 (1-0)
+    19.30  EC Bahia                v SC Recife          2-0 (0-0)
+           Botafogo FR             v Cruzeiro EC                 1-1 (1-1)
+    20.00  Ceará SC                v SC Corinthians Paulista           2-1 (1-0)
+    21.00  Paraná Clube            v Chapecoense AF              1-1 (1-0)
+           SE Palmeiras               v Athletico Paranaense     2-0 (0-0)
+    21.45  CA Mineiro        v São Paulo FC             1-0 (1-0)
+           SC Internacional           v CR Flamengo              2-1 (1-0)
   Thu Sep/6
-    19.00  Fluminense RJ           v Vitória BA               0-0
-           Santos FC               v Grêmio Porto Alegre      0-0
-    20.00  América MG              v Vasco da Gama RJ         2-1 (1-0)
+    19.00  Fluminense FC           v EC Vitória               0-0
+           Santos FC               v Grêmio FBPA      0-0
+    20.00  América MG              v CR Vasco da Gama         2-1 (1-0)
 
 
 » Matchday 24
   Sat Sep/8
-    16.00  Sport Recife PE         v Cruzeiro                 0-0
-    19.00  São Paulo FC            v Bahia BA                 1-0 (0-0)
-    21.00  Flamengo RJ             v Chapecoense              2-0 (1-0)
+    16.00  SC Recife         v Cruzeiro EC                 0-0
+    19.00  São Paulo FC            v EC Bahia                 1-0 (0-0)
+    21.00  CR Flamengo             v Chapecoense AF              2-0 (1-0)
   Sun Sep/9
-    16.00  América MG              v Ceará CE                 0-0
-           Fluminense RJ           v Botafogo RJ              1-0 (1-0)
-           Palmeiras               v Corinthians SP           1-0 (0-0)
-           Internacional           v Grêmio Porto Alegre      1-0 (0-0)
+    16.00  América MG              v Ceará SC                 0-0
+           Fluminense FC           v Botafogo FR              1-0 (1-0)
+           SE Palmeiras               v SC Corinthians Paulista           1-0 (0-0)
+           SC Internacional           v Grêmio FBPA      1-0 (0-0)
     19.00  Paraná Clube            v Santos FC                0-2 (0-0)
-           Vitória BA              v Vasco da Gama RJ         1-0 (0-0)
+           EC Vitória              v CR Vasco da Gama         1-0 (0-0)
   Mon Sep/10
-    20.00  Atlético Mineiro        v Athletico Paranaense     3-1 (1-1)
+    20.00  CA Mineiro        v Athletico Paranaense     3-1 (1-1)
 
 
 » Matchday 25
   Sat Sep/15
-    16.00  Ceará CE                v Vitória BA               2-0 (1-0)
-           Grêmio Porto Alegre     v Paraná Clube             2-0 (0-0)
-    19.00  Vasco da Gama RJ        v Flamengo RJ              1-1 (1-0)
+    16.00  Ceará SC                v EC Vitória               2-0 (1-0)
+           Grêmio FBPA     v Paraná Clube             2-0 (0-0)
+    19.00  CR Vasco da Gama        v CR Flamengo              1-1 (1-0)
   Sun Sep/16
-    11.00  Botafogo RJ             v América MG               1-0 (1-0)
-    16.00  Cruzeiro                v Atlético Mineiro         0-0
-           Athletico Paranaense    v Fluminense RJ            3-1 (2-0)
-           Bahia BA                v Palmeiras                1-1 (1-0)
+    11.00  Botafogo FR             v América MG               1-0 (1-0)
+    16.00  Cruzeiro EC                v CA Mineiro         0-0
+           Athletico Paranaense    v Fluminense FC            3-1 (2-0)
+           EC Bahia                v SE Palmeiras                1-1 (1-0)
            Santos FC               v São Paulo FC             0-0
-    19.00  Corinthians SP          v Sport Recife PE          2-1 (0-1)
+    19.00  SC Corinthians Paulista          v SC Recife          2-1 (0-1)
   Mon Sep/17
-    20.00  Chapecoense             v Internacional            2-1 (1-1)
+    20.00  Chapecoense AF             v SC Internacional            2-1 (1-1)
 
 
 » Matchday 26
   Sat Sep/22
     16.00  São Paulo FC            v América MG               1-1 (1-0)
   Sun Sep/23
-    11.00  Grêmio Porto Alegre     v Ceará CE                 3-2 (2-2)
+    11.00  Grêmio FBPA     v Ceará SC                 3-2 (2-2)
     16.00  Athletico Paranaense    v Paraná Clube             3-0 (2-0)
-           Flamengo RJ             v Atlético Mineiro         2-1 (1-1)
-           Corinthians SP          v Internacional            1-1 (0-1)
-    18.00  Vitória BA              v Botafogo RJ              3-4 (1-2)
-           Sport Recife PE         v Palmeiras                0-1 (0-0)
-    19.00  Cruzeiro                v Santos FC                2-1 (0-1)
+           CR Flamengo             v CA Mineiro         2-1 (1-1)
+           SC Corinthians Paulista          v SC Internacional            1-1 (0-1)
+    18.00  EC Vitória              v Botafogo FR              3-4 (1-2)
+           SC Recife         v SE Palmeiras                0-1 (0-0)
+    19.00  Cruzeiro EC                v Santos FC                2-1 (0-1)
   Mon Sep/24
-    20.00  Chapecoense             v Fluminense RJ            1-2 (0-2)
-           Vasco da Gama RJ        v Bahia BA                 2-1 (1-1)
+    20.00  Chapecoense AF             v Fluminense FC            1-2 (0-2)
+           CR Vasco da Gama        v EC Bahia                 2-1 (1-1)
 
 
 » Matchday 27
   Sat Sep/29
-    16.00  Fluminense RJ           v Grêmio Porto Alegre      0-1 (0-0)
-    19.00  América MG              v Corinthians SP           0-0
-    21.00  Bahia BA                v Flamengo RJ              0-0
+    16.00  Fluminense FC           v Grêmio FBPA      0-1 (0-0)
+    19.00  América MG              v SC Corinthians Paulista           0-0
+    21.00  EC Bahia                v CR Flamengo              0-0
   Sun Sep/30
-    11.00  Palmeiras               v Cruzeiro                 3-1 (2-1)
-    16.00  Atlético Mineiro        v Sport Recife PE          5-2 (4-1)
-           Botafogo RJ             v São Paulo FC             2-2 (2-1)
+    11.00  SE Palmeiras               v Cruzeiro EC                 3-1 (2-1)
+    16.00  CA Mineiro        v SC Recife          5-2 (4-1)
+           Botafogo FR             v São Paulo FC             2-2 (2-1)
            Santos FC               v Athletico Paranaense     1-0 (0-0)
-           Internacional           v Vitória BA               2-1 (0-1)
-    19.00  Ceará CE                v Chapecoense              3-1 (0-1)
+           SC Internacional           v EC Vitória               2-1 (0-1)
+    19.00  Ceará SC                v Chapecoense AF              3-1 (0-1)
   Mon Oct/1
-    20.00  Paraná Clube            v Vasco da Gama RJ         1-1 (1-1)
+    20.00  Paraná Clube            v CR Vasco da Gama         1-1 (1-1)
 
 
 » Matchday 28
   Fri Oct/5
-    19.00  Sport Recife PE         v Internacional            2-1 (0-0)
-    21.00  Corinthians SP          v Flamengo RJ              0-3 (0-0)
-    21.30  Vitória BA              v Santos FC                0-1 (0-1)
+    19.00  SC Recife         v SC Internacional            2-1 (0-0)
+    21.00  SC Corinthians Paulista          v CR Flamengo              0-3 (0-0)
+    21.30  EC Vitória              v Santos FC                0-1 (0-1)
   Sat Oct/6
     16.00  Athletico Paranaense    v América MG               4-0 (2-0)
-           Chapecoense             v Atlético Mineiro         1-0 (0-0)
-    18.00  São Paulo FC            v Palmeiras                0-2 (0-2)
-    21.00  Grêmio Porto Alegre     v Bahia BA                 2-2 (0-1)
+           Chapecoense AF             v CA Mineiro         1-0 (0-0)
+    18.00  São Paulo FC            v SE Palmeiras                0-2 (0-2)
+    21.00  Grêmio FBPA     v EC Bahia                 2-2 (0-1)
   Mon Oct/8
-    20.00  Fluminense RJ           v Paraná Clube             4-0 (2-0)
+    20.00  Fluminense FC           v Paraná Clube             4-0 (2-0)
   Tue Oct/9
-    21.00  Botafogo RJ             v Vasco da Gama RJ         1-1 (1-1)
+    21.00  Botafogo FR             v CR Vasco da Gama         1-1 (1-1)
   Wed Oct/24
-    19.30  Cruzeiro                v Ceará CE                 0-2 (0-0)
+    19.30  Cruzeiro EC                v Ceará SC                 0-2 (0-0)
 
 
 » Matchday 29
   Sat Oct/13
-    17.00  Flamengo RJ             v Fluminense RJ            3-0 (2-0)
-    19.00  Santos FC               v Corinthians SP           1-0 (1-0)
-    21.00  Bahia BA                v Paraná Clube             2-0 (0-0)
+    17.00  CR Flamengo             v Fluminense FC            3-0 (2-0)
+    19.00  Santos FC               v SC Corinthians Paulista           1-0 (1-0)
+    21.00  EC Bahia                v Paraná Clube             2-0 (0-0)
   Sun Oct/14
-    11.00  Chapecoense             v Vitória BA               0-1 (0-1)
-    16.00  Vasco da Gama RJ        v Cruzeiro                 2-0 (0-0)
-           Palmeiras               v Grêmio Porto Alegre      2-0 (1-0)
-           Internacional           v São Paulo FC             3-1 (1-1)
-    19.00  Atlético Mineiro        v América MG               0-0
-           Athletico Paranaense    v Sport Recife PE          4-0 (0-0)
+    11.00  Chapecoense AF             v EC Vitória               0-1 (0-1)
+    16.00  CR Vasco da Gama        v Cruzeiro EC                 2-0 (0-0)
+           SE Palmeiras               v Grêmio FBPA      2-0 (1-0)
+           SC Internacional           v São Paulo FC             3-1 (1-1)
+    19.00  CA Mineiro        v América MG               0-0
+           Athletico Paranaense    v SC Recife          4-0 (0-0)
   Mon Oct/15
-    20.00  Ceará CE                v Botafogo RJ              0-0
+    20.00  Ceará SC                v Botafogo FR              0-0
 
 
 » Matchday 30
   Sat Oct/20
-    16.00  América MG              v Grêmio Porto Alegre      1-1 (1-0)
-           Botafogo RJ             v Bahia BA                 0-1 (0-0)
+    16.00  América MG              v Grêmio FBPA      1-1 (1-0)
+           Botafogo FR             v EC Bahia                 0-1 (0-0)
     19.00  São Paulo FC            v Athletico Paranaense     0-0
-           Sport Recife PE         v Vasco da Gama RJ         2-1 (1-1)
+           SC Recife         v CR Vasco da Gama         2-1 (1-1)
   Sun Oct/21
-    16.00  Vitória BA              v Corinthians SP           2-2 (1-1)
-           Fluminense RJ           v Atlético Mineiro         1-0 (0-0)
-           Palmeiras               v Ceará CE                 2-1 (2-0)
-    19.00  Cruzeiro                v Chapecoense              3-0 (3-0)
-           Paraná Clube            v Flamengo RJ              0-4 (0-1)
+    16.00  EC Vitória              v SC Corinthians Paulista           2-2 (1-1)
+           Fluminense FC           v CA Mineiro         1-0 (0-0)
+           SE Palmeiras               v Ceará SC                 2-1 (2-0)
+    19.00  Cruzeiro EC                v Chapecoense AF              3-0 (3-0)
+           Paraná Clube            v CR Flamengo              0-4 (0-1)
   Mon Oct/22
-    20.00  Internacional           v Santos FC                2-2 (1-0)
+    20.00  SC Internacional           v Santos FC                2-2 (1-0)
 
 
 » Matchday 31
   Fri Oct/26
-    19.30  Vitória BA              v São Paulo FC             0-1 (0-1)
-    21.30  Vasco da Gama RJ        v Internacional            1-1 (0-0)
+    19.30  EC Vitória              v São Paulo FC             0-1 (0-1)
+    21.30  CR Vasco da Gama        v SC Internacional            1-1 (0-0)
   Sat Oct/27
-    16.30  Santos FC               v Fluminense RJ            3-0 (0-0)
-           Grêmio Porto Alegre     v Sport Recife PE          3-4 (1-2)
-    19.00  Chapecoense             v América MG               1-0 (0-0)
-           Flamengo RJ             v Palmeiras                1-1 (0-0)
-           Corinthians SP          v Bahia BA                 2-1 (0-0)
-    21.00  Cruzeiro                v Paraná Clube             3-1 (2-1)
-           Athletico Paranaense    v Botafogo RJ              2-1 (0-1)
+    16.30  Santos FC               v Fluminense FC            3-0 (0-0)
+           Grêmio FBPA     v SC Recife          3-4 (1-2)
+    19.00  Chapecoense AF             v América MG               1-0 (0-0)
+           CR Flamengo             v SE Palmeiras                1-1 (0-0)
+           SC Corinthians Paulista          v EC Bahia                 2-1 (0-0)
+    21.00  Cruzeiro EC                v Paraná Clube             3-1 (2-1)
+           Athletico Paranaense    v Botafogo FR              2-1 (0-1)
   Mon Oct/29
-    20.00  Ceará CE                v Atlético Mineiro         2-1 (1-1)
+    20.00  Ceará SC                v CA Mineiro         2-1 (1-1)
 
 
 » Matchday 32
   Sat Nov/3
-    17.00  Atlético Mineiro        v Grêmio Porto Alegre      0-1 (0-1)
-           Fluminense RJ           v Vasco da Gama RJ         0-1 (0-0)
-    19.00  Palmeiras               v Santos FC                3-2 (2-0)
+    17.00  CA Mineiro        v Grêmio FBPA      0-1 (0-1)
+           Fluminense FC           v CR Vasco da Gama         0-1 (0-0)
+    19.00  SE Palmeiras               v Santos FC                3-2 (2-0)
   Sun Nov/4
-    17.00  Paraná Clube            v Vitória BA               1-1 (0-0)
-           América MG              v Cruzeiro                 1-2 (0-1)
-           Botafogo RJ             v Corinthians SP           1-0 (1-0)
-           São Paulo FC            v Flamengo RJ              2-2 (1-1)
-    19.00  Bahia BA                v Chapecoense              1-0 (0-0)
-           Internacional           v Athletico Paranaense     2-1 (0-0)
+    17.00  Paraná Clube            v EC Vitória               1-1 (0-0)
+           América MG              v Cruzeiro EC                 1-2 (0-1)
+           Botafogo FR             v SC Corinthians Paulista           1-0 (1-0)
+           São Paulo FC            v CR Flamengo              2-2 (1-1)
+    19.00  EC Bahia                v Chapecoense AF              1-0 (0-0)
+           SC Internacional           v Athletico Paranaense     2-1 (0-0)
   Mon Nov/5
-    20.00  Sport Recife PE         v Ceará CE                 1-0 (0-0)
+    20.00  SC Recife         v Ceará SC                 1-0 (0-0)
 
 
 » Matchday 33
   Sat Nov/10
     17.00  América MG              v Paraná Clube             0-1 (0-0)
-           Corinthians SP          v São Paulo FC             1-1 (0-0)
-    19.00  Athletico Paranaense    v Cruzeiro                 2-0 (2-0)
-           Botafogo RJ             v Flamengo RJ              2-1 (2-0)
+           SC Corinthians Paulista          v São Paulo FC             1-1 (0-0)
+    19.00  Athletico Paranaense    v Cruzeiro EC                 2-0 (2-0)
+           Botafogo FR             v CR Flamengo              2-1 (2-0)
   Sun Nov/11
-    17.00  Atlético Mineiro        v Palmeiras                1-1 (0-0)
-           Vitória BA              v Bahia BA                 2-2 (1-1)
-           Ceará CE                v Internacional            1-1 (1-1)
-           Grêmio Porto Alegre     v Vasco da Gama RJ         2-1 (1-1)
-    19.00  Fluminense RJ           v Sport Recife PE          0-0
+    17.00  CA Mineiro        v SE Palmeiras                1-1 (0-0)
+           EC Vitória              v EC Bahia                 2-2 (1-1)
+           Ceará SC                v SC Internacional            1-1 (1-1)
+           Grêmio FBPA     v CR Vasco da Gama         2-1 (1-1)
+    19.00  Fluminense FC           v SC Recife          0-0
   Mon Nov/12
-    20.00  Santos FC               v Chapecoense              0-1 (0-1)
+    20.00  Santos FC               v Chapecoense AF              0-1 (0-1)
 
 
 » Matchday 34
   Wed Nov/14
-    19.30  Vasco da Gama RJ        v Athletico Paranaense     1-1 (0-0)
-    21.00  Paraná Clube            v Atlético Mineiro         0-1 (0-1)
-           Bahia BA                v Ceará CE                 2-1 (1-1)
-    21.45  Cruzeiro                v Corinthians SP           1-0 (1-0)
-           Sport Recife PE         v Vitória BA               0-0
-           Palmeiras               v Fluminense RJ            3-0 (1-0)
+    19.30  CR Vasco da Gama        v Athletico Paranaense     1-1 (0-0)
+    21.00  Paraná Clube            v CA Mineiro         0-1 (0-1)
+           EC Bahia                v Ceará SC                 2-1 (1-1)
+    21.45  Cruzeiro EC                v SC Corinthians Paulista           1-0 (1-0)
+           SC Recife         v EC Vitória               0-0
+           SE Palmeiras               v Fluminense FC            3-0 (1-0)
   Thu Nov/15
-    17.00  Chapecoense             v Botafogo RJ              0-1 (0-0)
-           Flamengo RJ             v Santos FC                1-0 (0-0)
-    19.00  São Paulo FC            v Grêmio Porto Alegre      1-1 (0-0)
-    21.00  Internacional           v América MG               2-0 (2-0)
+    17.00  Chapecoense AF             v Botafogo FR              0-1 (0-0)
+           CR Flamengo             v Santos FC                1-0 (0-0)
+    19.00  São Paulo FC            v Grêmio FBPA      1-1 (0-0)
+    21.00  SC Internacional           v América MG               2-0 (2-0)
 
 
 » Matchday 35
   Sat Nov/17
-    19.00  Vitória BA              v Athletico Paranaense     1-2 (0-1)
-           Corinthians SP          v Vasco da Gama RJ         1-0 (0-0)
-    21.00  Atlético Mineiro        v Bahia BA                 1-0 (0-0)
+    19.00  EC Vitória              v Athletico Paranaense     1-2 (0-1)
+           SC Corinthians Paulista          v CR Vasco da Gama         1-0 (0-0)
+    21.00  CA Mineiro        v EC Bahia                 1-0 (0-0)
   Sun Nov/18
-    17.00  Paraná Clube            v Palmeiras                1-1 (1-0)
+    17.00  Paraná Clube            v SE Palmeiras                1-1 (1-0)
            América MG              v Santos FC                2-1 (1-1)
-           Botafogo RJ             v Internacional            1-0 (1-0)
-           Sport Recife PE         v Flamengo RJ              0-1 (0-0)
-    19.00  São Paulo FC            v Cruzeiro                 1-0 (1-0)
-           Grêmio Porto Alegre     v Chapecoense              2-0 (1-0)
+           Botafogo FR             v SC Internacional            1-0 (1-0)
+           SC Recife         v CR Flamengo              0-1 (0-0)
+    19.00  São Paulo FC            v Cruzeiro EC                 1-0 (1-0)
+           Grêmio FBPA     v Chapecoense AF              2-0 (1-0)
   Mon Nov/19
-    20.00  Fluminense RJ           v Ceará CE                 0-0
+    20.00  Fluminense FC           v Ceará SC                 0-0
 
 
 » Matchday 36
   Wed Nov/21
-    19.30  Internacional           v Atlético Mineiro         1-2 (0-1)
-    21.00  Santos FC               v Botafogo RJ              1-1 (1-0)
-    21.45  Cruzeiro                v Vitória BA               3-0 (1-0)
-           Athletico Paranaense    v Corinthians SP           1-0 (0-0)
-           Flamengo RJ             v Grêmio Porto Alegre      2-0 (0-0)
-           Palmeiras               v América MG               4-0 (0-0)
+    19.30  SC Internacional           v CA Mineiro         1-2 (0-1)
+    21.00  Santos FC               v Botafogo FR              1-1 (1-0)
+    21.45  Cruzeiro EC                v EC Vitória               3-0 (1-0)
+           Athletico Paranaense    v SC Corinthians Paulista           1-0 (0-0)
+           CR Flamengo             v Grêmio FBPA      2-0 (0-0)
+           SE Palmeiras               v América MG               4-0 (0-0)
   Thu Nov/22
-    20.00  Vasco da Gama RJ        v São Paulo FC             2-0 (1-0)
-    21.00  Chapecoense             v Sport Recife PE          2-1 (2-0)
-           Bahia BA                v Fluminense RJ            2-0 (0-0)
-           Ceará CE                v Paraná Clube             1-0 (1-0)
+    20.00  CR Vasco da Gama        v São Paulo FC             2-0 (1-0)
+    21.00  Chapecoense AF             v SC Recife          2-1 (2-0)
+           EC Bahia                v Fluminense FC            2-0 (0-0)
+           Ceará SC                v Paraná Clube             1-0 (1-0)
 
 
 » Matchday 37
   Sat Nov/24
-    20.00  Santos FC               v Atlético Mineiro         3-2 (3-1)
+    20.00  Santos FC               v CA Mineiro         3-2 (3-1)
   Sun Nov/25
-    17.00  Cruzeiro                v Flamengo RJ              0-2 (0-1)
-           Athletico Paranaense    v Ceará CE                 2-2 (0-1)
-           Vitória BA              v Grêmio Porto Alegre      0-0
-           Vasco da Gama RJ        v Palmeiras                0-1 (0-0)
-    19.00  América MG              v Bahia BA                 1-0 (0-0)
-           Corinthians SP          v Chapecoense              0-0
-           Internacional           v Fluminense RJ            2-0 (0-0)
+    17.00  Cruzeiro EC                v CR Flamengo              0-2 (0-1)
+           Athletico Paranaense    v Ceará SC                 2-2 (0-1)
+           EC Vitória              v Grêmio FBPA      0-0
+           CR Vasco da Gama        v SE Palmeiras                0-1 (0-0)
+    19.00  América MG              v EC Bahia                 1-0 (0-0)
+           SC Corinthians Paulista          v Chapecoense AF              0-0
+           SC Internacional           v Fluminense FC            2-0 (0-0)
   Mon Nov/26
-    20.00  Botafogo RJ             v Paraná Clube             2-1 (1-0)
-           São Paulo FC            v Sport Recife PE          0-0
+    20.00  Botafogo FR             v Paraná Clube             2-1 (1-0)
+           São Paulo FC            v SC Recife          0-0
 
 
 » Matchday 38
   Sat Dec/1
-    19.00  Atlético Mineiro        v Botafogo RJ              1-0 (1-0)
-           Flamengo RJ             v Athletico Paranaense     1-2 (1-0)
+    19.00  CA Mineiro        v Botafogo FR              1-0 (1-0)
+           CR Flamengo             v Athletico Paranaense     1-2 (1-0)
   Sun Dec/2
-    17.00  Paraná Clube            v Internacional            1-1 (0-0)
-           Chapecoense             v São Paulo FC             1-0 (0-0)
-           Bahia BA                v Cruzeiro                 0-0
-           Fluminense RJ           v América MG               1-0 (1-0)
-           Ceará CE                v Vasco da Gama RJ         0-0
-           Sport Recife PE         v Santos FC                2-1 (0-0)
-           Palmeiras               v Vitória BA               3-2 (1-0)
-           Grêmio Porto Alegre     v Corinthians SP           1-0 (1-0)
+    17.00  Paraná Clube            v SC Internacional            1-1 (0-0)
+           Chapecoense AF             v São Paulo FC             1-0 (0-0)
+           EC Bahia                v Cruzeiro EC                 0-0
+           Fluminense FC           v América MG               1-0 (1-0)
+           Ceará SC                v CR Vasco da Gama         0-0
+           SC Recife         v Santos FC                2-1 (0-0)
+           SE Palmeiras               v EC Vitória               3-2 (1-0)
+           Grêmio FBPA     v SC Corinthians Paulista           1-0 (1-0)

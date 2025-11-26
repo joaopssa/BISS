@@ -11,9 +11,9 @@
     19.15  Operário Ferroviário PR v América MG               1-0 (0-0)
            Brasil de Pelotas RS    v CA Bragantino            0-1 (0-1)
     21.30  São Bento SP            v Atlético Goianiense      1-3 (0-1)
-           Sport Recife PE         v Oeste SP                 1-1 (0-0)
+           SC Recife         v Oeste SP                 1-1 (0-0)
   Sat Apr/27
-    11.00  Botafogo SP             v Vitória BA               3-1 (0-0)
+    11.00  Botafogo SP             v EC Vitória               3-1 (0-0)
     16.30  Guarani SP              v Figueirense SC           0-0
            Criciúma SC             v Cuiabá MT                0-1 (0-0)
     21.00  Vila Nova GO            v Paraná Clube             1-1 (1-0)
@@ -35,11 +35,11 @@
     21.30  Atlético Goianiense     v Coritiba PR              1-1 (1-1)
   Sat May/4
     11.00  Figueirense SC          v São Bento SP             2-2 (0-1)
-    16.30  Vitória BA              v Vila Nova GO             2-1 (1-1)
+    16.30  EC Vitória              v Vila Nova GO             2-1 (1-1)
     19.00  Paraná Clube            v CR Brasil AL             1-0 (1-0)
            Cuiabá MT               v Operário Ferroviário PR  2-1 (2-1)
   Mon May/6
-    20.00  CA Bragantino           v Sport Recife PE          1-1 (1-1)
+    20.00  CA Bragantino           v SC Recife          1-1 (1-1)
 
 
 » Matchday 3
@@ -51,12 +51,12 @@
     21.30  Vila Nova GO            v Ponte Preta              0-0
   Sat May/11
     11.00  Criciúma SC             v América MG               0-0
-    16.30  Sport Recife PE         v Figueirense SC           0-0
+    16.30  SC Recife         v Figueirense SC           0-0
     19.00  Operário Ferroviário PR v Oeste SP                 0-0
            Brasil de Pelotas RS    v CR Brasil AL             0-2 (0-1)
            Cuiabá MT               v Paraná Clube             1-1 (0-1)
   Mon May/13
-    20.00  Guarani SP              v Vitória BA               3-2 (1-1)
+    20.00  Guarani SP              v EC Vitória               3-2 (1-1)
 
 
 » Matchday 4
@@ -69,10 +69,10 @@
   Sat May/18
     11.00  Londrina PR             v CA Bragantino            1-0 (0-0)
     16.30  Paraná Clube            v Guarani SP               0-0
-           Vitória BA              v São Bento SP             1-3 (1-0)
+           EC Vitória              v São Bento SP             1-3 (1-0)
     19.00  Botafogo SP             v Vila Nova GO             0-1 (0-1)
   Sun May/19
-    16.00  América MG              v Sport Recife PE          1-2 (0-0)
+    16.00  América MG              v SC Recife          1-2 (0-0)
   Mon May/20
     20.00  CR Brasil AL            v Coritiba PR              1-0 (1-0)
 
@@ -83,7 +83,7 @@
     21.30  CA Bragantino           v Figueirense SC           2-0 (0-0)
   Fri May/24
     19.15  CR Brasil AL            v Vila Nova GO             1-1 (1-0)
-    21.30  Sport Recife PE         v Londrina PR              3-2 (1-0)
+    21.30  SC Recife         v Londrina PR              3-2 (1-0)
   Sat May/25
     11.00  Coritiba PR             v Cuiabá MT                2-1 (1-0)
     16.30  Ponte Preta             v Paraná Clube             4-2 (1-2)
@@ -91,17 +91,17 @@
     19.00  Operário Ferroviário PR v Botafogo SP              0-2 (0-1)
            Brasil de Pelotas RS    v América MG               2-1 (1-1)
   Sun May/26
-    16.00  Atlético Goianiense     v Vitória BA               1-1 (0-1)
+    16.00  Atlético Goianiense     v EC Vitória               1-1 (0-1)
 
 
 » Matchday 6
   Tue May/28
-    19.15  Operário Ferroviário PR v Sport Recife PE          2-1 (0-1)
+    19.15  Operário Ferroviário PR v SC Recife          2-1 (0-1)
     21.30  Guarani SP              v Brasil de Pelotas RS     1-2 (1-0)
   Fri May/31
     19.15  Figueirense SC          v Atlético Goianiense      1-0 (0-0)
     20.30  São Bento SP            v CR Brasil AL             1-2 (0-2)
-    21.30  Vitória BA              v CA Bragantino            0-2 (0-2)
+    21.30  EC Vitória              v CA Bragantino            0-2 (0-2)
   Sat Jun/1
     11.00  Paraná Clube            v Oeste SP                 0-0
     16.30  Botafogo SP             v Criciúma SC              1-0 (1-0)
@@ -124,7 +124,7 @@
     16.30  Criciúma SC             v Vila Nova GO             1-1 (0-0)
            Brasil de Pelotas RS    v Operário Ferroviário PR  1-0 (0-0)
     18.00  Coritiba PR             v Paraná Clube             2-3 (1-1)
-    20.30  Sport Recife PE         v Vitória BA               3-1 (2-1)
+    20.30  SC Recife         v EC Vitória               3-1 (2-1)
            CR Brasil AL            v América MG               1-3 (0-0)
 
 
@@ -136,18 +136,18 @@
            Figueirense SC          v Botafogo SP              2-1 (1-0)
            Brasil de Pelotas RS    v Criciúma SC              0-1 (0-1)
     20.30  CA Bragantino           v América MG               2-0 (1-0)
-           Oeste SP                v Vitória BA               3-0 (1-0)
+           Oeste SP                v EC Vitória               3-0 (1-0)
            Cuiabá MT               v Atlético Goianiense      0-1 (0-0)
     21.30  Guarani SP              v Coritiba PR              0-1 (0-0)
            Paraná Clube            v Operário Ferroviário PR  1-0 (0-0)
-           Sport Recife PE         v CR Brasil AL             1-0 (1-0)
+           SC Recife         v CR Brasil AL             1-0 (1-0)
 
 
 » Matchday 9
   Mon Jul/8
-    20.00  São Bento SP            v Sport Recife PE          2-2 (1-1)
+    20.00  São Bento SP            v SC Recife          2-2 (1-1)
   Tue Jul/9
-    19.15  Vitória BA              v Cuiabá MT                0-1 (0-1)
+    19.15  EC Vitória              v Cuiabá MT                0-1 (0-1)
     21.30  Criciúma SC             v Coritiba PR              2-1 (0-0)
   Fri Jul/12
     19.15  CR Brasil AL            v Guarani SP               2-1 (2-1)
@@ -162,7 +162,7 @@
 
 » Matchday 10
   Mon Jul/15
-    20.00  Cuiabá MT               v Sport Recife PE          1-1 (0-0)
+    20.00  Cuiabá MT               v SC Recife          1-1 (0-0)
   Tue Jul/16
     19.15  Coritiba PR             v São Bento SP             2-1 (0-1)
     21.30  Ponte Preta             v Atlético Goianiense      0-0
@@ -170,7 +170,7 @@
     21.30  Brasil de Pelotas RS    v Paraná Clube             0-1 (0-1)
   Fri Jul/19
     19.15  Figueirense SC          v Londrina PR              1-1 (0-1)
-    21.30  Vitória BA              v Criciúma SC              2-0 (0-0)
+    21.30  EC Vitória              v Criciúma SC              2-0 (0-0)
   Sat Jul/20
     11.00  Oeste SP                v CA Bragantino            0-0
     16.30  Vila Nova GO            v América MG               1-1 (0-0)
@@ -186,8 +186,8 @@
            Figueirense SC          v Paraná Clube             0-1 (0-0)
     20.30  CA Bragantino           v Ponte Preta              2-1 (0-1)
            Atlético Goianiense     v Botafogo SP              1-2 (1-0)
-           Sport Recife PE         v Brasil de Pelotas RS     0-0
-    21.30  Londrina PR             v Vitória BA               3-1 (1-1)
+           SC Recife         v Brasil de Pelotas RS     0-0
+    21.30  Londrina PR             v EC Vitória               3-1 (1-1)
            América MG              v Oeste SP                 0-0
            CR Brasil AL            v Criciúma SC              2-0 (0-0)
 
@@ -198,11 +198,11 @@
            América MG              v Atlético Goianiense      0-1 (0-0)
     20.30  Guarani SP              v São Bento SP             2-1 (1-0)
            Botafogo SP             v CR Brasil AL             0-2 (0-0)
-    21.30  Paraná Clube            v Sport Recife PE          0-1 (0-1)
+    21.30  Paraná Clube            v SC Recife          0-1 (0-1)
   Sat Jul/27
     11.00  Criciúma SC             v Figueirense SC           1-1 (0-0)
     16.30  Oeste SP                v Londrina PR              1-0 (0-0)
-           Vitória BA              v Ponte Preta              2-1 (2-1)
+           EC Vitória              v Ponte Preta              2-1 (2-1)
     19.00  Vila Nova GO            v CA Bragantino            0-1 (0-1)
            Cuiabá MT               v Brasil de Pelotas RS     1-1 (0-0)
 
@@ -210,10 +210,10 @@
 » Matchday 13
   Mon Jul/29
     20.00  Coritiba PR             v Botafogo SP              3-2 (2-2)
-           Sport Recife PE         v Guarani SP               1-1 (1-1)
+           SC Recife         v Guarani SP               1-1 (1-1)
   Tue Jul/30
     19.15  Londrina PR             v Paraná Clube             3-0 (1-0)
-           Figueirense SC          v Vitória BA               1-1 (1-1)
+           Figueirense SC          v EC Vitória               1-1 (1-1)
            Brasil de Pelotas RS    v Vila Nova GO             0-2 (0-1)
     20.30  Ponte Preta             v América MG               0-1 (0-0)
            São Bento SP            v Criciúma SC              1-0 (1-0)
@@ -224,13 +224,13 @@
 
 » Matchday 14
   Thu Aug/1
-    21.30  Sport Recife PE         v Coritiba PR              1-1 (0-1)
+    21.30  SC Recife         v Coritiba PR              1-1 (0-1)
   Fri Aug/2
     19.15  Londrina PR             v Atlético Goianiense      1-1 (1-1)
     20.30  Botafogo SP             v Oeste SP                 3-2 (1-2)
     21.30  Guarani SP              v CA Bragantino            1-0 (0-0)
   Sat Aug/3
-    11.00  Brasil de Pelotas RS    v Vitória BA               1-0 (1-0)
+    11.00  Brasil de Pelotas RS    v EC Vitória               1-0 (1-0)
     16.30  São Bento SP            v Ponte Preta              0-0
            Criciúma SC             v Operário Ferroviário PR  1-2 (1-0)
     17.00  Paraná Clube            v América MG               0-0
@@ -249,11 +249,11 @@
     21.30  CA Bragantino           v Botafogo SP              0-0
   Sat Aug/10
     16.30  Coritiba PR             v Figueirense SC           2-0 (0-0)
-    19.00  Vitória BA              v Paraná Clube             2-0 (2-0)
+    19.00  EC Vitória              v Paraná Clube             2-0 (2-0)
            Cuiabá MT               v São Bento SP             3-2 (1-0)
   Sun Aug/11
     11.00  Ponte Preta             v Guarani SP               1-0 (1-0)
-    16.00  Criciúma SC             v Sport Recife PE          1-0 (0-0)
+    16.00  Criciúma SC             v SC Recife          1-0 (0-0)
 
 
 » Matchday 16
@@ -269,10 +269,10 @@
     21.30  Guarani SP              v Vila Nova GO             0-2 (0-1)
   Sat Aug/17
     11.00  São Bento SP            v Paraná Clube             2-1 (0-1)
-    16.30  Sport Recife PE         v Botafogo SP              3-0 (1-0)
+    16.30  SC Recife         v Botafogo SP              3-0 (1-0)
     19.00  América MG              v Cuiabá MT                2-1 (2-0)
   Sun Aug/18
-    16.00  CR Brasil AL            v Vitória BA               0-1 (0-1)
+    16.00  CR Brasil AL            v EC Vitória               0-1 (0-1)
 
 
 » Matchday 17
@@ -284,10 +284,10 @@
            Operário Ferroviário PR v Guarani SP               1-0 (1-0)
            Brasil de Pelotas RS    v São Bento SP             2-1 (1-0)
     20.30  Paraná Clube            v Atlético Goianiense      0-0
-    21.30  Vila Nova GO            v Sport Recife PE          0-2 (0-0)
+    21.30  Vila Nova GO            v SC Recife          0-2 (0-0)
            Cuiabá MT               v Figueirense SC           3-0    [awarded]
   Wed Aug/21
-    19.15  Vitória BA              v América MG               0-0
+    19.15  EC Vitória              v América MG               0-0
     21.30  Ponte Preta             v CR Brasil AL             0-1 (0-1)
 
 
@@ -301,8 +301,8 @@
     11.00  Paraná Clube            v Criciúma SC              0-0
     16.30  Oeste SP                v Vila Nova GO             1-1 (0-1)
            Londrina PR             v São Bento SP             2-4 (1-3)
-           Vitória BA              v Operário Ferroviário PR  0-0
-    19.00  Ponte Preta             v Sport Recife PE          2-2 (0-0)
+           EC Vitória              v Operário Ferroviário PR  0-0
+    19.00  Ponte Preta             v SC Recife          2-2 (0-0)
            Figueirense SC          v CR Brasil AL             2-2 (1-1)
   Sun Aug/25
     11.00  América MG              v Guarani SP               3-2 (1-1)
@@ -313,11 +313,11 @@
     16.30  CR Brasil AL            v CA Bragantino            0-3 (0-1)
     19.15  Botafogo SP             v Paraná Clube             0-1 (0-0)
            Vila Nova GO            v Cuiabá MT                0-0
-           Coritiba PR             v Vitória BA               1-1 (1-0)
+           Coritiba PR             v EC Vitória               1-1 (1-0)
            Brasil de Pelotas RS    v Ponte Preta              1-0 (0-0)
     20.30  Operário Ferroviário PR v Figueirense SC           1-0 (1-0)
            Criciúma SC             v Oeste SP                 3-1 (1-1)
-    21.30  Sport Recife PE         v Atlético Goianiense      1-1 (0-1)
+    21.30  SC Recife         v Atlético Goianiense      1-1 (0-1)
   Wed Aug/28
     19.15  Guarani SP              v Londrina PR              1-0 (1-0)
            São Bento SP            v América MG               0-2 (0-2)
@@ -326,10 +326,10 @@
 » Matchday 20
   Fri Aug/30
     19.15  Paraná Clube            v Vila Nova GO             1-1 (1-1)
-    21.30  Vitória BA              v Botafogo SP              0-0
+    21.30  EC Vitória              v Botafogo SP              0-0
            Cuiabá MT               v Criciúma SC              0-0
   Sat Aug/31
-    11.00  Oeste SP                v Sport Recife PE          0-0
+    11.00  Oeste SP                v SC Recife          0-0
     16.30  Ponte Preta             v Coritiba PR              1-0 (1-0)
            Atlético Goianiense     v São Bento SP             1-0 (1-0)
            Londrina PR             v CR Brasil AL             0-1 (0-0)
@@ -340,7 +340,7 @@
 
 » Matchday 21
   Tue Sep/3
-    19.15  Vila Nova GO            v Vitória BA               0-2 (0-2)
+    19.15  Vila Nova GO            v EC Vitória               0-2 (0-2)
            Brasil de Pelotas RS    v Londrina PR              1-0 (1-0)
     21.30  Criciúma SC             v Ponte Preta              0-0
   Thu Sep/5
@@ -351,7 +351,7 @@
     11.00  Botafogo SP             v América MG               0-0
     16.30  Guarani SP              v Oeste SP                 2-3 (1-2)
            Operário Ferroviário PR v Cuiabá MT                2-1 (1-0)
-    19.00  Sport Recife PE         v CA Bragantino            2-1 (1-1)
+    19.00  SC Recife         v CA Bragantino            2-1 (1-1)
   Sun Sep/8
     11.00  Coritiba PR             v Atlético Goianiense      1-2 (0-1)
 
@@ -368,10 +368,10 @@
     21.30  Atlético Goianiense     v CA Bragantino            1-1 (1-0)
   Sat Sep/14
     11.00  Londrina PR             v Coritiba PR              2-1 (0-1)
-    16.30  Vitória BA              v Guarani SP               0-1 (0-1)
+    16.30  EC Vitória              v Guarani SP               0-1 (0-1)
     19.00  Paraná Clube            v Cuiabá MT                0-0
   Sun Sep/15
-    16.00  Figueirense SC          v Sport Recife PE          1-2 (0-1)
+    16.00  Figueirense SC          v SC Recife          1-2 (0-1)
 
 
 » Matchday 23
@@ -379,12 +379,12 @@
     20.00  Operário Ferroviário PR v Ponte Preta              2-1 (0-0)
   Tue Sep/17
     19.15  Vila Nova GO            v Botafogo SP              0-2 (0-2)
-    21.30  São Bento SP            v Vitória BA               2-0 (1-0)
+    21.30  São Bento SP            v EC Vitória               2-0 (1-0)
   Thu Sep/19
     21.30  Brasil de Pelotas RS    v Figueirense SC           2-2 (2-1)
   Fri Sep/20
     19.15  Criciúma SC             v Atlético Goianiense      0-1 (0-1)
-    21.30  Sport Recife PE         v América MG               0-2 (0-0)
+    21.30  SC Recife         v América MG               0-2 (0-0)
   Sat Sep/21
     11.00  Guarani SP              v Paraná Clube             1-0 (0-0)
     16.30  CA Bragantino           v Londrina PR              4-1 (2-0)
@@ -396,12 +396,12 @@
   Tue Sep/24
     19.15  Guarani SP              v Criciúma SC              1-0 (0-0)
            Botafogo SP             v Operário Ferroviário PR  1-1 (1-0)
-           Londrina PR             v Sport Recife PE          1-2 (1-1)
+           Londrina PR             v SC Recife          1-2 (1-1)
     20.30  Oeste SP                v São Bento SP             2-1 (2-1)
            Vila Nova GO            v CR Brasil AL             2-2 (0-1)
            América MG              v Brasil de Pelotas RS     2-0 (2-0)
     21.30  Figueirense SC          v CA Bragantino            0-3 (0-2)
-           Vitória BA              v Atlético Goianiense      0-0
+           EC Vitória              v Atlético Goianiense      0-0
   Wed Sep/25
     19.15  Paraná Clube            v Ponte Preta              1-1 (0-0)
   Tue Oct/29
@@ -418,10 +418,10 @@
     16.30  Ponte Preta             v Cuiabá MT                3-0 (3-0)
            Coritiba PR             v América MG               2-1 (1-0)
     19.00  Oeste SP                v Paraná Clube             1-1 (1-1)
-           Sport Recife PE         v Operário Ferroviário PR  3-1 (1-0)
+           SC Recife         v Operário Ferroviário PR  3-1 (1-0)
     21.00  CR Brasil AL            v São Bento SP             1-1 (0-0)
   Sun Sep/29
-    16.00  CA Bragantino           v Vitória BA               2-0 (0-0)
+    16.00  CA Bragantino           v EC Vitória               2-0 (0-0)
 
 
 » Matchday 26
@@ -431,7 +431,7 @@
     19.15  Vila Nova GO            v Criciúma SC              1-1 (0-0)
   Thu Oct/3
     19.15  América MG              v CR Brasil AL             1-0 (1-0)
-    21.30  Vitória BA              v Sport Recife PE          2-2 (1-0)
+    21.30  EC Vitória              v SC Recife          2-2 (1-0)
   Fri Oct/4
     19.15  Figueirense SC          v Oeste SP                 1-2 (1-2)
     21.30  São Bento SP            v CA Bragantino            0-3 (0-1)
@@ -445,14 +445,14 @@
 » Matchday 27
   Mon Oct/7
     20.00  São Bento SP            v Vila Nova GO             3-1 (3-0)
-           CR Brasil AL            v Sport Recife PE          1-1 (0-1)
+           CR Brasil AL            v SC Recife          1-1 (0-1)
   Tue Oct/8
     19.15  Botafogo SP             v Figueirense SC           0-0
            Coritiba PR             v Guarani SP               1-0 (1-0)
            Operário Ferroviário PR v Paraná Clube             0-1 (0-1)
     20.30  Atlético Goianiense     v Cuiabá MT                1-1 (1-0)
            Criciúma SC             v Brasil de Pelotas RS     2-2 (1-2)
-           Vitória BA              v Oeste SP                 3-1 (1-0)
+           EC Vitória              v Oeste SP                 3-1 (1-0)
     21.30  Ponte Preta             v Londrina PR              3-1 (2-1)
            América MG              v CA Bragantino            2-0 (0-0)
 
@@ -461,10 +461,10 @@
   Fri Oct/11
     19.15  Vila Nova GO            v Atlético Goianiense      1-1 (0-1)
            Brasil de Pelotas RS    v Botafogo SP              1-0 (1-0)
-           Sport Recife PE         v São Bento SP             2-0 (0-0)
+           SC Recife         v São Bento SP             2-0 (0-0)
     21.30  Guarani SP              v CR Brasil AL             1-0 (0-0)
            Oeste SP                v Ponte Preta              1-1 (0-0)
-           Cuiabá MT               v Vitória BA               1-3 (1-0)
+           Cuiabá MT               v EC Vitória               1-3 (1-0)
   Sat Oct/12
     16.30  CA Bragantino           v Paraná Clube             2-0 (1-0)
            Coritiba PR             v Criciúma SC              1-0 (0-0)
@@ -476,11 +476,11 @@
   Mon Oct/14
     20.00  Guarani SP              v Botafogo SP              0-2 (0-0)
            Atlético Goianiense     v Ponte Preta              0-0
-           Sport Recife PE         v Cuiabá MT                2-0 (1-0)
+           SC Recife         v Cuiabá MT                2-0 (1-0)
   Tue Oct/15
     19.15  Paraná Clube            v Brasil de Pelotas RS     1-0 (1-0)
            Londrina PR             v Figueirense SC           0-0
-           Criciúma SC             v Vitória BA               1-1 (1-0)
+           Criciúma SC             v EC Vitória               1-1 (1-0)
     20.30  América MG              v Vila Nova GO             2-0 (0-0)
            CR Brasil AL            v Operário Ferroviário PR  0-0
     21.30  CA Bragantino           v Oeste SP                 2-2 (0-0)
@@ -493,7 +493,7 @@
     21.30  Cuiabá MT               v Guarani SP               2-1 (2-0)
   Fri Oct/18
     19.15  Criciúma SC             v CR Brasil AL             0-1 (0-0)
-    21.30  Vitória BA              v Londrina PR              0-1 (0-0)
+    21.30  EC Vitória              v Londrina PR              0-1 (0-0)
   Sat Oct/19
     16.30  Ponte Preta             v CA Bragantino            1-1 (0-0)
            Oeste SP                v América MG               0-1 (0-0)
@@ -501,12 +501,12 @@
     19.00  Paraná Clube            v Figueirense SC           0-1 (0-1)
            Operário Ferroviário PR v São Bento SP             2-1 (1-1)
   Sun Oct/20
-    16.00  Brasil de Pelotas RS    v Sport Recife PE          0-0
+    16.00  Brasil de Pelotas RS    v SC Recife          0-0
 
 
 » Matchday 31
   Wed Oct/23
-    19.15  Sport Recife PE         v Paraná Clube             2-1 (0-0)
+    19.15  SC Recife         v Paraná Clube             2-1 (0-0)
   Thu Oct/24
     19.15  CR Brasil AL            v Botafogo SP              1-0 (0-0)
     21.30  Coritiba PR             v Operário Ferroviário PR  0-0
@@ -519,7 +519,7 @@
            Figueirense SC          v Criciúma SC              2-2 (1-0)
            Brasil de Pelotas RS    v Cuiabá MT                0-0
   Sun Oct/27
-    16.00  Ponte Preta             v Vitória BA               1-2 (0-1)
+    16.00  Ponte Preta             v EC Vitória               1-2 (0-1)
 
 
 » Matchday 32
@@ -528,28 +528,28 @@
   Tue Oct/29
     19.15  Vila Nova GO            v Brasil de Pelotas RS     0-2 (0-0)
   Thu Oct/31
-    19.15  Guarani SP              v Sport Recife PE          1-0 (0-0)
+    19.15  Guarani SP              v SC Recife          1-0 (0-0)
   Fri Nov/1
     19.15  Botafogo SP             v Coritiba PR              0-1 (0-1)
     20.30  Operário Ferroviário PR v Atlético Goianiense      1-1 (0-0)
     22.30  Cuiabá MT               v CA Bragantino            2-0 (1-0)
   Sat Nov/2
     16.30  Oeste SP                v CR Brasil AL             3-3 (0-1)
-           Vitória BA              v Figueirense SC           2-2 (1-1)
+           EC Vitória              v Figueirense SC           2-2 (1-1)
     19.00  Criciúma SC             v São Bento SP             1-1 (1-1)
            América MG              v Ponte Preta              0-0
 
 
 » Matchday 33
   Mon Nov/4
-    20.00  Coritiba PR             v Sport Recife PE          0-0
+    20.00  Coritiba PR             v SC Recife          0-0
   Tue Nov/5
     19.15  Oeste SP                v Botafogo SP              0-2 (0-0)
            Atlético Goianiense     v Londrina PR              2-1 (0-0)
     20.30  Operário Ferroviário PR v Criciúma SC              1-0 (0-0)
            Figueirense SC          v Vila Nova GO             0-0
            América MG              v Paraná Clube             0-2 (0-0)
-           Vitória BA              v Brasil de Pelotas RS     3-0 (1-0)
+           EC Vitória              v Brasil de Pelotas RS     3-0 (1-0)
     21.30  Ponte Preta             v São Bento SP             1-1 (0-0)
            CA Bragantino           v Guarani SP               3-1 (0-0)
            Cuiabá MT               v CR Brasil AL             5-1 (3-1)
@@ -558,14 +558,14 @@
 » Matchday 34
   Fri Nov/8
     19.15  Botafogo SP             v CA Bragantino            2-3 (0-1)
-           Paraná Clube            v Vitória BA               0-0
+           Paraná Clube            v EC Vitória               0-0
     20.30  Vila Nova GO            v Operário Ferroviário PR  0-0
            Londrina PR             v América MG               0-1 (0-1)
     21.30  São Bento SP            v Cuiabá MT                1-2 (1-1)
            Figueirense SC          v Coritiba PR              1-1 (0-0)
   Sat Nov/9
     16.30  Guarani SP              v Ponte Preta              0-0
-           Sport Recife PE         v Criciúma SC              1-0 (0-0)
+           SC Recife         v Criciúma SC              1-0 (0-0)
     19.00  Brasil de Pelotas RS    v Oeste SP                 2-2 (0-1)
            CR Brasil AL            v Atlético Goianiense      2-1 (1-0)
 
@@ -576,19 +576,19 @@
   Tue Nov/12
     19.15  Oeste SP                v Atlético Goianiense      0-4 (0-3)
            Brasil de Pelotas RS    v Coritiba PR              0-2 (0-1)
-           Vitória BA              v CR Brasil AL             2-2 (0-1)
+           EC Vitória              v CR Brasil AL             2-2 (0-1)
     20.30  Ponte Preta             v Figueirense SC           1-3 (1-1)
            Criciúma SC             v Londrina PR              2-0 (1-0)
     21.30  Paraná Clube            v São Bento SP             2-1 (2-1)
            Operário Ferroviário PR v CA Bragantino            0-2 (0-1)
   Wed Nov/13
     19.15  Vila Nova GO            v Guarani SP               1-1 (0-1)
-    21.30  Botafogo SP             v Sport Recife PE          0-2 (0-1)
+    21.30  Botafogo SP             v SC Recife          0-2 (0-1)
 
 
 » Matchday 36
   Fri Nov/15
-    17.00  América MG              v Vitória BA               2-1 (1-0)
+    17.00  América MG              v EC Vitória               2-1 (1-0)
     19.15  CA Bragantino           v Criciúma SC              1-1 (1-1)
     21.30  Atlético Goianiense     v Paraná Clube             1-0 (0-0)
   Sat Nov/16
@@ -598,17 +598,17 @@
     19.00  Londrina PR             v Botafogo SP              1-1 (0-1)
   Sun Nov/17
     16.00  São Bento SP            v Brasil de Pelotas RS     3-1 (0-0)
-           Sport Recife PE         v Vila Nova GO             0-0
+           SC Recife         v Vila Nova GO             0-0
     18.30  Figueirense SC          v Cuiabá MT                0-0
 
 
 » Matchday 37
   Tue Nov/19
     19.15  Criciúma SC             v Paraná Clube             1-1 (0-1)
-    21.30  Operário Ferroviário PR v Vitória BA               1-2 (1-1)
+    21.30  Operário Ferroviário PR v EC Vitória               1-2 (1-1)
   Wed Nov/20
     19.15  Vila Nova GO            v Oeste SP                 1-1 (0-1)
-    21.30  Sport Recife PE         v Ponte Preta              2-1 (0-1)
+    21.30  SC Recife         v Ponte Preta              2-1 (0-1)
   Thu Nov/21
     19.15  São Bento SP            v Londrina PR              4-1 (2-1)
     21.30  Brasil de Pelotas RS    v Atlético Goianiense      2-2 (1-0)
@@ -629,9 +629,9 @@
     21.30  Oeste SP                v Criciúma SC              1-2 (1-0)
   Sat Nov/30
     16.30  CA Bragantino           v CR Brasil AL             2-0 (0-0)
-           Atlético Goianiense     v Sport Recife PE          0-0
+           Atlético Goianiense     v SC Recife          0-0
            Londrina PR             v Guarani SP               2-0 (1-0)
            Figueirense SC          v Operário Ferroviário PR  1-1 (0-0)
            América MG              v São Bento SP             1-2 (0-2)
-           Vitória BA              v Coritiba PR              1-2 (1-0)
+           EC Vitória              v Coritiba PR              1-2 (1-0)
            Cuiabá MT               v Vila Nova GO             1-2 (0-1)

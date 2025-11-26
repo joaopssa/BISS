@@ -560,7 +560,7 @@
 
 » Matchday 12
   Sat Nov/15
-    18.30  SC Recife               v CR Flamengo              1-5 (1-1)
+    18.30  SC Recife               v CR Flamengo
 
 
 » Matchday 13
@@ -601,7 +601,7 @@
     16.00  São Paulo FC            v EC Juventude
            EC Bahia                v CR Vasco da Gama
     18.30  SC Recife               v EC Vitória
-    20.30  Cruzeiro EC             v SC Corinthians Paulista              3-0 (1-0)
+    20.30  Cruzeiro EC             v SC Corinthians Paulista
   Mon Nov/24
     19.00  Mirassol FC             v Ceará SC
     21.00  SC Internacional        v Santos FC
