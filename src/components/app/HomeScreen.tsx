@@ -141,14 +141,35 @@ export const HomeScreen: React.FC = () => {
 
   const [placingBet, setPlacingBet] = useState(false);
 
+  // selecionada via autocomplete (filtra por id quando setada)
+  const [selectedMatchId, setSelectedMatchId] = useState<string | number | null>(null);
+
+  // Autocomplete suggestions com base nas partidas carregadas
+  const suggestions = useMemo(() => {
+    const q = query.trim();
+    if (!q) return [];
+    const nq = normalize(q);
+    return (upcoming || [])
+      .filter((m) => {
+        return (
+          normalize(m.homeTeam).includes(nq) ||
+          normalize(m.awayTeam).includes(nq) ||
+          (m.competition && normalize(m.competition).includes(nq))
+        );
+      })
+      .slice(0, 8);
+  }, [query, upcoming]);
+
   const [feedback, setFeedback] = useState<string | null>(null);
 
   const [userLeagues, setUserLeagues] = useState<string[]>([]);
 
   const [ticketFilter, setTicketFilter] = useState<"todos" | "pendentes" | "liquidados">("todos");
 
-
- 
+  // Scroll para o topo quando a aba mudar
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [tab]);
 
   // ========= Helpers =========
 
@@ -1111,19 +1132,72 @@ export const HomeScreen: React.FC = () => {
 
           </span>
 
-          <input
+          <div className="relative">
 
-            type="text"
+            <input
 
-            value={query}
+              type="text"
 
-            onChange={(e) => setQuery(e.currentTarget.value)}
+              value={query}
 
-            placeholder="Encontre aqui seu jogo"
+              onChange={(e) => {
+                setQuery(e.currentTarget.value);
+                setSelectedMatchId(null);
+              }}
 
-            className="w-52 sm:w-64 h-9 px-3 py-2 text-xs sm:text-sm font-medium text-white placeholder-white bg-[#014a8f] border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
+              placeholder="Encontre aqui seu jogo"
 
-          />
+              className="w-52 sm:w-64 h-9 px-3 py-2 text-xs sm:text-sm font-medium text-white placeholder-white bg-[#014a8f] border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
+
+            />
+
+            {suggestions.length > 0 && (
+
+              <div className="absolute left-0 mt-1 w-52 sm:w-64 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-md shadow-lg z-50 overflow-hidden">
+
+                <ul className="max-h-56 overflow-auto">
+
+                  {suggestions.map((m) => (
+
+                    <li
+
+                      key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
+
+                      onMouseDown={() => {
+
+                        setQuery(`${m.homeTeam} x ${m.awayTeam}`);
+
+                        setSelectedMatchId(m.id);
+
+                      }}
+
+                      className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
+
+                    >
+
+                      <div className="font-medium text-gray-800 dark:text-gray-200">
+
+                        {m.homeTeam} x {m.awayTeam}
+
+                      </div>
+
+                      <div className="text-xs text-gray-500 dark:text-gray-400">
+
+                        {m.competition} • {m.time}
+
+                      </div>
+
+                    </li>
+
+                  ))}
+
+                </ul>
+
+              </div>
+
+            )}
+
+          </div>
 
         </div>
 

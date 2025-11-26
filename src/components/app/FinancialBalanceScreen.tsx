@@ -45,6 +45,11 @@ type Movimentacao = {
 };
 
 export default function FinancialBalanceScreen() {
+  // Scroll para o topo ao montar o componente
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const [saldo, setSaldo] = useState<number>(0);
   const [extrato, setExtrato] = useState<Movimentacao[]>([]);
   const [valor, setValor] = useState<number>(0);
@@ -320,50 +325,53 @@ export default function FinancialBalanceScreen() {
 
   // --- LÓGICA DO GRÁFICO ---
   const chartData = useMemo(() => {
+    // Helper para gerar chave de data no fuso local (YYYY-MM-DD)
+    const toLocalDateKey = (d: Date) => {
+      const Y = d.getFullYear();
+      const M = String(d.getMonth() + 1).padStart(2, "0");
+      const D = String(d.getDate()).padStart(2, "0");
+      return `${Y}-${M}-${D}`;
+    };
+
     const today = new Date();
-    // Normalizar hoje para 00:00 para comparações justas
     today.setHours(0, 0, 0, 0);
 
-    // Gerar um array com os últimos N dias
+    // Gerar um array com os últimos N dias (chaves locais)
     const days: string[] = [];
     for (let i = chartPeriodDays - 1; i >= 0; i--) {
-        const d = new Date(today);
-        d.setDate(d.getDate() - i);
-        // Formato ISO string YYYY-MM-DD para usar como chave
-        days.push(d.toISOString().split('T')[0]);
+      const d = new Date(today);
+      d.setDate(d.getDate() - i);
+      days.push(toLocalDateKey(d));
     }
 
     // Criar mapa inicial com zeros
     const dataMap: Record<string, number> = {};
     days.forEach(day => { dataMap[day] = 0; });
 
-    // Preencher com os dados do extrato
+    // Preencher com os dados do extrato (usando chaves locais)
     extrato.forEach(m => {
-        // Apenas 'premio' e 'aposta' contam para o desempenho
-        if (m.tipo !== 'premio' && m.tipo !== 'aposta') return;
-        
-        // Pega data YYYY-MM-DD da movimentação
-        const mDate = new Date(m.data_movimentacao);
-        const key = mDate.toISOString().split('T')[0];
+      if (m.tipo !== 'premio' && m.tipo !== 'aposta') return;
+      const mDate = new Date(m.data_movimentacao);
+      const key = toLocalDateKey(mDate);
 
-        if (dataMap.hasOwnProperty(key)) {
-            const val = Number(m.valor);
-            if (m.tipo === 'premio') {
-                dataMap[key] += val;
-            } else if (m.tipo === 'aposta') {
-                dataMap[key] -= val;
-            }
+      if (dataMap.hasOwnProperty(key)) {
+        const val = Number(m.valor) || 0;
+        if (m.tipo === 'premio') {
+          dataMap[key] += val;
+        } else if (m.tipo === 'aposta') {
+          dataMap[key] -= val;
         }
+      }
     });
 
     // Converter para array para o Recharts
     return days.map(dateStr => {
-        const [year, month, day] = dateStr.split('-');
-        return {
-            date: `${day}/${month}`, // Formato para o eixo X
-            fullDate: dateStr,
-            lucro: dataMap[dateStr]
-        };
+      const [year, month, day] = dateStr.split('-');
+      return {
+        date: `${day}/${month}`,
+        fullDate: dateStr,
+        lucro: dataMap[dateStr] || 0
+      };
     });
   }, [extrato, chartPeriodDays]);
 
@@ -394,19 +402,9 @@ export default function FinancialBalanceScreen() {
         <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-6 space-y-4">
           <h2 className="text-xl font-bold text-[#014a8f]">Saldo atual</h2>
 
-          <div className="border-t pt-4 flex items-center justify-between gap-4">
-            <div>
-              <p className="text-sm text-gray-500 dark:text-gray-400">Disponível</p>
-              <h2 className="text-3xl font-bold text-[#014a8f]">R$ {saldo.toFixed(2)}</h2>
-            </div>
-            <div className="ml-auto">
-              <Button
-                onClick={() => { fetchSaldo(); fetchExtrato(); }}
-                className="bg-[#014a8f] hover:bg-[#003b70] text-white"
-              >
-                Atualizar
-              </Button>
-            </div>
+          <div className="border-t pt-4">
+            <p className="text-sm text-gray-500 dark:text-gray-400">Disponível</p>
+            <h2 className="text-3xl font-bold text-[#014a8f]">R$ {saldo.toFixed(2)}</h2>
           </div>
         </div>
 
