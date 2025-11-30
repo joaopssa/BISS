@@ -230,24 +230,24 @@
 
 » Gruppe H
   Tue Apr/5
-    22.00  Sporting Cristal (PER)  v Flamengo RJ (BRA)        0-2 (0-1)
+    22.00  Sporting Cristal (PER)  v CR Flamengo        0-2 (0-1)
   Wed Apr/6
     19.00  Talleres de Córdoba (ARG) v Universidad Católica (CHI)  1-0 (1-0)
   Tue Apr/12
     19.15  Universidad Católica (CHI) v Sporting Cristal (PER)   2-1 (1-0)
-    21.30  Flamengo RJ (BRA)       v Talleres de Córdoba (ARG)  3-1 (2-1)
+    21.30  CR Flamengo       v Talleres de Córdoba (ARG)  3-1 (2-1)
   Tue Apr/26
     21.30  Talleres de Córdoba (ARG) v Sporting Cristal (PER)   1-0 (0-0)
   Thu Apr/28
-    19.00  Universidad Católica (CHI) v Flamengo RJ (BRA)        2-3 (1-2)
+    19.00  Universidad Católica (CHI) v CR Flamengo        2-3 (1-2)
   Wed May/4
-    19.00  Talleres de Córdoba (ARG) v Flamengo RJ (BRA)        2-2 (1-0)
+    19.00  Talleres de Córdoba (ARG) v CR Flamengo        2-2 (1-0)
     23.00  Sporting Cristal (PER)  v Universidad Católica (CHI)  1-1 (1-0)
   Tue May/17
-    21.30  Flamengo RJ (BRA)       v Universidad Católica (CHI)  3-0 (2-0)
+    21.30  CR Flamengo       v Universidad Católica (CHI)  3-0 (2-0)
            Sporting Cristal (PER)  v Talleres de Córdoba (ARG)  0-0
   Tue May/24
-    21.30  Flamengo RJ (BRA)       v Sporting Cristal (PER)   2-1 (1-0)
+    21.30  CR Flamengo       v Sporting Cristal (PER)   2-1 (1-0)
            Universidad Católica (CHI) v Talleres de Córdoba (ARG)  0-1 (0-0)
 
 
@@ -259,7 +259,7 @@
   Wed Jun/29
     19.15  Cerro Porteño (PAR)     v Palmeiras (BRA)          0-3 (0-0)
            Talleres de Córdoba (ARG) v Colón de Santa Fe (ARG)  1-1 (0-0)
-    21.30  Deportes Tolima (COL)   v Flamengo RJ (BRA)        0-1 (0-1)
+    21.30  Deportes Tolima (COL)   v CR Flamengo        0-1 (0-1)
            Vélez Sarsfield (ARG)   v River Plate (ARG)        1-0 (1-0)
   Thu Jun/30
     21.30  Fortaleza CE (BRA)      v Estudiantes (ARG)        1-1 (0-0)
@@ -270,7 +270,7 @@
   Wed Jul/6
     19.15  Palmeiras (BRA)         v Cerro Porteño (PAR)      5-0 (1-0)
            Colón de Santa Fe (ARG) v Talleres de Córdoba (ARG)  0-2 (0-0)
-    21.30  Flamengo RJ (BRA)       v Deportes Tolima (COL)    7-1 (2-0)
+    21.30  CR Flamengo       v Deportes Tolima (COL)    7-1 (2-0)
            River Plate (ARG)       v Vélez Sarsfield (ARG)    0-0
   Thu Jul/7
     21.30  Estudiantes (ARG)       v Fortaleza CE (BRA)       3-0 (1-0)
@@ -278,14 +278,14 @@
 
 » Quarterfinals
   Tue Aug/2
-    21.30  Corinthians SP (BRA)    v Flamengo RJ (BRA)        0-2 (0-1)
+    21.30  Corinthians SP (BRA)    v CR Flamengo        0-2 (0-1)
   Wed Aug/3
     21.30  Vélez Sarsfield (ARG)   v Talleres de Córdoba (ARG)  3-2 (1-0)
            Atlético Mineiro (BRA)  v Palmeiras (BRA)          2-2 (1-0)
   Thu Aug/4
     21.30  Athletico Paranaense (BRA) v Estudiantes (ARG)        0-0
   Tue Aug/9
-    21.30  Flamengo RJ (BRA)       v Corinthians SP (BRA)     1-0 (0-0)
+    21.30  CR Flamengo       v Corinthians SP (BRA)     1-0 (0-0)
   Wed Aug/10
     21.30  Talleres de Córdoba (ARG) v Vélez Sarsfield (ARG)    0-1 (0-0)
            Palmeiras (BRA)         v Atlético Mineiro (BRA)   6-5 pen. (0-0)
@@ -297,13 +297,13 @@
   Tue Aug/30
     21.30  Athletico Paranaense (BRA) v Palmeiras (BRA)          1-0 (1-0)
   Wed Aug/31
-    21.30  Vélez Sarsfield (ARG)   v Flamengo RJ (BRA)        0-4 (0-2)
+    21.30  Vélez Sarsfield (ARG)   v CR Flamengo        0-4 (0-2)
   Tue Sep/6
     21.30  Palmeiras (BRA)         v Athletico Paranaense (BRA)  2-2 (1-0)
   Wed Sep/7
-    21.30  Flamengo RJ (BRA)       v Vélez Sarsfield (ARG)    2-1 (1-1)
+    21.30  CR Flamengo       v Vélez Sarsfield (ARG)    2-1 (1-1)
 
 
 » Final
   Sat Oct/29
-    17.00  Flamengo RJ (BRA)       v Athletico Paranaense (BRA)  1-0 (1-0)
+    17.00  CR Flamengo       v Athletico Paranaense (BRA)  1-0 (1-0)

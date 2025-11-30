@@ -133,28 +133,28 @@
 
 » Gruppe 4
   Wed Feb/28
-    21.45  Flamengo RJ (BRA)       v River Plate (ARG)        2-2 (0-0)
+    21.45  CR Flamengo       v River Plate (ARG)        2-2 (0-0)
   Thu Mar/1
     19.15  Santa Fe (COL)          v Emelec (ECU)             1-1 (1-0)
   Wed Mar/14
-    21.45  Emelec (ECU)            v Flamengo RJ (BRA)        1-2 (0-0)
+    21.45  Emelec (ECU)            v CR Flamengo        1-2 (0-0)
   Thu Apr/5
     19.15  River Plate (ARG)       v Santa Fe (COL)           0-0
   Wed Apr/18
-    21.45  Flamengo RJ (BRA)       v Santa Fe (COL)           1-1 (1-1)
+    21.45  CR Flamengo       v Santa Fe (COL)           1-1 (1-1)
   Thu Apr/19
     21.30  Emelec (ECU)            v River Plate (ARG)        0-1 (0-1)
   Wed Apr/25
-    21.45  Santa Fe (COL)          v Flamengo RJ (BRA)        0-0
+    21.45  Santa Fe (COL)          v CR Flamengo        0-0
   Thu Apr/26
     19.15  River Plate (ARG)       v Emelec (ECU)             2-1 (0-0)
   Thu May/3
     21.30  Santa Fe (COL)          v River Plate (ARG)        0-1 (0-1)
   Wed May/16
-    21.45  Flamengo RJ (BRA)       v Emelec (ECU)             2-0 (0-0)
+    21.45  CR Flamengo       v Emelec (ECU)             2-0 (0-0)
   Wed May/23
     21.45  Emelec (ECU)            v Santa Fe (COL)           0-3 (0-1)
-           River Plate (ARG)       v Flamengo RJ (BRA)        0-0
+           River Plate (ARG)       v CR Flamengo        0-0
 
 
 » Gruppe 5
@@ -262,7 +262,7 @@
   Wed Aug/8
     19.30  Boca Juniors (ARG)      v Libertad (PAR)           2-0 (2-0)
     21.45  Colo-Colo (CHI)         v Corinthians SP (BRA)     1-0 (1-0)
-           Flamengo RJ (BRA)       v Cruzeiro (BRA)           0-2 (0-1)
+           CR Flamengo       v Cruzeiro (BRA)           0-2 (0-1)
   Thu Aug/9
     19.30  Racing Club (ARG)       v River Plate (ARG)        0-0
     21.45  Atlético Tucumán (ARG)  v Atlético Nacional (COL)  2-0 (1-0)
@@ -276,7 +276,7 @@
   Wed Aug/29
     19.30  River Plate (ARG)       v Racing Club (ARG)        3-0 (2-0)
     21.45  Corinthians SP (BRA)    v Colo-Colo (CHI)          2-1 (1-1)
-           Cruzeiro (BRA)          v Flamengo RJ (BRA)        0-1 (0-0)
+           Cruzeiro (BRA)          v CR Flamengo        0-1 (0-0)
   Thu Aug/30
     19.30  Libertad (PAR)          v Boca Juniors (ARG)       2-4 (2-2)
     21.45  Palmeiras (BRA)         v Cerro Porteño (PAR)      0-1 (0-0)

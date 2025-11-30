@@ -134,27 +134,27 @@
 
 » Gruppe 4
   Tue Mar/5
-    19.15  Club San José (BOL)     v Flamengo RJ (BRA)        0-1 (0-0)
+    19.15  Club San José (BOL)     v CR Flamengo        0-1 (0-0)
   Thu Mar/7
     21.00  LDU Quito (ECU)         v Peñarol (URU)            2-0 (1-0)
   Wed Mar/13
-    21.30  Flamengo RJ (BRA)       v LDU Quito (ECU)          3-1 (1-0)
+    21.30  CR Flamengo       v LDU Quito (ECU)          3-1 (1-0)
   Thu Mar/14
     19.00  Peñarol (URU)           v Club San José (BOL)      4-0 (3-0)
   Tue Apr/2
     19.15  Club San José (BOL)     v LDU Quito (ECU)          3-3 (1-2)
   Wed Apr/3
-    21.30  Flamengo RJ (BRA)       v Peñarol (URU)            0-1 (0-0)
+    21.30  CR Flamengo       v Peñarol (URU)            0-1 (0-0)
   Tue Apr/9
     21.30  Peñarol (URU)           v LDU Quito (ECU)          1-0 (0-0)
   Thu Apr/11
-    21.00  Flamengo RJ (BRA)       v Club San José (BOL)      6-1 (2-1)
+    21.00  CR Flamengo       v Club San José (BOL)      6-1 (2-1)
   Wed Apr/24
     21.30  Club San José (BOL)     v Peñarol (URU)            3-1 (0-0)
-           LDU Quito (ECU)         v Flamengo RJ (BRA)        2-1 (1-1)
+           LDU Quito (ECU)         v CR Flamengo        2-1 (1-1)
   Wed May/8
     21.30  LDU Quito (ECU)         v Club San José (BOL)      4-0 (0-0)
-           Peñarol (URU)           v Flamengo RJ (BRA)        0-0
+           Peñarol (URU)           v CR Flamengo        0-0
 
 
 » Gruppe 5
@@ -261,7 +261,7 @@
   Wed Jul/24
     19.15  Nacional (URU)          v Internacional (BRA)      0-1 (0-0)
            San Lorenzo (ARG)       v Cerro Porteño (PAR)      0-0
-    21.30  Emelec (ECU)            v Flamengo RJ (BRA)        2-0 (1-0)
+    21.30  Emelec (ECU)            v CR Flamengo        2-0 (1-0)
            Athletico Paranaense (BRA) v Boca Juniors (ARG)       0-1 (0-0)
   Thu Jul/25
     21.30  Grêmio Porto Alegre (BRA) v Libertad (PAR)           2-0 (0-0)
@@ -272,7 +272,7 @@
   Wed Jul/31
     19.15  Internacional (BRA)     v Nacional (URU)           2-0 (1-0)
            Cerro Porteño (PAR)     v San Lorenzo (ARG)        2-1 (0-1)
-    21.30  Flamengo RJ (BRA)       v Emelec (ECU)             4-2 pen. (2-0, 2-0)
+    21.30  CR Flamengo       v Emelec (ECU)             4-2 pen. (2-0, 2-0)
            Boca Juniors (ARG)      v Athletico Paranaense (BRA)  2-0 (0-0)
   Thu Aug/1
     21.30  Libertad (PAR)          v Grêmio Porto Alegre (BRA)  0-3 (0-3)
@@ -283,14 +283,14 @@
     21.30  Grêmio Porto Alegre (BRA) v Palmeiras (BRA)          0-1 (0-1)
   Wed Aug/21
     19.15  LDU Quito (ECU)         v Boca Juniors (ARG)       0-3 (0-1)
-    21.30  Flamengo RJ (BRA)       v Internacional (BRA)      2-0 (0-0)
+    21.30  CR Flamengo       v Internacional (BRA)      2-0 (0-0)
   Thu Aug/22
     19.15  River Plate (ARG)       v Cerro Porteño (PAR)      2-0 (1-0)
   Tue Aug/27
     21.30  Palmeiras (BRA)         v Grêmio Porto Alegre (BRA)  1-2 (1-2)
   Wed Aug/28
     19.15  Boca Juniors (ARG)      v LDU Quito (ECU)          0-0
-    21.30  Internacional (BRA)     v Flamengo RJ (BRA)        1-1 (0-0)
+    21.30  Internacional (BRA)     v CR Flamengo        1-1 (0-0)
   Thu Aug/29
     19.15  Cerro Porteño (PAR)     v River Plate (ARG)        1-1 (1-0)
 
@@ -299,13 +299,13 @@
   Tue Oct/1
     21.30  River Plate (ARG)       v Boca Juniors (ARG)       2-0 (1-0)
   Wed Oct/2
-    21.30  Grêmio Porto Alegre (BRA) v Flamengo RJ (BRA)        1-1 (0-0)
+    21.30  Grêmio Porto Alegre (BRA) v CR Flamengo        1-1 (0-0)
   Tue Oct/22
     21.30  Boca Juniors (ARG)      v River Plate (ARG)        1-0 (0-0)
   Wed Oct/23
-    21.30  Flamengo RJ (BRA)       v Grêmio Porto Alegre (BRA)  5-0 (1-0)
+    21.30  CR Flamengo       v Grêmio Porto Alegre (BRA)  5-0 (1-0)
 
 
 » Final
   Sat Nov/23
-    17.00  Flamengo RJ (BRA)       v River Plate (ARG)        2-1 (0-1)
+    17.00  CR Flamengo       v River Plate (ARG)        2-1 (0-1)

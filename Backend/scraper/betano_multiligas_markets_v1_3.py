@@ -9,6 +9,18 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 from seleniumbase import SB
 
+URL_CAMPEONATOS = {
+    "https://www.betano.bet.br/sport/futebol/brasil/brasileirao-serie-a-betano/10016/": "Brasileirao Serie A Betano",
+    "https://www.betano.bet.br/sport/futebol/competicoes/copa-libertadores/189817/": "Copa Libertadores",
+    "https://www.betano.bet.br/sport/futebol/brasil/brasileirao-serie-b/10017/": "Brasileirao Serie B",
+    "https://www.betano.bet.br/sport/futebol/competicoes/liga-dos-campeoes/188566/": "Liga dos Campeões",
+    "https://www.betano.bet.br/sport/futebol/competicoes/inglaterra/1/": "Inglaterra",
+    "https://www.betano.bet.br/sport/futebol/competicoes/espanha/2/": "Espanha",
+    "https://www.betano.bet.br/sport/futebol/competicoes/italia/87/": "Italia",
+    "https://www.betano.bet.br/sport/futebol/competicoes/alemanha/24/": "Alemanha",
+    "https://www.betano.bet.br/sport/futebol/competicoes/franca/23/": "França"
+}
+
 ODD_MIN, ODD_MAX = 1.01, 100.0
 TIT_1X2 = ["Resultado Final","1x2","Resultado 1X2","Resultado","Match Result","Full Time Result"]
 TIT_DC  = ["Chance Dupla","Dupla Chance","Double Chance"]
@@ -142,6 +154,7 @@ class BetanoScraper:
                             partida = f"{casa} x {fora}" if (casa or fora) else ""
                             data_hora = meta.get(href,{}).get("startDate","")
                             campeonato = meta.get(href,{}).get("league","")
+                            campeonato = URL_CAMPEONATOS.get(liga_url, campeonato)
 
                             _safe_open(sb, href)
                             time.sleep(0.8)

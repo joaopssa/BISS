@@ -12,7 +12,7 @@
     21.00  Coritiba PR             v Cruzeiro EC                1-0
   Sun May/15
     11.00  Botafogo FR             v São Paulo FC               0-1
-    11.00  Santa Cruz              v Vitória                    4-1
+    11.00  Santa Cruz              v EC Vitória                    4-1
     16.00  América MG              v Fluminense FC              0-1
     16.00  SC Corinthians Paulista v Grêmio FBPA                0-0
     16.00  Figueirense             v Ponte Preta                0-0
@@ -27,7 +27,7 @@
     11.00  Santos FC               v Coritiba PR                2-1
     11.00  Athletico Paranaense    v CA Mineiro                 1-1
     16.00  Chapecoense AF          v América MG                 3-1
-    16.00  Vitória                 v SC Corinthians Paulista    3-2
+    16.00  EC Vitória                 v SC Corinthians Paulista    3-2
     16.00  Grêmio FBPA             v CR Flamengo                1-0
     16.00  São Paulo FC            v SC Internacional           1-2
     18.30  SC Recife               v Botafogo FR                1-1
@@ -37,7 +37,7 @@
     19.30  Figueirense             v Santos FC                  2-2
     19.30  Botafogo FR             v Athletico Paranaense       2-1
     21.00  CR Flamengo             v Chapecoense AF             2-2
-    21.00  América MG              v Vitória                    1-1
+    21.00  América MG              v EC Vitória                    1-1
     21.45  SE Palmeiras            v Fluminense FC              2-0
     21.45  Coritiba PR             v São Paulo FC               1-1
     21.45  Santa Cruz              v Cruzeiro EC                4-1
@@ -55,7 +55,7 @@
     11.00  SC Recife               v SC Corinthians Paulista    0-2
     11.00  Ponte Preta             v CR Flamengo                1-2
     16.00  Fluminense FC           v Botafogo FR                1-0
-    16.00  Vitória                 v CA Mineiro                 1-1
+    16.00  EC Vitória                 v CA Mineiro                 1-1
     16.00  São Paulo FC            v SE Palmeiras               1-0
     18.30  Grêmio FBPA             v Coritiba PR                2-0
     18.30  Santos FC               v SC Internacional           0-1
@@ -72,7 +72,7 @@
   Thu Jun/2
     19.30  América MG              v Ponte Preta                1-2
     21.00  SE Palmeiras            v Grêmio FBPA                4-3
-    21.00  CR Flamengo             v Vitória                    1-0
+    21.00  CR Flamengo             v EC Vitória                    1-0
 
 » Matchday 6
   Sat Jun/4
@@ -85,7 +85,7 @@
     16.00  SC Recife               v CA Mineiro                 4-4
     16.00  CR Flamengo             v SE Palmeiras               1-2
     16.00  Grêmio FBPA             v Ponte Preta                1-0
-    16.00  Vitória                 v SC Internacional           1-0
+    16.00  EC Vitória                 v SC Internacional           1-0
     18.30  Cruzeiro EC             v São Paulo FC               0-1
 
 » Matchday 7
@@ -95,7 +95,7 @@
     18.30  Fluminense FC           v Grêmio FBPA                1-1
     21.00  São Paulo FC            v Athletico Paranaense       1-2
   Sun Jun/12
-    11.00  Botafogo FR             v Vitória                    1-1
+    11.00  Botafogo FR             v EC Vitória                    1-1
     11.00  Coritiba PR             v SC Recife                  3-2
     16.00  SE Palmeiras            v SC Corinthians Paulista    1-0
     16.00  CA Mineiro              v Cruzeiro EC                2-3
@@ -104,7 +104,7 @@
 
 » Matchday 8
   Wed Jun/15
-    19.30  São Paulo FC            v Vitória                    2-0
+    19.30  São Paulo FC            v EC Vitória                    2-0
     19.30  Ponte Preta             v Athletico Paranaense       3-2
     19.30  Chapecoense AF          v Grêmio FBPA                3-3
     21.00  Botafogo FR             v América MG                 3-1
@@ -123,7 +123,7 @@
     21.00  América MG              v Coritiba PR                2-1
   Sun Jun/19
     11.00  CA Mineiro              v Ponte Preta                3-0
-    11.00  Vitória                 v Chapecoense AF             1-2
+    11.00  EC Vitória                 v Chapecoense AF             1-2
     16.00  SC Recife               v Fluminense FC              2-1
     16.00  CR Flamengo             v São Paulo FC               2-2
     16.00  Figueirense             v SC Internacional           3-2
@@ -141,7 +141,7 @@
     21.45  CA Mineiro              v SC Corinthians Paulista    2-1
   Thu Jun/23
     15.00  Chapecoense AF          v Athletico Paranaense       0-0
-    19.15  Grêmio FBPA             v Vitória                    1-2
+    19.15  Grêmio FBPA             v EC Vitória                    1-2
     21.00  São Paulo FC            v SC Recife                  0-0
     21.30  Coritiba PR             v SC Internacional           1-1
 
@@ -155,7 +155,7 @@
     16.00  Athletico Paranaense    v Grêmio FBPA                2-0
     16.00  CR Flamengo             v Fluminense FC              1-2
     16.00  Santos FC               v São Paulo FC               3-0
-    16.00  Vitória                 v Ponte Preta                1-1
+    16.00  EC Vitória                 v Ponte Preta                1-1
     18.30  SC Recife               v Chapecoense AF             5-1
     18.30  Figueirense             v Coritiba PR                0-0
 
@@ -163,7 +163,7 @@
   Wed Jun/29
     19.30  Grêmio FBPA             v Santos FC                  3-2
     19.30  CR Flamengo             v SC Internacional           1-0
-    19.30  Vitória                 v SC Recife                  3-2
+    19.30  EC Vitória                 v SC Recife                  3-2
     21.00  Coritiba PR             v Athletico Paranaense       1-0
     21.00  Chapecoense AF          v Cruzeiro EC                3-2
     21.45  América MG              v SC Corinthians Paulista    0-2
@@ -179,7 +179,7 @@
     18.30  Athletico Paranaense    v América MG                 1-0
   Sun Jul/3
     11.00  SC Internacional        v Grêmio FBPA                0-1
-    11.00  Cruzeiro EC             v Vitória                    2-2
+    11.00  Cruzeiro EC             v EC Vitória                    2-2
     16.00  Botafogo FR             v Santa Cruz                 2-1
     16.00  Santos FC               v Chapecoense AF             3-0
     16.00  SC Corinthians Paulista v CR Flamengo                4-0
@@ -198,7 +198,7 @@
     11.00  Grêmio FBPA             v Figueirense                2-1
     16.00  Santa Cruz              v SC Internacional           1-0
     16.00  São Paulo FC            v América MG                 3-0
-    19.30  Vitória                 v Fluminense FC              0-0
+    19.30  EC Vitória                 v Fluminense FC              0-0
   Mon Jul/11
     20.00  Cruzeiro EC             v Athletico Paranaense       0-3
   Tue Jul/12
@@ -214,7 +214,7 @@
     16.00  Fluminense FC           v Cruzeiro EC                2-0
     16.00  SC Corinthians Paulista v São Paulo FC               1-1
     16.00  Figueirense             v Chapecoense AF             1-1
-    16.00  Athletico Paranaense    v Vitória                    1-1
+    16.00  Athletico Paranaense    v EC Vitória                    1-1
     18.30  SC Recife               v Grêmio FBPA                4-2
   Mon Jul/18
     20.00  CA Mineiro              v Coritiba PR                2-1
@@ -230,14 +230,14 @@
     16.00  Athletico Paranaense    v Fluminense FC              1-0
     16.00  Grêmio FBPA             v São Paulo FC               1-0
     16.00  Cruzeiro EC             v SC Recife                  1-2
-    18.30  Vitória                 v Santos FC                  2-3
+    18.30  EC Vitória                 v Santos FC                  2-3
   Mon Jul/25
     20.00  CR Flamengo             v América MG                 2-1
 
 » Matchday 17
   Sat Jul/30
     18.30  SC Recife               v Athletico Paranaense       2-0
-    18.30  Figueirense             v Vitória                    1-0
+    18.30  Figueirense             v EC Vitória                    1-0
     21.00  CA Mineiro              v Santa Cruz                 3-0
   Sun Jul/31
     11.00  Fluminense FC           v Ponte Preta                3-0
@@ -250,7 +250,7 @@
 
 » Matchday 18
   Wed Aug/3
-    19.30  Vitória                 v Coritiba PR                3-1
+    19.30  EC Vitória                 v Coritiba PR                3-1
     19.30  SC Recife               v América MG                 1-1
     21.45  Santos FC               v CR Flamengo                0-0
     21.45  Athletico Paranaense    v SC Corinthians Paulista    2-0
@@ -267,7 +267,7 @@
   Sun Aug/7
     11.00  América MG              v Santos FC                  1-0
     16.00  Coritiba PR             v Ponte Preta                3-1
-    16.00  SE Palmeiras            v Vitória                    2-1
+    16.00  SE Palmeiras            v EC Vitória                    2-1
     16.15  SC Internacional        v Fluminense FC              2-2
     16.15  Santa Cruz              v São Paulo FC               1-2
     18.30  Figueirense             v SC Recife                  1-1
@@ -282,7 +282,7 @@
   Sun Aug/14
     11.00  Grêmio FBPA             v SC Corinthians Paulista    3-0
     11.00  Fluminense FC           v América MG                 1-0
-    16.00  Vitória                 v Santa Cruz                 2-2
+    16.00  EC Vitória                 v Santa Cruz                 2-2
     16.00  Cruzeiro EC             v Coritiba PR                2-2
     16.00  Santos FC               v CA Mineiro                 3-0
     16.15  São Paulo FC            v Botafogo FR                0-1
@@ -304,7 +304,7 @@
     18.00  Coritiba PR             v Santos FC                  2-1
     18.30  Figueirense             v Cruzeiro EC                1-2
   Mon Aug/22
-    20.00  SC Corinthians Paulista v Vitória                    2-1
+    20.00  SC Corinthians Paulista v EC Vitória                    2-1
 
 » Matchday 22
   Sat Aug/27
@@ -316,7 +316,7 @@
     16.00  São Paulo FC            v Coritiba PR                0-0
     16.00  Chapecoense AF          v CR Flamengo                1-3
     16.00  Fluminense FC           v SE Palmeiras               0-2
-    18.30  Vitória                 v América MG                 2-1
+    18.30  EC Vitória                 v América MG                 2-1
     18.30  SC Recife               v SC Internacional           1-1
   Mon Aug/29
     20.00  Athletico Paranaense    v Botafogo FR                1-0
@@ -326,7 +326,7 @@
     16.00  Santa Cruz              v Chapecoense AF             2-2
     16.00  Figueirense             v Athletico Paranaense       1-0
     16.00  Botafogo FR             v Fluminense FC              1-0
-    19.30  CA Mineiro              v Vitória                    2-1
+    19.30  CA Mineiro              v EC Vitória                    2-1
     21.45  SE Palmeiras            v São Paulo FC               2-1
     21.45  CR Flamengo             v Ponte Preta                2-1
     21.45  Coritiba PR             v Grêmio FBPA                4-0
@@ -337,7 +337,7 @@
 
 » Matchday 24
   Sat Sep/10
-    18.30  Vitória                 v CR Flamengo                1-2
+    18.30  EC Vitória                 v CR Flamengo                1-2
   Sun Sep/11
     11.00  São Paulo FC            v Figueirense                3-1
     11.00  Chapecoense AF          v Coritiba PR                1-0
@@ -362,7 +362,7 @@
     19.30  Fluminense FC           v Chapecoense AF             1-2
     19.30  CA Mineiro              v SC Recife                  1-0
     21.00  São Paulo FC            v Cruzeiro EC                1-0
-    21.00  SC Internacional        v Vitória                    0-1
+    21.00  SC Internacional        v EC Vitória                    0-1
 
 » Matchday 26
   Sat Sep/17
@@ -374,7 +374,7 @@
     16.00  Athletico Paranaense    v São Paulo FC               1-0
     16.00  Cruzeiro EC             v CA Mineiro                 1-1
     16.00  Grêmio FBPA             v Fluminense FC              0-1
-    18.30  Vitória                 v Botafogo FR                0-1
+    18.30  EC Vitória                 v Botafogo FR                0-1
     18.30  Santos FC               v Santa Cruz                 3-2
   Mon Sep/19
     20.00  América MG              v SC Internacional           1-0
@@ -389,7 +389,7 @@
     11.00  Athletico Paranaense    v Ponte Preta                3-0
     16.00  Grêmio FBPA             v Chapecoense AF             1-0
     16.00  SC Corinthians Paulista v Fluminense FC              0-1
-    16.00  Vitória                 v São Paulo FC               2-0
+    16.00  EC Vitória                 v São Paulo FC               2-0
     16.00  CR Flamengo             v Cruzeiro EC                2-1
     18.30  CA Mineiro              v SC Internacional           3-1
 
@@ -397,7 +397,7 @@
   Sat Oct/1
     11.00  Fluminense FC           v SC Recife                  3-1
     16.00  São Paulo FC            v CR Flamengo                0-0
-    16.00  Chapecoense AF          v Vitória                    1-4
+    16.00  Chapecoense AF          v EC Vitória                    1-4
     16.00  Santos FC               v Athletico Paranaense       2-0
     16.30  Botafogo FR             v SC Corinthians Paulista    2-0
     16.30  Ponte Preta             v CA Mineiro                 1-2
@@ -410,7 +410,7 @@
 
 » Matchday 29
   Wed Oct/5
-    19.30  Vitória                 v Grêmio FBPA                0-1
+    19.30  EC Vitória                 v Grêmio FBPA                0-1
     19.30  Athletico Paranaense    v Chapecoense AF             3-1
     21.00  Santos FC               v Fluminense FC              2-1
     21.00  SC Corinthians Paulista v CA Mineiro                 0-0
@@ -432,7 +432,7 @@
     21.45  Botafogo FR             v SC Internacional           1-0
   Thu Oct/13
     19.30  CA Mineiro              v América MG                 3-0
-    19.30  Ponte Preta             v Vitória                    2-0
+    19.30  Ponte Preta             v EC Vitória                    2-0
     19.30  SE Palmeiras            v Cruzeiro EC                0-0
     21.00  São Paulo FC            v Santos FC                  0-1
     21.00  Grêmio FBPA             v Athletico Paranaense       1-0
@@ -448,7 +448,7 @@
     16.00  Cruzeiro EC             v SC Corinthians Paulista    0-2
     16.00  Fluminense FC           v São Paulo FC               2-1
     16.00  SC Internacional        v Flamengo                   2-2
-    16.00  Vitória                 v Coritiba PR                1-1
+    16.00  EC Vitória                 v Coritiba PR                1-1
     18.30  Athletico Paranaense    v Chapecoense AF             3-1
     19.30  Ponte Preta             v Santa Cruz                 3-0
 
@@ -463,7 +463,7 @@
     19.30  SC Recife               v Ponte Preta                1-1
     19.30  Chapecoense AF          v Fluminense FC              2-2
     21.00  São Paulo FC            v Cruzeiro EC                0-0
-    21.00  Grêmio FBPA             v Vitória                    1-1
+    21.00  Grêmio FBPA             v EC Vitória                    1-1
     21.45  CR Flamengo             v Athletico Paranaense       2-2
 
 » Matchday 33
@@ -475,7 +475,7 @@
     11.00  Coritiba PR             v Botafogo FR                4-2
     16.00  Santos FC               v São Paulo FC               1-0
     16.00  SE Palmeiras            v Sport Recife               2-1
-    16.00  Vitória                 v Cruzeiro EC                1-0
+    16.00  EC Vitória                 v Cruzeiro EC                1-0
     18.30  Chapecoense AF          v Ponte Preta                0-0
     19.30  Grêmio FBPA             v SC Corinthians Paulista    0-0
   Mon Oct/24
@@ -489,7 +489,7 @@
     21.45  SC Corinthians Paulista v América MG                 1-1
   Thu Oct/27
     19.30  SC Recife               v Chapecoense AF             1-0
-    19.30  Fluminense FC           v Vitória                    4-0
+    19.30  Fluminense FC           v EC Vitória                    4-0
     21.00  São Paulo FC            v Ponte Preta                2-0
     21.00  Grêmio FBPA             v Cruzeiro EC                2-0
   Sat Oct/29
@@ -504,7 +504,7 @@
     11.00  Coritiba PR             v Cruzeiro EC                3-0
     11.00  SE Palmeiras            v SC Internacional           1-0
     16.00  Chapecoense AF          v São Paulo FC               0-0
-    16.00  Vitória                 v Grêmio FBPA                2-2
+    16.00  EC Vitória                 v Grêmio FBPA                2-2
     16.00  SC Corinthians Paulista v Flamengo                   0-1
     18.30  Figueirense             v Fluminense FC              2-2
     19.30  Santa Cruz              v Santos FC                  2-5
@@ -520,7 +520,7 @@
     11.00  Athletico Paranaense    v Santa Cruz                 0-0
     16.00  São Paulo FC            v SC Corinthians Paulista    4-0
     16.00  Grêmio FBPA             v América MG                 3-0
-    16.00  SC Internacional        v Vitória                    1-1
+    16.00  SC Internacional        v EC Vitória                    1-1
     17.00  Santos FC               v Chapecoense AF             3-2
     19.30  SC Recife               v Cruzeiro EC                2-0
   Mon Nov/14
@@ -536,7 +536,7 @@
     21.45  CR Flamengo             v Coritiba PR                2-0
   Thu Nov/17
     19.30  Chapecoense AF          v SE Palmeiras               1-1
-    21.00  Vitória                 v Figueirense                4-0
+    21.00  EC Vitória                 v Figueirense                4-0
   Sun Nov/20
     17.00  América MG              v Santos FC                  1-0
     17.00  Grêmio FBPA             v Santa Cruz                 3-0
@@ -544,13 +544,13 @@
 » Matchday 38
   Sun Dec/11
     17.00  Botafogo FR             v CR Flamengo                2-1
-    17.00  SE Palmeiras            v Vitória                    2-1
+    17.00  SE Palmeiras            v EC Vitória                    2-1
     17.00  São Paulo FC            v Santa Cruz                 5-0
-    17.00  Coritiba PR             v Atlético PR                0-0
+    17.00  Coritiba PR             v Athletico Paranaense                0-0
     17.00  Fluminense FC           v SC Internacional           1-1
     17.00  Santos FC               v América MG                 1-0
     17.00  Ponte Preta             v SC Recife                  0-0
-    17.00  Grêmio FBPA             v Atlético MG                1-1
+    17.00  Grêmio FBPA             v CA Mineiro                1-1
     17.00  Figueirense             v Cruzeiro EC                0-0
 
     17.00  Chapecoense AF          v CA Mineiro

@@ -19,6 +19,7 @@ module.exports = {
   "Mirassol": "Mirassol FC",
   "Vasco da Gama": "CR Vasco da Gama",
   "Fortaleza": "Fortaleza EC",
+  "Palmeiras": "SE Palmeiras",
 
   // --- Brasileirão Série B ---
   "Amazonas AM": "Amazonas FC AM",
@@ -26,9 +27,9 @@ module.exports = {
   "Athletico-PR": "Athletico Paranaense",
   "Atlético-GO": "Atlético Goianiense",
   "Grêmio Novorizontino": "Grêmio Novorizontino",
-  "Avaí": "Avaí FC",
+  "Avaí": "Avaí SC",
   "CRB": "CRB Maceió",
-  "Coritiba": "Coritiba FC",
+  "Coritiba": "Coritiba PR",
   "Volta Redonda": "Volta Redonda RJ",
   "Vila Nova": "Vila Nova GO",
   "Paysandu": "Paysandu SC",
@@ -39,6 +40,7 @@ module.exports = {
   "Botafogo-SP": "Botafogo SP",
   "Cuiabá": "Cuiabá EC",
   "Chapecoense": "Chapecoense AF",
+  "Goiás": "Goiás GO",
 
   // --- Premier League ---
   "Arsenal": "Arsenal FC",

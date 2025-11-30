@@ -64,21 +64,21 @@
 » Gruppe 1
   Wed Mar/4
     19.15  Barcelona (ECU)         v Independiente del Valle (ECU)  0-3 (0-0)
-    21.30  Atlético Junior (COL)   v Flamengo RJ (BRA)        1-2 (0-1)
+    21.30  Atlético Junior (COL)   v CR Flamengo        1-2 (0-1)
   Wed Mar/11
     21.30  Independiente del Valle (ECU) v Atlético Junior (COL)    3-0 (0-0)
-           Flamengo RJ (BRA)       v Barcelona (ECU)          3-0 (2-0)
+           CR Flamengo       v Barcelona (ECU)          3-0 (2-0)
   Thu Sep/17
-    21.00  Independiente del Valle (ECU) v Flamengo RJ (BRA)        5-0 (1-0)
+    21.00  Independiente del Valle (ECU) v CR Flamengo        5-0 (1-0)
     23.00  Barcelona (ECU)         v Atlético Junior (COL)    1-2 (1-1)
   Tue Sep/22
-    19.15  Barcelona (ECU)         v Flamengo RJ (BRA)        1-2 (0-2)
+    19.15  Barcelona (ECU)         v CR Flamengo        1-2 (0-2)
     21.30  Atlético Junior (COL)   v Independiente del Valle (ECU)  4-1 (1-1)
   Wed Sep/30
     21.30  Atlético Junior (COL)   v Barcelona (ECU)          0-2 (0-1)
-           Flamengo RJ (BRA)       v Independiente del Valle (ECU)  4-0 (2-0)
+           CR Flamengo       v Independiente del Valle (ECU)  4-0 (2-0)
   Wed Oct/21
-    21.30  Flamengo RJ (BRA)       v Atlético Junior (COL)    3-1 (2-0)
+    21.30  CR Flamengo       v Atlético Junior (COL)    3-1 (2-0)
            Independiente del Valle (ECU) v Barcelona (ECU)          2-0 (1-0)
 
 
@@ -251,7 +251,7 @@
   Tue Nov/24
     19.15  Athletico Paranaense (BRA) v River Plate (ARG)        1-1 (0-0)
            LDU Quito (ECU)         v Santos FC (BRA)          1-2 (1-1)
-    21.30  Racing Club (ARG)       v Flamengo RJ (BRA)        1-1 (1-1)
+    21.30  Racing Club (ARG)       v CR Flamengo        1-1 (1-1)
   Wed Nov/25
     19.15  Independiente del Valle (ECU) v Nacional (URU)           0-0
            Delfín SC (ECU)         v Palmeiras (BRA)          1-3 (0-2)
@@ -263,7 +263,7 @@
   Tue Dec/1
     19.15  River Plate (ARG)       v Athletico Paranaense (BRA)  1-0 (0-0)
            Santos FC (BRA)         v LDU Quito (ECU)          0-1 (0-0)
-    21.30  Flamengo RJ (BRA)       v Racing Club (ARG)        3-5 pen. (1-1, 0-0)
+    21.30  CR Flamengo       v Racing Club (ARG)        3-5 pen. (1-1, 0-0)
   Wed Dec/2
     19.15  Nacional (URU)          v Independiente del Valle (ECU)  4-2 pen. (0-0)
            Palmeiras (BRA)         v Delfín SC (ECU)          5-0 (1-0)

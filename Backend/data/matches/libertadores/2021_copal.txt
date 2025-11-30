@@ -209,24 +209,24 @@
 
 » Gruppe 7
   Tue Apr/20
-    21.30  Vélez Sarsfield (ARG)   v Flamengo RJ (BRA)        2-3 (1-1)
+    21.30  Vélez Sarsfield (ARG)   v CR Flamengo        2-3 (1-1)
   Wed Apr/21
     23.00  Unión La Calera (CHI)   v LDU Quito (ECU)          2-2 (1-0)
   Tue Apr/27
-    19.15  Flamengo RJ (BRA)       v Unión La Calera (CHI)    4-1 (2-0)
+    19.15  CR Flamengo       v Unión La Calera (CHI)    4-1 (2-0)
            LDU Quito (ECU)         v Vélez Sarsfield (ARG)    3-1 (1-1)
   Tue May/4
     19.15  Unión La Calera (CHI)   v Vélez Sarsfield (ARG)    0-2 (0-1)
-    21.30  LDU Quito (ECU)         v Flamengo RJ (BRA)        2-3 (0-2)
+    21.30  LDU Quito (ECU)         v CR Flamengo        2-3 (0-2)
   Tue May/11
-    21.30  Unión La Calera (CHI)   v Flamengo RJ (BRA)        2-2 (2-1)
+    21.30  Unión La Calera (CHI)   v CR Flamengo        2-2 (2-1)
   Thu May/13
     19.00  Vélez Sarsfield (ARG)   v LDU Quito (ECU)          3-1 (1-0)
   Wed May/19
     19.00  Vélez Sarsfield (ARG)   v Unión La Calera (CHI)    2-1 (2-1)
-    21.00  Flamengo RJ (BRA)       v LDU Quito (ECU)          2-2 (1-1)
+    21.00  CR Flamengo       v LDU Quito (ECU)          2-2 (1-1)
   Thu May/27
-    21.00  Flamengo RJ (BRA)       v Vélez Sarsfield (ARG)    0-0
+    21.00  CR Flamengo       v Vélez Sarsfield (ARG)    0-0
            LDU Quito (ECU)         v Unión La Calera (CHI)    5-2 (3-0)
 
 
@@ -262,7 +262,7 @@
   Wed Jul/14
     19.15  Universidad Católica (CHI) v Palmeiras (BRA)          0-1 (0-1)
            Vélez Sarsfield (ARG)   v Barcelona (ECU)          1-0 (1-0)
-    21.30  Defensa y Justicia (ARG) v Flamengo RJ (BRA)        0-1 (0-1)
+    21.30  Defensa y Justicia (ARG) v CR Flamengo        0-1 (0-1)
            River Plate (ARG)       v Argentinos Juniors (ARG)  1-1 (1-1)
   Thu Jul/15
     21.30  Club Olimpia (PAR)      v Internacional (BRA)      0-0
@@ -272,7 +272,7 @@
   Wed Jul/21
     19.15  Palmeiras (BRA)         v Universidad Católica (CHI)  1-0 (1-0)
            Barcelona (ECU)         v Vélez Sarsfield (ARG)    3-1 (1-0)
-    21.30  Flamengo RJ (BRA)       v Defensa y Justicia (ARG)  4-1 (1-1)
+    21.30  CR Flamengo       v Defensa y Justicia (ARG)  4-1 (1-1)
            Argentinos Juniors (ARG) v River Plate (ARG)        0-2 (0-1)
   Thu Jul/22
     21.30  Internacional (BRA)     v Club Olimpia (PAR)       4-5 pen. (0-0)
@@ -284,14 +284,14 @@
   Tue Aug/10
     21.30  São Paulo FC (BRA)      v Palmeiras (BRA)          1-1 (0-0)
   Wed Aug/11
-    19.15  Club Olimpia (PAR)      v Flamengo RJ (BRA)        1-4 (1-2)
+    19.15  Club Olimpia (PAR)      v CR Flamengo        1-4 (1-2)
     21.30  River Plate (ARG)       v Atlético Mineiro (BRA)   0-1 (0-0)
   Thu Aug/12
     21.30  Fluminense RJ (BRA)     v Barcelona (ECU)          2-2 (1-0)
   Tue Aug/17
     21.30  Palmeiras (BRA)         v São Paulo FC (BRA)       3-0 (1-0)
   Wed Aug/18
-    19.15  Flamengo RJ (BRA)       v Club Olimpia (PAR)       5-1 (2-1)
+    19.15  CR Flamengo       v Club Olimpia (PAR)       5-1 (2-1)
     21.30  Atlético Mineiro (BRA)  v River Plate (ARG)        3-0 (2-0)
   Thu Aug/19
     21.30  Barcelona (ECU)         v Fluminense RJ (BRA)      1-1 (0-0)
@@ -301,13 +301,13 @@
   Tue Sep/21
     21.30  Palmeiras (BRA)         v Atlético Mineiro (BRA)   0-0
   Wed Sep/22
-    21.30  Flamengo RJ (BRA)       v Barcelona (ECU)          2-0 (2-0)
+    21.30  CR Flamengo       v Barcelona (ECU)          2-0 (2-0)
   Tue Sep/28
     21.30  Atlético Mineiro (BRA)  v Palmeiras (BRA)          1-1 (0-0)
   Wed Sep/29
-    21.30  Barcelona (ECU)         v Flamengo RJ (BRA)        0-2 (0-1)
+    21.30  Barcelona (ECU)         v CR Flamengo        0-2 (0-1)
 
 
 » Final
   Sat Nov/27
-    17.00  Palmeiras (BRA)         v Flamengo RJ (BRA)        2-1 a.e.t. (1-1, 1-0)
+    17.00  Palmeiras (BRA)         v CR Flamengo        2-1 a.e.t. (1-1, 1-0)

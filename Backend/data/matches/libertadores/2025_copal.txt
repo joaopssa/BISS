@@ -83,7 +83,7 @@
     19.00  CA Central Córdoba (ARG) v LDU de Quito (ECU)       0-0
            EC Bahia (BRA)          v SC Internacional (BRA)   1-1 (0-0)
            CS Cristal (PER)        v SE Palmeiras (BRA)       2-3 (0-1)
-    21.30  Deportivo Táchira FC (VEN) v CR Flamengo (BRA)        0-1 (0-0)
+    21.30  Deportivo Táchira FC (VEN) v CR Flamengo        0-1 (0-0)
 
 
 » Group, Matchday 2
@@ -97,7 +97,7 @@
   Wed Apr/9
     19.00  Club Nacional de Football (URU) v EC Bahia (BRA)           0-1 (0-0)
            Olimpia Asuncion (PAR)  v CA Vélez Sarsfield (ARG)  0-4 (0-1)
-    21.30  CR Flamengo (BRA)       v CA Central Córdoba (ARG)  1-2 (0-2)
+    21.30  CR Flamengo       v CA Central Córdoba (ARG)  1-2 (0-2)
            Club Bolívar (BOL)      v CS Cristal (PER)         3-0 (2-0)
            SE Palmeiras (BRA)      v Club Cerro Porteño (PAR)  1-0 (1-0)
     23.00  LDU de Quito (ECU)      v Deportivo Táchira FC (VEN)  2-0 (0-0)
@@ -112,7 +112,7 @@
 
 » Group, Matchday 3
   Tue Apr/22
-    19.00  LDU de Quito (ECU)      v CR Flamengo (BRA)        0-0
+    19.00  LDU de Quito (ECU)      v CR Flamengo        0-0
            Club Alianza Lima (PER) v CA Talleres (ARG)        3-2 (1-0)
     20.00  Carabobo FC (VEN)       v CF Universidad de Chile (CHI)  1-1 (1-1)
     21.30  CSD Colo-Colo (CHI)     v Racing Club (ARG)        1-1 (1-0)
@@ -143,7 +143,7 @@
     19.00  Deportivo Táchira FC (VEN) v LDU de Quito (ECU)       2-3 (0-2)
            EC Bahia (BRA)          v Club Nacional de Football (URU)  1-3 (0-0)
     21.00  CF Universidad de Chile (CHI) v Estudiantes de La Plata (ARG)  0-3 (0-3)
-    21.30  CA Central Córdoba (ARG) v CR Flamengo (BRA)        1-1 (0-1)
+    21.30  CA Central Córdoba (ARG) v CR Flamengo        1-1 (0-1)
            Club Cerro Porteño (PAR) v SE Palmeiras (BRA)       0-2 (0-1)
     23.00  CS Cristal (PER)        v Club Bolívar (BOL)       2-1 (1-0)
   Thu May/8
@@ -173,7 +173,7 @@
            Club Nacional de Football (URU) v SC Internacional (BRA)   0-2 (0-1)
            SE Palmeiras (BRA)      v Club Bolívar (BOL)       2-0 (2-0)
     21.30  CA River Plate (ARG)    v CAR Independiente del Valle (ECU)  6-2 (3-2)
-           CR Flamengo (BRA)       v LDU de Quito (ECU)       2-0 (1-0)
+           CR Flamengo       v LDU de Quito (ECU)       2-0 (1-0)
 
 
 » Group, Matchday 6
@@ -187,7 +187,7 @@
   Wed May/28
     19.00  Club Nacional de Football (URU) v CDC Atlético Nacional (COL)  1-0 (0-0)
            SC Internacional (BRA)  v EC Bahia (BRA)           2-1 (0-0)
-    21.30  CR Flamengo (BRA)       v Deportivo Táchira FC (VEN)  1-0 (0-0)
+    21.30  CR Flamengo       v Deportivo Táchira FC (VEN)  1-0 (0-0)
            LDU de Quito (ECU)      v CA Central Córdoba (ARG)  3-0 (2-0)
            SE Palmeiras (BRA)      v CS Cristal (PER)         6-0 (3-0)
            Club Bolívar (BOL)      v Club Cerro Porteño (PAR)  4-0 (2-0)
@@ -205,7 +205,7 @@
            CA Peñarol (URU)        v Racing Club (ARG)        1-0 (0-0)
   Wed Aug/13
     19.00  Club Cerro Porteño (PAR) v Estudiantes de La Plata (ARG)  0-1 (0-0)
-    21.30  CR Flamengo (BRA)       v SC Internacional (BRA)   1-0 (1-0)
+    21.30  CR Flamengo       v SC Internacional (BRA)   1-0 (1-0)
   Thu Aug/14
     19.00  Botafogo FR (BRA)       v LDU de Quito (ECU)       1-0 (1-0)
     21.30  Club Universitario de Deportes (PER) v SE Palmeiras (BRA)       0-4 (0-3)
@@ -216,7 +216,7 @@
            Racing Club (ARG)       v CA Peñarol (URU)         3-1 (1-1)
   Wed Aug/20
     19.00  Estudiantes de La Plata (ARG) v Club Cerro Porteño (PAR)  0-0
-    21.30  SC Internacional (BRA)  v CR Flamengo (BRA)        0-2 (0-1)
+    21.30  SC Internacional (BRA)  v CR Flamengo        0-2 (0-1)
   Thu Aug/21
     19.00  LDU de Quito (ECU)      v Botafogo FR (BRA)        2-0 (1-0)
     21.30  SE Palmeiras (BRA)      v Club Universitario de Deportes (PER)  0-0
@@ -230,27 +230,27 @@
     21.30  CA River Plate (ARG)    v SE Palmeiras (BRA)       1-2 (0-2)
   Thu Sep/18
     19.00  LDU de Quito (ECU)      v São Paulo FC (BRA)       2-0 (1-0)
-    21.30  CR Flamengo (BRA)       v Estudiantes de La Plata (ARG)  2-1 (2-0)
+    21.30  CR Flamengo       v Estudiantes de La Plata (ARG)  2-1 (2-0)
   Tue Sep/23
     19.00  Racing Club (ARG)       v CA Vélez Sarsfield (ARG)  1-0 (0-0)
   Wed Sep/24
     21.30  SE Palmeiras (BRA)      v CA River Plate (ARG)     3-1 (0-1)
   Thu Sep/25
     19.00  São Paulo FC (BRA)      v LDU de Quito (ECU)       0-1 (0-1)
-    21.30  Estudiantes de La Plata (ARG) v CR Flamengo (BRA)        2-4 pen. (1-0, 1-0)
+    21.30  Estudiantes de La Plata (ARG) v CR Flamengo        2-4 pen. (1-0, 1-0)
 
 
 » Finals, Semifinals
   Wed Oct/22
-    21.30  CR Flamengo (BRA)       v Racing Club (ARG)        1-0 (0-0)
+    21.30  CR Flamengo       v Racing Club (ARG)        1-0 (0-0)
   Thu Oct/23
     21.30  LDU de Quito (ECU)      v SE Palmeiras (BRA)       3-0 (3-0)
   Wed Oct/29
-    21.50  Racing Club (ARG)       v CR Flamengo (BRA)        0-0
+    21.50  Racing Club (ARG)       v CR Flamengo        0-0
   Thu Oct/30
     21.30  SE Palmeiras (BRA)      v LDU de Quito (ECU)       4-0 (2-0)
 
 
 » Finals, Final
   Sat Nov/29
-    18.00  SE Palmeiras (BRA)      v CR Flamengo (BRA)
+    18.00  SE Palmeiras (BRA)      v CR Flamengo

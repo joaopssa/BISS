@@ -11,7 +11,7 @@
     16.00  SE Palmeiras            v Cuiabá MT                2-1 (1-1)
            América MG         v Fluminense FC            0-3 (0-0)
     18.30  Fortaleza EC            v SC Internacional         1-1 (0-0)
-           CA Paranaense           v Goiás EC                 2-0 (1-0)
+           CA Paranaense           v Goiás GO                 2-0 (1-0)
            RB Bragantino           v EC Bahia                 2-1 (0-1)
            Botafogo FR             v São Paulo FC             2-1 (1-1)
     21.00  CA Mineiro              v CR Vasco da Gama         1-2 (1-2)
@@ -32,7 +32,7 @@
     16.00  Santos FC               v CA Mineiro               0-0
            CR Vasco da Gama        v SE Palmeiras             2-2 (2-1)
     18.30  Coritiba PR            v Fortaleza EC             0-3 (0-0)
-    19.00  Goiás EC                v SC Corinthians Paulista  3-1 (1-1)
+    19.00  Goiás GO                v SC Corinthians Paulista  3-1 (1-1)
   Mon Apr/24
     20.00  EC Bahia                v Botafogo FR              1-2 (1-1)
 
@@ -47,7 +47,7 @@
     21.00  CA Mineiro              v CA Paranaense            2-1 (1-0)
   Sun Apr/30
     16.00  CR Flamengo             v Botafogo FR              2-3 (0-2)
-    18.30  SC Internacional        v Goiás EC                 1-0 (0-0)
+    18.30  SC Internacional        v Goiás GO                 1-0 (0-0)
            Cuiabá MT               v Grêmio FBPA              1-2 (1-1)
   Mon May/1
     20.00  CR Vasco da Gama        v EC Bahia                 0-1 (0-1)
@@ -63,7 +63,7 @@
            EC Bahia                v Coritiba PR             3-1 (1-0)
            São Paulo FC            v SC Internacional         2-0 (1-0)
     18.30  Grêmio FBPA             v RB Bragantino            3-3 (1-1)
-           Goiás EC                v SE Palmeiras             0-5 (0-1)
+           Goiás GO                v SE Palmeiras             0-5 (0-1)
            Botafogo FR             v CA Mineiro               2-0 (1-0)
   Mon May/8
     20.00  SC Corinthians Paulista v Fortaleza EC             1-1 (0-0)
@@ -74,7 +74,7 @@
     19.00  Santos FC               v EC Bahia                 3-0 (2-0)
            RB Bragantino           v América MG          2-2 (2-1)
            SC Internacional        v CA Paranaense            0-2 (0-0)
-    20.00  CR Flamengo             v Goiás EC                 2-0 (1-0)
+    20.00  CR Flamengo             v Goiás GO                 2-0 (1-0)
            Cuiabá MT               v CA Mineiro               0-4 (0-1)
     21.30  SE Palmeiras            v Grêmio FBPA              4-1 (1-1)
            Cruzeiro EC             v Fluminense FC            0-2 (0-1)
@@ -96,12 +96,12 @@
            SC Corinthians Paulista v São Paulo FC             1-1 (1-1)
     18.30  América MG         v Cruzeiro EC              0-4 (0-1)
            CA Paranaense           v Coritiba PR             3-2 (0-1)
-           Goiás EC                v Botafogo FR              2-1 (1-1)
+           Goiás GO                v Botafogo FR              2-1 (1-1)
 
 
 » Matchday 7
   Sat May/20
-    16.00  EC Bahia                v Goiás EC                 1-1 (1-1)
+    16.00  EC Bahia                v Goiás GO                 1-1 (1-1)
     18.30  RB Bragantino           v CA Paranaense            2-0 (1-0)
            América MG         v Fortaleza EC             2-1 (2-1)
            Coritiba PR            v CA Mineiro               1-2 (1-1)
@@ -121,7 +121,7 @@
            CA Paranaense           v Grêmio FBPA              1-2 (1-1)
     18.30  Cuiabá MT               v Coritiba PR             1-1 (1-0)
            CR Flamengo             v Cruzeiro EC              1-1 (1-1)
-    21.00  São Paulo FC            v Goiás EC                 2-1 (0-1)
+    21.00  São Paulo FC            v Goiás GO                 2-1 (0-1)
   Sun May/28
     16.00  SC Internacional        v EC Bahia                 2-0 (0-0)
            SC Corinthians Paulista v Fluminense FC            2-0 (0-0)
@@ -141,7 +141,7 @@
     16.00  Fluminense FC           v RB Bragantino            2-1 (2-0)
            Grêmio FBPA             v São Paulo FC             2-1 (2-1)
     18.30  SE Palmeiras            v Coritiba PR             3-1 (2-0)
-           Goiás EC                v Cuiabá MT                0-1 (0-0)
+           Goiás GO                v Cuiabá MT                0-1 (0-0)
   Mon Jun/5
     20.00  CR Vasco da Gama        v CR Flamengo              1-4 (0-4)
 
@@ -157,7 +157,7 @@
     11.00  América MG         v CA Paranaense            2-2 (0-1)
     16.00  SC Internacional        v CR Vasco da Gama         2-1 (2-1)
            São Paulo FC            v SE Palmeiras             0-2 (0-1)
-    18.30  Goiás EC                v Fluminense FC            2-2 (1-1)
+    18.30  Goiás GO                v Fluminense FC            2-2 (1-1)
            CR Flamengo             v Grêmio FBPA              3-0 (1-0)
 
 
@@ -172,7 +172,7 @@
     19.00  Grêmio FBPA             v América MG          3-1 (1-1)
     20.00  Cuiabá MT               v Botafogo FR              0-1 (0-0)
            Coritiba PR            v SC Internacional         0-1 (0-0)
-           CR Vasco da Gama        v Goiás EC                 0-1 (0-0)
+           CR Vasco da Gama        v Goiás GO                 0-1 (0-0)
     21.30  RB Bragantino           v CR Flamengo              4-0 (1-0)
 
 
@@ -186,7 +186,7 @@
     16.00  Grêmio FBPA             v Coritiba PR             5-1 (1-1)
            SE Palmeiras            v Botafogo FR              0-1 (0-1)
     18.30  América MG         v SC Internacional         1-2 (1-0)
-           RB Bragantino           v Goiás EC                 2-0 (2-0)
+           RB Bragantino           v Goiás GO                 2-0 (2-0)
            Santos FC               v CR Flamengo              2-3 (1-1)
   Mon Jun/26
     21.00  CR Vasco da Gama        v Cuiabá MT                1-0 (0-0)
@@ -205,7 +205,7 @@
            CA Mineiro              v América MG          2-2 (2-0)
     18.30  Cuiabá MT               v Santos FC                3-0 (0-0)
   Mon Jul/3
-    20.00  Goiás EC                v Coritiba PR             1-2 (0-2)
+    20.00  Goiás GO                v Coritiba PR             1-2 (0-2)
 
 
 » Matchday 14
@@ -216,7 +216,7 @@
            Coritiba PR            v América MG          3-1 (2-1)
     21.00  SE Palmeiras            v CR Flamengo              1-1 (1-0)
   Sun Jul/9
-    11.00  Santos FC               v Goiás EC                 4-3 (3-1)
+    11.00  Santos FC               v Goiás GO                 4-3 (3-1)
     16.00  RB Bragantino           v São Paulo FC             0-0
            Fluminense FC           v SC Internacional         2-0 (2-0)
     18.30  Grêmio FBPA             v Botafogo FR              0-2 (0-0)
@@ -234,7 +234,7 @@
     18.30  CA Paranaense           v EC Bahia                 2-0 (2-0)
            SC Internacional        v SE Palmeiras             0-0
   Mon Jul/17
-    20.00  Goiás EC                v CA Mineiro               0-0
+    20.00  Goiás GO                v CA Mineiro               0-0
 
 
 » Matchday 16
@@ -245,7 +245,7 @@
            Cuiabá MT               v São Paulo FC             2-1 (0-0)
     21.00  Grêmio FBPA             v CA Mineiro               1-0 (1-0)
   Sun Jul/23
-    16.00  Cruzeiro EC             v Goiás EC                 0-1 (0-1)
+    16.00  Cruzeiro EC             v Goiás GO                 0-1 (0-1)
            Santos FC               v Botafogo FR              2-2 (1-0)
            RB Bragantino           v SC Internacional         0-0
     18.30  CR Vasco da Gama        v CA Paranaense            0-2 (0-0)
@@ -265,14 +265,14 @@
     11.00  São Paulo FC            v EC Bahia                 0-0
     16.00  América MG         v SE Palmeiras             1-4 (1-2)
            Botafogo FR             v Coritiba PR             4-1 (3-1)
-    18.30  Goiás EC                v Grêmio FBPA              1-1 (0-0)
+    18.30  Goiás GO                v Grêmio FBPA              1-1 (0-0)
 
 
 » Matchday 18
   Sat Aug/5
     16.00  Santos FC               v CA Paranaense            1-1 (0-1)
     18.30  SC Internacional        v SC Corinthians Paulista  2-2 (1-1)
-           Goiás EC                v Fortaleza EC             1-0 (0-0)
+           Goiás GO                v Fortaleza EC             1-0 (0-0)
     21.00  Fluminense FC           v SE Palmeiras             2-1 (1-0)
   Sun Aug/6
     16.00  São Paulo FC            v CA Mineiro               0-2 (0-1)
@@ -290,7 +290,7 @@
     11.00  CA Mineiro              v EC Bahia                 1-0 (0-0)
     16.00  SC Corinthians Paulista v Coritiba PR             3-1 (0-1)
            Grêmio FBPA             v Fluminense FC            2-1 (2-1)
-           América MG         v Goiás EC                 0-1 (0-1)
+           América MG         v Goiás GO                 0-1 (0-1)
     18.30  CR Flamengo             v São Paulo FC             1-1 (0-1)
            Fortaleza EC            v Santos FC                4-0 (0-0)
   Mon Aug/14
@@ -313,13 +313,13 @@
            Coritiba PR            v CR Flamengo              2-3 (1-2)
            Santos FC               v Grêmio FBPA              2-1 (0-0)
   Mon Aug/21
-    20.00  Goiás EC                v CA Paranaense            1-1 (0-1)
+    20.00  Goiás GO                v CA Paranaense            1-1 (0-1)
 
 
 » Matchday 21
   Sat Aug/26
     18.30  CR Flamengo             v SC Internacional         0-0
-    21.00  SC Corinthians Paulista v Goiás EC                 1-1 (0-0)
+    21.00  SC Corinthians Paulista v Goiás GO                 1-1 (0-0)
   Sun Aug/27
     11.00  RB Bragantino           v Cuiabá MT                2-0 (0-0)
     16.00  América MG         v São Paulo FC             2-1 (0-0)
@@ -333,7 +333,7 @@
 
 » Matchday 22
   Sat Sep/2
-    16.00  Goiás EC                v SC Internacional         0-0
+    16.00  Goiás GO                v SC Internacional         0-0
            CA Paranaense           v CA Mineiro               1-1 (0-1)
     21.00  Botafogo FR             v CR Flamengo              1-2 (1-1)
   Sun Sep/3
@@ -356,7 +356,7 @@
     21.30  RB Bragantino           v Grêmio FBPA              2-0 (2-0)
   Fri Sep/15
     20.00  Cuiabá MT               v América MG          2-2 (2-2)
-    21.30  SE Palmeiras            v Goiás EC                 1-0 (0-0)
+    21.30  SE Palmeiras            v Goiás GO                 1-0 (0-0)
   Sat Sep/16
     16.00  CR Vasco da Gama        v Fluminense FC            4-2 (1-0)
     21.00  CA Mineiro              v Botafogo FR              1-0 (0-0)
@@ -376,7 +376,7 @@
   Tue Sep/19
     21.30  América MG         v RB Bragantino            0-2 (0-1)
   Wed Sep/20
-    19.00  Goiás EC                v CR Flamengo              0-0
+    19.00  Goiás GO                v CR Flamengo              0-0
     21.30  São Paulo FC            v Fortaleza EC             1-2 (0-1)
            Fluminense FC           v Cruzeiro EC              1-0 (0-0)
   Thu Sep/21
@@ -412,12 +412,12 @@
            Santos FC               v CR Vasco da Gama         4-1 (3-1)
     18.30  RB Bragantino           v SE Palmeiras             2-1 (0-1)
   Mon Oct/2
-    20.00  Botafogo FR             v Goiás EC                 1-1 (0-1)
+    20.00  Botafogo FR             v Goiás GO                 1-1 (0-1)
 
 
 » Matchday 26
   Sat Oct/7
-    16.00  Goiás EC                v EC Bahia                 4-6 (3-3)
+    16.00  Goiás GO                v EC Bahia                 4-6 (3-3)
     18.30  CR Vasco da Gama        v São Paulo FC             0-0
     21.00  SC Corinthians Paulista v CR Flamengo              1-1 (0-0)
   Sun Oct/8
@@ -437,7 +437,7 @@
     20.00  América MG         v Botafogo FR              1-2 (1-1)
            Coritiba PR            v Cuiabá MT                0-3 (0-1)
     21.30  EC Bahia                v SC Internacional         1-0 (1-0)
-           Goiás EC                v São Paulo FC             2-0 (2-0)
+           Goiás GO                v São Paulo FC             2-0 (2-0)
            CR Vasco da Gama        v Fortaleza EC             1-0 (0-0)
   Thu Oct/19
     19.00  Cruzeiro EC             v CR Flamengo              0-2 (0-2)
@@ -449,7 +449,7 @@
 » Matchday 28
   Sat Oct/21
     18.30  São Paulo FC            v Grêmio FBPA              3-0 (1-0)
-           Cuiabá MT               v Goiás EC                 1-1 (0-1)
+           Cuiabá MT               v Goiás GO                 1-1 (0-1)
            EC Bahia                v Fortaleza EC             2-0 (1-0)
     21.00  Botafogo FR             v CA Paranaense            1-1 (1-1)
   Sun Oct/22
@@ -465,7 +465,7 @@
   Wed Oct/25
     19.00  CA Paranaense           v América MG          3-2 (3-1)
            RB Bragantino           v CA Mineiro               1-2 (0-1)
-           Fluminense FC           v Goiás EC                 5-3 (2-2)
+           Fluminense FC           v Goiás GO                 5-3 (2-2)
     20.00  Cruzeiro EC             v EC Bahia                 3-0 (1-0)
            SE Palmeiras            v São Paulo FC             5-0 (3-0)
     21.30  Cuiabá MT               v SC Corinthians Paulista  0-1 (0-0)
@@ -481,7 +481,7 @@
            América MG         v Grêmio FBPA              3-4 (2-2)
     22.00  CA Mineiro              v Fluminense FC            2-0 (0-0)
   Sun Oct/29
-    16.00  Goiás EC                v CR Vasco da Gama         1-1 (0-0)
+    16.00  Goiás GO                v CR Vasco da Gama         1-1 (0-0)
            CA Paranaense           v São Paulo FC             1-1 (1-1)
     18.30  SC Corinthians Paulista v Santos FC                1-1 (0-0)
            SC Internacional        v Coritiba PR             3-4 (1-2)
@@ -500,7 +500,7 @@
            Botafogo FR             v SE Palmeiras             3-4 (3-0)
   Thu Nov/2
     17.00  Cuiabá MT               v CR Vasco da Gama         0-2 (0-0)
-    18.00  Goiás EC                v RB Bragantino            0-2 (0-1)
+    18.00  Goiás GO                v RB Bragantino            0-2 (0-1)
     20.00  São Paulo FC            v Cruzeiro EC              1-0 (0-0)
 
 
@@ -513,7 +513,7 @@
     16.00  RB Bragantino           v SC Corinthians Paulista  1-0 (1-0)
            Cruzeiro EC             v SC Internacional         1-2 (0-1)
            Fortaleza EC            v CR Flamengo              0-2 (0-1)
-    18.30  Coritiba PR            v Goiás EC                 0-1 (0-0)
+    18.30  Coritiba PR            v Goiás GO                 0-1 (0-0)
   Mon Nov/6
     19.00  CR Vasco da Gama        v Botafogo FR              1-0 (1-0)
     21.00  Santos FC               v Cuiabá MT                0-0
@@ -528,7 +528,7 @@
     21.30  CR Flamengo             v SE Palmeiras             3-0 (2-0)
   Thu Nov/9
     19.00  SC Corinthians Paulista v CA Mineiro               1-1 (1-0)
-           Goiás EC                v Santos FC                0-1 (0-0)
+           Goiás GO                v Santos FC                0-1 (0-0)
     20.00  EC Bahia                v Cuiabá MT                0-3 (0-1)
            Botafogo FR             v Grêmio FBPA              3-4 (2-1)
 
@@ -543,7 +543,7 @@
            RB Bragantino           v Botafogo FR              2-2 (1-2)
     18.30  Cuiabá MT               v Fortaleza EC             2-1 (1-0)
            EC Bahia                v CA Paranaense            1-1 (0-0)
-           CA Mineiro              v Goiás EC                 2-1 (1-0)
+           CA Mineiro              v Goiás GO                 2-1 (1-0)
            Santos FC               v São Paulo FC             0-0
            CR Vasco da Gama        v América MG          2-1 (1-1)
 
@@ -587,7 +587,7 @@
            Fortaleza EC            v SE Palmeiras             2-2 (1-0)
            SC Internacional        v RB Bragantino            1-0 (1-0)
   Mon Nov/27
-    21.00  Goiás EC                v Cruzeiro EC              0-1 (0-0)
+    21.00  Goiás GO                v Cruzeiro EC              0-1 (0-0)
 
 
 » Matchday 36
@@ -601,7 +601,7 @@
     21.30  Coritiba PR            v Botafogo FR              1-1 (0-0)
            SE Palmeiras            v América MG          4-0 (2-0)
   Thu Nov/30
-    19.00  Grêmio FBPA             v Goiás EC                 2-1 (0-1)
+    19.00  Grêmio FBPA             v Goiás GO                 2-1 (0-1)
     20.00  Cruzeiro EC             v CA Paranaense            1-1 (0-0)
     20.30  RB Bragantino           v Fortaleza EC             1-2 (1-2)
 
@@ -617,13 +617,13 @@
            RB Bragantino           v Coritiba PR             1-0 (0-0)
            Grêmio FBPA             v CR Vasco da Gama         1-0 (0-0)
            CA Paranaense           v Santos FC                3-0 (1-0)
-           Fortaleza EC            v Goiás EC                 1-0 (1-0)
+           Fortaleza EC            v Goiás GO                 1-0 (1-0)
            América MG         v EC Bahia                 3-2 (2-1)
 
 
 » Matchday 38
   Wed Dec/6
-    19.00  Goiás EC                v América MG          1-0 (1-0)
+    19.00  Goiás GO                v América MG          1-0 (1-0)
     21.30  Cuiabá MT               v CA Paranaense            3-0 (2-0)
            EC Bahia                v CA Mineiro               4-1 (2-1)
            Coritiba PR            v SC Corinthians Paulista  0-2 (0-2)

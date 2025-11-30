@@ -131,22 +131,22 @@
   Tue Mar/7
     21.00  Athletico Paranaense (BRA) v Universidad Católica (CHI)  2-2 (1-0)
   Wed Mar/8
-    21.45  Flamengo RJ (BRA)       v San Lorenzo (ARG)        4-0 (0-0)
+    21.45  CR Flamengo       v San Lorenzo (ARG)        4-0 (0-0)
   Wed Mar/15
     19.30  San Lorenzo (ARG)       v Athletico Paranaense (BRA)  0-1 (0-1)
-    21.45  Universidad Católica (CHI) v Flamengo RJ (BRA)        1-0 (0-0)
+    21.45  Universidad Católica (CHI) v CR Flamengo        1-0 (0-0)
   Wed Apr/12
     21.00  Universidad Católica (CHI) v San Lorenzo (ARG)        1-1 (0-1)
-    21.45  Flamengo RJ (BRA)       v Athletico Paranaense (BRA)  2-1 (2-0)
+    21.45  CR Flamengo       v Athletico Paranaense (BRA)  2-1 (2-0)
   Tue Apr/25
     21.00  San Lorenzo (ARG)       v Universidad Católica (CHI)  2-1 (1-0)
   Wed Apr/26
-    21.45  Athletico Paranaense (BRA) v Flamengo RJ (BRA)        2-1 (1-0)
+    21.45  Athletico Paranaense (BRA) v CR Flamengo        2-1 (1-0)
   Wed May/3
     21.00  Athletico Paranaense (BRA) v San Lorenzo (ARG)        0-3 (0-1)
-    21.45  Flamengo RJ (BRA)       v Universidad Católica (CHI)  3-1 (0-0)
+    21.45  CR Flamengo       v Universidad Católica (CHI)  3-1 (0-0)
   Wed May/17
-    21.45  San Lorenzo (ARG)       v Flamengo RJ (BRA)        2-1 (0-1)
+    21.45  San Lorenzo (ARG)       v CR Flamengo        2-1 (0-1)
            Universidad Católica (CHI) v Athletico Paranaense (BRA)  2-3 (1-0)
 
 
