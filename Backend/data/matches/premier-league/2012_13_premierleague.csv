@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Sat,2012-08-18,Arsenal FC,Sunderland AFC,0-0,
+1,Sat,2012-08-18,Fulham FC,Norwich City,5-0,2-0
+1,Sat,2012-08-18,Queens Park Rangers,Swansea City,0-5,0-1
+1,Sat,2012-08-18,Reading FC,Stoke City,1-1,0-1
+1,Sat,2012-08-18,West Bromwich Albion,Liverpool FC,3-0,1-0
+1,Sat,2012-08-18,West Ham United,Aston Villa,1-0,1-0
+1,Sat,2012-08-18,Newcastle United,Tottenham Hotspur,2-1,0-0
+1,Sun,2012-08-19,Manchester City,Southampton FC,3-2,1-0
+1,Sun,2012-08-19,Wigan Athletic,Chelsea FC,0-2,0-2
+1,Mon,2012-08-20,Everton FC,Manchester United,1-0,0-0
+3,Wed,2012-08-22,Chelsea FC,Reading FC,4-2,1-2
+2,Sat,2012-08-25,Aston Villa,Everton FC,1-3,0-3
+2,Sat,2012-08-25,Manchester United,Fulham FC,3-2,3-1
+2,Sat,2012-08-25,Norwich City,Queens Park Rangers,1-1,1-1
+2,Sat,2012-08-25,Southampton FC,Wigan Athletic,0-2,0-0
+2,Sat,2012-08-25,Tottenham Hotspur,West Bromwich Albion,1-1,0-0
+2,Sat,2012-08-25,Chelsea FC,Newcastle United,2-0,2-0
+2,Sat,2012-08-25,Swansea City,West Ham United,3-0,2-0
+2,Sun,2012-08-26,Liverpool FC,Manchester City,2-2,1-0
+2,Sun,2012-08-26,Stoke City,Arsenal FC,0-0,
+3,Sat,2012-09-01,Manchester City,Queens Park Rangers,3-1,1-0
+3,Sat,2012-09-01,West Ham United,Fulham FC,3-0,3-0
+3,Sat,2012-09-01,Swansea City,Sunderland AFC,2-2,1-2
+3,Sat,2012-09-01,Tottenham Hotspur,Norwich City,1-1,0-0
+3,Sat,2012-09-01,West Bromwich Albion,Everton FC,2-0,0-0
+3,Sat,2012-09-01,Wigan Athletic,Stoke City,2-2,1-1
+3,Sun,2012-09-02,Liverpool FC,Arsenal FC,0-2,0-1
+3,Sun,2012-09-02,Newcastle United,Aston Villa,1-1,0-1
+3,Sun,2012-09-02,Southampton FC,Manchester United,2-3,1-1
+4,Sat,2012-09-15,Fulham FC,West Bromwich Albion,3-0,2-0
+4,Sat,2012-09-15,Norwich City,West Ham United,0-0,
+4,Sat,2012-09-15,Arsenal FC,Southampton FC,6-1,4-1
+4,Sat,2012-09-15,Aston Villa,Swansea City,2-0,1-0
+4,Sat,2012-09-15,Sunderland AFC,Liverpool FC,1-1,1-0
+4,Sat,2012-09-15,Manchester United,Wigan Athletic,4-0,0-0
+4,Sat,2012-09-15,Queens Park Rangers,Chelsea FC,0-0,
+4,Sat,2012-09-15,Stoke City,Manchester City,1-1,1-1
+4,Sun,2012-09-16,Reading FC,Tottenham Hotspur,1-3,0-1
+4,Mon,2012-09-17,Everton FC,Newcastle United,2-2,1-0
+5,Sat,2012-09-22,Wigan Athletic,Fulham FC,1-2,0-1
+5,Sat,2012-09-22,Swansea City,Everton FC,0-3,0-2
+5,Sat,2012-09-22,Chelsea FC,Stoke City,1-0,0-0
+5,Sat,2012-09-22,Southampton FC,Aston Villa,4-1,0-1
+5,Sat,2012-09-22,West Bromwich Albion,Reading FC,1-0,0-0
+5,Sat,2012-09-22,West Ham United,Sunderland AFC,1-1,0-1
+5,Sun,2012-09-23,Liverpool FC,Manchester United,1-2,0-0
+5,Sun,2012-09-23,Newcastle United,Norwich City,1-0,1-0
+5,Sun,2012-09-23,Manchester City,Arsenal FC,1-1,1-0
+5,Sun,2012-09-23,Tottenham Hotspur,Queens Park Rangers,2-1,0-1
+6,Sat,2012-09-29,Stoke City,Swansea City,2-0,2-0
+6,Sat,2012-09-29,Arsenal FC,Chelsea FC,1-2,1-1
+6,Sat,2012-09-29,Everton FC,Southampton FC,3-1,3-1
+6,Sat,2012-09-29,Fulham FC,Manchester City,1-2,1-1
+6,Sat,2012-09-29,Norwich City,Liverpool FC,2-5,0-2
+6,Sat,2012-09-29,Reading FC,Newcastle United,2-2,0-0
+6,Sat,2012-09-29,Manchester United,Tottenham Hotspur,2-3,0-2
+6,Sat,2012-09-29,Sunderland AFC,Wigan Athletic,1-0,0-0
+6,Sun,2012-09-30,Aston Villa,West Bromwich Albion,1-1,0-0
+6,Mon,2012-10-01,Queens Park Rangers,West Ham United,1-2,0-2
+7,Sat,2012-10-06,West Ham United,Arsenal FC,1-3,1-1
+7,Sat,2012-10-06,Manchester City,Sunderland AFC,3-0,1-0
+7,Sat,2012-10-06,Chelsea FC,Norwich City,4-1,3-1
+7,Sat,2012-10-06,Swansea City,Reading FC,2-2,0-2
+7,Sat,2012-10-06,West Bromwich Albion,Queens Park Rangers,3-2,2-1
+7,Sat,2012-10-06,Wigan Athletic,Everton FC,2-2,2-1
+7,Sun,2012-10-07,Liverpool FC,Stoke City,0-0,
+7,Sun,2012-10-07,Southampton FC,Fulham FC,2-2,1-0
+7,Sun,2012-10-07,Newcastle United,Manchester United,0-3,0-2
+7,Sun,2012-10-07,Tottenham Hotspur,Aston Villa,2-0,0-0
+8,Sat,2012-10-20,Norwich City,Arsenal FC,1-0,1-0
+8,Sat,2012-10-20,Tottenham Hotspur,Chelsea FC,2-4,0-1
+8,Sat,2012-10-20,Fulham FC,Aston Villa,1-0,0-0
+8,Sat,2012-10-20,Liverpool FC,Reading FC,1-0,1-0
+8,Sat,2012-10-20,Manchester United,Stoke City,4-2,2-1
+8,Sat,2012-10-20,Swansea City,Wigan Athletic,2-1,0-0
+8,Sat,2012-10-20,West Bromwich Albion,Manchester City,1-2,0-0
+8,Sat,2012-10-20,West Ham United,Southampton FC,4-1,0-0
+8,Sun,2012-10-21,Sunderland AFC,Newcastle United,1-1,0-1
+8,Sun,2012-10-21,Queens Park Rangers,Everton FC,1-1,1-1
+9,Sat,2012-10-27,Manchester City,Swansea City,1-0,0-0
+9,Sat,2012-10-27,Aston Villa,Norwich City,1-1,1-0
+9,Sat,2012-10-27,Arsenal FC,Queens Park Rangers,1-0,0-0
+9,Sat,2012-10-27,Reading FC,Fulham FC,3-3,1-0
+9,Sat,2012-10-27,Stoke City,Sunderland AFC,0-0,
+9,Sat,2012-10-27,Wigan Athletic,West Ham United,2-1,1-0
+9,Sun,2012-10-28,Chelsea FC,Manchester United,2-3,1-2
+9,Sun,2012-10-28,Everton FC,Liverpool FC,2-2,2-2
+9,Sun,2012-10-28,Newcastle United,West Bromwich Albion,2-1,1-0
+9,Sun,2012-10-28,Southampton FC,Tottenham Hotspur,1-2,0-2
+10,Sat,2012-11-03,West Ham United,Manchester City,0-0,
+10,Sat,2012-11-03,Manchester United,Arsenal FC,2-1,1-0
+10,Sat,2012-11-03,Fulham FC,Everton FC,2-2,1-0
+10,Sat,2012-11-03,Norwich City,Stoke City,1-0,1-0
+10,Sat,2012-11-03,Sunderland AFC,Aston Villa,0-1,0-0
+10,Sat,2012-11-03,Swansea City,Chelsea FC,1-1,0-0
+10,Sat,2012-11-03,Tottenham Hotspur,Wigan Athletic,0-1,0-0
+10,Sun,2012-11-04,Queens Park Rangers,Reading FC,1-1,0-1
+10,Sun,2012-11-04,Liverpool FC,Newcastle United,1-1,0-1
+10,Mon,2012-11-05,West Bromwich Albion,Southampton FC,2-0,1-0
+11,Sat,2012-11-10,Southampton FC,Swansea City,1-1,0-0
+11,Sat,2012-11-10,Arsenal FC,Fulham FC,3-3,2-2
+11,Sat,2012-11-10,Everton FC,Sunderland AFC,2-1,0-1
+11,Sat,2012-11-10,Reading FC,Norwich City,0-0,
+11,Sat,2012-11-10,Wigan Athletic,West Bromwich Albion,1-2,1-2
+11,Sat,2012-11-10,Stoke City,Queens Park Rangers,1-0,0-0
+11,Sat,2012-11-10,Aston Villa,Manchester United,2-3,1-0
+11,Sun,2012-11-11,Manchester City,Tottenham Hotspur,2-1,0-1
+11,Sun,2012-11-11,Newcastle United,West Ham United,0-1,0-1
+11,Sun,2012-11-11,Chelsea FC,Liverpool FC,1-1,1-0
+12,Sat,2012-11-17,Liverpool FC,Wigan Athletic,3-0,0-0
+12,Sat,2012-11-17,Arsenal FC,Tottenham Hotspur,5-2,3-1
+12,Sat,2012-11-17,West Bromwich Albion,Chelsea FC,2-1,1-1
+12,Sat,2012-11-17,Manchester City,Aston Villa,5-0,1-0
+12,Sat,2012-11-17,Newcastle United,Swansea City,1-2,0-0
+12,Sat,2012-11-17,Queens Park Rangers,Southampton FC,1-3,0-2
+12,Sat,2012-11-17,Reading FC,Everton FC,2-1,0-1
+12,Sat,2012-11-17,Norwich City,Manchester United,1-0,0-0
+12,Sun,2012-11-18,Fulham FC,Sunderland AFC,1-3,0-0
+12,Mon,2012-11-19,West Ham United,Stoke City,1-1,0-1
+13,Sat,2012-11-24,Sunderland AFC,West Bromwich Albion,2-4,0-2
+13,Sat,2012-11-24,Everton FC,Norwich City,1-1,1-0
+13,Sat,2012-11-24,Manchester United,Queens Park Rangers,3-1,0-0
+13,Sat,2012-11-24,Stoke City,Fulham FC,1-0,1-0
+13,Sat,2012-11-24,Wigan Athletic,Reading FC,3-2,0-1
+13,Sat,2012-11-24,Aston Villa,Arsenal FC,0-0,
+13,Sun,2012-11-25,Chelsea FC,Manchester City,0-0,
+13,Sun,2012-11-25,Swansea City,Liverpool FC,0-0,
+13,Sun,2012-11-25,Southampton FC,Newcastle United,2-0,1-0
+13,Sun,2012-11-25,Tottenham Hotspur,West Ham United,3-1,1-0
+14,Tue,2012-11-27,Sunderland AFC,Queens Park Rangers,0-0,
+14,Tue,2012-11-27,Aston Villa,Reading FC,1-0,0-0
+14,Wed,2012-11-28,Swansea City,West Bromwich Albion,3-1,3-1
+14,Wed,2012-11-28,Southampton FC,Norwich City,1-1,1-1
+14,Wed,2012-11-28,Stoke City,Newcastle United,2-1,0-0
+14,Wed,2012-11-28,Wigan Athletic,Manchester City,0-2,0-0
+14,Wed,2012-11-28,Tottenham Hotspur,Liverpool FC,2-1,2-0
+14,Wed,2012-11-28,Chelsea FC,Fulham FC,0-0,
+14,Wed,2012-11-28,Everton FC,Arsenal FC,1-1,1-1
+14,Wed,2012-11-28,Manchester United,West Ham United,1-0,1-0
+15,Sat,2012-12-01,Fulham FC,Tottenham Hotspur,0-3,0-0
+15,Sat,2012-12-01,West Ham United,Chelsea FC,3-1,0-1
+15,Sat,2012-12-01,Arsenal FC,Swansea City,0-2,0-0
+15,Sat,2012-12-01,Reading FC,Manchester United,3-4,3-4
+15,Sat,2012-12-01,Liverpool FC,Southampton FC,1-0,1-0
+15,Sat,2012-12-01,Manchester City,Everton FC,1-1,1-1
+15,Sat,2012-12-01,Queens Park Rangers,Aston Villa,1-1,1-1
+15,Sat,2012-12-01,West Bromwich Albion,Stoke City,0-1,0-0
+15,Sun,2012-12-02,Norwich City,Sunderland AFC,2-1,2-1
+15,Mon,2012-12-03,Newcastle United,Wigan Athletic,3-0,2-0
+16,Sat,2012-12-08,Sunderland AFC,Chelsea FC,1-3,0-2
+16,Sat,2012-12-08,Arsenal FC,West Bromwich Albion,2-0,1-0
+16,Sat,2012-12-08,Aston Villa,Stoke City,0-0,
+16,Sat,2012-12-08,Southampton FC,Reading FC,1-0,0-0
+16,Sat,2012-12-08,Swansea City,Norwich City,3-4,0-3
+16,Sat,2012-12-08,Wigan Athletic,Queens Park Rangers,2-2,1-1
+16,Sun,2012-12-09,West Ham United,Liverpool FC,2-3,2-1
+16,Sun,2012-12-09,Manchester City,Manchester United,2-3,0-2
+16,Sun,2012-12-09,Everton FC,Tottenham Hotspur,2-1,0-0
+16,Mon,2012-12-10,Fulham FC,Newcastle United,2-1,1-0
+2,Tue,2012-12-11,Sunderland AFC,Reading FC,3-0,2-0
+17,Sat,2012-12-15,Newcastle United,Manchester City,1-3,0-2
+17,Sat,2012-12-15,Liverpool FC,Aston Villa,1-3,0-2
+17,Sat,2012-12-15,Manchester United,Sunderland AFC,3-1,2-0
+17,Sat,2012-12-15,Norwich City,Wigan Athletic,2-1,1-0
+17,Sat,2012-12-15,Queens Park Rangers,Fulham FC,2-1,0-0
+17,Sat,2012-12-15,Stoke City,Everton FC,1-1,0-1
+17,Sun,2012-12-16,West Bromwich Albion,West Ham United,0-0,
+17,Sun,2012-12-16,Tottenham Hotspur,Swansea City,1-0,0-0
+17,Mon,2012-12-17,Reading FC,Arsenal FC,2-5,0-3
+18,Sat,2012-12-22,Liverpool FC,Fulham FC,4-0,2-0
+18,Sat,2012-12-22,Wigan Athletic,Arsenal FC,0-1,0-0
+18,Sat,2012-12-22,Manchester City,Reading FC,1-0,0-0
+18,Sat,2012-12-22,Newcastle United,Queens Park Rangers,1-0,0-0
+18,Sat,2012-12-22,Southampton FC,Sunderland AFC,0-1,0-1
+18,Sat,2012-12-22,Tottenham Hotspur,Stoke City,0-0,
+18,Sat,2012-12-22,West Bromwich Albion,Norwich City,2-1,1-1
+18,Sat,2012-12-22,West Ham United,Everton FC,1-2,1-0
+18,Sun,2012-12-23,Swansea City,Manchester United,1-1,1-1
+18,Sun,2012-12-23,Chelsea FC,Aston Villa,8-0,3-0
+19,Wed,2012-12-26,Norwich City,Chelsea FC,0-1,0-1
+19,Wed,2012-12-26,Everton FC,Wigan Athletic,2-1,0-0
+19,Wed,2012-12-26,Fulham FC,Southampton FC,1-1,1-0
+19,Wed,2012-12-26,Manchester United,Newcastle United,4-3,1-2
+19,Wed,2012-12-26,Stoke City,Liverpool FC,3-1,2-1
+19,Wed,2012-12-26,Queens Park Rangers,West Bromwich Albion,1-2,0-1
+19,Wed,2012-12-26,Reading FC,Swansea City,0-0,
+19,Wed,2012-12-26,Sunderland AFC,Manchester City,1-0,0-0
+19,Wed,2012-12-26,Aston Villa,Tottenham Hotspur,0-4,0-0
+20,Sat,2012-12-29,Arsenal FC,Newcastle United,7-3,1-1
+20,Sat,2012-12-29,Stoke City,Southampton FC,3-3,1-3
+20,Sat,2012-12-29,Sunderland AFC,Tottenham Hotspur,1-2,1-0
+20,Sat,2012-12-29,Aston Villa,Wigan Athletic,0-3,0-1
+20,Sat,2012-12-29,Fulham FC,Swansea City,1-2,0-1
+20,Sat,2012-12-29,Manchester United,West Bromwich Albion,2-0,1-0
+20,Sat,2012-12-29,Norwich City,Manchester City,3-4,1-2
+20,Sat,2012-12-29,Reading FC,West Ham United,1-0,1-0
+20,Sun,2012-12-30,Everton FC,Chelsea FC,1-2,1-1
+20,Sun,2012-12-30,Queens Park Rangers,Liverpool FC,0-3,0-3
+21,Tue,2013-01-01,Wigan Athletic,Manchester United,0-4,0-2
+21,Tue,2013-01-01,Tottenham Hotspur,Reading FC,3-1,1-1
+21,Tue,2013-01-01,West Bromwich Albion,Fulham FC,1-2,0-1
+21,Tue,2013-01-01,Manchester City,Stoke City,3-0,1-0
+21,Tue,2013-01-01,Swansea City,Aston Villa,2-2,1-1
+21,Tue,2013-01-01,West Ham United,Norwich City,2-1,2-0
+21,Tue,2013-01-01,Southampton FC,Arsenal FC,1-1,1-1
+21,Wed,2013-01-02,Liverpool FC,Sunderland AFC,3-0,2-0
+21,Wed,2013-01-02,Newcastle United,Everton FC,1-2,1-1
+21,Wed,2013-01-02,Chelsea FC,Queens Park Rangers,0-1,0-0
+22,Sat,2013-01-12,Fulham FC,Wigan Athletic,1-1,1-0
+22,Sat,2013-01-12,Sunderland AFC,West Ham United,3-0,1-0
+22,Sat,2013-01-12,Queens Park Rangers,Tottenham Hotspur,0-0,
+22,Sat,2013-01-12,Aston Villa,Southampton FC,0-1,0-1
+22,Sat,2013-01-12,Everton FC,Swansea City,0-0,
+22,Sat,2013-01-12,Stoke City,Chelsea FC,0-4,0-1
+22,Sat,2013-01-12,Norwich City,Newcastle United,0-0,
+22,Sat,2013-01-12,Reading FC,West Bromwich Albion,3-2,0-1
+22,Sun,2013-01-13,Manchester United,Liverpool FC,2-1,1-0
+22,Sun,2013-01-13,Arsenal FC,Manchester City,0-2,0-2
+17,Wed,2013-01-16,Chelsea FC,Southampton FC,2-2,2-0
+23,Sat,2013-01-19,Manchester City,Fulham FC,2-0,1-0
+23,Sat,2013-01-19,Liverpool FC,Norwich City,5-0,2-0
+23,Sat,2013-01-19,West Bromwich Albion,Aston Villa,2-2,0-2
+23,Sat,2013-01-19,Newcastle United,Reading FC,1-2,1-0
+23,Sat,2013-01-19,Swansea City,Stoke City,3-1,0-0
+23,Sat,2013-01-19,West Ham United,Queens Park Rangers,1-1,0-1
+23,Sat,2013-01-19,Wigan Athletic,Sunderland AFC,2-3,1-3
+23,Sun,2013-01-20,Tottenham Hotspur,Manchester United,1-1,0-1
+23,Sun,2013-01-20,Chelsea FC,Arsenal FC,2-1,2-0
+23,Mon,2013-01-21,Southampton FC,Everton FC,0-0,
+19,Wed,2013-01-23,Arsenal FC,West Ham United,5-1,1-1
+24,Tue,2013-01-29,Queens Park Rangers,Manchester City,0-0,
+24,Tue,2013-01-29,Stoke City,Wigan Athletic,2-2,1-0
+24,Tue,2013-01-29,Sunderland AFC,Swansea City,0-0,
+24,Tue,2013-01-29,Aston Villa,Newcastle United,1-2,0-2
+24,Wed,2013-01-30,Arsenal FC,Liverpool FC,2-2,0-1
+24,Wed,2013-01-30,Norwich City,Tottenham Hotspur,1-1,1-0
+24,Wed,2013-01-30,Everton FC,West Bromwich Albion,2-1,2-0
+24,Wed,2013-01-30,Manchester United,Southampton FC,2-1,2-1
+24,Wed,2013-01-30,Reading FC,Chelsea FC,2-2,0-1
+24,Wed,2013-01-30,Fulham FC,West Ham United,3-1,1-0
+25,Sat,2013-02-02,Queens Park Rangers,Norwich City,0-0,
+25,Sat,2013-02-02,Arsenal FC,Stoke City,1-0,0-0
+25,Sat,2013-02-02,Everton FC,Aston Villa,3-3,1-2
+25,Sat,2013-02-02,Newcastle United,Chelsea FC,3-2,1-0
+25,Sat,2013-02-02,Reading FC,Sunderland AFC,2-1,1-1
+25,Sat,2013-02-02,West Ham United,Swansea City,1-0,0-0
+25,Sat,2013-02-02,Wigan Athletic,Southampton FC,2-2,1-0
+25,Sat,2013-02-02,Fulham FC,Manchester United,0-1,0-0
+25,Sun,2013-02-03,Manchester City,Liverpool FC,2-2,1-1
+25,Sun,2013-02-03,West Bromwich Albion,Tottenham Hotspur,0-1,0-0
+26,Sat,2013-02-09,Tottenham Hotspur,Newcastle United,2-1,1-1
+26,Sat,2013-02-09,Chelsea FC,Wigan Athletic,4-1,1-0
+26,Sat,2013-02-09,Norwich City,Fulham FC,0-0,
+26,Sat,2013-02-09,Stoke City,Reading FC,2-1,0-0
+26,Sat,2013-02-09,Sunderland AFC,Arsenal FC,0-1,0-1
+26,Sat,2013-02-09,Swansea City,Queens Park Rangers,4-1,2-0
+26,Sat,2013-02-09,Southampton FC,Manchester City,3-1,2-1
+26,Sun,2013-02-10,Manchester United,Everton FC,2-0,2-0
+26,Sun,2013-02-10,Aston Villa,West Ham United,2-1,0-0
+26,Mon,2013-02-11,Liverpool FC,West Bromwich Albion,0-2,0-0
+27,Sun,2013-02-17,Liverpool FC,Swansea City,5-0,1-0
+27,Sat,2013-02-23,Fulham FC,Stoke City,1-0,1-0
+27,Sat,2013-02-23,Arsenal FC,Aston Villa,2-1,1-0
+27,Sat,2013-02-23,Norwich City,Everton FC,2-1,0-1
+27,Sat,2013-02-23,Queens Park Rangers,Manchester United,0-2,0-1
+27,Sat,2013-02-23,Reading FC,Wigan Athletic,0-3,0-2
+27,Sat,2013-02-23,West Bromwich Albion,Sunderland AFC,2-1,1-0
+27,Sun,2013-02-24,Newcastle United,Southampton FC,4-2,2-1
+27,Sun,2013-02-24,Manchester City,Chelsea FC,2-0,0-0
+27,Mon,2013-02-25,West Ham United,Tottenham Hotspur,2-3,1-1
+28,Sat,2013-03-02,Chelsea FC,West Bromwich Albion,1-0,1-0
+28,Sat,2013-03-02,Everton FC,Reading FC,3-1,1-0
+28,Sat,2013-03-02,Manchester United,Norwich City,4-0,1-0
+28,Sat,2013-03-02,Southampton FC,Queens Park Rangers,1-2,1-1
+28,Sat,2013-03-02,Stoke City,West Ham United,0-1,0-1
+28,Sat,2013-03-02,Sunderland AFC,Fulham FC,2-2,1-2
+28,Sat,2013-03-02,Swansea City,Newcastle United,1-0,0-0
+28,Sat,2013-03-02,Wigan Athletic,Liverpool FC,0-4,0-3
+28,Sun,2013-03-03,Tottenham Hotspur,Arsenal FC,2-1,2-0
+28,Mon,2013-03-04,Aston Villa,Manchester City,0-1,0-1
+29,Sat,2013-03-09,Norwich City,Southampton FC,0-0,
+29,Sat,2013-03-09,Queens Park Rangers,Sunderland AFC,3-1,1-1
+29,Sat,2013-03-09,Reading FC,Aston Villa,1-2,1-2
+29,Sat,2013-03-09,West Bromwich Albion,Swansea City,2-1,1-1
+29,Sun,2013-03-10,Liverpool FC,Tottenham Hotspur,3-2,1-1
+29,Sun,2013-03-10,Newcastle United,Stoke City,2-1,0-0
+30,Sat,2013-03-16,Swansea City,Arsenal FC,0-2,0-0
+30,Sat,2013-03-16,Stoke City,West Bromwich Albion,0-0,
+30,Sat,2013-03-16,Southampton FC,Liverpool FC,3-1,2-1
+30,Sat,2013-03-16,Aston Villa,Queens Park Rangers,3-2,1-1
+30,Sat,2013-03-16,Everton FC,Manchester City,2-0,1-0
+30,Sat,2013-03-16,Manchester United,Reading FC,1-0,1-0
+30,Sun,2013-03-17,Chelsea FC,West Ham United,2-0,1-0
+30,Sun,2013-03-17,Wigan Athletic,Newcastle United,2-1,1-0
+30,Sun,2013-03-17,Tottenham Hotspur,Fulham FC,0-1,0-0
+30,Sun,2013-03-17,Sunderland AFC,Norwich City,1-1,1-1
+31,Sat,2013-03-30,Manchester City,Newcastle United,4-0,2-0
+31,Sat,2013-03-30,Everton FC,Stoke City,1-0,1-0
+31,Sat,2013-03-30,Wigan Athletic,Norwich City,1-0,0-0
+31,Sat,2013-03-30,West Ham United,West Bromwich Albion,3-1,2-0
+31,Sat,2013-03-30,Sunderland AFC,Manchester United,0-1,0-1
+31,Sat,2013-03-30,Arsenal FC,Reading FC,4-1,1-0
+31,Sat,2013-03-30,Southampton FC,Chelsea FC,2-1,2-1
+31,Sat,2013-03-30,Swansea City,Tottenham Hotspur,1-2,0-2
+31,Sun,2013-03-31,Aston Villa,Liverpool FC,1-2,1-0
+31,Mon,2013-04-01,Fulham FC,Queens Park Rangers,3-2,3-1
+32,Sat,2013-04-06,West Bromwich Albion,Arsenal FC,1-2,0-1
+32,Sat,2013-04-06,Stoke City,Aston Villa,1-3,0-1
+32,Sat,2013-04-06,Reading FC,Southampton FC,0-2,0-1
+32,Sat,2013-04-06,Norwich City,Swansea City,2-2,1-1
+32,Sun,2013-04-07,Chelsea FC,Sunderland AFC,2-1,0-1
+32,Sun,2013-04-07,Queens Park Rangers,Wigan Athletic,1-1,0-0
+32,Sun,2013-04-07,Newcastle United,Fulham FC,1-0,0-0
+32,Sun,2013-04-07,Tottenham Hotspur,Everton FC,2-2,1-1
+32,Sun,2013-04-07,Liverpool FC,West Ham United,0-0,
+32,Mon,2013-04-08,Manchester United,Manchester City,1-2,0-0
+33,Sat,2013-04-13,Southampton FC,West Ham United,1-1,0-0
+33,Sat,2013-04-13,Aston Villa,Fulham FC,1-1,0-0
+33,Sat,2013-04-13,Reading FC,Liverpool FC,0-0,
+33,Sat,2013-04-13,Arsenal FC,Norwich City,3-1,0-0
+33,Sat,2013-04-13,Everton FC,Queens Park Rangers,2-0,1-0
+33,Sun,2013-04-14,Stoke City,Manchester United,0-2,0-1
+33,Sun,2013-04-14,Newcastle United,Sunderland AFC,0-3,0-1
+29,Tue,2013-04-16,Arsenal FC,Everton FC,0-0,
+29,Wed,2013-04-17,West Ham United,Manchester United,2-2,1-1
+29,Wed,2013-04-17,Fulham FC,Chelsea FC,0-3,0-2
+29,Wed,2013-04-17,Manchester City,Wigan Athletic,1-0,0-0
+34,Sat,2013-04-20,Sunderland AFC,Everton FC,1-0,1-0
+34,Sat,2013-04-20,Swansea City,Southampton FC,0-0,
+34,Sat,2013-04-20,West Ham United,Wigan Athletic,2-0,1-0
+34,Sat,2013-04-20,Fulham FC,Arsenal FC,0-1,0-1
+34,Sat,2013-04-20,Norwich City,Reading FC,2-1,0-0
+34,Sat,2013-04-20,Queens Park Rangers,Stoke City,0-2,0-1
+34,Sat,2013-04-20,West Bromwich Albion,Newcastle United,1-1,0-1
+34,Sun,2013-04-21,Tottenham Hotspur,Manchester City,3-1,0-1
+34,Sun,2013-04-21,Liverpool FC,Chelsea FC,2-2,0-1
+34,Mon,2013-04-22,Manchester United,Aston Villa,3-0,3-0
+35,Sat,2013-04-27,Stoke City,Norwich City,1-0,0-0
+35,Sat,2013-04-27,Newcastle United,Liverpool FC,0-6,0-2
+35,Sat,2013-04-27,Wigan Athletic,Tottenham Hotspur,2-2,1-1
+35,Sat,2013-04-27,Manchester City,West Ham United,2-1,1-0
+35,Sat,2013-04-27,Everton FC,Fulham FC,1-0,1-0
+35,Sat,2013-04-27,Southampton FC,West Bromwich Albion,0-3,0-1
+35,Sun,2013-04-28,Arsenal FC,Manchester United,1-1,1-1
+35,Sun,2013-04-28,Chelsea FC,Swansea City,2-0,2-0
+35,Sun,2013-04-28,Reading FC,Queens Park Rangers,0-0,
+35,Mon,2013-04-29,Aston Villa,Sunderland AFC,6-1,2-1
+36,Sat,2013-05-04,Queens Park Rangers,Arsenal FC,0-1,0-1
+36,Sat,2013-05-04,Tottenham Hotspur,Southampton FC,1-0,0-0
+36,Sat,2013-05-04,West Bromwich Albion,Wigan Athletic,2-3,1-1
+36,Sat,2013-05-04,Fulham FC,Reading FC,2-4,0-1
+36,Sat,2013-05-04,Norwich City,Aston Villa,1-2,0-0
+36,Sat,2013-05-04,Swansea City,Manchester City,0-0,
+36,Sat,2013-05-04,West Ham United,Newcastle United,0-0,
+36,Sun,2013-05-05,Liverpool FC,Everton FC,0-0,
+36,Sun,2013-05-05,Manchester United,Chelsea FC,0-1,0-0
+36,Mon,2013-05-06,Sunderland AFC,Stoke City,1-1,0-1
+33,Tue,2013-05-07,Wigan Athletic,Swansea City,2-3,1-0
+33,Tue,2013-05-07,Manchester City,West Bromwich Albion,1-0,1-0
+33,Wed,2013-05-08,Chelsea FC,Tottenham Hotspur,2-2,2-1
+37,Sat,2013-05-11,Aston Villa,Chelsea FC,1-2,1-0
+37,Sun,2013-05-12,Stoke City,Tottenham Hotspur,1-2,1-1
+37,Sun,2013-05-12,Everton FC,West Ham United,2-0,1-0
+37,Sun,2013-05-12,Fulham FC,Liverpool FC,1-3,1-1
+37,Sun,2013-05-12,Norwich City,West Bromwich Albion,4-0,1-0
+37,Sun,2013-05-12,Queens Park Rangers,Newcastle United,1-2,1-2
+37,Sun,2013-05-12,Sunderland AFC,Southampton FC,1-1,0-0
+37,Sun,2013-05-12,Manchester United,Swansea City,2-1,1-0
+37,Tue,2013-05-14,Arsenal FC,Wigan Athletic,4-1,1-1
+37,Tue,2013-05-14,Reading FC,Manchester City,0-2,0-1
+38,Sun,2013-05-19,Chelsea FC,Everton FC,2-1,1-1
+38,Sun,2013-05-19,Liverpool FC,Queens Park Rangers,1-0,1-0
+38,Sun,2013-05-19,Manchester City,Norwich City,2-3,1-1
+38,Sun,2013-05-19,Newcastle United,Arsenal FC,0-1,0-0
+38,Sun,2013-05-19,Southampton FC,Stoke City,1-1,0-0
+38,Sun,2013-05-19,Swansea City,Fulham FC,0-3,0-1
+38,Sun,2013-05-19,Tottenham Hotspur,Sunderland AFC,1-0,0-0
+38,Sun,2013-05-19,West Bromwich Albion,Manchester United,5-5,1-3
+38,Sun,2013-05-19,West Ham United,Reading FC,4-2,2-0
+38,Sun,2013-05-19,Wigan Athletic,Aston Villa,2-2,2-1

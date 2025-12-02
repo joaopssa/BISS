@@ -1,0 +1,381 @@
+Matchday,Date,Home,Away,FullTime,HalfTime
+1,2001-08-18,Derby County,Blackburn Rovers,2-1,1-0
+1,2001-08-18,Sunderland AFC,Ipswich Town,1-0,1-0
+1,2001-08-18,Leicester City,Bolton Wanderers,0-5,0-4
+1,2001-08-18,Liverpool FC,West Ham United,2-1,1-1
+1,2001-08-18,Charlton Athletic,Everton FC,1-2,0-0
+1,2001-08-18,Tottenham Hotspur,Aston Villa,0-0,
+1,2001-08-18,Middlesbrough FC,Arsenal FC,0-4,0-1
+1,2001-08-18,Leeds United,Southampton FC,2-0,0-0
+1,2001-08-19,Chelsea FC,Newcastle United,1-1,1-0
+1,2001-08-19,Manchester United,Fulham FC,3-2,1-1
+2,2001-08-20,Everton FC,Tottenham Hotspur,1-1,0-1
+2,2001-08-21,Ipswich Town,Derby County,3-1,1-0
+2,2001-08-21,Arsenal FC,Leeds United,1-2,1-1
+2,2001-08-21,Bolton Wanderers,Middlesbrough FC,1-0,1-0
+2,2001-08-22,Blackburn Rovers,Manchester United,2-2,0-1
+2,2001-08-22,Fulham FC,Sunderland AFC,2-0,0-0
+3,2001-08-25,West Ham United,Leeds United,0-0,
+3,2001-08-25,Southampton FC,Chelsea FC,0-2,0-1
+3,2001-08-25,Ipswich Town,Charlton Athletic,0-1,0-0
+3,2001-08-25,Everton FC,Middlesbrough FC,2-0,1-0
+3,2001-08-25,Blackburn Rovers,Tottenham Hotspur,2-1,1-0
+3,2001-08-25,Arsenal FC,Leicester City,4-0,2-0
+3,2001-08-25,Fulham FC,Derby County,0-0,
+3,2001-08-26,Newcastle United,Sunderland AFC,1-1,1-1
+3,2001-08-26,Aston Villa,Manchester United,1-1,1-0
+3,2001-08-27,Bolton Wanderers,Liverpool FC,2-1,1-0
+4,2001-09-08,Liverpool FC,Aston Villa,1-3,0-1
+4,2001-09-08,Middlesbrough FC,Newcastle United,1-4,1-1
+4,2001-09-08,Sunderland AFC,Blackburn Rovers,1-0,0-0
+4,2001-09-08,Manchester United,Everton FC,4-1,2-0
+4,2001-09-08,Leeds United,Bolton Wanderers,0-0,
+4,2001-09-08,Derby County,West Ham United,0-0,
+4,2001-09-08,Chelsea FC,Arsenal FC,1-1,1-1
+4,2001-09-08,Leicester City,Ipswich Town,1-1,0-1
+4,2001-09-09,Tottenham Hotspur,Southampton FC,2-0,0-0
+4,2001-09-09,Charlton Athletic,Fulham FC,1-1,1-1
+5,2001-09-15,Fulham FC,Arsenal FC,1-3,0-1
+5,2001-09-15,Newcastle United,Manchester United,4-3,2-1
+5,2001-09-15,Bolton Wanderers,Southampton FC,0-1,0-0
+5,2001-09-15,Middlesbrough FC,West Ham United,2-0,2-0
+5,2001-09-15,Everton FC,Liverpool FC,1-3,1-2
+5,2001-09-15,Derby County,Leicester City,2-3,1-1
+5,2001-09-16,Ipswich Town,Blackburn Rovers,1-1,1-0
+5,2001-09-16,Aston Villa,Sunderland AFC,0-0,
+5,2001-09-16,Tottenham Hotspur,Chelsea FC,2-3,0-1
+5,2001-09-16,Charlton Athletic,Leeds United,0-2,0-1
+6,2001-09-17,Leicester City,Middlesbrough FC,1-2,1-0
+6,2001-09-19,Blackburn Rovers,Bolton Wanderers,1-1,0-0
+6,2001-09-19,Sunderland AFC,Tottenham Hotspur,1-2,0-1
+7,2001-09-22,Sunderland AFC,Charlton Athletic,2-2,0-1
+7,2001-09-22,Arsenal FC,Bolton Wanderers,1-1,0-0
+7,2001-09-22,Blackburn Rovers,Everton FC,1-0,1-0
+7,2001-09-22,Leicester City,Fulham FC,0-0,
+7,2001-09-22,Manchester United,Ipswich Town,4-0,2-0
+7,2001-09-22,Liverpool FC,Tottenham Hotspur,1-0,0-0
+7,2001-09-23,Leeds United,Derby County,3-0,1-0
+7,2001-09-23,West Ham United,Newcastle United,3-0,1-0
+7,2001-09-23,Chelsea FC,Middlesbrough FC,2-2,2-0
+7,2001-09-24,Southampton FC,Aston Villa,1-3,1-2
+2,2001-09-26,Newcastle United,Leicester City,1-0,1-0
+8,2001-09-29,Everton FC,West Ham United,5-0,1-0
+8,2001-09-29,Derby County,Arsenal FC,0-2,0-1
+8,2001-09-29,Tottenham Hotspur,Manchester United,3-5,3-0
+8,2001-09-29,Bolton Wanderers,Sunderland AFC,0-2,0-0
+8,2001-09-29,Middlesbrough FC,Southampton FC,1-3,0-0
+8,2001-09-29,Charlton Athletic,Leicester City,2-0,1-0
+8,2001-09-30,Newcastle United,Liverpool FC,0-2,0-1
+8,2001-09-30,Fulham FC,Chelsea FC,1-1,0-1
+8,2001-09-30,Aston Villa,Blackburn Rovers,2-0,0-0
+8,2001-09-30,Ipswich Town,Leeds United,1-2,1-0
+9,2001-10-13,Liverpool FC,Leeds United,1-1,0-1
+9,2001-10-13,Bolton Wanderers,Newcastle United,0-4,0-1
+9,2001-10-13,Southampton FC,Arsenal FC,0-2,0-1
+9,2001-10-13,Charlton Athletic,Middlesbrough FC,0-0,
+9,2001-10-13,Chelsea FC,Leicester City,2-0,2-0
+9,2001-10-13,Sunderland AFC,Manchester United,1-3,0-1
+9,2001-10-13,Ipswich Town,Everton FC,0-0,
+9,2001-10-14,Aston Villa,Fulham FC,2-0,0-0
+9,2001-10-14,Blackburn Rovers,West Ham United,7-1,3-1
+9,2001-10-15,Tottenham Hotspur,Derby County,3-1,2-1
+10,2001-10-20,Everton FC,Aston Villa,3-2,0-0
+10,2001-10-20,Manchester United,Bolton Wanderers,1-2,1-1
+10,2001-10-20,Arsenal FC,Blackburn Rovers,3-3,0-1
+10,2001-10-20,West Ham United,Southampton FC,2-0,0-0
+10,2001-10-20,Leicester City,Liverpool FC,1-4,0-3
+10,2001-10-20,Derby County,Charlton Athletic,1-1,1-0
+10,2001-10-21,Newcastle United,Tottenham Hotspur,0-2,0-2
+10,2001-10-21,Fulham FC,Ipswich Town,1-1,1-0
+10,2001-10-21,Leeds United,Chelsea FC,0-0,
+10,2001-10-22,Middlesbrough FC,Sunderland AFC,2-0,2-0
+6,2001-10-24,Southampton FC,Ipswich Town,3-3,2-1
+2,2001-10-24,Aston Villa,Charlton Athletic,1-0,1-0
+2,2001-10-24,West Ham United,Chelsea FC,2-1,2-1
+11,2001-10-27,Everton FC,Newcastle United,1-3,0-1
+11,2001-10-27,Sunderland AFC,Arsenal FC,1-1,0-1
+11,2001-10-27,Manchester United,Leeds United,1-1,0-0
+11,2001-10-27,Tottenham Hotspur,Middlesbrough FC,2-1,0-1
+11,2001-10-27,Charlton Athletic,Liverpool FC,0-2,0-2
+11,2001-10-27,Fulham FC,Southampton FC,2-1,2-1
+11,2001-10-27,Aston Villa,Bolton Wanderers,3-2,2-1
+11,2001-10-28,Derby County,Chelsea FC,1-1,1-0
+11,2001-10-28,Ipswich Town,West Ham United,2-3,0-1
+11,2001-10-29,Blackburn Rovers,Leicester City,0-0,
+12,2001-11-03,West Ham United,Fulham FC,0-2,0-1
+12,2001-11-03,Southampton FC,Blackburn Rovers,1-2,1-1
+12,2001-11-03,Newcastle United,Aston Villa,3-0,1-0
+12,2001-11-03,Middlesbrough FC,Derby County,5-1,0-0
+12,2001-11-03,Bolton Wanderers,Everton FC,2-2,1-1
+12,2001-11-03,Leicester City,Sunderland AFC,1-0,0-0
+12,2001-11-04,Chelsea FC,Ipswich Town,2-1,1-0
+12,2001-11-04,Arsenal FC,Charlton Athletic,2-4,1-2
+12,2001-11-04,Liverpool FC,Manchester United,3-1,2-0
+12,2001-11-04,Leeds United,Tottenham Hotspur,2-1,0-0
+13,2001-11-17,Manchester United,Leicester City,2-0,1-0
+13,2001-11-17,Aston Villa,Middlesbrough FC,0-0,
+13,2001-11-17,Blackburn Rovers,Liverpool FC,1-1,0-1
+13,2001-11-17,Fulham FC,Newcastle United,3-1,2-0
+13,2001-11-17,Tottenham Hotspur,Arsenal FC,1-1,0-0
+13,2001-11-17,Derby County,Southampton FC,1-0,1-0
+13,2001-11-18,Everton FC,Chelsea FC,0-0,
+13,2001-11-18,Ipswich Town,Bolton Wanderers,1-2,1-2
+13,2001-11-18,Sunderland AFC,Leeds United,2-0,0-0
+13,2001-11-19,Charlton Athletic,West Ham United,4-4,2-2
+14,2001-11-24,Southampton FC,Charlton Athletic,1-0,0-0
+14,2001-11-24,Bolton Wanderers,Fulham FC,0-0,
+14,2001-11-24,Chelsea FC,Blackburn Rovers,0-0,
+14,2001-11-24,West Ham United,Tottenham Hotspur,0-1,0-0
+14,2001-11-24,Newcastle United,Derby County,1-0,1-0
+14,2001-11-24,Leicester City,Everton FC,0-0,
+14,2001-11-25,Leeds United,Aston Villa,1-1,1-1
+14,2001-11-25,Liverpool FC,Sunderland AFC,1-0,1-0
+14,2001-11-25,Middlesbrough FC,Ipswich Town,0-0,
+14,2001-11-25,Arsenal FC,Manchester United,3-1,0-1
+15,2001-12-01,Manchester United,Chelsea FC,0-3,0-1
+15,2001-12-01,Sunderland AFC,West Ham United,1-0,0-0
+15,2001-12-01,Ipswich Town,Arsenal FC,0-2,0-1
+15,2001-12-01,Charlton Athletic,Newcastle United,1-1,0-0
+15,2001-12-01,Blackburn Rovers,Middlesbrough FC,0-1,0-1
+15,2001-12-01,Aston Villa,Leicester City,0-2,0-1
+15,2001-12-01,Derby County,Liverpool FC,0-1,0-1
+15,2001-12-02,Fulham FC,Leeds United,0-0,
+15,2001-12-02,Everton FC,Southampton FC,2-0,0-0
+15,2001-12-03,Tottenham Hotspur,Bolton Wanderers,3-2,0-1
+6,2001-12-05,West Ham United,Aston Villa,1-1,0-1
+6,2001-12-05,Chelsea FC,Charlton Athletic,0-1,0-0
+16,2001-12-08,Fulham FC,Everton FC,2-0,1-0
+16,2001-12-08,Liverpool FC,Middlesbrough FC,2-0,2-0
+16,2001-12-08,Leicester City,Southampton FC,0-4,0-1
+16,2001-12-08,Charlton Athletic,Tottenham Hotspur,3-1,2-0
+16,2001-12-08,Manchester United,West Ham United,0-1,0-0
+16,2001-12-08,Derby County,Bolton Wanderers,1-0,0-0
+16,2001-12-09,Ipswich Town,Newcastle United,0-1,0-1
+16,2001-12-09,Sunderland AFC,Chelsea FC,0-0,
+16,2001-12-09,Blackburn Rovers,Leeds United,1-2,0-0
+16,2001-12-09,Arsenal FC,Aston Villa,3-2,0-2
+6,2001-12-12,Liverpool FC,Fulham FC,0-0,
+6,2001-12-12,Manchester United,Derby County,5-0,2-0
+17,2001-12-15,Southampton FC,Sunderland AFC,2-0,1-0
+17,2001-12-15,Tottenham Hotspur,Fulham FC,4-0,2-0
+17,2001-12-15,Middlesbrough FC,Manchester United,0-1,0-0
+17,2001-12-15,Newcastle United,Blackburn Rovers,2-1,0-1
+17,2001-12-15,Bolton Wanderers,Charlton Athletic,0-0,
+17,2001-12-15,West Ham United,Arsenal FC,1-1,1-1
+17,2001-12-15,Everton FC,Derby County,1-0,0-0
+17,2001-12-16,Chelsea FC,Liverpool FC,4-0,2-0
+17,2001-12-16,Leeds United,Leicester City,2-2,1-0
+17,2001-12-17,Aston Villa,Ipswich Town,2-1,1-1
+6,2001-12-18,Arsenal FC,Newcastle United,1-3,1-0
+6,2001-12-19,Leeds United,Everton FC,3-2,2-0
+18,2001-12-22,Derby County,Aston Villa,3-1,1-1
+18,2001-12-22,Leeds United,Newcastle United,3-4,1-1
+18,2001-12-22,Manchester United,Southampton FC,6-1,3-0
+18,2001-12-22,Sunderland AFC,Everton FC,1-0,0-0
+18,2001-12-22,Tottenham Hotspur,Ipswich Town,1-2,1-1
+18,2001-12-22,Charlton Athletic,Blackburn Rovers,0-2,0-0
+18,2001-12-22,Leicester City,West Ham United,1-1,1-0
+18,2001-12-23,Liverpool FC,Arsenal FC,1-2,0-1
+18,2001-12-23,Chelsea FC,Bolton Wanderers,5-1,2-1
+19,2001-12-26,Ipswich Town,Leicester City,2-0,0-0
+19,2001-12-26,Everton FC,Manchester United,0-2,0-0
+19,2001-12-26,Arsenal FC,Chelsea FC,2-1,0-1
+19,2001-12-26,Fulham FC,Charlton Athletic,0-0,
+19,2001-12-26,Bolton Wanderers,Leeds United,0-3,0-2
+19,2001-12-26,Southampton FC,Tottenham Hotspur,1-0,0-0
+19,2001-12-26,West Ham United,Derby County,4-0,1-0
+19,2001-12-26,Blackburn Rovers,Sunderland AFC,0-3,0-2
+19,2001-12-26,Newcastle United,Middlesbrough FC,3-0,1-0
+19,2001-12-26,Aston Villa,Liverpool FC,1-2,1-1
+20,2001-12-29,Newcastle United,Chelsea FC,1-2,1-2
+20,2001-12-29,Blackburn Rovers,Derby County,0-1,0-1
+20,2001-12-29,West Ham United,Liverpool FC,1-1,1-0
+20,2001-12-29,Southampton FC,Leeds United,0-1,0-0
+20,2001-12-29,Ipswich Town,Sunderland AFC,5-0,4-0
+20,2001-12-29,Everton FC,Charlton Athletic,0-3,0-1
+20,2001-12-29,Bolton Wanderers,Leicester City,2-2,1-2
+20,2001-12-29,Aston Villa,Tottenham Hotspur,1-1,0-1
+20,2001-12-29,Arsenal FC,Middlesbrough FC,2-1,0-1
+20,2001-12-30,Fulham FC,Manchester United,2-3,1-2
+21,2002-01-01,Chelsea FC,Southampton FC,2-4,2-1
+21,2002-01-01,Liverpool FC,Bolton Wanderers,1-1,0-0
+21,2002-01-01,Middlesbrough FC,Everton FC,1-0,0-0
+21,2002-01-01,Tottenham Hotspur,Blackburn Rovers,1-0,1-0
+21,2002-01-01,Charlton Athletic,Ipswich Town,3-2,2-2
+21,2002-01-01,Sunderland AFC,Aston Villa,1-1,0-0
+21,2002-01-01,Leeds United,West Ham United,3-0,2-0
+21,2002-01-02,Derby County,Fulham FC,0-1,0-0
+21,2002-01-02,Manchester United,Newcastle United,3-1,1-0
+2,2002-01-09,Southampton FC,Liverpool FC,2-0,0-0
+22,2002-01-12,Bolton Wanderers,Chelsea FC,2-2,0-0
+22,2002-01-12,Blackburn Rovers,Charlton Athletic,4-1,2-0
+22,2002-01-12,West Ham United,Leicester City,1-0,1-0
+22,2002-01-12,Ipswich Town,Tottenham Hotspur,2-1,1-0
+22,2002-01-12,Everton FC,Sunderland AFC,1-0,1-0
+22,2002-01-12,Newcastle United,Leeds United,3-1,1-1
+22,2002-01-12,Fulham FC,Middlesbrough FC,2-1,2-1
+22,2002-01-12,Aston Villa,Derby County,2-1,2-1
+22,2002-01-13,Southampton FC,Manchester United,1-3,1-2
+22,2002-01-13,Arsenal FC,Liverpool FC,1-1,0-0
+23,2002-01-19,Derby County,Ipswich Town,1-3,0-0
+23,2002-01-19,Tottenham Hotspur,Everton FC,1-1,1-1
+23,2002-01-19,Middlesbrough FC,Bolton Wanderers,1-1,1-0
+23,2002-01-19,Manchester United,Blackburn Rovers,2-1,1-0
+23,2002-01-19,Liverpool FC,Southampton FC,1-1,1-0
+23,2002-01-19,Leicester City,Newcastle United,0-0,
+23,2002-01-19,Sunderland AFC,Fulham FC,1-1,0-1
+23,2002-01-20,Leeds United,Arsenal FC,1-1,1-1
+23,2002-01-20,Chelsea FC,West Ham United,5-1,1-0
+23,2002-01-21,Charlton Athletic,Aston Villa,1-2,0-2
+33,2002-01-22,Manchester United,Liverpool FC,0-1,0-0
+21,2002-01-23,Leicester City,Arsenal FC,1-3,0-2
+24,2002-01-29,Charlton Athletic,Derby County,1-0,0-0
+24,2002-01-29,Bolton Wanderers,Manchester United,0-4,0-2
+24,2002-01-29,Sunderland AFC,Middlesbrough FC,0-1,0-1
+24,2002-01-30,Tottenham Hotspur,Newcastle United,1-3,1-0
+24,2002-01-30,Blackburn Rovers,Arsenal FC,2-3,2-2
+24,2002-01-30,Aston Villa,Everton FC,0-0,
+24,2002-01-30,Southampton FC,West Ham United,2-0,1-0
+24,2002-01-30,Ipswich Town,Fulham FC,1-0,1-0
+24,2002-01-30,Liverpool FC,Leicester City,1-0,0-0
+24,2002-01-30,Chelsea FC,Leeds United,2-0,2-0
+25,2002-02-02,Everton FC,Ipswich Town,1-2,1-2
+25,2002-02-02,West Ham United,Blackburn Rovers,2-0,1-0
+25,2002-02-02,Newcastle United,Bolton Wanderers,3-2,2-2
+25,2002-02-02,Leicester City,Chelsea FC,2-3,1-0
+25,2002-02-02,Fulham FC,Aston Villa,0-0,
+25,2002-02-02,Arsenal FC,Southampton FC,1-1,1-0
+25,2002-02-02,Manchester United,Sunderland AFC,4-1,4-1
+25,2002-02-02,Derby County,Tottenham Hotspur,1-0,1-0
+25,2002-02-03,Middlesbrough FC,Charlton Athletic,0-0,
+25,2002-02-03,Leeds United,Liverpool FC,0-4,0-1
+26,2002-02-09,Middlesbrough FC,Leeds United,2-2,0-1
+26,2002-02-09,Fulham FC,Blackburn Rovers,2-0,1-0
+26,2002-02-09,Ipswich Town,Liverpool FC,0-6,0-2
+26,2002-02-09,Newcastle United,Southampton FC,3-1,3-1
+26,2002-02-09,Bolton Wanderers,West Ham United,1-0,1-0
+26,2002-02-09,Aston Villa,Chelsea FC,1-1,1-0
+26,2002-02-09,Tottenham Hotspur,Leicester City,2-1,1-0
+26,2002-02-09,Derby County,Sunderland AFC,0-1,0-0
+26,2002-02-10,Everton FC,Arsenal FC,0-1,0-0
+26,2002-02-10,Charlton Athletic,Manchester United,0-2,0-1
+18,2002-02-19,Middlesbrough FC,Fulham FC,2-1,1-0
+27,2002-02-23,Leicester City,Derby County,0-3,0-0
+27,2002-02-23,West Ham United,Middlesbrough FC,1-0,0-0
+27,2002-02-23,Arsenal FC,Fulham FC,4-1,3-1
+27,2002-02-23,Liverpool FC,Everton FC,1-1,0-0
+27,2002-02-23,Manchester United,Aston Villa,1-0,0-0
+27,2002-02-23,Southampton FC,Bolton Wanderers,0-0,
+27,2002-02-24,Leeds United,Charlton Athletic,0-0,
+27,2002-02-24,Sunderland AFC,Newcastle United,0-1,0-0
+28,2002-03-02,Newcastle United,Arsenal FC,0-2,0-2
+28,2002-03-02,Middlesbrough FC,Leicester City,1-0,1-0
+28,2002-03-02,Fulham FC,Liverpool FC,0-2,0-1
+28,2002-03-02,Ipswich Town,Southampton FC,1-3,0-0
+28,2002-03-02,Charlton Athletic,Chelsea FC,2-1,0-0
+28,2002-03-02,Bolton Wanderers,Blackburn Rovers,1-1,1-0
+28,2002-03-02,Aston Villa,West Ham United,2-1,1-1
+28,2002-03-02,Tottenham Hotspur,Sunderland AFC,2-1,1-1
+28,2002-03-03,Everton FC,Leeds United,0-0,
+28,2002-03-03,Derby County,Manchester United,2-2,1-1
+29,2002-03-05,Arsenal FC,Derby County,1-0,0-0
+29,2002-03-05,Blackburn Rovers,Aston Villa,3-0,1-0
+29,2002-03-05,Sunderland AFC,Bolton Wanderers,1-0,1-0
+29,2002-03-06,Liverpool FC,Newcastle United,3-0,1-0
+29,2002-03-06,Southampton FC,Middlesbrough FC,1-1,1-0
+29,2002-03-06,West Ham United,Everton FC,1-0,0-0
+29,2002-03-06,Chelsea FC,Fulham FC,3-2,2-1
+29,2002-03-06,Leeds United,Ipswich Town,2-0,0-0
+29,2002-03-06,Manchester United,Tottenham Hotspur,4-0,2-0
+29,2002-03-09,Leicester City,Charlton Athletic,1-1,1-1
+27,2002-03-13,Chelsea FC,Tottenham Hotspur,4-0,1-0
+27,2002-03-13,Blackburn Rovers,Ipswich Town,2-1,2-0
+30,2002-03-16,Southampton FC,Leicester City,2-2,1-2
+30,2002-03-16,Everton FC,Fulham FC,2-1,2-0
+30,2002-03-16,West Ham United,Manchester United,3-5,2-2
+30,2002-03-16,Bolton Wanderers,Derby County,1-3,0-1
+30,2002-03-16,Newcastle United,Ipswich Town,2-2,0-0
+30,2002-03-16,Chelsea FC,Sunderland AFC,4-0,1-0
+30,2002-03-16,Middlesbrough FC,Liverpool FC,1-2,0-1
+30,2002-03-17,Aston Villa,Arsenal FC,1-2,0-1
+30,2002-03-17,Leeds United,Blackburn Rovers,3-1,2-0
+30,2002-03-18,Tottenham Hotspur,Charlton Athletic,0-1,0-0
+31,2002-03-23,Leicester City,Leeds United,0-2,0-2
+31,2002-03-23,Charlton Athletic,Bolton Wanderers,1-2,0-2
+31,2002-03-23,Ipswich Town,Aston Villa,0-0,
+31,2002-03-23,Sunderland AFC,Southampton FC,1-1,0-0
+31,2002-03-23,Derby County,Everton FC,3-4,0-1
+31,2002-03-23,Manchester United,Middlesbrough FC,0-1,0-1
+31,2002-03-24,Fulham FC,Tottenham Hotspur,0-2,0-2
+31,2002-03-24,Liverpool FC,Chelsea FC,1-0,0-0
+32,2002-03-29,Newcastle United,Everton FC,6-2,2-2
+32,2002-03-30,Bolton Wanderers,Aston Villa,3-2,2-2
+32,2002-03-30,Leeds United,Manchester United,3-4,1-3
+32,2002-03-30,Southampton FC,Fulham FC,1-1,1-1
+32,2002-03-30,Leicester City,Blackburn Rovers,2-1,1-0
+32,2002-03-30,Middlesbrough FC,Tottenham Hotspur,1-1,0-1
+32,2002-03-30,West Ham United,Ipswich Town,3-1,1-0
+32,2002-03-30,Arsenal FC,Sunderland AFC,3-0,3-0
+32,2002-03-30,Liverpool FC,Charlton Athletic,2-0,2-0
+32,2002-03-30,Chelsea FC,Derby County,2-1,0-0
+33,2002-04-01,Tottenham Hotspur,Leeds United,2-1,2-0
+33,2002-04-01,Blackburn Rovers,Southampton FC,2-0,2-0
+33,2002-04-01,Sunderland AFC,Leicester City,2-1,2-1
+33,2002-04-01,Fulham FC,West Ham United,0-1,0-1
+33,2002-04-01,Ipswich Town,Chelsea FC,0-0,
+33,2002-04-01,Everton FC,Bolton Wanderers,3-1,1-0
+33,2002-04-01,Charlton Athletic,Arsenal FC,0-3,0-3
+33,2002-04-01,Derby County,Middlesbrough FC,0-1,0-1
+33,2002-04-02,Aston Villa,Newcastle United,1-1,1-1
+34,2002-04-06,Arsenal FC,Tottenham Hotspur,2-1,1-0
+34,2002-04-06,Chelsea FC,Everton FC,3-0,2-0
+34,2002-04-06,Leicester City,Manchester United,0-1,0-0
+34,2002-04-06,Southampton FC,Derby County,2-0,1-0
+34,2002-04-06,Middlesbrough FC,Aston Villa,2-1,1-0
+34,2002-04-06,West Ham United,Charlton Athletic,2-0,2-0
+34,2002-04-06,Bolton Wanderers,Ipswich Town,4-1,4-0
+34,2002-04-07,Leeds United,Sunderland AFC,2-0,1-0
+34,2002-04-08,Newcastle United,Fulham FC,1-1,1-0
+35,2002-04-10,Blackburn Rovers,Chelsea FC,0-0,
+35,2002-04-13,Charlton Athletic,Southampton FC,1-1,1-0
+35,2002-04-13,Aston Villa,Leeds United,0-1,0-1
+35,2002-04-13,Sunderland AFC,Liverpool FC,0-1,0-0
+35,2002-04-13,Derby County,Newcastle United,2-3,0-0
+35,2002-04-13,Tottenham Hotspur,West Ham United,1-1,0-0
+35,2002-04-13,Everton FC,Leicester City,2-2,0-2
+36,2002-04-20,Leicester City,Aston Villa,2-2,1-2
+36,2002-04-20,Leeds United,Fulham FC,0-1,0-0
+36,2002-04-20,Newcastle United,Charlton Athletic,3-0,1-0
+36,2002-04-20,West Ham United,Sunderland AFC,3-0,1-0
+36,2002-04-20,Bolton Wanderers,Tottenham Hotspur,1-1,0-1
+36,2002-04-20,Southampton FC,Everton FC,0-1,0-1
+36,2002-04-20,Chelsea FC,Manchester United,0-3,0-2
+36,2002-04-20,Liverpool FC,Derby County,2-0,1-0
+36,2002-04-20,Middlesbrough FC,Blackburn Rovers,1-3,0-1
+36,2002-04-21,Arsenal FC,Ipswich Town,2-0,0-0
+31,2002-04-23,Blackburn Rovers,Newcastle United,2-2,1-0
+35,2002-04-23,Fulham FC,Bolton Wanderers,3-0,1-0
+35,2002-04-24,Ipswich Town,Middlesbrough FC,1-0,0-0
+31,2002-04-24,Arsenal FC,West Ham United,2-0,0-0
+37,2002-04-27,Charlton Athletic,Sunderland AFC,2-2,1-2
+37,2002-04-27,Ipswich Town,Manchester United,0-1,0-1
+37,2002-04-27,Tottenham Hotspur,Liverpool FC,1-0,1-0
+37,2002-04-27,Derby County,Leeds United,0-1,0-1
+37,2002-04-27,Aston Villa,Southampton FC,2-1,2-0
+37,2002-04-27,Fulham FC,Leicester City,0-0,
+37,2002-04-27,Newcastle United,West Ham United,3-1,1-1
+37,2002-04-27,Middlesbrough FC,Chelsea FC,0-2,0-2
+37,2002-04-28,Everton FC,Blackburn Rovers,1-2,0-1
+37,2002-04-29,Bolton Wanderers,Arsenal FC,0-2,0-2
+34,2002-05-08,Liverpool FC,Blackburn Rovers,4-3,2-1
+35,2002-05-08,Manchester United,Arsenal FC,0-1,0-0
+38,2002-05-11,Chelsea FC,Aston Villa,1-3,0-1
+38,2002-05-11,Liverpool FC,Ipswich Town,5-0,2-0
+38,2002-05-11,Arsenal FC,Everton FC,4-3,2-2
+38,2002-05-11,Blackburn Rovers,Fulham FC,3-0,0-0
+38,2002-05-11,West Ham United,Bolton Wanderers,2-1,1-0
+38,2002-05-11,Leeds United,Middlesbrough FC,1-0,0-0
+38,2002-05-11,Leicester City,Tottenham Hotspur,2-1,0-0
+38,2002-05-11,Sunderland AFC,Derby County,1-1,1-0
+38,2002-05-11,Manchester United,Charlton Athletic,0-0,
+38,2002-05-11,Southampton FC,Newcastle United,3-1,2-0
