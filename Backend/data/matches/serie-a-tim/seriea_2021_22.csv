@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Sat,2021-08-21,FC Internazionale Milano,Genoa CFC,4-0,2-0
+1,Sat,2021-08-21,Hellas Verona FC,US Sassuolo Calcio,2-3,0-1
+1,Sat,2021-08-21,Torino FC,Atalanta BC,1-2,0-1
+1,Sat,2021-08-21,Empoli FC,SS Lazio,1-3,1-3
+1,Sun,2021-08-22,Udinese Calcio,Juventus FC,2-2,0-2
+1,Sun,2021-08-22,Bologna FC 1909,US Salernitana 1919,3-2,0-0
+1,Sun,2021-08-22,AS Roma,ACF Fiorentina,3-1,1-0
+1,Sun,2021-08-22,SSC Napoli,Venezia FC,2-0,0-0
+1,Mon,2021-08-23,Cagliari Calcio,Spezia Calcio,2-2,0-1
+1,Mon,2021-08-23,UC Sampdoria,AC Milan,0-1,0-1
+2,Fri,2021-08-27,Udinese Calcio,Venezia FC,3-0,1-0
+2,Fri,2021-08-27,Hellas Verona FC,FC Internazionale Milano,1-3,1-0
+2,Sat,2021-08-28,SS Lazio,Spezia Calcio,6-1,3-1
+2,Sat,2021-08-28,Atalanta BC,Bologna FC 1909,0-0,
+2,Sat,2021-08-28,Juventus FC,Empoli FC,0-1,0-1
+2,Sat,2021-08-28,ACF Fiorentina,Torino FC,2-1,1-0
+2,Sun,2021-08-29,US Sassuolo Calcio,UC Sampdoria,0-0,
+2,Sun,2021-08-29,Genoa CFC,SSC Napoli,1-2,0-1
+2,Sun,2021-08-29,US Salernitana 1919,AS Roma,0-4,0-0
+2,Sun,2021-08-29,AC Milan,Cagliari Calcio,4-1,4-1
+3,Sat,2021-09-11,Empoli FC,Venezia FC,1-2,0-1
+3,Sat,2021-09-11,SSC Napoli,Juventus FC,2-1,0-1
+3,Sat,2021-09-11,Atalanta BC,ACF Fiorentina,1-2,0-1
+3,Sun,2021-09-12,UC Sampdoria,FC Internazionale Milano,2-2,1-2
+3,Sun,2021-09-12,Torino FC,US Salernitana 1919,4-0,1-0
+3,Sun,2021-09-12,Spezia Calcio,Udinese Calcio,0-1,0-0
+3,Sun,2021-09-12,Cagliari Calcio,Genoa CFC,2-3,1-0
+3,Sun,2021-09-12,AC Milan,SS Lazio,2-0,1-0
+3,Sun,2021-09-12,AS Roma,US Sassuolo Calcio,2-1,1-0
+3,Mon,2021-09-13,Bologna FC 1909,Hellas Verona FC,1-0,0-0
+4,Fri,2021-09-17,US Sassuolo Calcio,Torino FC,0-1,0-0
+4,Sat,2021-09-18,Genoa CFC,ACF Fiorentina,1-2,0-0
+4,Sat,2021-09-18,FC Internazionale Milano,Bologna FC 1909,6-1,3-0
+4,Sat,2021-09-18,US Salernitana 1919,Atalanta BC,0-1,0-0
+4,Sun,2021-09-19,Empoli FC,UC Sampdoria,0-3,0-1
+4,Sun,2021-09-19,Venezia FC,Spezia Calcio,1-2,0-1
+4,Sun,2021-09-19,SS Lazio,Cagliari Calcio,2-2,1-0
+4,Sun,2021-09-19,Hellas Verona FC,AS Roma,3-2,0-1
+4,Sun,2021-09-19,Juventus FC,AC Milan,1-1,1-0
+4,Mon,2021-09-20,Udinese Calcio,SSC Napoli,0-4,0-2
+5,Tue,2021-09-21,Bologna FC 1909,Genoa CFC,2-2,0-0
+5,Tue,2021-09-21,ACF Fiorentina,FC Internazionale Milano,1-3,1-0
+5,Tue,2021-09-21,Atalanta BC,US Sassuolo Calcio,2-1,2-1
+5,Wed,2021-09-22,Spezia Calcio,Juventus FC,2-3,1-1
+5,Wed,2021-09-22,US Salernitana 1919,Hellas Verona FC,2-2,1-2
+5,Wed,2021-09-22,AC Milan,Venezia FC,2-0,0-0
+5,Wed,2021-09-22,Cagliari Calcio,Empoli FC,0-2,0-1
+5,Thu,2021-09-23,Torino FC,SS Lazio,1-1,0-0
+5,Thu,2021-09-23,UC Sampdoria,SSC Napoli,0-4,0-2
+5,Thu,2021-09-23,AS Roma,Udinese Calcio,1-0,1-0
+6,Sat,2021-09-25,Spezia Calcio,AC Milan,1-2,0-0
+6,Sat,2021-09-25,FC Internazionale Milano,Atalanta BC,2-2,1-2
+6,Sat,2021-09-25,Genoa CFC,Hellas Verona FC,3-3,0-1
+6,Sun,2021-09-26,Juventus FC,UC Sampdoria,3-2,2-1
+6,Sun,2021-09-26,Empoli FC,Bologna FC 1909,4-2,2-1
+6,Sun,2021-09-26,Udinese Calcio,ACF Fiorentina,0-1,0-1
+6,Sun,2021-09-26,US Sassuolo Calcio,US Salernitana 1919,1-0,0-0
+6,Sun,2021-09-26,SS Lazio,AS Roma,3-2,2-1
+6,Sun,2021-09-26,SSC Napoli,Cagliari Calcio,2-0,1-0
+6,Mon,2021-09-27,Venezia FC,Torino FC,1-1,0-0
+7,Fri,2021-10-01,Cagliari Calcio,Venezia FC,1-1,1-0
+7,Sat,2021-10-02,US Salernitana 1919,Genoa CFC,1-0,0-0
+7,Sat,2021-10-02,Torino FC,Juventus FC,0-1,0-0
+7,Sat,2021-10-02,US Sassuolo Calcio,FC Internazionale Milano,1-2,1-0
+7,Sun,2021-10-03,Bologna FC 1909,SS Lazio,3-0,2-0
+7,Sun,2021-10-03,UC Sampdoria,Udinese Calcio,3-3,1-2
+7,Sun,2021-10-03,Hellas Verona FC,Spezia Calcio,4-0,3-0
+7,Sun,2021-10-03,AS Roma,Empoli FC,2-0,1-0
+7,Sun,2021-10-03,ACF Fiorentina,SSC Napoli,1-2,1-1
+7,Sun,2021-10-03,Atalanta BC,AC Milan,2-3,0-2
+8,Sat,2021-10-16,Spezia Calcio,US Salernitana 1919,2-1,0-1
+8,Sat,2021-10-16,SS Lazio,FC Internazionale Milano,3-1,0-1
+8,Sat,2021-10-16,AC Milan,Hellas Verona FC,3-2,0-2
+8,Sun,2021-10-17,Cagliari Calcio,UC Sampdoria,3-1,1-0
+8,Sun,2021-10-17,Udinese Calcio,Bologna FC 1909,1-1,0-0
+8,Sun,2021-10-17,Genoa CFC,US Sassuolo Calcio,2-2,1-2
+8,Sun,2021-10-17,Empoli FC,Atalanta BC,1-4,1-2
+8,Sun,2021-10-17,SSC Napoli,Torino FC,1-0,0-0
+8,Sun,2021-10-17,Juventus FC,AS Roma,1-0,1-0
+8,Mon,2021-10-18,Venezia FC,ACF Fiorentina,1-0,1-0
+9,Fri,2021-10-22,Torino FC,Genoa CFC,3-2,2-0
+9,Fri,2021-10-22,UC Sampdoria,Spezia Calcio,2-1,2-0
+9,Sat,2021-10-23,US Salernitana 1919,Empoli FC,2-4,0-4
+9,Sat,2021-10-23,US Sassuolo Calcio,Venezia FC,3-1,1-1
+9,Sat,2021-10-23,Bologna FC 1909,AC Milan,2-4,0-2
+9,Sun,2021-10-24,Atalanta BC,Udinese Calcio,1-1,0-0
+9,Sun,2021-10-24,Hellas Verona FC,SS Lazio,4-1,2-0
+9,Sun,2021-10-24,ACF Fiorentina,Cagliari Calcio,3-0,2-0
+9,Sun,2021-10-24,AS Roma,SSC Napoli,0-0,
+9,Sun,2021-10-24,FC Internazionale Milano,Juventus FC,1-1,1-0
+10,Tue,2021-10-26,Venezia FC,US Salernitana 1919,1-2,1-0
+10,Tue,2021-10-26,Spezia Calcio,Genoa CFC,1-1,0-0
+10,Tue,2021-10-26,AC Milan,Torino FC,1-0,1-0
+10,Wed,2021-10-27,Udinese Calcio,Hellas Verona FC,1-1,1-0
+10,Wed,2021-10-27,Juventus FC,US Sassuolo Calcio,1-2,0-1
+10,Wed,2021-10-27,UC Sampdoria,Atalanta BC,1-3,1-2
+10,Wed,2021-10-27,SS Lazio,ACF Fiorentina,1-0,0-0
+10,Wed,2021-10-27,Empoli FC,FC Internazionale Milano,0-2,0-1
+10,Wed,2021-10-27,Cagliari Calcio,AS Roma,1-2,0-0
+10,Thu,2021-10-28,SSC Napoli,Bologna FC 1909,3-0,2-0
+11,Sat,2021-10-30,Atalanta BC,SS Lazio,2-2,1-1
+11,Sat,2021-10-30,Hellas Verona FC,Juventus FC,2-1,2-0
+11,Sat,2021-10-30,Torino FC,UC Sampdoria,3-0,1-0
+11,Sun,2021-10-31,FC Internazionale Milano,Udinese Calcio,2-0,0-0
+11,Sun,2021-10-31,US Sassuolo Calcio,Empoli FC,1-2,1-0
+11,Sun,2021-10-31,Genoa CFC,Venezia FC,0-0,
+11,Sun,2021-10-31,ACF Fiorentina,Spezia Calcio,3-0,1-0
+11,Sun,2021-10-31,US Salernitana 1919,SSC Napoli,0-1,0-0
+11,Sun,2021-10-31,AS Roma,AC Milan,1-2,0-1
+11,Mon,2021-11-01,Bologna FC 1909,Cagliari Calcio,2-0,0-0
+12,Fri,2021-11-05,Empoli FC,Genoa CFC,2-2,0-1
+12,Sat,2021-11-06,Spezia Calcio,Torino FC,1-0,0-0
+12,Sat,2021-11-06,Juventus FC,ACF Fiorentina,1-0,0-0
+12,Sat,2021-11-06,Cagliari Calcio,Atalanta BC,1-2,1-2
+12,Sun,2021-11-07,Venezia FC,AS Roma,3-2,1-2
+12,Sun,2021-11-07,Udinese Calcio,US Sassuolo Calcio,3-2,2-2
+12,Sun,2021-11-07,UC Sampdoria,Bologna FC 1909,1-2,0-0
+12,Sun,2021-11-07,SSC Napoli,Hellas Verona FC,1-1,1-1
+12,Sun,2021-11-07,SS Lazio,US Salernitana 1919,3-0,2-0
+12,Sun,2021-11-07,AC Milan,FC Internazionale Milano,1-1,1-1
+13,Sat,2021-11-20,Atalanta BC,Spezia Calcio,5-2,3-1
+13,Sat,2021-11-20,SS Lazio,Juventus FC,0-2,0-1
+13,Sat,2021-11-20,ACF Fiorentina,AC Milan,4-3,2-0
+13,Sun,2021-11-21,US Sassuolo Calcio,Cagliari Calcio,2-2,1-1
+13,Sun,2021-11-21,US Salernitana 1919,UC Sampdoria,0-2,0-2
+13,Sun,2021-11-21,Bologna FC 1909,Venezia FC,0-1,0-0
+13,Sun,2021-11-21,FC Internazionale Milano,SSC Napoli,3-2,2-1
+13,Sun,2021-11-21,Genoa CFC,AS Roma,0-2,0-0
+13,Mon,2021-11-22,Hellas Verona FC,Empoli FC,2-1,0-0
+13,Mon,2021-11-22,Torino FC,Udinese Calcio,2-1,1-0
+14,Fri,2021-11-26,Cagliari Calcio,US Salernitana 1919,1-1,0-0
+14,Sat,2021-11-27,UC Sampdoria,Hellas Verona FC,3-1,0-1
+14,Sat,2021-11-27,Empoli FC,ACF Fiorentina,2-1,0-0
+14,Sat,2021-11-27,Juventus FC,Atalanta BC,0-1,0-1
+14,Sat,2021-11-27,Venezia FC,FC Internazionale Milano,0-2,0-1
+14,Sun,2021-11-28,Udinese Calcio,Genoa CFC,0-0,
+14,Sun,2021-11-28,AC Milan,US Sassuolo Calcio,1-3,1-2
+14,Sun,2021-11-28,Spezia Calcio,Bologna FC 1909,0-1,0-0
+14,Sun,2021-11-28,AS Roma,Torino FC,1-0,1-0
+14,Sun,2021-11-28,SSC Napoli,SS Lazio,4-0,3-0
+15,Tue,2021-11-30,Atalanta BC,Venezia FC,4-0,2-0
+15,Tue,2021-11-30,ACF Fiorentina,UC Sampdoria,3-1,3-1
+15,Tue,2021-11-30,US Salernitana 1919,Juventus FC,0-2,0-1
+15,Tue,2021-11-30,Hellas Verona FC,Cagliari Calcio,0-0,
+15,Wed,2021-12-01,FC Internazionale Milano,Spezia Calcio,2-0,1-0
+15,Wed,2021-12-01,Bologna FC 1909,AS Roma,1-0,1-0
+15,Wed,2021-12-01,US Sassuolo Calcio,SSC Napoli,2-2,0-0
+15,Wed,2021-12-01,Genoa CFC,AC Milan,0-3,0-2
+15,Thu,2021-12-02,Torino FC,Empoli FC,2-2,2-1
+15,Thu,2021-12-02,SS Lazio,Udinese Calcio,4-4,1-3
+16,Sat,2021-12-04,AC Milan,US Salernitana 1919,2-0,2-0
+16,Sat,2021-12-04,AS Roma,FC Internazionale Milano,0-3,0-3
+16,Sat,2021-12-04,SSC Napoli,Atalanta BC,2-3,1-1
+16,Sun,2021-12-05,Bologna FC 1909,ACF Fiorentina,2-3,1-1
+16,Sun,2021-12-05,Venezia FC,Hellas Verona FC,3-4,3-0
+16,Sun,2021-12-05,Spezia Calcio,US Sassuolo Calcio,2-2,1-0
+16,Sun,2021-12-05,UC Sampdoria,SS Lazio,1-3,0-3
+16,Sun,2021-12-05,Juventus FC,Genoa CFC,2-0,1-0
+16,Mon,2021-12-06,Empoli FC,Udinese Calcio,3-1,0-1
+16,Mon,2021-12-06,Cagliari Calcio,Torino FC,1-1,0-1
+17,Fri,2021-12-10,Genoa CFC,UC Sampdoria,1-3,0-1
+17,Sat,2021-12-11,ACF Fiorentina,US Salernitana 1919,4-0,1-0
+17,Sat,2021-12-11,Venezia FC,Juventus FC,1-1,0-1
+17,Sat,2021-12-11,Udinese Calcio,AC Milan,1-1,1-0
+17,Sun,2021-12-12,Torino FC,Bologna FC 1909,2-1,1-0
+17,Sun,2021-12-12,Hellas Verona FC,Atalanta BC,1-2,1-1
+17,Sun,2021-12-12,US Sassuolo Calcio,SS Lazio,2-1,0-1
+17,Sun,2021-12-12,SSC Napoli,Empoli FC,0-1,0-0
+17,Sun,2021-12-12,FC Internazionale Milano,Cagliari Calcio,4-0,1-0
+17,Mon,2021-12-13,AS Roma,Spezia Calcio,2-0,1-0
+18,Fri,2021-12-17,SS Lazio,Genoa CFC,3-1,1-0
+18,Fri,2021-12-17,US Salernitana 1919,FC Internazionale Milano,0-5,0-2
+18,Sat,2021-12-18,Atalanta BC,AS Roma,1-4,1-2
+18,Sat,2021-12-18,Bologna FC 1909,Juventus FC,0-2,0-1
+18,Sat,2021-12-18,Cagliari Calcio,Udinese Calcio,0-4,0-2
+18,Sun,2021-12-19,ACF Fiorentina,US Sassuolo Calcio,2-2,0-2
+18,Sun,2021-12-19,Spezia Calcio,Empoli FC,1-1,0-0
+18,Sun,2021-12-19,Torino FC,Hellas Verona FC,1-0,1-0
+18,Sun,2021-12-19,UC Sampdoria,Venezia FC,1-1,1-0
+18,Sun,2021-12-19,AC Milan,SSC Napoli,0-1,0-1
+19,Tue,2021-12-21,Juventus FC,Cagliari Calcio,2-0,1-0
+19,Tue,2021-12-21,Genoa CFC,Atalanta BC,0-0,
+19,Wed,2021-12-22,Venezia FC,SS Lazio,1-3,1-1
+19,Wed,2021-12-22,US Sassuolo Calcio,Bologna FC 1909,0-3,0-2
+19,Wed,2021-12-22,AS Roma,UC Sampdoria,1-1,0-0
+19,Wed,2021-12-22,FC Internazionale Milano,Torino FC,1-0,1-0
+19,Wed,2021-12-22,Hellas Verona FC,ACF Fiorentina,1-1,1-0
+19,Wed,2021-12-22,SSC Napoli,Spezia Calcio,0-1,0-1
+19,Wed,2021-12-22,Empoli FC,AC Milan,2-4,1-2
+20,Thu,2022-01-06,UC Sampdoria,Cagliari Calcio,1-2,1-0
+20,Thu,2022-01-06,Spezia Calcio,Hellas Verona FC,1-2,0-0
+20,Thu,2022-01-06,SS Lazio,Empoli FC,3-3,1-2
+20,Thu,2022-01-06,US Sassuolo Calcio,Genoa CFC,1-1,0-1
+20,Thu,2022-01-06,AC Milan,AS Roma,3-1,2-1
+20,Thu,2022-01-06,Juventus FC,SSC Napoli,1-1,0-1
+21,Sun,2022-01-09,Venezia FC,AC Milan,0-3,0-1
+21,Sun,2022-01-09,Empoli FC,US Sassuolo Calcio,1-5,1-2
+21,Sun,2022-01-09,Udinese Calcio,Atalanta BC,2-6,0-3
+21,Sun,2022-01-09,SSC Napoli,UC Sampdoria,1-0,1-0
+21,Sun,2022-01-09,AS Roma,Juventus FC,3-4,1-1
+21,Sun,2022-01-09,Genoa CFC,Spezia Calcio,0-1,0-1
+21,Sun,2022-01-09,FC Internazionale Milano,SS Lazio,2-1,1-1
+21,Sun,2022-01-09,Hellas Verona FC,US Salernitana 1919,1-2,0-1
+21,Mon,2022-01-10,Torino FC,ACF Fiorentina,4-0,3-0
+21,Tue,2022-01-11,Cagliari Calcio,Bologna FC 1909,2-1,0-0
+22,Sat,2022-01-15,UC Sampdoria,Torino FC,1-2,1-1
+22,Sat,2022-01-15,US Salernitana 1919,SS Lazio,0-3,0-2
+22,Sat,2022-01-15,Juventus FC,Udinese Calcio,2-0,1-0
+22,Sun,2022-01-16,US Sassuolo Calcio,Hellas Verona FC,2-4,0-2
+22,Sun,2022-01-16,Venezia FC,Empoli FC,1-1,0-1
+22,Sun,2022-01-16,AS Roma,Cagliari Calcio,1-0,1-0
+22,Sun,2022-01-16,Atalanta BC,FC Internazionale Milano,0-0,
+22,Mon,2022-01-17,AC Milan,Spezia Calcio,1-2,1-0
+22,Mon,2022-01-17,Bologna FC 1909,SSC Napoli,0-2,0-1
+22,Mon,2022-01-17,ACF Fiorentina,Genoa CFC,6-0,3-0
+23,Fri,2022-01-21,Hellas Verona FC,Bologna FC 1909,2-1,1-1
+23,Sat,2022-01-22,Genoa CFC,Udinese Calcio,0-0,
+23,Sat,2022-01-22,FC Internazionale Milano,Venezia FC,2-1,1-1
+23,Sat,2022-01-22,SS Lazio,Atalanta BC,0-0,
+23,Sun,2022-01-23,Cagliari Calcio,ACF Fiorentina,1-1,0-0
+23,Sun,2022-01-23,Torino FC,US Sassuolo Calcio,1-1,1-0
+23,Sun,2022-01-23,Spezia Calcio,UC Sampdoria,1-0,0-0
+23,Sun,2022-01-23,SSC Napoli,US Salernitana 1919,4-1,2-1
+23,Sun,2022-01-23,Empoli FC,AS Roma,2-4,0-4
+23,Sun,2022-01-23,AC Milan,Juventus FC,0-0,
+24,Sat,2022-02-05,AS Roma,Genoa CFC,0-0,
+24,Sat,2022-02-05,FC Internazionale Milano,AC Milan,1-2,1-0
+24,Sat,2022-02-05,ACF Fiorentina,SS Lazio,0-3,0-0
+24,Sun,2022-02-06,Atalanta BC,Cagliari Calcio,1-2,0-0
+24,Sun,2022-02-06,Venezia FC,SSC Napoli,0-2,0-0
+24,Sun,2022-02-06,UC Sampdoria,US Sassuolo Calcio,4-0,2-0
+24,Sun,2022-02-06,Bologna FC 1909,Empoli FC,0-0,
+24,Sun,2022-02-06,Udinese Calcio,Torino FC,2-0,0-0
+24,Sun,2022-02-06,Juventus FC,Hellas Verona FC,2-0,1-0
+24,Mon,2022-02-07,US Salernitana 1919,Spezia Calcio,2-2,2-2
+25,Sat,2022-02-12,SS Lazio,Bologna FC 1909,3-0,1-0
+25,Sat,2022-02-12,SSC Napoli,FC Internazionale Milano,1-1,1-0
+25,Sat,2022-02-12,Torino FC,Venezia FC,1-2,1-1
+25,Sun,2022-02-13,AC Milan,UC Sampdoria,1-0,1-0
+25,Sun,2022-02-13,Hellas Verona FC,Udinese Calcio,4-0,2-0
+25,Sun,2022-02-13,Genoa CFC,US Salernitana 1919,1-1,1-1
+25,Sun,2022-02-13,Empoli FC,Cagliari Calcio,1-1,1-0
+25,Sun,2022-02-13,US Sassuolo Calcio,AS Roma,2-2,0-1
+25,Sun,2022-02-13,Atalanta BC,Juventus FC,1-1,0-0
+25,Mon,2022-02-14,Spezia Calcio,ACF Fiorentina,1-2,0-1
+26,Fri,2022-02-18,Juventus FC,Torino FC,1-1,1-0
+26,Sat,2022-02-19,UC Sampdoria,Empoli FC,2-0,2-0
+26,Sat,2022-02-19,AS Roma,Hellas Verona FC,2-2,0-2
+26,Sat,2022-02-19,US Salernitana 1919,AC Milan,2-2,1-1
+26,Sun,2022-02-20,ACF Fiorentina,Atalanta BC,1-0,0-0
+26,Sun,2022-02-20,Venezia FC,Genoa CFC,1-1,1-1
+26,Sun,2022-02-20,FC Internazionale Milano,US Sassuolo Calcio,0-2,0-2
+26,Sun,2022-02-20,Udinese Calcio,SS Lazio,1-1,1-1
+26,Mon,2022-02-21,Cagliari Calcio,SSC Napoli,1-1,0-0
+26,Mon,2022-02-21,Bologna FC 1909,Spezia Calcio,2-1,1-1
+27,Fri,2022-02-25,AC Milan,Udinese Calcio,1-1,1-0
+27,Fri,2022-02-25,Genoa CFC,FC Internazionale Milano,0-0,
+27,Sat,2022-02-26,US Salernitana 1919,Bologna FC 1909,1-1,0-1
+27,Sat,2022-02-26,Empoli FC,Juventus FC,2-3,1-2
+27,Sat,2022-02-26,US Sassuolo Calcio,ACF Fiorentina,2-1,1-0
+27,Sun,2022-02-27,Torino FC,Cagliari Calcio,1-2,0-1
+27,Sun,2022-02-27,Hellas Verona FC,Venezia FC,3-1,0-0
+27,Sun,2022-02-27,Spezia Calcio,AS Roma,0-1,0-0
+27,Sun,2022-02-27,SS Lazio,SSC Napoli,1-2,0-0
+27,Mon,2022-02-28,Atalanta BC,UC Sampdoria,4-0,2-0
+28,Fri,2022-03-04,FC Internazionale Milano,US Salernitana 1919,5-0,2-0
+28,Sat,2022-03-05,Udinese Calcio,UC Sampdoria,2-1,2-1
+28,Sat,2022-03-05,AS Roma,Atalanta BC,1-0,1-0
+28,Sat,2022-03-05,Cagliari Calcio,SS Lazio,0-3,0-2
+28,Sun,2022-03-06,Genoa CFC,Empoli FC,0-0,
+28,Sun,2022-03-06,Venezia FC,US Sassuolo Calcio,1-4,1-3
+28,Sun,2022-03-06,ACF Fiorentina,Hellas Verona FC,1-1,1-1
+28,Sun,2022-03-06,Bologna FC 1909,Torino FC,0-0,
+28,Sun,2022-03-06,Juventus FC,Spezia Calcio,1-0,1-0
+28,Sun,2022-03-06,SSC Napoli,AC Milan,0-1,0-0
+29,Sat,2022-03-12,Spezia Calcio,Cagliari Calcio,2-0,0-0
+29,Sat,2022-03-12,US Salernitana 1919,US Sassuolo Calcio,2-2,1-2
+29,Sat,2022-03-12,UC Sampdoria,Juventus FC,1-3,0-2
+29,Sat,2022-03-12,AC Milan,Empoli FC,1-0,1-0
+29,Sun,2022-03-13,ACF Fiorentina,Bologna FC 1909,1-0,0-0
+29,Sun,2022-03-13,Hellas Verona FC,SSC Napoli,1-2,0-1
+29,Sun,2022-03-13,Udinese Calcio,AS Roma,1-1,1-0
+29,Sun,2022-03-13,Atalanta BC,Genoa CFC,0-0,
+29,Sun,2022-03-13,Torino FC,FC Internazionale Milano,1-1,1-0
+29,Mon,2022-03-14,SS Lazio,Venezia FC,1-0,0-0
+30,Fri,2022-03-18,US Sassuolo Calcio,Spezia Calcio,4-1,1-1
+30,Fri,2022-03-18,Genoa CFC,Torino FC,1-0,1-0
+30,Sat,2022-03-19,SSC Napoli,Udinese Calcio,2-1,0-1
+30,Sat,2022-03-19,FC Internazionale Milano,ACF Fiorentina,1-1,0-0
+30,Sat,2022-03-19,Cagliari Calcio,AC Milan,0-1,0-0
+30,Sun,2022-03-20,Venezia FC,UC Sampdoria,0-2,0-2
+30,Sun,2022-03-20,Juventus FC,US Salernitana 1919,2-0,2-0
+30,Sun,2022-03-20,Empoli FC,Hellas Verona FC,1-1,1-0
+30,Sun,2022-03-20,AS Roma,SS Lazio,3-0,3-0
+30,Sun,2022-03-20,Bologna FC 1909,Atalanta BC,0-1,0-0
+31,Sat,2022-04-02,Spezia Calcio,Venezia FC,1-0,0-0
+31,Sat,2022-04-02,SS Lazio,US Sassuolo Calcio,2-1,1-0
+31,Sat,2022-04-02,US Salernitana 1919,Torino FC,0-1,0-1
+31,Sun,2022-04-03,ACF Fiorentina,Empoli FC,1-0,0-0
+31,Sun,2022-04-03,Udinese Calcio,Cagliari Calcio,5-1,2-1
+31,Sun,2022-04-03,Atalanta BC,SSC Napoli,1-3,0-2
+31,Sun,2022-04-03,UC Sampdoria,AS Roma,0-1,0-1
+31,Sun,2022-04-03,Juventus FC,FC Internazionale Milano,0-1,0-1
+31,Mon,2022-04-04,Hellas Verona FC,Genoa CFC,1-0,1-0
+31,Mon,2022-04-04,AC Milan,Bologna FC 1909,0-0,
+32,Sat,2022-04-09,Empoli FC,Spezia Calcio,0-0,
+32,Sat,2022-04-09,FC Internazionale Milano,Hellas Verona FC,2-0,2-0
+32,Sat,2022-04-09,Cagliari Calcio,Juventus FC,1-2,1-1
+32,Sun,2022-04-10,Genoa CFC,SS Lazio,1-4,0-2
+32,Sun,2022-04-10,Venezia FC,Udinese Calcio,1-2,0-1
+32,Sun,2022-04-10,US Sassuolo Calcio,Atalanta BC,2-1,1-0
+32,Sun,2022-04-10,SSC Napoli,ACF Fiorentina,2-3,0-1
+32,Sun,2022-04-10,AS Roma,US Salernitana 1919,2-1,0-1
+32,Sun,2022-04-10,Torino FC,AC Milan,0-0,
+32,Mon,2022-04-11,Bologna FC 1909,UC Sampdoria,2-0,0-0
+33,Fri,2022-04-15,Spezia Calcio,FC Internazionale Milano,1-3,0-1
+33,Fri,2022-04-15,AC Milan,Genoa CFC,2-0,1-0
+33,Sat,2022-04-16,Cagliari Calcio,US Sassuolo Calcio,1-0,1-0
+33,Sat,2022-04-16,Udinese Calcio,Empoli FC,4-1,1-0
+33,Sat,2022-04-16,UC Sampdoria,US Salernitana 1919,1-2,1-2
+33,Sat,2022-04-16,ACF Fiorentina,Venezia FC,1-0,1-0
+33,Sat,2022-04-16,Juventus FC,Bologna FC 1909,1-1,0-0
+33,Sat,2022-04-16,SS Lazio,Torino FC,1-1,0-0
+33,Mon,2022-04-18,SSC Napoli,AS Roma,1-1,1-0
+33,Mon,2022-04-18,Atalanta BC,Hellas Verona FC,1-2,0-1
+19,Wed,2022-04-20,Udinese Calcio,US Salernitana 1919,0-1,0-0
+34,Sat,2022-04-23,Venezia FC,Atalanta BC,1-3,0-1
+34,Sat,2022-04-23,Torino FC,Spezia Calcio,2-1,1-0
+34,Sat,2022-04-23,FC Internazionale Milano,AS Roma,3-1,2-0
+34,Sat,2022-04-23,Hellas Verona FC,UC Sampdoria,1-1,0-1
+34,Sun,2022-04-24,US Salernitana 1919,ACF Fiorentina,2-1,1-0
+34,Sun,2022-04-24,Empoli FC,SSC Napoli,3-2,0-1
+34,Sun,2022-04-24,Bologna FC 1909,Udinese Calcio,2-2,1-1
+34,Sun,2022-04-24,Genoa CFC,Cagliari Calcio,1-0,0-0
+34,Sun,2022-04-24,SS Lazio,AC Milan,1-2,1-0
+34,Mon,2022-04-25,US Sassuolo Calcio,Juventus FC,1-2,1-1
+20,Wed,2022-04-27,ACF Fiorentina,Udinese Calcio,0-4,0-2
+20,Wed,2022-04-27,Bologna FC 1909,FC Internazionale Milano,2-1,1-1
+20,Wed,2022-04-27,Atalanta BC,Torino FC,4-4,2-2
+35,Sat,2022-04-30,SSC Napoli,US Sassuolo Calcio,6-1,4-0
+35,Sat,2022-04-30,Cagliari Calcio,Hellas Verona FC,1-2,0-2
+35,Sat,2022-04-30,UC Sampdoria,Genoa CFC,1-0,1-0
+35,Sat,2022-04-30,Spezia Calcio,SS Lazio,3-4,2-1
+35,Sun,2022-05-01,Juventus FC,Venezia FC,2-1,1-0
+35,Sun,2022-05-01,AC Milan,ACF Fiorentina,1-0,0-0
+35,Sun,2022-05-01,Empoli FC,Torino FC,1-3,0-0
+35,Sun,2022-05-01,Udinese Calcio,FC Internazionale Milano,1-2,0-2
+35,Sun,2022-05-01,AS Roma,Bologna FC 1909,0-0,
+35,Mon,2022-05-02,Atalanta BC,US Salernitana 1919,1-1,0-1
+20,Thu,2022-05-05,US Salernitana 1919,Venezia FC,2-1,1-0
+36,Fri,2022-05-06,FC Internazionale Milano,Empoli FC,4-2,2-2
+36,Fri,2022-05-06,Genoa CFC,Juventus FC,2-1,0-0
+36,Sat,2022-05-07,Torino FC,SSC Napoli,0-1,0-0
+36,Sat,2022-05-07,US Sassuolo Calcio,Udinese Calcio,1-1,1-0
+36,Sat,2022-05-07,SS Lazio,UC Sampdoria,2-0,1-0
+36,Sun,2022-05-08,Spezia Calcio,Atalanta BC,1-3,1-1
+36,Sun,2022-05-08,Venezia FC,Bologna FC 1909,4-3,2-1
+36,Sun,2022-05-08,US Salernitana 1919,Cagliari Calcio,1-1,0-0
+36,Sun,2022-05-08,Hellas Verona FC,AC Milan,1-3,1-1
+36,Mon,2022-05-09,ACF Fiorentina,AS Roma,2-0,2-0
+37,Sat,2022-05-14,Empoli FC,US Salernitana 1919,1-1,1-0
+37,Sat,2022-05-14,Udinese Calcio,Spezia Calcio,2-3,1-2
+37,Sat,2022-05-14,Hellas Verona FC,Torino FC,0-1,0-1
+37,Sat,2022-05-14,AS Roma,Venezia FC,1-1,0-1
+37,Sun,2022-05-15,Bologna FC 1909,US Sassuolo Calcio,1-3,0-1
+37,Sun,2022-05-15,SSC Napoli,Genoa CFC,3-0,1-0
+37,Sun,2022-05-15,AC Milan,Atalanta BC,2-0,0-0
+37,Sun,2022-05-15,Cagliari Calcio,FC Internazionale Milano,1-3,0-1
+37,Mon,2022-05-16,UC Sampdoria,ACF Fiorentina,4-1,2-0
+37,Mon,2022-05-16,Juventus FC,SS Lazio,2-2,2-0
+38,Fri,2022-05-20,Torino FC,AS Roma,0-3,0-2
+38,Sat,2022-05-21,Genoa CFC,Bologna FC 1909,0-1,0-0
+38,Sat,2022-05-21,SS Lazio,Hellas Verona FC,3-3,2-2
+38,Sat,2022-05-21,ACF Fiorentina,Juventus FC,2-0,1-0
+38,Sat,2022-05-21,Atalanta BC,Empoli FC,0-1,0-0
+38,Sun,2022-05-22,Spezia Calcio,SSC Napoli,0-3,0-3
+38,Sun,2022-05-22,US Sassuolo Calcio,AC Milan,0-3,0-3
+38,Sun,2022-05-22,FC Internazionale Milano,UC Sampdoria,3-0,0-0
+38,Sun,2022-05-22,Venezia FC,Cagliari Calcio,0-0,
+38,Sun,2022-05-22,US Salernitana 1919,Udinese Calcio,0-4,0-3

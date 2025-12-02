@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Sat,2018-08-18,Chievo Verona,Juventus,2-3,1-1
+1,Sat,2018-08-18,Lazio Roma,SSC Napoli,1-2,1-1
+1,Sun,2018-08-19,Torino FC,AS Roma,0-1,0-0
+1,Sun,2018-08-19,Bologna FC,SPAL 2013 Ferrara,0-1,0-0
+1,Sun,2018-08-19,Empoli FC,Cagliari Calcio,2-0,1-0
+1,Sun,2018-08-19,Parma Calcio 1913,Udinese Calcio,2-2,1-0
+1,Sun,2018-08-19,Sassuolo Calcio,Inter,1-0,1-0
+1,Mon,2018-08-20,Atalanta,Frosinone Calcio,4-0,1-0
+1,Wed,2018-09-19,Sampdoria,ACF Fiorentina,1-1,0-1
+1,Wed,2018-10-31,AC Milan,Genoa CFC,2-1,1-0
+2,Sat,2018-08-25,Juventus,Lazio Roma,2-0,1-0
+2,Sat,2018-08-25,SSC Napoli,AC Milan,3-2,0-1
+2,Sun,2018-08-26,SPAL 2013 Ferrara,Parma Calcio 1913,1-0,0-0
+2,Sun,2018-08-26,Cagliari Calcio,Sassuolo Calcio,2-2,1-0
+2,Sun,2018-08-26,ACF Fiorentina,Chievo Verona,6-1,2-0
+2,Sun,2018-08-26,Frosinone Calcio,Bologna FC,0-0,
+2,Sun,2018-08-26,Genoa CFC,Empoli FC,2-1,2-0
+2,Sun,2018-08-26,Inter,Torino FC,2-2,2-0
+2,Sun,2018-08-26,Udinese Calcio,Sampdoria,1-0,1-0
+2,Mon,2018-08-27,AS Roma,Atalanta,3-3,1-3
+3,Fri,2018-08-31,AC Milan,AS Roma,2-1,1-0
+3,Sat,2018-09-01,Bologna FC,Inter,0-3,0-0
+3,Sat,2018-09-01,Parma Calcio 1913,Juventus,1-2,1-1
+3,Sun,2018-09-02,ACF Fiorentina,Udinese Calcio,1-0,0-0
+3,Sun,2018-09-02,Atalanta,Cagliari Calcio,0-1,0-1
+3,Sun,2018-09-02,Chievo Verona,Empoli FC,0-0,
+3,Sun,2018-09-02,Lazio Roma,Frosinone Calcio,1-0,0-0
+3,Sun,2018-09-02,Sampdoria,SSC Napoli,3-0,2-0
+3,Sun,2018-09-02,Sassuolo Calcio,Genoa CFC,5-3,4-1
+3,Sun,2018-09-02,Torino FC,SPAL 2013 Ferrara,1-0,0-0
+4,Sat,2018-09-15,Inter,Parma Calcio 1913,0-1,0-0
+4,Sat,2018-09-15,SSC Napoli,ACF Fiorentina,1-0,0-0
+4,Sat,2018-09-15,Frosinone Calcio,Sampdoria,0-5,0-1
+4,Sun,2018-09-16,AS Roma,Chievo Verona,2-2,2-0
+4,Sun,2018-09-16,Genoa CFC,Bologna FC,1-0,0-0
+4,Sun,2018-09-16,Juventus,Sassuolo Calcio,2-1,0-0
+4,Sun,2018-09-16,Udinese Calcio,Torino FC,1-1,1-0
+4,Sun,2018-09-16,Empoli FC,Lazio Roma,0-1,0-0
+4,Sun,2018-09-16,Cagliari Calcio,AC Milan,1-1,1-0
+4,Mon,2018-09-17,SPAL 2013 Ferrara,Atalanta,2-0,0-0
+5,Fri,2018-09-21,Sassuolo Calcio,Empoli FC,3-1,1-1
+5,Sat,2018-09-22,Parma Calcio 1913,Cagliari Calcio,2-0,1-0
+5,Sat,2018-09-22,ACF Fiorentina,SPAL 2013 Ferrara,3-0,2-0
+5,Sat,2018-09-22,Sampdoria,Inter,0-1,0-0
+5,Sun,2018-09-23,Torino FC,SSC Napoli,1-3,0-2
+5,Sun,2018-09-23,Bologna FC,AS Roma,2-0,1-0
+5,Sun,2018-09-23,Chievo Verona,Udinese Calcio,0-2,0-0
+5,Sun,2018-09-23,Lazio Roma,Genoa CFC,4-1,2-0
+5,Sun,2018-09-23,AC Milan,Atalanta,2-2,1-0
+5,Sun,2018-09-23,Frosinone Calcio,Juventus,0-2,0-0
+6,Tue,2018-09-25,Inter,ACF Fiorentina,2-1,1-0
+6,Wed,2018-09-26,Udinese Calcio,Lazio Roma,1-2,0-0
+6,Wed,2018-09-26,Atalanta,Torino FC,0-0,
+6,Wed,2018-09-26,Cagliari Calcio,Sampdoria,0-0,
+6,Wed,2018-09-26,Genoa CFC,Chievo Verona,2-0,1-0
+6,Wed,2018-09-26,Juventus,Bologna FC,2-0,2-0
+6,Wed,2018-09-26,SSC Napoli,Parma Calcio 1913,3-0,1-0
+6,Wed,2018-09-26,AS Roma,Frosinone Calcio,4-0,3-0
+6,Thu,2018-09-27,SPAL 2013 Ferrara,Sassuolo Calcio,0-2,0-0
+6,Thu,2018-09-27,Empoli FC,AC Milan,1-1,0-1
+7,Sat,2018-09-29,AS Roma,Lazio Roma,3-1,1-0
+7,Sat,2018-09-29,Juventus,SSC Napoli,3-1,1-1
+7,Sat,2018-09-29,Inter,Cagliari Calcio,2-0,1-0
+7,Sun,2018-09-30,Bologna FC,Udinese Calcio,2-1,1-1
+7,Sun,2018-09-30,Chievo Verona,Torino FC,0-1,0-0
+7,Sun,2018-09-30,ACF Fiorentina,Atalanta,2-0,0-0
+7,Sun,2018-09-30,Frosinone Calcio,Genoa CFC,1-2,1-2
+7,Sun,2018-09-30,Parma Calcio 1913,Empoli FC,1-0,1-0
+7,Sun,2018-09-30,Sassuolo Calcio,AC Milan,1-4,0-1
+7,Mon,2018-10-01,Sampdoria,SPAL 2013 Ferrara,2-1,1-1
+8,Fri,2018-10-05,Torino FC,Frosinone Calcio,3-2,1-0
+8,Sat,2018-10-06,Cagliari Calcio,Bologna FC,2-0,1-0
+8,Sat,2018-10-06,Udinese Calcio,Juventus,0-2,0-2
+8,Sat,2018-10-06,Empoli FC,AS Roma,0-2,0-1
+8,Sun,2018-10-07,Genoa CFC,Parma Calcio 1913,1-3,1-3
+8,Sun,2018-10-07,Atalanta,Sampdoria,0-1,0-0
+8,Sun,2018-10-07,Lazio Roma,ACF Fiorentina,1-0,1-0
+8,Sun,2018-10-07,AC Milan,Chievo Verona,3-1,2-0
+8,Sun,2018-10-07,SSC Napoli,Sassuolo Calcio,2-0,1-0
+8,Sun,2018-10-07,SPAL 2013 Ferrara,Inter,1-2,0-1
+9,Sat,2018-10-20,AS Roma,SPAL 2013 Ferrara,0-2,0-1
+9,Sat,2018-10-20,Juventus,Genoa CFC,1-1,1-0
+9,Sat,2018-10-20,Udinese Calcio,SSC Napoli,0-3,0-1
+9,Sun,2018-10-21,Frosinone Calcio,Empoli FC,3-3,1-1
+9,Sun,2018-10-21,Bologna FC,Torino FC,2-2,0-1
+9,Sun,2018-10-21,Chievo Verona,Atalanta,1-5,0-2
+9,Sun,2018-10-21,Parma Calcio 1913,Lazio Roma,0-2,0-0
+9,Sun,2018-10-21,ACF Fiorentina,Cagliari Calcio,1-1,0-0
+9,Sun,2018-10-21,Inter,AC Milan,1-0,0-0
+9,Mon,2018-10-22,Sampdoria,Sassuolo Calcio,0-0,
+10,Sat,2018-10-27,Atalanta,Parma Calcio 1913,3-0,0-0
+10,Sat,2018-10-27,Empoli FC,Juventus,1-2,1-0
+10,Sat,2018-10-27,Torino FC,ACF Fiorentina,1-1,1-1
+10,Sun,2018-10-28,Sassuolo Calcio,Bologna FC,2-2,1-1
+10,Sun,2018-10-28,Cagliari Calcio,Chievo Verona,2-1,1-0
+10,Sun,2018-10-28,Genoa CFC,Udinese Calcio,2-2,1-0
+10,Sun,2018-10-28,SPAL 2013 Ferrara,Frosinone Calcio,0-3,0-1
+10,Sun,2018-10-28,AC Milan,Sampdoria,3-2,2-2
+10,Sun,2018-10-28,SSC Napoli,AS Roma,1-1,0-1
+10,Mon,2018-10-29,Lazio Roma,Inter,0-3,0-2
+11,Fri,2018-11-02,SSC Napoli,Empoli FC,5-1,2-0
+11,Sat,2018-11-03,Inter,Genoa CFC,5-0,2-0
+11,Sat,2018-11-03,ACF Fiorentina,AS Roma,1-1,1-0
+11,Sat,2018-11-03,Juventus,Cagliari Calcio,3-1,2-1
+11,Sun,2018-11-04,Lazio Roma,SPAL 2013 Ferrara,4-1,2-1
+11,Sun,2018-11-04,Chievo Verona,Sassuolo Calcio,0-2,0-1
+11,Sun,2018-11-04,Parma Calcio 1913,Frosinone Calcio,0-0,
+11,Sun,2018-11-04,Sampdoria,Torino FC,1-4,0-2
+11,Sun,2018-11-04,Bologna FC,Atalanta,1-2,1-0
+11,Sun,2018-11-04,Udinese Calcio,AC Milan,0-1,0-0
+12,Fri,2018-11-09,Frosinone Calcio,ACF Fiorentina,1-1,0-0
+12,Sat,2018-11-10,Torino FC,Parma Calcio 1913,1-2,1-2
+12,Sat,2018-11-10,SPAL 2013 Ferrara,Cagliari Calcio,2-2,1-0
+12,Sat,2018-11-10,Genoa CFC,SSC Napoli,1-2,1-0
+12,Sun,2018-11-11,Atalanta,Inter,4-1,1-0
+12,Sun,2018-11-11,Chievo Verona,Bologna FC,2-2,2-1
+12,Sun,2018-11-11,Empoli FC,Udinese Calcio,2-1,1-0
+12,Sun,2018-11-11,AS Roma,Sampdoria,4-1,1-0
+12,Sun,2018-11-11,Sassuolo Calcio,Lazio Roma,1-1,1-1
+12,Sun,2018-11-11,AC Milan,Juventus,0-2,0-1
+13,Sat,2018-11-24,Udinese Calcio,AS Roma,1-0,0-0
+13,Sat,2018-11-24,Juventus,SPAL 2013 Ferrara,2-0,1-0
+13,Sat,2018-11-24,Inter,Frosinone Calcio,3-0,1-0
+13,Sun,2018-11-25,Parma Calcio 1913,Sassuolo Calcio,2-1,2-1
+13,Sun,2018-11-25,Bologna FC,ACF Fiorentina,0-0,
+13,Sun,2018-11-25,Empoli FC,Atalanta,3-2,1-2
+13,Sun,2018-11-25,SSC Napoli,Chievo Verona,0-0,
+13,Sun,2018-11-25,Lazio Roma,AC Milan,1-1,0-0
+13,Sun,2018-11-25,Genoa CFC,Sampdoria,1-1,1-1
+13,Mon,2018-11-26,Cagliari Calcio,Torino FC,0-0,
+14,Sat,2018-12-01,SPAL 2013 Ferrara,Empoli FC,2-2,1-2
+14,Sat,2018-12-01,ACF Fiorentina,Juventus,0-3,0-1
+14,Sat,2018-12-01,Sampdoria,Bologna FC,4-1,3-1
+14,Sun,2018-12-02,AC Milan,Parma Calcio 1913,2-1,0-0
+14,Sun,2018-12-02,Frosinone Calcio,Cagliari Calcio,1-1,1-0
+14,Sun,2018-12-02,Sassuolo Calcio,Udinese Calcio,0-0,
+14,Sun,2018-12-02,Torino FC,Genoa CFC,2-1,2-1
+14,Sun,2018-12-02,Chievo Verona,Lazio Roma,1-1,1-0
+14,Sun,2018-12-02,AS Roma,Inter,2-2,0-1
+14,Mon,2018-12-03,Atalanta,SSC Napoli,1-2,0-1
+15,Fri,2018-12-07,Juventus,Inter,1-0,0-0
+15,Sat,2018-12-08,SSC Napoli,Frosinone Calcio,4-0,2-0
+15,Sat,2018-12-08,Cagliari Calcio,AS Roma,2-2,0-2
+15,Sat,2018-12-08,Lazio Roma,Sampdoria,2-2,0-1
+15,Sun,2018-12-09,Sassuolo Calcio,ACF Fiorentina,3-3,0-0
+15,Sun,2018-12-09,Empoli FC,Bologna FC,2-1,1-1
+15,Sun,2018-12-09,Parma Calcio 1913,Chievo Verona,1-1,0-0
+15,Sun,2018-12-09,Udinese Calcio,Atalanta,1-3,1-1
+15,Sun,2018-12-09,Genoa CFC,SPAL 2013 Ferrara,1-1,1-1
+15,Sun,2018-12-09,AC Milan,Torino FC,0-0,
+16,Sat,2018-12-15,Inter,Udinese Calcio,1-0,0-0
+16,Sat,2018-12-15,Torino FC,Juventus,0-1,0-0
+16,Sun,2018-12-16,SPAL 2013 Ferrara,Chievo Verona,0-0,
+16,Sun,2018-12-16,ACF Fiorentina,Empoli FC,3-1,1-1
+16,Sun,2018-12-16,Frosinone Calcio,Sassuolo Calcio,0-2,0-1
+16,Sun,2018-12-16,Sampdoria,Parma Calcio 1913,2-0,0-0
+16,Sun,2018-12-16,Cagliari Calcio,SSC Napoli,0-1,0-0
+16,Sun,2018-12-16,AS Roma,Genoa CFC,3-2,2-2
+16,Mon,2018-12-17,Atalanta,Lazio Roma,1-0,1-0
+16,Tue,2018-12-18,Bologna FC,AC Milan,0-0,
+17,Sat,2018-12-22,Lazio Roma,Cagliari Calcio,3-1,2-0
+17,Sat,2018-12-22,Empoli FC,Sampdoria,2-4,1-1
+17,Sat,2018-12-22,Genoa CFC,Atalanta,3-1,1-0
+17,Sat,2018-12-22,AC Milan,ACF Fiorentina,0-1,0-0
+17,Sat,2018-12-22,SSC Napoli,SPAL 2013 Ferrara,1-0,1-0
+17,Sat,2018-12-22,Sassuolo Calcio,Torino FC,1-1,0-0
+17,Sat,2018-12-22,Udinese Calcio,Frosinone Calcio,1-1,1-0
+17,Sat,2018-12-22,Chievo Verona,Inter,1-1,0-1
+17,Sat,2018-12-22,Parma Calcio 1913,Bologna FC,0-0,
+17,Sat,2018-12-22,Juventus,AS Roma,1-0,1-0
+18,Wed,2018-12-26,Frosinone Calcio,AC Milan,0-0,
+18,Wed,2018-12-26,Atalanta,Juventus,2-2,1-1
+18,Wed,2018-12-26,Bologna FC,Lazio Roma,0-2,0-1
+18,Wed,2018-12-26,Cagliari Calcio,Genoa CFC,1-0,1-0
+18,Wed,2018-12-26,ACF Fiorentina,Parma Calcio 1913,0-1,0-1
+18,Wed,2018-12-26,Sampdoria,Chievo Verona,2-0,0-0
+18,Wed,2018-12-26,AS Roma,Sassuolo Calcio,3-1,2-0
+18,Wed,2018-12-26,SPAL 2013 Ferrara,Udinese Calcio,0-0,
+18,Wed,2018-12-26,Torino FC,Empoli FC,3-0,1-0
+18,Wed,2018-12-26,Inter,SSC Napoli,1-0,0-0
+19,Sat,2018-12-29,Juventus,Sampdoria,2-1,1-1
+19,Sat,2018-12-29,Chievo Verona,Frosinone Calcio,1-0,0-0
+19,Sat,2018-12-29,Empoli FC,Inter,0-1,0-0
+19,Sat,2018-12-29,Genoa CFC,ACF Fiorentina,0-0,
+19,Sat,2018-12-29,Lazio Roma,Torino FC,1-1,0-1
+19,Sat,2018-12-29,Parma Calcio 1913,AS Roma,0-2,0-0
+19,Sat,2018-12-29,Sassuolo Calcio,Atalanta,2-6,0-2
+19,Sat,2018-12-29,Udinese Calcio,Cagliari Calcio,2-0,1-0
+19,Sat,2018-12-29,SSC Napoli,Bologna FC,3-2,1-1
+19,Sat,2018-12-29,AC Milan,SPAL 2013 Ferrara,2-1,1-1
+20,Sat,2019-01-19,AS Roma,Torino FC,3-2,2-0
+20,Sat,2019-01-19,Udinese Calcio,Parma Calcio 1913,1-2,0-1
+20,Sat,2019-01-19,Inter,Sassuolo Calcio,0-0,
+20,Sun,2019-01-20,Frosinone Calcio,Atalanta,0-5,0-2
+20,Sun,2019-01-20,SPAL 2013 Ferrara,Bologna FC,1-1,0-1
+20,Sun,2019-01-20,ACF Fiorentina,Sampdoria,3-3,1-1
+20,Sun,2019-01-20,Cagliari Calcio,Empoli FC,2-2,1-0
+20,Sun,2019-01-20,SSC Napoli,Lazio Roma,2-1,2-0
+20,Mon,2019-01-21,Genoa CFC,AC Milan,0-2,0-0
+20,Mon,2019-01-21,Juventus,Chievo Verona,3-0,2-0
+21,Sat,2019-01-26,Sassuolo Calcio,Cagliari Calcio,3-0,2-0
+21,Sat,2019-01-26,Sampdoria,Udinese Calcio,4-0,1-0
+21,Sat,2019-01-26,AC Milan,SSC Napoli,0-0,
+21,Sun,2019-01-27,Chievo Verona,ACF Fiorentina,3-4,1-2
+21,Sun,2019-01-27,Bologna FC,Frosinone Calcio,0-4,0-2
+21,Sun,2019-01-27,Atalanta,AS Roma,3-3,1-3
+21,Sun,2019-01-27,Parma Calcio 1913,SPAL 2013 Ferrara,2-3,1-0
+21,Sun,2019-01-27,Torino FC,Inter,1-0,1-0
+21,Sun,2019-01-27,Lazio Roma,Juventus,1-2,0-0
+21,Mon,2019-01-28,Empoli FC,Genoa CFC,1-3,0-1
+22,Sat,2019-02-02,Empoli FC,Chievo Verona,2-2,1-2
+22,Sat,2019-02-02,SSC Napoli,Sampdoria,3-0,2-0
+22,Sat,2019-02-02,Juventus,Parma Calcio 1913,3-3,1-0
+22,Sun,2019-02-03,SPAL 2013 Ferrara,Torino FC,0-0,
+22,Sun,2019-02-03,Udinese Calcio,ACF Fiorentina,1-1,0-0
+22,Sun,2019-02-03,Genoa CFC,Sassuolo Calcio,1-1,1-1
+22,Sun,2019-02-03,Inter,Bologna FC,0-1,0-1
+22,Sun,2019-02-03,AS Roma,AC Milan,1-1,0-1
+22,Mon,2019-02-04,Frosinone Calcio,Lazio Roma,0-1,0-1
+22,Mon,2019-02-04,Cagliari Calcio,Atalanta,0-1,0-0
+23,Thu,2019-02-07,Lazio Roma,Empoli FC,1-0,1-0
+23,Fri,2019-02-08,Chievo Verona,AS Roma,0-3,0-2
+23,Sat,2019-02-09,ACF Fiorentina,SSC Napoli,0-0,
+23,Sat,2019-02-09,Parma Calcio 1913,Inter,0-1,0-0
+23,Sun,2019-02-10,Bologna FC,Genoa CFC,1-1,1-1
+23,Sun,2019-02-10,Sampdoria,Frosinone Calcio,0-1,0-1
+23,Sun,2019-02-10,Atalanta,SPAL 2013 Ferrara,2-1,0-1
+23,Sun,2019-02-10,Torino FC,Udinese Calcio,1-0,1-0
+23,Sun,2019-02-10,Sassuolo Calcio,Juventus,0-3,0-1
+23,Sun,2019-02-10,AC Milan,Cagliari Calcio,3-0,2-0
+24,Fri,2019-02-15,Juventus,Frosinone Calcio,3-0,2-0
+24,Sat,2019-02-16,Cagliari Calcio,Parma Calcio 1913,2-1,0-1
+24,Sat,2019-02-16,Atalanta,AC Milan,1-3,1-1
+24,Sun,2019-02-17,SPAL 2013 Ferrara,ACF Fiorentina,1-4,1-1
+24,Sun,2019-02-17,Udinese Calcio,Chievo Verona,1-0,0-0
+24,Sun,2019-02-17,Genoa CFC,Lazio Roma,2-1,0-1
+24,Sun,2019-02-17,Empoli FC,Sassuolo Calcio,3-0,2-0
+24,Sun,2019-02-17,Inter,Sampdoria,2-1,0-0
+24,Sun,2019-02-17,SSC Napoli,Torino FC,0-0,
+24,Mon,2019-02-18,AS Roma,Bologna FC,2-1,0-0
+25,Fri,2019-02-22,AC Milan,Empoli FC,3-0,0-0
+25,Sat,2019-02-23,Torino FC,Atalanta,2-0,1-0
+25,Sat,2019-02-23,Frosinone Calcio,AS Roma,2-3,1-2
+25,Sun,2019-02-24,Sampdoria,Cagliari Calcio,1-0,0-0
+25,Sun,2019-02-24,Chievo Verona,Genoa CFC,0-0,
+25,Sun,2019-02-24,Bologna FC,Juventus,0-1,0-0
+25,Sun,2019-02-24,Sassuolo Calcio,SPAL 2013 Ferrara,1-1,1-0
+25,Sun,2019-02-24,Parma Calcio 1913,SSC Napoli,0-4,0-2
+25,Sun,2019-02-24,ACF Fiorentina,Inter,3-3,1-2
+25,Wed,2019-04-17,Lazio Roma,Udinese Calcio,2-0,2-0
+26,Fri,2019-03-01,Cagliari Calcio,Inter,2-1,2-1
+26,Sat,2019-03-02,Empoli FC,Parma Calcio 1913,3-3,1-2
+26,Sat,2019-03-02,AC Milan,Sassuolo Calcio,1-0,1-0
+26,Sat,2019-03-02,Lazio Roma,AS Roma,3-0,1-0
+26,Sun,2019-03-03,Torino FC,Chievo Verona,3-0,0-0
+26,Sun,2019-03-03,Udinese Calcio,Bologna FC,2-1,1-1
+26,Sun,2019-03-03,Genoa CFC,Frosinone Calcio,0-0,
+26,Sun,2019-03-03,SPAL 2013 Ferrara,Sampdoria,1-2,0-2
+26,Sun,2019-03-03,Atalanta,ACF Fiorentina,3-1,2-1
+26,Sun,2019-03-03,SSC Napoli,Juventus,1-2,0-2
+27,Fri,2019-03-08,Juventus,Udinese Calcio,4-1,2-0
+27,Sat,2019-03-09,Parma Calcio 1913,Genoa CFC,1-0,0-0
+27,Sat,2019-03-09,Chievo Verona,AC Milan,1-2,1-1
+27,Sun,2019-03-10,Bologna FC,Cagliari Calcio,2-0,1-0
+27,Sun,2019-03-10,Sampdoria,Atalanta,1-2,0-0
+27,Sun,2019-03-10,Inter,SPAL 2013 Ferrara,2-0,0-0
+27,Sun,2019-03-10,Frosinone Calcio,Torino FC,1-2,1-0
+27,Sun,2019-03-10,Sassuolo Calcio,SSC Napoli,1-1,0-0
+27,Sun,2019-03-10,ACF Fiorentina,Lazio Roma,1-1,0-1
+27,Mon,2019-03-11,AS Roma,Empoli FC,2-1,2-1
+28,Fri,2019-03-15,Cagliari Calcio,ACF Fiorentina,2-1,0-0
+28,Sat,2019-03-16,Sassuolo Calcio,Sampdoria,3-5,1-3
+28,Sat,2019-03-16,SPAL 2013 Ferrara,AS Roma,2-1,1-0
+28,Sat,2019-03-16,Torino FC,Bologna FC,2-3,1-2
+28,Sun,2019-03-17,Genoa CFC,Juventus,2-0,0-0
+28,Sun,2019-03-17,Atalanta,Chievo Verona,1-1,0-1
+28,Sun,2019-03-17,Empoli FC,Frosinone Calcio,2-1,2-0
+28,Sun,2019-03-17,Lazio Roma,Parma Calcio 1913,4-1,4-0
+28,Sun,2019-03-17,SSC Napoli,Udinese Calcio,4-2,2-2
+28,Sun,2019-03-17,AC Milan,Inter,2-3,0-1
+29,Fri,2019-03-29,Chievo Verona,Cagliari Calcio,0-3,0-3
+29,Sat,2019-03-30,Udinese Calcio,Genoa CFC,2-0,1-0
+29,Sat,2019-03-30,Juventus,Empoli FC,1-0,0-0
+29,Sat,2019-03-30,Sampdoria,AC Milan,1-0,1-0
+29,Sun,2019-03-31,Parma Calcio 1913,Atalanta,1-3,1-1
+29,Sun,2019-03-31,AS Roma,SSC Napoli,1-4,1-1
+29,Sun,2019-03-31,Frosinone Calcio,SPAL 2013 Ferrara,0-1,0-1
+29,Sun,2019-03-31,ACF Fiorentina,Torino FC,1-1,1-1
+29,Sun,2019-03-31,Bologna FC,Sassuolo Calcio,2-1,0-0
+29,Sun,2019-03-31,Inter,Lazio Roma,0-1,0-1
+30,Tue,2019-04-02,AC Milan,Udinese Calcio,1-1,1-0
+30,Tue,2019-04-02,Cagliari Calcio,Juventus,0-2,0-1
+30,Wed,2019-04-03,Empoli FC,SSC Napoli,2-1,1-1
+30,Wed,2019-04-03,AS Roma,ACF Fiorentina,2-2,1-1
+30,Wed,2019-04-03,Genoa CFC,Inter,0-4,0-2
+30,Wed,2019-04-03,SPAL 2013 Ferrara,Lazio Roma,1-0,0-0
+30,Wed,2019-04-03,Frosinone Calcio,Parma Calcio 1913,3-2,2-1
+30,Wed,2019-04-03,Torino FC,Sampdoria,2-1,2-0
+30,Thu,2019-04-04,Sassuolo Calcio,Chievo Verona,4-0,2-0
+30,Thu,2019-04-04,Atalanta,Bologna FC,4-1,4-0
+31,Sat,2019-04-06,Parma Calcio 1913,Torino FC,0-0,
+31,Sat,2019-04-06,Juventus,AC Milan,2-1,0-1
+31,Sat,2019-04-06,Sampdoria,AS Roma,0-1,0-0
+31,Sun,2019-04-07,ACF Fiorentina,Frosinone Calcio,0-1,0-0
+31,Sun,2019-04-07,Udinese Calcio,Empoli FC,3-2,3-2
+31,Sun,2019-04-07,Cagliari Calcio,SPAL 2013 Ferrara,2-1,1-1
+31,Sun,2019-04-07,Inter,Atalanta,0-0,
+31,Sun,2019-04-07,Lazio Roma,Sassuolo Calcio,2-2,0-0
+31,Sun,2019-04-07,SSC Napoli,Genoa CFC,1-1,1-1
+31,Mon,2019-04-08,Bologna FC,Chievo Verona,3-0,0-0
+32,Sat,2019-04-13,SPAL 2013 Ferrara,Juventus,2-1,0-1
+32,Sat,2019-04-13,AS Roma,Udinese Calcio,1-0,0-0
+32,Sat,2019-04-13,AC Milan,Lazio Roma,1-0,0-0
+32,Sun,2019-04-14,Torino FC,Cagliari Calcio,1-1,0-0
+32,Sun,2019-04-14,ACF Fiorentina,Bologna FC,0-0,
+32,Sun,2019-04-14,Sampdoria,Genoa CFC,2-0,1-0
+32,Sun,2019-04-14,Sassuolo Calcio,Parma Calcio 1913,0-0,
+32,Sun,2019-04-14,Chievo Verona,SSC Napoli,1-3,0-1
+32,Sun,2019-04-14,Frosinone Calcio,Inter,1-3,0-2
+32,Mon,2019-04-15,Atalanta,Empoli FC,0-0,
+33,Sat,2019-04-20,Parma Calcio 1913,AC Milan,1-1,0-0
+33,Sat,2019-04-20,Lazio Roma,Chievo Verona,1-2,0-0
+33,Sat,2019-04-20,Cagliari Calcio,Frosinone Calcio,1-0,1-0
+33,Sat,2019-04-20,Bologna FC,Sampdoria,3-0,0-0
+33,Sat,2019-04-20,Udinese Calcio,Sassuolo Calcio,1-1,0-1
+33,Sat,2019-04-20,Empoli FC,SPAL 2013 Ferrara,2-4,1-2
+33,Sat,2019-04-20,Genoa CFC,Torino FC,0-1,0-0
+33,Sat,2019-04-20,Juventus,ACF Fiorentina,2-1,1-1
+33,Sat,2019-04-20,Inter,AS Roma,1-1,0-1
+33,Mon,2019-04-22,SSC Napoli,Atalanta,1-2,1-0
+34,Sat,2019-04-27,Bologna FC,Empoli FC,3-1,0-1
+34,Sat,2019-04-27,AS Roma,Cagliari Calcio,3-0,2-0
+34,Sat,2019-04-27,Inter,Juventus,1-1,1-0
+34,Sun,2019-04-28,Frosinone Calcio,SSC Napoli,0-2,0-1
+34,Sun,2019-04-28,SPAL 2013 Ferrara,Genoa CFC,1-1,1-0
+34,Sun,2019-04-28,Chievo Verona,Parma Calcio 1913,1-1,0-1
+34,Sun,2019-04-28,Sampdoria,Lazio Roma,1-2,0-2
+34,Sun,2019-04-28,Torino FC,AC Milan,2-0,0-0
+34,Mon,2019-04-29,Atalanta,Udinese Calcio,2-0,0-0
+34,Mon,2019-04-29,ACF Fiorentina,Sassuolo Calcio,0-1,0-1
+35,Fri,2019-05-03,Juventus,Torino FC,1-1,0-1
+35,Sat,2019-05-04,Chievo Verona,SPAL 2013 Ferrara,0-4,0-1
+35,Sat,2019-05-04,Udinese Calcio,Inter,0-0,
+35,Sun,2019-05-05,Empoli FC,ACF Fiorentina,1-0,0-0
+35,Sun,2019-05-05,Lazio Roma,Atalanta,1-3,1-1
+35,Sun,2019-05-05,Sassuolo Calcio,Frosinone Calcio,2-2,0-2
+35,Sun,2019-05-05,Parma Calcio 1913,Sampdoria,3-3,1-2
+35,Sun,2019-05-05,Genoa CFC,AS Roma,1-1,0-0
+35,Sun,2019-05-05,SSC Napoli,Cagliari Calcio,2-1,0-0
+35,Mon,2019-05-06,AC Milan,Bologna FC,2-1,1-0
+36,Sat,2019-05-11,Atalanta,Genoa CFC,2-1,0-0
+36,Sat,2019-05-11,Cagliari Calcio,Lazio Roma,1-2,0-1
+36,Sat,2019-05-11,ACF Fiorentina,AC Milan,0-1,0-1
+36,Sun,2019-05-12,Torino FC,Sassuolo Calcio,3-2,0-1
+36,Sun,2019-05-12,Sampdoria,Empoli FC,1-2,0-0
+36,Sun,2019-05-12,Frosinone Calcio,Udinese Calcio,1-3,0-3
+36,Sun,2019-05-12,SPAL 2013 Ferrara,SSC Napoli,1-2,0-0
+36,Sun,2019-05-12,AS Roma,Juventus,2-0,0-0
+36,Mon,2019-05-13,Bologna FC,Parma Calcio 1913,4-1,0-0
+36,Mon,2019-05-13,Inter,Chievo Verona,2-0,1-0
+37,Sat,2019-05-18,Udinese Calcio,SPAL 2013 Ferrara,3-2,3-0
+37,Sat,2019-05-18,Genoa CFC,Cagliari Calcio,1-1,0-1
+37,Sat,2019-05-18,Sassuolo Calcio,AS Roma,0-0,
+37,Sun,2019-05-19,Chievo Verona,Sampdoria,0-0,
+37,Sun,2019-05-19,Parma Calcio 1913,ACF Fiorentina,1-0,0-0
+37,Sun,2019-05-19,Empoli FC,Torino FC,4-1,1-0
+37,Sun,2019-05-19,AC Milan,Frosinone Calcio,2-0,0-0
+37,Sun,2019-05-19,Juventus,Atalanta,1-1,0-1
+37,Sun,2019-05-19,SSC Napoli,Inter,4-1,1-0
+37,Mon,2019-05-20,Lazio Roma,Bologna FC,3-3,1-0
+38,Sat,2019-05-25,Frosinone Calcio,Chievo Verona,0-0,
+38,Sat,2019-05-25,Bologna FC,SSC Napoli,3-2,2-0
+38,Sun,2019-05-26,Torino FC,Lazio Roma,3-1,0-0
+38,Sun,2019-05-26,Sampdoria,Juventus,2-0,0-0
+38,Sun,2019-05-26,Inter,Empoli FC,2-1,0-0
+38,Sun,2019-05-26,ACF Fiorentina,Genoa CFC,0-0,
+38,Sun,2019-05-26,SPAL 2013 Ferrara,AC Milan,2-3,1-2
+38,Sun,2019-05-26,AS Roma,Parma Calcio 1913,2-1,1-0
+38,Sun,2019-05-26,Atalanta,Sassuolo Calcio,3-1,1-1
+38,Sun,2019-05-26,Cagliari Calcio,Udinese Calcio,1-2,1-0
