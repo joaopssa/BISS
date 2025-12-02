@@ -1,0 +1,307 @@
+Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
+1,Fri,Aug/15,20.45,Stade Rennais FC 1901,Olympique de Marseille,1-0,0-0
+1,Sat,Aug/16,17.00,Racing Club de Lens,Olympique Lyonnais,0-1,0-1
+1,Sat,Aug/16,19.00,AS Monaco FC,Le Havre AC,3-1,1-0
+1,Sat,Aug/16,21.05,OGC Nice,Toulouse FC,0-1,0-0
+1,Sun,Aug/17,15.00,Stade Brestois 29,Lille OSC,3-3,1-2
+1,Sun,Aug/17,17.15,AJ Auxerre,FC Lorient,1-0,0-0
+1,Sun,Aug/17,,FC Metz,RC Strasbourg Alsace,0-1,0-0
+1,Sun,Aug/17,,Angers SCO,Paris FC,1-0,1-0
+1,Sun,Aug/17,20.45,FC Nantes,Paris Saint-Germain FC,0-1,0-0
+2,Fri,Aug/22,20.45,Paris Saint-Germain FC,Angers SCO,1-0,0-0
+2,Sat,Aug/23,17.00,Olympique de Marseille,Paris FC,5-2,2-1
+2,Sat,Aug/23,19.00,OGC Nice,AJ Auxerre,3-1,2-1
+2,Sat,Aug/23,21.05,Olympique Lyonnais,FC Metz,3-0,2-0
+2,Sun,Aug/24,15.00,FC Lorient,Stade Rennais FC 1901,4-0,1-0
+2,Sun,Aug/24,17.15,Le Havre AC,Racing Club de Lens,1-2,1-2
+2,Sun,Aug/24,,Toulouse FC,Stade Brestois 29,2-0,0-0
+2,Sun,Aug/24,,RC Strasbourg Alsace,FC Nantes,1-0,0-0
+2,Sun,Aug/24,20.45,Lille OSC,AS Monaco FC,1-0,0-0
+3,Fri,Aug/29,20.45,Racing Club de Lens,Stade Brestois 29,3-1,0-1
+3,Sat,Aug/30,17.00,FC Lorient,Lille OSC,1-7,0-0
+3,Sat,Aug/30,19.00,FC Nantes,AJ Auxerre,1-0,1-0
+3,Sat,Aug/30,21.05,Toulouse FC,Paris Saint-Germain FC,3-6,1-4
+3,Sun,Aug/31,15.00,Angers SCO,Stade Rennais FC 1901,1-1,0-1
+3,Sun,Aug/31,17.15,Le Havre AC,OGC Nice,3-1,1-0
+3,Sun,Aug/31,,AS Monaco FC,RC Strasbourg Alsace,3-2,1-0
+3,Sun,Aug/31,,Paris FC,FC Metz,3-2,1-1
+3,Sun,Aug/31,20.45,Olympique Lyonnais,Olympique de Marseille,1-0,0-0
+4,Fri,Sep/12,20.45,Olympique de Marseille,FC Lorient,4-0,3-0
+4,Sat,Sep/13,17.00,OGC Nice,FC Nantes,1-0,0-0
+4,Sat,Sep/13,21.05,AJ Auxerre,AS Monaco FC,1-2,0-1
+4,Sun,Sep/14,15.00,Lille OSC,Toulouse FC,2-1,0-0
+4,Sun,Sep/14,17.15,FC Metz,Angers SCO,1-1,1-0
+4,Sun,Sep/14,,Paris Saint-Germain FC,Racing Club de Lens,2-0,1-0
+4,Sun,Sep/14,,RC Strasbourg Alsace,Le Havre AC,1-0,0-0
+4,Sun,Sep/14,,Stade Brestois 29,Paris FC,1-2,0-2
+4,Sun,Sep/14,20.45,Stade Rennais FC 1901,Olympique Lyonnais,3-1,0-1
+5,Fri,Sep/19,20.45,Olympique Lyonnais,Angers SCO,1-0,0-0
+5,Sat,Sep/20,17.00,FC Nantes,Stade Rennais FC 1901,2-2,0-2
+5,Sat,Sep/20,19.00,Stade Brestois 29,OGC Nice,4-1,2-1
+5,Sat,Sep/20,21.05,Racing Club de Lens,Lille OSC,3-0,2-0
+5,Sun,Sep/21,15.00,Paris FC,RC Strasbourg Alsace,2-3,0-1
+5,Sun,Sep/21,17.15,Le Havre AC,FC Lorient,1-1,0-1
+5,Sun,Sep/21,,AJ Auxerre,Toulouse FC,1-0,1-0
+5,Sun,Sep/21,,AS Monaco FC,FC Metz,5-2,1-1
+5,Mon,Sep/22,20.00,Olympique de Marseille,Paris Saint-Germain FC,1-0,1-0
+6,Fri,Sep/26,20.45,RC Strasbourg Alsace,Olympique de Marseille,1-2,0-0
+6,Sat,Sep/27,17.00,FC Lorient,AS Monaco FC,3-1,1-0
+6,Sat,Sep/27,19.00,Toulouse FC,FC Nantes,2-2,0-1
+6,Sat,Sep/27,21.05,Paris Saint-Germain FC,AJ Auxerre,2-0,1-0
+6,Sun,Sep/28,15.00,OGC Nice,Paris FC,1-1,1-0
+6,Sun,Sep/28,17.15,FC Metz,Le Havre AC,0-0,
+6,Sun,Sep/28,,Lille OSC,Olympique Lyonnais,0-1,0-1
+6,Sun,Sep/28,,Angers SCO,Stade Brestois 29,0-2,0-2
+6,Sun,Sep/28,20.45,Stade Rennais FC 1901,Racing Club de Lens,0-0,
+7,Fri,Oct/3,20.45,Paris FC,FC Lorient,2-0,2-0
+7,Sat,Oct/4,17.00,FC Metz,Olympique de Marseille,0-3,0-0
+7,Sat,Oct/4,19.00,Stade Brestois 29,FC Nantes,0-0,
+7,Sat,Oct/4,21.05,AJ Auxerre,Racing Club de Lens,1-2,0-1
+7,Sun,Oct/5,15.00,Olympique Lyonnais,Toulouse FC,1-2,1-0
+7,Sun,Oct/5,17.15,RC Strasbourg Alsace,Angers SCO,5-0,1-0
+7,Sun,Oct/5,,Le Havre AC,Stade Rennais FC 1901,2-2,1-2
+7,Sun,Oct/5,,AS Monaco FC,OGC Nice,2-2,1-2
+7,Sun,Oct/5,20.45,Lille OSC,Paris Saint-Germain FC,1-1,0-0
+8,Fri,Oct/17,20.45,Paris Saint-Germain FC,RC Strasbourg Alsace,3-3,1-2
+8,Sat,Oct/18,17.00,OGC Nice,Olympique Lyonnais,3-2,2-1
+8,Sat,Oct/18,19.00,Angers SCO,AS Monaco FC,1-1,0-0
+8,Sat,Oct/18,21.05,Olympique de Marseille,Le Havre AC,6-2,1-1
+8,Sun,Oct/19,15.00,Racing Club de Lens,Paris FC,2-1,1-1
+8,Sun,Oct/19,17.15,FC Lorient,Stade Brestois 29,3-3,1-2
+8,Sun,Oct/19,,Toulouse FC,FC Metz,4-0,2-0
+8,Sun,Oct/19,,Stade Rennais FC 1901,AJ Auxerre,2-2,1-1
+8,Sun,Oct/19,20.45,FC Nantes,Lille OSC,0-2,0-1
+9,Fri,Oct/24,20.45,Paris FC,FC Nantes,1-2,1-2
+9,Sat,Oct/25,17.00,Stade Brestois 29,Paris Saint-Germain FC,0-3,0-2
+9,Sat,Oct/25,19.00,AS Monaco FC,Toulouse FC,1-0,1-0
+9,Sat,Oct/25,21.05,Racing Club de Lens,Olympique de Marseille,2-1,1-1
+9,Sun,Oct/26,15.00,Lille OSC,FC Metz,6-1,2-0
+9,Sun,Oct/26,17.15,AJ Auxerre,Le Havre AC,0-1,0-0
+9,Sun,Oct/26,,Angers SCO,FC Lorient,2-0,1-0
+9,Sun,Oct/26,,Stade Rennais FC 1901,OGC Nice,1-2,0-2
+9,Sun,Oct/26,20.45,Olympique Lyonnais,RC Strasbourg Alsace,2-1,1-1
+10,Wed,Oct/29,19.00,Le Havre AC,Stade Brestois 29,1-0,0-0
+10,Wed,Oct/29,,FC Lorient,Paris Saint-Germain FC,1-1,0-0
+10,Wed,Oct/29,,FC Metz,Racing Club de Lens,2-0,0-0
+10,Wed,Oct/29,,OGC Nice,Lille OSC,2-0,1-0
+10,Wed,Oct/29,21.05,FC Nantes,AS Monaco FC,3-5,2-2
+10,Wed,Oct/29,,Paris FC,Olympique Lyonnais,3-3,0-1
+10,Wed,Oct/29,,Toulouse FC,Stade Rennais FC 1901,2-2,0-0
+10,Wed,Oct/29,,Olympique de Marseille,Angers SCO,2-2,0-1
+10,Wed,Oct/29,,RC Strasbourg Alsace,AJ Auxerre,3-0,0-0
+11,Sat,Nov/1,17.00,Paris Saint-Germain FC,OGC Nice,1-0,0-0
+11,Sat,Nov/1,19.00,AS Monaco FC,Paris FC,0-1,0-0
+11,Sat,Nov/1,21.05,AJ Auxerre,Olympique de Marseille,0-1,0-1
+11,Sun,Nov/2,15.00,Stade Rennais FC 1901,RC Strasbourg Alsace,4-1,2-0
+11,Sun,Nov/2,17.15,FC Nantes,FC Metz,0-2,0-0
+11,Sun,Nov/2,,Toulouse FC,Le Havre AC,0-0,
+11,Sun,Nov/2,,Lille OSC,Angers SCO,1-0,1-0
+11,Sun,Nov/2,,Racing Club de Lens,FC Lorient,3-0,1-0
+11,Sun,Nov/2,20.45,Stade Brestois 29,Olympique Lyonnais,0-0,
+12,Fri,Nov/7,20.45,Paris FC,Stade Rennais FC 1901,0-1,0-0
+12,Sat,Nov/8,17.00,Olympique de Marseille,Stade Brestois 29,3-0,2-0
+12,Sat,Nov/8,19.00,Le Havre AC,FC Nantes,1-1,0-1
+12,Sat,Nov/8,21.05,AS Monaco FC,Racing Club de Lens,1-4,1-3
+12,Sun,Nov/9,15.00,FC Lorient,Toulouse FC,1-1,1-0
+12,Sun,Nov/9,17.15,FC Metz,OGC Nice,2-1,0-1
+12,Sun,Nov/9,,RC Strasbourg Alsace,Lille OSC,2-0,1-0
+12,Sun,Nov/9,,Angers SCO,AJ Auxerre,2-0,0-0
+12,Sun,Nov/9,20.45,Olympique Lyonnais,Paris Saint-Germain FC,2-3,1-2
+13,Fri,Nov/21,20.45,OGC Nice,Olympique de Marseille,,
+13,Sat,Nov/22,17.00,Racing Club de Lens,RC Strasbourg Alsace,,
+13,Sat,Nov/22,19.00,Stade Rennais FC 1901,AS Monaco FC,,
+13,Sat,Nov/22,21.05,Paris Saint-Germain FC,Le Havre AC,,
+13,Sun,Nov/23,15.00,AJ Auxerre,Olympique Lyonnais,,
+13,Sun,Nov/23,17.15,FC Nantes,FC Lorient,,
+13,Sun,Nov/23,,Toulouse FC,Angers SCO,,
+13,Sun,Nov/23,,Stade Brestois 29,FC Metz,,
+13,Sun,Nov/23,20.45,Lille OSC,Paris FC,,
+14,Fri,Nov/28,20.45,FC Metz,Stade Rennais FC 1901,,
+14,Sat,Nov/29,17.00,AS Monaco FC,Paris Saint-Germain FC,,
+14,Sat,Nov/29,19.00,Paris FC,AJ Auxerre,,
+14,Sat,Nov/29,21.05,Olympique de Marseille,Toulouse FC,,
+14,Sun,Nov/30,15.00,RC Strasbourg Alsace,Stade Brestois 29,,
+14,Sun,Nov/30,17.15,Le Havre AC,Lille OSC,,
+14,Sun,Nov/30,,FC Lorient,OGC Nice,,
+14,Sun,Nov/30,,Angers SCO,Racing Club de Lens,,
+14,Sun,Nov/30,20.45,Olympique Lyonnais,FC Nantes,,
+15,Fri,Dec/5,19.00,Stade Brestois 29,AS Monaco FC,,
+15,Fri,Dec/5,21.00,Lille OSC,Olympique de Marseille,,
+15,Sat,Dec/6,17.00,FC Nantes,Racing Club de Lens,,
+15,Sat,Dec/6,19.00,Toulouse FC,RC Strasbourg Alsace,,
+15,Sat,Dec/6,21.05,Paris Saint-Germain FC,Stade Rennais FC 1901,,
+15,Sun,Dec/7,15.00,OGC Nice,Angers SCO,,
+15,Sun,Dec/7,17.15,Le Havre AC,Paris FC,,
+15,Sun,Dec/7,,AJ Auxerre,FC Metz,,
+15,Sun,Dec/7,20.45,FC Lorient,Olympique Lyonnais,,
+16,Fri,Dec/12,20.45,Angers SCO,FC Nantes,,
+16,Sat,Dec/13,17.00,Stade Rennais FC 1901,Stade Brestois 29,,
+16,Sat,Dec/13,19.00,FC Metz,Paris Saint-Germain FC,,
+16,Sat,Dec/13,21.05,Paris FC,Toulouse FC,,
+16,Sun,Dec/14,17.15,AJ Auxerre,Lille OSC,,
+16,Sun,Dec/14,,Olympique Lyonnais,Le Havre AC,,
+16,Sun,Dec/14,,RC Strasbourg Alsace,FC Lorient,,
+16,Sun,Dec/14,,Racing Club de Lens,OGC Nice,,
+16,Sun,Dec/14,20.45,Olympique de Marseille,AS Monaco FC,,
+17,Fri,Jan/2,20.45,Toulouse FC,Racing Club de Lens,,
+17,Sat,Jan/3,17.00,AS Monaco FC,Olympique Lyonnais,,
+17,Sat,Jan/3,19.00,OGC Nice,RC Strasbourg Alsace,,
+17,Sat,Jan/3,21.05,Lille OSC,Stade Rennais FC 1901,,
+17,Sun,Jan/4,15.00,Olympique de Marseille,FC Nantes,,
+17,Sun,Jan/4,17.15,Le Havre AC,Angers SCO,,
+17,Sun,Jan/4,,FC Lorient,FC Metz,,
+17,Sun,Jan/4,,Stade Brestois 29,AJ Auxerre,,
+17,Sun,Jan/4,20.45,Paris Saint-Germain FC,Paris FC,,
+18,Fri,Jan/16,19.00,AS Monaco FC,FC Lorient,,
+18,Fri,Jan/16,21.00,Paris Saint-Germain FC,Lille OSC,,
+18,Sat,Jan/17,17.00,Racing Club de Lens,AJ Auxerre,,
+18,Sat,Jan/17,19.00,Toulouse FC,OGC Nice,,
+18,Sat,Jan/17,21.05,Angers SCO,Olympique de Marseille,,
+18,Sun,Jan/18,15.00,RC Strasbourg Alsace,FC Metz,,
+18,Sun,Jan/18,17.15,FC Nantes,Paris FC,,
+18,Sun,Jan/18,,Stade Rennais FC 1901,Le Havre AC,,
+18,Sun,Jan/18,20.45,Olympique Lyonnais,Stade Brestois 29,,
+19,Fri,Jan/23,20.00,AJ Auxerre,Paris Saint-Germain FC,,
+19,Sat,Jan/24,17.00,Stade Rennais FC 1901,FC Lorient,,
+19,Sat,Jan/24,19.00,Le Havre AC,AS Monaco FC,,
+19,Sat,Jan/24,21.05,Olympique de Marseille,Racing Club de Lens,,
+19,Sun,Jan/25,15.00,FC Nantes,OGC Nice,,
+19,Sun,Jan/25,17.15,FC Metz,Olympique Lyonnais,,
+19,Sun,Jan/25,,Paris FC,Angers SCO,,
+19,Sun,Jan/25,,Stade Brestois 29,Toulouse FC,,
+19,Sun,Jan/25,20.45,Lille OSC,RC Strasbourg Alsace,,
+20,Fri,Jan/30,20.45,Racing Club de Lens,Le Havre AC,,
+20,Sat,Jan/31,17.00,Paris FC,Olympique de Marseille,,
+20,Sat,Jan/31,19.00,FC Lorient,FC Nantes,,
+20,Sat,Jan/31,21.05,AS Monaco FC,Stade Rennais FC 1901,,
+20,Sun,Feb/1,15.00,Olympique Lyonnais,Lille OSC,,
+20,Sun,Feb/1,17.15,Toulouse FC,AJ Auxerre,,
+20,Sun,Feb/1,,OGC Nice,Stade Brestois 29,,
+20,Sun,Feb/1,,Angers SCO,FC Metz,,
+20,Sun,Feb/1,20.45,RC Strasbourg Alsace,Paris Saint-Germain FC,,
+21,Sun,Feb/8,,Le Havre AC,RC Strasbourg Alsace,,
+21,Sun,Feb/8,,AJ Auxerre,Paris FC,,
+21,Sun,Feb/8,,FC Metz,Lille OSC,,
+21,Sun,Feb/8,,FC Nantes,Olympique Lyonnais,,
+21,Sun,Feb/8,,OGC Nice,AS Monaco FC,,
+21,Sun,Feb/8,,Paris Saint-Germain FC,Olympique de Marseille,,
+21,Sun,Feb/8,,Racing Club de Lens,Stade Rennais FC 1901,,
+21,Sun,Feb/8,,Angers SCO,Toulouse FC,,
+21,Sun,Feb/8,,Stade Brestois 29,FC Lorient,,
+22,Sun,Feb/15,,Le Havre AC,Toulouse FC,,
+22,Sun,Feb/15,,AS Monaco FC,FC Nantes,,
+22,Sun,Feb/15,,FC Lorient,Angers SCO,,
+22,Sun,Feb/15,,FC Metz,AJ Auxerre,,
+22,Sun,Feb/15,,Paris FC,Racing Club de Lens,,
+22,Sun,Feb/15,,Olympique Lyonnais,OGC Nice,,
+22,Sun,Feb/15,,Olympique de Marseille,RC Strasbourg Alsace,,
+22,Sun,Feb/15,,Lille OSC,Stade Brestois 29,,
+22,Sun,Feb/15,,Stade Rennais FC 1901,Paris Saint-Germain FC,,
+23,Sun,Feb/22,,AJ Auxerre,Stade Rennais FC 1901,,
+23,Sun,Feb/22,,FC Nantes,Le Havre AC,,
+23,Sun,Feb/22,,Toulouse FC,Paris FC,,
+23,Sun,Feb/22,,OGC Nice,FC Lorient,,
+23,Sun,Feb/22,,Paris Saint-Germain FC,FC Metz,,
+23,Sun,Feb/22,,RC Strasbourg Alsace,Olympique Lyonnais,,
+23,Sun,Feb/22,,Racing Club de Lens,AS Monaco FC,,
+23,Sun,Feb/22,,Angers SCO,Lille OSC,,
+23,Sun,Feb/22,,Stade Brestois 29,Olympique de Marseille,,
+24,Sun,Mar/1,,Le Havre AC,Paris Saint-Germain FC,,
+24,Sun,Mar/1,,AS Monaco FC,Angers SCO,,
+24,Sun,Mar/1,,FC Lorient,AJ Auxerre,,
+24,Sun,Mar/1,,FC Metz,Stade Brestois 29,,
+24,Sun,Mar/1,,Paris FC,OGC Nice,,
+24,Sun,Mar/1,,Olympique de Marseille,Olympique Lyonnais,,
+24,Sun,Mar/1,,Lille OSC,FC Nantes,,
+24,Sun,Mar/1,,RC Strasbourg Alsace,Racing Club de Lens,,
+24,Sun,Mar/1,,Stade Rennais FC 1901,Toulouse FC,,
+25,Sun,Mar/8,,AJ Auxerre,RC Strasbourg Alsace,,
+25,Sun,Mar/8,,FC Nantes,Angers SCO,,
+25,Sun,Mar/8,,Toulouse FC,Olympique de Marseille,,
+25,Sun,Mar/8,,OGC Nice,Stade Rennais FC 1901,,
+25,Sun,Mar/8,,Olympique Lyonnais,Paris FC,,
+25,Sun,Mar/8,,Lille OSC,FC Lorient,,
+25,Sun,Mar/8,,Paris Saint-Germain FC,AS Monaco FC,,
+25,Sun,Mar/8,,Racing Club de Lens,FC Metz,,
+25,Sun,Mar/8,,Stade Brestois 29,Le Havre AC,,
+26,Sun,Mar/15,,Le Havre AC,Olympique Lyonnais,,
+26,Sun,Mar/15,,AS Monaco FC,Stade Brestois 29,,
+26,Sun,Mar/15,,FC Lorient,Racing Club de Lens,,
+26,Sun,Mar/15,,FC Metz,Toulouse FC,,
+26,Sun,Mar/15,,Olympique de Marseille,AJ Auxerre,,
+26,Sun,Mar/15,,Paris Saint-Germain FC,FC Nantes,,
+26,Sun,Mar/15,,RC Strasbourg Alsace,Paris FC,,
+26,Sun,Mar/15,,Angers SCO,OGC Nice,,
+26,Sun,Mar/15,,Stade Rennais FC 1901,Lille OSC,,
+27,Sun,Mar/22,,AJ Auxerre,Stade Brestois 29,,
+27,Sun,Mar/22,,FC Nantes,RC Strasbourg Alsace,,
+27,Sun,Mar/22,,Paris FC,Le Havre AC,,
+27,Sun,Mar/22,,Toulouse FC,FC Lorient,,
+27,Sun,Mar/22,,OGC Nice,Paris Saint-Germain FC,,
+27,Sun,Mar/22,,Olympique Lyonnais,AS Monaco FC,,
+27,Sun,Mar/22,,Olympique de Marseille,Lille OSC,,
+27,Sun,Mar/22,,Racing Club de Lens,Angers SCO,,
+27,Sun,Mar/22,,Stade Rennais FC 1901,FC Metz,,
+28,Sun,Apr/5,,Le Havre AC,AJ Auxerre,,
+28,Sun,Apr/5,,AS Monaco FC,Olympique de Marseille,,
+28,Sun,Apr/5,,FC Lorient,Paris FC,,
+28,Sun,Apr/5,,FC Metz,FC Nantes,,
+28,Sun,Apr/5,,Lille OSC,Racing Club de Lens,,
+28,Sun,Apr/5,,Paris Saint-Germain FC,Toulouse FC,,
+28,Sun,Apr/5,,RC Strasbourg Alsace,OGC Nice,,
+28,Sun,Apr/5,,Angers SCO,Olympique Lyonnais,,
+28,Sun,Apr/5,,Stade Brestois 29,Stade Rennais FC 1901,,
+29,Sun,Apr/12,,AJ Auxerre,FC Nantes,,
+29,Sun,Apr/12,,Paris FC,AS Monaco FC,,
+29,Sun,Apr/12,,Toulouse FC,Lille OSC,,
+29,Sun,Apr/12,,OGC Nice,Le Havre AC,,
+29,Sun,Apr/12,,Olympique Lyonnais,FC Lorient,,
+29,Sun,Apr/12,,Olympique de Marseille,FC Metz,,
+29,Sun,Apr/12,,Racing Club de Lens,Paris Saint-Germain FC,,
+29,Sun,Apr/12,,Stade Brestois 29,RC Strasbourg Alsace,,
+29,Sun,Apr/12,,Stade Rennais FC 1901,Angers SCO,,
+30,Sun,Apr/19,,AS Monaco FC,AJ Auxerre,,
+30,Sun,Apr/19,,FC Lorient,Olympique de Marseille,,
+30,Sun,Apr/19,,FC Metz,Paris FC,,
+30,Sun,Apr/19,,FC Nantes,Stade Brestois 29,,
+30,Sun,Apr/19,,Lille OSC,OGC Nice,,
+30,Sun,Apr/19,,Paris Saint-Germain FC,Olympique Lyonnais,,
+30,Sun,Apr/19,,RC Strasbourg Alsace,Stade Rennais FC 1901,,
+30,Sun,Apr/19,,Racing Club de Lens,Toulouse FC,,
+30,Sun,Apr/19,,Angers SCO,Le Havre AC,,
+31,Sun,Apr/26,,Le Havre AC,FC Metz,,
+31,Sun,Apr/26,,FC Lorient,RC Strasbourg Alsace,,
+31,Sun,Apr/26,,Paris FC,Lille OSC,,
+31,Sun,Apr/26,,Toulouse FC,AS Monaco FC,,
+31,Sun,Apr/26,,Olympique Lyonnais,AJ Auxerre,,
+31,Sun,Apr/26,,Olympique de Marseille,OGC Nice,,
+31,Sun,Apr/26,,Angers SCO,Paris Saint-Germain FC,,
+31,Sun,Apr/26,,Stade Brestois 29,Racing Club de Lens,,
+31,Sun,Apr/26,,Stade Rennais FC 1901,FC Nantes,,
+32,Sun,May/3,,AJ Auxerre,Angers SCO,,
+32,Sun,May/3,,FC Metz,AS Monaco FC,,
+32,Sun,May/3,,FC Nantes,Olympique de Marseille,,
+32,Sun,May/3,,Paris FC,Stade Brestois 29,,
+32,Sun,May/3,,OGC Nice,Racing Club de Lens,,
+32,Sun,May/3,,Olympique Lyonnais,Stade Rennais FC 1901,,
+32,Sun,May/3,,Lille OSC,Le Havre AC,,
+32,Sun,May/3,,Paris Saint-Germain FC,FC Lorient,,
+32,Sun,May/3,,RC Strasbourg Alsace,Toulouse FC,,
+33,Sat,May/9,,Le Havre AC,Olympique de Marseille,,
+33,Sat,May/9,,AJ Auxerre,OGC Nice,,
+33,Sat,May/9,,AS Monaco FC,Lille OSC,,
+33,Sat,May/9,,FC Metz,FC Lorient,,
+33,Sat,May/9,,Toulouse FC,Olympique Lyonnais,,
+33,Sat,May/9,,Paris Saint-Germain FC,Stade Brestois 29,,
+33,Sat,May/9,,Racing Club de Lens,FC Nantes,,
+33,Sat,May/9,,Angers SCO,RC Strasbourg Alsace,,
+33,Sat,May/9,,Stade Rennais FC 1901,Paris FC,,
+34,Sat,May/16,,FC Lorient,Le Havre AC,,
+34,Sat,May/16,,FC Nantes,Toulouse FC,,
+34,Sat,May/16,,Paris FC,Paris Saint-Germain FC,,
+34,Sat,May/16,,OGC Nice,FC Metz,,
+34,Sat,May/16,,Olympique Lyonnais,Racing Club de Lens,,
+34,Sat,May/16,,Olympique de Marseille,Stade Rennais FC 1901,,
+34,Sat,May/16,,Lille OSC,AJ Auxerre,,
+34,Sat,May/16,,RC Strasbourg Alsace,AS Monaco FC,,
+34,Sat,May/16,,Stade Brestois 29,Angers SCO,,

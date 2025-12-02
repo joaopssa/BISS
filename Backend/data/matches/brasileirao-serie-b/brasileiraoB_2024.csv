@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Fri,2024-04-19,Botafogo SP,América MG,1-1,0-0
+1,Fri,2024-04-19,Grêmio Novorizontino SP,CR Brasil AL,2-1,0-1
+1,Fri,2024-04-19,Operário Ferroviário PR,Avaí SC,1-0,0-0
+1,Sat,2024-04-20,Chapecoense AF,Ituano SP,3-1,1-0
+1,Sat,2024-04-20,Santos FC,Paysandu PA,2-0,0-0
+1,Sat,2024-04-20,Amazonas FC AM,SC Recife,2-3,0-1
+1,Sat,2024-04-20,Ceará SC,Goiás GO,1-1,1-1
+1,Sun,2024-04-21,Ponte Preta,Coritiba PR,1-1,1-0
+1,Mon,2024-04-22,Vila Nova GO,Guarani SP,2-0,1-0
+1,Tue,2024-04-23,Brusque SC,Mirassol FC,3-1,1-0
+2,Fri,2024-04-26,Ituano SP,Operário Ferroviário PR,0-2,0-1
+2,Fri,2024-04-26,SC Recife,Vila Nova GO,2-0,1-0
+2,Fri,2024-04-26,Avaí SC,Santos FC,0-2,0-0
+2,Fri,2024-04-26,Guarani SP,Chapecoense AF,0-1,0-1
+2,Sat,2024-04-27,CR Brasil AL,Amazonas FC AM,0-0,
+2,Sat,2024-04-27,Paysandu PA,Botafogo SP,1-1,0-0
+2,Sat,2024-04-27,América MG,Grêmio Novorizontino SP,2-0,1-0
+2,Sun,2024-04-28,Coritiba PR,Brusque SC,1-0,0-0
+2,Sun,2024-04-28,Goiás GO,Ponte Preta,3-0,1-0
+2,Mon,2024-04-29,Mirassol FC,Ceará SC,3-2,2-0
+3,Fri,2024-05-03,Paysandu PA,Avaí SC,0-0,
+3,Fri,2024-05-03,Coritiba PR,SC Recife,0-1,0-1
+3,Sat,2024-05-04,Chapecoense AF,América MG,2-2,1-0
+3,Sat,2024-05-04,Vila Nova GO,Operário Ferroviário PR,1-0,0-0
+3,Sat,2024-05-04,Ituano SP,Grêmio Novorizontino SP,1-3,1-1
+3,Sun,2024-05-05,Brusque SC,Goiás GO,0-2,0-1
+3,Mon,2024-05-06,Ceará SC,CR Brasil AL,2-2,1-1
+3,Mon,2024-05-06,Ponte Preta,Amazonas FC AM,3-0,2-0
+3,Mon,2024-05-06,Santos FC,Guarani SP,4-1,2-0
+3,Tue,2024-05-07,Botafogo SP,Mirassol FC,0-0,
+4,Wed,2024-05-08,América MG,Vila Nova GO,3-1,2-1
+4,Fri,2024-05-10,Grêmio Novorizontino SP,Ceará SC,0-3,0-1
+4,Fri,2024-05-10,Goiás GO,Ituano SP,2-0,1-0
+4,Fri,2024-05-10,CR Brasil AL,Chapecoense AF,2-0,2-0
+4,Sat,2024-05-11,Guarani SP,Botafogo SP,2-0,1-0
+4,Sat,2024-05-11,Operário Ferroviário PR,Ponte Preta,1-1,1-0
+4,Sat,2024-05-11,Amazonas FC AM,Santos FC,1-0,1-0
+4,Sat,2024-05-11,SC Recife,Brusque SC,4-1,1-0
+4,Sat,2024-05-11,Avaí SC,Coritiba PR,1-0,0-0
+4,Sun,2024-05-12,Mirassol FC,Paysandu PA,2-1,2-0
+5,Tue,2024-05-14,Vila Nova GO,Grêmio Novorizontino SP,2-1,0-0
+5,Tue,2024-05-14,Avaí SC,CR Brasil AL,2-1,2-0
+5,Tue,2024-05-14,Botafogo SP,Chapecoense AF,0-0,
+5,Tue,2024-05-14,Coritiba PR,Guarani SP,1-0,1-0
+5,Wed,2024-05-15,Ituano SP,SC Recife,1-0,0-0
+5,Wed,2024-05-15,América MG,Mirassol FC,0-0,
+5,Wed,2024-05-15,Brusque SC,Operário Ferroviário PR,0-0,
+5,Wed,2024-05-15,Ponte Preta,Santos FC,1-2,0-2
+5,Wed,2024-05-15,Paysandu PA,Goiás GO,1-1,1-0
+5,Wed,2024-05-15,Ceará SC,Amazonas FC AM,2-1,2-0
+6,Fri,2024-05-17,CR Brasil AL,Vila Nova GO,1-0,1-0
+6,Fri,2024-05-17,Grêmio Novorizontino SP,Coritiba PR,0-0,
+6,Sat,2024-05-18,Amazonas FC AM,Paysandu PA,1-1,1-1
+6,Sat,2024-05-18,Goiás GO,Botafogo SP,4-0,2-0
+6,Sat,2024-05-18,SC Recife,Avaí SC,1-2,1-0
+6,Sun,2024-05-19,Santos FC,Brusque SC,4-0,3-0
+6,Sun,2024-05-19,Mirassol FC,Ituano SP,2-0,0-0
+6,Sun,2024-05-19,Operário Ferroviário PR,Ceará SC,0-0,
+6,Mon,2024-05-20,Guarani SP,América MG,1-2,1-1
+6,Tue,2024-05-21,Chapecoense AF,Ponte Preta,0-0,
+7,Fri,2024-05-24,América MG,Santos FC,2-1,1-1
+7,Sat,2024-05-25,Guarani SP,Paysandu PA,0-0,
+7,Sun,2024-05-26,Ituano SP,Ponte Preta,2-0,0-0
+7,Sun,2024-05-26,Vila Nova GO,Brusque SC,2-2,1-1
+7,Sun,2024-05-26,Ceará SC,Chapecoense AF,2-1,1-1
+7,Mon,2024-05-27,Coritiba PR,Operário Ferroviário PR,3-0,3-0
+7,Mon,2024-05-27,Botafogo SP,Grêmio Novorizontino SP,0-1,0-0
+7,Mon,2024-05-27,Avaí SC,Goiás GO,2-0,0-0
+7,Tue,2024-05-28,Amazonas FC AM,Mirassol FC,1-0,0-0
+7,Wed,2024-09-11,CR Brasil AL,SC Recife,1-1,1-0
+8,Fri,2024-05-31,Ceará SC,Coritiba PR,1-0,0-0
+8,Fri,2024-05-31,Goiás GO,SC Recife,3-0,1-0
+8,Sat,2024-06-01,Brusque SC,Grêmio Novorizontino SP,0-0,
+8,Sun,2024-06-02,Ponte Preta,CR Brasil AL,4-2,0-0
+8,Sun,2024-06-02,Chapecoense AF,Vila Nova GO,1-1,0-0
+8,Sun,2024-06-02,Ituano SP,Avaí SC,0-1,0-1
+8,Mon,2024-06-03,Santos FC,Botafogo SP,1-2,0-1
+8,Mon,2024-06-03,Operário Ferroviário PR,Amazonas FC AM,1-0,1-0
+8,Tue,2024-06-04,Mirassol FC,Guarani SP,3-0,1-0
+8,Tue,2024-06-04,Paysandu PA,América MG,2-0,0-0
+9,Fri,2024-06-07,Coritiba PR,Ituano SP,4-2,3-0
+9,Fri,2024-06-07,Grêmio Novorizontino SP,Santos FC,3-1,1-0
+9,Sat,2024-06-08,Guarani SP,Operário Ferroviário PR,0-1,0-1
+9,Sat,2024-06-08,Amazonas FC AM,Brusque SC,2-1,0-0
+9,Sun,2024-06-09,Avaí SC,Chapecoense AF,0-0,
+9,Sun,2024-06-09,América MG,Ponte Preta,2-0,1-0
+9,Mon,2024-06-10,Vila Nova GO,Ceará SC,3-2,1-1
+9,Mon,2024-06-10,SC Recife,Paysandu PA,1-0,0-0
+9,Tue,2024-06-11,Mirassol FC,Goiás GO,1-0,0-0
+9,Wed,2024-07-17,CR Brasil AL,Botafogo SP,4-1,2-1
+10,Thu,2024-06-13,Amazonas FC AM,Chapecoense AF,0-1,0-0
+10,Fri,2024-06-14,Operário Ferroviário PR,Santos FC,1-0,1-0
+10,Fri,2024-06-14,Avaí SC,Guarani SP,3-2,1-2
+10,Sat,2024-06-15,América MG,CR Brasil AL,2-1,0-1
+10,Sat,2024-06-15,Ponte Preta,Grêmio Novorizontino SP,1-0,1-0
+10,Sat,2024-06-15,Ituano SP,Paysandu PA,3-5,2-3
+10,Sun,2024-06-16,Botafogo SP,Vila Nova GO,1-0,1-0
+10,Sun,2024-06-16,Brusque SC,Ceará SC,1-0,0-0
+10,Sun,2024-06-16,Goiás GO,Coritiba PR,1-1,1-1
+10,Sun,2024-06-16,SC Recife,Mirassol FC,1-0,0-0
+11,Mon,2024-06-17,Chapecoense AF,Operário Ferroviário PR,0-1,0-0
+11,Tue,2024-06-18,Guarani SP,Ituano SP,3-3,0-1
+11,Tue,2024-06-18,Grêmio Novorizontino SP,Amazonas FC AM,1-1,0-1
+11,Tue,2024-06-18,Paysandu PA,CR Brasil AL,1-1,0-0
+11,Wed,2024-06-19,Santos FC,Goiás GO,2-0,0-0
+11,Wed,2024-06-19,Botafogo SP,Ponte Preta,2-0,0-0
+11,Wed,2024-06-19,Brusque SC,Avaí SC,0-0,
+11,Wed,2024-06-19,Coritiba PR,América MG,1-0,0-0
+11,Thu,2024-06-20,Vila Nova GO,Mirassol FC,1-0,0-0
+11,Thu,2024-06-20,Ceará SC,SC Recife,0-0,
+12,Sat,2024-06-22,CR Brasil AL,Guarani SP,1-0,1-0
+12,Sat,2024-06-22,Operário Ferroviário PR,Botafogo SP,0-1,0-0
+12,Sat,2024-06-22,Ituano SP,Brusque SC,1-1,0-0
+12,Sun,2024-06-23,Chapecoense AF,Paysandu PA,1-2,1-1
+12,Sun,2024-06-23,Vila Nova GO,Goiás GO,1-0,0-0
+12,Mon,2024-06-24,SC Recife,Grêmio Novorizontino SP,1-2,0-2
+12,Tue,2024-06-25,Mirassol FC,Santos FC,0-0,
+12,Tue,2024-06-25,América MG,Avaí SC,1-1,1-1
+12,Tue,2024-06-25,Ponte Preta,Ceará SC,3-1,2-0
+12,Tue,2024-06-25,Amazonas FC AM,Coritiba PR,1-0,0-0
+13,Sat,2024-06-29,Coritiba PR,Vila Nova GO,1-1,0-0
+13,Sat,2024-06-29,Botafogo SP,SC Recife,1-1,1-0
+13,Sat,2024-06-29,Ceará SC,Ituano SP,4-2,3-1
+13,Sun,2024-06-30,Avaí SC,Amazonas FC AM,1-1,1-1
+13,Sun,2024-06-30,Paysandu PA,Operário Ferroviário PR,1-1,1-0
+13,Sun,2024-06-30,Guarani SP,Ponte Preta,1-1,1-0
+13,Mon,2024-07-01,Santos FC,Chapecoense AF,1-0,0-0
+13,Mon,2024-07-01,CR Brasil AL,Brusque SC,1-1,0-0
+13,Tue,2024-07-02,Goiás GO,América MG,2-1,0-0
+13,Tue,2024-07-02,Grêmio Novorizontino SP,Mirassol FC,1-1,1-1
+14,Fri,2024-07-05,Ceará SC,Santos FC,0-1,0-1
+14,Fri,2024-07-05,Brusque SC,Ponte Preta,0-0,
+14,Sat,2024-07-06,América MG,Operário Ferroviário PR,2-0,0-0
+14,Sat,2024-07-06,Goiás GO,Chapecoense AF,1-2,0-1
+14,Sun,2024-07-07,Coritiba PR,Paysandu PA,1-1,1-1
+14,Sun,2024-07-07,Ituano SP,Botafogo SP,3-2,3-1
+14,Sun,2024-07-07,Guarani SP,SC Recife,0-1,0-0
+14,Mon,2024-07-08,Avaí SC,Grêmio Novorizontino SP,0-1,0-1
+14,Mon,2024-07-08,Amazonas FC AM,Vila Nova GO,1-2,1-0
+14,Tue,2024-07-09,Mirassol FC,CR Brasil AL,1-0,0-0
+15,Fri,2024-07-12,Ponte Preta,Mirassol FC,4-2,1-1
+15,Fri,2024-07-12,Botafogo SP,Amazonas FC AM,0-1,0-1
+15,Fri,2024-07-12,Paysandu PA,Ceará SC,2-1,1-1
+15,Sat,2024-07-13,Grêmio Novorizontino SP,Guarani SP,1-1,1-1
+15,Sat,2024-07-13,SC Recife,América MG,1-1,0-1
+15,Sat,2024-07-13,CR Brasil AL,Coritiba PR,2-1,0-1
+15,Sun,2024-07-14,Vila Nova GO,Avaí SC,2-1,0-1
+15,Sun,2024-07-14,Chapecoense AF,Brusque SC,1-1,0-1
+15,Mon,2024-07-15,Santos FC,Ituano SP,2-0,2-0
+15,Wed,2024-07-17,Operário Ferroviário PR,Goiás GO,2-0,1-0
+16,Thu,2024-07-18,Vila Nova GO,Santos FC,1-1,0-0
+16,Thu,2024-07-18,Grêmio Novorizontino SP,Chapecoense AF,1-0,1-0
+16,Fri,2024-07-19,Avaí SC,Ceará SC,0-1,0-0
+16,Fri,2024-07-19,Coritiba PR,Mirassol FC,0-1,0-0
+16,Sat,2024-07-20,América MG,Amazonas FC AM,0-0,
+16,Sat,2024-07-20,CR Brasil AL,Ituano SP,1-0,0-0
+16,Sat,2024-07-20,Paysandu PA,Ponte Preta,1-0,1-0
+16,Sun,2024-07-21,Guarani SP,Goiás GO,2-3,1-1
+16,Sun,2024-07-21,Botafogo SP,Brusque SC,2-2,1-0
+16,Wed,2024-10-16,SC Recife,Operário Ferroviário PR,1-2,1-1
+17,Mon,2024-07-22,Santos FC,Coritiba PR,4-0,2-0
+17,Tue,2024-07-23,Chapecoense AF,SC Recife,1-1,0-1
+17,Tue,2024-07-23,Operário Ferroviário PR,Grêmio Novorizontino SP,0-0,
+17,Tue,2024-07-23,Mirassol FC,Avaí SC,0-0,
+17,Tue,2024-07-23,Ituano SP,América MG,0-0,
+17,Tue,2024-07-23,Ponte Preta,Vila Nova GO,2-0,1-0
+17,Wed,2024-07-24,Brusque SC,Paysandu PA,1-0,1-0
+17,Wed,2024-07-24,Amazonas FC AM,Guarani SP,1-1,1-1
+17,Thu,2024-07-25,Goiás GO,CR Brasil AL,1-1,0-0
+17,Thu,2024-07-25,Ceará SC,Botafogo SP,4-1,3-1
+18,Fri,2024-07-26,Ituano SP,Vila Nova GO,0-0,
+18,Sat,2024-07-27,Mirassol FC,Operário Ferroviário PR,1-0,1-0
+18,Sat,2024-07-27,Coritiba PR,Chapecoense AF,1-0,0-0
+18,Sat,2024-07-27,SC Recife,Ponte Preta,3-1,1-1
+18,Sun,2024-07-28,Guarani SP,Brusque SC,1-0,0-0
+18,Sun,2024-07-28,América MG,Ceará SC,2-2,2-2
+18,Sun,2024-07-28,CR Brasil AL,Santos FC,1-1,0-0
+18,Mon,2024-07-29,Paysandu PA,Grêmio Novorizontino SP,1-3,1-1
+18,Tue,2024-07-30,Avaí SC,Botafogo SP,1-1,0-0
+18,Fri,2024-10-25,Goiás GO,Amazonas FC AM,1-0,1-0
+19,Fri,2024-08-02,Brusque SC,América MG,0-0,
+19,Fri,2024-08-02,Santos FC,SC Recife,1-1,1-0
+19,Sat,2024-08-03,Botafogo SP,Coritiba PR,2-0,0-0
+19,Sat,2024-08-03,Amazonas FC AM,Ituano SP,1-0,0-0
+19,Sun,2024-08-04,Ponte Preta,Avaí SC,1-0,0-0
+19,Sun,2024-08-04,Grêmio Novorizontino SP,Goiás GO,2-1,1-0
+19,Sun,2024-08-04,Operário Ferroviário PR,CR Brasil AL,2-0,1-0
+19,Mon,2024-08-05,Chapecoense AF,Mirassol FC,0-1,0-0
+19,Mon,2024-08-05,Vila Nova GO,Paysandu PA,2-2,1-1
+19,Tue,2024-08-06,Ceará SC,Guarani SP,3-1,1-1
+20,Fri,2024-08-09,Avaí SC,Operário Ferroviário PR,1-0,1-0
+20,Fri,2024-08-09,Paysandu PA,Santos FC,0-3,0-1
+20,Fri,2024-08-09,Mirassol FC,Brusque SC,2-0,2-0
+20,Fri,2024-08-09,América MG,Botafogo SP,3-1,2-0
+20,Sat,2024-08-10,Ituano SP,Chapecoense AF,2-1,1-1
+20,Sat,2024-08-10,SC Recife,Amazonas FC AM,3-2,2-1
+20,Sun,2024-08-11,Coritiba PR,Ponte Preta,1-1,1-0
+20,Sun,2024-08-11,CR Brasil AL,Grêmio Novorizontino SP,0-1,0-0
+20,Mon,2024-08-12,Guarani SP,Vila Nova GO,2-0,2-0
+20,Mon,2024-08-12,Goiás GO,Ceará SC,2-1,1-1
+21,Thu,2024-08-15,Operário Ferroviário PR,Ituano SP,1-2,1-2
+21,Fri,2024-08-16,Ponte Preta,Goiás GO,1-1,0-1
+21,Fri,2024-08-16,Vila Nova GO,SC Recife,2-0,1-0
+21,Fri,2024-08-16,Grêmio Novorizontino SP,América MG,1-1,1-1
+21,Sat,2024-08-17,Chapecoense AF,Guarani SP,0-4,0-2
+21,Sat,2024-08-17,Santos FC,Avaí SC,0-1,0-1
+21,Sat,2024-08-17,Ceará SC,Mirassol FC,1-2,0-1
+21,Sat,2024-08-17,Amazonas FC AM,CR Brasil AL,2-0,1-0
+21,Sun,2024-08-18,Brusque SC,Coritiba PR,0-1,0-1
+21,Sun,2024-08-18,Botafogo SP,Paysandu PA,1-1,1-1
+22,Tue,2024-08-20,Grêmio Novorizontino SP,Ituano SP,1-0,0-0
+22,Tue,2024-08-20,Amazonas FC AM,Ponte Preta,2-1,1-0
+22,Tue,2024-08-20,Operário Ferroviário PR,Vila Nova GO,2-3,1-0
+22,Wed,2024-08-21,Guarani SP,Santos FC,1-1,0-0
+22,Wed,2024-08-21,Mirassol FC,Botafogo SP,1-2,0-0
+22,Wed,2024-08-21,América MG,Chapecoense AF,0-0,
+22,Wed,2024-08-21,CR Brasil AL,Ceará SC,0-2,0-1
+22,Wed,2024-08-21,Goiás GO,Brusque SC,4-1,2-0
+22,Thu,2024-08-22,Avaí SC,Paysandu PA,1-0,1-0
+22,Thu,2024-08-22,SC Recife,Coritiba PR,0-1,0-0
+23,Fri,2024-08-23,Ponte Preta,Operário Ferroviário PR,0-1,0-0
+23,Sat,2024-08-24,Santos FC,Amazonas FC AM,0-0,
+23,Sat,2024-08-24,Ituano SP,Goiás GO,1-0,1-0
+23,Sun,2024-08-25,Vila Nova GO,América MG,1-0,0-0
+23,Sun,2024-08-25,Chapecoense AF,CR Brasil AL,0-0,
+23,Mon,2024-08-26,Paysandu PA,Mirassol FC,0-0,
+23,Mon,2024-08-26,Ceará SC,Grêmio Novorizontino SP,1-0,0-0
+23,Tue,2024-08-27,Brusque SC,SC Recife,1-0,1-0
+23,Tue,2024-08-27,Coritiba PR,Avaí SC,1-0,0-0
+23,Wed,2024-10-09,Botafogo SP,Guarani SP,3-2,1-2
+24,Fri,2024-08-30,Santos FC,Ponte Preta,2-2,2-0
+24,Sat,2024-08-31,Grêmio Novorizontino SP,Vila Nova GO,2-0,0-0
+24,Sat,2024-08-31,Chapecoense AF,Botafogo SP,1-1,1-0
+24,Sat,2024-08-31,CR Brasil AL,Avaí SC,1-2,0-2
+24,Sun,2024-09-01,Amazonas FC AM,Ceará SC,1-1,1-0
+24,Sun,2024-09-01,Goiás GO,Paysandu PA,1-1,0-0
+24,Mon,2024-09-02,SC Recife,Ituano SP,3-2,1-1
+24,Mon,2024-09-02,Operário Ferroviário PR,Brusque SC,0-0,
+24,Tue,2024-09-03,Mirassol FC,América MG,1-0,1-0
+24,Tue,2024-09-03,Guarani SP,Coritiba PR,2-1,1-0
+25,Wed,2024-09-04,Vila Nova GO,CR Brasil AL,1-0,0-0
+25,Thu,2024-09-05,Paysandu PA,Amazonas FC AM,0-1,0-1
+25,Sat,2024-09-07,Ituano SP,Mirassol FC,3-2,1-1
+25,Sat,2024-09-07,Brusque SC,Santos FC,0-1,0-1
+25,Sat,2024-09-07,Avaí SC,SC Recife,0-2,0-1
+25,Sun,2024-09-08,Ceará SC,Operário Ferroviário PR,2-1,1-0
+25,Sun,2024-09-08,América MG,Guarani SP,3-0,2-0
+25,Sun,2024-09-08,Coritiba PR,Grêmio Novorizontino SP,2-2,1-1
+25,Mon,2024-09-09,Botafogo SP,Goiás GO,1-0,0-0
+25,Mon,2024-09-09,Ponte Preta,Chapecoense AF,0-2,0-1
+26,Fri,2024-09-13,Grêmio Novorizontino SP,Botafogo SP,2-0,2-0
+26,Fri,2024-09-13,Goiás GO,Avaí SC,2-1,0-0
+26,Fri,2024-09-13,Ponte Preta,Ituano SP,1-4,1-1
+26,Sat,2024-09-14,Brusque SC,Vila Nova GO,3-1,1-0
+26,Sat,2024-09-14,Paysandu PA,Guarani SP,2-1,0-1
+26,Sat,2024-09-14,Mirassol FC,Amazonas FC AM,0-0,
+26,Sun,2024-09-15,Santos FC,América MG,2-1,0-0
+26,Sun,2024-09-15,Operário Ferroviário PR,Coritiba PR,2-1,0-1
+26,Sun,2024-09-15,Chapecoense AF,Ceará SC,2-1,1-1
+26,Sun,2024-09-15,SC Recife,CR Brasil AL,2-0,1-0
+27,Tue,2024-09-17,Grêmio Novorizontino SP,Brusque SC,1-0,1-0
+27,Tue,2024-09-17,Guarani SP,Mirassol FC,1-0,1-0
+27,Tue,2024-09-17,Avaí SC,Ituano SP,2-0,2-0
+27,Wed,2024-09-18,SC Recife,Goiás GO,1-1,1-1
+27,Wed,2024-09-18,Vila Nova GO,Chapecoense AF,3-2,2-0
+27,Wed,2024-09-18,Amazonas FC AM,Operário Ferroviário PR,2-1,1-1
+27,Wed,2024-09-18,América MG,Paysandu PA,2-0,1-0
+27,Wed,2024-09-18,Coritiba PR,Ceará SC,3-1,0-0
+27,Thu,2024-09-19,CR Brasil AL,Ponte Preta,0-1,0-0
+27,Thu,2024-09-19,Botafogo SP,Santos FC,0-1,0-1
+28,Sat,2024-09-21,Goiás GO,Mirassol FC,0-1,0-0
+28,Sat,2024-09-21,Ituano SP,Coritiba PR,0-1,0-0
+28,Sun,2024-09-22,Chapecoense AF,Avaí SC,1-0,1-0
+28,Sun,2024-09-22,Ceará SC,Vila Nova GO,4-0,3-0
+28,Mon,2024-09-23,Paysandu PA,SC Recife,0-1,0-0
+28,Mon,2024-09-23,Santos FC,Grêmio Novorizontino SP,1-1,1-1
+28,Mon,2024-09-23,Brusque SC,Amazonas FC AM,1-0,0-0
+28,Tue,2024-09-24,Operário Ferroviário PR,Guarani SP,1-0,0-0
+28,Tue,2024-09-24,Ponte Preta,América MG,0-2,0-1
+28,Tue,2024-09-24,Botafogo SP,CR Brasil AL,0-0,
+29,Thu,2024-09-26,Chapecoense AF,Amazonas FC AM,2-0,0-0
+29,Fri,2024-09-27,Ceará SC,Brusque SC,1-0,0-0
+29,Fri,2024-09-27,Coritiba PR,Goiás GO,0-0,
+29,Fri,2024-09-27,Paysandu PA,Ituano SP,1-0,1-0
+29,Sat,2024-09-28,Vila Nova GO,Botafogo SP,1-1,1-0
+29,Sat,2024-09-28,Santos FC,Operário Ferroviário PR,1-0,1-0
+29,Sun,2024-09-29,CR Brasil AL,América MG,2-1,1-1
+29,Sun,2024-09-29,Mirassol FC,SC Recife,0-0,
+29,Mon,2024-09-30,Grêmio Novorizontino SP,Ponte Preta,2-1,2-0
+29,Mon,2024-09-30,Guarani SP,Avaí SC,0-0,
+30,Thu,2024-10-03,Operário Ferroviário PR,Chapecoense AF,3-2,1-1
+30,Fri,2024-10-04,América MG,Coritiba PR,2-1,0-1
+30,Fri,2024-10-04,CR Brasil AL,Paysandu PA,3-2,1-1
+30,Fri,2024-10-04,Avaí SC,Brusque SC,0-0,
+30,Fri,2024-10-04,Amazonas FC AM,Grêmio Novorizontino SP,1-0,0-0
+30,Sat,2024-10-05,Ponte Preta,Botafogo SP,1-0,1-0
+30,Sat,2024-10-05,Ituano SP,Guarani SP,1-0,0-0
+30,Sat,2024-10-05,Mirassol FC,Vila Nova GO,1-0,0-0
+30,Mon,2024-10-07,Goiás GO,Santos FC,3-1,2-1
+30,Mon,2024-10-07,SC Recife,Ceará SC,2-1,0-0
+31,Wed,2024-10-09,Paysandu PA,Chapecoense AF,2-0,1-0
+31,Fri,2024-10-11,Grêmio Novorizontino SP,SC Recife,1-3,0-2
+31,Fri,2024-10-11,Avaí SC,América MG,2-2,1-2
+31,Sat,2024-10-12,Ceará SC,Ponte Preta,1-0,1-0
+31,Sat,2024-10-12,Santos FC,Mirassol FC,3-2,2-1
+31,Sat,2024-10-12,Botafogo SP,Operário Ferroviário PR,0-0,
+31,Sun,2024-10-13,Coritiba PR,Amazonas FC AM,3-1,1-0
+31,Sun,2024-10-13,Goiás GO,Vila Nova GO,0-1,0-1
+31,Mon,2024-10-14,Brusque SC,Ituano SP,1-0,0-0
+31,Mon,2024-10-14,Guarani SP,CR Brasil AL,2-1,1-1
+32,Wed,2024-10-16,Chapecoense AF,Santos FC,3-2,1-1
+32,Thu,2024-10-17,América MG,Goiás GO,2-2,1-2
+32,Fri,2024-10-18,Brusque SC,CR Brasil AL,1-2,1-0
+32,Fri,2024-10-18,Amazonas FC AM,Avaí SC,2-1,0-1
+32,Sat,2024-10-19,Vila Nova GO,Coritiba PR,0-3,0-2
+32,Sat,2024-10-19,Mirassol FC,Grêmio Novorizontino SP,1-0,0-0
+32,Sat,2024-10-19,Ituano SP,Ceará SC,1-2,1-0
+32,Sun,2024-10-20,Operário Ferroviário PR,Paysandu PA,1-1,0-1
+32,Sun,2024-10-20,Ponte Preta,Guarani SP,0-1,0-0
+32,Sun,2024-10-20,SC Recife,Botafogo SP,3-1,2-0
+33,Mon,2024-10-21,Chapecoense AF,Goiás GO,0-4,0-2
+33,Tue,2024-10-22,Santos FC,Ceará SC,1-0,1-0
+33,Tue,2024-10-22,CR Brasil AL,Mirassol FC,0-1,0-0
+33,Tue,2024-10-22,Vila Nova GO,Amazonas FC AM,1-0,0-0
+33,Tue,2024-10-22,Grêmio Novorizontino SP,Avaí SC,2-0,2-0
+33,Wed,2024-10-23,Ponte Preta,Brusque SC,2-0,0-0
+33,Wed,2024-10-23,Paysandu PA,Coritiba PR,2-1,0-1
+33,Wed,2024-10-23,Botafogo SP,Ituano SP,0-1,0-0
+33,Wed,2024-10-23,Operário Ferroviário PR,América MG,1-0,0-0
+33,Thu,2024-10-24,SC Recife,Guarani SP,4-0,3-0
+34,Fri,2024-10-25,Avaí SC,Vila Nova GO,3-0,2-0
+34,Sat,2024-10-26,Mirassol FC,Ponte Preta,3-0,1-0
+34,Sat,2024-10-26,Ceará SC,Paysandu PA,2-1,1-0
+34,Mon,2024-10-28,Coritiba PR,CR Brasil AL,2-1,1-1
+34,Mon,2024-10-28,Ituano SP,Santos FC,0-2,0-1
+34,Mon,2024-10-28,América MG,SC Recife,2-1,1-0
+34,Tue,2024-10-29,Goiás GO,Operário Ferroviário PR,3-0,1-0
+34,Tue,2024-10-29,Brusque SC,Chapecoense AF,0-1,0-0
+34,Tue,2024-10-29,Guarani SP,Grêmio Novorizontino SP,0-2,0-2
+34,Tue,2024-10-29,Amazonas FC AM,Botafogo SP,0-1,0-0
+35,Sat,2024-11-02,Santos FC,Vila Nova GO,3-0,0-0
+35,Sat,2024-11-02,Goiás GO,Guarani SP,1-0,1-0
+35,Sat,2024-11-02,Chapecoense AF,Grêmio Novorizontino SP,0-2,0-1
+35,Sun,2024-11-03,Ceará SC,Avaí SC,2-0,0-0
+35,Mon,2024-11-04,Operário Ferroviário PR,SC Recife,2-1,0-1
+35,Mon,2024-11-04,Ponte Preta,Paysandu PA,1-2,1-1
+35,Mon,2024-11-04,Ituano SP,CR Brasil AL,1-2,1-1
+35,Tue,2024-11-05,Amazonas FC AM,América MG,1-0,0-0
+35,Tue,2024-11-05,Brusque SC,Botafogo SP,0-1,0-0
+35,Tue,2024-11-05,Mirassol FC,Coritiba PR,4-1,2-1
+36,Sat,2024-11-09,Grêmio Novorizontino SP,Operário Ferroviário PR,0-1,0-0
+36,Sat,2024-11-09,CR Brasil AL,Goiás GO,0-1,0-0
+36,Sun,2024-11-10,SC Recife,Chapecoense AF,1-1,0-0
+36,Sun,2024-11-10,Avaí SC,Mirassol FC,0-0,
+36,Mon,2024-11-11,Vila Nova GO,Ponte Preta,2-1,1-1
+36,Mon,2024-11-11,Coritiba PR,Santos FC,0-2,0-2
+36,Mon,2024-11-11,Paysandu PA,Brusque SC,1-0,0-0
+36,Tue,2024-11-12,América MG,Ituano SP,3-2,1-1
+36,Tue,2024-11-12,Guarani SP,Amazonas FC AM,0-0,
+36,Tue,2024-11-12,Botafogo SP,Ceará SC,1-4,0-1
+37,Fri,2024-11-15,Operário Ferroviário PR,Mirassol FC,1-1,1-0
+37,Sat,2024-11-16,Grêmio Novorizontino SP,Paysandu PA,1-1,0-0
+37,Sat,2024-11-16,Amazonas FC AM,Goiás GO,0-4,0-3
+37,Sat,2024-11-16,Vila Nova GO,Ituano SP,3-4,2-2
+37,Sat,2024-11-16,Ponte Preta,SC Recife,0-4,0-2
+37,Sun,2024-11-17,Brusque SC,Guarani SP,2-1,1-0
+37,Sun,2024-11-17,Santos FC,CR Brasil AL,0-2,0-1
+37,Sun,2024-11-17,Chapecoense AF,Coritiba PR,2-1,0-1
+37,Mon,2024-11-18,Botafogo SP,Avaí SC,1-3,1-0
+37,Mon,2024-11-18,Ceará SC,América MG,1-0,1-0
+38,Fri,2024-11-22,Coritiba PR,Botafogo SP,1-3,0-2
+38,Fri,2024-11-22,Avaí SC,Ponte Preta,2-1,1-0
+38,Fri,2024-11-22,Ituano SP,Amazonas FC AM,0-1,0-1
+38,Sun,2024-11-24,CR Brasil AL,Operário Ferroviário PR,1-1,0-0
+38,Sun,2024-11-24,Paysandu PA,Vila Nova GO,2-1,0-1
+38,Sun,2024-11-24,Goiás GO,Grêmio Novorizontino SP,1-0,0-0
+38,Sun,2024-11-24,Guarani SP,Ceará SC,0-0,
+38,Sun,2024-11-24,Mirassol FC,Chapecoense AF,1-0,1-0
+38,Sun,2024-11-24,América MG,Brusque SC,3-0,2-0
+38,Sun,2024-11-24,SC Recife,Santos FC,2-1,1-0

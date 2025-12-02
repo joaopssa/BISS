@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Sat,2023-04-15,SE Palmeiras,Cuiabá MT,2-1,1-1
+1,Sat,2023-04-15,América MG,Fluminense FC,0-3,0-0
+1,Sat,2023-04-15,Fortaleza EC,SC Internacional,1-1,0-0
+1,Sat,2023-04-15,CA Paranaense,Goiás GO,2-0,1-0
+1,Sat,2023-04-15,RB Bragantino,EC Bahia,2-1,0-1
+1,Sat,2023-04-15,Botafogo FR,São Paulo FC,2-1,1-1
+1,Sat,2023-04-15,CA Mineiro,CR Vasco da Gama,1-2,1-2
+1,Sun,2025-04-16,SC Corinthians Paulista,Cruzeiro EC,2-1,0-0
+1,Sun,2025-04-16,CR Flamengo,Coritiba PR,3-0,1-0
+1,Sun,2025-04-16,Grêmio FBPA,Santos FC,1-0,1-0
+2,Sat,2025-04-22,Fluminense FC,CA Paranaense,2-0,1-0
+2,Sat,2025-04-22,Cuiabá MT,RB Bragantino,1-1,0-0
+2,Sat,2025-04-22,São Paulo FC,América MG,3-0,1-0
+2,Sat,2025-04-22,Cruzeiro EC,Grêmio FBPA,1-0,0-0
+2,Sun,2025-04-23,SC Internacional,CR Flamengo,2-1,0-0
+2,Sun,2025-04-23,Santos FC,CA Mineiro,0-0,
+2,Sun,2025-04-23,CR Vasco da Gama,SE Palmeiras,2-2,2-1
+2,Sun,2025-04-23,Coritiba PR,Fortaleza EC,0-3,0-0
+2,Sun,2025-04-23,Goiás GO,SC Corinthians Paulista,3-1,1-1
+2,Mon,2025-04-24,EC Bahia,Botafogo FR,1-2,1-1
+3,Sat,2025-04-29,Coritiba PR,São Paulo FC,1-1,1-0
+3,Sat,2025-04-29,Fortaleza EC,Fluminense FC,4-2,2-1
+3,Sat,2025-04-29,RB Bragantino,Cruzeiro EC,0-3,0-1
+3,Sat,2025-04-29,Santos FC,América MG,3-2,2-1
+3,Sat,2025-04-29,SE Palmeiras,SC Corinthians Paulista,2-1,2-0
+3,Sat,2025-04-29,CA Mineiro,CA Paranaense,2-1,1-0
+3,Sun,2025-04-30,CR Flamengo,Botafogo FR,2-3,0-2
+3,Sun,2025-04-30,SC Internacional,Goiás GO,1-0,0-0
+3,Sun,2025-04-30,Cuiabá MT,Grêmio FBPA,1-2,1-1
+3,Mon,2025-05-01,CR Vasco da Gama,EC Bahia,0-1,0-1
+4,Sat,2025-05-06,Cruzeiro EC,Santos FC,2-1,1-0
+4,Sat,2025-05-06,Fluminense FC,CR Vasco da Gama,1-1,0-1
+4,Sun,2025-05-07,América MG,Cuiabá MT,1-2,1-0
+4,Sun,2025-05-07,CA Paranaense,CR Flamengo,2-1,1-1
+4,Sun,2025-05-07,EC Bahia,Coritiba PR,3-1,1-0
+4,Sun,2025-05-07,São Paulo FC,SC Internacional,2-0,1-0
+4,Sun,2025-05-07,Grêmio FBPA,RB Bragantino,3-3,1-1
+4,Sun,2025-05-07,Goiás GO,SE Palmeiras,0-5,0-1
+4,Sun,2025-05-07,Botafogo FR,CA Mineiro,2-0,1-0
+4,Mon,2025-05-08,SC Corinthians Paulista,Fortaleza EC,1-1,0-0
+5,Wed,2025-05-10,Santos FC,EC Bahia,3-0,2-0
+5,Wed,2025-05-10,RB Bragantino,América MG,2-2,2-1
+5,Wed,2025-05-10,SC Internacional,CA Paranaense,0-2,0-0
+5,Wed,2025-05-10,CR Flamengo,Goiás GO,2-0,1-0
+5,Wed,2025-05-10,Cuiabá MT,CA Mineiro,0-4,0-1
+5,Wed,2025-05-10,SE Palmeiras,Grêmio FBPA,4-1,1-1
+5,Wed,2025-05-10,Cruzeiro EC,Fluminense FC,0-2,0-1
+5,Thu,2025-05-11,Coritiba PR,CR Vasco da Gama,1-1,1-0
+5,Thu,2025-05-11,Botafogo FR,SC Corinthians Paulista,3-0,1-0
+5,Thu,2025-05-11,Fortaleza EC,São Paulo FC,0-0,
+6,Sat,2025-05-13,EC Bahia,CR Flamengo,2-3,1-3
+6,Sat,2025-05-13,Fluminense FC,Cuiabá MT,2-0,1-0
+6,Sat,2025-05-13,SE Palmeiras,RB Bragantino,1-1,0-0
+6,Sat,2025-05-13,CA Mineiro,SC Internacional,2-0,1-0
+6,Sun,2025-05-14,Grêmio FBPA,Fortaleza EC,0-0,
+6,Sun,2025-05-14,CR Vasco da Gama,Santos FC,0-1,0-1
+6,Sun,2025-05-14,SC Corinthians Paulista,São Paulo FC,1-1,1-1
+6,Sun,2025-05-14,América MG,Cruzeiro EC,0-4,0-1
+6,Sun,2025-05-14,CA Paranaense,Coritiba PR,3-2,0-1
+6,Sun,2025-05-14,Goiás GO,Botafogo FR,2-1,1-1
+7,Sat,2025-05-20,EC Bahia,Goiás GO,1-1,1-1
+7,Sat,2025-05-20,RB Bragantino,CA Paranaense,2-0,1-0
+7,Sat,2025-05-20,América MG,Fortaleza EC,2-1,2-1
+7,Sat,2025-05-20,Coritiba PR,CA Mineiro,1-2,1-1
+7,Sat,2025-05-20,Botafogo FR,Fluminense FC,1-0,0-0
+7,Sat,2025-05-20,São Paulo FC,CR Vasco da Gama,4-2,2-1
+7,Sat,2025-05-20,Santos FC,SE Palmeiras,0-0,
+7,Sun,2025-05-21,CR Flamengo,SC Corinthians Paulista,1-0,0-0
+7,Sun,2025-05-21,Grêmio FBPA,SC Internacional,3-1,2-0
+7,Mon,2025-05-22,Cruzeiro EC,Cuiabá MT,0-1,0-1
+8,Sat,2025-05-27,Fortaleza EC,CR Vasco da Gama,2-0,0-0
+8,Sat,2025-05-27,CA Paranaense,Grêmio FBPA,1-2,1-1
+8,Sat,2025-05-27,Cuiabá MT,Coritiba PR,1-1,1-0
+8,Sat,2025-05-27,CR Flamengo,Cruzeiro EC,1-1,1-1
+8,Sat,2025-05-27,São Paulo FC,Goiás GO,2-1,0-1
+8,Sun,2025-05-28,SC Internacional,EC Bahia,2-0,0-0
+8,Sun,2025-05-28,SC Corinthians Paulista,Fluminense FC,2-0,0-0
+8,Sun,2025-05-28,CA Mineiro,SE Palmeiras,1-1,1-0
+8,Sun,2025-05-28,RB Bragantino,Santos FC,2-0,1-0
+8,Sun,2025-05-28,Botafogo FR,América MG,2-0,1-0
+9,Sat,2025-06-03,Fortaleza EC,EC Bahia,0-0,
+9,Sat,2025-06-03,Cruzeiro EC,CA Mineiro,0-1,0-1
+9,Sat,2025-06-03,América MG,SC Corinthians Paulista,2-0,0-0
+9,Sat,2025-06-03,CA Paranaense,Botafogo FR,1-0,1-0
+9,Sat,2025-06-03,Santos FC,SC Internacional,1-1,1-1
+9,Sun,2025-06-04,Fluminense FC,RB Bragantino,2-1,2-0
+9,Sun,2025-06-04,Grêmio FBPA,São Paulo FC,2-1,2-1
+9,Sun,2025-06-04,SE Palmeiras,Coritiba PR,3-1,2-0
+9,Sun,2025-06-04,Goiás GO,Cuiabá MT,0-1,0-0
+9,Mon,2025-06-05,CR Vasco da Gama,CR Flamengo,1-4,0-4
+10,Sat,2025-06-10,Coritiba PR,Santos FC,0-0,
+10,Sat,2025-06-10,EC Bahia,Cruzeiro EC,2-2,1-2
+10,Sat,2025-06-10,CA Mineiro,RB Bragantino,1-1,1-1
+10,Sat,2025-06-10,SC Corinthians Paulista,Cuiabá MT,1-1,0-0
+10,Sat,2025-06-10,Botafogo FR,Fortaleza EC,2-0,1-0
+10,Sun,2025-06-11,América MG,CA Paranaense,2-2,0-1
+10,Sun,2025-06-11,SC Internacional,CR Vasco da Gama,2-1,2-1
+10,Sun,2025-06-11,São Paulo FC,SE Palmeiras,0-2,0-1
+10,Sun,2025-06-11,Goiás GO,Fluminense FC,2-2,1-1
+10,Sun,2025-06-11,CR Flamengo,Grêmio FBPA,3-0,1-0
+11,Wed,2025-06-21,Cruzeiro EC,Fortaleza EC,0-1,0-0
+11,Wed,2025-06-21,São Paulo FC,CA Paranaense,2-1,1-1
+11,Wed,2025-06-21,Santos FC,SC Corinthians Paulista,0-2,0-2
+11,Wed,2025-06-21,EC Bahia,SE Palmeiras,1-0,0-0
+11,Wed,2025-06-21,Fluminense FC,CA Mineiro,1-1,1-1
+11,Thu,2025-06-22,Grêmio FBPA,América MG,3-1,1-1
+11,Thu,2025-06-22,Cuiabá MT,Botafogo FR,0-1,0-0
+11,Thu,2025-06-22,Coritiba PR,SC Internacional,0-1,0-0
+11,Thu,2025-06-22,CR Vasco da Gama,Goiás GO,0-1,0-0
+11,Thu,2025-06-22,RB Bragantino,CR Flamengo,4-0,1-0
+12,Sat,2025-06-24,CA Paranaense,SC Corinthians Paulista,1-0,1-0
+12,Sat,2025-06-24,Fortaleza EC,CA Mineiro,2-1,0-0
+12,Sat,2025-06-24,Fluminense FC,EC Bahia,2-1,0-1
+12,Sat,2025-06-24,Cruzeiro EC,São Paulo FC,1-0,1-0
+12,Sun,2025-06-25,Grêmio FBPA,Coritiba PR,5-1,1-1
+12,Sun,2025-06-25,SE Palmeiras,Botafogo FR,0-1,0-1
+12,Sun,2025-06-25,América MG,SC Internacional,1-2,1-0
+12,Sun,2025-06-25,RB Bragantino,Goiás GO,2-0,2-0
+12,Sun,2025-06-25,Santos FC,CR Flamengo,2-3,1-1
+12,Mon,2025-06-26,CR Vasco da Gama,Cuiabá MT,1-0,0-0
+13,Sat,2025-07-01,São Paulo FC,Fluminense FC,1-0,0-0
+13,Sat,2025-07-01,CR Flamengo,Fortaleza EC,2-0,1-0
+13,Sat,2025-07-01,EC Bahia,Grêmio FBPA,1-2,1-1
+13,Sat,2025-07-01,SC Internacional,Cruzeiro EC,0-0,
+13,Sun,2025-07-02,SC Corinthians Paulista,RB Bragantino,0-1,0-1
+13,Sun,2025-07-02,Botafogo FR,CR Vasco da Gama,2-0,0-0
+13,Sun,2025-07-02,CA Paranaense,SE Palmeiras,2-2,0-1
+13,Sun,2025-07-02,CA Mineiro,América MG,2-2,2-0
+13,Sun,2025-07-02,Cuiabá MT,Santos FC,3-0,0-0
+13,Mon,2025-07-03,Goiás GO,Coritiba PR,1-2,0-2
+14,Sat,2025-07-08,Cuiabá MT,EC Bahia,1-1,1-0
+14,Sat,2025-07-08,CR Vasco da Gama,Cruzeiro EC,0-1,0-1
+14,Sat,2025-07-08,CA Mineiro,SC Corinthians Paulista,0-1,0-1
+14,Sat,2025-07-08,Coritiba PR,América MG,3-1,2-1
+14,Sat,2025-07-08,SE Palmeiras,CR Flamengo,1-1,1-0
+14,Sun,2025-07-09,Santos FC,Goiás GO,4-3,3-1
+14,Sun,2025-07-09,RB Bragantino,São Paulo FC,0-0,
+14,Sun,2025-07-09,Fluminense FC,SC Internacional,2-0,2-0
+14,Sun,2025-07-09,Grêmio FBPA,Botafogo FR,0-2,0-0
+14,Sun,2025-07-09,Fortaleza EC,CA Paranaense,1-0,0-0
+15,Sat,2025-07-15,Botafogo FR,RB Bragantino,2-0,0-0
+15,Sun,2025-07-16,Cruzeiro EC,Coritiba PR,0-0,
+15,Sun,2025-07-16,Fortaleza EC,Cuiabá MT,0-1,0-1
+15,Sun,2025-07-16,São Paulo FC,Santos FC,4-1,2-0
+15,Sun,2025-07-16,Fluminense FC,CR Flamengo,0-0,
+15,Sun,2025-07-16,CA Paranaense,EC Bahia,2-0,2-0
+15,Sun,2025-07-16,SC Internacional,SE Palmeiras,0-0,
+15,Mon,2025-07-17,Goiás GO,CA Mineiro,0-0,
+16,Sat,2025-07-22,SE Palmeiras,Fortaleza EC,3-1,1-1
+16,Sat,2025-07-22,CR Flamengo,América MG,1-1,0-0
+16,Sat,2025-07-22,EC Bahia,SC Corinthians Paulista,0-0,
+16,Sat,2025-07-22,Cuiabá MT,São Paulo FC,2-1,0-0
+16,Sat,2025-07-22,Grêmio FBPA,CA Mineiro,1-0,1-0
+16,Sun,2025-07-23,Cruzeiro EC,Goiás GO,0-1,0-1
+16,Sun,2025-07-23,Santos FC,Botafogo FR,2-2,1-0
+16,Sun,2025-07-23,RB Bragantino,SC Internacional,0-0,
+16,Sun,2025-07-23,CR Vasco da Gama,CA Paranaense,0-2,0-0
+16,Mon,2025-07-24,Coritiba PR,Fluminense FC,2-0,2-0
+17,Sat,2025-07-29,CA Paranaense,Cruzeiro EC,3-3,1-2
+17,Sat,2025-07-29,SC Internacional,Cuiabá MT,1-2,1-1
+17,Sat,2025-07-29,Fluminense FC,Santos FC,1-0,0-0
+17,Sat,2025-07-29,Fortaleza EC,RB Bragantino,0-3,0-1
+17,Sat,2025-07-29,SC Corinthians Paulista,CR Vasco da Gama,3-1,1-0
+17,Sat,2025-07-29,CA Mineiro,CR Flamengo,1-2,1-0
+17,Sun,2025-07-30,São Paulo FC,EC Bahia,0-0,
+17,Sun,2025-07-30,América MG,SE Palmeiras,1-4,1-2
+17,Sun,2025-07-30,Botafogo FR,Coritiba PR,4-1,3-1
+17,Sun,2025-07-30,Goiás GO,Grêmio FBPA,1-1,0-0
+18,Sat,2025-08-05,Santos FC,CA Paranaense,1-1,0-1
+18,Sat,2025-08-05,SC Internacional,SC Corinthians Paulista,2-2,1-1
+18,Sat,2025-08-05,Goiás GO,Fortaleza EC,1-0,0-0
+18,Sat,2025-08-05,Fluminense FC,SE Palmeiras,2-1,1-0
+18,Sun,2025-08-06,São Paulo FC,CA Mineiro,0-2,0-1
+18,Sun,2025-08-06,CR Vasco da Gama,Grêmio FBPA,1-0,0-0
+18,Sun,2025-08-06,EC Bahia,América MG,3-1,1-0
+18,Sun,2025-08-06,Coritiba PR,RB Bragantino,0-1,0-1
+18,Sun,2025-08-06,Cruzeiro EC,Botafogo FR,0-0,
+18,Sun,2025-08-06,Cuiabá MT,CR Flamengo,3-0,0-0
+19,Sat,2025-08-12,Botafogo FR,SC Internacional,3-1,0-1
+19,Sun,2025-08-13,CA Mineiro,EC Bahia,1-0,0-0
+19,Sun,2025-08-13,SC Corinthians Paulista,Coritiba PR,3-1,0-1
+19,Sun,2025-08-13,Grêmio FBPA,Fluminense FC,2-1,2-1
+19,Sun,2025-08-13,América MG,Goiás GO,0-1,0-1
+19,Sun,2025-08-13,CR Flamengo,São Paulo FC,1-1,0-1
+19,Sun,2025-08-13,Fortaleza EC,Santos FC,4-0,0-0
+19,Mon,2025-08-14,SE Palmeiras,Cruzeiro EC,1-0,0-0
+19,Mon,2025-08-14,RB Bragantino,CR Vasco da Gama,1-1,1-1
+19,Tue,2025-08-15,CA Paranaense,Cuiabá MT,2-0,1-0
+20,Sat,2025-08-19,SC Internacional,Fortaleza EC,0-1,0-1
+20,Sat,2025-08-19,São Paulo FC,Botafogo FR,0-0,
+20,Sat,2025-08-19,Cuiabá MT,SE Palmeiras,0-2,0-1
+20,Sat,2025-08-19,Fluminense FC,América MG,3-1,0-0
+20,Sat,2025-08-19,Cruzeiro EC,SC Corinthians Paulista,1-1,1-0
+20,Sun,2025-08-20,CR Vasco da Gama,CA Mineiro,1-0,1-0
+20,Sun,2025-08-20,EC Bahia,RB Bragantino,4-0,2-0
+20,Sun,2025-08-20,Coritiba PR,CR Flamengo,2-3,1-2
+20,Sun,2025-08-20,Santos FC,Grêmio FBPA,2-1,0-0
+20,Mon,2025-08-21,Goiás GO,CA Paranaense,1-1,0-1
+21,Sat,2025-08-26,CR Flamengo,SC Internacional,0-0,
+21,Sat,2025-08-26,SC Corinthians Paulista,Goiás GO,1-1,0-0
+21,Sun,2025-08-27,RB Bragantino,Cuiabá MT,2-0,0-0
+21,Sun,2025-08-27,América MG,São Paulo FC,2-1,0-0
+21,Sun,2025-08-27,CA Mineiro,Santos FC,2-0,1-0
+21,Sun,2025-08-27,Botafogo FR,EC Bahia,3-0,1-0
+21,Sun,2025-08-27,Fortaleza EC,Coritiba PR,3-1,2-0
+21,Sun,2025-08-27,CA Paranaense,Fluminense FC,2-2,1-0
+21,Sun,2025-08-27,SE Palmeiras,CR Vasco da Gama,1-0,0-0
+21,Sun,2025-08-27,Grêmio FBPA,Cruzeiro EC,3-0,1-0
+22,Sat,2025-09-02,Goiás GO,SC Internacional,0-0,
+22,Sat,2025-09-02,CA Paranaense,CA Mineiro,1-1,0-1
+22,Sat,2025-09-02,Botafogo FR,CR Flamengo,1-2,1-1
+22,Sun,2025-09-03,Grêmio FBPA,Cuiabá MT,2-0,1-0
+22,Sun,2025-09-03,Fluminense FC,Fortaleza EC,1-0,0-0
+22,Sun,2025-09-03,SC Corinthians Paulista,SE Palmeiras,0-0,
+22,Sun,2025-09-03,Cruzeiro EC,RB Bragantino,0-0,
+22,Sun,2025-09-03,EC Bahia,CR Vasco da Gama,1-1,1-0
+22,Sun,2025-09-03,América MG,Santos FC,2-0,1-0
+23,Wed,2025-09-13,SC Internacional,São Paulo FC,2-1,0-1
+23,Wed,2025-09-13,CR Flamengo,CA Paranaense,0-3,0-1
+23,Thu,2025-09-14,Fortaleza EC,SC Corinthians Paulista,2-1,1-1
+23,Thu,2025-09-14,Santos FC,Cruzeiro EC,0-3,0-1
+23,Thu,2025-09-14,Coritiba PR,EC Bahia,2-4,1-3
+23,Thu,2025-09-14,RB Bragantino,Grêmio FBPA,2-0,2-0
+23,Fri,2025-09-15,Cuiabá MT,América MG,2-2,2-2
+23,Fri,2025-09-15,SE Palmeiras,Goiás GO,1-0,0-0
+23,Sat,2025-09-16,CR Vasco da Gama,Fluminense FC,4-2,1-0
+23,Sat,2025-09-16,CA Mineiro,Botafogo FR,1-0,0-0
+24,Mon,2025-09-18,EC Bahia,Santos FC,1-2,0-0
+15,Mon,2025-09-18,SC Corinthians Paulista,Grêmio FBPA,4-4,3-2
+24,Tue,2025-09-19,América MG,RB Bragantino,0-2,0-1
+24,Wed,2025-09-20,Goiás GO,CR Flamengo,0-0,
+24,Wed,2025-09-20,São Paulo FC,Fortaleza EC,1-2,0-1
+24,Wed,2025-09-20,Fluminense FC,Cruzeiro EC,1-0,0-0
+24,Thu,2025-09-21,CR Vasco da Gama,Coritiba PR,5-1,2-0
+24,Thu,2025-09-21,CA Paranaense,SC Internacional,2-1,1-1
+24,Thu,2025-09-21,Grêmio FBPA,SE Palmeiras,1-0,1-0
+24,Fri,2025-09-22,SC Corinthians Paulista,Botafogo FR,1-0,0-0
+24,Sat,2025-09-23,CA Mineiro,Cuiabá MT,1-0,1-0
+15,Mon,2025-09-25,América MG,CR Vasco da Gama,0-1,0-0
+22,Wed,2025-09-27,São Paulo FC,Coritiba PR,2-1,2-1
+25,Sat,2025-09-30,Fortaleza EC,Grêmio FBPA,1-1,1-0
+25,Sat,2025-09-30,CR Flamengo,EC Bahia,1-0,0-0
+25,Sat,2025-09-30,Cuiabá MT,Fluminense FC,3-0,0-0
+25,Sat,2025-09-30,São Paulo FC,SC Corinthians Paulista,2-1,2-1
+25,Sat,2025-09-30,SC Internacional,CA Mineiro,0-2,0-0
+25,Sun,2025-10-01,Coritiba PR,CA Paranaense,2-0,2-0
+25,Sun,2025-10-01,Cruzeiro EC,América MG,1-1,1-1
+25,Sun,2025-10-01,Santos FC,CR Vasco da Gama,4-1,3-1
+25,Sun,2025-10-01,RB Bragantino,SE Palmeiras,2-1,0-1
+25,Mon,2025-10-02,Botafogo FR,Goiás GO,1-1,0-1
+26,Sat,2025-10-07,Goiás GO,EC Bahia,4-6,3-3
+26,Sat,2025-10-07,CR Vasco da Gama,São Paulo FC,0-0,
+26,Sat,2025-10-07,SC Corinthians Paulista,CR Flamengo,1-1,0-0
+26,Sun,2025-10-08,SE Palmeiras,Santos FC,1-2,1-1
+26,Sun,2025-10-08,Fluminense FC,Botafogo FR,0-2,0-2
+26,Sun,2025-10-08,SC Internacional,Grêmio FBPA,3-2,1-0
+26,Sun,2025-10-08,CA Mineiro,Coritiba PR,1-2,0-0
+26,Sun,2025-10-08,Fortaleza EC,América MG,3-2,1-2
+26,Sun,2025-10-08,CA Paranaense,RB Bragantino,1-1,1-1
+26,Sat,2025-10-14,Cuiabá MT,Cruzeiro EC,0-0,
+27,Wed,2025-10-18,Grêmio FBPA,CA Paranaense,1-2,1-1
+27,Wed,2025-10-18,América MG,Botafogo FR,1-2,1-1
+27,Wed,2025-10-18,Coritiba PR,Cuiabá MT,0-3,0-1
+27,Wed,2025-10-18,EC Bahia,SC Internacional,1-0,1-0
+27,Wed,2025-10-18,Goiás GO,São Paulo FC,2-0,2-0
+27,Wed,2025-10-18,CR Vasco da Gama,Fortaleza EC,1-0,0-0
+27,Thu,2025-10-19,Cruzeiro EC,CR Flamengo,0-2,0-2
+27,Thu,2025-10-19,SE Palmeiras,CA Mineiro,0-2,0-1
+27,Thu,2025-10-19,Santos FC,RB Bragantino,1-3,0-2
+27,Thu,2025-10-19,Fluminense FC,SC Corinthians Paulista,3-3,1-3
+28,Sat,2025-10-21,São Paulo FC,Grêmio FBPA,3-0,1-0
+28,Sat,2025-10-21,Cuiabá MT,Goiás GO,1-1,0-1
+28,Sat,2025-10-21,EC Bahia,Fortaleza EC,2-0,1-0
+28,Sat,2025-10-21,Botafogo FR,CA Paranaense,1-1,1-1
+28,Sun,2025-10-22,CR Flamengo,CR Vasco da Gama,1-0,0-0
+28,Sun,2025-10-22,CA Mineiro,Cruzeiro EC,0-1,0-0
+28,Sun,2025-10-22,SC Internacional,Santos FC,7-1,4-0
+28,Sun,2025-10-22,RB Bragantino,Fluminense FC,1-0,1-0
+28,Sun,2025-10-22,SC Corinthians Paulista,América MG,1-1,0-1
+28,Sun,2025-10-22,Coritiba PR,SE Palmeiras,0-2,0-2
+29,Wed,2025-10-25,CA Paranaense,América MG,3-2,3-1
+29,Wed,2025-10-25,RB Bragantino,CA Mineiro,1-2,0-1
+29,Wed,2025-10-25,Fluminense FC,Goiás GO,5-3,2-2
+29,Wed,2025-10-25,Cruzeiro EC,EC Bahia,3-0,1-0
+29,Wed,2025-10-25,SE Palmeiras,São Paulo FC,5-0,3-0
+29,Wed,2025-10-25,Cuiabá MT,SC Corinthians Paulista,0-1,0-0
+29,Wed,2025-10-25,Grêmio FBPA,CR Flamengo,3-2,0-1
+29,Thu,2025-10-26,CR Vasco da Gama,SC Internacional,1-2,0-1
+29,Thu,2025-10-26,Santos FC,Coritiba PR,2-1,1-1
+30,Sat,2025-10-28,SE Palmeiras,EC Bahia,1-0,1-0
+30,Sat,2025-10-28,América MG,Grêmio FBPA,3-4,2-2
+30,Sat,2025-10-28,CA Mineiro,Fluminense FC,2-0,0-0
+30,Sun,2025-10-29,Goiás GO,CR Vasco da Gama,1-1,0-0
+30,Sun,2025-10-29,CA Paranaense,São Paulo FC,1-1,1-1
+30,Sun,2025-10-29,SC Corinthians Paulista,Santos FC,1-1,0-0
+30,Sun,2025-10-29,SC Internacional,Coritiba PR,3-4,1-2
+30,Sun,2025-10-29,Botafogo FR,Cuiabá MT,0-1,0-0
+31,Tue,2025-10-31,EC Bahia,Fluminense FC,1-0,1-0
+31,Wed,2025-11-01,SC Corinthians Paulista,CA Paranaense,1-0,0-0
+31,Wed,2025-11-01,SC Internacional,América MG,1-1,1-0
+31,Wed,2025-11-01,Coritiba PR,Grêmio FBPA,1-2,0-1
+31,Wed,2025-11-01,CR Flamengo,Santos FC,1-2,1-1
+31,Wed,2025-11-01,CA Mineiro,Fortaleza EC,3-1,1-1
+31,Wed,2025-11-01,Botafogo FR,SE Palmeiras,3-4,3-0
+31,Thu,2025-11-02,Cuiabá MT,CR Vasco da Gama,0-2,0-0
+31,Thu,2025-11-02,Goiás GO,RB Bragantino,0-2,0-1
+31,Thu,2025-11-02,São Paulo FC,Cruzeiro EC,1-0,0-0
+32,Sat,2025-11-04,Grêmio FBPA,EC Bahia,1-0,0-0
+32,Sat,2025-11-04,América MG,CA Mineiro,1-1,0-0
+32,Sat,2025-11-04,SE Palmeiras,CA Paranaense,1-0,1-0
+32,Sun,2025-11-05,RB Bragantino,SC Corinthians Paulista,1-0,1-0
+32,Sun,2025-11-05,Cruzeiro EC,SC Internacional,1-2,0-1
+32,Sun,2025-11-05,Fortaleza EC,CR Flamengo,0-2,0-1
+32,Sun,2025-11-05,Coritiba PR,Goiás GO,0-1,0-0
+32,Mon,2025-11-06,CR Vasco da Gama,Botafogo FR,1-0,1-0
+32,Mon,2025-11-06,Santos FC,Cuiabá MT,0-0,
+33,Wed,2025-11-08,SC Internacional,Fluminense FC,0-0,
+33,Wed,2025-11-08,América MG,Coritiba PR,0-3,0-2
+33,Wed,2025-11-08,São Paulo FC,RB Bragantino,1-0,0-0
+33,Wed,2025-11-08,CA Paranaense,Fortaleza EC,1-1,0-0
+33,Wed,2025-11-08,CR Flamengo,SE Palmeiras,3-0,2-0
+33,Thu,2025-11-09,SC Corinthians Paulista,CA Mineiro,1-1,1-0
+33,Thu,2025-11-09,Goiás GO,Santos FC,0-1,0-0
+33,Thu,2025-11-09,EC Bahia,Cuiabá MT,0-3,0-1
+33,Thu,2025-11-09,Botafogo FR,Grêmio FBPA,3-4,2-1
+34,Sat,2025-11-11,Coritiba PR,Cruzeiro EC,1-0,0-0
+34,Sat,2025-11-11,CR Flamengo,Fluminense FC,1-1,1-0
+34,Sat,2025-11-11,SE Palmeiras,SC Internacional,3-0,1-0
+34,Sun,2025-11-12,Grêmio FBPA,SC Corinthians Paulista,0-1,0-1
+34,Sun,2025-11-12,RB Bragantino,Botafogo FR,2-2,1-2
+34,Sun,2025-11-12,Cuiabá MT,Fortaleza EC,2-1,1-0
+34,Sun,2025-11-12,EC Bahia,CA Paranaense,1-1,0-0
+34,Sun,2025-11-12,CA Mineiro,Goiás GO,2-1,1-0
+34,Sun,2025-11-12,Santos FC,São Paulo FC,0-0,
+34,Sun,2025-11-12,CR Vasco da Gama,América MG,2-1,1-1
+30,Sat,2025-11-18,Fortaleza EC,Cruzeiro EC,0-1,0-0
+33,Wed,2025-11-22,Cruzeiro EC,CR Vasco da Gama,2-2,2-1
+32,Wed,2025-11-22,Fluminense FC,São Paulo FC,1-0,0-0
+29,Thu,2025-11-23,Fortaleza EC,Botafogo FR,2-2,2-1
+30,Thu,2025-11-23,CR Flamengo,RB Bragantino,1-0,0-0
+35,Fri,2025-11-24,SC Corinthians Paulista,EC Bahia,1-5,0-3
+35,Sat,2025-11-25,CA Paranaense,CR Vasco da Gama,0-0,
+35,Sat,2025-11-25,Fluminense FC,Coritiba PR,2-1,1-0
+35,Sun,2025-11-26,Botafogo FR,Santos FC,1-1,1-0
+35,Sun,2025-11-26,CA Mineiro,Grêmio FBPA,3-0,1-0
+35,Sun,2025-11-26,São Paulo FC,Cuiabá MT,0-0,
+35,Sun,2025-11-26,América MG,CR Flamengo,0-3,0-1
+35,Sun,2025-11-26,Fortaleza EC,SE Palmeiras,2-2,1-0
+35,Sun,2025-11-26,SC Internacional,RB Bragantino,1-0,1-0
+35,Mon,2025-11-27,Goiás GO,Cruzeiro EC,0-1,0-0
+36,Tue,2025-11-28,CR Vasco da Gama,SC Corinthians Paulista,2-4,2-2
+36,Wed,2025-11-29,Santos FC,Fluminense FC,0-3,0-2
+36,Wed,2025-11-29,CR Flamengo,CA Mineiro,0-3,0-1
+36,Wed,2025-11-29,EC Bahia,São Paulo FC,0-1,0-0
+36,Wed,2025-11-29,Cuiabá MT,SC Internacional,0-2,0-0
+36,Wed,2025-11-29,Coritiba PR,Botafogo FR,1-1,0-0
+36,Wed,2025-11-29,SE Palmeiras,América MG,4-0,2-0
+36,Thu,2025-11-30,Grêmio FBPA,Goiás GO,2-1,0-1
+36,Thu,2025-11-30,Cruzeiro EC,CA Paranaense,1-1,0-0
+36,Thu,2025-11-30,RB Bragantino,Fortaleza EC,1-2,1-2
+37,Sat,2025-12-02,SC Corinthians Paulista,SC Internacional,1-2,0-1
+37,Sat,2025-12-02,CA Mineiro,São Paulo FC,2-1,0-0
+37,Sun,2025-12-03,CR Flamengo,Cuiabá MT,2-1,2-0
+37,Sun,2025-12-03,SE Palmeiras,Fluminense FC,1-0,1-0
+37,Sun,2025-12-03,Botafogo FR,Cruzeiro EC,0-0,
+37,Sun,2025-12-03,RB Bragantino,Coritiba PR,1-0,0-0
+37,Sun,2025-12-03,Grêmio FBPA,CR Vasco da Gama,1-0,0-0
+37,Sun,2025-12-03,CA Paranaense,Santos FC,3-0,1-0
+37,Sun,2025-12-03,Fortaleza EC,Goiás GO,1-0,1-0
+37,Sun,2025-12-03,América MG,EC Bahia,3-2,2-1
+38,Wed,2025-12-06,Goiás GO,América MG,1-0,1-0
+38,Wed,2025-12-06,Cuiabá MT,CA Paranaense,3-0,2-0
+38,Wed,2025-12-06,EC Bahia,CA Mineiro,4-1,2-1
+38,Wed,2025-12-06,Coritiba PR,SC Corinthians Paulista,0-2,0-2
+38,Wed,2025-12-06,SC Internacional,Botafogo FR,3-1,1-0
+38,Wed,2025-12-06,Cruzeiro EC,SE Palmeiras,1-1,0-1
+38,Wed,2025-12-06,Fluminense FC,Grêmio FBPA,2-3,1-2
+38,Wed,2025-12-06,CR Vasco da Gama,RB Bragantino,2-1,1-0
+38,Wed,2025-12-06,São Paulo FC,CR Flamengo,1-0,1-0
+38,Wed,2025-12-06,Santos FC,Fortaleza EC,1-2,0-1

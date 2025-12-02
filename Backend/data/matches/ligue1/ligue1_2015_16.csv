@@ -1,0 +1,381 @@
+Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
+1,Fri,Aug/7,20.30,Lille OSC,Paris Saint-Germain,0-1,0-0
+1,Sat,Aug/8,21.00,FC Nantes,EA Guingamp,1-0,0-0
+1,Sat,Aug/8,,ESTAC Troyes,Gazélec FC Ajaccio,0-0,
+1,Sat,Aug/8,,Montpellier HSC,Angers SCO,0-2,0-1
+1,Sat,Aug/8,,OGC Nice,AS Monaco,1-2,1-0
+1,Sat,Aug/8,,Olympique Marseille,SM Caen,0-1,0-1
+1,Sat,Aug/8,,SC Bastia,Stade Rennais,2-1,0-1
+1,Sun,Aug/9,17.00,Girondins Bordeaux,Stade de Reims,1-2,1-0
+1,Sun,Aug/9,,Toulouse FC,AS Saint-Étienne,2-1,1-1
+1,Sun,Aug/9,21.00,Olympique Lyonnais,FC Lorient,0-0,
+2,Fri,Aug/14,20.30,AS Monaco,Lille OSC,0-0,
+2,Sat,Aug/15,17.00,AS Saint-Étienne,Girondins Bordeaux,1-1,0-0
+2,Sat,Aug/15,20.00,Angers SCO,FC Nantes,0-0,
+2,Sat,Aug/15,,EA Guingamp,Olympique Lyonnais,0-1,0-0
+2,Sat,Aug/15,,ESTAC Troyes,OGC Nice,3-3,1-3
+2,Sat,Aug/15,,SM Caen,Toulouse FC,1-0,0-0
+2,Sat,Aug/15,,Stade Rennais,Montpellier HSC,1-0,0-0
+2,Sun,Aug/16,14.00,Stade de Reims,Olympique Marseille,1-0,1-0
+2,Sun,Aug/16,17.00,FC Lorient,SC Bastia,1-1,0-1
+2,Sun,Aug/16,21.00,Paris Saint-Germain,Gazélec FC Ajaccio,2-0,2-0
+3,Fri,Aug/21,20.30,Montpellier HSC,Paris Saint-Germain,0-1,0-0
+3,Sat,Aug/22,17.00,Olympique Lyonnais,Stade Rennais,1-2,1-1
+3,Sat,Aug/22,20.00,FC Nantes,Stade de Reims,1-0,0-0
+3,Sat,Aug/22,,Gazélec FC Ajaccio,Angers SCO,0-2,0-2
+3,Sat,Aug/22,,OGC Nice,SM Caen,2-1,0-0
+3,Sat,Aug/22,,SC Bastia,EA Guingamp,3-0,2-0
+3,Sat,Aug/22,,Toulouse FC,AS Monaco,1-1,1-0
+3,Sun,Aug/23,14.00,Lille OSC,Girondins Bordeaux,0-0,
+3,Sun,Aug/23,17.00,FC Lorient,AS Saint-Étienne,0-1,0-0
+3,Sun,Aug/23,21.00,Olympique Marseille,ESTAC Troyes,6-0,1-0
+4,Fri,Aug/28,20.30,EA Guingamp,Olympique Marseille,2-0,0-0
+4,Sat,Aug/29,17.00,SM Caen,Olympique Lyonnais,0-4,0-2
+4,Sat,Aug/29,20.00,Angers SCO,OGC Nice,1-1,1-0
+4,Sat,Aug/29,,ESTAC Troyes,Montpellier HSC,0-0,
+4,Sat,Aug/29,,Lille OSC,Gazélec FC Ajaccio,1-0,1-0
+4,Sat,Aug/29,,Stade de Reims,FC Lorient,4-1,1-0
+4,Sat,Aug/29,,Stade Rennais,Toulouse FC,3-1,1-1
+4,Sun,Aug/30,14.00,AS Saint-Étienne,SC Bastia,2-1,1-1
+4,Sun,Aug/30,17.00,Girondins Bordeaux,FC Nantes,2-0,1-0
+4,Sun,Aug/30,21.00,AS Monaco,Paris Saint-Germain,0-3,0-0
+5,Fri,Sep/11,20.30,Paris Saint-Germain,Girondins Bordeaux,2-2,2-1
+5,Sat,Sep/12,17.00,Olympique Lyonnais,Lille OSC,0-0,
+5,Sat,Sep/12,20.00,ESTAC Troyes,SM Caen,1-3,0-2
+5,Sat,Sep/12,,FC Lorient,Angers SCO,3-1,0-1
+5,Sat,Sep/12,,Montpellier HSC,AS Saint-Étienne,1-2,0-1
+5,Sat,Sep/12,,OGC Nice,EA Guingamp,0-1,0-0
+5,Sat,Sep/12,,Toulouse FC,Stade de Reims,2-2,2-0
+5,Sun,Sep/13,14.00,Gazélec FC Ajaccio,AS Monaco,0-1,0-1
+5,Sun,Sep/13,17.00,FC Nantes,Stade Rennais,0-2,0-0
+5,Sun,Sep/13,21.00,Olympique Marseille,SC Bastia,4-1,1-0
+6,Fri,Sep/18,20.30,Stade Rennais,Lille OSC,1-1,0-0
+6,Sat,Sep/19,17.30,Stade de Reims,Paris Saint-Germain,1-1,0-0
+6,Sat,Sep/19,20.00,Angers SCO,ESTAC Troyes,1-0,0-0
+6,Sat,Sep/19,,EA Guingamp,Gazélec FC Ajaccio,2-1,1-1
+6,Sat,Sep/19,,SC Bastia,OGC Nice,1-3,1-2
+6,Sat,Sep/19,,SM Caen,Montpellier HSC,2-1,1-1
+6,Sun,Sep/20,14.00,Girondins Bordeaux,Toulouse FC,1-1,0-1
+6,Sun,Sep/20,17.00,AS Monaco,FC Lorient,2-3,1-2
+6,Sun,Sep/20,,AS Saint-Étienne,FC Nantes,2-0,1-0
+6,Sun,Sep/20,21.00,Olympique Marseille,Olympique Lyonnais,1-1,0-1
+7,Tue,Sep/22,19.00,Angers SCO,Stade de Reims,0-0,
+7,Tue,Sep/22,21.00,Paris Saint-Germain,EA Guingamp,3-0,1-0
+7,Wed,Sep/23,19.00,ESTAC Troyes,AS Saint-Étienne,0-1,0-1
+7,Wed,Sep/23,,FC Lorient,SM Caen,2-0,2-0
+7,Wed,Sep/23,,Gazélec FC Ajaccio,Stade Rennais,1-1,1-0
+7,Wed,Sep/23,,OGC Nice,Girondins Bordeaux,6-1,2-1
+7,Wed,Sep/23,,Olympique Lyonnais,SC Bastia,2-0,1-0
+7,Wed,Sep/23,21.00,Toulouse FC,Olympique Marseille,1-1,0-0
+7,Thu,Sep/24,18.55,Montpellier HSC,AS Monaco,2-3,2-0
+7,Tue,Sep/29,18.30,Lille OSC,FC Nantes,0-1,0-1
+8,Fri,Sep/25,20.30,Stade de Reims,Lille OSC,1-0,0-0
+8,Sat,Sep/26,17.30,FC Nantes,Paris Saint-Germain,1-4,1-0
+8,Sat,Sep/26,20.00,Girondins Bordeaux,Olympique Lyonnais,3-1,3-0
+8,Sat,Sep/26,,SC Bastia,Toulouse FC,3-0,3-0
+8,Sat,Sep/26,,SM Caen,Gazélec FC Ajaccio,2-0,1-0
+8,Sat,Sep/26,,Stade Rennais,ESTAC Troyes,1-1,0-1
+8,Sun,Sep/27,14.00,Olympique Marseille,Angers SCO,1-2,0-1
+8,Sun,Sep/27,17.00,EA Guingamp,AS Monaco,3-3,1-2
+8,Sun,Sep/27,,Montpellier HSC,FC Lorient,2-1,1-0
+8,Sun,Sep/27,21.00,AS Saint-Étienne,OGC Nice,1-4,1-3
+9,Fri,Oct/2,20.30,Lille OSC,Montpellier HSC,2-0,1-0
+9,Sat,Oct/3,17.30,Olympique Lyonnais,Stade de Reims,1-0,1-0
+9,Sat,Oct/3,20.00,Angers SCO,SC Bastia,1-0,1-0
+9,Sat,Oct/3,,ESTAC Troyes,EA Guingamp,0-1,0-0
+9,Sat,Oct/3,,Gazélec FC Ajaccio,Toulouse FC,2-2,2-1
+9,Sun,Oct/4,14.00,AS Monaco,Stade Rennais,1-1,0-1
+9,Sun,Oct/4,17.00,FC Lorient,Girondins Bordeaux,3-2,0-1
+9,Sun,Oct/4,,SM Caen,AS Saint-Étienne,1-0,0-0
+9,Sun,Oct/4,21.00,Paris Saint-Germain,Olympique Marseille,2-1,2-1
+9,Wed,Nov/4,18.30,OGC Nice,FC Nantes,1-2,1-1
+10,Fri,Oct/16,20.30,AS Monaco,Olympique Lyonnais,1-1,1-0
+10,Sat,Oct/17,17.00,SC Bastia,Paris Saint-Germain,0-2,0-0
+10,Sat,Oct/17,20.00,AS Saint-Étienne,Gazélec FC Ajaccio,2-0,1-0
+10,Sat,Oct/17,,EA Guingamp,Lille OSC,1-1,1-1
+10,Sat,Oct/17,,FC Nantes,ESTAC Troyes,3-0,1-0
+10,Sat,Oct/17,,Stade de Reims,SM Caen,0-1,0-0
+10,Sat,Oct/17,,Toulouse FC,Angers SCO,1-2,1-2
+10,Sun,Oct/18,14.00,Olympique Marseille,FC Lorient,1-1,1-1
+10,Sun,Oct/18,17.00,Girondins Bordeaux,Montpellier HSC,0-0,
+10,Sun,Oct/18,21.00,Stade Rennais,OGC Nice,1-4,0-1
+11,Fri,Oct/23,18.30,SM Caen,FC Nantes,0-2,0-1
+11,Fri,Oct/23,20.30,Olympique Lyonnais,Toulouse FC,3-0,1-0
+11,Sat,Oct/24,17.00,FC Lorient,Stade Rennais,1-1,1-0
+11,Sat,Oct/24,20.00,Angers SCO,EA Guingamp,0-0,
+11,Sat,Oct/24,,Gazélec FC Ajaccio,OGC Nice,3-1,3-1
+11,Sat,Oct/24,,Montpellier HSC,SC Bastia,2-0,0-0
+11,Sun,Oct/25,14.00,Stade de Reims,AS Monaco,0-1,0-1
+11,Sun,Oct/25,17.00,Girondins Bordeaux,ESTAC Troyes,1-0,0-0
+11,Sun,Oct/25,,Lille OSC,Olympique Marseille,1-2,0-1
+11,Sun,Oct/25,21.00,Paris Saint-Germain,AS Saint-Étienne,4-1,1-0
+12,Fri,Oct/30,20.30,Stade Rennais,Paris Saint-Germain,0-1,0-0
+12,Sat,Oct/31,17.00,AS Saint-Étienne,Stade de Reims,3-0,0-0
+12,Sat,Oct/31,20.00,EA Guingamp,FC Lorient,2-2,1-0
+12,Sat,Oct/31,,ESTAC Troyes,Olympique Lyonnais,0-1,0-0
+12,Sat,Oct/31,,Gazélec FC Ajaccio,Girondins Bordeaux,2-0,1-0
+12,Sat,Oct/31,,SC Bastia,SM Caen,1-0,1-0
+12,Sat,Oct/31,,Toulouse FC,Montpellier HSC,1-1,1-1
+12,Sun,Nov/1,14.00,OGC Nice,Lille OSC,0-0,
+12,Sun,Nov/1,17.00,AS Monaco,Angers SCO,1-0,1-0
+12,Sun,Nov/1,21.00,FC Nantes,Olympique Marseille,0-1,0-0
+13,Fri,Nov/6,20.30,Angers SCO,Stade Rennais,0-2,0-1
+13,Sat,Nov/7,17.00,Paris Saint-Germain,Toulouse FC,5-0,2-0
+13,Sat,Nov/7,20.00,FC Lorient,ESTAC Troyes,4-1,1-0
+13,Sat,Nov/7,,Lille OSC,SC Bastia,1-1,0-0
+13,Sat,Nov/7,,Montpellier HSC,FC Nantes,2-1,1-0
+13,Sat,Nov/7,,SM Caen,EA Guingamp,2-1,0-0
+13,Sat,Nov/7,,Stade de Reims,Gazélec FC Ajaccio,1-2,0-1
+13,Sun,Nov/8,17.00,Olympique Marseille,OGC Nice,0-1,0-1
+13,Sun,Nov/8,21.00,Girondins Bordeaux,AS Monaco,3-1,2-1
+13,Sun,Nov/8,,Olympique Lyonnais,AS Saint-Étienne,3-0,1-0
+14,Fri,Nov/20,20.30,OGC Nice,Olympique Lyonnais,3-0,1-0
+14,Sat,Nov/21,17.00,FC Lorient,Paris Saint-Germain,1-2,0-2
+14,Sat,Nov/21,20.00,AS Monaco,FC Nantes,1-0,1-0
+14,Sat,Nov/21,,EA Guingamp,Toulouse FC,2-0,0-0
+14,Sat,Nov/21,,ESTAC Troyes,Lille OSC,1-1,0-1
+14,Sat,Nov/21,,Montpellier HSC,Stade de Reims,3-1,1-1
+14,Sun,Nov/22,14.00,SC Bastia,Gazélec FC Ajaccio,1-2,1-1
+14,Sun,Nov/22,,SM Caen,Angers SCO,0-0,
+14,Sun,Nov/22,17.00,Stade Rennais,Girondins Bordeaux,2-2,1-1
+14,Sun,Nov/22,21.00,AS Saint-Étienne,Olympique Marseille,0-2,0-1
+15,Fri,Nov/27,20.30,Olympique Lyonnais,Montpellier HSC,2-4,1-2
+15,Sat,Nov/28,17.00,Paris Saint-Germain,ESTAC Troyes,4-1,1-0
+15,Sat,Nov/28,20.00,Angers SCO,Lille OSC,2-0,2-0
+15,Sat,Nov/28,,FC Nantes,SC Bastia,0-0,
+15,Sat,Nov/28,,Gazélec FC Ajaccio,FC Lorient,1-1,1-1
+15,Sat,Nov/28,,Stade de Reims,Stade Rennais,2-2,0-1
+15,Sat,Nov/28,,Toulouse FC,OGC Nice,2-0,1-0
+15,Sun,Nov/29,14.00,AS Saint-Étienne,EA Guingamp,3-0,0-0
+15,Sun,Nov/29,17.00,Girondins Bordeaux,SM Caen,1-4,0-1
+15,Sun,Nov/29,21.00,Olympique Marseille,AS Monaco,3-3,1-2
+16,Tue,Dec/1,19.00,Angers SCO,Paris Saint-Germain,0-0,
+16,Tue,Dec/1,,FC Lorient,OGC Nice,0-0,
+16,Tue,Dec/1,21.00,FC Nantes,Olympique Lyonnais,0-0,
+16,Wed,Dec/2,19.00,AS Monaco,SM Caen,1-1,0-0
+16,Wed,Dec/2,,EA Guingamp,Stade de Reims,1-2,1-1
+16,Wed,Dec/2,,ESTAC Troyes,Toulouse FC,0-3,0-1
+16,Wed,Dec/2,,Montpellier HSC,Gazélec FC Ajaccio,0-2,0-1
+16,Wed,Dec/2,,SC Bastia,Girondins Bordeaux,1-0,0-0
+16,Wed,Dec/2,21.00,Lille OSC,AS Saint-Étienne,1-0,0-0
+16,Thu,Dec/3,21.00,Stade Rennais,Olympique Marseille,0-1,0-1
+17,Fri,Dec/4,20.30,OGC Nice,Paris Saint-Germain,0-3,0-2
+17,Sat,Dec/5,17.00,Olympique Lyonnais,Angers SCO,0-2,0-1
+17,Sat,Dec/5,20.00,Gazélec FC Ajaccio,FC Nantes,1-1,0-0
+17,Sat,Dec/5,,SC Bastia,AS Monaco,1-2,0-0
+17,Sat,Dec/5,,SM Caen,Lille OSC,1-2,0-1
+17,Sat,Dec/5,,Stade de Reims,ESTAC Troyes,1-1,1-0
+17,Sat,Dec/5,,Toulouse FC,FC Lorient,2-3,1-0
+17,Sun,Dec/6,14.00,Olympique Marseille,Montpellier HSC,2-2,0-1
+17,Sun,Dec/6,17.00,Girondins Bordeaux,EA Guingamp,1-0,0-0
+17,Sun,Dec/6,21.00,AS Saint-Étienne,Stade Rennais,1-1,0-1
+18,Fri,Dec/11,20.30,Stade Rennais,SM Caen,1-1,0-0
+18,Sat,Dec/12,16.00,Stade de Reims,OGC Nice,1-1,0-1
+18,Sat,Dec/12,20.00,ESTAC Troyes,SC Bastia,1-1,0-1
+18,Sat,Dec/12,,FC Nantes,Toulouse FC,1-1,0-0
+18,Sat,Dec/12,,Lille OSC,FC Lorient,3-0,1-0
+18,Sat,Dec/12,,Montpellier HSC,EA Guingamp,2-1,0-1
+18,Sun,Dec/13,14.00,AS Monaco,AS Saint-Étienne,1-0,0-0
+18,Sun,Dec/13,17.00,Angers SCO,Girondins Bordeaux,1-1,0-1
+18,Sun,Dec/13,,Olympique Marseille,Gazélec FC Ajaccio,1-1,1-1
+18,Sun,Dec/13,21.00,Paris Saint-Germain,Olympique Lyonnais,5-1,2-1
+19,Fri,Dec/18,20.30,OGC Nice,Montpellier HSC,1-0,1-0
+19,Sat,Dec/19,17.00,SM Caen,Paris Saint-Germain,0-3,0-2
+19,Sat,Dec/19,20.00,EA Guingamp,Stade Rennais,0-2,0-0
+19,Sat,Dec/19,,ESTAC Troyes,AS Monaco,0-0,
+19,Sat,Dec/19,,FC Lorient,FC Nantes,0-0,
+19,Sat,Dec/19,,SC Bastia,Stade de Reims,2-0,1-0
+19,Sat,Dec/19,,Toulouse FC,Lille OSC,1-1,1-0
+19,Sun,Dec/20,14.00,AS Saint-Étienne,Angers SCO,1-0,0-0
+19,Sun,Dec/20,17.00,Gazélec FC Ajaccio,Olympique Lyonnais,2-1,1-0
+19,Sun,Dec/20,21.00,Girondins Bordeaux,Olympique Marseille,1-1,0-0
+20,Fri,Jan/8,20.30,Paris Saint-Germain,SC Bastia,2-0,2-0
+20,Sat,Jan/9,17.00,Olympique Lyonnais,ESTAC Troyes,4-1,1-0
+20,Sat,Jan/9,20.00,Angers SCO,SM Caen,2-0,1-0
+20,Sat,Jan/9,,AS Monaco,Gazélec FC Ajaccio,2-2,0-2
+20,Sat,Jan/9,,Montpellier HSC,Girondins Bordeaux,0-1,0-1
+20,Sat,Jan/9,,Stade de Reims,Toulouse FC,1-3,1-0
+20,Sat,Jan/9,,Stade Rennais,FC Lorient,2-2,2-2
+20,Sun,Jan/10,14.00,FC Nantes,AS Saint-Étienne,2-1,1-1
+20,Sun,Jan/10,17.00,Lille OSC,OGC Nice,1-1,1-1
+20,Sun,Jan/10,21.00,Olympique Marseille,EA Guingamp,0-0,
+21,Fri,Jan/15,20.30,OGC Nice,Angers SCO,2-1,0-1
+21,Sat,Jan/16,17.00,Toulouse FC,Paris Saint-Germain,0-1,0-0
+21,Sat,Jan/16,20.00,EA Guingamp,FC Nantes,2-2,2-0
+21,Sat,Jan/16,,ESTAC Troyes,Stade Rennais,2-4,2-3
+21,Sat,Jan/16,,Girondins Bordeaux,Lille OSC,1-0,0-0
+21,Sat,Jan/16,,Gazélec FC Ajaccio,Stade de Reims,2-2,1-2
+21,Sat,Jan/16,,SC Bastia,Montpellier HSC,1-0,0-0
+21,Sun,Jan/17,14.00,FC Lorient,AS Monaco,0-2,0-0
+21,Sun,Jan/17,17.00,SM Caen,Olympique Marseille,1-3,0-1
+21,Sun,Jan/17,21.00,AS Saint-Étienne,Olympique Lyonnais,1-0,0-0
+22,Fri,Jan/22,20.30,Stade Rennais,Gazélec FC Ajaccio,1-0,0-0
+22,Sat,Jan/23,17.00,Paris Saint-Germain,Angers SCO,5-1,2-0
+22,Sat,Jan/23,20.00,EA Guingamp,SC Bastia,1-0,0-0
+22,Sat,Jan/23,,FC Nantes,Girondins Bordeaux,2-2,2-0
+22,Sat,Jan/23,,Lille OSC,ESTAC Troyes,1-3,1-0
+22,Sat,Jan/23,,Montpellier HSC,SM Caen,1-2,1-1
+22,Sat,Jan/23,,OGC Nice,FC Lorient,2-1,2-1
+22,Sun,Jan/24,14.00,AS Monaco,Toulouse FC,4-0,2-0
+22,Sun,Jan/24,17.00,Stade de Reims,AS Saint-Étienne,1-1,0-0
+22,Sun,Jan/24,21.00,Olympique Lyonnais,Olympique Marseille,1-1,0-0
+23,Fri,Jan/29,20.30,Olympique Marseille,Lille OSC,1-1,0-0
+23,Sat,Jan/30,17.00,Angers SCO,AS Monaco,3-0,2-0
+23,Sat,Jan/30,20.00,ESTAC Troyes,FC Nantes,0-1,0-1
+23,Sat,Jan/30,,FC Lorient,Stade de Reims,2-0,1-0
+23,Sat,Jan/30,,Gazélec FC Ajaccio,Montpellier HSC,0-4,0-2
+23,Sat,Jan/30,,SC Bastia,Olympique Lyonnais,1-0,0-0
+23,Sat,Jan/30,,Toulouse FC,EA Guingamp,1-2,0-1
+23,Sun,Jan/31,14.00,SM Caen,OGC Nice,2-0,2-0
+23,Sun,Jan/31,17.00,Girondins Bordeaux,Stade Rennais,4-0,1-0
+23,Sun,Jan/31,21.00,AS Saint-Étienne,Paris Saint-Germain,0-2,0-0
+24,Tue,Feb/2,19.00,AS Monaco,SC Bastia,2-0,1-0
+24,Tue,Feb/2,21.00,Montpellier HSC,Olympique Marseille,0-1,0-0
+24,Wed,Feb/3,19.00,EA Guingamp,ESTAC Troyes,4-0,1-0
+24,Wed,Feb/3,,FC Nantes,Gazélec FC Ajaccio,3-1,2-1
+24,Wed,Feb/3,,Lille OSC,SM Caen,1-0,0-0
+24,Wed,Feb/3,,OGC Nice,Toulouse FC,1-0,0-0
+24,Wed,Feb/3,,Olympique Lyonnais,Girondins Bordeaux,3-0,1-0
+24,Wed,Feb/3,,Stade de Reims,Angers SCO,2-1,1-1
+24,Wed,Feb/3,21.00,Paris Saint-Germain,FC Lorient,3-1,1-1
+24,Thu,Feb/4,21.00,Stade Rennais,AS Saint-Étienne,0-1,0-0
+25,Sat,Feb/6,14.00,AS Monaco,OGC Nice,1-0,0-0
+25,Sat,Feb/6,17.00,Angers SCO,Olympique Lyonnais,0-3,0-1
+25,Sat,Feb/6,20.00,FC Lorient,Montpellier HSC,1-1,0-1
+25,Sat,Feb/6,,Gazélec FC Ajaccio,EA Guingamp,0-0,
+25,Sat,Feb/6,,SC Bastia,ESTAC Troyes,2-0,1-0
+25,Sat,Feb/6,,SM Caen,Stade de Reims,0-2,0-1
+25,Sat,Feb/6,,Toulouse FC,FC Nantes,0-0,
+25,Sun,Feb/7,14.00,Lille OSC,Stade Rennais,1-1,1-0
+25,Sun,Feb/7,17.00,Girondins Bordeaux,AS Saint-Étienne,1-4,1-2
+25,Sun,Feb/7,21.00,Olympique Marseille,Paris Saint-Germain,1-2,1-1
+26,Fri,Feb/12,20.30,Stade Rennais,Angers SCO,1-0,0-0
+26,Sat,Feb/13,17.00,Paris Saint-Germain,Lille OSC,0-0,
+26,Sat,Feb/13,20.00,EA Guingamp,Girondins Bordeaux,2-4,1-2
+26,Sat,Feb/13,,Gazélec FC Ajaccio,ESTAC Troyes,2-3,1-3
+26,Sat,Feb/13,,FC Nantes,FC Lorient,2-1,2-0
+26,Sat,Feb/13,,Montpellier HSC,Toulouse FC,2-0,1-0
+26,Sat,Feb/13,,Stade de Reims,SC Bastia,0-1,0-0
+26,Sun,Feb/14,14.00,Olympique Lyonnais,SM Caen,4-1,3-0
+26,Sun,Feb/14,17.00,AS Saint-Étienne,AS Monaco,1-1,0-0
+26,Sun,Feb/14,21.00,OGC Nice,Olympique Marseille,1-1,0-1
+27,Fri,Feb/19,20.30,Girondins Bordeaux,OGC Nice,0-0,
+27,Sat,Feb/20,17.00,Paris Saint-Germain,Stade de Reims,4-1,3-1
+27,Sat,Feb/20,20.00,Angers SCO,Montpellier HSC,2-3,0-3
+27,Sat,Feb/20,,AS Monaco,ESTAC Troyes,3-1,2-0
+27,Sat,Feb/20,,FC Lorient,EA Guingamp,4-3,1-2
+27,Sat,Feb/20,,Toulouse FC,Gazélec FC Ajaccio,1-1,0-0
+27,Sun,Feb/21,14.00,Olympique Marseille,AS Saint-Étienne,1-1,0-0
+27,Sun,Feb/21,17.00,SM Caen,Stade Rennais,1-0,0-0
+27,Sun,Feb/21,21.00,Lille OSC,Olympique Lyonnais,1-0,1-0
+27,Wed,Mar/9,18.30,SC Bastia,FC Nantes,0-0,
+28,Fri,Feb/26,20.30,OGC Nice,SC Bastia,0-2,0-0
+28,Sat,Feb/27,17.00,Montpellier HSC,Lille OSC,3-0,0-0
+28,Sat,Feb/27,20.00,EA Guingamp,Angers SCO,2-2,1-1
+28,Sat,Feb/27,,ESTAC Troyes,FC Lorient,0-1,0-1
+28,Sat,Feb/27,,Stade de Reims,Girondins Bordeaux,4-1,2-0
+28,Sat,Feb/27,,Toulouse FC,Stade Rennais,1-2,0-0
+28,Sun,Feb/28,14.00,FC Nantes,AS Monaco,0-0,
+28,Sun,Feb/28,17.00,AS Saint-Étienne,SM Caen,1-2,0-0
+28,Sun,Feb/28,21.00,Olympique Lyonnais,Paris Saint-Germain,2-1,2-0
+28,Wed,Mar/9,18.30,Gazélec FC Ajaccio,Olympique Marseille,1-1,0-0
+29,Fri,Mar/4,20.30,SM Caen,AS Monaco,2-2,0-0
+29,Sat,Mar/5,17.00,Paris Saint-Germain,Montpellier HSC,0-0,
+29,Sat,Mar/5,20.00,Angers SCO,AS Saint-Étienne,0-0,
+29,Sat,Mar/5,,Girondins Bordeaux,Gazélec FC Ajaccio,1-1,1-0
+29,Sat,Mar/5,,Lille OSC,Stade de Reims,2-0,0-0
+29,Sat,Mar/5,,OGC Nice,ESTAC Troyes,2-1,1-1
+29,Sat,Mar/5,,SC Bastia,FC Lorient,0-0,
+29,Sun,Mar/6,14.00,Olympique Marseille,Toulouse FC,1-1,0-0
+29,Sun,Mar/6,17.00,Stade Rennais,FC Nantes,4-1,4-0
+29,Sun,Mar/6,21.00,Olympique Lyonnais,EA Guingamp,5-1,3-1
+30,Fri,Mar/11,20.30,AS Monaco,Stade de Reims,2-2,2-1
+30,Sat,Mar/12,17.00,FC Lorient,Olympique Marseille,1-1,1-0
+30,Sat,Mar/12,20.00,EA Guingamp,AS Saint-Étienne,2-0,2-0
+30,Sat,Mar/12,,Gazélec FC Ajaccio,SM Caen,1-0,0-0
+30,Sat,Mar/12,,Montpellier HSC,OGC Nice,0-2,0-0
+30,Sat,Mar/12,,SC Bastia,Lille OSC,1-2,0-1
+30,Sat,Mar/12,,Toulouse FC,Girondins Bordeaux,4-0,1-0
+30,Sun,Mar/13,14.00,ESTAC Troyes,Paris Saint-Germain,0-9,0-3
+30,Sun,Mar/13,17.00,FC Nantes,Angers SCO,2-0,0-0
+30,Sun,Mar/13,21.00,Stade Rennais,Olympique Lyonnais,2-2,0-1
+31,Fri,Mar/18,20.30,Olympique Marseille,Stade Rennais,2-5,1-3
+31,Sat,Mar/19,17.00,AS Saint-Étienne,Montpellier HSC,3-0,0-0
+31,Sat,Mar/19,20.00,Angers SCO,FC Lorient,5-1,3-1
+31,Sat,Mar/19,,Lille OSC,Toulouse FC,1-0,1-0
+31,Sat,Mar/19,,SM Caen,ESTAC Troyes,2-1,1-1
+31,Sat,Mar/19,,Stade de Reims,EA Guingamp,0-1,0-1
+31,Sat,Mar/19,21.00,Olympique Lyonnais,FC Nantes,2-0,0-0
+31,Sun,Mar/20,14.00,Girondins Bordeaux,SC Bastia,1-1,0-0
+31,Sun,Mar/20,17.00,OGC Nice,Gazélec FC Ajaccio,3-0,1-0
+31,Sun,Mar/20,21.00,Paris Saint-Germain,AS Monaco,0-2,0-0
+32,Fri,Apr/1,20.30,AS Monaco,Girondins Bordeaux,1-2,0-1
+32,Sat,Apr/2,17.00,Paris Saint-Germain,OGC Nice,4-1,2-1
+32,Sat,Apr/2,20.00,EA Guingamp,Montpellier HSC,2-2,1-1
+32,Sat,Apr/2,,ESTAC Troyes,Angers SCO,0-1,0-0
+32,Sat,Apr/2,,Gazélec FC Ajaccio,AS Saint-Étienne,0-2,0-1
+32,Sat,Apr/2,,Stade Rennais,Stade de Reims,3-1,2-0
+32,Sat,Apr/2,,Toulouse FC,SM Caen,2-0,1-0
+32,Sun,Apr/3,14.00,FC Nantes,Lille OSC,0-3,0-1
+32,Sun,Apr/3,17.00,SC Bastia,Olympique Marseille,2-1,0-0
+32,Sun,Apr/3,21.00,FC Lorient,Olympique Lyonnais,1-3,1-1
+33,Fri,Apr/8,20.30,Montpellier HSC,Olympique Lyonnais,0-2,0-2
+33,Sat,Apr/9,17.00,EA Guingamp,Paris Saint-Germain,0-2,0-0
+33,Sat,Apr/9,20.00,Angers SCO,Gazélec FC Ajaccio,0-0,
+33,Sat,Apr/9,,AS Saint-Étienne,ESTAC Troyes,1-0,0-0
+33,Sat,Apr/9,,SM Caen,FC Lorient,1-2,0-1
+33,Sat,Apr/9,,Stade de Reims,FC Nantes,2-1,1-0
+33,Sat,Apr/9,,Toulouse FC,SC Bastia,4-0,0-0
+33,Sun,Apr/10,14.00,Lille OSC,AS Monaco,4-1,1-0
+33,Sun,Apr/10,17.00,OGC Nice,Stade Rennais,3-0,2-0
+33,Sun,Apr/10,21.00,Olympique Marseille,Girondins Bordeaux,0-0,
+34,Fri,Apr/15,20.30,Olympique Lyonnais,OGC Nice,1-1,0-1
+34,Sat,Apr/16,17.00,Paris Saint-Germain,SM Caen,6-0,2-0
+34,Sat,Apr/16,20.00,ESTAC Troyes,Stade de Reims,2-1,0-0
+34,Sat,Apr/16,,Girondins Bordeaux,Angers SCO,1-3,0-0
+34,Sat,Apr/16,,FC Lorient,Toulouse FC,1-1,0-0
+34,Sat,Apr/16,,Gazélec FC Ajaccio,Lille OSC,2-4,1-1
+34,Sat,Apr/16,,SC Bastia,AS Saint-Étienne,0-1,0-0
+34,Sun,Apr/17,14.00,FC Nantes,Montpellier HSC,0-2,0-1
+34,Sun,Apr/17,17.00,Stade Rennais,EA Guingamp,0-3,0-0
+34,Sun,Apr/17,21.00,AS Monaco,Olympique Marseille,2-1,0-0
+35,Fri,Apr/22,20.30,OGC Nice,Stade de Reims,2-0,1-0
+35,Sat,Apr/23,17.30,Toulouse FC,Olympique Lyonnais,2-3,0-0
+35,Sun,Apr/24,14.00,Olympique Marseille,FC Nantes,1-1,0-1
+35,Sun,Apr/24,17.00,AS Saint-Étienne,FC Lorient,2-0,0-0
+35,Sun,Apr/24,,EA Guingamp,SM Caen,1-1,0-1
+35,Sun,Apr/24,,Gazélec FC Ajaccio,SC Bastia,3-2,2-1
+35,Sun,Apr/24,,Montpellier HSC,ESTAC Troyes,4-1,3-1
+35,Sun,Apr/24,21.00,Stade Rennais,AS Monaco,1-1,0-1
+35,Wed,Apr/27,18.30,Lille OSC,Angers SCO,0-0,
+35,Wed,May/11,20.30,Girondins Bordeaux,Paris Saint-Germain,1-1,0-0
+36,Fri,Apr/29,20.30,Paris Saint-Germain,Stade Rennais,4-0,0-0
+36,Sat,Apr/30,14.00,FC Nantes,OGC Nice,1-0,0-0
+36,Sat,Apr/30,17.00,AS Saint-Étienne,Toulouse FC,0-0,
+36,Sat,Apr/30,19.00,AS Monaco,EA Guingamp,3-2,2-0
+36,Sat,Apr/30,,ESTAC Troyes,Girondins Bordeaux,2-4,0-2
+36,Sat,Apr/30,,FC Lorient,Lille OSC,0-1,0-0
+36,Sat,Apr/30,,SM Caen,SC Bastia,0-0,
+36,Sat,Apr/30,,Stade de Reims,Montpellier HSC,2-3,0-1
+36,Sat,Apr/30,21.00,Olympique Lyonnais,Gazélec FC Ajaccio,2-1,2-0
+36,Sun,May/1,17.00,Angers SCO,Olympique Marseille,0-1,0-1
+37,Sat,May/7,21.00,Girondins Bordeaux,FC Lorient,3-0,2-0
+37,Sat,May/7,,FC Nantes,SM Caen,1-2,0-2
+37,Sat,May/7,,Gazélec FC Ajaccio,Paris Saint-Germain,0-4,0-1
+37,Sat,May/7,,Lille OSC,EA Guingamp,0-0,
+37,Sat,May/7,,Montpellier HSC,Stade Rennais,2-0,0-0
+37,Sat,May/7,,OGC Nice,AS Saint-Étienne,2-0,0-0
+37,Sat,May/7,,Olympique Marseille,Stade de Reims,1-0,0-0
+37,Sat,May/7,,Olympique Lyonnais,AS Monaco,6-1,4-1
+37,Sat,May/7,,SC Bastia,Angers SCO,1-0,1-0
+37,Sat,May/7,,Toulouse FC,ESTAC Troyes,1-0,0-0
+38,Sat,May/14,21.00,Angers SCO,Toulouse FC,2-3,1-0
+38,Sat,May/14,,AS Monaco,Montpellier HSC,2-0,2-0
+38,Sat,May/14,,AS Saint-Étienne,Lille OSC,0-1,0-1
+38,Sat,May/14,,EA Guingamp,OGC Nice,2-3,1-2
+38,Sat,May/14,,ESTAC Troyes,Olympique Marseille,1-1,1-0
+38,Sat,May/14,,FC Lorient,Gazélec FC Ajaccio,1-0,1-0
+38,Sat,May/14,,Paris Saint-Germain,FC Nantes,4-0,2-0
+38,Sat,May/14,,SM Caen,Girondins Bordeaux,1-0,1-0
+38,Sat,May/14,,Stade de Reims,Olympique Lyonnais,4-1,2-0
+38,Sat,May/14,,Stade Rennais,SC Bastia,1-2,0-1

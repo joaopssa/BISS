@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Fri,2020-08-07,Cuiabá MT,Brasil de Pelotas RS,0-0,
+1,Fri,2020-08-07,Confiança SE,Paraná Clube,2-2,0-1
+1,Sat,2020-08-08,EC Juventude,CR Brasil AL,2-1,1-1
+1,Sat,2020-08-08,Operário Ferroviário PR,Figueirense SC,3-1,1-0
+1,Sat,2020-08-08,Cruzeiro EC,Botafogo SP,2-1,0-0
+1,Sat,2020-08-08,Avaí SC,Náutico PE,3-1,2-0
+1,Sat,2020-08-08,EC Vitória,Sampaio Corrêa MA,1-0,1-0
+1,Sat,2020-08-08,CSA AL,Guarani SP,1-0,1-0
+1,Sat,2020-08-08,Ponte Preta,América MG,0-1,0-1
+1,Sun,2020-08-09,Oeste SP,Chapecoense AF,0-0,
+2,Tue,2020-08-11,Botafogo SP,Confiança SE,2-0,1-0
+2,Tue,2020-08-11,Brasil de Pelotas RS,Ponte Preta,1-1,0-0
+2,Tue,2020-08-11,Sampaio Corrêa MA,EC Juventude,0-1,0-0
+2,Tue,2020-08-11,Guarani SP,Cruzeiro EC,2-3,1-2
+2,Tue,2020-08-11,Paraná Clube,Avaí SC,1-0,0-0
+2,Tue,2020-08-11,América MG,Cuiabá MT,0-1,0-0
+2,Tue,2020-08-11,Figueirense SC,EC Vitória,0-0,
+2,Tue,2020-08-11,Náutico PE,Operário Ferroviário PR,0-0,
+2,Wed,2020-08-12,CR Brasil AL,Oeste SP,1-0,0-0
+2,Tue,2020-10-27,Chapecoense AF,CSA AL,0-0,
+3,Fri,2020-08-14,América MG,Operário Ferroviário PR,1-1,1-0
+3,Fri,2020-08-14,Ponte Preta,EC Vitória,3-3,2-2
+3,Fri,2020-08-14,Paraná Clube,EC Juventude,3-1,2-1
+3,Sat,2020-08-15,Botafogo SP,Guarani SP,0-1,0-1
+3,Sat,2020-08-15,Brasil de Pelotas RS,Oeste SP,1-1,0-0
+3,Sat,2020-08-15,Náutico PE,CR Brasil AL,1-1,1-0
+3,Sun,2020-08-16,Chapecoense AF,Sampaio Corrêa MA,1-0,1-0
+3,Sun,2020-08-16,Figueirense SC,Cruzeiro EC,0-1,0-1
+3,Tue,2020-09-15,Confiança SE,Avaí SC,2-2,0-1
+3,Wed,2020-09-16,CSA AL,Cuiabá MT,1-2,1-1
+4,Mon,2020-08-17,EC Juventude,América MG,0-0,
+4,Tue,2020-08-18,Avaí SC,Botafogo SP,0-1,0-0
+4,Tue,2020-08-18,Operário Ferroviário PR,CSA AL,3-0,0-0
+4,Tue,2020-08-18,Oeste SP,Ponte Preta,1-3,1-1
+4,Tue,2020-08-18,CR Brasil AL,Brasil de Pelotas RS,1-0,0-0
+4,Tue,2020-08-18,Guarani SP,Paraná Clube,1-2,1-0
+4,Tue,2020-08-18,Cuiabá MT,Confiança SE,1-0,0-0
+4,Wed,2020-08-19,EC Vitória,Náutico PE,0-0,
+4,Thu,2020-08-20,Cruzeiro EC,Chapecoense AF,0-1,0-1
+4,Wed,2020-10-14,Sampaio Corrêa MA,Figueirense SC,3-0,1-0
+5,Fri,2020-08-21,América MG,Oeste SP,2-1,1-1
+5,Fri,2020-08-21,Ponte Preta,CSA AL,2-1,1-1
+5,Sat,2020-08-22,Avaí SC,Cuiabá MT,0-2,0-0
+5,Sat,2020-08-22,Botafogo SP,Figueirense SC,0-1,0-0
+5,Sat,2020-08-22,Náutico PE,EC Juventude,3-3,2-2
+5,Sat,2020-08-22,CR Brasil AL,EC Vitória,2-2,1-0
+5,Sun,2020-08-23,Paraná Clube,Operário Ferroviário PR,0-0,
+5,Sun,2020-08-23,Confiança SE,Cruzeiro EC,1-1,1-1
+5,Mon,2020-08-24,Chapecoense AF,Guarani SP,2-0,2-0
+5,Tue,2020-11-03,Brasil de Pelotas RS,Sampaio Corrêa MA,0-0,
+6,Fri,2020-08-28,Oeste SP,Avaí SC,0-2,0-1
+6,Fri,2020-08-28,Cuiabá MT,Chapecoense AF,2-1,0-1
+6,Fri,2020-08-28,Guarani SP,Náutico PE,1-2,1-0
+6,Sat,2020-08-29,EC Juventude,Botafogo SP,0-0,
+6,Sat,2020-08-29,EC Vitória,Paraná Clube,1-0,0-0
+6,Sat,2020-08-29,Cruzeiro EC,América MG,1-2,0-2
+6,Sat,2020-08-29,Figueirense SC,Confiança SE,0-0,
+6,Sat,2020-08-29,Sampaio Corrêa MA,Ponte Preta,1-2,0-2
+6,Sun,2020-08-30,CSA AL,CR Brasil AL,0-2,0-2
+6,Sun,2020-08-30,Operário Ferroviário PR,Brasil de Pelotas RS,2-1,1-1
+7,Mon,2020-08-31,Guarani SP,Oeste SP,1-1,0-0
+7,Tue,2020-09-01,Botafogo SP,Cuiabá MT,1-1,0-1
+7,Tue,2020-09-01,Paraná Clube,Ponte Preta,2-1,1-1
+7,Tue,2020-09-01,Chapecoense AF,EC Juventude,1-0,0-0
+7,Tue,2020-09-01,Náutico PE,Figueirense SC,1-0,0-0
+7,Tue,2020-09-01,Confiança SE,EC Vitória,1-0,0-0
+7,Wed,2020-09-02,América MG,CSA AL,2-1,1-0
+7,Wed,2020-09-02,Avaí SC,Operário Ferroviário PR,2-0,2-0
+7,Wed,2020-09-02,CR Brasil AL,Sampaio Corrêa MA,2-2,0-1
+7,Wed,2020-09-02,Brasil de Pelotas RS,Cruzeiro EC,1-0,0-0
+8,Fri,2020-09-04,Figueirense SC,Paraná Clube,0-1,0-0
+8,Fri,2020-09-04,Ponte Preta,Botafogo SP,1-0,0-0
+8,Sat,2020-09-05,Oeste SP,EC Juventude,1-3,0-1
+8,Sat,2020-09-05,CSA AL,Confiança SE,1-1,1-0
+8,Sat,2020-09-05,EC Vitória,Cuiabá MT,4-2,2-1
+8,Sat,2020-09-05,Operário Ferroviário PR,Guarani SP,1-2,1-1
+8,Sat,2020-09-05,Sampaio Corrêa MA,América MG,1-0,0-0
+8,Sat,2020-09-05,Brasil de Pelotas RS,Náutico PE,2-1,1-0
+8,Sun,2020-09-06,Chapecoense AF,Avaí SC,1-0,0-0
+8,Mon,2020-09-07,Cruzeiro EC,CR Brasil AL,1-1,1-0
+9,Tue,2020-09-08,EC Juventude,Confiança SE,3-1,0-1
+9,Tue,2020-09-08,Cuiabá MT,Figueirense SC,0-0,
+9,Wed,2020-09-09,Paraná Clube,América MG,0-1,0-0
+9,Fri,2020-09-11,Avaí SC,Ponte Preta,0-1,0-0
+9,Fri,2020-09-11,Cruzeiro EC,EC Vitória,1-0,0-0
+9,Sat,2020-09-12,Guarani SP,Brasil de Pelotas RS,0-0,
+9,Sat,2020-09-12,Sampaio Corrêa MA,Operário Ferroviário PR,0-1,0-0
+9,Sat,2020-09-12,Náutico PE,Botafogo SP,3-1,3-0
+9,Sun,2020-09-13,Oeste SP,CSA AL,2-1,1-1
+9,Wed,2020-10-14,CR Brasil AL,Chapecoense AF,0-1,0-0
+10,Mon,2020-09-14,Paraná Clube,CR Brasil AL,2-0,1-0
+10,Mon,2020-09-14,EC Juventude,EC Vitória,1-1,1-0
+10,Fri,2020-09-18,Confiança SE,Guarani SP,1-0,0-0
+10,Fri,2020-09-18,Náutico PE,Chapecoense AF,1-1,0-0
+10,Sat,2020-09-19,América MG,Figueirense SC,0-1,0-0
+10,Sat,2020-09-19,Ponte Preta,Operário Ferroviário PR,1-1,1-0
+10,Sat,2020-09-19,CSA AL,Cruzeiro EC,3-1,2-0
+10,Sat,2020-09-19,Cuiabá MT,Oeste SP,3-0,2-0
+10,Sun,2020-09-20,Avaí SC,Sampaio Corrêa MA,2-5,1-3
+10,Mon,2020-09-21,Botafogo SP,Brasil de Pelotas RS,0-1,0-0
+11,Tue,2020-09-22,Operário Ferroviário PR,Cuiabá MT,1-1,1-0
+11,Fri,2020-09-25,Botafogo SP,CR Brasil AL,1-2,1-1
+11,Fri,2020-09-25,Chapecoense AF,América MG,0-0,
+11,Fri,2020-09-25,Cruzeiro EC,Avaí SC,0-1,0-0
+11,Sat,2020-09-26,Figueirense SC,Guarani SP,2-2,1-2
+11,Sat,2020-09-26,CSA AL,EC Juventude,3-2,2-0
+11,Sat,2020-09-26,EC Vitória,Oeste SP,3-1,1-1
+11,Sat,2020-09-26,Brasil de Pelotas RS,Paraná Clube,1-1,0-0
+11,Sun,2020-09-27,Ponte Preta,Confiança SE,2-1,0-0
+11,Tue,2020-11-17,Sampaio Corrêa MA,Náutico PE,2-1,0-0
+12,Mon,2020-09-28,CR Brasil AL,América MG,0-0,
+12,Tue,2020-09-29,Avaí SC,Figueirense SC,1-0,0-0
+12,Tue,2020-09-29,EC Juventude,Operário Ferroviário PR,1-0,0-0
+12,Tue,2020-09-29,EC Vitória,CSA AL,0-1,0-1
+12,Tue,2020-09-29,Oeste SP,Botafogo SP,0-1,0-0
+12,Tue,2020-09-29,Guarani SP,Sampaio Corrêa MA,1-1,1-0
+12,Tue,2020-09-29,Paraná Clube,Chapecoense AF,1-1,0-0
+12,Tue,2020-09-29,Cuiabá MT,Náutico PE,1-0,0-0
+12,Wed,2020-09-30,Confiança SE,Brasil de Pelotas RS,1-1,0-1
+12,Wed,2020-09-30,Cruzeiro EC,Ponte Preta,3-0,2-0
+13,Fri,2020-10-02,Figueirense SC,Oeste SP,4-1,2-1
+13,Fri,2020-10-02,CR Brasil AL,Avaí SC,3-1,1-0
+13,Fri,2020-10-02,Operário Ferroviário PR,EC Vitória,1-1,0-0
+13,Fri,2020-10-02,Botafogo SP,Paraná Clube,1-0,1-0
+13,Sat,2020-10-03,América MG,Guarani SP,0-0,
+13,Sat,2020-10-03,Náutico PE,Confiança SE,0-1,0-1
+13,Sat,2020-10-03,Brasil de Pelotas RS,Chapecoense AF,0-1,0-0
+13,Sat,2020-10-03,Sampaio Corrêa MA,CSA AL,1-0,1-0
+13,Sat,2020-10-03,Ponte Preta,EC Juventude,1-3,0-1
+13,Sat,2020-10-03,Cuiabá MT,Cruzeiro EC,1-0,0-0
+14,Mon,2020-10-05,Oeste SP,Operário Ferroviário PR,0-1,0-1
+14,Tue,2020-10-06,Confiança SE,CR Brasil AL,1-0,0-0
+14,Tue,2020-10-06,Chapecoense AF,Botafogo SP,1-0,0-0
+14,Tue,2020-10-06,Avaí SC,Brasil de Pelotas RS,2-1,1-0
+14,Tue,2020-10-06,CSA AL,Figueirense SC,3-0,2-0
+14,Tue,2020-10-06,Paraná Clube,Náutico PE,0-0,
+14,Tue,2020-10-06,EC Juventude,Cuiabá MT,1-1,0-1
+14,Tue,2020-10-06,EC Vitória,América MG,1-2,0-2
+14,Tue,2020-10-06,Ponte Preta,Guarani SP,2-0,1-0
+14,Thu,2020-10-08,Cruzeiro EC,Sampaio Corrêa MA,1-2,1-1
+15,Fri,2020-10-09,Figueirense SC,Chapecoense AF,0-0,
+15,Fri,2020-10-09,Operário Ferroviário PR,Confiança SE,1-1,1-1
+15,Fri,2020-10-09,Cuiabá MT,Ponte Preta,2-1,1-0
+15,Fri,2020-10-09,América MG,Náutico PE,2-0,1-0
+15,Sat,2020-10-10,EC Juventude,Brasil de Pelotas RS,1-2,0-2
+15,Sat,2020-10-10,EC Vitória,Avaí SC,1-2,1-2
+15,Sat,2020-10-10,Guarani SP,CR Brasil AL,3-1,2-1
+15,Sat,2020-10-10,CSA AL,Paraná Clube,4-0,3-0
+15,Sun,2020-10-11,Oeste SP,Cruzeiro EC,0-0,
+15,Sun,2020-10-11,Sampaio Corrêa MA,Botafogo SP,2-0,1-0
+16,Mon,2020-10-12,Náutico PE,Ponte Preta,0-2,0-0
+16,Tue,2020-10-13,Avaí SC,CSA AL,1-1,1-1
+16,Tue,2020-10-13,Guarani SP,Cuiabá MT,1-0,1-0
+16,Fri,2020-10-16,Botafogo SP,América MG,1-2,0-0
+16,Fri,2020-10-16,Cruzeiro EC,EC Juventude,0-0,
+16,Sat,2020-10-17,Chapecoense AF,EC Vitória,1-1,1-0
+16,Sat,2020-10-17,Confiança SE,Oeste SP,3-1,3-1
+16,Sat,2020-10-17,CR Brasil AL,Operário Ferroviário PR,4-1,1-1
+16,Sat,2020-10-17,Brasil de Pelotas RS,Figueirense SC,0-0,
+16,Sun,2020-10-18,Paraná Clube,Sampaio Corrêa MA,0-0,
+17,Tue,2020-10-20,América MG,Brasil de Pelotas RS,3-1,2-1
+17,Tue,2020-10-20,CSA AL,Botafogo SP,1-0,0-0
+17,Tue,2020-10-20,Oeste SP,Náutico PE,0-1,0-0
+17,Tue,2020-10-20,EC Juventude,Avaí SC,3-0,1-0
+17,Tue,2020-10-20,Ponte Preta,Chapecoense AF,0-5,0-2
+17,Tue,2020-10-20,Operário Ferroviário PR,Cruzeiro EC,0-1,0-0
+17,Wed,2020-10-21,Figueirense SC,CR Brasil AL,2-0,1-0
+17,Wed,2020-10-21,Sampaio Corrêa MA,Confiança SE,1-3,0-2
+17,Wed,2020-10-21,Cuiabá MT,Paraná Clube,3-3,1-1
+17,Thu,2020-10-22,EC Vitória,Guarani SP,1-1,1-0
+18,Fri,2020-10-23,Brasil de Pelotas RS,CSA AL,1-1,1-1
+18,Fri,2020-10-23,Chapecoense AF,Operário Ferroviário PR,1-0,0-0
+18,Sat,2020-10-24,CR Brasil AL,Ponte Preta,1-0,1-0
+18,Sat,2020-10-24,Sampaio Corrêa MA,Cuiabá MT,3-0,2-0
+18,Sat,2020-10-24,América MG,Confiança SE,2-1,1-0
+18,Sun,2020-10-25,Náutico PE,Cruzeiro EC,1-1,1-0
+18,Sun,2020-10-25,Figueirense SC,EC Juventude,1-1,0-1
+18,Sun,2020-10-25,Guarani SP,Avaí SC,2-1,1-0
+18,Sun,2020-10-25,Botafogo SP,EC Vitória,2-1,1-0
+18,Mon,2020-10-26,Paraná Clube,Oeste SP,4-0,1-0
+19,Fri,2020-10-30,EC Vitória,Brasil de Pelotas RS,0-0,
+19,Fri,2020-10-30,Cruzeiro EC,Paraná Clube,2-0,2-0
+19,Sat,2020-10-31,Oeste SP,Sampaio Corrêa MA,0-3,0-2
+19,Sat,2020-10-31,Confiança SE,Chapecoense AF,0-2,0-1
+19,Sat,2020-10-31,Avaí SC,América MG,1-0,0-0
+19,Sat,2020-10-31,Operário Ferroviário PR,Botafogo SP,0-0,
+19,Sat,2020-10-31,CSA AL,Náutico PE,3-1,2-1
+19,Sat,2020-10-31,Cuiabá MT,CR Brasil AL,3-0,0-0
+19,Sun,2020-11-01,EC Juventude,Guarani SP,1-0,1-0
+19,Mon,2020-11-02,Ponte Preta,Figueirense SC,2-1,0-1
+20,Fri,2020-11-06,Guarani SP,CSA AL,2-1,1-1
+20,Fri,2020-11-06,Botafogo SP,Cruzeiro EC,0-1,0-0
+20,Fri,2020-11-06,Náutico PE,Avaí SC,2-2,0-1
+20,Fri,2020-11-06,Paraná Clube,Confiança SE,1-1,0-0
+20,Sat,2020-11-07,Brasil de Pelotas RS,Cuiabá MT,3-0,2-0
+20,Sat,2020-11-07,Figueirense SC,Operário Ferroviário PR,0-1,0-0
+20,Sat,2020-11-07,América MG,Ponte Preta,1-1,1-0
+20,Sat,2020-11-07,Chapecoense AF,Oeste SP,0-0,
+20,Sun,2020-11-08,Sampaio Corrêa MA,EC Vitória,2-1,0-1
+20,Sun,2020-11-08,CR Brasil AL,EC Juventude,0-1,0-0
+21,Mon,2020-11-09,Cruzeiro EC,Guarani SP,3-3,2-2
+21,Tue,2020-11-10,CSA AL,Chapecoense AF,0-1,0-0
+21,Tue,2020-11-10,Confiança SE,Botafogo SP,1-0,0-0
+21,Thu,2020-11-12,EC Vitória,Figueirense SC,3-0,2-0
+21,Fri,2020-11-13,Ponte Preta,Brasil de Pelotas RS,1-1,1-1
+21,Fri,2020-11-13,Operário Ferroviário PR,Náutico PE,3-1,1-0
+21,Fri,2020-11-13,Avaí SC,Paraná Clube,2-1,1-1
+21,Fri,2020-11-13,Oeste SP,CR Brasil AL,1-2,0-1
+21,Sat,2020-11-14,EC Juventude,Sampaio Corrêa MA,2-3,1-2
+21,Sat,2020-11-14,Cuiabá MT,América MG,0-0,
+22,Fri,2020-11-20,Avaí SC,Confiança SE,1-0,1-0
+22,Fri,2020-11-20,EC Vitória,Ponte Preta,0-0,
+22,Fri,2020-11-20,Guarani SP,Botafogo SP,2-1,1-1
+22,Fri,2020-11-20,EC Juventude,Paraná Clube,5-0,3-0
+22,Fri,2020-11-20,Sampaio Corrêa MA,Chapecoense AF,1-3,1-1
+22,Fri,2020-11-20,Cruzeiro EC,Figueirense SC,1-1,1-1
+22,Sat,2020-11-21,Oeste SP,Brasil de Pelotas RS,2-1,2-0
+22,Sat,2020-11-21,Operário Ferroviário PR,América MG,0-1,0-1
+22,Sat,2020-11-21,CR Brasil AL,Náutico PE,2-1,1-0
+22,Sat,2020-11-21,Cuiabá MT,CSA AL,0-1,0-1
+23,Mon,2020-11-23,Figueirense SC,Sampaio Corrêa MA,1-2,1-0
+23,Mon,2020-11-23,Botafogo SP,Avaí SC,0-1,0-1
+23,Tue,2020-11-24,Paraná Clube,Guarani SP,1-2,0-1
+23,Tue,2020-11-24,CSA AL,Operário Ferroviário PR,1-0,0-0
+23,Tue,2020-11-24,Ponte Preta,Oeste SP,1-0,0-0
+23,Tue,2020-11-24,Confiança SE,Cuiabá MT,2-0,0-0
+23,Tue,2020-11-24,América MG,EC Juventude,2-1,2-1
+23,Tue,2020-11-24,Brasil de Pelotas RS,CR Brasil AL,2-1,0-0
+23,Tue,2020-11-24,Chapecoense AF,Cruzeiro EC,0-1,0-0
+23,Wed,2020-11-25,Náutico PE,EC Vitória,0-0,
+24,Thu,2020-11-26,Figueirense SC,Botafogo SP,0-0,
+24,Fri,2020-11-27,Oeste SP,América MG,1-1,1-1
+24,Fri,2020-11-27,Operário Ferroviário PR,Paraná Clube,1-0,0-0
+24,Fri,2020-11-27,Sampaio Corrêa MA,Brasil de Pelotas RS,0-1,0-0
+24,Fri,2020-11-27,Cruzeiro EC,Confiança SE,1-2,0-2
+24,Fri,2020-11-27,Cuiabá MT,Avaí SC,2-1,1-0
+24,Sat,2020-11-28,CSA AL,Ponte Preta,2-1,0-1
+24,Sat,2020-11-28,EC Vitória,CR Brasil AL,2-1,2-1
+24,Sat,2020-11-28,Guarani SP,Chapecoense AF,2-0,2-0
+24,Sat,2020-11-28,EC Juventude,Náutico PE,1-0,0-0
+25,Mon,2020-11-30,Brasil de Pelotas RS,Operário Ferroviário PR,0-0,
+25,Mon,2020-11-30,Avaí SC,Oeste SP,0-3,0-0
+25,Tue,2020-12-01,Chapecoense AF,Cuiabá MT,1-0,0-0
+25,Tue,2020-12-01,CR Brasil AL,CSA AL,0-0,
+25,Tue,2020-12-01,Náutico PE,Guarani SP,2-0,1-0
+25,Tue,2020-12-01,Confiança SE,Figueirense SC,1-1,1-0
+25,Tue,2020-12-01,Ponte Preta,Sampaio Corrêa MA,1-1,0-1
+25,Tue,2020-12-01,Paraná Clube,EC Vitória,1-4,0-1
+25,Wed,2020-12-02,Botafogo SP,EC Juventude,1-1,0-0
+25,Wed,2020-12-02,América MG,Cruzeiro EC,1-2,0-1
+26,Thu,2020-12-03,Operário Ferroviário PR,Avaí SC,1-1,0-0
+26,Fri,2020-12-04,Oeste SP,Guarani SP,0-1,0-0
+26,Fri,2020-12-04,EC Vitória,Confiança SE,2-3,1-1
+26,Fri,2020-12-04,Ponte Preta,Paraná Clube,2-1,1-1
+26,Sat,2020-12-05,EC Juventude,Chapecoense AF,1-1,0-0
+26,Sat,2020-12-05,CSA AL,América MG,0-1,0-1
+26,Sat,2020-12-05,Sampaio Corrêa MA,CR Brasil AL,3-0,2-0
+26,Sat,2020-12-05,Cruzeiro EC,Brasil de Pelotas RS,4-1,3-1
+26,Sat,2020-12-05,Cuiabá MT,Botafogo SP,2-0,0-0
+26,Sun,2020-12-06,Figueirense SC,Náutico PE,2-0,0-0
+27,Tue,2020-12-08,EC Juventude,Oeste SP,2-2,1-1
+27,Tue,2020-12-08,Guarani SP,Operário Ferroviário PR,3-0,3-0
+27,Tue,2020-12-08,América MG,Sampaio Corrêa MA,2-1,1-1
+27,Tue,2020-12-08,Botafogo SP,Ponte Preta,2-1,1-0
+27,Tue,2020-12-08,Avaí SC,Chapecoense AF,0-2,0-1
+27,Tue,2020-12-08,CR Brasil AL,Cruzeiro EC,0-0,
+27,Tue,2020-12-08,Confiança SE,CSA AL,1-5,1-2
+27,Tue,2020-12-08,Cuiabá MT,EC Vitória,3-3,1-1
+27,Wed,2020-12-09,Paraná Clube,Figueirense SC,0-2,0-0
+27,Thu,2020-12-10,Náutico PE,Brasil de Pelotas RS,1-0,1-0
+28,Fri,2020-12-11,Operário Ferroviário PR,Sampaio Corrêa MA,1-1,1-0
+28,Fri,2020-12-11,CSA AL,Oeste SP,2-1,2-0
+28,Fri,2020-12-11,Ponte Preta,Avaí SC,1-2,1-1
+28,Fri,2020-12-11,EC Vitória,Cruzeiro EC,0-1,0-1
+28,Sat,2020-12-12,Figueirense SC,Cuiabá MT,1-0,0-0
+28,Sat,2020-12-12,América MG,Paraná Clube,1-0,0-0
+28,Sat,2020-12-12,Confiança SE,EC Juventude,0-1,0-1
+28,Sat,2020-12-12,Chapecoense AF,CR Brasil AL,3-2,2-0
+28,Sun,2020-12-13,Botafogo SP,Náutico PE,1-1,1-0
+28,Sun,2020-12-13,Brasil de Pelotas RS,Guarani SP,3-1,1-0
+29,Mon,2020-12-14,Operário Ferroviário PR,Ponte Preta,1-0,1-0
+29,Tue,2020-12-15,Oeste SP,Cuiabá MT,0-2,0-1
+29,Tue,2020-12-15,Sampaio Corrêa MA,Avaí SC,0-1,0-1
+29,Tue,2020-12-15,Cruzeiro EC,CSA AL,1-1,0-1
+29,Tue,2020-12-15,EC Vitória,EC Juventude,1-0,1-0
+29,Wed,2020-12-16,Brasil de Pelotas RS,Botafogo SP,0-0,
+29,Wed,2020-12-16,Guarani SP,Confiança SE,1-0,1-0
+29,Wed,2020-12-16,Chapecoense AF,Náutico PE,0-0,
+29,Thu,2020-12-17,Figueirense SC,América MG,1-2,1-1
+29,Thu,2020-12-17,CR Brasil AL,Paraná Clube,0-2,0-1
+30,Fri,2020-12-18,Oeste SP,EC Vitória,2-1,1-0
+30,Fri,2020-12-18,EC Juventude,CSA AL,1-0,1-0
+30,Fri,2020-12-18,Avaí SC,Cruzeiro EC,1-1,0-1
+30,Fri,2020-12-18,Cuiabá MT,Operário Ferroviário PR,2-0,1-0
+30,Sat,2020-12-19,Náutico PE,Sampaio Corrêa MA,1-0,0-0
+30,Sat,2020-12-19,Confiança SE,Ponte Preta,1-2,1-1
+30,Sun,2020-12-20,América MG,Chapecoense AF,2-2,0-1
+30,Sun,2020-12-20,CR Brasil AL,Botafogo SP,1-0,0-0
+30,Sun,2020-12-20,Guarani SP,Figueirense SC,2-2,2-1
+30,Mon,2020-12-21,Paraná Clube,Brasil de Pelotas RS,0-1,0-0
+31,Tue,2020-12-22,Operário Ferroviário PR,EC Juventude,3-0,1-0
+31,Tue,2020-12-22,CSA AL,EC Vitória,3-0,2-0
+31,Tue,2020-12-22,Ponte Preta,Cruzeiro EC,2-1,0-1
+31,Tue,2020-12-22,Náutico PE,Cuiabá MT,2-0,0-0
+31,Wed,2020-12-23,Sampaio Corrêa MA,Guarani SP,0-1,0-0
+31,Wed,2020-12-23,Botafogo SP,Oeste SP,1-1,1-0
+31,Sat,2020-12-26,Figueirense SC,Avaí SC,2-0,2-0
+31,Sat,2020-12-26,América MG,CR Brasil AL,1-0,1-0
+31,Mon,2020-12-28,Brasil de Pelotas RS,Confiança SE,1-0,1-0
+31,Mon,2020-12-28,Chapecoense AF,Paraná Clube,2-0,2-0
+32,Tue,2020-12-29,Avaí SC,CR Brasil AL,0-1,0-0
+32,Tue,2020-12-29,Cruzeiro EC,Cuiabá MT,0-0,
+32,Wed,2020-12-30,EC Juventude,Ponte Preta,2-1,0-0
+32,Sat,2021-01-02,CSA AL,Sampaio Corrêa MA,2-1,0-0
+32,Sat,2021-01-02,Oeste SP,Figueirense SC,2-1,2-0
+32,Sat,2021-01-02,Guarani SP,América MG,0-1,0-1
+32,Sun,2021-01-03,Chapecoense AF,Brasil de Pelotas RS,0-0,
+32,Sun,2021-01-03,EC Vitória,Operário Ferroviário PR,1-1,1-1
+32,Mon,2021-01-04,Paraná Clube,Botafogo SP,1-1,0-1
+32,Mon,2021-01-04,Confiança SE,Náutico PE,2-0,0-0
+33,Tue,2021-01-05,Guarani SP,Ponte Preta,1-1,0-1
+33,Tue,2021-01-05,Cuiabá MT,EC Juventude,1-0,1-0
+33,Fri,2021-01-08,Brasil de Pelotas RS,Avaí SC,0-1,0-0
+33,Fri,2021-01-08,CR Brasil AL,Confiança SE,2-0,0-0
+33,Fri,2021-01-08,Operário Ferroviário PR,Oeste SP,2-0,0-0
+33,Fri,2021-01-08,Náutico PE,Paraná Clube,2-1,1-1
+33,Fri,2021-01-08,Figueirense SC,CSA AL,0-0,
+33,Fri,2021-01-08,Sampaio Corrêa MA,Cruzeiro EC,0-1,0-1
+33,Sat,2021-01-09,América MG,EC Vitória,4-0,2-0
+33,Sat,2021-01-09,Botafogo SP,Chapecoense AF,3-0,2-0
+34,Mon,2021-01-11,Ponte Preta,Cuiabá MT,2-2,1-0
+34,Mon,2021-01-11,CR Brasil AL,Guarani SP,2-0,0-0
+34,Mon,2021-01-11,Confiança SE,Operário Ferroviário PR,1-2,1-0
+34,Tue,2021-01-12,Botafogo SP,Sampaio Corrêa MA,2-1,0-1
+34,Tue,2021-01-12,Paraná Clube,CSA AL,2-0,2-0
+34,Tue,2021-01-12,Brasil de Pelotas RS,EC Juventude,2-1,2-1
+34,Tue,2021-01-12,Náutico PE,América MG,0-0,
+34,Tue,2021-01-12,Chapecoense AF,Figueirense SC,2-1,1-0
+34,Wed,2021-01-13,Avaí SC,EC Vitória,2-2,1-0
+34,Wed,2021-01-13,Cruzeiro EC,Oeste SP,0-1,0-1
+35,Thu,2021-01-14,Operário Ferroviário PR,CR Brasil AL,3-2,1-1
+35,Thu,2021-01-14,Cuiabá MT,Guarani SP,4-0,2-0
+35,Fri,2021-01-15,Figueirense SC,Brasil de Pelotas RS,3-0,3-0
+35,Fri,2021-01-15,Sampaio Corrêa MA,Paraná Clube,2-1,1-0
+35,Fri,2021-01-15,América MG,Botafogo SP,1-1,0-1
+35,Sat,2021-01-16,CSA AL,Avaí SC,1-1,1-0
+35,Sat,2021-01-16,EC Juventude,Cruzeiro EC,1-0,1-0
+35,Sat,2021-01-16,Oeste SP,Confiança SE,0-1,0-1
+35,Sun,2021-01-17,Ponte Preta,Náutico PE,2-0,2-0
+35,Sun,2021-01-17,EC Vitória,Chapecoense AF,0-0,
+36,Tue,2021-01-19,Brasil de Pelotas RS,América MG,0-0,
+36,Tue,2021-01-19,Avaí SC,EC Juventude,5-2,4-2
+36,Tue,2021-01-19,CR Brasil AL,Figueirense SC,5-1,3-0
+36,Tue,2021-01-19,Botafogo SP,CSA AL,1-3,0-1
+36,Tue,2021-01-19,Confiança SE,Sampaio Corrêa MA,0-1,0-0
+36,Tue,2021-01-19,Paraná Clube,Cuiabá MT,0-2,0-1
+36,Wed,2021-01-20,Guarani SP,EC Vitória,1-2,1-1
+36,Wed,2021-01-20,Náutico PE,Oeste SP,4-1,3-0
+36,Wed,2021-01-20,Cruzeiro EC,Operário Ferroviário PR,2-1,1-0
+36,Thu,2021-01-21,Chapecoense AF,Ponte Preta,1-0,0-0
+37,Fri,2021-01-22,EC Juventude,Figueirense SC,2-1,0-0
+37,Fri,2021-01-22,CSA AL,Brasil de Pelotas RS,1-1,0-1
+37,Fri,2021-01-22,Cuiabá MT,Sampaio Corrêa MA,1-3,0-2
+37,Sat,2021-01-23,Confiança SE,América MG,0-0,
+37,Sat,2021-01-23,Avaí SC,Guarani SP,2-1,1-0
+37,Sun,2021-01-24,Cruzeiro EC,Náutico PE,0-0,
+37,Sun,2021-01-24,Ponte Preta,CR Brasil AL,3-1,2-0
+37,Mon,2021-01-25,Operário Ferroviário PR,Chapecoense AF,2-0,1-0
+37,Tue,2021-01-26,Oeste SP,Paraná Clube,1-0,0-0
+37,Tue,2021-01-26,EC Vitória,Botafogo SP,1-0,0-0
+38,Fri,2021-01-29,Figueirense SC,Ponte Preta,2-7,1-4
+38,Fri,2021-01-29,Sampaio Corrêa MA,Oeste SP,1-0,0-0
+38,Fri,2021-01-29,CR Brasil AL,Cuiabá MT,4-1,2-0
+38,Fri,2021-01-29,Botafogo SP,Operário Ferroviário PR,0-1,0-1
+38,Fri,2021-01-29,América MG,Avaí SC,2-1,2-0
+38,Fri,2021-01-29,Guarani SP,EC Juventude,0-1,0-1
+38,Fri,2021-01-29,Paraná Clube,Cruzeiro EC,0-0,
+38,Fri,2021-01-29,Brasil de Pelotas RS,EC Vitória,0-1,0-0
+38,Fri,2021-01-29,Náutico PE,CSA AL,1-1,1-0
+38,Fri,2021-01-29,Chapecoense AF,Confiança SE,3-1,1-0

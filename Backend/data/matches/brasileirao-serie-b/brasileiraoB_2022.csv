@@ -1,0 +1,381 @@
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Fri,2022-04-08,Brusque SC,Guarani SP,1-0,0-0
+1,Fri,2022-04-08,CR Vasco da Gama,Vila Nova GO,1-1,1-1
+1,Fri,2022-04-08,EC Bahia,Cruzeiro EC,2-0,0-0
+1,Sat,2022-04-09,Chapecoense AF,Ituano SP,1-1,0-0
+1,Sat,2022-04-09,Ponte Preta,Grêmio FBPA,0-0,
+1,Sat,2022-04-09,SC Recife,Sampaio Corrêa MA,1-0,0-0
+1,Sat,2022-04-09,Tombense MG,Operário Ferroviário PR,1-1,0-0
+1,Sun,2022-04-10,Londrina PR,Náutico PE,2-0,2-0
+1,Wed,2022-05-04,Grêmio Novorizontino SP,CR Brasil AL,3-1,1-1
+1,Wed,2022-05-04,CSA AL,Criciúma SC,1-1,0-0
+2,Tue,2022-04-12,Vila Nova GO,Grêmio Novorizontino SP,0-0,
+2,Tue,2022-04-12,Cruzeiro EC,Brusque SC,1-0,0-0
+2,Thu,2022-04-14,Criciúma SC,Londrina PR,1-0,1-0
+2,Fri,2022-04-15,Grêmio FBPA,Chapecoense AF,0-1,0-0
+2,Fri,2022-04-15,Náutico PE,EC Bahia,0-1,0-1
+2,Sat,2022-04-16,Operário Ferroviário PR,Ponte Preta,2-0,1-0
+2,Sat,2022-04-16,Ituano SP,CSA AL,0-0,
+2,Sat,2022-04-16,Sampaio Corrêa MA,Tombense MG,1-1,1-1
+2,Sat,2022-04-16,Guarani SP,SC Recife,0-0,
+2,Sat,2022-04-16,CR Brasil AL,CR Vasco da Gama,1-1,1-1
+3,Thu,2022-04-21,Grêmio FBPA,Guarani SP,3-1,2-1
+3,Thu,2022-04-21,Londrina PR,Grêmio Novorizontino SP,1-1,1-1
+3,Fri,2022-04-22,CSA AL,EC Bahia,1-1,1-1
+3,Fri,2022-04-22,Chapecoense AF,CR Vasco da Gama,0-0,
+3,Sat,2022-04-23,Criciúma SC,SC Recife,1-1,1-0
+3,Sat,2022-04-23,Ponte Preta,CR Brasil AL,1-0,1-0
+3,Sat,2022-04-23,Sampaio Corrêa MA,Brusque SC,3-1,1-0
+3,Sat,2022-04-23,Ituano SP,Vila Nova GO,3-1,2-0
+3,Sat,2022-04-23,Tombense MG,Cruzeiro EC,1-1,0-0
+3,Sun,2022-04-24,Náutico PE,Operário Ferroviário PR,2-0,1-0
+4,Tue,2022-04-26,Grêmio Novorizontino SP,Chapecoense AF,0-3,0-2
+4,Tue,2022-04-26,SC Recife,Ituano SP,1-0,0-0
+4,Tue,2022-04-26,Brusque SC,CSA AL,2-0,0-0
+4,Tue,2022-04-26,Vila Nova GO,Tombense MG,1-1,1-0
+4,Tue,2022-04-26,EC Bahia,Sampaio Corrêa MA,1-0,1-0
+4,Tue,2022-04-26,Cruzeiro EC,Londrina PR,1-0,0-0
+4,Wed,2022-04-27,CR Brasil AL,Náutico PE,1-2,0-0
+4,Wed,2022-04-27,Operário Ferroviário PR,Grêmio FBPA,0-1,0-0
+4,Wed,2022-04-27,Guarani SP,Criciúma SC,1-0,0-0
+4,Wed,2022-04-27,CR Vasco da Gama,Ponte Preta,1-0,1-0
+5,Fri,2022-04-29,Londrina PR,Vila Nova GO,2-2,1-0
+5,Fri,2022-04-29,Ituano SP,EC Bahia,1-0,1-0
+5,Sat,2022-04-30,CSA AL,SC Recife,1-0,0-0
+5,Sat,2022-04-30,Grêmio FBPA,CR Brasil AL,2-0,2-0
+5,Sat,2022-04-30,Sampaio Corrêa MA,Operário Ferroviário PR,1-1,0-1
+5,Sat,2022-04-30,Chapecoense AF,Cruzeiro EC,0-2,0-0
+5,Sat,2022-04-30,Ponte Preta,Brusque SC,2-0,1-0
+5,Sun,2022-05-01,Criciúma SC,Grêmio Novorizontino SP,1-1,0-0
+5,Sun,2022-05-01,Tombense MG,CR Vasco da Gama,1-1,1-0
+5,Tue,2022-05-03,Náutico PE,Guarani SP,1-1,0-1
+6,Tue,2022-05-03,EC Bahia,Londrina PR,4-0,3-0
+6,Thu,2022-05-05,Brusque SC,Chapecoense AF,0-0,
+6,Fri,2022-05-06,Vila Nova GO,Náutico PE,2-0,2-0
+6,Fri,2022-05-06,SC Recife,Tombense MG,2-0,0-0
+6,Sat,2022-05-07,Operário Ferroviário PR,Criciúma SC,2-0,2-0
+6,Sat,2022-05-07,Grêmio Novorizontino SP,Ituano SP,2-1,1-1
+6,Sat,2022-05-07,CR Vasco da Gama,CSA AL,1-0,0-0
+6,Sun,2022-05-08,Cruzeiro EC,Grêmio FBPA,1-0,1-0
+6,Sun,2022-05-08,Guarani SP,Ponte Preta,0-0,
+6,Mon,2022-05-09,CR Brasil AL,Sampaio Corrêa MA,2-1,2-0
+7,Fri,2022-05-13,Ponte Preta,Grêmio Novorizontino SP,0-1,0-0
+7,Fri,2022-05-13,Chapecoense AF,SC Recife,0-1,0-1
+7,Sat,2022-05-14,Criciúma SC,CR Brasil AL,3-0,1-0
+7,Sat,2022-05-14,Londrina PR,Brusque SC,2-1,1-0
+7,Sat,2022-05-14,Tombense MG,Guarani SP,1-1,1-1
+7,Sat,2022-05-14,Sampaio Corrêa MA,Vila Nova GO,2-0,1-0
+7,Sat,2022-05-14,CSA AL,Operário Ferroviário PR,0-0,
+7,Sun,2022-05-15,Náutico PE,Cruzeiro EC,0-1,0-1
+7,Sun,2022-05-15,CR Vasco da Gama,EC Bahia,1-0,1-0
+7,Mon,2022-05-16,Ituano SP,Grêmio FBPA,1-1,0-0
+8,Tue,2022-05-17,Grêmio Novorizontino SP,SC Recife,0-0,
+8,Wed,2022-05-18,CR Brasil AL,Londrina PR,1-0,1-0
+8,Thu,2022-05-19,Grêmio FBPA,Criciúma SC,0-0,
+8,Thu,2022-05-19,Vila Nova GO,Chapecoense AF,0-0,
+8,Thu,2022-05-19,Guarani SP,CR Vasco da Gama,0-0,
+8,Thu,2022-05-19,Náutico PE,CSA AL,1-1,0-1
+8,Fri,2022-05-20,Brusque SC,Tombense MG,1-0,0-0
+8,Fri,2022-05-20,EC Bahia,Ponte Preta,2-1,1-0
+8,Sat,2022-05-21,Operário Ferroviário PR,Ituano SP,3-2,0-1
+8,Sun,2022-05-22,Cruzeiro EC,Sampaio Corrêa MA,2-0,0-0
+9,Tue,2022-05-24,SC Recife,CR Brasil AL,0-1,0-1
+9,Tue,2022-05-24,Ponte Preta,Chapecoense AF,0-0,
+9,Wed,2022-05-25,Londrina PR,Operário Ferroviário PR,2-1,1-0
+9,Thu,2022-05-26,CR Vasco da Gama,Brusque SC,2-0,1-0
+9,Thu,2022-05-26,Ituano SP,Náutico PE,0-0,
+9,Fri,2022-05-27,Tombense MG,EC Bahia,1-0,0-0
+9,Fri,2022-05-27,Criciúma SC,Cruzeiro EC,0-1,0-0
+9,Sat,2022-05-28,CSA AL,Grêmio Novorizontino SP,2-1,2-0
+9,Sat,2022-05-28,Sampaio Corrêa MA,Guarani SP,2-1,1-0
+9,Sun,2022-05-29,Vila Nova GO,Grêmio FBPA,0-0,
+10,Wed,2022-06-01,CR Brasil AL,CSA AL,0-0,
+10,Thu,2022-06-02,CR Vasco da Gama,Grêmio FBPA,0-0,
+10,Thu,2022-06-02,Guarani SP,Vila Nova GO,1-1,1-0
+10,Thu,2022-06-02,SC Recife,Ponte Preta,2-1,0-1
+10,Fri,2022-06-03,Operário Ferroviário PR,Cruzeiro EC,1-2,0-0
+10,Sat,2022-06-04,EC Bahia,Criciúma SC,2-1,0-1
+10,Sat,2022-06-04,Grêmio Novorizontino SP,Sampaio Corrêa MA,0-0,
+10,Sat,2022-06-04,Brusque SC,Náutico PE,1-2,1-0
+10,Sat,2022-06-04,Tombense MG,Ituano SP,2-1,1-1
+10,Tue,2022-07-05,Chapecoense AF,Londrina PR,0-3,0-3
+11,Mon,2022-06-06,Guarani SP,Operário Ferroviário PR,0-3,0-1
+11,Tue,2022-06-07,Londrina PR,Tombense MG,1-1,0-1
+11,Tue,2022-06-07,Náutico PE,CR Vasco da Gama,2-3,0-2
+11,Tue,2022-06-07,Vila Nova GO,Brusque SC,0-2,0-0
+11,Tue,2022-06-07,Criciúma SC,Sampaio Corrêa MA,3-1,2-1
+11,Tue,2022-06-07,Ituano SP,Ponte Preta,1-2,1-2
+11,Tue,2022-06-07,CSA AL,Chapecoense AF,1-1,1-0
+11,Tue,2022-06-07,Grêmio FBPA,Grêmio Novorizontino SP,2-0,1-0
+11,Wed,2022-06-08,Cruzeiro EC,CR Brasil AL,2-0,2-0
+11,Wed,2022-06-08,EC Bahia,SC Recife,1-0,0-0
+12,Fri,2022-06-10,Sampaio Corrêa MA,Náutico PE,2-0,2-0
+12,Fri,2022-06-10,Chapecoense AF,Criciúma SC,2-3,2-1
+12,Sat,2022-06-11,Brusque SC,Ituano SP,0-1,0-1
+12,Sat,2022-06-11,CR Brasil AL,Vila Nova GO,1-0,0-0
+12,Sat,2022-06-11,Ponte Preta,Londrina PR,1-2,0-0
+12,Sat,2022-06-11,Operário Ferroviário PR,EC Bahia,0-1,0-0
+12,Sun,2022-06-12,Grêmio Novorizontino SP,Guarani SP,1-2,0-1
+12,Sun,2022-06-12,CR Vasco da Gama,Cruzeiro EC,1-0,1-0
+12,Sun,2022-06-12,Tombense MG,CSA AL,2-1,0-0
+12,Mon,2022-06-13,SC Recife,Grêmio FBPA,0-0,
+13,Tue,2022-06-14,EC Bahia,Chapecoense AF,0-1,0-1
+13,Thu,2022-06-16,Cruzeiro EC,Ponte Preta,2-0,1-0
+13,Thu,2022-06-16,Vila Nova GO,Operário Ferroviário PR,0-0,
+13,Fri,2022-06-17,Criciúma SC,Brusque SC,0-1,0-0
+13,Fri,2022-06-17,CR Brasil AL,Ituano SP,1-1,0-0
+13,Sat,2022-06-18,Grêmio FBPA,Sampaio Corrêa MA,2-0,1-0
+13,Sat,2022-06-18,Londrina PR,CR Vasco da Gama,0-1,0-0
+13,Sat,2022-06-18,Grêmio Novorizontino SP,Tombense MG,1-3,1-1
+13,Sat,2022-06-18,Náutico PE,SC Recife,1-1,0-1
+13,Sun,2022-06-19,Guarani SP,CSA AL,0-0,
+14,Tue,2022-06-21,Chapecoense AF,CR Brasil AL,1-2,1-1
+14,Thu,2022-06-23,CSA AL,Grêmio FBPA,1-1,1-0
+14,Thu,2022-06-23,Ponte Preta,Sampaio Corrêa MA,0-0,
+14,Fri,2022-06-24,Londrina PR,Guarani SP,3-1,1-1
+14,Fri,2022-06-24,CR Vasco da Gama,Operário Ferroviário PR,3-0,0-0
+14,Sat,2022-06-25,Criciúma SC,Vila Nova GO,1-0,1-0
+14,Sat,2022-06-25,EC Bahia,Grêmio Novorizontino SP,0-1,0-0
+14,Sat,2022-06-25,SC Recife,Brusque SC,0-0,
+14,Sun,2022-06-26,Tombense MG,Náutico PE,1-1,0-1
+14,Tue,2022-07-05,Ituano SP,Cruzeiro EC,1-1,1-1
+15,Mon,2022-06-27,Operário Ferroviário PR,Chapecoense AF,2-1,2-0
+15,Mon,2022-06-27,Sampaio Corrêa MA,CSA AL,2-0,0-0
+15,Tue,2022-06-28,Brusque SC,EC Bahia,0-2,0-2
+15,Tue,2022-06-28,Grêmio FBPA,Londrina PR,1-0,1-0
+15,Tue,2022-06-28,Cruzeiro EC,SC Recife,2-1,2-1
+15,Tue,2022-06-28,Guarani SP,Ituano SP,0-2,0-1
+15,Tue,2022-06-28,Vila Nova GO,Ponte Preta,1-1,1-1
+15,Wed,2022-06-29,Náutico PE,Criciúma SC,1-1,1-1
+15,Wed,2022-06-29,CR Brasil AL,Tombense MG,0-0,
+15,Wed,2022-06-29,Grêmio Novorizontino SP,CR Vasco da Gama,2-0,1-0
+16,Fri,2022-07-01,Chapecoense AF,Sampaio Corrêa MA,3-1,0-0
+16,Fri,2022-07-01,Brusque SC,Operário Ferroviário PR,2-0,1-0
+16,Fri,2022-07-01,Cruzeiro EC,Vila Nova GO,2-0,1-0
+16,Sat,2022-07-02,Londrina PR,CSA AL,0-0,
+16,Sat,2022-07-02,Ituano SP,Criciúma SC,1-2,0-0
+16,Sat,2022-07-02,Náutico PE,Grêmio Novorizontino SP,3-1,3-0
+16,Sat,2022-07-02,CR Brasil AL,Guarani SP,1-1,1-0
+16,Sun,2022-07-03,Ponte Preta,Tombense MG,0-0,
+16,Sun,2022-07-03,EC Bahia,Grêmio FBPA,0-0,
+16,Sun,2022-07-03,CR Vasco da Gama,SC Recife,0-0,
+17,Tue,2022-07-05,Operário Ferroviário PR,CR Brasil AL,2-3,2-3
+17,Wed,2022-07-06,Grêmio Novorizontino SP,Brusque SC,1-0,0-0
+17,Thu,2022-07-07,CSA AL,Ponte Preta,0-1,0-0
+17,Fri,2022-07-08,Vila Nova GO,EC Bahia,1-1,0-0
+17,Fri,2022-07-08,Grêmio FBPA,Náutico PE,2-0,1-0
+17,Sat,2022-07-09,Guarani SP,Cruzeiro EC,1-0,1-0
+17,Sat,2022-07-09,SC Recife,Londrina PR,2-0,1-0
+17,Sat,2022-07-09,Criciúma SC,CR Vasco da Gama,0-1,0-1
+17,Sat,2022-07-09,Tombense MG,Chapecoense AF,2-1,1-1
+17,Sat,2022-07-09,Sampaio Corrêa MA,Ituano SP,2-0,1-0
+18,Thu,2022-07-14,Operário Ferroviário PR,SC Recife,0-0,
+18,Fri,2022-07-15,Criciúma SC,Ponte Preta,1-1,0-1
+18,Fri,2022-07-15,Vila Nova GO,CSA AL,1-2,0-1
+18,Sat,2022-07-16,Ituano SP,Londrina PR,0-0,
+18,Sat,2022-07-16,CR Brasil AL,Brusque SC,1-1,0-0
+18,Sat,2022-07-16,Grêmio FBPA,Tombense MG,3-0,3-0
+18,Sat,2022-07-16,Sampaio Corrêa MA,CR Vasco da Gama,3-1,1-0
+18,Sat,2022-07-16,Guarani SP,EC Bahia,0-2,0-1
+18,Sun,2022-07-17,Cruzeiro EC,Grêmio Novorizontino SP,2-1,1-0
+18,Sun,2022-07-17,Náutico PE,Chapecoense AF,1-2,0-0
+19,Mon,2022-07-18,SC Recife,Vila Nova GO,0-0,
+19,Tue,2022-07-19,EC Bahia,CR Brasil AL,1-1,1-0
+19,Tue,2022-07-19,Brusque SC,Grêmio FBPA,1-1,0-0
+19,Tue,2022-07-19,Londrina PR,Sampaio Corrêa MA,1-0,1-0
+19,Tue,2022-07-19,Tombense MG,Criciúma SC,1-0,1-0
+19,Tue,2022-07-19,CR Vasco da Gama,Ituano SP,1-1,0-1
+19,Wed,2022-07-20,Chapecoense AF,Guarani SP,0-0,
+19,Wed,2022-07-20,CSA AL,Cruzeiro EC,1-1,0-1
+19,Wed,2022-07-20,Ponte Preta,Náutico PE,1-0,0-0
+19,Wed,2022-07-20,Grêmio Novorizontino SP,Operário Ferroviário PR,2-1,2-0
+20,Fri,2022-07-22,Sampaio Corrêa MA,SC Recife,4-1,2-0
+20,Sat,2022-07-23,Cruzeiro EC,EC Bahia,1-0,0-0
+20,Sat,2022-07-23,Grêmio FBPA,Ponte Preta,2-1,2-0
+20,Sat,2022-07-23,Vila Nova GO,CR Vasco da Gama,1-0,0-0
+20,Sat,2022-07-23,Náutico PE,Londrina PR,1-2,1-0
+20,Sat,2022-07-23,Ituano SP,Chapecoense AF,1-0,1-0
+20,Sat,2022-07-23,CR Brasil AL,Grêmio Novorizontino SP,2-1,2-0
+20,Sun,2022-07-24,Guarani SP,Brusque SC,1-1,0-0
+20,Mon,2022-07-25,Criciúma SC,CSA AL,2-1,0-1
+20,Mon,2022-07-25,Operário Ferroviário PR,Tombense MG,0-0,
+21,Tue,2022-07-26,Chapecoense AF,Grêmio FBPA,0-0,
+21,Thu,2022-07-28,CR Vasco da Gama,CR Brasil AL,4-0,2-0
+21,Thu,2022-07-28,SC Recife,Guarani SP,2-1,1-0
+21,Fri,2022-07-29,EC Bahia,Náutico PE,3-0,0-0
+21,Fri,2022-07-29,Tombense MG,Sampaio Corrêa MA,3-0,0-0
+21,Sat,2022-07-30,Brusque SC,Cruzeiro EC,0-0,
+21,Sat,2022-07-30,Londrina PR,Criciúma SC,1-1,1-1
+21,Sat,2022-07-30,Grêmio Novorizontino SP,Vila Nova GO,1-1,0-1
+21,Sat,2022-07-30,Ponte Preta,Operário Ferroviário PR,3-0,2-0
+21,Sat,2022-07-30,CSA AL,Ituano SP,1-3,0-2
+22,Sun,2022-07-31,CR Vasco da Gama,Chapecoense AF,0-0,
+22,Tue,2022-08-02,SC Recife,Criciúma SC,1-1,0-1
+22,Thu,2022-08-04,Brusque SC,Sampaio Corrêa MA,1-1,1-0
+22,Thu,2022-08-04,CR Brasil AL,Ponte Preta,1-1,1-1
+22,Fri,2022-08-05,Operário Ferroviário PR,Náutico PE,1-0,0-0
+22,Fri,2022-08-05,Vila Nova GO,Ituano SP,1-1,0-0
+22,Fri,2022-08-05,Guarani SP,Grêmio FBPA,1-2,0-1
+22,Sat,2022-08-06,EC Bahia,CSA AL,1-0,1-0
+22,Sat,2022-08-06,Cruzeiro EC,Tombense MG,2-0,0-0
+22,Sat,2022-08-06,Grêmio Novorizontino SP,Londrina PR,0-1,0-0
+23,Tue,2022-08-09,Grêmio FBPA,Operário Ferroviário PR,5-1,1-0
+23,Tue,2022-08-09,Ituano SP,SC Recife,4-1,2-1
+23,Tue,2022-08-09,CSA AL,Brusque SC,1-0,0-0
+23,Tue,2022-08-09,Ponte Preta,CR Vasco da Gama,3-1,1-1
+23,Tue,2022-08-09,Londrina PR,Cruzeiro EC,1-2,0-0
+23,Tue,2022-08-09,Sampaio Corrêa MA,EC Bahia,2-0,1-0
+23,Tue,2022-08-09,Tombense MG,Vila Nova GO,0-0,
+23,Wed,2022-08-10,Chapecoense AF,Grêmio Novorizontino SP,2-2,1-1
+23,Wed,2022-08-10,Náutico PE,CR Brasil AL,2-1,2-0
+23,Wed,2022-08-10,Criciúma SC,Guarani SP,0-0,
+24,Fri,2022-08-12,Vila Nova GO,Londrina PR,0-0,
+24,Fri,2022-08-12,EC Bahia,Ituano SP,2-0,0-0
+24,Fri,2022-08-12,Brusque SC,Ponte Preta,2-1,1-0
+24,Sat,2022-08-13,Operário Ferroviário PR,Sampaio Corrêa MA,1-1,0-0
+24,Sat,2022-08-13,CR Vasco da Gama,Tombense MG,3-1,2-0
+24,Sat,2022-08-13,SC Recife,CSA AL,4-0,3-0
+24,Sat,2022-08-13,Cruzeiro EC,Chapecoense AF,1-1,0-1
+24,Sat,2022-08-13,Guarani SP,Náutico PE,1-0,0-0
+24,Sat,2022-08-13,CR Brasil AL,Grêmio FBPA,2-0,2-0
+24,Sun,2022-08-14,Grêmio Novorizontino SP,Criciúma SC,3-1,1-1
+25,Tue,2022-08-16,Londrina PR,EC Bahia,1-1,0-1
+25,Wed,2022-08-17,Criciúma SC,Operário Ferroviário PR,2-0,1-0
+25,Thu,2022-08-18,CSA AL,CR Vasco da Gama,2-0,2-0
+25,Thu,2022-08-18,Tombense MG,SC Recife,1-0,1-0
+25,Fri,2022-08-19,Ituano SP,Grêmio Novorizontino SP,1-0,1-0
+25,Fri,2022-08-19,Náutico PE,Vila Nova GO,1-2,1-0
+25,Sat,2022-08-20,Ponte Preta,Guarani SP,1-0,0-0
+25,Sat,2022-08-20,Chapecoense AF,Brusque SC,1-0,0-0
+25,Sat,2022-08-20,Sampaio Corrêa MA,CR Brasil AL,1-2,1-1
+25,Sun,2022-08-21,Grêmio FBPA,Cruzeiro EC,2-2,1-1
+26,Tue,2022-08-23,SC Recife,Chapecoense AF,1-0,0-0
+26,Thu,2022-08-25,Vila Nova GO,Sampaio Corrêa MA,0-0,
+26,Thu,2022-08-25,Grêmio Novorizontino SP,Ponte Preta,1-1,1-0
+26,Fri,2022-08-26,Brusque SC,Londrina PR,0-1,0-1
+26,Fri,2022-08-26,Grêmio FBPA,Ituano SP,0-1,0-0
+26,Fri,2022-08-26,Cruzeiro EC,Náutico PE,4-0,1-0
+26,Sat,2022-08-27,Guarani SP,Tombense MG,2-1,1-0
+26,Sat,2022-08-27,CR Brasil AL,Criciúma SC,0-0,
+26,Sat,2022-08-27,Operário Ferroviário PR,CSA AL,0-0,
+26,Sun,2022-08-28,EC Bahia,CR Vasco da Gama,2-1,2-1
+27,Mon,2022-08-29,Chapecoense AF,Vila Nova GO,1-2,1-1
+27,Tue,2022-08-30,Londrina PR,CR Brasil AL,1-0,0-0
+27,Tue,2022-08-30,Sampaio Corrêa MA,Cruzeiro EC,1-1,1-1
+27,Tue,2022-08-30,Ituano SP,Operário Ferroviário PR,0-0,
+27,Tue,2022-08-30,SC Recife,Grêmio Novorizontino SP,1-0,0-0
+27,Tue,2022-08-30,Criciúma SC,Grêmio FBPA,2-0,1-0
+27,Tue,2022-08-30,CSA AL,Náutico PE,2-0,0-0
+27,Tue,2022-08-30,Tombense MG,Brusque SC,1-0,1-0
+27,Wed,2022-08-31,CR Vasco da Gama,Guarani SP,2-1,1-0
+27,Wed,2022-08-31,Ponte Preta,EC Bahia,2-0,1-0
+28,Fri,2022-09-02,Náutico PE,Ituano SP,2-0,0-0
+28,Fri,2022-09-02,Grêmio FBPA,Vila Nova GO,2-1,1-0
+28,Sat,2022-09-03,Grêmio Novorizontino SP,CSA AL,1-1,0-1
+28,Sat,2022-09-03,Brusque SC,CR Vasco da Gama,1-0,1-0
+28,Sat,2022-09-03,Guarani SP,Sampaio Corrêa MA,3-0,1-0
+28,Sat,2022-09-03,CR Brasil AL,SC Recife,2-0,1-0
+28,Sat,2022-09-03,EC Bahia,Tombense MG,3-1,0-1
+28,Sat,2022-09-03,Chapecoense AF,Ponte Preta,3-0,1-0
+28,Sat,2022-09-03,Operário Ferroviário PR,Londrina PR,1-0,0-0
+28,Sun,2022-09-04,Cruzeiro EC,Criciúma SC,1-1,0-1
+29,Tue,2022-09-06,Vila Nova GO,Guarani SP,2-1,0-1
+29,Wed,2022-09-07,Ponte Preta,SC Recife,1-0,1-0
+29,Wed,2022-09-07,Sampaio Corrêa MA,Grêmio Novorizontino SP,2-1,0-0
+29,Thu,2022-09-08,Criciúma SC,EC Bahia,0-0,
+29,Thu,2022-09-08,Cruzeiro EC,Operário Ferroviário PR,1-0,1-0
+29,Fri,2022-09-09,Náutico PE,Brusque SC,1-0,0-0
+29,Sat,2022-09-10,Ituano SP,Tombense MG,3-0,0-0
+29,Sat,2022-09-10,CSA AL,CR Brasil AL,1-1,0-1
+29,Sat,2022-09-10,Londrina PR,Chapecoense AF,2-1,1-0
+29,Sun,2022-09-11,Grêmio FBPA,CR Vasco da Gama,2-1,2-1
+30,Mon,2022-09-12,SC Recife,EC Bahia,1-0,0-0
+30,Tue,2022-09-13,Operário Ferroviário PR,Guarani SP,0-1,0-1
+30,Tue,2022-09-13,Ponte Preta,Ituano SP,1-1,1-1
+30,Fri,2022-09-16,CR Vasco da Gama,Náutico PE,4-1,2-0
+30,Fri,2022-09-16,Grêmio Novorizontino SP,Grêmio FBPA,2-0,2-0
+30,Fri,2022-09-16,Tombense MG,Londrina PR,1-1,0-1
+30,Sat,2022-09-17,Chapecoense AF,CSA AL,1-0,0-0
+30,Sat,2022-09-17,Brusque SC,Vila Nova GO,0-1,0-1
+30,Sat,2022-09-17,Sampaio Corrêa MA,Criciúma SC,1-1,1-0
+30,Sat,2022-09-17,CR Brasil AL,Cruzeiro EC,0-2,0-0
+31,Tue,2022-09-20,Grêmio FBPA,SC Recife,3-0,0-0
+31,Tue,2022-09-20,Guarani SP,Grêmio Novorizontino SP,2-0,2-0
+31,Wed,2022-09-21,Cruzeiro EC,CR Vasco da Gama,3-0,1-0
+31,Thu,2022-09-22,Vila Nova GO,CR Brasil AL,1-0,0-0
+31,Fri,2022-09-23,Náutico PE,Sampaio Corrêa MA,1-3,1-1
+31,Fri,2022-09-23,Londrina PR,Ponte Preta,0-2,0-0
+31,Sat,2022-09-24,Ituano SP,Brusque SC,2-0,1-0
+31,Sat,2022-09-24,EC Bahia,Operário Ferroviário PR,2-2,1-2
+31,Sun,2022-09-25,Criciúma SC,Chapecoense AF,2-0,1-0
+31,Mon,2022-09-26,CSA AL,Tombense MG,2-0,2-0
+32,Wed,2022-09-28,Ponte Preta,Cruzeiro EC,1-4,1-1
+32,Wed,2022-09-28,SC Recife,Náutico PE,2-1,1-1
+32,Thu,2022-09-29,Tombense MG,Grêmio Novorizontino SP,2-0,1-0
+32,Thu,2022-09-29,CR Vasco da Gama,Londrina PR,1-1,1-1
+32,Fri,2022-09-30,CSA AL,Guarani SP,1-2,1-1
+32,Fri,2022-09-30,Operário Ferroviário PR,Vila Nova GO,1-1,1-1
+32,Fri,2022-09-30,Sampaio Corrêa MA,Grêmio FBPA,2-1,1-0
+32,Fri,2022-09-30,Chapecoense AF,EC Bahia,3-1,0-1
+32,Sat,2022-10-01,Brusque SC,Criciúma SC,0-2,0-0
+32,Sat,2022-10-01,Ituano SP,CR Brasil AL,1-0,0-0
+33,Mon,2022-10-03,Guarani SP,Londrina PR,1-0,0-0
+33,Mon,2022-10-03,Sampaio Corrêa MA,Ponte Preta,2-1,1-0
+33,Tue,2022-10-04,Brusque SC,SC Recife,0-1,0-0
+33,Tue,2022-10-04,CR Brasil AL,Chapecoense AF,2-1,1-0
+33,Tue,2022-10-04,Grêmio FBPA,CSA AL,2-0,2-0
+33,Tue,2022-10-04,Operário Ferroviário PR,CR Vasco da Gama,2-3,1-0
+33,Tue,2022-10-04,Vila Nova GO,Criciúma SC,1-0,0-0
+33,Tue,2022-10-04,Náutico PE,Tombense MG,4-3,3-1
+33,Tue,2022-10-04,Grêmio Novorizontino SP,EC Bahia,1-1,1-1
+33,Wed,2022-10-05,Cruzeiro EC,Ituano SP,1-1,1-1
+34,Fri,2022-10-07,Criciúma SC,Náutico PE,2-1,1-1
+34,Fri,2022-10-07,CSA AL,Sampaio Corrêa MA,0-0,
+34,Sat,2022-10-08,Chapecoense AF,Operário Ferroviário PR,1-1,1-1
+34,Sat,2022-10-08,EC Bahia,Brusque SC,1-0,1-0
+34,Sat,2022-10-08,Londrina PR,Grêmio FBPA,1-1,0-1
+34,Sat,2022-10-08,Ituano SP,Guarani SP,2-1,1-0
+34,Sat,2022-10-08,Tombense MG,CR Brasil AL,1-2,0-0
+34,Sat,2022-10-08,CR Vasco da Gama,Grêmio Novorizontino SP,3-0,1-0
+34,Sat,2022-10-08,Ponte Preta,Vila Nova GO,1-1,0-0
+34,Sun,2022-10-09,SC Recife,Cruzeiro EC,3-1,2-0
+35,Tue,2022-10-11,Guarani SP,CR Brasil AL,1-0,0-0
+35,Tue,2022-10-11,Sampaio Corrêa MA,Chapecoense AF,2-1,1-1
+35,Thu,2022-10-13,Operário Ferroviário PR,Brusque SC,0-0,
+35,Fri,2022-10-14,CSA AL,Londrina PR,0-1,0-0
+35,Fri,2022-10-14,Vila Nova GO,Cruzeiro EC,1-0,0-0
+35,Fri,2022-10-14,Grêmio Novorizontino SP,Náutico PE,6-0,2-0
+35,Sat,2022-10-15,Tombense MG,Ponte Preta,0-0,
+35,Sat,2022-10-15,Criciúma SC,Ituano SP,3-0,1-0
+35,Sun,2022-10-16,Grêmio FBPA,EC Bahia,1-1,0-1
+35,Sun,2022-10-16,SC Recife,CR Vasco da Gama,1-1,0-0
+36,Tue,2022-10-18,Brusque SC,Grêmio Novorizontino SP,2-2,1-1
+36,Tue,2022-10-18,Cruzeiro EC,Guarani SP,0-1,0-0
+36,Thu,2022-10-20,Ponte Preta,CSA AL,0-2,0-2
+36,Fri,2022-10-21,Chapecoense AF,Tombense MG,3-2,1-2
+36,Fri,2022-10-21,CR Brasil AL,Operário Ferroviário PR,2-1,1-1
+36,Sat,2022-10-22,EC Bahia,Vila Nova GO,1-1,0-0
+36,Sat,2022-10-22,Ituano SP,Sampaio Corrêa MA,1-0,0-0
+36,Sat,2022-10-22,Londrina PR,SC Recife,2-1,0-1
+36,Sat,2022-10-22,CR Vasco da Gama,Criciúma SC,2-1,0-1
+36,Sun,2022-10-23,Náutico PE,Grêmio FBPA,0-3,0-1
+37,Tue,2022-10-25,Brusque SC,CR Brasil AL,0-0,
+37,Tue,2022-10-25,CSA AL,Vila Nova GO,1-0,1-0
+37,Thu,2022-10-27,Grêmio Novorizontino SP,Cruzeiro EC,1-4,1-2
+37,Thu,2022-10-27,CR Vasco da Gama,Sampaio Corrêa MA,2-3,1-1
+37,Fri,2022-10-28,EC Bahia,Guarani SP,1-1,1-0
+37,Fri,2022-10-28,Londrina PR,Ituano SP,0-2,0-1
+37,Fri,2022-10-28,SC Recife,Operário Ferroviário PR,5-1,3-0
+37,Fri,2022-10-28,Tombense MG,Grêmio FBPA,2-2,1-2
+37,Fri,2022-10-28,Ponte Preta,Criciúma SC,1-1,1-1
+37,Sat,2022-10-29,Chapecoense AF,Náutico PE,1-0,1-0
+38,Thu,2022-11-03,Grêmio FBPA,Brusque SC,3-0,2-0
+38,Fri,2022-11-04,Náutico PE,Ponte Preta,0-1,0-0
+38,Sat,2022-11-05,Criciúma SC,Tombense MG,2-0,1-0
+38,Sat,2022-11-05,Sampaio Corrêa MA,Londrina PR,2-1,0-1
+38,Sun,2022-11-06,Guarani SP,Chapecoense AF,1-0,0-0
+38,Sun,2022-11-06,CR Brasil AL,EC Bahia,1-2,0-1
+38,Sun,2022-11-06,Cruzeiro EC,CSA AL,3-2,1-1
+38,Sun,2022-11-06,Ituano SP,CR Vasco da Gama,0-1,0-1
+38,Sun,2022-11-06,Operário Ferroviário PR,Grêmio Novorizontino SP,0-3,0-2
+38,Sun,2022-11-06,Vila Nova GO,SC Recife,0-0,
