@@ -1,381 +1,380 @@
-Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
-1,Fri,Aug/8,20.30,Stade de Reims,Paris Saint-Germain,2-2,2-1
-1,Sat,Aug/9,21.00,SC Bastia,Olympique Marseille,3-3,1-2
-1,Sat,Aug/9,,Évian Thonon Gaillard,SM Caen,0-3,0-3
-1,Sat,Aug/9,,EA Guingamp,AS Saint-Étienne,0-2,0-1
-1,Sat,Aug/9,,Lille OSC,FC Metz,0-0,
-1,Sat,Aug/9,,Montpellier HSC,Girondins Bordeaux,0-1,0-1
-1,Sat,Aug/9,,FC Nantes,RC Lens,1-0,0-0
-1,Sat,Aug/9,,OGC Nice,Toulouse FC,3-2,1-2
-1,Sun,Aug/10,17.00,Olympique Lyonnais,Stade Rennais,2-0,0-0
-1,Sun,Aug/10,21.00,AS Monaco,FC Lorient,1-2,0-1
-2,Fri,Aug/15,20.30,SM Caen,Lille OSC,0-1,0-0
-2,Sat,Aug/16,17.00,Paris Saint-Germain,SC Bastia,2-0,1-0
-2,Sat,Aug/16,20.00,RC Lens,EA Guingamp,0-1,0-0
-2,Sat,Aug/16,,FC Lorient,OGC Nice,0-0,
-2,Sat,Aug/16,,FC Metz,FC Nantes,1-1,1-1
-2,Sat,Aug/16,,Stade Rennais,Évian Thonon Gaillard,6-2,3-1
-2,Sat,Aug/16,,Toulouse FC,Olympique Lyonnais,2-1,2-0
-2,Sun,Aug/17,17.00,Olympique Marseille,Montpellier HSC,0-2,0-1
-2,Sun,Aug/17,,AS Saint-Étienne,Stade de Reims,3-1,0-1
-2,Sun,Aug/17,21.00,Girondins Bordeaux,AS Monaco,4-1,0-1
-3,Fri,Aug/22,20.30,Évian Thonon Gaillard,Paris Saint-Germain,0-0,
-3,Sat,Aug/23,17.00,EA Guingamp,Olympique Marseille,0-1,0-0
-3,Sat,Aug/23,20.00,SC Bastia,Toulouse FC,1-0,1-0
-3,Sat,Aug/23,,Lille OSC,FC Lorient,2-0,0-0
-3,Sat,Aug/23,,Montpellier HSC,FC Metz,2-0,1-0
-3,Sat,Aug/23,,OGC Nice,Girondins Bordeaux,1-3,1-1
-3,Sat,Aug/23,,Stade de Reims,SM Caen,0-2,0-0
-3,Sun,Aug/24,14.00,Olympique Lyonnais,RC Lens,0-1,0-1
-3,Sun,Aug/24,17.00,AS Saint-Étienne,Stade Rennais,0-0,
-3,Sun,Aug/24,21.00,FC Nantes,AS Monaco,0-1,0-1
-4,Fri,Aug/29,20.30,Olympique Marseille,OGC Nice,4-0,2-0
-4,Sat,Aug/30,17.00,AS Monaco,Lille OSC,1-1,0-1
-4,Sat,Aug/30,20.00,SM Caen,Stade Rennais,0-1,0-0
-4,Sat,Aug/30,,RC Lens,Stade de Reims,4-2,1-1
-4,Sat,Aug/30,,FC Lorient,EA Guingamp,4-0,0-0
-4,Sat,Aug/30,,FC Nantes,Montpellier HSC,1-0,0-0
-4,Sat,Aug/30,,Toulouse FC,Évian Thonon Gaillard,1-0,0-0
-4,Sun,Aug/31,14.00,Girondins Bordeaux,SC Bastia,1-1,0-1
-4,Sun,Aug/31,17.00,FC Metz,Olympique Lyonnais,2-1,0-0
-4,Sun,Aug/31,21.00,Paris Saint-Germain,AS Saint-Étienne,5-0,2-0
-5,Fri,Sep/12,20.30,Olympique Lyonnais,AS Monaco,2-1,1-1
-5,Sat,Sep/13,17.00,Stade Rennais,Paris Saint-Germain,1-1,0-1
-5,Sat,Sep/13,20.00,SC Bastia,RC Lens,1-1,0-1
-5,Sat,Sep/13,,Montpellier HSC,FC Lorient,1-0,1-0
-5,Sat,Sep/13,,OGC Nice,FC Metz,1-0,0-0
-5,Sat,Sep/13,,Stade de Reims,Toulouse FC,2-0,1-0
-5,Sat,Sep/13,,AS Saint-Étienne,SM Caen,1-0,0-0
-5,Sun,Sep/14,14.00,Lille OSC,FC Nantes,2-0,0-0
-5,Sun,Sep/14,17.00,EA Guingamp,Girondins Bordeaux,2-1,2-0
-5,Sun,Sep/14,21.00,Évian Thonon Gaillard,Olympique Marseille,1-3,0-2
-6,Fri,Sep/19,20.30,Girondins Bordeaux,Évian Thonon Gaillard,2-1,1-0
-6,Sat,Sep/20,17.00,Olympique Marseille,Stade Rennais,3-0,0-0
-6,Sat,Sep/20,20.00,FC Lorient,Stade de Reims,0-1,0-0
-6,Sat,Sep/20,,FC Metz,SC Bastia,3-1,1-1
-6,Sat,Sep/20,,FC Nantes,OGC Nice,2-1,2-0
-6,Sat,Sep/20,,Toulouse FC,SM Caen,3-3,1-1
-6,Sun,Sep/21,14.00,Lille OSC,Montpellier HSC,0-0,
-6,Sun,Sep/21,17.00,RC Lens,AS Saint-Étienne,0-1,0-0
-6,Sun,Sep/21,,AS Monaco,EA Guingamp,1-0,1-0
-6,Sun,Sep/21,21.00,Paris Saint-Germain,Olympique Lyonnais,1-1,1-0
-7,Tue,Sep/23,19.00,Stade de Reims,Olympique Marseille,0-5,0-2
-7,Tue,Sep/23,21.00,Stade Rennais,Toulouse FC,0-3,0-1
-7,Wed,Sep/24,19.00,SC Bastia,FC Nantes,0-0,
-7,Wed,Sep/24,,Évian Thonon Gaillard,RC Lens,2-1,2-0
-7,Wed,Sep/24,,EA Guingamp,FC Metz,0-1,0-1
-7,Wed,Sep/24,,Olympique Lyonnais,FC Lorient,4-0,2-0
-7,Wed,Sep/24,,Montpellier HSC,AS Monaco,0-1,0-0
-7,Wed,Sep/24,,OGC Nice,Lille OSC,1-0,1-0
-7,Wed,Sep/24,21.00,SM Caen,Paris Saint-Germain,0-2,0-1
-7,Thu,Sep/25,21.00,AS Saint-Étienne,Girondins Bordeaux,1-1,1-1
-8,Sat,Sep/27,14.00,AS Monaco,OGC Nice,0-1,0-1
-8,Sat,Sep/27,17.00,Toulouse FC,Paris Saint-Germain,1-1,1-1
-8,Sat,Sep/27,20.00,Lille OSC,SC Bastia,1-0,1-0
-8,Sat,Sep/27,,FC Lorient,Évian Thonon Gaillard,0-2,0-1
-8,Sat,Sep/27,,FC Metz,Stade de Reims,3-0,0-0
-8,Sat,Sep/27,,Montpellier HSC,EA Guingamp,2-1,0-0
-8,Sun,Sep/28,14.00,Girondins Bordeaux,Stade Rennais,2-1,0-0
-8,Sun,Sep/28,17.00,RC Lens,SM Caen,0-0,
-8,Sun,Sep/28,,FC Nantes,Olympique Lyonnais,1-1,0-0
-8,Sun,Sep/28,21.00,Olympique Marseille,AS Saint-Étienne,2-1,2-0
-9,Fri,Oct/3,20.30,Stade de Reims,Girondins Bordeaux,1-0,1-0
-9,Sat,Oct/4,17.00,SM Caen,Olympique Marseille,1-2,0-0
-9,Sat,Oct/4,20.00,SC Bastia,FC Lorient,0-2,0-0
-9,Sat,Oct/4,,Évian Thonon Gaillard,FC Metz,3-0,0-0
-9,Sat,Oct/4,,OGC Nice,Montpellier HSC,1-1,0-0
-9,Sat,Oct/4,,Stade Rennais,RC Lens,2-0,0-0
-9,Sun,Oct/5,14.00,AS Saint-Étienne,Toulouse FC,0-1,0-1
-9,Sun,Oct/5,17.00,EA Guingamp,FC Nantes,0-1,0-1
-9,Sun,Oct/5,,Olympique Lyonnais,Lille OSC,3-0,2-0
-9,Sun,Oct/5,21.00,Paris Saint-Germain,AS Monaco,1-1,0-0
-10,Fri,Oct/17,20.30,RC Lens,Paris Saint-Germain,1-3,1-2
-10,Sat,Oct/18,17.00,FC Lorient,AS Saint-Étienne,0-1,0-0
-10,Sat,Oct/18,20.00,Lille OSC,EA Guingamp,1-2,0-1
-10,Sat,Oct/18,,FC Metz,Stade Rennais,0-0,
-10,Sat,Oct/18,,AS Monaco,Évian Thonon Gaillard,2-0,1-0
-10,Sat,Oct/18,,FC Nantes,Stade de Reims,1-1,1-0
-10,Sat,Oct/18,,OGC Nice,SC Bastia,0-1,0-0
-10,Sun,Oct/19,14.00,Olympique Marseille,Toulouse FC,2-0,2-0
-10,Sun,Oct/19,17.00,Girondins Bordeaux,SM Caen,1-1,1-0
-10,Sun,Oct/19,21.00,Olympique Lyonnais,Montpellier HSC,5-1,2-0
-11,Fri,Oct/24,20.30,Toulouse FC,RC Lens,0-2,0-2
-11,Sat,Oct/25,17.00,Paris Saint-Germain,Girondins Bordeaux,3-0,1-0
-11,Sat,Oct/25,20.00,SC Bastia,AS Monaco,1-3,1-1
-11,Sat,Oct/25,,SM Caen,FC Lorient,2-1,1-1
-11,Sat,Oct/25,,Évian Thonon Gaillard,FC Nantes,0-2,0-1
-11,Sat,Oct/25,,Stade de Reims,Montpellier HSC,1-0,0-0
-11,Sun,Oct/26,14.00,Stade Rennais,Lille OSC,2-0,0-0
-11,Sun,Oct/26,17.00,EA Guingamp,OGC Nice,2-7,1-4
-11,Sun,Oct/26,,AS Saint-Étienne,FC Metz,1-0,0-0
-11,Sun,Oct/26,21.00,Olympique Lyonnais,Olympique Marseille,1-0,0-0
-12,Fri,Oct/31,20.30,AS Monaco,Stade de Reims,1-1,1-0
-12,Sat,Nov/1,17.00,FC Lorient,Paris Saint-Germain,1-2,1-0
-12,Sat,Nov/1,20.00,EA Guingamp,SC Bastia,1-0,1-0
-12,Sat,Nov/1,,Lille OSC,AS Saint-Étienne,1-1,1-0
-12,Sat,Nov/1,,FC Metz,SM Caen,3-2,1-0
-12,Sat,Nov/1,,Montpellier HSC,Évian Thonon Gaillard,2-0,1-0
-12,Sat,Nov/1,,OGC Nice,Olympique Lyonnais,1-3,0-0
-12,Sun,Nov/2,14.00,FC Nantes,Stade Rennais,1-1,1-1
-12,Sun,Nov/2,17.00,Girondins Bordeaux,Toulouse FC,2-1,0-0
-12,Sun,Nov/2,21.00,Olympique Marseille,RC Lens,2-1,1-1
-13,Fri,Nov/7,20.30,Stade Rennais,FC Lorient,1-0,0-0
-13,Sat,Nov/8,17.00,RC Lens,Girondins Bordeaux,1-2,0-2
-13,Sat,Nov/8,20.00,SC Bastia,Montpellier HSC,2-0,2-0
-13,Sat,Nov/8,,SM Caen,FC Nantes,1-2,1-1
-13,Sat,Nov/8,,Évian Thonon Gaillard,OGC Nice,1-0,0-0
-13,Sat,Nov/8,,Toulouse FC,FC Metz,3-0,1-0
-13,Sun,Nov/9,14.00,Olympique Lyonnais,EA Guingamp,3-1,2-1
-13,Sun,Nov/9,17.00,Stade de Reims,Lille OSC,2-0,2-0
-13,Sun,Nov/9,,AS Saint-Étienne,AS Monaco,1-1,0-1
-13,Sun,Nov/9,21.00,Paris Saint-Germain,Olympique Marseille,2-0,1-0
-14,Fri,Nov/21,20.30,FC Metz,Paris Saint-Germain,2-3,0-2
-14,Sat,Nov/22,17.00,SC Bastia,Olympique Lyonnais,0-0,
-14,Sat,Nov/22,20.00,EA Guingamp,Stade Rennais,0-1,0-1
-14,Sat,Nov/22,,FC Lorient,RC Lens,1-0,1-0
-14,Sat,Nov/22,,AS Monaco,SM Caen,2-2,1-0
-14,Sat,Nov/22,,OGC Nice,Stade de Reims,0-0,
-14,Sun,Nov/23,14.00,FC Nantes,AS Saint-Étienne,0-0,
-14,Sun,Nov/23,17.00,Montpellier HSC,Toulouse FC,2-0,1-0
-14,Sun,Nov/23,21.00,Olympique Marseille,Girondins Bordeaux,3-1,0-0
-14,Wed,Jan/7,20.30,Lille OSC,Évian Thonon Gaillard,1-0,0-0
-15,Fri,Nov/28,20.30,Olympique Marseille,FC Nantes,2-0,2-0
-15,Sat,Nov/29,17.00,Paris Saint-Germain,OGC Nice,1-0,1-0
-15,Sat,Nov/29,20.00,SM Caen,Montpellier HSC,1-1,1-1
-15,Sat,Nov/29,,RC Lens,FC Metz,2-0,0-0
-15,Sat,Nov/29,,Stade de Reims,SC Bastia,2-1,1-1
-15,Sat,Nov/29,,Stade Rennais,AS Monaco,2-0,2-0
-15,Sat,Nov/29,,Toulouse FC,FC Lorient,2-3,1-0
-15,Sun,Nov/30,14.00,Girondins Bordeaux,Lille OSC,1-0,0-0
-15,Sun,Nov/30,17.00,Évian Thonon Gaillard,EA Guingamp,2-0,0-0
-15,Sun,Nov/30,21.00,AS Saint-Étienne,Olympique Lyonnais,3-0,2-0
-16,Tue,Dec/2,19.00,FC Lorient,Olympique Marseille,1-1,1-1
-16,Tue,Dec/2,,FC Nantes,Toulouse FC,1-2,0-1
-16,Tue,Dec/2,21.00,AS Monaco,RC Lens,2-0,0-0
-16,Wed,Dec/3,19.00,SC Bastia,Évian Thonon Gaillard,1-2,1-0
-16,Wed,Dec/3,,EA Guingamp,SM Caen,5-1,2-1
-16,Wed,Dec/3,,FC Metz,Girondins Bordeaux,0-0,
-16,Wed,Dec/3,,Montpellier HSC,AS Saint-Étienne,0-2,0-2
-16,Wed,Dec/3,,OGC Nice,Stade Rennais,1-2,0-1
-16,Wed,Dec/3,21.00,Lille OSC,Paris Saint-Germain,1-1,1-1
-16,Thu,Dec/4,21.00,Olympique Lyonnais,Stade de Reims,2-1,1-1
-17,Fri,Dec/5,20.30,Toulouse FC,AS Monaco,0-2,0-1
-17,Sat,Dec/6,17.00,Paris Saint-Germain,FC Nantes,2-1,1-1
-17,Sat,Dec/6,20.00,Girondins Bordeaux,FC Lorient,3-2,1-1
-17,Sat,Dec/6,,SM Caen,OGC Nice,2-3,2-1
-17,Sat,Dec/6,,Stade Rennais,Montpellier HSC,0-4,0-1
-17,Sat,Dec/6,,AS Saint-Étienne,SC Bastia,1-0,0-0
-17,Sun,Dec/7,14.00,Évian Thonon Gaillard,Olympique Lyonnais,2-3,1-0
-17,Sun,Dec/7,17.00,RC Lens,Lille OSC,1-1,0-0
-17,Sun,Dec/7,,Stade de Reims,EA Guingamp,2-3,1-1
-17,Sun,Dec/7,21.00,Olympique Marseille,FC Metz,3-1,1-0
-18,Fri,Dec/12,20.30,Olympique Lyonnais,SM Caen,3-0,1-0
-18,Sat,Dec/13,17.00,FC Nantes,Girondins Bordeaux,2-1,1-1
-18,Sat,Dec/13,20.00,SC Bastia,Stade Rennais,2-0,1-0
-18,Sat,Dec/13,,FC Lorient,FC Metz,3-1,3-0
-18,Sat,Dec/13,,Montpellier HSC,RC Lens,3-3,2-2
-18,Sat,Dec/13,,Stade de Reims,Évian Thonon Gaillard,3-2,1-0
-18,Sun,Dec/14,14.00,OGC Nice,AS Saint-Étienne,0-0,
-18,Sun,Dec/14,17.00,EA Guingamp,Paris Saint-Germain,1-0,1-0
-18,Sun,Dec/14,,Lille OSC,Toulouse FC,3-0,1-0
-18,Sun,Dec/14,21.00,AS Monaco,Olympique Marseille,1-0,0-0
-19,Fri,Dec/19,20.30,RC Lens,OGC Nice,2-0,1-0
-19,Sat,Dec/20,17.00,Paris Saint-Germain,Montpellier HSC,0-0,
-19,Sat,Dec/20,20.00,SM Caen,SC Bastia,1-1,0-1
-19,Sat,Dec/20,,FC Lorient,FC Nantes,1-2,0-1
-19,Sat,Dec/20,,FC Metz,AS Monaco,0-1,0-0
-19,Sat,Dec/20,,Stade Rennais,Stade de Reims,1-3,1-0
-19,Sat,Dec/20,,Toulouse FC,EA Guingamp,1-1,1-1
-19,Sun,Dec/21,14.00,Olympique Marseille,Lille OSC,2-1,1-0
-19,Sun,Dec/21,17.00,AS Saint-Étienne,Évian Thonon Gaillard,3-0,2-0
-19,Sun,Dec/21,21.00,Girondins Bordeaux,Olympique Lyonnais,0-5,0-1
-20,Fri,Jan/9,20.30,Montpellier HSC,Olympique Marseille,2-1,1-0
-20,Sat,Jan/10,17.00,SC Bastia,Paris Saint-Germain,4-2,2-2
-20,Sat,Jan/10,20.00,Lille OSC,SM Caen,1-0,1-0
-20,Sat,Jan/10,,EA Guingamp,RC Lens,2-0,1-0
-20,Sat,Jan/10,,OGC Nice,FC Lorient,3-1,1-1
-20,Sat,Jan/10,,Évian Thonon Gaillard,Stade Rennais,1-1,0-0
-20,Sat,Jan/10,,Stade de Reims,AS Saint-Étienne,1-2,0-1
-20,Sun,Jan/11,17.00,FC Nantes,FC Metz,0-0,
-20,Sun,Jan/11,,Olympique Lyonnais,Toulouse FC,3-0,2-0
-20,Sun,Jan/11,21.00,AS Monaco,Girondins Bordeaux,0-0,
-21,Fri,Jan/16,20.30,Girondins Bordeaux,OGC Nice,1-2,1-0
-21,Sat,Jan/17,17.00,RC Lens,Olympique Lyonnais,0-2,0-2
-21,Sat,Jan/17,20.00,Toulouse FC,SC Bastia,1-1,0-0
-21,Sat,Jan/17,,FC Lorient,Lille OSC,1-0,0-0
-21,Sat,Jan/17,,FC Metz,Montpellier HSC,2-3,2-1
-21,Sat,Jan/17,,AS Monaco,FC Nantes,1-0,0-0
-21,Sat,Jan/17,,SM Caen,Stade de Reims,4-1,3-1
-21,Sun,Jan/18,14.00,Paris Saint-Germain,Évian Thonon Gaillard,4-2,2-1
-21,Sun,Jan/18,17.00,Stade Rennais,AS Saint-Étienne,0-0,
-21,Sun,Jan/18,21.00,Olympique Marseille,EA Guingamp,2-1,0-0
-22,Fri,Jan/23,20.30,OGC Nice,Olympique Marseille,2-1,0-0
-22,Sat,Jan/24,17.00,Lille OSC,AS Monaco,0-1,0-0
-22,Sat,Jan/24,20.00,SC Bastia,Girondins Bordeaux,0-0,
-22,Sat,Jan/24,,EA Guingamp,FC Lorient,3-2,1-0
-22,Sat,Jan/24,,Montpellier HSC,FC Nantes,4-0,1-0
-22,Sun,Jan/25,14.00,Olympique Lyonnais,FC Metz,2-0,1-0
-22,Sun,Jan/25,,Évian Thonon Gaillard,Toulouse FC,1-0,1-0
-22,Sun,Jan/25,17.00,Stade Rennais,SM Caen,1-4,1-1
-22,Sun,Jan/25,,Stade de Reims,RC Lens,0-0,
-22,Sun,Jan/25,21.00,AS Saint-Étienne,Paris Saint-Germain,0-1,0-0
-23,Fri,Jan/30,20.30,Paris Saint-Germain,Stade Rennais,1-0,1-0
-23,Sat,Jan/31,16.30,Olympique Marseille,Évian Thonon Gaillard,1-0,0-0
-23,Sat,Jan/31,20.00,RC Lens,SC Bastia,1-1,0-0
-23,Sat,Jan/31,,FC Nantes,Lille OSC,1-1,0-1
-23,Sat,Jan/31,,FC Lorient,Montpellier HSC,0-0,
-23,Sat,Jan/31,,FC Metz,OGC Nice,0-0,
-23,Sat,Jan/31,,Toulouse FC,Stade de Reims,1-0,1-0
-23,Sun,Feb/1,14.00,SM Caen,AS Saint-Étienne,1-0,1-0
-23,Sun,Feb/1,17.00,Girondins Bordeaux,EA Guingamp,1-1,0-1
-23,Sun,Feb/1,21.00,AS Monaco,Olympique Lyonnais,0-0,
-24,Fri,Feb/6,20.30,AS Saint-Étienne,RC Lens,3-3,1-0
-24,Sat,Feb/7,16.00,Stade Rennais,Olympique Marseille,1-1,1-0
-24,Sat,Feb/7,20.00,Évian Thonon Gaillard,Girondins Bordeaux,0-1,0-1
-24,Sat,Feb/7,,Montpellier HSC,Lille OSC,1-2,0-1
-24,Sat,Feb/7,,Stade de Reims,FC Lorient,1-3,1-0
-24,Sat,Feb/7,,SC Bastia,FC Metz,2-0,0-0
-24,Sat,Feb/7,,SM Caen,Toulouse FC,2-0,1-0
-24,Sun,Feb/8,14.00,EA Guingamp,AS Monaco,1-0,0-0
-24,Sun,Feb/8,17.00,OGC Nice,FC Nantes,0-0,
-24,Sun,Feb/8,21.00,Olympique Lyonnais,Paris Saint-Germain,1-1,1-0
-25,Fri,Feb/13,20.30,Olympique Marseille,Stade de Reims,2-2,0-1
-25,Sat,Feb/14,16.00,Paris Saint-Germain,SM Caen,2-2,2-0
-25,Sat,Feb/14,20.00,FC Nantes,SC Bastia,0-2,0-1
-25,Sat,Feb/14,,RC Lens,Évian Thonon Gaillard,0-2,0-2
-25,Sat,Feb/14,,Lille OSC,OGC Nice,0-0,
-25,Sat,Feb/14,,Toulouse FC,Stade Rennais,2-1,1-0
-25,Sun,Feb/15,14.00,Girondins Bordeaux,AS Saint-Étienne,1-0,1-0
-25,Sun,Feb/15,17.00,FC Metz,EA Guingamp,0-2,0-2
-25,Sun,Feb/15,21.00,FC Lorient,Olympique Lyonnais,1-1,0-0
-25,Tue,Apr/7,19.00,AS Monaco,Montpellier HSC,0-0,
-26,Fri,Feb/20,20.30,OGC Nice,AS Monaco,0-1,0-0
-26,Sat,Feb/21,17.00,Paris Saint-Germain,Toulouse FC,3-1,1-0
-26,Sat,Feb/21,20.00,Stade Rennais,Girondins Bordeaux,1-1,1-0
-26,Sat,Feb/21,,SM Caen,RC Lens,4-1,3-1
-26,Sat,Feb/21,,SC Bastia,Lille OSC,2-1,2-1
-26,Sun,Feb/22,14.00,EA Guingamp,Montpellier HSC,0-2,0-1
-26,Sun,Feb/22,17.00,Stade de Reims,FC Metz,0-0,
-26,Sun,Feb/22,,Olympique Lyonnais,FC Nantes,1-0,0-0
-26,Sun,Feb/22,21.00,AS Saint-Étienne,Olympique Marseille,2-2,0-0
-26,Wed,Mar/4,19.00,Évian Thonon Gaillard,FC Lorient,1-0,1-0
-27,Fri,Feb/27,20.30,Olympique Marseille,SM Caen,2-3,1-0
-27,Sat,Feb/28,16.00,Lille OSC,Olympique Lyonnais,2-1,0-1
-27,Sat,Feb/28,20.00,FC Lorient,SC Bastia,2-0,1-0
-27,Sat,Feb/28,,FC Metz,Évian Thonon Gaillard,1-2,1-1
-27,Sat,Feb/28,,Girondins Bordeaux,Stade de Reims,1-1,1-1
-27,Sat,Feb/28,,RC Lens,Stade Rennais,0-1,0-1
-27,Sat,Feb/28,,Toulouse FC,AS Saint-Étienne,1-1,0-1
-27,Sun,Mar/1,14.00,FC Nantes,EA Guingamp,1-0,0-0
-27,Sun,Mar/1,17.00,Montpellier HSC,OGC Nice,2-1,1-1
-27,Sun,Mar/1,21.00,AS Monaco,Paris Saint-Germain,0-0,
-28,Fri,Mar/6,20.30,Toulouse FC,Olympique Marseille,1-6,0-4
-28,Sat,Mar/7,17.00,Paris Saint-Germain,RC Lens,4-1,1-0
-28,Sat,Mar/7,20.00,SM Caen,Girondins Bordeaux,1-2,0-0
-28,Sat,Mar/7,,Stade Rennais,FC Metz,1-0,1-0
-28,Sat,Mar/7,,Évian Thonon Gaillard,AS Monaco,1-3,0-2
-28,Sat,Mar/7,,Stade de Reims,FC Nantes,3-1,2-0
-28,Sat,Mar/7,,SC Bastia,OGC Nice,2-1,1-1
-28,Sun,Mar/8,14.00,AS Saint-Étienne,FC Lorient,2-0,0-0
-28,Sun,Mar/8,17.00,EA Guingamp,Lille OSC,0-1,0-0
-28,Sun,Mar/8,21.00,Montpellier HSC,Olympique Lyonnais,1-5,1-2
-29,Fri,Mar/13,20.30,AS Monaco,SC Bastia,3-0,2-0
-29,Fri,Mar/13,,OGC Nice,EA Guingamp,1-2,0-0
-29,Sat,Mar/14,17.00,FC Metz,AS Saint-Étienne,2-3,0-2
-29,Sat,Mar/14,20.00,FC Lorient,SM Caen,2-1,1-1
-29,Sat,Mar/14,,FC Nantes,Évian Thonon Gaillard,2-1,1-0
-29,Sat,Mar/14,,Montpellier HSC,Stade de Reims,3-1,1-0
-29,Sat,Mar/14,,RC Lens,Toulouse FC,1-0,0-0
-29,Sun,Mar/15,14.00,Lille OSC,Stade Rennais,3-0,1-0
-29,Sun,Mar/15,17.00,Girondins Bordeaux,Paris Saint-Germain,3-2,1-0
-29,Sun,Mar/15,21.00,Olympique Marseille,Olympique Lyonnais,0-0,
-30,Fri,Mar/20,20.30,Paris Saint-Germain,FC Lorient,3-1,1-0
-30,Sat,Mar/21,16.00,Olympique Lyonnais,OGC Nice,1-2,0-1
-30,Sat,Mar/21,20.00,Toulouse FC,Girondins Bordeaux,2-1,1-1
-30,Sat,Mar/21,,SC Bastia,EA Guingamp,0-0,
-30,Sat,Mar/21,,SM Caen,FC Metz,0-0,
-30,Sat,Mar/21,,Évian Thonon Gaillard,Montpellier HSC,1-0,0-0
-30,Sat,Mar/21,,Stade Rennais,FC Nantes,0-0,
-30,Sun,Mar/22,14.00,AS Saint-Étienne,Lille OSC,2-0,0-0
-30,Sun,Mar/22,17.00,Stade de Reims,AS Monaco,1-3,0-2
-30,Sun,Mar/22,21.00,RC Lens,Olympique Marseille,0-4,0-0
-31,Fri,Apr/3,20.30,AS Monaco,AS Saint-Étienne,1-1,0-0
-31,Sat,Apr/4,17.00,EA Guingamp,Olympique Lyonnais,1-3,0-2
-31,Sat,Apr/4,20.00,Montpellier HSC,SC Bastia,3-1,0-1
-31,Sat,Apr/4,,OGC Nice,Évian Thonon Gaillard,2-2,1-1
-31,Sat,Apr/4,,Lille OSC,Stade de Reims,3-1,1-0
-31,Sat,Apr/4,,FC Lorient,Stade Rennais,0-3,0-2
-31,Sat,Apr/4,,FC Metz,Toulouse FC,3-2,2-1
-31,Sun,Apr/5,14.00,Girondins Bordeaux,RC Lens,2-1,0-0
-31,Sun,Apr/5,17.00,FC Nantes,SM Caen,1-2,1-0
-31,Sun,Apr/5,21.00,Olympique Marseille,Paris Saint-Germain,2-3,2-1
-32,Fri,Apr/10,20.30,SM Caen,AS Monaco,0-3,0-1
-32,Sun,Apr/12,14.00,AS Saint-Étienne,FC Nantes,1-0,1-0
-32,Sun,Apr/12,17.00,Stade Rennais,EA Guingamp,1-0,0-0
-32,Sun,Apr/12,,Évian Thonon Gaillard,Lille OSC,0-1,0-0
-32,Sun,Apr/12,,RC Lens,FC Lorient,0-0,
-32,Sun,Apr/12,,Toulouse FC,Montpellier HSC,1-0,1-0
-32,Sun,Apr/12,,Stade de Reims,OGC Nice,0-1,0-1
-32,Sun,Apr/12,21.00,Girondins Bordeaux,Olympique Marseille,1-0,0-0
-32,Wed,Apr/15,18.30,Olympique Lyonnais,SC Bastia,2-0,0-0
-32,Tue,Apr/28,21.00,Paris Saint-Germain,FC Metz,3-1,2-0
-33,Fri,Apr/17,20.30,FC Nantes,Olympique Marseille,1-0,1-0
-33,Sat,Apr/18,17.00,OGC Nice,Paris Saint-Germain,1-3,1-1
-33,Sat,Apr/18,20.00,EA Guingamp,Évian Thonon Gaillard,1-1,1-0
-33,Sat,Apr/18,,FC Metz,RC Lens,3-1,1-0
-33,Sat,Apr/18,,SC Bastia,Stade de Reims,1-2,0-2
-33,Sat,Apr/18,,AS Monaco,Stade Rennais,1-1,1-0
-33,Sat,Apr/18,,FC Lorient,Toulouse FC,0-1,0-1
-33,Sun,Apr/19,14.00,Lille OSC,Girondins Bordeaux,2-0,1-0
-33,Sun,Apr/19,17.00,Montpellier HSC,SM Caen,1-0,1-0
-33,Sun,Apr/19,21.00,Olympique Lyonnais,AS Saint-Étienne,2-2,1-2
-34,Fri,Apr/24,20.30,Olympique Marseille,FC Lorient,3-5,0-2
-34,Sat,Apr/25,17.00,Paris Saint-Germain,Lille OSC,6-1,4-0
-34,Sat,Apr/25,20.00,Évian Thonon Gaillard,SC Bastia,1-2,1-0
-34,Sat,Apr/25,,SM Caen,EA Guingamp,0-2,0-0
-34,Sat,Apr/25,,Girondins Bordeaux,FC Metz,1-1,0-1
-34,Sat,Apr/25,,Toulouse FC,FC Nantes,1-1,1-0
-34,Sat,Apr/25,,Stade Rennais,OGC Nice,2-1,0-1
-34,Sun,Apr/26,14.00,AS Saint-Étienne,Montpellier HSC,1-0,1-0
-34,Sun,Apr/26,17.00,RC Lens,AS Monaco,0-3,0-2
-34,Sun,Apr/26,21.00,Stade de Reims,Olympique Lyonnais,2-4,1-3
-35,Fri,May/1,20.30,FC Metz,Olympique Marseille,0-2,0-1
-35,Sat,May/2,17.00,Olympique Lyonnais,Évian Thonon Gaillard,2-0,2-0
-35,Sat,May/2,20.00,FC Lorient,Girondins Bordeaux,0-0,
-35,Sat,May/2,,OGC Nice,SM Caen,1-1,1-1
-35,Sat,May/2,,EA Guingamp,Stade de Reims,2-0,0-0
-35,Sat,May/2,,Montpellier HSC,Stade Rennais,0-0,
-35,Sat,May/2,,SC Bastia,AS Saint-Étienne,1-0,0-0
-35,Sun,May/3,14.00,Lille OSC,RC Lens,3-1,1-1
-35,Sun,May/3,17.00,AS Monaco,Toulouse FC,4-1,2-1
-35,Sun,May/3,21.00,FC Nantes,Paris Saint-Germain,0-2,0-2
-36,Fri,May/8,20.30,Paris Saint-Germain,EA Guingamp,6-0,2-0
-36,Sat,May/9,17.00,SM Caen,Olympique Lyonnais,3-0,2-0
-36,Sat,May/9,20.00,Stade Rennais,SC Bastia,0-1,0-0
-36,Sat,May/9,,Toulouse FC,Lille OSC,3-2,1-1
-36,Sat,May/9,,FC Metz,FC Lorient,0-4,0-2
-36,Sat,May/9,,Girondins Bordeaux,FC Nantes,2-1,1-1
-36,Sat,May/9,,Évian Thonon Gaillard,Stade de Reims,2-3,1-1
-36,Sun,May/10,14.00,RC Lens,Montpellier HSC,0-1,0-0
-36,Sun,May/10,17.00,AS Saint-Étienne,OGC Nice,5-0,2-0
-36,Sun,May/10,21.00,Olympique Marseille,AS Monaco,2-1,0-1
-37,Sat,May/16,21.00,Olympique Lyonnais,Girondins Bordeaux,1-1,1-1
-37,Sat,May/16,,SC Bastia,SM Caen,1-1,1-1
-37,Sat,May/16,,OGC Nice,RC Lens,2-1,1-1
-37,Sat,May/16,,FC Nantes,FC Lorient,1-1,1-1
-37,Sat,May/16,,Lille OSC,Olympique Marseille,0-4,0-2
-37,Sat,May/16,,AS Monaco,FC Metz,2-0,1-0
-37,Sat,May/16,,Montpellier HSC,Paris Saint-Germain,1-2,1-2
-37,Sat,May/16,,Stade de Reims,Stade Rennais,1-0,0-0
-37,Sat,May/16,,Évian Thonon Gaillard,AS Saint-Étienne,1-2,1-1
-37,Sat,May/16,,EA Guingamp,Toulouse FC,2-1,1-1
-38,Sat,May/23,21.00,Olympique Marseille,SC Bastia,3-0,2-0
-38,Sat,May/23,,SM Caen,Évian Thonon Gaillard,3-2,0-0
-38,Sat,May/23,,AS Saint-Étienne,EA Guingamp,2-1,1-0
-38,Sat,May/23,,FC Metz,Lille OSC,1-4,0-3
-38,Sat,May/23,,Stade Rennais,Olympique Lyonnais,0-1,0-0
-38,Sat,May/23,,FC Lorient,AS Monaco,0-1,0-1
-38,Sat,May/23,,Girondins Bordeaux,Montpellier HSC,2-1,2-0
-38,Sat,May/23,,RC Lens,FC Nantes,1-0,1-0
-38,Sat,May/23,,Toulouse FC,OGC Nice,2-3,0-2
-38,Sat,May/23,,Paris Saint-Germain,Stade de Reims,3-2,2-0
+Matchday,Day,Date,Home,Away,FullTime,HalfTime
+1,Fri,2014-08-08,Stade de Reims,Paris Saint-Germain,2-2,2-1
+1,Sat,2014-08-09,SC Bastia,Olympique Marseille,3-3,1-2
+1,Sat,2014-08-09,Évian Thonon Gaillard,SM Caen,0-3,0-3
+1,Sat,2014-08-09,EA Guingamp,AS Saint-Étienne,0-2,0-1
+1,Sat,2014-08-09,Lille OSC,FC Metz,0-0,
+1,Sat,2014-08-09,Montpellier HSC,Girondins Bordeaux,0-1,0-1
+1,Sat,2014-08-09,FC Nantes,RC Lens,1-0,0-0
+1,Sat,2014-08-09,OGC Nice,Toulouse FC,3-2,1-2
+1,Sun,2014-08-10,Olympique Lyonnais,Stade Rennais,2-0,0-0
+1,Sun,2014-08-10,AS Monaco,FC Lorient,1-2,0-1
+2,Fri,2014-08-15,SM Caen,Lille OSC,0-1,0-0
+2,Sat,2014-08-16,Paris Saint-Germain,SC Bastia,2-0,1-0
+2,Sat,2014-08-16,RC Lens,EA Guingamp,0-1,0-0
+2,Sat,2014-08-16,FC Lorient,OGC Nice,0-0,
+2,Sat,2014-08-16,FC Metz,FC Nantes,1-1,1-1
+2,Sat,2014-08-16,Stade Rennais,Évian Thonon Gaillard,6-2,3-1
+2,Sat,2014-08-16,Toulouse FC,Olympique Lyonnais,2-1,2-0
+2,Sun,2014-08-17,Olympique Marseille,Montpellier HSC,0-2,0-1
+2,Sun,2014-08-17,AS Saint-Étienne,Stade de Reims,3-1,0-1
+2,Sun,2014-08-17,Girondins Bordeaux,AS Monaco,4-1,0-1
+3,Fri,2014-08-22,Évian Thonon Gaillard,Paris Saint-Germain,0-0,
+3,Sat,2014-08-23,EA Guingamp,Olympique Marseille,0-1,0-0
+3,Sat,2014-08-23,SC Bastia,Toulouse FC,1-0,1-0
+3,Sat,2014-08-23,Lille OSC,FC Lorient,2-0,0-0
+3,Sat,2014-08-23,Montpellier HSC,FC Metz,2-0,1-0
+3,Sat,2014-08-23,OGC Nice,Girondins Bordeaux,1-3,1-1
+3,Sat,2014-08-23,Stade de Reims,SM Caen,0-2,0-0
+3,Sun,2014-08-24,Olympique Lyonnais,RC Lens,0-1,0-1
+3,Sun,2014-08-24,AS Saint-Étienne,Stade Rennais,0-0,
+3,Sun,2014-08-24,FC Nantes,AS Monaco,0-1,0-1
+4,Fri,2014-08-29,Olympique Marseille,OGC Nice,4-0,2-0
+4,Sat,2014-08-30,AS Monaco,Lille OSC,1-1,0-1
+4,Sat,2014-08-30,SM Caen,Stade Rennais,0-1,0-0
+4,Sat,2014-08-30,RC Lens,Stade de Reims,4-2,1-1
+4,Sat,2014-08-30,FC Lorient,EA Guingamp,4-0,0-0
+4,Sat,2014-08-30,FC Nantes,Montpellier HSC,1-0,0-0
+4,Sat,2014-08-30,Toulouse FC,Évian Thonon Gaillard,1-0,0-0
+4,Sun,2014-08-31,Girondins Bordeaux,SC Bastia,1-1,0-1
+4,Sun,2014-08-31,FC Metz,Olympique Lyonnais,2-1,0-0
+4,Sun,2014-08-31,Paris Saint-Germain,AS Saint-Étienne,5-0,2-0
+5,Fri,2014-09-12,Olympique Lyonnais,AS Monaco,2-1,1-1
+5,Sat,2014-09-13,Stade Rennais,Paris Saint-Germain,1-1,0-1
+5,Sat,2014-09-13,SC Bastia,RC Lens,1-1,0-1
+5,Sat,2014-09-13,Montpellier HSC,FC Lorient,1-0,1-0
+5,Sat,2014-09-13,OGC Nice,FC Metz,1-0,0-0
+5,Sat,2014-09-13,Stade de Reims,Toulouse FC,2-0,1-0
+5,Sat,2014-09-13,AS Saint-Étienne,SM Caen,1-0,0-0
+5,Sun,2014-09-14,Lille OSC,FC Nantes,2-0,0-0
+5,Sun,2014-09-14,EA Guingamp,Girondins Bordeaux,2-1,2-0
+5,Sun,2014-09-14,Évian Thonon Gaillard,Olympique Marseille,1-3,0-2
+6,Fri,2014-09-19,Girondins Bordeaux,Évian Thonon Gaillard,2-1,1-0
+6,Sat,2014-09-20,Olympique Marseille,Stade Rennais,3-0,0-0
+6,Sat,2014-09-20,FC Lorient,Stade de Reims,0-1,0-0
+6,Sat,2014-09-20,FC Metz,SC Bastia,3-1,1-1
+6,Sat,2014-09-20,FC Nantes,OGC Nice,2-1,2-0
+6,Sat,2014-09-20,Toulouse FC,SM Caen,3-3,1-1
+6,Sun,2014-09-21,Lille OSC,Montpellier HSC,0-0,
+6,Sun,2014-09-21,RC Lens,AS Saint-Étienne,0-1,0-0
+6,Sun,2014-09-21,AS Monaco,EA Guingamp,1-0,1-0
+6,Sun,2014-09-21,Paris Saint-Germain,Olympique Lyonnais,1-1,1-0
+7,Tue,2014-09-23,Stade de Reims,Olympique Marseille,0-5,0-2
+7,Tue,2014-09-23,Stade Rennais,Toulouse FC,0-3,0-1
+7,Wed,2014-09-24,SC Bastia,FC Nantes,0-0,
+7,Wed,2014-09-24,Évian Thonon Gaillard,RC Lens,2-1,2-0
+7,Wed,2014-09-24,EA Guingamp,FC Metz,0-1,0-1
+7,Wed,2014-09-24,Olympique Lyonnais,FC Lorient,4-0,2-0
+7,Wed,2014-09-24,Montpellier HSC,AS Monaco,0-1,0-0
+7,Wed,2014-09-24,OGC Nice,Lille OSC,1-0,1-0
+7,Wed,2014-09-24,SM Caen,Paris Saint-Germain,0-2,0-1
+7,Thu,2014-09-25,AS Saint-Étienne,Girondins Bordeaux,1-1,1-1
+8,Sat,2014-09-27,AS Monaco,OGC Nice,0-1,0-1
+8,Sat,2014-09-27,Toulouse FC,Paris Saint-Germain,1-1,1-1
+8,Sat,2014-09-27,Lille OSC,SC Bastia,1-0,1-0
+8,Sat,2014-09-27,FC Lorient,Évian Thonon Gaillard,0-2,0-1
+8,Sat,2014-09-27,FC Metz,Stade de Reims,3-0,0-0
+8,Sat,2014-09-27,Montpellier HSC,EA Guingamp,2-1,0-0
+8,Sun,2014-09-28,Girondins Bordeaux,Stade Rennais,2-1,0-0
+8,Sun,2014-09-28,RC Lens,SM Caen,0-0,
+8,Sun,2014-09-28,FC Nantes,Olympique Lyonnais,1-1,0-0
+8,Sun,2014-09-28,Olympique Marseille,AS Saint-Étienne,2-1,2-0
+9,Fri,2014-10-03,Stade de Reims,Girondins Bordeaux,1-0,1-0
+9,Sat,2014-10-04,SM Caen,Olympique Marseille,1-2,0-0
+9,Sat,2014-10-04,SC Bastia,FC Lorient,0-2,0-0
+9,Sat,2014-10-04,Évian Thonon Gaillard,FC Metz,3-0,0-0
+9,Sat,2014-10-04,OGC Nice,Montpellier HSC,1-1,0-0
+9,Sat,2014-10-04,Stade Rennais,RC Lens,2-0,0-0
+9,Sun,2014-10-05,AS Saint-Étienne,Toulouse FC,0-1,0-1
+9,Sun,2014-10-05,EA Guingamp,FC Nantes,0-1,0-1
+9,Sun,2014-10-05,Olympique Lyonnais,Lille OSC,3-0,2-0
+9,Sun,2014-10-05,Paris Saint-Germain,AS Monaco,1-1,0-0
+10,Fri,2014-10-17,RC Lens,Paris Saint-Germain,1-3,1-2
+10,Sat,2014-10-18,FC Lorient,AS Saint-Étienne,0-1,0-0
+10,Sat,2014-10-18,Lille OSC,EA Guingamp,1-2,0-1
+10,Sat,2014-10-18,FC Metz,Stade Rennais,0-0,
+10,Sat,2014-10-18,AS Monaco,Évian Thonon Gaillard,2-0,1-0
+10,Sat,2014-10-18,FC Nantes,Stade de Reims,1-1,1-0
+10,Sat,2014-10-18,OGC Nice,SC Bastia,0-1,0-0
+10,Sun,2014-10-19,Olympique Marseille,Toulouse FC,2-0,2-0
+10,Sun,2014-10-19,Girondins Bordeaux,SM Caen,1-1,1-0
+10,Sun,2014-10-19,Olympique Lyonnais,Montpellier HSC,5-1,2-0
+11,Fri,2014-10-24,Toulouse FC,RC Lens,0-2,0-2
+11,Sat,2014-10-25,Paris Saint-Germain,Girondins Bordeaux,3-0,1-0
+11,Sat,2014-10-25,SC Bastia,AS Monaco,1-3,1-1
+11,Sat,2014-10-25,SM Caen,FC Lorient,2-1,1-1
+11,Sat,2014-10-25,Évian Thonon Gaillard,FC Nantes,0-2,0-1
+11,Sat,2014-10-25,Stade de Reims,Montpellier HSC,1-0,0-0
+11,Sun,2014-10-26,Stade Rennais,Lille OSC,2-0,0-0
+11,Sun,2014-10-26,EA Guingamp,OGC Nice,2-7,1-4
+11,Sun,2014-10-26,AS Saint-Étienne,FC Metz,1-0,0-0
+11,Sun,2014-10-26,Olympique Lyonnais,Olympique Marseille,1-0,0-0
+12,Fri,2014-10-31,AS Monaco,Stade de Reims,1-1,1-0
+12,Sat,2014-11-01,FC Lorient,Paris Saint-Germain,1-2,1-0
+12,Sat,2014-11-01,EA Guingamp,SC Bastia,1-0,1-0
+12,Sat,2014-11-01,Lille OSC,AS Saint-Étienne,1-1,1-0
+12,Sat,2014-11-01,FC Metz,SM Caen,3-2,1-0
+12,Sat,2014-11-01,Montpellier HSC,Évian Thonon Gaillard,2-0,1-0
+12,Sat,2014-11-01,OGC Nice,Olympique Lyonnais,1-3,0-0
+12,Sun,2014-11-02,FC Nantes,Stade Rennais,1-1,1-1
+12,Sun,2014-11-02,Girondins Bordeaux,Toulouse FC,2-1,0-0
+12,Sun,2014-11-02,Olympique Marseille,RC Lens,2-1,1-1
+13,Fri,2014-11-07,Stade Rennais,FC Lorient,1-0,0-0
+13,Sat,2014-11-08,RC Lens,Girondins Bordeaux,1-2,0-2
+13,Sat,2014-11-08,SC Bastia,Montpellier HSC,2-0,2-0
+13,Sat,2014-11-08,SM Caen,FC Nantes,1-2,1-1
+13,Sat,2014-11-08,Évian Thonon Gaillard,OGC Nice,1-0,0-0
+13,Sat,2014-11-08,Toulouse FC,FC Metz,3-0,1-0
+13,Sun,2014-11-09,Olympique Lyonnais,EA Guingamp,3-1,2-1
+13,Sun,2014-11-09,Stade de Reims,Lille OSC,2-0,2-0
+13,Sun,2014-11-09,AS Saint-Étienne,AS Monaco,1-1,0-1
+13,Sun,2014-11-09,Paris Saint-Germain,Olympique Marseille,2-0,1-0
+14,Fri,2014-11-21,FC Metz,Paris Saint-Germain,2-3,0-2
+14,Sat,2014-11-22,SC Bastia,Olympique Lyonnais,0-0,
+14,Sat,2014-11-22,EA Guingamp,Stade Rennais,0-1,0-1
+14,Sat,2014-11-22,FC Lorient,RC Lens,1-0,1-0
+14,Sat,2014-11-22,AS Monaco,SM Caen,2-2,1-0
+14,Sat,2014-11-22,OGC Nice,Stade de Reims,0-0,
+14,Sun,2014-11-23,FC Nantes,AS Saint-Étienne,0-0,
+14,Sun,2014-11-23,Montpellier HSC,Toulouse FC,2-0,1-0
+14,Sun,2014-11-23,Olympique Marseille,Girondins Bordeaux,3-1,0-0
+14,Mon,15-01-07,Lille OSC,Évian Thonon Gaillard,1-0,0-0
+15,Fri,2014-11-28,Olympique Marseille,FC Nantes,2-0,2-0
+15,Sat,2014-11-29,Paris Saint-Germain,OGC Nice,1-0,1-0
+15,Sat,2014-11-29,SM Caen,Montpellier HSC,1-1,1-1
+15,Sat,2014-11-29,RC Lens,FC Metz,2-0,0-0
+15,Sat,2014-11-29,Stade de Reims,SC Bastia,2-1,1-1
+15,Sat,2014-11-29,Stade Rennais,AS Monaco,2-0,2-0
+15,Sat,2014-11-29,Toulouse FC,FC Lorient,2-3,1-0
+15,Sun,2014-11-30,Girondins Bordeaux,Lille OSC,1-0,0-0
+15,Sun,2014-11-30,Évian Thonon Gaillard,EA Guingamp,2-0,0-0
+15,Sun,2014-11-30,AS Saint-Étienne,Olympique Lyonnais,3-0,2-0
+16,Tue,2014-12-02,FC Lorient,Olympique Marseille,1-1,1-1
+16,Tue,2014-12-02,FC Nantes,Toulouse FC,1-2,0-1
+16,Tue,2014-12-02,AS Monaco,RC Lens,2-0,0-0
+16,Wed,2014-12-03,SC Bastia,Évian Thonon Gaillard,1-2,1-0
+16,Wed,2014-12-03,EA Guingamp,SM Caen,5-1,2-1
+16,Wed,2014-12-03,FC Metz,Girondins Bordeaux,0-0,
+16,Wed,2014-12-03,Montpellier HSC,AS Saint-Étienne,0-2,0-2
+16,Wed,2014-12-03,OGC Nice,Stade Rennais,1-2,0-1
+16,Wed,2014-12-03,Lille OSC,Paris Saint-Germain,1-1,1-1
+16,Thu,2014-12-04,Olympique Lyonnais,Stade de Reims,2-1,1-1
+17,Fri,2014-12-05,Toulouse FC,AS Monaco,0-2,0-1
+17,Sat,2014-12-06,Paris Saint-Germain,FC Nantes,2-1,1-1
+17,Sat,2014-12-06,Girondins Bordeaux,FC Lorient,3-2,1-1
+17,Sat,2014-12-06,SM Caen,OGC Nice,2-3,2-1
+17,Sat,2014-12-06,Stade Rennais,Montpellier HSC,0-4,0-1
+17,Sat,2014-12-06,AS Saint-Étienne,SC Bastia,1-0,0-0
+17,Sun,2014-12-07,Évian Thonon Gaillard,Olympique Lyonnais,2-3,1-0
+17,Sun,2014-12-07,RC Lens,Lille OSC,1-1,0-0
+17,Sun,2014-12-07,Stade de Reims,EA Guingamp,2-3,1-1
+17,Sun,2014-12-07,Olympique Marseille,FC Metz,3-1,1-0
+18,Fri,2014-12-12,Olympique Lyonnais,SM Caen,3-0,1-0
+18,Sat,2014-12-13,FC Nantes,Girondins Bordeaux,2-1,1-1
+18,Sat,2014-12-13,SC Bastia,Stade Rennais,2-0,1-0
+18,Sat,2014-12-13,FC Lorient,FC Metz,3-1,3-0
+18,Sat,2014-12-13,Montpellier HSC,RC Lens,3-3,2-2
+18,Sat,2014-12-13,Stade de Reims,Évian Thonon Gaillard,3-2,1-0
+18,Sun,2014-12-14,OGC Nice,AS Saint-Étienne,0-0,
+18,Sun,2014-12-14,EA Guingamp,Paris Saint-Germain,1-0,1-0
+18,Sun,2014-12-14,Lille OSC,Toulouse FC,3-0,1-0
+18,Sun,2014-12-14,AS Monaco,Olympique Marseille,1-0,0-0
+19,Fri,2014-12-19,RC Lens,OGC Nice,2-0,1-0
+19,Sat,2014-12-20,Paris Saint-Germain,Montpellier HSC,0-0,
+19,Sat,2014-12-20,SM Caen,SC Bastia,1-1,0-1
+19,Sat,2014-12-20,FC Lorient,FC Nantes,1-2,0-1
+19,Sat,2014-12-20,FC Metz,AS Monaco,0-1,0-0
+19,Sat,2014-12-20,Stade Rennais,Stade de Reims,1-3,1-0
+19,Sat,2014-12-20,Toulouse FC,EA Guingamp,1-1,1-1
+19,Sun,2014-12-21,Olympique Marseille,Lille OSC,2-1,1-0
+19,Sun,2014-12-21,AS Saint-Étienne,Évian Thonon Gaillard,3-0,2-0
+19,Sun,2014-12-21,Girondins Bordeaux,Olympique Lyonnais,0-5,0-1
+20,Thu,15-01-09,Montpellier HSC,Olympique Marseille,2-1,1-0
+20,Fri,15-01-10,SC Bastia,Paris Saint-Germain,4-2,2-2
+20,Fri,15-01-10,Lille OSC,SM Caen,1-0,1-0
+20,Fri,15-01-10,EA Guingamp,RC Lens,2-0,1-0
+20,Fri,15-01-10,OGC Nice,FC Lorient,3-1,1-1
+20,Fri,15-01-10,Évian Thonon Gaillard,Stade Rennais,1-1,0-0
+20,Fri,15-01-10,Stade de Reims,AS Saint-Étienne,1-2,0-1
+20,Sat,15-01-11,FC Nantes,FC Metz,0-0,
+20,Sat,15-01-11,Olympique Lyonnais,Toulouse FC,3-0,2-0
+20,Sat,15-01-11,AS Monaco,Girondins Bordeaux,0-0,
+21,Fri,15-01-16,Girondins Bordeaux,OGC Nice,1-2,1-0
+21,Sun,15-01-17,RC Lens,Olympique Lyonnais,0-2,0-2
+21,Sun,15-01-17,Toulouse FC,SC Bastia,1-1,0-0
+21,Sun,15-01-17,FC Lorient,Lille OSC,1-0,0-0
+21,Sun,15-01-17,FC Metz,Montpellier HSC,2-3,2-1
+21,Sun,15-01-17,AS Monaco,FC Nantes,1-0,0-0
+21,Sun,15-01-17,SM Caen,Stade de Reims,4-1,3-1
+21,Mon,15-01-18,Paris Saint-Germain,Évian Thonon Gaillard,4-2,2-1
+21,Mon,15-01-18,Stade Rennais,AS Saint-Étienne,0-0,
+21,Mon,15-01-18,Olympique Marseille,EA Guingamp,2-1,0-0
+22,Sun,15-01-23,OGC Nice,Olympique Marseille,2-1,0-0
+22,Mon,15-01-24,Lille OSC,AS Monaco,0-1,0-0
+22,Mon,15-01-24,SC Bastia,Girondins Bordeaux,0-0,
+22,Mon,15-01-24,EA Guingamp,FC Lorient,3-2,1-0
+22,Mon,15-01-24,Montpellier HSC,FC Nantes,4-0,1-0
+22,Wed,15-01-25,Olympique Lyonnais,FC Metz,2-0,1-0
+22,Wed,15-01-25,Évian Thonon Gaillard,Toulouse FC,1-0,1-0
+22,Wed,15-01-25,Stade Rennais,SM Caen,1-4,1-1
+22,Wed,15-01-25,Stade de Reims,RC Lens,0-0,
+22,Wed,15-01-25,AS Saint-Étienne,Paris Saint-Germain,0-1,0-0
+23,Tue,15-01-30,Paris Saint-Germain,Stade Rennais,1-0,1-0
+23,Wed,15-01-31,Olympique Marseille,Évian Thonon Gaillard,1-0,0-0
+23,Wed,15-01-31,RC Lens,SC Bastia,1-1,0-0
+23,Wed,15-01-31,FC Nantes,Lille OSC,1-1,0-1
+23,Wed,15-01-31,FC Lorient,Montpellier HSC,0-0,
+23,Wed,15-01-31,FC Metz,OGC Nice,0-0,
+23,Wed,15-01-31,Toulouse FC,Stade de Reims,1-0,1-0
+23,Thu,15-02-01,SM Caen,AS Saint-Étienne,1-0,1-0
+23,Thu,15-02-01,Girondins Bordeaux,EA Guingamp,1-1,0-1
+23,Thu,15-02-01,AS Monaco,Olympique Lyonnais,0-0,
+24,Wed,15-02-06,AS Saint-Étienne,RC Lens,3-3,1-0
+24,Thu,15-02-07,Stade Rennais,Olympique Marseille,1-1,1-0
+24,Thu,15-02-07,Évian Thonon Gaillard,Girondins Bordeaux,0-1,0-1
+24,Thu,15-02-07,Montpellier HSC,Lille OSC,1-2,0-1
+24,Thu,15-02-07,Stade de Reims,FC Lorient,1-3,1-0
+24,Thu,15-02-07,SC Bastia,FC Metz,2-0,0-0
+24,Thu,15-02-07,SM Caen,Toulouse FC,2-0,1-0
+24,Fri,15-02-08,EA Guingamp,AS Monaco,1-0,0-0
+24,Fri,15-02-08,OGC Nice,FC Nantes,0-0,
+24,Fri,15-02-08,Olympique Lyonnais,Paris Saint-Germain,1-1,1-0
+25,Fri,15-02-13,Olympique Marseille,Stade de Reims,2-2,0-1
+25,Sat,15-02-14,Paris Saint-Germain,SM Caen,2-2,2-0
+25,Sat,15-02-14,FC Nantes,SC Bastia,0-2,0-1
+25,Sat,15-02-14,RC Lens,Évian Thonon Gaillard,0-2,0-2
+25,Sat,15-02-14,Lille OSC,OGC Nice,0-0,
+25,Sat,15-02-14,Toulouse FC,Stade Rennais,2-1,1-0
+25,Sun,15-02-15,Girondins Bordeaux,AS Saint-Étienne,1-0,1-0
+25,Sun,15-02-15,FC Metz,EA Guingamp,0-2,0-2
+25,Sun,15-02-15,FC Lorient,Olympique Lyonnais,1-1,0-0
+25,Sun,15-04-07,AS Monaco,Montpellier HSC,0-0,
+26,Sat,15-02-20,OGC Nice,AS Monaco,0-1,0-0
+26,Mon,15-02-21,Paris Saint-Germain,Toulouse FC,3-1,1-0
+26,Mon,15-02-21,Stade Rennais,Girondins Bordeaux,1-1,1-0
+26,Mon,15-02-21,SM Caen,RC Lens,4-1,3-1
+26,Mon,15-02-21,SC Bastia,Lille OSC,2-1,2-1
+26,Tue,15-02-22,EA Guingamp,Montpellier HSC,0-2,0-1
+26,Tue,15-02-22,Stade de Reims,FC Metz,0-0,
+26,Tue,15-02-22,Olympique Lyonnais,FC Nantes,1-0,0-0
+26,Tue,15-02-22,AS Saint-Étienne,Olympique Marseille,2-2,0-0
+26,Mon,15-03-04,Évian Thonon Gaillard,FC Lorient,1-0,1-0
+27,Mon,15-02-27,Olympique Marseille,SM Caen,2-3,1-0
+27,Tue,15-02-28,Lille OSC,Olympique Lyonnais,2-1,0-1
+27,Tue,15-02-28,FC Lorient,SC Bastia,2-0,1-0
+27,Tue,15-02-28,FC Metz,Évian Thonon Gaillard,1-2,1-1
+27,Tue,15-02-28,Girondins Bordeaux,Stade de Reims,1-1,1-1
+27,Tue,15-02-28,RC Lens,Stade Rennais,0-1,0-1
+27,Tue,15-02-28,Toulouse FC,AS Saint-Étienne,1-1,0-1
+27,Thu,15-03-01,FC Nantes,EA Guingamp,1-0,0-0
+27,Thu,15-03-01,Montpellier HSC,OGC Nice,2-1,1-1
+27,Thu,15-03-01,AS Monaco,Paris Saint-Germain,0-0,
+28,Wed,15-03-06,Toulouse FC,Olympique Marseille,1-6,0-4
+28,Thu,15-03-07,Paris Saint-Germain,RC Lens,4-1,1-0
+28,Thu,15-03-07,SM Caen,Girondins Bordeaux,1-2,0-0
+28,Thu,15-03-07,Stade Rennais,FC Metz,1-0,1-0
+28,Thu,15-03-07,Évian Thonon Gaillard,AS Monaco,1-3,0-2
+28,Thu,15-03-07,Stade de Reims,FC Nantes,3-1,2-0
+28,Thu,15-03-07,SC Bastia,OGC Nice,2-1,1-1
+28,Sat,15-03-08,AS Saint-Étienne,FC Lorient,2-0,0-0
+28,Sat,15-03-08,EA Guingamp,Lille OSC,0-1,0-0
+28,Sat,15-03-08,Montpellier HSC,Olympique Lyonnais,1-5,1-2
+29,Fri,15-03-13,AS Monaco,SC Bastia,3-0,2-0
+29,Fri,15-03-13,OGC Nice,EA Guingamp,1-2,0-0
+29,Sat,15-03-14,FC Metz,AS Saint-Étienne,2-3,0-2
+29,Sat,15-03-14,FC Lorient,SM Caen,2-1,1-1
+29,Sat,15-03-14,FC Nantes,Évian Thonon Gaillard,2-1,1-0
+29,Sat,15-03-14,Montpellier HSC,Stade de Reims,3-1,1-0
+29,Sat,15-03-14,RC Lens,Toulouse FC,1-0,0-0
+29,Sun,15-03-15,Lille OSC,Stade Rennais,3-0,1-0
+29,Sun,15-03-15,Girondins Bordeaux,Paris Saint-Germain,3-2,1-0
+29,Sun,15-03-15,Olympique Marseille,Olympique Lyonnais,0-0,
+30,Sun,15-03-20,Paris Saint-Germain,FC Lorient,3-1,1-0
+30,Mon,15-03-21,Olympique Lyonnais,OGC Nice,1-2,0-1
+30,Mon,15-03-21,Toulouse FC,Girondins Bordeaux,2-1,1-1
+30,Mon,15-03-21,SC Bastia,EA Guingamp,0-0,
+30,Mon,15-03-21,SM Caen,FC Metz,0-0,
+30,Mon,15-03-21,Évian Thonon Gaillard,Montpellier HSC,1-0,0-0
+30,Mon,15-03-21,Stade Rennais,FC Nantes,0-0,
+30,Tue,15-03-22,AS Saint-Étienne,Lille OSC,2-0,0-0
+30,Tue,15-03-22,Stade de Reims,AS Monaco,1-3,0-2
+30,Tue,15-03-22,RC Lens,Olympique Marseille,0-4,0-0
+31,Tue,15-04-03,AS Monaco,AS Saint-Étienne,1-1,0-0
+31,Thu,15-04-04,EA Guingamp,Olympique Lyonnais,1-3,0-2
+31,Thu,15-04-04,Montpellier HSC,SC Bastia,3-1,0-1
+31,Thu,15-04-04,OGC Nice,Évian Thonon Gaillard,2-2,1-1
+31,Thu,15-04-04,Lille OSC,Stade de Reims,3-1,1-0
+31,Thu,15-04-04,FC Lorient,Stade Rennais,0-3,0-2
+31,Thu,15-04-04,FC Metz,Toulouse FC,3-2,2-1
+31,Fri,15-04-05,Girondins Bordeaux,RC Lens,2-1,0-0
+31,Fri,15-04-05,FC Nantes,SM Caen,1-2,1-0
+31,Fri,15-04-05,Olympique Marseille,Paris Saint-Germain,2-3,2-1
+32,Thu,15-04-10,SM Caen,AS Monaco,0-3,0-1
+32,Sun,15-04-12,AS Saint-Étienne,FC Nantes,1-0,1-0
+32,Sun,15-04-12,Stade Rennais,EA Guingamp,1-0,0-0
+32,Sun,15-04-12,Évian Thonon Gaillard,Lille OSC,0-1,0-0
+32,Sun,15-04-12,RC Lens,FC Lorient,0-0,
+32,Sun,15-04-12,Toulouse FC,Montpellier HSC,1-0,1-0
+32,Sun,15-04-12,Stade de Reims,OGC Nice,0-1,0-1
+32,Sun,15-04-12,Girondins Bordeaux,Olympique Marseille,1-0,0-0
+32,Wed,15-04-15,Olympique Lyonnais,SC Bastia,2-0,0-0
+32,Sat,15-04-28,Paris Saint-Germain,FC Metz,3-1,2-0
+33,Sat,15-04-17,FC Nantes,Olympique Marseille,1-0,1-0
+33,Sun,15-04-18,OGC Nice,Paris Saint-Germain,1-3,1-1
+33,Sun,15-04-18,EA Guingamp,Évian Thonon Gaillard,1-1,1-0
+33,Sun,15-04-18,FC Metz,RC Lens,3-1,1-0
+33,Sun,15-04-18,SC Bastia,Stade de Reims,1-2,0-2
+33,Sun,15-04-18,AS Monaco,Stade Rennais,1-1,1-0
+33,Sun,15-04-18,FC Lorient,Toulouse FC,0-1,0-1
+33,Mon,15-04-19,Lille OSC,Girondins Bordeaux,2-0,1-0
+33,Mon,15-04-19,Montpellier HSC,SM Caen,1-0,1-0
+33,Mon,15-04-19,Olympique Lyonnais,AS Saint-Étienne,2-2,1-2
+34,Mon,15-04-24,Olympique Marseille,FC Lorient,3-5,0-2
+34,Tue,15-04-25,Paris Saint-Germain,Lille OSC,6-1,4-0
+34,Tue,15-04-25,Évian Thonon Gaillard,SC Bastia,1-2,1-0
+34,Tue,15-04-25,SM Caen,EA Guingamp,0-2,0-0
+34,Tue,15-04-25,Girondins Bordeaux,FC Metz,1-1,0-1
+34,Tue,15-04-25,Toulouse FC,FC Nantes,1-1,1-0
+34,Tue,15-04-25,Stade Rennais,OGC Nice,2-1,0-1
+34,Wed,15-04-26,AS Saint-Étienne,Montpellier HSC,1-0,1-0
+34,Wed,15-04-26,RC Lens,AS Monaco,0-3,0-2
+34,Wed,15-04-26,Stade de Reims,Olympique Lyonnais,2-4,1-3
+35,Tue,15-05-01,FC Metz,Olympique Marseille,0-2,0-1
+35,Wed,15-05-02,Olympique Lyonnais,Évian Thonon Gaillard,2-0,2-0
+35,Wed,15-05-02,FC Lorient,Girondins Bordeaux,0-0,
+35,Wed,15-05-02,OGC Nice,SM Caen,1-1,1-1
+35,Wed,15-05-02,EA Guingamp,Stade de Reims,2-0,0-0
+35,Wed,15-05-02,Montpellier HSC,Stade Rennais,0-0,
+35,Wed,15-05-02,SC Bastia,AS Saint-Étienne,1-0,0-0
+35,Thu,15-05-03,Lille OSC,RC Lens,3-1,1-1
+35,Thu,15-05-03,AS Monaco,Toulouse FC,4-1,2-1
+35,Thu,15-05-03,FC Nantes,Paris Saint-Germain,0-2,0-2
+36,Thu,15-05-08,Paris Saint-Germain,EA Guingamp,6-0,2-0
+36,Fri,15-05-09,SM Caen,Olympique Lyonnais,3-0,2-0
+36,Fri,15-05-09,Stade Rennais,SC Bastia,0-1,0-0
+36,Fri,15-05-09,Toulouse FC,Lille OSC,3-2,1-1
+36,Fri,15-05-09,FC Metz,FC Lorient,0-4,0-2
+36,Fri,15-05-09,Girondins Bordeaux,FC Nantes,2-1,1-1
+36,Fri,15-05-09,Évian Thonon Gaillard,Stade de Reims,2-3,1-1
+36,Sat,15-05-10,RC Lens,Montpellier HSC,0-1,0-0
+36,Sat,15-05-10,AS Saint-Étienne,OGC Nice,5-0,2-0
+36,Sat,15-05-10,Olympique Marseille,AS Monaco,2-1,0-1
+37,Sun,15-05-16,Olympique Lyonnais,Girondins Bordeaux,1-1,1-1
+37,Sun,15-05-16,SC Bastia,SM Caen,1-1,1-1
+37,Sun,15-05-16,OGC Nice,RC Lens,2-1,1-1
+37,Sun,15-05-16,FC Nantes,FC Lorient,1-1,1-1
+37,Sun,15-05-16,Lille OSC,Olympique Marseille,0-4,0-2
+37,Sun,15-05-16,AS Monaco,FC Metz,2-0,1-0
+37,Sun,15-05-16,Montpellier HSC,Paris Saint-Germain,1-2,1-2
+37,Sun,15-05-16,Stade de Reims,Stade Rennais,1-0,0-0
+37,Sun,15-05-16,Évian Thonon Gaillard,AS Saint-Étienne,1-2,1-1
+37,Sun,15-05-16,EA Guingamp,Toulouse FC,2-1,1-1
+38,Mon,15-05-23,SM Caen,Évian Thonon Gaillard,3-2,0-0
+38,Mon,15-05-23,AS Saint-Étienne,EA Guingamp,2-1,1-0
+38,Mon,15-05-23,FC Metz,Lille OSC,1-4,0-3
+38,Mon,15-05-23,Stade Rennais,Olympique Lyonnais,0-1,0-0
+38,Mon,15-05-23,FC Lorient,AS Monaco,0-1,0-1
+38,Mon,15-05-23,Girondins Bordeaux,Montpellier HSC,2-1,2-0
+38,Mon,15-05-23,RC Lens,FC Nantes,1-0,1-0
+38,Mon,15-05-23,Toulouse FC,OGC Nice,2-3,0-2
+38,Mon,15-05-23,Paris Saint-Germain,Stade de Reims,3-2,2-0
