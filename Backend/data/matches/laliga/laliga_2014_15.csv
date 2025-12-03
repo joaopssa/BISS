@@ -1,0 +1,381 @@
+Matchday,Date,Home,Away,FullTime,HalfTime
+1,2014-08-23,Málaga CF,Athletic Club,1-0,1-0
+1,2014-08-23,Sevilla FC,Valencia CF,1-1,1-0
+1,2014-08-23,Granada CF,Deportivo La Coruña,2-1,0-1
+1,2014-08-23,UD Almería,Espanyol Barcelona,1-1,0-0
+1,2014-08-24,SD Eibar,Real Sociedad,1-0,1-0
+1,2014-08-24,RC Celta,Getafe CF,3-1,1-0
+1,2014-08-24,FC Barcelona,Elche CF,3-0,1-0
+1,2014-08-24,Levante UD,Villarreal CF,0-2,0-0
+1,2014-08-25,Real Madrid,Córdoba CF,2-0,1-0
+1,2014-08-25,Rayo Vallecano,Atlético Madrid,0-0,
+2,2014-08-29,Getafe CF,UD Almería,1-0,1-0
+2,2014-08-29,Valencia CF,Málaga CF,3-0,2-0
+2,2014-08-30,Córdoba CF,RC Celta,1-1,0-0
+2,2014-08-30,Athletic Club,Levante UD,3-0,1-0
+2,2014-08-30,Atlético Madrid,SD Eibar,2-1,2-1
+2,2014-08-30,Espanyol Barcelona,Sevilla FC,1-2,0-1
+2,2014-08-31,Villarreal CF,FC Barcelona,0-1,0-0
+2,2014-08-31,Real Sociedad,Real Madrid,4-2,2-2
+2,2014-08-31,Deportivo La Coruña,Rayo Vallecano,2-2,1-1
+2,2014-08-31,Elche CF,Granada CF,1-1,0-0
+3,2014-09-12,UD Almería,Córdoba CF,1-1,1-1
+3,2014-09-13,FC Barcelona,Athletic Club,2-0,0-0
+3,2014-09-13,Málaga CF,Levante UD,0-0,
+3,2014-09-13,Real Madrid,Atlético Madrid,1-2,1-1
+3,2014-09-13,RC Celta,Real Sociedad,2-2,1-0
+3,2014-09-14,Rayo Vallecano,Elche CF,2-3,1-1
+3,2014-09-14,Valencia CF,Espanyol Barcelona,3-1,1-0
+3,2014-09-14,Sevilla FC,Getafe CF,2-0,1-0
+3,2014-09-14,Granada CF,Villarreal CF,0-0,
+3,2014-09-15,SD Eibar,Deportivo La Coruña,0-1,0-1
+4,2014-09-19,Elche CF,SD Eibar,0-2,0-2
+4,2014-09-20,Deportivo La Coruña,Real Madrid,2-8,0-3
+4,2014-09-20,Athletic Club,Granada CF,0-1,0-1
+4,2014-09-20,Atlético Madrid,RC Celta,2-2,2-1
+4,2014-09-20,Espanyol Barcelona,Málaga CF,2-2,1-0
+4,2014-09-21,Real Sociedad,UD Almería,1-2,0-1
+4,2014-09-21,Villarreal CF,Rayo Vallecano,4-2,1-2
+4,2014-09-21,Córdoba CF,Sevilla FC,1-3,0-1
+4,2014-09-21,Levante UD,FC Barcelona,0-5,0-2
+4,2014-09-22,Getafe CF,Valencia CF,0-3,0-2
+5,2014-09-23,Real Madrid,Elche CF,5-1,3-1
+5,2014-09-23,RC Celta,Deportivo La Coruña,2-1,1-0
+5,2014-09-24,UD Almería,Atlético Madrid,0-1,0-0
+5,2014-09-24,SD Eibar,Villarreal CF,1-1,1-0
+5,2014-09-24,Rayo Vallecano,Athletic Club,2-1,1-1
+5,2014-09-24,Sevilla FC,Real Sociedad,1-0,1-0
+5,2014-09-24,Granada CF,Levante UD,0-1,0-0
+5,2014-09-24,Málaga CF,FC Barcelona,0-0,
+5,2014-09-25,Espanyol Barcelona,Getafe CF,2-0,0-0
+5,2014-09-25,Valencia CF,Córdoba CF,3-0,2-0
+6,2014-09-26,Elche CF,RC Celta,0-1,0-0
+6,2014-09-27,Villarreal CF,Real Madrid,0-2,0-2
+6,2014-09-27,FC Barcelona,Granada CF,6-0,3-0
+6,2014-09-27,Atlético Madrid,Sevilla FC,4-0,2-0
+6,2014-09-27,Athletic Club,SD Eibar,0-0,
+6,2014-09-27,Levante UD,Rayo Vallecano,0-2,0-2
+6,2014-09-28,Getafe CF,Málaga CF,1-0,1-0
+6,2014-09-28,Deportivo La Coruña,UD Almería,0-1,0-0
+6,2014-09-28,Real Sociedad,Valencia CF,1-1,1-1
+6,2014-09-28,Córdoba CF,Espanyol Barcelona,0-0,
+7,2014-10-03,Getafe CF,Córdoba CF,1-1,0-0
+7,2014-10-04,Valencia CF,Atlético Madrid,3-1,3-1
+7,2014-10-04,Rayo Vallecano,FC Barcelona,0-2,0-2
+7,2014-10-04,SD Eibar,Levante UD,3-3,0-2
+7,2014-10-04,UD Almería,Elche CF,2-2,1-1
+7,2014-10-04,Málaga CF,Granada CF,2-1,0-1
+7,2014-10-05,Sevilla FC,Deportivo La Coruña,4-1,2-1
+7,2014-10-05,RC Celta,Villarreal CF,1-3,1-2
+7,2014-10-05,Espanyol Barcelona,Real Sociedad,2-0,1-0
+7,2014-10-05,Real Madrid,Athletic Club,5-0,2-0
+8,2014-10-17,Granada CF,Rayo Vallecano,0-1,0-0
+8,2014-10-18,Levante UD,Real Madrid,0-5,0-2
+8,2014-10-18,Athletic Club,RC Celta,1-1,1-0
+8,2014-10-18,FC Barcelona,SD Eibar,3-0,0-0
+8,2014-10-18,Córdoba CF,Málaga CF,1-2,0-2
+8,2014-10-19,Atlético Madrid,Espanyol Barcelona,2-0,1-0
+8,2014-10-19,Deportivo La Coruña,Valencia CF,3-0,2-0
+8,2014-10-19,Elche CF,Sevilla FC,0-2,0-0
+8,2014-10-19,Villarreal CF,UD Almería,2-0,1-0
+8,2014-10-20,Real Sociedad,Getafe CF,1-2,0-0
+9,2014-10-24,RC Celta,Levante UD,3-0,1-0
+9,2014-10-25,UD Almería,Athletic Club,0-1,0-0
+9,2014-10-25,Real Madrid,FC Barcelona,3-1,1-1
+9,2014-10-25,Valencia CF,Elche CF,3-1,2-0
+9,2014-10-25,Córdoba CF,Real Sociedad,1-1,0-1
+9,2014-10-25,SD Eibar,Granada CF,1-1,1-1
+9,2014-10-26,Málaga CF,Rayo Vallecano,4-0,3-0
+9,2014-10-26,Espanyol Barcelona,Deportivo La Coruña,0-0,
+9,2014-10-26,Sevilla FC,Villarreal CF,2-1,0-0
+9,2014-10-26,Getafe CF,Atlético Madrid,0-1,0-1
+10,2014-10-31,Deportivo La Coruña,Getafe CF,1-2,0-1
+10,2014-11-01,Granada CF,Real Madrid,0-4,0-2
+10,2014-11-01,Atlético Madrid,Córdoba CF,4-2,1-0
+10,2014-11-01,FC Barcelona,RC Celta,0-1,0-0
+10,2014-11-01,Real Sociedad,Málaga CF,0-1,0-0
+10,2014-11-02,Athletic Club,Sevilla FC,1-0,1-0
+10,2014-11-02,Villarreal CF,Valencia CF,1-3,0-1
+10,2014-11-02,Levante UD,UD Almería,2-1,1-0
+10,2014-11-02,Elche CF,Espanyol Barcelona,2-1,1-0
+10,2014-11-03,Rayo Vallecano,SD Eibar,2-3,0-1
+11,2014-11-07,Córdoba CF,Deportivo La Coruña,0-0,
+11,2014-11-08,UD Almería,FC Barcelona,1-2,1-0
+11,2014-11-08,Getafe CF,Elche CF,0-0,
+11,2014-11-08,Real Madrid,Rayo Vallecano,5-1,2-1
+11,2014-11-08,RC Celta,Granada CF,0-0,
+11,2014-11-08,Málaga CF,SD Eibar,2-1,0-1
+11,2014-11-09,Sevilla FC,Levante UD,1-1,1-0
+11,2014-11-09,Espanyol Barcelona,Villarreal CF,1-1,0-1
+11,2014-11-09,Valencia CF,Athletic Club,0-0,
+11,2014-11-09,Real Sociedad,Atlético Madrid,2-1,1-1
+12,2014-11-21,Athletic Club,Espanyol Barcelona,3-1,2-0
+12,2014-11-22,Atlético Madrid,Málaga CF,3-1,2-0
+12,2014-11-22,SD Eibar,Real Madrid,0-4,0-2
+12,2014-11-22,FC Barcelona,Sevilla FC,5-1,1-0
+12,2014-11-22,Deportivo La Coruña,Real Sociedad,0-0,
+12,2014-11-23,Rayo Vallecano,RC Celta,1-0,1-0
+12,2014-11-23,Levante UD,Valencia CF,2-1,0-0
+12,2014-11-23,Elche CF,Córdoba CF,2-2,0-1
+12,2014-11-23,Villarreal CF,Getafe CF,2-1,2-0
+12,2014-11-24,Granada CF,UD Almería,0-0,
+13,2014-11-28,Real Sociedad,Elche CF,3-0,2-0
+13,2014-11-29,Getafe CF,Athletic Club,1-2,0-1
+13,2014-11-29,Espanyol Barcelona,Levante UD,2-1,2-1
+13,2014-11-29,Málaga CF,Real Madrid,1-2,0-1
+13,2014-11-29,RC Celta,SD Eibar,0-1,0-1
+13,2014-11-30,Atlético Madrid,Deportivo La Coruña,2-0,1-0
+13,2014-11-30,Sevilla FC,Granada CF,5-1,1-1
+13,2014-11-30,Córdoba CF,Villarreal CF,0-2,0-1
+13,2014-11-30,Valencia CF,FC Barcelona,0-1,0-0
+13,2014-12-01,UD Almería,Rayo Vallecano,0-1,0-0
+14,2014-12-06,Elche CF,Atlético Madrid,0-2,0-1
+14,2014-12-06,Athletic Club,Córdoba CF,0-1,0-1
+14,2014-12-06,Real Madrid,RC Celta,3-0,1-0
+14,2014-12-06,Deportivo La Coruña,Málaga CF,0-1,0-1
+14,2014-12-07,Rayo Vallecano,Sevilla FC,0-1,0-1
+14,2014-12-07,FC Barcelona,Espanyol Barcelona,5-1,1-1
+14,2014-12-07,Villarreal CF,Real Sociedad,4-0,0-0
+14,2014-12-07,Granada CF,Valencia CF,1-1,0-0
+14,2014-12-08,SD Eibar,UD Almería,5-2,2-1
+14,2014-12-08,Levante UD,Getafe CF,1-1,0-0
+15,2014-12-12,UD Almería,Real Madrid,1-4,1-2
+15,2014-12-13,Getafe CF,FC Barcelona,0-0,
+15,2014-12-13,Valencia CF,Rayo Vallecano,3-0,3-0
+15,2014-12-13,Córdoba CF,Levante UD,0-0,
+15,2014-12-13,Málaga CF,RC Celta,1-0,1-0
+15,2014-12-14,Espanyol Barcelona,Granada CF,2-1,1-0
+15,2014-12-14,Sevilla FC,SD Eibar,0-0,
+15,2014-12-14,Atlético Madrid,Villarreal CF,0-1,0-0
+15,2014-12-14,Real Sociedad,Athletic Club,1-1,1-0
+15,2014-12-15,Deportivo La Coruña,Elche CF,1-0,1-0
+16,2014-12-19,RC Celta,UD Almería,0-1,0-1
+16,2014-12-20,FC Barcelona,Córdoba CF,5-0,1-0
+16,2014-12-20,Levante UD,Real Sociedad,1-1,0-0
+16,2014-12-20,SD Eibar,Valencia CF,0-1,0-1
+16,2014-12-20,Rayo Vallecano,Espanyol Barcelona,1-3,1-1
+16,2014-12-21,Villarreal CF,Deportivo La Coruña,3-0,1-0
+16,2014-12-21,Granada CF,Getafe CF,1-1,1-0
+16,2014-12-21,Elche CF,Málaga CF,1-2,1-0
+16,2014-12-21,Athletic Club,Atlético Madrid,1-4,1-0
+16,2015-02-04,Real Madrid,Sevilla FC,2-1,2-0
+17,2015-01-03,Atlético Madrid,Levante UD,3-1,1-0
+17,2015-01-03,Sevilla FC,RC Celta,1-0,1-0
+17,2015-01-03,Elche CF,Villarreal CF,2-2,2-2
+17,2015-01-03,Deportivo La Coruña,Athletic Club,1-0,1-0
+17,2015-01-03,Málaga CF,UD Almería,1-2,0-1
+17,2015-01-04,Getafe CF,Rayo Vallecano,1-2,1-1
+17,2015-01-04,Valencia CF,Real Madrid,2-1,0-1
+17,2015-01-04,Espanyol Barcelona,SD Eibar,1-2,0-2
+17,2015-01-04,Real Sociedad,FC Barcelona,1-0,1-0
+17,2015-01-05,Córdoba CF,Granada CF,2-0,2-0
+18,2015-01-09,Levante UD,Deportivo La Coruña,0-0,
+18,2015-01-10,Real Madrid,Espanyol Barcelona,3-0,2-0
+18,2015-01-10,Málaga CF,Villarreal CF,1-1,0-1
+18,2015-01-10,RC Celta,Valencia CF,1-1,0-1
+18,2015-01-10,SD Eibar,Getafe CF,2-1,1-0
+18,2015-01-11,UD Almería,Sevilla FC,0-2,0-0
+18,2015-01-11,Athletic Club,Elche CF,1-2,0-1
+18,2015-01-11,Granada CF,Real Sociedad,1-1,0-1
+18,2015-01-11,FC Barcelona,Atlético Madrid,3-1,2-0
+18,2015-01-12,Rayo Vallecano,Córdoba CF,0-1,0-1
+19,2015-01-16,Córdoba CF,SD Eibar,1-1,1-0
+19,2015-01-17,Real Sociedad,Rayo Vallecano,0-1,0-0
+19,2015-01-17,Valencia CF,UD Almería,3-2,2-2
+19,2015-01-17,Villarreal CF,Athletic Club,2-0,1-0
+19,2015-01-17,Espanyol Barcelona,RC Celta,1-0,0-0
+19,2015-01-18,Getafe CF,Real Madrid,0-3,0-0
+19,2015-01-18,Atlético Madrid,Granada CF,2-0,1-0
+19,2015-01-18,Deportivo La Coruña,FC Barcelona,0-4,0-2
+19,2015-01-18,Elche CF,Levante UD,1-0,1-0
+19,2015-01-18,Sevilla FC,Málaga CF,2-0,1-0
+20,2015-01-24,Córdoba CF,Real Madrid,1-2,1-1
+20,2015-01-24,Elche CF,FC Barcelona,0-6,0-1
+20,2015-01-24,Atlético Madrid,Rayo Vallecano,3-1,2-1
+20,2015-01-24,Villarreal CF,Levante UD,1-0,0-0
+20,2015-01-24,Real Sociedad,SD Eibar,1-0,0-0
+20,2015-01-25,Deportivo La Coruña,Granada CF,2-2,2-1
+20,2015-01-25,Athletic Club,Málaga CF,1-1,0-0
+20,2015-01-25,Espanyol Barcelona,UD Almería,3-0,2-0
+20,2015-01-25,Valencia CF,Sevilla FC,3-1,2-1
+20,2015-01-26,Getafe CF,RC Celta,2-1,1-1
+21,2015-01-30,Rayo Vallecano,Deportivo La Coruña,1-2,1-1
+21,2015-01-31,Real Madrid,Real Sociedad,4-1,2-1
+21,2015-01-31,SD Eibar,Atlético Madrid,1-3,0-3
+21,2015-01-31,Granada CF,Elche CF,1-0,0-0
+21,2015-01-31,RC Celta,Córdoba CF,1-0,0-0
+21,2015-02-01,Levante UD,Athletic Club,0-2,0-0
+21,2015-02-01,UD Almería,Getafe CF,1-0,1-0
+21,2015-02-01,Sevilla FC,Espanyol Barcelona,3-2,2-1
+21,2015-02-01,FC Barcelona,Villarreal CF,3-2,1-1
+21,2015-02-02,Málaga CF,Valencia CF,1-0,1-0
+22,2015-02-06,Deportivo La Coruña,SD Eibar,2-0,0-0
+22,2015-02-07,Atlético Madrid,Real Madrid,4-0,2-0
+22,2015-02-07,Villarreal CF,Granada CF,2-0,1-0
+22,2015-02-07,Levante UD,Málaga CF,4-1,2-1
+22,2015-02-07,Real Sociedad,RC Celta,1-1,1-0
+22,2015-02-08,Córdoba CF,UD Almería,1-2,1-0
+22,2015-02-08,Getafe CF,Sevilla FC,2-1,1-0
+22,2015-02-08,Espanyol Barcelona,Valencia CF,1-2,0-0
+22,2015-02-08,Athletic Club,FC Barcelona,2-5,0-2
+22,2015-02-09,Elche CF,Rayo Vallecano,2-0,1-0
+23,2015-02-13,UD Almería,Real Sociedad,2-2,2-1
+23,2015-02-14,Sevilla FC,Córdoba CF,3-0,2-0
+23,2015-02-14,Real Madrid,Deportivo La Coruña,2-0,1-0
+23,2015-02-14,Granada CF,Athletic Club,0-0,
+23,2015-02-14,Málaga CF,Espanyol Barcelona,0-2,0-1
+23,2015-02-15,Valencia CF,Getafe CF,1-0,0-0
+23,2015-02-15,FC Barcelona,Levante UD,5-0,2-0
+23,2015-02-15,Rayo Vallecano,Villarreal CF,2-0,0-0
+23,2015-02-15,RC Celta,Atlético Madrid,2-0,0-0
+23,2015-02-16,SD Eibar,Elche CF,0-1,0-0
+24,2015-02-20,Getafe CF,Espanyol Barcelona,2-1,1-0
+24,2015-02-21,FC Barcelona,Málaga CF,0-1,0-1
+24,2015-02-21,Córdoba CF,Valencia CF,1-2,0-1
+24,2015-02-21,Atlético Madrid,UD Almería,3-0,3-0
+24,2015-02-21,Deportivo La Coruña,RC Celta,0-2,0-0
+24,2015-02-22,Real Sociedad,Sevilla FC,4-3,1-1
+24,2015-02-22,Athletic Club,Rayo Vallecano,1-0,0-0
+24,2015-02-22,Villarreal CF,SD Eibar,1-0,0-0
+24,2015-02-22,Elche CF,Real Madrid,0-2,0-0
+24,2015-02-23,Levante UD,Granada CF,2-1,0-1
+25,2015-02-27,Espanyol Barcelona,Córdoba CF,1-0,1-0
+25,2015-02-28,Granada CF,FC Barcelona,1-3,0-1
+25,2015-02-28,Rayo Vallecano,Levante UD,4-2,4-1
+25,2015-02-28,UD Almería,Deportivo La Coruña,0-0,
+25,2015-02-28,Málaga CF,Getafe CF,3-2,1-0
+25,2015-03-01,Valencia CF,Real Sociedad,2-0,0-0
+25,2015-03-01,SD Eibar,Athletic Club,0-1,0-1
+25,2015-03-01,Sevilla FC,Atlético Madrid,0-0,
+25,2015-03-01,Real Madrid,Villarreal CF,1-1,0-0
+25,2015-03-02,RC Celta,Elche CF,1-1,0-0
+26,2015-03-06,Levante UD,SD Eibar,2-1,0-0
+26,2015-03-07,Deportivo La Coruña,Sevilla FC,3-4,1-1
+26,2015-03-07,Athletic Club,Real Madrid,1-0,1-0
+26,2015-03-07,Elche CF,UD Almería,1-0,1-0
+26,2015-03-07,Granada CF,Málaga CF,1-0,0-0
+26,2015-03-08,FC Barcelona,Rayo Vallecano,6-1,1-0
+26,2015-03-08,Real Sociedad,Espanyol Barcelona,1-0,1-0
+26,2015-03-08,Villarreal CF,RC Celta,4-1,2-0
+26,2015-03-08,Atlético Madrid,Valencia CF,1-1,1-0
+26,2015-03-09,Córdoba CF,Getafe CF,1-2,0-0
+27,2015-03-13,Valencia CF,Deportivo La Coruña,2-0,0-0
+27,2015-03-14,Espanyol Barcelona,Atlético Madrid,0-0,
+27,2015-03-14,SD Eibar,FC Barcelona,0-2,0-1
+27,2015-03-14,Rayo Vallecano,Granada CF,3-1,0-1
+27,2015-03-14,RC Celta,Athletic Club,1-2,0-2
+27,2015-03-15,UD Almería,Villarreal CF,0-0,
+27,2015-03-15,Málaga CF,Córdoba CF,2-0,0-0
+27,2015-03-15,Sevilla FC,Elche CF,3-0,2-0
+27,2015-03-15,Real Madrid,Levante UD,2-0,2-0
+27,2015-03-16,Getafe CF,Real Sociedad,0-1,0-0
+28,2015-03-20,Elche CF,Valencia CF,0-4,0-1
+28,2015-03-21,Atlético Madrid,Getafe CF,2-0,2-0
+28,2015-03-21,Rayo Vallecano,Málaga CF,1-0,1-0
+28,2015-03-21,Levante UD,RC Celta,0-1,0-0
+28,2015-03-21,Athletic Club,UD Almería,2-1,2-0
+28,2015-03-21,Granada CF,SD Eibar,0-0,
+28,2015-03-22,Deportivo La Coruña,Espanyol Barcelona,0-0,
+28,2015-03-22,Villarreal CF,Sevilla FC,0-2,0-0
+28,2015-03-22,Real Sociedad,Córdoba CF,3-1,1-1
+28,2015-03-22,FC Barcelona,Real Madrid,2-1,1-1
+29,2015-04-03,SD Eibar,Rayo Vallecano,1-2,1-2
+29,2015-04-04,Sevilla FC,Athletic Club,2-0,2-0
+29,2015-04-04,Córdoba CF,Atlético Madrid,0-2,0-2
+29,2015-04-04,UD Almería,Levante UD,1-4,0-2
+29,2015-04-04,Málaga CF,Real Sociedad,1-1,0-0
+29,2015-04-05,Real Madrid,Granada CF,9-1,4-0
+29,2015-04-05,Valencia CF,Villarreal CF,0-0,
+29,2015-04-05,Getafe CF,Deportivo La Coruña,2-1,2-0
+29,2015-04-05,RC Celta,FC Barcelona,0-1,0-0
+29,2015-04-06,Espanyol Barcelona,Elche CF,1-1,1-0
+30,2015-04-07,Atlético Madrid,Real Sociedad,2-0,2-0
+30,2015-04-07,Levante UD,Sevilla FC,1-2,0-2
+30,2015-04-07,SD Eibar,Málaga CF,1-0,0-0
+30,2015-04-08,Deportivo La Coruña,Córdoba CF,1-1,0-0
+30,2015-04-08,FC Barcelona,UD Almería,4-0,1-0
+30,2015-04-08,Granada CF,RC Celta,1-1,1-0
+30,2015-04-08,Rayo Vallecano,Real Madrid,0-2,0-0
+30,2015-04-09,Athletic Club,Valencia CF,1-1,0-0
+30,2015-04-09,Elche CF,Getafe CF,0-1,0-0
+30,2015-04-09,Villarreal CF,Espanyol Barcelona,0-3,0-1
+31,2015-04-11,Real Madrid,SD Eibar,3-0,2-0
+31,2015-04-11,Málaga CF,Atlético Madrid,2-2,1-1
+31,2015-04-11,Sevilla FC,FC Barcelona,2-2,1-2
+31,2015-04-11,UD Almería,Granada CF,3-0,1-0
+31,2015-04-11,RC Celta,Rayo Vallecano,6-1,4-1
+31,2015-04-12,Getafe CF,Villarreal CF,1-1,0-0
+31,2015-04-12,Espanyol Barcelona,Athletic Club,1-0,1-0
+31,2015-04-12,Real Sociedad,Deportivo La Coruña,2-2,1-1
+31,2015-04-12,Córdoba CF,Elche CF,0-2,0-1
+31,2015-04-13,Valencia CF,Levante UD,3-0,2-0
+32,2015-04-17,Levante UD,Espanyol Barcelona,2-2,1-2
+32,2015-04-18,FC Barcelona,Valencia CF,2-0,1-0
+32,2015-04-18,Deportivo La Coruña,Atlético Madrid,1-2,0-2
+32,2015-04-18,Real Madrid,Málaga CF,3-1,1-0
+32,2015-04-18,Athletic Club,Getafe CF,4-0,1-0
+32,2015-04-19,Rayo Vallecano,UD Almería,2-0,1-0
+32,2015-04-19,Granada CF,Sevilla FC,1-1,1-0
+32,2015-04-19,Villarreal CF,Córdoba CF,0-0,
+32,2015-04-19,SD Eibar,RC Celta,0-1,0-1
+32,2015-04-20,Elche CF,Real Sociedad,1-0,1-0
+33,2015-04-24,Córdoba CF,Athletic Club,0-1,0-0
+33,2015-04-25,Espanyol Barcelona,FC Barcelona,0-2,0-2
+33,2015-04-25,Atlético Madrid,Elche CF,3-0,0-0
+33,2015-04-25,Getafe CF,Levante UD,0-1,0-1
+33,2015-04-25,Real Sociedad,Villarreal CF,0-0,
+33,2015-04-26,Málaga CF,Deportivo La Coruña,1-1,0-0
+33,2015-04-26,UD Almería,SD Eibar,2-0,1-0
+33,2015-04-26,Sevilla FC,Rayo Vallecano,2-0,2-0
+33,2015-04-26,RC Celta,Real Madrid,2-4,2-3
+33,2015-04-27,Valencia CF,Granada CF,4-0,2-0
+34,2015-04-28,FC Barcelona,Getafe CF,6-0,5-0
+34,2015-04-28,Athletic Club,Real Sociedad,1-1,0-0
+34,2015-04-28,Levante UD,Córdoba CF,1-0,1-0
+34,2015-04-29,SD Eibar,Sevilla FC,1-3,0-2
+34,2015-04-29,Real Madrid,UD Almería,3-0,1-0
+34,2015-04-29,RC Celta,Málaga CF,1-0,0-0
+34,2015-04-29,Elche CF,Deportivo La Coruña,4-0,2-0
+34,2015-04-29,Villarreal CF,Atlético Madrid,0-1,0-0
+34,2015-04-30,Rayo Vallecano,Valencia CF,1-1,1-0
+34,2015-04-30,Granada CF,Espanyol Barcelona,1-2,0-1
+35,2015-05-01,Real Sociedad,Levante UD,3-0,1-0
+35,2015-05-02,Córdoba CF,FC Barcelona,0-8,0-2
+35,2015-05-02,Atlético Madrid,Athletic Club,0-0,
+35,2015-05-02,Sevilla FC,Real Madrid,2-3,1-2
+35,2015-05-02,Deportivo La Coruña,Villarreal CF,1-1,0-0
+35,2015-05-03,Espanyol Barcelona,Rayo Vallecano,1-1,0-1
+35,2015-05-03,Getafe CF,Granada CF,1-2,1-1
+35,2015-05-03,Valencia CF,SD Eibar,3-1,1-0
+35,2015-05-03,Málaga CF,Elche CF,1-2,0-1
+35,2015-05-04,UD Almería,RC Celta,2-2,0-2
+36,2015-05-08,SD Eibar,Espanyol Barcelona,0-2,0-1
+36,2015-05-09,Granada CF,Córdoba CF,2-0,1-0
+36,2015-05-09,FC Barcelona,Real Sociedad,2-0,0-0
+36,2015-05-09,Real Madrid,Valencia CF,2-2,0-2
+36,2015-05-09,Athletic Club,Deportivo La Coruña,1-1,1-0
+36,2015-05-10,Levante UD,Atlético Madrid,2-2,1-1
+36,2015-05-10,Villarreal CF,Elche CF,1-0,1-0
+36,2015-05-10,UD Almería,Málaga CF,1-2,1-1
+36,2015-05-10,RC Celta,Sevilla FC,1-1,0-1
+36,2015-05-11,Rayo Vallecano,Getafe CF,2-0,1-0
+37,2015-05-17,Villarreal CF,Málaga CF,2-1,0-0
+37,2015-05-17,Elche CF,Athletic Club,2-3,2-0
+37,2015-05-17,Deportivo La Coruña,Levante UD,2-0,1-0
+37,2015-05-17,Atlético Madrid,FC Barcelona,0-1,0-0
+37,2015-05-17,Real Sociedad,Granada CF,0-3,0-0
+37,2015-05-17,Córdoba CF,Rayo Vallecano,1-2,0-1
+37,2015-05-17,Getafe CF,SD Eibar,1-1,1-1
+37,2015-05-17,Espanyol Barcelona,Real Madrid,1-4,0-0
+37,2015-05-17,Valencia CF,RC Celta,1-1,0-1
+37,2015-05-17,Sevilla FC,UD Almería,2-1,0-1
+38,2015-05-23,Levante UD,Elche CF,0-0,
+38,2015-05-23,Athletic Club,Villarreal CF,4-0,3-0
+38,2015-05-23,FC Barcelona,Deportivo La Coruña,2-2,1-0
+38,2015-05-23,Granada CF,Atlético Madrid,0-0,
+38,2015-05-23,Rayo Vallecano,Real Sociedad,2-4,1-2
+38,2015-05-23,SD Eibar,Córdoba CF,3-0,3-0
+38,2015-05-23,RC Celta,Espanyol Barcelona,3-2,1-1
+38,2015-05-23,UD Almería,Valencia CF,2-3,2-2
+38,2015-05-23,Málaga CF,Sevilla FC,2-3,0-0
+38,2015-05-23,Real Madrid,Getafe CF,7-3,3-3

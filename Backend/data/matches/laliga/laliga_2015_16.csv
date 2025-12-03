@@ -1,0 +1,381 @@
+Matchday,Date,Home,Away,FullTime,HalfTime
+1,2015-08-21,Málaga CF,Sevilla FC,0-0,
+1,2015-08-22,Espanyol Barcelona,Getafe CF,1-0,1-0
+1,2015-08-22,Deportivo La Coruña,Real Sociedad,0-0,
+1,2015-08-22,Atlético Madrid,UD Las Palmas,1-0,1-0
+1,2015-08-22,Rayo Vallecano,Valencia CF,0-0,
+1,2015-08-23,Athletic Club,FC Barcelona,0-1,0-0
+1,2015-08-23,Sporting Gijón,Real Madrid,0-0,
+1,2015-08-23,Levante UD,RC Celta,1-2,0-1
+1,2015-08-23,Real Betis,Villarreal CF,1-1,0-1
+1,2015-08-24,Granada CF,SD Eibar,1-3,0-2
+2,2015-08-28,Villarreal CF,Espanyol Barcelona,3-1,0-1
+2,2015-08-29,Real Sociedad,Sporting Gijón,0-0,
+2,2015-08-29,FC Barcelona,Málaga CF,1-0,0-0
+2,2015-08-29,RC Celta,Rayo Vallecano,3-0,1-0
+2,2015-08-29,Real Madrid,Real Betis,5-0,2-0
+2,2015-08-30,SD Eibar,Athletic Club,2-0,1-0
+2,2015-08-30,Sevilla FC,Atlético Madrid,0-3,0-1
+2,2015-08-30,Valencia CF,Deportivo La Coruña,1-1,1-1
+2,2015-08-30,UD Las Palmas,Levante UD,0-0,
+2,2015-08-30,Getafe CF,Granada CF,1-2,0-2
+3,2015-09-11,Levante UD,Sevilla FC,1-1,0-1
+3,2015-09-12,Espanyol Barcelona,Real Madrid,0-6,0-4
+3,2015-09-12,Sporting Gijón,Valencia CF,0-1,0-0
+3,2015-09-12,Atlético Madrid,FC Barcelona,1-2,0-0
+3,2015-09-12,Real Betis,Real Sociedad,1-0,1-0
+3,2015-09-13,Granada CF,Villarreal CF,1-3,0-0
+3,2015-09-13,Athletic Club,Getafe CF,3-1,2-0
+3,2015-09-13,RC Celta,UD Las Palmas,3-3,2-1
+3,2015-09-13,Málaga CF,SD Eibar,0-0,
+3,2015-09-14,Rayo Vallecano,Deportivo La Coruña,1-3,1-2
+4,2015-09-18,Getafe CF,Málaga CF,1-0,1-0
+4,2015-09-19,Real Madrid,Granada CF,1-0,0-0
+4,2015-09-19,Valencia CF,Real Betis,0-0,
+4,2015-09-19,SD Eibar,Atlético Madrid,0-2,0-0
+4,2015-09-19,Real Sociedad,Espanyol Barcelona,2-3,1-1
+4,2015-09-20,Sevilla FC,RC Celta,1-2,0-2
+4,2015-09-20,Deportivo La Coruña,Sporting Gijón,2-3,2-3
+4,2015-09-20,Villarreal CF,Athletic Club,3-1,1-0
+4,2015-09-20,UD Las Palmas,Rayo Vallecano,0-1,0-1
+4,2015-09-20,FC Barcelona,Levante UD,4-1,0-0
+5,2015-09-22,Atlético Madrid,Getafe CF,2-0,1-0
+5,2015-09-22,Espanyol Barcelona,Valencia CF,1-0,1-0
+5,2015-09-22,Granada CF,Real Sociedad,0-3,0-2
+5,2015-09-23,RC Celta,FC Barcelona,4-1,2-0
+5,2015-09-23,Levante UD,SD Eibar,2-2,0-1
+5,2015-09-23,Rayo Vallecano,Sporting Gijón,2-1,1-0
+5,2015-09-23,Athletic Club,Real Madrid,1-2,0-1
+5,2015-09-23,UD Las Palmas,Sevilla FC,2-0,1-0
+5,2015-09-23,Málaga CF,Villarreal CF,0-1,0-0
+5,2015-09-24,Real Betis,Deportivo La Coruña,1-2,0-0
+6,2015-09-25,Valencia CF,Granada CF,1-0,1-0
+6,2015-09-26,FC Barcelona,UD Las Palmas,2-1,1-0
+6,2015-09-26,Real Madrid,Málaga CF,0-0,
+6,2015-09-26,Sevilla FC,Rayo Vallecano,3-2,2-0
+6,2015-09-26,Villarreal CF,Atlético Madrid,1-0,1-0
+6,2015-09-26,SD Eibar,RC Celta,1-1,1-0
+6,2015-09-27,Sporting Gijón,Real Betis,1-2,1-0
+6,2015-09-27,Deportivo La Coruña,Espanyol Barcelona,3-0,2-0
+6,2015-09-27,Getafe CF,Levante UD,3-0,0-0
+6,2015-09-27,Real Sociedad,Athletic Club,0-0,
+7,2015-10-02,RC Celta,Getafe CF,0-0,
+7,2015-10-03,Sevilla FC,FC Barcelona,2-1,0-0
+7,2015-10-03,Granada CF,Deportivo La Coruña,1-1,0-1
+7,2015-10-03,Espanyol Barcelona,Sporting Gijón,1-2,0-1
+7,2015-10-03,UD Las Palmas,SD Eibar,0-2,0-1
+7,2015-10-03,Málaga CF,Real Sociedad,3-1,2-1
+7,2015-10-04,Rayo Vallecano,Real Betis,0-2,0-1
+7,2015-10-04,Athletic Club,Valencia CF,3-1,1-1
+7,2015-10-04,Levante UD,Villarreal CF,1-0,0-0
+7,2015-10-04,Atlético Madrid,Real Madrid,1-1,0-1
+8,2015-10-17,Real Madrid,Levante UD,3-0,2-0
+8,2015-10-17,SD Eibar,Sevilla FC,1-1,1-0
+8,2015-10-17,FC Barcelona,Rayo Vallecano,5-2,2-1
+8,2015-10-17,Valencia CF,Málaga CF,3-0,2-0
+8,2015-10-17,Real Betis,Espanyol Barcelona,1-3,0-1
+8,2015-10-18,Villarreal CF,RC Celta,1-2,0-1
+8,2015-10-18,Real Sociedad,Atlético Madrid,0-2,0-1
+8,2015-10-18,Getafe CF,UD Las Palmas,4-0,2-0
+8,2015-10-18,Deportivo La Coruña,Athletic Club,2-2,0-1
+8,2015-10-19,Sporting Gijón,Granada CF,3-3,1-2
+9,2015-10-23,Rayo Vallecano,Espanyol Barcelona,3-0,1-0
+9,2015-10-24,RC Celta,Real Madrid,1-3,0-2
+9,2015-10-24,Granada CF,Real Betis,1-1,1-1
+9,2015-10-24,Sevilla FC,Getafe CF,5-0,2-0
+9,2015-10-24,Málaga CF,Deportivo La Coruña,2-0,0-0
+9,2015-10-25,Levante UD,Real Sociedad,0-4,0-2
+9,2015-10-25,UD Las Palmas,Villarreal CF,0-0,
+9,2015-10-25,FC Barcelona,SD Eibar,3-1,1-1
+9,2015-10-25,Atlético Madrid,Valencia CF,2-1,2-0
+9,2015-10-26,Athletic Club,Sporting Gijón,3-0,2-0
+10,2015-10-30,Deportivo La Coruña,Atlético Madrid,1-1,0-1
+10,2015-10-31,Real Madrid,UD Las Palmas,3-1,3-1
+10,2015-10-31,Villarreal CF,Sevilla FC,2-1,1-0
+10,2015-10-31,Valencia CF,Levante UD,3-0,0-0
+10,2015-10-31,Getafe CF,FC Barcelona,0-2,0-1
+10,2015-10-31,Real Sociedad,RC Celta,2-3,2-1
+10,2015-11-01,SD Eibar,Rayo Vallecano,1-0,1-0
+10,2015-11-01,Espanyol Barcelona,Granada CF,1-1,0-0
+10,2015-11-01,Sporting Gijón,Málaga CF,1-0,1-0
+10,2015-11-01,Real Betis,Athletic Club,1-3,0-2
+11,2015-11-06,UD Las Palmas,Real Sociedad,2-0,1-0
+11,2015-11-07,RC Celta,Valencia CF,1-5,1-2
+11,2015-11-07,Levante UD,Deportivo La Coruña,1-1,0-1
+11,2015-11-07,SD Eibar,Getafe CF,3-1,2-1
+11,2015-11-07,Rayo Vallecano,Granada CF,2-1,2-0
+11,2015-11-07,Málaga CF,Real Betis,0-1,0-0
+11,2015-11-08,Athletic Club,Espanyol Barcelona,2-1,1-0
+11,2015-11-08,FC Barcelona,Villarreal CF,3-0,0-0
+11,2015-11-08,Atlético Madrid,Sporting Gijón,1-0,0-0
+11,2015-11-08,Sevilla FC,Real Madrid,3-2,1-1
+12,2015-11-21,Real Sociedad,Sevilla FC,2-0,0-0
+12,2015-11-21,Real Madrid,FC Barcelona,0-4,0-2
+12,2015-11-21,Espanyol Barcelona,Málaga CF,2-0,2-0
+12,2015-11-21,Valencia CF,UD Las Palmas,1-1,1-0
+12,2015-11-21,Deportivo La Coruña,RC Celta,2-0,1-0
+12,2015-11-22,Sporting Gijón,Levante UD,0-3,0-3
+12,2015-11-22,Villarreal CF,SD Eibar,1-1,0-1
+12,2015-11-22,Granada CF,Athletic Club,2-0,1-0
+12,2015-11-22,Real Betis,Atlético Madrid,0-1,0-1
+12,2015-11-23,Getafe CF,Rayo Vallecano,1-1,0-0
+13,2015-11-27,Levante UD,Real Betis,0-1,0-1
+13,2015-11-28,FC Barcelona,Real Sociedad,4-0,2-0
+13,2015-11-28,Atlético Madrid,Espanyol Barcelona,1-0,1-0
+13,2015-11-28,Málaga CF,Granada CF,2-2,1-0
+13,2015-11-28,UD Las Palmas,Deportivo La Coruña,0-2,0-1
+13,2015-11-28,RC Celta,Sporting Gijón,2-1,1-0
+13,2015-11-29,Getafe CF,Villarreal CF,2-0,1-0
+13,2015-11-29,SD Eibar,Real Madrid,0-2,0-1
+13,2015-11-29,Rayo Vallecano,Athletic Club,0-3,0-2
+13,2015-11-29,Sevilla FC,Valencia CF,1-0,0-0
+14,2015-12-05,Real Madrid,Getafe CF,4-1,4-0
+14,2015-12-05,Granada CF,Atlético Madrid,0-2,0-1
+14,2015-12-05,Valencia CF,FC Barcelona,1-1,0-0
+14,2015-12-05,Deportivo La Coruña,Sevilla FC,1-1,1-0
+14,2015-12-05,Real Betis,RC Celta,1-1,0-1
+14,2015-12-06,Real Sociedad,SD Eibar,2-1,1-1
+14,2015-12-06,Villarreal CF,Rayo Vallecano,2-1,0-1
+14,2015-12-06,Sporting Gijón,UD Las Palmas,3-1,1-1
+14,2015-12-06,Athletic Club,Málaga CF,0-0,
+14,2015-12-07,Espanyol Barcelona,Levante UD,1-1,0-1
+15,2015-12-11,Getafe CF,Real Sociedad,1-1,0-0
+15,2015-12-12,FC Barcelona,Deportivo La Coruña,2-2,1-0
+15,2015-12-12,RC Celta,Espanyol Barcelona,1-0,1-0
+15,2015-12-12,Levante UD,Granada CF,1-2,0-0
+15,2015-12-12,Sevilla FC,Sporting Gijón,2-0,0-0
+15,2015-12-12,UD Las Palmas,Real Betis,1-0,0-0
+15,2015-12-13,Rayo Vallecano,Málaga CF,1-2,1-0
+15,2015-12-13,SD Eibar,Valencia CF,1-1,1-0
+15,2015-12-13,Atlético Madrid,Athletic Club,2-1,1-1
+15,2015-12-13,Villarreal CF,Real Madrid,1-0,1-0
+16,2015-12-19,Valencia CF,Getafe CF,2-2,2-2
+16,2015-12-19,Espanyol Barcelona,UD Las Palmas,1-0,0-0
+16,2015-12-19,Real Betis,Sevilla FC,0-0,
+16,2015-12-19,Deportivo La Coruña,SD Eibar,2-0,1-0
+16,2015-12-20,Real Madrid,Rayo Vallecano,10-2,4-2
+16,2015-12-20,Real Sociedad,Villarreal CF,0-2,0-1
+16,2015-12-20,Granada CF,RC Celta,0-2,0-2
+16,2015-12-20,Athletic Club,Levante UD,2-0,0-0
+16,2015-12-20,Málaga CF,Atlético Madrid,1-0,0-0
+16,2016-02-17,Sporting Gijón,FC Barcelona,1-3,1-2
+17,2015-12-30,Real Madrid,Real Sociedad,3-1,1-0
+17,2015-12-30,Levante UD,Málaga CF,0-1,0-0
+17,2015-12-30,Sevilla FC,Espanyol Barcelona,2-0,2-0
+17,2015-12-30,Rayo Vallecano,Atlético Madrid,0-2,0-0
+17,2015-12-30,SD Eibar,Sporting Gijón,2-0,0-0
+17,2015-12-30,Getafe CF,Deportivo La Coruña,0-0,
+17,2015-12-30,FC Barcelona,Real Betis,4-0,2-0
+17,2015-12-30,RC Celta,Athletic Club,0-1,0-0
+17,2015-12-30,UD Las Palmas,Granada CF,4-1,1-0
+17,2015-12-31,Villarreal CF,Valencia CF,1-0,0-0
+18,2016-01-02,Espanyol Barcelona,FC Barcelona,0-0,
+18,2016-01-02,Atlético Madrid,Levante UD,1-0,0-0
+18,2016-01-02,Málaga CF,RC Celta,2-0,2-0
+18,2016-01-03,Rayo Vallecano,Real Sociedad,2-2,1-1
+18,2016-01-03,Real Betis,SD Eibar,0-4,0-2
+18,2016-01-03,Granada CF,Sevilla FC,2-1,2-1
+18,2016-01-03,Deportivo La Coruña,Villarreal CF,1-2,0-1
+18,2016-01-03,Athletic Club,UD Las Palmas,2-2,1-0
+18,2016-01-03,Valencia CF,Real Madrid,2-2,1-1
+18,2016-01-04,Sporting Gijón,Getafe CF,1-2,1-0
+19,2016-01-09,FC Barcelona,Granada CF,4-0,2-0
+19,2016-01-09,Getafe CF,Real Betis,1-0,0-0
+19,2016-01-09,Sevilla FC,Athletic Club,2-0,1-0
+19,2016-01-09,Real Madrid,Deportivo La Coruña,5-0,2-0
+19,2016-01-09,Levante UD,Rayo Vallecano,2-1,0-0
+19,2016-01-10,Villarreal CF,Sporting Gijón,2-0,1-0
+19,2016-01-10,Real Sociedad,Valencia CF,2-0,0-0
+19,2016-01-10,SD Eibar,Espanyol Barcelona,2-1,1-1
+19,2016-01-10,UD Las Palmas,Málaga CF,1-1,0-0
+19,2016-01-10,RC Celta,Atlético Madrid,0-2,0-0
+20,2016-01-16,Sevilla FC,Málaga CF,2-1,2-0
+20,2016-01-16,RC Celta,Levante UD,4-3,2-0
+20,2016-01-16,Villarreal CF,Real Betis,0-0,
+20,2016-01-16,Real Sociedad,Deportivo La Coruña,1-1,0-1
+20,2016-01-17,Valencia CF,Rayo Vallecano,2-2,0-1
+20,2016-01-17,Real Madrid,Sporting Gijón,5-1,5-0
+20,2016-01-17,Getafe CF,Espanyol Barcelona,3-1,2-1
+20,2016-01-17,UD Las Palmas,Atlético Madrid,0-3,0-1
+20,2016-01-17,FC Barcelona,Athletic Club,6-0,2-0
+20,2016-01-18,SD Eibar,Granada CF,5-1,2-0
+21,2016-01-22,Sporting Gijón,Real Sociedad,5-1,3-1
+21,2016-01-23,Málaga CF,FC Barcelona,1-2,1-1
+21,2016-01-23,Espanyol Barcelona,Villarreal CF,2-2,2-1
+21,2016-01-23,Granada CF,Getafe CF,3-2,2-0
+21,2016-01-23,Rayo Vallecano,RC Celta,3-0,3-0
+21,2016-01-24,Athletic Club,SD Eibar,5-2,3-1
+21,2016-01-24,Atlético Madrid,Sevilla FC,0-0,
+21,2016-01-24,Deportivo La Coruña,Valencia CF,1-1,1-0
+21,2016-01-24,Real Betis,Real Madrid,1-1,1-0
+21,2016-01-25,Levante UD,UD Las Palmas,3-2,1-0
+22,2016-01-30,FC Barcelona,Atlético Madrid,2-1,2-1
+22,2016-01-30,SD Eibar,Málaga CF,1-2,0-1
+22,2016-01-30,Getafe CF,Athletic Club,0-1,0-1
+22,2016-01-30,Villarreal CF,Granada CF,1-0,0-0
+22,2016-01-30,Real Sociedad,Real Betis,2-1,2-0
+22,2016-01-31,Sevilla FC,Levante UD,3-1,1-0
+22,2016-01-31,Valencia CF,Sporting Gijón,0-1,0-0
+22,2016-01-31,UD Las Palmas,RC Celta,2-1,1-1
+22,2016-01-31,Real Madrid,Espanyol Barcelona,6-0,4-0
+22,2016-02-01,Deportivo La Coruña,Rayo Vallecano,2-2,1-2
+23,2016-02-05,Málaga CF,Getafe CF,3-0,3-0
+23,2016-02-06,Atlético Madrid,SD Eibar,3-1,0-0
+23,2016-02-06,Rayo Vallecano,UD Las Palmas,2-0,1-0
+23,2016-02-06,Athletic Club,Villarreal CF,0-0,
+23,2016-02-06,Sporting Gijón,Deportivo La Coruña,1-1,1-1
+23,2016-02-07,Levante UD,FC Barcelona,0-2,0-1
+23,2016-02-07,Real Betis,Valencia CF,1-0,0-0
+23,2016-02-07,RC Celta,Sevilla FC,1-1,0-1
+23,2016-02-07,Granada CF,Real Madrid,1-2,0-1
+23,2016-02-08,Espanyol Barcelona,Real Sociedad,0-5,0-2
+24,2016-02-12,Sporting Gijón,Rayo Vallecano,2-2,2-1
+24,2016-02-13,Real Madrid,Athletic Club,4-2,3-1
+24,2016-02-13,Villarreal CF,Málaga CF,1-0,1-0
+24,2016-02-13,Valencia CF,Espanyol Barcelona,2-1,0-0
+24,2016-02-13,Deportivo La Coruña,Real Betis,2-2,1-2
+24,2016-02-14,Real Sociedad,Granada CF,3-0,2-0
+24,2016-02-14,Sevilla FC,UD Las Palmas,2-0,0-0
+24,2016-02-14,SD Eibar,Levante UD,2-0,1-0
+24,2016-02-14,Getafe CF,Atlético Madrid,0-1,0-1
+24,2016-02-14,FC Barcelona,RC Celta,6-1,1-1
+25,2016-02-19,Levante UD,Getafe CF,3-0,2-0
+25,2016-02-20,UD Las Palmas,FC Barcelona,1-2,1-2
+25,2016-02-20,Espanyol Barcelona,Deportivo La Coruña,1-0,0-0
+25,2016-02-20,Real Betis,Sporting Gijón,1-1,0-0
+25,2016-02-20,RC Celta,SD Eibar,3-2,2-0
+25,2016-02-21,Rayo Vallecano,Sevilla FC,2-2,1-2
+25,2016-02-21,Málaga CF,Real Madrid,1-1,0-1
+25,2016-02-21,Athletic Club,Real Sociedad,0-1,0-1
+25,2016-02-21,Granada CF,Valencia CF,1-2,0-0
+25,2016-02-21,Atlético Madrid,Villarreal CF,0-0,
+26,2016-02-26,SD Eibar,UD Las Palmas,0-1,0-1
+26,2016-02-27,Real Madrid,Atlético Madrid,0-1,0-0
+26,2016-02-27,Getafe CF,RC Celta,0-1,0-0
+26,2016-02-27,Sporting Gijón,Espanyol Barcelona,2-4,1-1
+26,2016-02-27,Real Betis,Rayo Vallecano,2-2,2-0
+26,2016-02-27,Real Sociedad,Málaga CF,1-1,0-0
+26,2016-02-28,Villarreal CF,Levante UD,3-0,2-0
+26,2016-02-28,Valencia CF,Athletic Club,0-3,0-0
+26,2016-02-28,Deportivo La Coruña,Granada CF,0-1,0-1
+26,2016-02-28,FC Barcelona,Sevilla FC,2-1,1-1
+27,2016-03-01,Atlético Madrid,Real Sociedad,3-0,1-0
+27,2016-03-01,UD Las Palmas,Getafe CF,4-0,2-0
+27,2016-03-02,Sevilla FC,SD Eibar,1-0,1-0
+27,2016-03-02,RC Celta,Villarreal CF,0-0,
+27,2016-03-02,Málaga CF,Valencia CF,1-2,1-1
+27,2016-03-02,Athletic Club,Deportivo La Coruña,4-1,2-0
+27,2016-03-02,Levante UD,Real Madrid,1-3,1-2
+27,2016-03-03,Granada CF,Sporting Gijón,2-0,0-0
+27,2016-03-03,Espanyol Barcelona,Real Betis,0-3,0-2
+27,2016-03-03,Rayo Vallecano,FC Barcelona,1-5,0-2
+28,2016-03-05,Real Madrid,RC Celta,7-1,1-0
+28,2016-03-05,Villarreal CF,UD Las Palmas,0-1,0-1
+28,2016-03-05,Getafe CF,Sevilla FC,1-1,0-0
+28,2016-03-05,Deportivo La Coruña,Málaga CF,3-3,1-1
+28,2016-03-06,Real Betis,Granada CF,2-0,0-0
+28,2016-03-06,SD Eibar,FC Barcelona,0-4,0-2
+28,2016-03-06,Real Sociedad,Levante UD,1-1,1-1
+28,2016-03-06,Sporting Gijón,Athletic Club,0-2,0-1
+28,2016-03-06,Valencia CF,Atlético Madrid,1-3,1-1
+28,2016-03-07,Espanyol Barcelona,Rayo Vallecano,2-1,1-0
+29,2016-03-11,Málaga CF,Sporting Gijón,1-0,1-0
+29,2016-03-12,FC Barcelona,Getafe CF,6-0,4-0
+29,2016-03-12,RC Celta,Real Sociedad,1-0,1-0
+29,2016-03-12,Atlético Madrid,Deportivo La Coruña,3-0,1-0
+29,2016-03-12,Rayo Vallecano,SD Eibar,1-1,1-1
+29,2016-03-13,Levante UD,Valencia CF,1-0,0-0
+29,2016-03-13,Sevilla FC,Villarreal CF,4-2,1-2
+29,2016-03-13,Athletic Club,Real Betis,3-1,2-0
+29,2016-03-13,UD Las Palmas,Real Madrid,1-2,0-1
+29,2016-03-14,Granada CF,Espanyol Barcelona,1-1,1-0
+30,2016-03-18,Getafe CF,SD Eibar,1-1,1-0
+30,2016-03-19,Sporting Gijón,Atlético Madrid,2-1,0-1
+30,2016-03-19,Real Sociedad,UD Las Palmas,0-1,0-1
+30,2016-03-19,Granada CF,Rayo Vallecano,2-2,1-1
+30,2016-03-19,Deportivo La Coruña,Levante UD,2-1,1-0
+30,2016-03-19,Real Betis,Málaga CF,0-1,0-0
+30,2016-03-20,Espanyol Barcelona,Athletic Club,2-1,0-1
+30,2016-03-20,Villarreal CF,FC Barcelona,2-2,0-2
+30,2016-03-20,Valencia CF,RC Celta,0-2,0-0
+30,2016-03-20,Real Madrid,Sevilla FC,4-0,1-0
+31,2016-04-01,Rayo Vallecano,Getafe CF,2-0,1-0
+31,2016-04-02,Atlético Madrid,Real Betis,5-1,2-0
+31,2016-04-02,UD Las Palmas,Valencia CF,2-1,0-1
+31,2016-04-02,FC Barcelona,Real Madrid,1-2,0-0
+31,2016-04-02,RC Celta,Deportivo La Coruña,1-1,1-1
+31,2016-04-03,Athletic Club,Granada CF,1-1,1-0
+31,2016-04-03,Málaga CF,Espanyol Barcelona,1-1,1-1
+31,2016-04-03,SD Eibar,Villarreal CF,1-2,1-1
+31,2016-04-03,Sevilla FC,Real Sociedad,1-2,0-2
+31,2016-04-04,Levante UD,Sporting Gijón,0-0,
+32,2016-04-08,Granada CF,Málaga CF,0-0,
+32,2016-04-09,Real Madrid,SD Eibar,4-0,4-0
+32,2016-04-09,Espanyol Barcelona,Atlético Madrid,1-3,1-1
+32,2016-04-09,Real Sociedad,FC Barcelona,1-0,1-0
+32,2016-04-09,Real Betis,Levante UD,1-0,0-0
+32,2016-04-10,Sporting Gijón,RC Celta,0-1,0-0
+32,2016-04-10,Valencia CF,Sevilla FC,2-1,1-0
+32,2016-04-10,Villarreal CF,Getafe CF,2-0,1-0
+32,2016-04-10,Athletic Club,Rayo Vallecano,1-0,0-0
+32,2016-04-11,Deportivo La Coruña,UD Las Palmas,1-3,0-0
+33,2016-04-15,Levante UD,Espanyol Barcelona,2-1,1-1
+33,2016-04-16,Getafe CF,Real Madrid,1-5,0-2
+33,2016-04-16,UD Las Palmas,Sporting Gijón,1-1,1-0
+33,2016-04-16,SD Eibar,Real Sociedad,2-1,1-1
+33,2016-04-16,RC Celta,Real Betis,1-1,0-1
+33,2016-04-17,Málaga CF,Athletic Club,0-1,0-0
+33,2016-04-17,Sevilla FC,Deportivo La Coruña,1-1,1-0
+33,2016-04-17,Rayo Vallecano,Villarreal CF,2-1,1-1
+33,2016-04-17,Atlético Madrid,Granada CF,3-0,1-0
+33,2016-04-17,FC Barcelona,Valencia CF,1-2,0-2
+34,2016-04-19,Espanyol Barcelona,RC Celta,1-1,1-1
+34,2016-04-19,Real Betis,UD Las Palmas,1-0,0-0
+34,2016-04-20,Deportivo La Coruña,FC Barcelona,0-8,0-2
+34,2016-04-20,Valencia CF,SD Eibar,4-0,3-0
+34,2016-04-20,Sporting Gijón,Sevilla FC,2-1,1-1
+34,2016-04-20,Athletic Club,Atlético Madrid,0-1,0-1
+34,2016-04-20,Málaga CF,Rayo Vallecano,1-1,0-0
+34,2016-04-20,Real Madrid,Villarreal CF,3-0,1-0
+34,2016-04-21,Real Sociedad,Getafe CF,1-2,1-1
+34,2016-04-21,Granada CF,Levante UD,5-1,3-0
+35,2016-04-22,UD Las Palmas,Espanyol Barcelona,4-0,1-0
+35,2016-04-23,Rayo Vallecano,Real Madrid,2-3,2-1
+35,2016-04-23,Atlético Madrid,Málaga CF,1-0,0-0
+35,2016-04-23,FC Barcelona,Sporting Gijón,6-0,1-0
+35,2016-04-23,SD Eibar,Deportivo La Coruña,1-1,1-0
+35,2016-04-24,Levante UD,Athletic Club,2-2,1-0
+35,2016-04-24,Sevilla FC,Real Betis,2-0,0-0
+35,2016-04-24,Getafe CF,Valencia CF,2-2,0-0
+35,2016-04-24,Villarreal CF,Real Sociedad,0-0,
+35,2016-04-25,RC Celta,Granada CF,2-1,1-0
+36,2016-04-29,Sporting Gijón,SD Eibar,2-0,1-0
+36,2016-04-30,Real Sociedad,Real Madrid,0-1,0-0
+36,2016-04-30,Atlético Madrid,Rayo Vallecano,1-0,0-0
+36,2016-04-30,Real Betis,FC Barcelona,0-2,0-0
+36,2016-04-30,Granada CF,UD Las Palmas,3-2,2-2
+36,2016-05-01,Athletic Club,RC Celta,2-1,1-1
+36,2016-05-01,Espanyol Barcelona,Sevilla FC,1-0,0-0
+36,2016-05-01,Deportivo La Coruña,Getafe CF,0-2,0-1
+36,2016-05-01,Valencia CF,Villarreal CF,0-2,0-2
+36,2016-05-02,Málaga CF,Levante UD,3-1,1-1
+37,2016-05-08,Real Sociedad,Rayo Vallecano,2-1,1-0
+37,2016-05-08,Real Madrid,Valencia CF,3-2,2-0
+37,2016-05-08,Villarreal CF,Deportivo La Coruña,0-2,0-1
+37,2016-05-08,Getafe CF,Sporting Gijón,1-1,0-0
+37,2016-05-08,SD Eibar,Real Betis,1-1,0-1
+37,2016-05-08,FC Barcelona,Espanyol Barcelona,5-0,1-0
+37,2016-05-08,Sevilla FC,Granada CF,1-4,0-1
+37,2016-05-08,UD Las Palmas,Athletic Club,0-0,
+37,2016-05-08,RC Celta,Málaga CF,1-0,1-0
+37,2016-05-08,Levante UD,Atlético Madrid,2-1,1-1
+38,2016-05-13,Valencia CF,Real Sociedad,0-1,0-0
+38,2016-05-14,Deportivo La Coruña,Real Madrid,0-2,0-2
+38,2016-05-14,Granada CF,FC Barcelona,0-3,0-2
+38,2016-05-14,Athletic Club,Sevilla FC,3-1,2-0
+38,2016-05-14,Atlético Madrid,RC Celta,2-0,0-0
+38,2016-05-15,Málaga CF,UD Las Palmas,4-1,2-1
+38,2016-05-15,Espanyol Barcelona,SD Eibar,4-2,2-0
+38,2016-05-15,Sporting Gijón,Villarreal CF,2-0,1-0
+38,2016-05-15,Real Betis,Getafe CF,2-1,0-0
+38,2016-05-15,Rayo Vallecano,Levante UD,3-1,2-0

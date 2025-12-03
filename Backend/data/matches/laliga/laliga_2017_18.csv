@@ -1,0 +1,381 @@
+Matchday,Date,Home,Away,FullTime,HalfTime
+1,2017-08-18,CD Leganés,CD Alavés,1-0,1-0
+1,2017-08-18,Valencia CF,UD Las Palmas,1-0,1-0
+1,2017-08-19,RC Celta,Real Sociedad,2-3,1-1
+1,2017-08-19,Girona FC,Atlético Madrid,2-2,2-0
+1,2017-08-19,Sevilla FC,Espanyol Barcelona,1-1,1-1
+1,2017-08-20,Athletic Club,Getafe CF,0-0,
+1,2017-08-20,FC Barcelona,Real Betis,2-0,2-0
+1,2017-08-20,Deportivo La Coruña,Real Madrid,0-3,0-2
+1,2017-08-21,Levante UD,Villarreal CF,1-0,0-0
+1,2017-08-21,Málaga CF,SD Eibar,0-1,0-0
+2,2017-08-25,Real Sociedad,Villarreal CF,3-0,3-0
+2,2017-08-25,Real Betis,RC Celta,2-1,1-1
+2,2017-08-26,CD Alavés,FC Barcelona,0-2,0-0
+2,2017-08-26,Girona FC,Málaga CF,1-0,1-0
+2,2017-08-26,Levante UD,Deportivo La Coruña,2-2,1-2
+2,2017-08-26,UD Las Palmas,Atlético Madrid,1-5,0-2
+2,2017-08-27,SD Eibar,Athletic Club,0-1,0-1
+2,2017-08-27,Espanyol Barcelona,CD Leganés,0-1,0-1
+2,2017-08-27,Getafe CF,Sevilla FC,0-1,0-0
+2,2017-08-27,Real Madrid,Valencia CF,2-2,1-1
+3,2017-09-08,CD Leganés,Getafe CF,1-2,0-1
+3,2017-09-09,Real Madrid,Levante UD,1-1,1-1
+3,2017-09-09,Valencia CF,Atlético Madrid,0-0,
+3,2017-09-09,Sevilla FC,SD Eibar,3-0,0-0
+3,2017-09-09,FC Barcelona,Espanyol Barcelona,5-0,2-0
+3,2017-09-10,Deportivo La Coruña,Real Sociedad,2-4,1-2
+3,2017-09-10,Athletic Club,Girona FC,2-0,1-0
+3,2017-09-10,RC Celta,CD Alavés,1-0,1-0
+3,2017-09-10,Villarreal CF,Real Betis,3-1,1-1
+3,2017-09-11,Málaga CF,UD Las Palmas,1-3,0-1
+4,2017-09-15,SD Eibar,CD Leganés,1-0,0-0
+4,2017-09-16,Levante UD,Valencia CF,1-1,1-1
+4,2017-09-16,Getafe CF,FC Barcelona,1-2,1-0
+4,2017-09-16,Real Betis,Deportivo La Coruña,2-1,1-1
+4,2017-09-16,Atlético Madrid,Málaga CF,1-0,0-0
+4,2017-09-17,CD Alavés,Villarreal CF,0-3,0-1
+4,2017-09-17,Girona FC,Sevilla FC,0-1,0-0
+4,2017-09-17,UD Las Palmas,Athletic Club,1-0,0-0
+4,2017-09-17,Real Sociedad,Real Madrid,1-3,1-2
+4,2017-09-18,Espanyol Barcelona,RC Celta,2-1,2-0
+5,2017-09-19,Valencia CF,Málaga CF,5-0,1-0
+5,2017-09-19,FC Barcelona,SD Eibar,6-1,2-0
+5,2017-09-20,Athletic Club,Atlético Madrid,1-2,0-0
+5,2017-09-20,CD Leganés,Girona FC,0-0,
+5,2017-09-20,Deportivo La Coruña,CD Alavés,1-0,1-0
+5,2017-09-20,Real Madrid,Real Betis,0-1,0-0
+5,2017-09-20,Sevilla FC,UD Las Palmas,1-0,0-0
+5,2017-09-21,Villarreal CF,Espanyol Barcelona,0-0,
+5,2017-09-21,RC Celta,Getafe CF,1-1,1-0
+5,2017-09-21,Levante UD,Real Sociedad,3-0,1-0
+6,2017-09-23,Atlético Madrid,Sevilla FC,2-0,0-0
+6,2017-09-23,CD Alavés,Real Madrid,1-2,1-2
+6,2017-09-23,Málaga CF,Athletic Club,3-3,1-1
+6,2017-09-23,Girona FC,FC Barcelona,0-3,0-1
+6,2017-09-24,Espanyol Barcelona,Deportivo La Coruña,4-1,2-0
+6,2017-09-24,Getafe CF,Villarreal CF,4-0,0-0
+6,2017-09-24,SD Eibar,RC Celta,0-4,0-3
+6,2017-09-24,UD Las Palmas,CD Leganés,0-2,0-0
+6,2017-09-24,Real Sociedad,Valencia CF,2-3,1-1
+6,2017-09-25,Real Betis,Levante UD,4-0,0-0
+7,2017-09-29,RC Celta,Girona FC,3-3,2-2
+7,2017-09-30,Deportivo La Coruña,Getafe CF,2-1,0-0
+7,2017-09-30,Sevilla FC,Málaga CF,2-0,0-0
+7,2017-09-30,Levante UD,CD Alavés,0-2,0-1
+7,2017-09-30,CD Leganés,Atlético Madrid,0-0,
+7,2017-10-01,Real Sociedad,Real Betis,4-4,2-2
+7,2017-10-01,FC Barcelona,UD Las Palmas,3-0,0-0
+7,2017-10-01,Valencia CF,Athletic Club,3-2,2-0
+7,2017-10-01,Villarreal CF,SD Eibar,3-0,1-0
+7,2017-10-01,Real Madrid,Espanyol Barcelona,2-0,1-0
+8,2017-10-13,Espanyol Barcelona,Levante UD,0-0,
+8,2017-10-14,Athletic Club,Sevilla FC,1-0,1-0
+8,2017-10-14,Getafe CF,Real Madrid,1-2,0-1
+8,2017-10-14,CD Alavés,Real Sociedad,0-2,0-0
+8,2017-10-14,Atlético Madrid,FC Barcelona,1-1,1-0
+8,2017-10-15,SD Eibar,Deportivo La Coruña,0-0,
+8,2017-10-15,Girona FC,Villarreal CF,1-2,1-2
+8,2017-10-15,Málaga CF,CD Leganés,0-2,0-0
+8,2017-10-15,Real Betis,Valencia CF,3-6,0-2
+8,2017-10-16,UD Las Palmas,RC Celta,2-5,0-2
+9,2017-10-21,Levante UD,Getafe CF,1-1,0-0
+9,2017-10-21,Real Betis,CD Alavés,2-0,1-0
+9,2017-10-21,Valencia CF,Sevilla FC,4-0,1-0
+9,2017-10-21,FC Barcelona,Málaga CF,2-0,1-0
+9,2017-10-22,Villarreal CF,UD Las Palmas,4-0,0-0
+9,2017-10-22,RC Celta,Atlético Madrid,0-1,0-1
+9,2017-10-22,CD Leganés,Athletic Club,1-0,0-0
+9,2017-10-22,Real Madrid,SD Eibar,3-0,2-0
+9,2017-10-23,Real Sociedad,Espanyol Barcelona,1-1,0-1
+9,2017-10-23,Deportivo La Coruña,Girona FC,1-2,0-1
+10,2017-10-28,CD Alavés,Valencia CF,1-2,0-1
+10,2017-10-28,Atlético Madrid,Villarreal CF,1-1,0-0
+10,2017-10-28,Athletic Club,FC Barcelona,0-2,0-1
+10,2017-10-28,Sevilla FC,CD Leganés,2-1,1-0
+10,2017-10-29,Getafe CF,Real Sociedad,2-1,0-1
+10,2017-10-29,Girona FC,Real Madrid,2-1,0-1
+10,2017-10-29,SD Eibar,Levante UD,2-2,0-2
+10,2017-10-29,Málaga CF,RC Celta,2-1,1-0
+10,2017-10-30,Espanyol Barcelona,Real Betis,1-0,0-0
+10,2017-10-30,UD Las Palmas,Deportivo La Coruña,1-3,1-1
+11,2017-11-03,Real Betis,Getafe CF,2-2,0-2
+11,2017-11-04,Valencia CF,CD Leganés,3-0,1-0
+11,2017-11-04,Deportivo La Coruña,Atlético Madrid,0-1,0-0
+11,2017-11-04,CD Alavés,Espanyol Barcelona,1-0,1-0
+11,2017-11-04,FC Barcelona,Sevilla FC,2-1,1-0
+11,2017-11-05,Levante UD,Girona FC,1-2,0-0
+11,2017-11-05,RC Celta,Athletic Club,3-1,3-1
+11,2017-11-05,Real Sociedad,SD Eibar,3-1,2-0
+11,2017-11-05,Villarreal CF,Málaga CF,2-0,0-0
+11,2017-11-05,Real Madrid,UD Las Palmas,3-0,1-0
+12,2017-11-17,Girona FC,Real Sociedad,1-1,0-1
+12,2017-11-18,Getafe CF,CD Alavés,4-1,2-0
+12,2017-11-18,CD Leganés,FC Barcelona,0-3,0-1
+12,2017-11-18,Sevilla FC,RC Celta,2-1,1-1
+12,2017-11-18,Atlético Madrid,Real Madrid,0-0,
+12,2017-11-19,Málaga CF,Deportivo La Coruña,3-2,1-1
+12,2017-11-19,Espanyol Barcelona,Valencia CF,0-2,0-0
+12,2017-11-19,UD Las Palmas,Levante UD,0-2,0-0
+12,2017-11-19,Athletic Club,Villarreal CF,1-1,0-1
+12,2017-11-20,SD Eibar,Real Betis,5-0,2-0
+13,2017-11-24,RC Celta,CD Leganés,1-0,1-0
+13,2017-11-25,CD Alavés,SD Eibar,1-2,0-1
+13,2017-11-25,Real Madrid,Málaga CF,3-2,2-1
+13,2017-11-25,Real Betis,Girona FC,2-2,0-1
+13,2017-11-25,Levante UD,Atlético Madrid,0-5,0-2
+13,2017-11-26,Deportivo La Coruña,Athletic Club,2-2,1-1
+13,2017-11-26,Real Sociedad,UD Las Palmas,2-2,1-1
+13,2017-11-26,Villarreal CF,Sevilla FC,2-3,1-0
+13,2017-11-26,Valencia CF,FC Barcelona,1-1,0-0
+13,2017-11-27,Espanyol Barcelona,Getafe CF,1-0,0-0
+14,2017-12-01,Málaga CF,Levante UD,0-0,
+14,2017-12-02,FC Barcelona,RC Celta,2-2,1-1
+14,2017-12-02,Atlético Madrid,Real Sociedad,2-1,0-1
+14,2017-12-02,Sevilla FC,Deportivo La Coruña,2-0,1-0
+14,2017-12-02,Athletic Club,Real Madrid,0-0,
+14,2017-12-03,CD Leganés,Villarreal CF,3-1,0-0
+14,2017-12-03,Getafe CF,Valencia CF,1-0,0-0
+14,2017-12-03,SD Eibar,Espanyol Barcelona,3-1,2-0
+14,2017-12-03,UD Las Palmas,Real Betis,1-0,1-0
+14,2017-12-04,Girona FC,CD Alavés,2-3,0-0
+15,2017-12-08,CD Alavés,UD Las Palmas,2-0,1-0
+15,2017-12-09,Getafe CF,SD Eibar,0-0,
+15,2017-12-09,Real Madrid,Sevilla FC,5-0,5-0
+15,2017-12-09,Deportivo La Coruña,CD Leganés,1-0,1-0
+15,2017-12-09,Valencia CF,RC Celta,2-1,1-0
+15,2017-12-10,Real Sociedad,Málaga CF,0-2,0-1
+15,2017-12-10,Real Betis,Atlético Madrid,0-1,0-1
+15,2017-12-10,Levante UD,Athletic Club,1-2,0-1
+15,2017-12-10,Villarreal CF,FC Barcelona,0-2,0-0
+15,2017-12-11,Espanyol Barcelona,Girona FC,0-1,0-1
+16,2017-12-15,Sevilla FC,Levante UD,0-0,
+16,2017-12-16,Athletic Club,Real Sociedad,0-0,
+16,2017-12-16,SD Eibar,Valencia CF,2-1,0-0
+16,2017-12-16,Atlético Madrid,CD Alavés,1-0,0-0
+16,2017-12-17,Girona FC,Getafe CF,1-0,1-0
+16,2017-12-17,RC Celta,Villarreal CF,0-1,0-1
+16,2017-12-17,UD Las Palmas,Espanyol Barcelona,2-2,0-2
+16,2017-12-17,FC Barcelona,Deportivo La Coruña,4-0,2-0
+16,2017-12-18,Málaga CF,Real Betis,0-2,0-1
+16,2018-02-21,CD Leganés,Real Madrid,1-3,1-2
+17,2017-12-19,Levante UD,CD Leganés,0-0,
+17,2017-12-20,Getafe CF,UD Las Palmas,2-0,2-0
+17,2017-12-20,Real Sociedad,Sevilla FC,3-1,1-1
+17,2017-12-21,SD Eibar,Girona FC,4-1,2-1
+17,2017-12-21,CD Alavés,Málaga CF,1-0,0-0
+17,2017-12-22,Real Betis,Athletic Club,0-2,0-1
+17,2017-12-22,Espanyol Barcelona,Atlético Madrid,1-0,0-0
+17,2017-12-23,Real Madrid,FC Barcelona,0-3,0-0
+17,2017-12-23,Valencia CF,Villarreal CF,0-1,0-1
+17,2017-12-23,Deportivo La Coruña,RC Celta,1-3,0-2
+18,2018-01-06,Atlético Madrid,Getafe CF,2-0,1-0
+18,2018-01-06,Valencia CF,Girona FC,2-1,1-1
+18,2018-01-06,UD Las Palmas,SD Eibar,1-2,1-0
+18,2018-01-06,Sevilla FC,Real Betis,3-5,2-2
+18,2018-01-07,CD Leganés,Real Sociedad,1-0,0-0
+18,2018-01-07,FC Barcelona,Levante UD,3-0,2-0
+18,2018-01-07,Athletic Club,CD Alavés,2-0,1-0
+18,2018-01-07,Villarreal CF,Deportivo La Coruña,1-1,1-0
+18,2018-01-07,RC Celta,Real Madrid,2-2,1-2
+18,2018-01-08,Málaga CF,Espanyol Barcelona,0-1,0-1
+19,2018-01-12,Getafe CF,Málaga CF,1-0,0-0
+19,2018-01-13,Girona FC,UD Las Palmas,6-0,1-0
+19,2018-01-13,Real Madrid,Villarreal CF,0-1,0-0
+19,2018-01-13,SD Eibar,Atlético Madrid,0-1,0-1
+19,2018-01-13,Deportivo La Coruña,Valencia CF,1-2,0-1
+19,2018-01-14,Levante UD,RC Celta,0-1,0-1
+19,2018-01-14,CD Alavés,Sevilla FC,1-0,0-0
+19,2018-01-14,Espanyol Barcelona,Athletic Club,1-1,1-1
+19,2018-01-14,Real Sociedad,FC Barcelona,2-4,2-1
+19,2018-01-15,Real Betis,CD Leganés,3-2,2-1
+20,2018-01-19,Getafe CF,Athletic Club,2-2,1-1
+20,2018-01-20,Espanyol Barcelona,Sevilla FC,0-3,0-2
+20,2018-01-20,Atlético Madrid,Girona FC,1-1,1-0
+20,2018-01-20,Villarreal CF,Levante UD,2-1,1-0
+20,2018-01-20,UD Las Palmas,Valencia CF,2-1,1-1
+20,2018-01-21,CD Alavés,CD Leganés,2-2,0-0
+20,2018-01-21,Real Madrid,Deportivo La Coruña,7-1,2-1
+20,2018-01-21,Real Sociedad,RC Celta,1-2,1-1
+20,2018-01-21,Real Betis,FC Barcelona,0-5,0-0
+20,2018-01-22,SD Eibar,Málaga CF,1-1,0-1
+21,2018-01-26,Athletic Club,SD Eibar,1-1,0-0
+21,2018-01-27,Deportivo La Coruña,Levante UD,2-2,2-0
+21,2018-01-27,Valencia CF,Real Madrid,1-4,0-2
+21,2018-01-27,Málaga CF,Girona FC,0-0,
+21,2018-01-27,Villarreal CF,Real Sociedad,4-2,4-1
+21,2018-01-28,CD Leganés,Espanyol Barcelona,3-2,1-0
+21,2018-01-28,Atlético Madrid,UD Las Palmas,3-0,0-0
+21,2018-01-28,Sevilla FC,Getafe CF,1-1,0-0
+21,2018-01-28,FC Barcelona,CD Alavés,2-1,0-1
+21,2018-01-29,RC Celta,Real Betis,3-2,1-0
+22,2018-02-02,Real Sociedad,Deportivo La Coruña,5-0,1-0
+22,2018-02-03,SD Eibar,Sevilla FC,5-1,3-1
+22,2018-02-03,Real Betis,Villarreal CF,2-1,1-0
+22,2018-02-03,CD Alavés,RC Celta,2-1,2-0
+22,2018-02-03,Levante UD,Real Madrid,2-2,1-1
+22,2018-02-04,Getafe CF,CD Leganés,0-0,
+22,2018-02-04,Espanyol Barcelona,FC Barcelona,1-1,0-0
+22,2018-02-04,Girona FC,Athletic Club,2-0,1-0
+22,2018-02-04,Atlético Madrid,Valencia CF,1-0,0-0
+22,2018-02-05,UD Las Palmas,Málaga CF,1-0,0-0
+23,2018-02-09,Athletic Club,UD Las Palmas,0-0,
+23,2018-02-10,Villarreal CF,CD Alavés,1-2,0-1
+23,2018-02-10,Málaga CF,Atlético Madrid,0-1,0-1
+23,2018-02-10,CD Leganés,SD Eibar,0-1,0-0
+23,2018-02-10,Real Madrid,Real Sociedad,5-2,4-0
+23,2018-02-11,Sevilla FC,Girona FC,1-0,0-0
+23,2018-02-11,FC Barcelona,Getafe CF,0-0,
+23,2018-02-11,RC Celta,Espanyol Barcelona,2-2,1-1
+23,2018-02-11,Valencia CF,Levante UD,3-1,1-1
+23,2018-02-12,Deportivo La Coruña,Real Betis,0-1,0-0
+24,2018-02-16,Girona FC,CD Leganés,3-0,2-0
+24,2018-02-17,UD Las Palmas,Sevilla FC,1-2,0-1
+24,2018-02-17,SD Eibar,FC Barcelona,0-2,0-1
+24,2018-02-17,CD Alavés,Deportivo La Coruña,1-0,0-0
+24,2018-02-17,Málaga CF,Valencia CF,1-2,1-0
+24,2018-02-18,Real Sociedad,Levante UD,3-0,2-0
+24,2018-02-18,Atlético Madrid,Athletic Club,2-0,0-0
+24,2018-02-18,Espanyol Barcelona,Villarreal CF,1-1,0-1
+24,2018-02-18,Real Betis,Real Madrid,3-5,2-1
+24,2018-02-19,Getafe CF,RC Celta,3-0,1-0
+25,2018-02-23,Deportivo La Coruña,Espanyol Barcelona,0-0,
+25,2018-02-24,RC Celta,SD Eibar,2-0,0-0
+25,2018-02-24,Real Madrid,CD Alavés,4-0,1-0
+25,2018-02-24,CD Leganés,UD Las Palmas,0-0,
+25,2018-02-24,FC Barcelona,Girona FC,6-1,4-1
+25,2018-02-25,Villarreal CF,Getafe CF,1-0,1-0
+25,2018-02-25,Athletic Club,Málaga CF,2-1,2-1
+25,2018-02-25,Valencia CF,Real Sociedad,2-1,1-0
+25,2018-02-25,Sevilla FC,Atlético Madrid,2-5,0-2
+25,2018-02-26,Levante UD,Real Betis,0-2,0-0
+26,2018-02-27,Espanyol Barcelona,Real Madrid,1-0,0-0
+26,2018-02-27,Girona FC,RC Celta,1-0,1-0
+26,2018-02-28,Athletic Club,Valencia CF,1-1,0-1
+26,2018-02-28,Getafe CF,Deportivo La Coruña,3-0,2-0
+26,2018-02-28,Málaga CF,Sevilla FC,0-1,0-1
+26,2018-02-28,Atlético Madrid,CD Leganés,4-0,2-0
+26,2018-02-28,SD Eibar,Villarreal CF,1-0,1-0
+26,2018-03-01,Real Betis,Real Sociedad,0-0,
+26,2018-03-01,UD Las Palmas,FC Barcelona,1-1,0-1
+26,2018-03-01,CD Alavés,Levante UD,1-0,0-0
+27,2018-03-03,Villarreal CF,Girona FC,0-2,0-1
+27,2018-03-03,Sevilla FC,Athletic Club,2-0,2-0
+27,2018-03-03,Deportivo La Coruña,SD Eibar,1-1,1-1
+27,2018-03-03,CD Leganés,Málaga CF,2-0,0-0
+27,2018-03-03,Real Madrid,Getafe CF,3-1,2-0
+27,2018-03-04,Levante UD,Espanyol Barcelona,1-1,0-0
+27,2018-03-04,FC Barcelona,Atlético Madrid,1-0,1-0
+27,2018-03-04,Real Sociedad,CD Alavés,2-1,2-1
+27,2018-03-04,Valencia CF,Real Betis,2-0,1-0
+27,2018-03-05,RC Celta,UD Las Palmas,2-1,0-0
+28,2018-03-09,Girona FC,Deportivo La Coruña,2-0,1-0
+28,2018-03-10,SD Eibar,Real Madrid,1-2,0-1
+28,2018-03-10,Sevilla FC,Valencia CF,0-2,0-1
+28,2018-03-10,Getafe CF,Levante UD,0-1,0-0
+28,2018-03-10,Málaga CF,FC Barcelona,0-2,0-2
+28,2018-03-11,Espanyol Barcelona,Real Sociedad,2-1,0-1
+28,2018-03-11,Atlético Madrid,RC Celta,3-0,1-0
+28,2018-03-11,UD Las Palmas,Villarreal CF,0-2,0-0
+28,2018-03-11,Athletic Club,CD Leganés,2-0,2-0
+28,2018-03-12,CD Alavés,Real Betis,1-3,0-2
+29,2018-03-16,Levante UD,SD Eibar,2-1,1-0
+29,2018-03-17,Deportivo La Coruña,UD Las Palmas,1-1,1-1
+29,2018-03-17,Valencia CF,CD Alavés,3-1,2-0
+29,2018-03-17,Real Sociedad,Getafe CF,1-2,1-1
+29,2018-03-17,Real Betis,Espanyol Barcelona,3-0,1-0
+29,2018-03-18,CD Leganés,Sevilla FC,2-1,1-0
+29,2018-03-18,FC Barcelona,Athletic Club,2-0,2-0
+29,2018-03-18,RC Celta,Málaga CF,0-0,
+29,2018-03-18,Villarreal CF,Atlético Madrid,2-1,0-1
+29,2018-03-18,Real Madrid,Girona FC,6-3,1-1
+30,2018-03-31,Girona FC,Levante UD,1-1,0-0
+30,2018-03-31,Athletic Club,RC Celta,1-1,0-0
+30,2018-03-31,UD Las Palmas,Real Madrid,0-3,0-2
+30,2018-03-31,Sevilla FC,FC Barcelona,2-2,1-0
+30,2018-04-01,Espanyol Barcelona,CD Alavés,0-0,
+30,2018-04-01,CD Leganés,Valencia CF,0-1,0-0
+30,2018-04-01,SD Eibar,Real Sociedad,0-0,
+30,2018-04-01,Málaga CF,Villarreal CF,1-0,1-0
+30,2018-04-01,Atlético Madrid,Deportivo La Coruña,1-0,1-0
+30,2018-04-02,Getafe CF,Real Betis,0-1,0-0
+31,2018-04-06,Deportivo La Coruña,Málaga CF,3-2,1-1
+31,2018-04-07,CD Alavés,Getafe CF,2-0,0-0
+31,2018-04-07,RC Celta,Sevilla FC,4-0,1-0
+31,2018-04-07,Real Betis,SD Eibar,2-0,1-0
+31,2018-04-07,FC Barcelona,CD Leganés,3-1,2-0
+31,2018-04-08,Levante UD,UD Las Palmas,2-1,1-0
+31,2018-04-08,Real Madrid,Atlético Madrid,1-1,0-0
+31,2018-04-08,Real Sociedad,Girona FC,5-0,2-0
+31,2018-04-08,Valencia CF,Espanyol Barcelona,1-0,1-0
+31,2018-04-09,Villarreal CF,Athletic Club,1-3,0-1
+32,2018-04-13,Girona FC,Real Betis,0-1,0-1
+32,2018-04-14,Sevilla FC,Villarreal CF,2-2,0-1
+32,2018-04-14,FC Barcelona,Valencia CF,2-1,1-0
+32,2018-04-14,UD Las Palmas,Real Sociedad,0-1,0-1
+32,2018-04-14,CD Leganés,RC Celta,1-0,0-0
+32,2018-04-14,Athletic Club,Deportivo La Coruña,2-3,0-2
+32,2018-04-15,SD Eibar,CD Alavés,0-1,0-1
+32,2018-04-15,Atlético Madrid,Levante UD,3-0,1-0
+32,2018-04-15,Getafe CF,Espanyol Barcelona,1-0,0-0
+32,2018-04-15,Málaga CF,Real Madrid,1-2,0-1
+33,2018-04-17,Deportivo La Coruña,Sevilla FC,0-0,
+33,2018-04-17,RC Celta,FC Barcelona,2-2,1-1
+33,2018-04-17,Villarreal CF,CD Leganés,2-1,1-0
+33,2018-04-18,Espanyol Barcelona,SD Eibar,0-1,0-1
+33,2018-04-18,Valencia CF,Getafe CF,1-2,0-1
+33,2018-04-18,Real Madrid,Athletic Club,1-1,0-1
+33,2018-04-19,CD Alavés,Girona FC,1-2,0-0
+33,2018-04-19,Real Sociedad,Atlético Madrid,3-0,1-0
+33,2018-04-19,Real Betis,UD Las Palmas,1-0,0-0
+33,2018-04-19,Levante UD,Málaga CF,1-0,0-0
+34,2018-04-20,CD Leganés,Deportivo La Coruña,0-0,
+34,2018-04-21,SD Eibar,Getafe CF,0-1,0-1
+34,2018-04-21,RC Celta,Valencia CF,1-1,0-0
+34,2018-04-22,Girona FC,Espanyol Barcelona,0-2,0-1
+34,2018-04-22,Málaga CF,Real Sociedad,2-0,2-0
+34,2018-04-22,UD Las Palmas,CD Alavés,0-4,0-0
+34,2018-04-22,Atlético Madrid,Real Betis,0-0,
+34,2018-04-23,Athletic Club,Levante UD,1-3,1-2
+34,2018-05-09,FC Barcelona,Villarreal CF,5-1,3-0
+34,2018-05-09,Sevilla FC,Real Madrid,3-2,2-0
+35,2018-04-27,Levante UD,Sevilla FC,2-1,1-1
+35,2018-04-28,Espanyol Barcelona,UD Las Palmas,1-1,0-1
+35,2018-04-28,Real Sociedad,Athletic Club,3-1,2-0
+35,2018-04-28,Real Madrid,CD Leganés,2-1,2-0
+35,2018-04-28,Villarreal CF,RC Celta,4-1,3-1
+35,2018-04-29,Getafe CF,Girona FC,1-1,1-1
+35,2018-04-29,CD Alavés,Atlético Madrid,0-1,0-0
+35,2018-04-29,Valencia CF,SD Eibar,0-0,
+35,2018-04-29,Deportivo La Coruña,FC Barcelona,2-4,1-2
+35,2018-04-30,Real Betis,Málaga CF,2-1,1-1
+36,2018-05-04,Sevilla FC,Real Sociedad,1-0,0-0
+36,2018-05-05,Girona FC,SD Eibar,1-4,0-2
+36,2018-05-05,Athletic Club,Real Betis,2-0,0-0
+36,2018-05-05,RC Celta,Deportivo La Coruña,1-1,1-0
+36,2018-05-05,Villarreal CF,Valencia CF,1-0,0-0
+36,2018-05-06,Málaga CF,CD Alavés,0-3,0-1
+36,2018-05-06,Atlético Madrid,Espanyol Barcelona,0-2,0-0
+36,2018-05-06,UD Las Palmas,Getafe CF,0-1,0-0
+36,2018-05-06,FC Barcelona,Real Madrid,2-2,1-1
+36,2018-05-07,CD Leganés,Levante UD,0-3,0-0
+37,2018-05-12,Real Sociedad,CD Leganés,3-2,2-1
+37,2018-05-12,CD Alavés,Athletic Club,3-1,1-0
+37,2018-05-12,Real Betis,Sevilla FC,2-2,1-0
+37,2018-05-12,Deportivo La Coruña,Villarreal CF,2-4,0-3
+37,2018-05-12,SD Eibar,UD Las Palmas,1-0,1-0
+37,2018-05-12,Getafe CF,Atlético Madrid,0-1,0-1
+37,2018-05-12,Girona FC,Valencia CF,0-1,0-0
+37,2018-05-12,Real Madrid,RC Celta,6-0,3-0
+37,2018-05-13,Espanyol Barcelona,Málaga CF,4-1,3-1
+37,2018-05-13,Levante UD,FC Barcelona,5-4,2-1
+38,2018-05-19,RC Celta,Levante UD,4-2,2-1
+38,2018-05-19,CD Leganés,Real Betis,3-2,1-1
+38,2018-05-19,UD Las Palmas,Girona FC,1-2,1-2
+38,2018-05-19,Málaga CF,Getafe CF,0-1,0-0
+38,2018-05-19,Sevilla FC,CD Alavés,1-0,1-0
+38,2018-05-19,Villarreal CF,Real Madrid,2-2,0-2
+38,2018-05-20,Valencia CF,Deportivo La Coruña,2-1,1-0
+38,2018-05-20,Athletic Club,Espanyol Barcelona,0-1,0-1
+38,2018-05-20,Atlético Madrid,SD Eibar,2-2,1-1
+38,2018-05-20,FC Barcelona,Real Sociedad,1-0,0-0

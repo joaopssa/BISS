@@ -1,0 +1,307 @@
+Matchday,Date,Home,Away,FullTime,HalfTime
+1,2000-08-18,SV Werder Bremen,FC Bayern München,0-4,0-1
+1,2000-08-19,Bayer 04 Leverkusen,RB Leipzig,3-2,2-1
+1,2000-08-19,VfL Wolfsburg,1. FC Heidenheim 1846,2-0,2-0
+1,2000-08-19,TSG 1899 Hoffenheim,SC Freiburg,1-2,0-2
+1,2000-08-19,FC Augsburg,Borussia Mönchengladbach,4-4,3-3
+1,2000-08-19,VfB Stuttgart,VfL Bochum 1848,5-0,2-0
+1,2000-08-19,Borussia Dortmund,1. FC Köln,1-0,0-0
+1,2000-08-20,1. FC Union Berlin,1. FSV Mainz 05,4-1,2-0
+1,2000-08-20,Eintracht Frankfurt,SV Darmstadt 98,1-0,1-0
+2,2000-08-25,RB Leipzig,VfB Stuttgart,5-1,0-1
+2,2000-08-26,SC Freiburg,SV Werder Bremen,1-0,0-0
+2,2000-08-26,1. FC Köln,VfL Wolfsburg,1-2,0-0
+2,2000-08-26,VfL Bochum 1848,Borussia Dortmund,1-1,1-0
+2,2000-08-26,1. FC Heidenheim 1846,TSG 1899 Hoffenheim,2-3,1-0
+2,2000-08-26,SV Darmstadt 98,1. FC Union Berlin,1-4,1-3
+2,2000-08-26,Borussia Mönchengladbach,Bayer 04 Leverkusen,0-3,0-2
+2,2000-08-27,1. FSV Mainz 05,Eintracht Frankfurt,1-1,1-0
+2,2000-08-27,FC Bayern München,FC Augsburg,3-1,2-0
+3,2000-09-01,Borussia Dortmund,1. FC Heidenheim 1846,2-2,2-0
+3,2000-09-02,Bayer 04 Leverkusen,SV Darmstadt 98,5-1,1-1
+3,2000-09-02,TSG 1899 Hoffenheim,VfL Wolfsburg,3-1,1-1
+3,2000-09-02,SV Werder Bremen,1. FSV Mainz 05,4-0,1-0
+3,2000-09-02,FC Augsburg,VfL Bochum 1848,2-2,1-1
+3,2000-09-02,VfB Stuttgart,SC Freiburg,5-0,3-0
+3,2000-09-02,Borussia Mönchengladbach,FC Bayern München,1-2,1-0
+3,2000-09-03,Eintracht Frankfurt,1. FC Köln,1-1,0-1
+3,2000-09-03,1. FC Union Berlin,RB Leipzig,0-3,0-0
+4,2000-09-15,FC Bayern München,Bayer 04 Leverkusen,2-2,1-1
+4,2000-09-16,RB Leipzig,FC Augsburg,3-0,3-0
+4,2000-09-16,SC Freiburg,Borussia Dortmund,2-4,2-1
+4,2000-09-16,VfL Wolfsburg,1. FC Union Berlin,2-1,2-1
+4,2000-09-16,1. FSV Mainz 05,VfB Stuttgart,1-3,0-0
+4,2000-09-16,1. FC Köln,TSG 1899 Hoffenheim,1-3,0-2
+4,2000-09-16,VfL Bochum 1848,Eintracht Frankfurt,1-1,0-0
+4,2000-09-17,1. FC Heidenheim 1846,SV Werder Bremen,4-2,2-0
+4,2000-09-17,SV Darmstadt 98,Borussia Mönchengladbach,3-3,3-0
+5,2000-09-22,VfB Stuttgart,SV Darmstadt 98,3-1,2-1
+5,2000-09-23,FC Bayern München,VfL Bochum 1848,7-0,4-0
+5,2000-09-23,Borussia Dortmund,VfL Wolfsburg,1-0,0-0
+5,2000-09-23,1. FC Union Berlin,TSG 1899 Hoffenheim,0-2,0-2
+5,2000-09-23,Borussia Mönchengladbach,RB Leipzig,0-1,0-0
+5,2000-09-23,FC Augsburg,1. FSV Mainz 05,2-1,2-1
+5,2000-09-23,SV Werder Bremen,1. FC Köln,2-1,1-1
+5,2000-09-24,Bayer 04 Leverkusen,1. FC Heidenheim 1846,4-1,1-0
+5,2000-09-24,Eintracht Frankfurt,SC Freiburg,0-0,
+6,2000-09-29,TSG 1899 Hoffenheim,Borussia Dortmund,1-3,1-2
+6,2000-09-30,VfL Wolfsburg,Eintracht Frankfurt,2-0,1-0
+6,2000-09-30,1. FSV Mainz 05,Bayer 04 Leverkusen,0-3,0-1
+6,2000-09-30,1. FC Köln,VfB Stuttgart,0-2,0-0
+6,2000-09-30,VfL Bochum 1848,Borussia Mönchengladbach,1-3,0-3
+6,2000-09-30,1. FC Heidenheim 1846,1. FC Union Berlin,1-0,0-0
+6,2000-09-30,RB Leipzig,FC Bayern München,2-2,2-0
+6,2000-10-01,SV Darmstadt 98,SV Werder Bremen,4-2,2-0
+6,2000-10-01,SC Freiburg,FC Augsburg,2-0,1-0
+7,2000-10-06,Borussia Mönchengladbach,1. FSV Mainz 05,2-2,1-1
+7,2000-10-07,Borussia Dortmund,1. FC Union Berlin,4-2,1-2
+7,2000-10-07,RB Leipzig,VfL Bochum 1848,0-0,
+7,2000-10-07,FC Augsburg,SV Darmstadt 98,1-2,0-0
+7,2000-10-07,VfB Stuttgart,VfL Wolfsburg,3-1,0-1
+7,2000-10-07,SV Werder Bremen,TSG 1899 Hoffenheim,2-3,1-2
+7,2000-10-08,Bayer 04 Leverkusen,1. FC Köln,3-0,2-0
+7,2000-10-08,FC Bayern München,SC Freiburg,3-0,2-0
+7,2000-10-08,Eintracht Frankfurt,1. FC Heidenheim 1846,2-0,1-0
+8,2000-10-20,Borussia Dortmund,SV Werder Bremen,1-0,0-0
+8,2000-10-21,TSG 1899 Hoffenheim,Eintracht Frankfurt,1-3,1-3
+8,2000-10-21,SV Darmstadt 98,RB Leipzig,1-3,1-2
+8,2000-10-21,1. FC Union Berlin,VfB Stuttgart,0-3,0-1
+8,2000-10-21,SC Freiburg,VfL Bochum 1848,2-1,2-1
+8,2000-10-21,VfL Wolfsburg,Bayer 04 Leverkusen,1-2,1-1
+8,2000-10-21,1. FSV Mainz 05,FC Bayern München,1-3,1-2
+8,2000-10-22,1. FC Köln,Borussia Mönchengladbach,3-1,1-0
+8,2000-10-22,1. FC Heidenheim 1846,FC Augsburg,2-5,2-3
+9,2000-10-27,VfL Bochum 1848,1. FSV Mainz 05,2-2,1-0
+9,2000-10-28,FC Bayern München,SV Darmstadt 98,8-0,0-0
+9,2000-10-28,Borussia Mönchengladbach,1. FC Heidenheim 1846,2-1,1-1
+9,2000-10-28,SV Werder Bremen,1. FC Union Berlin,2-0,1-0
+9,2000-10-28,FC Augsburg,VfL Wolfsburg,3-2,1-2
+9,2000-10-28,VfB Stuttgart,TSG 1899 Hoffenheim,2-3,0-2
+9,2000-10-28,RB Leipzig,1. FC Köln,6-0,4-0
+9,2000-10-29,Eintracht Frankfurt,Borussia Dortmund,3-3,2-1
+9,2000-10-29,Bayer 04 Leverkusen,SC Freiburg,2-1,1-0
+10,2000-11-03,SV Darmstadt 98,VfL Bochum 1848,1-2,1-1
+10,2000-11-04,1. FC Union Berlin,Eintracht Frankfurt,0-3,0-2
+10,2000-11-04,SC Freiburg,Borussia Mönchengladbach,3-3,1-3
+10,2000-11-04,1. FSV Mainz 05,RB Leipzig,2-0,0-0
+10,2000-11-04,1. FC Köln,FC Augsburg,1-1,1-1
+10,2000-11-04,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,2-3,0-2
+10,2000-11-04,Borussia Dortmund,FC Bayern München,0-4,0-2
+10,2000-11-05,VfL Wolfsburg,SV Werder Bremen,2-2,1-1
+10,2000-11-05,1. FC Heidenheim 1846,VfB Stuttgart,2-0,0-0
+11,2000-11-10,Borussia Mönchengladbach,VfL Wolfsburg,4-0,2-0
+11,2000-11-11,FC Bayern München,1. FC Heidenheim 1846,4-2,2-0
+11,2000-11-11,FC Augsburg,TSG 1899 Hoffenheim,1-1,0-1
+11,2000-11-11,VfB Stuttgart,Borussia Dortmund,2-1,1-1
+11,2000-11-11,SV Darmstadt 98,1. FSV Mainz 05,0-0,
+11,2000-11-11,VfL Bochum 1848,1. FC Köln,1-1,1-0
+11,2000-11-12,Bayer 04 Leverkusen,1. FC Union Berlin,4-0,1-0
+11,2000-11-12,SV Werder Bremen,Eintracht Frankfurt,2-2,1-0
+11,2000-11-12,RB Leipzig,SC Freiburg,3-1,1-1
+12,2000-11-24,1. FC Köln,FC Bayern München,0-1,0-1
+12,2000-11-25,Borussia Dortmund,Borussia Mönchengladbach,4-2,3-2
+12,2000-11-25,1. FC Union Berlin,FC Augsburg,1-1,0-1
+12,2000-11-25,SC Freiburg,SV Darmstadt 98,1-1,1-1
+12,2000-11-25,VfL Wolfsburg,RB Leipzig,2-1,1-0
+12,2000-11-25,SV Werder Bremen,Bayer 04 Leverkusen,0-3,0-2
+12,2000-11-25,Eintracht Frankfurt,VfB Stuttgart,1-2,1-2
+12,2000-11-26,1. FC Heidenheim 1846,VfL Bochum 1848,0-0,
+12,2000-11-26,TSG 1899 Hoffenheim,1. FSV Mainz 05,1-1,0-1
+13,2000-12-01,SV Darmstadt 98,1. FC Köln,0-1,0-0
+13,2000-12-02,RB Leipzig,1. FC Heidenheim 1846,2-1,2-1
+13,2000-12-02,Borussia Mönchengladbach,TSG 1899 Hoffenheim,2-1,0-0
+13,2000-12-02,VfL Bochum 1848,VfL Wolfsburg,3-1,2-1
+13,2000-12-02,VfB Stuttgart,SV Werder Bremen,2-0,1-0
+13,2000-12-03,1. FSV Mainz 05,SC Freiburg,0-1,0-0
+13,2000-12-03,Bayer 04 Leverkusen,Borussia Dortmund,1-1,0-1
+13,2000-12-03,FC Augsburg,Eintracht Frankfurt,2-1,1-0
+14,2000-12-08,TSG 1899 Hoffenheim,VfL Bochum 1848,3-1,2-0
+14,2000-12-09,1. FC Union Berlin,Borussia Mönchengladbach,3-1,1-0
+14,2000-12-09,Eintracht Frankfurt,FC Bayern München,5-1,3-1
+14,2000-12-09,VfL Wolfsburg,SC Freiburg,0-1,0-0
+14,2000-12-09,SV Werder Bremen,FC Augsburg,2-0,1-0
+14,2000-12-09,1. FC Heidenheim 1846,SV Darmstadt 98,3-2,1-0
+14,2000-12-09,Borussia Dortmund,RB Leipzig,2-3,1-1
+14,2000-12-10,VfB Stuttgart,Bayer 04 Leverkusen,1-1,1-0
+14,2000-12-10,1. FC Köln,1. FSV Mainz 05,0-0,
+15,2000-12-15,Borussia Mönchengladbach,SV Werder Bremen,2-2,1-1
+15,2000-12-16,1. FSV Mainz 05,1. FC Heidenheim 1846,0-1,0-1
+15,2000-12-16,VfL Bochum 1848,1. FC Union Berlin,3-0,1-0
+15,2000-12-16,FC Augsburg,Borussia Dortmund,1-1,1-1
+15,2000-12-16,SV Darmstadt 98,VfL Wolfsburg,0-1,0-0
+15,2000-12-16,RB Leipzig,TSG 1899 Hoffenheim,3-1,1-1
+15,2000-12-17,SC Freiburg,1. FC Köln,2-0,0-0
+15,2000-12-17,Bayer 04 Leverkusen,Eintracht Frankfurt,3-0,1-0
+15,2000-12-17,FC Bayern München,VfB Stuttgart,3-0,1-0
+16,2000-12-19,SV Werder Bremen,RB Leipzig,1-1,0-0
+16,2000-12-19,Borussia Dortmund,1. FSV Mainz 05,1-1,1-1
+16,2000-12-19,TSG 1899 Hoffenheim,SV Darmstadt 98,3-3,2-1
+16,2000-12-20,1. FC Union Berlin,1. FC Köln,2-0,0-0
+16,2000-12-20,Bayer 04 Leverkusen,VfL Bochum 1848,4-0,3-0
+16,2000-12-20,Eintracht Frankfurt,Borussia Mönchengladbach,2-1,0-1
+16,2000-12-20,VfL Wolfsburg,FC Bayern München,1-2,1-2
+16,2000-12-20,VfB Stuttgart,FC Augsburg,3-0,2-0
+16,2000-12-20,1. FC Heidenheim 1846,SC Freiburg,3-2,0-1
+17,2001-01-12,FC Bayern München,TSG 1899 Hoffenheim,3-0,1-0
+17,2001-01-13,RB Leipzig,Eintracht Frankfurt,0-1,0-1
+17,2001-01-13,SC Freiburg,1. FC Union Berlin,0-0,
+17,2001-01-13,1. FSV Mainz 05,VfL Wolfsburg,1-1,0-1
+17,2001-01-13,1. FC Köln,1. FC Heidenheim 1846,1-1,1-0
+17,2001-01-13,FC Augsburg,Bayer 04 Leverkusen,0-1,0-0
+17,2001-01-13,SV Darmstadt 98,Borussia Dortmund,0-3,0-1
+17,2001-01-14,VfL Bochum 1848,SV Werder Bremen,1-1,0-0
+17,2001-01-14,Borussia Mönchengladbach,VfB Stuttgart,3-1,2-0
+18,2001-01-20,1. FC Köln,Borussia Dortmund,0-4,0-1
+18,2001-01-20,SV Darmstadt 98,Eintracht Frankfurt,2-2,0-1
+18,2001-01-20,1. FC Heidenheim 1846,VfL Wolfsburg,1-1,1-1
+18,2001-01-20,SC Freiburg,TSG 1899 Hoffenheim,3-2,1-0
+18,2001-01-20,VfL Bochum 1848,VfB Stuttgart,1-0,0-0
+18,2001-01-20,RB Leipzig,Bayer 04 Leverkusen,2-3,1-0
+18,2001-01-21,FC Bayern München,SV Werder Bremen,0-1,0-0
+18,2001-01-21,Borussia Mönchengladbach,FC Augsburg,1-2,1-0
+13,2001-01-24,FC Bayern München,1. FC Union Berlin,1-0,0-0
+19,2001-01-26,Eintracht Frankfurt,1. FSV Mainz 05,1-0,0-0
+19,2001-01-27,FC Augsburg,FC Bayern München,2-3,0-2
+19,2001-01-27,VfB Stuttgart,RB Leipzig,5-2,2-1
+19,2001-01-27,SV Werder Bremen,SC Freiburg,3-1,1-1
+19,2001-01-27,VfL Wolfsburg,1. FC Köln,1-1,1-1
+19,2001-01-27,TSG 1899 Hoffenheim,1. FC Heidenheim 1846,1-1,1-1
+19,2001-01-27,Bayer 04 Leverkusen,Borussia Mönchengladbach,0-0,
+19,2001-01-28,1. FC Union Berlin,SV Darmstadt 98,1-0,0-0
+19,2001-01-28,Borussia Dortmund,VfL Bochum 1848,3-1,1-1
+20,2001-02-02,1. FC Heidenheim 1846,Borussia Dortmund,0-0,
+20,2001-02-03,SV Darmstadt 98,Bayer 04 Leverkusen,0-2,0-1
+20,2001-02-03,FC Bayern München,Borussia Mönchengladbach,3-1,1-1
+20,2001-02-03,1. FSV Mainz 05,SV Werder Bremen,0-1,0-1
+20,2001-02-03,VfL Bochum 1848,FC Augsburg,1-1,1-0
+20,2001-02-03,SC Freiburg,VfB Stuttgart,1-3,1-2
+20,2001-02-03,1. FC Köln,Eintracht Frankfurt,2-0,0-0
+20,2001-02-04,VfL Wolfsburg,TSG 1899 Hoffenheim,2-2,0-1
+20,2001-02-04,RB Leipzig,1. FC Union Berlin,2-0,1-0
+18,2001-02-07,1. FSV Mainz 05,1. FC Union Berlin,1-1,1-1
+21,2001-02-09,Borussia Dortmund,SC Freiburg,3-0,2-0
+21,2001-02-10,FC Augsburg,RB Leipzig,2-2,1-1
+21,2001-02-10,1. FC Union Berlin,VfL Wolfsburg,1-0,1-0
+21,2001-02-10,Eintracht Frankfurt,VfL Bochum 1848,1-1,1-1
+21,2001-02-10,SV Werder Bremen,1. FC Heidenheim 1846,1-2,1-2
+21,2001-02-10,Borussia Mönchengladbach,SV Darmstadt 98,0-0,
+21,2001-02-10,Bayer 04 Leverkusen,FC Bayern München,3-0,1-0
+21,2001-02-11,VfB Stuttgart,1. FSV Mainz 05,3-1,2-0
+21,2001-02-11,TSG 1899 Hoffenheim,1. FC Köln,1-1,0-0
+22,2001-02-16,1. FC Köln,SV Werder Bremen,0-1,0-0
+22,2001-02-17,VfL Wolfsburg,Borussia Dortmund,1-1,0-1
+22,2001-02-17,TSG 1899 Hoffenheim,1. FC Union Berlin,0-1,0-0
+22,2001-02-17,1. FC Heidenheim 1846,Bayer 04 Leverkusen,1-2,0-1
+22,2001-02-17,1. FSV Mainz 05,FC Augsburg,1-0,1-0
+22,2001-02-17,SV Darmstadt 98,VfB Stuttgart,1-2,0-1
+22,2001-02-17,RB Leipzig,Borussia Mönchengladbach,2-0,1-0
+22,2001-02-18,SC Freiburg,Eintracht Frankfurt,3-3,2-2
+22,2001-02-18,VfL Bochum 1848,FC Bayern München,3-2,2-1
+23,2001-02-23,Bayer 04 Leverkusen,1. FSV Mainz 05,2-1,1-1
+23,2001-02-24,VfB Stuttgart,1. FC Köln,1-1,0-0
+23,2001-02-24,1. FC Union Berlin,1. FC Heidenheim 1846,2-2,2-1
+23,2001-02-24,SV Werder Bremen,SV Darmstadt 98,1-1,1-1
+23,2001-02-24,Borussia Mönchengladbach,VfL Bochum 1848,5-2,2-0
+23,2001-02-24,FC Bayern München,RB Leipzig,2-1,0-0
+23,2001-02-25,Eintracht Frankfurt,VfL Wolfsburg,2-2,1-2
+23,2001-02-25,Borussia Dortmund,TSG 1899 Hoffenheim,2-3,2-1
+23,2001-02-25,FC Augsburg,SC Freiburg,2-1,0-1
+24,2001-03-01,SC Freiburg,FC Bayern München,2-2,1-1
+24,2001-03-02,1. FC Union Berlin,Borussia Dortmund,0-2,0-1
+24,2001-03-02,VfL Bochum 1848,RB Leipzig,1-4,1-1
+24,2001-03-02,1. FC Heidenheim 1846,Eintracht Frankfurt,1-2,0-1
+24,2001-03-02,1. FSV Mainz 05,Borussia Mönchengladbach,1-1,1-0
+24,2001-03-02,SV Darmstadt 98,FC Augsburg,0-6,0-5
+24,2001-03-02,VfL Wolfsburg,VfB Stuttgart,2-3,0-1
+24,2001-03-03,1. FC Köln,Bayer 04 Leverkusen,0-2,0-1
+24,2001-03-03,TSG 1899 Hoffenheim,SV Werder Bremen,2-1,2-0
+25,2001-03-08,VfB Stuttgart,1. FC Union Berlin,2-0,1-0
+25,2001-03-09,FC Bayern München,1. FSV Mainz 05,8-1,3-1
+25,2001-03-09,Borussia Mönchengladbach,1. FC Köln,3-3,1-1
+25,2001-03-09,FC Augsburg,1. FC Heidenheim 1846,1-0,1-0
+25,2001-03-09,RB Leipzig,SV Darmstadt 98,2-0,1-0
+25,2001-03-09,SV Werder Bremen,Borussia Dortmund,1-2,0-2
+25,2001-03-10,VfL Bochum 1848,SC Freiburg,1-2,0-1
+25,2001-03-10,Eintracht Frankfurt,TSG 1899 Hoffenheim,3-1,1-1
+25,2001-03-10,Bayer 04 Leverkusen,VfL Wolfsburg,2-0,1-0
+26,2001-03-15,1. FC Köln,RB Leipzig,1-5,1-1
+26,2001-03-16,SV Darmstadt 98,FC Bayern München,2-5,1-2
+26,2001-03-16,1. FC Heidenheim 1846,Borussia Mönchengladbach,1-1,0-1
+26,2001-03-16,1. FC Union Berlin,SV Werder Bremen,2-1,0-0
+26,2001-03-16,1. FSV Mainz 05,VfL Bochum 1848,2-0,1-0
+26,2001-03-16,VfL Wolfsburg,FC Augsburg,1-3,1-1
+26,2001-03-16,TSG 1899 Hoffenheim,VfB Stuttgart,0-3,0-2
+26,2001-03-17,SC Freiburg,Bayer 04 Leverkusen,2-3,1-2
+26,2001-03-17,Borussia Dortmund,Eintracht Frankfurt,3-1,1-1
+27,2001-03-30,Eintracht Frankfurt,1. FC Union Berlin,0-0,
+27,2001-03-30,Borussia Mönchengladbach,SC Freiburg,0-3,0-1
+27,2001-03-30,SV Werder Bremen,VfL Wolfsburg,0-2,0-1
+27,2001-03-30,RB Leipzig,1. FSV Mainz 05,0-0,
+27,2001-03-30,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,2-1,0-1
+27,2001-03-30,FC Bayern München,Borussia Dortmund,0-2,0-1
+27,2001-03-31,FC Augsburg,1. FC Köln,1-1,1-1
+27,2001-03-31,VfB Stuttgart,1. FC Heidenheim 1846,3-3,1-0
+27,2001-03-31,VfL Bochum 1848,SV Darmstadt 98,2-2,1-0
+28,2001-04-05,Eintracht Frankfurt,SV Werder Bremen,1-1,0-0
+28,2001-04-06,1. FC Heidenheim 1846,FC Bayern München,3-2,0-2
+28,2001-04-06,SC Freiburg,RB Leipzig,1-4,0-3
+28,2001-04-06,1. FC Union Berlin,Bayer 04 Leverkusen,0-1,0-1
+28,2001-04-06,1. FC Köln,VfL Bochum 1848,2-1,0-0
+28,2001-04-06,1. FSV Mainz 05,SV Darmstadt 98,4-0,1-0
+28,2001-04-06,Borussia Dortmund,VfB Stuttgart,0-1,0-0
+28,2001-04-07,TSG 1899 Hoffenheim,FC Augsburg,3-1,2-0
+28,2001-04-07,VfL Wolfsburg,Borussia Mönchengladbach,1-3,1-0
+29,2001-04-12,FC Augsburg,1. FC Union Berlin,2-0,0-0
+29,2001-04-13,Borussia Mönchengladbach,Borussia Dortmund,1-2,1-2
+29,2001-04-13,RB Leipzig,VfL Wolfsburg,3-0,1-0
+29,2001-04-13,FC Bayern München,1. FC Köln,2-0,0-0
+29,2001-04-13,1. FSV Mainz 05,TSG 1899 Hoffenheim,4-1,0-1
+29,2001-04-13,VfL Bochum 1848,1. FC Heidenheim 1846,1-1,0-0
+29,2001-04-13,VfB Stuttgart,Eintracht Frankfurt,3-0,3-0
+29,2001-04-14,SV Darmstadt 98,SC Freiburg,0-1,0-1
+29,2001-04-14,Bayer 04 Leverkusen,SV Werder Bremen,5-0,1-0
+30,2001-04-19,Eintracht Frankfurt,FC Augsburg,3-1,0-1
+30,2001-04-20,1. FC Heidenheim 1846,RB Leipzig,1-2,0-1
+30,2001-04-20,TSG 1899 Hoffenheim,Borussia Mönchengladbach,4-3,1-1
+30,2001-04-20,VfL Wolfsburg,VfL Bochum 1848,1-0,1-0
+30,2001-04-20,1. FC Köln,SV Darmstadt 98,0-2,0-0
+30,2001-04-20,1. FC Union Berlin,FC Bayern München,1-5,0-2
+30,2001-04-21,SV Werder Bremen,VfB Stuttgart,2-1,1-0
+30,2001-04-21,Borussia Dortmund,Bayer 04 Leverkusen,1-1,0-0
+30,2001-04-21,SC Freiburg,1. FSV Mainz 05,1-1,1-1
+31,2001-04-26,VfL Bochum 1848,TSG 1899 Hoffenheim,3-2,2-0
+31,2001-04-27,RB Leipzig,Borussia Dortmund,4-1,2-1
+31,2001-04-27,FC Bayern München,Eintracht Frankfurt,2-1,1-1
+31,2001-04-27,SC Freiburg,VfL Wolfsburg,1-2,1-0
+31,2001-04-27,FC Augsburg,SV Werder Bremen,0-3,0-0
+31,2001-04-27,Bayer 04 Leverkusen,VfB Stuttgart,2-2,0-0
+31,2001-04-28,Borussia Mönchengladbach,1. FC Union Berlin,0-0,
+31,2001-04-28,1. FSV Mainz 05,1. FC Köln,1-1,1-0
+31,2001-04-28,SV Darmstadt 98,1. FC Heidenheim 1846,0-1,0-0
+32,2001-05-03,TSG 1899 Hoffenheim,RB Leipzig,1-1,0-1
+32,2001-05-04,VfB Stuttgart,FC Bayern München,3-1,1-1
+32,2001-05-04,SV Werder Bremen,Borussia Mönchengladbach,2-2,1-1
+32,2001-05-04,Borussia Dortmund,FC Augsburg,5-1,4-1
+32,2001-05-04,VfL Wolfsburg,SV Darmstadt 98,3-0,2-0
+32,2001-05-04,1. FC Köln,SC Freiburg,0-0,
+32,2001-05-05,1. FC Union Berlin,VfL Bochum 1848,3-4,0-3
+32,2001-05-05,Eintracht Frankfurt,Bayer 04 Leverkusen,1-5,1-2
+32,2001-05-05,1. FC Heidenheim 1846,1. FSV Mainz 05,1-1,0-1
+33,2001-05-10,FC Augsburg,VfB Stuttgart,0-1,0-0
+33,2001-05-11,1. FC Köln,1. FC Union Berlin,3-2,1-2
+33,2001-05-11,Borussia Mönchengladbach,Eintracht Frankfurt,1-1,1-1
+33,2001-05-11,RB Leipzig,SV Werder Bremen,1-1,0-1
+33,2001-05-11,SC Freiburg,1. FC Heidenheim 1846,1-1,1-1
+33,2001-05-11,1. FSV Mainz 05,Borussia Dortmund,3-0,3-0
+33,2001-05-12,SV Darmstadt 98,TSG 1899 Hoffenheim,0-6,0-5
+33,2001-05-12,FC Bayern München,VfL Wolfsburg,2-0,2-0
+33,2001-05-12,VfL Bochum 1848,Bayer 04 Leverkusen,0-5,0-2
+34,2001-05-18,TSG 1899 Hoffenheim,FC Bayern München,4-2,1-2
+34,2001-05-18,Eintracht Frankfurt,RB Leipzig,2-2,0-1
+34,2001-05-18,1. FC Union Berlin,SC Freiburg,2-1,0-0
+34,2001-05-18,VfL Wolfsburg,1. FSV Mainz 05,1-3,1-1
+34,2001-05-18,VfB Stuttgart,Borussia Mönchengladbach,4-0,2-0
+34,2001-05-18,1. FC Heidenheim 1846,1. FC Köln,4-1,3-0
+34,2001-05-18,SV Werder Bremen,VfL Bochum 1848,4-1,1-0
+34,2001-05-18,Bayer 04 Leverkusen,FC Augsburg,2-1,2-0
+34,2001-05-18,Borussia Dortmund,SV Darmstadt 98,4-0,2-0

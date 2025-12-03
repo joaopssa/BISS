@@ -1,0 +1,381 @@
+Matchday,Date,Home,Away,FullTime,HalfTime
+1,2012-08-18,RC Celta,Málaga CF,0-1,0-0
+1,2012-08-18,Sevilla FC,Getafe CF,2-1,2-0
+1,2012-08-18,RCD Mallorca,Espanyol Barcelona,2-1,1-1
+1,2012-08-19,Athletic Club,Real Betis,3-5,0-3
+1,2012-08-19,Real Madrid,Valencia CF,1-1,1-1
+1,2012-08-19,FC Barcelona,Real Sociedad,5-1,4-1
+1,2012-08-19,Levante UD,Atlético Madrid,1-1,1-1
+1,2012-08-20,Deportivo La Coruña,CA Osasuna,2-0,0-0
+1,2012-08-20,Rayo Vallecano,Granada CF,1-0,0-0
+1,2012-08-20,Real Zaragoza,Real Valladolid,0-1,0-1
+2,2012-08-25,Real Sociedad,RC Celta,2-1,0-0
+2,2012-08-25,Real Betis,Rayo Vallecano,1-2,1-1
+2,2012-08-25,Espanyol Barcelona,Real Zaragoza,1-2,1-0
+2,2012-08-25,Málaga CF,RCD Mallorca,1-1,0-0
+2,2012-08-26,CA Osasuna,FC Barcelona,1-2,1-0
+2,2012-08-26,Getafe CF,Real Madrid,2-1,0-1
+2,2012-08-26,Granada CF,Sevilla FC,1-1,1-1
+2,2012-08-26,Valencia CF,Deportivo La Coruña,3-3,3-1
+2,2012-08-27,Real Valladolid,Levante UD,2-0,1-0
+2,2012-08-27,Atlético Madrid,Athletic Club,4-0,2-0
+3,2012-09-01,RC Celta,CA Osasuna,2-0,0-0
+3,2012-09-01,Real Zaragoza,Málaga CF,0-1,0-0
+3,2012-09-01,Deportivo La Coruña,Getafe CF,1-1,1-1
+3,2012-09-01,RCD Mallorca,Real Sociedad,1-0,0-0
+3,2012-09-02,Rayo Vallecano,Sevilla FC,0-0,
+3,2012-09-02,Athletic Club,Real Valladolid,2-0,0-0
+3,2012-09-02,Levante UD,Espanyol Barcelona,3-2,0-2
+3,2012-09-02,Real Madrid,Granada CF,3-0,1-0
+3,2012-09-02,FC Barcelona,Valencia CF,1-0,1-0
+3,2012-09-26,Real Betis,Atlético Madrid,2-4,2-1
+4,2012-09-15,Málaga CF,Levante UD,3-1,1-0
+4,2012-09-15,Valencia CF,RC Celta,2-1,1-1
+4,2012-09-15,Getafe CF,FC Barcelona,1-4,0-1
+4,2012-09-15,Sevilla FC,Real Madrid,1-0,1-0
+4,2012-09-16,Espanyol Barcelona,Athletic Club,3-3,2-0
+4,2012-09-16,Granada CF,Deportivo La Coruña,1-1,0-1
+4,2012-09-16,CA Osasuna,RCD Mallorca,1-1,0-0
+4,2012-09-16,Real Sociedad,Real Zaragoza,2-0,0-0
+4,2012-09-16,Atlético Madrid,Rayo Vallecano,4-3,1-0
+4,2012-09-17,Real Valladolid,Real Betis,0-1,0-0
+5,2012-09-22,Real Zaragoza,CA Osasuna,3-1,2-1
+5,2012-09-22,RC Celta,Getafe CF,2-1,0-0
+5,2012-09-22,Real Betis,Espanyol Barcelona,1-0,1-0
+5,2012-09-22,FC Barcelona,Granada CF,2-0,0-0
+5,2012-09-23,RCD Mallorca,Valencia CF,2-0,1-0
+5,2012-09-23,Levante UD,Real Sociedad,2-1,0-1
+5,2012-09-23,Atlético Madrid,Real Valladolid,2-1,2-0
+5,2012-09-23,Athletic Club,Málaga CF,0-0,
+5,2012-09-24,Rayo Vallecano,Real Madrid,0-2,0-1
+5,2012-09-24,Deportivo La Coruña,Sevilla FC,0-2,0-0
+6,2012-09-29,Valencia CF,Real Zaragoza,2-0,1-0
+6,2012-09-29,Málaga CF,Real Betis,4-0,2-0
+6,2012-09-29,Real Sociedad,Athletic Club,2-0,0-0
+6,2012-09-29,Sevilla FC,FC Barcelona,2-3,1-0
+6,2012-09-30,Granada CF,RC Celta,2-1,2-1
+6,2012-09-30,Real Valladolid,Rayo Vallecano,6-1,4-1
+6,2012-09-30,CA Osasuna,Levante UD,4-0,0-0
+6,2012-09-30,Real Madrid,Deportivo La Coruña,5-1,3-1
+6,2012-09-30,Espanyol Barcelona,Atlético Madrid,0-1,0-1
+6,2012-10-01,Getafe CF,RCD Mallorca,1-0,0-0
+7,2012-10-05,RC Celta,Sevilla FC,2-0,0-0
+7,2012-10-06,Rayo Vallecano,Deportivo La Coruña,2-1,2-1
+7,2012-10-06,Real Zaragoza,Getafe CF,0-1,0-0
+7,2012-10-06,Real Valladolid,Espanyol Barcelona,1-1,0-0
+7,2012-10-06,Real Betis,Real Sociedad,2-0,1-0
+7,2012-10-07,Levante UD,Valencia CF,1-0,1-0
+7,2012-10-07,RCD Mallorca,Granada CF,1-2,0-0
+7,2012-10-07,Athletic Club,CA Osasuna,1-0,1-0
+7,2012-10-07,FC Barcelona,Real Madrid,2-2,1-1
+7,2012-10-07,Atlético Madrid,Málaga CF,2-1,1-1
+8,2012-10-20,Málaga CF,Real Valladolid,2-1,1-1
+8,2012-10-20,Real Madrid,RC Celta,2-0,1-0
+8,2012-10-20,Valencia CF,Athletic Club,3-2,1-2
+8,2012-10-20,Deportivo La Coruña,FC Barcelona,4-5,2-4
+8,2012-10-21,Getafe CF,Levante UD,0-1,0-0
+8,2012-10-21,Espanyol Barcelona,Rayo Vallecano,3-2,1-1
+8,2012-10-21,Granada CF,Real Zaragoza,1-2,0-2
+8,2012-10-21,CA Osasuna,Real Betis,0-0,
+8,2012-10-21,Real Sociedad,Atlético Madrid,0-1,0-0
+8,2012-10-22,Sevilla FC,RCD Mallorca,3-2,1-2
+9,2012-10-27,Espanyol Barcelona,Málaga CF,0-0,
+9,2012-10-27,Real Betis,Valencia CF,1-0,1-0
+9,2012-10-27,RC Celta,Deportivo La Coruña,1-1,1-1
+9,2012-10-27,Rayo Vallecano,FC Barcelona,0-5,0-1
+9,2012-10-28,Real Zaragoza,Sevilla FC,2-1,2-0
+9,2012-10-28,Levante UD,Granada CF,3-1,1-0
+9,2012-10-28,Athletic Club,Getafe CF,1-2,0-1
+9,2012-10-28,Atlético Madrid,CA Osasuna,3-1,2-1
+9,2012-10-28,RCD Mallorca,Real Madrid,0-5,0-2
+9,2012-10-29,Real Valladolid,Real Sociedad,2-2,1-1
+10,2012-11-03,Málaga CF,Rayo Vallecano,1-2,0-1
+10,2012-11-03,FC Barcelona,RC Celta,3-1,2-1
+10,2012-11-03,Real Madrid,Real Zaragoza,4-0,2-0
+10,2012-11-03,Valencia CF,Atlético Madrid,2-0,1-0
+10,2012-11-04,Real Sociedad,Espanyol Barcelona,0-1,0-0
+10,2012-11-04,Deportivo La Coruña,RCD Mallorca,1-0,1-0
+10,2012-11-04,CA Osasuna,Real Valladolid,0-1,0-0
+10,2012-11-04,Granada CF,Athletic Club,1-2,0-2
+10,2012-11-04,Sevilla FC,Levante UD,0-0,
+10,2012-11-05,Getafe CF,Real Betis,2-4,0-0
+11,2012-11-09,Real Betis,Granada CF,1-2,0-1
+11,2012-11-10,Rayo Vallecano,RC Celta,3-2,0-2
+11,2012-11-10,Espanyol Barcelona,CA Osasuna,0-3,0-1
+11,2012-11-10,Real Zaragoza,Deportivo La Coruña,5-3,1-2
+11,2012-11-10,Málaga CF,Real Sociedad,1-2,1-1
+11,2012-11-11,Real Valladolid,Valencia CF,1-1,0-1
+11,2012-11-11,Athletic Club,Sevilla FC,2-1,2-0
+11,2012-11-11,RCD Mallorca,FC Barcelona,2-4,0-3
+11,2012-11-11,Atlético Madrid,Getafe CF,2-0,2-0
+11,2012-11-11,Levante UD,Real Madrid,1-2,0-1
+12,2012-11-17,CA Osasuna,Málaga CF,0-0,
+12,2012-11-17,Valencia CF,Espanyol Barcelona,2-1,1-1
+12,2012-11-17,FC Barcelona,Real Zaragoza,3-1,2-1
+12,2012-11-17,Real Madrid,Athletic Club,5-1,3-1
+12,2012-11-18,Deportivo La Coruña,Levante UD,0-2,0-1
+12,2012-11-18,RC Celta,RCD Mallorca,1-1,0-1
+12,2012-11-18,Getafe CF,Real Valladolid,2-1,0-1
+12,2012-11-18,Granada CF,Atlético Madrid,0-1,0-0
+12,2012-11-18,Sevilla FC,Real Betis,5-1,4-0
+12,2012-11-19,Real Sociedad,Rayo Vallecano,4-0,2-0
+13,2012-11-23,Real Sociedad,CA Osasuna,0-0,
+13,2012-11-24,Rayo Vallecano,RCD Mallorca,2-0,0-0
+13,2012-11-24,Real Valladolid,Granada CF,1-0,0-0
+13,2012-11-24,Málaga CF,Valencia CF,4-0,1-0
+13,2012-11-24,Real Betis,Real Madrid,1-0,1-0
+13,2012-11-25,Espanyol Barcelona,Getafe CF,0-2,0-1
+13,2012-11-25,Athletic Club,Deportivo La Coruña,1-1,1-0
+13,2012-11-25,Atlético Madrid,Sevilla FC,4-0,3-0
+13,2012-11-25,Levante UD,FC Barcelona,0-4,0-0
+13,2012-11-26,Real Zaragoza,RC Celta,0-1,0-0
+14,2012-11-30,CA Osasuna,Rayo Vallecano,1-0,1-0
+14,2012-12-01,Getafe CF,Málaga CF,1-0,0-0
+14,2012-12-01,Valencia CF,Real Sociedad,2-5,1-1
+14,2012-12-01,FC Barcelona,Athletic Club,5-1,3-0
+14,2012-12-01,Real Madrid,Atlético Madrid,2-0,1-0
+14,2012-12-02,Granada CF,Espanyol Barcelona,0-0,
+14,2012-12-02,Deportivo La Coruña,Real Betis,2-3,0-1
+14,2012-12-02,RC Celta,Levante UD,1-1,1-0
+14,2012-12-02,RCD Mallorca,Real Zaragoza,1-1,0-1
+14,2012-12-03,Sevilla FC,Real Valladolid,1-2,0-2
+15,2012-12-07,Espanyol Barcelona,Sevilla FC,2-2,1-1
+15,2012-12-08,Real Sociedad,Getafe CF,1-1,0-0
+15,2012-12-08,Málaga CF,Granada CF,4-0,2-0
+15,2012-12-08,Real Valladolid,Real Madrid,2-3,2-2
+15,2012-12-08,CA Osasuna,Valencia CF,0-1,0-0
+15,2012-12-09,Levante UD,RCD Mallorca,4-0,1-0
+15,2012-12-09,Athletic Club,RC Celta,1-0,1-0
+15,2012-12-09,Atlético Madrid,Deportivo La Coruña,6-0,3-0
+15,2012-12-09,Real Betis,FC Barcelona,1-2,1-2
+15,2012-12-10,Rayo Vallecano,Real Zaragoza,0-2,0-1
+16,2012-12-15,Getafe CF,CA Osasuna,1-1,0-0
+16,2012-12-15,RCD Mallorca,Athletic Club,0-1,0-1
+16,2012-12-15,Granada CF,Real Sociedad,0-0,
+16,2012-12-15,Sevilla FC,Málaga CF,0-2,0-0
+16,2012-12-16,Real Zaragoza,Levante UD,0-1,0-1
+16,2012-12-16,Valencia CF,Rayo Vallecano,0-1,0-0
+16,2012-12-16,Real Madrid,Espanyol Barcelona,2-2,1-1
+16,2012-12-16,FC Barcelona,Atlético Madrid,4-1,2-1
+16,2012-12-17,Deportivo La Coruña,Real Valladolid,0-0,
+16,2012-12-17,RC Celta,Real Betis,0-1,0-0
+17,2012-12-20,Rayo Vallecano,Levante UD,3-0,0-0
+17,2012-12-20,Real Sociedad,Sevilla FC,2-1,1-0
+17,2012-12-20,Espanyol Barcelona,Deportivo La Coruña,2-0,1-0
+17,2012-12-21,Valencia CF,Getafe CF,4-2,3-1
+17,2012-12-21,Atlético Madrid,RC Celta,1-0,0-0
+17,2012-12-22,Real Betis,RCD Mallorca,1-2,1-1
+17,2012-12-22,Real Valladolid,FC Barcelona,1-3,0-1
+17,2012-12-22,CA Osasuna,Granada CF,1-2,1-1
+17,2012-12-22,Málaga CF,Real Madrid,3-2,0-0
+17,2012-12-22,Athletic Club,Real Zaragoza,0-2,0-2
+18,2013-01-04,Real Zaragoza,Real Betis,1-2,0-1
+18,2013-01-05,Levante UD,Athletic Club,3-1,2-1
+18,2013-01-05,Granada CF,Valencia CF,1-2,0-0
+18,2013-01-05,Deportivo La Coruña,Málaga CF,1-0,0-0
+18,2013-01-05,Sevilla FC,CA Osasuna,1-0,0-0
+18,2013-01-06,RC Celta,Real Valladolid,3-1,2-1
+18,2013-01-06,Real Madrid,Real Sociedad,4-3,2-2
+18,2013-01-06,FC Barcelona,Espanyol Barcelona,4-0,4-0
+18,2013-01-06,RCD Mallorca,Atlético Madrid,1-1,0-0
+18,2013-01-07,Rayo Vallecano,Getafe CF,3-1,2-0
+19,2013-01-11,Athletic Club,Rayo Vallecano,1-2,0-0
+19,2013-01-12,Real Valladolid,RCD Mallorca,3-1,1-1
+19,2013-01-12,Espanyol Barcelona,RC Celta,1-0,1-0
+19,2013-01-12,CA Osasuna,Real Madrid,0-0,
+19,2013-01-12,Valencia CF,Sevilla FC,2-0,0-0
+19,2013-01-13,Real Betis,Levante UD,2-0,1-0
+19,2013-01-13,Real Sociedad,Deportivo La Coruña,1-1,1-1
+19,2013-01-13,Atlético Madrid,Real Zaragoza,2-0,2-0
+19,2013-01-13,Málaga CF,FC Barcelona,1-3,0-1
+19,2013-01-14,Getafe CF,Granada CF,2-2,2-1
+20,2013-01-18,Espanyol Barcelona,RCD Mallorca,3-2,1-2
+20,2013-01-19,Granada CF,Rayo Vallecano,2-0,1-0
+20,2013-01-19,Real Sociedad,FC Barcelona,3-2,1-2
+20,2013-01-19,Getafe CF,Sevilla FC,1-1,1-1
+20,2013-01-19,Málaga CF,RC Celta,1-1,1-0
+20,2013-01-20,CA Osasuna,Deportivo La Coruña,2-1,1-0
+20,2013-01-20,Real Valladolid,Real Zaragoza,2-0,1-0
+20,2013-01-20,Atlético Madrid,Levante UD,2-0,1-0
+20,2013-01-20,Valencia CF,Real Madrid,0-5,0-5
+20,2013-01-21,Real Betis,Athletic Club,1-1,1-1
+21,2013-01-26,RC Celta,Real Sociedad,1-1,1-0
+21,2013-01-26,Levante UD,Real Valladolid,2-1,1-1
+21,2013-01-26,Real Zaragoza,Espanyol Barcelona,0-0,
+21,2013-01-26,Deportivo La Coruña,Valencia CF,2-3,2-1
+21,2013-01-27,Real Madrid,Getafe CF,4-0,0-0
+21,2013-01-27,Rayo Vallecano,Real Betis,3-0,1-0
+21,2013-01-27,FC Barcelona,CA Osasuna,5-1,3-1
+21,2013-01-27,Athletic Club,Atlético Madrid,3-0,0-0
+21,2013-01-27,RCD Mallorca,Málaga CF,2-3,1-2
+21,2013-01-28,Sevilla FC,Granada CF,3-0,1-0
+22,2013-02-01,Real Valladolid,Athletic Club,2-2,2-1
+22,2013-02-02,CA Osasuna,RC Celta,1-0,0-0
+22,2013-02-02,Getafe CF,Deportivo La Coruña,3-1,1-1
+22,2013-02-02,Espanyol Barcelona,Levante UD,3-2,1-0
+22,2013-02-02,Granada CF,Real Madrid,1-0,1-0
+22,2013-02-03,Málaga CF,Real Zaragoza,1-1,1-1
+22,2013-02-03,Sevilla FC,Rayo Vallecano,2-1,1-0
+22,2013-02-03,Valencia CF,FC Barcelona,1-1,1-1
+22,2013-02-03,Atlético Madrid,Real Betis,1-0,0-0
+22,2013-02-03,Real Sociedad,RCD Mallorca,3-0,0-0
+23,2013-02-09,RCD Mallorca,CA Osasuna,1-1,0-0
+23,2013-02-09,RC Celta,Valencia CF,0-1,0-0
+23,2013-02-09,Levante UD,Málaga CF,1-2,1-1
+23,2013-02-09,Deportivo La Coruña,Granada CF,0-3,0-1
+23,2013-02-09,Real Madrid,Sevilla FC,4-1,2-0
+23,2013-02-10,FC Barcelona,Getafe CF,6-1,2-0
+23,2013-02-10,Real Zaragoza,Real Sociedad,1-2,0-2
+23,2013-02-10,Athletic Club,Espanyol Barcelona,0-4,0-1
+23,2013-02-10,Rayo Vallecano,Atlético Madrid,2-1,2-0
+23,2013-02-11,Real Betis,Real Valladolid,0-0,
+24,2013-02-15,Sevilla FC,Deportivo La Coruña,3-1,3-1
+24,2013-02-16,Getafe CF,RC Celta,3-1,3-1
+24,2013-02-16,Málaga CF,Athletic Club,1-0,1-0
+24,2013-02-16,Granada CF,FC Barcelona,1-2,1-0
+24,2013-02-16,CA Osasuna,Real Zaragoza,1-0,1-0
+24,2013-02-17,Real Sociedad,Levante UD,1-1,1-1
+24,2013-02-17,Valencia CF,RCD Mallorca,2-0,0-0
+24,2013-02-17,Real Valladolid,Atlético Madrid,0-3,0-1
+24,2013-02-17,Espanyol Barcelona,Real Betis,1-0,1-0
+24,2013-02-17,Real Madrid,Rayo Vallecano,2-0,2-0
+25,2013-02-22,Athletic Club,Real Sociedad,1-3,1-1
+25,2013-02-23,RCD Mallorca,Getafe CF,1-3,1-0
+25,2013-02-23,Real Zaragoza,Valencia CF,2-2,2-1
+25,2013-02-23,Deportivo La Coruña,Real Madrid,1-2,1-0
+25,2013-02-23,FC Barcelona,Sevilla FC,2-1,0-1
+25,2013-02-24,Rayo Vallecano,Real Valladolid,1-2,0-0
+25,2013-02-24,RC Celta,Granada CF,2-1,1-1
+25,2013-02-24,Atlético Madrid,Espanyol Barcelona,1-0,1-0
+25,2013-02-24,Real Betis,Málaga CF,3-0,3-0
+25,2013-02-25,Levante UD,CA Osasuna,0-2,0-0
+26,2013-03-01,Getafe CF,Real Zaragoza,2-0,1-0
+26,2013-03-02,Real Madrid,FC Barcelona,2-1,1-1
+26,2013-03-02,Deportivo La Coruña,Rayo Vallecano,0-0,
+26,2013-03-02,CA Osasuna,Athletic Club,0-1,0-0
+26,2013-03-02,Valencia CF,Levante UD,2-2,2-1
+26,2013-03-03,Granada CF,RCD Mallorca,1-2,1-1
+26,2013-03-03,Espanyol Barcelona,Real Valladolid,0-0,
+26,2013-03-03,Málaga CF,Atlético Madrid,0-0,
+26,2013-03-03,Real Sociedad,Real Betis,3-3,0-1
+26,2013-03-04,Sevilla FC,RC Celta,4-1,2-1
+27,2013-03-08,Real Betis,CA Osasuna,2-1,1-0
+27,2013-03-09,Rayo Vallecano,Espanyol Barcelona,2-0,1-0
+27,2013-03-09,Real Valladolid,Málaga CF,1-1,1-1
+27,2013-03-09,FC Barcelona,Deportivo La Coruña,2-0,1-0
+27,2013-03-09,RCD Mallorca,Sevilla FC,2-1,1-0
+27,2013-03-10,Athletic Club,Valencia CF,1-0,0-0
+27,2013-03-10,Levante UD,Getafe CF,0-0,
+27,2013-03-10,RC Celta,Real Madrid,1-2,0-0
+27,2013-03-10,Atlético Madrid,Real Sociedad,0-1,0-0
+27,2013-03-11,Real Zaragoza,Granada CF,0-0,
+28,2013-03-15,Deportivo La Coruña,RC Celta,3-1,1-0
+28,2013-03-16,Real Sociedad,Real Valladolid,4-1,3-0
+28,2013-03-16,Getafe CF,Athletic Club,1-0,1-0
+28,2013-03-16,Real Madrid,RCD Mallorca,5-2,1-2
+28,2013-03-16,Valencia CF,Real Betis,3-0,1-0
+28,2013-03-17,Málaga CF,Espanyol Barcelona,0-2,0-0
+28,2013-03-17,Sevilla FC,Real Zaragoza,4-0,1-0
+28,2013-03-17,CA Osasuna,Atlético Madrid,0-2,0-1
+28,2013-03-17,Granada CF,Levante UD,1-1,1-0
+28,2013-03-17,FC Barcelona,Rayo Vallecano,3-1,2-0
+29,2013-03-30,Rayo Vallecano,Málaga CF,1-3,1-1
+29,2013-03-30,RC Celta,FC Barcelona,2-2,1-1
+29,2013-03-30,Real Zaragoza,Real Madrid,1-1,1-1
+29,2013-03-30,Levante UD,Sevilla FC,1-0,1-0
+29,2013-03-31,Real Valladolid,CA Osasuna,1-3,1-0
+29,2013-03-31,RCD Mallorca,Deportivo La Coruña,2-3,1-1
+29,2013-03-31,Espanyol Barcelona,Real Sociedad,2-2,2-1
+29,2013-03-31,Atlético Madrid,Valencia CF,1-1,1-1
+29,2013-04-01,Athletic Club,Granada CF,1-0,0-0
+29,2013-04-01,Real Betis,Getafe CF,0-0,
+30,2013-04-05,Granada CF,Real Betis,1-5,0-3
+30,2013-04-06,Real Sociedad,Málaga CF,4-2,3-1
+30,2013-04-06,Real Madrid,Levante UD,5-1,2-1
+30,2013-04-06,Deportivo La Coruña,Real Zaragoza,3-2,2-2
+30,2013-04-06,FC Barcelona,RCD Mallorca,5-0,4-0
+30,2013-04-07,RC Celta,Rayo Vallecano,0-2,0-1
+30,2013-04-07,CA Osasuna,Espanyol Barcelona,0-2,0-0
+30,2013-04-07,Getafe CF,Atlético Madrid,0-0,
+30,2013-04-07,Valencia CF,Real Valladolid,2-1,1-0
+30,2013-04-08,Sevilla FC,Athletic Club,2-1,1-0
+31,2013-04-12,Real Betis,Sevilla FC,3-3,1-3
+31,2013-04-13,Real Valladolid,Getafe CF,2-1,0-1
+31,2013-04-13,Levante UD,Deportivo La Coruña,0-4,0-3
+31,2013-04-13,Espanyol Barcelona,Valencia CF,3-3,1-0
+31,2013-04-13,Málaga CF,CA Osasuna,1-0,0-0
+31,2013-04-14,Rayo Vallecano,Real Sociedad,0-2,0-2
+31,2013-04-14,Atlético Madrid,Granada CF,5-0,2-0
+31,2013-04-14,Real Zaragoza,FC Barcelona,0-3,0-2
+31,2013-04-14,Athletic Club,Real Madrid,0-3,0-1
+31,2013-04-15,RCD Mallorca,RC Celta,1-0,0-0
+32,2013-04-19,RCD Mallorca,Rayo Vallecano,1-1,1-1
+32,2013-04-20,Granada CF,Real Valladolid,1-1,0-0
+32,2013-04-20,Real Madrid,Real Betis,3-1,1-0
+32,2013-04-20,FC Barcelona,Levante UD,1-0,0-0
+32,2013-04-20,Valencia CF,Málaga CF,5-1,4-1
+32,2013-04-21,Getafe CF,Espanyol Barcelona,0-2,0-1
+32,2013-04-21,Deportivo La Coruña,Athletic Club,1-1,1-1
+32,2013-04-21,CA Osasuna,Real Sociedad,0-0,
+32,2013-04-21,Sevilla FC,Atlético Madrid,0-1,0-0
+32,2013-04-22,RC Celta,Real Zaragoza,2-1,1-1
+33,2013-04-26,Rayo Vallecano,CA Osasuna,2-2,1-2
+33,2013-04-27,Levante UD,RC Celta,0-1,0-1
+33,2013-04-27,Athletic Club,FC Barcelona,2-2,1-0
+33,2013-04-27,Atlético Madrid,Real Madrid,1-2,1-1
+33,2013-04-27,Real Zaragoza,RCD Mallorca,3-2,1-1
+33,2013-04-28,Espanyol Barcelona,Granada CF,0-1,0-1
+33,2013-04-28,Málaga CF,Getafe CF,2-1,1-0
+33,2013-04-28,Real Valladolid,Sevilla FC,1-1,1-0
+33,2013-04-28,Real Sociedad,Valencia CF,4-2,1-1
+33,2013-04-29,Real Betis,Deportivo La Coruña,1-1,0-1
+34,2013-05-03,RC Celta,Athletic Club,1-1,0-1
+34,2013-05-04,Valencia CF,CA Osasuna,4-0,2-0
+34,2013-05-04,Granada CF,Málaga CF,1-0,1-0
+34,2013-05-04,Real Madrid,Real Valladolid,4-3,2-2
+34,2013-05-04,Deportivo La Coruña,Atlético Madrid,0-0,
+34,2013-05-05,RCD Mallorca,Levante UD,1-1,1-1
+34,2013-05-05,Real Zaragoza,Rayo Vallecano,3-0,1-0
+34,2013-05-05,Sevilla FC,Espanyol Barcelona,3-0,3-0
+34,2013-05-05,FC Barcelona,Real Betis,4-2,1-2
+34,2013-05-06,Getafe CF,Real Sociedad,2-1,2-1
+35,2013-05-10,Levante UD,Real Zaragoza,0-0,
+35,2013-05-11,Athletic Club,RCD Mallorca,2-1,1-0
+35,2013-05-11,Real Valladolid,Deportivo La Coruña,1-0,0-0
+35,2013-05-11,CA Osasuna,Getafe CF,1-0,0-0
+35,2013-05-11,Espanyol Barcelona,Real Madrid,1-1,1-0
+35,2013-05-12,Rayo Vallecano,Valencia CF,0-4,0-2
+35,2013-05-12,Real Betis,RC Celta,1-0,0-0
+35,2013-05-12,Atlético Madrid,FC Barcelona,1-2,0-0
+35,2013-05-12,Málaga CF,Sevilla FC,0-0,
+35,2013-05-13,Real Sociedad,Granada CF,2-2,2-1
+36,2013-05-08,RC Celta,Atlético Madrid,1-3,0-0
+36,2013-05-08,Real Madrid,Málaga CF,6-2,4-2
+36,2013-05-18,Getafe CF,Valencia CF,0-1,0-1
+36,2013-05-18,Granada CF,CA Osasuna,3-0,1-0
+36,2013-05-18,Sevilla FC,Real Sociedad,1-2,1-2
+36,2013-05-19,Levante UD,Rayo Vallecano,2-3,0-1
+36,2013-05-19,Deportivo La Coruña,Espanyol Barcelona,2-0,0-0
+36,2013-05-19,Real Zaragoza,Athletic Club,1-2,1-0
+36,2013-05-19,FC Barcelona,Real Valladolid,2-1,2-0
+36,2013-05-20,RCD Mallorca,Real Betis,1-0,1-0
+37,2013-05-26,Getafe CF,Rayo Vallecano,1-2,0-0
+37,2013-05-26,Valencia CF,Granada CF,1-0,0-0
+37,2013-05-26,CA Osasuna,Sevilla FC,2-1,0-0
+37,2013-05-26,Real Sociedad,Real Madrid,3-3,0-1
+37,2013-05-26,Málaga CF,Deportivo La Coruña,3-1,1-0
+37,2013-05-26,Espanyol Barcelona,FC Barcelona,0-2,0-1
+37,2013-05-26,Real Valladolid,RC Celta,0-2,0-1
+37,2013-05-26,Atlético Madrid,RCD Mallorca,0-0,
+37,2013-05-26,Real Betis,Real Zaragoza,4-0,2-0
+37,2013-05-26,Athletic Club,Levante UD,0-1,0-0
+38,2013-06-01,Real Madrid,CA Osasuna,4-2,2-0
+38,2013-06-01,FC Barcelona,Málaga CF,4-1,3-0
+38,2013-06-01,Granada CF,Getafe CF,2-0,1-0
+38,2013-06-01,Sevilla FC,Valencia CF,4-3,2-1
+38,2013-06-01,Deportivo La Coruña,Real Sociedad,0-1,0-1
+38,2013-06-01,RC Celta,Espanyol Barcelona,1-0,1-0
+38,2013-06-01,RCD Mallorca,Real Valladolid,4-2,2-1
+38,2013-06-01,Real Zaragoza,Atlético Madrid,1-3,0-0
+38,2013-06-01,Levante UD,Real Betis,1-1,0-0
+38,2013-06-01,Rayo Vallecano,Athletic Club,2-2,1-1
