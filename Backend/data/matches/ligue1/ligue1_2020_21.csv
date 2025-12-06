@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Fri,2020-08-21,Girondins Bordeaux,FC Nantes,0-0,
-1,Sat,2020-08-22,Dijon FCO,Angers SCO,0-1,0-1
-1,Sat,2020-08-22,Lille OSC,Stade Rennais,1-1,1-0
-1,Sun,2020-08-23,AS Monaco,Stade de Reims,2-2,1-2
-1,Sun,2020-08-23,FC Lorient,RC Strasbourg,3-1,0-1
-1,Sun,2020-08-23,Nîmes Olympique,Stade Brestois 29,4-0,2-0
-1,Sun,2020-08-23,OGC Nice,RC Lens,2-1,1-1
-1,Tue,2020-09-15,Montpellier HSC,Olympique Lyonnais,2-1,1-0
-1,Wed,2020-09-16,Paris Saint-Germain,FC Metz,1-0,0-0
-1,Thu,2020-09-17,Olympique Marseille,AS Saint-Étienne,0-2,0-1
-2,Fri,2020-08-28,Olympique Lyonnais,Dijon FCO,4-1,3-1
-2,Sat,2020-08-29,Stade Rennais,Montpellier HSC,2-1,1-0
-2,Sat,2020-08-29,RC Strasbourg,OGC Nice,0-2,0-1
-2,Sun,2020-08-30,Stade de Reims,Lille OSC,0-1,0-1
-2,Sun,2020-08-30,Angers SCO,Girondins Bordeaux,0-2,0-2
-2,Sun,2020-08-30,FC Metz,AS Monaco,0-1,0-1
-2,Sun,2020-08-30,FC Nantes,Nîmes Olympique,2-1,2-0
+1,Fri,2020-08-21,Girondins Bordeaux,Nantes,0-0,
+1,Sat,2020-08-22,Dijon FCO,Angers,0-1,0-1
+1,Sat,2020-08-22,Lille,Rennes,1-1,1-0
+1,Sun,2020-08-23,Monaco,Stade de Reims,2-2,1-2
+1,Sun,2020-08-23,FC Lorient,Estrasburgo,3-1,0-1
+1,Sun,2020-08-23,Nîmes Olympique,Brestois,4-0,2-0
+1,Sun,2020-08-23,Nice,Lens,2-1,1-1
+1,Tue,2020-09-15,Montpellier,Lyon,2-1,1-0
+1,Wed,2020-09-16,Paris Saint Germain,FC Metz,1-0,0-0
+1,Thu,2020-09-17,Olympique de Marseille,AS Saint-Étienne,0-2,0-1
+2,Fri,2020-08-28,Lyon,Dijon FCO,4-1,3-1
+2,Sat,2020-08-29,Rennes,Montpellier,2-1,1-0
+2,Sat,2020-08-29,Estrasburgo,Nice,0-2,0-1
+2,Sun,2020-08-30,Stade de Reims,Lille,0-1,0-1
+2,Sun,2020-08-30,Angers,Girondins Bordeaux,0-2,0-2
+2,Sun,2020-08-30,FC Metz,Monaco,0-1,0-1
+2,Sun,2020-08-30,Nantes,Nîmes Olympique,2-1,2-0
 2,Sun,2020-08-30,AS Saint-Étienne,FC Lorient,2-0,1-0
-2,Sun,2020-08-30,Stade Brestois 29,Olympique Marseille,2-3,1-2
-2,Thu,2020-09-10,RC Lens,Paris Saint-Germain,1-0,0-0
-3,Fri,2020-09-11,Girondins Bordeaux,Olympique Lyonnais,0-0,
-3,Sat,2020-09-12,Montpellier HSC,OGC Nice,3-1,1-0
-3,Sat,2020-09-12,AS Saint-Étienne,RC Strasbourg,2-0,0-0
-3,Sun,2020-09-13,Lille OSC,FC Metz,1-0,0-0
-3,Sun,2020-09-13,Angers SCO,Stade de Reims,1-0,0-0
-3,Sun,2020-09-13,Dijon FCO,Stade Brestois 29,0-2,0-1
-3,Sun,2020-09-13,FC Lorient,RC Lens,2-3,1-2
-3,Sun,2020-09-13,Nîmes Olympique,Stade Rennais,2-4,1-2
-3,Sun,2020-09-13,AS Monaco,FC Nantes,2-1,1-0
-3,Sun,2020-09-13,Paris Saint-Germain,Olympique Marseille,0-1,0-1
-4,Fri,2020-09-18,Olympique Lyonnais,Nîmes Olympique,0-0,
-4,Sat,2020-09-19,RC Lens,Girondins Bordeaux,2-1,0-0
-4,Sat,2020-09-19,Stade Rennais,AS Monaco,2-1,0-1
-4,Sun,2020-09-20,OGC Nice,Paris Saint-Germain,0-3,0-2
-4,Sun,2020-09-20,Stade Brestois 29,FC Lorient,3-2,2-1
+2,Sun,2020-08-30,Brestois,Olympique de Marseille,2-3,1-2
+2,Thu,2020-09-10,Lens,Paris Saint Germain,1-0,0-0
+3,Fri,2020-09-11,Girondins Bordeaux,Lyon,0-0,
+3,Sat,2020-09-12,Montpellier,Nice,3-1,1-0
+3,Sat,2020-09-12,AS Saint-Étienne,Estrasburgo,2-0,0-0
+3,Sun,2020-09-13,Lille,FC Metz,1-0,0-0
+3,Sun,2020-09-13,Angers,Stade de Reims,1-0,0-0
+3,Sun,2020-09-13,Dijon FCO,Brestois,0-2,0-1
+3,Sun,2020-09-13,FC Lorient,Lens,2-3,1-2
+3,Sun,2020-09-13,Nîmes Olympique,Rennes,2-4,1-2
+3,Sun,2020-09-13,Monaco,Nantes,2-1,1-0
+3,Sun,2020-09-13,Paris Saint Germain,Olympique de Marseille,0-1,0-1
+4,Fri,2020-09-18,Lyon,Nîmes Olympique,0-0,
+4,Sat,2020-09-19,Lens,Girondins Bordeaux,2-1,0-0
+4,Sat,2020-09-19,Rennes,Monaco,2-1,0-1
+4,Sun,2020-09-20,Nice,Paris Saint Germain,0-3,0-2
+4,Sun,2020-09-20,Brestois,FC Lorient,3-2,2-1
 4,Sun,2020-09-20,FC Metz,Stade de Reims,2-1,1-1
-4,Sun,2020-09-20,Montpellier HSC,Angers SCO,4-1,2-1
-4,Sun,2020-09-20,RC Strasbourg,Dijon FCO,1-0,0-0
-4,Sun,2020-09-20,FC Nantes,AS Saint-Étienne,2-2,0-1
-4,Sun,2020-09-20,Olympique Marseille,Lille OSC,1-1,0-0
-5,Fri,2020-09-25,Lille OSC,FC Nantes,2-0,1-0
-5,Sat,2020-09-26,AS Saint-Étienne,Stade Rennais,0-3,0-1
-5,Sat,2020-09-26,Olympique Marseille,FC Metz,1-1,0-0
-5,Sun,2020-09-27,Girondins Bordeaux,OGC Nice,0-0,
-5,Sun,2020-09-27,Angers SCO,Stade Brestois 29,3-2,1-2
-5,Sun,2020-09-27,Dijon FCO,Montpellier HSC,2-2,1-0
-5,Sun,2020-09-27,AS Monaco,RC Strasbourg,3-2,2-0
-5,Sun,2020-09-27,Nîmes Olympique,RC Lens,1-1,0-1
-5,Sun,2020-09-27,FC Lorient,Olympique Lyonnais,1-1,0-0
-5,Sun,2020-09-27,Stade de Reims,Paris Saint-Germain,0-2,0-1
-6,Fri,2020-10-02,Paris Saint-Germain,Angers SCO,6-1,2-0
-6,Sat,2020-10-03,RC Lens,AS Saint-Étienne,2-0,1-0
-6,Sat,2020-10-03,OGC Nice,FC Nantes,2-1,1-1
-6,Sun,2020-10-04,Montpellier HSC,Nîmes Olympique,0-1,0-0
+4,Sun,2020-09-20,Montpellier,Angers,4-1,2-1
+4,Sun,2020-09-20,Estrasburgo,Dijon FCO,1-0,0-0
+4,Sun,2020-09-20,Nantes,AS Saint-Étienne,2-2,0-1
+4,Sun,2020-09-20,Olympique de Marseille,Lille,1-1,0-0
+5,Fri,2020-09-25,Lille,Nantes,2-0,1-0
+5,Sat,2020-09-26,AS Saint-Étienne,Rennes,0-3,0-1
+5,Sat,2020-09-26,Olympique de Marseille,FC Metz,1-1,0-0
+5,Sun,2020-09-27,Girondins Bordeaux,Nice,0-0,
+5,Sun,2020-09-27,Angers,Brestois,3-2,1-2
+5,Sun,2020-09-27,Dijon FCO,Montpellier,2-2,1-0
+5,Sun,2020-09-27,Monaco,Estrasburgo,3-2,2-0
+5,Sun,2020-09-27,Nîmes Olympique,Lens,1-1,0-1
+5,Sun,2020-09-27,FC Lorient,Lyon,1-1,0-0
+5,Sun,2020-09-27,Stade de Reims,Paris Saint Germain,0-2,0-1
+6,Fri,2020-10-02,Paris Saint Germain,Angers,6-1,2-0
+6,Sat,2020-10-03,Lens,AS Saint-Étienne,2-0,1-0
+6,Sat,2020-10-03,Nice,Nantes,2-1,1-1
+6,Sun,2020-10-04,Montpellier,Nîmes Olympique,0-1,0-0
 6,Sun,2020-10-04,Girondins Bordeaux,Dijon FCO,3-0,2-0
-6,Sun,2020-10-04,Stade Brestois 29,AS Monaco,1-0,1-0
+6,Sun,2020-10-04,Brestois,Monaco,1-0,1-0
 6,Sun,2020-10-04,FC Metz,FC Lorient,3-1,1-1
-6,Sun,2020-10-04,RC Strasbourg,Lille OSC,0-3,0-1
-6,Sun,2020-10-04,Stade Rennais,Stade de Reims,2-2,2-1
-6,Sun,2020-10-04,Olympique Lyonnais,Olympique Marseille,1-1,1-1
-7,Fri,2020-10-16,Dijon FCO,Stade Rennais,1-1,0-1
-7,Fri,2020-10-16,Nîmes Olympique,Paris Saint-Germain,0-4,0-1
+6,Sun,2020-10-04,Estrasburgo,Lille,0-3,0-1
+6,Sun,2020-10-04,Rennes,Stade de Reims,2-2,2-1
+6,Sun,2020-10-04,Lyon,Olympique de Marseille,1-1,1-1
+7,Fri,2020-10-16,Dijon FCO,Rennes,1-1,0-1
+7,Fri,2020-10-16,Nîmes Olympique,Paris Saint Germain,0-4,0-1
 7,Sat,2020-10-17,Stade de Reims,FC Lorient,1-3,1-0
-7,Sat,2020-10-17,Olympique Marseille,Girondins Bordeaux,3-1,1-0
-7,Sun,2020-10-18,RC Strasbourg,Olympique Lyonnais,2-3,1-3
-7,Sun,2020-10-18,Angers SCO,FC Metz,1-1,1-1
-7,Sun,2020-10-18,AS Monaco,Montpellier HSC,1-1,0-0
-7,Sun,2020-10-18,FC Nantes,Stade Brestois 29,3-1,2-0
-7,Sun,2020-10-18,AS Saint-Étienne,OGC Nice,1-3,0-2
-7,Sun,2020-10-18,Lille OSC,RC Lens,4-0,1-0
-8,Fri,2020-10-23,Stade Rennais,Angers SCO,1-2,1-1
-8,Sat,2020-10-24,FC Lorient,Olympique Marseille,0-1,0-0
-8,Sat,2020-10-24,Paris Saint-Germain,Dijon FCO,4-0,2-0
+7,Sat,2020-10-17,Olympique de Marseille,Girondins Bordeaux,3-1,1-0
+7,Sun,2020-10-18,Estrasburgo,Lyon,2-3,1-3
+7,Sun,2020-10-18,Angers,FC Metz,1-1,1-1
+7,Sun,2020-10-18,Monaco,Montpellier,1-1,0-0
+7,Sun,2020-10-18,Nantes,Brestois,3-1,2-0
+7,Sun,2020-10-18,AS Saint-Étienne,Nice,1-3,0-2
+7,Sun,2020-10-18,Lille,Lens,4-0,1-0
+8,Fri,2020-10-23,Rennes,Angers,1-2,1-1
+8,Sat,2020-10-24,FC Lorient,Olympique de Marseille,0-1,0-0
+8,Sat,2020-10-24,Paris Saint Germain,Dijon FCO,4-0,2-0
 8,Sun,2020-10-25,Girondins Bordeaux,Nîmes Olympique,2-0,0-0
-8,Sun,2020-10-25,Stade Brestois 29,RC Strasbourg,0-3,0-2
+8,Sun,2020-10-25,Brestois,Estrasburgo,0-3,0-2
 8,Sun,2020-10-25,FC Metz,AS Saint-Étienne,2-0,1-0
-8,Sun,2020-10-25,Montpellier HSC,Stade de Reims,0-4,0-3
-8,Sun,2020-10-25,OGC Nice,Lille OSC,1-1,0-0
-8,Sun,2020-10-25,Olympique Lyonnais,AS Monaco,4-1,4-0
-8,Wed,2020-11-25,RC Lens,FC Nantes,1-1,1-0
-9,Sat,2020-10-31,Stade Rennais,Stade Brestois 29,2-1,0-0
-9,Sat,2020-10-31,FC Nantes,Paris Saint-Germain,0-3,0-0
-9,Sun,2020-11-01,AS Saint-Étienne,Montpellier HSC,0-1,0-1
-9,Sun,2020-11-01,Angers SCO,OGC Nice,0-3,0-2
+8,Sun,2020-10-25,Montpellier,Stade de Reims,0-4,0-3
+8,Sun,2020-10-25,Nice,Lille,1-1,0-0
+8,Sun,2020-10-25,Lyon,Monaco,4-1,4-0
+8,Wed,2020-11-25,Lens,Nantes,1-1,1-0
+9,Sat,2020-10-31,Rennes,Brestois,2-1,0-0
+9,Sat,2020-10-31,Nantes,Paris Saint Germain,0-3,0-0
+9,Sun,2020-11-01,AS Saint-Étienne,Montpellier,0-1,0-1
+9,Sun,2020-11-01,Angers,Nice,0-3,0-2
 9,Sun,2020-11-01,Dijon FCO,FC Lorient,0-0,
 9,Sun,2020-11-01,Nîmes Olympique,FC Metz,0-1,0-1
-9,Sun,2020-11-01,Stade de Reims,RC Strasbourg,2-1,2-1
-9,Sun,2020-11-01,AS Monaco,Girondins Bordeaux,4-0,3-0
-9,Sun,2020-11-01,Lille OSC,Olympique Lyonnais,1-1,1-1
-9,Wed,2021-01-20,Olympique Marseille,RC Lens,0-1,0-0
-10,Fri,2020-11-06,RC Strasbourg,Olympique Marseille,0-1,0-0
-10,Sat,2020-11-07,Girondins Bordeaux,Montpellier HSC,0-2,0-0
-10,Sat,2020-11-07,Paris Saint-Germain,Stade Rennais,3-0,2-0
-10,Sun,2020-11-08,Stade Brestois 29,Lille OSC,3-2,3-1
-10,Sun,2020-11-08,RC Lens,Stade de Reims,4-4,1-0
-10,Sun,2020-11-08,FC Lorient,FC Nantes,0-2,0-0
+9,Sun,2020-11-01,Stade de Reims,Estrasburgo,2-1,2-1
+9,Sun,2020-11-01,Monaco,Girondins Bordeaux,4-0,3-0
+9,Sun,2020-11-01,Lille,Lyon,1-1,1-1
+9,Wed,2021-01-20,Olympique de Marseille,Lens,0-1,0-0
+10,Fri,2020-11-06,Estrasburgo,Olympique de Marseille,0-1,0-0
+10,Sat,2020-11-07,Girondins Bordeaux,Montpellier,0-2,0-0
+10,Sat,2020-11-07,Paris Saint Germain,Rennes,3-0,2-0
+10,Sun,2020-11-08,Brestois,Lille,3-2,3-1
+10,Sun,2020-11-08,Lens,Stade de Reims,4-4,1-0
+10,Sun,2020-11-08,FC Lorient,Nantes,0-2,0-0
 10,Sun,2020-11-08,FC Metz,Dijon FCO,1-1,1-1
-10,Sun,2020-11-08,Nîmes Olympique,Angers SCO,1-5,0-2
-10,Sun,2020-11-08,OGC Nice,AS Monaco,1-2,0-1
-10,Sun,2020-11-08,Olympique Lyonnais,AS Saint-Étienne,2-1,0-1
-11,Fri,2020-11-20,Stade Rennais,Girondins Bordeaux,0-1,0-1
-11,Fri,2020-11-20,AS Monaco,Paris Saint-Germain,3-2,0-2
-11,Sat,2020-11-21,Stade Brestois 29,AS Saint-Étienne,4-1,4-1
-11,Sun,2020-11-22,FC Nantes,FC Metz,1-1,1-1
-11,Sun,2020-11-22,Dijon FCO,RC Lens,0-1,0-1
-11,Sun,2020-11-22,Montpellier HSC,RC Strasbourg,4-3,3-3
+10,Sun,2020-11-08,Nîmes Olympique,Angers,1-5,0-2
+10,Sun,2020-11-08,Nice,Monaco,1-2,0-1
+10,Sun,2020-11-08,Lyon,AS Saint-Étienne,2-1,0-1
+11,Fri,2020-11-20,Rennes,Girondins Bordeaux,0-1,0-1
+11,Fri,2020-11-20,Monaco,Paris Saint Germain,3-2,0-2
+11,Sat,2020-11-21,Brestois,AS Saint-Étienne,4-1,4-1
+11,Sun,2020-11-22,Nantes,FC Metz,1-1,1-1
+11,Sun,2020-11-22,Dijon FCO,Lens,0-1,0-1
+11,Sun,2020-11-22,Montpellier,Estrasburgo,4-3,3-3
 11,Sun,2020-11-22,Stade de Reims,Nîmes Olympique,0-1,0-0
-11,Sun,2020-11-22,Angers SCO,Olympique Lyonnais,0-1,0-0
-11,Sun,2020-11-22,Lille OSC,FC Lorient,4-0,1-0
-11,Wed,2021-02-17,Olympique Marseille,OGC Nice,3-2,2-0
-12,Fri,2020-11-27,RC Strasbourg,Stade Rennais,1-1,1-0
-12,Sat,2020-11-28,Olympique Marseille,FC Nantes,3-1,2-0
-12,Sat,2020-11-28,Paris Saint-Germain,Girondins Bordeaux,2-2,2-1
-12,Sun,2020-11-29,Olympique Lyonnais,Stade de Reims,3-0,1-0
-12,Sun,2020-11-29,RC Lens,Angers SCO,1-3,1-1
-12,Sun,2020-11-29,FC Lorient,Montpellier HSC,0-1,0-0
-12,Sun,2020-11-29,FC Metz,Stade Brestois 29,0-2,0-1
-12,Sun,2020-11-29,AS Monaco,Nîmes Olympique,3-0,1-0
-12,Sun,2020-11-29,OGC Nice,Dijon FCO,1-3,0-2
-12,Sun,2020-11-29,AS Saint-Étienne,Lille OSC,1-1,1-0
-13,Fri,2020-12-04,Nîmes Olympique,Olympique Marseille,0-2,0-0
-13,Sat,2020-12-05,Stade Rennais,RC Lens,0-2,0-1
-13,Sat,2020-12-05,Montpellier HSC,Paris Saint-Germain,1-3,1-1
-13,Sun,2020-12-06,Lille OSC,AS Monaco,2-1,0-0
-13,Sun,2020-12-06,Angers SCO,FC Lorient,2-0,1-0
-13,Sun,2020-12-06,Girondins Bordeaux,Stade Brestois 29,1-0,0-0
+11,Sun,2020-11-22,Angers,Lyon,0-1,0-0
+11,Sun,2020-11-22,Lille,FC Lorient,4-0,1-0
+11,Wed,2021-02-17,Olympique de Marseille,Nice,3-2,2-0
+12,Fri,2020-11-27,Estrasburgo,Rennes,1-1,1-0
+12,Sat,2020-11-28,Olympique de Marseille,Nantes,3-1,2-0
+12,Sat,2020-11-28,Paris Saint Germain,Girondins Bordeaux,2-2,2-1
+12,Sun,2020-11-29,Lyon,Stade de Reims,3-0,1-0
+12,Sun,2020-11-29,Lens,Angers,1-3,1-1
+12,Sun,2020-11-29,FC Lorient,Montpellier,0-1,0-0
+12,Sun,2020-11-29,FC Metz,Brestois,0-2,0-1
+12,Sun,2020-11-29,Monaco,Nîmes Olympique,3-0,1-0
+12,Sun,2020-11-29,Nice,Dijon FCO,1-3,0-2
+12,Sun,2020-11-29,AS Saint-Étienne,Lille,1-1,1-0
+13,Fri,2020-12-04,Nîmes Olympique,Olympique de Marseille,0-2,0-0
+13,Sat,2020-12-05,Rennes,Lens,0-2,0-1
+13,Sat,2020-12-05,Montpellier,Paris Saint Germain,1-3,1-1
+13,Sun,2020-12-06,Lille,Monaco,2-1,0-0
+13,Sun,2020-12-06,Angers,FC Lorient,2-0,1-0
+13,Sun,2020-12-06,Girondins Bordeaux,Brestois,1-0,0-0
 13,Sun,2020-12-06,Dijon FCO,AS Saint-Étienne,0-0,
-13,Sun,2020-12-06,FC Nantes,RC Strasbourg,0-4,0-2
-13,Sun,2020-12-06,Stade de Reims,OGC Nice,0-0,
-13,Sun,2020-12-06,FC Metz,Olympique Lyonnais,1-3,0-1
-14,Fri,2020-12-11,AS Saint-Étienne,Angers SCO,0-0,
-14,Sat,2020-12-12,Olympique Marseille,AS Monaco,2-1,2-0
-14,Sat,2020-12-12,RC Lens,Montpellier HSC,2-3,1-2
-14,Sun,2020-12-13,OGC Nice,Stade Rennais,0-1,0-1
-14,Sun,2020-12-13,Stade Brestois 29,Stade de Reims,2-1,1-0
+13,Sun,2020-12-06,Nantes,Estrasburgo,0-4,0-2
+13,Sun,2020-12-06,Stade de Reims,Nice,0-0,
+13,Sun,2020-12-06,FC Metz,Lyon,1-3,0-1
+14,Fri,2020-12-11,AS Saint-Étienne,Angers,0-0,
+14,Sat,2020-12-12,Olympique de Marseille,Monaco,2-1,2-0
+14,Sat,2020-12-12,Lens,Montpellier,2-3,1-2
+14,Sun,2020-12-13,Nice,Rennes,0-1,0-1
+14,Sun,2020-12-13,Brestois,Stade de Reims,2-1,1-0
 14,Sun,2020-12-13,FC Lorient,Nîmes Olympique,3-0,2-0
-14,Sun,2020-12-13,FC Nantes,Dijon FCO,1-1,1-0
-14,Sun,2020-12-13,RC Strasbourg,FC Metz,2-2,0-1
-14,Sun,2020-12-13,Lille OSC,Girondins Bordeaux,2-1,2-1
-14,Sun,2020-12-13,Paris Saint-Germain,Olympique Lyonnais,0-1,0-1
-15,Wed,2020-12-16,Angers SCO,RC Strasbourg,0-2,0-0
-15,Wed,2020-12-16,Dijon FCO,Lille OSC,0-2,0-1
-15,Wed,2020-12-16,Montpellier HSC,FC Metz,0-2,0-0
-15,Wed,2020-12-16,Nîmes Olympique,OGC Nice,0-2,0-0
-15,Wed,2020-12-16,Stade de Reims,FC Nantes,3-2,0-1
+14,Sun,2020-12-13,Nantes,Dijon FCO,1-1,1-0
+14,Sun,2020-12-13,Estrasburgo,FC Metz,2-2,0-1
+14,Sun,2020-12-13,Lille,Girondins Bordeaux,2-1,2-1
+14,Sun,2020-12-13,Paris Saint Germain,Lyon,0-1,0-1
+15,Wed,2020-12-16,Angers,Estrasburgo,0-2,0-0
+15,Wed,2020-12-16,Dijon FCO,Lille,0-2,0-1
+15,Wed,2020-12-16,Montpellier,FC Metz,0-2,0-0
+15,Wed,2020-12-16,Nîmes Olympique,Nice,0-2,0-0
+15,Wed,2020-12-16,Stade de Reims,Nantes,3-2,0-1
 15,Wed,2020-12-16,Girondins Bordeaux,AS Saint-Étienne,1-2,1-1
-15,Wed,2020-12-16,Olympique Lyonnais,Stade Brestois 29,2-2,0-1
-15,Wed,2020-12-16,AS Monaco,RC Lens,0-3,0-3
-15,Wed,2020-12-16,Paris Saint-Germain,FC Lorient,2-0,0-0
-15,Wed,2020-12-16,Stade Rennais,Olympique Marseille,2-1,0-1
-16,Sat,2020-12-19,FC Metz,RC Lens,2-0,1-0
-16,Sat,2020-12-19,Olympique Marseille,Stade de Reims,1-1,1-1
-16,Sat,2020-12-19,OGC Nice,Olympique Lyonnais,1-4,1-2
-16,Sun,2020-12-20,Stade Brestois 29,Montpellier HSC,2-2,0-1
-16,Sun,2020-12-20,Dijon FCO,AS Monaco,0-1,0-1
-16,Sun,2020-12-20,FC Nantes,Angers SCO,1-1,0-1
+15,Wed,2020-12-16,Lyon,Brestois,2-2,0-1
+15,Wed,2020-12-16,Monaco,Lens,0-3,0-3
+15,Wed,2020-12-16,Paris Saint Germain,FC Lorient,2-0,0-0
+15,Wed,2020-12-16,Rennes,Olympique de Marseille,2-1,0-1
+16,Sat,2020-12-19,FC Metz,Lens,2-0,1-0
+16,Sat,2020-12-19,Olympique de Marseille,Stade de Reims,1-1,1-1
+16,Sat,2020-12-19,Nice,Lyon,1-4,1-2
+16,Sun,2020-12-20,Brestois,Montpellier,2-2,0-1
+16,Sun,2020-12-20,Dijon FCO,Monaco,0-1,0-1
+16,Sun,2020-12-20,Nantes,Angers,1-1,0-1
 16,Sun,2020-12-20,AS Saint-Étienne,Nîmes Olympique,2-2,1-1
-16,Sun,2020-12-20,RC Strasbourg,Girondins Bordeaux,0-2,0-1
-16,Sun,2020-12-20,FC Lorient,Stade Rennais,0-3,0-1
-16,Sun,2020-12-20,Lille OSC,Paris Saint-Germain,0-0,
+16,Sun,2020-12-20,Estrasburgo,Girondins Bordeaux,0-2,0-1
+16,Sun,2020-12-20,FC Lorient,Rennes,0-3,0-1
+16,Sun,2020-12-20,Lille,Paris Saint Germain,0-0,
 17,Wed,2020-12-23,Girondins Bordeaux,Stade de Reims,1-3,0-2
-17,Wed,2020-12-23,RC Lens,Stade Brestois 29,2-1,2-0
-17,Wed,2020-12-23,OGC Nice,FC Lorient,2-2,2-0
+17,Wed,2020-12-23,Lens,Brestois,2-1,2-0
+17,Wed,2020-12-23,Nice,FC Lorient,2-2,2-0
 17,Wed,2020-12-23,Nîmes Olympique,Dijon FCO,1-3,1-0
-17,Wed,2020-12-23,Stade Rennais,FC Metz,1-0,0-0
-17,Wed,2020-12-23,Angers SCO,Olympique Marseille,2-1,2-0
-17,Wed,2020-12-23,Olympique Lyonnais,FC Nantes,3-0,3-0
-17,Wed,2020-12-23,AS Monaco,AS Saint-Étienne,2-2,1-2
-17,Wed,2020-12-23,Montpellier HSC,Lille OSC,2-3,0-1
-17,Wed,2020-12-23,Paris Saint-Germain,RC Strasbourg,4-0,1-0
-18,Wed,2021-01-06,Stade Brestois 29,OGC Nice,2-0,2-0
-18,Wed,2021-01-06,FC Lorient,AS Monaco,2-5,1-1
+17,Wed,2020-12-23,Rennes,FC Metz,1-0,0-0
+17,Wed,2020-12-23,Angers,Olympique de Marseille,2-1,2-0
+17,Wed,2020-12-23,Lyon,Nantes,3-0,3-0
+17,Wed,2020-12-23,Monaco,AS Saint-Étienne,2-2,1-2
+17,Wed,2020-12-23,Montpellier,Lille,2-3,0-1
+17,Wed,2020-12-23,Paris Saint Germain,Estrasburgo,4-0,1-0
+18,Wed,2021-01-06,Brestois,Nice,2-0,2-0
+18,Wed,2021-01-06,FC Lorient,Monaco,2-5,1-1
 18,Wed,2021-01-06,FC Metz,Girondins Bordeaux,0-0,
-18,Wed,2021-01-06,FC Nantes,Stade Rennais,0-0,
-18,Wed,2021-01-06,RC Strasbourg,Nîmes Olympique,5-0,3-0
-18,Wed,2021-01-06,Lille OSC,Angers SCO,1-2,1-2
-18,Wed,2021-01-06,Olympique Lyonnais,RC Lens,3-2,1-0
-18,Wed,2021-01-06,Olympique Marseille,Montpellier HSC,3-1,1-0
+18,Wed,2021-01-06,Nantes,Rennes,0-0,
+18,Wed,2021-01-06,Estrasburgo,Nîmes Olympique,5-0,3-0
+18,Wed,2021-01-06,Lille,Angers,1-2,1-2
+18,Wed,2021-01-06,Lyon,Lens,3-2,1-0
+18,Wed,2021-01-06,Olympique de Marseille,Montpellier,3-1,1-0
 18,Wed,2021-01-06,Stade de Reims,Dijon FCO,0-0,
-18,Wed,2021-01-06,AS Saint-Étienne,Paris Saint-Germain,1-1,1-1
+18,Wed,2021-01-06,AS Saint-Étienne,Paris Saint Germain,1-1,1-1
 19,Sat,2021-01-09,Girondins Bordeaux,FC Lorient,2-1,2-1
-19,Sat,2021-01-09,Dijon FCO,Olympique Marseille,0-0,
-19,Sat,2021-01-09,RC Lens,RC Strasbourg,0-1,0-1
-19,Sat,2021-01-09,FC Metz,OGC Nice,1-1,0-1
-19,Sat,2021-01-09,AS Monaco,Angers SCO,3-0,1-0
-19,Sat,2021-01-09,Montpellier HSC,FC Nantes,1-1,1-0
-19,Sat,2021-01-09,Nîmes Olympique,Lille OSC,0-1,0-1
-19,Sat,2021-01-09,Paris Saint-Germain,Stade Brestois 29,3-0,1-0
+19,Sat,2021-01-09,Dijon FCO,Olympique de Marseille,0-0,
+19,Sat,2021-01-09,Lens,Estrasburgo,0-1,0-1
+19,Sat,2021-01-09,FC Metz,Nice,1-1,0-1
+19,Sat,2021-01-09,Monaco,Angers,3-0,1-0
+19,Sat,2021-01-09,Montpellier,Nantes,1-1,1-0
+19,Sat,2021-01-09,Nîmes Olympique,Lille,0-1,0-1
+19,Sat,2021-01-09,Paris Saint Germain,Brestois,3-0,1-0
 19,Sat,2021-01-09,Stade de Reims,AS Saint-Étienne,3-1,2-0
-19,Sat,2021-01-09,Stade Rennais,Olympique Lyonnais,2-2,1-0
-20,Fri,2021-01-15,Montpellier HSC,AS Monaco,2-3,0-2
-20,Sat,2021-01-16,Olympique Marseille,Nîmes Olympique,1-2,0-0
-20,Sat,2021-01-16,Angers SCO,Paris Saint-Germain,0-1,0-0
-20,Sun,2021-01-17,Stade Brestois 29,Stade Rennais,1-2,1-1
-20,Sun,2021-01-17,FC Nantes,RC Lens,1-1,1-0
-20,Sun,2021-01-17,OGC Nice,Girondins Bordeaux,0-3,0-0
-20,Sun,2021-01-17,RC Strasbourg,AS Saint-Étienne,1-0,1-0
-20,Sun,2021-01-17,Lille OSC,Stade de Reims,2-1,0-1
-20,Sun,2021-01-17,Olympique Lyonnais,FC Metz,0-1,0-0
+19,Sat,2021-01-09,Rennes,Lyon,2-2,1-0
+20,Fri,2021-01-15,Montpellier,Monaco,2-3,0-2
+20,Sat,2021-01-16,Olympique de Marseille,Nîmes Olympique,1-2,0-0
+20,Sat,2021-01-16,Angers,Paris Saint Germain,0-1,0-0
+20,Sun,2021-01-17,Brestois,Rennes,1-2,1-1
+20,Sun,2021-01-17,Nantes,Lens,1-1,1-0
+20,Sun,2021-01-17,Nice,Girondins Bordeaux,0-3,0-0
+20,Sun,2021-01-17,Estrasburgo,AS Saint-Étienne,1-0,1-0
+20,Sun,2021-01-17,Lille,Stade de Reims,2-1,0-1
+20,Sun,2021-01-17,Lyon,FC Metz,0-1,0-0
 20,Wed,2021-01-27,FC Lorient,Dijon FCO,3-2,1-2
-21,Fri,2021-01-22,Paris Saint-Germain,Montpellier HSC,4-0,1-0
-21,Sat,2021-01-23,RC Lens,OGC Nice,0-1,0-0
-21,Sat,2021-01-23,AS Monaco,Olympique Marseille,3-1,0-1
-21,Sun,2021-01-24,Girondins Bordeaux,Angers SCO,2-1,2-1
-21,Sun,2021-01-24,Dijon FCO,RC Strasbourg,1-1,0-0
-21,Sun,2021-01-24,FC Metz,FC Nantes,2-0,1-0
-21,Sun,2021-01-24,Stade de Reims,Stade Brestois 29,1-0,1-0
-21,Sun,2021-01-24,Stade Rennais,Lille OSC,0-1,0-1
-21,Sun,2021-01-24,AS Saint-Étienne,Olympique Lyonnais,0-5,0-2
+21,Fri,2021-01-22,Paris Saint Germain,Montpellier,4-0,1-0
+21,Sat,2021-01-23,Lens,Nice,0-1,0-0
+21,Sat,2021-01-23,Monaco,Olympique de Marseille,3-1,0-1
+21,Sun,2021-01-24,Girondins Bordeaux,Angers,2-1,2-1
+21,Sun,2021-01-24,Dijon FCO,Estrasburgo,1-1,0-0
+21,Sun,2021-01-24,FC Metz,Nantes,2-0,1-0
+21,Sun,2021-01-24,Stade de Reims,Brestois,1-0,1-0
+21,Sun,2021-01-24,Rennes,Lille,0-1,0-1
+21,Sun,2021-01-24,AS Saint-Étienne,Lyon,0-5,0-2
 21,Wed,2021-02-24,Nîmes Olympique,FC Lorient,1-0,0-0
-22,Fri,2021-01-29,Olympique Lyonnais,Girondins Bordeaux,2-1,1-0
-22,Sat,2021-01-30,Montpellier HSC,RC Lens,1-2,0-1
-22,Sun,2021-01-31,OGC Nice,AS Saint-Étienne,0-1,0-0
-22,Sun,2021-01-31,Angers SCO,Nîmes Olympique,3-1,2-1
-22,Sun,2021-01-31,Stade Brestois 29,FC Metz,2-4,1-1
-22,Sun,2021-01-31,FC Lorient,Paris Saint-Germain,3-2,1-1
-22,Sun,2021-01-31,RC Strasbourg,Stade de Reims,0-1,0-0
-22,Sun,2021-01-31,Lille OSC,Dijon FCO,1-0,1-0
-22,Sun,2021-01-31,FC Nantes,AS Monaco,1-2,0-1
-22,Wed,2021-03-10,Olympique Marseille,Stade Rennais,1-0,0-0
-23,Wed,2021-02-03,Girondins Bordeaux,Lille OSC,0-3,0-0
-23,Wed,2021-02-03,FC Metz,Montpellier HSC,1-1,0-0
-23,Wed,2021-02-03,Stade de Reims,Angers SCO,0-0,
-23,Wed,2021-02-03,Stade Rennais,FC Lorient,1-1,1-0
-23,Wed,2021-02-03,RC Strasbourg,Stade Brestois 29,2-2,1-0
-23,Wed,2021-02-03,Dijon FCO,Olympique Lyonnais,0-1,0-1
-23,Wed,2021-02-03,RC Lens,Olympique Marseille,2-2,0-2
-23,Wed,2021-02-03,Paris Saint-Germain,Nîmes Olympique,3-0,2-0
-23,Wed,2021-02-03,AS Saint-Étienne,FC Nantes,1-1,0-1
-23,Wed,2021-02-03,AS Monaco,OGC Nice,2-1,1-0
+22,Fri,2021-01-29,Lyon,Girondins Bordeaux,2-1,1-0
+22,Sat,2021-01-30,Montpellier,Lens,1-2,0-1
+22,Sun,2021-01-31,Nice,AS Saint-Étienne,0-1,0-0
+22,Sun,2021-01-31,Angers,Nîmes Olympique,3-1,2-1
+22,Sun,2021-01-31,Brestois,FC Metz,2-4,1-1
+22,Sun,2021-01-31,FC Lorient,Paris Saint Germain,3-2,1-1
+22,Sun,2021-01-31,Estrasburgo,Stade de Reims,0-1,0-0
+22,Sun,2021-01-31,Lille,Dijon FCO,1-0,1-0
+22,Sun,2021-01-31,Nantes,Monaco,1-2,0-1
+22,Wed,2021-03-10,Olympique de Marseille,Rennes,1-0,0-0
+23,Wed,2021-02-03,Girondins Bordeaux,Lille,0-3,0-0
+23,Wed,2021-02-03,FC Metz,Montpellier,1-1,0-0
+23,Wed,2021-02-03,Stade de Reims,Angers,0-0,
+23,Wed,2021-02-03,Rennes,FC Lorient,1-1,1-0
+23,Wed,2021-02-03,Estrasburgo,Brestois,2-2,1-0
+23,Wed,2021-02-03,Dijon FCO,Lyon,0-1,0-1
+23,Wed,2021-02-03,Lens,Olympique de Marseille,2-2,0-2
+23,Wed,2021-02-03,Paris Saint Germain,Nîmes Olympique,3-0,2-0
+23,Wed,2021-02-03,AS Saint-Étienne,Nantes,1-1,0-1
+23,Wed,2021-02-03,Monaco,Nice,2-1,1-0
 24,Sat,2021-02-06,FC Lorient,Stade de Reims,1-0,0-0
-24,Sat,2021-02-06,Olympique Lyonnais,RC Strasbourg,3-0,2-0
-24,Sat,2021-02-06,RC Lens,Stade Rennais,0-0,
-24,Sun,2021-02-07,Stade Brestois 29,Girondins Bordeaux,2-1,0-0
-24,Sun,2021-02-07,Montpellier HSC,Dijon FCO,4-2,0-1
-24,Sun,2021-02-07,OGC Nice,Angers SCO,3-0,2-0
-24,Sun,2021-02-07,Nîmes Olympique,AS Monaco,3-4,2-2
+24,Sat,2021-02-06,Lyon,Estrasburgo,3-0,2-0
+24,Sat,2021-02-06,Lens,Rennes,0-0,
+24,Sun,2021-02-07,Brestois,Girondins Bordeaux,2-1,0-0
+24,Sun,2021-02-07,Montpellier,Dijon FCO,4-2,0-1
+24,Sun,2021-02-07,Nice,Angers,3-0,2-0
+24,Sun,2021-02-07,Nîmes Olympique,Monaco,3-4,2-2
 24,Sun,2021-02-07,AS Saint-Étienne,FC Metz,1-0,1-0
-24,Sun,2021-02-07,FC Nantes,Lille OSC,0-2,0-1
-24,Sun,2021-02-07,Olympique Marseille,Paris Saint-Germain,0-2,0-2
-25,Sat,2021-02-13,Paris Saint-Germain,OGC Nice,2-1,1-0
-25,Sat,2021-02-13,Stade de Reims,RC Lens,1-1,1-0
-25,Sat,2021-02-13,Olympique Lyonnais,Montpellier HSC,1-2,1-1
-25,Sun,2021-02-14,AS Monaco,FC Lorient,2-2,0-1
-25,Sun,2021-02-14,Angers SCO,FC Nantes,1-3,1-2
+24,Sun,2021-02-07,Nantes,Lille,0-2,0-1
+24,Sun,2021-02-07,Olympique de Marseille,Paris Saint Germain,0-2,0-2
+25,Sat,2021-02-13,Paris Saint Germain,Nice,2-1,1-0
+25,Sat,2021-02-13,Stade de Reims,Lens,1-1,1-0
+25,Sat,2021-02-13,Lyon,Montpellier,1-2,1-1
+25,Sun,2021-02-14,Monaco,FC Lorient,2-2,0-1
+25,Sun,2021-02-14,Angers,Nantes,1-3,1-2
 25,Sun,2021-02-14,Dijon FCO,Nîmes Olympique,0-2,0-0
-25,Sun,2021-02-14,FC Metz,RC Strasbourg,1-2,1-1
-25,Sun,2021-02-14,Stade Rennais,AS Saint-Étienne,0-2,0-1
-25,Sun,2021-02-14,Lille OSC,Stade Brestois 29,0-0,
-25,Sun,2021-02-14,Girondins Bordeaux,Olympique Marseille,0-0,
-26,Fri,2021-02-19,Stade Brestois 29,Olympique Lyonnais,2-3,0-3
+25,Sun,2021-02-14,FC Metz,Estrasburgo,1-2,1-1
+25,Sun,2021-02-14,Rennes,AS Saint-Étienne,0-2,0-1
+25,Sun,2021-02-14,Lille,Brestois,0-0,
+25,Sun,2021-02-14,Girondins Bordeaux,Olympique de Marseille,0-0,
+26,Fri,2021-02-19,Brestois,Lyon,2-3,0-3
 26,Sat,2021-02-20,AS Saint-Étienne,Stade de Reims,1-1,0-0
-26,Sat,2021-02-20,FC Nantes,Olympique Marseille,1-1,0-0
-26,Sun,2021-02-21,Montpellier HSC,Stade Rennais,2-1,2-0
-26,Sun,2021-02-21,RC Lens,Dijon FCO,2-1,1-0
-26,Sun,2021-02-21,OGC Nice,FC Metz,1-2,0-2
+26,Sat,2021-02-20,Nantes,Olympique de Marseille,1-1,0-0
+26,Sun,2021-02-21,Montpellier,Rennes,2-1,2-0
+26,Sun,2021-02-21,Lens,Dijon FCO,2-1,1-0
+26,Sun,2021-02-21,Nice,FC Metz,1-2,0-2
 26,Sun,2021-02-21,Nîmes Olympique,Girondins Bordeaux,2-0,1-0
-26,Sun,2021-02-21,RC Strasbourg,Angers SCO,0-0,
-26,Sun,2021-02-21,FC Lorient,Lille OSC,1-4,1-2
-26,Sun,2021-02-21,Paris Saint-Germain,AS Monaco,0-2,0-1
-27,Fri,2021-02-26,Stade Rennais,OGC Nice,1-2,1-1
+26,Sun,2021-02-21,Estrasburgo,Angers,0-0,
+26,Sun,2021-02-21,FC Lorient,Lille,1-4,1-2
+26,Sun,2021-02-21,Paris Saint Germain,Monaco,0-2,0-1
+27,Fri,2021-02-26,Rennes,Nice,1-2,1-1
 27,Sat,2021-02-27,Girondins Bordeaux,FC Metz,1-2,1-0
-27,Sat,2021-02-27,Dijon FCO,Paris Saint-Germain,0-4,0-2
-27,Sun,2021-02-28,AS Monaco,Stade Brestois 29,2-0,0-0
-27,Sun,2021-02-28,Angers SCO,RC Lens,2-2,2-1
+27,Sat,2021-02-27,Dijon FCO,Paris Saint Germain,0-4,0-2
+27,Sun,2021-02-28,Monaco,Brestois,2-0,0-0
+27,Sun,2021-02-28,Angers,Lens,2-2,2-1
 27,Sun,2021-02-28,FC Lorient,AS Saint-Étienne,2-1,0-1
-27,Sun,2021-02-28,Nîmes Olympique,FC Nantes,1-1,0-1
-27,Sun,2021-02-28,Stade de Reims,Montpellier HSC,0-0,
-27,Sun,2021-02-28,Lille OSC,RC Strasbourg,1-1,0-1
-27,Sun,2021-02-28,Olympique Marseille,Olympique Lyonnais,1-1,1-1
-28,Wed,2021-03-03,Stade Brestois 29,Dijon FCO,3-1,3-1
-28,Wed,2021-03-03,Olympique Lyonnais,Stade Rennais,1-0,0-0
-28,Wed,2021-03-03,FC Metz,Angers SCO,0-1,0-1
-28,Wed,2021-03-03,OGC Nice,Nîmes Olympique,2-1,1-0
-28,Wed,2021-03-03,AS Saint-Étienne,RC Lens,2-3,1-2
-28,Wed,2021-03-03,Girondins Bordeaux,Paris Saint-Germain,0-1,0-1
-28,Wed,2021-03-03,Lille OSC,Olympique Marseille,2-0,0-0
-28,Wed,2021-03-03,Montpellier HSC,FC Lorient,1-1,1-1
-28,Wed,2021-03-03,FC Nantes,Stade de Reims,1-2,1-1
-28,Wed,2021-03-03,RC Strasbourg,AS Monaco,1-0,0-0
-29,Fri,2021-03-12,Stade de Reims,Olympique Lyonnais,1-1,1-0
-29,Sat,2021-03-13,Angers SCO,AS Saint-Étienne,0-1,0-0
-29,Sat,2021-03-13,Olympique Marseille,Stade Brestois 29,3-1,1-0
-29,Sun,2021-03-14,Nîmes Olympique,Montpellier HSC,1-1,0-0
+27,Sun,2021-02-28,Nîmes Olympique,Nantes,1-1,0-1
+27,Sun,2021-02-28,Stade de Reims,Montpellier,0-0,
+27,Sun,2021-02-28,Lille,Estrasburgo,1-1,0-1
+27,Sun,2021-02-28,Olympique de Marseille,Lyon,1-1,1-1
+28,Wed,2021-03-03,Brestois,Dijon FCO,3-1,3-1
+28,Wed,2021-03-03,Lyon,Rennes,1-0,0-0
+28,Wed,2021-03-03,FC Metz,Angers,0-1,0-1
+28,Wed,2021-03-03,Nice,Nîmes Olympique,2-1,1-0
+28,Wed,2021-03-03,AS Saint-Étienne,Lens,2-3,1-2
+28,Wed,2021-03-03,Girondins Bordeaux,Paris Saint Germain,0-1,0-1
+28,Wed,2021-03-03,Lille,Olympique de Marseille,2-0,0-0
+28,Wed,2021-03-03,Montpellier,FC Lorient,1-1,1-1
+28,Wed,2021-03-03,Nantes,Stade de Reims,1-2,1-1
+28,Wed,2021-03-03,Estrasburgo,Monaco,1-0,0-0
+29,Fri,2021-03-12,Stade de Reims,Lyon,1-1,1-0
+29,Sat,2021-03-13,Angers,AS Saint-Étienne,0-1,0-0
+29,Sat,2021-03-13,Olympique de Marseille,Brestois,3-1,1-0
+29,Sun,2021-03-14,Nîmes Olympique,Montpellier,1-1,0-0
 29,Sun,2021-03-14,Dijon FCO,Girondins Bordeaux,1-3,0-2
-29,Sun,2021-03-14,RC Lens,FC Metz,2-2,2-1
-29,Sun,2021-03-14,FC Lorient,OGC Nice,1-1,0-0
-29,Sun,2021-03-14,Stade Rennais,RC Strasbourg,1-0,1-0
-29,Sun,2021-03-14,AS Monaco,Lille OSC,0-0,
-29,Sun,2021-03-14,Paris Saint-Germain,FC Nantes,1-2,1-0
-30,Fri,2021-03-19,AS Saint-Étienne,AS Monaco,0-4,0-1
-30,Sat,2021-03-20,FC Metz,Stade Rennais,1-3,0-2
-30,Sat,2021-03-20,OGC Nice,Olympique Marseille,3-0,1-0
-30,Sun,2021-03-21,RC Strasbourg,RC Lens,1-2,1-2
-30,Sun,2021-03-21,Stade Brestois 29,Angers SCO,0-0,
+29,Sun,2021-03-14,Lens,FC Metz,2-2,2-1
+29,Sun,2021-03-14,FC Lorient,Nice,1-1,0-0
+29,Sun,2021-03-14,Rennes,Estrasburgo,1-0,1-0
+29,Sun,2021-03-14,Monaco,Lille,0-0,
+29,Sun,2021-03-14,Paris Saint Germain,Nantes,1-2,1-0
+30,Fri,2021-03-19,AS Saint-Étienne,Monaco,0-4,0-1
+30,Sat,2021-03-20,FC Metz,Rennes,1-3,0-2
+30,Sat,2021-03-20,Nice,Olympique de Marseille,3-0,1-0
+30,Sun,2021-03-21,Estrasburgo,Lens,1-2,1-2
+30,Sun,2021-03-21,Brestois,Angers,0-0,
 30,Sun,2021-03-21,Dijon FCO,Stade de Reims,0-1,0-0
-30,Sun,2021-03-21,Montpellier HSC,Girondins Bordeaux,3-1,1-1
-30,Sun,2021-03-21,FC Nantes,FC Lorient,1-1,1-0
-30,Sun,2021-03-21,Lille OSC,Nîmes Olympique,1-2,1-2
-30,Sun,2021-03-21,Olympique Lyonnais,Paris Saint-Germain,2-4,0-2
-31,Sat,2021-04-03,AS Monaco,FC Metz,4-0,0-0
-31,Sat,2021-04-03,Paris Saint-Germain,Lille OSC,0-1,0-1
-31,Sat,2021-04-03,RC Lens,Olympique Lyonnais,1-1,0-0
-31,Sun,2021-04-04,Angers SCO,Montpellier HSC,1-1,0-0
-31,Sun,2021-04-04,Girondins Bordeaux,RC Strasbourg,2-3,2-3
-31,Sun,2021-04-04,FC Lorient,Stade Brestois 29,1-0,1-0
-31,Sun,2021-04-04,FC Nantes,OGC Nice,1-2,1-2
-31,Sun,2021-04-04,Stade de Reims,Stade Rennais,2-2,0-0
+30,Sun,2021-03-21,Montpellier,Girondins Bordeaux,3-1,1-1
+30,Sun,2021-03-21,Nantes,FC Lorient,1-1,1-0
+30,Sun,2021-03-21,Lille,Nîmes Olympique,1-2,1-2
+30,Sun,2021-03-21,Lyon,Paris Saint Germain,2-4,0-2
+31,Sat,2021-04-03,Monaco,FC Metz,4-0,0-0
+31,Sat,2021-04-03,Paris Saint Germain,Lille,0-1,0-1
+31,Sat,2021-04-03,Lens,Lyon,1-1,0-0
+31,Sun,2021-04-04,Angers,Montpellier,1-1,0-0
+31,Sun,2021-04-04,Girondins Bordeaux,Estrasburgo,2-3,2-3
+31,Sun,2021-04-04,FC Lorient,Brestois,1-0,1-0
+31,Sun,2021-04-04,Nantes,Nice,1-2,1-2
+31,Sun,2021-04-04,Stade de Reims,Rennes,2-2,0-0
 31,Sun,2021-04-04,Nîmes Olympique,AS Saint-Étienne,0-2,0-1
-31,Sun,2021-04-04,Olympique Marseille,Dijon FCO,2-0,1-0
-32,Fri,2021-04-09,FC Metz,Lille OSC,0-2,0-0
-32,Sat,2021-04-10,RC Strasbourg,Paris Saint-Germain,1-4,0-3
-32,Sat,2021-04-10,Montpellier HSC,Olympique Marseille,3-3,1-2
-32,Sun,2021-04-11,Stade Rennais,FC Nantes,1-0,0-0
-32,Sun,2021-04-11,Stade Brestois 29,Nîmes Olympique,1-1,1-1
-32,Sun,2021-04-11,RC Lens,FC Lorient,4-1,2-1
-32,Sun,2021-04-11,OGC Nice,Stade de Reims,0-0,
+31,Sun,2021-04-04,Olympique de Marseille,Dijon FCO,2-0,1-0
+32,Fri,2021-04-09,FC Metz,Lille,0-2,0-0
+32,Sat,2021-04-10,Estrasburgo,Paris Saint Germain,1-4,0-3
+32,Sat,2021-04-10,Montpellier,Olympique de Marseille,3-3,1-2
+32,Sun,2021-04-11,Rennes,Nantes,1-0,0-0
+32,Sun,2021-04-11,Brestois,Nîmes Olympique,1-1,1-1
+32,Sun,2021-04-11,Lens,FC Lorient,4-1,2-1
+32,Sun,2021-04-11,Nice,Stade de Reims,0-0,
 32,Sun,2021-04-11,AS Saint-Étienne,Girondins Bordeaux,4-1,2-1
-32,Sun,2021-04-11,AS Monaco,Dijon FCO,3-0,0-0
-32,Sun,2021-04-11,Olympique Lyonnais,Angers SCO,3-0,2-0
-33,Fri,2021-04-16,Lille OSC,Montpellier HSC,1-1,0-1
-33,Sat,2021-04-17,Angers SCO,Stade Rennais,0-3,0-1
-33,Sat,2021-04-17,Olympique Marseille,FC Lorient,3-2,0-1
-33,Sun,2021-04-18,Paris Saint-Germain,AS Saint-Étienne,3-2,0-0
-33,Sun,2021-04-18,Stade Brestois 29,RC Lens,1-1,1-0
-33,Sun,2021-04-18,Dijon FCO,OGC Nice,2-0,0-0
-33,Sun,2021-04-18,Nîmes Olympique,RC Strasbourg,1-1,0-0
+32,Sun,2021-04-11,Monaco,Dijon FCO,3-0,0-0
+32,Sun,2021-04-11,Lyon,Angers,3-0,2-0
+33,Fri,2021-04-16,Lille,Montpellier,1-1,0-1
+33,Sat,2021-04-17,Angers,Rennes,0-3,0-1
+33,Sat,2021-04-17,Olympique de Marseille,FC Lorient,3-2,0-1
+33,Sun,2021-04-18,Paris Saint Germain,AS Saint-Étienne,3-2,0-0
+33,Sun,2021-04-18,Brestois,Lens,1-1,1-0
+33,Sun,2021-04-18,Dijon FCO,Nice,2-0,0-0
+33,Sun,2021-04-18,Nîmes Olympique,Estrasburgo,1-1,0-0
 33,Sun,2021-04-18,Stade de Reims,FC Metz,0-0,
-33,Sun,2021-04-18,Girondins Bordeaux,AS Monaco,0-3,0-1
-33,Sun,2021-04-18,FC Nantes,Olympique Lyonnais,1-2,0-2
-34,Fri,2021-04-23,Stade de Reims,Olympique Marseille,1-3,1-2
-34,Sat,2021-04-24,AS Saint-Étienne,Stade Brestois 29,1-2,1-0
-34,Sat,2021-04-24,FC Metz,Paris Saint-Germain,1-3,0-1
-34,Sun,2021-04-25,OGC Nice,Montpellier HSC,3-1,3-1
-34,Sun,2021-04-25,RC Lens,Nîmes Olympique,2-1,1-0
+33,Sun,2021-04-18,Girondins Bordeaux,Monaco,0-3,0-1
+33,Sun,2021-04-18,Nantes,Lyon,1-2,0-2
+34,Fri,2021-04-23,Stade de Reims,Olympique de Marseille,1-3,1-2
+34,Sat,2021-04-24,AS Saint-Étienne,Brestois,1-2,1-0
+34,Sat,2021-04-24,FC Metz,Paris Saint Germain,1-3,0-1
+34,Sun,2021-04-25,Nice,Montpellier,3-1,3-1
+34,Sun,2021-04-25,Lens,Nîmes Olympique,2-1,1-0
 34,Sun,2021-04-25,FC Lorient,Girondins Bordeaux,4-1,3-0
-34,Sun,2021-04-25,Stade Rennais,Dijon FCO,5-1,1-1
-34,Sun,2021-04-25,RC Strasbourg,FC Nantes,1-2,1-0
-34,Sun,2021-04-25,Angers SCO,AS Monaco,0-1,0-0
-34,Sun,2021-04-25,Olympique Lyonnais,Lille OSC,2-3,2-1
-35,Fri,2021-04-30,Olympique Marseille,RC Strasbourg,1-1,0-0
-35,Sat,2021-05-01,Paris Saint-Germain,RC Lens,2-1,1-0
-35,Sat,2021-05-01,Lille OSC,OGC Nice,2-0,1-0
-35,Sun,2021-05-02,Girondins Bordeaux,Stade Rennais,1-0,1-0
-35,Sun,2021-05-02,Stade Brestois 29,FC Nantes,1-4,0-2
+34,Sun,2021-04-25,Rennes,Dijon FCO,5-1,1-1
+34,Sun,2021-04-25,Estrasburgo,Nantes,1-2,1-0
+34,Sun,2021-04-25,Angers,Monaco,0-1,0-0
+34,Sun,2021-04-25,Lyon,Lille,2-3,2-1
+35,Fri,2021-04-30,Olympique de Marseille,Estrasburgo,1-1,0-0
+35,Sat,2021-05-01,Paris Saint Germain,Lens,2-1,1-0
+35,Sat,2021-05-01,Lille,Nice,2-0,1-0
+35,Sun,2021-05-02,Girondins Bordeaux,Rennes,1-0,1-0
+35,Sun,2021-05-02,Brestois,Nantes,1-4,0-2
 35,Sun,2021-05-02,Dijon FCO,FC Metz,1-5,0-2
-35,Sun,2021-05-02,FC Lorient,Angers SCO,2-0,1-0
+35,Sun,2021-05-02,FC Lorient,Angers,2-0,1-0
 35,Sun,2021-05-02,Nîmes Olympique,Stade de Reims,2-2,0-1
-35,Sun,2021-05-02,Montpellier HSC,AS Saint-Étienne,1-2,1-1
-35,Sun,2021-05-02,AS Monaco,Olympique Lyonnais,2-3,1-0
-36,Fri,2021-05-07,RC Lens,Lille OSC,0-3,0-2
-36,Sat,2021-05-08,FC Nantes,Girondins Bordeaux,3-0,1-0
-36,Sat,2021-05-08,Olympique Lyonnais,FC Lorient,4-1,0-0
-36,Sun,2021-05-09,AS Saint-Étienne,Olympique Marseille,1-0,1-0
-36,Sun,2021-05-09,Angers SCO,Dijon FCO,3-0,1-0
+35,Sun,2021-05-02,Montpellier,AS Saint-Étienne,1-2,1-1
+35,Sun,2021-05-02,Monaco,Lyon,2-3,1-0
+36,Fri,2021-05-07,Lens,Lille,0-3,0-2
+36,Sat,2021-05-08,Nantes,Girondins Bordeaux,3-0,1-0
+36,Sat,2021-05-08,Lyon,FC Lorient,4-1,0-0
+36,Sun,2021-05-09,AS Saint-Étienne,Olympique de Marseille,1-0,1-0
+36,Sun,2021-05-09,Angers,Dijon FCO,3-0,1-0
 36,Sun,2021-05-09,FC Metz,Nîmes Olympique,0-3,0-0
-36,Sun,2021-05-09,OGC Nice,Stade Brestois 29,3-2,1-2
-36,Sun,2021-05-09,RC Strasbourg,Montpellier HSC,2-3,0-1
-36,Sun,2021-05-09,Stade de Reims,AS Monaco,0-1,0-1
-36,Sun,2021-05-09,Stade Rennais,Paris Saint-Germain,1-1,0-1
-37,Sun,2021-05-16,Girondins Bordeaux,RC Lens,3-0,1-0
-37,Sun,2021-05-16,Dijon FCO,FC Nantes,0-4,0-2
-37,Sun,2021-05-16,Lille OSC,AS Saint-Étienne,0-0,
+36,Sun,2021-05-09,Nice,Brestois,3-2,1-2
+36,Sun,2021-05-09,Estrasburgo,Montpellier,2-3,0-1
+36,Sun,2021-05-09,Stade de Reims,Monaco,0-1,0-1
+36,Sun,2021-05-09,Rennes,Paris Saint Germain,1-1,0-1
+37,Sun,2021-05-16,Girondins Bordeaux,Lens,3-0,1-0
+37,Sun,2021-05-16,Dijon FCO,Nantes,0-4,0-2
+37,Sun,2021-05-16,Lille,AS Saint-Étienne,0-0,
 37,Sun,2021-05-16,FC Lorient,FC Metz,2-1,1-0
-37,Sun,2021-05-16,Olympique Marseille,Angers SCO,3-2,1-0
-37,Sun,2021-05-16,AS Monaco,Stade Rennais,2-1,2-0
-37,Sun,2021-05-16,Montpellier HSC,Stade Brestois 29,0-0,
-37,Sun,2021-05-16,OGC Nice,RC Strasbourg,0-2,0-1
-37,Sun,2021-05-16,Nîmes Olympique,Olympique Lyonnais,2-5,1-3
-37,Sun,2021-05-16,Paris Saint-Germain,Stade de Reims,4-0,2-0
-38,Sun,2021-05-23,Angers SCO,Lille OSC,1-2,0-2
-38,Sun,2021-05-23,Stade Brestois 29,Paris Saint-Germain,0-2,0-1
-38,Sun,2021-05-23,RC Lens,AS Monaco,0-0,
-38,Sun,2021-05-23,Olympique Lyonnais,OGC Nice,2-3,2-1
-38,Sun,2021-05-23,FC Metz,Olympique Marseille,1-1,0-0
-38,Sun,2021-05-23,FC Nantes,Montpellier HSC,1-2,1-1
+37,Sun,2021-05-16,Olympique de Marseille,Angers,3-2,1-0
+37,Sun,2021-05-16,Monaco,Rennes,2-1,2-0
+37,Sun,2021-05-16,Montpellier,Brestois,0-0,
+37,Sun,2021-05-16,Nice,Estrasburgo,0-2,0-1
+37,Sun,2021-05-16,Nîmes Olympique,Lyon,2-5,1-3
+37,Sun,2021-05-16,Paris Saint Germain,Stade de Reims,4-0,2-0
+38,Sun,2021-05-23,Angers,Lille,1-2,0-2
+38,Sun,2021-05-23,Brestois,Paris Saint Germain,0-2,0-1
+38,Sun,2021-05-23,Lens,Monaco,0-0,
+38,Sun,2021-05-23,Lyon,Nice,2-3,2-1
+38,Sun,2021-05-23,FC Metz,Olympique de Marseille,1-1,0-0
+38,Sun,2021-05-23,Nantes,Montpellier,1-2,1-1
 38,Sun,2021-05-23,Stade de Reims,Girondins Bordeaux,1-2,1-1
-38,Sun,2021-05-23,Stade Rennais,Nîmes Olympique,2-0,1-0
+38,Sun,2021-05-23,Rennes,Nîmes Olympique,2-0,1-0
 38,Sun,2021-05-23,AS Saint-Étienne,Dijon FCO,0-1,0-1
-38,Sun,2021-05-23,RC Strasbourg,FC Lorient,1-1,1-0
+38,Sun,2021-05-23,Estrasburgo,FC Lorient,1-1,1-0

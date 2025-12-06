@@ -1,381 +1,381 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
-1,2023-08-11,UD Almería,Rayo Vallecano de Madrid,0-2,0-2
-1,2023-08-11,Sevilla FC,Valencia CF,1-2,0-0
-1,2023-08-12,Real Sociedad de Fútbol,Girona FC,1-1,1-0
-1,2023-08-12,UD Las Palmas,RCD Mallorca,1-1,1-0
-1,2023-08-12,Athletic Club,Real Madrid CF,0-2,0-2
-1,2023-08-13,RC Celta de Vigo,CA Osasuna,0-2,0-1
-1,2023-08-13,Villarreal CF,Real Betis Balompié,1-2,0-1
-1,2023-08-13,Getafe CF,FC Barcelona,0-0,
+1,2023-08-11,UD Almería,Rayo Vallecano,0-2,0-2
+1,2023-08-11,Sevilha FC,Valencia,1-2,0-0
+1,2023-08-12,Real Sociedad,Girona FC,1-1,1-0
+1,2023-08-12,UD Las Palmas,Mallorca,1-1,1-0
+1,2023-08-12,Athletic Bilbao,Real Madrid,0-2,0-2
+1,2023-08-13,Celta de Vigo,Osasuna,0-2,0-1
+1,2023-08-13,Villarreal CF,Bétis,1-2,0-1
+1,2023-08-13,Getafe CF,Barcelona,0-0,
 1,2023-08-14,Cádiz CF,Deportivo Alavés,1-0,1-0
-1,2023-08-14,Club Atlético de Madrid,Granada CF,3-1,1-0
-2,2023-08-18,RCD Mallorca,Villarreal CF,0-1,0-0
-2,2023-08-18,Valencia CF,UD Las Palmas,1-0,0-0
-2,2023-08-19,Real Sociedad de Fútbol,RC Celta de Vigo,1-1,1-0
-2,2023-08-19,UD Almería,Real Madrid CF,1-3,1-1
-2,2023-08-19,CA Osasuna,Athletic Club,0-2,0-2
+1,2023-08-14,Atlético de Madrid,Granada CF,3-1,1-0
+2,2023-08-18,Mallorca,Villarreal CF,0-1,0-0
+2,2023-08-18,Valencia,UD Las Palmas,1-0,0-0
+2,2023-08-19,Real Sociedad,Celta de Vigo,1-1,1-0
+2,2023-08-19,UD Almería,Real Madrid,1-3,1-1
+2,2023-08-19,Osasuna,Athletic Bilbao,0-2,0-2
 2,2023-08-20,Girona FC,Getafe CF,3-0,1-0
-2,2023-08-20,FC Barcelona,Cádiz CF,2-0,0-0
-2,2023-08-20,Real Betis Balompié,Club Atlético de Madrid,0-0,
-2,2023-08-21,Deportivo Alavés,Sevilla FC,4-3,2-2
-2,2023-08-21,Granada CF,Rayo Vallecano de Madrid,0-2,0-0
-3,2023-08-25,UD Las Palmas,Real Sociedad de Fútbol,0-0,
-3,2023-08-25,RC Celta de Vigo,Real Madrid CF,0-1,0-0
+2,2023-08-20,Barcelona,Cádiz CF,2-0,0-0
+2,2023-08-20,Bétis,Atlético de Madrid,0-0,
+2,2023-08-21,Deportivo Alavés,Sevilha FC,4-3,2-2
+2,2023-08-21,Granada CF,Rayo Vallecano,0-2,0-0
+3,2023-08-25,UD Las Palmas,Real Sociedad,0-0,
+3,2023-08-25,Celta de Vigo,Real Madrid,0-1,0-0
 3,2023-08-26,Cádiz CF,UD Almería,1-1,0-0
-3,2023-08-26,Granada CF,RCD Mallorca,3-2,1-1
-3,2023-08-26,Sevilla FC,Girona FC,1-2,1-1
-3,2023-08-27,Villarreal CF,FC Barcelona,3-4,2-2
-3,2023-08-27,Valencia CF,CA Osasuna,1-2,0-1
-3,2023-08-27,Athletic Club,Real Betis Balompié,4-2,3-2
+3,2023-08-26,Granada CF,Mallorca,3-2,1-1
+3,2023-08-26,Sevilha FC,Girona FC,1-2,1-1
+3,2023-08-27,Villarreal CF,Barcelona,3-4,2-2
+3,2023-08-27,Valencia,Osasuna,1-2,0-1
+3,2023-08-27,Athletic Bilbao,Bétis,4-2,3-2
 3,2023-08-28,Getafe CF,Deportivo Alavés,1-0,0-0
-3,2023-08-28,Rayo Vallecano de Madrid,Club Atlético de Madrid,0-7,0-3
+3,2023-08-28,Rayo Vallecano,Atlético de Madrid,0-7,0-3
 4,2023-09-01,Cádiz CF,Villarreal CF,3-1,2-1
-4,2023-09-01,UD Almería,RC Celta de Vigo,2-3,0-2
-4,2023-09-02,Real Sociedad de Fútbol,Granada CF,5-3,2-1
-4,2023-09-02,Real Madrid CF,Getafe CF,2-1,0-1
-4,2023-09-02,Deportivo Alavés,Valencia CF,1-0,1-0
-4,2023-09-02,Real Betis Balompié,Rayo Vallecano de Madrid,1-0,0-0
+4,2023-09-01,UD Almería,Celta de Vigo,2-3,0-2
+4,2023-09-02,Real Sociedad,Granada CF,5-3,2-1
+4,2023-09-02,Real Madrid,Getafe CF,2-1,0-1
+4,2023-09-02,Deportivo Alavés,Valencia,1-0,1-0
+4,2023-09-02,Bétis,Rayo Vallecano,1-0,0-0
 4,2023-09-03,Girona FC,UD Las Palmas,1-0,0-0
-4,2023-09-03,RCD Mallorca,Athletic Club,0-0,
-4,2023-09-03,CA Osasuna,FC Barcelona,1-2,0-1
-5,2023-09-15,Rayo Vallecano de Madrid,Deportivo Alavés,2-0,1-0
-5,2023-09-16,Athletic Club,Cádiz CF,3-0,0-0
-5,2023-09-16,Valencia CF,Club Atlético de Madrid,3-0,2-0
-5,2023-09-16,RC Celta de Vigo,RCD Mallorca,0-1,0-0
-5,2023-09-16,FC Barcelona,Real Betis Balompié,5-0,2-0
-5,2023-09-17,Getafe CF,CA Osasuna,3-2,1-1
+4,2023-09-03,Mallorca,Athletic Bilbao,0-0,
+4,2023-09-03,Osasuna,Barcelona,1-2,0-1
+5,2023-09-15,Rayo Vallecano,Deportivo Alavés,2-0,1-0
+5,2023-09-16,Athletic Bilbao,Cádiz CF,3-0,0-0
+5,2023-09-16,Valencia,Atlético de Madrid,3-0,2-0
+5,2023-09-16,Celta de Vigo,Mallorca,0-1,0-0
+5,2023-09-16,Barcelona,Bétis,5-0,2-0
+5,2023-09-17,Getafe CF,Osasuna,3-2,1-1
 5,2023-09-17,Villarreal CF,UD Almería,2-1,1-1
-5,2023-09-17,Sevilla FC,UD Las Palmas,1-0,0-0
-5,2023-09-17,Real Madrid CF,Real Sociedad de Fútbol,2-1,0-1
+5,2023-09-17,Sevilha FC,UD Las Palmas,1-0,0-0
+5,2023-09-17,Real Madrid,Real Sociedad,2-1,0-1
 5,2023-09-18,Granada CF,Girona FC,2-4,0-3
-6,2023-09-22,Deportivo Alavés,Athletic Club,0-2,0-1
-6,2023-09-23,Girona FC,RCD Mallorca,5-3,4-1
-6,2023-09-23,CA Osasuna,Sevilla FC,0-0,
-6,2023-09-23,FC Barcelona,RC Celta de Vigo,3-2,0-1
-6,2023-09-23,UD Almería,Valencia CF,2-2,0-1
-6,2023-09-24,Real Sociedad de Fútbol,Getafe CF,4-3,1-2
-6,2023-09-24,Rayo Vallecano de Madrid,Villarreal CF,1-1,1-1
+6,2023-09-22,Deportivo Alavés,Athletic Bilbao,0-2,0-1
+6,2023-09-23,Girona FC,Mallorca,5-3,4-1
+6,2023-09-23,Osasuna,Sevilha FC,0-0,
+6,2023-09-23,Barcelona,Celta de Vigo,3-2,0-1
+6,2023-09-23,UD Almería,Valencia,2-2,0-1
+6,2023-09-24,Real Sociedad,Getafe CF,4-3,1-2
+6,2023-09-24,Rayo Vallecano,Villarreal CF,1-1,1-1
 6,2023-09-24,UD Las Palmas,Granada CF,1-0,0-0
-6,2023-09-24,Real Betis Balompié,Cádiz CF,1-1,0-1
-6,2023-09-24,Club Atlético de Madrid,Real Madrid CF,3-1,2-1
-7,2023-09-26,Sevilla FC,UD Almería,5-1,3-0
-7,2023-09-26,RCD Mallorca,FC Barcelona,2-2,2-1
-7,2023-09-27,Athletic Club,Getafe CF,2-2,1-0
+6,2023-09-24,Bétis,Cádiz CF,1-1,0-1
+6,2023-09-24,Atlético de Madrid,Real Madrid,3-1,2-1
+7,2023-09-26,Sevilha FC,UD Almería,5-1,3-0
+7,2023-09-26,Mallorca,Barcelona,2-2,2-1
+7,2023-09-27,Athletic Bilbao,Getafe CF,2-2,1-0
 7,2023-09-27,Villarreal CF,Girona FC,1-2,0-0
-7,2023-09-27,Real Madrid CF,UD Las Palmas,2-0,1-0
-7,2023-09-27,Cádiz CF,Rayo Vallecano de Madrid,0-0,
-7,2023-09-27,Valencia CF,Real Sociedad de Fútbol,0-1,0-1
-7,2023-09-28,RC Celta de Vigo,Deportivo Alavés,1-1,1-0
-7,2023-09-28,Granada CF,Real Betis Balompié,1-1,0-0
-7,2023-09-28,CA Osasuna,Club Atlético de Madrid,0-2,0-1
-8,2023-09-29,FC Barcelona,Sevilla FC,1-0,0-0
+7,2023-09-27,Real Madrid,UD Las Palmas,2-0,1-0
+7,2023-09-27,Cádiz CF,Rayo Vallecano,0-0,
+7,2023-09-27,Valencia,Real Sociedad,0-1,0-1
+7,2023-09-28,Celta de Vigo,Deportivo Alavés,1-1,1-0
+7,2023-09-28,Granada CF,Bétis,1-1,0-0
+7,2023-09-28,Osasuna,Atlético de Madrid,0-2,0-1
+8,2023-09-29,Barcelona,Sevilha FC,1-0,0-0
 8,2023-09-30,Getafe CF,Villarreal CF,0-0,
-8,2023-09-30,Rayo Vallecano de Madrid,RCD Mallorca,2-2,1-1
-8,2023-09-30,Girona FC,Real Madrid CF,0-3,0-2
-8,2023-09-30,Real Sociedad de Fútbol,Athletic Club,3-0,1-0
+8,2023-09-30,Rayo Vallecano,Mallorca,2-2,1-1
+8,2023-09-30,Girona FC,Real Madrid,0-3,0-2
+8,2023-09-30,Real Sociedad,Athletic Bilbao,3-0,1-0
 8,2023-10-01,UD Almería,Granada CF,3-3,3-0
-8,2023-10-01,Deportivo Alavés,CA Osasuna,0-2,0-1
-8,2023-10-01,Club Atlético de Madrid,Cádiz CF,3-2,1-2
-8,2023-10-01,Real Betis Balompié,Valencia CF,3-0,1-0
-8,2023-10-02,UD Las Palmas,RC Celta de Vigo,2-1,0-0
-9,2023-10-06,Athletic Club,UD Almería,3-0,1-0
+8,2023-10-01,Deportivo Alavés,Osasuna,0-2,0-1
+8,2023-10-01,Atlético de Madrid,Cádiz CF,3-2,1-2
+8,2023-10-01,Bétis,Valencia,3-0,1-0
+8,2023-10-02,UD Las Palmas,Celta de Vigo,2-1,0-0
+9,2023-10-06,Athletic Bilbao,UD Almería,3-0,1-0
 9,2023-10-07,Cádiz CF,Girona FC,0-1,0-0
-9,2023-10-07,Real Madrid CF,CA Osasuna,4-0,1-0
-9,2023-10-07,RCD Mallorca,Valencia CF,1-1,1-1
-9,2023-10-07,Sevilla FC,Rayo Vallecano de Madrid,2-2,0-2
+9,2023-10-07,Real Madrid,Osasuna,4-0,1-0
+9,2023-10-07,Mallorca,Valencia,1-1,1-1
+9,2023-10-07,Sevilha FC,Rayo Vallecano,2-2,0-2
 9,2023-10-08,Villarreal CF,UD Las Palmas,1-2,0-1
-9,2023-10-08,Club Atlético de Madrid,Real Sociedad de Fútbol,2-1,1-0
-9,2023-10-08,RC Celta de Vigo,Getafe CF,2-2,2-2
-9,2023-10-08,Deportivo Alavés,Real Betis Balompié,1-1,1-1
-9,2023-10-08,Granada CF,FC Barcelona,2-2,2-1
-10,2023-10-20,CA Osasuna,Granada CF,2-0,1-0
-10,2023-10-21,Real Sociedad de Fútbol,RCD Mallorca,1-0,0-0
-10,2023-10-21,Getafe CF,Real Betis Balompié,1-1,1-1
-10,2023-10-21,Sevilla FC,Real Madrid CF,1-1,0-0
-10,2023-10-21,RC Celta de Vigo,Club Atlético de Madrid,0-3,0-1
-10,2023-10-22,UD Las Palmas,Rayo Vallecano de Madrid,0-1,0-0
+9,2023-10-08,Atlético de Madrid,Real Sociedad,2-1,1-0
+9,2023-10-08,Celta de Vigo,Getafe CF,2-2,2-2
+9,2023-10-08,Deportivo Alavés,Bétis,1-1,1-1
+9,2023-10-08,Granada CF,Barcelona,2-2,2-1
+10,2023-10-20,Osasuna,Granada CF,2-0,1-0
+10,2023-10-21,Real Sociedad,Mallorca,1-0,0-0
+10,2023-10-21,Getafe CF,Bétis,1-1,1-1
+10,2023-10-21,Sevilha FC,Real Madrid,1-1,0-0
+10,2023-10-21,Celta de Vigo,Atlético de Madrid,0-3,0-1
+10,2023-10-22,UD Las Palmas,Rayo Vallecano,0-1,0-0
 10,2023-10-22,Girona FC,UD Almería,5-2,3-2
 10,2023-10-22,Villarreal CF,Deportivo Alavés,1-1,0-0
-10,2023-10-22,FC Barcelona,Athletic Club,1-0,0-0
-10,2023-10-23,Valencia CF,Cádiz CF,2-0,2-0
-11,2023-10-27,Girona FC,RC Celta de Vigo,1-0,0-0
+10,2023-10-22,Barcelona,Athletic Bilbao,1-0,0-0
+10,2023-10-23,Valencia,Cádiz CF,2-0,2-0
+11,2023-10-27,Girona FC,Celta de Vigo,1-0,0-0
 11,2023-10-28,UD Almería,UD Las Palmas,1-2,0-1
-11,2023-10-28,FC Barcelona,Real Madrid CF,1-2,1-0
-11,2023-10-28,RCD Mallorca,Getafe CF,0-0,
-11,2023-10-28,Cádiz CF,Sevilla FC,2-2,2-1
-11,2023-10-29,Real Betis Balompié,CA Osasuna,2-1,1-0
-11,2023-10-29,Rayo Vallecano de Madrid,Real Sociedad de Fútbol,2-2,1-1
-11,2023-10-29,Athletic Club,Valencia CF,2-2,1-0
-11,2023-10-29,Club Atlético de Madrid,Deportivo Alavés,2-1,2-0
+11,2023-10-28,Barcelona,Real Madrid,1-2,1-0
+11,2023-10-28,Mallorca,Getafe CF,0-0,
+11,2023-10-28,Cádiz CF,Sevilha FC,2-2,2-1
+11,2023-10-29,Bétis,Osasuna,2-1,1-0
+11,2023-10-29,Rayo Vallecano,Real Sociedad,2-2,1-1
+11,2023-10-29,Athletic Bilbao,Valencia,2-2,1-0
+11,2023-10-29,Atlético de Madrid,Deportivo Alavés,2-1,2-0
 11,2023-10-30,Granada CF,Villarreal CF,2-3,2-3
-12,2023-11-03,UD Las Palmas,Club Atlético de Madrid,2-1,0-0
-12,2023-11-04,CA Osasuna,Girona FC,2-4,1-1
-12,2023-11-04,Real Betis Balompié,RCD Mallorca,2-0,1-0
-12,2023-11-04,RC Celta de Vigo,Sevilla FC,1-1,1-0
-12,2023-11-04,Real Sociedad de Fútbol,FC Barcelona,0-1,0-0
+12,2023-11-03,UD Las Palmas,Atlético de Madrid,2-1,0-0
+12,2023-11-04,Osasuna,Girona FC,2-4,1-1
+12,2023-11-04,Bétis,Mallorca,2-0,1-0
+12,2023-11-04,Celta de Vigo,Sevilha FC,1-1,1-0
+12,2023-11-04,Real Sociedad,Barcelona,0-1,0-0
 12,2023-11-05,Deportivo Alavés,UD Almería,1-0,0-0
-12,2023-11-05,Valencia CF,Granada CF,1-0,1-0
-12,2023-11-05,Villarreal CF,Athletic Club,2-3,0-3
-12,2023-11-05,Real Madrid CF,Rayo Vallecano de Madrid,0-0,
+12,2023-11-05,Valencia,Granada CF,1-0,1-0
+12,2023-11-05,Villarreal CF,Athletic Bilbao,2-3,0-3
+12,2023-11-05,Real Madrid,Rayo Vallecano,0-0,
 12,2023-11-06,Getafe CF,Cádiz CF,1-0,0-0
-13,2023-11-10,Athletic Club,RC Celta de Vigo,4-3,2-2
-13,2023-11-11,Rayo Vallecano de Madrid,Girona FC,1-2,1-1
-13,2023-11-11,UD Almería,Real Sociedad de Fútbol,1-3,0-0
-13,2023-11-11,CA Osasuna,UD Las Palmas,1-1,0-0
+13,2023-11-10,Athletic Bilbao,Celta de Vigo,4-3,2-2
+13,2023-11-11,Rayo Vallecano,Girona FC,1-2,1-1
+13,2023-11-11,UD Almería,Real Sociedad,1-3,0-0
+13,2023-11-11,Osasuna,UD Las Palmas,1-1,0-0
 13,2023-11-11,Granada CF,Getafe CF,1-1,1-1
-13,2023-11-11,Real Madrid CF,Valencia CF,5-1,2-0
-13,2023-11-12,FC Barcelona,Deportivo Alavés,2-1,0-1
-13,2023-11-12,Sevilla FC,Real Betis Balompié,1-1,0-0
-13,2023-11-12,Club Atlético de Madrid,Villarreal CF,3-1,1-1
+13,2023-11-11,Real Madrid,Valencia,5-1,2-0
+13,2023-11-12,Barcelona,Deportivo Alavés,2-1,0-1
+13,2023-11-12,Sevilha FC,Bétis,1-1,0-0
+13,2023-11-12,Atlético de Madrid,Villarreal CF,3-1,1-1
 14,2023-11-24,Deportivo Alavés,Granada CF,3-1,2-0
-14,2023-11-25,Rayo Vallecano de Madrid,FC Barcelona,1-1,1-0
-14,2023-11-25,Valencia CF,RC Celta de Vigo,0-0,
+14,2023-11-25,Rayo Vallecano,Barcelona,1-1,1-0
+14,2023-11-25,Valencia,Celta de Vigo,0-0,
 14,2023-11-25,Getafe CF,UD Almería,2-1,2-1
-14,2023-11-25,Club Atlético de Madrid,RCD Mallorca,1-0,0-0
-14,2023-11-26,Villarreal CF,CA Osasuna,3-1,0-0
-14,2023-11-26,Real Sociedad de Fútbol,Sevilla FC,2-1,2-0
-14,2023-11-26,Cádiz CF,Real Madrid CF,0-3,0-1
-14,2023-11-26,Real Betis Balompié,UD Las Palmas,1-0,1-0
-14,2023-11-27,Girona FC,Athletic Club,1-1,0-0
-13,2023-11-29,RCD Mallorca,Cádiz CF,1-1,1-1
+14,2023-11-25,Atlético de Madrid,Mallorca,1-0,0-0
+14,2023-11-26,Villarreal CF,Osasuna,3-1,0-0
+14,2023-11-26,Real Sociedad,Sevilha FC,2-1,2-0
+14,2023-11-26,Cádiz CF,Real Madrid,0-3,0-1
+14,2023-11-26,Bétis,UD Las Palmas,1-0,1-0
+14,2023-11-27,Girona FC,Athletic Bilbao,1-1,0-0
+13,2023-11-29,Mallorca,Cádiz CF,1-1,1-1
 15,2023-12-01,UD Las Palmas,Getafe CF,2-0,1-0
-15,2023-12-02,Girona FC,Valencia CF,2-1,0-0
-15,2023-12-02,Athletic Club,Rayo Vallecano de Madrid,4-0,1-0
-15,2023-12-02,Real Madrid CF,Granada CF,2-0,1-0
-15,2023-12-02,CA Osasuna,Real Sociedad de Fútbol,1-1,1-1
-15,2023-12-03,RCD Mallorca,Deportivo Alavés,0-0,
-15,2023-12-03,UD Almería,Real Betis Balompié,0-0,
-15,2023-12-03,Sevilla FC,Villarreal CF,1-1,0-0
-15,2023-12-03,FC Barcelona,Club Atlético de Madrid,1-0,1-0
-15,2023-12-04,RC Celta de Vigo,Cádiz CF,1-1,0-1
-16,2023-12-08,Getafe CF,Valencia CF,1-0,0-0
+15,2023-12-02,Girona FC,Valencia,2-1,0-0
+15,2023-12-02,Athletic Bilbao,Rayo Vallecano,4-0,1-0
+15,2023-12-02,Real Madrid,Granada CF,2-0,1-0
+15,2023-12-02,Osasuna,Real Sociedad,1-1,1-1
+15,2023-12-03,Mallorca,Deportivo Alavés,0-0,
+15,2023-12-03,UD Almería,Bétis,0-0,
+15,2023-12-03,Sevilha FC,Villarreal CF,1-1,0-0
+15,2023-12-03,Barcelona,Atlético de Madrid,1-0,1-0
+15,2023-12-04,Celta de Vigo,Cádiz CF,1-1,0-1
+16,2023-12-08,Getafe CF,Valencia,1-0,0-0
 16,2023-12-09,Deportivo Alavés,UD Las Palmas,0-1,0-1
-16,2023-12-09,Real Betis Balompié,Real Madrid CF,1-1,0-0
-16,2023-12-09,Villarreal CF,Real Sociedad de Fútbol,0-3,0-3
-16,2023-12-09,RCD Mallorca,Sevilla FC,1-0,1-0
-16,2023-12-10,Club Atlético de Madrid,UD Almería,2-1,2-0
-16,2023-12-10,Cádiz CF,CA Osasuna,1-1,1-0
-16,2023-12-10,FC Barcelona,Girona FC,2-4,1-2
-16,2023-12-11,Granada CF,Athletic Club,1-1,0-1
-16,2023-12-11,Rayo Vallecano de Madrid,RC Celta de Vigo,0-0,
-17,2023-12-15,CA Osasuna,Rayo Vallecano de Madrid,1-0,0-0
-17,2023-12-16,RC Celta de Vigo,Granada CF,1-0,1-0
-17,2023-12-16,Athletic Club,Club Atlético de Madrid,2-0,0-0
-17,2023-12-16,Sevilla FC,Getafe CF,0-3,0-2
-17,2023-12-16,Valencia CF,FC Barcelona,1-1,0-0
-17,2023-12-17,UD Almería,RCD Mallorca,0-0,
-17,2023-12-17,Real Sociedad de Fútbol,Real Betis Balompié,0-0,
+16,2023-12-09,Bétis,Real Madrid,1-1,0-0
+16,2023-12-09,Villarreal CF,Real Sociedad,0-3,0-3
+16,2023-12-09,Mallorca,Sevilha FC,1-0,1-0
+16,2023-12-10,Atlético de Madrid,UD Almería,2-1,2-0
+16,2023-12-10,Cádiz CF,Osasuna,1-1,1-0
+16,2023-12-10,Barcelona,Girona FC,2-4,1-2
+16,2023-12-11,Granada CF,Athletic Bilbao,1-1,0-1
+16,2023-12-11,Rayo Vallecano,Celta de Vigo,0-0,
+17,2023-12-15,Osasuna,Rayo Vallecano,1-0,0-0
+17,2023-12-16,Celta de Vigo,Granada CF,1-0,1-0
+17,2023-12-16,Athletic Bilbao,Atlético de Madrid,2-0,0-0
+17,2023-12-16,Sevilha FC,Getafe CF,0-3,0-2
+17,2023-12-16,Valencia,Barcelona,1-1,0-0
+17,2023-12-17,UD Almería,Mallorca,0-0,
+17,2023-12-17,Real Sociedad,Bétis,0-0,
 17,2023-12-17,UD Las Palmas,Cádiz CF,1-1,1-0
-17,2023-12-17,Real Madrid CF,Villarreal CF,4-1,2-0
+17,2023-12-17,Real Madrid,Villarreal CF,4-1,2-0
 17,2023-12-18,Girona FC,Deportivo Alavés,3-0,2-0
-18,2023-12-19,Rayo Vallecano de Madrid,Valencia CF,0-1,0-0
-18,2023-12-19,Club Atlético de Madrid,Getafe CF,3-3,1-0
-18,2023-12-19,Granada CF,Sevilla FC,0-3,0-2
-18,2023-12-20,FC Barcelona,UD Almería,3-2,1-1
-18,2023-12-20,Athletic Club,UD Las Palmas,1-0,0-0
-18,2023-12-20,Villarreal CF,RC Celta de Vigo,3-2,2-0
-18,2023-12-21,Real Betis Balompié,Girona FC,1-1,0-1
-18,2023-12-21,Cádiz CF,Real Sociedad de Fútbol,0-0,
-18,2023-12-21,Deportivo Alavés,Real Madrid CF,0-1,0-0
-18,2023-12-21,RCD Mallorca,CA Osasuna,3-2,1-1
-4,2023-12-23,Club Atlético de Madrid,Sevilla FC,1-0,0-0
-19,2024-01-02,Getafe CF,Rayo Vallecano de Madrid,0-2,0-1
-19,2024-01-02,Real Sociedad de Fútbol,Deportivo Alavés,1-1,0-0
-19,2024-01-02,Valencia CF,Villarreal CF,3-1,2-0
+18,2023-12-19,Rayo Vallecano,Valencia,0-1,0-0
+18,2023-12-19,Atlético de Madrid,Getafe CF,3-3,1-0
+18,2023-12-19,Granada CF,Sevilha FC,0-3,0-2
+18,2023-12-20,Barcelona,UD Almería,3-2,1-1
+18,2023-12-20,Athletic Bilbao,UD Las Palmas,1-0,0-0
+18,2023-12-20,Villarreal CF,Celta de Vigo,3-2,2-0
+18,2023-12-21,Bétis,Girona FC,1-1,0-1
+18,2023-12-21,Cádiz CF,Real Sociedad,0-0,
+18,2023-12-21,Deportivo Alavés,Real Madrid,0-1,0-0
+18,2023-12-21,Mallorca,Osasuna,3-2,1-1
+4,2023-12-23,Atlético de Madrid,Sevilha FC,1-0,0-0
+19,2024-01-02,Getafe CF,Rayo Vallecano,0-2,0-1
+19,2024-01-02,Real Sociedad,Deportivo Alavés,1-1,0-0
+19,2024-01-02,Valencia,Villarreal CF,3-1,2-0
 19,2024-01-03,Granada CF,Cádiz CF,2-0,1-0
-19,2024-01-03,RC Celta de Vigo,Real Betis Balompié,2-1,1-1
-19,2024-01-03,Real Madrid CF,RCD Mallorca,1-0,0-0
-19,2024-01-03,Girona FC,Club Atlético de Madrid,4-3,3-2
-19,2024-01-04,CA Osasuna,UD Almería,1-0,1-0
-19,2024-01-04,Sevilla FC,Athletic Club,0-2,0-1
-19,2024-01-04,UD Las Palmas,FC Barcelona,1-2,1-0
-20,2024-01-12,Sevilla FC,Deportivo Alavés,2-3,0-2
+19,2024-01-03,Celta de Vigo,Bétis,2-1,1-1
+19,2024-01-03,Real Madrid,Mallorca,1-0,0-0
+19,2024-01-03,Girona FC,Atlético de Madrid,4-3,3-2
+19,2024-01-04,Osasuna,UD Almería,1-0,1-0
+19,2024-01-04,Sevilha FC,Athletic Bilbao,0-2,0-1
+19,2024-01-04,UD Las Palmas,Barcelona,1-2,1-0
+20,2024-01-12,Sevilha FC,Deportivo Alavés,2-3,0-2
 20,2024-01-13,UD Las Palmas,Villarreal CF,3-0,1-0
-20,2024-01-13,RCD Mallorca,RC Celta de Vigo,1-1,1-1
-20,2024-01-13,Athletic Club,Real Sociedad de Fútbol,2-1,2-0
-20,2024-01-13,Real Betis Balompié,Granada CF,1-0,0-0
+20,2024-01-13,Mallorca,Celta de Vigo,1-1,1-1
+20,2024-01-13,Athletic Bilbao,Real Sociedad,2-1,2-0
+20,2024-01-13,Bétis,Granada CF,1-0,0-0
 20,2024-01-14,UD Almería,Girona FC,0-0,
-20,2024-01-14,Cádiz CF,Valencia CF,1-4,1-1
+20,2024-01-14,Cádiz CF,Valencia,1-4,1-1
 21,2024-01-19,Deportivo Alavés,Cádiz CF,1-0,0-0
-21,2024-01-20,Rayo Vallecano de Madrid,UD Las Palmas,0-2,0-1
-21,2024-01-20,Villarreal CF,RCD Mallorca,1-1,1-0
-21,2024-01-20,Valencia CF,Athletic Club,1-0,0-0
-21,2024-01-20,RC Celta de Vigo,Real Sociedad de Fútbol,0-1,0-1
-21,2024-01-21,CA Osasuna,Getafe CF,3-2,2-0
-21,2024-01-21,Real Madrid CF,UD Almería,3-2,0-2
-21,2024-01-21,Real Betis Balompié,FC Barcelona,2-4,0-1
-21,2024-01-21,Girona FC,Sevilla FC,5-1,3-1
-21,2024-01-22,Granada CF,Club Atlético de Madrid,0-1,0-0
+21,2024-01-20,Rayo Vallecano,UD Las Palmas,0-2,0-1
+21,2024-01-20,Villarreal CF,Mallorca,1-1,1-0
+21,2024-01-20,Valencia,Athletic Bilbao,1-0,0-0
+21,2024-01-20,Celta de Vigo,Real Sociedad,0-1,0-1
+21,2024-01-21,Osasuna,Getafe CF,3-2,2-0
+21,2024-01-21,Real Madrid,UD Almería,3-2,0-2
+21,2024-01-21,Bétis,Barcelona,2-4,0-1
+21,2024-01-21,Girona FC,Sevilha FC,5-1,3-1
+21,2024-01-22,Granada CF,Atlético de Madrid,0-1,0-0
 22,2024-01-26,UD Almería,Deportivo Alavés,0-3,0-1
-22,2024-01-27,Real Sociedad de Fútbol,Rayo Vallecano de Madrid,0-0,
-22,2024-01-27,UD Las Palmas,Real Madrid CF,1-2,0-0
-22,2024-01-27,FC Barcelona,Villarreal CF,3-5,0-1
-22,2024-01-27,RCD Mallorca,Real Betis Balompié,0-1,0-1
-22,2024-01-28,RC Celta de Vigo,Girona FC,0-1,0-1
-22,2024-01-28,Cádiz CF,Athletic Club,0-0,
-22,2024-01-28,Sevilla FC,CA Osasuna,1-1,1-0
-22,2024-01-28,Club Atlético de Madrid,Valencia CF,2-0,1-0
+22,2024-01-27,Real Sociedad,Rayo Vallecano,0-0,
+22,2024-01-27,UD Las Palmas,Real Madrid,1-2,0-0
+22,2024-01-27,Barcelona,Villarreal CF,3-5,0-1
+22,2024-01-27,Mallorca,Bétis,0-1,0-1
+22,2024-01-28,Celta de Vigo,Girona FC,0-1,0-1
+22,2024-01-28,Cádiz CF,Athletic Bilbao,0-0,
+22,2024-01-28,Sevilha FC,Osasuna,1-1,1-0
+22,2024-01-28,Atlético de Madrid,Valencia,2-0,1-0
 22,2024-01-29,Getafe CF,Granada CF,2-0,2-0
-20,2024-01-31,FC Barcelona,CA Osasuna,1-0,0-0
-20,2024-01-31,Club Atlético de Madrid,Rayo Vallecano de Madrid,2-1,1-1
-20,2024-02-01,Getafe CF,Real Madrid CF,0-2,0-1
-23,2024-02-02,Athletic Club,RCD Mallorca,4-0,2-0
-23,2024-02-03,Valencia CF,UD Almería,2-1,2-0
+20,2024-01-31,Barcelona,Osasuna,1-0,0-0
+20,2024-01-31,Atlético de Madrid,Rayo Vallecano,2-1,1-1
+20,2024-02-01,Getafe CF,Real Madrid,0-2,0-1
+23,2024-02-02,Athletic Bilbao,Mallorca,4-0,2-0
+23,2024-02-03,Valencia,UD Almería,2-1,2-0
 23,2024-02-03,Granada CF,UD Las Palmas,1-1,1-0
-23,2024-02-03,Deportivo Alavés,FC Barcelona,1-3,0-1
-23,2024-02-03,Girona FC,Real Sociedad de Fútbol,0-0,
+23,2024-02-03,Deportivo Alavés,Barcelona,1-3,0-1
+23,2024-02-03,Girona FC,Real Sociedad,0-0,
 23,2024-02-04,Villarreal CF,Cádiz CF,0-0,
-23,2024-02-04,CA Osasuna,RC Celta de Vigo,0-3,0-2
-23,2024-02-04,Real Betis Balompié,Getafe CF,1-1,1-1
-23,2024-02-04,Real Madrid CF,Club Atlético de Madrid,1-1,1-0
-23,2024-02-05,Rayo Vallecano de Madrid,Sevilla FC,1-2,1-2
-24,2024-02-09,Cádiz CF,Real Betis Balompié,0-2,0-1
+23,2024-02-04,Osasuna,Celta de Vigo,0-3,0-2
+23,2024-02-04,Bétis,Getafe CF,1-1,1-1
+23,2024-02-04,Real Madrid,Atlético de Madrid,1-1,1-0
+23,2024-02-05,Rayo Vallecano,Sevilha FC,1-2,1-2
+24,2024-02-09,Cádiz CF,Bétis,0-2,0-1
 24,2024-02-10,Deportivo Alavés,Villarreal CF,1-1,1-1
-24,2024-02-10,Real Sociedad de Fútbol,CA Osasuna,0-1,0-0
-24,2024-02-10,Real Madrid CF,Girona FC,4-0,2-0
-24,2024-02-10,UD Las Palmas,Valencia CF,2-0,0-0
-24,2024-02-11,Getafe CF,RC Celta de Vigo,3-2,2-0
-24,2024-02-11,RCD Mallorca,Rayo Vallecano de Madrid,2-1,0-0
-24,2024-02-11,Sevilla FC,Club Atlético de Madrid,1-0,1-0
-24,2024-02-11,FC Barcelona,Granada CF,3-3,1-1
-24,2024-02-12,UD Almería,Athletic Club,0-0,
+24,2024-02-10,Real Sociedad,Osasuna,0-1,0-0
+24,2024-02-10,Real Madrid,Girona FC,4-0,2-0
+24,2024-02-10,UD Las Palmas,Valencia,2-0,0-0
+24,2024-02-11,Getafe CF,Celta de Vigo,3-2,2-0
+24,2024-02-11,Mallorca,Rayo Vallecano,2-1,0-0
+24,2024-02-11,Sevilha FC,Atlético de Madrid,1-0,1-0
+24,2024-02-11,Barcelona,Granada CF,3-3,1-1
+24,2024-02-12,UD Almería,Athletic Bilbao,0-0,
 25,2024-02-16,Villarreal CF,Getafe CF,1-1,0-1
-25,2024-02-17,Club Atlético de Madrid,UD Las Palmas,5-0,2-0
-25,2024-02-17,CA Osasuna,Cádiz CF,2-0,0-0
-25,2024-02-17,RC Celta de Vigo,FC Barcelona,1-2,0-1
-25,2024-02-17,Valencia CF,Sevilla FC,0-0,
-25,2024-02-18,Rayo Vallecano de Madrid,Real Madrid CF,1-1,1-1
+25,2024-02-17,Atlético de Madrid,UD Las Palmas,5-0,2-0
+25,2024-02-17,Osasuna,Cádiz CF,2-0,0-0
+25,2024-02-17,Celta de Vigo,Barcelona,1-2,0-1
+25,2024-02-17,Valencia,Sevilha FC,0-0,
+25,2024-02-18,Rayo Vallecano,Real Madrid,1-1,1-1
 25,2024-02-18,Granada CF,UD Almería,1-1,0-1
-25,2024-02-18,RCD Mallorca,Real Sociedad de Fútbol,1-2,1-1
-25,2024-02-18,Real Betis Balompié,Deportivo Alavés,0-0,
-25,2024-02-19,Athletic Club,Girona FC,3-2,1-0
-26,2024-02-23,Real Sociedad de Fútbol,Villarreal CF,1-3,0-1
-26,2024-02-24,FC Barcelona,Getafe CF,4-0,1-0
-26,2024-02-24,Deportivo Alavés,RCD Mallorca,1-1,0-0
-26,2024-02-24,UD Almería,Club Atlético de Madrid,2-2,1-1
-26,2024-02-25,Cádiz CF,RC Celta de Vigo,2-2,0-1
-26,2024-02-25,Real Betis Balompié,Athletic Club,3-1,2-1
-26,2024-02-25,UD Las Palmas,CA Osasuna,1-1,0-0
-26,2024-02-25,Real Madrid CF,Sevilla FC,1-0,0-0
-26,2024-02-26,Girona FC,Rayo Vallecano de Madrid,3-0,0-0
-27,2024-03-01,RC Celta de Vigo,UD Almería,1-0,0-0
-27,2024-03-02,Sevilla FC,Real Sociedad de Fútbol,3-2,2-1
-27,2024-03-02,Rayo Vallecano de Madrid,Cádiz CF,1-1,0-0
+25,2024-02-18,Mallorca,Real Sociedad,1-2,1-1
+25,2024-02-18,Bétis,Deportivo Alavés,0-0,
+25,2024-02-19,Athletic Bilbao,Girona FC,3-2,1-0
+26,2024-02-23,Real Sociedad,Villarreal CF,1-3,0-1
+26,2024-02-24,Barcelona,Getafe CF,4-0,1-0
+26,2024-02-24,Deportivo Alavés,Mallorca,1-1,0-0
+26,2024-02-24,UD Almería,Atlético de Madrid,2-2,1-1
+26,2024-02-25,Cádiz CF,Celta de Vigo,2-2,0-1
+26,2024-02-25,Bétis,Athletic Bilbao,3-1,2-1
+26,2024-02-25,UD Las Palmas,Osasuna,1-1,0-0
+26,2024-02-25,Real Madrid,Sevilha FC,1-0,0-0
+26,2024-02-26,Girona FC,Rayo Vallecano,3-0,0-0
+27,2024-03-01,Celta de Vigo,UD Almería,1-0,0-0
+27,2024-03-02,Sevilha FC,Real Sociedad,3-2,2-1
+27,2024-03-02,Rayo Vallecano,Cádiz CF,1-1,0-0
 27,2024-03-02,Getafe CF,UD Las Palmas,3-3,3-1
-27,2024-03-02,Valencia CF,Real Madrid CF,2-2,2-1
+27,2024-03-02,Valencia,Real Madrid,2-2,2-1
 27,2024-03-03,Villarreal CF,Granada CF,5-1,3-0
-27,2024-03-03,Club Atlético de Madrid,Real Betis Balompié,2-1,2-0
-27,2024-03-03,RCD Mallorca,Girona FC,1-0,1-0
-27,2024-03-03,Athletic Club,FC Barcelona,0-0,
-27,2024-03-04,CA Osasuna,Deportivo Alavés,1-0,0-0
-28,2024-03-08,FC Barcelona,RCD Mallorca,1-0,0-0
-28,2024-03-09,Valencia CF,Getafe CF,1-0,1-0
-28,2024-03-09,Cádiz CF,Club Atlético de Madrid,2-0,1-0
-28,2024-03-09,Granada CF,Real Sociedad de Fútbol,2-3,2-1
-28,2024-03-09,Girona FC,CA Osasuna,2-0,1-0
-28,2024-03-10,Deportivo Alavés,Rayo Vallecano de Madrid,1-0,1-0
-28,2024-03-10,UD Las Palmas,Athletic Club,0-2,0-1
-28,2024-03-10,Real Madrid CF,RC Celta de Vigo,4-0,1-0
-28,2024-03-10,Real Betis Balompié,Villarreal CF,2-3,2-1
-28,2024-03-11,UD Almería,Sevilla FC,2-2,1-0
-29,2024-03-15,Real Sociedad de Fútbol,Cádiz CF,2-0,1-0
-29,2024-03-16,RCD Mallorca,Granada CF,1-0,0-0
-29,2024-03-16,CA Osasuna,Real Madrid CF,2-4,1-2
+27,2024-03-03,Atlético de Madrid,Bétis,2-1,2-0
+27,2024-03-03,Mallorca,Girona FC,1-0,1-0
+27,2024-03-03,Athletic Bilbao,Barcelona,0-0,
+27,2024-03-04,Osasuna,Deportivo Alavés,1-0,0-0
+28,2024-03-08,Barcelona,Mallorca,1-0,0-0
+28,2024-03-09,Valencia,Getafe CF,1-0,1-0
+28,2024-03-09,Cádiz CF,Atlético de Madrid,2-0,1-0
+28,2024-03-09,Granada CF,Real Sociedad,2-3,2-1
+28,2024-03-09,Girona FC,Osasuna,2-0,1-0
+28,2024-03-10,Deportivo Alavés,Rayo Vallecano,1-0,1-0
+28,2024-03-10,UD Las Palmas,Athletic Bilbao,0-2,0-1
+28,2024-03-10,Real Madrid,Celta de Vigo,4-0,1-0
+28,2024-03-10,Bétis,Villarreal CF,2-3,2-1
+28,2024-03-11,UD Almería,Sevilha FC,2-2,1-0
+29,2024-03-15,Real Sociedad,Cádiz CF,2-0,1-0
+29,2024-03-16,Mallorca,Granada CF,1-0,0-0
+29,2024-03-16,Osasuna,Real Madrid,2-4,1-2
 29,2024-03-16,Getafe CF,Girona FC,1-0,1-0
-29,2024-03-16,Athletic Club,Deportivo Alavés,2-0,2-0
-29,2024-03-17,Sevilla FC,RC Celta de Vigo,1-2,1-0
-29,2024-03-17,Villarreal CF,Valencia CF,1-0,0-0
+29,2024-03-16,Athletic Bilbao,Deportivo Alavés,2-0,2-0
+29,2024-03-17,Sevilha FC,Celta de Vigo,1-2,1-0
+29,2024-03-17,Villarreal CF,Valencia,1-0,0-0
 29,2024-03-17,UD Las Palmas,UD Almería,0-1,0-1
-29,2024-03-17,Rayo Vallecano de Madrid,Real Betis Balompié,2-0,1-0
-29,2024-03-17,Club Atlético de Madrid,FC Barcelona,0-3,0-1
+29,2024-03-17,Rayo Vallecano,Bétis,2-0,1-0
+29,2024-03-17,Atlético de Madrid,Barcelona,0-3,0-1
 30,2024-03-29,Cádiz CF,Granada CF,1-0,0-0
-30,2024-03-30,Getafe CF,Sevilla FC,0-1,0-1
-30,2024-03-30,UD Almería,CA Osasuna,0-3,0-2
-30,2024-03-30,Valencia CF,RCD Mallorca,0-0,
-30,2024-03-30,FC Barcelona,UD Las Palmas,1-0,0-0
-30,2024-03-31,RC Celta de Vigo,Rayo Vallecano de Madrid,0-0,
-30,2024-03-31,Girona FC,Real Betis Balompié,3-2,1-1
-30,2024-03-31,Deportivo Alavés,Real Sociedad de Fútbol,0-1,0-0
-30,2024-03-31,Real Madrid CF,Athletic Club,2-0,1-0
-30,2024-04-01,Villarreal CF,Club Atlético de Madrid,1-2,0-1
-26,2024-04-04,Granada CF,Valencia CF,0-1,0-0
-31,2024-04-12,Real Betis Balompié,RC Celta de Vigo,2-1,0-0
-31,2024-04-13,Club Atlético de Madrid,Girona FC,3-1,2-1
-31,2024-04-13,Rayo Vallecano de Madrid,Getafe CF,0-0,
-31,2024-04-13,RCD Mallorca,Real Madrid CF,0-1,0-0
-31,2024-04-13,Cádiz CF,FC Barcelona,0-1,0-1
-31,2024-04-14,UD Las Palmas,Sevilla FC,0-2,0-1
+30,2024-03-30,Getafe CF,Sevilha FC,0-1,0-1
+30,2024-03-30,UD Almería,Osasuna,0-3,0-2
+30,2024-03-30,Valencia,Mallorca,0-0,
+30,2024-03-30,Barcelona,UD Las Palmas,1-0,0-0
+30,2024-03-31,Celta de Vigo,Rayo Vallecano,0-0,
+30,2024-03-31,Girona FC,Bétis,3-2,1-1
+30,2024-03-31,Deportivo Alavés,Real Sociedad,0-1,0-0
+30,2024-03-31,Real Madrid,Athletic Bilbao,2-0,1-0
+30,2024-04-01,Villarreal CF,Atlético de Madrid,1-2,0-1
+26,2024-04-04,Granada CF,Valencia,0-1,0-0
+31,2024-04-12,Bétis,Celta de Vigo,2-1,0-0
+31,2024-04-13,Atlético de Madrid,Girona FC,3-1,2-1
+31,2024-04-13,Rayo Vallecano,Getafe CF,0-0,
+31,2024-04-13,Mallorca,Real Madrid,0-1,0-0
+31,2024-04-13,Cádiz CF,Barcelona,0-1,0-1
+31,2024-04-14,UD Las Palmas,Sevilha FC,0-2,0-1
 31,2024-04-14,Granada CF,Deportivo Alavés,2-0,2-0
-31,2024-04-14,Athletic Club,Villarreal CF,1-1,0-0
-31,2024-04-14,Real Sociedad de Fútbol,UD Almería,2-2,1-1
-31,2024-04-15,CA Osasuna,Valencia CF,0-1,0-1
-32,2024-04-19,Athletic Club,Granada CF,1-1,1-1
-32,2024-04-20,RC Celta de Vigo,UD Las Palmas,4-1,2-1
-32,2024-04-20,Rayo Vallecano de Madrid,CA Osasuna,2-1,0-1
-32,2024-04-20,Valencia CF,Real Betis Balompié,1-2,0-1
+31,2024-04-14,Athletic Bilbao,Villarreal CF,1-1,0-0
+31,2024-04-14,Real Sociedad,UD Almería,2-2,1-1
+31,2024-04-15,Osasuna,Valencia,0-1,0-1
+32,2024-04-19,Athletic Bilbao,Granada CF,1-1,1-1
+32,2024-04-20,Celta de Vigo,UD Las Palmas,4-1,2-1
+32,2024-04-20,Rayo Vallecano,Osasuna,2-1,0-1
+32,2024-04-20,Valencia,Bétis,1-2,0-1
 32,2024-04-20,Girona FC,Cádiz CF,4-1,2-0
-32,2024-04-21,Getafe CF,Real Sociedad de Fútbol,1-1,1-1
+32,2024-04-21,Getafe CF,Real Sociedad,1-1,1-1
 32,2024-04-21,UD Almería,Villarreal CF,1-2,1-1
-32,2024-04-21,Deportivo Alavés,Club Atlético de Madrid,2-0,1-0
-32,2024-04-21,Real Madrid CF,FC Barcelona,3-2,1-1
-32,2024-04-22,Sevilla FC,RCD Mallorca,2-1,0-0
-33,2024-04-26,Real Sociedad de Fútbol,Real Madrid CF,0-1,0-1
+32,2024-04-21,Deportivo Alavés,Atlético de Madrid,2-0,1-0
+32,2024-04-21,Real Madrid,Barcelona,3-2,1-1
+32,2024-04-22,Sevilha FC,Mallorca,2-1,0-0
+33,2024-04-26,Real Sociedad,Real Madrid,0-1,0-1
 33,2024-04-27,UD Las Palmas,Girona FC,0-2,0-1
 33,2024-04-27,UD Almería,Getafe CF,1-3,1-1
-33,2024-04-27,Deportivo Alavés,RC Celta de Vigo,3-0,0-0
-33,2024-04-27,Club Atlético de Madrid,Athletic Club,3-1,1-1
-33,2024-04-28,Cádiz CF,RCD Mallorca,1-1,0-1
-33,2024-04-28,Granada CF,CA Osasuna,3-0,1-0
-33,2024-04-28,Villarreal CF,Rayo Vallecano de Madrid,3-0,1-0
-33,2024-04-28,Real Betis Balompié,Sevilla FC,1-1,1-0
-33,2024-04-29,FC Barcelona,Valencia CF,4-2,1-2
-34,2024-05-03,Getafe CF,Athletic Club,0-2,0-1
-34,2024-05-04,Real Sociedad de Fútbol,UD Las Palmas,2-0,2-0
-34,2024-05-04,Real Madrid CF,Cádiz CF,3-0,0-0
-34,2024-05-04,Girona FC,FC Barcelona,4-2,1-2
-34,2024-05-04,RCD Mallorca,Club Atlético de Madrid,0-1,0-1
-34,2024-05-05,CA Osasuna,Real Betis Balompié,0-2,0-2
-34,2024-05-05,RC Celta de Vigo,Villarreal CF,3-2,2-1
-34,2024-05-05,Valencia CF,Deportivo Alavés,0-1,0-0
-34,2024-05-05,Sevilla FC,Granada CF,3-0,1-0
-34,2024-05-05,Rayo Vallecano de Madrid,UD Almería,0-1,0-1
+33,2024-04-27,Deportivo Alavés,Celta de Vigo,3-0,0-0
+33,2024-04-27,Atlético de Madrid,Athletic Bilbao,3-1,1-1
+33,2024-04-28,Cádiz CF,Mallorca,1-1,0-1
+33,2024-04-28,Granada CF,Osasuna,3-0,1-0
+33,2024-04-28,Villarreal CF,Rayo Vallecano,3-0,1-0
+33,2024-04-28,Bétis,Sevilha FC,1-1,1-0
+33,2024-04-29,Barcelona,Valencia,4-2,1-2
+34,2024-05-03,Getafe CF,Athletic Bilbao,0-2,0-1
+34,2024-05-04,Real Sociedad,UD Las Palmas,2-0,2-0
+34,2024-05-04,Real Madrid,Cádiz CF,3-0,0-0
+34,2024-05-04,Girona FC,Barcelona,4-2,1-2
+34,2024-05-04,Mallorca,Atlético de Madrid,0-1,0-1
+34,2024-05-05,Osasuna,Bétis,0-2,0-2
+34,2024-05-05,Celta de Vigo,Villarreal CF,3-2,2-1
+34,2024-05-05,Valencia,Deportivo Alavés,0-1,0-0
+34,2024-05-05,Sevilha FC,Granada CF,3-0,1-0
+34,2024-05-05,Rayo Vallecano,UD Almería,0-1,0-1
 35,2024-05-10,Deportivo Alavés,Girona FC,2-2,1-2
-35,2024-05-11,RCD Mallorca,UD Las Palmas,1-0,1-0
-35,2024-05-11,Villarreal CF,Sevilla FC,3-2,1-2
-35,2024-05-11,Granada CF,Real Madrid CF,0-4,0-2
-35,2024-05-11,Athletic Club,CA Osasuna,2-2,0-1
+35,2024-05-11,Mallorca,UD Las Palmas,1-0,1-0
+35,2024-05-11,Villarreal CF,Sevilha FC,3-2,1-2
+35,2024-05-11,Granada CF,Real Madrid,0-4,0-2
+35,2024-05-11,Athletic Bilbao,Osasuna,2-2,0-1
 35,2024-05-12,Cádiz CF,Getafe CF,1-0,1-0
-35,2024-05-12,Club Atlético de Madrid,RC Celta de Vigo,1-0,0-0
-35,2024-05-12,Valencia CF,Rayo Vallecano de Madrid,0-0,
-35,2024-05-12,Real Betis Balompié,UD Almería,3-2,2-1
-35,2024-05-13,FC Barcelona,Real Sociedad de Fútbol,2-0,1-0
-36,2024-05-14,CA Osasuna,RCD Mallorca,1-1,1-0
-36,2024-05-14,Real Madrid CF,Deportivo Alavés,5-0,3-0
+35,2024-05-12,Atlético de Madrid,Celta de Vigo,1-0,0-0
+35,2024-05-12,Valencia,Rayo Vallecano,0-0,
+35,2024-05-12,Bétis,UD Almería,3-2,2-1
+35,2024-05-13,Barcelona,Real Sociedad,2-0,1-0
+36,2024-05-14,Osasuna,Mallorca,1-1,1-0
+36,2024-05-14,Real Madrid,Deportivo Alavés,5-0,3-0
 36,2024-05-14,Girona FC,Villarreal CF,0-1,0-0
-36,2024-05-15,Sevilla FC,Cádiz CF,0-1,0-0
-36,2024-05-15,Rayo Vallecano de Madrid,Granada CF,2-1,1-0
-36,2024-05-15,RC Celta de Vigo,Athletic Club,2-1,0-1
-36,2024-05-15,Getafe CF,Club Atlético de Madrid,0-3,0-2
-36,2024-05-16,UD Las Palmas,Real Betis Balompié,2-2,1-1
-36,2024-05-16,UD Almería,FC Barcelona,0-2,0-1
-36,2024-05-16,Real Sociedad de Fútbol,Valencia CF,1-0,1-0
+36,2024-05-15,Sevilha FC,Cádiz CF,0-1,0-0
+36,2024-05-15,Rayo Vallecano,Granada CF,2-1,1-0
+36,2024-05-15,Celta de Vigo,Athletic Bilbao,2-1,0-1
+36,2024-05-15,Getafe CF,Atlético de Madrid,0-3,0-2
+36,2024-05-16,UD Las Palmas,Bétis,2-2,1-1
+36,2024-05-16,UD Almería,Barcelona,0-2,0-1
+36,2024-05-16,Real Sociedad,Valencia,1-0,1-0
 37,2024-05-18,Deportivo Alavés,Getafe CF,1-0,1-0
-37,2024-05-19,Athletic Club,Sevilla FC,2-0,2-0
-37,2024-05-19,Club Atlético de Madrid,CA Osasuna,1-4,0-1
-37,2024-05-19,Real Betis Balompié,Real Sociedad de Fútbol,0-2,0-2
-37,2024-05-19,FC Barcelona,Rayo Vallecano de Madrid,3-0,1-0
+37,2024-05-19,Athletic Bilbao,Sevilha FC,2-0,2-0
+37,2024-05-19,Atlético de Madrid,Osasuna,1-4,0-1
+37,2024-05-19,Bétis,Real Sociedad,0-2,0-2
+37,2024-05-19,Barcelona,Rayo Vallecano,3-0,1-0
 37,2024-05-19,Cádiz CF,UD Las Palmas,0-0,
-37,2024-05-19,Granada CF,RC Celta de Vigo,1-2,0-0
-37,2024-05-19,Valencia CF,Girona FC,1-3,0-1
-37,2024-05-19,Villarreal CF,Real Madrid CF,4-4,1-4
-37,2024-05-19,RCD Mallorca,UD Almería,2-2,1-1
+37,2024-05-19,Granada CF,Celta de Vigo,1-2,0-0
+37,2024-05-19,Valencia,Girona FC,1-3,0-1
+37,2024-05-19,Villarreal CF,Real Madrid,4-4,1-4
+37,2024-05-19,Mallorca,UD Almería,2-2,1-1
 38,2024-05-24,Girona FC,Granada CF,7-0,3-0
-38,2024-05-25,CA Osasuna,Villarreal CF,1-1,1-0
-38,2024-05-25,Real Sociedad de Fútbol,Club Atlético de Madrid,0-2,0-1
-38,2024-05-25,Rayo Vallecano de Madrid,Athletic Club,0-1,0-0
+38,2024-05-25,Osasuna,Villarreal CF,1-1,1-0
+38,2024-05-25,Real Sociedad,Atlético de Madrid,0-2,0-1
+38,2024-05-25,Rayo Vallecano,Athletic Bilbao,0-1,0-0
 38,2024-05-25,UD Almería,Cádiz CF,6-1,0-1
-38,2024-05-25,Real Madrid CF,Real Betis Balompié,0-0,
-38,2024-05-26,Getafe CF,RCD Mallorca,1-2,0-0
-38,2024-05-26,RC Celta de Vigo,Valencia CF,2-2,0-1
+38,2024-05-25,Real Madrid,Bétis,0-0,
+38,2024-05-26,Getafe CF,Mallorca,1-2,0-0
+38,2024-05-26,Celta de Vigo,Valencia,2-2,0-1
 38,2024-05-26,UD Las Palmas,Deportivo Alavés,1-1,0-0
-38,2024-05-26,Sevilla FC,FC Barcelona,1-2,1-1
+38,2024-05-26,Sevilha FC,Barcelona,1-2,1-1

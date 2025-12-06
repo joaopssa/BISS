@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2024-04-13,SC Internacional,EC Bahia,2-1,0-0
-1,Sat,2024-04-13,Criciúma EC,EC Juventude,1-1,1-0
-1,Sat,2024-04-13,Fluminense FC,RB Bragantino,2-2,1-0
-1,Sat,2024-04-13,São Paulo FC,Fortaleza EC,1-2,0-0
-1,Sun,2025-04-14,CR Vasco da Gama,Grêmio FBPA,2-1,2-0
-1,Sun,2025-04-14,SC Corinthians Paulista,CA Mineiro,0-0,
-1,Sun,2025-04-14,CA Paranaense,Cuiabá MT,4-0,3-0
-1,Sun,2025-04-14,AC Goianiense,CR Flamengo,1-2,0-1
-1,Sun,2025-04-14,Cruzeiro EC,Botafogo FR,3-2,1-1
-1,Sun,2025-04-14,EC Vitória,SE Palmeiras,0-1,0-1
-2,Tue,2025-04-16,EC Bahia,Fluminense FC,2-1,1-1
-2,Wed,2025-04-17,RB Bragantino,CR Vasco da Gama,2-1,1-0
-2,Wed,2025-04-17,Grêmio FBPA,CA Paranaense,2-0,1-0
-2,Wed,2025-04-17,CA Mineiro,Criciúma EC,1-1,1-0
-2,Wed,2025-04-17,Fortaleza EC,Cruzeiro EC,1-1,1-0
-2,Wed,2025-04-17,EC Juventude,SC Corinthians Paulista,2-0,0-0
-2,Wed,2025-04-17,SE Palmeiras,SC Internacional,0-1,0-1
-2,Wed,2025-04-17,CR Flamengo,São Paulo FC,2-1,1-0
-2,Thu,2025-04-18,Botafogo FR,AC Goianiense,1-0,1-0
-3,Sat,2025-04-20,Fluminense FC,CR Vasco da Gama,2-1,1-0
-3,Sat,2025-04-20,RB Bragantino,SC Corinthians Paulista,1-0,1-0
-3,Sat,2025-04-20,Grêmio FBPA,Cuiabá MT,1-0,1-0
-3,Sat,2025-04-20,CA Mineiro,Cruzeiro EC,3-0,3-0
-3,Sun,2025-04-21,CA Paranaense,SC Internacional,1-0,0-0
-3,Sun,2025-04-21,SE Palmeiras,CR Flamengo,0-0,
-3,Sun,2025-04-21,EC Vitória,EC Bahia,2-2,1-0
-3,Sun,2025-04-21,AC Goianiense,São Paulo FC,0-3,0-1
-3,Sun,2025-04-21,Botafogo FR,EC Juventude,5-1,2-0
-4,Sat,2025-04-27,CR Vasco da Gama,Criciúma EC,0-4,0-1
-4,Sat,2025-04-27,Cuiabá MT,CA Mineiro,0-3,0-1
-4,Sat,2025-04-27,EC Bahia,Grêmio FBPA,1-0,1-0
-4,Sun,2025-04-28,CR Flamengo,Botafogo FR,0-2,0-0
-4,Sun,2025-04-28,SC Corinthians Paulista,Fluminense FC,3-0,2-0
-4,Sun,2025-04-28,Cruzeiro EC,EC Vitória,3-1,0-0
-4,Sun,2025-04-28,Fortaleza EC,RB Bragantino,1-1,1-1
-4,Sun,2025-04-28,EC Juventude,CA Paranaense,1-1,1-0
-4,Sun,2025-04-28,SC Internacional,AC Goianiense,1-1,0-0
-4,Mon,2025-04-29,São Paulo FC,SE Palmeiras,0-0,
-5,Sat,2025-05-04,Fluminense FC,CA Mineiro,2-2,1-0
-5,Sat,2025-05-04,RB Bragantino,CR Flamengo,1-1,1-0
-5,Sat,2025-05-04,SC Corinthians Paulista,Fortaleza EC,0-0,
-5,Sun,2025-05-05,CA Paranaense,CR Vasco da Gama,1-0,1-0
-5,Sun,2025-05-05,EC Vitória,São Paulo FC,1-3,0-1
-5,Sun,2025-05-05,Botafogo FR,EC Bahia,1-2,0-1
-5,Sun,2025-05-05,Cuiabá MT,SE Palmeiras,0-2,0-1
-6,Sat,2025-05-11,CR Flamengo,SC Corinthians Paulista,2-0,1-0
-6,Sun,2025-05-12,AC Goianiense,Cruzeiro EC,0-1,0-0
-6,Sun,2025-05-12,Fortaleza EC,Botafogo FR,1-1,1-1
-6,Sun,2025-05-12,SE Palmeiras,CA Paranaense,0-2,0-1
-6,Sun,2025-05-12,EC Bahia,RB Bragantino,1-0,1-0
-6,Sun,2025-05-12,CR Vasco da Gama,EC Vitória,2-1,0-0
-6,Mon,2025-05-13,São Paulo FC,Fluminense FC,2-1,1-1
-7,Sat,2025-06-01,Grêmio FBPA,RB Bragantino,0-2,0-1
-7,Sat,2025-06-01,EC Vitória,AC Goianiense,0-2,0-1
-7,Sat,2025-06-01,Cuiabá MT,SC Internacional,0-1,0-0
-7,Sat,2025-06-01,Fluminense FC,EC Juventude,1-1,1-0
-7,Sat,2025-06-01,SC Corinthians Paulista,Botafogo FR,0-1,0-0
-7,Sun,2025-06-02,CA Mineiro,EC Bahia,1-1,0-0
-7,Sun,2025-06-02,Criciúma EC,SE Palmeiras,1-2,0-0
-7,Sun,2025-06-02,CR Vasco da Gama,CR Flamengo,1-6,1-3
-7,Sun,2025-06-02,Fortaleza EC,CA Paranaense,1-0,1-0
-7,Sun,2025-06-02,São Paulo FC,Cruzeiro EC,2-0,1-0
-5,Wed,2025-06-05,EC Juventude,AC Goianiense,1-0,1-0
-2,Wed,2025-06-05,Cuiabá MT,EC Vitória,0-0,
-6,Sun,2025-06-09,Criciúma EC,Cuiabá MT,2-5,0-3
-8,Tue,2025-06-11,AC Goianiense,SC Corinthians Paulista,2-2,0-1
-8,Tue,2025-06-11,EC Juventude,EC Vitória,1-1,1-1
-8,Tue,2025-06-11,Botafogo FR,Fluminense FC,1-0,0-0
-8,Tue,2025-06-11,RB Bragantino,CA Mineiro,1-2,1-2
-8,Thu,2025-06-13,Cruzeiro EC,Cuiabá MT,2-1,1-0
-8,Thu,2025-06-13,CR Flamengo,Grêmio FBPA,2-1,1-0
-8,Thu,2025-06-13,SC Internacional,São Paulo FC,0-0,
-8,Thu,2025-06-13,CA Paranaense,Criciúma EC,3-1,1-1
-8,Thu,2025-06-13,EC Bahia,Fortaleza EC,1-0,0-0
-8,Thu,2025-06-13,SE Palmeiras,CR Vasco da Gama,2-0,1-0
-9,Sat,2025-06-15,RB Bragantino,EC Juventude,2-1,1-1
-9,Sat,2025-06-15,Fluminense FC,AC Goianiense,1-2,1-0
-9,Sun,2025-06-16,CA Paranaense,CR Flamengo,1-1,0-0
-9,Sun,2025-06-16,SC Corinthians Paulista,São Paulo FC,2-2,2-2
-9,Sun,2025-06-16,EC Vitória,SC Internacional,2-1,1-0
-9,Sun,2025-06-16,Criciúma EC,EC Bahia,2-2,1-0
-9,Sun,2025-06-16,Cuiabá MT,Fortaleza EC,5-0,4-0
-9,Sun,2025-06-16,Grêmio FBPA,Botafogo FR,1-2,1-1
-9,Sun,2025-06-16,CR Vasco da Gama,Cruzeiro EC,0-0,
-9,Mon,2025-06-17,CA Mineiro,SE Palmeiras,0-4,0-1
-10,Wed,2025-06-19,AC Goianiense,Criciúma EC,1-2,1-0
-10,Wed,2025-06-19,Botafogo FR,CA Paranaense,1-1,0-0
-10,Wed,2025-06-19,Fortaleza EC,Grêmio FBPA,1-0,1-0
-10,Wed,2025-06-19,EC Juventude,CR Vasco da Gama,2-0,0-0
-10,Wed,2025-06-19,São Paulo FC,Cuiabá MT,0-1,0-0
-10,Wed,2025-06-19,Cruzeiro EC,Fluminense FC,2-0,1-0
-10,Wed,2025-06-19,SC Internacional,SC Corinthians Paulista,1-0,1-0
-10,Thu,2025-06-20,EC Vitória,CA Mineiro,4-2,2-1
-10,Thu,2025-06-20,CR Flamengo,EC Bahia,2-1,1-1
-10,Thu,2025-06-20,SE Palmeiras,RB Bragantino,2-1,1-0
-11,Sat,2025-06-22,Criciúma EC,Botafogo FR,2-1,1-0
-11,Sat,2025-06-22,Grêmio FBPA,SC Internacional,0-1,0-0
-11,Sat,2025-06-22,Cuiabá MT,AC Goianiense,0-0,
-11,Sat,2025-06-22,CR Vasco da Gama,São Paulo FC,4-1,2-1
-11,Sun,2025-06-23,CA Paranaense,SC Corinthians Paulista,1-1,1-0
-11,Sun,2025-06-23,EC Bahia,Cruzeiro EC,4-1,1-1
-11,Sun,2025-06-23,Fluminense FC,CR Flamengo,0-1,0-0
-11,Sun,2025-06-23,CA Mineiro,Fortaleza EC,1-1,0-1
-11,Sun,2025-06-23,RB Bragantino,EC Vitória,2-1,1-1
-11,Sun,2025-06-23,SE Palmeiras,EC Juventude,3-1,0-0
-12,Wed,2025-06-26,Botafogo FR,RB Bragantino,2-1,1-1
-12,Wed,2025-06-26,Cruzeiro EC,CA Paranaense,2-0,1-0
-12,Wed,2025-06-26,AC Goianiense,Grêmio FBPA,1-1,0-0
-12,Wed,2025-06-26,SC Corinthians Paulista,Cuiabá MT,1-1,0-1
-12,Wed,2025-06-26,EC Juventude,CR Flamengo,2-1,1-1
-12,Wed,2025-06-26,EC Bahia,CR Vasco da Gama,2-1,1-1
-12,Wed,2025-06-26,Fortaleza EC,SE Palmeiras,3-0,1-0
-12,Wed,2025-06-26,SC Internacional,CA Mineiro,1-2,0-0
-12,Thu,2025-06-27,Fluminense FC,EC Vitória,0-1,0-0
-12,Thu,2025-06-27,São Paulo FC,Criciúma EC,2-1,2-0
-13,Sat,2025-06-29,Cuiabá MT,RB Bragantino,1-1,1-1
-13,Sat,2025-06-29,CR Vasco da Gama,Botafogo FR,1-1,0-0
-13,Sun,2025-06-30,CA Mineiro,AC Goianiense,1-1,1-1
-13,Sun,2025-06-30,Fortaleza EC,EC Juventude,2-1,2-0
-13,Sun,2025-06-30,Grêmio FBPA,Fluminense FC,1-0,0-0
-13,Sun,2025-06-30,São Paulo FC,EC Bahia,3-1,2-0
-13,Sun,2025-06-30,Criciúma EC,SC Internacional,1-1,0-1
-13,Sun,2025-06-30,CR Flamengo,Cruzeiro EC,2-1,1-1
-13,Sun,2025-06-30,EC Vitória,CA Paranaense,0-1,0-0
-13,Mon,2025-07-01,SE Palmeiras,SC Corinthians Paulista,2-0,0-0
-14,Wed,2025-07-03,Cuiabá MT,Botafogo FR,1-2,1-1
-14,Wed,2025-07-03,Criciúma EC,Cruzeiro EC,1-0,0-0
-14,Wed,2025-07-03,CR Vasco da Gama,Fortaleza EC,2-0,1-0
-14,Wed,2025-07-03,CA Paranaense,São Paulo FC,1-2,1-1
-14,Wed,2025-07-03,CA Mineiro,CR Flamengo,2-4,0-2
-14,Wed,2025-07-03,RB Bragantino,AC Goianiense,3-1,3-1
-14,Thu,2025-07-04,EC Bahia,EC Juventude,2-0,0-0
-14,Thu,2025-07-04,Grêmio FBPA,SE Palmeiras,2-2,1-0
-14,Thu,2025-07-04,SC Corinthians Paulista,EC Vitória,3-2,2-1
-14,Thu,2025-07-04,Fluminense FC,SC Internacional,1-1,1-1
-15,Sat,2025-07-06,CR Flamengo,Cuiabá MT,1-1,0-1
-15,Sat,2025-07-06,São Paulo FC,RB Bragantino,2-0,0-0
-15,Sun,2025-07-07,Cruzeiro EC,SC Corinthians Paulista,3-0,2-0
-15,Sun,2025-07-07,Fortaleza EC,Fluminense FC,1-0,0-0
-15,Sun,2025-07-07,EC Juventude,Grêmio FBPA,3-0,2-0
-15,Sun,2025-07-07,SC Internacional,CR Vasco da Gama,1-2,0-0
-15,Sun,2025-07-07,AC Goianiense,CA Paranaense,1-2,0-0
-15,Sun,2025-07-07,SE Palmeiras,EC Bahia,2-0,1-0
-15,Sun,2025-07-07,EC Vitória,Criciúma EC,2-1,2-1
-15,Sun,2025-07-07,Botafogo FR,CA Mineiro,3-0,1-0
-16,Wed,2025-07-10,Grêmio FBPA,Cruzeiro EC,0-2,0-2
-16,Wed,2025-07-10,CA Paranaense,EC Bahia,1-3,0-2
-16,Wed,2025-07-10,CR Vasco da Gama,SC Corinthians Paulista,2-0,0-0
-16,Thu,2025-07-11,SE Palmeiras,AC Goianiense,3-1,1-1
-16,Thu,2025-07-11,Criciúma EC,Fluminense FC,1-1,0-0
-16,Thu,2025-07-11,CR Flamengo,Fortaleza EC,1-2,1-1
-16,Thu,2025-07-11,CA Mineiro,São Paulo FC,2-1,2-1
-16,Thu,2025-07-11,EC Vitória,Botafogo FR,0-1,0-0
-17,Sat,2025-07-13,EC Bahia,Cuiabá MT,1-2,0-1
-17,Sat,2025-07-13,Cruzeiro EC,RB Bragantino,2-1,1-0
-17,Tue,2025-07-16,EC Juventude,CA Mineiro,1-1,1-1
-17,Tue,2025-07-16,SC Corinthians Paulista,Criciúma EC,2-1,0-1
-17,Wed,2025-07-17,AC Goianiense,CR Vasco da Gama,0-1,0-0
-17,Wed,2025-07-17,São Paulo FC,Grêmio FBPA,1-0,1-0
-17,Wed,2025-07-17,Botafogo FR,SE Palmeiras,1-0,0-0
-17,Wed,2025-07-17,Fortaleza EC,EC Vitória,3-1,2-0
-18,Sat,2025-07-20,CR Flamengo,Criciúma EC,2-1,0-1
-18,Sat,2025-07-20,Botafogo FR,SC Internacional,1-0,1-0
-18,Sat,2025-07-20,SE Palmeiras,Cruzeiro EC,2-0,1-0
-18,Sun,2025-07-21,Grêmio FBPA,EC Vitória,2-0,0-0
-18,Sun,2025-07-21,CA Mineiro,CR Vasco da Gama,2-0,2-0
-18,Sun,2025-07-21,EC Bahia,SC Corinthians Paulista,0-1,0-1
-18,Sun,2025-07-21,RB Bragantino,CA Paranaense,1-0,1-0
-18,Sun,2025-07-21,Fortaleza EC,AC Goianiense,3-1,1-1
-18,Sun,2025-07-21,EC Juventude,São Paulo FC,0-0,
-18,Sun,2025-07-21,Cuiabá MT,Fluminense FC,0-1,0-0
-19,Wed,2025-07-24,Cruzeiro EC,EC Juventude,2-0,1-0
-3,Wed,2025-07-24,Criciúma EC,Fortaleza EC,1-1,1-0
-19,Wed,2025-07-24,São Paulo FC,Botafogo FR,2-2,1-2
-19,Wed,2025-07-24,EC Vitória,CR Flamengo,1-2,0-1
-19,Wed,2025-07-24,AC Goianiense,EC Bahia,1-1,0-0
-19,Wed,2025-07-24,Fluminense FC,SE Palmeiras,1-0,0-0
-19,Thu,2025-07-25,SC Corinthians Paulista,Grêmio FBPA,2-2,1-1
-20,Sat,2025-07-27,EC Juventude,Criciúma EC,1-2,0-0
-20,Sat,2025-07-27,SE Palmeiras,EC Vitória,0-2,0-0
-20,Sat,2025-07-27,EC Bahia,SC Internacional,1-1,1-0
-20,Sat,2025-07-27,Botafogo FR,Cruzeiro EC,0-3,0-2
-20,Sat,2025-07-27,Fortaleza EC,São Paulo FC,1-0,1-0
-20,Sun,2025-07-28,RB Bragantino,Fluminense FC,0-1,0-1
-20,Sun,2025-07-28,CR Flamengo,AC Goianiense,2-0,1-0
-20,Sun,2025-07-28,CA Mineiro,SC Corinthians Paulista,2-1,1-1
-20,Sun,2025-07-28,Cuiabá MT,CA Paranaense,1-2,0-1
-20,Sun,2025-07-28,Grêmio FBPA,CR Vasco da Gama,1-0,0-0
-21,Sat,2025-08-03,EC Vitória,Cuiabá MT,1-0,0-0
-21,Sat,2025-08-03,CR Vasco da Gama,RB Bragantino,2-2,0-1
-21,Sat,2025-08-03,AC Goianiense,Botafogo FR,1-4,1-1
-21,Sat,2025-08-03,Criciúma EC,CA Mineiro,2-1,0-0
-21,Sat,2025-08-03,São Paulo FC,CR Flamengo,1-0,0-0
-21,Sun,2025-08-04,CA Paranaense,Grêmio FBPA,0-2,0-2
-21,Sun,2025-08-04,SC Corinthians Paulista,EC Juventude,1-1,0-1
-21,Sun,2025-08-04,Fluminense FC,EC Bahia,1-0,1-0
-21,Sun,2025-08-04,SC Internacional,SE Palmeiras,1-1,1-0
-21,Mon,2025-08-05,Cruzeiro EC,Fortaleza EC,1-2,1-2
-22,Sat,2025-08-10,Fortaleza EC,Criciúma EC,1-0,0-0
-22,Sat,2025-08-10,Cuiabá MT,Grêmio FBPA,1-3,0-1
-22,Sat,2025-08-10,SC Corinthians Paulista,RB Bragantino,1-1,1-1
-22,Sat,2025-08-10,Cruzeiro EC,CA Mineiro,0-0,
-22,Sat,2025-08-10,CR Vasco da Gama,Fluminense FC,2-0,2-0
-22,Sun,2025-08-11,EC Juventude,Botafogo FR,3-2,2-0
-22,Sun,2025-08-11,EC Bahia,EC Vitória,2-0,1-0
-22,Sun,2025-08-11,CR Flamengo,SE Palmeiras,1-1,0-0
-22,Sun,2025-08-11,São Paulo FC,AC Goianiense,1-0,1-0
-22,Sun,2025-08-11,SC Internacional,CA Paranaense,2-2,1-1
-6,Wed,2025-08-14,SC Internacional,EC Juventude,2-1,0-1
-23,Sat,2025-08-17,CA Mineiro,Cuiabá MT,1-1,1-1
-23,Sat,2025-08-17,Grêmio FBPA,EC Bahia,0-2,0-1
-23,Sat,2025-08-17,RB Bragantino,Fortaleza EC,1-2,1-1
-23,Sat,2025-08-17,Fluminense FC,SC Corinthians Paulista,0-0,
-23,Sun,2025-08-18,AC Goianiense,SC Internacional,1-0,0-0
-23,Sun,2025-08-18,Criciúma EC,CR Vasco da Gama,2-2,1-2
-23,Sun,2025-08-18,SE Palmeiras,São Paulo FC,2-1,0-0
-23,Sun,2025-08-18,CA Paranaense,EC Juventude,1-2,1-1
-23,Sun,2025-08-18,Botafogo FR,CR Flamengo,4-1,1-1
-23,Mon,2025-08-19,EC Vitória,Cruzeiro EC,2-2,2-0
-24,Sat,2025-08-24,AC Goianiense,EC Juventude,2-1,0-0
-24,Sat,2025-08-24,SE Palmeiras,Cuiabá MT,5-0,4-0
-24,Sat,2025-08-24,CA Mineiro,Fluminense FC,0-2,0-1
-24,Sun,2025-08-25,EC Bahia,Botafogo FR,0-0,
-24,Sun,2025-08-25,Criciúma EC,Grêmio FBPA,0-1,0-0
-24,Sun,2025-08-25,Fortaleza EC,SC Corinthians Paulista,1-0,0-0
-24,Sun,2025-08-25,São Paulo FC,EC Vitória,2-1,2-0
-24,Sun,2025-08-25,SC Internacional,Cruzeiro EC,1-0,0-0
-24,Sun,2025-08-25,CR Flamengo,RB Bragantino,2-1,1-0
-24,Mon,2025-08-26,CR Vasco da Gama,CA Paranaense,2-1,0-1
-19,Wed,2025-08-28,Criciúma EC,RB Bragantino,1-0,1-0
-5,Wed,2025-08-28,Cruzeiro EC,SC Internacional,0-0,
-25,Sat,2025-08-31,Cuiabá MT,Criciúma EC,2-1,0-1
-25,Sat,2025-08-31,Botafogo FR,Fortaleza EC,2-0,0-0
-25,Sun,2025-09-01,Cruzeiro EC,AC Goianiense,3-1,2-1
-25,Sun,2025-09-01,Grêmio FBPA,CA Mineiro,2-3,2-0
-25,Sun,2025-09-01,SC Corinthians Paulista,CR Flamengo,2-1,1-1
-25,Sun,2025-09-01,CA Paranaense,SE Palmeiras,0-2,0-1
-25,Sun,2025-09-01,RB Bragantino,EC Bahia,2-1,0-0
-25,Sun,2025-09-01,Fluminense FC,São Paulo FC,2-0,1-0
-25,Sun,2025-09-01,EC Juventude,SC Internacional,1-3,0-2
-25,Sun,2025-09-01,EC Vitória,CR Vasco da Gama,0-1,0-0
-16,Thu,2025-09-05,Cuiabá MT,EC Juventude,0-0,
-19,Wed,2025-09-11,SC Internacional,Fortaleza EC,2-1,1-1
-26,Sat,2025-09-14,AC Goianiense,EC Vitória,0-2,0-1
-26,Sat,2025-09-14,CA Paranaense,Fortaleza EC,1-1,1-1
-26,Sat,2025-09-14,Botafogo FR,SC Corinthians Paulista,2-1,1-0
-26,Sun,2025-09-15,RB Bragantino,Grêmio FBPA,2-2,1-1
-26,Sun,2025-09-15,EC Juventude,Fluminense FC,2-1,0-1
-26,Sun,2025-09-15,SE Palmeiras,Criciúma EC,5-0,3-0
-26,Sun,2025-09-15,EC Bahia,CA Mineiro,3-0,0-0
-26,Sun,2025-09-15,Cruzeiro EC,São Paulo FC,0-1,0-0
-26,Sun,2025-09-15,CR Flamengo,CR Vasco da Gama,1-1,0-0
-26,Mon,2025-09-16,SC Internacional,Cuiabá MT,3-0,2-0
-27,Sat,2025-09-21,SC Corinthians Paulista,AC Goianiense,3-0,1-0
-27,Sat,2025-09-21,EC Vitória,EC Juventude,1-0,1-0
-27,Sat,2025-09-21,Fluminense FC,Botafogo FR,0-1,0-0
-27,Sat,2025-09-21,Fortaleza EC,EC Bahia,4-1,2-1
-27,Sun,2025-09-22,CA Mineiro,RB Bragantino,3-0,1-0
-27,Sun,2025-09-22,CR Vasco da Gama,SE Palmeiras,0-1,0-1
-27,Sun,2025-09-22,Cuiabá MT,Cruzeiro EC,0-0,
-27,Sun,2025-09-22,Grêmio FBPA,CR Flamengo,3-2,1-1
-27,Sun,2025-09-22,São Paulo FC,SC Internacional,1-3,1-1
-27,Sun,2025-09-22,Criciúma EC,CA Paranaense,0-0,
-16,Wed,2025-09-25,RB Bragantino,SC Internacional,2-2,1-1
-5,Wed,2025-09-25,Grêmio FBPA,Criciúma EC,1-2,0-1
-28,Sat,2025-09-28,SE Palmeiras,CA Mineiro,2-1,1-0
-28,Sat,2025-09-28,Botafogo FR,Grêmio FBPA,0-0,
-28,Sun,2025-09-29,EC Juventude,RB Bragantino,1-1,0-0
-28,Sun,2025-09-29,AC Goianiense,Fluminense FC,1-0,0-0
-28,Sun,2025-09-29,Fortaleza EC,Cuiabá MT,1-0,1-0
-28,Sun,2025-09-29,São Paulo FC,SC Corinthians Paulista,3-1,1-0
-28,Sun,2025-09-29,EC Bahia,Criciúma EC,1-0,1-0
-28,Sun,2025-09-29,Cruzeiro EC,CR Vasco da Gama,1-1,0-1
-28,Sun,2025-09-29,SC Internacional,EC Vitória,3-1,1-0
-28,Sun,2025-09-29,CR Flamengo,CA Paranaense,1-0,0-0
-29,Thu,2025-10-03,Criciúma EC,AC Goianiense,2-0,1-0
-29,Thu,2025-10-03,Fluminense FC,Cruzeiro EC,1-0,0-0
-29,Fri,2025-10-04,Grêmio FBPA,Fortaleza EC,3-1,1-1
-29,Sat,2025-10-05,CA Paranaense,Botafogo FR,0-1,0-1
-29,Sat,2025-10-05,CA Mineiro,EC Vitória,2-2,2-0
-29,Sat,2025-10-05,RB Bragantino,SE Palmeiras,0-0,
-29,Sat,2025-10-05,EC Bahia,CR Flamengo,0-2,0-1
-29,Sat,2025-10-05,SC Corinthians Paulista,SC Internacional,2-2,1-1
-29,Sat,2025-10-05,Cuiabá MT,São Paulo FC,2-0,2-0
-29,Sat,2025-10-05,CR Vasco da Gama,EC Juventude,1-1,1-1
-6,Wed,2025-10-09,CA Mineiro,Grêmio FBPA,2-1,2-1
-30,Wed,2025-10-16,Fortaleza EC,CA Mineiro,1-1,1-0
-30,Wed,2025-10-16,São Paulo FC,CR Vasco da Gama,3-0,1-0
-30,Thu,2025-10-17,SC Corinthians Paulista,CA Paranaense,5-2,2-2
-30,Thu,2025-10-17,CR Flamengo,Fluminense FC,0-2,0-0
-30,Fri,2025-10-18,AC Goianiense,Cuiabá MT,0-0,
-30,Fri,2025-10-18,Botafogo FR,Criciúma EC,1-1,0-0
-30,Fri,2025-10-18,Cruzeiro EC,EC Bahia,1-1,0-0
-30,Sat,2025-10-19,SC Internacional,Grêmio FBPA,1-0,0-0
-30,Sat,2025-10-19,EC Vitória,RB Bragantino,1-0,0-0
-30,Sun,2025-10-20,EC Juventude,SE Palmeiras,3-5,1-2
-17,Tue,2025-10-22,Fluminense FC,CA Paranaense,1-0,0-0
-19,Thu,2025-10-24,CR Vasco da Gama,Cuiabá MT,1-0,0-0
-31,Sat,2025-10-26,CR Flamengo,EC Juventude,4-2,1-1
-31,Sat,2025-10-26,Grêmio FBPA,AC Goianiense,3-1,1-1
-31,Sat,2025-10-26,SE Palmeiras,Fortaleza EC,2-2,1-1
-31,Sat,2025-10-26,EC Vitória,Fluminense FC,2-1,1-0
-31,Sat,2025-10-26,CA Paranaense,Cruzeiro EC,3-0,1-0
-31,Sat,2025-10-26,CA Mineiro,SC Internacional,1-3,1-2
-31,Sat,2025-10-26,RB Bragantino,Botafogo FR,0-1,0-0
-31,Sat,2025-10-26,Criciúma EC,São Paulo FC,1-1,1-0
-31,Mon,2025-10-28,Cuiabá MT,SC Corinthians Paulista,0-1,0-1
-31,Mon,2025-10-28,CR Vasco da Gama,EC Bahia,3-2,3-1
-17,Wed,2025-10-30,SC Internacional,CR Flamengo,1-1,0-1
-32,Fri,2025-11-01,Fluminense FC,Grêmio FBPA,2-2,1-1
-32,Sat,2025-11-02,RB Bragantino,Cuiabá MT,0-0,
-32,Sat,2025-11-02,CA Paranaense,EC Vitória,1-2,1-1
-32,Sat,2025-11-02,EC Juventude,Fortaleza EC,0-3,0-2
-32,Mon,2025-11-04,SC Corinthians Paulista,SE Palmeiras,2-0,1-0
-32,Tue,2025-11-05,EC Bahia,São Paulo FC,0-3,0-1
-32,Tue,2025-11-05,Botafogo FR,CR Vasco da Gama,3-0,2-0
-32,Tue,2025-11-05,SC Internacional,Criciúma EC,2-0,1-0
-32,Wed,2025-11-06,AC Goianiense,CA Mineiro,1-0,0-0
-32,Wed,2025-11-06,Cruzeiro EC,CR Flamengo,0-1,0-0
-33,Fri,2025-11-08,SC Internacional,Fluminense FC,2-0,0-0
-33,Fri,2025-11-08,SE Palmeiras,Grêmio FBPA,1-0,0-0
-33,Sat,2025-11-09,EC Vitória,SC Corinthians Paulista,1-2,1-1
-33,Sat,2025-11-09,Botafogo FR,Cuiabá MT,0-0,
-33,Sat,2025-11-09,AC Goianiense,RB Bragantino,0-0,
-33,Sat,2025-11-09,Cruzeiro EC,Criciúma EC,2-1,1-0
-33,Sat,2025-11-09,Fortaleza EC,CR Vasco da Gama,3-0,1-0
-33,Sat,2025-11-09,EC Juventude,EC Bahia,2-1,0-1
-33,Sat,2025-11-09,São Paulo FC,CA Paranaense,2-1,0-0
-33,Wed,2025-11-13,CR Flamengo,CA Mineiro,0-0,
-19,Sat,2025-11-16,CA Paranaense,CA Mineiro,1-0,1-0
-34,Wed,2025-11-20,SC Corinthians Paulista,Cruzeiro EC,2-1,2-1
-34,Wed,2025-11-20,CA Paranaense,AC Goianiense,2-0,1-0
-34,Wed,2025-11-20,RB Bragantino,São Paulo FC,1-1,1-1
-34,Wed,2025-11-20,Criciúma EC,EC Vitória,0-1,0-0
-34,Wed,2025-11-20,EC Bahia,SE Palmeiras,1-2,1-1
-34,Wed,2025-11-20,Cuiabá MT,CR Flamengo,1-2,0-0
-34,Wed,2025-11-20,Grêmio FBPA,EC Juventude,2-2,1-1
-34,Wed,2025-11-20,CA Mineiro,Botafogo FR,0-0,
-34,Thu,2025-11-21,CR Vasco da Gama,SC Internacional,0-1,0-0
-34,Fri,2025-11-22,Fluminense FC,Fortaleza EC,2-2,1-2
-35,Sat,2025-11-23,AC Goianiense,SE Palmeiras,0-1,0-1
-35,Sat,2025-11-23,Botafogo FR,EC Vitória,1-1,0-1
-35,Sat,2025-11-23,EC Juventude,Cuiabá MT,1-1,0-0
-35,Sat,2025-11-23,São Paulo FC,CA Mineiro,2-2,2-2
-35,Sun,2025-11-24,EC Bahia,CA Paranaense,1-1,0-0
-35,Sun,2025-11-24,SC Corinthians Paulista,CR Vasco da Gama,3-1,3-0
-35,Sun,2025-11-24,SC Internacional,RB Bragantino,4-1,2-1
-35,Tue,2025-11-26,Fluminense FC,Criciúma EC,0-0,
-35,Tue,2025-11-26,Fortaleza EC,CR Flamengo,0-0,
-36,Tue,2025-11-26,CA Mineiro,EC Juventude,2-3,0-1
-36,Tue,2025-11-26,SE Palmeiras,Botafogo FR,1-3,0-1
-35,Wed,2025-11-27,Cruzeiro EC,Grêmio FBPA,1-1,1-1
-36,Sat,2025-11-30,Criciúma EC,SC Corinthians Paulista,2-4,2-0
-36,Sat,2025-11-30,Cuiabá MT,EC Bahia,1-2,1-1
-36,Sat,2025-11-30,CR Vasco da Gama,AC Goianiense,2-2,0-1
-36,Sun,2025-12-01,CR Flamengo,SC Internacional,3-2,3-0
-36,Sun,2025-12-01,Grêmio FBPA,São Paulo FC,2-1,2-0
-36,Sun,2025-12-01,CA Paranaense,Fluminense FC,1-1,1-0
-36,Sun,2025-12-01,RB Bragantino,Cruzeiro EC,1-1,1-0
-36,Sun,2025-12-01,EC Vitória,Fortaleza EC,2-0,2-0
-37,Tue,2025-12-03,SC Corinthians Paulista,EC Bahia,3-0,2-0
-37,Wed,2025-12-04,CR Vasco da Gama,CA Mineiro,2-0,0-0
-37,Wed,2025-12-04,Criciúma EC,CR Flamengo,0-3,0-1
-37,Wed,2025-12-04,São Paulo FC,EC Juventude,1-2,0-0
-37,Wed,2025-12-04,EC Vitória,Grêmio FBPA,1-1,0-1
-37,Wed,2025-12-04,AC Goianiense,Fortaleza EC,3-1,1-1
-37,Wed,2025-12-04,Cruzeiro EC,SE Palmeiras,1-2,0-0
-37,Wed,2025-12-04,SC Internacional,Botafogo FR,0-1,0-1
-37,Thu,2025-12-05,CA Paranaense,RB Bragantino,1-2,0-1
-37,Thu,2025-12-05,Fluminense FC,Cuiabá MT,1-0,0-0
-38,Sun,2025-12-08,CA Mineiro,CA Paranaense,1-0,0-0
-38,Sun,2025-12-08,EC Bahia,AC Goianiense,2-0,1-0
-38,Sun,2025-12-08,Botafogo FR,São Paulo FC,2-1,1-0
-38,Sun,2025-12-08,RB Bragantino,Criciúma EC,5-1,2-1
-38,Sun,2025-12-08,Cuiabá MT,CR Vasco da Gama,1-2,1-2
-38,Sun,2025-12-08,CR Flamengo,EC Vitória,2-2,0-1
-38,Sun,2025-12-08,Fortaleza EC,SC Internacional,3-0,2-0
-38,Sun,2025-12-08,Grêmio FBPA,SC Corinthians Paulista,0-3,0-1
-38,Sun,2025-12-08,EC Juventude,Cruzeiro EC,0-1,0-1
-38,Sun,2025-12-08,SE Palmeiras,Fluminense FC,0-1,0-1
+1,Sat,2024-04-13,Internacional,Bahia,2-1,0-0
+1,Sat,2024-04-13,Criciúma EC,Juventude-RS,1-1,1-0
+1,Sat,2024-04-13,Fluminense,Bragantino,2-2,1-0
+1,Sat,2024-04-13,São Paulo,Fortaleza,1-2,0-0
+1,Sun,2024-04-14,Vasco da Gama,Grêmio,2-1,2-0
+1,Sun,2024-04-14,Corinthians,Atlético-MG,0-0,
+1,Sun,2024-04-14,Athletico-PR,Cuiabá,4-0,3-0
+1,Sun,2024-04-14,AC Goianiense,Flamengo,1-2,0-1
+1,Sun,2024-04-14,Cruzeiro,Botafogo-RJ,3-2,1-1
+1,Sun,2024-04-14,Vitória,Palmeiras,0-1,0-1
+2,Tue,2024-04-16,Bahia,Fluminense,2-1,1-1
+2,Wed,2024-04-17,Bragantino,Vasco da Gama,2-1,1-0
+2,Wed,2024-04-17,Grêmio,Athletico-PR,2-0,1-0
+2,Wed,2024-04-17,Atlético-MG,Criciúma EC,1-1,1-0
+2,Wed,2024-04-17,Fortaleza,Cruzeiro,1-1,1-0
+2,Wed,2024-04-17,Juventude-RS,Corinthians,2-0,0-0
+2,Wed,2024-04-17,Palmeiras,Internacional,0-1,0-1
+2,Wed,2024-04-17,Flamengo,São Paulo,2-1,1-0
+2,Thu,2024-04-18,Botafogo-RJ,AC Goianiense,1-0,1-0
+3,Sat,2024-04-20,Fluminense,Vasco da Gama,2-1,1-0
+3,Sat,2024-04-20,Bragantino,Corinthians,1-0,1-0
+3,Sat,2024-04-20,Grêmio,Cuiabá,1-0,1-0
+3,Sat,2024-04-20,Atlético-MG,Cruzeiro,3-0,3-0
+3,Sun,2024-04-21,Athletico-PR,Internacional,1-0,0-0
+3,Sun,2024-04-21,Palmeiras,Flamengo,0-0,
+3,Sun,2024-04-21,Vitória,Bahia,2-2,1-0
+3,Sun,2024-04-21,AC Goianiense,São Paulo,0-3,0-1
+3,Sun,2024-04-21,Botafogo-RJ,Juventude-RS,5-1,2-0
+4,Sat,2024-04-27,Vasco da Gama,Criciúma EC,0-4,0-1
+4,Sat,2024-04-27,Cuiabá,Atlético-MG,0-3,0-1
+4,Sat,2024-04-27,Bahia,Grêmio,1-0,1-0
+4,Sun,2024-04-28,Flamengo,Botafogo-RJ,0-2,0-0
+4,Sun,2024-04-28,Corinthians,Fluminense,3-0,2-0
+4,Sun,2024-04-28,Cruzeiro,Vitória,3-1,0-0
+4,Sun,2024-04-28,Fortaleza,Bragantino,1-1,1-1
+4,Sun,2024-04-28,Juventude-RS,Athletico-PR,1-1,1-0
+4,Sun,2024-04-28,Internacional,AC Goianiense,1-1,0-0
+4,Mon,2024-04-29,São Paulo,Palmeiras,0-0,
+5,Sat,2024-05-04,Fluminense,Atlético-MG,2-2,1-0
+5,Sat,2024-05-04,Bragantino,Flamengo,1-1,1-0
+5,Sat,2024-05-04,Corinthians,Fortaleza,0-0,
+5,Sun,2024-05-05,Athletico-PR,Vasco da Gama,1-0,1-0
+5,Sun,2024-05-05,Vitória,São Paulo,1-3,0-1
+5,Sun,2024-05-05,Botafogo-RJ,Bahia,1-2,0-1
+5,Sun,2024-05-05,Cuiabá,Palmeiras,0-2,0-1
+6,Sat,2024-05-11,Flamengo,Corinthians,2-0,1-0
+6,Sun,2024-05-12,AC Goianiense,Cruzeiro,0-1,0-0
+6,Sun,2024-05-12,Fortaleza,Botafogo-RJ,1-1,1-1
+6,Sun,2024-05-12,Palmeiras,Athletico-PR,0-2,0-1
+6,Sun,2024-05-12,Bahia,Bragantino,1-0,1-0
+6,Sun,2024-05-12,Vasco da Gama,Vitória,2-1,0-0
+6,Mon,2024-05-13,São Paulo,Fluminense,2-1,1-1
+7,Sat,2024-06-01,Grêmio,Bragantino,0-2,0-1
+7,Sat,2024-06-01,Vitória,AC Goianiense,0-2,0-1
+7,Sat,2024-06-01,Cuiabá,Internacional,0-1,0-0
+7,Sat,2024-06-01,Fluminense,Juventude-RS,1-1,1-0
+7,Sat,2024-06-01,Corinthians,Botafogo-RJ,0-1,0-0
+7,Sun,2024-06-02,Atlético-MG,Bahia,1-1,0-0
+7,Sun,2024-06-02,Criciúma EC,Palmeiras,1-2,0-0
+7,Sun,2024-06-02,Vasco da Gama,Flamengo,1-6,1-3
+7,Sun,2024-06-02,Fortaleza,Athletico-PR,1-0,1-0
+7,Sun,2024-06-02,São Paulo,Cruzeiro,2-0,1-0
+5,Wed,2024-06-05,Juventude-RS,AC Goianiense,1-0,1-0
+2,Wed,2024-06-05,Cuiabá,Vitória,0-0,
+6,Sun,2024-06-09,Criciúma EC,Cuiabá,2-5,0-3
+8,Tue,2024-06-11,AC Goianiense,Corinthians,2-2,0-1
+8,Tue,2024-06-11,Juventude-RS,Vitória,1-1,1-1
+8,Tue,2024-06-11,Botafogo-RJ,Fluminense,1-0,0-0
+8,Tue,2024-06-11,Bragantino,Atlético-MG,1-2,1-2
+8,Thu,2024-06-13,Cruzeiro,Cuiabá,2-1,1-0
+8,Thu,2024-06-13,Flamengo,Grêmio,2-1,1-0
+8,Thu,2024-06-13,Internacional,São Paulo,0-0,
+8,Thu,2024-06-13,Athletico-PR,Criciúma EC,3-1,1-1
+8,Thu,2024-06-13,Bahia,Fortaleza,1-0,0-0
+8,Thu,2024-06-13,Palmeiras,Vasco da Gama,2-0,1-0
+9,Sat,2024-06-15,Bragantino,Juventude-RS,2-1,1-1
+9,Sat,2024-06-15,Fluminense,AC Goianiense,1-2,1-0
+9,Sun,2024-06-16,Athletico-PR,Flamengo,1-1,0-0
+9,Sun,2024-06-16,Corinthians,São Paulo,2-2,2-2
+9,Sun,2024-06-16,Vitória,Internacional,2-1,1-0
+9,Sun,2024-06-16,Criciúma EC,Bahia,2-2,1-0
+9,Sun,2024-06-16,Cuiabá,Fortaleza,5-0,4-0
+9,Sun,2024-06-16,Grêmio,Botafogo-RJ,1-2,1-1
+9,Sun,2024-06-16,Vasco da Gama,Cruzeiro,0-0,
+9,Mon,2024-06-17,Atlético-MG,Palmeiras,0-4,0-1
+10,Wed,2024-06-19,AC Goianiense,Criciúma EC,1-2,1-0
+10,Wed,2024-06-19,Botafogo-RJ,Athletico-PR,1-1,0-0
+10,Wed,2024-06-19,Fortaleza,Grêmio,1-0,1-0
+10,Wed,2024-06-19,Juventude-RS,Vasco da Gama,2-0,0-0
+10,Wed,2024-06-19,São Paulo,Cuiabá,0-1,0-0
+10,Wed,2024-06-19,Cruzeiro,Fluminense,2-0,1-0
+10,Wed,2024-06-19,Internacional,Corinthians,1-0,1-0
+10,Thu,2024-06-20,Vitória,Atlético-MG,4-2,2-1
+10,Thu,2024-06-20,Flamengo,Bahia,2-1,1-1
+10,Thu,2024-06-20,Palmeiras,Bragantino,2-1,1-0
+11,Sat,2024-06-22,Criciúma EC,Botafogo-RJ,2-1,1-0
+11,Sat,2024-06-22,Grêmio,Internacional,0-1,0-0
+11,Sat,2024-06-22,Cuiabá,AC Goianiense,0-0,
+11,Sat,2024-06-22,Vasco da Gama,São Paulo,4-1,2-1
+11,Sun,2024-06-23,Athletico-PR,Corinthians,1-1,1-0
+11,Sun,2024-06-23,Bahia,Cruzeiro,4-1,1-1
+11,Sun,2024-06-23,Fluminense,Flamengo,0-1,0-0
+11,Sun,2024-06-23,Atlético-MG,Fortaleza,1-1,0-1
+11,Sun,2024-06-23,Bragantino,Vitória,2-1,1-1
+11,Sun,2024-06-23,Palmeiras,Juventude-RS,3-1,0-0
+12,Wed,2024-06-26,Botafogo-RJ,Bragantino,2-1,1-1
+12,Wed,2024-06-26,Cruzeiro,Athletico-PR,2-0,1-0
+12,Wed,2024-06-26,AC Goianiense,Grêmio,1-1,0-0
+12,Wed,2024-06-26,Corinthians,Cuiabá,1-1,0-1
+12,Wed,2024-06-26,Juventude-RS,Flamengo,2-1,1-1
+12,Wed,2024-06-26,Bahia,Vasco da Gama,2-1,1-1
+12,Wed,2024-06-26,Fortaleza,Palmeiras,3-0,1-0
+12,Wed,2024-06-26,Internacional,Atlético-MG,1-2,0-0
+12,Thu,2024-06-27,Fluminense,Vitória,0-1,0-0
+12,Thu,2024-06-27,São Paulo,Criciúma EC,2-1,2-0
+13,Sat,2024-06-29,Cuiabá,Bragantino,1-1,1-1
+13,Sat,2024-06-29,Vasco da Gama,Botafogo-RJ,1-1,0-0
+13,Sun,2024-06-30,Atlético-MG,AC Goianiense,1-1,1-1
+13,Sun,2024-06-30,Fortaleza,Juventude-RS,2-1,2-0
+13,Sun,2024-06-30,Grêmio,Fluminense,1-0,0-0
+13,Sun,2024-06-30,São Paulo,Bahia,3-1,2-0
+13,Sun,2024-06-30,Criciúma EC,Internacional,1-1,0-1
+13,Sun,2024-06-30,Flamengo,Cruzeiro,2-1,1-1
+13,Sun,2024-06-30,Vitória,Athletico-PR,0-1,0-0
+13,Mon,2024-07-01,Palmeiras,Corinthians,2-0,0-0
+14,Wed,2024-07-03,Cuiabá,Botafogo-RJ,1-2,1-1
+14,Wed,2024-07-03,Criciúma EC,Cruzeiro,1-0,0-0
+14,Wed,2024-07-03,Vasco da Gama,Fortaleza,2-0,1-0
+14,Wed,2024-07-03,Athletico-PR,São Paulo,1-2,1-1
+14,Wed,2024-07-03,Atlético-MG,Flamengo,2-4,0-2
+14,Wed,2024-07-03,Bragantino,AC Goianiense,3-1,3-1
+14,Thu,2024-07-04,Bahia,Juventude-RS,2-0,0-0
+14,Thu,2024-07-04,Grêmio,Palmeiras,2-2,1-0
+14,Thu,2024-07-04,Corinthians,Vitória,3-2,2-1
+14,Thu,2024-07-04,Fluminense,Internacional,1-1,1-1
+15,Sat,2024-07-06,Flamengo,Cuiabá,1-1,0-1
+15,Sat,2024-07-06,São Paulo,Bragantino,2-0,0-0
+15,Sun,2024-07-07,Cruzeiro,Corinthians,3-0,2-0
+15,Sun,2024-07-07,Fortaleza,Fluminense,1-0,0-0
+15,Sun,2024-07-07,Juventude-RS,Grêmio,3-0,2-0
+15,Sun,2024-07-07,Internacional,Vasco da Gama,1-2,0-0
+15,Sun,2024-07-07,AC Goianiense,Athletico-PR,1-2,0-0
+15,Sun,2024-07-07,Palmeiras,Bahia,2-0,1-0
+15,Sun,2024-07-07,Vitória,Criciúma EC,2-1,2-1
+15,Sun,2024-07-07,Botafogo-RJ,Atlético-MG,3-0,1-0
+16,Wed,2024-07-10,Grêmio,Cruzeiro,0-2,0-2
+16,Wed,2024-07-10,Athletico-PR,Bahia,1-3,0-2
+16,Wed,2024-07-10,Vasco da Gama,Corinthians,2-0,0-0
+16,Thu,2024-07-11,Palmeiras,AC Goianiense,3-1,1-1
+16,Thu,2024-07-11,Criciúma EC,Fluminense,1-1,0-0
+16,Thu,2024-07-11,Flamengo,Fortaleza,1-2,1-1
+16,Thu,2024-07-11,Atlético-MG,São Paulo,2-1,2-1
+16,Thu,2024-07-11,Vitória,Botafogo-RJ,0-1,0-0
+17,Sat,2024-07-13,Bahia,Cuiabá,1-2,0-1
+17,Sat,2024-07-13,Cruzeiro,Bragantino,2-1,1-0
+17,Tue,2024-07-16,Juventude-RS,Atlético-MG,1-1,1-1
+17,Tue,2024-07-16,Corinthians,Criciúma EC,2-1,0-1
+17,Wed,2024-07-17,AC Goianiense,Vasco da Gama,0-1,0-0
+17,Wed,2024-07-17,São Paulo,Grêmio,1-0,1-0
+17,Wed,2024-07-17,Botafogo-RJ,Palmeiras,1-0,0-0
+17,Wed,2024-07-17,Fortaleza,Vitória,3-1,2-0
+18,Sat,2024-07-20,Flamengo,Criciúma EC,2-1,0-1
+18,Sat,2024-07-20,Botafogo-RJ,Internacional,1-0,1-0
+18,Sat,2024-07-20,Palmeiras,Cruzeiro,2-0,1-0
+18,Sun,2024-07-21,Grêmio,Vitória,2-0,0-0
+18,Sun,2024-07-21,Atlético-MG,Vasco da Gama,2-0,2-0
+18,Sun,2024-07-21,Bahia,Corinthians,0-1,0-1
+18,Sun,2024-07-21,Bragantino,Athletico-PR,1-0,1-0
+18,Sun,2024-07-21,Fortaleza,AC Goianiense,3-1,1-1
+18,Sun,2024-07-21,Juventude-RS,São Paulo,0-0,
+18,Sun,2024-07-21,Cuiabá,Fluminense,0-1,0-0
+19,Wed,2024-07-24,Cruzeiro,Juventude-RS,2-0,1-0
+3,Wed,2024-07-24,Criciúma EC,Fortaleza,1-1,1-0
+19,Wed,2024-07-24,São Paulo,Botafogo-RJ,2-2,1-2
+19,Wed,2024-07-24,Vitória,Flamengo,1-2,0-1
+19,Wed,2024-07-24,AC Goianiense,Bahia,1-1,0-0
+19,Wed,2024-07-24,Fluminense,Palmeiras,1-0,0-0
+19,Thu,2024-07-25,Corinthians,Grêmio,2-2,1-1
+20,Sat,2024-07-27,Juventude-RS,Criciúma EC,1-2,0-0
+20,Sat,2024-07-27,Palmeiras,Vitória,0-2,0-0
+20,Sat,2024-07-27,Bahia,Internacional,1-1,1-0
+20,Sat,2024-07-27,Botafogo-RJ,Cruzeiro,0-3,0-2
+20,Sat,2024-07-27,Fortaleza,São Paulo,1-0,1-0
+20,Sun,2024-07-28,Bragantino,Fluminense,0-1,0-1
+20,Sun,2024-07-28,Flamengo,AC Goianiense,2-0,1-0
+20,Sun,2024-07-28,Atlético-MG,Corinthians,2-1,1-1
+20,Sun,2024-07-28,Cuiabá,Athletico-PR,1-2,0-1
+20,Sun,2024-07-28,Grêmio,Vasco da Gama,1-0,0-0
+21,Sat,2024-08-03,Vitória,Cuiabá,1-0,0-0
+21,Sat,2024-08-03,Vasco da Gama,Bragantino,2-2,0-1
+21,Sat,2024-08-03,AC Goianiense,Botafogo-RJ,1-4,1-1
+21,Sat,2024-08-03,Criciúma EC,Atlético-MG,2-1,0-0
+21,Sat,2024-08-03,São Paulo,Flamengo,1-0,0-0
+21,Sun,2024-08-04,Athletico-PR,Grêmio,0-2,0-2
+21,Sun,2024-08-04,Corinthians,Juventude-RS,1-1,0-1
+21,Sun,2024-08-04,Fluminense,Bahia,1-0,1-0
+21,Sun,2024-08-04,Internacional,Palmeiras,1-1,1-0
+21,Mon,2024-08-05,Cruzeiro,Fortaleza,1-2,1-2
+22,Sat,2024-08-10,Fortaleza,Criciúma EC,1-0,0-0
+22,Sat,2024-08-10,Cuiabá,Grêmio,1-3,0-1
+22,Sat,2024-08-10,Corinthians,Bragantino,1-1,1-1
+22,Sat,2024-08-10,Cruzeiro,Atlético-MG,0-0,
+22,Sat,2024-08-10,Vasco da Gama,Fluminense,2-0,2-0
+22,Sun,2024-08-11,Juventude-RS,Botafogo-RJ,3-2,2-0
+22,Sun,2024-08-11,Bahia,Vitória,2-0,1-0
+22,Sun,2024-08-11,Flamengo,Palmeiras,1-1,0-0
+22,Sun,2024-08-11,São Paulo,AC Goianiense,1-0,1-0
+22,Sun,2024-08-11,Internacional,Athletico-PR,2-2,1-1
+6,Wed,2024-08-14,Internacional,Juventude-RS,2-1,0-1
+23,Sat,2024-08-17,Atlético-MG,Cuiabá,1-1,1-1
+23,Sat,2024-08-17,Grêmio,Bahia,0-2,0-1
+23,Sat,2024-08-17,Bragantino,Fortaleza,1-2,1-1
+23,Sat,2024-08-17,Fluminense,Corinthians,0-0,
+23,Sun,2024-08-18,AC Goianiense,Internacional,1-0,0-0
+23,Sun,2024-08-18,Criciúma EC,Vasco da Gama,2-2,1-2
+23,Sun,2024-08-18,Palmeiras,São Paulo,2-1,0-0
+23,Sun,2024-08-18,Athletico-PR,Juventude-RS,1-2,1-1
+23,Sun,2024-08-18,Botafogo-RJ,Flamengo,4-1,1-1
+23,Mon,2024-08-19,Vitória,Cruzeiro,2-2,2-0
+24,Sat,2024-08-24,AC Goianiense,Juventude-RS,2-1,0-0
+24,Sat,2024-08-24,Palmeiras,Cuiabá,5-0,4-0
+24,Sat,2024-08-24,Atlético-MG,Fluminense,0-2,0-1
+24,Sun,2024-08-25,Bahia,Botafogo-RJ,0-0,
+24,Sun,2024-08-25,Criciúma EC,Grêmio,0-1,0-0
+24,Sun,2024-08-25,Fortaleza,Corinthians,1-0,0-0
+24,Sun,2024-08-25,São Paulo,Vitória,2-1,2-0
+24,Sun,2024-08-25,Internacional,Cruzeiro,1-0,0-0
+24,Sun,2024-08-25,Flamengo,Bragantino,2-1,1-0
+24,Mon,2024-08-26,Vasco da Gama,Athletico-PR,2-1,0-1
+19,Wed,2024-08-28,Criciúma EC,Bragantino,1-0,1-0
+5,Wed,2024-08-28,Cruzeiro,Internacional,0-0,
+25,Sat,2024-08-31,Cuiabá,Criciúma EC,2-1,0-1
+25,Sat,2024-08-31,Botafogo-RJ,Fortaleza,2-0,0-0
+25,Sun,2024-09-01,Cruzeiro,AC Goianiense,3-1,2-1
+25,Sun,2024-09-01,Grêmio,Atlético-MG,2-3,2-0
+25,Sun,2024-09-01,Corinthians,Flamengo,2-1,1-1
+25,Sun,2024-09-01,Athletico-PR,Palmeiras,0-2,0-1
+25,Sun,2024-09-01,Bragantino,Bahia,2-1,0-0
+25,Sun,2024-09-01,Fluminense,São Paulo,2-0,1-0
+25,Sun,2024-09-01,Juventude-RS,Internacional,1-3,0-2
+25,Sun,2024-09-01,Vitória,Vasco da Gama,0-1,0-0
+16,Thu,2024-09-05,Cuiabá,Juventude-RS,0-0,
+19,Wed,2024-09-11,Internacional,Fortaleza,2-1,1-1
+26,Sat,2024-09-14,AC Goianiense,Vitória,0-2,0-1
+26,Sat,2024-09-14,Athletico-PR,Fortaleza,1-1,1-1
+26,Sat,2024-09-14,Botafogo-RJ,Corinthians,2-1,1-0
+26,Sun,2024-09-15,Bragantino,Grêmio,2-2,1-1
+26,Sun,2024-09-15,Juventude-RS,Fluminense,2-1,0-1
+26,Sun,2024-09-15,Palmeiras,Criciúma EC,5-0,3-0
+26,Sun,2024-09-15,Bahia,Atlético-MG,3-0,0-0
+26,Sun,2024-09-15,Cruzeiro,São Paulo,0-1,0-0
+26,Sun,2024-09-15,Flamengo,Vasco da Gama,1-1,0-0
+26,Mon,2024-09-16,Internacional,Cuiabá,3-0,2-0
+27,Sat,2024-09-21,Corinthians,AC Goianiense,3-0,1-0
+27,Sat,2024-09-21,Vitória,Juventude-RS,1-0,1-0
+27,Sat,2024-09-21,Fluminense,Botafogo-RJ,0-1,0-0
+27,Sat,2024-09-21,Fortaleza,Bahia,4-1,2-1
+27,Sun,2024-09-22,Atlético-MG,Bragantino,3-0,1-0
+27,Sun,2024-09-22,Vasco da Gama,Palmeiras,0-1,0-1
+27,Sun,2024-09-22,Cuiabá,Cruzeiro,0-0,
+27,Sun,2024-09-22,Grêmio,Flamengo,3-2,1-1
+27,Sun,2024-09-22,São Paulo,Internacional,1-3,1-1
+27,Sun,2024-09-22,Criciúma EC,Athletico-PR,0-0,
+16,Wed,2024-09-25,Bragantino,Internacional,2-2,1-1
+5,Wed,2024-09-25,Grêmio,Criciúma EC,1-2,0-1
+28,Sat,2024-09-28,Palmeiras,Atlético-MG,2-1,1-0
+28,Sat,2024-09-28,Botafogo-RJ,Grêmio,0-0,
+28,Sun,2024-09-29,Juventude-RS,Bragantino,1-1,0-0
+28,Sun,2024-09-29,AC Goianiense,Fluminense,1-0,0-0
+28,Sun,2024-09-29,Fortaleza,Cuiabá,1-0,1-0
+28,Sun,2024-09-29,São Paulo,Corinthians,3-1,1-0
+28,Sun,2024-09-29,Bahia,Criciúma EC,1-0,1-0
+28,Sun,2024-09-29,Cruzeiro,Vasco da Gama,1-1,0-1
+28,Sun,2024-09-29,Internacional,Vitória,3-1,1-0
+28,Sun,2024-09-29,Flamengo,Athletico-PR,1-0,0-0
+29,Thu,2024-10-03,Criciúma EC,AC Goianiense,2-0,1-0
+29,Thu,2024-10-03,Fluminense,Cruzeiro,1-0,0-0
+29,Fri,2024-10-04,Grêmio,Fortaleza,3-1,1-1
+29,Sat,2024-10-05,Athletico-PR,Botafogo-RJ,0-1,0-1
+29,Sat,2024-10-05,Atlético-MG,Vitória,2-2,2-0
+29,Sat,2024-10-05,Bragantino,Palmeiras,0-0,
+29,Sat,2024-10-05,Bahia,Flamengo,0-2,0-1
+29,Sat,2024-10-05,Corinthians,Internacional,2-2,1-1
+29,Sat,2024-10-05,Cuiabá,São Paulo,2-0,2-0
+29,Sat,2024-10-05,Vasco da Gama,Juventude-RS,1-1,1-1
+6,Wed,2024-10-09,Atlético-MG,Grêmio,2-1,2-1
+30,Wed,2024-10-16,Fortaleza,Atlético-MG,1-1,1-0
+30,Wed,2024-10-16,São Paulo,Vasco da Gama,3-0,1-0
+30,Thu,2024-10-17,Corinthians,Athletico-PR,5-2,2-2
+30,Thu,2024-10-17,Flamengo,Fluminense,0-2,0-0
+30,Fri,2024-10-18,AC Goianiense,Cuiabá,0-0,
+30,Fri,2024-10-18,Botafogo-RJ,Criciúma EC,1-1,0-0
+30,Fri,2024-10-18,Cruzeiro,Bahia,1-1,0-0
+30,Sat,2024-10-19,Internacional,Grêmio,1-0,0-0
+30,Sat,2024-10-19,Vitória,Bragantino,1-0,0-0
+30,Sun,2024-10-20,Juventude-RS,Palmeiras,3-5,1-2
+17,Tue,2024-10-22,Fluminense,Athletico-PR,1-0,0-0
+19,Thu,2024-10-24,Vasco da Gama,Cuiabá,1-0,0-0
+31,Sat,2024-10-26,Flamengo,Juventude-RS,4-2,1-1
+31,Sat,2024-10-26,Grêmio,AC Goianiense,3-1,1-1
+31,Sat,2024-10-26,Palmeiras,Fortaleza,2-2,1-1
+31,Sat,2024-10-26,Vitória,Fluminense,2-1,1-0
+31,Sat,2024-10-26,Athletico-PR,Cruzeiro,3-0,1-0
+31,Sat,2024-10-26,Atlético-MG,Internacional,1-3,1-2
+31,Sat,2024-10-26,Bragantino,Botafogo-RJ,0-1,0-0
+31,Sat,2024-10-26,Criciúma EC,São Paulo,1-1,1-0
+31,Mon,2024-10-28,Cuiabá,Corinthians,0-1,0-1
+31,Mon,2024-10-28,Vasco da Gama,Bahia,3-2,3-1
+17,Wed,2024-10-30,Internacional,Flamengo,1-1,0-1
+32,Fri,2024-11-01,Fluminense,Grêmio,2-2,1-1
+32,Sat,2024-11-02,Bragantino,Cuiabá,0-0,
+32,Sat,2024-11-02,Athletico-PR,Vitória,1-2,1-1
+32,Sat,2024-11-02,Juventude-RS,Fortaleza,0-3,0-2
+32,Mon,2024-11-04,Corinthians,Palmeiras,2-0,1-0
+32,Tue,2024-11-05,Bahia,São Paulo,0-3,0-1
+32,Tue,2024-11-05,Botafogo-RJ,Vasco da Gama,3-0,2-0
+32,Tue,2024-11-05,Internacional,Criciúma EC,2-0,1-0
+32,Wed,2024-11-06,AC Goianiense,Atlético-MG,1-0,0-0
+32,Wed,2024-11-06,Cruzeiro,Flamengo,0-1,0-0
+33,Fri,2024-11-08,Internacional,Fluminense,2-0,0-0
+33,Fri,2024-11-08,Palmeiras,Grêmio,1-0,0-0
+33,Sat,2024-11-09,Vitória,Corinthians,1-2,1-1
+33,Sat,2024-11-09,Botafogo-RJ,Cuiabá,0-0,
+33,Sat,2024-11-09,AC Goianiense,Bragantino,0-0,
+33,Sat,2024-11-09,Cruzeiro,Criciúma EC,2-1,1-0
+33,Sat,2024-11-09,Fortaleza,Vasco da Gama,3-0,1-0
+33,Sat,2024-11-09,Juventude-RS,Bahia,2-1,0-1
+33,Sat,2024-11-09,São Paulo,Athletico-PR,2-1,0-0
+33,Wed,2024-11-13,Flamengo,Atlético-MG,0-0,
+19,Sat,2024-11-16,Athletico-PR,Atlético-MG,1-0,1-0
+34,Wed,2024-11-20,Corinthians,Cruzeiro,2-1,2-1
+34,Wed,2024-11-20,Athletico-PR,AC Goianiense,2-0,1-0
+34,Wed,2024-11-20,Bragantino,São Paulo,1-1,1-1
+34,Wed,2024-11-20,Criciúma EC,Vitória,0-1,0-0
+34,Wed,2024-11-20,Bahia,Palmeiras,1-2,1-1
+34,Wed,2024-11-20,Cuiabá,Flamengo,1-2,0-0
+34,Wed,2024-11-20,Grêmio,Juventude-RS,2-2,1-1
+34,Wed,2024-11-20,Atlético-MG,Botafogo-RJ,0-0,
+34,Thu,2024-11-21,Vasco da Gama,Internacional,0-1,0-0
+34,Fri,2024-11-22,Fluminense,Fortaleza,2-2,1-2
+35,Sat,2024-11-23,AC Goianiense,Palmeiras,0-1,0-1
+35,Sat,2024-11-23,Botafogo-RJ,Vitória,1-1,0-1
+35,Sat,2024-11-23,Juventude-RS,Cuiabá,1-1,0-0
+35,Sat,2024-11-23,São Paulo,Atlético-MG,2-2,2-2
+35,Sun,2024-11-24,Bahia,Athletico-PR,1-1,0-0
+35,Sun,2024-11-24,Corinthians,Vasco da Gama,3-1,3-0
+35,Sun,2024-11-24,Internacional,Bragantino,4-1,2-1
+35,Tue,2024-11-26,Fluminense,Criciúma EC,0-0,
+35,Tue,2024-11-26,Fortaleza,Flamengo,0-0,
+36,Tue,2024-11-26,Atlético-MG,Juventude-RS,2-3,0-1
+36,Tue,2024-11-26,Palmeiras,Botafogo-RJ,1-3,0-1
+35,Wed,2024-11-27,Cruzeiro,Grêmio,1-1,1-1
+36,Sat,2024-11-30,Criciúma EC,Corinthians,2-4,2-0
+36,Sat,2024-11-30,Cuiabá,Bahia,1-2,1-1
+36,Sat,2024-11-30,Vasco da Gama,AC Goianiense,2-2,0-1
+36,Sun,2024-12-01,Flamengo,Internacional,3-2,3-0
+36,Sun,2024-12-01,Grêmio,São Paulo,2-1,2-0
+36,Sun,2024-12-01,Athletico-PR,Fluminense,1-1,1-0
+36,Sun,2024-12-01,Bragantino,Cruzeiro,1-1,1-0
+36,Sun,2024-12-01,Vitória,Fortaleza,2-0,2-0
+37,Tue,2024-12-03,Corinthians,Bahia,3-0,2-0
+37,Wed,2024-12-04,Vasco da Gama,Atlético-MG,2-0,0-0
+37,Wed,2024-12-04,Criciúma EC,Flamengo,0-3,0-1
+37,Wed,2024-12-04,São Paulo,Juventude-RS,1-2,0-0
+37,Wed,2024-12-04,Vitória,Grêmio,1-1,0-1
+37,Wed,2024-12-04,AC Goianiense,Fortaleza,3-1,1-1
+37,Wed,2024-12-04,Cruzeiro,Palmeiras,1-2,0-0
+37,Wed,2024-12-04,Internacional,Botafogo-RJ,0-1,0-1
+37,Thu,2024-12-05,Athletico-PR,Bragantino,1-2,0-1
+37,Thu,2024-12-05,Fluminense,Cuiabá,1-0,0-0
+38,Sun,2024-12-08,Atlético-MG,Athletico-PR,1-0,0-0
+38,Sun,2024-12-08,Bahia,AC Goianiense,2-0,1-0
+38,Sun,2024-12-08,Botafogo-RJ,São Paulo,2-1,1-0
+38,Sun,2024-12-08,Bragantino,Criciúma EC,5-1,2-1
+38,Sun,2024-12-08,Cuiabá,Vasco da Gama,1-2,1-2
+38,Sun,2024-12-08,Flamengo,Vitória,2-2,0-1
+38,Sun,2024-12-08,Fortaleza,Internacional,3-0,2-0
+38,Sun,2024-12-08,Grêmio,Corinthians,0-3,0-1
+38,Sun,2024-12-08,Juventude-RS,Cruzeiro,0-1,0-1
+38,Sun,2024-12-08,Palmeiras,Fluminense,0-1,0-1

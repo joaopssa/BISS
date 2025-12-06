@@ -1,380 +1,380 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2010-08-14,Tottenham Hotspur,Manchester City,0-0,
+1,Sat,2010-08-14,Tottenham,Manchester City,0-0,
 1,Sat,2010-08-14,Wigan Athletic,Blackpool FC,0-4,0-3
 1,Sat,2010-08-14,Bolton Wanderers,Fulham FC,0-0,
-1,Sat,2010-08-14,Wolverhampton Wanderers,Stoke City,2-1,2-0
+1,Sat,2010-08-14,Wolverhampton,Stoke City,2-1,2-0
 1,Sat,2010-08-14,Aston Villa,West Ham United,3-0,2-0
-1,Sat,2010-08-14,Blackburn Rovers,Everton FC,1-0,1-0
-1,Sat,2010-08-14,Sunderland AFC,Birmingham City,2-2,1-0
-1,Sat,2010-08-14,Chelsea FC,West Bromwich Albion,6-0,2-0
-1,Sun,2010-08-15,Liverpool FC,Arsenal FC,1-1,0-0
+1,Sat,2010-08-14,Blackburn Rovers,Everton,1-0,1-0
+1,Sat,2010-08-14,Sunderland,Birmingham City,2-2,1-0
+1,Sat,2010-08-14,Chelsea,West Bromwich Albion,6-0,2-0
+1,Sun,2010-08-15,Liverpool,Arsenal,1-1,0-0
 1,Mon,2010-08-16,Manchester United,Newcastle United,3-0,2-0
-2,Sat,2010-08-21,Arsenal FC,Blackpool FC,6-0,3-0
-2,Sat,2010-08-21,West Bromwich Albion,Sunderland AFC,1-0,0-0
+2,Sat,2010-08-21,Arsenal,Blackpool FC,6-0,3-0
+2,Sat,2010-08-21,West Bromwich Albion,Sunderland,1-0,0-0
 2,Sat,2010-08-21,West Ham United,Bolton Wanderers,1-3,0-0
 2,Sat,2010-08-21,Birmingham City,Blackburn Rovers,2-1,0-0
-2,Sat,2010-08-21,Stoke City,Tottenham Hotspur,1-2,1-2
-2,Sat,2010-08-21,Everton FC,Wolverhampton Wanderers,1-1,1-0
-2,Sat,2010-08-21,Wigan Athletic,Chelsea FC,0-6,0-1
+2,Sat,2010-08-21,Stoke City,Tottenham,1-2,1-2
+2,Sat,2010-08-21,Everton,Wolverhampton,1-1,1-0
+2,Sat,2010-08-21,Wigan Athletic,Chelsea,0-6,0-1
 2,Sun,2010-08-22,Fulham FC,Manchester United,2-2,0-1
 2,Sun,2010-08-22,Newcastle United,Aston Villa,6-0,3-0
-2,Mon,2010-08-23,Manchester City,Liverpool FC,3-0,1-0
-3,Sat,2010-08-28,Blackburn Rovers,Arsenal FC,1-2,1-1
-3,Sat,2010-08-28,Tottenham Hotspur,Wigan Athletic,0-1,0-0
-3,Sat,2010-08-28,Wolverhampton Wanderers,Newcastle United,1-1,1-0
-3,Sat,2010-08-28,Chelsea FC,Stoke City,2-0,1-0
+2,Mon,2010-08-23,Manchester City,Liverpool,3-0,1-0
+3,Sat,2010-08-28,Blackburn Rovers,Arsenal,1-2,1-1
+3,Sat,2010-08-28,Tottenham,Wigan Athletic,0-1,0-0
+3,Sat,2010-08-28,Wolverhampton,Newcastle United,1-1,1-0
+3,Sat,2010-08-28,Chelsea,Stoke City,2-0,1-0
 3,Sat,2010-08-28,Blackpool FC,Fulham FC,2-2,0-1
 3,Sat,2010-08-28,Manchester United,West Ham United,3-0,1-0
-3,Sun,2010-08-29,Liverpool FC,West Bromwich Albion,1-0,0-0
-3,Sun,2010-08-29,Sunderland AFC,Manchester City,1-0,0-0
-3,Sun,2010-08-29,Aston Villa,Everton FC,1-0,1-0
+3,Sun,2010-08-29,Liverpool,West Bromwich Albion,1-0,0-0
+3,Sun,2010-08-29,Sunderland,Manchester City,1-0,0-0
+3,Sun,2010-08-29,Aston Villa,Everton,1-0,1-0
 3,Sun,2010-08-29,Bolton Wanderers,Birmingham City,2-2,0-1
-4,Sat,2010-09-11,Everton FC,Manchester United,3-3,1-1
-4,Sat,2010-09-11,West Bromwich Albion,Tottenham Hotspur,1-1,1-1
-4,Sat,2010-09-11,Fulham FC,Wolverhampton Wanderers,2-1,0-1
-4,Sat,2010-09-11,Wigan Athletic,Sunderland AFC,1-1,0-0
-4,Sat,2010-09-11,Arsenal FC,Bolton Wanderers,4-1,1-1
+4,Sat,2010-09-11,Everton,Manchester United,3-3,1-1
+4,Sat,2010-09-11,West Bromwich Albion,Tottenham,1-1,1-1
+4,Sat,2010-09-11,Fulham FC,Wolverhampton,2-1,0-1
+4,Sat,2010-09-11,Wigan Athletic,Sunderland,1-1,0-0
+4,Sat,2010-09-11,Arsenal,Bolton Wanderers,4-1,1-1
 4,Sat,2010-09-11,Newcastle United,Blackpool FC,0-2,0-1
 4,Sat,2010-09-11,Manchester City,Blackburn Rovers,1-1,0-1
-4,Sat,2010-09-11,West Ham United,Chelsea FC,1-3,0-2
-4,Sun,2010-09-12,Birmingham City,Liverpool FC,0-0,
+4,Sat,2010-09-11,West Ham United,Chelsea,1-3,0-2
+4,Sun,2010-09-12,Birmingham City,Liverpool,0-0,
 4,Mon,2010-09-13,Stoke City,Aston Villa,2-1,0-1
 5,Sat,2010-09-18,Stoke City,West Ham United,1-1,0-1
-5,Sat,2010-09-18,Tottenham Hotspur,Wolverhampton Wanderers,3-1,0-1
+5,Sat,2010-09-18,Tottenham,Wolverhampton,3-1,0-1
 5,Sat,2010-09-18,West Bromwich Albion,Birmingham City,3-1,0-1
-5,Sat,2010-09-18,Everton FC,Newcastle United,0-1,0-1
+5,Sat,2010-09-18,Everton,Newcastle United,0-1,0-1
 5,Sat,2010-09-18,Blackburn Rovers,Fulham FC,1-1,1-0
 5,Sat,2010-09-18,Aston Villa,Bolton Wanderers,1-1,1-1
-5,Sat,2010-09-18,Sunderland AFC,Arsenal FC,1-1,0-1
+5,Sat,2010-09-18,Sunderland,Arsenal,1-1,0-1
 5,Sun,2010-09-19,Wigan Athletic,Manchester City,0-2,0-1
-5,Sun,2010-09-19,Chelsea FC,Blackpool FC,4-0,4-0
-5,Sun,2010-09-19,Manchester United,Liverpool FC,3-2,1-0
-6,Sat,2010-09-25,Manchester City,Chelsea FC,1-0,0-0
-6,Sat,2010-09-25,Liverpool FC,Sunderland AFC,2-2,1-1
-6,Sat,2010-09-25,Fulham FC,Everton FC,0-0,
+5,Sun,2010-09-19,Chelsea,Blackpool FC,4-0,4-0
+5,Sun,2010-09-19,Manchester United,Liverpool,3-2,1-0
+6,Sat,2010-09-25,Manchester City,Chelsea,1-0,0-0
+6,Sat,2010-09-25,Liverpool,Sunderland,2-2,1-1
+6,Sat,2010-09-25,Fulham FC,Everton,0-0,
 6,Sat,2010-09-25,Blackpool FC,Blackburn Rovers,1-2,0-1
-6,Sat,2010-09-25,Arsenal FC,West Bromwich Albion,2-3,0-0
-6,Sat,2010-09-25,West Ham United,Tottenham Hotspur,1-0,1-0
+6,Sat,2010-09-25,Arsenal,West Bromwich Albion,2-3,0-0
+6,Sat,2010-09-25,West Ham United,Tottenham,1-0,1-0
 6,Sat,2010-09-25,Birmingham City,Wigan Athletic,0-0,
 6,Sun,2010-09-26,Bolton Wanderers,Manchester United,2-2,1-1
-6,Sun,2010-09-26,Wolverhampton Wanderers,Aston Villa,1-2,0-1
+6,Sun,2010-09-26,Wolverhampton,Aston Villa,1-2,0-1
 6,Sun,2010-09-26,Newcastle United,Stoke City,1-2,1-0
-7,Sat,2010-10-02,Tottenham Hotspur,Aston Villa,2-1,1-1
+7,Sat,2010-10-02,Tottenham,Aston Villa,2-1,1-1
 7,Sat,2010-10-02,Stoke City,Blackburn Rovers,1-0,0-0
 7,Sat,2010-10-02,West Ham United,Fulham FC,1-1,0-1
 7,Sat,2010-10-02,West Bromwich Albion,Bolton Wanderers,1-1,0-0
-7,Sat,2010-10-02,Birmingham City,Everton FC,0-2,0-0
-7,Sat,2010-10-02,Sunderland AFC,Manchester United,0-0,
-7,Sat,2010-10-02,Wigan Athletic,Wolverhampton Wanderers,2-0,0-0
+7,Sat,2010-10-02,Birmingham City,Everton,0-2,0-0
+7,Sat,2010-10-02,Sunderland,Manchester United,0-0,
+7,Sat,2010-10-02,Wigan Athletic,Wolverhampton,2-0,0-0
 7,Sun,2010-10-03,Manchester City,Newcastle United,2-1,1-1
-7,Sun,2010-10-03,Liverpool FC,Blackpool FC,1-2,0-2
-7,Sun,2010-10-03,Chelsea FC,Arsenal FC,2-0,1-0
-8,Sat,2010-10-16,Fulham FC,Tottenham Hotspur,1-2,1-1
-8,Sat,2010-10-16,Wolverhampton Wanderers,West Ham United,1-1,1-0
-8,Sat,2010-10-16,Arsenal FC,Birmingham City,2-1,1-1
+7,Sun,2010-10-03,Liverpool,Blackpool FC,1-2,0-2
+7,Sun,2010-10-03,Chelsea,Arsenal,2-0,1-0
+8,Sat,2010-10-16,Fulham FC,Tottenham,1-2,1-1
+8,Sat,2010-10-16,Wolverhampton,West Ham United,1-1,1-0
+8,Sat,2010-10-16,Arsenal,Birmingham City,2-1,1-1
 8,Sat,2010-10-16,Bolton Wanderers,Stoke City,2-1,1-0
 8,Sat,2010-10-16,Manchester United,West Bromwich Albion,2-2,2-0
 8,Sat,2010-10-16,Newcastle United,Wigan Athletic,2-2,0-2
-8,Sat,2010-10-16,Aston Villa,Chelsea FC,0-0,
+8,Sat,2010-10-16,Aston Villa,Chelsea,0-0,
 8,Sun,2010-10-17,Blackpool FC,Manchester City,2-3,0-0
-8,Sun,2010-10-17,Everton FC,Liverpool FC,2-0,1-0
-8,Mon,2010-10-18,Blackburn Rovers,Sunderland AFC,0-0,
-9,Sat,2010-10-23,Tottenham Hotspur,Everton FC,1-1,1-1
+8,Sun,2010-10-17,Everton,Liverpool,2-0,1-0
+8,Mon,2010-10-18,Blackburn Rovers,Sunderland,0-0,
+9,Sat,2010-10-23,Tottenham,Everton,1-1,1-1
 9,Sat,2010-10-23,Birmingham City,Blackpool FC,2-0,1-0
 9,Sat,2010-10-23,Wigan Athletic,Bolton Wanderers,1-1,0-0
 9,Sat,2010-10-23,West Bromwich Albion,Fulham FC,2-1,2-1
-9,Sat,2010-10-23,Sunderland AFC,Aston Villa,1-0,1-0
-9,Sat,2010-10-23,Chelsea FC,Wolverhampton Wanderers,2-0,1-0
+9,Sat,2010-10-23,Sunderland,Aston Villa,1-0,1-0
+9,Sat,2010-10-23,Chelsea,Wolverhampton,2-0,1-0
 9,Sat,2010-10-23,West Ham United,Newcastle United,1-2,1-1
-9,Sun,2010-10-24,Liverpool FC,Blackburn Rovers,2-1,0-0
-9,Sun,2010-10-24,Manchester City,Arsenal FC,0-3,0-1
+9,Sun,2010-10-24,Liverpool,Blackburn Rovers,2-1,0-0
+9,Sun,2010-10-24,Manchester City,Arsenal,0-3,0-1
 9,Sun,2010-10-24,Stoke City,Manchester United,1-2,0-1
-10,Sat,2010-10-30,Blackburn Rovers,Chelsea FC,1-2,1-1
-10,Sat,2010-10-30,Arsenal FC,West Ham United,1-0,0-0
-10,Sat,2010-10-30,Wolverhampton Wanderers,Manchester City,2-1,1-1
-10,Sat,2010-10-30,Everton FC,Stoke City,1-0,0-0
+10,Sat,2010-10-30,Blackburn Rovers,Chelsea,1-2,1-1
+10,Sat,2010-10-30,Arsenal,West Ham United,1-0,0-0
+10,Sat,2010-10-30,Wolverhampton,Manchester City,2-1,1-1
+10,Sat,2010-10-30,Everton,Stoke City,1-0,0-0
 10,Sat,2010-10-30,Fulham FC,Wigan Athletic,2-0,2-0
-10,Sat,2010-10-30,Manchester United,Tottenham Hotspur,2-0,1-0
-10,Sun,2010-10-31,Newcastle United,Sunderland AFC,5-1,3-0
-10,Sun,2010-10-31,Bolton Wanderers,Liverpool FC,0-1,0-0
+10,Sat,2010-10-30,Manchester United,Tottenham,2-0,1-0
+10,Sun,2010-10-31,Newcastle United,Sunderland,5-1,3-0
+10,Sun,2010-10-31,Bolton Wanderers,Liverpool,0-1,0-0
 10,Sun,2010-10-31,Aston Villa,Birmingham City,0-0,
 10,Mon,2010-11-01,Blackpool FC,West Bromwich Albion,2-1,1-0
-11,Sat,2010-11-06,Bolton Wanderers,Tottenham Hotspur,4-2,1-0
-11,Sat,2010-11-06,Sunderland AFC,Stoke City,2-0,1-0
-11,Sat,2010-11-06,Blackpool FC,Everton FC,2-2,1-1
+11,Sat,2010-11-06,Bolton Wanderers,Tottenham,4-2,1-0
+11,Sat,2010-11-06,Sunderland,Stoke City,2-0,1-0
+11,Sat,2010-11-06,Blackpool FC,Everton,2-2,1-1
 11,Sat,2010-11-06,Fulham FC,Aston Villa,1-1,0-1
 11,Sat,2010-11-06,Birmingham City,West Ham United,2-2,0-0
-11,Sat,2010-11-06,Manchester United,Wolverhampton Wanderers,2-1,1-0
+11,Sat,2010-11-06,Manchester United,Wolverhampton,2-1,1-0
 11,Sat,2010-11-06,Blackburn Rovers,Wigan Athletic,2-1,0-0
 11,Sun,2010-11-07,West Bromwich Albion,Manchester City,0-2,0-2
-11,Sun,2010-11-07,Liverpool FC,Chelsea FC,2-0,2-0
-11,Sun,2010-11-07,Arsenal FC,Newcastle United,0-1,0-1
-12,Tue,2010-11-09,Tottenham Hotspur,Sunderland AFC,1-1,0-0
+11,Sun,2010-11-07,Liverpool,Chelsea,2-0,2-0
+11,Sun,2010-11-07,Arsenal,Newcastle United,0-1,0-1
+12,Tue,2010-11-09,Tottenham,Sunderland,1-1,0-0
 12,Tue,2010-11-09,Stoke City,Birmingham City,3-2,1-0
-12,Wed,2010-11-10,Wolverhampton Wanderers,Arsenal FC,0-2,0-1
+12,Wed,2010-11-10,Wolverhampton,Arsenal,0-2,0-1
 12,Wed,2010-11-10,West Ham United,West Bromwich Albion,2-2,1-1
-12,Wed,2010-11-10,Wigan Athletic,Liverpool FC,1-1,0-1
+12,Wed,2010-11-10,Wigan Athletic,Liverpool,1-1,0-1
 12,Wed,2010-11-10,Newcastle United,Blackburn Rovers,1-2,0-1
 12,Wed,2010-11-10,Aston Villa,Blackpool FC,3-2,1-1
-12,Wed,2010-11-10,Chelsea FC,Fulham FC,1-0,1-0
+12,Wed,2010-11-10,Chelsea,Fulham FC,1-0,1-0
 12,Wed,2010-11-10,Manchester City,Manchester United,0-0,
-12,Wed,2010-11-10,Everton FC,Bolton Wanderers,1-1,0-0
+12,Wed,2010-11-10,Everton,Bolton Wanderers,1-1,0-0
 13,Sat,2010-11-13,Aston Villa,Manchester United,2-2,0-0
-13,Sat,2010-11-13,Wolverhampton Wanderers,Bolton Wanderers,2-3,0-1
+13,Sat,2010-11-13,Wolverhampton,Bolton Wanderers,2-3,0-1
 13,Sat,2010-11-13,Wigan Athletic,West Bromwich Albion,1-0,0-0
 13,Sat,2010-11-13,Newcastle United,Fulham FC,0-0,
 13,Sat,2010-11-13,West Ham United,Blackpool FC,0-0,
-13,Sat,2010-11-13,Tottenham Hotspur,Blackburn Rovers,4-2,2-0
+13,Sat,2010-11-13,Tottenham,Blackburn Rovers,4-2,2-0
 13,Sat,2010-11-13,Manchester City,Birmingham City,0-0,
-13,Sat,2010-11-13,Stoke City,Liverpool FC,2-0,0-0
-13,Sun,2010-11-14,Chelsea FC,Sunderland AFC,0-3,0-1
-13,Sun,2010-11-14,Everton FC,Arsenal FC,1-2,0-1
-14,Sat,2010-11-20,Arsenal FC,Tottenham Hotspur,2-3,2-0
+13,Sat,2010-11-13,Stoke City,Liverpool,2-0,0-0
+13,Sun,2010-11-14,Chelsea,Sunderland,0-3,0-1
+13,Sun,2010-11-14,Everton,Arsenal,1-2,0-1
+14,Sat,2010-11-20,Arsenal,Tottenham,2-3,2-0
 14,Sat,2010-11-20,West Bromwich Albion,Stoke City,0-3,0-0
 14,Sat,2010-11-20,Bolton Wanderers,Newcastle United,5-1,2-0
-14,Sat,2010-11-20,Birmingham City,Chelsea FC,1-0,1-0
-14,Sat,2010-11-20,Blackpool FC,Wolverhampton Wanderers,2-1,2-0
+14,Sat,2010-11-20,Birmingham City,Chelsea,1-0,1-0
+14,Sat,2010-11-20,Blackpool FC,Wolverhampton,2-1,2-0
 14,Sat,2010-11-20,Manchester United,Wigan Athletic,2-0,1-0
-14,Sat,2010-11-20,Liverpool FC,West Ham United,3-0,3-0
+14,Sat,2010-11-20,Liverpool,West Ham United,3-0,3-0
 14,Sun,2010-11-21,Fulham FC,Manchester City,1-4,0-3
 14,Sun,2010-11-21,Blackburn Rovers,Aston Villa,2-0,1-0
-14,Mon,2010-11-22,Sunderland AFC,Everton FC,2-2,1-1
-15,Sat,2010-11-27,Aston Villa,Arsenal FC,2-4,0-2
+14,Mon,2010-11-22,Sunderland,Everton,2-2,1-1
+15,Sat,2010-11-27,Aston Villa,Arsenal,2-4,0-2
 15,Sat,2010-11-27,West Ham United,Wigan Athletic,3-1,1-0
 15,Sat,2010-11-27,Fulham FC,Birmingham City,1-1,0-1
-15,Sat,2010-11-27,Everton FC,West Bromwich Albion,1-4,1-2
-15,Sat,2010-11-27,Wolverhampton Wanderers,Sunderland AFC,3-2,0-0
+15,Sat,2010-11-27,Everton,West Bromwich Albion,1-4,1-2
+15,Sat,2010-11-27,Wolverhampton,Sunderland,3-2,0-0
 15,Sat,2010-11-27,Bolton Wanderers,Blackpool FC,2-2,0-1
 15,Sat,2010-11-27,Manchester United,Blackburn Rovers,7-1,3-0
 15,Sat,2010-11-27,Stoke City,Manchester City,1-1,0-0
-15,Sun,2010-11-28,Tottenham Hotspur,Liverpool FC,2-1,0-1
-15,Sun,2010-11-28,Newcastle United,Chelsea FC,1-1,1-1
+15,Sun,2010-11-28,Tottenham,Liverpool,2-1,0-1
+15,Sun,2010-11-28,Newcastle United,Chelsea,1-1,1-1
 16,Sat,2010-12-04,Manchester City,Bolton Wanderers,1-0,1-0
-16,Sat,2010-12-04,Chelsea FC,Everton FC,1-1,1-0
-16,Sat,2010-12-04,Blackburn Rovers,Wolverhampton Wanderers,3-0,2-0
-16,Sat,2010-12-04,Birmingham City,Tottenham Hotspur,1-1,0-1
-16,Sat,2010-12-04,Arsenal FC,Fulham FC,2-1,1-1
+16,Sat,2010-12-04,Chelsea,Everton,1-1,1-0
+16,Sat,2010-12-04,Blackburn Rovers,Wolverhampton,3-0,2-0
+16,Sat,2010-12-04,Birmingham City,Tottenham,1-1,0-1
+16,Sat,2010-12-04,Arsenal,Fulham FC,2-1,1-1
 16,Sat,2010-12-04,Wigan Athletic,Stoke City,2-2,2-2
 16,Sun,2010-12-05,West Bromwich Albion,Newcastle United,3-1,1-0
-16,Sun,2010-12-05,Sunderland AFC,West Ham United,1-0,1-0
-16,Mon,2010-12-06,Liverpool FC,Aston Villa,3-0,2-0
-17,Sat,2010-12-11,Fulham FC,Sunderland AFC,0-0,
+16,Sun,2010-12-05,Sunderland,West Ham United,1-0,1-0
+16,Mon,2010-12-06,Liverpool,Aston Villa,3-0,2-0
+17,Sat,2010-12-11,Fulham FC,Sunderland,0-0,
 17,Sat,2010-12-11,Stoke City,Blackpool FC,0-1,0-0
 17,Sat,2010-12-11,Aston Villa,West Bromwich Albion,2-1,1-0
-17,Sat,2010-12-11,Everton FC,Wigan Athletic,0-0,
+17,Sat,2010-12-11,Everton,Wigan Athletic,0-0,
 17,Sat,2010-12-11,West Ham United,Manchester City,1-3,0-1
-17,Sat,2010-12-11,Newcastle United,Liverpool FC,3-1,1-0
-17,Sun,2010-12-12,Tottenham Hotspur,Chelsea FC,1-1,1-0
-17,Sun,2010-12-12,Wolverhampton Wanderers,Birmingham City,1-0,1-0
+17,Sat,2010-12-11,Newcastle United,Liverpool,3-1,1-0
+17,Sun,2010-12-12,Tottenham,Chelsea,1-1,1-0
+17,Sun,2010-12-12,Wolverhampton,Birmingham City,1-0,1-0
 17,Sun,2010-12-12,Bolton Wanderers,Blackburn Rovers,2-1,0-0
-17,Mon,2010-12-13,Manchester United,Arsenal FC,1-0,1-0
-18,Sat,2010-12-18,Sunderland AFC,Bolton Wanderers,1-0,1-0
+17,Mon,2010-12-13,Manchester United,Arsenal,1-0,1-0
+18,Sat,2010-12-18,Sunderland,Bolton Wanderers,1-0,1-0
 18,Sat,2010-12-18,Blackburn Rovers,West Ham United,1-1,0-0
-18,Mon,2010-12-20,Manchester City,Everton FC,1-2,0-2
-19,Sun,2010-12-26,Aston Villa,Tottenham Hotspur,1-2,0-1
+18,Mon,2010-12-20,Manchester City,Everton,1-2,0-2
+19,Sun,2010-12-26,Aston Villa,Tottenham,1-2,0-1
 19,Sun,2010-12-26,Bolton Wanderers,West Bromwich Albion,2-0,1-0
-19,Sun,2010-12-26,Wolverhampton Wanderers,Wigan Athletic,1-2,0-2
+19,Sun,2010-12-26,Wolverhampton,Wigan Athletic,1-2,0-2
 19,Sun,2010-12-26,Newcastle United,Manchester City,1-3,0-2
-19,Sun,2010-12-26,Manchester United,Sunderland AFC,2-0,1-0
+19,Sun,2010-12-26,Manchester United,Sunderland,2-0,1-0
 19,Sun,2010-12-26,Blackburn Rovers,Stoke City,0-2,0-0
 19,Sun,2010-12-26,Fulham FC,West Ham United,1-3,1-2
-19,Mon,2010-12-27,Arsenal FC,Chelsea FC,3-1,1-0
+19,Mon,2010-12-27,Arsenal,Chelsea,3-1,1-0
 20,Tue,2010-12-28,Manchester City,Aston Villa,4-0,3-0
 20,Tue,2010-12-28,West Bromwich Albion,Blackburn Rovers,1-3,1-1
 20,Tue,2010-12-28,Stoke City,Fulham FC,0-2,0-2
-20,Tue,2010-12-28,West Ham United,Everton FC,1-1,1-1
-20,Tue,2010-12-28,Sunderland AFC,Blackpool FC,0-2,0-0
-20,Tue,2010-12-28,Tottenham Hotspur,Newcastle United,2-0,0-0
+20,Tue,2010-12-28,West Ham United,Everton,1-1,1-1
+20,Tue,2010-12-28,Sunderland,Blackpool FC,0-2,0-0
+20,Tue,2010-12-28,Tottenham,Newcastle United,2-0,0-0
 20,Tue,2010-12-28,Birmingham City,Manchester United,1-1,0-0
-20,Wed,2010-12-29,Wigan Athletic,Arsenal FC,2-2,1-2
-20,Wed,2010-12-29,Chelsea FC,Bolton Wanderers,1-0,0-0
-20,Wed,2010-12-29,Liverpool FC,Wolverhampton Wanderers,0-1,0-0
-21,Sat,2011-01-01,Stoke City,Everton FC,2-0,1-0
-21,Sat,2011-01-01,Liverpool FC,Bolton Wanderers,2-1,0-1
-21,Sat,2011-01-01,Birmingham City,Arsenal FC,0-3,0-1
-21,Sat,2011-01-01,Sunderland AFC,Blackburn Rovers,3-0,2-0
-21,Sat,2011-01-01,Tottenham Hotspur,Fulham FC,1-0,1-0
+20,Wed,2010-12-29,Wigan Athletic,Arsenal,2-2,1-2
+20,Wed,2010-12-29,Chelsea,Bolton Wanderers,1-0,0-0
+20,Wed,2010-12-29,Liverpool,Wolverhampton,0-1,0-0
+21,Sat,2011-01-01,Stoke City,Everton,2-0,1-0
+21,Sat,2011-01-01,Liverpool,Bolton Wanderers,2-1,0-1
+21,Sat,2011-01-01,Birmingham City,Arsenal,0-3,0-1
+21,Sat,2011-01-01,Sunderland,Blackburn Rovers,3-0,2-0
+21,Sat,2011-01-01,Tottenham,Fulham FC,1-0,1-0
 21,Sat,2011-01-01,Manchester City,Blackpool FC,1-0,1-0
 21,Sat,2011-01-01,West Bromwich Albion,Manchester United,1-2,1-1
-21,Sat,2011-01-01,West Ham United,Wolverhampton Wanderers,2-0,0-0
+21,Sat,2011-01-01,West Ham United,Wolverhampton,2-0,0-0
 21,Sun,2011-01-02,Wigan Athletic,Newcastle United,0-1,0-1
-21,Sun,2011-01-02,Chelsea FC,Aston Villa,3-3,1-1
+21,Sun,2011-01-02,Chelsea,Aston Villa,3-3,1-1
 22,Tue,2011-01-04,Manchester United,Stoke City,2-1,1-0
 22,Tue,2011-01-04,Fulham FC,West Bromwich Albion,3-0,1-0
 22,Tue,2011-01-04,Blackpool FC,Birmingham City,1-2,0-1
-22,Wed,2011-01-05,Wolverhampton Wanderers,Chelsea FC,1-0,1-0
-22,Wed,2011-01-05,Arsenal FC,Manchester City,0-0,
+22,Wed,2011-01-05,Wolverhampton,Chelsea,1-0,1-0
+22,Wed,2011-01-05,Arsenal,Manchester City,0-0,
 22,Wed,2011-01-05,Newcastle United,West Ham United,5-0,3-0
-22,Wed,2011-01-05,Everton FC,Tottenham Hotspur,2-1,1-1
-22,Wed,2011-01-05,Blackburn Rovers,Liverpool FC,3-1,2-0
+22,Wed,2011-01-05,Everton,Tottenham,2-1,1-1
+22,Wed,2011-01-05,Blackburn Rovers,Liverpool,3-1,2-0
 22,Wed,2011-01-05,Bolton Wanderers,Wigan Athletic,1-1,0-0
-22,Wed,2011-01-05,Aston Villa,Sunderland AFC,0-1,0-0
-19,Wed,2011-01-12,Blackpool FC,Liverpool FC,2-1,1-1
+22,Wed,2011-01-05,Aston Villa,Sunderland,0-1,0-0
+19,Wed,2011-01-12,Blackpool FC,Liverpool,2-1,1-1
 23,Sat,2011-01-15,West Bromwich Albion,Blackpool FC,3-2,1-1
-23,Sat,2011-01-15,Chelsea FC,Blackburn Rovers,2-0,0-0
+23,Sat,2011-01-15,Chelsea,Blackburn Rovers,2-0,0-0
 23,Sat,2011-01-15,Wigan Athletic,Fulham FC,1-1,0-0
 23,Sat,2011-01-15,Stoke City,Bolton Wanderers,2-0,1-0
-23,Sat,2011-01-15,West Ham United,Arsenal FC,0-3,0-2
-23,Sat,2011-01-15,Manchester City,Wolverhampton Wanderers,4-3,1-1
-23,Sun,2011-01-16,Sunderland AFC,Newcastle United,1-1,0-0
+23,Sat,2011-01-15,West Ham United,Arsenal,0-3,0-2
+23,Sat,2011-01-15,Manchester City,Wolverhampton,4-3,1-1
+23,Sun,2011-01-16,Sunderland,Newcastle United,1-1,0-0
 23,Sun,2011-01-16,Birmingham City,Aston Villa,1-1,0-0
-23,Sun,2011-01-16,Tottenham Hotspur,Manchester United,0-0,
-23,Sun,2011-01-16,Liverpool FC,Everton FC,2-2,1-0
-24,Sat,2011-01-22,Blackpool FC,Sunderland AFC,1-2,0-2
+23,Sun,2011-01-16,Tottenham,Manchester United,0-0,
+23,Sun,2011-01-16,Liverpool,Everton,2-2,1-0
+24,Sat,2011-01-22,Blackpool FC,Sunderland,1-2,0-2
 24,Sat,2011-01-22,Manchester United,Birmingham City,5-0,3-0
-24,Sat,2011-01-22,Everton FC,West Ham United,2-2,0-1
-24,Sat,2011-01-22,Newcastle United,Tottenham Hotspur,1-1,0-0
+24,Sat,2011-01-22,Everton,West Ham United,2-2,0-1
+24,Sat,2011-01-22,Newcastle United,Tottenham,1-1,0-0
 24,Sat,2011-01-22,Fulham FC,Stoke City,2-0,1-0
 24,Sat,2011-01-22,Aston Villa,Manchester City,1-0,1-0
-24,Sat,2011-01-22,Arsenal FC,Wigan Athletic,3-0,1-0
-24,Sat,2011-01-22,Wolverhampton Wanderers,Liverpool FC,0-3,0-1
+24,Sat,2011-01-22,Arsenal,Wigan Athletic,3-0,1-0
+24,Sat,2011-01-22,Wolverhampton,Liverpool,0-3,0-1
 24,Sun,2011-01-23,Blackburn Rovers,West Bromwich Albion,2-0,1-0
-24,Mon,2011-01-24,Bolton Wanderers,Chelsea FC,0-4,0-2
+24,Mon,2011-01-24,Bolton Wanderers,Chelsea,0-4,0-2
 16,Tue,2011-01-25,Blackpool FC,Manchester United,2-3,2-0
 18,Tue,2011-01-25,Wigan Athletic,Aston Villa,1-2,0-0
-18,Wed,2011-01-26,Liverpool FC,Fulham FC,1-0,0-0
-25,Tue,2011-02-01,Sunderland AFC,Chelsea FC,2-4,2-2
+18,Wed,2011-01-26,Liverpool,Fulham FC,1-0,0-0
+25,Tue,2011-02-01,Sunderland,Chelsea,2-4,2-2
 25,Tue,2011-02-01,Manchester United,Aston Villa,3-1,2-0
-25,Tue,2011-02-01,Arsenal FC,Everton FC,2-1,0-1
+25,Tue,2011-02-01,Arsenal,Everton,2-1,0-1
 25,Tue,2011-02-01,West Bromwich Albion,Wigan Athletic,2-2,1-2
-25,Wed,2011-02-02,Bolton Wanderers,Wolverhampton Wanderers,1-0,0-0
-25,Wed,2011-02-02,Blackburn Rovers,Tottenham Hotspur,0-1,0-1
+25,Wed,2011-02-02,Bolton Wanderers,Wolverhampton,1-0,0-0
+25,Wed,2011-02-02,Blackburn Rovers,Tottenham,0-1,0-1
 25,Wed,2011-02-02,Fulham FC,Newcastle United,1-0,0-0
-25,Wed,2011-02-02,Liverpool FC,Stoke City,2-0,0-0
+25,Wed,2011-02-02,Liverpool,Stoke City,2-0,0-0
 25,Wed,2011-02-02,Birmingham City,Manchester City,2-2,1-2
 25,Wed,2011-02-02,Blackpool FC,West Ham United,1-3,1-3
 26,Sat,2011-02-05,Manchester City,West Bromwich Albion,3-0,3-0
-26,Sat,2011-02-05,Everton FC,Blackpool FC,5-3,1-1
+26,Sat,2011-02-05,Everton,Blackpool FC,5-3,1-1
 26,Sat,2011-02-05,Wigan Athletic,Blackburn Rovers,4-3,1-1
-26,Sat,2011-02-05,Newcastle United,Arsenal FC,4-4,0-4
-26,Sat,2011-02-05,Tottenham Hotspur,Bolton Wanderers,2-1,1-0
-26,Sat,2011-02-05,Wolverhampton Wanderers,Manchester United,2-1,2-1
-26,Sat,2011-02-05,Stoke City,Sunderland AFC,3-2,1-1
+26,Sat,2011-02-05,Newcastle United,Arsenal,4-4,0-4
+26,Sat,2011-02-05,Tottenham,Bolton Wanderers,2-1,1-0
+26,Sat,2011-02-05,Wolverhampton,Manchester United,2-1,2-1
+26,Sat,2011-02-05,Stoke City,Sunderland,3-2,1-1
 26,Sat,2011-02-05,Aston Villa,Fulham FC,2-2,1-0
 26,Sun,2011-02-06,West Ham United,Birmingham City,0-1,0-0
-26,Sun,2011-02-06,Chelsea FC,Liverpool FC,0-1,0-0
+26,Sun,2011-02-06,Chelsea,Liverpool,0-1,0-0
 27,Sat,2011-02-12,Birmingham City,Stoke City,1-0,0-0
 27,Sat,2011-02-12,West Bromwich Albion,West Ham United,3-3,3-0
-27,Sat,2011-02-12,Liverpool FC,Wigan Athletic,1-1,1-0
-27,Sat,2011-02-12,Arsenal FC,Wolverhampton Wanderers,2-0,1-0
-27,Sat,2011-02-12,Sunderland AFC,Tottenham Hotspur,1-2,1-1
+27,Sat,2011-02-12,Liverpool,Wigan Athletic,1-1,1-0
+27,Sat,2011-02-12,Arsenal,Wolverhampton,2-0,1-0
+27,Sat,2011-02-12,Sunderland,Tottenham,1-2,1-1
 27,Sat,2011-02-12,Blackpool FC,Aston Villa,1-1,1-1
 27,Sat,2011-02-12,Manchester United,Manchester City,2-1,1-0
 27,Sat,2011-02-12,Blackburn Rovers,Newcastle United,0-0,
-27,Sun,2011-02-13,Bolton Wanderers,Everton FC,2-0,1-0
-27,Mon,2011-02-14,Fulham FC,Chelsea FC,0-0,
+27,Sun,2011-02-13,Bolton Wanderers,Everton,2-0,1-0
+27,Mon,2011-02-14,Fulham FC,Chelsea,0-0,
 18,Tue,2011-02-15,Birmingham City,Newcastle United,0-2,0-1
-18,Sun,2011-02-20,West Bromwich Albion,Wolverhampton Wanderers,1-1,0-1
-18,Tue,2011-02-22,Blackpool FC,Tottenham Hotspur,3-1,2-0
-18,Wed,2011-02-23,Arsenal FC,Stoke City,1-0,1-0
+18,Sun,2011-02-20,West Bromwich Albion,Wolverhampton,1-1,0-1
+18,Tue,2011-02-22,Blackpool FC,Tottenham,3-1,2-0
+18,Wed,2011-02-23,Arsenal,Stoke City,1-0,1-0
 28,Sat,2011-02-26,Newcastle United,Bolton Wanderers,1-1,1-1
 28,Sat,2011-02-26,Wigan Athletic,Manchester United,0-4,0-1
 28,Sat,2011-02-26,Aston Villa,Blackburn Rovers,4-1,0-0
-28,Sat,2011-02-26,Everton FC,Sunderland AFC,2-0,2-0
-28,Sat,2011-02-26,Wolverhampton Wanderers,Blackpool FC,4-0,1-0
+28,Sat,2011-02-26,Everton,Sunderland,2-0,2-0
+28,Sat,2011-02-26,Wolverhampton,Blackpool FC,4-0,1-0
 28,Sun,2011-02-27,Manchester City,Fulham FC,1-1,1-0
-28,Sun,2011-02-27,West Ham United,Liverpool FC,3-1,2-0
+28,Sun,2011-02-27,West Ham United,Liverpool,3-1,2-0
 28,Mon,2011-02-28,Stoke City,West Bromwich Albion,1-1,0-0
-18,Tue,2011-03-01,Chelsea FC,Manchester United,2-1,0-1
+18,Tue,2011-03-01,Chelsea,Manchester United,2-1,0-1
 29,Sat,2011-03-05,Manchester City,Wigan Athletic,1-0,1-0
 29,Sat,2011-03-05,West Ham United,Stoke City,3-0,2-0
 29,Sat,2011-03-05,Bolton Wanderers,Aston Villa,3-2,1-1
 29,Sat,2011-03-05,Birmingham City,West Bromwich Albion,1-3,0-0
-29,Sat,2011-03-05,Arsenal FC,Sunderland AFC,0-0,
-29,Sat,2011-03-05,Newcastle United,Everton FC,1-2,1-2
+29,Sat,2011-03-05,Arsenal,Sunderland,0-0,
+29,Sat,2011-03-05,Newcastle United,Everton,1-2,1-2
 29,Sat,2011-03-05,Fulham FC,Blackburn Rovers,3-2,1-1
-29,Sun,2011-03-06,Wolverhampton Wanderers,Tottenham Hotspur,3-3,2-2
-29,Sun,2011-03-06,Liverpool FC,Manchester United,3-1,2-0
-29,Mon,2011-03-07,Blackpool FC,Chelsea FC,1-3,0-1
-19,Wed,2011-03-09,Everton FC,Birmingham City,1-1,1-1
+29,Sun,2011-03-06,Wolverhampton,Tottenham,3-3,2-2
+29,Sun,2011-03-06,Liverpool,Manchester United,3-1,2-0
+29,Mon,2011-03-07,Blackpool FC,Chelsea,1-3,0-1
+19,Wed,2011-03-09,Everton,Birmingham City,1-1,1-1
 30,Sat,2011-03-19,Blackburn Rovers,Blackpool FC,2-2,0-2
-30,Sat,2011-03-19,Aston Villa,Wolverhampton Wanderers,0-1,0-1
-30,Sat,2011-03-19,Tottenham Hotspur,West Ham United,0-0,
+30,Sat,2011-03-19,Aston Villa,Wolverhampton,0-1,0-1
+30,Sat,2011-03-19,Tottenham,West Ham United,0-0,
 30,Sat,2011-03-19,Manchester United,Bolton Wanderers,1-0,0-0
-30,Sat,2011-03-19,West Bromwich Albion,Arsenal FC,2-2,1-0
+30,Sat,2011-03-19,West Bromwich Albion,Arsenal,2-2,1-0
 30,Sat,2011-03-19,Wigan Athletic,Birmingham City,2-1,1-1
 30,Sat,2011-03-19,Stoke City,Newcastle United,4-0,1-0
-30,Sat,2011-03-19,Everton FC,Fulham FC,2-1,1-0
-30,Sun,2011-03-20,Sunderland AFC,Liverpool FC,0-2,0-1
-30,Sun,2011-03-20,Chelsea FC,Manchester City,2-0,0-0
+30,Sat,2011-03-19,Everton,Fulham FC,2-1,1-0
+30,Sun,2011-03-20,Sunderland,Liverpool,0-2,0-1
+30,Sun,2011-03-20,Chelsea,Manchester City,2-0,0-0
 31,Sat,2011-04-02,Birmingham City,Bolton Wanderers,2-1,1-0
-31,Sat,2011-04-02,Arsenal FC,Blackburn Rovers,0-0,
+31,Sat,2011-04-02,Arsenal,Blackburn Rovers,0-0,
 31,Sat,2011-04-02,West Ham United,Manchester United,2-4,2-0
-31,Sat,2011-04-02,Everton FC,Aston Villa,2-2,1-0
-31,Sat,2011-04-02,Stoke City,Chelsea FC,1-1,1-1
-31,Sat,2011-04-02,Newcastle United,Wolverhampton Wanderers,4-1,2-0
-31,Sat,2011-04-02,Wigan Athletic,Tottenham Hotspur,0-0,
-31,Sat,2011-04-02,West Bromwich Albion,Liverpool FC,2-1,0-0
+31,Sat,2011-04-02,Everton,Aston Villa,2-2,1-0
+31,Sat,2011-04-02,Stoke City,Chelsea,1-1,1-1
+31,Sat,2011-04-02,Newcastle United,Wolverhampton,4-1,2-0
+31,Sat,2011-04-02,Wigan Athletic,Tottenham,0-0,
+31,Sat,2011-04-02,West Bromwich Albion,Liverpool,2-1,0-0
 31,Sun,2011-04-03,Fulham FC,Blackpool FC,3-0,2-0
-31,Sun,2011-04-03,Manchester City,Sunderland AFC,5-0,2-0
+31,Sun,2011-04-03,Manchester City,Sunderland,5-0,2-0
 32,Sat,2011-04-09,Bolton Wanderers,West Ham United,3-0,2-0
-32,Sat,2011-04-09,Tottenham Hotspur,Stoke City,3-2,3-2
-32,Sat,2011-04-09,Wolverhampton Wanderers,Everton FC,0-3,0-3
-32,Sat,2011-04-09,Sunderland AFC,West Bromwich Albion,2-3,2-1
+32,Sat,2011-04-09,Tottenham,Stoke City,3-2,3-2
+32,Sat,2011-04-09,Wolverhampton,Everton,0-3,0-3
+32,Sat,2011-04-09,Sunderland,West Bromwich Albion,2-3,2-1
 32,Sat,2011-04-09,Manchester United,Fulham FC,2-0,2-0
-32,Sat,2011-04-09,Chelsea FC,Wigan Athletic,1-0,0-0
+32,Sat,2011-04-09,Chelsea,Wigan Athletic,1-0,0-0
 32,Sat,2011-04-09,Blackburn Rovers,Birmingham City,1-1,1-1
 32,Sun,2011-04-10,Aston Villa,Newcastle United,1-0,1-0
-32,Sun,2011-04-10,Blackpool FC,Arsenal FC,1-3,0-2
-32,Mon,2011-04-11,Liverpool FC,Manchester City,3-0,3-0
-33,Sat,2011-04-16,Everton FC,Blackburn Rovers,2-0,0-0
-33,Sat,2011-04-16,West Bromwich Albion,Chelsea FC,1-3,1-3
+32,Sun,2011-04-10,Blackpool FC,Arsenal,1-3,0-2
+32,Mon,2011-04-11,Liverpool,Manchester City,3-0,3-0
+33,Sat,2011-04-16,Everton,Blackburn Rovers,2-0,0-0
+33,Sat,2011-04-16,West Bromwich Albion,Chelsea,1-3,1-3
 33,Sat,2011-04-16,West Ham United,Aston Villa,1-2,1-1
-33,Sat,2011-04-16,Birmingham City,Sunderland AFC,2-0,1-0
+33,Sat,2011-04-16,Birmingham City,Sunderland,2-0,1-0
 33,Sat,2011-04-16,Blackpool FC,Wigan Athletic,1-3,0-2
-33,Sun,2011-04-17,Arsenal FC,Liverpool FC,1-1,0-0
+33,Sun,2011-04-17,Arsenal,Liverpool,1-1,0-0
 33,Tue,2011-04-19,Newcastle United,Manchester United,0-0,
-28,Wed,2011-04-20,Tottenham Hotspur,Arsenal FC,3-3,2-3
-28,Wed,2011-04-20,Chelsea FC,Birmingham City,3-1,2-0
-34,Sat,2011-04-23,Chelsea FC,West Ham United,3-0,1-0
-34,Sat,2011-04-23,Sunderland AFC,Wigan Athletic,4-2,0-0
+28,Wed,2011-04-20,Tottenham,Arsenal,3-3,2-3
+28,Wed,2011-04-20,Chelsea,Birmingham City,3-1,2-0
+34,Sat,2011-04-23,Chelsea,West Ham United,3-0,1-0
+34,Sat,2011-04-23,Sunderland,Wigan Athletic,4-2,0-0
 34,Sat,2011-04-23,Aston Villa,Stoke City,1-1,1-1
-34,Sat,2011-04-23,Manchester United,Everton FC,1-0,0-0
+34,Sat,2011-04-23,Manchester United,Everton,1-0,0-0
 34,Sat,2011-04-23,Blackpool FC,Newcastle United,1-1,1-1
-34,Sat,2011-04-23,Tottenham Hotspur,West Bromwich Albion,2-2,1-1
-34,Sat,2011-04-23,Liverpool FC,Birmingham City,5-0,2-0
-34,Sat,2011-04-23,Wolverhampton Wanderers,Fulham FC,1-1,1-0
-34,Sun,2011-04-24,Bolton Wanderers,Arsenal FC,2-1,1-0
+34,Sat,2011-04-23,Tottenham,West Bromwich Albion,2-2,1-1
+34,Sat,2011-04-23,Liverpool,Birmingham City,5-0,2-0
+34,Sat,2011-04-23,Wolverhampton,Fulham FC,1-1,1-0
+34,Sun,2011-04-24,Bolton Wanderers,Arsenal,2-1,1-0
 34,Mon,2011-04-25,Blackburn Rovers,Manchester City,0-1,0-0
-33,Tue,2011-04-26,Stoke City,Wolverhampton Wanderers,3-0,2-0
+33,Tue,2011-04-26,Stoke City,Wolverhampton,3-0,2-0
 33,Wed,2011-04-27,Fulham FC,Bolton Wanderers,3-0,1-0
-35,Sat,2011-04-30,Chelsea FC,Tottenham Hotspur,2-1,1-1
-35,Sat,2011-04-30,Sunderland AFC,Fulham FC,0-3,0-1
+35,Sat,2011-04-30,Chelsea,Tottenham,2-1,1-1
+35,Sat,2011-04-30,Sunderland,Fulham FC,0-3,0-1
 35,Sat,2011-04-30,West Bromwich Albion,Aston Villa,2-1,0-1
 35,Sat,2011-04-30,Blackpool FC,Stoke City,0-0,
-35,Sat,2011-04-30,Wigan Athletic,Everton FC,1-1,1-0
+35,Sat,2011-04-30,Wigan Athletic,Everton,1-1,1-0
 35,Sat,2011-04-30,Blackburn Rovers,Bolton Wanderers,1-0,1-0
-35,Sun,2011-05-01,Birmingham City,Wolverhampton Wanderers,1-1,1-1
-35,Sun,2011-05-01,Liverpool FC,Newcastle United,3-0,1-0
+35,Sun,2011-05-01,Birmingham City,Wolverhampton,1-1,1-1
+35,Sun,2011-05-01,Liverpool,Newcastle United,3-0,1-0
 35,Sun,2011-05-01,Manchester City,West Ham United,2-1,2-1
-35,Sun,2011-05-01,Arsenal FC,Manchester United,1-0,0-0
-36,Sat,2011-05-07,Everton FC,Manchester City,2-1,0-1
-36,Sat,2011-05-07,Bolton Wanderers,Sunderland AFC,1-2,0-1
+35,Sun,2011-05-01,Arsenal,Manchester United,1-0,0-0
+36,Sat,2011-05-07,Everton,Manchester City,2-1,0-1
+36,Sat,2011-05-07,Bolton Wanderers,Sunderland,1-2,0-1
 36,Sat,2011-05-07,Newcastle United,Birmingham City,2-1,2-1
 36,Sat,2011-05-07,Aston Villa,Wigan Athletic,1-1,1-1
 36,Sat,2011-05-07,West Ham United,Blackburn Rovers,1-1,0-1
-36,Sat,2011-05-07,Tottenham Hotspur,Blackpool FC,1-1,0-0
-36,Sun,2011-05-08,Stoke City,Arsenal FC,3-1,2-0
-36,Sun,2011-05-08,Wolverhampton Wanderers,West Bromwich Albion,3-1,2-0
-36,Sun,2011-05-08,Manchester United,Chelsea FC,2-1,2-0
-36,Mon,2011-05-09,Fulham FC,Liverpool FC,2-5,0-3
-33,Tue,2011-05-10,Manchester City,Tottenham Hotspur,1-0,1-0
-37,Sat,2011-05-14,Sunderland AFC,Wolverhampton Wanderers,1-3,1-1
+36,Sat,2011-05-07,Tottenham,Blackpool FC,1-1,0-0
+36,Sun,2011-05-08,Stoke City,Arsenal,3-1,2-0
+36,Sun,2011-05-08,Wolverhampton,West Bromwich Albion,3-1,2-0
+36,Sun,2011-05-08,Manchester United,Chelsea,2-1,2-0
+36,Mon,2011-05-09,Fulham FC,Liverpool,2-5,0-3
+33,Tue,2011-05-10,Manchester City,Tottenham,1-0,1-0
+37,Sat,2011-05-14,Sunderland,Wolverhampton,1-3,1-1
 37,Sat,2011-05-14,Blackburn Rovers,Manchester United,1-1,1-0
-37,Sat,2011-05-14,West Bromwich Albion,Everton FC,1-0,1-0
+37,Sat,2011-05-14,West Bromwich Albion,Everton,1-0,1-0
 37,Sat,2011-05-14,Blackpool FC,Bolton Wanderers,4-3,3-2
-37,Sun,2011-05-15,Chelsea FC,Newcastle United,2-2,1-1
+37,Sun,2011-05-15,Chelsea,Newcastle United,2-2,1-1
 37,Sun,2011-05-15,Birmingham City,Fulham FC,0-2,0-1
-37,Sun,2011-05-15,Arsenal FC,Aston Villa,1-2,0-2
-37,Sun,2011-05-15,Liverpool FC,Tottenham Hotspur,0-2,0-1
+37,Sun,2011-05-15,Arsenal,Aston Villa,1-2,0-2
+37,Sun,2011-05-15,Liverpool,Tottenham,0-2,0-1
 37,Sun,2011-05-15,Wigan Athletic,West Ham United,3-2,0-2
 37,Tue,2011-05-17,Manchester City,Stoke City,3-0,1-0
-38,Sun,2011-05-22,West Ham United,Sunderland AFC,0-3,0-1
-38,Sun,2011-05-22,Aston Villa,Liverpool FC,1-0,1-0
-38,Sun,2011-05-22,Wolverhampton Wanderers,Blackburn Rovers,2-3,0-3
-38,Sun,2011-05-22,Tottenham Hotspur,Birmingham City,2-1,0-0
-38,Sun,2011-05-22,Fulham FC,Arsenal FC,2-2,1-1
-38,Sun,2011-05-22,Everton FC,Chelsea FC,1-0,0-0
+38,Sun,2011-05-22,West Ham United,Sunderland,0-3,0-1
+38,Sun,2011-05-22,Aston Villa,Liverpool,1-0,1-0
+38,Sun,2011-05-22,Wolverhampton,Blackburn Rovers,2-3,0-3
+38,Sun,2011-05-22,Tottenham,Birmingham City,2-1,0-0
+38,Sun,2011-05-22,Fulham FC,Arsenal,2-2,1-1
+38,Sun,2011-05-22,Everton,Chelsea,1-0,0-0
 38,Sun,2011-05-22,Manchester United,Blackpool FC,4-2,1-1
 38,Sun,2011-05-22,Stoke City,Wigan Athletic,0-1,0-0
 38,Sun,2011-05-22,Bolton Wanderers,Manchester City,0-2,0-1

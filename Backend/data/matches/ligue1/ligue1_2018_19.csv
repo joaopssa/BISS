@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Fri,2018-08-10,Olympique Marseille,Toulouse FC,4-0,1-0
-1,Sat,2018-08-11,FC Nantes,AS Monaco,1-3,0-0
-1,Sat,2018-08-11,Angers SCO,Nîmes Olympique,3-4,1-1
-1,Sat,2018-08-11,Lille OSC,Stade Rennais,3-1,1-1
-1,Sat,2018-08-11,Montpellier HSC,Dijon FCO,1-2,1-0
-1,Sat,2018-08-11,OGC Nice,Stade de Reims,0-1,0-1
+1,Fri,2018-08-10,Olympique de Marseille,Toulouse FC,4-0,1-0
+1,Sat,2018-08-11,Nantes,Monaco,1-3,0-0
+1,Sat,2018-08-11,Angers,Nîmes Olympique,3-4,1-1
+1,Sat,2018-08-11,Lille,Rennes,3-1,1-1
+1,Sat,2018-08-11,Montpellier,Dijon FCO,1-2,1-0
+1,Sat,2018-08-11,Nice,Stade de Reims,0-1,0-1
 1,Sat,2018-08-11,AS Saint-Étienne,EA Guingamp,2-1,1-0
-1,Sun,2018-08-12,Olympique Lyonnais,Amiens SC,2-0,1-0
-1,Sun,2018-08-12,Girondins Bordeaux,RC Strasbourg,0-2,0-0
-1,Sun,2018-08-12,Paris Saint-Germain,SM Caen,3-0,2-0
-2,Fri,2018-08-17,Stade de Reims,Olympique Lyonnais,1-0,1-0
-2,Sat,2018-08-18,EA Guingamp,Paris Saint-Germain,1-3,1-0
-2,Sat,2018-08-18,Amiens SC,Montpellier HSC,1-2,0-0
-2,Sat,2018-08-18,SM Caen,OGC Nice,1-1,0-0
-2,Sat,2018-08-18,Dijon FCO,FC Nantes,2-0,1-0
-2,Sat,2018-08-18,AS Monaco,Lille OSC,0-0,
-2,Sat,2018-08-18,Stade Rennais,Angers SCO,1-0,0-0
-2,Sun,2018-08-19,RC Strasbourg,AS Saint-Étienne,1-1,0-0
+1,Sun,2018-08-12,Lyon,Amiens SC,2-0,1-0
+1,Sun,2018-08-12,Girondins Bordeaux,Estrasburgo,0-2,0-0
+1,Sun,2018-08-12,Paris Saint Germain,SM Caen,3-0,2-0
+2,Fri,2018-08-17,Stade de Reims,Lyon,1-0,1-0
+2,Sat,2018-08-18,EA Guingamp,Paris Saint Germain,1-3,1-0
+2,Sat,2018-08-18,Amiens SC,Montpellier,1-2,0-0
+2,Sat,2018-08-18,SM Caen,Nice,1-1,0-0
+2,Sat,2018-08-18,Dijon FCO,Nantes,2-0,1-0
+2,Sat,2018-08-18,Monaco,Lille,0-0,
+2,Sat,2018-08-18,Rennes,Angers,1-0,0-0
+2,Sun,2018-08-19,Estrasburgo,AS Saint-Étienne,1-1,0-0
 2,Sun,2018-08-19,Toulouse FC,Girondins Bordeaux,2-1,1-0
-2,Sun,2018-08-19,Nîmes Olympique,Olympique Marseille,3-1,1-0
-3,Fri,2018-08-24,Olympique Lyonnais,RC Strasbourg,2-0,1-0
-3,Sat,2018-08-25,Paris Saint-Germain,Angers SCO,3-1,1-1
+2,Sun,2018-08-19,Nîmes Olympique,Olympique de Marseille,3-1,1-0
+3,Fri,2018-08-24,Lyon,Estrasburgo,2-0,1-0
+3,Sat,2018-08-25,Paris Saint Germain,Angers,3-1,1-1
 3,Sat,2018-08-25,Amiens SC,Stade de Reims,4-1,1-0
-3,Sat,2018-08-25,Montpellier HSC,AS Saint-Étienne,0-0,
-3,Sat,2018-08-25,FC Nantes,SM Caen,1-1,0-1
-3,Sat,2018-08-25,OGC Nice,Dijon FCO,0-4,0-0
+3,Sat,2018-08-25,Montpellier,AS Saint-Étienne,0-0,
+3,Sat,2018-08-25,Nantes,SM Caen,1-1,0-1
+3,Sat,2018-08-25,Nice,Dijon FCO,0-4,0-0
 3,Sat,2018-08-25,Toulouse FC,Nîmes Olympique,1-0,0-0
-3,Sun,2018-08-26,Lille OSC,EA Guingamp,3-0,2-0
-3,Sun,2018-08-26,Girondins Bordeaux,AS Monaco,2-1,0-0
-3,Sun,2018-08-26,Olympique Marseille,Stade Rennais,2-2,0-2
-4,Fri,2018-08-31,Olympique Lyonnais,OGC Nice,0-1,0-0
-4,Sat,2018-09-01,Nîmes Olympique,Paris Saint-Germain,2-4,0-2
-4,Sat,2018-09-01,Angers SCO,Lille OSC,1-0,0-0
+3,Sun,2018-08-26,Lille,EA Guingamp,3-0,2-0
+3,Sun,2018-08-26,Girondins Bordeaux,Monaco,2-1,0-0
+3,Sun,2018-08-26,Olympique de Marseille,Rennes,2-2,0-2
+4,Fri,2018-08-31,Lyon,Nice,0-1,0-0
+4,Sat,2018-09-01,Nîmes Olympique,Paris Saint Germain,2-4,0-2
+4,Sat,2018-09-01,Angers,Lille,1-0,0-0
 4,Sat,2018-09-01,Dijon FCO,SM Caen,0-2,0-1
 4,Sat,2018-09-01,EA Guingamp,Toulouse FC,1-2,1-2
-4,Sat,2018-09-01,Stade de Reims,Montpellier HSC,0-1,0-0
-4,Sat,2018-09-01,RC Strasbourg,FC Nantes,2-3,1-2
+4,Sat,2018-09-01,Stade de Reims,Montpellier,0-1,0-0
+4,Sat,2018-09-01,Estrasburgo,Nantes,2-3,1-2
 4,Sun,2018-09-02,AS Saint-Étienne,Amiens SC,0-0,
-4,Sun,2018-09-02,Stade Rennais,Girondins Bordeaux,2-0,2-0
-4,Sun,2018-09-02,AS Monaco,Olympique Marseille,2-3,0-1
-5,Fri,2018-09-14,OGC Nice,Stade Rennais,2-1,0-0
-5,Fri,2018-09-14,Paris Saint-Germain,AS Saint-Étienne,4-0,1-0
-5,Sat,2018-09-15,SM Caen,Olympique Lyonnais,2-2,0-1
-5,Sat,2018-09-15,Amiens SC,Lille OSC,2-3,0-1
-5,Sat,2018-09-15,Dijon FCO,Angers SCO,1-3,1-3
-5,Sat,2018-09-15,Montpellier HSC,RC Strasbourg,1-1,0-0
-5,Sat,2018-09-15,Toulouse FC,AS Monaco,1-1,0-0
-5,Sun,2018-09-16,FC Nantes,Stade de Reims,0-0,
+4,Sun,2018-09-02,Rennes,Girondins Bordeaux,2-0,2-0
+4,Sun,2018-09-02,Monaco,Olympique de Marseille,2-3,0-1
+5,Fri,2018-09-14,Nice,Rennes,2-1,0-0
+5,Fri,2018-09-14,Paris Saint Germain,AS Saint-Étienne,4-0,1-0
+5,Sat,2018-09-15,SM Caen,Lyon,2-2,0-1
+5,Sat,2018-09-15,Amiens SC,Lille,2-3,0-1
+5,Sat,2018-09-15,Dijon FCO,Angers,1-3,1-3
+5,Sat,2018-09-15,Montpellier,Estrasburgo,1-1,0-0
+5,Sat,2018-09-15,Toulouse FC,Monaco,1-1,0-0
+5,Sun,2018-09-16,Nantes,Stade de Reims,0-0,
 5,Sun,2018-09-16,Girondins Bordeaux,Nîmes Olympique,3-3,1-2
-5,Sun,2018-09-16,Olympique Marseille,EA Guingamp,4-0,0-0
-6,Fri,2018-09-21,AS Monaco,Nîmes Olympique,1-1,1-1
-6,Sat,2018-09-22,Lille OSC,FC Nantes,2-1,1-0
-6,Sat,2018-09-22,Angers SCO,Toulouse FC,0-0,
-6,Sat,2018-09-22,Montpellier HSC,OGC Nice,1-0,1-0
+5,Sun,2018-09-16,Olympique de Marseille,EA Guingamp,4-0,0-0
+6,Fri,2018-09-21,Monaco,Nîmes Olympique,1-1,1-1
+6,Sat,2018-09-22,Lille,Nantes,2-1,1-0
+6,Sat,2018-09-22,Angers,Toulouse FC,0-0,
+6,Sat,2018-09-22,Montpellier,Nice,1-0,1-0
 6,Sat,2018-09-22,Stade de Reims,Dijon FCO,0-0,
 6,Sat,2018-09-22,AS Saint-Étienne,SM Caen,2-1,0-1
-6,Sat,2018-09-22,RC Strasbourg,Amiens SC,3-1,0-1
-6,Sun,2018-09-23,Stade Rennais,Paris Saint-Germain,1-3,1-1
+6,Sat,2018-09-22,Estrasburgo,Amiens SC,3-1,0-1
+6,Sun,2018-09-23,Rennes,Paris Saint Germain,1-3,1-1
 6,Sun,2018-09-23,EA Guingamp,Girondins Bordeaux,1-3,0-0
-6,Sun,2018-09-23,Olympique Lyonnais,Olympique Marseille,4-2,1-1
-7,Tue,2018-09-25,AS Monaco,Angers SCO,0-1,0-1
-7,Tue,2018-09-25,FC Nantes,OGC Nice,1-2,0-1
+6,Sun,2018-09-23,Lyon,Olympique de Marseille,4-2,1-1
+7,Tue,2018-09-25,Monaco,Angers,0-1,0-1
+7,Tue,2018-09-25,Nantes,Nice,1-2,0-1
 7,Tue,2018-09-25,Toulouse FC,AS Saint-Étienne,2-3,0-1
-7,Wed,2018-09-26,Amiens SC,Stade Rennais,2-1,0-0
-7,Wed,2018-09-26,Girondins Bordeaux,Lille OSC,1-0,1-0
-7,Wed,2018-09-26,SM Caen,Montpellier HSC,2-2,1-1
-7,Wed,2018-09-26,Dijon FCO,Olympique Lyonnais,0-3,0-3
-7,Wed,2018-09-26,Olympique Marseille,RC Strasbourg,3-2,2-1
+7,Wed,2018-09-26,Amiens SC,Rennes,2-1,0-0
+7,Wed,2018-09-26,Girondins Bordeaux,Lille,1-0,1-0
+7,Wed,2018-09-26,SM Caen,Montpellier,2-2,1-1
+7,Wed,2018-09-26,Dijon FCO,Lyon,0-3,0-3
+7,Wed,2018-09-26,Olympique de Marseille,Estrasburgo,3-2,2-1
 7,Wed,2018-09-26,Nîmes Olympique,EA Guingamp,0-0,
-7,Wed,2018-09-26,Paris Saint-Germain,Stade de Reims,4-1,3-1
-8,Fri,2018-09-28,AS Saint-Étienne,AS Monaco,2-0,1-0
-8,Sat,2018-09-29,OGC Nice,Paris Saint-Germain,0-3,0-1
-8,Sat,2018-09-29,Angers SCO,EA Guingamp,0-1,0-1
+7,Wed,2018-09-26,Paris Saint Germain,Stade de Reims,4-1,3-1
+8,Fri,2018-09-28,AS Saint-Étienne,Monaco,2-0,1-0
+8,Sat,2018-09-29,Nice,Paris Saint Germain,0-3,0-1
+8,Sat,2018-09-29,Angers,EA Guingamp,0-1,0-1
 8,Sat,2018-09-29,SM Caen,Amiens SC,1-0,1-0
-8,Sat,2018-09-29,Olympique Lyonnais,FC Nantes,1-1,1-0
+8,Sat,2018-09-29,Lyon,Nantes,1-1,1-0
 8,Sat,2018-09-29,Stade de Reims,Girondins Bordeaux,0-0,
-8,Sat,2018-09-29,RC Strasbourg,Dijon FCO,3-0,1-0
-8,Sun,2018-09-30,Stade Rennais,Toulouse FC,1-1,0-0
-8,Sun,2018-09-30,Montpellier HSC,Nîmes Olympique,3-0,2-0
-8,Sun,2018-09-30,Lille OSC,Olympique Marseille,3-0,0-0
-9,Fri,2018-10-05,Toulouse FC,OGC Nice,1-1,0-1
-9,Sat,2018-10-06,Lille OSC,AS Saint-Étienne,3-1,1-1
+8,Sat,2018-09-29,Estrasburgo,Dijon FCO,3-0,1-0
+8,Sun,2018-09-30,Rennes,Toulouse FC,1-1,0-0
+8,Sun,2018-09-30,Montpellier,Nîmes Olympique,3-0,2-0
+8,Sun,2018-09-30,Lille,Olympique de Marseille,3-0,0-0
+9,Fri,2018-10-05,Toulouse FC,Nice,1-1,0-1
+9,Sat,2018-10-06,Lille,AS Saint-Étienne,3-1,1-1
 9,Sat,2018-10-06,Amiens SC,Dijon FCO,1-0,1-0
-9,Sat,2018-10-06,Angers SCO,RC Strasbourg,2-2,0-2
-9,Sat,2018-10-06,EA Guingamp,Montpellier HSC,1-1,0-1
+9,Sat,2018-10-06,Angers,Estrasburgo,2-2,0-2
+9,Sat,2018-10-06,EA Guingamp,Montpellier,1-1,0-1
 9,Sat,2018-10-06,Nîmes Olympique,Stade de Reims,0-0,
-9,Sun,2018-10-07,Girondins Bordeaux,FC Nantes,3-0,3-0
-9,Sun,2018-10-07,Olympique Marseille,SM Caen,2-0,2-0
-9,Sun,2018-10-07,AS Monaco,Stade Rennais,1-2,0-1
-9,Sun,2018-10-07,Paris Saint-Germain,Olympique Lyonnais,5-0,1-0
-10,Fri,2018-10-19,Olympique Lyonnais,Nîmes Olympique,2-0,1-0
-10,Sat,2018-10-20,Paris Saint-Germain,Amiens SC,5-0,2-0
+9,Sun,2018-10-07,Girondins Bordeaux,Nantes,3-0,3-0
+9,Sun,2018-10-07,Olympique de Marseille,SM Caen,2-0,2-0
+9,Sun,2018-10-07,Monaco,Rennes,1-2,0-1
+9,Sun,2018-10-07,Paris Saint Germain,Lyon,5-0,1-0
+10,Fri,2018-10-19,Lyon,Nîmes Olympique,2-0,1-0
+10,Sat,2018-10-20,Paris Saint Germain,Amiens SC,5-0,2-0
 10,Sat,2018-10-20,SM Caen,EA Guingamp,0-0,
-10,Sat,2018-10-20,Dijon FCO,Lille OSC,1-2,0-2
-10,Sat,2018-10-20,FC Nantes,Toulouse FC,4-0,2-0
-10,Sat,2018-10-20,Stade de Reims,Angers SCO,1-1,0-1
-10,Sat,2018-10-20,RC Strasbourg,AS Monaco,2-1,1-0
-10,Sun,2018-10-21,Montpellier HSC,Girondins Bordeaux,2-0,1-0
-10,Sun,2018-10-21,AS Saint-Étienne,Stade Rennais,1-1,1-1
-10,Sun,2018-10-21,OGC Nice,Olympique Marseille,0-1,0-1
+10,Sat,2018-10-20,Dijon FCO,Lille,1-2,0-2
+10,Sat,2018-10-20,Nantes,Toulouse FC,4-0,2-0
+10,Sat,2018-10-20,Stade de Reims,Angers,1-1,0-1
+10,Sat,2018-10-20,Estrasburgo,Monaco,2-1,1-0
+10,Sun,2018-10-21,Montpellier,Girondins Bordeaux,2-0,1-0
+10,Sun,2018-10-21,AS Saint-Étienne,Rennes,1-1,1-1
+10,Sun,2018-10-21,Nice,Olympique de Marseille,0-1,0-1
 11,Fri,2018-10-26,Nîmes Olympique,AS Saint-Étienne,1-1,0-1
-11,Sat,2018-10-27,Angers SCO,Olympique Lyonnais,1-2,0-0
-11,Sat,2018-10-27,Amiens SC,FC Nantes,1-2,0-1
-11,Sat,2018-10-27,EA Guingamp,RC Strasbourg,1-1,1-0
-11,Sat,2018-10-27,Lille OSC,SM Caen,1-0,0-0
-11,Sat,2018-10-27,AS Monaco,Dijon FCO,2-2,1-1
-11,Sat,2018-10-27,Toulouse FC,Montpellier HSC,0-3,0-2
-11,Sun,2018-10-28,Stade Rennais,Stade de Reims,0-2,0-1
-11,Sun,2018-10-28,Girondins Bordeaux,OGC Nice,0-1,0-0
-11,Sun,2018-10-28,Olympique Marseille,Paris Saint-Germain,0-2,0-0
-12,Fri,2018-11-02,Paris Saint-Germain,Lille OSC,2-1,0-0
-12,Sat,2018-11-03,Olympique Lyonnais,Girondins Bordeaux,1-1,1-0
-12,Sat,2018-11-03,SM Caen,Stade Rennais,1-2,0-0
+11,Sat,2018-10-27,Angers,Lyon,1-2,0-0
+11,Sat,2018-10-27,Amiens SC,Nantes,1-2,0-1
+11,Sat,2018-10-27,EA Guingamp,Estrasburgo,1-1,1-0
+11,Sat,2018-10-27,Lille,SM Caen,1-0,0-0
+11,Sat,2018-10-27,Monaco,Dijon FCO,2-2,1-1
+11,Sat,2018-10-27,Toulouse FC,Montpellier,0-3,0-2
+11,Sun,2018-10-28,Rennes,Stade de Reims,0-2,0-1
+11,Sun,2018-10-28,Girondins Bordeaux,Nice,0-1,0-0
+11,Sun,2018-10-28,Olympique de Marseille,Paris Saint Germain,0-2,0-0
+12,Fri,2018-11-02,Paris Saint Germain,Lille,2-1,0-0
+12,Sat,2018-11-03,Lyon,Girondins Bordeaux,1-1,1-0
+12,Sat,2018-11-03,SM Caen,Rennes,1-2,0-0
 12,Sat,2018-11-03,Dijon FCO,Nîmes Olympique,0-4,0-2
-12,Sat,2018-11-03,OGC Nice,Amiens SC,1-0,1-0
-12,Sat,2018-11-03,Stade de Reims,AS Monaco,1-0,1-0
-12,Sat,2018-11-03,RC Strasbourg,Toulouse FC,1-1,0-0
-12,Sun,2018-11-04,FC Nantes,EA Guingamp,5-0,1-0
-12,Sun,2018-11-04,AS Saint-Étienne,Angers SCO,4-3,2-2
-12,Sun,2018-11-04,Montpellier HSC,Olympique Marseille,3-0,0-0
-13,Fri,2018-11-09,Lille OSC,RC Strasbourg,0-0,
-13,Sat,2018-11-10,EA Guingamp,Olympique Lyonnais,2-4,1-0
-13,Sat,2018-11-10,Angers SCO,Montpellier HSC,1-0,0-0
-13,Sat,2018-11-10,Nîmes Olympique,OGC Nice,0-1,0-0
+12,Sat,2018-11-03,Nice,Amiens SC,1-0,1-0
+12,Sat,2018-11-03,Stade de Reims,Monaco,1-0,1-0
+12,Sat,2018-11-03,Estrasburgo,Toulouse FC,1-1,0-0
+12,Sun,2018-11-04,Nantes,EA Guingamp,5-0,1-0
+12,Sun,2018-11-04,AS Saint-Étienne,Angers,4-3,2-2
+12,Sun,2018-11-04,Montpellier,Olympique de Marseille,3-0,0-0
+13,Fri,2018-11-09,Lille,Estrasburgo,0-0,
+13,Sat,2018-11-10,EA Guingamp,Lyon,2-4,1-0
+13,Sat,2018-11-10,Angers,Montpellier,1-0,0-0
+13,Sat,2018-11-10,Nîmes Olympique,Nice,0-1,0-0
 13,Sat,2018-11-10,AS Saint-Étienne,Stade de Reims,2-0,2-0
 13,Sat,2018-11-10,Toulouse FC,Amiens SC,0-1,0-1
 13,Sun,2018-11-11,Girondins Bordeaux,SM Caen,0-0,
-13,Sun,2018-11-11,Olympique Marseille,Dijon FCO,2-0,1-0
-13,Sun,2018-11-11,Stade Rennais,FC Nantes,1-1,1-1
-13,Sun,2018-11-11,AS Monaco,Paris Saint-Germain,0-4,0-2
-14,Fri,2018-11-23,Olympique Lyonnais,AS Saint-Étienne,1-0,0-0
-14,Sat,2018-11-24,Paris Saint-Germain,Toulouse FC,1-0,1-0
-14,Sat,2018-11-24,SM Caen,AS Monaco,0-1,0-0
+13,Sun,2018-11-11,Olympique de Marseille,Dijon FCO,2-0,1-0
+13,Sun,2018-11-11,Rennes,Nantes,1-1,1-1
+13,Sun,2018-11-11,Monaco,Paris Saint Germain,0-4,0-2
+14,Fri,2018-11-23,Lyon,AS Saint-Étienne,1-0,0-0
+14,Sat,2018-11-24,Paris Saint Germain,Toulouse FC,1-0,1-0
+14,Sat,2018-11-24,SM Caen,Monaco,0-1,0-0
 14,Sat,2018-11-24,Dijon FCO,Girondins Bordeaux,0-0,
-14,Sat,2018-11-24,FC Nantes,Angers SCO,1-1,0-1
+14,Sat,2018-11-24,Nantes,Angers,1-1,0-1
 14,Sat,2018-11-24,Stade de Reims,EA Guingamp,2-1,1-0
-14,Sat,2018-11-24,RC Strasbourg,Nîmes Olympique,0-1,0-0
-14,Sun,2018-11-25,Montpellier HSC,Stade Rennais,2-2,1-1
-14,Sun,2018-11-25,OGC Nice,Lille OSC,2-0,1-0
-14,Sun,2018-11-25,Amiens SC,Olympique Marseille,1-3,1-1
-15,Fri,2018-11-30,AS Saint-Étienne,FC Nantes,3-0,0-0
-15,Sat,2018-12-01,Lille OSC,Olympique Lyonnais,2-2,2-0
-15,Sat,2018-12-01,Angers SCO,SM Caen,1-1,0-0
-15,Sat,2018-12-01,EA Guingamp,OGC Nice,0-0,
-15,Sat,2018-12-01,AS Monaco,Montpellier HSC,1-2,1-0
+14,Sat,2018-11-24,Estrasburgo,Nîmes Olympique,0-1,0-0
+14,Sun,2018-11-25,Montpellier,Rennes,2-2,1-1
+14,Sun,2018-11-25,Nice,Lille,2-0,1-0
+14,Sun,2018-11-25,Amiens SC,Olympique de Marseille,1-3,1-1
+15,Fri,2018-11-30,AS Saint-Étienne,Nantes,3-0,0-0
+15,Sat,2018-12-01,Lille,Lyon,2-2,2-0
+15,Sat,2018-12-01,Angers,SM Caen,1-1,0-0
+15,Sat,2018-12-01,EA Guingamp,Nice,0-0,
+15,Sat,2018-12-01,Monaco,Montpellier,1-2,1-0
 15,Sat,2018-12-01,Nîmes Olympique,Amiens SC,3-0,1-0
 15,Sun,2018-12-02,Toulouse FC,Dijon FCO,2-2,0-1
-15,Sun,2018-12-02,Olympique Marseille,Stade de Reims,0-0,
-15,Sun,2018-12-02,Stade Rennais,RC Strasbourg,1-4,1-2
-15,Sun,2018-12-02,Girondins Bordeaux,Paris Saint-Germain,2-2,0-1
-16,Tue,2018-12-04,Amiens SC,AS Monaco,0-2,0-1
-16,Tue,2018-12-04,OGC Nice,Angers SCO,0-0,
-16,Tue,2018-12-04,Montpellier HSC,Lille OSC,0-1,0-1
+15,Sun,2018-12-02,Olympique de Marseille,Stade de Reims,0-0,
+15,Sun,2018-12-02,Rennes,Estrasburgo,1-4,1-2
+15,Sun,2018-12-02,Girondins Bordeaux,Paris Saint Germain,2-2,0-1
+16,Tue,2018-12-04,Amiens SC,Monaco,0-2,0-1
+16,Tue,2018-12-04,Nice,Angers,0-0,
+16,Tue,2018-12-04,Montpellier,Lille,0-1,0-1
 16,Wed,2018-12-05,Girondins Bordeaux,AS Saint-Étienne,3-2,1-1
 16,Wed,2018-12-05,SM Caen,Nîmes Olympique,1-2,0-1
 16,Wed,2018-12-05,Dijon FCO,EA Guingamp,2-1,1-0
-16,Wed,2018-12-05,Olympique Lyonnais,Stade Rennais,0-2,0-2
-16,Wed,2018-12-05,FC Nantes,Olympique Marseille,3-2,2-2
+16,Wed,2018-12-05,Lyon,Rennes,0-2,0-2
+16,Wed,2018-12-05,Nantes,Olympique de Marseille,3-2,2-2
 16,Wed,2018-12-05,Stade de Reims,Toulouse FC,0-1,0-1
-16,Wed,2018-12-05,RC Strasbourg,Paris Saint-Germain,1-1,1-0
+16,Wed,2018-12-05,Estrasburgo,Paris Saint Germain,1-1,1-0
 17,Sat,2018-12-08,EA Guingamp,Amiens SC,1-2,0-0
-17,Sat,2018-12-08,Stade Rennais,Dijon FCO,2-0,0-0
-17,Sun,2018-12-09,RC Strasbourg,SM Caen,2-2,2-1
-17,Sun,2018-12-09,Lille OSC,Stade de Reims,1-1,0-0
-17,Tue,2019-01-15,Angers SCO,Girondins Bordeaux,1-2,0-1
-17,Wed,2019-01-16,AS Monaco,OGC Nice,1-1,0-1
-17,Wed,2019-01-16,Nîmes Olympique,FC Nantes,1-0,0-0
-17,Wed,2019-01-16,Toulouse FC,Olympique Lyonnais,2-2,1-0
-17,Wed,2019-01-16,AS Saint-Étienne,Olympique Marseille,2-1,0-1
-17,Wed,2019-02-20,Paris Saint-Germain,Montpellier HSC,5-1,2-1
-18,Sat,2018-12-15,Stade de Reims,RC Strasbourg,2-1,1-0
-18,Sun,2018-12-16,Nîmes Olympique,Lille OSC,2-3,0-2
-18,Sun,2018-12-16,OGC Nice,AS Saint-Étienne,1-1,0-0
-18,Sun,2018-12-16,Olympique Lyonnais,AS Monaco,3-0,2-0
+17,Sat,2018-12-08,Rennes,Dijon FCO,2-0,0-0
+17,Sun,2018-12-09,Estrasburgo,SM Caen,2-2,2-1
+17,Sun,2018-12-09,Lille,Stade de Reims,1-1,0-0
+17,Tue,2019-01-15,Angers,Girondins Bordeaux,1-2,0-1
+17,Wed,2019-01-16,Monaco,Nice,1-1,0-1
+17,Wed,2019-01-16,Nîmes Olympique,Nantes,1-0,0-0
+17,Wed,2019-01-16,Toulouse FC,Lyon,2-2,1-0
+17,Wed,2019-01-16,AS Saint-Étienne,Olympique de Marseille,2-1,0-1
+17,Wed,2019-02-20,Paris Saint Germain,Montpellier,5-1,2-1
+18,Sat,2018-12-15,Stade de Reims,Estrasburgo,2-1,1-0
+18,Sun,2018-12-16,Nîmes Olympique,Lille,2-3,0-2
+18,Sun,2018-12-16,Nice,AS Saint-Étienne,1-1,0-0
+18,Sun,2018-12-16,Lyon,Monaco,3-0,2-0
 18,Tue,2018-12-18,SM Caen,Toulouse FC,2-1,1-1
-18,Tue,2019-01-08,Amiens SC,Angers SCO,0-0,
-18,Tue,2019-01-08,FC Nantes,Montpellier HSC,2-0,0-0
-18,Wed,2019-01-16,EA Guingamp,Stade Rennais,2-1,1-0
-18,Tue,2019-02-05,Olympique Marseille,Girondins Bordeaux,1-0,1-0
-18,Tue,2019-03-12,Dijon FCO,Paris Saint-Germain,0-4,0-2
-19,Sat,2018-12-22,Angers SCO,Olympique Marseille,1-1,1-0
-19,Sat,2018-12-22,Lille OSC,Toulouse FC,1-2,1-0
-19,Sat,2018-12-22,AS Monaco,EA Guingamp,0-2,0-0
-19,Sat,2018-12-22,Montpellier HSC,Olympique Lyonnais,1-1,0-0
-19,Sat,2018-12-22,Paris Saint-Germain,FC Nantes,1-0,0-0
+18,Tue,2019-01-08,Amiens SC,Angers,0-0,
+18,Tue,2019-01-08,Nantes,Montpellier,2-0,0-0
+18,Wed,2019-01-16,EA Guingamp,Rennes,2-1,1-0
+18,Tue,2019-02-05,Olympique de Marseille,Girondins Bordeaux,1-0,1-0
+18,Tue,2019-03-12,Dijon FCO,Paris Saint Germain,0-4,0-2
+19,Sat,2018-12-22,Angers,Olympique de Marseille,1-1,1-0
+19,Sat,2018-12-22,Lille,Toulouse FC,1-2,1-0
+19,Sat,2018-12-22,Monaco,EA Guingamp,0-2,0-0
+19,Sat,2018-12-22,Montpellier,Lyon,1-1,0-0
+19,Sat,2018-12-22,Paris Saint Germain,Nantes,1-0,0-0
 19,Sat,2018-12-22,Stade de Reims,SM Caen,2-2,1-2
-19,Sat,2018-12-22,Stade Rennais,Nîmes Olympique,4-0,2-0
+19,Sat,2018-12-22,Rennes,Nîmes Olympique,4-0,2-0
 19,Sat,2018-12-22,AS Saint-Étienne,Dijon FCO,3-0,1-0
-19,Sat,2018-12-22,RC Strasbourg,OGC Nice,2-0,2-0
+19,Sat,2018-12-22,Estrasburgo,Nice,2-0,2-0
 19,Sun,2018-12-23,Girondins Bordeaux,Amiens SC,1-1,1-0
-20,Fri,2019-01-11,SM Caen,Lille OSC,1-3,0-2
-20,Fri,2019-01-11,Olympique Lyonnais,Stade de Reims,1-1,0-1
-20,Sat,2019-01-12,Amiens SC,Paris Saint-Germain,0-3,0-0
+20,Fri,2019-01-11,SM Caen,Lille,1-3,0-2
+20,Fri,2019-01-11,Lyon,Stade de Reims,1-1,0-1
+20,Sat,2019-01-12,Amiens SC,Paris Saint Germain,0-3,0-0
 20,Sat,2019-01-12,EA Guingamp,AS Saint-Étienne,0-1,0-1
-20,Sat,2019-01-12,OGC Nice,Girondins Bordeaux,1-0,1-0
-20,Sun,2019-01-13,FC Nantes,Stade Rennais,0-1,0-1
-20,Sun,2019-01-13,Dijon FCO,Montpellier HSC,1-1,0-0
-20,Sun,2019-01-13,Toulouse FC,RC Strasbourg,1-2,1-1
-20,Sun,2019-01-13,Olympique Marseille,AS Monaco,1-1,1-1
-20,Wed,2019-01-23,Nîmes Olympique,Angers SCO,3-1,2-0
-21,Fri,2019-01-18,Lille OSC,Amiens SC,2-1,1-1
-21,Sat,2019-01-19,Paris Saint-Germain,EA Guingamp,9-0,3-0
-21,Sat,2019-01-19,AS Monaco,RC Strasbourg,1-5,1-2
+20,Sat,2019-01-12,Nice,Girondins Bordeaux,1-0,1-0
+20,Sun,2019-01-13,Nantes,Rennes,0-1,0-1
+20,Sun,2019-01-13,Dijon FCO,Montpellier,1-1,0-0
+20,Sun,2019-01-13,Toulouse FC,Estrasburgo,1-2,1-1
+20,Sun,2019-01-13,Olympique de Marseille,Monaco,1-1,1-1
+20,Wed,2019-01-23,Nîmes Olympique,Angers,3-1,2-0
+21,Fri,2019-01-18,Lille,Amiens SC,2-1,1-1
+21,Sat,2019-01-19,Paris Saint Germain,EA Guingamp,9-0,3-0
+21,Sat,2019-01-19,Monaco,Estrasburgo,1-5,1-2
 21,Sat,2019-01-19,Nîmes Olympique,Toulouse FC,0-1,0-1
-21,Sat,2019-01-19,Stade de Reims,OGC Nice,1-1,1-0
-21,Sun,2019-01-20,Stade Rennais,Montpellier HSC,0-0,
-21,Sun,2019-01-20,Angers SCO,FC Nantes,1-0,0-0
-21,Sun,2019-01-20,SM Caen,Olympique Marseille,0-1,0-0
+21,Sat,2019-01-19,Stade de Reims,Nice,1-1,1-0
+21,Sun,2019-01-20,Rennes,Montpellier,0-0,
+21,Sun,2019-01-20,Angers,Nantes,1-0,0-0
+21,Sun,2019-01-20,SM Caen,Olympique de Marseille,0-1,0-0
 21,Sun,2019-01-20,Girondins Bordeaux,Dijon FCO,1-0,0-0
-21,Sun,2019-01-20,AS Saint-Étienne,Olympique Lyonnais,1-2,1-0
-22,Fri,2019-01-25,Olympique Marseille,Lille OSC,1-2,0-1
-22,Sat,2019-01-26,Dijon FCO,AS Monaco,2-0,1-0
+21,Sun,2019-01-20,AS Saint-Étienne,Lyon,1-2,1-0
+22,Fri,2019-01-25,Olympique de Marseille,Lille,1-2,0-1
+22,Sat,2019-01-26,Dijon FCO,Monaco,2-0,1-0
 22,Sat,2019-01-26,EA Guingamp,Stade de Reims,0-1,0-1
-22,Sat,2019-01-26,OGC Nice,Nîmes Olympique,2-0,1-0
-22,Sat,2019-01-26,RC Strasbourg,Girondins Bordeaux,1-0,0-0
-22,Sun,2019-01-27,Montpellier HSC,SM Caen,2-0,0-0
-22,Sun,2019-01-27,Amiens SC,Olympique Lyonnais,0-1,0-0
-22,Sun,2019-01-27,Toulouse FC,Angers SCO,0-0,
-22,Sun,2019-01-27,Paris Saint-Germain,Stade Rennais,4-1,1-1
-22,Wed,2019-01-30,FC Nantes,AS Saint-Étienne,1-1,0-0
-23,Fri,2019-02-01,Lille OSC,OGC Nice,4-0,2-0
-23,Sat,2019-02-02,Angers SCO,Dijon FCO,1-0,1-0
-23,Sat,2019-02-02,AS Monaco,Toulouse FC,2-1,1-1
-23,Sat,2019-02-02,Stade Rennais,Amiens SC,1-0,0-0
-23,Sat,2019-02-02,Stade de Reims,Olympique Marseille,2-1,1-0
-23,Sun,2019-02-03,Nîmes Olympique,Montpellier HSC,1-1,1-0
-23,Sun,2019-02-03,Olympique Lyonnais,Paris Saint-Germain,2-1,1-1
-23,Wed,2019-02-13,AS Saint-Étienne,RC Strasbourg,2-1,2-0
-23,Wed,2019-02-13,SM Caen,FC Nantes,0-1,0-0
+22,Sat,2019-01-26,Nice,Nîmes Olympique,2-0,1-0
+22,Sat,2019-01-26,Estrasburgo,Girondins Bordeaux,1-0,0-0
+22,Sun,2019-01-27,Montpellier,SM Caen,2-0,0-0
+22,Sun,2019-01-27,Amiens SC,Lyon,0-1,0-0
+22,Sun,2019-01-27,Toulouse FC,Angers,0-0,
+22,Sun,2019-01-27,Paris Saint Germain,Rennes,4-1,1-1
+22,Wed,2019-01-30,Nantes,AS Saint-Étienne,1-1,0-0
+23,Fri,2019-02-01,Lille,Nice,4-0,2-0
+23,Sat,2019-02-02,Angers,Dijon FCO,1-0,1-0
+23,Sat,2019-02-02,Monaco,Toulouse FC,2-1,1-1
+23,Sat,2019-02-02,Rennes,Amiens SC,1-0,0-0
+23,Sat,2019-02-02,Stade de Reims,Olympique de Marseille,2-1,1-0
+23,Sun,2019-02-03,Nîmes Olympique,Montpellier,1-1,1-0
+23,Sun,2019-02-03,Lyon,Paris Saint Germain,2-1,1-1
+23,Wed,2019-02-13,AS Saint-Étienne,Estrasburgo,2-1,2-0
+23,Wed,2019-02-13,SM Caen,Nantes,0-1,0-0
 23,Wed,2019-02-20,Girondins Bordeaux,EA Guingamp,0-0,
-24,Fri,2019-02-08,Dijon FCO,Olympique Marseille,1-2,1-0
-24,Sat,2019-02-09,Paris Saint-Germain,Girondins Bordeaux,1-0,1-0
+24,Fri,2019-02-08,Dijon FCO,Olympique de Marseille,1-2,1-0
+24,Sat,2019-02-09,Paris Saint Germain,Girondins Bordeaux,1-0,1-0
 24,Sat,2019-02-09,Amiens SC,SM Caen,1-0,0-0
-24,Sat,2019-02-09,RC Strasbourg,Angers SCO,1-2,0-1
-24,Sun,2019-02-10,Montpellier HSC,AS Monaco,2-2,0-1
-24,Sun,2019-02-10,FC Nantes,Nîmes Olympique,2-4,2-0
+24,Sat,2019-02-09,Estrasburgo,Angers,1-2,0-1
+24,Sun,2019-02-10,Montpellier,Monaco,2-2,0-1
+24,Sun,2019-02-10,Nantes,Nîmes Olympique,2-4,2-0
 24,Sun,2019-02-10,Toulouse FC,Stade de Reims,1-1,0-0
-24,Sun,2019-02-10,EA Guingamp,Lille OSC,0-2,0-0
-24,Sun,2019-02-10,Stade Rennais,AS Saint-Étienne,3-0,1-0
-24,Sun,2019-02-10,OGC Nice,Olympique Lyonnais,1-0,0-0
+24,Sun,2019-02-10,EA Guingamp,Lille,0-2,0-0
+24,Sun,2019-02-10,Rennes,AS Saint-Étienne,3-0,1-0
+24,Sun,2019-02-10,Nice,Lyon,1-0,0-0
 25,Fri,2019-02-15,Nîmes Olympique,Dijon FCO,2-0,1-0
-25,Fri,2019-02-15,Olympique Lyonnais,EA Guingamp,2-1,2-1
-25,Sat,2019-02-16,Olympique Marseille,Amiens SC,2-0,2-0
-25,Sat,2019-02-16,Angers SCO,OGC Nice,3-0,1-0
-25,Sat,2019-02-16,AS Monaco,FC Nantes,1-0,1-0
+25,Fri,2019-02-15,Lyon,EA Guingamp,2-1,2-1
+25,Sat,2019-02-16,Olympique de Marseille,Amiens SC,2-0,2-0
+25,Sat,2019-02-16,Angers,Nice,3-0,1-0
+25,Sat,2019-02-16,Monaco,Nantes,1-0,1-0
 25,Sun,2019-02-17,Girondins Bordeaux,Toulouse FC,2-1,1-0
-25,Sun,2019-02-17,SM Caen,RC Strasbourg,0-0,
-25,Sun,2019-02-17,Lille OSC,Montpellier HSC,0-0,
-25,Sun,2019-02-17,Stade de Reims,Stade Rennais,2-0,1-0
-25,Sun,2019-02-17,AS Saint-Étienne,Paris Saint-Germain,0-1,0-0
+25,Sun,2019-02-17,SM Caen,Estrasburgo,0-0,
+25,Sun,2019-02-17,Lille,Montpellier,0-0,
+25,Sun,2019-02-17,Stade de Reims,Rennes,2-0,1-0
+25,Sun,2019-02-17,AS Saint-Étienne,Paris Saint Germain,0-1,0-0
 26,Fri,2019-02-22,Dijon FCO,AS Saint-Étienne,0-1,0-0
-26,Fri,2019-02-22,RC Strasbourg,Lille OSC,1-1,0-1
-26,Sat,2019-02-23,Paris Saint-Germain,Nîmes Olympique,3-0,1-0
-26,Sat,2019-02-23,Amiens SC,OGC Nice,1-0,1-0
-26,Sat,2019-02-23,EA Guingamp,Angers SCO,1-0,0-0
-26,Sun,2019-02-24,Montpellier HSC,Stade de Reims,2-4,1-1
-26,Sun,2019-02-24,FC Nantes,Girondins Bordeaux,1-0,0-0
+26,Fri,2019-02-22,Estrasburgo,Lille,1-1,0-1
+26,Sat,2019-02-23,Paris Saint Germain,Nîmes Olympique,3-0,1-0
+26,Sat,2019-02-23,Amiens SC,Nice,1-0,1-0
+26,Sat,2019-02-23,EA Guingamp,Angers,1-0,0-0
+26,Sun,2019-02-24,Montpellier,Stade de Reims,2-4,1-1
+26,Sun,2019-02-24,Nantes,Girondins Bordeaux,1-0,0-0
 26,Sun,2019-02-24,Toulouse FC,SM Caen,1-1,0-1
-26,Sun,2019-02-24,Stade Rennais,Olympique Marseille,1-1,1-0
-26,Sun,2019-02-24,AS Monaco,Olympique Lyonnais,2-0,2-0
-27,Sat,2019-03-02,SM Caen,Paris Saint-Germain,1-2,0-0
-27,Sat,2019-03-02,Angers SCO,AS Monaco,2-2,2-0
+26,Sun,2019-02-24,Rennes,Olympique de Marseille,1-1,1-0
+26,Sun,2019-02-24,Monaco,Lyon,2-0,2-0
+27,Sat,2019-03-02,SM Caen,Paris Saint Germain,1-2,0-0
+27,Sat,2019-03-02,Angers,Monaco,2-2,2-0
 27,Sat,2019-03-02,Stade de Reims,Amiens SC,2-2,0-2
-27,Sun,2019-03-03,EA Guingamp,FC Nantes,0-0,
-27,Sun,2019-03-03,Lille OSC,Dijon FCO,1-0,0-0
-27,Sun,2019-03-03,OGC Nice,RC Strasbourg,1-0,1-0
-27,Sun,2019-03-03,Olympique Lyonnais,Toulouse FC,5-1,3-1
-27,Sun,2019-03-03,Olympique Marseille,AS Saint-Étienne,2-0,2-0
-27,Tue,2019-03-05,Girondins Bordeaux,Montpellier HSC,1-2,1-1
-27,Tue,2019-04-09,Nîmes Olympique,Stade Rennais,3-1,1-1
-28,Sat,2019-03-09,RC Strasbourg,Olympique Lyonnais,2-2,0-1
+27,Sun,2019-03-03,EA Guingamp,Nantes,0-0,
+27,Sun,2019-03-03,Lille,Dijon FCO,1-0,0-0
+27,Sun,2019-03-03,Nice,Estrasburgo,1-0,1-0
+27,Sun,2019-03-03,Lyon,Toulouse FC,5-1,3-1
+27,Sun,2019-03-03,Olympique de Marseille,AS Saint-Étienne,2-0,2-0
+27,Tue,2019-03-05,Girondins Bordeaux,Montpellier,1-2,1-1
+27,Tue,2019-04-09,Nîmes Olympique,Rennes,3-1,1-1
+28,Sat,2019-03-09,Estrasburgo,Lyon,2-2,0-1
 28,Sat,2019-03-09,Amiens SC,Nîmes Olympique,2-1,0-0
 28,Sat,2019-03-09,Dijon FCO,Stade de Reims,1-1,1-1
-28,Sat,2019-03-09,AS Monaco,Girondins Bordeaux,1-1,0-0
-28,Sun,2019-03-10,Montpellier HSC,Angers SCO,2-2,2-0
-28,Sun,2019-03-10,AS Saint-Étienne,Lille OSC,0-1,0-0
+28,Sat,2019-03-09,Monaco,Girondins Bordeaux,1-1,0-0
+28,Sun,2019-03-10,Montpellier,Angers,2-2,2-0
+28,Sun,2019-03-10,AS Saint-Étienne,Lille,0-1,0-0
 28,Sun,2019-03-10,Toulouse FC,EA Guingamp,1-0,1-0
-28,Sun,2019-03-10,Stade Rennais,SM Caen,3-1,1-1
-28,Sun,2019-03-10,Olympique Marseille,OGC Nice,1-0,0-0
-28,Wed,2019-04-17,FC Nantes,Paris Saint-Germain,3-2,2-1
-29,Fri,2019-03-15,OGC Nice,Toulouse FC,1-1,1-0
-29,Fri,2019-03-15,Lille OSC,AS Monaco,0-1,0-0
-29,Sat,2019-03-16,Angers SCO,Amiens SC,0-0,
+28,Sun,2019-03-10,Rennes,SM Caen,3-1,1-1
+28,Sun,2019-03-10,Olympique de Marseille,Nice,1-0,0-0
+28,Wed,2019-04-17,Nantes,Paris Saint Germain,3-2,2-1
+29,Fri,2019-03-15,Nice,Toulouse FC,1-1,1-0
+29,Fri,2019-03-15,Lille,Monaco,0-1,0-0
+29,Sat,2019-03-16,Angers,Amiens SC,0-0,
 29,Sat,2019-03-16,SM Caen,AS Saint-Étienne,0-5,0-3
 29,Sat,2019-03-16,EA Guingamp,Dijon FCO,1-0,0-0
-29,Sat,2019-03-16,Nîmes Olympique,RC Strasbourg,2-2,0-1
-29,Sun,2019-03-17,Olympique Lyonnais,Montpellier HSC,3-2,1-1
-29,Sun,2019-03-17,Stade de Reims,FC Nantes,1-0,0-0
-29,Sun,2019-03-17,Girondins Bordeaux,Stade Rennais,1-1,0-0
-29,Sun,2019-03-17,Paris Saint-Germain,Olympique Marseille,3-1,1-0
-30,Fri,2019-03-29,Stade Rennais,Olympique Lyonnais,0-1,0-0
-30,Sat,2019-03-30,Olympique Marseille,Angers SCO,2-2,2-1
+29,Sat,2019-03-16,Nîmes Olympique,Estrasburgo,2-2,0-1
+29,Sun,2019-03-17,Lyon,Montpellier,3-2,1-1
+29,Sun,2019-03-17,Stade de Reims,Nantes,1-0,0-0
+29,Sun,2019-03-17,Girondins Bordeaux,Rennes,1-1,0-0
+29,Sun,2019-03-17,Paris Saint Germain,Olympique de Marseille,3-1,1-0
+30,Fri,2019-03-29,Rennes,Lyon,0-1,0-0
+30,Sat,2019-03-30,Olympique de Marseille,Angers,2-2,2-1
 30,Sun,2019-03-31,Amiens SC,Girondins Bordeaux,0-0,
-30,Sun,2019-03-31,Dijon FCO,OGC Nice,0-1,0-0
-30,Sun,2019-03-31,AS Monaco,SM Caen,0-1,0-1
-30,Sun,2019-03-31,FC Nantes,Lille OSC,2-3,0-0
-30,Sun,2019-03-31,Toulouse FC,Paris Saint-Germain,0-1,0-0
+30,Sun,2019-03-31,Dijon FCO,Nice,0-1,0-0
+30,Sun,2019-03-31,Monaco,SM Caen,0-1,0-1
+30,Sun,2019-03-31,Nantes,Lille,2-3,0-0
+30,Sun,2019-03-31,Toulouse FC,Paris Saint Germain,0-1,0-0
 30,Mon,2019-04-01,AS Saint-Étienne,Nîmes Olympique,2-1,1-1
-30,Wed,2019-04-03,Montpellier HSC,EA Guingamp,2-0,1-0
-30,Wed,2019-04-03,RC Strasbourg,Stade de Reims,4-0,1-0
-31,Fri,2019-04-05,Girondins Bordeaux,Olympique Marseille,2-0,1-0
-31,Sat,2019-04-06,Olympique Lyonnais,Dijon FCO,1-3,1-2
+30,Wed,2019-04-03,Montpellier,EA Guingamp,2-0,1-0
+30,Wed,2019-04-03,Estrasburgo,Stade de Reims,4-0,1-0
+31,Fri,2019-04-05,Girondins Bordeaux,Olympique de Marseille,2-0,1-0
+31,Sat,2019-04-06,Lyon,Dijon FCO,1-3,1-2
 31,Sat,2019-04-06,Amiens SC,AS Saint-Étienne,2-2,1-1
-31,Sat,2019-04-06,Angers SCO,Stade Rennais,3-3,0-1
-31,Sat,2019-04-06,EA Guingamp,AS Monaco,1-1,1-0
+31,Sat,2019-04-06,Angers,Rennes,3-3,0-1
+31,Sat,2019-04-06,EA Guingamp,Monaco,1-1,1-0
 31,Sat,2019-04-06,Nîmes Olympique,SM Caen,2-0,0-0
-31,Sun,2019-04-07,Stade de Reims,Lille OSC,1-1,0-0
-31,Sun,2019-04-07,Toulouse FC,FC Nantes,1-0,0-0
-31,Sun,2019-04-07,OGC Nice,Montpellier HSC,1-0,1-0
-31,Sun,2019-04-07,Paris Saint-Germain,RC Strasbourg,2-2,1-2
+31,Sun,2019-04-07,Stade de Reims,Lille,1-1,0-0
+31,Sun,2019-04-07,Toulouse FC,Nantes,1-0,0-0
+31,Sun,2019-04-07,Nice,Montpellier,1-0,1-0
+31,Sun,2019-04-07,Paris Saint Germain,Estrasburgo,2-2,1-2
 32,Fri,2019-04-12,Dijon FCO,Amiens SC,0-0,
-32,Fri,2019-04-12,FC Nantes,Olympique Lyonnais,2-1,1-1
-32,Sat,2019-04-13,Olympique Marseille,Nîmes Olympique,2-1,0-0
-32,Sat,2019-04-13,SM Caen,Angers SCO,0-1,0-0
-32,Sat,2019-04-13,AS Monaco,Stade de Reims,0-0,
-32,Sat,2019-04-13,RC Strasbourg,EA Guingamp,3-3,1-1
-32,Sun,2019-04-14,Montpellier HSC,Toulouse FC,2-1,0-0
-32,Sun,2019-04-14,Stade Rennais,OGC Nice,0-0,
+32,Fri,2019-04-12,Nantes,Lyon,2-1,1-1
+32,Sat,2019-04-13,Olympique de Marseille,Nîmes Olympique,2-1,0-0
+32,Sat,2019-04-13,SM Caen,Angers,0-1,0-0
+32,Sat,2019-04-13,Monaco,Stade de Reims,0-0,
+32,Sat,2019-04-13,Estrasburgo,EA Guingamp,3-3,1-1
+32,Sun,2019-04-14,Montpellier,Toulouse FC,2-1,0-0
+32,Sun,2019-04-14,Rennes,Nice,0-0,
 32,Sun,2019-04-14,AS Saint-Étienne,Girondins Bordeaux,3-0,0-0
-32,Sun,2019-04-14,Lille OSC,Paris Saint-Germain,5-1,1-1
-33,Fri,2019-04-19,Dijon FCO,Stade Rennais,3-2,1-0
-33,Fri,2019-04-19,Olympique Lyonnais,Angers SCO,2-1,2-0
-33,Sat,2019-04-20,EA Guingamp,Olympique Marseille,1-3,0-2
-33,Sat,2019-04-20,OGC Nice,SM Caen,0-1,0-0
+32,Sun,2019-04-14,Lille,Paris Saint Germain,5-1,1-1
+33,Fri,2019-04-19,Dijon FCO,Rennes,3-2,1-0
+33,Fri,2019-04-19,Lyon,Angers,2-1,2-0
+33,Sat,2019-04-20,EA Guingamp,Olympique de Marseille,1-3,0-2
+33,Sat,2019-04-20,Nice,SM Caen,0-1,0-0
 33,Sat,2019-04-20,Nîmes Olympique,Girondins Bordeaux,2-1,1-1
-33,Sat,2019-04-20,RC Strasbourg,Montpellier HSC,1-3,1-2
-33,Sun,2019-04-21,FC Nantes,Amiens SC,3-2,0-0
-33,Sun,2019-04-21,Toulouse FC,Lille OSC,0-0,
+33,Sat,2019-04-20,Estrasburgo,Montpellier,1-3,1-2
+33,Sun,2019-04-21,Nantes,Amiens SC,3-2,0-0
+33,Sun,2019-04-21,Toulouse FC,Lille,0-0,
 33,Sun,2019-04-21,Stade de Reims,AS Saint-Étienne,0-2,0-1
-33,Sun,2019-04-21,Paris Saint-Germain,AS Monaco,3-1,2-0
-34,Fri,2019-04-26,Girondins Bordeaux,Olympique Lyonnais,2-3,2-1
-34,Sun,2019-04-28,Amiens SC,RC Strasbourg,0-0,
-34,Sun,2019-04-28,Angers SCO,Stade de Reims,1-1,0-0
+33,Sun,2019-04-21,Paris Saint Germain,Monaco,3-1,2-0
+34,Fri,2019-04-26,Girondins Bordeaux,Lyon,2-3,2-1
+34,Sun,2019-04-28,Amiens SC,Estrasburgo,0-0,
+34,Sun,2019-04-28,Angers,Stade de Reims,1-1,0-0
 34,Sun,2019-04-28,SM Caen,Dijon FCO,1-0,0-0
-34,Sun,2019-04-28,Lille OSC,Nîmes Olympique,5-0,0-0
-34,Sun,2019-04-28,OGC Nice,EA Guingamp,3-0,1-0
+34,Sun,2019-04-28,Lille,Nîmes Olympique,5-0,0-0
+34,Sun,2019-04-28,Nice,EA Guingamp,3-0,1-0
 34,Sun,2019-04-28,AS Saint-Étienne,Toulouse FC,2-0,2-0
-34,Sun,2019-04-28,Olympique Marseille,FC Nantes,1-2,1-1
-34,Tue,2019-04-30,Montpellier HSC,Paris Saint-Germain,3-2,1-1
-34,Wed,2019-05-01,Stade Rennais,AS Monaco,2-2,2-0
-35,Fri,2019-05-03,RC Strasbourg,Olympique Marseille,1-1,0-0
-35,Sat,2019-05-04,Paris Saint-Germain,OGC Nice,1-1,0-0
-35,Sat,2019-05-04,Girondins Bordeaux,Angers SCO,0-1,0-1
+34,Sun,2019-04-28,Olympique de Marseille,Nantes,1-2,1-1
+34,Tue,2019-04-30,Montpellier,Paris Saint Germain,3-2,1-1
+34,Wed,2019-05-01,Rennes,Monaco,2-2,2-0
+35,Fri,2019-05-03,Estrasburgo,Olympique de Marseille,1-1,0-0
+35,Sat,2019-05-04,Paris Saint Germain,Nice,1-1,0-0
+35,Sat,2019-05-04,Girondins Bordeaux,Angers,0-1,0-1
 35,Sat,2019-05-04,EA Guingamp,SM Caen,0-0,
 35,Sat,2019-05-04,Stade de Reims,Nîmes Olympique,0-3,0-2
-35,Sun,2019-05-05,Montpellier HSC,Amiens SC,1-1,0-0
-35,Sun,2019-05-05,FC Nantes,Dijon FCO,3-0,0-0
-35,Sun,2019-05-05,Toulouse FC,Stade Rennais,2-2,1-1
-35,Sun,2019-05-05,AS Monaco,AS Saint-Étienne,2-3,1-0
-35,Sun,2019-05-05,Olympique Lyonnais,Lille OSC,2-2,1-0
-36,Fri,2019-05-10,AS Saint-Étienne,Montpellier HSC,0-1,0-0
-36,Sat,2019-05-11,Angers SCO,Paris Saint-Germain,1-2,0-1
+35,Sun,2019-05-05,Montpellier,Amiens SC,1-1,0-0
+35,Sun,2019-05-05,Nantes,Dijon FCO,3-0,0-0
+35,Sun,2019-05-05,Toulouse FC,Rennes,2-2,1-1
+35,Sun,2019-05-05,Monaco,AS Saint-Étienne,2-3,1-0
+35,Sun,2019-05-05,Lyon,Lille,2-2,1-0
+36,Fri,2019-05-10,AS Saint-Étienne,Montpellier,0-1,0-0
+36,Sat,2019-05-11,Angers,Paris Saint Germain,1-2,0-1
 36,Sat,2019-05-11,Amiens SC,Toulouse FC,0-0,
 36,Sat,2019-05-11,SM Caen,Stade de Reims,3-2,3-1
-36,Sat,2019-05-11,Dijon FCO,RC Strasbourg,2-1,1-0
-36,Sat,2019-05-11,OGC Nice,FC Nantes,1-1,0-1
-36,Sat,2019-05-11,Nîmes Olympique,AS Monaco,1-0,1-0
-36,Sun,2019-05-12,Stade Rennais,EA Guingamp,1-1,1-0
-36,Sun,2019-05-12,Lille OSC,Girondins Bordeaux,1-0,1-0
-36,Sun,2019-05-12,Olympique Marseille,Olympique Lyonnais,0-3,0-1
+36,Sat,2019-05-11,Dijon FCO,Estrasburgo,2-1,1-0
+36,Sat,2019-05-11,Nice,Nantes,1-1,0-1
+36,Sat,2019-05-11,Nîmes Olympique,Monaco,1-0,1-0
+36,Sun,2019-05-12,Rennes,EA Guingamp,1-1,1-0
+36,Sun,2019-05-12,Lille,Girondins Bordeaux,1-0,1-0
+36,Sun,2019-05-12,Olympique de Marseille,Lyon,0-3,0-1
 37,Sat,2019-05-18,Girondins Bordeaux,Stade de Reims,0-1,0-1
 37,Sat,2019-05-18,EA Guingamp,Nîmes Olympique,2-2,2-0
-37,Sat,2019-05-18,Lille OSC,Angers SCO,5-0,2-0
-37,Sat,2019-05-18,Olympique Lyonnais,SM Caen,4-0,0-0
-37,Sat,2019-05-18,AS Monaco,Amiens SC,2-0,1-0
-37,Sat,2019-05-18,Montpellier HSC,FC Nantes,1-1,0-1
-37,Sat,2019-05-18,Paris Saint-Germain,Dijon FCO,4-0,3-0
-37,Sat,2019-05-18,AS Saint-Étienne,OGC Nice,3-0,1-0
-37,Sat,2019-05-18,RC Strasbourg,Stade Rennais,0-2,0-1
-37,Sat,2019-05-18,Toulouse FC,Olympique Marseille,2-5,1-1
+37,Sat,2019-05-18,Lille,Angers,5-0,2-0
+37,Sat,2019-05-18,Lyon,SM Caen,4-0,0-0
+37,Sat,2019-05-18,Monaco,Amiens SC,2-0,1-0
+37,Sat,2019-05-18,Montpellier,Nantes,1-1,0-1
+37,Sat,2019-05-18,Paris Saint Germain,Dijon FCO,4-0,3-0
+37,Sat,2019-05-18,AS Saint-Étienne,Nice,3-0,1-0
+37,Sat,2019-05-18,Estrasburgo,Rennes,0-2,0-1
+37,Sat,2019-05-18,Toulouse FC,Olympique de Marseille,2-5,1-1
 38,Fri,2019-05-24,Amiens SC,EA Guingamp,2-1,1-0
-38,Fri,2019-05-24,Angers SCO,AS Saint-Étienne,1-1,0-0
+38,Fri,2019-05-24,Angers,AS Saint-Étienne,1-1,0-0
 38,Fri,2019-05-24,SM Caen,Girondins Bordeaux,0-1,0-1
 38,Fri,2019-05-24,Dijon FCO,Toulouse FC,2-1,0-1
-38,Fri,2019-05-24,Olympique Marseille,Montpellier HSC,1-0,0-0
-38,Fri,2019-05-24,FC Nantes,RC Strasbourg,0-1,0-0
-38,Fri,2019-05-24,OGC Nice,AS Monaco,2-0,1-0
-38,Fri,2019-05-24,Nîmes Olympique,Olympique Lyonnais,2-3,2-1
-38,Fri,2019-05-24,Stade de Reims,Paris Saint-Germain,3-1,1-0
-38,Fri,2019-05-24,Stade Rennais,Lille OSC,3-1,1-1
+38,Fri,2019-05-24,Olympique de Marseille,Montpellier,1-0,0-0
+38,Fri,2019-05-24,Nantes,Estrasburgo,0-1,0-0
+38,Fri,2019-05-24,Nice,Monaco,2-0,1-0
+38,Fri,2019-05-24,Nîmes Olympique,Lyon,2-3,2-1
+38,Fri,2019-05-24,Stade de Reims,Paris Saint Germain,3-1,1-0
+38,Fri,2019-05-24,Rennes,Lille,3-1,1-1

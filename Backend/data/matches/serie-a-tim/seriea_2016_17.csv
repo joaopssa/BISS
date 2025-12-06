@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2016-08-20,AS Roma,Udinese Calcio,4-0,0-0
-1,Sat,2016-08-20,Juventus,ACF Fiorentina,2-1,1-0
-1,Sun,2016-08-21,AC Milan,Torino FC,3-2,1-0
-1,Sun,2016-08-21,Atalanta,Lazio Roma,3-4,0-3
+1,Sat,2016-08-20,Roma,Udinese,4-0,0-0
+1,Sat,2016-08-20,Juventus FC,Fiorentina,2-1,1-0
+1,Sun,2016-08-21,AC Milan,Torino,3-2,1-0
+1,Sun,2016-08-21,Atalanta,Lazio,3-4,0-3
 1,Sun,2016-08-21,Bologna FC,FC Crotone,1-0,0-0
-1,Sun,2016-08-21,Chievo Verona,Inter,2-0,0-0
+1,Sun,2016-08-21,Chievo Verona,Inter de Milão,2-0,0-0
 1,Sun,2016-08-21,Empoli FC,Sampdoria,0-1,0-1
-1,Sun,2016-08-21,Genoa CFC,Cagliari Calcio,3-1,0-0
-1,Sun,2016-08-21,US Palermo,Sassuolo Calcio,0-1,0-1
-1,Sun,2016-08-21,Delfino Pescara,SSC Napoli,2-2,2-0
-2,Sat,2016-08-27,Lazio Roma,Juventus,0-1,0-0
-2,Sat,2016-08-27,SSC Napoli,AC Milan,4-2,2-0
-2,Sun,2016-08-28,Inter,US Palermo,1-1,0-0
-2,Sun,2016-08-28,Cagliari Calcio,AS Roma,2-2,0-1
+1,Sun,2016-08-21,Genoa CFC,Cagliari,3-1,0-0
+1,Sun,2016-08-21,US Palermo,Sassuolo,0-1,0-1
+1,Sun,2016-08-21,Delfino Pescara,Napoli,2-2,2-0
+2,Sat,2016-08-27,Lazio,Juventus FC,0-1,0-0
+2,Sat,2016-08-27,Napoli,AC Milan,4-2,2-0
+2,Sun,2016-08-28,Inter de Milão,US Palermo,1-1,0-0
+2,Sun,2016-08-28,Cagliari,Roma,2-2,0-1
 2,Sun,2016-08-28,FC Crotone,Genoa CFC,1-3,1-0
-2,Sun,2016-08-28,ACF Fiorentina,Chievo Verona,1-0,1-0
+2,Sun,2016-08-28,Fiorentina,Chievo Verona,1-0,1-0
 2,Sun,2016-08-28,Sampdoria,Atalanta,2-1,2-1
-2,Sun,2016-08-28,Sassuolo Calcio,Delfino Pescara,0-3,
-2,Sun,2016-08-28,Torino FC,Bologna FC,5-1,2-1
-2,Sun,2016-08-28,Udinese Calcio,Empoli FC,2-0,1-0
-3,Sat,2016-09-10,Juventus,Sassuolo Calcio,3-1,3-1
-3,Sat,2016-09-10,US Palermo,SSC Napoli,0-3,0-0
-3,Sun,2016-09-11,Bologna FC,Cagliari Calcio,2-1,1-0
-3,Sun,2016-09-11,Atalanta,Torino FC,2-1,0-0
-3,Sun,2016-09-11,Chievo Verona,Lazio Roma,1-1,0-0
-3,Sun,2016-09-11,AC Milan,Udinese Calcio,0-1,0-0
-3,Sun,2016-09-11,AS Roma,Sampdoria,3-2,1-2
-3,Sun,2016-09-11,Delfino Pescara,Inter,1-2,0-0
+2,Sun,2016-08-28,Sassuolo,Delfino Pescara,0-3,
+2,Sun,2016-08-28,Torino,Bologna FC,5-1,2-1
+2,Sun,2016-08-28,Udinese,Empoli FC,2-0,1-0
+3,Sat,2016-09-10,Juventus FC,Sassuolo,3-1,3-1
+3,Sat,2016-09-10,US Palermo,Napoli,0-3,0-0
+3,Sun,2016-09-11,Bologna FC,Cagliari,2-1,1-0
+3,Sun,2016-09-11,Atalanta,Torino,2-1,0-0
+3,Sun,2016-09-11,Chievo Verona,Lazio,1-1,0-0
+3,Sun,2016-09-11,AC Milan,Udinese,0-1,0-0
+3,Sun,2016-09-11,Roma,Sampdoria,3-2,1-2
+3,Sun,2016-09-11,Delfino Pescara,Inter de Milão,1-2,0-0
 3,Mon,2016-09-12,Empoli FC,FC Crotone,2-1,1-1
-3,Thu,2016-12-15,Genoa CFC,ACF Fiorentina,1-0,1-0
+3,Thu,2016-12-15,Genoa CFC,Fiorentina,1-0,1-0
 4,Fri,2016-09-16,Sampdoria,AC Milan,0-1,0-0
-4,Sat,2016-09-17,Lazio Roma,Delfino Pescara,3-0,0-0
-4,Sat,2016-09-17,SSC Napoli,Bologna FC,3-1,1-0
-4,Sun,2016-09-18,Udinese Calcio,Chievo Verona,1-2,1-0
-4,Sun,2016-09-18,Cagliari Calcio,Atalanta,3-0,1-0
+4,Sat,2016-09-17,Lazio,Delfino Pescara,3-0,0-0
+4,Sat,2016-09-17,Napoli,Bologna FC,3-1,1-0
+4,Sun,2016-09-18,Udinese,Chievo Verona,1-2,1-0
+4,Sun,2016-09-18,Cagliari,Atalanta,3-0,1-0
 4,Sun,2016-09-18,FC Crotone,US Palermo,1-1,1-0
-4,Sun,2016-09-18,Sassuolo Calcio,Genoa CFC,2-0,0-0
-4,Sun,2016-09-18,Torino FC,Empoli FC,0-0,
-4,Sun,2016-09-18,Inter,Juventus,2-1,0-0
-4,Sun,2016-09-18,ACF Fiorentina,AS Roma,1-0,0-0
-5,Tue,2016-09-20,AC Milan,Lazio Roma,2-0,1-0
+4,Sun,2016-09-18,Sassuolo,Genoa CFC,2-0,0-0
+4,Sun,2016-09-18,Torino,Empoli FC,0-0,
+4,Sun,2016-09-18,Inter de Milão,Juventus FC,2-1,0-0
+4,Sun,2016-09-18,Fiorentina,Roma,1-0,0-0
+5,Tue,2016-09-20,AC Milan,Lazio,2-0,1-0
 5,Wed,2016-09-21,Bologna FC,Sampdoria,2-0,1-0
 5,Wed,2016-09-21,Atalanta,US Palermo,0-1,0-0
-5,Wed,2016-09-21,Chievo Verona,Sassuolo Calcio,2-1,2-1
-5,Wed,2016-09-21,Empoli FC,Inter,0-2,0-2
-5,Wed,2016-09-21,Genoa CFC,SSC Napoli,0-0,
-5,Wed,2016-09-21,Juventus,Cagliari Calcio,4-0,3-0
-5,Wed,2016-09-21,Delfino Pescara,Torino FC,0-0,
-5,Wed,2016-09-21,AS Roma,FC Crotone,4-0,2-0
-5,Wed,2016-09-21,Udinese Calcio,ACF Fiorentina,2-2,2-1
-6,Sat,2016-09-24,US Palermo,Juventus,0-1,0-0
-6,Sat,2016-09-24,SSC Napoli,Chievo Verona,2-0,2-0
-6,Sun,2016-09-25,Torino FC,AS Roma,3-1,1-0
+5,Wed,2016-09-21,Chievo Verona,Sassuolo,2-1,2-1
+5,Wed,2016-09-21,Empoli FC,Inter de Milão,0-2,0-2
+5,Wed,2016-09-21,Genoa CFC,Napoli,0-0,
+5,Wed,2016-09-21,Juventus FC,Cagliari,4-0,3-0
+5,Wed,2016-09-21,Delfino Pescara,Torino,0-0,
+5,Wed,2016-09-21,Roma,FC Crotone,4-0,2-0
+5,Wed,2016-09-21,Udinese,Fiorentina,2-2,2-1
+6,Sat,2016-09-24,US Palermo,Juventus FC,0-1,0-0
+6,Sat,2016-09-24,Napoli,Chievo Verona,2-0,2-0
+6,Sun,2016-09-25,Torino,Roma,3-1,1-0
 6,Sun,2016-09-25,Genoa CFC,Delfino Pescara,1-1,0-0
-6,Sun,2016-09-25,Inter,Bologna FC,1-1,1-1
-6,Sun,2016-09-25,Lazio Roma,Empoli FC,2-0,1-0
-6,Sun,2016-09-25,Sassuolo Calcio,Udinese Calcio,1-0,1-0
-6,Sun,2016-09-25,ACF Fiorentina,AC Milan,0-0,
+6,Sun,2016-09-25,Inter de Milão,Bologna FC,1-1,1-1
+6,Sun,2016-09-25,Lazio,Empoli FC,2-0,1-0
+6,Sun,2016-09-25,Sassuolo,Udinese,1-0,1-0
+6,Sun,2016-09-25,Fiorentina,AC Milan,0-0,
 6,Mon,2016-09-26,FC Crotone,Atalanta,1-3,0-3
-6,Mon,2016-09-26,Cagliari Calcio,Sampdoria,2-1,1-0
+6,Mon,2016-09-26,Cagliari,Sampdoria,2-1,1-0
 7,Sat,2016-10-01,Delfino Pescara,Chievo Verona,0-2,0-0
-7,Sat,2016-10-01,Udinese Calcio,Lazio Roma,0-3,0-1
-7,Sun,2016-10-02,Empoli FC,Juventus,0-3,0-0
-7,Sun,2016-10-02,Atalanta,SSC Napoli,1-0,1-0
+7,Sat,2016-10-01,Udinese,Lazio,0-3,0-1
+7,Sun,2016-10-02,Empoli FC,Juventus FC,0-3,0-0
+7,Sun,2016-10-02,Atalanta,Napoli,1-0,1-0
 7,Sun,2016-10-02,Bologna FC,Genoa CFC,0-1,0-0
-7,Sun,2016-10-02,Cagliari Calcio,FC Crotone,2-1,1-0
+7,Sun,2016-10-02,Cagliari,FC Crotone,2-1,1-0
 7,Sun,2016-10-02,Sampdoria,US Palermo,1-1,0-0
-7,Sun,2016-10-02,AC Milan,Sassuolo Calcio,4-3,1-1
-7,Sun,2016-10-02,Torino FC,ACF Fiorentina,2-1,1-0
-7,Sun,2016-10-02,AS Roma,Inter,2-1,1-0
-8,Sat,2016-10-15,SSC Napoli,AS Roma,1-3,0-1
+7,Sun,2016-10-02,AC Milan,Sassuolo,4-3,1-1
+7,Sun,2016-10-02,Torino,Fiorentina,2-1,1-0
+7,Sun,2016-10-02,Roma,Inter de Milão,2-1,1-0
+8,Sat,2016-10-15,Napoli,Roma,1-3,0-1
 8,Sat,2016-10-15,Delfino Pescara,Sampdoria,1-1,1-1
-8,Sat,2016-10-15,Juventus,Udinese Calcio,2-1,1-1
-8,Sun,2016-10-16,ACF Fiorentina,Atalanta,0-0,
+8,Sat,2016-10-15,Juventus FC,Udinese,2-1,1-1
+8,Sun,2016-10-16,Fiorentina,Atalanta,0-0,
 8,Sun,2016-10-16,Genoa CFC,Empoli FC,0-0,
-8,Sun,2016-10-16,Inter,Cagliari Calcio,1-2,0-0
-8,Sun,2016-10-16,Lazio Roma,Bologna FC,1-1,0-1
-8,Sun,2016-10-16,Sassuolo Calcio,FC Crotone,2-1,0-1
+8,Sun,2016-10-16,Inter de Milão,Cagliari,1-2,0-0
+8,Sun,2016-10-16,Lazio,Bologna FC,1-1,0-1
+8,Sun,2016-10-16,Sassuolo,FC Crotone,2-1,0-1
 8,Sun,2016-10-16,Chievo Verona,AC Milan,1-3,0-1
-8,Mon,2016-10-17,US Palermo,Torino FC,1-4,1-3
+8,Mon,2016-10-17,US Palermo,Torino,1-4,1-3
 9,Sat,2016-10-22,Sampdoria,Genoa CFC,2-1,1-1
-9,Sat,2016-10-22,AC Milan,Juventus,1-0,0-0
-9,Sun,2016-10-23,Udinese Calcio,Delfino Pescara,3-1,1-0
-9,Sun,2016-10-23,Atalanta,Inter,2-1,1-0
-9,Sun,2016-10-23,Cagliari Calcio,ACF Fiorentina,3-5,1-4
-9,Sun,2016-10-23,FC Crotone,SSC Napoli,1-2,0-2
+9,Sat,2016-10-22,AC Milan,Juventus FC,1-0,0-0
+9,Sun,2016-10-23,Udinese,Delfino Pescara,3-1,1-0
+9,Sun,2016-10-23,Atalanta,Inter de Milão,2-1,1-0
+9,Sun,2016-10-23,Cagliari,Fiorentina,3-5,1-4
+9,Sun,2016-10-23,FC Crotone,Napoli,1-2,0-2
 9,Sun,2016-10-23,Empoli FC,Chievo Verona,0-0,
-9,Sun,2016-10-23,Torino FC,Lazio Roma,2-2,1-0
-9,Sun,2016-10-23,Bologna FC,Sassuolo Calcio,1-1,1-0
-9,Sun,2016-10-23,AS Roma,US Palermo,4-1,1-0
+9,Sun,2016-10-23,Torino,Lazio,2-2,1-0
+9,Sun,2016-10-23,Bologna FC,Sassuolo,1-1,1-0
+9,Sun,2016-10-23,Roma,US Palermo,4-1,1-0
 10,Tue,2016-10-25,Genoa CFC,AC Milan,3-0,1-0
 10,Wed,2016-10-26,Chievo Verona,Bologna FC,1-1,0-0
-10,Wed,2016-10-26,ACF Fiorentina,FC Crotone,1-1,0-1
-10,Wed,2016-10-26,Inter,Torino FC,2-1,1-0
-10,Wed,2016-10-26,Juventus,Sampdoria,4-1,2-0
-10,Wed,2016-10-26,Lazio Roma,Cagliari Calcio,4-1,3-0
-10,Wed,2016-10-26,SSC Napoli,Empoli FC,2-0,0-0
+10,Wed,2016-10-26,Fiorentina,FC Crotone,1-1,0-1
+10,Wed,2016-10-26,Inter de Milão,Torino,2-1,1-0
+10,Wed,2016-10-26,Juventus FC,Sampdoria,4-1,2-0
+10,Wed,2016-10-26,Lazio,Cagliari,4-1,3-0
+10,Wed,2016-10-26,Napoli,Empoli FC,2-0,0-0
 10,Wed,2016-10-26,Delfino Pescara,Atalanta,0-1,0-0
-10,Wed,2016-10-26,Sassuolo Calcio,AS Roma,1-3,1-0
-10,Thu,2016-10-27,US Palermo,Udinese Calcio,1-3,1-1
-11,Sat,2016-10-29,Bologna FC,ACF Fiorentina,0-1,0-1
-11,Sat,2016-10-29,Juventus,SSC Napoli,2-1,0-0
+10,Wed,2016-10-26,Sassuolo,Roma,1-3,1-0
+10,Thu,2016-10-27,US Palermo,Udinese,1-3,1-1
+11,Sat,2016-10-29,Bologna FC,Fiorentina,0-1,0-1
+11,Sat,2016-10-29,Juventus FC,Napoli,2-1,0-0
 11,Sun,2016-10-30,Atalanta,Genoa CFC,3-0,2-0
 11,Sun,2016-10-30,FC Crotone,Chievo Verona,2-0,1-0
-11,Sun,2016-10-30,Empoli FC,AS Roma,0-0,
-11,Sun,2016-10-30,Lazio Roma,Sassuolo Calcio,2-1,0-0
+11,Sun,2016-10-30,Empoli FC,Roma,0-0,
+11,Sun,2016-10-30,Lazio,Sassuolo,2-1,0-0
 11,Sun,2016-10-30,AC Milan,Delfino Pescara,1-0,0-0
-11,Sun,2016-10-30,Sampdoria,Inter,1-0,1-0
-11,Mon,2016-10-31,Udinese Calcio,Torino FC,2-2,0-1
-11,Mon,2016-10-31,Cagliari Calcio,US Palermo,2-1,0-0
-12,Sat,2016-11-05,Torino FC,Cagliari Calcio,5-1,3-1
-12,Sat,2016-11-05,SSC Napoli,Lazio Roma,1-1,0-0
+11,Sun,2016-10-30,Sampdoria,Inter de Milão,1-0,1-0
+11,Mon,2016-10-31,Udinese,Torino,2-2,0-1
+11,Mon,2016-10-31,Cagliari,US Palermo,2-1,0-0
+12,Sat,2016-11-05,Torino,Cagliari,5-1,3-1
+12,Sat,2016-11-05,Napoli,Lazio,1-1,0-0
 12,Sun,2016-11-06,Delfino Pescara,Empoli FC,0-4,0-3
-12,Sun,2016-11-06,Chievo Verona,Juventus,1-2,0-0
-12,Sun,2016-11-06,Genoa CFC,Udinese Calcio,1-1,1-1
+12,Sun,2016-11-06,Chievo Verona,Juventus FC,1-2,0-0
+12,Sun,2016-11-06,Genoa CFC,Udinese,1-1,1-1
 12,Sun,2016-11-06,US Palermo,AC Milan,1-2,0-1
-12,Sun,2016-11-06,Sassuolo Calcio,Atalanta,0-3,0-3
-12,Sun,2016-11-06,ACF Fiorentina,Sampdoria,1-1,1-0
-12,Sun,2016-11-06,Inter,FC Crotone,3-0,0-0
-12,Sun,2016-11-06,AS Roma,Bologna FC,3-0,1-0
-13,Sat,2016-11-19,Chievo Verona,Cagliari Calcio,1-0,0-0
-13,Sat,2016-11-19,Udinese Calcio,SSC Napoli,1-2,0-0
-13,Sat,2016-11-19,Juventus,Delfino Pescara,3-0,1-0
-13,Sun,2016-11-20,Sampdoria,Sassuolo Calcio,3-2,0-0
-13,Sun,2016-11-20,Atalanta,AS Roma,2-1,0-1
+12,Sun,2016-11-06,Sassuolo,Atalanta,0-3,0-3
+12,Sun,2016-11-06,Fiorentina,Sampdoria,1-1,1-0
+12,Sun,2016-11-06,Inter de Milão,FC Crotone,3-0,0-0
+12,Sun,2016-11-06,Roma,Bologna FC,3-0,1-0
+13,Sat,2016-11-19,Chievo Verona,Cagliari,1-0,0-0
+13,Sat,2016-11-19,Udinese,Napoli,1-2,0-0
+13,Sat,2016-11-19,Juventus FC,Delfino Pescara,3-0,1-0
+13,Sun,2016-11-20,Sampdoria,Sassuolo,3-2,0-0
+13,Sun,2016-11-20,Atalanta,Roma,2-1,0-1
 13,Sun,2016-11-20,Bologna FC,US Palermo,3-1,1-1
-13,Sun,2016-11-20,FC Crotone,Torino FC,0-2,0-0
-13,Sun,2016-11-20,Empoli FC,ACF Fiorentina,0-4,0-1
-13,Sun,2016-11-20,Lazio Roma,Genoa CFC,3-1,1-0
-13,Sun,2016-11-20,AC Milan,Inter,2-2,1-0
-14,Sat,2016-11-26,Torino FC,Chievo Verona,2-1,2-0
+13,Sun,2016-11-20,FC Crotone,Torino,0-2,0-0
+13,Sun,2016-11-20,Empoli FC,Fiorentina,0-4,0-1
+13,Sun,2016-11-20,Lazio,Genoa CFC,3-1,1-0
+13,Sun,2016-11-20,AC Milan,Inter de Milão,2-2,1-0
+14,Sat,2016-11-26,Torino,Chievo Verona,2-1,2-0
 14,Sat,2016-11-26,Empoli FC,AC Milan,1-4,1-1
-14,Sun,2016-11-27,US Palermo,Lazio Roma,0-1,0-1
+14,Sun,2016-11-27,US Palermo,Lazio,0-1,0-1
 14,Sun,2016-11-27,Bologna FC,Atalanta,0-2,0-1
-14,Sun,2016-11-27,Cagliari Calcio,Udinese Calcio,2-1,1-0
+14,Sun,2016-11-27,Cagliari,Udinese,2-1,1-0
 14,Sun,2016-11-27,FC Crotone,Sampdoria,1-1,1-0
-14,Sun,2016-11-27,Genoa CFC,Juventus,3-1,3-0
-14,Sun,2016-11-27,AS Roma,Delfino Pescara,3-2,2-0
-14,Mon,2016-11-28,SSC Napoli,Sassuolo Calcio,1-1,1-0
-14,Mon,2016-11-28,Inter,ACF Fiorentina,4-2,3-1
-15,Fri,2016-12-02,SSC Napoli,Inter,3-0,2-0
-15,Sat,2016-12-03,Juventus,Atalanta,3-1,2-0
+14,Sun,2016-11-27,Genoa CFC,Juventus FC,3-1,3-0
+14,Sun,2016-11-27,Roma,Delfino Pescara,3-2,2-0
+14,Mon,2016-11-28,Napoli,Sassuolo,1-1,1-0
+14,Mon,2016-11-28,Inter de Milão,Fiorentina,4-2,3-1
+15,Fri,2016-12-02,Napoli,Inter de Milão,3-0,2-0
+15,Sat,2016-12-03,Juventus FC,Atalanta,3-1,2-0
 15,Sun,2016-12-04,AC Milan,FC Crotone,2-1,1-1
-15,Sun,2016-12-04,Lazio Roma,AS Roma,0-2,0-0
-15,Sun,2016-12-04,Delfino Pescara,Cagliari Calcio,1-1,0-1
-15,Sun,2016-12-04,Sampdoria,Torino FC,2-0,0-0
-15,Sun,2016-12-04,Sassuolo Calcio,Empoli FC,3-0,2-0
-15,Sun,2016-12-04,ACF Fiorentina,US Palermo,2-1,1-0
+15,Sun,2016-12-04,Lazio,Roma,0-2,0-0
+15,Sun,2016-12-04,Delfino Pescara,Cagliari,1-1,0-1
+15,Sun,2016-12-04,Sampdoria,Torino,2-0,0-0
+15,Sun,2016-12-04,Sassuolo,Empoli FC,3-0,2-0
+15,Sun,2016-12-04,Fiorentina,US Palermo,2-1,1-0
 15,Mon,2016-12-05,Chievo Verona,Genoa CFC,0-0,
-15,Mon,2016-12-05,Udinese Calcio,Bologna FC,1-0,0-0
+15,Mon,2016-12-05,Udinese,Bologna FC,1-0,0-0
 16,Sat,2016-12-10,FC Crotone,Delfino Pescara,2-1,1-0
-16,Sat,2016-12-10,Sampdoria,Lazio Roma,1-2,0-2
-16,Sun,2016-12-11,Cagliari Calcio,SSC Napoli,0-5,0-2
-16,Sun,2016-12-11,Atalanta,Udinese Calcio,1-3,0-1
+16,Sat,2016-12-10,Sampdoria,Lazio,1-2,0-2
+16,Sun,2016-12-11,Cagliari,Napoli,0-5,0-2
+16,Sun,2016-12-11,Atalanta,Udinese,1-3,0-1
 16,Sun,2016-12-11,Bologna FC,Empoli FC,0-0,
 16,Sun,2016-12-11,US Palermo,Chievo Verona,0-2,0-1
-16,Sun,2016-12-11,Torino FC,Juventus,1-3,1-1
-16,Sun,2016-12-11,Inter,Genoa CFC,2-0,1-0
-16,Mon,2016-12-12,ACF Fiorentina,Sassuolo Calcio,2-1,2-0
-16,Mon,2016-12-12,AS Roma,AC Milan,1-0,0-0
-17,Sat,2016-12-17,Empoli FC,Cagliari Calcio,2-0,1-0
+16,Sun,2016-12-11,Torino,Juventus FC,1-3,1-1
+16,Sun,2016-12-11,Inter de Milão,Genoa CFC,2-0,1-0
+16,Mon,2016-12-12,Fiorentina,Sassuolo,2-1,2-0
+16,Mon,2016-12-12,Roma,AC Milan,1-0,0-0
+17,Sat,2016-12-17,Empoli FC,Cagliari,2-0,1-0
 17,Sat,2016-12-17,AC Milan,Atalanta,0-0,
-17,Sat,2016-12-17,Juventus,AS Roma,1-0,1-0
-17,Sun,2016-12-18,Sassuolo Calcio,Inter,0-1,0-0
+17,Sat,2016-12-17,Juventus FC,Roma,1-0,1-0
+17,Sun,2016-12-18,Sassuolo,Inter de Milão,0-1,0-0
 17,Sun,2016-12-18,Chievo Verona,Sampdoria,2-1,2-0
-17,Sun,2016-12-18,SSC Napoli,Torino FC,5-3,3-0
+17,Sun,2016-12-18,Napoli,Torino,5-3,3-0
 17,Sun,2016-12-18,Delfino Pescara,Bologna FC,0-3,0-2
-17,Sun,2016-12-18,Udinese Calcio,FC Crotone,2-0,1-0
+17,Sun,2016-12-18,Udinese,FC Crotone,2-0,1-0
 17,Sun,2016-12-18,Genoa CFC,US Palermo,3-4,1-1
-17,Sun,2016-12-18,Lazio Roma,ACF Fiorentina,3-1,2-0
+17,Sun,2016-12-18,Lazio,Fiorentina,3-1,2-0
 18,Tue,2016-12-20,Atalanta,Empoli FC,2-1,0-0
-18,Wed,2016-12-21,Inter,Lazio Roma,3-0,0-0
-18,Thu,2016-12-22,Cagliari Calcio,Sassuolo Calcio,4-3,1-2
-18,Thu,2016-12-22,ACF Fiorentina,SSC Napoli,3-3,0-1
+18,Wed,2016-12-21,Inter de Milão,Lazio,3-0,0-0
+18,Thu,2016-12-22,Cagliari,Sassuolo,4-3,1-2
+18,Thu,2016-12-22,Fiorentina,Napoli,3-3,0-1
 18,Thu,2016-12-22,US Palermo,Delfino Pescara,1-1,1-0
-18,Thu,2016-12-22,AS Roma,Chievo Verona,3-1,1-1
-18,Thu,2016-12-22,Sampdoria,Udinese Calcio,0-0,
-18,Thu,2016-12-22,Torino FC,Genoa CFC,1-0,0-0
-18,Wed,2017-02-08,FC Crotone,Juventus,0-2,0-0
+18,Thu,2016-12-22,Roma,Chievo Verona,3-1,1-1
+18,Thu,2016-12-22,Sampdoria,Udinese,0-0,
+18,Thu,2016-12-22,Torino,Genoa CFC,1-0,0-0
+18,Wed,2017-02-08,FC Crotone,Juventus FC,0-2,0-0
 18,Wed,2017-02-08,Bologna FC,AC Milan,0-1,0-0
 19,Sat,2017-01-07,Empoli FC,US Palermo,1-0,0-0
-19,Sat,2017-01-07,SSC Napoli,Sampdoria,2-1,0-1
-19,Sun,2017-01-08,Udinese Calcio,Inter,1-2,1-1
+19,Sat,2017-01-07,Napoli,Sampdoria,2-1,0-1
+19,Sun,2017-01-08,Udinese,Inter de Milão,1-2,1-1
 19,Sun,2017-01-08,Chievo Verona,Atalanta,1-4,0-3
-19,Sun,2017-01-08,Genoa CFC,AS Roma,0-1,0-1
-19,Sun,2017-01-08,Lazio Roma,FC Crotone,1-0,0-0
-19,Sun,2017-01-08,Sassuolo Calcio,Torino FC,0-0,
-19,Sun,2017-01-08,AC Milan,Cagliari Calcio,1-0,0-0
-19,Sun,2017-01-08,Juventus,Bologna FC,3-0,2-0
-19,Wed,2017-02-01,Delfino Pescara,ACF Fiorentina,1-2,1-0
+19,Sun,2017-01-08,Genoa CFC,Roma,0-1,0-1
+19,Sun,2017-01-08,Lazio,FC Crotone,1-0,0-0
+19,Sun,2017-01-08,Sassuolo,Torino,0-0,
+19,Sun,2017-01-08,AC Milan,Cagliari,1-0,0-0
+19,Sun,2017-01-08,Juventus FC,Bologna FC,3-0,2-0
+19,Wed,2017-02-01,Delfino Pescara,Fiorentina,1-2,1-0
 20,Sat,2017-01-14,FC Crotone,Bologna FC,0-1,0-0
-20,Sat,2017-01-14,Inter,Chievo Verona,3-1,0-1
-20,Sun,2017-01-15,Cagliari Calcio,Genoa CFC,4-1,2-1
-20,Sun,2017-01-15,Lazio Roma,Atalanta,2-1,1-1
+20,Sat,2017-01-14,Inter de Milão,Chievo Verona,3-1,0-1
+20,Sun,2017-01-15,Cagliari,Genoa CFC,4-1,2-1
+20,Sun,2017-01-15,Lazio,Atalanta,2-1,1-1
 20,Sun,2017-01-15,Sampdoria,Empoli FC,0-0,
-20,Sun,2017-01-15,Sassuolo Calcio,US Palermo,4-1,2-1
-20,Sun,2017-01-15,SSC Napoli,Delfino Pescara,3-1,0-0
-20,Sun,2017-01-15,Udinese Calcio,AS Roma,0-1,0-1
-20,Sun,2017-01-15,ACF Fiorentina,Juventus,2-1,1-0
-20,Mon,2017-01-16,Torino FC,AC Milan,2-2,2-0
-21,Sat,2017-01-21,Chievo Verona,ACF Fiorentina,0-3,0-1
-21,Sat,2017-01-21,AC Milan,SSC Napoli,1-2,1-2
-21,Sun,2017-01-22,Juventus,Lazio Roma,2-0,2-0
+20,Sun,2017-01-15,Sassuolo,US Palermo,4-1,2-1
+20,Sun,2017-01-15,Napoli,Delfino Pescara,3-1,0-0
+20,Sun,2017-01-15,Udinese,Roma,0-1,0-1
+20,Sun,2017-01-15,Fiorentina,Juventus FC,2-1,1-0
+20,Mon,2017-01-16,Torino,AC Milan,2-2,2-0
+21,Sat,2017-01-21,Chievo Verona,Fiorentina,0-3,0-1
+21,Sat,2017-01-21,AC Milan,Napoli,1-2,1-2
+21,Sun,2017-01-22,Juventus FC,Lazio,2-0,2-0
 21,Sun,2017-01-22,Genoa CFC,FC Crotone,2-2,1-0
-21,Sun,2017-01-22,US Palermo,Inter,0-1,0-0
-21,Sun,2017-01-22,Delfino Pescara,Sassuolo Calcio,1-3,0-1
-21,Sun,2017-01-22,Bologna FC,Torino FC,2-0,1-0
-21,Sun,2017-01-22,Empoli FC,Udinese Calcio,1-0,0-0
+21,Sun,2017-01-22,US Palermo,Inter de Milão,0-1,0-0
+21,Sun,2017-01-22,Delfino Pescara,Sassuolo,1-3,0-1
+21,Sun,2017-01-22,Bologna FC,Torino,2-0,1-0
+21,Sun,2017-01-22,Empoli FC,Udinese,1-0,0-0
 21,Sun,2017-01-22,Atalanta,Sampdoria,1-0,0-0
-21,Sun,2017-01-22,AS Roma,Cagliari Calcio,1-0,0-0
-22,Sat,2017-01-28,Lazio Roma,Chievo Verona,0-1,0-0
-22,Sat,2017-01-28,Inter,Delfino Pescara,3-0,2-0
-22,Sun,2017-01-29,Torino FC,Atalanta,1-1,1-0
-22,Sun,2017-01-29,Cagliari Calcio,Bologna FC,1-1,0-0
+21,Sun,2017-01-22,Roma,Cagliari,1-0,0-0
+22,Sat,2017-01-28,Lazio,Chievo Verona,0-1,0-0
+22,Sat,2017-01-28,Inter de Milão,Delfino Pescara,3-0,2-0
+22,Sun,2017-01-29,Torino,Atalanta,1-1,1-0
+22,Sun,2017-01-29,Cagliari,Bologna FC,1-1,0-0
 22,Sun,2017-01-29,FC Crotone,Empoli FC,4-1,1-1
-22,Sun,2017-01-29,ACF Fiorentina,Genoa CFC,3-3,1-0
-22,Sun,2017-01-29,Sassuolo Calcio,Juventus,0-2,0-2
-22,Sun,2017-01-29,Udinese Calcio,AC Milan,2-1,1-1
-22,Sun,2017-01-29,Sampdoria,AS Roma,3-2,1-1
-22,Sun,2017-01-29,SSC Napoli,US Palermo,1-1,0-1
-23,Sat,2017-02-04,Bologna FC,SSC Napoli,1-7,1-4
+22,Sun,2017-01-29,Fiorentina,Genoa CFC,3-3,1-0
+22,Sun,2017-01-29,Sassuolo,Juventus FC,0-2,0-2
+22,Sun,2017-01-29,Udinese,AC Milan,2-1,1-1
+22,Sun,2017-01-29,Sampdoria,Roma,3-2,1-1
+22,Sun,2017-01-29,Napoli,US Palermo,1-1,0-1
+23,Sat,2017-02-04,Bologna FC,Napoli,1-7,1-4
 23,Sun,2017-02-05,AC Milan,Sampdoria,0-1,0-0
-23,Sun,2017-02-05,Atalanta,Cagliari Calcio,2-0,2-0
-23,Sun,2017-02-05,Delfino Pescara,Lazio Roma,2-6,2-2
-23,Sun,2017-02-05,Genoa CFC,Sassuolo Calcio,0-1,0-1
-23,Sun,2017-02-05,Empoli FC,Torino FC,1-1,1-1
-23,Sun,2017-02-05,Chievo Verona,Udinese Calcio,0-0,
+23,Sun,2017-02-05,Atalanta,Cagliari,2-0,2-0
+23,Sun,2017-02-05,Delfino Pescara,Lazio,2-6,2-2
+23,Sun,2017-02-05,Genoa CFC,Sassuolo,0-1,0-1
+23,Sun,2017-02-05,Empoli FC,Torino,1-1,1-1
+23,Sun,2017-02-05,Chievo Verona,Udinese,0-0,
 23,Sun,2017-02-05,US Palermo,FC Crotone,1-0,1-0
-23,Sun,2017-02-05,Juventus,Inter,1-0,1-0
-23,Tue,2017-02-07,AS Roma,ACF Fiorentina,4-0,1-0
-24,Fri,2017-02-10,SSC Napoli,Genoa CFC,2-0,0-0
-24,Sat,2017-02-11,ACF Fiorentina,Udinese Calcio,3-0,1-0
-24,Sun,2017-02-12,FC Crotone,AS Roma,0-2,0-1
+23,Sun,2017-02-05,Juventus FC,Inter de Milão,1-0,1-0
+23,Tue,2017-02-07,Roma,Fiorentina,4-0,1-0
+24,Fri,2017-02-10,Napoli,Genoa CFC,2-0,0-0
+24,Sat,2017-02-11,Fiorentina,Udinese,3-0,1-0
+24,Sun,2017-02-12,FC Crotone,Roma,0-2,0-1
 24,Sun,2017-02-12,US Palermo,Atalanta,1-3,1-2
-24,Sun,2017-02-12,Sassuolo Calcio,Chievo Verona,1-3,1-1
-24,Sun,2017-02-12,Inter,Empoli FC,2-0,1-0
-24,Sun,2017-02-12,Torino FC,Delfino Pescara,5-3,3-0
+24,Sun,2017-02-12,Sassuolo,Chievo Verona,1-3,1-1
+24,Sun,2017-02-12,Inter de Milão,Empoli FC,2-0,1-0
+24,Sun,2017-02-12,Torino,Delfino Pescara,5-3,3-0
 24,Sun,2017-02-12,Sampdoria,Bologna FC,3-1,0-1
-24,Sun,2017-02-12,Cagliari Calcio,Juventus,0-2,0-1
-24,Mon,2017-02-13,Lazio Roma,AC Milan,1-1,1-0
-25,Fri,2017-02-17,Juventus,US Palermo,4-1,2-0
+24,Sun,2017-02-12,Cagliari,Juventus FC,0-2,0-1
+24,Mon,2017-02-13,Lazio,AC Milan,1-1,1-0
+25,Fri,2017-02-17,Juventus FC,US Palermo,4-1,2-0
 25,Sat,2017-02-18,Atalanta,FC Crotone,1-0,0-0
-25,Sat,2017-02-18,Empoli FC,Lazio Roma,1-2,0-0
-25,Sun,2017-02-19,Bologna FC,Inter,0-1,0-0
-25,Sun,2017-02-19,Sampdoria,Cagliari Calcio,1-1,1-1
+25,Sat,2017-02-18,Empoli FC,Lazio,1-2,0-0
+25,Sun,2017-02-19,Bologna FC,Inter de Milão,0-1,0-0
+25,Sun,2017-02-19,Sampdoria,Cagliari,1-1,1-1
 25,Sun,2017-02-19,Delfino Pescara,Genoa CFC,5-0,3-0
-25,Sun,2017-02-19,Chievo Verona,SSC Napoli,1-3,0-2
-25,Sun,2017-02-19,Udinese Calcio,Sassuolo Calcio,1-2,1-0
-25,Sun,2017-02-19,AS Roma,Torino FC,4-1,2-0
-25,Sun,2017-02-19,AC Milan,ACF Fiorentina,2-1,2-1
-26,Sat,2017-02-25,SSC Napoli,Atalanta,0-2,0-1
-26,Sat,2017-02-25,Juventus,Empoli FC,2-0,0-0
+25,Sun,2017-02-19,Chievo Verona,Napoli,1-3,0-2
+25,Sun,2017-02-19,Udinese,Sassuolo,1-2,1-0
+25,Sun,2017-02-19,Roma,Torino,4-1,2-0
+25,Sun,2017-02-19,AC Milan,Fiorentina,2-1,2-1
+26,Sat,2017-02-25,Napoli,Atalanta,0-2,0-1
+26,Sat,2017-02-25,Juventus FC,Empoli FC,2-0,0-0
 26,Sun,2017-02-26,US Palermo,Sampdoria,1-1,1-0
 26,Sun,2017-02-26,Genoa CFC,Bologna FC,1-1,0-0
-26,Sun,2017-02-26,FC Crotone,Cagliari Calcio,1-2,1-1
-26,Sun,2017-02-26,Sassuolo Calcio,AC Milan,0-1,0-1
+26,Sun,2017-02-26,FC Crotone,Cagliari,1-2,1-1
+26,Sun,2017-02-26,Sassuolo,AC Milan,0-1,0-1
 26,Sun,2017-02-26,Chievo Verona,Delfino Pescara,2-0,1-0
-26,Sun,2017-02-26,Lazio Roma,Udinese Calcio,1-0,0-0
-26,Sun,2017-02-26,Inter,AS Roma,1-3,0-1
-26,Mon,2017-02-27,ACF Fiorentina,Torino FC,2-2,2-0
-27,Sat,2017-03-04,AS Roma,SSC Napoli,1-2,0-1
+26,Sun,2017-02-26,Lazio,Udinese,1-0,0-0
+26,Sun,2017-02-26,Inter de Milão,Roma,1-3,0-1
+26,Mon,2017-02-27,Fiorentina,Torino,2-2,2-0
+27,Sat,2017-03-04,Roma,Napoli,1-2,0-1
 27,Sat,2017-03-04,Sampdoria,Delfino Pescara,3-1,1-1
 27,Sat,2017-03-04,AC Milan,Chievo Verona,3-1,1-1
-27,Sun,2017-03-05,Atalanta,ACF Fiorentina,0-0,
+27,Sun,2017-03-05,Atalanta,Fiorentina,0-0,
 27,Sun,2017-03-05,Empoli FC,Genoa CFC,0-2,0-0
-27,Sun,2017-03-05,Cagliari Calcio,Inter,1-5,1-2
-27,Sun,2017-03-05,Udinese Calcio,Juventus,1-1,1-0
-27,Sun,2017-03-05,Torino FC,US Palermo,3-1,0-1
-27,Sun,2017-03-05,FC Crotone,Sassuolo Calcio,0-0,
-27,Sun,2017-03-05,Bologna FC,Lazio Roma,0-2,0-1
-28,Fri,2017-03-10,Juventus,AC Milan,2-1,1-1
+27,Sun,2017-03-05,Cagliari,Inter de Milão,1-5,1-2
+27,Sun,2017-03-05,Udinese,Juventus FC,1-1,1-0
+27,Sun,2017-03-05,Torino,US Palermo,3-1,0-1
+27,Sun,2017-03-05,FC Crotone,Sassuolo,0-0,
+27,Sun,2017-03-05,Bologna FC,Lazio,0-2,0-1
+28,Fri,2017-03-10,Juventus FC,AC Milan,2-1,1-1
 28,Sat,2017-03-11,Genoa CFC,Sampdoria,0-1,0-0
-28,Sun,2017-03-12,Sassuolo Calcio,Bologna FC,0-1,0-0
-28,Sun,2017-03-12,Inter,Atalanta,7-1,5-1
-28,Sun,2017-03-12,ACF Fiorentina,Cagliari Calcio,1-0,0-0
-28,Sun,2017-03-12,SSC Napoli,FC Crotone,3-0,1-0
+28,Sun,2017-03-12,Sassuolo,Bologna FC,0-1,0-0
+28,Sun,2017-03-12,Inter de Milão,Atalanta,7-1,5-1
+28,Sun,2017-03-12,Fiorentina,Cagliari,1-0,0-0
+28,Sun,2017-03-12,Napoli,FC Crotone,3-0,1-0
 28,Sun,2017-03-12,Chievo Verona,Empoli FC,4-0,2-0
-28,Sun,2017-03-12,Delfino Pescara,Udinese Calcio,1-3,0-1
-28,Sun,2017-03-12,US Palermo,AS Roma,0-3,0-1
-28,Mon,2017-03-13,Lazio Roma,Torino FC,3-1,0-0
-29,Sat,2017-03-18,Torino FC,Inter,2-2,1-1
+28,Sun,2017-03-12,Delfino Pescara,Udinese,1-3,0-1
+28,Sun,2017-03-12,US Palermo,Roma,0-3,0-1
+28,Mon,2017-03-13,Lazio,Torino,3-1,0-0
+29,Sat,2017-03-18,Torino,Inter de Milão,2-2,1-1
 29,Sat,2017-03-18,AC Milan,Genoa CFC,1-0,1-0
-29,Sun,2017-03-19,Empoli FC,SSC Napoli,2-3,0-3
+29,Sun,2017-03-19,Empoli FC,Napoli,2-3,0-3
 29,Sun,2017-03-19,Bologna FC,Chievo Verona,4-1,0-1
-29,Sun,2017-03-19,FC Crotone,ACF Fiorentina,0-1,0-0
-29,Sun,2017-03-19,Sampdoria,Juventus,0-1,0-1
-29,Sun,2017-03-19,Cagliari Calcio,Lazio Roma,0-0,
+29,Sun,2017-03-19,FC Crotone,Fiorentina,0-1,0-0
+29,Sun,2017-03-19,Sampdoria,Juventus FC,0-1,0-1
+29,Sun,2017-03-19,Cagliari,Lazio,0-0,
 29,Sun,2017-03-19,Atalanta,Delfino Pescara,3-0,1-0
-29,Sun,2017-03-19,Udinese Calcio,US Palermo,4-1,1-1
-29,Sun,2017-03-19,AS Roma,Sassuolo Calcio,3-1,2-1
-30,Sat,2017-04-01,Sassuolo Calcio,Lazio Roma,1-2,1-1
-30,Sat,2017-04-01,AS Roma,Empoli FC,2-0,1-0
-30,Sun,2017-04-02,Torino FC,Udinese Calcio,2-2,0-0
+29,Sun,2017-03-19,Udinese,US Palermo,4-1,1-1
+29,Sun,2017-03-19,Roma,Sassuolo,3-1,2-1
+30,Sat,2017-04-01,Sassuolo,Lazio,1-2,1-1
+30,Sat,2017-04-01,Roma,Empoli FC,2-0,1-0
+30,Sun,2017-04-02,Torino,Udinese,2-2,0-0
 30,Sun,2017-04-02,Genoa CFC,Atalanta,0-5,0-2
-30,Sun,2017-04-02,ACF Fiorentina,Bologna FC,1-0,0-0
-30,Sun,2017-04-02,US Palermo,Cagliari Calcio,1-3,1-0
+30,Sun,2017-04-02,Fiorentina,Bologna FC,1-0,0-0
+30,Sun,2017-04-02,US Palermo,Cagliari,1-3,1-0
 30,Sun,2017-04-02,Chievo Verona,FC Crotone,1-2,0-0
 30,Sun,2017-04-02,Delfino Pescara,AC Milan,1-1,1-1
-30,Sun,2017-04-02,SSC Napoli,Juventus,1-1,0-1
-30,Mon,2017-04-03,Inter,Sampdoria,1-2,1-0
+30,Sun,2017-04-02,Napoli,Juventus FC,1-1,0-1
+30,Mon,2017-04-03,Inter de Milão,Sampdoria,1-2,1-0
 31,Sat,2017-04-08,Empoli FC,Delfino Pescara,1-1,1-1
-31,Sat,2017-04-08,Atalanta,Sassuolo Calcio,1-1,0-1
-31,Sat,2017-04-08,Juventus,Chievo Verona,2-0,1-0
-31,Sun,2017-04-09,Sampdoria,ACF Fiorentina,2-2,1-0
-31,Sun,2017-04-09,Udinese Calcio,Genoa CFC,3-0,2-0
-31,Sun,2017-04-09,FC Crotone,Inter,2-1,2-0
+31,Sat,2017-04-08,Atalanta,Sassuolo,1-1,0-1
+31,Sat,2017-04-08,Juventus FC,Chievo Verona,2-0,1-0
+31,Sun,2017-04-09,Sampdoria,Fiorentina,2-2,1-0
+31,Sun,2017-04-09,Udinese,Genoa CFC,3-0,2-0
+31,Sun,2017-04-09,FC Crotone,Inter de Milão,2-1,2-0
 31,Sun,2017-04-09,AC Milan,US Palermo,4-0,3-0
-31,Sun,2017-04-09,Bologna FC,AS Roma,0-3,0-2
-31,Sun,2017-04-09,Cagliari Calcio,Torino FC,2-3,1-2
-31,Sun,2017-04-09,Lazio Roma,SSC Napoli,0-3,0-1
-32,Sat,2017-04-15,Inter,AC Milan,2-2,2-0
-32,Sat,2017-04-15,AS Roma,Atalanta,1-1,0-1
+31,Sun,2017-04-09,Bologna FC,Roma,0-3,0-2
+31,Sun,2017-04-09,Cagliari,Torino,2-3,1-2
+31,Sun,2017-04-09,Lazio,Napoli,0-3,0-1
+32,Sat,2017-04-15,Inter de Milão,AC Milan,2-2,2-0
+32,Sat,2017-04-15,Roma,Atalanta,1-1,0-1
 32,Sat,2017-04-15,US Palermo,Bologna FC,0-0,
-32,Sat,2017-04-15,Cagliari Calcio,Chievo Verona,4-0,3-0
-32,Sat,2017-04-15,Torino FC,FC Crotone,1-1,0-0
-32,Sat,2017-04-15,ACF Fiorentina,Empoli FC,1-2,0-1
-32,Sat,2017-04-15,Delfino Pescara,Juventus,0-2,0-2
-32,Sat,2017-04-15,Genoa CFC,Lazio Roma,2-2,1-1
-32,Sat,2017-04-15,Sassuolo Calcio,Sampdoria,2-1,0-1
-32,Sat,2017-04-15,SSC Napoli,Udinese Calcio,3-0,0-0
+32,Sat,2017-04-15,Cagliari,Chievo Verona,4-0,3-0
+32,Sat,2017-04-15,Torino,FC Crotone,1-1,0-0
+32,Sat,2017-04-15,Fiorentina,Empoli FC,1-2,0-1
+32,Sat,2017-04-15,Delfino Pescara,Juventus FC,0-2,0-2
+32,Sat,2017-04-15,Genoa CFC,Lazio,2-2,1-1
+32,Sat,2017-04-15,Sassuolo,Sampdoria,2-1,0-1
+32,Sat,2017-04-15,Napoli,Udinese,3-0,0-0
 33,Sat,2017-04-22,Atalanta,Bologna FC,3-2,2-1
-33,Sat,2017-04-22,ACF Fiorentina,Inter,5-4,1-2
-33,Sun,2017-04-23,Sassuolo Calcio,SSC Napoli,2-2,0-0
-33,Sun,2017-04-23,Udinese Calcio,Cagliari Calcio,2-1,0-0
+33,Sat,2017-04-22,Fiorentina,Inter de Milão,5-4,1-2
+33,Sun,2017-04-23,Sassuolo,Napoli,2-2,0-0
+33,Sun,2017-04-23,Udinese,Cagliari,2-1,0-0
 33,Sun,2017-04-23,Sampdoria,FC Crotone,1-2,1-0
 33,Sun,2017-04-23,AC Milan,Empoli FC,1-2,0-1
-33,Sun,2017-04-23,Lazio Roma,US Palermo,6-2,5-0
-33,Sun,2017-04-23,Chievo Verona,Torino FC,1-3,0-0
-33,Sun,2017-04-23,Juventus,Genoa CFC,4-0,3-0
-33,Mon,2017-04-24,Delfino Pescara,AS Roma,1-4,0-2
-34,Fri,2017-04-28,Atalanta,Juventus,2-2,1-0
-34,Sat,2017-04-29,Torino FC,Sampdoria,1-1,0-1
-34,Sun,2017-04-30,AS Roma,Lazio Roma,1-3,1-1
+33,Sun,2017-04-23,Lazio,US Palermo,6-2,5-0
+33,Sun,2017-04-23,Chievo Verona,Torino,1-3,0-0
+33,Sun,2017-04-23,Juventus FC,Genoa CFC,4-0,3-0
+33,Mon,2017-04-24,Delfino Pescara,Roma,1-4,0-2
+34,Fri,2017-04-28,Atalanta,Juventus FC,2-2,1-0
+34,Sat,2017-04-29,Torino,Sampdoria,1-1,0-1
+34,Sun,2017-04-30,Roma,Lazio,1-3,1-1
 34,Sun,2017-04-30,Genoa CFC,Chievo Verona,1-2,1-0
-34,Sun,2017-04-30,US Palermo,ACF Fiorentina,2-0,1-0
+34,Sun,2017-04-30,US Palermo,Fiorentina,2-0,1-0
 34,Sun,2017-04-30,FC Crotone,AC Milan,1-1,1-0
-34,Sun,2017-04-30,Cagliari Calcio,Delfino Pescara,1-0,1-0
-34,Sun,2017-04-30,Empoli FC,Sassuolo Calcio,1-3,1-2
-34,Sun,2017-04-30,Bologna FC,Udinese Calcio,4-0,2-0
-34,Sun,2017-04-30,Inter,SSC Napoli,0-1,0-1
-35,Sat,2017-05-06,SSC Napoli,Cagliari Calcio,3-1,1-0
-35,Sat,2017-05-06,Juventus,Torino FC,1-1,0-0
-35,Sun,2017-05-07,Udinese Calcio,Atalanta,1-1,0-1
+34,Sun,2017-04-30,Cagliari,Delfino Pescara,1-0,1-0
+34,Sun,2017-04-30,Empoli FC,Sassuolo,1-3,1-2
+34,Sun,2017-04-30,Bologna FC,Udinese,4-0,2-0
+34,Sun,2017-04-30,Inter de Milão,Napoli,0-1,0-1
+35,Sat,2017-05-06,Napoli,Cagliari,3-1,1-0
+35,Sat,2017-05-06,Juventus FC,Torino,1-1,0-0
+35,Sun,2017-05-07,Udinese,Atalanta,1-1,0-1
 35,Sun,2017-05-07,Empoli FC,Bologna FC,3-1,2-1
 35,Sun,2017-05-07,Delfino Pescara,FC Crotone,0-1,0-0
-35,Sun,2017-05-07,Sassuolo Calcio,ACF Fiorentina,2-2,0-1
-35,Sun,2017-05-07,Genoa CFC,Inter,1-0,0-0
+35,Sun,2017-05-07,Sassuolo,Fiorentina,2-2,0-1
+35,Sun,2017-05-07,Genoa CFC,Inter de Milão,1-0,0-0
 35,Sun,2017-05-07,Chievo Verona,US Palermo,1-1,0-0
-35,Sun,2017-05-07,Lazio Roma,Sampdoria,7-3,5-1
-35,Sun,2017-05-07,AC Milan,AS Roma,1-4,0-2
-36,Sat,2017-05-13,ACF Fiorentina,Lazio Roma,3-2,0-0
+35,Sun,2017-05-07,Lazio,Sampdoria,7-3,5-1
+35,Sun,2017-05-07,AC Milan,Roma,1-4,0-2
+36,Sat,2017-05-13,Fiorentina,Lazio,3-2,0-0
 36,Sat,2017-05-13,Atalanta,AC Milan,1-1,1-0
-36,Sun,2017-05-14,Inter,Sassuolo Calcio,1-2,0-1
+36,Sun,2017-05-14,Inter de Milão,Sassuolo,1-2,0-1
 36,Sun,2017-05-14,Sampdoria,Chievo Verona,1-1,1-0
-36,Sun,2017-05-14,Cagliari Calcio,Empoli FC,3-2,3-0
+36,Sun,2017-05-14,Cagliari,Empoli FC,3-2,3-0
 36,Sun,2017-05-14,US Palermo,Genoa CFC,1-0,1-0
-36,Sun,2017-05-14,Torino FC,SSC Napoli,0-5,0-1
+36,Sun,2017-05-14,Torino,Napoli,0-5,0-1
 36,Sun,2017-05-14,Bologna FC,Delfino Pescara,3-1,1-1
-36,Sun,2017-05-14,FC Crotone,Udinese Calcio,1-0,1-0
-36,Sun,2017-05-14,AS Roma,Juventus,3-1,1-1
-37,Sat,2017-05-20,Chievo Verona,AS Roma,3-5,2-2
-37,Sat,2017-05-20,SSC Napoli,ACF Fiorentina,4-1,2-0
+36,Sun,2017-05-14,FC Crotone,Udinese,1-0,1-0
+36,Sun,2017-05-14,Roma,Juventus FC,3-1,1-1
+37,Sat,2017-05-20,Chievo Verona,Roma,3-5,2-2
+37,Sat,2017-05-20,Napoli,Fiorentina,4-1,2-0
 37,Sun,2017-05-21,Empoli FC,Atalanta,0-1,0-1
 37,Sun,2017-05-21,AC Milan,Bologna FC,3-0,0-0
-37,Sun,2017-05-21,Sassuolo Calcio,Cagliari Calcio,6-2,4-1
-37,Sun,2017-05-21,Juventus,FC Crotone,3-0,2-0
-37,Sun,2017-05-21,Udinese Calcio,Sampdoria,1-1,1-0
-37,Sun,2017-05-21,Genoa CFC,Torino FC,2-1,1-0
-37,Sun,2017-05-21,Lazio Roma,Inter,1-3,1-2
+37,Sun,2017-05-21,Sassuolo,Cagliari,6-2,4-1
+37,Sun,2017-05-21,Juventus FC,FC Crotone,3-0,2-0
+37,Sun,2017-05-21,Udinese,Sampdoria,1-1,1-0
+37,Sun,2017-05-21,Genoa CFC,Torino,2-1,1-0
+37,Sun,2017-05-21,Lazio,Inter de Milão,1-3,1-2
 37,Mon,2017-05-22,Delfino Pescara,US Palermo,2-0,1-0
 38,Sat,2017-05-27,Atalanta,Chievo Verona,1-0,0-0
-38,Sat,2017-05-27,Bologna FC,Juventus,1-2,0-0
-38,Sun,2017-05-28,Cagliari Calcio,AC Milan,2-1,1-0
-38,Sun,2017-05-28,AS Roma,Genoa CFC,3-2,1-1
-38,Sun,2017-05-28,Sampdoria,SSC Napoli,2-4,0-2
+38,Sat,2017-05-27,Bologna FC,Juventus FC,1-2,0-0
+38,Sun,2017-05-28,Cagliari,AC Milan,2-1,1-0
+38,Sun,2017-05-28,Roma,Genoa CFC,3-2,1-1
+38,Sun,2017-05-28,Sampdoria,Napoli,2-4,0-2
 38,Sun,2017-05-28,US Palermo,Empoli FC,2-1,0-0
-38,Sun,2017-05-28,FC Crotone,Lazio Roma,3-1,2-1
-38,Sun,2017-05-28,ACF Fiorentina,Delfino Pescara,2-2,0-1
-38,Sun,2017-05-28,Torino FC,Sassuolo Calcio,5-3,3-2
-38,Sun,2017-05-28,Inter,Udinese Calcio,5-2,3-0
+38,Sun,2017-05-28,FC Crotone,Lazio,3-1,2-1
+38,Sun,2017-05-28,Fiorentina,Delfino Pescara,2-2,0-1
+38,Sun,2017-05-28,Torino,Sassuolo,5-3,3-2
+38,Sun,2017-05-28,Inter de Milão,Udinese,5-2,3-0

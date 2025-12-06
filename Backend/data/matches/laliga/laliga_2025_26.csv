@@ -1,381 +1,381 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
-1,2025-08-15,Girona FC,Rayo Vallecano de Madrid,1-3,0-3
+1,2025-08-15,Girona FC,Rayo Vallecano,1-3,0-3
 1,2025-08-15,Villarreal CF,Real Oviedo,2-0,2-0
-1,2025-08-16,RCD Mallorca,FC Barcelona,0-3,0-2
-1,2025-08-16,Deportivo Alavés,Levante UD,2-1,1-0
-1,2025-08-16,Valencia CF,Real Sociedad de Fútbol,1-1,0-0
-1,2025-08-17,RC Celta de Vigo,Getafe CF,0-2,0-0
-1,2025-08-17,Athletic Club,Sevilla FC,3-2,2-0
-1,2025-08-17,RCD Espanyol de Barcelona,Club Atlético de Madrid,2-1,0-1
-1,2025-08-18,Elche CF,Real Betis Balompié,1-1,0-1
-1,2025-08-19,Real Madrid CF,CA Osasuna,1-0,0-0
-2,2025-08-22,Real Betis Balompié,Deportivo Alavés,1-0,1-0
-2,2025-08-23,RCD Mallorca,RC Celta de Vigo,1-1,0-1
-2,2025-08-23,Club Atlético de Madrid,Elche CF,1-1,1-1
-2,2025-08-23,Levante UD,FC Barcelona,2-3,2-0
-2,2025-08-24,CA Osasuna,Valencia CF,1-0,1-0
-2,2025-08-24,Real Sociedad de Fútbol,RCD Espanyol de Barcelona,2-2,0-2
+1,2025-08-16,Mallorca,Barcelona,0-3,0-2
+1,2025-08-16,Deportivo Alavés,Levante,2-1,1-0
+1,2025-08-16,Valencia,Real Sociedad,1-1,0-0
+1,2025-08-17,Celta de Vigo,Getafe CF,0-2,0-0
+1,2025-08-17,Athletic Bilbao,Sevilha FC,3-2,2-0
+1,2025-08-17,Espanyol,Atlético de Madrid,2-1,0-1
+1,2025-08-18,Elche,Bétis,1-1,0-1
+1,2025-08-19,Real Madrid,Osasuna,1-0,0-0
+2,2025-08-22,Bétis,Deportivo Alavés,1-0,1-0
+2,2025-08-23,Mallorca,Celta de Vigo,1-1,0-1
+2,2025-08-23,Atlético de Madrid,Elche,1-1,1-1
+2,2025-08-23,Levante,Barcelona,2-3,2-0
+2,2025-08-24,Osasuna,Valencia,1-0,1-0
+2,2025-08-24,Real Sociedad,Espanyol,2-2,0-2
 2,2025-08-24,Villarreal CF,Girona FC,5-0,4-0
-2,2025-08-24,Real Oviedo,Real Madrid CF,0-3,0-1
-2,2025-08-25,Athletic Club,Rayo Vallecano de Madrid,1-0,0-0
-2,2025-08-25,Sevilla FC,Getafe CF,1-2,1-1
-6,2025-08-27,RC Celta de Vigo,Real Betis Balompié,1-1,0-1
-3,2025-08-29,Elche CF,Levante UD,2-0,0-0
-3,2025-08-29,Valencia CF,Getafe CF,3-0,1-0
-3,2025-08-30,Deportivo Alavés,Club Atlético de Madrid,1-1,1-1
-3,2025-08-30,Real Oviedo,Real Sociedad de Fútbol,1-0,1-0
-3,2025-08-30,Girona FC,Sevilla FC,0-2,0-1
-3,2025-08-30,Real Madrid CF,RCD Mallorca,2-1,2-1
-3,2025-08-31,RC Celta de Vigo,Villarreal CF,1-1,0-0
-3,2025-08-31,Real Betis Balompié,Athletic Club,1-2,0-0
-3,2025-08-31,RCD Espanyol de Barcelona,CA Osasuna,1-0,0-0
-3,2025-08-31,Rayo Vallecano de Madrid,FC Barcelona,1-1,0-1
-4,2025-09-12,Sevilla FC,Elche CF,2-2,1-0
+2,2025-08-24,Real Oviedo,Real Madrid,0-3,0-1
+2,2025-08-25,Athletic Bilbao,Rayo Vallecano,1-0,0-0
+2,2025-08-25,Sevilha FC,Getafe CF,1-2,1-1
+6,2025-08-27,Celta de Vigo,Bétis,1-1,0-1
+3,2025-08-29,Elche,Levante,2-0,0-0
+3,2025-08-29,Valencia,Getafe CF,3-0,1-0
+3,2025-08-30,Deportivo Alavés,Atlético de Madrid,1-1,1-1
+3,2025-08-30,Real Oviedo,Real Sociedad,1-0,1-0
+3,2025-08-30,Girona FC,Sevilha FC,0-2,0-1
+3,2025-08-30,Real Madrid,Mallorca,2-1,2-1
+3,2025-08-31,Celta de Vigo,Villarreal CF,1-1,0-0
+3,2025-08-31,Bétis,Athletic Bilbao,1-2,0-0
+3,2025-08-31,Espanyol,Osasuna,1-0,0-0
+3,2025-08-31,Rayo Vallecano,Barcelona,1-1,0-1
+4,2025-09-12,Sevilha FC,Elche,2-2,1-0
 4,2025-09-13,Getafe CF,Real Oviedo,2-0,2-0
-4,2025-09-13,Real Sociedad de Fútbol,Real Madrid CF,1-2,0-2
-4,2025-09-13,Athletic Club,Deportivo Alavés,0-1,0-0
-4,2025-09-13,Club Atlético de Madrid,Villarreal CF,2-0,1-0
-4,2025-09-14,RC Celta de Vigo,Girona FC,1-1,0-1
-4,2025-09-14,Levante UD,Real Betis Balompié,2-2,2-1
-4,2025-09-14,CA Osasuna,Rayo Vallecano de Madrid,2-0,1-0
-4,2025-09-14,FC Barcelona,Valencia CF,6-0,1-0
-4,2025-09-15,RCD Espanyol de Barcelona,RCD Mallorca,3-2,2-1
-5,2025-09-19,Real Betis Balompié,Real Sociedad de Fútbol,3-1,1-1
-5,2025-09-20,Girona FC,Levante UD,0-4,0-1
-5,2025-09-20,Real Madrid CF,RCD Espanyol de Barcelona,2-0,1-0
-5,2025-09-20,Villarreal CF,CA Osasuna,2-1,0-1
-5,2025-09-20,Deportivo Alavés,Sevilla FC,1-2,1-1
-5,2025-09-20,Valencia CF,Athletic Club,2-0,0-0
-5,2025-09-21,Rayo Vallecano de Madrid,RC Celta de Vigo,1-1,0-0
-5,2025-09-21,RCD Mallorca,Club Atlético de Madrid,1-1,0-0
-5,2025-09-21,Elche CF,Real Oviedo,1-0,1-0
-5,2025-09-21,FC Barcelona,Getafe CF,3-0,2-0
-6,2025-09-23,Athletic Club,Girona FC,1-1,0-1
-6,2025-09-23,RCD Espanyol de Barcelona,Valencia CF,2-2,0-1
-6,2025-09-23,Levante UD,Real Madrid CF,1-4,0-2
-6,2025-09-23,Sevilla FC,Villarreal CF,1-2,0-1
+4,2025-09-13,Real Sociedad,Real Madrid,1-2,0-2
+4,2025-09-13,Athletic Bilbao,Deportivo Alavés,0-1,0-0
+4,2025-09-13,Atlético de Madrid,Villarreal CF,2-0,1-0
+4,2025-09-14,Celta de Vigo,Girona FC,1-1,0-1
+4,2025-09-14,Levante,Bétis,2-2,2-1
+4,2025-09-14,Osasuna,Rayo Vallecano,2-0,1-0
+4,2025-09-14,Barcelona,Valencia,6-0,1-0
+4,2025-09-15,Espanyol,Mallorca,3-2,2-1
+5,2025-09-19,Bétis,Real Sociedad,3-1,1-1
+5,2025-09-20,Girona FC,Levante,0-4,0-1
+5,2025-09-20,Real Madrid,Espanyol,2-0,1-0
+5,2025-09-20,Villarreal CF,Osasuna,2-1,0-1
+5,2025-09-20,Deportivo Alavés,Sevilha FC,1-2,1-1
+5,2025-09-20,Valencia,Athletic Bilbao,2-0,0-0
+5,2025-09-21,Rayo Vallecano,Celta de Vigo,1-1,0-0
+5,2025-09-21,Mallorca,Atlético de Madrid,1-1,0-0
+5,2025-09-21,Elche,Real Oviedo,1-0,1-0
+5,2025-09-21,Barcelona,Getafe CF,3-0,2-0
+6,2025-09-23,Athletic Bilbao,Girona FC,1-1,0-1
+6,2025-09-23,Espanyol,Valencia,2-2,0-1
+6,2025-09-23,Levante,Real Madrid,1-4,0-2
+6,2025-09-23,Sevilha FC,Villarreal CF,1-2,0-1
 6,2025-09-24,Getafe CF,Deportivo Alavés,1-1,0-0
-6,2025-09-24,Club Atlético de Madrid,Rayo Vallecano de Madrid,3-2,1-1
-6,2025-09-24,Real Sociedad de Fútbol,RCD Mallorca,1-0,0-0
-6,2025-09-25,CA Osasuna,Elche CF,1-1,1-0
-6,2025-09-25,Real Oviedo,FC Barcelona,1-3,1-0
-7,2025-09-26,Girona FC,RCD Espanyol de Barcelona,0-0,
-7,2025-09-27,Getafe CF,Levante UD,1-1,0-1
-7,2025-09-27,Club Atlético de Madrid,Real Madrid CF,5-2,2-2
-7,2025-09-27,RCD Mallorca,Deportivo Alavés,1-0,1-0
-7,2025-09-27,Villarreal CF,Athletic Club,1-0,0-0
-7,2025-09-28,Rayo Vallecano de Madrid,Sevilla FC,0-1,0-0
-7,2025-09-28,Elche CF,RC Celta de Vigo,2-1,1-1
-7,2025-09-28,FC Barcelona,Real Sociedad de Fútbol,2-1,1-1
-7,2025-09-28,Real Betis Balompié,CA Osasuna,2-0,2-0
-7,2025-09-30,Valencia CF,Real Oviedo,1-2,1-0
-8,2025-10-03,CA Osasuna,Getafe CF,2-1,1-1
-8,2025-10-04,Real Oviedo,Levante UD,0-2,0-1
-8,2025-10-04,Girona FC,Valencia CF,2-1,1-0
-8,2025-10-04,Athletic Club,RCD Mallorca,2-1,1-0
-8,2025-10-04,Real Madrid CF,Villarreal CF,3-1,0-0
-8,2025-10-05,Deportivo Alavés,Elche CF,3-1,0-0
-8,2025-10-05,Sevilla FC,FC Barcelona,4-1,2-1
-8,2025-10-05,RCD Espanyol de Barcelona,Real Betis Balompié,1-2,1-0
-8,2025-10-05,Real Sociedad de Fútbol,Rayo Vallecano de Madrid,0-1,0-0
-8,2025-10-05,RC Celta de Vigo,Club Atlético de Madrid,1-1,0-1
-9,2025-10-17,Real Oviedo,RCD Espanyol de Barcelona,0-2,0-0
-9,2025-10-18,Sevilla FC,RCD Mallorca,1-3,1-0
-9,2025-10-18,FC Barcelona,Girona FC,2-1,1-1
-9,2025-10-18,Villarreal CF,Real Betis Balompié,2-2,1-0
-9,2025-10-18,Club Atlético de Madrid,CA Osasuna,1-0,0-0
-9,2025-10-19,Elche CF,Athletic Club,0-0,
-9,2025-10-19,RC Celta de Vigo,Real Sociedad de Fútbol,1-1,1-0
-9,2025-10-19,Levante UD,Rayo Vallecano de Madrid,0-3,0-2
-9,2025-10-19,Getafe CF,Real Madrid CF,0-1,0-0
-9,2025-10-20,Deportivo Alavés,Valencia CF,0-0,
-10,2025-10-24,Real Sociedad de Fútbol,Sevilla FC,2-1,2-1
+6,2025-09-24,Atlético de Madrid,Rayo Vallecano,3-2,1-1
+6,2025-09-24,Real Sociedad,Mallorca,1-0,0-0
+6,2025-09-25,Osasuna,Elche,1-1,1-0
+6,2025-09-25,Real Oviedo,Barcelona,1-3,1-0
+7,2025-09-26,Girona FC,Espanyol,0-0,
+7,2025-09-27,Getafe CF,Levante,1-1,0-1
+7,2025-09-27,Atlético de Madrid,Real Madrid,5-2,2-2
+7,2025-09-27,Mallorca,Deportivo Alavés,1-0,1-0
+7,2025-09-27,Villarreal CF,Athletic Bilbao,1-0,0-0
+7,2025-09-28,Rayo Vallecano,Sevilha FC,0-1,0-0
+7,2025-09-28,Elche,Celta de Vigo,2-1,1-1
+7,2025-09-28,Barcelona,Real Sociedad,2-1,1-1
+7,2025-09-28,Bétis,Osasuna,2-0,2-0
+7,2025-09-30,Valencia,Real Oviedo,1-2,1-0
+8,2025-10-03,Osasuna,Getafe CF,2-1,1-1
+8,2025-10-04,Real Oviedo,Levante,0-2,0-1
+8,2025-10-04,Girona FC,Valencia,2-1,1-0
+8,2025-10-04,Athletic Bilbao,Mallorca,2-1,1-0
+8,2025-10-04,Real Madrid,Villarreal CF,3-1,0-0
+8,2025-10-05,Deportivo Alavés,Elche,3-1,0-0
+8,2025-10-05,Sevilha FC,Barcelona,4-1,2-1
+8,2025-10-05,Espanyol,Bétis,1-2,1-0
+8,2025-10-05,Real Sociedad,Rayo Vallecano,0-1,0-0
+8,2025-10-05,Celta de Vigo,Atlético de Madrid,1-1,0-1
+9,2025-10-17,Real Oviedo,Espanyol,0-2,0-0
+9,2025-10-18,Sevilha FC,Mallorca,1-3,1-0
+9,2025-10-18,Barcelona,Girona FC,2-1,1-1
+9,2025-10-18,Villarreal CF,Bétis,2-2,1-0
+9,2025-10-18,Atlético de Madrid,Osasuna,1-0,0-0
+9,2025-10-19,Elche,Athletic Bilbao,0-0,
+9,2025-10-19,Celta de Vigo,Real Sociedad,1-1,1-0
+9,2025-10-19,Levante,Rayo Vallecano,0-3,0-2
+9,2025-10-19,Getafe CF,Real Madrid,0-1,0-0
+9,2025-10-20,Deportivo Alavés,Valencia,0-0,
+10,2025-10-24,Real Sociedad,Sevilha FC,2-1,2-1
 10,2025-10-25,Girona FC,Real Oviedo,3-3,0-1
-10,2025-10-25,RCD Espanyol de Barcelona,Elche CF,1-0,0-0
-10,2025-10-25,Athletic Club,Getafe CF,0-1,0-0
-10,2025-10-25,Valencia CF,Villarreal CF,0-2,0-1
-10,2025-10-26,RCD Mallorca,Levante UD,1-1,0-1
-10,2025-10-26,Real Madrid CF,FC Barcelona,2-1,2-1
-10,2025-10-26,CA Osasuna,RC Celta de Vigo,2-3,2-1
-10,2025-10-26,Rayo Vallecano de Madrid,Deportivo Alavés,1-0,0-0
-10,2025-10-27,Real Betis Balompié,Club Atlético de Madrid,0-2,0-2
+10,2025-10-25,Espanyol,Elche,1-0,0-0
+10,2025-10-25,Athletic Bilbao,Getafe CF,0-1,0-0
+10,2025-10-25,Valencia,Villarreal CF,0-2,0-1
+10,2025-10-26,Mallorca,Levante,1-1,0-1
+10,2025-10-26,Real Madrid,Barcelona,2-1,2-1
+10,2025-10-26,Osasuna,Celta de Vigo,2-3,2-1
+10,2025-10-26,Rayo Vallecano,Deportivo Alavés,1-0,0-0
+10,2025-10-27,Bétis,Atlético de Madrid,0-2,0-2
 11,2025-10-31,Getafe CF,Girona FC,2-1,0-0
-11,2025-11-01,Villarreal CF,Rayo Vallecano de Madrid,4-0,1-0
-11,2025-11-01,Club Atlético de Madrid,Sevilla FC,3-0,0-0
-11,2025-11-01,Real Sociedad de Fútbol,Athletic Club,3-2,1-1
-11,2025-11-01,Real Madrid CF,Valencia CF,4-0,3-0
-11,2025-11-02,Levante UD,RC Celta de Vigo,1-2,0-1
-11,2025-11-02,Deportivo Alavés,RCD Espanyol de Barcelona,2-1,2-0
-11,2025-11-02,FC Barcelona,Elche CF,3-1,2-1
-11,2025-11-02,Real Betis Balompié,RCD Mallorca,3-0,3-0
-11,2025-11-03,Real Oviedo,CA Osasuna,0-0,
-12,2025-11-07,Elche CF,Real Sociedad de Fútbol,1-1,0-0
+11,2025-11-01,Villarreal CF,Rayo Vallecano,4-0,1-0
+11,2025-11-01,Atlético de Madrid,Sevilha FC,3-0,0-0
+11,2025-11-01,Real Sociedad,Athletic Bilbao,3-2,1-1
+11,2025-11-01,Real Madrid,Valencia,4-0,3-0
+11,2025-11-02,Levante,Celta de Vigo,1-2,0-1
+11,2025-11-02,Deportivo Alavés,Espanyol,2-1,2-0
+11,2025-11-02,Barcelona,Elche,3-1,2-1
+11,2025-11-02,Bétis,Mallorca,3-0,3-0
+11,2025-11-03,Real Oviedo,Osasuna,0-0,
+12,2025-11-07,Elche,Real Sociedad,1-1,0-0
 12,2025-11-08,Girona FC,Deportivo Alavés,1-0,1-0
-12,2025-11-08,Sevilla FC,CA Osasuna,1-0,0-0
-12,2025-11-08,Club Atlético de Madrid,Levante UD,3-1,1-1
-12,2025-11-08,RCD Espanyol de Barcelona,Villarreal CF,0-2,0-1
-12,2025-11-09,Athletic Club,Real Oviedo,1-0,1-0
-12,2025-11-09,Rayo Vallecano de Madrid,Real Madrid CF,0-0,
-12,2025-11-09,Valencia CF,Real Betis Balompié,1-1,0-0
-12,2025-11-09,RCD Mallorca,Getafe CF,1-0,1-0
-12,2025-11-09,RC Celta de Vigo,FC Barcelona,2-4,2-3
-13,2025-11-21,Valencia CF,Levante UD,,
-13,2025-11-22,Deportivo Alavés,RC Celta de Vigo,,
-13,2025-11-22,FC Barcelona,Athletic Club,,
-13,2025-11-22,CA Osasuna,Real Sociedad de Fútbol,,
-13,2025-11-22,Villarreal CF,RCD Mallorca,,
-13,2025-11-23,Real Oviedo,Rayo Vallecano de Madrid,,
-13,2025-11-23,Real Betis Balompié,Girona FC,,
-13,2025-11-23,Getafe CF,Club Atlético de Madrid,,
-13,2025-11-23,Elche CF,Real Madrid CF,,
-13,2025-11-24,RCD Espanyol de Barcelona,Sevilla FC,,
-14,2025-11-28,Getafe CF,Elche CF,,
-14,2025-11-29,RCD Mallorca,CA Osasuna,,
-14,2025-11-29,FC Barcelona,Deportivo Alavés,,
-14,2025-11-29,Levante UD,Athletic Club,,
-14,2025-11-29,Club Atlético de Madrid,Real Oviedo,,
-14,2025-11-30,Real Sociedad de Fútbol,Villarreal CF,,
-14,2025-11-30,Sevilla FC,Real Betis Balompié,,
-14,2025-11-30,RC Celta de Vigo,RCD Espanyol de Barcelona,,
-14,2025-11-30,Girona FC,Real Madrid CF,,
-14,2025-12-01,Rayo Vallecano de Madrid,Valencia CF,,
-19,2025-12-02,FC Barcelona,Club Atlético de Madrid,,
-19,2025-12-03,Athletic Club,Real Madrid CF,,
-15,2025-12-05,Real Oviedo,RCD Mallorca,,
+12,2025-11-08,Sevilha FC,Osasuna,1-0,0-0
+12,2025-11-08,Atlético de Madrid,Levante,3-1,1-1
+12,2025-11-08,Espanyol,Villarreal CF,0-2,0-1
+12,2025-11-09,Athletic Bilbao,Real Oviedo,1-0,1-0
+12,2025-11-09,Rayo Vallecano,Real Madrid,0-0,
+12,2025-11-09,Valencia,Bétis,1-1,0-0
+12,2025-11-09,Mallorca,Getafe CF,1-0,1-0
+12,2025-11-09,Celta de Vigo,Barcelona,2-4,2-3
+13,2025-11-21,Valencia,Levante,,
+13,2025-11-22,Deportivo Alavés,Celta de Vigo,,
+13,2025-11-22,Barcelona,Athletic Bilbao,,
+13,2025-11-22,Osasuna,Real Sociedad,,
+13,2025-11-22,Villarreal CF,Mallorca,,
+13,2025-11-23,Real Oviedo,Rayo Vallecano,,
+13,2025-11-23,Bétis,Girona FC,,
+13,2025-11-23,Getafe CF,Atlético de Madrid,,
+13,2025-11-23,Elche,Real Madrid,,
+13,2025-11-24,Espanyol,Sevilha FC,,
+14,2025-11-28,Getafe CF,Elche,,
+14,2025-11-29,Mallorca,Osasuna,,
+14,2025-11-29,Barcelona,Deportivo Alavés,,
+14,2025-11-29,Levante,Athletic Bilbao,,
+14,2025-11-29,Atlético de Madrid,Real Oviedo,,
+14,2025-11-30,Real Sociedad,Villarreal CF,,
+14,2025-11-30,Sevilha FC,Bétis,,
+14,2025-11-30,Celta de Vigo,Espanyol,,
+14,2025-11-30,Girona FC,Real Madrid,,
+14,2025-12-01,Rayo Vallecano,Valencia,,
+19,2025-12-02,Barcelona,Atlético de Madrid,,
+19,2025-12-03,Athletic Bilbao,Real Madrid,,
+15,2025-12-05,Real Oviedo,Mallorca,,
 15,2025-12-06,Villarreal CF,Getafe CF,,
-15,2025-12-06,Deportivo Alavés,Real Sociedad de Fútbol,,
-15,2025-12-06,Real Betis Balompié,FC Barcelona,,
-15,2025-12-06,Athletic Club,Club Atlético de Madrid,,
-15,2025-12-07,Elche CF,Girona FC,,
-15,2025-12-07,Valencia CF,Sevilla FC,,
-15,2025-12-07,RCD Espanyol de Barcelona,Rayo Vallecano de Madrid,,
-15,2025-12-07,Real Madrid CF,RC Celta de Vigo,,
-15,2025-12-08,CA Osasuna,Levante UD,,
-16,2025-12-14,Deportivo Alavés,Real Madrid CF,,
-16,2025-12-14,Club Atlético de Madrid,Valencia CF,,
-16,2025-12-14,FC Barcelona,CA Osasuna,,
-16,2025-12-14,Levante UD,Villarreal CF,,
-16,2025-12-14,RC Celta de Vigo,Athletic Club,,
-16,2025-12-14,Rayo Vallecano de Madrid,Real Betis Balompié,,
-16,2025-12-14,RCD Mallorca,Elche CF,,
-16,2025-12-14,Getafe CF,RCD Espanyol de Barcelona,,
-16,2025-12-14,Real Sociedad de Fútbol,Girona FC,,
-16,2025-12-14,Sevilla FC,Real Oviedo,,
-17,2025-12-21,Athletic Club,RCD Espanyol de Barcelona,,
-17,2025-12-21,Real Betis Balompié,Getafe CF,,
-17,2025-12-21,Elche CF,Rayo Vallecano de Madrid,,
-17,2025-12-21,Levante UD,Real Sociedad de Fútbol,,
-17,2025-12-21,Real Madrid CF,Sevilla FC,,
-17,2025-12-21,CA Osasuna,Deportivo Alavés,,
-17,2025-12-21,Girona FC,Club Atlético de Madrid,,
-17,2025-12-21,Villarreal CF,FC Barcelona,,
-17,2025-12-21,Real Oviedo,RC Celta de Vigo,,
-17,2025-12-21,Valencia CF,RCD Mallorca,,
+15,2025-12-06,Deportivo Alavés,Real Sociedad,,
+15,2025-12-06,Bétis,Barcelona,,
+15,2025-12-06,Athletic Bilbao,Atlético de Madrid,,
+15,2025-12-07,Elche,Girona FC,,
+15,2025-12-07,Valencia,Sevilha FC,,
+15,2025-12-07,Espanyol,Rayo Vallecano,,
+15,2025-12-07,Real Madrid,Celta de Vigo,,
+15,2025-12-08,Osasuna,Levante,,
+16,2025-12-14,Deportivo Alavés,Real Madrid,,
+16,2025-12-14,Atlético de Madrid,Valencia,,
+16,2025-12-14,Barcelona,Osasuna,,
+16,2025-12-14,Levante,Villarreal CF,,
+16,2025-12-14,Celta de Vigo,Athletic Bilbao,,
+16,2025-12-14,Rayo Vallecano,Bétis,,
+16,2025-12-14,Mallorca,Elche,,
+16,2025-12-14,Getafe CF,Espanyol,,
+16,2025-12-14,Real Sociedad,Girona FC,,
+16,2025-12-14,Sevilha FC,Real Oviedo,,
+17,2025-12-21,Athletic Bilbao,Espanyol,,
+17,2025-12-21,Bétis,Getafe CF,,
+17,2025-12-21,Elche,Rayo Vallecano,,
+17,2025-12-21,Levante,Real Sociedad,,
+17,2025-12-21,Real Madrid,Sevilha FC,,
+17,2025-12-21,Osasuna,Deportivo Alavés,,
+17,2025-12-21,Girona FC,Atlético de Madrid,,
+17,2025-12-21,Villarreal CF,Barcelona,,
+17,2025-12-21,Real Oviedo,Celta de Vigo,,
+17,2025-12-21,Valencia,Mallorca,,
 18,2026-01-04,Deportivo Alavés,Real Oviedo,,
-18,2026-01-04,RC Celta de Vigo,Valencia CF,,
-18,2026-01-04,Elche CF,Villarreal CF,,
-18,2026-01-04,CA Osasuna,Athletic Club,,
-18,2026-01-04,Real Sociedad de Fútbol,Club Atlético de Madrid,,
-18,2026-01-04,RCD Espanyol de Barcelona,FC Barcelona,,
-18,2026-01-04,Real Madrid CF,Real Betis Balompié,,
-18,2026-01-04,Rayo Vallecano de Madrid,Getafe CF,,
-18,2026-01-04,RCD Mallorca,Girona FC,,
-18,2026-01-04,Sevilla FC,Levante UD,,
-19,2026-01-11,Getafe CF,Real Sociedad de Fútbol,,
-19,2026-01-11,Girona FC,CA Osasuna,,
+18,2026-01-04,Celta de Vigo,Valencia,,
+18,2026-01-04,Elche,Villarreal CF,,
+18,2026-01-04,Osasuna,Athletic Bilbao,,
+18,2026-01-04,Real Sociedad,Atlético de Madrid,,
+18,2026-01-04,Espanyol,Barcelona,,
+18,2026-01-04,Real Madrid,Bétis,,
+18,2026-01-04,Rayo Vallecano,Getafe CF,,
+18,2026-01-04,Mallorca,Girona FC,,
+18,2026-01-04,Sevilha FC,Levante,,
+19,2026-01-11,Getafe CF,Real Sociedad,,
+19,2026-01-11,Girona FC,Osasuna,,
 19,2026-01-11,Villarreal CF,Deportivo Alavés,,
-19,2026-01-11,Real Oviedo,Real Betis Balompié,,
-19,2026-01-11,Sevilla FC,RC Celta de Vigo,,
-19,2026-01-11,Valencia CF,Elche CF,,
-19,2026-01-11,Levante UD,RCD Espanyol de Barcelona,,
-19,2026-01-11,Rayo Vallecano de Madrid,RCD Mallorca,,
-20,2026-01-18,Real Betis Balompié,Villarreal CF,,
-20,2026-01-18,RC Celta de Vigo,Rayo Vallecano de Madrid,,
-20,2026-01-18,Elche CF,Sevilla FC,,
-20,2026-01-18,RCD Espanyol de Barcelona,Girona FC,,
-20,2026-01-18,Getafe CF,Valencia CF,,
-20,2026-01-18,CA Osasuna,Real Oviedo,,
-20,2026-01-18,Club Atlético de Madrid,Deportivo Alavés,,
-20,2026-01-18,RCD Mallorca,Athletic Club,,
-20,2026-01-18,Real Sociedad de Fútbol,FC Barcelona,,
-20,2026-01-18,Real Madrid CF,Levante UD,,
-21,2026-01-25,Deportivo Alavés,Real Betis Balompié,,
-21,2026-01-25,Club Atlético de Madrid,RCD Mallorca,,
-21,2026-01-25,FC Barcelona,Real Oviedo,,
-21,2026-01-25,Sevilla FC,Athletic Club,,
-21,2026-01-25,Real Sociedad de Fútbol,RC Celta de Vigo,,
-21,2026-01-25,Levante UD,Elche CF,,
-21,2026-01-25,Valencia CF,RCD Espanyol de Barcelona,,
+19,2026-01-11,Real Oviedo,Bétis,,
+19,2026-01-11,Sevilha FC,Celta de Vigo,,
+19,2026-01-11,Valencia,Elche,,
+19,2026-01-11,Levante,Espanyol,,
+19,2026-01-11,Rayo Vallecano,Mallorca,,
+20,2026-01-18,Bétis,Villarreal CF,,
+20,2026-01-18,Celta de Vigo,Rayo Vallecano,,
+20,2026-01-18,Elche,Sevilha FC,,
+20,2026-01-18,Espanyol,Girona FC,,
+20,2026-01-18,Getafe CF,Valencia,,
+20,2026-01-18,Osasuna,Real Oviedo,,
+20,2026-01-18,Atlético de Madrid,Deportivo Alavés,,
+20,2026-01-18,Mallorca,Athletic Bilbao,,
+20,2026-01-18,Real Sociedad,Barcelona,,
+20,2026-01-18,Real Madrid,Levante,,
+21,2026-01-25,Deportivo Alavés,Bétis,,
+21,2026-01-25,Atlético de Madrid,Mallorca,,
+21,2026-01-25,Barcelona,Real Oviedo,,
+21,2026-01-25,Sevilha FC,Athletic Bilbao,,
+21,2026-01-25,Real Sociedad,Celta de Vigo,,
+21,2026-01-25,Levante,Elche,,
+21,2026-01-25,Valencia,Espanyol,,
 21,2026-01-25,Girona FC,Getafe CF,,
-21,2026-01-25,Rayo Vallecano de Madrid,CA Osasuna,,
-21,2026-01-25,Villarreal CF,Real Madrid CF,,
-22,2026-02-01,Athletic Club,Real Sociedad de Fútbol,,
-22,2026-02-01,Real Betis Balompié,Valencia CF,,
-22,2026-02-01,RCD Mallorca,Sevilla FC,,
-22,2026-02-01,CA Osasuna,Villarreal CF,,
-22,2026-02-01,RCD Espanyol de Barcelona,Deportivo Alavés,,
-22,2026-02-01,Levante UD,Club Atlético de Madrid,,
-22,2026-02-01,Elche CF,FC Barcelona,,
-22,2026-02-01,Getafe CF,RC Celta de Vigo,,
+21,2026-01-25,Rayo Vallecano,Osasuna,,
+21,2026-01-25,Villarreal CF,Real Madrid,,
+22,2026-02-01,Athletic Bilbao,Real Sociedad,,
+22,2026-02-01,Bétis,Valencia,,
+22,2026-02-01,Mallorca,Sevilha FC,,
+22,2026-02-01,Osasuna,Villarreal CF,,
+22,2026-02-01,Espanyol,Deportivo Alavés,,
+22,2026-02-01,Levante,Atlético de Madrid,,
+22,2026-02-01,Elche,Barcelona,,
+22,2026-02-01,Getafe CF,Celta de Vigo,,
 22,2026-02-01,Real Oviedo,Girona FC,,
-22,2026-02-01,Real Madrid CF,Rayo Vallecano de Madrid,,
+22,2026-02-01,Real Madrid,Rayo Vallecano,,
 23,2026-02-08,Deportivo Alavés,Getafe CF,,
-23,2026-02-08,Athletic Club,Levante UD,,
-23,2026-02-08,Club Atlético de Madrid,Real Betis Balompié,,
-23,2026-02-08,FC Barcelona,RCD Mallorca,,
-23,2026-02-08,RC Celta de Vigo,CA Osasuna,,
-23,2026-02-08,Real Sociedad de Fútbol,Elche CF,,
-23,2026-02-08,Villarreal CF,RCD Espanyol de Barcelona,,
-23,2026-02-08,Sevilla FC,Girona FC,,
-23,2026-02-08,Valencia CF,Real Madrid CF,,
-23,2026-02-08,Rayo Vallecano de Madrid,Real Oviedo,,
-24,2026-02-15,Elche CF,CA Osasuna,,
+23,2026-02-08,Athletic Bilbao,Levante,,
+23,2026-02-08,Atlético de Madrid,Bétis,,
+23,2026-02-08,Barcelona,Mallorca,,
+23,2026-02-08,Celta de Vigo,Osasuna,,
+23,2026-02-08,Real Sociedad,Elche,,
+23,2026-02-08,Villarreal CF,Espanyol,,
+23,2026-02-08,Sevilha FC,Girona FC,,
+23,2026-02-08,Valencia,Real Madrid,,
+23,2026-02-08,Rayo Vallecano,Real Oviedo,,
+24,2026-02-15,Elche,Osasuna,,
 24,2026-02-15,Getafe CF,Villarreal CF,,
-24,2026-02-15,Levante UD,Valencia CF,,
-24,2026-02-15,Real Madrid CF,Real Sociedad de Fútbol,,
-24,2026-02-15,Sevilla FC,Deportivo Alavés,,
-24,2026-02-15,Real Oviedo,Athletic Club,,
-24,2026-02-15,Rayo Vallecano de Madrid,Club Atlético de Madrid,,
-24,2026-02-15,Girona FC,FC Barcelona,,
-24,2026-02-15,RCD Mallorca,Real Betis Balompié,,
-24,2026-02-15,RCD Espanyol de Barcelona,RC Celta de Vigo,,
+24,2026-02-15,Levante,Valencia,,
+24,2026-02-15,Real Madrid,Real Sociedad,,
+24,2026-02-15,Sevilha FC,Deportivo Alavés,,
+24,2026-02-15,Real Oviedo,Athletic Bilbao,,
+24,2026-02-15,Rayo Vallecano,Atlético de Madrid,,
+24,2026-02-15,Girona FC,Barcelona,,
+24,2026-02-15,Mallorca,Bétis,,
+24,2026-02-15,Espanyol,Celta de Vigo,,
 25,2026-02-22,Deportivo Alavés,Girona FC,,
-25,2026-02-22,Athletic Club,Elche CF,,
-25,2026-02-22,Club Atlético de Madrid,RCD Espanyol de Barcelona,,
-25,2026-02-22,FC Barcelona,Levante UD,,
-25,2026-02-22,Real Betis Balompié,Rayo Vallecano de Madrid,,
-25,2026-02-22,RC Celta de Vigo,RCD Mallorca,,
-25,2026-02-22,Getafe CF,Sevilla FC,,
-25,2026-02-22,CA Osasuna,Real Madrid CF,,
-25,2026-02-22,Villarreal CF,Valencia CF,,
-25,2026-02-22,Real Sociedad de Fútbol,Real Oviedo,,
-26,2026-03-01,FC Barcelona,Villarreal CF,,
-26,2026-03-01,Real Betis Balompié,Sevilla FC,,
-26,2026-03-01,Elche CF,RCD Espanyol de Barcelona,,
-26,2026-03-01,RCD Mallorca,Real Sociedad de Fútbol,,
-26,2026-03-01,Levante UD,Deportivo Alavés,,
-26,2026-03-01,Rayo Vallecano de Madrid,Athletic Club,,
-26,2026-03-01,Real Oviedo,Club Atlético de Madrid,,
-26,2026-03-01,Girona FC,RC Celta de Vigo,,
-26,2026-03-01,Real Madrid CF,Getafe CF,,
-26,2026-03-01,Valencia CF,CA Osasuna,,
-27,2026-03-08,Athletic Club,FC Barcelona,,
-27,2026-03-08,Club Atlético de Madrid,Real Sociedad de Fútbol,,
-27,2026-03-08,RC Celta de Vigo,Real Madrid CF,,
-27,2026-03-08,RCD Espanyol de Barcelona,Real Oviedo,,
-27,2026-03-08,Valencia CF,Deportivo Alavés,,
-27,2026-03-08,Getafe CF,Real Betis Balompié,,
-27,2026-03-08,Villarreal CF,Elche CF,,
-27,2026-03-08,Levante UD,Girona FC,,
-27,2026-03-08,CA Osasuna,RCD Mallorca,,
-27,2026-03-08,Sevilla FC,Rayo Vallecano de Madrid,,
+25,2026-02-22,Athletic Bilbao,Elche,,
+25,2026-02-22,Atlético de Madrid,Espanyol,,
+25,2026-02-22,Barcelona,Levante,,
+25,2026-02-22,Bétis,Rayo Vallecano,,
+25,2026-02-22,Celta de Vigo,Mallorca,,
+25,2026-02-22,Getafe CF,Sevilha FC,,
+25,2026-02-22,Osasuna,Real Madrid,,
+25,2026-02-22,Villarreal CF,Valencia,,
+25,2026-02-22,Real Sociedad,Real Oviedo,,
+26,2026-03-01,Barcelona,Villarreal CF,,
+26,2026-03-01,Bétis,Sevilha FC,,
+26,2026-03-01,Elche,Espanyol,,
+26,2026-03-01,Mallorca,Real Sociedad,,
+26,2026-03-01,Levante,Deportivo Alavés,,
+26,2026-03-01,Rayo Vallecano,Athletic Bilbao,,
+26,2026-03-01,Real Oviedo,Atlético de Madrid,,
+26,2026-03-01,Girona FC,Celta de Vigo,,
+26,2026-03-01,Real Madrid,Getafe CF,,
+26,2026-03-01,Valencia,Osasuna,,
+27,2026-03-08,Athletic Bilbao,Barcelona,,
+27,2026-03-08,Atlético de Madrid,Real Sociedad,,
+27,2026-03-08,Celta de Vigo,Real Madrid,,
+27,2026-03-08,Espanyol,Real Oviedo,,
+27,2026-03-08,Valencia,Deportivo Alavés,,
+27,2026-03-08,Getafe CF,Bétis,,
+27,2026-03-08,Villarreal CF,Elche,,
+27,2026-03-08,Levante,Girona FC,,
+27,2026-03-08,Osasuna,Mallorca,,
+27,2026-03-08,Sevilha FC,Rayo Vallecano,,
 28,2026-03-15,Deportivo Alavés,Villarreal CF,,
-28,2026-03-15,Club Atlético de Madrid,Getafe CF,,
-28,2026-03-15,FC Barcelona,Sevilla FC,,
-28,2026-03-15,Real Betis Balompié,RC Celta de Vigo,,
-28,2026-03-15,Real Oviedo,Valencia CF,,
-28,2026-03-15,Girona FC,Athletic Club,,
-28,2026-03-15,Real Madrid CF,Elche CF,,
-28,2026-03-15,RCD Mallorca,RCD Espanyol de Barcelona,,
-28,2026-03-15,Rayo Vallecano de Madrid,Levante UD,,
-28,2026-03-15,Real Sociedad de Fútbol,CA Osasuna,,
-29,2026-03-22,Athletic Club,Real Betis Balompié,,
-29,2026-03-22,FC Barcelona,Rayo Vallecano de Madrid,,
-29,2026-03-22,Elche CF,RCD Mallorca,,
-29,2026-03-22,RCD Espanyol de Barcelona,Getafe CF,,
-29,2026-03-22,Levante UD,Real Oviedo,,
-29,2026-03-22,Sevilla FC,Valencia CF,,
-29,2026-03-22,RC Celta de Vigo,Deportivo Alavés,,
-29,2026-03-22,Real Madrid CF,Club Atlético de Madrid,,
-29,2026-03-22,CA Osasuna,Girona FC,,
-29,2026-03-22,Villarreal CF,Real Sociedad de Fútbol,,
-30,2026-04-05,Deportivo Alavés,CA Osasuna,,
-30,2026-04-05,Club Atlético de Madrid,FC Barcelona,,
-30,2026-04-05,Real Betis Balompié,RCD Espanyol de Barcelona,,
+28,2026-03-15,Atlético de Madrid,Getafe CF,,
+28,2026-03-15,Barcelona,Sevilha FC,,
+28,2026-03-15,Bétis,Celta de Vigo,,
+28,2026-03-15,Real Oviedo,Valencia,,
+28,2026-03-15,Girona FC,Athletic Bilbao,,
+28,2026-03-15,Real Madrid,Elche,,
+28,2026-03-15,Mallorca,Espanyol,,
+28,2026-03-15,Rayo Vallecano,Levante,,
+28,2026-03-15,Real Sociedad,Osasuna,,
+29,2026-03-22,Athletic Bilbao,Bétis,,
+29,2026-03-22,Barcelona,Rayo Vallecano,,
+29,2026-03-22,Elche,Mallorca,,
+29,2026-03-22,Espanyol,Getafe CF,,
+29,2026-03-22,Levante,Real Oviedo,,
+29,2026-03-22,Sevilha FC,Valencia,,
+29,2026-03-22,Celta de Vigo,Deportivo Alavés,,
+29,2026-03-22,Real Madrid,Atlético de Madrid,,
+29,2026-03-22,Osasuna,Girona FC,,
+29,2026-03-22,Villarreal CF,Real Sociedad,,
+30,2026-04-05,Deportivo Alavés,Osasuna,,
+30,2026-04-05,Atlético de Madrid,Barcelona,,
+30,2026-04-05,Bétis,Espanyol,,
 30,2026-04-05,Girona FC,Villarreal CF,,
-30,2026-04-05,RCD Mallorca,Real Madrid CF,,
-30,2026-04-05,Real Oviedo,Sevilla FC,,
-30,2026-04-05,Getafe CF,Athletic Club,,
-30,2026-04-05,Valencia CF,RC Celta de Vigo,,
-30,2026-04-05,Rayo Vallecano de Madrid,Elche CF,,
-30,2026-04-05,Real Sociedad de Fútbol,Levante UD,,
-31,2026-04-12,FC Barcelona,RCD Espanyol de Barcelona,,
-31,2026-04-12,RC Celta de Vigo,Real Oviedo,,
-31,2026-04-12,Elche CF,Valencia CF,,
-31,2026-04-12,RCD Mallorca,Rayo Vallecano de Madrid,,
-31,2026-04-12,Real Sociedad de Fútbol,Deportivo Alavés,,
-31,2026-04-12,Sevilla FC,Club Atlético de Madrid,,
-31,2026-04-12,CA Osasuna,Real Betis Balompié,,
-31,2026-04-12,Levante UD,Getafe CF,,
-31,2026-04-12,Real Madrid CF,Girona FC,,
-31,2026-04-12,Athletic Club,Villarreal CF,,
-32,2026-04-19,Deportivo Alavés,RCD Mallorca,,
-32,2026-04-19,Real Betis Balompié,Real Madrid CF,,
-32,2026-04-19,RCD Espanyol de Barcelona,Levante UD,,
-32,2026-04-19,CA Osasuna,Sevilla FC,,
-32,2026-04-19,Rayo Vallecano de Madrid,Real Sociedad de Fútbol,,
-32,2026-04-19,Club Atlético de Madrid,Athletic Club,,
-32,2026-04-19,Getafe CF,FC Barcelona,,
-32,2026-04-19,Villarreal CF,RC Celta de Vigo,,
-32,2026-04-19,Real Oviedo,Elche CF,,
-32,2026-04-19,Valencia CF,Girona FC,,
-33,2026-04-22,Athletic Club,CA Osasuna,,
-33,2026-04-22,FC Barcelona,RC Celta de Vigo,,
-33,2026-04-22,Levante UD,Sevilla FC,,
-33,2026-04-22,RCD Mallorca,Valencia CF,,
+30,2026-04-05,Mallorca,Real Madrid,,
+30,2026-04-05,Real Oviedo,Sevilha FC,,
+30,2026-04-05,Getafe CF,Athletic Bilbao,,
+30,2026-04-05,Valencia,Celta de Vigo,,
+30,2026-04-05,Rayo Vallecano,Elche,,
+30,2026-04-05,Real Sociedad,Levante,,
+31,2026-04-12,Barcelona,Espanyol,,
+31,2026-04-12,Celta de Vigo,Real Oviedo,,
+31,2026-04-12,Elche,Valencia,,
+31,2026-04-12,Mallorca,Rayo Vallecano,,
+31,2026-04-12,Real Sociedad,Deportivo Alavés,,
+31,2026-04-12,Sevilha FC,Atlético de Madrid,,
+31,2026-04-12,Osasuna,Bétis,,
+31,2026-04-12,Levante,Getafe CF,,
+31,2026-04-12,Real Madrid,Girona FC,,
+31,2026-04-12,Athletic Bilbao,Villarreal CF,,
+32,2026-04-19,Deportivo Alavés,Mallorca,,
+32,2026-04-19,Bétis,Real Madrid,,
+32,2026-04-19,Espanyol,Levante,,
+32,2026-04-19,Osasuna,Sevilha FC,,
+32,2026-04-19,Rayo Vallecano,Real Sociedad,,
+32,2026-04-19,Atlético de Madrid,Athletic Bilbao,,
+32,2026-04-19,Getafe CF,Barcelona,,
+32,2026-04-19,Villarreal CF,Celta de Vigo,,
+32,2026-04-19,Real Oviedo,Elche,,
+32,2026-04-19,Valencia,Girona FC,,
+33,2026-04-22,Athletic Bilbao,Osasuna,,
+33,2026-04-22,Barcelona,Celta de Vigo,,
+33,2026-04-22,Levante,Sevilha FC,,
+33,2026-04-22,Mallorca,Valencia,,
 33,2026-04-22,Real Oviedo,Villarreal CF,,
-33,2026-04-22,Real Madrid CF,Deportivo Alavés,,
-33,2026-04-22,Elche CF,Club Atlético de Madrid,,
-33,2026-04-22,Girona FC,Real Betis Balompié,,
-33,2026-04-22,Rayo Vallecano de Madrid,RCD Espanyol de Barcelona,,
-33,2026-04-22,Real Sociedad de Fútbol,Getafe CF,,
-34,2026-05-03,Deportivo Alavés,Athletic Club,,
-34,2026-05-03,Real Betis Balompié,Real Oviedo,,
-34,2026-05-03,RC Celta de Vigo,Elche CF,,
-34,2026-05-03,RCD Espanyol de Barcelona,Real Madrid CF,,
-34,2026-05-03,Getafe CF,Rayo Vallecano de Madrid,,
-34,2026-05-03,Girona FC,RCD Mallorca,,
-34,2026-05-03,Valencia CF,Club Atlético de Madrid,,
-34,2026-05-03,CA Osasuna,FC Barcelona,,
-34,2026-05-03,Villarreal CF,Levante UD,,
-34,2026-05-03,Sevilla FC,Real Sociedad de Fútbol,,
-35,2026-05-10,Athletic Club,Valencia CF,,
-35,2026-05-10,Club Atlético de Madrid,RC Celta de Vigo,,
-35,2026-05-10,FC Barcelona,Real Madrid CF,,
-35,2026-05-10,Levante UD,CA Osasuna,,
-35,2026-05-10,RCD Mallorca,Villarreal CF,,
-35,2026-05-10,Elche CF,Deportivo Alavés,,
-35,2026-05-10,Real Sociedad de Fútbol,Real Betis Balompié,,
-35,2026-05-10,Sevilla FC,RCD Espanyol de Barcelona,,
+33,2026-04-22,Real Madrid,Deportivo Alavés,,
+33,2026-04-22,Elche,Atlético de Madrid,,
+33,2026-04-22,Girona FC,Bétis,,
+33,2026-04-22,Rayo Vallecano,Espanyol,,
+33,2026-04-22,Real Sociedad,Getafe CF,,
+34,2026-05-03,Deportivo Alavés,Athletic Bilbao,,
+34,2026-05-03,Bétis,Real Oviedo,,
+34,2026-05-03,Celta de Vigo,Elche,,
+34,2026-05-03,Espanyol,Real Madrid,,
+34,2026-05-03,Getafe CF,Rayo Vallecano,,
+34,2026-05-03,Girona FC,Mallorca,,
+34,2026-05-03,Valencia,Atlético de Madrid,,
+34,2026-05-03,Osasuna,Barcelona,,
+34,2026-05-03,Villarreal CF,Levante,,
+34,2026-05-03,Sevilha FC,Real Sociedad,,
+35,2026-05-10,Athletic Bilbao,Valencia,,
+35,2026-05-10,Atlético de Madrid,Celta de Vigo,,
+35,2026-05-10,Barcelona,Real Madrid,,
+35,2026-05-10,Levante,Osasuna,,
+35,2026-05-10,Mallorca,Villarreal CF,,
+35,2026-05-10,Elche,Deportivo Alavés,,
+35,2026-05-10,Real Sociedad,Bétis,,
+35,2026-05-10,Sevilha FC,Espanyol,,
 35,2026-05-10,Real Oviedo,Getafe CF,,
-35,2026-05-10,Rayo Vallecano de Madrid,Girona FC,,
-36,2026-05-13,Deportivo Alavés,FC Barcelona,,
-36,2026-05-13,Real Betis Balompié,Elche CF,,
-36,2026-05-13,RC Celta de Vigo,Levante UD,,
-36,2026-05-13,Getafe CF,RCD Mallorca,,
-36,2026-05-13,Girona FC,Real Sociedad de Fútbol,,
-36,2026-05-13,RCD Espanyol de Barcelona,Athletic Club,,
-36,2026-05-13,CA Osasuna,Club Atlético de Madrid,,
-36,2026-05-13,Valencia CF,Rayo Vallecano de Madrid,,
-36,2026-05-13,Villarreal CF,Sevilla FC,,
-36,2026-05-13,Real Madrid CF,Real Oviedo,,
-37,2026-05-17,Athletic Club,RC Celta de Vigo,,
-37,2026-05-17,Club Atlético de Madrid,Girona FC,,
-37,2026-05-17,FC Barcelona,Real Betis Balompié,,
-37,2026-05-17,Elche CF,Getafe CF,,
-37,2026-05-17,Levante UD,RCD Mallorca,,
-37,2026-05-17,Rayo Vallecano de Madrid,Villarreal CF,,
-37,2026-05-17,Real Sociedad de Fútbol,Valencia CF,,
+35,2026-05-10,Rayo Vallecano,Girona FC,,
+36,2026-05-13,Deportivo Alavés,Barcelona,,
+36,2026-05-13,Bétis,Elche,,
+36,2026-05-13,Celta de Vigo,Levante,,
+36,2026-05-13,Getafe CF,Mallorca,,
+36,2026-05-13,Girona FC,Real Sociedad,,
+36,2026-05-13,Espanyol,Athletic Bilbao,,
+36,2026-05-13,Osasuna,Atlético de Madrid,,
+36,2026-05-13,Valencia,Rayo Vallecano,,
+36,2026-05-13,Villarreal CF,Sevilha FC,,
+36,2026-05-13,Real Madrid,Real Oviedo,,
+37,2026-05-17,Athletic Bilbao,Celta de Vigo,,
+37,2026-05-17,Atlético de Madrid,Girona FC,,
+37,2026-05-17,Barcelona,Bétis,,
+37,2026-05-17,Elche,Getafe CF,,
+37,2026-05-17,Levante,Mallorca,,
+37,2026-05-17,Rayo Vallecano,Villarreal CF,,
+37,2026-05-17,Real Sociedad,Valencia,,
 37,2026-05-17,Real Oviedo,Deportivo Alavés,,
-37,2026-05-17,CA Osasuna,RCD Espanyol de Barcelona,,
-37,2026-05-17,Sevilla FC,Real Madrid CF,,
-38,2026-05-24,Deportivo Alavés,Rayo Vallecano de Madrid,,
-38,2026-05-24,Real Betis Balompié,Levante UD,,
-38,2026-05-24,RC Celta de Vigo,Sevilla FC,,
-38,2026-05-24,RCD Espanyol de Barcelona,Real Sociedad de Fútbol,,
-38,2026-05-24,Getafe CF,CA Osasuna,,
-38,2026-05-24,RCD Mallorca,Real Oviedo,,
-38,2026-05-24,Real Madrid CF,Athletic Club,,
-38,2026-05-24,Villarreal CF,Club Atlético de Madrid,,
-38,2026-05-24,Valencia CF,FC Barcelona,,
-38,2026-05-24,Girona FC,Elche CF,,
+37,2026-05-17,Osasuna,Espanyol,,
+37,2026-05-17,Sevilha FC,Real Madrid,,
+38,2026-05-24,Deportivo Alavés,Rayo Vallecano,,
+38,2026-05-24,Bétis,Levante,,
+38,2026-05-24,Celta de Vigo,Sevilha FC,,
+38,2026-05-24,Espanyol,Real Sociedad,,
+38,2026-05-24,Getafe CF,Osasuna,,
+38,2026-05-24,Mallorca,Real Oviedo,,
+38,2026-05-24,Real Madrid,Athletic Bilbao,,
+38,2026-05-24,Villarreal CF,Atlético de Madrid,,
+38,2026-05-24,Valencia,Barcelona,,
+38,2026-05-24,Girona FC,Elche,,

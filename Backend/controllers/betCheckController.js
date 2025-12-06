@@ -163,7 +163,7 @@ exports.verificarBilhetesPendentes = async (req, res) => {
         console.log("Arquivo mapeado:", filePath);
 
         if (!filePath) {
-          console.log("❌ NENHUM ARQUIVO DE TXT ENCONTRADO PARA ESTA LIGA");
+          console.log("❌ NENHUM ARQUIVO DE CSV ENCONTRADO PARA ESTA LIGA");
           ganhouTodos = false;
           continue;
         }

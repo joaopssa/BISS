@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2023-08-19,Empoli FC,Hellas Verona FC,0-1,0-0
-1,Sat,2023-08-19,Frosinone Calcio,SSC Napoli,1-3,1-2
-1,Sat,2023-08-19,Genoa CFC,ACF Fiorentina,1-4,0-3
-1,Sat,2023-08-19,FC Internazionale Milano,AC Monza,2-0,1-0
-1,Sun,2023-08-20,AS Roma,US Salernitana 1919,2-2,1-1
-1,Sun,2023-08-20,US Sassuolo Calcio,Atalanta BC,0-2,0-0
-1,Sun,2023-08-20,US Lecce,SS Lazio,2-1,0-1
-1,Sun,2023-08-20,Udinese Calcio,Juventus FC,0-3,0-3
-1,Mon,2023-08-21,Torino FC,Cagliari Calcio,0-0,
-1,Mon,2023-08-21,Bologna FC 1909,AC Milan,0-2,0-2
-2,Sat,2023-08-26,Frosinone Calcio,Atalanta BC,2-1,2-0
+1,Sat,2023-08-19,Empoli FC,Hellas Verona,0-1,0-0
+1,Sat,2023-08-19,Frosinone Calcio,Napoli,1-3,1-2
+1,Sat,2023-08-19,Genoa CFC,Fiorentina,1-4,0-3
+1,Sat,2023-08-19,Inter de Milão,AC Monza,2-0,1-0
+1,Sun,2023-08-20,Roma,US Salernitana 1919,2-2,1-1
+1,Sun,2023-08-20,Sassuolo,Atalanta,0-2,0-0
+1,Sun,2023-08-20,US Lecce,Lazio,2-1,0-1
+1,Sun,2023-08-20,Udinese,Juventus FC,0-3,0-3
+1,Mon,2023-08-21,Torino,Cagliari,0-0,
+1,Mon,2023-08-21,Bologna FC,AC Milan,0-2,0-2
+2,Sat,2023-08-26,Frosinone Calcio,Atalanta,2-1,2-0
 2,Sat,2023-08-26,AC Monza,Empoli FC,2-0,1-0
-2,Sat,2023-08-26,Hellas Verona FC,AS Roma,2-1,2-0
-2,Sat,2023-08-26,AC Milan,Torino FC,4-1,3-1
-2,Sun,2023-08-27,ACF Fiorentina,US Lecce,2-2,2-0
-2,Sun,2023-08-27,Juventus FC,Bologna FC 1909,1-1,0-1
-2,Sun,2023-08-27,SS Lazio,Genoa CFC,0-1,0-1
-2,Sun,2023-08-27,SSC Napoli,US Sassuolo Calcio,2-0,1-0
-2,Mon,2023-08-28,US Salernitana 1919,Udinese Calcio,1-1,0-0
-2,Mon,2023-08-28,Cagliari Calcio,FC Internazionale Milano,0-2,0-2
-3,Fri,2023-09-01,US Sassuolo Calcio,Hellas Verona FC,3-1,1-0
-3,Fri,2023-09-01,AS Roma,AC Milan,1-2,0-1
-3,Sat,2023-09-02,Bologna FC 1909,Cagliari Calcio,2-1,0-1
-3,Sat,2023-09-02,Udinese Calcio,Frosinone Calcio,0-0,
-3,Sat,2023-09-02,Atalanta BC,AC Monza,3-0,2-0
-3,Sat,2023-09-02,SSC Napoli,SS Lazio,1-2,1-1
-3,Sun,2023-09-03,FC Internazionale Milano,ACF Fiorentina,4-0,1-0
-3,Sun,2023-09-03,Torino FC,Genoa CFC,1-0,0-0
+2,Sat,2023-08-26,Hellas Verona,Roma,2-1,2-0
+2,Sat,2023-08-26,AC Milan,Torino,4-1,3-1
+2,Sun,2023-08-27,Fiorentina,US Lecce,2-2,2-0
+2,Sun,2023-08-27,Juventus FC,Bologna FC,1-1,0-1
+2,Sun,2023-08-27,Lazio,Genoa CFC,0-1,0-1
+2,Sun,2023-08-27,Napoli,Sassuolo,2-0,1-0
+2,Mon,2023-08-28,US Salernitana 1919,Udinese,1-1,0-0
+2,Mon,2023-08-28,Cagliari,Inter de Milão,0-2,0-2
+3,Fri,2023-09-01,Sassuolo,Hellas Verona,3-1,1-0
+3,Fri,2023-09-01,Roma,AC Milan,1-2,0-1
+3,Sat,2023-09-02,Bologna FC,Cagliari,2-1,0-1
+3,Sat,2023-09-02,Udinese,Frosinone Calcio,0-0,
+3,Sat,2023-09-02,Atalanta,AC Monza,3-0,2-0
+3,Sat,2023-09-02,Napoli,Lazio,1-2,1-1
+3,Sun,2023-09-03,Inter de Milão,Fiorentina,4-0,1-0
+3,Sun,2023-09-03,Torino,Genoa CFC,1-0,0-0
 3,Sun,2023-09-03,Empoli FC,Juventus FC,0-2,0-1
 3,Sun,2023-09-03,US Lecce,US Salernitana 1919,2-0,1-0
-4,Sat,2023-09-16,Juventus FC,SS Lazio,3-1,2-0
-4,Sat,2023-09-16,FC Internazionale Milano,AC Milan,5-1,2-0
-4,Sat,2023-09-16,Genoa CFC,SSC Napoli,2-2,1-0
-4,Sun,2023-09-17,Cagliari Calcio,Udinese Calcio,0-0,
-4,Sun,2023-09-17,Frosinone Calcio,US Sassuolo Calcio,4-2,1-2
+4,Sat,2023-09-16,Juventus FC,Lazio,3-1,2-0
+4,Sat,2023-09-16,Inter de Milão,AC Milan,5-1,2-0
+4,Sat,2023-09-16,Genoa CFC,Napoli,2-2,1-0
+4,Sun,2023-09-17,Cagliari,Udinese,0-0,
+4,Sun,2023-09-17,Frosinone Calcio,Sassuolo,4-2,1-2
 4,Sun,2023-09-17,AC Monza,US Lecce,1-1,1-1
-4,Sun,2023-09-17,ACF Fiorentina,Atalanta BC,3-2,2-1
-4,Sun,2023-09-17,AS Roma,Empoli FC,7-0,3-0
-4,Mon,2023-09-18,US Salernitana 1919,Torino FC,0-3,0-2
-4,Mon,2023-09-18,Hellas Verona FC,Bologna FC 1909,0-0,
+4,Sun,2023-09-17,Fiorentina,Atalanta,3-2,2-1
+4,Sun,2023-09-17,Roma,Empoli FC,7-0,3-0
+4,Mon,2023-09-18,US Salernitana 1919,Torino,0-3,0-2
+4,Mon,2023-09-18,Hellas Verona,Bologna FC,0-0,
 5,Fri,2023-09-22,US Salernitana 1919,Frosinone Calcio,1-1,0-1
 5,Fri,2023-09-22,US Lecce,Genoa CFC,1-0,0-0
-5,Sat,2023-09-23,AC Milan,Hellas Verona FC,1-0,1-0
-5,Sat,2023-09-23,US Sassuolo Calcio,Juventus FC,4-2,2-1
-5,Sat,2023-09-23,SS Lazio,AC Monza,1-1,1-1
-5,Sun,2023-09-24,Empoli FC,FC Internazionale Milano,0-1,0-0
-5,Sun,2023-09-24,Atalanta BC,Cagliari Calcio,2-0,1-0
-5,Sun,2023-09-24,Udinese Calcio,ACF Fiorentina,0-2,0-1
-5,Sun,2023-09-24,Bologna FC 1909,SSC Napoli,0-0,
-5,Sun,2023-09-24,Torino FC,AS Roma,1-1,0-0
+5,Sat,2023-09-23,AC Milan,Hellas Verona,1-0,1-0
+5,Sat,2023-09-23,Sassuolo,Juventus FC,4-2,2-1
+5,Sat,2023-09-23,Lazio,AC Monza,1-1,1-1
+5,Sun,2023-09-24,Empoli FC,Inter de Milão,0-1,0-0
+5,Sun,2023-09-24,Atalanta,Cagliari,2-0,1-0
+5,Sun,2023-09-24,Udinese,Fiorentina,0-2,0-1
+5,Sun,2023-09-24,Bologna FC,Napoli,0-0,
+5,Sun,2023-09-24,Torino,Roma,1-1,0-0
 6,Tue,2023-09-26,Juventus FC,US Lecce,1-0,0-0
-6,Wed,2023-09-27,Cagliari Calcio,AC Milan,1-3,1-2
+6,Wed,2023-09-27,Cagliari,AC Milan,1-3,1-2
 6,Wed,2023-09-27,Empoli FC,US Salernitana 1919,1-0,1-0
-6,Wed,2023-09-27,Hellas Verona FC,Atalanta BC,0-1,0-1
-6,Wed,2023-09-27,FC Internazionale Milano,US Sassuolo Calcio,1-2,1-0
-6,Wed,2023-09-27,SS Lazio,Torino FC,2-0,0-0
-6,Wed,2023-09-27,SSC Napoli,Udinese Calcio,4-1,2-0
-6,Thu,2023-09-28,Frosinone Calcio,ACF Fiorentina,1-1,0-1
-6,Thu,2023-09-28,AC Monza,Bologna FC 1909,0-0,
-6,Thu,2023-09-28,Genoa CFC,AS Roma,4-1,2-1
-7,Sat,2023-09-30,US Lecce,SSC Napoli,0-4,0-1
-7,Sat,2023-09-30,AC Milan,SS Lazio,2-0,0-0
-7,Sat,2023-09-30,US Salernitana 1919,FC Internazionale Milano,0-4,0-0
-7,Sun,2023-10-01,Bologna FC 1909,Empoli FC,3-0,1-0
-7,Sun,2023-10-01,Udinese Calcio,Genoa CFC,2-2,1-2
-7,Sun,2023-10-01,Atalanta BC,Juventus FC,0-0,
-7,Sun,2023-10-01,AS Roma,Frosinone Calcio,2-0,1-0
-7,Mon,2023-10-02,US Sassuolo Calcio,AC Monza,0-1,0-0
-7,Mon,2023-10-02,Torino FC,Hellas Verona FC,0-0,
-7,Mon,2023-10-02,ACF Fiorentina,Cagliari Calcio,3-0,2-0
-8,Fri,2023-10-06,Empoli FC,Udinese Calcio,0-0,
-8,Fri,2023-10-06,US Lecce,US Sassuolo Calcio,1-1,0-1
-8,Sat,2023-10-07,FC Internazionale Milano,Bologna FC 1909,2-2,2-1
-8,Sat,2023-10-07,Juventus FC,Torino FC,2-0,0-0
+6,Wed,2023-09-27,Hellas Verona,Atalanta,0-1,0-1
+6,Wed,2023-09-27,Inter de Milão,Sassuolo,1-2,1-0
+6,Wed,2023-09-27,Lazio,Torino,2-0,0-0
+6,Wed,2023-09-27,Napoli,Udinese,4-1,2-0
+6,Thu,2023-09-28,Frosinone Calcio,Fiorentina,1-1,0-1
+6,Thu,2023-09-28,AC Monza,Bologna FC,0-0,
+6,Thu,2023-09-28,Genoa CFC,Roma,4-1,2-1
+7,Sat,2023-09-30,US Lecce,Napoli,0-4,0-1
+7,Sat,2023-09-30,AC Milan,Lazio,2-0,0-0
+7,Sat,2023-09-30,US Salernitana 1919,Inter de Milão,0-4,0-0
+7,Sun,2023-10-01,Bologna FC,Empoli FC,3-0,1-0
+7,Sun,2023-10-01,Udinese,Genoa CFC,2-2,1-2
+7,Sun,2023-10-01,Atalanta,Juventus FC,0-0,
+7,Sun,2023-10-01,Roma,Frosinone Calcio,2-0,1-0
+7,Mon,2023-10-02,Sassuolo,AC Monza,0-1,0-0
+7,Mon,2023-10-02,Torino,Hellas Verona,0-0,
+7,Mon,2023-10-02,Fiorentina,Cagliari,3-0,2-0
+8,Fri,2023-10-06,Empoli FC,Udinese,0-0,
+8,Fri,2023-10-06,US Lecce,Sassuolo,1-1,0-1
+8,Sat,2023-10-07,Inter de Milão,Bologna FC,2-2,2-1
+8,Sat,2023-10-07,Juventus FC,Torino,2-0,0-0
 8,Sat,2023-10-07,Genoa CFC,AC Milan,0-1,0-0
 8,Sun,2023-10-08,AC Monza,US Salernitana 1919,3-0,2-0
-8,Sun,2023-10-08,Frosinone Calcio,Hellas Verona FC,2-1,1-0
-8,Sun,2023-10-08,SS Lazio,Atalanta BC,3-2,2-1
-8,Sun,2023-10-08,Cagliari Calcio,AS Roma,1-4,0-2
-8,Sun,2023-10-08,SSC Napoli,ACF Fiorentina,1-3,1-1
-9,Sat,2023-10-21,Hellas Verona FC,SSC Napoli,1-3,0-2
-9,Sat,2023-10-21,Torino FC,FC Internazionale Milano,0-3,0-0
-9,Sat,2023-10-21,US Sassuolo Calcio,SS Lazio,0-2,0-2
-9,Sun,2023-10-22,AS Roma,AC Monza,1-0,0-0
-9,Sun,2023-10-22,Bologna FC 1909,Frosinone Calcio,2-1,2-0
-9,Sun,2023-10-22,US Salernitana 1919,Cagliari Calcio,2-2,0-0
-9,Sun,2023-10-22,Atalanta BC,Genoa CFC,2-0,0-0
+8,Sun,2023-10-08,Frosinone Calcio,Hellas Verona,2-1,1-0
+8,Sun,2023-10-08,Lazio,Atalanta,3-2,2-1
+8,Sun,2023-10-08,Cagliari,Roma,1-4,0-2
+8,Sun,2023-10-08,Napoli,Fiorentina,1-3,1-1
+9,Sat,2023-10-21,Hellas Verona,Napoli,1-3,0-2
+9,Sat,2023-10-21,Torino,Inter de Milão,0-3,0-0
+9,Sat,2023-10-21,Sassuolo,Lazio,0-2,0-2
+9,Sun,2023-10-22,Roma,AC Monza,1-0,0-0
+9,Sun,2023-10-22,Bologna FC,Frosinone Calcio,2-1,2-0
+9,Sun,2023-10-22,US Salernitana 1919,Cagliari,2-2,0-0
+9,Sun,2023-10-22,Atalanta,Genoa CFC,2-0,0-0
 9,Sun,2023-10-22,AC Milan,Juventus FC,0-1,0-0
-9,Mon,2023-10-23,Udinese Calcio,US Lecce,1-1,0-0
-9,Mon,2023-10-23,ACF Fiorentina,Empoli FC,0-2,0-1
+9,Mon,2023-10-23,Udinese,US Lecce,1-1,0-0
+9,Mon,2023-10-23,Fiorentina,Empoli FC,0-2,0-1
 10,Fri,2023-10-27,Genoa CFC,US Salernitana 1919,1-0,1-0
-10,Sat,2023-10-28,US Sassuolo Calcio,Bologna FC 1909,1-1,1-1
-10,Sat,2023-10-28,US Lecce,Torino FC,0-1,0-1
-10,Sat,2023-10-28,Juventus FC,Hellas Verona FC,1-0,0-0
-10,Sun,2023-10-29,Cagliari Calcio,Frosinone Calcio,4-3,0-2
-10,Sun,2023-10-29,AC Monza,Udinese Calcio,1-1,1-0
-10,Sun,2023-10-29,FC Internazionale Milano,AS Roma,1-0,0-0
-10,Sun,2023-10-29,SSC Napoli,AC Milan,2-2,0-2
-10,Mon,2023-10-30,Empoli FC,Atalanta BC,0-3,0-2
-10,Mon,2023-10-30,SS Lazio,ACF Fiorentina,1-0,0-0
-11,Fri,2023-11-03,Bologna FC 1909,SS Lazio,1-0,0-0
-11,Sat,2023-11-04,US Salernitana 1919,SSC Napoli,0-2,0-1
-11,Sat,2023-11-04,Atalanta BC,FC Internazionale Milano,1-2,0-1
-11,Sat,2023-11-04,AC Milan,Udinese Calcio,0-1,0-0
-11,Sun,2023-11-05,Hellas Verona FC,AC Monza,1-3,0-1
-11,Sun,2023-11-05,Cagliari Calcio,Genoa CFC,2-1,0-0
-11,Sun,2023-11-05,AS Roma,US Lecce,2-1,0-0
-11,Sun,2023-11-05,ACF Fiorentina,Juventus FC,0-1,0-1
+10,Sat,2023-10-28,Sassuolo,Bologna FC,1-1,1-1
+10,Sat,2023-10-28,US Lecce,Torino,0-1,0-1
+10,Sat,2023-10-28,Juventus FC,Hellas Verona,1-0,0-0
+10,Sun,2023-10-29,Cagliari,Frosinone Calcio,4-3,0-2
+10,Sun,2023-10-29,AC Monza,Udinese,1-1,1-0
+10,Sun,2023-10-29,Inter de Milão,Roma,1-0,0-0
+10,Sun,2023-10-29,Napoli,AC Milan,2-2,0-2
+10,Mon,2023-10-30,Empoli FC,Atalanta,0-3,0-2
+10,Mon,2023-10-30,Lazio,Fiorentina,1-0,0-0
+11,Fri,2023-11-03,Bologna FC,Lazio,1-0,0-0
+11,Sat,2023-11-04,US Salernitana 1919,Napoli,0-2,0-1
+11,Sat,2023-11-04,Atalanta,Inter de Milão,1-2,0-1
+11,Sat,2023-11-04,AC Milan,Udinese,0-1,0-0
+11,Sun,2023-11-05,Hellas Verona,AC Monza,1-3,0-1
+11,Sun,2023-11-05,Cagliari,Genoa CFC,2-1,0-0
+11,Sun,2023-11-05,Roma,US Lecce,2-1,0-0
+11,Sun,2023-11-05,Fiorentina,Juventus FC,0-1,0-1
 11,Mon,2023-11-06,Frosinone Calcio,Empoli FC,2-1,0-0
-11,Mon,2023-11-06,Torino FC,US Sassuolo Calcio,2-1,1-1
-12,Fri,2023-11-10,US Sassuolo Calcio,US Salernitana 1919,2-2,1-2
-12,Fri,2023-11-10,Genoa CFC,Hellas Verona FC,1-0,1-0
+11,Mon,2023-11-06,Torino,Sassuolo,2-1,1-1
+12,Fri,2023-11-10,Sassuolo,US Salernitana 1919,2-2,1-2
+12,Fri,2023-11-10,Genoa CFC,Hellas Verona,1-0,1-0
 12,Sat,2023-11-11,US Lecce,AC Milan,2-2,0-2
-12,Sat,2023-11-11,Juventus FC,Cagliari Calcio,2-1,0-0
-12,Sat,2023-11-11,AC Monza,Torino FC,1-1,0-0
-12,Sun,2023-11-12,SSC Napoli,Empoli FC,0-1,0-0
-12,Sun,2023-11-12,ACF Fiorentina,Bologna FC 1909,2-1,1-1
-12,Sun,2023-11-12,Udinese Calcio,Atalanta BC,1-1,1-0
-12,Sun,2023-11-12,SS Lazio,AS Roma,0-0,
-12,Sun,2023-11-12,FC Internazionale Milano,Frosinone Calcio,2-0,1-0
-13,Sat,2023-11-25,US Salernitana 1919,SS Lazio,2-1,0-1
-13,Sat,2023-11-25,Atalanta BC,SSC Napoli,1-2,0-1
-13,Sat,2023-11-25,AC Milan,ACF Fiorentina,1-0,1-0
-13,Sun,2023-11-26,Cagliari Calcio,AC Monza,1-1,1-0
-13,Sun,2023-11-26,Empoli FC,US Sassuolo Calcio,3-4,2-2
+12,Sat,2023-11-11,Juventus FC,Cagliari,2-1,0-0
+12,Sat,2023-11-11,AC Monza,Torino,1-1,0-0
+12,Sun,2023-11-12,Napoli,Empoli FC,0-1,0-0
+12,Sun,2023-11-12,Fiorentina,Bologna FC,2-1,1-1
+12,Sun,2023-11-12,Udinese,Atalanta,1-1,1-0
+12,Sun,2023-11-12,Lazio,Roma,0-0,
+12,Sun,2023-11-12,Inter de Milão,Frosinone Calcio,2-0,1-0
+13,Sat,2023-11-25,US Salernitana 1919,Lazio,2-1,0-1
+13,Sat,2023-11-25,Atalanta,Napoli,1-2,0-1
+13,Sat,2023-11-25,AC Milan,Fiorentina,1-0,1-0
+13,Sun,2023-11-26,Cagliari,AC Monza,1-1,1-0
+13,Sun,2023-11-26,Empoli FC,Sassuolo,3-4,2-2
 13,Sun,2023-11-26,Frosinone Calcio,Genoa CFC,2-1,1-1
-13,Sun,2023-11-26,AS Roma,Udinese Calcio,3-1,1-0
-13,Sun,2023-11-26,Juventus FC,FC Internazionale Milano,1-1,1-1
-13,Mon,2023-11-27,Hellas Verona FC,US Lecce,2-2,1-1
-13,Mon,2023-11-27,Bologna FC 1909,Torino FC,2-0,0-0
+13,Sun,2023-11-26,Roma,Udinese,3-1,1-0
+13,Sun,2023-11-26,Juventus FC,Inter de Milão,1-1,1-1
+13,Mon,2023-11-27,Hellas Verona,US Lecce,2-2,1-1
+13,Mon,2023-11-27,Bologna FC,Torino,2-0,0-0
 14,Fri,2023-12-01,AC Monza,Juventus FC,1-2,0-1
 14,Sat,2023-12-02,Genoa CFC,Empoli FC,1-1,1-0
-14,Sat,2023-12-02,SS Lazio,Cagliari Calcio,1-0,1-0
+14,Sat,2023-12-02,Lazio,Cagliari,1-0,1-0
 14,Sat,2023-12-02,AC Milan,Frosinone Calcio,3-1,1-0
-14,Sun,2023-12-03,US Lecce,Bologna FC 1909,1-1,0-0
-14,Sun,2023-12-03,ACF Fiorentina,US Salernitana 1919,3-0,2-0
-14,Sun,2023-12-03,Udinese Calcio,Hellas Verona FC,3-3,2-1
-14,Sun,2023-12-03,US Sassuolo Calcio,AS Roma,1-2,1-0
-14,Sun,2023-12-03,SSC Napoli,FC Internazionale Milano,0-3,0-1
-14,Mon,2023-12-04,Torino FC,Atalanta BC,3-0,1-0
-15,Fri,2023-12-08,Juventus FC,SSC Napoli,1-0,0-0
-15,Sat,2023-12-09,Hellas Verona FC,SS Lazio,1-1,0-1
-15,Sat,2023-12-09,Atalanta BC,AC Milan,3-2,1-1
-15,Sat,2023-12-09,FC Internazionale Milano,Udinese Calcio,4-0,3-0
-15,Sun,2023-12-10,Frosinone Calcio,Torino FC,0-0,
+14,Sun,2023-12-03,US Lecce,Bologna FC,1-1,0-0
+14,Sun,2023-12-03,Fiorentina,US Salernitana 1919,3-0,2-0
+14,Sun,2023-12-03,Udinese,Hellas Verona,3-3,2-1
+14,Sun,2023-12-03,Sassuolo,Roma,1-2,1-0
+14,Sun,2023-12-03,Napoli,Inter de Milão,0-3,0-1
+14,Mon,2023-12-04,Torino,Atalanta,3-0,1-0
+15,Fri,2023-12-08,Juventus FC,Napoli,1-0,0-0
+15,Sat,2023-12-09,Hellas Verona,Lazio,1-1,0-1
+15,Sat,2023-12-09,Atalanta,AC Milan,3-2,1-1
+15,Sat,2023-12-09,Inter de Milão,Udinese,4-0,3-0
+15,Sun,2023-12-10,Frosinone Calcio,Torino,0-0,
 15,Sun,2023-12-10,AC Monza,Genoa CFC,1-0,0-0
-15,Sun,2023-12-10,US Salernitana 1919,Bologna FC 1909,1-2,0-2
-15,Sun,2023-12-10,AS Roma,ACF Fiorentina,1-1,1-0
+15,Sun,2023-12-10,US Salernitana 1919,Bologna FC,1-2,0-2
+15,Sun,2023-12-10,Roma,Fiorentina,1-1,1-0
 15,Mon,2023-12-11,Empoli FC,US Lecce,1-1,0-0
-15,Mon,2023-12-11,Cagliari Calcio,US Sassuolo Calcio,2-1,0-1
+15,Mon,2023-12-11,Cagliari,Sassuolo,2-1,0-1
 16,Fri,2023-12-15,Genoa CFC,Juventus FC,1-1,0-1
 16,Sat,2023-12-16,US Lecce,Frosinone Calcio,2-1,1-1
-16,Sat,2023-12-16,SSC Napoli,Cagliari Calcio,2-1,0-0
-16,Sat,2023-12-16,Torino FC,Empoli FC,1-0,1-0
+16,Sat,2023-12-16,Napoli,Cagliari,2-1,0-0
+16,Sat,2023-12-16,Torino,Empoli FC,1-0,1-0
 16,Sun,2023-12-17,AC Milan,AC Monza,3-0,2-0
-16,Sun,2023-12-17,ACF Fiorentina,Hellas Verona FC,1-0,0-0
-16,Sun,2023-12-17,Udinese Calcio,US Sassuolo Calcio,2-2,1-0
-16,Sun,2023-12-17,Bologna FC 1909,AS Roma,2-0,1-0
-16,Sun,2023-12-17,SS Lazio,FC Internazionale Milano,0-2,0-1
-16,Mon,2023-12-18,Atalanta BC,US Salernitana 1919,4-1,0-1
-17,Fri,2023-12-22,US Sassuolo Calcio,Genoa CFC,1-2,1-0
-17,Fri,2023-12-22,Empoli FC,SS Lazio,0-2,0-1
-17,Fri,2023-12-22,AC Monza,ACF Fiorentina,0-1,0-1
+16,Sun,2023-12-17,Fiorentina,Hellas Verona,1-0,0-0
+16,Sun,2023-12-17,Udinese,Sassuolo,2-2,1-0
+16,Sun,2023-12-17,Bologna FC,Roma,2-0,1-0
+16,Sun,2023-12-17,Lazio,Inter de Milão,0-2,0-1
+16,Mon,2023-12-18,Atalanta,US Salernitana 1919,4-1,0-1
+17,Fri,2023-12-22,Sassuolo,Genoa CFC,1-2,1-0
+17,Fri,2023-12-22,Empoli FC,Lazio,0-2,0-1
+17,Fri,2023-12-22,AC Monza,Fiorentina,0-1,0-1
 17,Fri,2023-12-22,US Salernitana 1919,AC Milan,2-2,1-1
 17,Sat,2023-12-23,Frosinone Calcio,Juventus FC,1-2,0-1
-17,Sat,2023-12-23,Torino FC,Udinese Calcio,1-1,0-0
-17,Sat,2023-12-23,Bologna FC 1909,Atalanta BC,1-0,0-0
-17,Sat,2023-12-23,Hellas Verona FC,Cagliari Calcio,2-0,0-0
-17,Sat,2023-12-23,FC Internazionale Milano,US Lecce,2-0,1-0
-17,Sat,2023-12-23,AS Roma,SSC Napoli,2-0,0-0
-18,Fri,2023-12-29,ACF Fiorentina,Torino FC,1-0,0-0
-18,Fri,2023-12-29,SSC Napoli,AC Monza,0-0,
-18,Fri,2023-12-29,Genoa CFC,FC Internazionale Milano,1-1,1-1
-18,Fri,2023-12-29,SS Lazio,Frosinone Calcio,3-1,0-0
-18,Sat,2023-12-30,Atalanta BC,US Lecce,1-0,0-0
-18,Sat,2023-12-30,Cagliari Calcio,Empoli FC,0-0,
-18,Sat,2023-12-30,Udinese Calcio,Bologna FC 1909,3-0,1-0
-18,Sat,2023-12-30,Hellas Verona FC,US Salernitana 1919,0-1,0-0
-18,Sat,2023-12-30,AC Milan,US Sassuolo Calcio,1-0,0-0
-18,Sat,2023-12-30,Juventus FC,AS Roma,1-0,0-0
-19,Fri,2024-01-05,Bologna FC 1909,Genoa CFC,1-1,0-1
-19,Sat,2024-01-06,FC Internazionale Milano,Hellas Verona FC,2-1,1-0
+17,Sat,2023-12-23,Torino,Udinese,1-1,0-0
+17,Sat,2023-12-23,Bologna FC,Atalanta,1-0,0-0
+17,Sat,2023-12-23,Hellas Verona,Cagliari,2-0,0-0
+17,Sat,2023-12-23,Inter de Milão,US Lecce,2-0,1-0
+17,Sat,2023-12-23,Roma,Napoli,2-0,0-0
+18,Fri,2023-12-29,Fiorentina,Torino,1-0,0-0
+18,Fri,2023-12-29,Napoli,AC Monza,0-0,
+18,Fri,2023-12-29,Genoa CFC,Inter de Milão,1-1,1-1
+18,Fri,2023-12-29,Lazio,Frosinone Calcio,3-1,0-0
+18,Sat,2023-12-30,Atalanta,US Lecce,1-0,0-0
+18,Sat,2023-12-30,Cagliari,Empoli FC,0-0,
+18,Sat,2023-12-30,Udinese,Bologna FC,3-0,1-0
+18,Sat,2023-12-30,Hellas Verona,US Salernitana 1919,0-1,0-0
+18,Sat,2023-12-30,AC Milan,Sassuolo,1-0,0-0
+18,Sat,2023-12-30,Juventus FC,Roma,1-0,0-0
+19,Fri,2024-01-05,Bologna FC,Genoa CFC,1-1,0-1
+19,Sat,2024-01-06,Inter de Milão,Hellas Verona,2-1,1-0
 19,Sat,2024-01-06,Frosinone Calcio,AC Monza,2-3,0-2
-19,Sat,2024-01-06,US Lecce,Cagliari Calcio,1-1,1-0
-19,Sat,2024-01-06,US Sassuolo Calcio,ACF Fiorentina,1-0,1-0
+19,Sat,2024-01-06,US Lecce,Cagliari,1-1,1-0
+19,Sat,2024-01-06,Sassuolo,Fiorentina,1-0,1-0
 19,Sun,2024-01-07,Empoli FC,AC Milan,0-3,0-2
-19,Sun,2024-01-07,Torino FC,SSC Napoli,3-0,1-0
-19,Sun,2024-01-07,Udinese Calcio,SS Lazio,1-2,0-1
+19,Sun,2024-01-07,Torino,Napoli,3-0,1-0
+19,Sun,2024-01-07,Udinese,Lazio,1-2,0-1
 19,Sun,2024-01-07,US Salernitana 1919,Juventus FC,1-2,1-0
-19,Sun,2024-01-07,AS Roma,Atalanta BC,1-1,1-1
-20,Sat,2024-01-13,Genoa CFC,Torino FC,0-0,
-20,Sat,2024-01-13,SSC Napoli,US Salernitana 1919,2-1,1-1
-20,Sat,2024-01-13,Hellas Verona FC,Empoli FC,2-1,1-0
-20,Sat,2024-01-13,AC Monza,FC Internazionale Milano,1-5,0-2
-20,Sun,2024-01-14,SS Lazio,US Lecce,1-0,0-0
-20,Sun,2024-01-14,Cagliari Calcio,Bologna FC 1909,2-1,1-1
-20,Sun,2024-01-14,ACF Fiorentina,Udinese Calcio,2-2,0-1
-20,Sun,2024-01-14,AC Milan,AS Roma,3-1,1-0
-20,Mon,2024-01-15,Atalanta BC,Frosinone Calcio,5-0,3-0
-20,Tue,2024-01-16,Juventus FC,US Sassuolo Calcio,3-0,2-0
-21,Sat,2024-01-20,AS Roma,Hellas Verona FC,2-1,2-0
-21,Sat,2024-01-20,Udinese Calcio,AC Milan,2-3,1-1
-21,Sun,2024-01-21,Frosinone Calcio,Cagliari Calcio,3-1,0-1
+19,Sun,2024-01-07,Roma,Atalanta,1-1,1-1
+20,Sat,2024-01-13,Genoa CFC,Torino,0-0,
+20,Sat,2024-01-13,Napoli,US Salernitana 1919,2-1,1-1
+20,Sat,2024-01-13,Hellas Verona,Empoli FC,2-1,1-0
+20,Sat,2024-01-13,AC Monza,Inter de Milão,1-5,0-2
+20,Sun,2024-01-14,Lazio,US Lecce,1-0,0-0
+20,Sun,2024-01-14,Cagliari,Bologna FC,2-1,1-1
+20,Sun,2024-01-14,Fiorentina,Udinese,2-2,0-1
+20,Sun,2024-01-14,AC Milan,Roma,3-1,1-0
+20,Mon,2024-01-15,Atalanta,Frosinone Calcio,5-0,3-0
+20,Tue,2024-01-16,Juventus FC,Sassuolo,3-0,2-0
+21,Sat,2024-01-20,Roma,Hellas Verona,2-1,2-0
+21,Sat,2024-01-20,Udinese,AC Milan,2-3,1-1
+21,Sun,2024-01-21,Frosinone Calcio,Cagliari,3-1,0-1
 21,Sun,2024-01-21,Empoli FC,AC Monza,3-0,2-0
 21,Sun,2024-01-21,US Salernitana 1919,Genoa CFC,1-2,1-1
 21,Sun,2024-01-21,US Lecce,Juventus FC,0-3,0-0
-22,Fri,2024-01-26,Cagliari Calcio,Torino FC,1-2,0-2
-22,Sat,2024-01-27,Atalanta BC,Udinese Calcio,2-0,2-0
+22,Fri,2024-01-26,Cagliari,Torino,1-2,0-2
+22,Sat,2024-01-27,Atalanta,Udinese,2-0,2-0
 22,Sat,2024-01-27,Juventus FC,Empoli FC,1-1,0-0
-22,Sat,2024-01-27,AC Milan,Bologna FC 1909,2-2,1-1
+22,Sat,2024-01-27,AC Milan,Bologna FC,2-2,1-1
 22,Sun,2024-01-28,Genoa CFC,US Lecce,2-1,0-1
-22,Sun,2024-01-28,Hellas Verona FC,Frosinone Calcio,1-1,1-0
-22,Sun,2024-01-28,AC Monza,US Sassuolo Calcio,1-0,1-0
-22,Sun,2024-01-28,SS Lazio,SSC Napoli,0-0,
-22,Sun,2024-01-28,ACF Fiorentina,FC Internazionale Milano,0-1,0-1
-22,Mon,2024-01-29,US Salernitana 1919,AS Roma,1-2,0-0
-23,Fri,2024-02-02,US Lecce,ACF Fiorentina,3-2,1-0
+22,Sun,2024-01-28,Hellas Verona,Frosinone Calcio,1-1,1-0
+22,Sun,2024-01-28,AC Monza,Sassuolo,1-0,1-0
+22,Sun,2024-01-28,Lazio,Napoli,0-0,
+22,Sun,2024-01-28,Fiorentina,Inter de Milão,0-1,0-1
+22,Mon,2024-01-29,US Salernitana 1919,Roma,1-2,0-0
+23,Fri,2024-02-02,US Lecce,Fiorentina,3-2,1-0
 23,Sat,2024-02-03,Empoli FC,Genoa CFC,0-0,
-23,Sat,2024-02-03,Udinese Calcio,AC Monza,0-0,
+23,Sat,2024-02-03,Udinese,AC Monza,0-0,
 23,Sat,2024-02-03,Frosinone Calcio,AC Milan,2-3,1-1
-23,Sat,2024-02-03,Bologna FC 1909,US Sassuolo Calcio,4-2,1-2
-23,Sun,2024-02-04,Torino FC,US Salernitana 1919,0-0,
-23,Sun,2024-02-04,SSC Napoli,Hellas Verona FC,2-1,0-0
-23,Sun,2024-02-04,Atalanta BC,SS Lazio,3-1,2-0
-23,Sun,2024-02-04,FC Internazionale Milano,Juventus FC,1-0,1-0
-23,Mon,2024-02-05,AS Roma,Cagliari Calcio,4-0,2-0
+23,Sat,2024-02-03,Bologna FC,Sassuolo,4-2,1-2
+23,Sun,2024-02-04,Torino,US Salernitana 1919,0-0,
+23,Sun,2024-02-04,Napoli,Hellas Verona,2-1,0-0
+23,Sun,2024-02-04,Atalanta,Lazio,3-1,2-0
+23,Sun,2024-02-04,Inter de Milão,Juventus FC,1-0,1-0
+23,Mon,2024-02-05,Roma,Cagliari,4-0,2-0
 24,Fri,2024-02-09,US Salernitana 1919,Empoli FC,1-3,0-1
-24,Sat,2024-02-10,Cagliari Calcio,SS Lazio,1-3,0-1
-24,Sat,2024-02-10,AS Roma,FC Internazionale Milano,2-4,2-1
-24,Sat,2024-02-10,US Sassuolo Calcio,Torino FC,1-1,1-1
-24,Sun,2024-02-11,ACF Fiorentina,Frosinone Calcio,5-1,3-0
-24,Sun,2024-02-11,Bologna FC 1909,US Lecce,4-0,2-0
-24,Sun,2024-02-11,AC Monza,Hellas Verona FC,0-0,
-24,Sun,2024-02-11,Genoa CFC,Atalanta BC,1-4,0-1
-24,Sun,2024-02-11,AC Milan,SSC Napoli,1-0,1-0
-24,Mon,2024-02-12,Juventus FC,Udinese Calcio,0-1,0-1
-21,Wed,2024-02-14,Bologna FC 1909,ACF Fiorentina,2-0,1-0
-25,Fri,2024-02-16,Torino FC,US Lecce,2-0,0-0
-25,Fri,2024-02-16,FC Internazionale Milano,US Salernitana 1919,4-0,3-0
-25,Sat,2024-02-17,SSC Napoli,Genoa CFC,1-1,0-0
-25,Sat,2024-02-17,Hellas Verona FC,Juventus FC,2-2,1-1
-25,Sat,2024-02-17,Atalanta BC,US Sassuolo Calcio,3-0,1-0
-25,Sun,2024-02-18,SS Lazio,Bologna FC 1909,1-2,1-1
-25,Sun,2024-02-18,Empoli FC,ACF Fiorentina,1-1,0-1
-25,Sun,2024-02-18,Udinese Calcio,Cagliari Calcio,1-1,1-1
-25,Sun,2024-02-18,Frosinone Calcio,AS Roma,0-3,0-1
+24,Sat,2024-02-10,Cagliari,Lazio,1-3,0-1
+24,Sat,2024-02-10,Roma,Inter de Milão,2-4,2-1
+24,Sat,2024-02-10,Sassuolo,Torino,1-1,1-1
+24,Sun,2024-02-11,Fiorentina,Frosinone Calcio,5-1,3-0
+24,Sun,2024-02-11,Bologna FC,US Lecce,4-0,2-0
+24,Sun,2024-02-11,AC Monza,Hellas Verona,0-0,
+24,Sun,2024-02-11,Genoa CFC,Atalanta,1-4,0-1
+24,Sun,2024-02-11,AC Milan,Napoli,1-0,1-0
+24,Mon,2024-02-12,Juventus FC,Udinese,0-1,0-1
+21,Wed,2024-02-14,Bologna FC,Fiorentina,2-0,1-0
+25,Fri,2024-02-16,Torino,US Lecce,2-0,0-0
+25,Fri,2024-02-16,Inter de Milão,US Salernitana 1919,4-0,3-0
+25,Sat,2024-02-17,Napoli,Genoa CFC,1-1,0-0
+25,Sat,2024-02-17,Hellas Verona,Juventus FC,2-2,1-1
+25,Sat,2024-02-17,Atalanta,Sassuolo,3-0,1-0
+25,Sun,2024-02-18,Lazio,Bologna FC,1-2,1-1
+25,Sun,2024-02-18,Empoli FC,Fiorentina,1-1,0-1
+25,Sun,2024-02-18,Udinese,Cagliari,1-1,1-1
+25,Sun,2024-02-18,Frosinone Calcio,Roma,0-3,0-1
 25,Sun,2024-02-18,AC Monza,AC Milan,4-2,2-0
-21,Thu,2024-02-22,Torino FC,SS Lazio,0-2,0-0
-26,Fri,2024-02-23,Bologna FC 1909,Hellas Verona FC,2-0,1-0
-26,Sat,2024-02-24,US Sassuolo Calcio,Empoli FC,2-3,0-1
+21,Thu,2024-02-22,Torino,Lazio,0-2,0-0
+26,Fri,2024-02-23,Bologna FC,Hellas Verona,2-0,1-0
+26,Sat,2024-02-24,Sassuolo,Empoli FC,2-3,0-1
 26,Sat,2024-02-24,US Salernitana 1919,AC Monza,0-2,0-0
-26,Sat,2024-02-24,Genoa CFC,Udinese Calcio,2-0,2-0
+26,Sat,2024-02-24,Genoa CFC,Udinese,2-0,2-0
 26,Sun,2024-02-25,Juventus FC,Frosinone Calcio,3-2,2-2
-26,Sun,2024-02-25,Cagliari Calcio,SSC Napoli,1-1,0-0
-26,Sun,2024-02-25,US Lecce,FC Internazionale Milano,0-4,0-1
-26,Sun,2024-02-25,AC Milan,Atalanta BC,1-1,1-1
-26,Mon,2024-02-26,AS Roma,Torino FC,3-2,1-1
-26,Mon,2024-02-26,ACF Fiorentina,SS Lazio,2-1,0-1
-21,Wed,2024-02-28,US Sassuolo Calcio,SSC Napoli,1-6,1-3
-21,Wed,2024-02-28,FC Internazionale Milano,Atalanta BC,4-0,2-0
-27,Fri,2024-03-01,SS Lazio,AC Milan,0-1,0-0
-27,Sat,2024-03-02,Udinese Calcio,US Salernitana 1919,1-1,1-1
-27,Sat,2024-03-02,AC Monza,AS Roma,1-4,0-2
-27,Sat,2024-03-02,Torino FC,ACF Fiorentina,0-0,
-27,Sun,2024-03-03,Hellas Verona FC,US Sassuolo Calcio,1-0,0-0
-27,Sun,2024-03-03,Empoli FC,Cagliari Calcio,0-1,0-0
+26,Sun,2024-02-25,Cagliari,Napoli,1-1,0-0
+26,Sun,2024-02-25,US Lecce,Inter de Milão,0-4,0-1
+26,Sun,2024-02-25,AC Milan,Atalanta,1-1,1-1
+26,Mon,2024-02-26,Roma,Torino,3-2,1-1
+26,Mon,2024-02-26,Fiorentina,Lazio,2-1,0-1
+21,Wed,2024-02-28,Sassuolo,Napoli,1-6,1-3
+21,Wed,2024-02-28,Inter de Milão,Atalanta,4-0,2-0
+27,Fri,2024-03-01,Lazio,AC Milan,0-1,0-0
+27,Sat,2024-03-02,Udinese,US Salernitana 1919,1-1,1-1
+27,Sat,2024-03-02,AC Monza,Roma,1-4,0-2
+27,Sat,2024-03-02,Torino,Fiorentina,0-0,
+27,Sun,2024-03-03,Hellas Verona,Sassuolo,1-0,0-0
+27,Sun,2024-03-03,Empoli FC,Cagliari,0-1,0-0
 27,Sun,2024-03-03,Frosinone Calcio,US Lecce,1-1,1-0
-27,Sun,2024-03-03,Atalanta BC,Bologna FC 1909,1-2,1-0
-27,Sun,2024-03-03,SSC Napoli,Juventus FC,2-1,1-0
-27,Mon,2024-03-04,FC Internazionale Milano,Genoa CFC,2-1,2-0
-28,Fri,2024-03-08,SSC Napoli,Torino FC,1-1,0-0
-28,Sat,2024-03-09,Cagliari Calcio,US Salernitana 1919,4-2,2-0
-28,Sat,2024-03-09,US Sassuolo Calcio,Frosinone Calcio,1-0,0-0
-28,Sat,2024-03-09,Bologna FC 1909,FC Internazionale Milano,0-1,0-1
+27,Sun,2024-03-03,Atalanta,Bologna FC,1-2,1-0
+27,Sun,2024-03-03,Napoli,Juventus FC,2-1,1-0
+27,Mon,2024-03-04,Inter de Milão,Genoa CFC,2-1,2-0
+28,Fri,2024-03-08,Napoli,Torino,1-1,0-0
+28,Sat,2024-03-09,Cagliari,US Salernitana 1919,4-2,2-0
+28,Sat,2024-03-09,Sassuolo,Frosinone Calcio,1-0,0-0
+28,Sat,2024-03-09,Bologna FC,Inter de Milão,0-1,0-1
 28,Sat,2024-03-09,Genoa CFC,AC Monza,2-3,0-2
-28,Sun,2024-03-10,US Lecce,Hellas Verona FC,0-1,0-1
+28,Sun,2024-03-10,US Lecce,Hellas Verona,0-1,0-1
 28,Sun,2024-03-10,AC Milan,Empoli FC,1-0,1-0
-28,Sun,2024-03-10,Juventus FC,Atalanta BC,2-2,0-1
-28,Sun,2024-03-10,ACF Fiorentina,AS Roma,2-2,1-0
-28,Mon,2024-03-11,SS Lazio,Udinese Calcio,1-2,0-0
-29,Fri,2024-03-15,Empoli FC,Bologna FC 1909,0-1,0-0
-29,Sat,2024-03-16,AC Monza,Cagliari Calcio,1-0,1-0
-29,Sat,2024-03-16,Udinese Calcio,Torino FC,0-2,0-1
+28,Sun,2024-03-10,Juventus FC,Atalanta,2-2,0-1
+28,Sun,2024-03-10,Fiorentina,Roma,2-2,1-0
+28,Mon,2024-03-11,Lazio,Udinese,1-2,0-0
+29,Fri,2024-03-15,Empoli FC,Bologna FC,0-1,0-0
+29,Sat,2024-03-16,AC Monza,Cagliari,1-0,1-0
+29,Sat,2024-03-16,Udinese,Torino,0-2,0-1
 29,Sat,2024-03-16,US Salernitana 1919,US Lecce,0-1,0-1
-29,Sat,2024-03-16,Frosinone Calcio,SS Lazio,2-3,1-1
+29,Sat,2024-03-16,Frosinone Calcio,Lazio,2-3,1-1
 29,Sun,2024-03-17,Juventus FC,Genoa CFC,0-0,
-29,Sun,2024-03-17,Hellas Verona FC,AC Milan,1-3,0-1
-29,Sun,2024-03-17,AS Roma,US Sassuolo Calcio,1-0,0-0
-29,Sun,2024-03-17,FC Internazionale Milano,SSC Napoli,1-1,1-0
-30,Sat,2024-03-30,SSC Napoli,Atalanta BC,0-3,0-2
+29,Sun,2024-03-17,Hellas Verona,AC Milan,1-3,0-1
+29,Sun,2024-03-17,Roma,Sassuolo,1-0,0-0
+29,Sun,2024-03-17,Inter de Milão,Napoli,1-1,1-0
+30,Sat,2024-03-30,Napoli,Atalanta,0-3,0-2
 30,Sat,2024-03-30,Genoa CFC,Frosinone Calcio,1-1,1-1
-30,Sat,2024-03-30,Torino FC,AC Monza,1-0,0-0
-30,Sat,2024-03-30,SS Lazio,Juventus FC,1-0,0-0
-30,Sat,2024-03-30,ACF Fiorentina,AC Milan,1-2,0-0
-30,Mon,2024-04-01,Bologna FC 1909,US Salernitana 1919,3-0,2-0
-30,Mon,2024-04-01,Cagliari Calcio,Hellas Verona FC,1-1,0-1
-30,Mon,2024-04-01,US Sassuolo Calcio,Udinese Calcio,1-1,1-1
-30,Mon,2024-04-01,US Lecce,AS Roma,0-0,
-30,Mon,2024-04-01,FC Internazionale Milano,Empoli FC,2-0,1-0
-31,Fri,2024-04-05,US Salernitana 1919,US Sassuolo Calcio,2-2,0-2
+30,Sat,2024-03-30,Torino,AC Monza,1-0,0-0
+30,Sat,2024-03-30,Lazio,Juventus FC,1-0,0-0
+30,Sat,2024-03-30,Fiorentina,AC Milan,1-2,0-0
+30,Mon,2024-04-01,Bologna FC,US Salernitana 1919,3-0,2-0
+30,Mon,2024-04-01,Cagliari,Hellas Verona,1-1,0-1
+30,Mon,2024-04-01,Sassuolo,Udinese,1-1,1-1
+30,Mon,2024-04-01,US Lecce,Roma,0-0,
+30,Mon,2024-04-01,Inter de Milão,Empoli FC,2-0,1-0
+31,Fri,2024-04-05,US Salernitana 1919,Sassuolo,2-2,0-2
 31,Sat,2024-04-06,AC Milan,US Lecce,3-0,2-0
-31,Sat,2024-04-06,AS Roma,SS Lazio,1-0,1-0
-31,Sat,2024-04-06,Empoli FC,Torino FC,3-2,1-0
-31,Sun,2024-04-07,Frosinone Calcio,Bologna FC 1909,0-0,
-31,Sun,2024-04-07,AC Monza,SSC Napoli,2-4,1-0
-31,Sun,2024-04-07,Cagliari Calcio,Atalanta BC,2-1,1-1
-31,Sun,2024-04-07,Hellas Verona FC,Genoa CFC,1-2,1-1
-31,Sun,2024-04-07,Juventus FC,ACF Fiorentina,1-0,1-0
-31,Mon,2024-04-08,Udinese Calcio,FC Internazionale Milano,1-2,1-0
-32,Fri,2024-04-12,SS Lazio,US Salernitana 1919,4-1,3-1
+31,Sat,2024-04-06,Roma,Lazio,1-0,1-0
+31,Sat,2024-04-06,Empoli FC,Torino,3-2,1-0
+31,Sun,2024-04-07,Frosinone Calcio,Bologna FC,0-0,
+31,Sun,2024-04-07,AC Monza,Napoli,2-4,1-0
+31,Sun,2024-04-07,Cagliari,Atalanta,2-1,1-1
+31,Sun,2024-04-07,Hellas Verona,Genoa CFC,1-2,1-1
+31,Sun,2024-04-07,Juventus FC,Fiorentina,1-0,1-0
+31,Mon,2024-04-08,Udinese,Inter de Milão,1-2,1-0
+32,Fri,2024-04-12,Lazio,US Salernitana 1919,4-1,3-1
 32,Sat,2024-04-13,US Lecce,Empoli FC,1-0,0-0
-32,Sat,2024-04-13,Torino FC,Juventus FC,0-0,
-32,Sat,2024-04-13,Bologna FC 1909,AC Monza,0-0,
-32,Sun,2024-04-14,SSC Napoli,Frosinone Calcio,2-2,1-0
-32,Sun,2024-04-14,US Sassuolo Calcio,AC Milan,3-3,2-1
-32,Sun,2024-04-14,FC Internazionale Milano,Cagliari Calcio,2-2,1-0
-32,Mon,2024-04-15,ACF Fiorentina,Genoa CFC,1-1,0-1
-32,Mon,2024-04-15,Atalanta BC,Hellas Verona FC,2-2,2-0
-33,Fri,2024-04-19,Genoa CFC,SS Lazio,0-1,0-0
-33,Fri,2024-04-19,Cagliari Calcio,Juventus FC,2-2,2-0
-33,Sat,2024-04-20,Empoli FC,SSC Napoli,1-0,1-0
-33,Sat,2024-04-20,Hellas Verona FC,Udinese Calcio,1-0,0-0
-33,Sun,2024-04-21,US Sassuolo Calcio,US Lecce,0-3,0-2
-33,Sun,2024-04-21,Torino FC,Frosinone Calcio,0-0,
-33,Sun,2024-04-21,US Salernitana 1919,ACF Fiorentina,0-2,0-0
-33,Sun,2024-04-21,AC Monza,Atalanta BC,1-2,0-1
-33,Mon,2024-04-22,AS Roma,Bologna FC 1909,1-3,0-2
-33,Mon,2024-04-22,AC Milan,FC Internazionale Milano,1-2,0-1
-32,Thu,2024-04-25,Udinese Calcio,AS Roma,1-2,1-0
+32,Sat,2024-04-13,Torino,Juventus FC,0-0,
+32,Sat,2024-04-13,Bologna FC,AC Monza,0-0,
+32,Sun,2024-04-14,Napoli,Frosinone Calcio,2-2,1-0
+32,Sun,2024-04-14,Sassuolo,AC Milan,3-3,2-1
+32,Sun,2024-04-14,Inter de Milão,Cagliari,2-2,1-0
+32,Mon,2024-04-15,Fiorentina,Genoa CFC,1-1,0-1
+32,Mon,2024-04-15,Atalanta,Hellas Verona,2-2,2-0
+33,Fri,2024-04-19,Genoa CFC,Lazio,0-1,0-0
+33,Fri,2024-04-19,Cagliari,Juventus FC,2-2,2-0
+33,Sat,2024-04-20,Empoli FC,Napoli,1-0,1-0
+33,Sat,2024-04-20,Hellas Verona,Udinese,1-0,0-0
+33,Sun,2024-04-21,Sassuolo,US Lecce,0-3,0-2
+33,Sun,2024-04-21,Torino,Frosinone Calcio,0-0,
+33,Sun,2024-04-21,US Salernitana 1919,Fiorentina,0-2,0-0
+33,Sun,2024-04-21,AC Monza,Atalanta,1-2,0-1
+33,Mon,2024-04-22,Roma,Bologna FC,1-3,0-2
+33,Mon,2024-04-22,AC Milan,Inter de Milão,1-2,0-1
+32,Thu,2024-04-25,Udinese,Roma,1-2,1-0
 34,Fri,2024-04-26,Frosinone Calcio,US Salernitana 1919,3-0,2-0
 34,Sat,2024-04-27,US Lecce,AC Monza,1-1,0-0
 34,Sat,2024-04-27,Juventus FC,AC Milan,0-0,
-34,Sat,2024-04-27,SS Lazio,Hellas Verona FC,1-0,0-0
-34,Sun,2024-04-28,FC Internazionale Milano,Torino FC,2-0,0-0
-34,Sun,2024-04-28,Bologna FC 1909,Udinese Calcio,1-1,0-1
-34,Sun,2024-04-28,Atalanta BC,Empoli FC,2-0,1-0
-34,Sun,2024-04-28,SSC Napoli,AS Roma,2-2,0-0
-34,Sun,2024-04-28,ACF Fiorentina,US Sassuolo Calcio,5-1,1-0
-34,Mon,2024-04-29,Genoa CFC,Cagliari Calcio,3-0,2-0
-35,Fri,2024-05-03,Torino FC,Bologna FC 1909,0-0,
-35,Sat,2024-05-04,AC Monza,SS Lazio,2-2,0-1
-35,Sat,2024-05-04,US Sassuolo Calcio,FC Internazionale Milano,1-0,1-0
-35,Sun,2024-05-05,Cagliari Calcio,US Lecce,1-1,1-0
+34,Sat,2024-04-27,Lazio,Hellas Verona,1-0,0-0
+34,Sun,2024-04-28,Inter de Milão,Torino,2-0,0-0
+34,Sun,2024-04-28,Bologna FC,Udinese,1-1,0-1
+34,Sun,2024-04-28,Atalanta,Empoli FC,2-0,1-0
+34,Sun,2024-04-28,Napoli,Roma,2-2,0-0
+34,Sun,2024-04-28,Fiorentina,Sassuolo,5-1,1-0
+34,Mon,2024-04-29,Genoa CFC,Cagliari,3-0,2-0
+35,Fri,2024-05-03,Torino,Bologna FC,0-0,
+35,Sat,2024-05-04,AC Monza,Lazio,2-2,0-1
+35,Sat,2024-05-04,Sassuolo,Inter de Milão,1-0,1-0
+35,Sun,2024-05-05,Cagliari,US Lecce,1-1,1-0
 35,Sun,2024-05-05,Empoli FC,Frosinone Calcio,0-0,
-35,Sun,2024-05-05,Hellas Verona FC,ACF Fiorentina,2-1,1-1
+35,Sun,2024-05-05,Hellas Verona,Fiorentina,2-1,1-1
 35,Sun,2024-05-05,AC Milan,Genoa CFC,3-3,1-1
-35,Sun,2024-05-05,AS Roma,Juventus FC,1-1,1-1
-35,Mon,2024-05-06,US Salernitana 1919,Atalanta BC,1-2,1-0
-35,Mon,2024-05-06,Udinese Calcio,SSC Napoli,1-1,0-0
-36,Fri,2024-05-10,Frosinone Calcio,FC Internazionale Milano,0-5,0-1
-36,Sat,2024-05-11,SSC Napoli,Bologna FC 1909,0-2,0-2
-36,Sat,2024-05-11,AC Milan,Cagliari Calcio,5-1,1-0
-36,Sun,2024-05-12,SS Lazio,Empoli FC,2-0,1-0
-36,Sun,2024-05-12,Genoa CFC,US Sassuolo Calcio,2-1,0-1
-36,Sun,2024-05-12,Hellas Verona FC,Torino FC,1-2,0-0
+35,Sun,2024-05-05,Roma,Juventus FC,1-1,1-1
+35,Mon,2024-05-06,US Salernitana 1919,Atalanta,1-2,1-0
+35,Mon,2024-05-06,Udinese,Napoli,1-1,0-0
+36,Fri,2024-05-10,Frosinone Calcio,Inter de Milão,0-5,0-1
+36,Sat,2024-05-11,Napoli,Bologna FC,0-2,0-2
+36,Sat,2024-05-11,AC Milan,Cagliari,5-1,1-0
+36,Sun,2024-05-12,Lazio,Empoli FC,2-0,1-0
+36,Sun,2024-05-12,Genoa CFC,Sassuolo,2-1,0-1
+36,Sun,2024-05-12,Hellas Verona,Torino,1-2,0-0
 36,Sun,2024-05-12,Juventus FC,US Salernitana 1919,1-1,0-1
-36,Sun,2024-05-12,Atalanta BC,AS Roma,2-1,2-0
-36,Mon,2024-05-13,US Lecce,Udinese Calcio,0-2,0-1
-36,Mon,2024-05-13,ACF Fiorentina,AC Monza,2-1,1-1
-37,Fri,2024-05-17,ACF Fiorentina,SSC Napoli,2-2,2-1
-37,Sat,2024-05-18,US Lecce,Atalanta BC,0-2,0-0
-37,Sat,2024-05-18,Torino FC,AC Milan,3-1,2-0
-37,Sun,2024-05-19,US Sassuolo Calcio,Cagliari Calcio,0-2,0-0
+36,Sun,2024-05-12,Atalanta,Roma,2-1,2-0
+36,Mon,2024-05-13,US Lecce,Udinese,0-2,0-1
+36,Mon,2024-05-13,Fiorentina,AC Monza,2-1,1-1
+37,Fri,2024-05-17,Fiorentina,Napoli,2-2,2-1
+37,Sat,2024-05-18,US Lecce,Atalanta,0-2,0-0
+37,Sat,2024-05-18,Torino,AC Milan,3-1,2-0
+37,Sun,2024-05-19,Sassuolo,Cagliari,0-2,0-0
 37,Sun,2024-05-19,AC Monza,Frosinone Calcio,0-1,0-1
-37,Sun,2024-05-19,Udinese Calcio,Empoli FC,1-1,0-0
-37,Sun,2024-05-19,FC Internazionale Milano,SS Lazio,1-1,0-1
-37,Sun,2024-05-19,AS Roma,Genoa CFC,1-0,0-0
-37,Mon,2024-05-20,US Salernitana 1919,Hellas Verona FC,1-2,0-2
-37,Mon,2024-05-20,Bologna FC 1909,Juventus FC,3-3,2-0
-38,Thu,2024-05-23,Cagliari Calcio,ACF Fiorentina,2-3,0-1
-38,Fri,2024-05-24,Genoa CFC,Bologna FC 1909,2-0,1-0
+37,Sun,2024-05-19,Udinese,Empoli FC,1-1,0-0
+37,Sun,2024-05-19,Inter de Milão,Lazio,1-1,0-1
+37,Sun,2024-05-19,Roma,Genoa CFC,1-0,0-0
+37,Mon,2024-05-20,US Salernitana 1919,Hellas Verona,1-2,0-2
+37,Mon,2024-05-20,Bologna FC,Juventus FC,3-3,2-0
+38,Thu,2024-05-23,Cagliari,Fiorentina,2-3,0-1
+38,Fri,2024-05-24,Genoa CFC,Bologna FC,2-0,1-0
 38,Sat,2024-05-25,Juventus FC,AC Monza,2-0,2-0
 38,Sat,2024-05-25,AC Milan,US Salernitana 1919,3-3,2-0
-38,Sun,2024-05-26,Atalanta BC,Torino FC,3-0,2-0
-38,Sun,2024-05-26,SSC Napoli,US Lecce,0-0,
-38,Sun,2024-05-26,Empoli FC,AS Roma,2-1,1-1
-38,Sun,2024-05-26,Frosinone Calcio,Udinese Calcio,0-1,0-0
-38,Sun,2024-05-26,Hellas Verona FC,FC Internazionale Milano,2-2,2-2
-38,Sun,2024-05-26,SS Lazio,US Sassuolo Calcio,1-1,0-0
-29,Sun,2024-06-02,Atalanta BC,ACF Fiorentina,2-3,2-3
+38,Sun,2024-05-26,Atalanta,Torino,3-0,2-0
+38,Sun,2024-05-26,Napoli,US Lecce,0-0,
+38,Sun,2024-05-26,Empoli FC,Roma,2-1,1-1
+38,Sun,2024-05-26,Frosinone Calcio,Udinese,0-1,0-0
+38,Sun,2024-05-26,Hellas Verona,Inter de Milão,2-2,2-2
+38,Sun,2024-05-26,Lazio,Sassuolo,1-1,0-0
+29,Sun,2024-06-02,Atalanta,Fiorentina,2-3,2-3

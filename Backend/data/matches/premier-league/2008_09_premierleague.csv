@@ -1,381 +1,381 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
-1,2008-08-16,Arsenal FC,West Bromwich Albion,1-0,1-0
+1,2008-08-16,Arsenal,West Bromwich Albion,1-0,1-0
 1,2008-08-16,Bolton Wanderers,Stoke City,3-1,3-0
-1,2008-08-16,Middlesbrough FC,Tottenham Hotspur,2-1,0-0
+1,2008-08-16,Middlesbrough FC,Tottenham,2-1,0-0
 1,2008-08-16,West Ham United,Wigan Athletic,2-1,2-0
-1,2008-08-16,Everton FC,Blackburn Rovers,2-3,1-1
+1,2008-08-16,Everton,Blackburn Rovers,2-3,1-1
 1,2008-08-16,Hull City,Fulham FC,2-1,1-1
-1,2008-08-16,Sunderland AFC,Liverpool FC,0-1,0-0
+1,2008-08-16,Sunderland,Liverpool,0-1,0-0
 1,2008-08-17,Aston Villa,Manchester City,4-2,0-0
 1,2008-08-17,Manchester United,Newcastle United,1-1,1-1
-1,2008-08-17,Chelsea FC,Portsmouth FC,4-0,3-0
+1,2008-08-17,Chelsea,Portsmouth FC,4-0,3-0
 2,2008-08-23,Blackburn Rovers,Hull City,1-1,1-1
-2,2008-08-23,Liverpool FC,Middlesbrough FC,2-1,0-0
+2,2008-08-23,Liverpool,Middlesbrough FC,2-1,0-0
 2,2008-08-23,Newcastle United,Bolton Wanderers,1-0,0-0
 2,2008-08-23,Stoke City,Aston Villa,3-2,1-0
-2,2008-08-23,Tottenham Hotspur,Sunderland AFC,1-2,0-0
-2,2008-08-23,West Bromwich Albion,Everton FC,1-2,0-0
-2,2008-08-23,Fulham FC,Arsenal FC,1-0,1-0
+2,2008-08-23,Tottenham,Sunderland,1-2,0-0
+2,2008-08-23,West Bromwich Albion,Everton,1-2,0-0
+2,2008-08-23,Fulham FC,Arsenal,1-0,1-0
 2,2008-08-24,Manchester City,West Ham United,3-0,0-0
-2,2008-08-24,Wigan Athletic,Chelsea FC,0-1,0-1
+2,2008-08-24,Wigan Athletic,Chelsea,0-1,0-1
 2,2008-08-25,Portsmouth FC,Manchester United,0-1,0-1
 3,2008-08-30,Bolton Wanderers,West Bromwich Albion,0-0,
-3,2008-08-30,Everton FC,Portsmouth FC,0-3,0-2
+3,2008-08-30,Everton,Portsmouth FC,0-3,0-2
 3,2008-08-30,Hull City,Wigan Athletic,0-5,0-2
 3,2008-08-30,Middlesbrough FC,Stoke City,2-1,1-0
 3,2008-08-30,West Ham United,Blackburn Rovers,4-1,2-1
-3,2008-08-30,Arsenal FC,Newcastle United,3-0,2-0
-3,2008-08-31,Sunderland AFC,Manchester City,0-3,0-1
-3,2008-08-31,Aston Villa,Liverpool FC,0-0,
-3,2008-08-31,Chelsea FC,Tottenham Hotspur,1-1,1-1
-4,2008-09-13,Manchester City,Chelsea FC,1-3,1-1
-4,2008-09-13,Liverpool FC,Manchester United,2-1,1-1
-4,2008-09-13,Blackburn Rovers,Arsenal FC,0-4,0-2
+3,2008-08-30,Arsenal,Newcastle United,3-0,2-0
+3,2008-08-31,Sunderland,Manchester City,0-3,0-1
+3,2008-08-31,Aston Villa,Liverpool,0-0,
+3,2008-08-31,Chelsea,Tottenham,1-1,1-1
+4,2008-09-13,Manchester City,Chelsea,1-3,1-1
+4,2008-09-13,Liverpool,Manchester United,2-1,1-1
+4,2008-09-13,Blackburn Rovers,Arsenal,0-4,0-2
 4,2008-09-13,Fulham FC,Bolton Wanderers,2-1,2-0
 4,2008-09-13,Newcastle United,Hull City,1-2,0-1
 4,2008-09-13,Portsmouth FC,Middlesbrough FC,2-1,0-1
 4,2008-09-13,West Bromwich Albion,West Ham United,3-2,2-2
-4,2008-09-13,Wigan Athletic,Sunderland AFC,1-1,0-1
-4,2008-09-14,Stoke City,Everton FC,2-3,0-1
-4,2008-09-15,Tottenham Hotspur,Aston Villa,1-2,0-1
-5,2008-09-20,Sunderland AFC,Middlesbrough FC,2-0,0-0
+4,2008-09-13,Wigan Athletic,Sunderland,1-1,0-1
+4,2008-09-14,Stoke City,Everton,2-3,0-1
+4,2008-09-15,Tottenham,Aston Villa,1-2,0-1
+5,2008-09-20,Sunderland,Middlesbrough FC,2-0,0-0
 5,2008-09-20,Blackburn Rovers,Fulham FC,1-0,0-0
-5,2008-09-20,Liverpool FC,Stoke City,0-0,
+5,2008-09-20,Liverpool,Stoke City,0-0,
 5,2008-09-20,West Ham United,Newcastle United,3-1,2-0
-5,2008-09-20,Bolton Wanderers,Arsenal FC,1-3,1-2
-5,2008-09-21,Tottenham Hotspur,Wigan Athletic,0-0,
+5,2008-09-20,Bolton Wanderers,Arsenal,1-3,1-2
+5,2008-09-21,Tottenham,Wigan Athletic,0-0,
 5,2008-09-21,West Bromwich Albion,Aston Villa,1-2,1-2
-5,2008-09-21,Chelsea FC,Manchester United,1-1,0-1
-5,2008-09-21,Hull City,Everton FC,2-2,1-0
+5,2008-09-21,Chelsea,Manchester United,1-1,0-1
+5,2008-09-21,Hull City,Everton,2-2,1-0
 5,2008-09-21,Manchester City,Portsmouth FC,6-0,2-0
-6,2008-09-27,Stoke City,Chelsea FC,0-2,0-1
-6,2008-09-27,Everton FC,Liverpool FC,0-2,0-0
-6,2008-09-27,Aston Villa,Sunderland AFC,2-1,2-1
+6,2008-09-27,Stoke City,Chelsea,0-2,0-1
+6,2008-09-27,Everton,Liverpool,0-2,0-0
+6,2008-09-27,Aston Villa,Sunderland,2-1,2-1
 6,2008-09-27,Fulham FC,West Ham United,1-2,0-2
 6,2008-09-27,Manchester United,Bolton Wanderers,2-0,0-0
 6,2008-09-27,Middlesbrough FC,West Bromwich Albion,0-1,0-0
 6,2008-09-27,Newcastle United,Blackburn Rovers,1-2,0-2
-6,2008-09-27,Arsenal FC,Hull City,1-2,0-0
+6,2008-09-27,Arsenal,Hull City,1-2,0-0
 6,2008-09-28,Wigan Athletic,Manchester City,2-1,2-1
-6,2008-09-28,Portsmouth FC,Tottenham Hotspur,2-0,1-0
-7,2008-10-04,Sunderland AFC,Arsenal FC,1-1,0-0
+6,2008-09-28,Portsmouth FC,Tottenham,2-0,1-0
+7,2008-10-04,Sunderland,Arsenal,1-1,0-0
 7,2008-10-04,West Bromwich Albion,Fulham FC,1-0,0-0
 7,2008-10-04,Wigan Athletic,Middlesbrough FC,0-1,0-0
 7,2008-10-04,Blackburn Rovers,Manchester United,0-2,0-1
-7,2008-10-05,Everton FC,Newcastle United,2-2,2-1
+7,2008-10-05,Everton,Newcastle United,2-2,2-1
 7,2008-10-05,West Ham United,Bolton Wanderers,1-3,0-2
-7,2008-10-05,Chelsea FC,Aston Villa,2-0,2-0
-7,2008-10-05,Manchester City,Liverpool FC,2-3,2-0
+7,2008-10-05,Chelsea,Aston Villa,2-0,2-0
+7,2008-10-05,Manchester City,Liverpool,2-3,2-0
 7,2008-10-05,Portsmouth FC,Stoke City,2-1,1-0
-7,2008-10-05,Tottenham Hotspur,Hull City,0-1,0-1
-8,2008-10-18,Middlesbrough FC,Chelsea FC,0-5,0-1
+7,2008-10-05,Tottenham,Hull City,0-1,0-1
+8,2008-10-18,Middlesbrough FC,Chelsea,0-5,0-1
 8,2008-10-18,Manchester United,West Bromwich Albion,4-0,0-0
-8,2008-10-18,Arsenal FC,Everton FC,3-1,0-1
+8,2008-10-18,Arsenal,Everton,3-1,0-1
 8,2008-10-18,Aston Villa,Portsmouth FC,0-0,
 8,2008-10-18,Bolton Wanderers,Blackburn Rovers,0-0,
-8,2008-10-18,Fulham FC,Sunderland AFC,0-0,
-8,2008-10-18,Liverpool FC,Wigan Athletic,3-2,1-2
+8,2008-10-18,Fulham FC,Sunderland,0-0,
+8,2008-10-18,Liverpool,Wigan Athletic,3-2,1-2
 8,2008-10-19,Hull City,West Ham United,1-0,0-0
-8,2008-10-19,Stoke City,Tottenham Hotspur,2-1,1-1
+8,2008-10-19,Stoke City,Tottenham,2-1,1-1
 8,2008-10-20,Newcastle United,Manchester City,2-2,1-1
-9,2008-10-25,Everton FC,Manchester United,1-1,0-1
-9,2008-10-25,Sunderland AFC,Newcastle United,2-1,1-1
+9,2008-10-25,Everton,Manchester United,1-1,0-1
+9,2008-10-25,Sunderland,Newcastle United,2-1,1-1
 9,2008-10-25,West Bromwich Albion,Hull City,0-3,0-0
 9,2008-10-25,Blackburn Rovers,Middlesbrough FC,1-1,0-0
 9,2008-10-26,Portsmouth FC,Fulham FC,1-1,0-0
-9,2008-10-26,Chelsea FC,Liverpool FC,0-1,0-1
+9,2008-10-26,Chelsea,Liverpool,0-1,0-1
 9,2008-10-26,Manchester City,Stoke City,3-0,1-0
-9,2008-10-26,Tottenham Hotspur,Bolton Wanderers,2-0,1-0
+9,2008-10-26,Tottenham,Bolton Wanderers,2-0,1-0
 9,2008-10-26,Wigan Athletic,Aston Villa,0-4,0-1
-9,2008-10-26,West Ham United,Arsenal FC,0-2,0-0
+9,2008-10-26,West Ham United,Arsenal,0-2,0-0
 10,2008-10-28,Newcastle United,West Bromwich Albion,2-1,2-0
-10,2008-10-29,Liverpool FC,Portsmouth FC,1-0,0-0
-10,2008-10-29,Hull City,Chelsea FC,0-3,0-1
-10,2008-10-29,Stoke City,Sunderland AFC,1-0,0-0
+10,2008-10-29,Liverpool,Portsmouth FC,1-0,0-0
+10,2008-10-29,Hull City,Chelsea,0-3,0-1
+10,2008-10-29,Stoke City,Sunderland,1-0,0-0
 10,2008-10-29,Aston Villa,Blackburn Rovers,3-2,1-1
 10,2008-10-29,Fulham FC,Wigan Athletic,2-0,1-0
-10,2008-10-29,Arsenal FC,Tottenham Hotspur,4-4,1-1
-10,2008-10-29,Bolton Wanderers,Everton FC,0-1,0-0
+10,2008-10-29,Arsenal,Tottenham,4-4,1-1
+10,2008-10-29,Bolton Wanderers,Everton,0-1,0-0
 10,2008-10-29,Manchester United,West Ham United,2-0,2-0
 10,2008-10-29,Middlesbrough FC,Manchester City,2-0,0-0
-11,2008-11-01,Tottenham Hotspur,Liverpool FC,2-1,0-1
-11,2008-11-01,Everton FC,Fulham FC,1-0,0-0
-11,2008-11-01,Chelsea FC,Sunderland AFC,5-0,3-0
+11,2008-11-01,Tottenham,Liverpool,2-1,0-1
+11,2008-11-01,Everton,Fulham FC,1-0,0-0
+11,2008-11-01,Chelsea,Sunderland,5-0,3-0
 11,2008-11-01,Manchester United,Hull City,4-3,3-1
 11,2008-11-01,Middlesbrough FC,West Ham United,1-1,0-1
 11,2008-11-01,Portsmouth FC,Wigan Athletic,1-2,0-1
-11,2008-11-01,Stoke City,Arsenal FC,2-1,1-0
+11,2008-11-01,Stoke City,Arsenal,2-1,1-0
 11,2008-11-01,West Bromwich Albion,Blackburn Rovers,2-2,0-1
 11,2008-11-02,Bolton Wanderers,Manchester City,2-0,0-0
 11,2008-11-03,Newcastle United,Aston Villa,2-0,0-0
-12,2008-11-08,Liverpool FC,West Bromwich Albion,3-0,2-0
-12,2008-11-08,Arsenal FC,Manchester United,2-1,1-0
+12,2008-11-08,Liverpool,West Bromwich Albion,3-0,2-0
+12,2008-11-08,Arsenal,Manchester United,2-1,1-0
 12,2008-11-08,Wigan Athletic,Stoke City,0-0,
 12,2008-11-08,Hull City,Bolton Wanderers,0-1,0-0
-12,2008-11-08,Sunderland AFC,Portsmouth FC,1-2,1-0
-12,2008-11-08,West Ham United,Everton FC,1-3,0-0
+12,2008-11-08,Sunderland,Portsmouth FC,1-2,1-0
+12,2008-11-08,West Ham United,Everton,1-3,0-0
 12,2008-11-09,Fulham FC,Newcastle United,2-1,1-0
-12,2008-11-09,Blackburn Rovers,Chelsea FC,0-2,0-1
+12,2008-11-09,Blackburn Rovers,Chelsea,0-2,0-1
 12,2008-11-09,Aston Villa,Middlesbrough FC,1-2,1-1
-12,2008-11-09,Manchester City,Tottenham Hotspur,1-2,1-1
+12,2008-11-09,Manchester City,Tottenham,1-2,1-1
 13,2008-11-15,Manchester United,Stoke City,5-0,2-0
-13,2008-11-15,Bolton Wanderers,Liverpool FC,0-2,0-1
-13,2008-11-15,Arsenal FC,Aston Villa,0-2,0-0
-13,2008-11-15,Blackburn Rovers,Sunderland AFC,1-2,1-0
-13,2008-11-15,Fulham FC,Tottenham Hotspur,2-1,1-0
+13,2008-11-15,Bolton Wanderers,Liverpool,0-2,0-1
+13,2008-11-15,Arsenal,Aston Villa,0-2,0-0
+13,2008-11-15,Blackburn Rovers,Sunderland,1-2,1-0
+13,2008-11-15,Fulham FC,Tottenham,2-1,1-0
 13,2008-11-15,West Ham United,Portsmouth FC,0-0,
 13,2008-11-15,Newcastle United,Wigan Athletic,2-2,0-1
-13,2008-11-15,West Bromwich Albion,Chelsea FC,0-3,0-3
-13,2008-11-16,Everton FC,Middlesbrough FC,1-1,0-1
+13,2008-11-15,West Bromwich Albion,Chelsea,0-3,0-3
+13,2008-11-16,Everton,Middlesbrough FC,1-1,0-1
 13,2008-11-16,Hull City,Manchester City,2-2,1-2
 14,2008-11-22,Aston Villa,Manchester United,0-0,
-14,2008-11-22,Chelsea FC,Newcastle United,0-0,
-14,2008-11-22,Liverpool FC,Fulham FC,0-0,
-14,2008-11-22,Manchester City,Arsenal FC,3-0,1-0
+14,2008-11-22,Chelsea,Newcastle United,0-0,
+14,2008-11-22,Liverpool,Fulham FC,0-0,
+14,2008-11-22,Manchester City,Arsenal,3-0,1-0
 14,2008-11-22,Middlesbrough FC,Bolton Wanderers,1-3,0-2
 14,2008-11-22,Portsmouth FC,Hull City,2-2,1-0
 14,2008-11-22,Stoke City,West Bromwich Albion,1-0,0-0
-14,2008-11-23,Sunderland AFC,West Ham United,0-1,0-1
-14,2008-11-23,Tottenham Hotspur,Blackburn Rovers,1-0,1-0
-14,2008-11-24,Wigan Athletic,Everton FC,1-0,0-0
+14,2008-11-23,Sunderland,West Ham United,0-1,0-1
+14,2008-11-23,Tottenham,Blackburn Rovers,1-0,1-0
+14,2008-11-24,Wigan Athletic,Everton,1-0,0-0
 15,2008-11-29,Wigan Athletic,West Bromwich Albion,2-1,0-0
 15,2008-11-29,Aston Villa,Fulham FC,0-0,
 15,2008-11-29,Middlesbrough FC,Newcastle United,0-0,
 15,2008-11-29,Stoke City,Hull City,1-1,0-1
-15,2008-11-29,Sunderland AFC,Bolton Wanderers,1-4,1-3
+15,2008-11-29,Sunderland,Bolton Wanderers,1-4,1-3
 15,2008-11-30,Manchester City,Manchester United,0-1,0-1
 15,2008-11-30,Portsmouth FC,Blackburn Rovers,3-2,0-0
-15,2008-11-30,Tottenham Hotspur,Everton FC,0-1,0-0
-15,2008-11-30,Chelsea FC,Arsenal FC,1-2,1-0
-15,2008-12-01,Liverpool FC,West Ham United,0-0,
-16,2008-12-06,Arsenal FC,Wigan Athletic,1-0,1-0
+15,2008-11-30,Tottenham,Everton,0-1,0-0
+15,2008-11-30,Chelsea,Arsenal,1-2,1-0
+15,2008-12-01,Liverpool,West Ham United,0-0,
+16,2008-12-06,Arsenal,Wigan Athletic,1-0,1-0
 16,2008-12-06,Fulham FC,Manchester City,1-1,1-1
 16,2008-12-06,Newcastle United,Stoke City,2-2,2-0
-16,2008-12-06,Blackburn Rovers,Liverpool FC,1-3,0-0
-16,2008-12-06,Bolton Wanderers,Chelsea FC,0-2,0-2
+16,2008-12-06,Blackburn Rovers,Liverpool,1-3,0-0
+16,2008-12-06,Bolton Wanderers,Chelsea,0-2,0-2
 16,2008-12-06,Hull City,Middlesbrough FC,2-1,0-0
-16,2008-12-06,Manchester United,Sunderland AFC,1-0,0-0
-16,2008-12-07,Everton FC,Aston Villa,2-3,1-1
+16,2008-12-06,Manchester United,Sunderland,1-0,0-0
+16,2008-12-07,Everton,Aston Villa,2-3,1-1
 16,2008-12-07,West Bromwich Albion,Portsmouth FC,1-1,1-0
-16,2008-12-08,West Ham United,Tottenham Hotspur,0-2,0-0
+16,2008-12-08,West Ham United,Tottenham,0-2,0-0
 17,2008-12-13,Aston Villa,Bolton Wanderers,4-2,2-1
-17,2008-12-13,Middlesbrough FC,Arsenal FC,1-1,1-1
-17,2008-12-13,Tottenham Hotspur,Manchester United,0-0,
-17,2008-12-13,Liverpool FC,Hull City,2-2,2-2
-17,2008-12-13,Manchester City,Everton FC,0-1,0-0
+17,2008-12-13,Middlesbrough FC,Arsenal,1-1,1-1
+17,2008-12-13,Tottenham,Manchester United,0-0,
+17,2008-12-13,Liverpool,Hull City,2-2,2-2
+17,2008-12-13,Manchester City,Everton,0-1,0-0
 17,2008-12-13,Stoke City,Fulham FC,0-0,
-17,2008-12-13,Sunderland AFC,West Bromwich Albion,4-0,3-0
+17,2008-12-13,Sunderland,West Bromwich Albion,4-0,3-0
 17,2008-12-13,Wigan Athletic,Blackburn Rovers,3-0,2-0
 17,2008-12-14,Portsmouth FC,Newcastle United,0-3,0-0
-17,2008-12-14,Chelsea FC,West Ham United,1-1,0-1
+17,2008-12-14,Chelsea,West Ham United,1-1,0-1
 18,2008-12-20,Blackburn Rovers,Stoke City,3-0,3-0
 18,2008-12-20,Bolton Wanderers,Portsmouth FC,2-1,2-1
 18,2008-12-20,Fulham FC,Middlesbrough FC,3-0,1-0
-18,2008-12-20,Hull City,Sunderland AFC,1-4,1-1
+18,2008-12-20,Hull City,Sunderland,1-4,1-1
 18,2008-12-20,West Ham United,Aston Villa,0-1,0-0
-18,2008-12-21,Arsenal FC,Liverpool FC,1-1,1-1
+18,2008-12-21,Arsenal,Liverpool,1-1,1-1
 18,2008-12-21,West Bromwich Albion,Manchester City,2-1,0-0
-18,2008-12-21,Newcastle United,Tottenham Hotspur,2-1,1-1
-18,2008-12-22,Everton FC,Chelsea FC,0-0,
-19,2008-12-26,Aston Villa,Arsenal FC,2-2,0-1
+18,2008-12-21,Newcastle United,Tottenham,2-1,1-1
+18,2008-12-22,Everton,Chelsea,0-0,
+19,2008-12-26,Aston Villa,Arsenal,2-2,0-1
 19,2008-12-26,Wigan Athletic,Newcastle United,2-1,1-0
 19,2008-12-26,Stoke City,Manchester United,0-1,0-0
-19,2008-12-26,Chelsea FC,West Bromwich Albion,2-0,2-0
+19,2008-12-26,Chelsea,West Bromwich Albion,2-0,2-0
 19,2008-12-26,Portsmouth FC,West Ham United,1-4,1-1
-19,2008-12-26,Tottenham Hotspur,Fulham FC,0-0,
-19,2008-12-26,Liverpool FC,Bolton Wanderers,3-0,1-0
+19,2008-12-26,Tottenham,Fulham FC,0-0,
+19,2008-12-26,Liverpool,Bolton Wanderers,3-0,1-0
 19,2008-12-26,Manchester City,Hull City,5-1,4-0
-19,2008-12-26,Middlesbrough FC,Everton FC,0-1,0-0
-19,2008-12-26,Sunderland AFC,Blackburn Rovers,0-0,
+19,2008-12-26,Middlesbrough FC,Everton,0-1,0-0
+19,2008-12-26,Sunderland,Blackburn Rovers,0-0,
 20,2008-12-28,Blackburn Rovers,Manchester City,2-2,1-0
 20,2008-12-28,West Ham United,Stoke City,2-1,0-1
-20,2008-12-28,Newcastle United,Liverpool FC,1-5,1-2
-20,2008-12-28,Arsenal FC,Portsmouth FC,1-0,0-0
+20,2008-12-28,Newcastle United,Liverpool,1-5,1-2
+20,2008-12-28,Arsenal,Portsmouth FC,1-0,0-0
 20,2008-12-28,Bolton Wanderers,Wigan Athletic,0-1,0-1
-20,2008-12-28,Everton FC,Sunderland AFC,3-0,2-0
-20,2008-12-28,Fulham FC,Chelsea FC,2-2,1-0
-20,2008-12-28,West Bromwich Albion,Tottenham Hotspur,2-0,0-0
+20,2008-12-28,Everton,Sunderland,3-0,2-0
+20,2008-12-28,Fulham FC,Chelsea,2-2,1-0
+20,2008-12-28,West Bromwich Albion,Tottenham,2-0,0-0
 20,2008-12-29,Manchester United,Middlesbrough FC,1-0,0-0
 20,2008-12-30,Hull City,Aston Villa,0-1,0-0
 21,2009-01-10,Newcastle United,West Ham United,2-2,1-1
-21,2009-01-10,Arsenal FC,Bolton Wanderers,1-0,0-0
+21,2009-01-10,Arsenal,Bolton Wanderers,1-0,0-0
 21,2009-01-10,Aston Villa,West Bromwich Albion,2-1,2-0
-21,2009-01-10,Stoke City,Liverpool FC,0-0,
-21,2009-01-10,Everton FC,Hull City,2-0,2-0
-21,2009-01-10,Middlesbrough FC,Sunderland AFC,1-1,1-0
-21,2009-01-11,Wigan Athletic,Tottenham Hotspur,1-0,0-0
-21,2009-01-11,Manchester United,Chelsea FC,3-0,1-0
+21,2009-01-10,Stoke City,Liverpool,0-0,
+21,2009-01-10,Everton,Hull City,2-0,2-0
+21,2009-01-10,Middlesbrough FC,Sunderland,1-1,1-0
+21,2009-01-11,Wigan Athletic,Tottenham,1-0,0-0
+21,2009-01-11,Manchester United,Chelsea,3-0,1-0
 18,2009-01-14,Manchester United,Wigan Athletic,1-0,1-0
 22,2009-01-17,Bolton Wanderers,Manchester United,0-1,0-0
-22,2009-01-17,Sunderland AFC,Aston Villa,1-2,1-0
-22,2009-01-17,Hull City,Arsenal FC,1-3,0-1
+22,2009-01-17,Sunderland,Aston Villa,1-2,1-0
+22,2009-01-17,Hull City,Arsenal,1-3,0-1
 22,2009-01-17,Blackburn Rovers,Newcastle United,3-0,0-0
 22,2009-01-17,West Bromwich Albion,Middlesbrough FC,3-0,1-0
-22,2009-01-17,Chelsea FC,Stoke City,2-1,0-0
+22,2009-01-17,Chelsea,Stoke City,2-1,0-0
 22,2009-01-17,Manchester City,Wigan Athletic,1-0,0-0
-22,2009-01-18,Tottenham Hotspur,Portsmouth FC,1-1,0-0
+22,2009-01-18,Tottenham,Portsmouth FC,1-1,0-0
 22,2009-01-18,West Ham United,Fulham FC,3-1,1-1
-22,2009-01-19,Liverpool FC,Everton FC,1-1,0-0
+22,2009-01-19,Liverpool,Everton,1-1,0-0
 23,2009-01-27,Portsmouth FC,Aston Villa,0-1,0-1
-23,2009-01-27,Tottenham Hotspur,Stoke City,3-1,3-0
-23,2009-01-27,Sunderland AFC,Fulham FC,1-0,0-0
+23,2009-01-27,Tottenham,Stoke City,3-1,3-0
+23,2009-01-27,Sunderland,Fulham FC,1-0,0-0
 23,2009-01-27,West Bromwich Albion,Manchester United,0-5,0-2
 23,2009-01-28,West Ham United,Hull City,2-0,1-0
-23,2009-01-28,Everton FC,Arsenal FC,1-1,0-0
+23,2009-01-28,Everton,Arsenal,1-1,0-0
 23,2009-01-28,Blackburn Rovers,Bolton Wanderers,2-2,0-2
-23,2009-01-28,Wigan Athletic,Liverpool FC,1-1,0-1
-23,2009-01-28,Chelsea FC,Middlesbrough FC,2-0,0-0
+23,2009-01-28,Wigan Athletic,Liverpool,1-1,0-1
+23,2009-01-28,Chelsea,Middlesbrough FC,2-0,0-0
 23,2009-01-28,Manchester City,Newcastle United,2-1,1-0
-24,2009-01-31,Manchester United,Everton FC,1-0,1-0
+24,2009-01-31,Manchester United,Everton,1-0,1-0
 24,2009-01-31,Hull City,West Bromwich Albion,2-2,1-0
 24,2009-01-31,Fulham FC,Portsmouth FC,3-1,1-0
 24,2009-01-31,Stoke City,Manchester City,1-0,1-0
-24,2009-01-31,Arsenal FC,West Ham United,0-0,
+24,2009-01-31,Arsenal,West Ham United,0-0,
 24,2009-01-31,Aston Villa,Wigan Athletic,0-0,
-24,2009-01-31,Bolton Wanderers,Tottenham Hotspur,3-2,1-0
+24,2009-01-31,Bolton Wanderers,Tottenham,3-2,1-0
 24,2009-01-31,Middlesbrough FC,Blackburn Rovers,0-0,
-24,2009-02-01,Liverpool FC,Chelsea FC,2-0,0-0
-24,2009-02-01,Newcastle United,Sunderland AFC,1-1,0-1
+24,2009-02-01,Liverpool,Chelsea,2-0,0-0
+24,2009-02-01,Newcastle United,Sunderland,1-1,0-1
 25,2009-02-07,Wigan Athletic,Fulham FC,0-0,
 25,2009-02-07,West Bromwich Albion,Newcastle United,2-3,1-3
-25,2009-02-07,Portsmouth FC,Liverpool FC,2-3,0-0
+25,2009-02-07,Portsmouth FC,Liverpool,2-3,0-0
 25,2009-02-07,Manchester City,Middlesbrough FC,1-0,0-0
 25,2009-02-07,Blackburn Rovers,Aston Villa,0-2,0-1
-25,2009-02-07,Chelsea FC,Hull City,0-0,
-25,2009-02-07,Everton FC,Bolton Wanderers,3-0,1-0
-25,2009-02-07,Sunderland AFC,Stoke City,2-0,0-0
-25,2009-02-08,Tottenham Hotspur,Arsenal FC,0-0,
+25,2009-02-07,Chelsea,Hull City,0-0,
+25,2009-02-07,Everton,Bolton Wanderers,3-0,1-0
+25,2009-02-07,Sunderland,Stoke City,2-0,0-0
+25,2009-02-08,Tottenham,Arsenal,0-0,
 25,2009-02-08,West Ham United,Manchester United,0-1,0-0
 21,2009-02-14,Portsmouth FC,Manchester City,2-0,0-0
 3,2009-02-18,Manchester United,Fulham FC,3-0,2-0
 26,2009-02-21,Stoke City,Portsmouth FC,2-2,0-0
-26,2009-02-21,Aston Villa,Chelsea FC,0-1,0-1
-26,2009-02-21,Arsenal FC,Sunderland AFC,0-0,
+26,2009-02-21,Aston Villa,Chelsea,0-1,0-1
+26,2009-02-21,Arsenal,Sunderland,0-0,
 26,2009-02-21,Bolton Wanderers,West Ham United,2-1,2-0
 26,2009-02-21,Middlesbrough FC,Wigan Athletic,0-0,
 26,2009-02-21,Manchester United,Blackburn Rovers,2-1,1-1
 26,2009-02-22,Fulham FC,West Bromwich Albion,2-0,0-0
-26,2009-02-22,Liverpool FC,Manchester City,1-1,0-0
-26,2009-02-22,Newcastle United,Everton FC,0-0,
-26,2009-02-23,Hull City,Tottenham Hotspur,1-2,1-1
-27,2009-02-28,Chelsea FC,Wigan Athletic,2-1,1-0
-27,2009-02-28,Everton FC,West Bromwich Albion,2-0,1-0
-27,2009-02-28,Arsenal FC,Fulham FC,0-0,
-27,2009-02-28,Middlesbrough FC,Liverpool FC,2-0,1-0
+26,2009-02-22,Liverpool,Manchester City,1-1,0-0
+26,2009-02-22,Newcastle United,Everton,0-0,
+26,2009-02-23,Hull City,Tottenham,1-2,1-1
+27,2009-02-28,Chelsea,Wigan Athletic,2-1,1-0
+27,2009-02-28,Everton,West Bromwich Albion,2-0,1-0
+27,2009-02-28,Arsenal,Fulham FC,0-0,
+27,2009-02-28,Middlesbrough FC,Liverpool,2-0,1-0
 27,2009-03-01,Bolton Wanderers,Newcastle United,1-0,0-0
 27,2009-03-01,Hull City,Blackburn Rovers,1-2,0-2
 27,2009-03-01,West Ham United,Manchester City,1-0,0-0
 27,2009-03-01,Aston Villa,Stoke City,2-2,1-0
-28,2009-03-03,West Bromwich Albion,Arsenal FC,1-3,1-3
-28,2009-03-03,Portsmouth FC,Chelsea FC,0-1,0-0
-28,2009-03-03,Liverpool FC,Sunderland AFC,2-0,0-0
+28,2009-03-03,West Bromwich Albion,Arsenal,1-3,1-3
+28,2009-03-03,Portsmouth FC,Chelsea,0-1,0-0
+28,2009-03-03,Liverpool,Sunderland,2-0,0-0
 28,2009-03-04,Fulham FC,Hull City,0-1,0-0
-28,2009-03-04,Tottenham Hotspur,Middlesbrough FC,4-0,3-0
+28,2009-03-04,Tottenham,Middlesbrough FC,4-0,3-0
 28,2009-03-04,Stoke City,Bolton Wanderers,2-0,1-0
-28,2009-03-04,Blackburn Rovers,Everton FC,0-0,
+28,2009-03-04,Blackburn Rovers,Everton,0-0,
 28,2009-03-04,Wigan Athletic,West Ham United,0-1,0-1
 28,2009-03-04,Manchester City,Aston Villa,2-0,1-0
 28,2009-03-04,Newcastle United,Manchester United,1-2,1-1
-27,2009-03-07,Sunderland AFC,Tottenham Hotspur,1-1,1-0
+27,2009-03-07,Sunderland,Tottenham,1-1,1-0
 21,2009-03-11,Fulham FC,Blackburn Rovers,1-2,1-0
-29,2009-03-14,Manchester United,Liverpool FC,1-4,1-2
-29,2009-03-14,Arsenal FC,Blackburn Rovers,4-0,1-0
+29,2009-03-14,Manchester United,Liverpool,1-4,1-2
+29,2009-03-14,Arsenal,Blackburn Rovers,4-0,1-0
 29,2009-03-14,Bolton Wanderers,Fulham FC,1-3,1-1
-29,2009-03-14,Everton FC,Stoke City,3-1,2-0
+29,2009-03-14,Everton,Stoke City,3-1,2-0
 29,2009-03-14,Hull City,Newcastle United,1-1,1-1
 29,2009-03-14,Middlesbrough FC,Portsmouth FC,1-1,0-1
-29,2009-03-14,Sunderland AFC,Wigan Athletic,1-2,1-2
-29,2009-03-15,Aston Villa,Tottenham Hotspur,1-2,0-1
-29,2009-03-15,Chelsea FC,Manchester City,1-0,1-0
+29,2009-03-14,Sunderland,Wigan Athletic,1-2,1-2
+29,2009-03-15,Aston Villa,Tottenham,1-2,0-1
+29,2009-03-15,Chelsea,Manchester City,1-0,1-0
 29,2009-03-16,West Ham United,West Bromwich Albion,0-0,
 30,2009-03-21,West Bromwich Albion,Bolton Wanderers,1-1,0-0
-30,2009-03-21,Portsmouth FC,Everton FC,2-1,1-1
+30,2009-03-21,Portsmouth FC,Everton,2-1,1-1
 30,2009-03-21,Blackburn Rovers,West Ham United,1-1,0-1
 30,2009-03-21,Fulham FC,Manchester United,2-0,1-0
 30,2009-03-21,Stoke City,Middlesbrough FC,1-0,0-0
-30,2009-03-21,Tottenham Hotspur,Chelsea FC,1-0,0-0
-30,2009-03-21,Newcastle United,Arsenal FC,1-3,0-0
+30,2009-03-21,Tottenham,Chelsea,1-0,0-0
+30,2009-03-21,Newcastle United,Arsenal,1-3,0-0
 30,2009-03-22,Wigan Athletic,Hull City,1-0,0-0
-30,2009-03-22,Manchester City,Sunderland AFC,1-0,0-0
-30,2009-03-22,Liverpool FC,Aston Villa,5-0,3-0
-31,2009-04-04,Fulham FC,Liverpool FC,0-1,0-0
-31,2009-04-04,Blackburn Rovers,Tottenham Hotspur,2-1,0-1
-31,2009-04-04,Arsenal FC,Manchester City,2-0,1-0
+30,2009-03-22,Manchester City,Sunderland,1-0,0-0
+30,2009-03-22,Liverpool,Aston Villa,5-0,3-0
+31,2009-04-04,Fulham FC,Liverpool,0-1,0-0
+31,2009-04-04,Blackburn Rovers,Tottenham,2-1,0-1
+31,2009-04-04,Arsenal,Manchester City,2-0,1-0
 31,2009-04-04,Bolton Wanderers,Middlesbrough FC,4-1,2-1
 31,2009-04-04,Hull City,Portsmouth FC,0-0,
-31,2009-04-04,Newcastle United,Chelsea FC,0-2,0-0
+31,2009-04-04,Newcastle United,Chelsea,0-2,0-0
 31,2009-04-04,West Bromwich Albion,Stoke City,0-2,0-1
-31,2009-04-04,West Ham United,Sunderland AFC,2-0,1-0
-31,2009-04-05,Everton FC,Wigan Athletic,4-0,1-0
+31,2009-04-04,West Ham United,Sunderland,2-0,1-0
+31,2009-04-05,Everton,Wigan Athletic,4-0,1-0
 31,2009-04-05,Manchester United,Aston Villa,3-2,1-1
-32,2009-04-11,Liverpool FC,Blackburn Rovers,4-0,2-0
-32,2009-04-11,Chelsea FC,Bolton Wanderers,4-3,1-0
+32,2009-04-11,Liverpool,Blackburn Rovers,4-0,2-0
+32,2009-04-11,Chelsea,Bolton Wanderers,4-3,1-0
 32,2009-04-11,Middlesbrough FC,Hull City,3-1,2-1
 32,2009-04-11,Portsmouth FC,West Bromwich Albion,2-2,1-0
-32,2009-04-11,Sunderland AFC,Manchester United,1-2,0-1
-32,2009-04-11,Tottenham Hotspur,West Ham United,1-0,0-0
-32,2009-04-11,Wigan Athletic,Arsenal FC,1-4,1-0
+32,2009-04-11,Sunderland,Manchester United,1-2,0-1
+32,2009-04-11,Tottenham,West Ham United,1-0,0-0
+32,2009-04-11,Wigan Athletic,Arsenal,1-4,1-0
 32,2009-04-11,Stoke City,Newcastle United,1-1,1-0
-32,2009-04-12,Aston Villa,Everton FC,3-3,1-2
+32,2009-04-12,Aston Villa,Everton,3-3,1-2
 32,2009-04-12,Manchester City,Fulham FC,1-3,1-0
 33,2009-04-18,Aston Villa,West Ham United,1-1,1-0
 33,2009-04-18,Middlesbrough FC,Fulham FC,0-0,
 33,2009-04-18,Portsmouth FC,Bolton Wanderers,1-0,0-0
 33,2009-04-18,Stoke City,Blackburn Rovers,1-0,0-0
-33,2009-04-18,Sunderland AFC,Hull City,1-0,1-0
+33,2009-04-18,Sunderland,Hull City,1-0,1-0
 33,2009-04-19,Manchester City,West Bromwich Albion,4-2,2-1
-33,2009-04-19,Tottenham Hotspur,Newcastle United,1-0,1-0
-33,2009-04-21,Liverpool FC,Arsenal FC,4-4,0-1
+33,2009-04-19,Tottenham,Newcastle United,1-0,1-0
+33,2009-04-21,Liverpool,Arsenal,4-4,0-1
 27,2009-04-22,Manchester United,Portsmouth FC,2-0,1-0
-33,2009-04-22,Chelsea FC,Everton FC,0-0,
-34,2009-04-25,Manchester United,Tottenham Hotspur,5-2,0-2
+33,2009-04-22,Chelsea,Everton,0-0,
+34,2009-04-25,Manchester United,Tottenham,5-2,0-2
 34,2009-04-25,Bolton Wanderers,Aston Villa,1-1,0-1
-34,2009-04-25,Everton FC,Manchester City,1-2,0-1
+34,2009-04-25,Everton,Manchester City,1-2,0-1
 34,2009-04-25,Fulham FC,Stoke City,1-0,1-0
-34,2009-04-25,Hull City,Liverpool FC,1-3,0-1
-34,2009-04-25,West Bromwich Albion,Sunderland AFC,3-0,1-0
-34,2009-04-25,West Ham United,Chelsea FC,0-1,0-0
-34,2009-04-26,Arsenal FC,Middlesbrough FC,2-0,1-0
+34,2009-04-25,Hull City,Liverpool,1-3,0-1
+34,2009-04-25,West Bromwich Albion,Sunderland,3-0,1-0
+34,2009-04-25,West Ham United,Chelsea,0-1,0-0
+34,2009-04-26,Arsenal,Middlesbrough FC,2-0,1-0
 34,2009-04-26,Blackburn Rovers,Wigan Athletic,2-0,1-0
 34,2009-04-27,Newcastle United,Portsmouth FC,0-0,
 35,2009-05-02,Wigan Athletic,Bolton Wanderers,0-0,
 35,2009-05-02,Middlesbrough FC,Manchester United,0-2,0-1
-35,2009-05-02,Chelsea FC,Fulham FC,3-1,2-1
+35,2009-05-02,Chelsea,Fulham FC,3-1,2-1
 35,2009-05-02,Manchester City,Blackburn Rovers,3-1,3-0
-35,2009-05-02,Portsmouth FC,Arsenal FC,0-3,0-2
+35,2009-05-02,Portsmouth FC,Arsenal,0-3,0-2
 35,2009-05-02,Stoke City,West Ham United,0-1,0-1
-35,2009-05-02,Tottenham Hotspur,West Bromwich Albion,1-0,1-0
-35,2009-05-03,Sunderland AFC,Everton FC,0-2,0-0
-35,2009-05-03,Liverpool FC,Newcastle United,3-0,2-0
+35,2009-05-02,Tottenham,West Bromwich Albion,1-0,1-0
+35,2009-05-03,Sunderland,Everton,0-2,0-0
+35,2009-05-03,Liverpool,Newcastle United,3-0,2-0
 35,2009-05-04,Aston Villa,Hull City,1-0,1-0
-36,2009-05-09,Everton FC,Tottenham Hotspur,0-0,
+36,2009-05-09,Everton,Tottenham,0-0,
 36,2009-05-09,Blackburn Rovers,Portsmouth FC,2-0,1-0
-36,2009-05-09,Bolton Wanderers,Sunderland AFC,0-0,
-36,2009-05-09,West Ham United,Liverpool FC,0-3,0-2
+36,2009-05-09,Bolton Wanderers,Sunderland,0-0,
+36,2009-05-09,West Ham United,Liverpool,0-3,0-2
 36,2009-05-09,Fulham FC,Aston Villa,3-1,1-1
 36,2009-05-09,Hull City,Stoke City,1-2,0-1
 36,2009-05-09,West Bromwich Albion,Wigan Athletic,3-1,1-1
-36,2009-05-10,Arsenal FC,Chelsea FC,1-4,0-2
+36,2009-05-10,Arsenal,Chelsea,1-4,0-2
 36,2009-05-10,Manchester United,Manchester City,2-0,2-0
 36,2009-05-11,Newcastle United,Middlesbrough FC,3-1,1-1
 33,2009-05-13,Wigan Athletic,Manchester United,1-2,1-0
-37,2009-05-16,Manchester United,Arsenal FC,0-0,
+37,2009-05-16,Manchester United,Arsenal,0-0,
 37,2009-05-16,Bolton Wanderers,Hull City,1-1,1-0
-37,2009-05-16,Everton FC,West Ham United,3-1,1-1
+37,2009-05-16,Everton,West Ham United,3-1,1-1
 37,2009-05-16,Middlesbrough FC,Aston Villa,1-1,1-0
 37,2009-05-16,Newcastle United,Fulham FC,0-1,0-1
 37,2009-05-16,Stoke City,Wigan Athletic,2-0,0-0
-37,2009-05-16,Tottenham Hotspur,Manchester City,2-1,1-0
-37,2009-05-17,Chelsea FC,Blackburn Rovers,2-0,1-0
-37,2009-05-17,West Bromwich Albion,Liverpool FC,0-2,0-1
-37,2009-05-18,Portsmouth FC,Sunderland AFC,3-1,0-0
-38,2009-05-24,Arsenal FC,Stoke City,4-1,4-1
+37,2009-05-16,Tottenham,Manchester City,2-1,1-0
+37,2009-05-17,Chelsea,Blackburn Rovers,2-0,1-0
+37,2009-05-17,West Bromwich Albion,Liverpool,0-2,0-1
+37,2009-05-18,Portsmouth FC,Sunderland,3-1,0-0
+38,2009-05-24,Arsenal,Stoke City,4-1,4-1
 38,2009-05-24,Aston Villa,Newcastle United,1-0,1-0
 38,2009-05-24,Blackburn Rovers,West Bromwich Albion,0-0,
-38,2009-05-24,Fulham FC,Everton FC,0-2,0-1
+38,2009-05-24,Fulham FC,Everton,0-2,0-1
 38,2009-05-24,Hull City,Manchester United,0-1,0-1
-38,2009-05-24,Liverpool FC,Tottenham Hotspur,3-1,1-0
+38,2009-05-24,Liverpool,Tottenham,3-1,1-0
 38,2009-05-24,Manchester City,Bolton Wanderers,1-0,1-0
-38,2009-05-24,Sunderland AFC,Chelsea FC,2-3,0-0
+38,2009-05-24,Sunderland,Chelsea,2-3,0-0
 38,2009-05-24,West Ham United,Middlesbrough FC,2-1,1-0
 38,2009-05-24,Wigan Athletic,Portsmouth FC,1-0,1-0

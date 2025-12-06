@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2020-09-12,Fulham FC,Arsenal FC,0-3,0-1
-1,Sat,2020-09-12,Crystal Palace FC,Southampton FC,1-0,1-0
-1,Sat,2020-09-12,Liverpool FC,Leeds United FC,4-3,3-2
-1,Sat,2020-09-12,West Ham United FC,Newcastle United FC,0-2,0-0
-1,Sun,2020-09-13,West Bromwich Albion FC,Leicester City FC,0-3,0-0
-1,Sun,2020-09-13,Tottenham Hotspur FC,Everton FC,0-1,0-0
-1,Mon,2020-09-14,Sheffield United FC,Wolverhampton Wanderers FC,0-2,0-2
-1,Mon,2020-09-14,Brighton & Hove Albion FC,Chelsea FC,1-3,0-1
-2,Sat,2020-09-19,Everton FC,West Bromwich Albion FC,5-2,2-1
-2,Sat,2020-09-19,Leeds United FC,Fulham FC,4-3,2-1
-2,Sat,2020-09-19,Manchester United FC,Crystal Palace FC,1-3,0-1
-2,Sat,2020-09-19,Arsenal FC,West Ham United FC,2-1,1-1
-2,Sun,2020-09-20,Southampton FC,Tottenham Hotspur FC,2-5,1-1
-2,Sun,2020-09-20,Newcastle United FC,Brighton & Hove Albion FC,0-3,0-2
-2,Sun,2020-09-20,Chelsea FC,Liverpool FC,0-2,0-0
-2,Sun,2020-09-20,Leicester City FC,Burnley FC,4-2,1-1
-2,Mon,2020-09-21,Aston Villa FC,Sheffield United FC,1-0,0-0
-2,Mon,2020-09-21,Wolverhampton Wanderers FC,Manchester City FC,1-3,0-2
-3,Sat,2020-09-26,Brighton & Hove Albion FC,Manchester United FC,2-3,1-1
-3,Sat,2020-09-26,Crystal Palace FC,Everton FC,1-2,1-2
-3,Sat,2020-09-26,West Bromwich Albion FC,Chelsea FC,3-3,3-0
-3,Sat,2020-09-26,Burnley FC,Southampton FC,0-1,0-1
-3,Sun,2020-09-27,Sheffield United FC,Leeds United FC,0-1,0-0
-3,Sun,2020-09-27,Tottenham Hotspur FC,Newcastle United FC,1-1,1-0
-3,Sun,2020-09-27,Manchester City FC,Leicester City FC,2-5,1-1
-3,Sun,2020-09-27,West Ham United FC,Wolverhampton Wanderers FC,4-0,1-0
-3,Mon,2020-09-28,Fulham FC,Aston Villa FC,0-3,0-2
-3,Mon,2020-09-28,Liverpool FC,Arsenal FC,3-1,2-1
-4,Sat,2020-10-03,Chelsea FC,Crystal Palace FC,4-0,0-0
-4,Sat,2020-10-03,Everton FC,Brighton & Hove Albion FC,4-2,2-1
-4,Sat,2020-10-03,Leeds United FC,Manchester City FC,1-1,0-1
-4,Sat,2020-10-03,Newcastle United FC,Burnley FC,3-1,1-0
-4,Sun,2020-10-04,Leicester City FC,West Ham United FC,0-3,0-2
+1,Sat,2020-09-12,Fulham FC,Arsenal,0-3,0-1
+1,Sat,2020-09-12,Crystal Palace,Southampton FC,1-0,1-0
+1,Sat,2020-09-12,Liverpool,Leeds United,4-3,3-2
+1,Sat,2020-09-12,West Ham United,Newcastle United,0-2,0-0
+1,Sun,2020-09-13,West Bromwich Albion FC,Leicester,0-3,0-0
+1,Sun,2020-09-13,Tottenham,Everton,0-1,0-0
+1,Mon,2020-09-14,Sheffield United FC,Wolverhampton,0-2,0-2
+1,Mon,2020-09-14,Brighton & Hove Albion,Chelsea,1-3,0-1
+2,Sat,2020-09-19,Everton,West Bromwich Albion FC,5-2,2-1
+2,Sat,2020-09-19,Leeds United,Fulham FC,4-3,2-1
+2,Sat,2020-09-19,Manchester United,Crystal Palace,1-3,0-1
+2,Sat,2020-09-19,Arsenal,West Ham United,2-1,1-1
+2,Sun,2020-09-20,Southampton FC,Tottenham,2-5,1-1
+2,Sun,2020-09-20,Newcastle United,Brighton & Hove Albion,0-3,0-2
+2,Sun,2020-09-20,Chelsea,Liverpool,0-2,0-0
+2,Sun,2020-09-20,Leicester,Burnley,4-2,1-1
+2,Mon,2020-09-21,Aston Villa,Sheffield United FC,1-0,0-0
+2,Mon,2020-09-21,Wolverhampton,Manchester City,1-3,0-2
+3,Sat,2020-09-26,Brighton & Hove Albion,Manchester United,2-3,1-1
+3,Sat,2020-09-26,Crystal Palace,Everton,1-2,1-2
+3,Sat,2020-09-26,West Bromwich Albion FC,Chelsea,3-3,3-0
+3,Sat,2020-09-26,Burnley,Southampton FC,0-1,0-1
+3,Sun,2020-09-27,Sheffield United FC,Leeds United,0-1,0-0
+3,Sun,2020-09-27,Tottenham,Newcastle United,1-1,1-0
+3,Sun,2020-09-27,Manchester City,Leicester,2-5,1-1
+3,Sun,2020-09-27,West Ham United,Wolverhampton,4-0,1-0
+3,Mon,2020-09-28,Fulham FC,Aston Villa,0-3,0-2
+3,Mon,2020-09-28,Liverpool,Arsenal,3-1,2-1
+4,Sat,2020-10-03,Chelsea,Crystal Palace,4-0,0-0
+4,Sat,2020-10-03,Everton,Brighton & Hove Albion,4-2,2-1
+4,Sat,2020-10-03,Leeds United,Manchester City,1-1,0-1
+4,Sat,2020-10-03,Newcastle United,Burnley,3-1,1-0
+4,Sun,2020-10-04,Leicester,West Ham United,0-3,0-2
 4,Sun,2020-10-04,Southampton FC,West Bromwich Albion FC,2-0,1-0
-4,Sun,2020-10-04,Wolverhampton Wanderers FC,Fulham FC,1-0,0-0
-4,Sun,2020-10-04,Arsenal FC,Sheffield United FC,2-1,0-0
-4,Sun,2020-10-04,Manchester United FC,Tottenham Hotspur FC,1-6,1-4
-4,Sun,2020-10-04,Aston Villa FC,Liverpool FC,7-2,4-1
-5,Sat,2020-10-17,Everton FC,Liverpool FC,2-2,1-1
-5,Sat,2020-10-17,Chelsea FC,Southampton FC,3-3,2-1
-5,Sat,2020-10-17,Manchester City FC,Arsenal FC,1-0,1-0
-5,Sat,2020-10-17,Newcastle United FC,Manchester United FC,1-4,1-1
+4,Sun,2020-10-04,Wolverhampton,Fulham FC,1-0,0-0
+4,Sun,2020-10-04,Arsenal,Sheffield United FC,2-1,0-0
+4,Sun,2020-10-04,Manchester United,Tottenham,1-6,1-4
+4,Sun,2020-10-04,Aston Villa,Liverpool,7-2,4-1
+5,Sat,2020-10-17,Everton,Liverpool,2-2,1-1
+5,Sat,2020-10-17,Chelsea,Southampton FC,3-3,2-1
+5,Sat,2020-10-17,Manchester City,Arsenal,1-0,1-0
+5,Sat,2020-10-17,Newcastle United,Manchester United,1-4,1-1
 5,Sun,2020-10-18,Sheffield United FC,Fulham FC,1-1,0-0
-5,Sun,2020-10-18,Crystal Palace FC,Brighton & Hove Albion FC,1-1,1-0
-5,Sun,2020-10-18,Tottenham Hotspur FC,West Ham United FC,3-3,3-0
-5,Sun,2020-10-18,Leicester City FC,Aston Villa FC,0-1,0-0
-5,Mon,2020-10-19,West Bromwich Albion FC,Burnley FC,0-0,
-5,Mon,2020-10-19,Leeds United FC,Wolverhampton Wanderers FC,0-1,0-0
-6,Fri,2020-10-23,Aston Villa FC,Leeds United FC,0-3,0-0
-6,Sat,2020-10-24,West Ham United FC,Manchester City FC,1-1,1-0
-6,Sat,2020-10-24,Fulham FC,Crystal Palace FC,1-2,0-1
-6,Sat,2020-10-24,Manchester United FC,Chelsea FC,0-0,
-6,Sat,2020-10-24,Liverpool FC,Sheffield United FC,2-1,1-1
-6,Sun,2020-10-25,Southampton FC,Everton FC,2-0,2-0
-6,Sun,2020-10-25,Wolverhampton Wanderers FC,Newcastle United FC,1-1,0-0
-6,Sun,2020-10-25,Arsenal FC,Leicester City FC,0-1,0-0
-6,Mon,2020-10-26,Brighton & Hove Albion FC,West Bromwich Albion FC,1-1,1-0
-6,Mon,2020-10-26,Burnley FC,Tottenham Hotspur FC,0-1,0-0
-7,Fri,2020-10-30,Wolverhampton Wanderers FC,Crystal Palace FC,2-0,2-0
-7,Sat,2020-10-31,Sheffield United FC,Manchester City FC,0-1,0-1
-7,Sat,2020-10-31,Burnley FC,Chelsea FC,0-3,0-1
-7,Sat,2020-10-31,Liverpool FC,West Ham United FC,2-1,1-1
-7,Sun,2020-11-01,Aston Villa FC,Southampton FC,3-4,0-3
-7,Sun,2020-11-01,Newcastle United FC,Everton FC,2-1,0-0
-7,Sun,2020-11-01,Manchester United FC,Arsenal FC,0-1,0-0
-7,Sun,2020-11-01,Tottenham Hotspur FC,Brighton & Hove Albion FC,2-1,1-0
+5,Sun,2020-10-18,Crystal Palace,Brighton & Hove Albion,1-1,1-0
+5,Sun,2020-10-18,Tottenham,West Ham United,3-3,3-0
+5,Sun,2020-10-18,Leicester,Aston Villa,0-1,0-0
+5,Mon,2020-10-19,West Bromwich Albion FC,Burnley,0-0,
+5,Mon,2020-10-19,Leeds United,Wolverhampton,0-1,0-0
+6,Fri,2020-10-23,Aston Villa,Leeds United,0-3,0-0
+6,Sat,2020-10-24,West Ham United,Manchester City,1-1,1-0
+6,Sat,2020-10-24,Fulham FC,Crystal Palace,1-2,0-1
+6,Sat,2020-10-24,Manchester United,Chelsea,0-0,
+6,Sat,2020-10-24,Liverpool,Sheffield United FC,2-1,1-1
+6,Sun,2020-10-25,Southampton FC,Everton,2-0,2-0
+6,Sun,2020-10-25,Wolverhampton,Newcastle United,1-1,0-0
+6,Sun,2020-10-25,Arsenal,Leicester,0-1,0-0
+6,Mon,2020-10-26,Brighton & Hove Albion,West Bromwich Albion FC,1-1,1-0
+6,Mon,2020-10-26,Burnley,Tottenham,0-1,0-0
+7,Fri,2020-10-30,Wolverhampton,Crystal Palace,2-0,2-0
+7,Sat,2020-10-31,Sheffield United FC,Manchester City,0-1,0-1
+7,Sat,2020-10-31,Burnley,Chelsea,0-3,0-1
+7,Sat,2020-10-31,Liverpool,West Ham United,2-1,1-1
+7,Sun,2020-11-01,Aston Villa,Southampton FC,3-4,0-3
+7,Sun,2020-11-01,Newcastle United,Everton,2-1,0-0
+7,Sun,2020-11-01,Manchester United,Arsenal,0-1,0-0
+7,Sun,2020-11-01,Tottenham,Brighton & Hove Albion,2-1,1-0
 7,Mon,2020-11-02,Fulham FC,West Bromwich Albion FC,2-0,2-0
-7,Mon,2020-11-02,Leeds United FC,Leicester City FC,1-4,0-2
-8,Fri,2020-11-06,Brighton & Hove Albion FC,Burnley FC,0-0,
-8,Fri,2020-11-06,Southampton FC,Newcastle United FC,2-0,1-0
-8,Sat,2020-11-07,Everton FC,Manchester United FC,1-3,1-2
-8,Sat,2020-11-07,Crystal Palace FC,Leeds United FC,4-1,3-1
-8,Sat,2020-11-07,Chelsea FC,Sheffield United FC,4-1,2-1
-8,Sat,2020-11-07,West Ham United FC,Fulham FC,1-0,0-0
-8,Sun,2020-11-08,West Bromwich Albion FC,Tottenham Hotspur FC,0-1,0-0
-8,Sun,2020-11-08,Leicester City FC,Wolverhampton Wanderers FC,1-0,1-0
-8,Sun,2020-11-08,Manchester City FC,Liverpool FC,1-1,1-1
-8,Sun,2020-11-08,Arsenal FC,Aston Villa FC,0-3,0-1
-9,Sat,2020-11-21,Newcastle United FC,Chelsea FC,0-2,0-1
-9,Sat,2020-11-21,Aston Villa FC,Brighton & Hove Albion FC,1-2,0-1
-9,Sat,2020-11-21,Tottenham Hotspur FC,Manchester City FC,2-0,1-0
-9,Sat,2020-11-21,Manchester United FC,West Bromwich Albion FC,1-0,0-0
-9,Sun,2020-11-22,Fulham FC,Everton FC,2-3,1-3
-9,Sun,2020-11-22,Sheffield United FC,West Ham United FC,0-1,0-0
-9,Sun,2020-11-22,Leeds United FC,Arsenal FC,0-0,
-9,Sun,2020-11-22,Liverpool FC,Leicester City FC,3-0,2-0
-9,Mon,2020-11-23,Burnley FC,Crystal Palace FC,1-0,1-0
-9,Mon,2020-11-23,Wolverhampton Wanderers FC,Southampton FC,1-1,0-0
-10,Fri,2020-11-27,Crystal Palace FC,Newcastle United FC,0-2,0-0
-10,Sat,2020-11-28,Brighton & Hove Albion FC,Liverpool FC,1-1,0-0
-10,Sat,2020-11-28,Manchester City FC,Burnley FC,5-0,3-0
-10,Sat,2020-11-28,Everton FC,Leeds United FC,0-1,0-0
+7,Mon,2020-11-02,Leeds United,Leicester,1-4,0-2
+8,Fri,2020-11-06,Brighton & Hove Albion,Burnley,0-0,
+8,Fri,2020-11-06,Southampton FC,Newcastle United,2-0,1-0
+8,Sat,2020-11-07,Everton,Manchester United,1-3,1-2
+8,Sat,2020-11-07,Crystal Palace,Leeds United,4-1,3-1
+8,Sat,2020-11-07,Chelsea,Sheffield United FC,4-1,2-1
+8,Sat,2020-11-07,West Ham United,Fulham FC,1-0,0-0
+8,Sun,2020-11-08,West Bromwich Albion FC,Tottenham,0-1,0-0
+8,Sun,2020-11-08,Leicester,Wolverhampton,1-0,1-0
+8,Sun,2020-11-08,Manchester City,Liverpool,1-1,1-1
+8,Sun,2020-11-08,Arsenal,Aston Villa,0-3,0-1
+9,Sat,2020-11-21,Newcastle United,Chelsea,0-2,0-1
+9,Sat,2020-11-21,Aston Villa,Brighton & Hove Albion,1-2,0-1
+9,Sat,2020-11-21,Tottenham,Manchester City,2-0,1-0
+9,Sat,2020-11-21,Manchester United,West Bromwich Albion FC,1-0,0-0
+9,Sun,2020-11-22,Fulham FC,Everton,2-3,1-3
+9,Sun,2020-11-22,Sheffield United FC,West Ham United,0-1,0-0
+9,Sun,2020-11-22,Leeds United,Arsenal,0-0,
+9,Sun,2020-11-22,Liverpool,Leicester,3-0,2-0
+9,Mon,2020-11-23,Burnley,Crystal Palace,1-0,1-0
+9,Mon,2020-11-23,Wolverhampton,Southampton FC,1-1,0-0
+10,Fri,2020-11-27,Crystal Palace,Newcastle United,0-2,0-0
+10,Sat,2020-11-28,Brighton & Hove Albion,Liverpool,1-1,0-0
+10,Sat,2020-11-28,Manchester City,Burnley,5-0,3-0
+10,Sat,2020-11-28,Everton,Leeds United,0-1,0-0
 10,Sat,2020-11-28,West Bromwich Albion FC,Sheffield United FC,1-0,1-0
-10,Sun,2020-11-29,Southampton FC,Manchester United FC,2-3,2-0
-10,Sun,2020-11-29,Chelsea FC,Tottenham Hotspur FC,0-0,
-10,Sun,2020-11-29,Arsenal FC,Wolverhampton Wanderers FC,1-2,1-2
-10,Mon,2020-11-30,Leicester City FC,Fulham FC,1-2,0-2
-10,Mon,2020-11-30,West Ham United FC,Aston Villa FC,2-1,1-1
-11,Sat,2020-12-05,Burnley FC,Everton FC,1-1,1-1
-11,Sat,2020-12-05,Manchester City FC,Fulham FC,2-0,2-0
-11,Sat,2020-12-05,West Ham United FC,Manchester United FC,1-3,1-0
-11,Sat,2020-12-05,Chelsea FC,Leeds United FC,3-1,1-1
-11,Sun,2020-12-06,West Bromwich Albion FC,Crystal Palace FC,1-5,1-1
-11,Sun,2020-12-06,Sheffield United FC,Leicester City FC,1-2,1-1
-11,Sun,2020-12-06,Tottenham Hotspur FC,Arsenal FC,2-0,2-0
-11,Sun,2020-12-06,Liverpool FC,Wolverhampton Wanderers FC,4-0,1-0
-11,Mon,2020-12-07,Brighton & Hove Albion FC,Southampton FC,1-2,1-1
-12,Fri,2020-12-11,Leeds United FC,West Ham United FC,1-2,1-1
-12,Sat,2020-12-12,Wolverhampton Wanderers FC,Aston Villa FC,0-1,0-0
-12,Sat,2020-12-12,Newcastle United FC,West Bromwich Albion FC,2-1,1-0
-12,Sat,2020-12-12,Manchester United FC,Manchester City FC,0-0,
-12,Sat,2020-12-12,Everton FC,Chelsea FC,1-0,1-0
+10,Sun,2020-11-29,Southampton FC,Manchester United,2-3,2-0
+10,Sun,2020-11-29,Chelsea,Tottenham,0-0,
+10,Sun,2020-11-29,Arsenal,Wolverhampton,1-2,1-2
+10,Mon,2020-11-30,Leicester,Fulham FC,1-2,0-2
+10,Mon,2020-11-30,West Ham United,Aston Villa,2-1,1-1
+11,Sat,2020-12-05,Burnley,Everton,1-1,1-1
+11,Sat,2020-12-05,Manchester City,Fulham FC,2-0,2-0
+11,Sat,2020-12-05,West Ham United,Manchester United,1-3,1-0
+11,Sat,2020-12-05,Chelsea,Leeds United,3-1,1-1
+11,Sun,2020-12-06,West Bromwich Albion FC,Crystal Palace,1-5,1-1
+11,Sun,2020-12-06,Sheffield United FC,Leicester,1-2,1-1
+11,Sun,2020-12-06,Tottenham,Arsenal,2-0,2-0
+11,Sun,2020-12-06,Liverpool,Wolverhampton,4-0,1-0
+11,Mon,2020-12-07,Brighton & Hove Albion,Southampton FC,1-2,1-1
+12,Fri,2020-12-11,Leeds United,West Ham United,1-2,1-1
+12,Sat,2020-12-12,Wolverhampton,Aston Villa,0-1,0-0
+12,Sat,2020-12-12,Newcastle United,West Bromwich Albion FC,2-1,1-0
+12,Sat,2020-12-12,Manchester United,Manchester City,0-0,
+12,Sat,2020-12-12,Everton,Chelsea,1-0,1-0
 12,Sun,2020-12-13,Southampton FC,Sheffield United FC,3-0,1-0
-12,Sun,2020-12-13,Crystal Palace FC,Tottenham Hotspur FC,1-1,0-1
-12,Sun,2020-12-13,Fulham FC,Liverpool FC,1-1,1-0
-12,Sun,2020-12-13,Leicester City FC,Brighton & Hove Albion FC,3-0,3-0
-12,Sun,2020-12-13,Arsenal FC,Burnley FC,0-1,0-0
-13,Tue,2020-12-15,Wolverhampton Wanderers FC,Chelsea FC,2-1,0-0
-13,Tue,2020-12-15,Manchester City FC,West Bromwich Albion FC,1-1,1-1
-13,Wed,2020-12-16,Arsenal FC,Southampton FC,1-1,0-1
-13,Wed,2020-12-16,Leicester City FC,Everton FC,0-2,0-1
-13,Wed,2020-12-16,Leeds United FC,Newcastle United FC,5-2,1-1
-13,Wed,2020-12-16,Fulham FC,Brighton & Hove Albion FC,0-0,
-13,Wed,2020-12-16,West Ham United FC,Crystal Palace FC,1-1,0-1
-13,Wed,2020-12-16,Liverpool FC,Tottenham Hotspur FC,2-1,1-1
-13,Thu,2020-12-17,Aston Villa FC,Burnley FC,0-0,
-13,Thu,2020-12-17,Sheffield United FC,Manchester United FC,2-3,1-2
-14,Sat,2020-12-19,Crystal Palace FC,Liverpool FC,0-7,0-3
-14,Sat,2020-12-19,Southampton FC,Manchester City FC,0-1,0-1
-14,Sat,2020-12-19,Everton FC,Arsenal FC,2-1,2-1
-14,Sat,2020-12-19,Newcastle United FC,Fulham FC,1-1,0-1
-14,Sun,2020-12-20,Brighton & Hove Albion FC,Sheffield United FC,1-1,0-0
-14,Sun,2020-12-20,Tottenham Hotspur FC,Leicester City FC,0-2,0-1
-14,Sun,2020-12-20,Manchester United FC,Leeds United FC,6-2,4-1
-14,Sun,2020-12-20,West Bromwich Albion FC,Aston Villa FC,0-3,0-1
-14,Mon,2020-12-21,Burnley FC,Wolverhampton Wanderers FC,2-1,1-0
-14,Mon,2020-12-21,Chelsea FC,West Ham United FC,3-0,1-0
-15,Sat,2020-12-26,Leicester City FC,Manchester United FC,2-2,1-1
+12,Sun,2020-12-13,Crystal Palace,Tottenham,1-1,0-1
+12,Sun,2020-12-13,Fulham FC,Liverpool,1-1,1-0
+12,Sun,2020-12-13,Leicester,Brighton & Hove Albion,3-0,3-0
+12,Sun,2020-12-13,Arsenal,Burnley,0-1,0-0
+13,Tue,2020-12-15,Wolverhampton,Chelsea,2-1,0-0
+13,Tue,2020-12-15,Manchester City,West Bromwich Albion FC,1-1,1-1
+13,Wed,2020-12-16,Arsenal,Southampton FC,1-1,0-1
+13,Wed,2020-12-16,Leicester,Everton,0-2,0-1
+13,Wed,2020-12-16,Leeds United,Newcastle United,5-2,1-1
+13,Wed,2020-12-16,Fulham FC,Brighton & Hove Albion,0-0,
+13,Wed,2020-12-16,West Ham United,Crystal Palace,1-1,0-1
+13,Wed,2020-12-16,Liverpool,Tottenham,2-1,1-1
+13,Thu,2020-12-17,Aston Villa,Burnley,0-0,
+13,Thu,2020-12-17,Sheffield United FC,Manchester United,2-3,1-2
+14,Sat,2020-12-19,Crystal Palace,Liverpool,0-7,0-3
+14,Sat,2020-12-19,Southampton FC,Manchester City,0-1,0-1
+14,Sat,2020-12-19,Everton,Arsenal,2-1,2-1
+14,Sat,2020-12-19,Newcastle United,Fulham FC,1-1,0-1
+14,Sun,2020-12-20,Brighton & Hove Albion,Sheffield United FC,1-1,0-0
+14,Sun,2020-12-20,Tottenham,Leicester,0-2,0-1
+14,Sun,2020-12-20,Manchester United,Leeds United,6-2,4-1
+14,Sun,2020-12-20,West Bromwich Albion FC,Aston Villa,0-3,0-1
+14,Mon,2020-12-21,Burnley,Wolverhampton,2-1,1-0
+14,Mon,2020-12-21,Chelsea,West Ham United,3-0,1-0
+15,Sat,2020-12-26,Leicester,Manchester United,2-2,1-1
 15,Sat,2020-12-26,Fulham FC,Southampton FC,0-0,
-15,Sat,2020-12-26,Aston Villa FC,Crystal Palace FC,3-0,1-0
-15,Sat,2020-12-26,Arsenal FC,Chelsea FC,3-1,2-0
-15,Sat,2020-12-26,Manchester City FC,Newcastle United FC,2-0,1-0
-15,Sat,2020-12-26,Sheffield United FC,Everton FC,0-1,0-0
-15,Sun,2020-12-27,Leeds United FC,Burnley FC,1-0,1-0
-15,Sun,2020-12-27,West Ham United FC,Brighton & Hove Albion FC,2-2,0-1
-15,Sun,2020-12-27,Liverpool FC,West Bromwich Albion FC,1-1,1-0
-15,Sun,2020-12-27,Wolverhampton Wanderers FC,Tottenham Hotspur FC,1-1,0-1
-16,Mon,2020-12-28,Crystal Palace FC,Leicester City FC,1-1,0-0
-16,Mon,2020-12-28,Chelsea FC,Aston Villa FC,1-1,1-0
-16,Tue,2020-12-29,West Bromwich Albion FC,Leeds United FC,0-5,0-4
-16,Tue,2020-12-29,Burnley FC,Sheffield United FC,1-0,1-0
-16,Tue,2020-12-29,Southampton FC,West Ham United FC,0-0,
-16,Tue,2020-12-29,Brighton & Hove Albion FC,Arsenal FC,0-1,0-0
-16,Tue,2020-12-29,Manchester United FC,Wolverhampton Wanderers FC,1-0,0-0
-16,Wed,2020-12-30,Newcastle United FC,Liverpool FC,0-0,
-17,Fri,2021-01-01,Everton FC,West Ham United FC,0-1,0-0
-17,Fri,2021-01-01,Manchester United FC,Aston Villa FC,2-1,1-0
-17,Sat,2021-01-02,Tottenham Hotspur FC,Leeds United FC,3-0,2-0
-17,Sat,2021-01-02,Crystal Palace FC,Sheffield United FC,2-0,2-0
-17,Sat,2021-01-02,Brighton & Hove Albion FC,Wolverhampton Wanderers FC,3-3,1-3
-17,Sat,2021-01-02,West Bromwich Albion FC,Arsenal FC,0-4,0-2
-17,Sun,2021-01-03,Newcastle United FC,Leicester City FC,1-2,0-0
-17,Sun,2021-01-03,Chelsea FC,Manchester City FC,1-3,0-3
-17,Mon,2021-01-04,Southampton FC,Liverpool FC,1-0,1-0
-18,Tue,2021-01-12,Sheffield United FC,Newcastle United FC,1-0,0-0
-18,Tue,2021-01-12,Wolverhampton Wanderers FC,Everton FC,1-2,1-1
-1,Tue,2021-01-12,Burnley FC,Manchester United FC,0-1,0-0
-18,Wed,2021-01-13,Manchester City FC,Brighton & Hove Albion FC,1-0,1-0
-16,Wed,2021-01-13,Tottenham Hotspur FC,Fulham FC,1-1,1-0
-18,Thu,2021-01-14,Arsenal FC,Crystal Palace FC,0-0,
-19,Sat,2021-01-16,Wolverhampton Wanderers FC,West Bromwich Albion FC,2-3,2-1
-19,Sat,2021-01-16,West Ham United FC,Burnley FC,1-0,1-0
-19,Sat,2021-01-16,Leeds United FC,Brighton & Hove Albion FC,0-1,0-1
-19,Sat,2021-01-16,Fulham FC,Chelsea FC,0-1,0-0
-19,Sat,2021-01-16,Leicester City FC,Southampton FC,2-0,1-0
-19,Sun,2021-01-17,Sheffield United FC,Tottenham Hotspur FC,1-3,0-2
-19,Sun,2021-01-17,Liverpool FC,Manchester United FC,0-0,
-19,Sun,2021-01-17,Manchester City FC,Crystal Palace FC,4-0,1-0
-19,Mon,2021-01-18,Arsenal FC,Newcastle United FC,3-0,0-0
-18,Tue,2021-01-19,West Ham United FC,West Bromwich Albion FC,2-1,1-0
-18,Tue,2021-01-19,Leicester City FC,Chelsea FC,2-0,2-0
-1,Wed,2021-01-20,Manchester City FC,Aston Villa FC,2-0,0-0
-18,Wed,2021-01-20,Fulham FC,Manchester United FC,1-2,1-1
-18,Thu,2021-01-21,Liverpool FC,Burnley FC,0-1,0-0
-11,Sat,2021-01-23,Aston Villa FC,Newcastle United FC,2-0,2-0
-20,Tue,2021-01-26,Newcastle United FC,Leeds United FC,1-2,0-1
-20,Tue,2021-01-26,Crystal Palace FC,West Ham United FC,2-3,1-2
-20,Tue,2021-01-26,West Bromwich Albion FC,Manchester City FC,0-5,0-4
-20,Tue,2021-01-26,Southampton FC,Arsenal FC,1-3,1-2
-20,Wed,2021-01-27,Burnley FC,Aston Villa FC,3-2,0-1
-20,Wed,2021-01-27,Chelsea FC,Wolverhampton Wanderers FC,0-0,
-20,Wed,2021-01-27,Brighton & Hove Albion FC,Fulham FC,0-0,
-20,Wed,2021-01-27,Everton FC,Leicester City FC,1-1,1-0
-20,Wed,2021-01-27,Manchester United FC,Sheffield United FC,1-2,0-1
-20,Thu,2021-01-28,Tottenham Hotspur FC,Liverpool FC,1-3,0-1
-21,Sat,2021-01-30,Everton FC,Newcastle United FC,0-2,0-0
-21,Sat,2021-01-30,Manchester City FC,Sheffield United FC,1-0,1-0
+15,Sat,2020-12-26,Aston Villa,Crystal Palace,3-0,1-0
+15,Sat,2020-12-26,Arsenal,Chelsea,3-1,2-0
+15,Sat,2020-12-26,Manchester City,Newcastle United,2-0,1-0
+15,Sat,2020-12-26,Sheffield United FC,Everton,0-1,0-0
+15,Sun,2020-12-27,Leeds United,Burnley,1-0,1-0
+15,Sun,2020-12-27,West Ham United,Brighton & Hove Albion,2-2,0-1
+15,Sun,2020-12-27,Liverpool,West Bromwich Albion FC,1-1,1-0
+15,Sun,2020-12-27,Wolverhampton,Tottenham,1-1,0-1
+16,Mon,2020-12-28,Crystal Palace,Leicester,1-1,0-0
+16,Mon,2020-12-28,Chelsea,Aston Villa,1-1,1-0
+16,Tue,2020-12-29,West Bromwich Albion FC,Leeds United,0-5,0-4
+16,Tue,2020-12-29,Burnley,Sheffield United FC,1-0,1-0
+16,Tue,2020-12-29,Southampton FC,West Ham United,0-0,
+16,Tue,2020-12-29,Brighton & Hove Albion,Arsenal,0-1,0-0
+16,Tue,2020-12-29,Manchester United,Wolverhampton,1-0,0-0
+16,Wed,2020-12-30,Newcastle United,Liverpool,0-0,
+17,Fri,2021-01-01,Everton,West Ham United,0-1,0-0
+17,Fri,2021-01-01,Manchester United,Aston Villa,2-1,1-0
+17,Sat,2021-01-02,Tottenham,Leeds United,3-0,2-0
+17,Sat,2021-01-02,Crystal Palace,Sheffield United FC,2-0,2-0
+17,Sat,2021-01-02,Brighton & Hove Albion,Wolverhampton,3-3,1-3
+17,Sat,2021-01-02,West Bromwich Albion FC,Arsenal,0-4,0-2
+17,Sun,2021-01-03,Newcastle United,Leicester,1-2,0-0
+17,Sun,2021-01-03,Chelsea,Manchester City,1-3,0-3
+17,Mon,2021-01-04,Southampton FC,Liverpool,1-0,1-0
+18,Tue,2021-01-12,Sheffield United FC,Newcastle United,1-0,0-0
+18,Tue,2021-01-12,Wolverhampton,Everton,1-2,1-1
+1,Tue,2021-01-12,Burnley,Manchester United,0-1,0-0
+18,Wed,2021-01-13,Manchester City,Brighton & Hove Albion,1-0,1-0
+16,Wed,2021-01-13,Tottenham,Fulham FC,1-1,1-0
+18,Thu,2021-01-14,Arsenal,Crystal Palace,0-0,
+19,Sat,2021-01-16,Wolverhampton,West Bromwich Albion FC,2-3,2-1
+19,Sat,2021-01-16,West Ham United,Burnley,1-0,1-0
+19,Sat,2021-01-16,Leeds United,Brighton & Hove Albion,0-1,0-1
+19,Sat,2021-01-16,Fulham FC,Chelsea,0-1,0-0
+19,Sat,2021-01-16,Leicester,Southampton FC,2-0,1-0
+19,Sun,2021-01-17,Sheffield United FC,Tottenham,1-3,0-2
+19,Sun,2021-01-17,Liverpool,Manchester United,0-0,
+19,Sun,2021-01-17,Manchester City,Crystal Palace,4-0,1-0
+19,Mon,2021-01-18,Arsenal,Newcastle United,3-0,0-0
+18,Tue,2021-01-19,West Ham United,West Bromwich Albion FC,2-1,1-0
+18,Tue,2021-01-19,Leicester,Chelsea,2-0,2-0
+1,Wed,2021-01-20,Manchester City,Aston Villa,2-0,0-0
+18,Wed,2021-01-20,Fulham FC,Manchester United,1-2,1-1
+18,Thu,2021-01-21,Liverpool,Burnley,0-1,0-0
+11,Sat,2021-01-23,Aston Villa,Newcastle United,2-0,2-0
+20,Tue,2021-01-26,Newcastle United,Leeds United,1-2,0-1
+20,Tue,2021-01-26,Crystal Palace,West Ham United,2-3,1-2
+20,Tue,2021-01-26,West Bromwich Albion FC,Manchester City,0-5,0-4
+20,Tue,2021-01-26,Southampton FC,Arsenal,1-3,1-2
+20,Wed,2021-01-27,Burnley,Aston Villa,3-2,0-1
+20,Wed,2021-01-27,Chelsea,Wolverhampton,0-0,
+20,Wed,2021-01-27,Brighton & Hove Albion,Fulham FC,0-0,
+20,Wed,2021-01-27,Everton,Leicester,1-1,1-0
+20,Wed,2021-01-27,Manchester United,Sheffield United FC,1-2,0-1
+20,Thu,2021-01-28,Tottenham,Liverpool,1-3,0-1
+21,Sat,2021-01-30,Everton,Newcastle United,0-2,0-0
+21,Sat,2021-01-30,Manchester City,Sheffield United FC,1-0,1-0
 21,Sat,2021-01-30,West Bromwich Albion FC,Fulham FC,2-2,0-1
-21,Sat,2021-01-30,Crystal Palace FC,Wolverhampton Wanderers FC,1-0,0-0
-21,Sat,2021-01-30,Arsenal FC,Manchester United FC,0-0,
-21,Sat,2021-01-30,Southampton FC,Aston Villa FC,0-1,0-1
-21,Sun,2021-01-31,Chelsea FC,Burnley FC,2-0,1-0
-21,Sun,2021-01-31,Leicester City FC,Leeds United FC,1-3,1-1
-21,Sun,2021-01-31,West Ham United FC,Liverpool FC,1-3,0-0
-21,Sun,2021-01-31,Brighton & Hove Albion FC,Tottenham Hotspur FC,1-0,1-0
-22,Tue,2021-02-02,Wolverhampton Wanderers FC,Arsenal FC,2-1,1-1
+21,Sat,2021-01-30,Crystal Palace,Wolverhampton,1-0,0-0
+21,Sat,2021-01-30,Arsenal,Manchester United,0-0,
+21,Sat,2021-01-30,Southampton FC,Aston Villa,0-1,0-1
+21,Sun,2021-01-31,Chelsea,Burnley,2-0,1-0
+21,Sun,2021-01-31,Leicester,Leeds United,1-3,1-1
+21,Sun,2021-01-31,West Ham United,Liverpool,1-3,0-0
+21,Sun,2021-01-31,Brighton & Hove Albion,Tottenham,1-0,1-0
+22,Tue,2021-02-02,Wolverhampton,Arsenal,2-1,1-1
 22,Tue,2021-02-02,Sheffield United FC,West Bromwich Albion FC,2-1,0-1
-22,Tue,2021-02-02,Manchester United FC,Southampton FC,9-0,4-0
-22,Tue,2021-02-02,Newcastle United FC,Crystal Palace FC,1-2,1-2
-22,Wed,2021-02-03,Fulham FC,Leicester City FC,0-2,0-2
-22,Wed,2021-02-03,Burnley FC,Manchester City FC,0-2,0-2
-22,Wed,2021-02-03,Leeds United FC,Everton FC,1-2,0-2
-22,Wed,2021-02-03,Aston Villa FC,West Ham United FC,1-3,0-0
-22,Wed,2021-02-03,Liverpool FC,Brighton & Hove Albion FC,0-1,0-0
-22,Thu,2021-02-04,Tottenham Hotspur FC,Chelsea FC,0-1,0-1
-23,Sat,2021-02-06,Aston Villa FC,Arsenal FC,1-0,1-0
-23,Sat,2021-02-06,Newcastle United FC,Southampton FC,3-2,3-1
-23,Sat,2021-02-06,Burnley FC,Brighton & Hove Albion FC,1-1,0-1
-23,Sat,2021-02-06,Fulham FC,West Ham United FC,0-0,
-23,Sat,2021-02-06,Manchester United FC,Everton FC,3-3,2-0
-23,Sun,2021-02-07,Tottenham Hotspur FC,West Bromwich Albion FC,2-0,0-0
-23,Sun,2021-02-07,Wolverhampton Wanderers FC,Leicester City FC,0-0,
-23,Sun,2021-02-07,Liverpool FC,Manchester City FC,1-4,0-0
-23,Sun,2021-02-07,Sheffield United FC,Chelsea FC,1-2,0-1
-23,Mon,2021-02-08,Leeds United FC,Crystal Palace FC,2-0,1-0
-24,Sat,2021-02-13,Leicester City FC,Liverpool FC,3-1,0-0
-24,Sat,2021-02-13,Crystal Palace FC,Burnley FC,0-3,0-2
-24,Sat,2021-02-13,Manchester City FC,Tottenham Hotspur FC,3-0,1-0
-24,Sat,2021-02-13,Brighton & Hove Albion FC,Aston Villa FC,0-0,
-24,Sun,2021-02-14,Southampton FC,Wolverhampton Wanderers FC,1-2,1-0
-24,Sun,2021-02-14,West Bromwich Albion FC,Manchester United FC,1-1,1-1
-24,Sun,2021-02-14,Arsenal FC,Leeds United FC,4-2,3-0
-24,Sun,2021-02-14,Everton FC,Fulham FC,0-2,0-0
-24,Mon,2021-02-15,West Ham United FC,Sheffield United FC,3-0,1-0
-24,Mon,2021-02-15,Chelsea FC,Newcastle United FC,2-0,2-0
-17,Wed,2021-02-17,Burnley FC,Fulham FC,1-1,0-0
-16,Wed,2021-02-17,Everton FC,Manchester City FC,1-3,1-1
-25,Fri,2021-02-19,Wolverhampton Wanderers FC,Leeds United FC,1-0,0-0
-25,Sat,2021-02-20,Southampton FC,Chelsea FC,1-1,1-0
-25,Sat,2021-02-20,Burnley FC,West Bromwich Albion FC,0-0,
-25,Sat,2021-02-20,Liverpool FC,Everton FC,0-2,0-1
+22,Tue,2021-02-02,Manchester United,Southampton FC,9-0,4-0
+22,Tue,2021-02-02,Newcastle United,Crystal Palace,1-2,1-2
+22,Wed,2021-02-03,Fulham FC,Leicester,0-2,0-2
+22,Wed,2021-02-03,Burnley,Manchester City,0-2,0-2
+22,Wed,2021-02-03,Leeds United,Everton,1-2,0-2
+22,Wed,2021-02-03,Aston Villa,West Ham United,1-3,0-0
+22,Wed,2021-02-03,Liverpool,Brighton & Hove Albion,0-1,0-0
+22,Thu,2021-02-04,Tottenham,Chelsea,0-1,0-1
+23,Sat,2021-02-06,Aston Villa,Arsenal,1-0,1-0
+23,Sat,2021-02-06,Newcastle United,Southampton FC,3-2,3-1
+23,Sat,2021-02-06,Burnley,Brighton & Hove Albion,1-1,0-1
+23,Sat,2021-02-06,Fulham FC,West Ham United,0-0,
+23,Sat,2021-02-06,Manchester United,Everton,3-3,2-0
+23,Sun,2021-02-07,Tottenham,West Bromwich Albion FC,2-0,0-0
+23,Sun,2021-02-07,Wolverhampton,Leicester,0-0,
+23,Sun,2021-02-07,Liverpool,Manchester City,1-4,0-0
+23,Sun,2021-02-07,Sheffield United FC,Chelsea,1-2,0-1
+23,Mon,2021-02-08,Leeds United,Crystal Palace,2-0,1-0
+24,Sat,2021-02-13,Leicester,Liverpool,3-1,0-0
+24,Sat,2021-02-13,Crystal Palace,Burnley,0-3,0-2
+24,Sat,2021-02-13,Manchester City,Tottenham,3-0,1-0
+24,Sat,2021-02-13,Brighton & Hove Albion,Aston Villa,0-0,
+24,Sun,2021-02-14,Southampton FC,Wolverhampton,1-2,1-0
+24,Sun,2021-02-14,West Bromwich Albion FC,Manchester United,1-1,1-1
+24,Sun,2021-02-14,Arsenal,Leeds United,4-2,3-0
+24,Sun,2021-02-14,Everton,Fulham FC,0-2,0-0
+24,Mon,2021-02-15,West Ham United,Sheffield United FC,3-0,1-0
+24,Mon,2021-02-15,Chelsea,Newcastle United,2-0,2-0
+17,Wed,2021-02-17,Burnley,Fulham FC,1-1,0-0
+16,Wed,2021-02-17,Everton,Manchester City,1-3,1-1
+25,Fri,2021-02-19,Wolverhampton,Leeds United,1-0,0-0
+25,Sat,2021-02-20,Southampton FC,Chelsea,1-1,1-0
+25,Sat,2021-02-20,Burnley,West Bromwich Albion FC,0-0,
+25,Sat,2021-02-20,Liverpool,Everton,0-2,0-1
 25,Sat,2021-02-20,Fulham FC,Sheffield United FC,1-0,0-0
-25,Sun,2021-02-21,West Ham United FC,Tottenham Hotspur FC,2-1,1-0
-25,Sun,2021-02-21,Aston Villa FC,Leicester City FC,1-2,0-2
-25,Sun,2021-02-21,Arsenal FC,Manchester City FC,0-1,0-1
-25,Sun,2021-02-21,Manchester United FC,Newcastle United FC,3-1,1-1
-25,Mon,2021-02-22,Brighton & Hove Albion FC,Crystal Palace FC,1-2,0-1
-18,Tue,2021-02-23,Leeds United FC,Southampton FC,3-0,0-0
-26,Sat,2021-02-27,Manchester City FC,West Ham United FC,2-1,1-1
-26,Sat,2021-02-27,West Bromwich Albion FC,Brighton & Hove Albion FC,1-0,1-0
-26,Sat,2021-02-27,Leeds United FC,Aston Villa FC,0-1,0-1
-26,Sat,2021-02-27,Newcastle United FC,Wolverhampton Wanderers FC,1-1,0-0
-26,Sun,2021-02-28,Leicester City FC,Arsenal FC,1-3,1-2
-26,Sun,2021-02-28,Crystal Palace FC,Fulham FC,0-0,
-26,Sun,2021-02-28,Tottenham Hotspur FC,Burnley FC,4-0,3-0
-26,Sun,2021-02-28,Chelsea FC,Manchester United FC,0-0,
-26,Sun,2021-02-28,Sheffield United FC,Liverpool FC,0-2,0-0
-26,Mon,2021-03-01,Everton FC,Southampton FC,1-0,1-0
-29,Tue,2021-03-02,Manchester City FC,Wolverhampton Wanderers FC,4-1,1-0
-29,Wed,2021-03-03,Sheffield United FC,Aston Villa FC,1-0,1-0
-29,Wed,2021-03-03,Burnley FC,Leicester City FC,1-1,1-1
-29,Wed,2021-03-03,Crystal Palace FC,Manchester United FC,0-0,
-29,Thu,2021-03-04,West Bromwich Albion FC,Everton FC,0-1,0-0
-33,Thu,2021-03-04,Fulham FC,Tottenham Hotspur FC,0-1,0-1
-29,Thu,2021-03-04,Liverpool FC,Chelsea FC,0-1,0-1
-27,Sat,2021-03-06,Burnley FC,Arsenal FC,1-1,1-1
+25,Sun,2021-02-21,West Ham United,Tottenham,2-1,1-0
+25,Sun,2021-02-21,Aston Villa,Leicester,1-2,0-2
+25,Sun,2021-02-21,Arsenal,Manchester City,0-1,0-1
+25,Sun,2021-02-21,Manchester United,Newcastle United,3-1,1-1
+25,Mon,2021-02-22,Brighton & Hove Albion,Crystal Palace,1-2,0-1
+18,Tue,2021-02-23,Leeds United,Southampton FC,3-0,0-0
+26,Sat,2021-02-27,Manchester City,West Ham United,2-1,1-1
+26,Sat,2021-02-27,West Bromwich Albion FC,Brighton & Hove Albion,1-0,1-0
+26,Sat,2021-02-27,Leeds United,Aston Villa,0-1,0-1
+26,Sat,2021-02-27,Newcastle United,Wolverhampton,1-1,0-0
+26,Sun,2021-02-28,Leicester,Arsenal,1-3,1-2
+26,Sun,2021-02-28,Crystal Palace,Fulham FC,0-0,
+26,Sun,2021-02-28,Tottenham,Burnley,4-0,3-0
+26,Sun,2021-02-28,Chelsea,Manchester United,0-0,
+26,Sun,2021-02-28,Sheffield United FC,Liverpool,0-2,0-0
+26,Mon,2021-03-01,Everton,Southampton FC,1-0,1-0
+29,Tue,2021-03-02,Manchester City,Wolverhampton,4-1,1-0
+29,Wed,2021-03-03,Sheffield United FC,Aston Villa,1-0,1-0
+29,Wed,2021-03-03,Burnley,Leicester,1-1,1-1
+29,Wed,2021-03-03,Crystal Palace,Manchester United,0-0,
+29,Thu,2021-03-04,West Bromwich Albion FC,Everton,0-1,0-0
+33,Thu,2021-03-04,Fulham FC,Tottenham,0-1,0-1
+29,Thu,2021-03-04,Liverpool,Chelsea,0-1,0-1
+27,Sat,2021-03-06,Burnley,Arsenal,1-1,1-1
 27,Sat,2021-03-06,Sheffield United FC,Southampton FC,0-2,0-1
-27,Sat,2021-03-06,Aston Villa FC,Wolverhampton Wanderers FC,0-0,
-27,Sat,2021-03-06,Brighton & Hove Albion FC,Leicester City FC,1-2,1-0
-27,Sun,2021-03-07,West Bromwich Albion FC,Newcastle United FC,0-0,
-27,Sun,2021-03-07,Liverpool FC,Fulham FC,0-1,0-1
-27,Sun,2021-03-07,Manchester City FC,Manchester United FC,0-2,0-1
-27,Sun,2021-03-07,Tottenham Hotspur FC,Crystal Palace FC,4-1,1-1
-27,Mon,2021-03-08,Chelsea FC,Everton FC,2-0,1-0
-27,Mon,2021-03-08,West Ham United FC,Leeds United FC,2-0,2-0
-33,Wed,2021-03-10,Manchester City FC,Southampton FC,5-2,3-1
-28,Fri,2021-03-12,Newcastle United FC,Aston Villa FC,1-1,0-0
-28,Sat,2021-03-13,Leeds United FC,Chelsea FC,0-0,
-28,Sat,2021-03-13,Crystal Palace FC,West Bromwich Albion FC,1-0,1-0
-28,Sat,2021-03-13,Everton FC,Burnley FC,1-2,1-2
-28,Sat,2021-03-13,Fulham FC,Manchester City FC,0-3,0-0
-28,Sun,2021-03-14,Southampton FC,Brighton & Hove Albion FC,1-2,1-1
-28,Sun,2021-03-14,Leicester City FC,Sheffield United FC,5-0,1-0
-28,Sun,2021-03-14,Arsenal FC,Tottenham Hotspur FC,2-1,1-1
-28,Sun,2021-03-14,Manchester United FC,West Ham United FC,1-0,0-0
-28,Mon,2021-03-15,Wolverhampton Wanderers FC,Liverpool FC,0-1,0-1
-29,Fri,2021-03-19,Fulham FC,Leeds United FC,1-2,1-1
-29,Sat,2021-03-20,Brighton & Hove Albion FC,Newcastle United FC,3-0,1-0
-29,Sun,2021-03-21,West Ham United FC,Arsenal FC,3-3,3-1
-18,Sun,2021-03-21,Aston Villa FC,Tottenham Hotspur FC,0-2,0-1
-30,Sat,2021-04-03,Chelsea FC,West Bromwich Albion FC,2-5,1-2
-30,Sat,2021-04-03,Leeds United FC,Sheffield United FC,2-1,1-1
-30,Sat,2021-04-03,Leicester City FC,Manchester City FC,0-2,0-0
-30,Sat,2021-04-03,Arsenal FC,Liverpool FC,0-3,0-0
-30,Sun,2021-04-04,Southampton FC,Burnley FC,3-2,2-2
-30,Sun,2021-04-04,Newcastle United FC,Tottenham Hotspur FC,2-2,1-2
-30,Sun,2021-04-04,Aston Villa FC,Fulham FC,3-1,0-0
-30,Sun,2021-04-04,Manchester United FC,Brighton & Hove Albion FC,2-1,0-1
-30,Mon,2021-04-05,Everton FC,Crystal Palace FC,1-1,0-0
-30,Mon,2021-04-05,Wolverhampton Wanderers FC,West Ham United FC,2-3,1-3
-31,Fri,2021-04-09,Fulham FC,Wolverhampton Wanderers FC,0-1,0-0
-31,Sat,2021-04-10,Manchester City FC,Leeds United FC,1-2,0-1
-31,Sat,2021-04-10,Liverpool FC,Aston Villa FC,2-1,0-1
-31,Sat,2021-04-10,Crystal Palace FC,Chelsea FC,1-4,0-3
-31,Sun,2021-04-11,Burnley FC,Newcastle United FC,1-2,1-0
-31,Sun,2021-04-11,West Ham United FC,Leicester City FC,3-2,2-0
-31,Sun,2021-04-11,Tottenham Hotspur FC,Manchester United FC,1-3,1-0
-31,Sun,2021-04-11,Sheffield United FC,Arsenal FC,0-3,0-1
+27,Sat,2021-03-06,Aston Villa,Wolverhampton,0-0,
+27,Sat,2021-03-06,Brighton & Hove Albion,Leicester,1-2,1-0
+27,Sun,2021-03-07,West Bromwich Albion FC,Newcastle United,0-0,
+27,Sun,2021-03-07,Liverpool,Fulham FC,0-1,0-1
+27,Sun,2021-03-07,Manchester City,Manchester United,0-2,0-1
+27,Sun,2021-03-07,Tottenham,Crystal Palace,4-1,1-1
+27,Mon,2021-03-08,Chelsea,Everton,2-0,1-0
+27,Mon,2021-03-08,West Ham United,Leeds United,2-0,2-0
+33,Wed,2021-03-10,Manchester City,Southampton FC,5-2,3-1
+28,Fri,2021-03-12,Newcastle United,Aston Villa,1-1,0-0
+28,Sat,2021-03-13,Leeds United,Chelsea,0-0,
+28,Sat,2021-03-13,Crystal Palace,West Bromwich Albion FC,1-0,1-0
+28,Sat,2021-03-13,Everton,Burnley,1-2,1-2
+28,Sat,2021-03-13,Fulham FC,Manchester City,0-3,0-0
+28,Sun,2021-03-14,Southampton FC,Brighton & Hove Albion,1-2,1-1
+28,Sun,2021-03-14,Leicester,Sheffield United FC,5-0,1-0
+28,Sun,2021-03-14,Arsenal,Tottenham,2-1,1-1
+28,Sun,2021-03-14,Manchester United,West Ham United,1-0,0-0
+28,Mon,2021-03-15,Wolverhampton,Liverpool,0-1,0-1
+29,Fri,2021-03-19,Fulham FC,Leeds United,1-2,1-1
+29,Sat,2021-03-20,Brighton & Hove Albion,Newcastle United,3-0,1-0
+29,Sun,2021-03-21,West Ham United,Arsenal,3-3,3-1
+18,Sun,2021-03-21,Aston Villa,Tottenham,0-2,0-1
+30,Sat,2021-04-03,Chelsea,West Bromwich Albion FC,2-5,1-2
+30,Sat,2021-04-03,Leeds United,Sheffield United FC,2-1,1-1
+30,Sat,2021-04-03,Leicester,Manchester City,0-2,0-0
+30,Sat,2021-04-03,Arsenal,Liverpool,0-3,0-0
+30,Sun,2021-04-04,Southampton FC,Burnley,3-2,2-2
+30,Sun,2021-04-04,Newcastle United,Tottenham,2-2,1-2
+30,Sun,2021-04-04,Aston Villa,Fulham FC,3-1,0-0
+30,Sun,2021-04-04,Manchester United,Brighton & Hove Albion,2-1,0-1
+30,Mon,2021-04-05,Everton,Crystal Palace,1-1,0-0
+30,Mon,2021-04-05,Wolverhampton,West Ham United,2-3,1-3
+31,Fri,2021-04-09,Fulham FC,Wolverhampton,0-1,0-0
+31,Sat,2021-04-10,Manchester City,Leeds United,1-2,0-1
+31,Sat,2021-04-10,Liverpool,Aston Villa,2-1,0-1
+31,Sat,2021-04-10,Crystal Palace,Chelsea,1-4,0-3
+31,Sun,2021-04-11,Burnley,Newcastle United,1-2,1-0
+31,Sun,2021-04-11,West Ham United,Leicester,3-2,2-0
+31,Sun,2021-04-11,Tottenham,Manchester United,1-3,1-0
+31,Sun,2021-04-11,Sheffield United FC,Arsenal,0-3,0-1
 31,Mon,2021-04-12,West Bromwich Albion FC,Southampton FC,3-0,2-0
-31,Mon,2021-04-12,Brighton & Hove Albion FC,Everton FC,0-0,
-32,Fri,2021-04-16,Everton FC,Tottenham Hotspur FC,2-2,1-1
-32,Sat,2021-04-17,Newcastle United FC,West Ham United FC,3-2,2-0
-32,Sat,2021-04-17,Wolverhampton Wanderers FC,Sheffield United FC,1-0,0-0
-32,Sun,2021-04-18,Arsenal FC,Fulham FC,1-1,0-0
-32,Sun,2021-04-18,Manchester United FC,Burnley FC,3-1,0-0
-32,Mon,2021-04-19,Leeds United FC,Liverpool FC,1-1,0-1
-32,Tue,2021-04-20,Chelsea FC,Brighton & Hove Albion FC,0-0,
-29,Wed,2021-04-21,Tottenham Hotspur FC,Southampton FC,2-1,0-1
-32,Wed,2021-04-21,Aston Villa FC,Manchester City FC,1-2,1-2
-32,Thu,2021-04-22,Leicester City FC,West Bromwich Albion FC,3-0,3-0
-33,Fri,2021-04-23,Arsenal FC,Everton FC,0-1,0-0
-33,Sat,2021-04-24,Liverpool FC,Newcastle United FC,1-1,1-0
-33,Sat,2021-04-24,West Ham United FC,Chelsea FC,0-1,0-1
-33,Sat,2021-04-24,Sheffield United FC,Brighton & Hove Albion FC,1-0,1-0
-33,Sun,2021-04-25,Wolverhampton Wanderers FC,Burnley FC,0-4,0-3
-33,Sun,2021-04-25,Leeds United FC,Manchester United FC,0-0,
-33,Sun,2021-04-25,Aston Villa FC,West Bromwich Albion FC,2-2,1-1
-33,Mon,2021-04-26,Leicester City FC,Crystal Palace FC,2-1,0-1
-34,Fri,2021-04-30,Southampton FC,Leicester City FC,1-1,0-0
-34,Sat,2021-05-01,Crystal Palace FC,Manchester City FC,0-2,0-0
-34,Sat,2021-05-01,Brighton & Hove Albion FC,Leeds United FC,2-0,1-0
-34,Sat,2021-05-01,Chelsea FC,Fulham FC,2-0,1-0
-34,Sat,2021-05-01,Everton FC,Aston Villa FC,1-2,1-1
-34,Sun,2021-05-02,Newcastle United FC,Arsenal FC,0-2,0-1
-34,Sun,2021-05-02,Tottenham Hotspur FC,Sheffield United FC,4-0,1-0
-34,Mon,2021-05-03,West Bromwich Albion FC,Wolverhampton Wanderers FC,1-1,0-1
-34,Mon,2021-05-03,Burnley FC,West Ham United FC,1-2,1-2
-35,Fri,2021-05-07,Leicester City FC,Newcastle United FC,2-4,0-2
-35,Sat,2021-05-08,Leeds United FC,Tottenham Hotspur FC,3-1,2-1
-35,Sat,2021-05-08,Sheffield United FC,Crystal Palace FC,0-2,0-1
-35,Sat,2021-05-08,Manchester City FC,Chelsea FC,1-2,1-0
-35,Sat,2021-05-08,Liverpool FC,Southampton FC,2-0,1-0
-35,Sun,2021-05-09,Wolverhampton Wanderers FC,Brighton & Hove Albion FC,2-1,0-1
-35,Sun,2021-05-09,Aston Villa FC,Manchester United FC,1-3,1-0
-35,Sun,2021-05-09,West Ham United FC,Everton FC,0-1,0-1
-35,Sun,2021-05-09,Arsenal FC,West Bromwich Albion FC,3-1,2-0
-35,Mon,2021-05-10,Fulham FC,Burnley FC,0-2,0-2
-36,Tue,2021-05-11,Manchester United FC,Leicester City FC,1-2,1-1
-32,Tue,2021-05-11,Southampton FC,Crystal Palace FC,3-1,1-1
-36,Wed,2021-05-12,Chelsea FC,Arsenal FC,0-1,0-1
-19,Thu,2021-05-13,Aston Villa FC,Everton FC,0-0,
-34,Thu,2021-05-13,Manchester United FC,Liverpool FC,2-4,1-2
-36,Fri,2021-05-14,Newcastle United FC,Manchester City FC,3-4,2-2
-36,Sat,2021-05-15,Burnley FC,Leeds United FC,0-4,0-1
+31,Mon,2021-04-12,Brighton & Hove Albion,Everton,0-0,
+32,Fri,2021-04-16,Everton,Tottenham,2-2,1-1
+32,Sat,2021-04-17,Newcastle United,West Ham United,3-2,2-0
+32,Sat,2021-04-17,Wolverhampton,Sheffield United FC,1-0,0-0
+32,Sun,2021-04-18,Arsenal,Fulham FC,1-1,0-0
+32,Sun,2021-04-18,Manchester United,Burnley,3-1,0-0
+32,Mon,2021-04-19,Leeds United,Liverpool,1-1,0-1
+32,Tue,2021-04-20,Chelsea,Brighton & Hove Albion,0-0,
+29,Wed,2021-04-21,Tottenham,Southampton FC,2-1,0-1
+32,Wed,2021-04-21,Aston Villa,Manchester City,1-2,1-2
+32,Thu,2021-04-22,Leicester,West Bromwich Albion FC,3-0,3-0
+33,Fri,2021-04-23,Arsenal,Everton,0-1,0-0
+33,Sat,2021-04-24,Liverpool,Newcastle United,1-1,1-0
+33,Sat,2021-04-24,West Ham United,Chelsea,0-1,0-1
+33,Sat,2021-04-24,Sheffield United FC,Brighton & Hove Albion,1-0,1-0
+33,Sun,2021-04-25,Wolverhampton,Burnley,0-4,0-3
+33,Sun,2021-04-25,Leeds United,Manchester United,0-0,
+33,Sun,2021-04-25,Aston Villa,West Bromwich Albion FC,2-2,1-1
+33,Mon,2021-04-26,Leicester,Crystal Palace,2-1,0-1
+34,Fri,2021-04-30,Southampton FC,Leicester,1-1,0-0
+34,Sat,2021-05-01,Crystal Palace,Manchester City,0-2,0-0
+34,Sat,2021-05-01,Brighton & Hove Albion,Leeds United,2-0,1-0
+34,Sat,2021-05-01,Chelsea,Fulham FC,2-0,1-0
+34,Sat,2021-05-01,Everton,Aston Villa,1-2,1-1
+34,Sun,2021-05-02,Newcastle United,Arsenal,0-2,0-1
+34,Sun,2021-05-02,Tottenham,Sheffield United FC,4-0,1-0
+34,Mon,2021-05-03,West Bromwich Albion FC,Wolverhampton,1-1,0-1
+34,Mon,2021-05-03,Burnley,West Ham United,1-2,1-2
+35,Fri,2021-05-07,Leicester,Newcastle United,2-4,0-2
+35,Sat,2021-05-08,Leeds United,Tottenham,3-1,2-1
+35,Sat,2021-05-08,Sheffield United FC,Crystal Palace,0-2,0-1
+35,Sat,2021-05-08,Manchester City,Chelsea,1-2,1-0
+35,Sat,2021-05-08,Liverpool,Southampton FC,2-0,1-0
+35,Sun,2021-05-09,Wolverhampton,Brighton & Hove Albion,2-1,0-1
+35,Sun,2021-05-09,Aston Villa,Manchester United,1-3,1-0
+35,Sun,2021-05-09,West Ham United,Everton,0-1,0-1
+35,Sun,2021-05-09,Arsenal,West Bromwich Albion FC,3-1,2-0
+35,Mon,2021-05-10,Fulham FC,Burnley,0-2,0-2
+36,Tue,2021-05-11,Manchester United,Leicester,1-2,1-1
+32,Tue,2021-05-11,Southampton FC,Crystal Palace,3-1,1-1
+36,Wed,2021-05-12,Chelsea,Arsenal,0-1,0-1
+19,Thu,2021-05-13,Aston Villa,Everton,0-0,
+34,Thu,2021-05-13,Manchester United,Liverpool,2-4,1-2
+36,Fri,2021-05-14,Newcastle United,Manchester City,3-4,2-2
+36,Sat,2021-05-15,Burnley,Leeds United,0-4,0-1
 36,Sat,2021-05-15,Southampton FC,Fulham FC,3-1,1-0
-36,Sat,2021-05-15,Brighton & Hove Albion FC,West Ham United FC,1-1,0-0
-36,Sun,2021-05-16,Crystal Palace FC,Aston Villa FC,3-2,1-2
-36,Sun,2021-05-16,Tottenham Hotspur FC,Wolverhampton Wanderers FC,2-0,1-0
-36,Sun,2021-05-16,West Bromwich Albion FC,Liverpool FC,1-2,1-1
-36,Sun,2021-05-16,Everton FC,Sheffield United FC,0-1,0-1
-37,Tue,2021-05-18,Manchester United FC,Fulham FC,1-1,1-0
-37,Tue,2021-05-18,Southampton FC,Leeds United FC,0-2,0-0
-37,Tue,2021-05-18,Brighton & Hove Albion FC,Manchester City FC,3-2,0-1
-37,Tue,2021-05-18,Chelsea FC,Leicester City FC,2-1,0-0
-37,Wed,2021-05-19,Newcastle United FC,Sheffield United FC,1-0,1-0
-37,Wed,2021-05-19,Tottenham Hotspur FC,Aston Villa FC,1-2,1-2
-37,Wed,2021-05-19,Everton FC,Wolverhampton Wanderers FC,1-0,0-0
-37,Wed,2021-05-19,Crystal Palace FC,Arsenal FC,1-3,0-1
-37,Wed,2021-05-19,West Bromwich Albion FC,West Ham United FC,1-3,1-1
-37,Wed,2021-05-19,Burnley FC,Liverpool FC,0-3,0-1
-38,Sun,2021-05-23,Fulham FC,Newcastle United FC,0-2,0-1
-38,Sun,2021-05-23,Aston Villa FC,Chelsea FC,2-1,1-0
-38,Sun,2021-05-23,Liverpool FC,Crystal Palace FC,2-0,1-0
-38,Sun,2021-05-23,Manchester City FC,Everton FC,5-0,2-0
-38,Sun,2021-05-23,Arsenal FC,Brighton & Hove Albion FC,2-0,0-0
-38,Sun,2021-05-23,Sheffield United FC,Burnley FC,1-0,1-0
-38,Sun,2021-05-23,Leicester City FC,Tottenham Hotspur FC,2-4,1-1
-38,Sun,2021-05-23,West Ham United FC,Southampton FC,3-0,2-0
-38,Sun,2021-05-23,Leeds United FC,West Bromwich Albion FC,3-1,2-0
-38,Sun,2021-05-23,Wolverhampton Wanderers FC,Manchester United FC,1-2,1-2
+36,Sat,2021-05-15,Brighton & Hove Albion,West Ham United,1-1,0-0
+36,Sun,2021-05-16,Crystal Palace,Aston Villa,3-2,1-2
+36,Sun,2021-05-16,Tottenham,Wolverhampton,2-0,1-0
+36,Sun,2021-05-16,West Bromwich Albion FC,Liverpool,1-2,1-1
+36,Sun,2021-05-16,Everton,Sheffield United FC,0-1,0-1
+37,Tue,2021-05-18,Manchester United,Fulham FC,1-1,1-0
+37,Tue,2021-05-18,Southampton FC,Leeds United,0-2,0-0
+37,Tue,2021-05-18,Brighton & Hove Albion,Manchester City,3-2,0-1
+37,Tue,2021-05-18,Chelsea,Leicester,2-1,0-0
+37,Wed,2021-05-19,Newcastle United,Sheffield United FC,1-0,1-0
+37,Wed,2021-05-19,Tottenham,Aston Villa,1-2,1-2
+37,Wed,2021-05-19,Everton,Wolverhampton,1-0,0-0
+37,Wed,2021-05-19,Crystal Palace,Arsenal,1-3,0-1
+37,Wed,2021-05-19,West Bromwich Albion FC,West Ham United,1-3,1-1
+37,Wed,2021-05-19,Burnley,Liverpool,0-3,0-1
+38,Sun,2021-05-23,Fulham FC,Newcastle United,0-2,0-1
+38,Sun,2021-05-23,Aston Villa,Chelsea,2-1,1-0
+38,Sun,2021-05-23,Liverpool,Crystal Palace,2-0,1-0
+38,Sun,2021-05-23,Manchester City,Everton,5-0,2-0
+38,Sun,2021-05-23,Arsenal,Brighton & Hove Albion,2-0,0-0
+38,Sun,2021-05-23,Sheffield United FC,Burnley,1-0,1-0
+38,Sun,2021-05-23,Leicester,Tottenham,2-4,1-1
+38,Sun,2021-05-23,West Ham United,Southampton FC,3-0,2-0
+38,Sun,2021-05-23,Leeds United,West Bromwich Albion FC,3-1,2-0
+38,Sun,2021-05-23,Wolverhampton,Manchester United,1-2,1-2

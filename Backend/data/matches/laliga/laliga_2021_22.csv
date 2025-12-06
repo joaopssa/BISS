@@ -1,381 +1,381 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
-1,2021-08-13,Valencia CF,Getafe CF,1-0,1-0
-1,2021-08-14,Cádiz CF,Levante UD,1-1,0-1
-1,2021-08-14,RCD Mallorca,Real Betis Balompié,1-1,1-0
-1,2021-08-14,CA Osasuna,RCD Espanyol de Barcelona,0-0,
-1,2021-08-14,Deportivo Alavés,Real Madrid CF,1-4,0-0
-1,2021-08-15,RC Celta de Vigo,Club Atlético de Madrid,1-2,0-1
-1,2021-08-15,FC Barcelona,Real Sociedad de Fútbol,4-2,2-0
-1,2021-08-15,Sevilla FC,Rayo Vallecano de Madrid,3-0,1-0
+1,2021-08-13,Valencia,Getafe CF,1-0,1-0
+1,2021-08-14,Cádiz CF,Levante,1-1,0-1
+1,2021-08-14,Mallorca,Bétis,1-1,1-0
+1,2021-08-14,Osasuna,Espanyol,0-0,
+1,2021-08-14,Deportivo Alavés,Real Madrid,1-4,0-0
+1,2021-08-15,Celta de Vigo,Atlético de Madrid,1-2,0-1
+1,2021-08-15,Barcelona,Real Sociedad,4-2,2-0
+1,2021-08-15,Sevilha FC,Rayo Vallecano,3-0,1-0
 1,2021-08-16,Villarreal CF,Granada CF,0-0,
-1,2021-08-16,Elche CF,Athletic Club,0-0,
-2,2021-08-20,Real Betis Balompié,Cádiz CF,1-1,1-1
-2,2021-08-21,Deportivo Alavés,RCD Mallorca,0-1,0-0
-2,2021-08-21,RCD Espanyol de Barcelona,Villarreal CF,0-0,
-2,2021-08-21,Granada CF,Valencia CF,1-1,1-0
-2,2021-08-21,Athletic Club,FC Barcelona,1-1,0-0
-2,2021-08-22,Real Sociedad de Fútbol,Rayo Vallecano de Madrid,1-0,0-0
-2,2021-08-22,Club Atlético de Madrid,Elche CF,1-0,1-0
-2,2021-08-22,Levante UD,Real Madrid CF,3-3,0-1
-2,2021-08-23,Getafe CF,Sevilla FC,0-1,0-0
-2,2021-08-23,CA Osasuna,RC Celta de Vigo,0-0,
-3,2021-08-27,RCD Mallorca,RCD Espanyol de Barcelona,1-0,1-0
-3,2021-08-27,Valencia CF,Deportivo Alavés,3-0,2-0
-3,2021-08-28,RC Celta de Vigo,Athletic Club,0-1,0-1
-3,2021-08-28,Elche CF,Sevilla FC,1-1,1-1
-3,2021-08-28,Real Sociedad de Fútbol,Levante UD,1-0,1-0
-3,2021-08-28,Real Betis Balompié,Real Madrid CF,0-1,0-0
-3,2021-08-29,FC Barcelona,Getafe CF,2-1,2-1
-3,2021-08-29,Rayo Vallecano de Madrid,Granada CF,4-0,3-0
-3,2021-08-29,Cádiz CF,CA Osasuna,2-3,1-0
-3,2021-08-29,Club Atlético de Madrid,Villarreal CF,2-2,0-0
-4,2021-09-11,Levante UD,Rayo Vallecano de Madrid,1-1,1-0
-4,2021-09-11,Athletic Club,RCD Mallorca,2-0,0-0
-4,2021-09-12,RCD Espanyol de Barcelona,Club Atlético de Madrid,1-2,1-0
-4,2021-09-12,CA Osasuna,Valencia CF,1-4,1-1
-4,2021-09-12,Cádiz CF,Real Sociedad de Fútbol,0-2,0-0
-4,2021-09-12,Real Madrid CF,RC Celta de Vigo,5-2,1-2
-4,2021-09-13,Getafe CF,Elche CF,0-1,0-0
-4,2021-09-13,Granada CF,Real Betis Balompié,1-2,0-1
-5,2021-09-17,RC Celta de Vigo,Cádiz CF,1-2,0-2
-5,2021-09-18,Rayo Vallecano de Madrid,Getafe CF,3-0,1-0
-5,2021-09-18,Club Atlético de Madrid,Athletic Club,0-0,
-5,2021-09-18,Elche CF,Levante UD,1-1,1-0
-5,2021-09-18,Deportivo Alavés,CA Osasuna,0-2,0-2
-5,2021-09-19,RCD Mallorca,Villarreal CF,0-0,
-5,2021-09-19,Real Sociedad de Fútbol,Sevilla FC,0-0,
-5,2021-09-19,Real Betis Balompié,RCD Espanyol de Barcelona,2-2,2-1
-5,2021-09-19,Valencia CF,Real Madrid CF,1-2,0-0
-5,2021-09-20,FC Barcelona,Granada CF,1-1,0-1
-6,2021-09-21,Getafe CF,Club Atlético de Madrid,1-2,1-0
-6,2021-09-21,Levante UD,RC Celta de Vigo,0-2,0-0
-6,2021-09-21,Athletic Club,Rayo Vallecano de Madrid,1-2,1-1
-6,2021-09-22,Sevilla FC,Valencia CF,3-1,3-1
-6,2021-09-22,RCD Espanyol de Barcelona,Deportivo Alavés,1-0,0-0
-6,2021-09-22,Villarreal CF,Elche CF,4-1,2-1
-6,2021-09-22,Real Madrid CF,RCD Mallorca,6-1,3-1
-6,2021-09-23,CA Osasuna,Real Betis Balompié,1-3,1-1
-6,2021-09-23,Granada CF,Real Sociedad de Fútbol,2-3,1-0
-6,2021-09-23,Cádiz CF,FC Barcelona,0-0,
-7,2021-09-25,Deportivo Alavés,Club Atlético de Madrid,1-0,1-0
-7,2021-09-25,Valencia CF,Athletic Club,1-1,0-0
-7,2021-09-25,Sevilla FC,RCD Espanyol de Barcelona,2-0,1-0
-7,2021-09-25,Real Madrid CF,Villarreal CF,0-0,
-7,2021-09-26,RCD Mallorca,CA Osasuna,2-3,2-1
-7,2021-09-26,FC Barcelona,Levante UD,3-0,2-0
-7,2021-09-26,Rayo Vallecano de Madrid,Cádiz CF,3-1,2-1
-7,2021-09-26,Real Sociedad de Fútbol,Elche CF,1-0,0-0
-7,2021-09-26,Real Betis Balompié,Getafe CF,2-0,1-0
-7,2021-09-27,RC Celta de Vigo,Granada CF,1-0,0-0
-8,2021-10-01,Athletic Club,Deportivo Alavés,1-0,1-0
-8,2021-10-02,CA Osasuna,Rayo Vallecano de Madrid,1-0,0-0
-8,2021-10-02,RCD Mallorca,Levante UD,1-0,0-0
-8,2021-10-02,Cádiz CF,Valencia CF,0-0,
-8,2021-10-02,Club Atlético de Madrid,FC Barcelona,2-0,2-0
-8,2021-10-03,Elche CF,RC Celta de Vigo,1-0,0-0
-8,2021-10-03,RCD Espanyol de Barcelona,Real Madrid CF,2-1,1-0
-8,2021-10-03,Villarreal CF,Real Betis Balompié,2-0,1-0
-8,2021-10-03,Getafe CF,Real Sociedad de Fútbol,1-1,1-0
-8,2021-10-03,Granada CF,Sevilla FC,1-0,1-0
-9,2021-10-16,Levante UD,Getafe CF,0-0,
-9,2021-10-16,Real Sociedad de Fútbol,RCD Mallorca,1-0,0-0
-9,2021-10-17,Rayo Vallecano de Madrid,Elche CF,2-1,1-1
-9,2021-10-17,RC Celta de Vigo,Sevilla FC,0-1,0-0
-9,2021-10-17,Villarreal CF,CA Osasuna,1-2,0-1
-9,2021-10-17,FC Barcelona,Valencia CF,3-1,2-1
-9,2021-10-18,Deportivo Alavés,Real Betis Balompié,0-1,0-0
-9,2021-10-18,RCD Espanyol de Barcelona,Cádiz CF,2-0,1-0
-10,2021-10-22,CA Osasuna,Granada CF,1-1,1-0
-10,2021-10-23,Valencia CF,RCD Mallorca,2-2,0-2
+1,2021-08-16,Elche,Athletic Bilbao,0-0,
+2,2021-08-20,Bétis,Cádiz CF,1-1,1-1
+2,2021-08-21,Deportivo Alavés,Mallorca,0-1,0-0
+2,2021-08-21,Espanyol,Villarreal CF,0-0,
+2,2021-08-21,Granada CF,Valencia,1-1,1-0
+2,2021-08-21,Athletic Bilbao,Barcelona,1-1,0-0
+2,2021-08-22,Real Sociedad,Rayo Vallecano,1-0,0-0
+2,2021-08-22,Atlético de Madrid,Elche,1-0,1-0
+2,2021-08-22,Levante,Real Madrid,3-3,0-1
+2,2021-08-23,Getafe CF,Sevilha FC,0-1,0-0
+2,2021-08-23,Osasuna,Celta de Vigo,0-0,
+3,2021-08-27,Mallorca,Espanyol,1-0,1-0
+3,2021-08-27,Valencia,Deportivo Alavés,3-0,2-0
+3,2021-08-28,Celta de Vigo,Athletic Bilbao,0-1,0-1
+3,2021-08-28,Elche,Sevilha FC,1-1,1-1
+3,2021-08-28,Real Sociedad,Levante,1-0,1-0
+3,2021-08-28,Bétis,Real Madrid,0-1,0-0
+3,2021-08-29,Barcelona,Getafe CF,2-1,2-1
+3,2021-08-29,Rayo Vallecano,Granada CF,4-0,3-0
+3,2021-08-29,Cádiz CF,Osasuna,2-3,1-0
+3,2021-08-29,Atlético de Madrid,Villarreal CF,2-2,0-0
+4,2021-09-11,Levante,Rayo Vallecano,1-1,1-0
+4,2021-09-11,Athletic Bilbao,Mallorca,2-0,0-0
+4,2021-09-12,Espanyol,Atlético de Madrid,1-2,1-0
+4,2021-09-12,Osasuna,Valencia,1-4,1-1
+4,2021-09-12,Cádiz CF,Real Sociedad,0-2,0-0
+4,2021-09-12,Real Madrid,Celta de Vigo,5-2,1-2
+4,2021-09-13,Getafe CF,Elche,0-1,0-0
+4,2021-09-13,Granada CF,Bétis,1-2,0-1
+5,2021-09-17,Celta de Vigo,Cádiz CF,1-2,0-2
+5,2021-09-18,Rayo Vallecano,Getafe CF,3-0,1-0
+5,2021-09-18,Atlético de Madrid,Athletic Bilbao,0-0,
+5,2021-09-18,Elche,Levante,1-1,1-0
+5,2021-09-18,Deportivo Alavés,Osasuna,0-2,0-2
+5,2021-09-19,Mallorca,Villarreal CF,0-0,
+5,2021-09-19,Real Sociedad,Sevilha FC,0-0,
+5,2021-09-19,Bétis,Espanyol,2-2,2-1
+5,2021-09-19,Valencia,Real Madrid,1-2,0-0
+5,2021-09-20,Barcelona,Granada CF,1-1,0-1
+6,2021-09-21,Getafe CF,Atlético de Madrid,1-2,1-0
+6,2021-09-21,Levante,Celta de Vigo,0-2,0-0
+6,2021-09-21,Athletic Bilbao,Rayo Vallecano,1-2,1-1
+6,2021-09-22,Sevilha FC,Valencia,3-1,3-1
+6,2021-09-22,Espanyol,Deportivo Alavés,1-0,0-0
+6,2021-09-22,Villarreal CF,Elche,4-1,2-1
+6,2021-09-22,Real Madrid,Mallorca,6-1,3-1
+6,2021-09-23,Osasuna,Bétis,1-3,1-1
+6,2021-09-23,Granada CF,Real Sociedad,2-3,1-0
+6,2021-09-23,Cádiz CF,Barcelona,0-0,
+7,2021-09-25,Deportivo Alavés,Atlético de Madrid,1-0,1-0
+7,2021-09-25,Valencia,Athletic Bilbao,1-1,0-0
+7,2021-09-25,Sevilha FC,Espanyol,2-0,1-0
+7,2021-09-25,Real Madrid,Villarreal CF,0-0,
+7,2021-09-26,Mallorca,Osasuna,2-3,2-1
+7,2021-09-26,Barcelona,Levante,3-0,2-0
+7,2021-09-26,Rayo Vallecano,Cádiz CF,3-1,2-1
+7,2021-09-26,Real Sociedad,Elche,1-0,0-0
+7,2021-09-26,Bétis,Getafe CF,2-0,1-0
+7,2021-09-27,Celta de Vigo,Granada CF,1-0,0-0
+8,2021-10-01,Athletic Bilbao,Deportivo Alavés,1-0,1-0
+8,2021-10-02,Osasuna,Rayo Vallecano,1-0,0-0
+8,2021-10-02,Mallorca,Levante,1-0,0-0
+8,2021-10-02,Cádiz CF,Valencia,0-0,
+8,2021-10-02,Atlético de Madrid,Barcelona,2-0,2-0
+8,2021-10-03,Elche,Celta de Vigo,1-0,0-0
+8,2021-10-03,Espanyol,Real Madrid,2-1,1-0
+8,2021-10-03,Villarreal CF,Bétis,2-0,1-0
+8,2021-10-03,Getafe CF,Real Sociedad,1-1,1-0
+8,2021-10-03,Granada CF,Sevilha FC,1-0,1-0
+9,2021-10-16,Levante,Getafe CF,0-0,
+9,2021-10-16,Real Sociedad,Mallorca,1-0,0-0
+9,2021-10-17,Rayo Vallecano,Elche,2-1,1-1
+9,2021-10-17,Celta de Vigo,Sevilha FC,0-1,0-0
+9,2021-10-17,Villarreal CF,Osasuna,1-2,0-1
+9,2021-10-17,Barcelona,Valencia,3-1,2-1
+9,2021-10-18,Deportivo Alavés,Bétis,0-1,0-0
+9,2021-10-18,Espanyol,Cádiz CF,2-0,1-0
+10,2021-10-22,Osasuna,Granada CF,1-1,1-0
+10,2021-10-23,Valencia,Mallorca,2-2,0-2
 10,2021-10-23,Cádiz CF,Deportivo Alavés,0-2,0-1
-10,2021-10-23,Elche CF,RCD Espanyol de Barcelona,2-2,1-0
-10,2021-10-23,Athletic Club,Villarreal CF,2-1,1-1
-10,2021-10-24,Sevilla FC,Levante UD,5-3,3-1
-10,2021-10-24,FC Barcelona,Real Madrid CF,1-2,0-1
-10,2021-10-24,Real Betis Balompié,Rayo Vallecano de Madrid,3-2,2-1
-10,2021-10-24,Club Atlético de Madrid,Real Sociedad de Fútbol,2-2,0-1
-10,2021-10-25,Getafe CF,RC Celta de Vigo,0-3,0-0
-11,2021-10-26,Deportivo Alavés,Elche CF,1-0,0-0
-11,2021-10-26,RCD Espanyol de Barcelona,Athletic Club,1-1,1-0
+10,2021-10-23,Elche,Espanyol,2-2,1-0
+10,2021-10-23,Athletic Bilbao,Villarreal CF,2-1,1-1
+10,2021-10-24,Sevilha FC,Levante,5-3,3-1
+10,2021-10-24,Barcelona,Real Madrid,1-2,0-1
+10,2021-10-24,Bétis,Rayo Vallecano,3-2,2-1
+10,2021-10-24,Atlético de Madrid,Real Sociedad,2-2,0-1
+10,2021-10-25,Getafe CF,Celta de Vigo,0-3,0-0
+11,2021-10-26,Deportivo Alavés,Elche,1-0,0-0
+11,2021-10-26,Espanyol,Athletic Bilbao,1-1,1-0
 11,2021-10-26,Villarreal CF,Cádiz CF,3-3,1-2
-11,2021-10-27,Rayo Vallecano de Madrid,FC Barcelona,1-0,1-0
-11,2021-10-27,RCD Mallorca,Sevilla FC,1-1,1-0
-11,2021-10-27,Real Betis Balompié,Valencia CF,4-1,2-1
-11,2021-10-27,Real Madrid CF,CA Osasuna,0-0,
-11,2021-10-28,RC Celta de Vigo,Real Sociedad de Fútbol,0-2,0-0
+11,2021-10-27,Rayo Vallecano,Barcelona,1-0,1-0
+11,2021-10-27,Mallorca,Sevilha FC,1-1,1-0
+11,2021-10-27,Bétis,Valencia,4-1,2-1
+11,2021-10-27,Real Madrid,Osasuna,0-0,
+11,2021-10-28,Celta de Vigo,Real Sociedad,0-2,0-0
 11,2021-10-28,Granada CF,Getafe CF,1-1,0-1
-11,2021-10-28,Levante UD,Club Atlético de Madrid,2-2,1-1
-12,2021-10-30,Elche CF,Real Madrid CF,1-2,0-1
-12,2021-10-30,Sevilla FC,CA Osasuna,2-0,1-0
-12,2021-10-30,Valencia CF,Villarreal CF,2-0,1-0
-12,2021-10-30,FC Barcelona,Deportivo Alavés,1-1,0-0
-12,2021-10-31,Cádiz CF,RCD Mallorca,1-1,0-1
-12,2021-10-31,Club Atlético de Madrid,Real Betis Balompié,3-0,1-0
-12,2021-10-31,Getafe CF,RCD Espanyol de Barcelona,2-1,1-1
-12,2021-10-31,Real Sociedad de Fútbol,Athletic Club,1-1,0-0
-12,2021-11-01,Rayo Vallecano de Madrid,RC Celta de Vigo,0-0,
-12,2021-11-01,Levante UD,Granada CF,0-3,0-2
-13,2021-11-05,Athletic Club,Cádiz CF,0-1,0-1
-13,2021-11-06,RCD Espanyol de Barcelona,Granada CF,2-0,2-0
-13,2021-11-06,RC Celta de Vigo,FC Barcelona,3-3,0-3
-13,2021-11-06,Deportivo Alavés,Levante UD,2-1,0-1
-13,2021-11-06,Real Madrid CF,Rayo Vallecano de Madrid,2-1,2-0
+11,2021-10-28,Levante,Atlético de Madrid,2-2,1-1
+12,2021-10-30,Elche,Real Madrid,1-2,0-1
+12,2021-10-30,Sevilha FC,Osasuna,2-0,1-0
+12,2021-10-30,Valencia,Villarreal CF,2-0,1-0
+12,2021-10-30,Barcelona,Deportivo Alavés,1-1,0-0
+12,2021-10-31,Cádiz CF,Mallorca,1-1,0-1
+12,2021-10-31,Atlético de Madrid,Bétis,3-0,1-0
+12,2021-10-31,Getafe CF,Espanyol,2-1,1-1
+12,2021-10-31,Real Sociedad,Athletic Bilbao,1-1,0-0
+12,2021-11-01,Rayo Vallecano,Celta de Vigo,0-0,
+12,2021-11-01,Levante,Granada CF,0-3,0-2
+13,2021-11-05,Athletic Bilbao,Cádiz CF,0-1,0-1
+13,2021-11-06,Espanyol,Granada CF,2-0,2-0
+13,2021-11-06,Celta de Vigo,Barcelona,3-3,0-3
+13,2021-11-06,Deportivo Alavés,Levante,2-1,0-1
+13,2021-11-06,Real Madrid,Rayo Vallecano,2-1,2-0
 13,2021-11-07,Villarreal CF,Getafe CF,1-0,1-0
-13,2021-11-07,Valencia CF,Club Atlético de Madrid,3-3,0-1
-13,2021-11-07,CA Osasuna,Real Sociedad de Fútbol,0-2,0-0
-13,2021-11-07,RCD Mallorca,Elche CF,2-2,0-0
-13,2021-11-07,Real Betis Balompié,Sevilla FC,0-2,0-0
-14,2021-11-19,Levante UD,Athletic Club,0-0,
-14,2021-11-20,RC Celta de Vigo,Villarreal CF,1-1,0-1
-14,2021-11-20,Sevilla FC,Deportivo Alavés,2-2,1-2
-14,2021-11-20,Club Atlético de Madrid,CA Osasuna,1-0,0-0
-14,2021-11-20,FC Barcelona,RCD Espanyol de Barcelona,1-0,0-0
+13,2021-11-07,Valencia,Atlético de Madrid,3-3,0-1
+13,2021-11-07,Osasuna,Real Sociedad,0-2,0-0
+13,2021-11-07,Mallorca,Elche,2-2,0-0
+13,2021-11-07,Bétis,Sevilha FC,0-2,0-0
+14,2021-11-19,Levante,Athletic Bilbao,0-0,
+14,2021-11-20,Celta de Vigo,Villarreal CF,1-1,0-1
+14,2021-11-20,Sevilha FC,Deportivo Alavés,2-2,1-2
+14,2021-11-20,Atlético de Madrid,Osasuna,1-0,0-0
+14,2021-11-20,Barcelona,Espanyol,1-0,0-0
 14,2021-11-21,Getafe CF,Cádiz CF,4-0,1-0
-14,2021-11-21,Granada CF,Real Madrid CF,1-4,1-2
-14,2021-11-21,Elche CF,Real Betis Balompié,0-3,0-3
-14,2021-11-21,Real Sociedad de Fútbol,Valencia CF,0-0,
-14,2021-11-22,Rayo Vallecano de Madrid,RCD Mallorca,3-1,2-0
-15,2021-11-26,Athletic Club,Granada CF,2-2,1-2
-15,2021-11-27,Deportivo Alavés,RC Celta de Vigo,1-2,1-1
-15,2021-11-27,Valencia CF,Rayo Vallecano de Madrid,1-1,1-0
-15,2021-11-27,RCD Mallorca,Getafe CF,0-0,
-15,2021-11-27,Villarreal CF,FC Barcelona,1-3,0-0
-15,2021-11-28,Real Betis Balompié,Levante UD,3-1,0-1
-15,2021-11-28,RCD Espanyol de Barcelona,Real Sociedad de Fútbol,1-0,0-0
-15,2021-11-28,Cádiz CF,Club Atlético de Madrid,1-4,0-0
-15,2021-11-28,Real Madrid CF,Sevilla FC,2-1,1-1
-15,2021-11-29,CA Osasuna,Elche CF,1-1,1-1
-9,2021-12-01,Real Madrid CF,Athletic Club,1-0,1-0
+14,2021-11-21,Granada CF,Real Madrid,1-4,1-2
+14,2021-11-21,Elche,Bétis,0-3,0-3
+14,2021-11-21,Real Sociedad,Valencia,0-0,
+14,2021-11-22,Rayo Vallecano,Mallorca,3-1,2-0
+15,2021-11-26,Athletic Bilbao,Granada CF,2-2,1-2
+15,2021-11-27,Deportivo Alavés,Celta de Vigo,1-2,1-1
+15,2021-11-27,Valencia,Rayo Vallecano,1-1,1-0
+15,2021-11-27,Mallorca,Getafe CF,0-0,
+15,2021-11-27,Villarreal CF,Barcelona,1-3,0-0
+15,2021-11-28,Bétis,Levante,3-1,0-1
+15,2021-11-28,Espanyol,Real Sociedad,1-0,0-0
+15,2021-11-28,Cádiz CF,Atlético de Madrid,1-4,0-0
+15,2021-11-28,Real Madrid,Sevilha FC,2-1,1-1
+15,2021-11-29,Osasuna,Elche,1-1,1-1
+9,2021-12-01,Real Madrid,Athletic Bilbao,1-0,1-0
 16,2021-12-03,Granada CF,Deportivo Alavés,2-1,1-0
-16,2021-12-04,Sevilla FC,Villarreal CF,1-0,1-0
-16,2021-12-04,FC Barcelona,Real Betis Balompié,0-1,0-0
-16,2021-12-04,Club Atlético de Madrid,RCD Mallorca,1-2,0-0
-16,2021-12-04,Real Sociedad de Fútbol,Real Madrid CF,0-2,0-0
-16,2021-12-05,Rayo Vallecano de Madrid,RCD Espanyol de Barcelona,1-0,0-0
-16,2021-12-05,Elche CF,Cádiz CF,3-1,1-0
-16,2021-12-05,Levante UD,CA Osasuna,0-0,
-16,2021-12-05,RC Celta de Vigo,Valencia CF,1-2,1-1
-16,2021-12-06,Getafe CF,Athletic Club,0-0,
-17,2021-12-10,RCD Mallorca,RC Celta de Vigo,0-0,
-17,2021-12-11,RCD Espanyol de Barcelona,Levante UD,4-3,1-2
+16,2021-12-04,Sevilha FC,Villarreal CF,1-0,1-0
+16,2021-12-04,Barcelona,Bétis,0-1,0-0
+16,2021-12-04,Atlético de Madrid,Mallorca,1-2,0-0
+16,2021-12-04,Real Sociedad,Real Madrid,0-2,0-0
+16,2021-12-05,Rayo Vallecano,Espanyol,1-0,0-0
+16,2021-12-05,Elche,Cádiz CF,3-1,1-0
+16,2021-12-05,Levante,Osasuna,0-0,
+16,2021-12-05,Celta de Vigo,Valencia,1-2,1-1
+16,2021-12-06,Getafe CF,Athletic Bilbao,0-0,
+17,2021-12-10,Mallorca,Celta de Vigo,0-0,
+17,2021-12-11,Espanyol,Levante,4-3,1-2
 17,2021-12-11,Deportivo Alavés,Getafe CF,1-1,0-1
-17,2021-12-11,Valencia CF,Elche CF,2-1,1-0
-17,2021-12-11,Athletic Club,Sevilla FC,0-1,0-1
-17,2021-12-12,Villarreal CF,Rayo Vallecano de Madrid,2-0,2-0
-17,2021-12-12,CA Osasuna,FC Barcelona,2-2,1-1
-17,2021-12-12,Real Betis Balompié,Real Sociedad de Fútbol,4-0,1-0
-17,2021-12-12,Real Madrid CF,Club Atlético de Madrid,2-0,1-0
+17,2021-12-11,Valencia,Elche,2-1,1-0
+17,2021-12-11,Athletic Bilbao,Sevilha FC,0-1,0-1
+17,2021-12-12,Villarreal CF,Rayo Vallecano,2-0,2-0
+17,2021-12-12,Osasuna,Barcelona,2-2,1-1
+17,2021-12-12,Bétis,Real Sociedad,4-0,1-0
+17,2021-12-12,Real Madrid,Atlético de Madrid,2-0,1-0
 17,2021-12-13,Cádiz CF,Granada CF,1-1,1-0
-18,2021-12-17,RC Celta de Vigo,RCD Espanyol de Barcelona,3-1,1-0
-18,2021-12-18,Rayo Vallecano de Madrid,Deportivo Alavés,2-0,2-0
-18,2021-12-18,Real Sociedad de Fútbol,Villarreal CF,1-3,1-1
-18,2021-12-18,FC Barcelona,Elche CF,3-2,2-0
-18,2021-12-18,Sevilla FC,Club Atlético de Madrid,2-1,1-1
-18,2021-12-19,Granada CF,RCD Mallorca,4-1,1-1
-18,2021-12-19,Athletic Club,Real Betis Balompié,3-2,1-1
-18,2021-12-19,Getafe CF,CA Osasuna,1-0,0-0
-18,2021-12-19,Real Madrid CF,Cádiz CF,0-0,
-18,2021-12-20,Levante UD,Valencia CF,3-4,2-1
+18,2021-12-17,Celta de Vigo,Espanyol,3-1,1-0
+18,2021-12-18,Rayo Vallecano,Deportivo Alavés,2-0,2-0
+18,2021-12-18,Real Sociedad,Villarreal CF,1-3,1-1
+18,2021-12-18,Barcelona,Elche,3-2,2-0
+18,2021-12-18,Sevilha FC,Atlético de Madrid,2-1,1-1
+18,2021-12-19,Granada CF,Mallorca,4-1,1-1
+18,2021-12-19,Athletic Bilbao,Bétis,3-2,1-1
+18,2021-12-19,Getafe CF,Osasuna,1-0,0-0
+18,2021-12-19,Real Madrid,Cádiz CF,0-0,
+18,2021-12-20,Levante,Valencia,3-4,2-1
 4,2021-12-21,Villarreal CF,Deportivo Alavés,5-2,2-1
-4,2021-12-21,Sevilla FC,FC Barcelona,1-1,1-1
-9,2021-12-22,Granada CF,Club Atlético de Madrid,2-1,1-1
-21,2021-12-22,Athletic Club,Real Madrid CF,1-2,1-2
-19,2021-12-31,Valencia CF,RCD Espanyol de Barcelona,1-2,0-0
-19,2022-01-02,Getafe CF,Real Madrid CF,1-0,1-0
-19,2022-01-02,Elche CF,Granada CF,0-0,
-19,2022-01-02,Club Atlético de Madrid,Rayo Vallecano de Madrid,2-0,1-0
-19,2022-01-02,Real Betis Balompié,RC Celta de Vigo,0-2,0-2
-19,2022-01-02,Deportivo Alavés,Real Sociedad de Fútbol,1-1,0-1
-19,2022-01-02,RCD Mallorca,FC Barcelona,0-1,0-1
-19,2022-01-03,Villarreal CF,Levante UD,5-0,3-0
-19,2022-01-03,CA Osasuna,Athletic Club,1-3,1-2
-19,2022-01-03,Cádiz CF,Sevilla FC,0-1,0-0
-20,2022-01-08,Levante UD,RCD Mallorca,2-0,0-0
-20,2022-01-08,Real Sociedad de Fútbol,RC Celta de Vigo,1-0,1-0
-20,2022-01-08,Granada CF,FC Barcelona,1-1,0-0
-20,2022-01-08,Real Madrid CF,Valencia CF,4-1,1-0
-20,2022-01-09,Rayo Vallecano de Madrid,Real Betis Balompié,1-1,0-1
-20,2022-01-09,Sevilla FC,Getafe CF,1-0,1-0
-20,2022-01-09,CA Osasuna,Cádiz CF,2-0,1-0
-20,2022-01-09,Deportivo Alavés,Athletic Club,0-0,
-20,2022-01-09,Villarreal CF,Club Atlético de Madrid,2-2,1-1
-20,2022-01-10,RCD Espanyol de Barcelona,Elche CF,1-2,1-2
-21,2022-01-16,Elche CF,Villarreal CF,1-0,0-0
-21,2022-01-18,Real Betis Balompié,Deportivo Alavés,4-0,3-0
-21,2022-01-18,Cádiz CF,RCD Espanyol de Barcelona,2-2,0-1
-21,2022-01-19,RC Celta de Vigo,CA Osasuna,2-0,2-0
-21,2022-01-19,Valencia CF,Sevilla FC,1-1,1-1
+4,2021-12-21,Sevilha FC,Barcelona,1-1,1-1
+9,2021-12-22,Granada CF,Atlético de Madrid,2-1,1-1
+21,2021-12-22,Athletic Bilbao,Real Madrid,1-2,1-2
+19,2021-12-31,Valencia,Espanyol,1-2,0-0
+19,2022-01-02,Getafe CF,Real Madrid,1-0,1-0
+19,2022-01-02,Elche,Granada CF,0-0,
+19,2022-01-02,Atlético de Madrid,Rayo Vallecano,2-0,1-0
+19,2022-01-02,Bétis,Celta de Vigo,0-2,0-2
+19,2022-01-02,Deportivo Alavés,Real Sociedad,1-1,0-1
+19,2022-01-02,Mallorca,Barcelona,0-1,0-1
+19,2022-01-03,Villarreal CF,Levante,5-0,3-0
+19,2022-01-03,Osasuna,Athletic Bilbao,1-3,1-2
+19,2022-01-03,Cádiz CF,Sevilha FC,0-1,0-0
+20,2022-01-08,Levante,Mallorca,2-0,0-0
+20,2022-01-08,Real Sociedad,Celta de Vigo,1-0,1-0
+20,2022-01-08,Granada CF,Barcelona,1-1,0-0
+20,2022-01-08,Real Madrid,Valencia,4-1,1-0
+20,2022-01-09,Rayo Vallecano,Bétis,1-1,0-1
+20,2022-01-09,Sevilha FC,Getafe CF,1-0,1-0
+20,2022-01-09,Osasuna,Cádiz CF,2-0,1-0
+20,2022-01-09,Deportivo Alavés,Athletic Bilbao,0-0,
+20,2022-01-09,Villarreal CF,Atlético de Madrid,2-2,1-1
+20,2022-01-10,Espanyol,Elche,1-2,1-2
+21,2022-01-16,Elche,Villarreal CF,1-0,0-0
+21,2022-01-18,Bétis,Deportivo Alavés,4-0,3-0
+21,2022-01-18,Cádiz CF,Espanyol,2-2,0-1
+21,2022-01-19,Celta de Vigo,Osasuna,2-0,2-0
+21,2022-01-19,Valencia,Sevilha FC,1-1,1-1
 21,2022-01-20,Getafe CF,Granada CF,4-2,1-1
-22,2022-01-21,RCD Espanyol de Barcelona,Real Betis Balompié,1-4,1-2
-22,2022-01-22,Levante UD,Cádiz CF,0-2,0-1
-22,2022-01-22,Villarreal CF,RCD Mallorca,3-0,2-0
-22,2022-01-22,Sevilla FC,RC Celta de Vigo,2-2,0-2
-22,2022-01-22,Club Atlético de Madrid,Valencia CF,3-2,0-2
-22,2022-01-23,Granada CF,CA Osasuna,0-2,0-0
-22,2022-01-23,Real Madrid CF,Elche CF,2-2,0-1
-22,2022-01-23,Rayo Vallecano de Madrid,Athletic Club,0-1,0-1
-22,2022-01-23,Real Sociedad de Fútbol,Getafe CF,0-0,
-22,2022-01-23,Deportivo Alavés,FC Barcelona,0-1,0-0
-23,2022-02-04,Getafe CF,Levante UD,3-0,2-0
-23,2022-02-05,Elche CF,Deportivo Alavés,3-1,0-1
-23,2022-02-05,RCD Mallorca,Cádiz CF,2-1,1-1
-23,2022-02-05,RC Celta de Vigo,Rayo Vallecano de Madrid,2-0,1-0
-23,2022-02-05,CA Osasuna,Sevilla FC,0-0,
-23,2022-02-06,Valencia CF,Real Sociedad de Fútbol,0-0,
-23,2022-02-06,FC Barcelona,Club Atlético de Madrid,4-2,3-1
-23,2022-02-06,Real Betis Balompié,Villarreal CF,0-2,0-1
-23,2022-02-06,Real Madrid CF,Granada CF,1-0,0-0
-23,2022-02-07,Athletic Club,RCD Espanyol de Barcelona,2-1,2-1
-24,2022-02-11,Sevilla FC,Elche CF,2-0,0-0
-24,2022-02-12,Cádiz CF,RC Celta de Vigo,0-0,
-24,2022-02-12,Villarreal CF,Real Madrid CF,0-0,
-24,2022-02-12,Rayo Vallecano de Madrid,CA Osasuna,0-3,0-2
-24,2022-02-12,Club Atlético de Madrid,Getafe CF,4-3,3-3
-24,2022-02-13,Deportivo Alavés,Valencia CF,2-1,1-0
-24,2022-02-13,Levante UD,Real Betis Balompié,2-4,1-3
-24,2022-02-13,Real Sociedad de Fútbol,Granada CF,2-0,1-0
-24,2022-02-13,RCD Espanyol de Barcelona,FC Barcelona,2-2,1-1
-24,2022-02-14,RCD Mallorca,Athletic Club,3-2,2-0
-21,2022-02-16,Club Atlético de Madrid,Levante UD,0-1,0-0
-25,2022-02-18,Elche CF,Rayo Vallecano de Madrid,2-1,0-0
+22,2022-01-21,Espanyol,Bétis,1-4,1-2
+22,2022-01-22,Levante,Cádiz CF,0-2,0-1
+22,2022-01-22,Villarreal CF,Mallorca,3-0,2-0
+22,2022-01-22,Sevilha FC,Celta de Vigo,2-2,0-2
+22,2022-01-22,Atlético de Madrid,Valencia,3-2,0-2
+22,2022-01-23,Granada CF,Osasuna,0-2,0-0
+22,2022-01-23,Real Madrid,Elche,2-2,0-1
+22,2022-01-23,Rayo Vallecano,Athletic Bilbao,0-1,0-1
+22,2022-01-23,Real Sociedad,Getafe CF,0-0,
+22,2022-01-23,Deportivo Alavés,Barcelona,0-1,0-0
+23,2022-02-04,Getafe CF,Levante,3-0,2-0
+23,2022-02-05,Elche,Deportivo Alavés,3-1,0-1
+23,2022-02-05,Mallorca,Cádiz CF,2-1,1-1
+23,2022-02-05,Celta de Vigo,Rayo Vallecano,2-0,1-0
+23,2022-02-05,Osasuna,Sevilha FC,0-0,
+23,2022-02-06,Valencia,Real Sociedad,0-0,
+23,2022-02-06,Barcelona,Atlético de Madrid,4-2,3-1
+23,2022-02-06,Bétis,Villarreal CF,0-2,0-1
+23,2022-02-06,Real Madrid,Granada CF,1-0,0-0
+23,2022-02-07,Athletic Bilbao,Espanyol,2-1,2-1
+24,2022-02-11,Sevilha FC,Elche,2-0,0-0
+24,2022-02-12,Cádiz CF,Celta de Vigo,0-0,
+24,2022-02-12,Villarreal CF,Real Madrid,0-0,
+24,2022-02-12,Rayo Vallecano,Osasuna,0-3,0-2
+24,2022-02-12,Atlético de Madrid,Getafe CF,4-3,3-3
+24,2022-02-13,Deportivo Alavés,Valencia,2-1,1-0
+24,2022-02-13,Levante,Bétis,2-4,1-3
+24,2022-02-13,Real Sociedad,Granada CF,2-0,1-0
+24,2022-02-13,Espanyol,Barcelona,2-2,1-1
+24,2022-02-14,Mallorca,Athletic Bilbao,3-2,2-0
+21,2022-02-16,Atlético de Madrid,Levante,0-1,0-0
+25,2022-02-18,Elche,Rayo Vallecano,2-1,0-0
 25,2022-02-19,Granada CF,Villarreal CF,1-4,0-2
-25,2022-02-19,CA Osasuna,Club Atlético de Madrid,0-3,0-1
+25,2022-02-19,Osasuna,Atlético de Madrid,0-3,0-1
 25,2022-02-19,Cádiz CF,Getafe CF,1-1,1-1
-25,2022-02-19,Real Madrid CF,Deportivo Alavés,3-0,0-0
-25,2022-02-20,RCD Espanyol de Barcelona,Sevilla FC,1-1,0-1
-25,2022-02-20,Valencia CF,FC Barcelona,1-4,0-3
-25,2022-02-20,Real Betis Balompié,RCD Mallorca,2-1,1-0
-25,2022-02-20,Athletic Club,Real Sociedad de Fútbol,4-0,0-0
-25,2022-02-21,RC Celta de Vigo,Levante UD,1-1,0-0
-26,2022-02-25,Levante UD,Elche CF,3-0,1-0
-26,2022-02-26,RCD Mallorca,Valencia CF,0-1,0-1
+25,2022-02-19,Real Madrid,Deportivo Alavés,3-0,0-0
+25,2022-02-20,Espanyol,Sevilha FC,1-1,0-1
+25,2022-02-20,Valencia,Barcelona,1-4,0-3
+25,2022-02-20,Bétis,Mallorca,2-1,1-0
+25,2022-02-20,Athletic Bilbao,Real Sociedad,4-0,0-0
+25,2022-02-21,Celta de Vigo,Levante,1-1,0-0
+26,2022-02-25,Levante,Elche,3-0,1-0
+26,2022-02-26,Mallorca,Valencia,0-1,0-1
 26,2022-02-26,Getafe CF,Deportivo Alavés,2-2,0-1
-26,2022-02-26,Rayo Vallecano de Madrid,Real Madrid CF,0-1,0-0
-26,2022-02-26,Club Atlético de Madrid,RC Celta de Vigo,2-0,1-0
-26,2022-02-27,Villarreal CF,RCD Espanyol de Barcelona,5-1,3-0
-26,2022-02-27,Sevilla FC,Real Betis Balompié,2-1,2-0
-26,2022-02-27,Real Sociedad de Fútbol,CA Osasuna,1-0,0-0
-26,2022-02-27,FC Barcelona,Athletic Club,4-0,1-0
+26,2022-02-26,Rayo Vallecano,Real Madrid,0-1,0-0
+26,2022-02-26,Atlético de Madrid,Celta de Vigo,2-0,1-0
+26,2022-02-27,Villarreal CF,Espanyol,5-1,3-0
+26,2022-02-27,Sevilha FC,Bétis,2-1,2-0
+26,2022-02-27,Real Sociedad,Osasuna,1-0,0-0
+26,2022-02-27,Barcelona,Athletic Bilbao,4-0,1-0
 26,2022-02-28,Granada CF,Cádiz CF,0-0,
-21,2022-03-02,RCD Mallorca,Real Sociedad de Fútbol,0-2,0-1
-27,2022-03-04,Deportivo Alavés,Sevilla FC,0-0,
-27,2022-03-05,CA Osasuna,Villarreal CF,1-0,0-0
-27,2022-03-05,RCD Espanyol de Barcelona,Getafe CF,2-0,2-0
-27,2022-03-05,Valencia CF,Granada CF,3-1,0-0
-27,2022-03-05,Real Madrid CF,Real Sociedad de Fútbol,4-1,2-1
-27,2022-03-06,Cádiz CF,Rayo Vallecano de Madrid,2-0,0-0
-27,2022-03-06,Elche CF,FC Barcelona,1-2,1-0
-27,2022-03-06,RC Celta de Vigo,RCD Mallorca,4-3,2-1
-27,2022-03-06,Real Betis Balompié,Club Atlético de Madrid,1-3,1-1
-27,2022-03-07,Athletic Club,Levante UD,3-1,0-0
-28,2022-03-11,Club Atlético de Madrid,Cádiz CF,2-1,1-1
-28,2022-03-12,Levante UD,RCD Espanyol de Barcelona,1-1,0-0
-28,2022-03-12,Granada CF,Elche CF,0-1,0-1
-28,2022-03-12,Villarreal CF,RC Celta de Vigo,1-0,0-0
-28,2022-03-12,Getafe CF,Valencia CF,0-0,
-28,2022-03-13,Rayo Vallecano de Madrid,Sevilla FC,1-1,0-0
-28,2022-03-13,Real Betis Balompié,Athletic Club,1-0,1-0
-28,2022-03-13,Real Sociedad de Fútbol,Deportivo Alavés,1-0,0-0
-28,2022-03-13,FC Barcelona,CA Osasuna,4-0,3-0
-28,2022-03-14,RCD Mallorca,Real Madrid CF,0-3,0-0
-29,2022-03-18,Athletic Club,Getafe CF,1-1,1-1
+21,2022-03-02,Mallorca,Real Sociedad,0-2,0-1
+27,2022-03-04,Deportivo Alavés,Sevilha FC,0-0,
+27,2022-03-05,Osasuna,Villarreal CF,1-0,0-0
+27,2022-03-05,Espanyol,Getafe CF,2-0,2-0
+27,2022-03-05,Valencia,Granada CF,3-1,0-0
+27,2022-03-05,Real Madrid,Real Sociedad,4-1,2-1
+27,2022-03-06,Cádiz CF,Rayo Vallecano,2-0,0-0
+27,2022-03-06,Elche,Barcelona,1-2,1-0
+27,2022-03-06,Celta de Vigo,Mallorca,4-3,2-1
+27,2022-03-06,Bétis,Atlético de Madrid,1-3,1-1
+27,2022-03-07,Athletic Bilbao,Levante,3-1,0-0
+28,2022-03-11,Atlético de Madrid,Cádiz CF,2-1,1-1
+28,2022-03-12,Levante,Espanyol,1-1,0-0
+28,2022-03-12,Granada CF,Elche,0-1,0-1
+28,2022-03-12,Villarreal CF,Celta de Vigo,1-0,0-0
+28,2022-03-12,Getafe CF,Valencia,0-0,
+28,2022-03-13,Rayo Vallecano,Sevilha FC,1-1,0-0
+28,2022-03-13,Bétis,Athletic Bilbao,1-0,1-0
+28,2022-03-13,Real Sociedad,Deportivo Alavés,1-0,0-0
+28,2022-03-13,Barcelona,Osasuna,4-0,3-0
+28,2022-03-14,Mallorca,Real Madrid,0-3,0-0
+29,2022-03-18,Athletic Bilbao,Getafe CF,1-1,1-1
 29,2022-03-19,Deportivo Alavés,Granada CF,2-3,0-0
-29,2022-03-19,Elche CF,Valencia CF,0-1,0-0
-29,2022-03-19,CA Osasuna,Levante UD,3-1,1-0
-29,2022-03-19,Rayo Vallecano de Madrid,Club Atlético de Madrid,0-1,0-0
-29,2022-03-20,RCD Espanyol de Barcelona,RCD Mallorca,1-0,1-0
+29,2022-03-19,Elche,Valencia,0-1,0-0
+29,2022-03-19,Osasuna,Levante,3-1,1-0
+29,2022-03-19,Rayo Vallecano,Atlético de Madrid,0-1,0-0
+29,2022-03-20,Espanyol,Mallorca,1-0,1-0
 29,2022-03-20,Cádiz CF,Villarreal CF,1-0,0-0
-29,2022-03-20,RC Celta de Vigo,Real Betis Balompié,0-0,
-29,2022-03-20,Sevilla FC,Real Sociedad de Fútbol,0-0,
-29,2022-03-20,Real Madrid CF,FC Barcelona,0-4,0-2
-30,2022-04-02,Getafe CF,RCD Mallorca,1-0,0-0
-30,2022-04-02,Levante UD,Villarreal CF,2-0,0-0
-30,2022-04-02,RC Celta de Vigo,Real Madrid CF,1-2,0-1
-30,2022-04-02,Club Atlético de Madrid,Deportivo Alavés,4-1,1-0
-30,2022-04-03,Athletic Club,Elche CF,2-1,1-0
-30,2022-04-03,Real Betis Balompié,CA Osasuna,4-1,2-0
-30,2022-04-03,Valencia CF,Cádiz CF,0-0,
-30,2022-04-03,Granada CF,Rayo Vallecano de Madrid,2-2,0-2
-30,2022-04-03,FC Barcelona,Sevilla FC,1-0,0-0
-30,2022-04-04,Real Sociedad de Fútbol,RCD Espanyol de Barcelona,1-0,0-0
-31,2022-04-08,Sevilla FC,Granada CF,4-2,1-1
-31,2022-04-09,Cádiz CF,Real Betis Balompié,1-2,0-0
-31,2022-04-09,RCD Mallorca,Club Atlético de Madrid,1-0,0-0
-31,2022-04-09,Villarreal CF,Athletic Club,1-1,0-1
-31,2022-04-09,Real Madrid CF,Getafe CF,2-0,1-0
-31,2022-04-10,CA Osasuna,Deportivo Alavés,1-0,0-0
-31,2022-04-10,RCD Espanyol de Barcelona,RC Celta de Vigo,1-0,0-0
-31,2022-04-10,Elche CF,Real Sociedad de Fútbol,1-2,1-2
-31,2022-04-10,Levante UD,FC Barcelona,2-3,0-0
-31,2022-04-11,Rayo Vallecano de Madrid,Valencia CF,1-1,0-0
-32,2022-04-15,Real Sociedad de Fútbol,Real Betis Balompié,0-0,
-32,2022-04-16,Elche CF,RCD Mallorca,3-0,1-0
-32,2022-04-16,Deportivo Alavés,Rayo Vallecano de Madrid,1-0,0-0
-32,2022-04-16,Valencia CF,CA Osasuna,1-2,0-0
+29,2022-03-20,Celta de Vigo,Bétis,0-0,
+29,2022-03-20,Sevilha FC,Real Sociedad,0-0,
+29,2022-03-20,Real Madrid,Barcelona,0-4,0-2
+30,2022-04-02,Getafe CF,Mallorca,1-0,0-0
+30,2022-04-02,Levante,Villarreal CF,2-0,0-0
+30,2022-04-02,Celta de Vigo,Real Madrid,1-2,0-1
+30,2022-04-02,Atlético de Madrid,Deportivo Alavés,4-1,1-0
+30,2022-04-03,Athletic Bilbao,Elche,2-1,1-0
+30,2022-04-03,Bétis,Osasuna,4-1,2-0
+30,2022-04-03,Valencia,Cádiz CF,0-0,
+30,2022-04-03,Granada CF,Rayo Vallecano,2-2,0-2
+30,2022-04-03,Barcelona,Sevilha FC,1-0,0-0
+30,2022-04-04,Real Sociedad,Espanyol,1-0,0-0
+31,2022-04-08,Sevilha FC,Granada CF,4-2,1-1
+31,2022-04-09,Cádiz CF,Bétis,1-2,0-0
+31,2022-04-09,Mallorca,Atlético de Madrid,1-0,0-0
+31,2022-04-09,Villarreal CF,Athletic Bilbao,1-1,0-1
+31,2022-04-09,Real Madrid,Getafe CF,2-0,1-0
+31,2022-04-10,Osasuna,Deportivo Alavés,1-0,0-0
+31,2022-04-10,Espanyol,Celta de Vigo,1-0,0-0
+31,2022-04-10,Elche,Real Sociedad,1-2,1-2
+31,2022-04-10,Levante,Barcelona,2-3,0-0
+31,2022-04-11,Rayo Vallecano,Valencia,1-1,0-0
+32,2022-04-15,Real Sociedad,Bétis,0-0,
+32,2022-04-16,Elche,Mallorca,3-0,1-0
+32,2022-04-16,Deportivo Alavés,Rayo Vallecano,1-0,0-0
+32,2022-04-16,Valencia,Osasuna,1-2,0-0
 32,2022-04-16,Getafe CF,Villarreal CF,1-2,0-2
-32,2022-04-17,Granada CF,Levante UD,1-4,0-1
-32,2022-04-17,Club Atlético de Madrid,RCD Espanyol de Barcelona,2-1,0-0
-32,2022-04-17,Athletic Club,RC Celta de Vigo,0-2,0-2
-32,2022-04-17,Sevilla FC,Real Madrid CF,2-3,2-0
-32,2022-04-18,FC Barcelona,Cádiz CF,0-1,0-0
-33,2022-04-19,RCD Mallorca,Deportivo Alavés,2-1,2-0
-33,2022-04-19,Real Betis Balompié,Elche CF,0-1,0-0
-33,2022-04-19,Villarreal CF,Valencia CF,2-0,2-0
-33,2022-04-20,Club Atlético de Madrid,Granada CF,0-0,
-33,2022-04-20,RC Celta de Vigo,Getafe CF,0-2,0-1
-33,2022-04-20,CA Osasuna,Real Madrid CF,1-3,1-2
-33,2022-04-21,Levante UD,Sevilla FC,2-3,1-2
-33,2022-04-21,RCD Espanyol de Barcelona,Rayo Vallecano de Madrid,0-1,0-1
-33,2022-04-21,Cádiz CF,Athletic Club,2-3,0-3
-33,2022-04-21,Real Sociedad de Fútbol,FC Barcelona,0-1,0-1
-21,2022-04-24,FC Barcelona,Rayo Vallecano de Madrid,0-1,0-1
-34,2022-04-29,Sevilla FC,Cádiz CF,1-1,1-0
+32,2022-04-17,Granada CF,Levante,1-4,0-1
+32,2022-04-17,Atlético de Madrid,Espanyol,2-1,0-0
+32,2022-04-17,Athletic Bilbao,Celta de Vigo,0-2,0-2
+32,2022-04-17,Sevilha FC,Real Madrid,2-3,2-0
+32,2022-04-18,Barcelona,Cádiz CF,0-1,0-0
+33,2022-04-19,Mallorca,Deportivo Alavés,2-1,2-0
+33,2022-04-19,Bétis,Elche,0-1,0-0
+33,2022-04-19,Villarreal CF,Valencia,2-0,2-0
+33,2022-04-20,Atlético de Madrid,Granada CF,0-0,
+33,2022-04-20,Celta de Vigo,Getafe CF,0-2,0-1
+33,2022-04-20,Osasuna,Real Madrid,1-3,1-2
+33,2022-04-21,Levante,Sevilha FC,2-3,1-2
+33,2022-04-21,Espanyol,Rayo Vallecano,0-1,0-1
+33,2022-04-21,Cádiz CF,Athletic Bilbao,2-3,0-3
+33,2022-04-21,Real Sociedad,Barcelona,0-1,0-1
+21,2022-04-24,Barcelona,Rayo Vallecano,0-1,0-1
+34,2022-04-29,Sevilha FC,Cádiz CF,1-1,1-0
 34,2022-04-30,Deportivo Alavés,Villarreal CF,2-1,2-0
-34,2022-04-30,Real Madrid CF,RCD Espanyol de Barcelona,4-0,2-0
-34,2022-04-30,Valencia CF,Levante UD,1-1,1-0
-34,2022-04-30,Athletic Club,Club Atlético de Madrid,2-0,1-0
-34,2022-05-01,Elche CF,CA Osasuna,1-1,0-0
-34,2022-05-01,Granada CF,RC Celta de Vigo,1-1,0-0
-34,2022-05-01,Rayo Vallecano de Madrid,Real Sociedad de Fútbol,1-1,0-1
-34,2022-05-01,FC Barcelona,RCD Mallorca,2-1,1-0
-34,2022-05-02,Getafe CF,Real Betis Balompié,0-0,
-35,2022-05-06,Levante UD,Real Sociedad de Fútbol,2-1,0-0
-35,2022-05-07,RCD Mallorca,Granada CF,2-6,1-1
-35,2022-05-07,Athletic Club,Valencia CF,0-0,
-35,2022-05-07,Cádiz CF,Elche CF,3-0,0-0
-35,2022-05-07,RC Celta de Vigo,Deportivo Alavés,4-0,2-0
-35,2022-05-07,Real Betis Balompié,FC Barcelona,1-2,0-0
-35,2022-05-08,Getafe CF,Rayo Vallecano de Madrid,0-0,
-35,2022-05-08,Villarreal CF,Sevilla FC,1-1,0-0
-35,2022-05-08,RCD Espanyol de Barcelona,CA Osasuna,1-1,0-1
-35,2022-05-08,Club Atlético de Madrid,Real Madrid CF,1-0,1-0
-36,2022-05-10,Valencia CF,Real Betis Balompié,0-3,0-0
-36,2022-05-10,Granada CF,Athletic Club,1-0,1-0
-36,2022-05-10,FC Barcelona,RC Celta de Vigo,3-1,2-0
-36,2022-05-11,CA Osasuna,Getafe CF,1-1,1-1
-36,2022-05-11,Deportivo Alavés,RCD Espanyol de Barcelona,2-1,1-1
-36,2022-05-11,Sevilla FC,RCD Mallorca,0-0,
-36,2022-05-11,Elche CF,Club Atlético de Madrid,0-2,0-1
-36,2022-05-12,Real Sociedad de Fútbol,Cádiz CF,3-0,1-0
-36,2022-05-12,Rayo Vallecano de Madrid,Villarreal CF,1-5,1-4
-36,2022-05-12,Real Madrid CF,Levante UD,6-0,4-0
-37,2022-05-14,RCD Espanyol de Barcelona,Valencia CF,1-1,1-1
-37,2022-05-15,Villarreal CF,Real Sociedad de Fútbol,1-2,1-0
-37,2022-05-15,Levante UD,Deportivo Alavés,3-1,0-1
-37,2022-05-15,Cádiz CF,Real Madrid CF,1-1,1-1
-37,2022-05-15,Getafe CF,FC Barcelona,0-0,
-37,2022-05-15,RCD Mallorca,Rayo Vallecano de Madrid,2-1,1-0
-37,2022-05-15,RC Celta de Vigo,Elche CF,1-0,1-0
-37,2022-05-15,Real Betis Balompié,Granada CF,2-0,1-0
-37,2022-05-15,Club Atlético de Madrid,Sevilla FC,1-1,1-0
-37,2022-05-15,Athletic Club,CA Osasuna,2-0,1-0
-38,2022-05-20,Rayo Vallecano de Madrid,Levante UD,2-4,1-3
-38,2022-05-20,Real Madrid CF,Real Betis Balompié,0-0,
-38,2022-05-21,Valencia CF,RC Celta de Vigo,2-0,1-0
-38,2022-05-22,Elche CF,Getafe CF,3-1,1-1
-38,2022-05-22,CA Osasuna,RCD Mallorca,0-2,0-0
-38,2022-05-22,Granada CF,RCD Espanyol de Barcelona,0-0,
+34,2022-04-30,Real Madrid,Espanyol,4-0,2-0
+34,2022-04-30,Valencia,Levante,1-1,1-0
+34,2022-04-30,Athletic Bilbao,Atlético de Madrid,2-0,1-0
+34,2022-05-01,Elche,Osasuna,1-1,0-0
+34,2022-05-01,Granada CF,Celta de Vigo,1-1,0-0
+34,2022-05-01,Rayo Vallecano,Real Sociedad,1-1,0-1
+34,2022-05-01,Barcelona,Mallorca,2-1,1-0
+34,2022-05-02,Getafe CF,Bétis,0-0,
+35,2022-05-06,Levante,Real Sociedad,2-1,0-0
+35,2022-05-07,Mallorca,Granada CF,2-6,1-1
+35,2022-05-07,Athletic Bilbao,Valencia,0-0,
+35,2022-05-07,Cádiz CF,Elche,3-0,0-0
+35,2022-05-07,Celta de Vigo,Deportivo Alavés,4-0,2-0
+35,2022-05-07,Bétis,Barcelona,1-2,0-0
+35,2022-05-08,Getafe CF,Rayo Vallecano,0-0,
+35,2022-05-08,Villarreal CF,Sevilha FC,1-1,0-0
+35,2022-05-08,Espanyol,Osasuna,1-1,0-1
+35,2022-05-08,Atlético de Madrid,Real Madrid,1-0,1-0
+36,2022-05-10,Valencia,Bétis,0-3,0-0
+36,2022-05-10,Granada CF,Athletic Bilbao,1-0,1-0
+36,2022-05-10,Barcelona,Celta de Vigo,3-1,2-0
+36,2022-05-11,Osasuna,Getafe CF,1-1,1-1
+36,2022-05-11,Deportivo Alavés,Espanyol,2-1,1-1
+36,2022-05-11,Sevilha FC,Mallorca,0-0,
+36,2022-05-11,Elche,Atlético de Madrid,0-2,0-1
+36,2022-05-12,Real Sociedad,Cádiz CF,3-0,1-0
+36,2022-05-12,Rayo Vallecano,Villarreal CF,1-5,1-4
+36,2022-05-12,Real Madrid,Levante,6-0,4-0
+37,2022-05-14,Espanyol,Valencia,1-1,1-1
+37,2022-05-15,Villarreal CF,Real Sociedad,1-2,1-0
+37,2022-05-15,Levante,Deportivo Alavés,3-1,0-1
+37,2022-05-15,Cádiz CF,Real Madrid,1-1,1-1
+37,2022-05-15,Getafe CF,Barcelona,0-0,
+37,2022-05-15,Mallorca,Rayo Vallecano,2-1,1-0
+37,2022-05-15,Celta de Vigo,Elche,1-0,1-0
+37,2022-05-15,Bétis,Granada CF,2-0,1-0
+37,2022-05-15,Atlético de Madrid,Sevilha FC,1-1,1-0
+37,2022-05-15,Athletic Bilbao,Osasuna,2-0,1-0
+38,2022-05-20,Rayo Vallecano,Levante,2-4,1-3
+38,2022-05-20,Real Madrid,Bétis,0-0,
+38,2022-05-21,Valencia,Celta de Vigo,2-0,1-0
+38,2022-05-22,Elche,Getafe CF,3-1,1-1
+38,2022-05-22,Osasuna,Mallorca,0-2,0-0
+38,2022-05-22,Granada CF,Espanyol,0-0,
 38,2022-05-22,Deportivo Alavés,Cádiz CF,0-1,0-0
-38,2022-05-22,Sevilla FC,Athletic Club,1-0,0-0
-38,2022-05-22,Real Sociedad de Fútbol,Club Atlético de Madrid,1-2,0-0
-38,2022-05-22,FC Barcelona,Villarreal CF,0-2,0-1
+38,2022-05-22,Sevilha FC,Athletic Bilbao,1-0,0-0
+38,2022-05-22,Real Sociedad,Atlético de Madrid,1-2,0-0
+38,2022-05-22,Barcelona,Villarreal CF,0-2,0-1

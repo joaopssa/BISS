@@ -1,381 +1,381 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2015-08-22,Hellas Verona,AS Roma,1-1,0-0
-1,Sat,2015-08-22,Lazio Roma,Bologna FC,2-1,2-1
-1,Sun,2015-08-23,Juventus,Udinese Calcio,0-1,0-0
+1,Sat,2015-08-22,Hellas Verona,Roma,1-1,0-0
+1,Sat,2015-08-22,Lazio,Bologna FC,2-1,2-1
+1,Sun,2015-08-23,Juventus FC,Udinese,0-1,0-0
 1,Sun,2015-08-23,Empoli FC,Chievo Verona,1-3,1-0
-1,Sun,2015-08-23,ACF Fiorentina,AC Milan,2-0,1-0
-1,Sun,2015-08-23,Frosinone Calcio,Torino FC,1-2,1-0
-1,Sun,2015-08-23,Inter,Atalanta,1-0,0-0
+1,Sun,2015-08-23,Fiorentina,AC Milan,2-0,1-0
+1,Sun,2015-08-23,Frosinone Calcio,Torino,1-2,1-0
+1,Sun,2015-08-23,Inter de Milão,Atalanta,1-0,0-0
 1,Sun,2015-08-23,US Palermo,Genoa CFC,1-0,0-0
 1,Sun,2015-08-23,Sampdoria,Carpi FC,5-2,5-1
-1,Sun,2015-08-23,Sassuolo Calcio,SSC Napoli,2-1,1-1
-2,Sat,2015-08-29,Bologna FC,Sassuolo Calcio,0-1,0-0
+1,Sun,2015-08-23,Sassuolo,Napoli,2-1,1-1
+2,Sat,2015-08-29,Bologna FC,Sassuolo,0-1,0-0
 2,Sat,2015-08-29,AC Milan,Empoli FC,2-1,1-1
-2,Sun,2015-08-30,AS Roma,Juventus,2-1,0-0
+2,Sun,2015-08-30,Roma,Juventus FC,2-1,0-0
 2,Sun,2015-08-30,Atalanta,Frosinone Calcio,2-0,1-0
-2,Sun,2015-08-30,Carpi FC,Inter,1-2,0-1
-2,Sun,2015-08-30,Chievo Verona,Lazio Roma,4-0,3-0
+2,Sun,2015-08-30,Carpi FC,Inter de Milão,1-2,0-1
+2,Sun,2015-08-30,Chievo Verona,Lazio,4-0,3-0
 2,Sun,2015-08-30,Genoa CFC,Hellas Verona,2-0,0-0
-2,Sun,2015-08-30,SSC Napoli,Sampdoria,2-2,2-0
-2,Sun,2015-08-30,Torino FC,ACF Fiorentina,3-1,0-1
-2,Sun,2015-08-30,Udinese Calcio,US Palermo,0-1,0-1
-3,Sat,2015-09-12,ACF Fiorentina,Genoa CFC,1-0,0-0
-3,Sat,2015-09-12,Frosinone Calcio,AS Roma,0-2,0-1
-3,Sat,2015-09-12,Juventus,Chievo Verona,1-1,0-1
-3,Sun,2015-09-13,Hellas Verona,Torino FC,2-2,0-0
-3,Sun,2015-09-13,Empoli FC,SSC Napoli,2-2,2-1
+2,Sun,2015-08-30,Napoli,Sampdoria,2-2,2-0
+2,Sun,2015-08-30,Torino,Fiorentina,3-1,0-1
+2,Sun,2015-08-30,Udinese,US Palermo,0-1,0-1
+3,Sat,2015-09-12,Fiorentina,Genoa CFC,1-0,0-0
+3,Sat,2015-09-12,Frosinone Calcio,Roma,0-2,0-1
+3,Sat,2015-09-12,Juventus FC,Chievo Verona,1-1,0-1
+3,Sun,2015-09-13,Hellas Verona,Torino,2-2,0-0
+3,Sun,2015-09-13,Empoli FC,Napoli,2-2,2-1
 3,Sun,2015-09-13,US Palermo,Carpi FC,2-2,1-1
-3,Sun,2015-09-13,Sassuolo Calcio,Atalanta,2-2,2-2
-3,Sun,2015-09-13,Lazio Roma,Udinese Calcio,2-0,0-0
-3,Sun,2015-09-13,Inter,AC Milan,1-0,0-0
+3,Sun,2015-09-13,Sassuolo,Atalanta,2-2,2-2
+3,Sun,2015-09-13,Lazio,Udinese,2-0,0-0
+3,Sun,2015-09-13,Inter de Milão,AC Milan,1-0,0-0
 3,Mon,2015-09-14,Sampdoria,Bologna FC,2-0,0-0
-4,Sat,2015-09-19,Udinese Calcio,Empoli FC,1-2,1-0
+4,Sat,2015-09-19,Udinese,Empoli FC,1-2,1-0
 4,Sat,2015-09-19,AC Milan,US Palermo,3-2,2-1
-4,Sun,2015-09-20,Chievo Verona,Inter,0-1,0-1
+4,Sun,2015-09-20,Chievo Verona,Inter de Milão,0-1,0-1
 4,Sun,2015-09-20,Atalanta,Hellas Verona,1-1,0-0
 4,Sun,2015-09-20,Bologna FC,Frosinone Calcio,1-0,1-0
-4,Sun,2015-09-20,Genoa CFC,Juventus,0-2,0-1
-4,Sun,2015-09-20,AS Roma,Sassuolo Calcio,2-2,1-2
-4,Sun,2015-09-20,Torino FC,Sampdoria,2-0,2-0
-4,Sun,2015-09-20,Carpi FC,ACF Fiorentina,0-1,0-1
-4,Sun,2015-09-20,SSC Napoli,Lazio Roma,5-0,2-0
-5,Tue,2015-09-22,Udinese Calcio,AC Milan,2-3,0-3
-5,Wed,2015-09-23,Carpi FC,SSC Napoli,0-0,
-5,Wed,2015-09-23,Chievo Verona,Torino FC,1-0,0-0
-5,Wed,2015-09-23,Inter,Hellas Verona,1-0,0-0
-5,Wed,2015-09-23,Juventus,Frosinone Calcio,1-1,0-0
-5,Wed,2015-09-23,Lazio Roma,Genoa CFC,2-0,1-0
-5,Wed,2015-09-23,US Palermo,Sassuolo Calcio,0-1,0-1
-5,Wed,2015-09-23,Sampdoria,AS Roma,2-1,0-0
-5,Wed,2015-09-23,ACF Fiorentina,Bologna FC,2-0,0-0
+4,Sun,2015-09-20,Genoa CFC,Juventus FC,0-2,0-1
+4,Sun,2015-09-20,Roma,Sassuolo,2-2,1-2
+4,Sun,2015-09-20,Torino,Sampdoria,2-0,2-0
+4,Sun,2015-09-20,Carpi FC,Fiorentina,0-1,0-1
+4,Sun,2015-09-20,Napoli,Lazio,5-0,2-0
+5,Tue,2015-09-22,Udinese,AC Milan,2-3,0-3
+5,Wed,2015-09-23,Carpi FC,Napoli,0-0,
+5,Wed,2015-09-23,Chievo Verona,Torino,1-0,0-0
+5,Wed,2015-09-23,Inter de Milão,Hellas Verona,1-0,0-0
+5,Wed,2015-09-23,Juventus FC,Frosinone Calcio,1-1,0-0
+5,Wed,2015-09-23,Lazio,Genoa CFC,2-0,1-0
+5,Wed,2015-09-23,US Palermo,Sassuolo,0-1,0-1
+5,Wed,2015-09-23,Sampdoria,Roma,2-1,0-0
+5,Wed,2015-09-23,Fiorentina,Bologna FC,2-0,0-0
 5,Thu,2015-09-24,Empoli FC,Atalanta,0-1,0-1
-6,Sat,2015-09-26,AS Roma,Carpi FC,5-1,3-1
-6,Sat,2015-09-26,SSC Napoli,Juventus,2-1,1-0
+6,Sat,2015-09-26,Roma,Carpi FC,5-1,3-1
+6,Sat,2015-09-26,Napoli,Juventus FC,2-1,1-0
 6,Sun,2015-09-27,Genoa CFC,AC Milan,1-0,1-0
-6,Sun,2015-09-27,Bologna FC,Udinese Calcio,1-2,1-0
-6,Sun,2015-09-27,Hellas Verona,Lazio Roma,1-2,1-0
-6,Sun,2015-09-27,Sassuolo Calcio,Chievo Verona,1-1,1-1
-6,Sun,2015-09-27,Torino FC,US Palermo,2-1,1-0
-6,Sun,2015-09-27,Inter,ACF Fiorentina,1-4,0-3
+6,Sun,2015-09-27,Bologna FC,Udinese,1-2,1-0
+6,Sun,2015-09-27,Hellas Verona,Lazio,1-2,1-0
+6,Sun,2015-09-27,Sassuolo,Chievo Verona,1-1,1-1
+6,Sun,2015-09-27,Torino,US Palermo,2-1,1-0
+6,Sun,2015-09-27,Inter de Milão,Fiorentina,1-4,0-3
 6,Mon,2015-09-28,Frosinone Calcio,Empoli FC,2-0,0-0
 6,Mon,2015-09-28,Atalanta,Sampdoria,2-1,1-0
-7,Sat,2015-10-03,Carpi FC,Torino FC,2-1,0-0
+7,Sat,2015-10-03,Carpi FC,Torino,2-1,0-0
 7,Sat,2015-10-03,Chievo Verona,Hellas Verona,1-1,0-0
-7,Sun,2015-10-04,Empoli FC,Sassuolo Calcio,1-0,0-0
-7,Sun,2015-10-04,US Palermo,AS Roma,2-4,0-3
-7,Sun,2015-10-04,Sampdoria,Inter,1-1,0-0
-7,Sun,2015-10-04,Udinese Calcio,Genoa CFC,1-1,0-0
-7,Sun,2015-10-04,Juventus,Bologna FC,3-1,1-1
-7,Sun,2015-10-04,Lazio Roma,Frosinone Calcio,2-0,0-0
-7,Sun,2015-10-04,ACF Fiorentina,Atalanta,3-0,2-0
-7,Sun,2015-10-04,AC Milan,SSC Napoli,0-4,0-1
-8,Sat,2015-10-17,AS Roma,Empoli FC,3-1,0-0
-8,Sat,2015-10-17,Torino FC,AC Milan,1-1,0-0
+7,Sun,2015-10-04,Empoli FC,Sassuolo,1-0,0-0
+7,Sun,2015-10-04,US Palermo,Roma,2-4,0-3
+7,Sun,2015-10-04,Sampdoria,Inter de Milão,1-1,0-0
+7,Sun,2015-10-04,Udinese,Genoa CFC,1-1,0-0
+7,Sun,2015-10-04,Juventus FC,Bologna FC,3-1,1-1
+7,Sun,2015-10-04,Lazio,Frosinone Calcio,2-0,0-0
+7,Sun,2015-10-04,Fiorentina,Atalanta,3-0,2-0
+7,Sun,2015-10-04,AC Milan,Napoli,0-4,0-1
+8,Sat,2015-10-17,Roma,Empoli FC,3-1,0-0
+8,Sat,2015-10-17,Torino,AC Milan,1-1,0-0
 8,Sun,2015-10-18,Bologna FC,US Palermo,0-1,0-1
 8,Sun,2015-10-18,Atalanta,Carpi FC,3-0,2-0
 8,Sun,2015-10-18,Frosinone Calcio,Sampdoria,2-0,0-0
 8,Sun,2015-10-18,Genoa CFC,Chievo Verona,3-2,2-1
-8,Sun,2015-10-18,Hellas Verona,Udinese Calcio,1-1,1-0
-8,Sun,2015-10-18,SSC Napoli,ACF Fiorentina,2-1,0-0
-8,Sun,2015-10-18,Sassuolo Calcio,Lazio Roma,2-1,1-0
-8,Sun,2015-10-18,Inter,Juventus,0-0,
+8,Sun,2015-10-18,Hellas Verona,Udinese,1-1,1-0
+8,Sun,2015-10-18,Napoli,Fiorentina,2-1,0-0
+8,Sun,2015-10-18,Sassuolo,Lazio,2-1,1-0
+8,Sun,2015-10-18,Inter de Milão,Juventus FC,0-0,
 9,Sat,2015-10-24,Empoli FC,Genoa CFC,2-0,1-0
 9,Sat,2015-10-24,Carpi FC,Bologna FC,1-2,1-0
-9,Sat,2015-10-24,US Palermo,Inter,1-1,0-0
+9,Sat,2015-10-24,US Palermo,Inter de Milão,1-1,0-0
 9,Sun,2015-10-25,Sampdoria,Hellas Verona,4-1,3-0
-9,Sun,2015-10-25,Juventus,Atalanta,2-0,1-0
-9,Sun,2015-10-25,AC Milan,Sassuolo Calcio,2-1,1-0
-9,Sun,2015-10-25,Udinese Calcio,Frosinone Calcio,1-0,1-0
-9,Sun,2015-10-25,ACF Fiorentina,AS Roma,1-2,0-2
-9,Sun,2015-10-25,Lazio Roma,Torino FC,3-0,1-0
-9,Sun,2015-10-25,Chievo Verona,SSC Napoli,0-1,0-0
-10,Tue,2015-10-27,Bologna FC,Inter,0-1,0-0
-10,Wed,2015-10-28,Atalanta,Lazio Roma,2-1,0-1
+9,Sun,2015-10-25,Juventus FC,Atalanta,2-0,1-0
+9,Sun,2015-10-25,AC Milan,Sassuolo,2-1,1-0
+9,Sun,2015-10-25,Udinese,Frosinone Calcio,1-0,1-0
+9,Sun,2015-10-25,Fiorentina,Roma,1-2,0-2
+9,Sun,2015-10-25,Lazio,Torino,3-0,1-0
+9,Sun,2015-10-25,Chievo Verona,Napoli,0-1,0-0
+10,Tue,2015-10-27,Bologna FC,Inter de Milão,0-1,0-0
+10,Wed,2015-10-28,Atalanta,Lazio,2-1,0-1
 10,Wed,2015-10-28,Frosinone Calcio,Carpi FC,2-1,0-0
-10,Wed,2015-10-28,Hellas Verona,ACF Fiorentina,0-2,0-1
+10,Wed,2015-10-28,Hellas Verona,Fiorentina,0-2,0-1
 10,Wed,2015-10-28,AC Milan,Chievo Verona,1-0,0-0
-10,Wed,2015-10-28,SSC Napoli,US Palermo,2-0,1-0
-10,Wed,2015-10-28,AS Roma,Udinese Calcio,3-1,2-0
-10,Wed,2015-10-28,Sassuolo Calcio,Juventus,1-0,1-0
-10,Wed,2015-10-28,Torino FC,Genoa CFC,3-3,2-1
+10,Wed,2015-10-28,Napoli,US Palermo,2-0,1-0
+10,Wed,2015-10-28,Roma,Udinese,3-1,2-0
+10,Wed,2015-10-28,Sassuolo,Juventus FC,1-0,1-0
+10,Wed,2015-10-28,Torino,Genoa CFC,3-3,2-1
 10,Thu,2015-10-29,Sampdoria,Empoli FC,1-1,0-0
-11,Sat,2015-10-31,Juventus,Torino FC,2-1,1-0
-11,Sat,2015-10-31,Inter,AS Roma,1-0,1-0
-11,Sun,2015-11-01,ACF Fiorentina,Frosinone Calcio,4-1,4-0
+11,Sat,2015-10-31,Juventus FC,Torino,2-1,1-0
+11,Sat,2015-10-31,Inter de Milão,Roma,1-0,1-0
+11,Sun,2015-11-01,Fiorentina,Frosinone Calcio,4-1,4-0
 11,Sun,2015-11-01,Bologna FC,Atalanta,3-0,0-0
 11,Sun,2015-11-01,Carpi FC,Hellas Verona,0-0,
-11,Sun,2015-11-01,Genoa CFC,SSC Napoli,0-0,
-11,Sun,2015-11-01,Udinese Calcio,Sassuolo Calcio,0-0,
-11,Sun,2015-11-01,Lazio Roma,AC Milan,1-3,0-1
+11,Sun,2015-11-01,Genoa CFC,Napoli,0-0,
+11,Sun,2015-11-01,Udinese,Sassuolo,0-0,
+11,Sun,2015-11-01,Lazio,AC Milan,1-3,0-1
 11,Mon,2015-11-02,Chievo Verona,Sampdoria,1-1,1-1
 11,Mon,2015-11-02,US Palermo,Empoli FC,0-1,0-0
 12,Sat,2015-11-07,Hellas Verona,Bologna FC,0-2,0-2
 12,Sat,2015-11-07,AC Milan,Atalanta,0-0,
-12,Sun,2015-11-08,Torino FC,Inter,0-1,0-1
-12,Sun,2015-11-08,Empoli FC,Juventus,1-3,1-2
+12,Sun,2015-11-08,Torino,Inter de Milão,0-1,0-1
+12,Sun,2015-11-08,Empoli FC,Juventus FC,1-3,1-2
 12,Sun,2015-11-08,Frosinone Calcio,Genoa CFC,2-2,2-1
 12,Sun,2015-11-08,US Palermo,Chievo Verona,1-0,0-0
-12,Sun,2015-11-08,AS Roma,Lazio Roma,2-0,1-0
-12,Sun,2015-11-08,Sassuolo Calcio,Carpi FC,1-0,1-0
-12,Sun,2015-11-08,SSC Napoli,Udinese Calcio,1-0,0-0
-12,Sun,2015-11-08,Sampdoria,ACF Fiorentina,0-2,0-1
-13,Sat,2015-11-21,Bologna FC,AS Roma,2-2,1-0
-13,Sat,2015-11-21,Juventus,AC Milan,1-0,0-0
-13,Sun,2015-11-22,Hellas Verona,SSC Napoli,0-2,0-0
-13,Sun,2015-11-22,Atalanta,Torino FC,0-1,0-0
+12,Sun,2015-11-08,Roma,Lazio,2-0,1-0
+12,Sun,2015-11-08,Sassuolo,Carpi FC,1-0,1-0
+12,Sun,2015-11-08,Napoli,Udinese,1-0,0-0
+12,Sun,2015-11-08,Sampdoria,Fiorentina,0-2,0-1
+13,Sat,2015-11-21,Bologna FC,Roma,2-2,1-0
+13,Sat,2015-11-21,Juventus FC,AC Milan,1-0,0-0
+13,Sun,2015-11-22,Hellas Verona,Napoli,0-2,0-0
+13,Sun,2015-11-22,Atalanta,Torino,0-1,0-0
 13,Sun,2015-11-22,Carpi FC,Chievo Verona,1-2,0-2
-13,Sun,2015-11-22,ACF Fiorentina,Empoli FC,2-2,0-2
-13,Sun,2015-11-22,Genoa CFC,Sassuolo Calcio,2-1,0-0
-13,Sun,2015-11-22,Lazio Roma,US Palermo,1-1,0-1
-13,Sun,2015-11-22,Udinese Calcio,Sampdoria,1-0,1-0
-13,Sun,2015-11-22,Inter,Frosinone Calcio,4-0,1-0
-14,Sat,2015-11-28,Torino FC,Bologna FC,2-0,0-0
+13,Sun,2015-11-22,Fiorentina,Empoli FC,2-2,0-2
+13,Sun,2015-11-22,Genoa CFC,Sassuolo,2-1,0-0
+13,Sun,2015-11-22,Lazio,US Palermo,1-1,0-1
+13,Sun,2015-11-22,Udinese,Sampdoria,1-0,1-0
+13,Sun,2015-11-22,Inter de Milão,Frosinone Calcio,4-0,1-0
+14,Sat,2015-11-28,Torino,Bologna FC,2-0,0-0
 14,Sat,2015-11-28,AC Milan,Sampdoria,4-1,2-0
-14,Sun,2015-11-29,Chievo Verona,Udinese Calcio,2-3,1-1
+14,Sun,2015-11-29,Chievo Verona,Udinese,2-3,1-1
 14,Sun,2015-11-29,Frosinone Calcio,Hellas Verona,3-2,2-0
 14,Sun,2015-11-29,Genoa CFC,Carpi FC,1-2,1-0
-14,Sun,2015-11-29,AS Roma,Atalanta,0-2,0-1
-14,Sun,2015-11-29,Empoli FC,Lazio Roma,1-0,1-0
-14,Sun,2015-11-29,US Palermo,Juventus,0-3,0-0
-14,Mon,2015-11-30,Sassuolo Calcio,ACF Fiorentina,1-1,1-1
-14,Mon,2015-11-30,SSC Napoli,Inter,2-1,1-0
-15,Fri,2015-12-04,Lazio Roma,Juventus,0-2,0-2
-15,Sat,2015-12-05,Torino FC,AS Roma,1-1,0-0
-15,Sat,2015-12-05,Inter,Genoa CFC,1-0,0-0
-15,Sun,2015-12-06,Bologna FC,SSC Napoli,3-2,2-0
+14,Sun,2015-11-29,Roma,Atalanta,0-2,0-1
+14,Sun,2015-11-29,Empoli FC,Lazio,1-0,1-0
+14,Sun,2015-11-29,US Palermo,Juventus FC,0-3,0-0
+14,Mon,2015-11-30,Sassuolo,Fiorentina,1-1,1-1
+14,Mon,2015-11-30,Napoli,Inter de Milão,2-1,1-0
+15,Fri,2015-12-04,Lazio,Juventus FC,0-2,0-2
+15,Sat,2015-12-05,Torino,Roma,1-1,0-0
+15,Sat,2015-12-05,Inter de Milão,Genoa CFC,1-0,0-0
+15,Sun,2015-12-06,Bologna FC,Napoli,3-2,2-0
 15,Sun,2015-12-06,Atalanta,US Palermo,3-0,2-0
-15,Sun,2015-12-06,ACF Fiorentina,Udinese Calcio,3-0,1-0
+15,Sun,2015-12-06,Fiorentina,Udinese,3-0,1-0
 15,Sun,2015-12-06,Frosinone Calcio,Chievo Verona,0-2,0-0
 15,Sun,2015-12-06,Hellas Verona,Empoli FC,0-1,0-0
-15,Sun,2015-12-06,Sampdoria,Sassuolo Calcio,1-3,0-3
+15,Sun,2015-12-06,Sampdoria,Sassuolo,1-3,0-3
 15,Sun,2015-12-06,Carpi FC,AC Milan,0-0,
 16,Sat,2015-12-12,Genoa CFC,Bologna FC,0-1,0-0
 16,Sat,2015-12-12,US Palermo,Frosinone Calcio,4-1,2-1
-16,Sat,2015-12-12,Udinese Calcio,Inter,0-4,0-2
+16,Sat,2015-12-12,Udinese,Inter de Milão,0-4,0-2
 16,Sun,2015-12-13,Chievo Verona,Atalanta,1-0,0-0
 16,Sun,2015-12-13,Empoli FC,Carpi FC,3-0,0-0
 16,Sun,2015-12-13,AC Milan,Hellas Verona,1-1,0-0
-16,Sun,2015-12-13,SSC Napoli,AS Roma,0-0,
-16,Sun,2015-12-13,Juventus,ACF Fiorentina,3-1,1-1
-16,Mon,2015-12-14,Lazio Roma,Sampdoria,1-1,0-0
-16,Wed,2016-01-20,Sassuolo Calcio,Torino FC,1-1,1-1
+16,Sun,2015-12-13,Napoli,Roma,0-0,
+16,Sun,2015-12-13,Juventus FC,Fiorentina,3-1,1-1
+16,Mon,2015-12-14,Lazio,Sampdoria,1-1,0-0
+16,Wed,2016-01-20,Sassuolo,Torino,1-1,1-1
 17,Sat,2015-12-19,Bologna FC,Empoli FC,2-3,2-2
-17,Sun,2015-12-20,Carpi FC,Juventus,2-3,1-2
-17,Sun,2015-12-20,Atalanta,SSC Napoli,1-3,0-0
-17,Sun,2015-12-20,ACF Fiorentina,Chievo Verona,2-0,2-0
-17,Sun,2015-12-20,Hellas Verona,Sassuolo Calcio,1-1,1-1
-17,Sun,2015-12-20,AS Roma,Genoa CFC,2-0,1-0
+17,Sun,2015-12-20,Carpi FC,Juventus FC,2-3,1-2
+17,Sun,2015-12-20,Atalanta,Napoli,1-3,0-0
+17,Sun,2015-12-20,Fiorentina,Chievo Verona,2-0,2-0
+17,Sun,2015-12-20,Hellas Verona,Sassuolo,1-1,1-1
+17,Sun,2015-12-20,Roma,Genoa CFC,2-0,1-0
 17,Sun,2015-12-20,Frosinone Calcio,AC Milan,2-4,1-0
 17,Sun,2015-12-20,Sampdoria,US Palermo,2-0,0-0
-17,Sun,2015-12-20,Torino FC,Udinese Calcio,0-1,0-1
-17,Sun,2015-12-20,Inter,Lazio Roma,1-2,0-1
+17,Sun,2015-12-20,Torino,Udinese,0-1,0-1
+17,Sun,2015-12-20,Inter de Milão,Lazio,1-2,0-1
 18,Tue,2016-01-05,Genoa CFC,Sampdoria,2-3,0-2
-18,Wed,2016-01-06,Udinese Calcio,Atalanta,2-1,2-0
-18,Wed,2016-01-06,Chievo Verona,AS Roma,3-3,1-2
-18,Wed,2016-01-06,Juventus,Hellas Verona,3-0,2-0
-18,Wed,2016-01-06,Lazio Roma,Carpi FC,0-0,
+18,Wed,2016-01-06,Udinese,Atalanta,2-1,2-0
+18,Wed,2016-01-06,Chievo Verona,Roma,3-3,1-2
+18,Wed,2016-01-06,Juventus FC,Hellas Verona,3-0,2-0
+18,Wed,2016-01-06,Lazio,Carpi FC,0-0,
 18,Wed,2016-01-06,AC Milan,Bologna FC,0-1,0-0
-18,Wed,2016-01-06,US Palermo,ACF Fiorentina,1-3,0-2
-18,Wed,2016-01-06,Sassuolo Calcio,Frosinone Calcio,2-2,1-2
-18,Wed,2016-01-06,Empoli FC,Inter,0-1,0-1
-18,Wed,2016-01-06,SSC Napoli,Torino FC,2-1,2-1
-19,Sat,2016-01-09,Carpi FC,Udinese Calcio,2-1,1-0
-19,Sat,2016-01-09,ACF Fiorentina,Lazio Roma,1-3,0-1
-19,Sat,2016-01-09,AS Roma,AC Milan,1-1,1-0
-19,Sun,2016-01-10,Inter,Sassuolo Calcio,0-1,0-0
+18,Wed,2016-01-06,US Palermo,Fiorentina,1-3,0-2
+18,Wed,2016-01-06,Sassuolo,Frosinone Calcio,2-2,1-2
+18,Wed,2016-01-06,Empoli FC,Inter de Milão,0-1,0-1
+18,Wed,2016-01-06,Napoli,Torino,2-1,2-1
+19,Sat,2016-01-09,Carpi FC,Udinese,2-1,1-0
+19,Sat,2016-01-09,Fiorentina,Lazio,1-3,0-1
+19,Sat,2016-01-09,Roma,AC Milan,1-1,1-0
+19,Sun,2016-01-10,Inter de Milão,Sassuolo,0-1,0-0
 19,Sun,2016-01-10,Atalanta,Genoa CFC,0-2,0-0
 19,Sun,2016-01-10,Bologna FC,Chievo Verona,0-1,0-0
-19,Sun,2016-01-10,Frosinone Calcio,SSC Napoli,1-5,0-2
+19,Sun,2016-01-10,Frosinone Calcio,Napoli,1-5,0-2
 19,Sun,2016-01-10,Hellas Verona,US Palermo,0-1,0-1
-19,Sun,2016-01-10,Torino FC,Empoli FC,0-1,0-0
-19,Sun,2016-01-10,Sampdoria,Juventus,1-2,0-1
-20,Sat,2016-01-16,Atalanta,Inter,1-1,1-1
-20,Sat,2016-01-16,Torino FC,Frosinone Calcio,4-2,3-1
-20,Sat,2016-01-16,SSC Napoli,Sassuolo Calcio,3-1,2-1
+19,Sun,2016-01-10,Torino,Empoli FC,0-1,0-0
+19,Sun,2016-01-10,Sampdoria,Juventus FC,1-2,0-1
+20,Sat,2016-01-16,Atalanta,Inter de Milão,1-1,1-1
+20,Sat,2016-01-16,Torino,Frosinone Calcio,4-2,3-1
+20,Sat,2016-01-16,Napoli,Sassuolo,3-1,2-1
 20,Sun,2016-01-17,Genoa CFC,US Palermo,4-0,1-0
 20,Sun,2016-01-17,Chievo Verona,Empoli FC,1-1,1-0
-20,Sun,2016-01-17,AS Roma,Hellas Verona,1-1,1-0
-20,Sun,2016-01-17,Udinese Calcio,Juventus,0-4,0-4
-20,Sun,2016-01-17,Bologna FC,Lazio Roma,2-2,2-0
+20,Sun,2016-01-17,Roma,Hellas Verona,1-1,1-0
+20,Sun,2016-01-17,Udinese,Juventus FC,0-4,0-4
+20,Sun,2016-01-17,Bologna FC,Lazio,2-2,2-0
 20,Sun,2016-01-17,Carpi FC,Sampdoria,2-1,1-1
-20,Sun,2016-01-17,AC Milan,ACF Fiorentina,2-0,1-0
+20,Sun,2016-01-17,AC Milan,Fiorentina,2-0,1-0
 21,Sat,2016-01-23,Frosinone Calcio,Atalanta,0-0,
 21,Sat,2016-01-23,Empoli FC,AC Milan,2-2,1-1
-21,Sun,2016-01-24,ACF Fiorentina,Torino FC,2-0,1-0
-21,Sun,2016-01-24,Sassuolo Calcio,Bologna FC,0-2,0-0
-21,Sun,2016-01-24,Inter,Carpi FC,1-1,1-0
-21,Sun,2016-01-24,Lazio Roma,Chievo Verona,4-1,0-1
+21,Sun,2016-01-24,Fiorentina,Torino,2-0,1-0
+21,Sun,2016-01-24,Sassuolo,Bologna FC,0-2,0-0
+21,Sun,2016-01-24,Inter de Milão,Carpi FC,1-1,1-0
+21,Sun,2016-01-24,Lazio,Chievo Verona,4-1,0-1
 21,Sun,2016-01-24,Hellas Verona,Genoa CFC,1-1,1-1
-21,Sun,2016-01-24,Sampdoria,SSC Napoli,2-4,1-2
-21,Sun,2016-01-24,US Palermo,Udinese Calcio,4-1,1-0
-21,Sun,2016-01-24,Juventus,AS Roma,1-0,0-0
+21,Sun,2016-01-24,Sampdoria,Napoli,2-4,1-2
+21,Sun,2016-01-24,US Palermo,Udinese,4-1,1-0
+21,Sun,2016-01-24,Juventus FC,Roma,1-0,0-0
 22,Sat,2016-01-30,Carpi FC,US Palermo,1-1,0-1
-22,Sat,2016-01-30,Atalanta,Sassuolo Calcio,1-1,1-1
-22,Sat,2016-01-30,AS Roma,Frosinone Calcio,3-1,1-1
-22,Sun,2016-01-31,Chievo Verona,Juventus,0-4,0-2
-22,Sun,2016-01-31,SSC Napoli,Empoli FC,5-1,2-1
-22,Sun,2016-01-31,Genoa CFC,ACF Fiorentina,0-0,
-22,Sun,2016-01-31,Torino FC,Hellas Verona,0-0,
-22,Sun,2016-01-31,Udinese Calcio,Lazio Roma,0-0,
+22,Sat,2016-01-30,Atalanta,Sassuolo,1-1,1-1
+22,Sat,2016-01-30,Roma,Frosinone Calcio,3-1,1-1
+22,Sun,2016-01-31,Chievo Verona,Juventus FC,0-4,0-2
+22,Sun,2016-01-31,Napoli,Empoli FC,5-1,2-1
+22,Sun,2016-01-31,Genoa CFC,Fiorentina,0-0,
+22,Sun,2016-01-31,Torino,Hellas Verona,0-0,
+22,Sun,2016-01-31,Udinese,Lazio,0-0,
 22,Sun,2016-01-31,Bologna FC,Sampdoria,3-2,2-0
-22,Sun,2016-01-31,AC Milan,Inter,3-0,1-0
-23,Tue,2016-02-02,Sassuolo Calcio,AS Roma,0-2,0-1
+22,Sun,2016-01-31,AC Milan,Inter de Milão,3-0,1-0
+23,Tue,2016-02-02,Sassuolo,Roma,0-2,0-1
 23,Wed,2016-02-03,Frosinone Calcio,Bologna FC,1-0,0-0
 23,Wed,2016-02-03,Hellas Verona,Atalanta,2-1,1-1
-23,Wed,2016-02-03,ACF Fiorentina,Carpi FC,2-1,1-0
-23,Wed,2016-02-03,Inter,Chievo Verona,1-0,0-0
-23,Wed,2016-02-03,Juventus,Genoa CFC,1-0,1-0
+23,Wed,2016-02-03,Fiorentina,Carpi FC,2-1,1-0
+23,Wed,2016-02-03,Inter de Milão,Chievo Verona,1-0,0-0
+23,Wed,2016-02-03,Juventus FC,Genoa CFC,1-0,1-0
 23,Wed,2016-02-03,US Palermo,AC Milan,0-2,0-2
-23,Wed,2016-02-03,Lazio Roma,SSC Napoli,0-2,0-2
-23,Wed,2016-02-03,Sampdoria,Torino FC,2-2,0-0
-23,Wed,2016-02-03,Empoli FC,Udinese Calcio,1-1,0-1
-24,Sat,2016-02-06,Bologna FC,ACF Fiorentina,1-1,0-0
-24,Sat,2016-02-06,Genoa CFC,Lazio Roma,0-0,
-24,Sun,2016-02-07,Hellas Verona,Inter,3-3,2-1
-24,Sun,2016-02-07,SSC Napoli,Carpi FC,1-0,0-0
-24,Sun,2016-02-07,Torino FC,Chievo Verona,1-2,1-1
-24,Sun,2016-02-07,Frosinone Calcio,Juventus,0-2,0-0
-24,Sun,2016-02-07,Sassuolo Calcio,US Palermo,2-2,1-1
-24,Sun,2016-02-07,AC Milan,Udinese Calcio,1-1,0-1
+23,Wed,2016-02-03,Lazio,Napoli,0-2,0-2
+23,Wed,2016-02-03,Sampdoria,Torino,2-2,0-0
+23,Wed,2016-02-03,Empoli FC,Udinese,1-1,0-1
+24,Sat,2016-02-06,Bologna FC,Fiorentina,1-1,0-0
+24,Sat,2016-02-06,Genoa CFC,Lazio,0-0,
+24,Sun,2016-02-07,Hellas Verona,Inter de Milão,3-3,2-1
+24,Sun,2016-02-07,Napoli,Carpi FC,1-0,0-0
+24,Sun,2016-02-07,Torino,Chievo Verona,1-2,1-1
+24,Sun,2016-02-07,Frosinone Calcio,Juventus FC,0-2,0-0
+24,Sun,2016-02-07,Sassuolo,US Palermo,2-2,1-1
+24,Sun,2016-02-07,AC Milan,Udinese,1-1,0-1
 24,Sun,2016-02-07,Atalanta,Empoli FC,0-0,
-24,Sun,2016-02-07,AS Roma,Sampdoria,2-1,1-0
-25,Thu,2016-02-11,Lazio Roma,Hellas Verona,5-2,1-0
-25,Fri,2016-02-12,Carpi FC,AS Roma,1-3,0-0
+24,Sun,2016-02-07,Roma,Sampdoria,2-1,1-0
+25,Thu,2016-02-11,Lazio,Hellas Verona,5-2,1-0
+25,Fri,2016-02-12,Carpi FC,Roma,1-3,0-0
 25,Sat,2016-02-13,Empoli FC,Frosinone Calcio,1-2,0-1
-25,Sat,2016-02-13,Chievo Verona,Sassuolo Calcio,1-1,1-1
-25,Sat,2016-02-13,Juventus,SSC Napoli,1-0,0-0
+25,Sat,2016-02-13,Chievo Verona,Sassuolo,1-1,1-1
+25,Sat,2016-02-13,Juventus FC,Napoli,1-0,0-0
 25,Sun,2016-02-14,AC Milan,Genoa CFC,2-1,1-0
 25,Sun,2016-02-14,Sampdoria,Atalanta,0-0,
-25,Sun,2016-02-14,Udinese Calcio,Bologna FC,0-1,0-0
-25,Sun,2016-02-14,US Palermo,Torino FC,1-3,1-2
-25,Sun,2016-02-14,ACF Fiorentina,Inter,2-1,0-1
-26,Fri,2016-02-19,Bologna FC,Juventus,0-0,
+25,Sun,2016-02-14,Udinese,Bologna FC,0-1,0-0
+25,Sun,2016-02-14,US Palermo,Torino,1-3,1-2
+25,Sun,2016-02-14,Fiorentina,Inter de Milão,2-1,0-1
+26,Fri,2016-02-19,Bologna FC,Juventus FC,0-0,
 26,Sat,2016-02-20,Hellas Verona,Chievo Verona,3-1,1-0
-26,Sat,2016-02-20,Inter,Sampdoria,3-1,1-0
-26,Sun,2016-02-21,Torino FC,Carpi FC,0-0,
-26,Sun,2016-02-21,Sassuolo Calcio,Empoli FC,3-2,1-1
-26,Sun,2016-02-21,Atalanta,ACF Fiorentina,2-3,0-0
-26,Sun,2016-02-21,Genoa CFC,Udinese Calcio,2-1,0-1
-26,Sun,2016-02-21,Frosinone Calcio,Lazio Roma,0-0,
-26,Sun,2016-02-21,AS Roma,US Palermo,5-0,1-0
-26,Mon,2016-02-22,SSC Napoli,AC Milan,1-1,1-1
-27,Sat,2016-02-27,Empoli FC,AS Roma,1-3,1-2
-27,Sat,2016-02-27,AC Milan,Torino FC,1-0,1-0
+26,Sat,2016-02-20,Inter de Milão,Sampdoria,3-1,1-0
+26,Sun,2016-02-21,Torino,Carpi FC,0-0,
+26,Sun,2016-02-21,Sassuolo,Empoli FC,3-2,1-1
+26,Sun,2016-02-21,Atalanta,Fiorentina,2-3,0-0
+26,Sun,2016-02-21,Genoa CFC,Udinese,2-1,0-1
+26,Sun,2016-02-21,Frosinone Calcio,Lazio,0-0,
+26,Sun,2016-02-21,Roma,US Palermo,5-0,1-0
+26,Mon,2016-02-22,Napoli,AC Milan,1-1,1-1
+27,Sat,2016-02-27,Empoli FC,Roma,1-3,1-2
+27,Sat,2016-02-27,AC Milan,Torino,1-0,1-0
 27,Sun,2016-02-28,US Palermo,Bologna FC,0-0,
 27,Sun,2016-02-28,Carpi FC,Atalanta,1-1,0-0
 27,Sun,2016-02-28,Sampdoria,Frosinone Calcio,2-0,1-0
 27,Sun,2016-02-28,Chievo Verona,Genoa CFC,1-0,0-0
-27,Sun,2016-02-28,Udinese Calcio,Hellas Verona,2-0,1-0
-27,Sun,2016-02-28,Juventus,Inter,2-0,0-0
-27,Mon,2016-02-29,Lazio Roma,Sassuolo Calcio,0-2,0-1
-27,Mon,2016-02-29,ACF Fiorentina,SSC Napoli,1-1,1-1
-28,Fri,2016-03-04,AS Roma,ACF Fiorentina,4-1,3-1
+27,Sun,2016-02-28,Udinese,Hellas Verona,2-0,1-0
+27,Sun,2016-02-28,Juventus FC,Inter de Milão,2-0,0-0
+27,Mon,2016-02-29,Lazio,Sassuolo,0-2,0-1
+27,Mon,2016-02-29,Fiorentina,Napoli,1-1,1-1
+28,Fri,2016-03-04,Roma,Fiorentina,4-1,3-1
 28,Sat,2016-03-05,Hellas Verona,Sampdoria,0-3,0-3
-28,Sat,2016-03-05,SSC Napoli,Chievo Verona,3-1,2-1
-28,Sun,2016-03-06,Torino FC,Lazio Roma,1-1,1-0
+28,Sat,2016-03-05,Napoli,Chievo Verona,3-1,2-1
+28,Sun,2016-03-06,Torino,Lazio,1-1,1-0
 28,Sun,2016-03-06,Bologna FC,Carpi FC,0-0,
 28,Sun,2016-03-06,Genoa CFC,Empoli FC,1-0,0-0
-28,Sun,2016-03-06,Atalanta,Juventus,0-2,0-1
-28,Sun,2016-03-06,Sassuolo Calcio,AC Milan,2-0,1-0
-28,Sun,2016-03-06,Frosinone Calcio,Udinese Calcio,2-0,1-0
-28,Sun,2016-03-06,Inter,US Palermo,3-1,2-1
-29,Fri,2016-03-11,Juventus,Sassuolo Calcio,1-0,1-0
+28,Sun,2016-03-06,Atalanta,Juventus FC,0-2,0-1
+28,Sun,2016-03-06,Sassuolo,AC Milan,2-0,1-0
+28,Sun,2016-03-06,Frosinone Calcio,Udinese,2-0,1-0
+28,Sun,2016-03-06,Inter de Milão,US Palermo,3-1,2-1
+29,Fri,2016-03-11,Juventus FC,Sassuolo,1-0,1-0
 29,Sat,2016-03-12,Empoli FC,Sampdoria,1-1,0-1
-29,Sat,2016-03-12,Inter,Bologna FC,2-1,0-0
+29,Sat,2016-03-12,Inter de Milão,Bologna FC,2-1,0-0
 29,Sun,2016-03-13,Chievo Verona,AC Milan,0-0,
 29,Sun,2016-03-13,Carpi FC,Frosinone Calcio,2-1,1-0
-29,Sun,2016-03-13,ACF Fiorentina,Hellas Verona,1-1,1-0
-29,Sun,2016-03-13,Udinese Calcio,AS Roma,1-2,0-1
-29,Sun,2016-03-13,Genoa CFC,Torino FC,3-2,2-2
-29,Sun,2016-03-13,Lazio Roma,Atalanta,2-0,0-0
-29,Sun,2016-03-13,US Palermo,SSC Napoli,0-1,0-1
+29,Sun,2016-03-13,Fiorentina,Hellas Verona,1-1,1-0
+29,Sun,2016-03-13,Udinese,Roma,1-2,0-1
+29,Sun,2016-03-13,Genoa CFC,Torino,3-2,2-2
+29,Sun,2016-03-13,Lazio,Atalanta,2-0,0-0
+29,Sun,2016-03-13,US Palermo,Napoli,0-1,0-1
 30,Sat,2016-03-19,Empoli FC,US Palermo,0-0,
-30,Sat,2016-03-19,AS Roma,Inter,1-1,0-0
+30,Sat,2016-03-19,Roma,Inter de Milão,1-1,0-0
 30,Sun,2016-03-20,Atalanta,Bologna FC,2-0,2-0
-30,Sun,2016-03-20,Torino FC,Juventus,1-4,0-2
-30,Sun,2016-03-20,Sassuolo Calcio,Udinese Calcio,1-1,0-1
+30,Sun,2016-03-20,Torino,Juventus FC,1-4,0-2
+30,Sun,2016-03-20,Sassuolo,Udinese,1-1,0-1
 30,Sun,2016-03-20,Hellas Verona,Carpi FC,1-2,0-1
 30,Sun,2016-03-20,Sampdoria,Chievo Verona,0-1,0-1
-30,Sun,2016-03-20,Frosinone Calcio,ACF Fiorentina,0-0,
-30,Sun,2016-03-20,SSC Napoli,Genoa CFC,3-1,0-1
-30,Sun,2016-03-20,AC Milan,Lazio Roma,1-1,1-1
-31,Sat,2016-04-02,Carpi FC,Sassuolo Calcio,1-3,1-2
-31,Sat,2016-04-02,Juventus,Empoli FC,1-0,1-0
-31,Sun,2016-04-03,Udinese Calcio,SSC Napoli,3-1,2-1
+30,Sun,2016-03-20,Frosinone Calcio,Fiorentina,0-0,
+30,Sun,2016-03-20,Napoli,Genoa CFC,3-1,0-1
+30,Sun,2016-03-20,AC Milan,Lazio,1-1,1-1
+31,Sat,2016-04-02,Carpi FC,Sassuolo,1-3,1-2
+31,Sat,2016-04-02,Juventus FC,Empoli FC,1-0,1-0
+31,Sun,2016-04-03,Udinese,Napoli,3-1,2-1
 31,Sun,2016-04-03,Genoa CFC,Frosinone Calcio,4-0,1-0
 31,Sun,2016-04-03,Atalanta,AC Milan,2-1,1-1
 31,Sun,2016-04-03,Chievo Verona,US Palermo,3-1,1-1
-31,Sun,2016-04-03,Lazio Roma,AS Roma,1-4,0-1
-31,Sun,2016-04-03,ACF Fiorentina,Sampdoria,1-1,1-1
-31,Sun,2016-04-03,Inter,Torino FC,1-2,1-0
+31,Sun,2016-04-03,Lazio,Roma,1-4,0-1
+31,Sun,2016-04-03,Fiorentina,Sampdoria,1-1,1-1
+31,Sun,2016-04-03,Inter de Milão,Torino,1-2,1-0
 31,Mon,2016-04-04,Bologna FC,Hellas Verona,0-1,0-1
-32,Sat,2016-04-09,Frosinone Calcio,Inter,0-1,0-0
+32,Sat,2016-04-09,Frosinone Calcio,Inter de Milão,0-1,0-0
 32,Sat,2016-04-09,Chievo Verona,Carpi FC,1-0,0-0
-32,Sat,2016-04-09,Sassuolo Calcio,Genoa CFC,0-1,0-1
-32,Sat,2016-04-09,AC Milan,Juventus,1-2,1-1
-32,Sun,2016-04-10,Empoli FC,ACF Fiorentina,2-0,1-0
-32,Sun,2016-04-10,Torino FC,Atalanta,2-1,1-0
-32,Sun,2016-04-10,SSC Napoli,Hellas Verona,3-0,2-0
-32,Sun,2016-04-10,Sampdoria,Udinese Calcio,2-0,0-0
-32,Sun,2016-04-10,US Palermo,Lazio Roma,0-3,0-2
-32,Mon,2016-04-11,AS Roma,Bologna FC,1-1,0-1
-33,Sat,2016-04-16,Bologna FC,Torino FC,0-1,0-0
+32,Sat,2016-04-09,Sassuolo,Genoa CFC,0-1,0-1
+32,Sat,2016-04-09,AC Milan,Juventus FC,1-2,1-1
+32,Sun,2016-04-10,Empoli FC,Fiorentina,2-0,1-0
+32,Sun,2016-04-10,Torino,Atalanta,2-1,1-0
+32,Sun,2016-04-10,Napoli,Hellas Verona,3-0,2-0
+32,Sun,2016-04-10,Sampdoria,Udinese,2-0,0-0
+32,Sun,2016-04-10,US Palermo,Lazio,0-3,0-2
+32,Mon,2016-04-11,Roma,Bologna FC,1-1,0-1
+33,Sat,2016-04-16,Bologna FC,Torino,0-1,0-0
 33,Sat,2016-04-16,Carpi FC,Genoa CFC,4-1,2-1
-33,Sat,2016-04-16,Inter,SSC Napoli,2-0,2-0
-33,Sun,2016-04-17,Atalanta,AS Roma,3-3,2-2
-33,Sun,2016-04-17,Udinese Calcio,Chievo Verona,0-0,
+33,Sat,2016-04-16,Inter de Milão,Napoli,2-0,2-0
+33,Sun,2016-04-17,Atalanta,Roma,3-3,2-2
+33,Sun,2016-04-17,Udinese,Chievo Verona,0-0,
 33,Sun,2016-04-17,Hellas Verona,Frosinone Calcio,1-2,0-1
-33,Sun,2016-04-17,Juventus,US Palermo,4-0,1-0
-33,Sun,2016-04-17,ACF Fiorentina,Sassuolo Calcio,3-1,1-0
-33,Sun,2016-04-17,Lazio Roma,Empoli FC,2-0,2-0
+33,Sun,2016-04-17,Juventus FC,US Palermo,4-0,1-0
+33,Sun,2016-04-17,Fiorentina,Sassuolo,3-1,1-0
+33,Sun,2016-04-17,Lazio,Empoli FC,2-0,2-0
 33,Sun,2016-04-17,Sampdoria,AC Milan,0-1,0-0
-34,Tue,2016-04-19,SSC Napoli,Bologna FC,6-0,2-0
-34,Wed,2016-04-20,Sassuolo Calcio,Sampdoria,0-0,
+34,Tue,2016-04-19,Napoli,Bologna FC,6-0,2-0
+34,Wed,2016-04-20,Sassuolo,Sampdoria,0-0,
 34,Wed,2016-04-20,US Palermo,Atalanta,2-2,1-1
-34,Wed,2016-04-20,Udinese Calcio,ACF Fiorentina,2-1,1-1
+34,Wed,2016-04-20,Udinese,Fiorentina,2-1,1-1
 34,Wed,2016-04-20,Chievo Verona,Frosinone Calcio,5-1,1-1
 34,Wed,2016-04-20,Empoli FC,Hellas Verona,1-0,0-0
-34,Wed,2016-04-20,Genoa CFC,Inter,1-0,0-0
-34,Wed,2016-04-20,Juventus,Lazio Roma,3-0,1-0
-34,Wed,2016-04-20,AS Roma,Torino FC,3-2,0-1
+34,Wed,2016-04-20,Genoa CFC,Inter de Milão,1-0,0-0
+34,Wed,2016-04-20,Juventus FC,Lazio,3-0,1-0
+34,Wed,2016-04-20,Roma,Torino,3-2,0-1
 34,Thu,2016-04-21,AC Milan,Carpi FC,0-0,
-35,Sat,2016-04-23,Inter,Udinese Calcio,3-1,1-1
+35,Sat,2016-04-23,Inter de Milão,Udinese,3-1,1-1
 35,Sun,2016-04-24,Frosinone Calcio,US Palermo,0-2,0-0
 35,Sun,2016-04-24,Atalanta,Chievo Verona,1-0,0-0
 35,Sun,2016-04-24,Bologna FC,Genoa CFC,2-0,1-0
-35,Sun,2016-04-24,Sampdoria,Lazio Roma,2-1,1-1
-35,Sun,2016-04-24,Torino FC,Sassuolo Calcio,1-3,1-1
-35,Sun,2016-04-24,ACF Fiorentina,Juventus,1-2,0-1
-35,Mon,2016-04-25,AS Roma,SSC Napoli,1-0,0-0
+35,Sun,2016-04-24,Sampdoria,Lazio,2-1,1-1
+35,Sun,2016-04-24,Torino,Sassuolo,1-3,1-1
+35,Sun,2016-04-24,Fiorentina,Juventus FC,1-2,0-1
+35,Mon,2016-04-25,Roma,Napoli,1-0,0-0
 35,Mon,2016-04-25,Hellas Verona,AC Milan,2-1,0-1
 35,Mon,2016-04-25,Carpi FC,Empoli FC,1-0,0-0
-36,Sat,2016-04-30,Udinese Calcio,Torino FC,1-5,0-2
-36,Sat,2016-04-30,Chievo Verona,ACF Fiorentina,0-0,
-36,Sun,2016-05-01,Juventus,Carpi FC,2-0,1-0
+36,Sat,2016-04-30,Udinese,Torino,1-5,0-2
+36,Sat,2016-04-30,Chievo Verona,Fiorentina,0-0,
+36,Sun,2016-05-01,Juventus FC,Carpi FC,2-0,1-0
 36,Sun,2016-05-01,Empoli FC,Bologna FC,0-0,
 36,Sun,2016-05-01,AC Milan,Frosinone Calcio,3-3,0-2
-36,Sun,2016-05-01,Sassuolo Calcio,Hellas Verona,1-0,0-0
+36,Sun,2016-05-01,Sassuolo,Hellas Verona,1-0,0-0
 36,Sun,2016-05-01,US Palermo,Sampdoria,2-0,1-0
-36,Sun,2016-05-01,Lazio Roma,Inter,2-0,1-0
-36,Mon,2016-05-02,Genoa CFC,AS Roma,2-3,1-1
-36,Mon,2016-05-02,SSC Napoli,Atalanta,2-1,1-0
-37,Sat,2016-05-07,Inter,Empoli FC,2-1,2-1
+36,Sun,2016-05-01,Lazio,Inter de Milão,2-0,1-0
+36,Mon,2016-05-02,Genoa CFC,Roma,2-3,1-1
+36,Mon,2016-05-02,Napoli,Atalanta,2-1,1-0
+37,Sat,2016-05-07,Inter de Milão,Empoli FC,2-1,2-1
 37,Sat,2016-05-07,Bologna FC,AC Milan,0-1,0-1
-37,Sun,2016-05-08,AS Roma,Chievo Verona,3-0,2-0
+37,Sun,2016-05-08,Roma,Chievo Verona,3-0,2-0
 37,Sun,2016-05-08,Sampdoria,Genoa CFC,0-3,0-2
-37,Sun,2016-05-08,Carpi FC,Lazio Roma,1-3,0-2
-37,Sun,2016-05-08,ACF Fiorentina,US Palermo,0-0,
-37,Sun,2016-05-08,Frosinone Calcio,Sassuolo Calcio,0-1,0-0
-37,Sun,2016-05-08,Atalanta,Udinese Calcio,1-1,1-1
-37,Sun,2016-05-08,Hellas Verona,Juventus,2-1,1-0
-37,Sun,2016-05-08,Torino FC,SSC Napoli,1-2,0-2
-38,Sat,2016-05-14,Juventus,Sampdoria,5-0,3-0
-38,Sat,2016-05-14,SSC Napoli,Frosinone Calcio,4-0,1-0
-38,Sat,2016-05-14,Sassuolo Calcio,Inter,3-1,3-1
-38,Sat,2016-05-14,AC Milan,AS Roma,1-3,0-1
+37,Sun,2016-05-08,Carpi FC,Lazio,1-3,0-2
+37,Sun,2016-05-08,Fiorentina,US Palermo,0-0,
+37,Sun,2016-05-08,Frosinone Calcio,Sassuolo,0-1,0-0
+37,Sun,2016-05-08,Atalanta,Udinese,1-1,1-1
+37,Sun,2016-05-08,Hellas Verona,Juventus FC,2-1,1-0
+37,Sun,2016-05-08,Torino,Napoli,1-2,0-2
+38,Sat,2016-05-14,Juventus FC,Sampdoria,5-0,3-0
+38,Sat,2016-05-14,Napoli,Frosinone Calcio,4-0,1-0
+38,Sat,2016-05-14,Sassuolo,Inter de Milão,3-1,3-1
+38,Sat,2016-05-14,AC Milan,Roma,1-3,0-1
 38,Sun,2016-05-15,Genoa CFC,Atalanta,1-2,0-0
 38,Sun,2016-05-15,Chievo Verona,Bologna FC,0-0,
-38,Sun,2016-05-15,Empoli FC,Torino FC,2-1,1-0
-38,Sun,2016-05-15,Udinese Calcio,Carpi FC,1-2,0-2
-38,Sun,2016-05-15,Lazio Roma,ACF Fiorentina,2-4,1-3
+38,Sun,2016-05-15,Empoli FC,Torino,2-1,1-0
+38,Sun,2016-05-15,Udinese,Carpi FC,1-2,0-2
+38,Sun,2016-05-15,Lazio,Fiorentina,2-4,1-3
 38,Sun,2016-05-15,US Palermo,Hellas Verona,3-2,1-0
