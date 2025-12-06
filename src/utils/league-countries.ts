@@ -16,7 +16,7 @@ export const leagueCountries: Record<string, string> = {
   "Liga Escocesa": "sx",
 
   // 🇪🇸 Espanha
-  "LaLiga": "es",
+  "La Liga": "es",
 
   // 🇮🇹 Itália
   "Série A": "it",

@@ -11,6 +11,7 @@ const userRoutes = require("./routes/userRoutes");
 const footballRoutes = require("./routes/footballRoutes");
 const betSlipRoutes = require("./routes/betSlipRoutes");
 const financeRoutes = require("./routes/financeRoutes");
+const h2hRoutes = require("./routes/h2h")
 
 const app = express();
 app.use(cors());
@@ -28,6 +29,7 @@ app.use("/api/football", footballRoutes);
 app.use("/football", footballRoutes);
 app.use("/api/apostas", betSlipRoutes);
 app.use("/api/financeiro", financeRoutes);
+app.use("/api/matches/h2h", h2hRoutes);
 
 // Executar scraper manual ou agendado
 function runScraperOnce(reason = "manual", overridesEnv = {}) {

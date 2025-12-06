@@ -10,15 +10,15 @@ import pandas as pd
 from seleniumbase import SB
 
 URL_CAMPEONATOS = {
-    "https://www.betano.bet.br/sport/futebol/brasil/brasileirao-serie-a-betano/10016/": "Brasileirao Serie A Betano",
+    "https://www.betano.bet.br/sport/futebol/brasil/brasileirao-serie-a-betano/10016/": "Brasileirão - Série A Betano",
     "https://www.betano.bet.br/sport/futebol/competicoes/copa-libertadores/189817/": "Copa Libertadores",
-    "https://www.betano.bet.br/sport/futebol/brasil/brasileirao-serie-b/10017/": "Brasileirao Serie B",
+    "https://www.betano.bet.br/sport/futebol/brasil/brasileirao-serie-b/10017/": "Brasileirão - Série B",
     "https://www.betano.bet.br/sport/futebol/competicoes/liga-dos-campeoes/188566/": "Liga dos Campeões",
-    "https://www.betano.bet.br/sport/futebol/competicoes/inglaterra/1/": "Inglaterra",
-    "https://www.betano.bet.br/sport/futebol/competicoes/espanha/2/": "Espanha",
-    "https://www.betano.bet.br/sport/futebol/competicoes/italia/87/": "Italia",
-    "https://www.betano.bet.br/sport/futebol/competicoes/alemanha/24/": "Alemanha",
-    "https://www.betano.bet.br/sport/futebol/competicoes/franca/23/": "França"
+    "https://www.betano.bet.br/sport/futebol/competicoes/inglaterra/1/": "Premier League",
+    "https://www.betano.bet.br/sport/futebol/competicoes/espanha/2/": "La Liga",
+    "https://www.betano.bet.br/sport/futebol/competicoes/italia/87/": "Série A",
+    "https://www.betano.bet.br/sport/futebol/competicoes/alemanha/24/": "Bundesliga",
+    "https://www.betano.bet.br/sport/futebol/competicoes/franca/23/": "Ligue 1"
 }
 
 ODD_MIN, ODD_MAX = 1.01, 100.0
