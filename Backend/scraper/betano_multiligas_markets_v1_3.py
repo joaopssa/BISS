@@ -3,7 +3,7 @@
 from __future__ import annotations
 import argparse, json, re, sys, time, csv
 from dataclasses import dataclass, asdict
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
@@ -62,7 +62,7 @@ def _split_teams(title:str)->Tuple[str,str,str]:
     return t,"",""
 
 def _iso_now()->str:
-    return datetime.now(UTC).isoformat()
+    return datetime.now(timezone.utc).isoformat()
 
 def _safe_open(sb, url:str, tries:int=2)->bool:
     for _ in range(tries):
@@ -123,7 +123,7 @@ class BetanoScraper:
             except Exception:
                 pass
 
-            now_utc = datetime.now(UTC)
+            now_utc = datetime.now(timezone.utc)
             cutoff = now_utc + timedelta(hours=self.janela_horas)
             regs: List[LinhaMercado] = []
 

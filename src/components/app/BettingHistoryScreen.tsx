@@ -1,7 +1,7 @@
 // src/components/app/BettingHistoryScreen.tsx
 "use client";
 
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import api from "@/services/api";
 import clubsMap from "@/utils/clubs-map.json";
@@ -26,6 +26,11 @@ type Aposta = {
 };
 
 export default function BettingHistoryScreen() {
+  // Scroll para o topo ao montar o componente
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const [apostas, setApostas] = useState<Aposta[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [erro, setErro] = useState<string | null>(null);
@@ -35,6 +40,23 @@ export default function BettingHistoryScreen() {
   const [filterLeague, setFilterLeague] = useState<string | null>(null);
   const [filterMarket, setFilterMarket] = useState<string | null>(null);
   const [filterStatus, setFilterStatus] = useState<string | null>(null);
+
+  // Ref para detectar clique fora do painel de filtros
+  const filtersRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (!showFilters) return;
+    const onDown = (e: MouseEvent) => {
+      const target = e.target as Element | null;
+      if (!target) return;
+      // fecha se o clique não for dentro do painel e não for no botão que abre o filtro
+      if (filtersRef.current && !filtersRef.current.contains(target) && !(target.closest && target.closest('#filters-toggle'))) {
+        setShowFilters(false);
+      }
+    };
+    document.addEventListener('mousedown', onDown);
+    return () => document.removeEventListener('mousedown', onDown);
+  }, [showFilters]);
 
   const fetchHistorico = async () => {
     setLoading(true);
@@ -167,16 +189,7 @@ export default function BettingHistoryScreen() {
           
           <div className="flex items-center gap-3 relative">
             <Button
-              className="bg-white text-[#014a8f] ml-3"
-              onClick={async () => {
-                await api.post("/apostas/verificar");
-                fetchHistorico(); // recarrega tela
-              }}
-            >
-              Atualizar resultados
-            </Button>
-
-            <Button
+              id="filters-toggle"
               onClick={() => setShowFilters(!showFilters)}
               className={`text-sm flex items-center gap-2 ${
                 showFilters || filterLeague || filterMarket || filterStatus
@@ -192,7 +205,7 @@ export default function BettingHistoryScreen() {
             </Button>
 
             {showFilters && (
-              <div className="absolute right-0 mt-2 w-72 p-4 bg-white dark:bg-neutral-900 rounded-lg shadow-xl border border-gray-200 dark:border-neutral-800 z-50 animate-in fade-in zoom-in-95 duration-200">
+              <div ref={filtersRef} className="absolute right-0 mt-2 w-72 p-4 bg-white dark:bg-neutral-900 rounded-lg shadow-xl border border-gray-200 dark:border-neutral-800 z-50 animate-in fade-in zoom-in-95 duration-200">
                 <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-3 text-sm">Filtrar por:</h3>
                 
                 {/* Filtro de Liga */}
