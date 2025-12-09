@@ -91,16 +91,19 @@ exports.login = async (req, res) => {
             return res.status(401).json({ message: "Credenciais inválidas." });
         }
 
+        // Monta token
         const payload = { user: { id: user.id_usuario } };
         const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "7d" });
 
-        res.json({
+        // 🔥 ESTA PARTE FALTAVA: devolver JSON
+        return res.json({
             token,
             user: {
                 id: user.id_usuario,
                 name: user.nome_completo,
                 email: user.email,
-            },
+                favoriteTeam: user.clubes_favoritos,   // 👈 AQUI VAI O CLUBE FAVORITO
+            }
         });
 
     } catch (error) {
@@ -108,3 +111,32 @@ exports.login = async (req, res) => {
         res.status(500).json({ message: "Erro no servidor." });
     }
 };
+
+exports.me = async (req, res) => {
+  try {
+    const userId = req.user.id;
+
+    const [rows] = await pool.query(
+      "SELECT id_usuario, nome_completo, email, clubes_favoritos FROM usuarios WHERE id_usuario = ?",
+      [userId]
+    );
+
+    if (rows.length === 0) {
+      return res.status(404).json({ message: "Usuário não encontrado." });
+    }
+
+    const user = rows[0];
+
+    return res.json({
+      id: user.id_usuario,
+      name: user.nome_completo,
+      email: user.email,
+      favoriteTeam: user.clubes_favoritos,
+    });
+
+  } catch (err) {
+    console.error("Erro em /auth/me:", err);
+    return res.status(500).json({ message: "Erro interno do servidor" });
+  }
+};
+

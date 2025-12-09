@@ -1,31 +1,45 @@
-
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { User, Trophy, Target, TrendingUp, Award, Settings, Crown, Medal, Star } from 'lucide-react';
+import { User, Trophy, Target, TrendingUp, Award, Crown, Medal } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContexts';
+import clubsMap from "@/utils/clubs-map.json";
+import { getLocalLogo } from "@/utils/getLocalLogo";
 
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const auth = useAuth();
-  const storedUser = auth?.user || (localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user') as string) : null);
+
+  const storedUser =
+    auth?.user ||
+    (localStorage.getItem("user")
+      ? JSON.parse(localStorage.getItem("user") as string)
+      : null);
 
   const [userProfile, setUserProfile] = useState<any>({
-    name: storedUser?.name || 'Usuário',
-    username: storedUser?.email ? `@${storedUser.email.split('@')[0]}` : '@seunome',
-    avatar: storedUser?.name ? String(storedUser.name).trim().slice(0,1).toUpperCase() : 'U',
+    name: storedUser?.name || "Usuário",
+    username: storedUser?.email
+      ? `@${storedUser.email.split("@")[0]}`
+      : "@seunome",
+    avatar: storedUser?.name
+      ? String(storedUser.name).trim().slice(0, 1).toUpperCase()
+      : "U",
+
+    // 👇 AGORA TEM FAVORITE TEAM AQUI
+    favoriteTeam: storedUser?.favoriteTeam || null,
+
     rank: null,
     points: 0,
-    level: 'Usuário',
+    level: "Usuário",
     winRate: 0,
     totalBets: 0,
     totalProfit: 0,
     currentStreak: 0,
     longestStreak: 0,
-    joinDate: null
+    joinDate: null,
   });
+
 
   const [achievements, setAchievements] = useState<any[]>([]);
   const [monthlyStats, setMonthlyStats] = useState<any[]>([]);
@@ -131,8 +145,16 @@ export const ProfileRankingScreen: React.FC = () => {
           try {
             const me = await api2.get('/auth/me');
             if (me?.data?.user) {
-              name = me.data.user.name || name;
-              username = me.data.user.email ? `@${me.data.user.email.split('@')[0]}` : username;
+                name = me.data.user.name || name;
+                username = me.data.user.email ? `@${me.data.user.email.split('@')[0]}` : username;
+
+                // 🔥 Capturar o clube favorito
+                if (me.data.user.favoriteTeam) {
+                    setUserProfile((p:any) => ({
+                        ...p,
+                        favoriteTeam: me.data.user.favoriteTeam
+                    }));
+                }
             }
           } catch (e) {
             // fallback para /user/profile
@@ -208,11 +230,23 @@ export const ProfileRankingScreen: React.FC = () => {
       <Card>
         <CardContent className="p-6">
           <div className="flex items-center gap-4 mb-4">
-            <Avatar className="w-16 h-16">
+            {/* Avatar com logo do clube favorito */}
+          <Avatar className="w-16 h-16 rounded-full overflow-hidden border border-gray-300">
+            {userProfile.favoriteTeam &&
+              clubsMap[userProfile.favoriteTeam] &&
+              clubsMap[userProfile.favoriteTeam].logo ? (
+                <img
+                  src={getLocalLogo(clubsMap[userProfile.favoriteTeam].logo)}
+                  alt={userProfile.favoriteTeam}
+                  className="w-full h-full object-contain p-1"
+                />
+            ) : (
               <AvatarFallback className="bg-blue-100 text-blue-600 font-bold text-lg">
                 {userProfile.avatar}
               </AvatarFallback>
-            </Avatar>
+            )}
+          </Avatar>
+
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
                 <h2 className="text-xl font-bold text-gray-800">{userProfile.name}</h2>

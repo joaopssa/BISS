@@ -1,16 +1,25 @@
-import React, { createContext, useState, useContext, useEffect, ReactNode } from "react";
+// src/contexts/AuthContexts.tsx
+import React, {
+  createContext,
+  useState,
+  useContext,
+  useEffect,
+  ReactNode,
+} from "react";
 import api from "../services/api";
 
+// 🔹 Agora o User conhece o favoriteTeam
 interface User {
   id: number;
   name: string;
   email: string;
+  favoriteTeam?: string | null;
 }
 
 interface AuthContextType {
   isAuthenticated: boolean;
   user: User | null;
-  login: (token: string, userData: User) => void;
+  login: (token: string, userData: any) => void;
   logout: () => void;
   setAuthenticated: (value: boolean) => void;
   loading: boolean;
@@ -18,20 +27,28 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+export const AuthProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [user, setUser] = useState<User | null>(null);
   const [isAuthenticated, setAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  // 🔐 Verifica se há login persistente ao iniciar o app
+  // 🔐 Recupera sessão ao iniciar
   useEffect(() => {
     const token = localStorage.getItem("token");
     const storedUser = localStorage.getItem("user");
 
     if (token && storedUser) {
       api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-      setUser(JSON.parse(storedUser));
-      setAuthenticated(true);
+      try {
+        const parsed: User = JSON.parse(storedUser);
+        setUser(parsed);
+        setAuthenticated(true);
+      } catch {
+        setUser(null);
+        setAuthenticated(false);
+      }
     } else {
       setAuthenticated(false);
     }
@@ -39,16 +56,23 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     setLoading(false);
   }, []);
 
-  // 🔑 Login e persistência local
-  const login = (token: string, userData: User) => {
+  // 🔑 Login normalizando o usuário que veio do backend
+  const login = (token: string, userData: any) => {
+    const normalizedUser: User = {
+      id: userData.id,
+      name: userData.name,
+      email: userData.email,
+      favoriteTeam: userData.favoriteTeam ?? null,
+    };
+
     localStorage.setItem("token", token);
-    localStorage.setItem("user", JSON.stringify(userData));
+    localStorage.setItem("user", JSON.stringify(normalizedUser));
     api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-    setUser(userData);
+    setUser(normalizedUser);
     setAuthenticated(true);
   };
 
-  // 🚪 Logout total (limpa sessão e token)
+  // 🚪 Logout total
   const logout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
@@ -64,7 +88,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         user,
         login,
         logout,
-        setAuthenticated, // ✅ novo setter exposto
+        setAuthenticated,
         loading,
       }}
     >
@@ -73,7 +97,6 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   );
 };
 
-// Hook personalizado para usar o contexto
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
