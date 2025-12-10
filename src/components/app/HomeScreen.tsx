@@ -8,6 +8,8 @@ import React, { useEffect, useMemo, useState } from "react";
 
 import ExpandableMatchCard from "@/components/ui/expandable-match-card";
 
+import H2HModal from "@/components/ui/H2HModal";
+
 import { useUpcomingData } from "@/data/matchData";
 
 import { Button } from "@/components/ui/button";
@@ -106,6 +108,44 @@ type BetSelection = {
 };
 
  
+// ===== Tipos H2H =====
+type H2HStats = {
+  totalMatches: number;
+  homeWins: number;
+  awayWins: number;
+  draws: number;
+  homeGoals: number;
+  awayGoals: number;
+  avgHomeGoals: number;
+  avgAwayGoals: number;
+};
+
+type H2HMatch = {
+  id: string | number;
+  date: string;
+  competition: string;
+  homeTeam: string;
+  awayTeam: string;
+  fullTime: string;
+  halfTime?: string | null;
+  venueType?: "current" | "reverse";
+  competitionType?: "current" | "other";
+};
+
+type H2HMeta = {
+  homeTeam: string;
+  awayTeam: string;
+  logoHome: string | null;
+  logoAway: string | null;
+};
+
+type H2HRequest = {
+  homeTeam: string;
+  awayTeam: string;
+  competition: string;
+};
+
+
 
 const Badge = ({ children }: React.PropsWithChildren) => (
 
@@ -165,6 +205,15 @@ export const HomeScreen: React.FC = () => {
   const [userLeagues, setUserLeagues] = useState<string[]>([]);
 
   const [ticketFilter, setTicketFilter] = useState<"todos" | "pendentes" | "liquidados">("todos");
+
+  // ===== Estado H2H =====
+  const [h2hOpen, setH2hOpen] = useState(false);
+  const [h2hLoading, setH2hLoading] = useState(false);
+  const [h2hError, setH2hError] = useState<string | null>(null);
+  const [h2hStats, setH2hStats] = useState<H2HStats | null>(null);
+  const [h2hMatches, setH2hMatches] = useState<H2HMatch[]>([]);
+  const [h2hMeta, setH2hMeta] = useState<H2HMeta | null>(null);
+
 
   // Scroll para o topo quando a aba mudar
   useEffect(() => {
@@ -349,6 +398,54 @@ export const HomeScreen: React.FC = () => {
   };
 
  
+
+
+  // ========= H2H: abrir modal com dados do backend =========
+  const handleOpenH2H = async (params: H2HRequest) => {
+    setH2hError(null);
+    setH2hLoading(true);
+
+    try {
+      setH2hMeta({
+        homeTeam: params.homeTeam,
+        awayTeam: params.awayTeam,
+        logoHome: findClubLogo(params.homeTeam),
+        logoAway: findClubLogo(params.awayTeam),
+      });
+
+      const res = await api.get("/matches/h2h", {
+        params: {
+          homeTeam: params.homeTeam,
+          awayTeam: params.awayTeam,
+          competition: params.competition,
+        },
+      });
+
+      const data = res.data || {};
+
+      if (!data.hasHistory) {
+        setH2hStats(null);
+        setH2hMatches([]);
+        setH2hError(
+          "Esses clubes ainda não se enfrentaram nos dados disponíveis."
+        );
+        setH2hOpen(true);
+        return;
+      }
+
+      setH2hStats(data.stats || null);
+      setH2hMatches(data.matches || data.lastMatches || []);
+      setH2hOpen(true);
+    } catch (err) {
+      setH2hError("Não foi possível carregar o histórico deste confronto.");
+      setH2hStats(null);
+      setH2hMatches([]);
+      setH2hOpen(true);
+    } finally {
+      setH2hLoading(false);
+    }
+  };
+
 
   useEffect(() => {
 
@@ -830,6 +927,8 @@ export const HomeScreen: React.FC = () => {
 
               }}
 
+
+              onSelectHistory={(params) => handleOpenH2H(params)}
             />
 
           ) : (
@@ -869,36 +968,24 @@ export const HomeScreen: React.FC = () => {
             ) : trending.length > 0 ? (
 
               <ExpandableMatchCard
-
                 matches={trending}
-
                 onSelectOdd={(params) => {
-
                   const sel: BetSelection = {
-
                     matchId: params.matchId,
-
                     partida: `${params.homeTeam} x ${params.awayTeam}`,
-
                     campeonato: params.competition,
-
                     time_casa: params.homeTeam,
-
                     time_fora: params.awayTeam,
-
                     mercado: params.market,
-
                     selecao: params.selection,
-
                     odd: params.odd,
-
                   };
-
                   handleAddSelection(sel);
-
                 }}
 
+                onSelectHistory={(params) => handleOpenH2H(params)}   // <-- ADICIONAR ISSO
               />
+
 
  
 
@@ -1449,6 +1536,22 @@ export const HomeScreen: React.FC = () => {
           </div>
         </div>
       )}
+      {/* Modal H2H */}
+      {h2hMeta && (
+        <H2HModal
+          isOpen={h2hOpen}
+          onClose={() => setH2hOpen(false)}
+          homeTeam={h2hMeta.homeTeam}
+          awayTeam={h2hMeta.awayTeam}
+          logoHome={h2hMeta.logoHome}
+          logoAway={h2hMeta.logoAway}
+          stats={h2hStats}
+          matches={h2hMatches}
+          isLoading={h2hLoading}
+          error={h2hError}
+        />
+      )}
+
 
 
     </div>
