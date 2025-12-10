@@ -189,6 +189,15 @@ export default function BettingHistoryScreen() {
           
           <div className="flex items-center gap-3 relative">
             <Button
+              className="bg-white text-[#014a8f] ml-3"
+              onClick={async () => {
+                await api.post("/apostas/verificar");
+                fetchHistorico(); // recarrega tela
+              }}
+            >
+              Atualizar resultados
+            </Button>
+            <Button
               id="filters-toggle"
               onClick={() => setShowFilters(!showFilters)}
               className={`text-sm flex items-center gap-2 ${
