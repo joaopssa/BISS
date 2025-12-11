@@ -18,7 +18,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2010-08-20,Freiburg,VfB Stuttgart,2-1,0-1
 3,2010-08-20,Hannover 96,Bayer Leverkusen,2-2,1-0
 3,2010-08-20,Bayern de Munique,Werder Bremen,0-0,
-3,2010-08-20,1.FC Köln,FC St. Pauli,1-0,1-0
+3,2010-08-20,1. FC Köln,FC St. Pauli,1-0,1-0
 4,2010-08-20,Eintracht Frankfurt,Freiburg,0-1,0-0
 4,2010-08-20,VfB Stuttgart,Bor. Mönchengladbach,7-0,2-0
 4,2010-08-20,Wolfsburg,Hannover 96,2-0,0-0
@@ -43,7 +43,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2010-08-20,VfB Stuttgart,Eintracht Frankfurt,1-2,0-1
 7,2010-08-20,Borussia Dortmund,Bayern de Munique,2-0,0-0
 7,2010-08-20,Bayer Leverkusen,Werder Bremen,2-2,1-0
-8,2010-08-20,1.FC Köln,Borussia Dortmund,1-2,0-1
+8,2010-08-20,1. FC Köln,Borussia Dortmund,1-2,0-1
 8,2010-08-20,Bayern de Munique,Hannover 96,3-0,1-0
 8,2010-08-20,FC Schalke 04,VfB Stuttgart,2-2,1-1
 8,2010-08-20,Werder Bremen,Freiburg,2-1,1-0
@@ -58,7 +58,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2010-08-20,VfB Stuttgart,FC St. Pauli,2-0,1-0
 10,2010-08-20,Bayern de Munique,Freiburg,4-2,1-0
 10,2010-08-20,Wolfsburg,VfB Stuttgart,2-0,1-0
-10,2010-08-20,1.FC Köln,Hamburgo,3-2,2-2
+10,2010-08-20,1. FC Köln,Hamburgo,3-2,2-2
 10,2010-08-20,FC Kaiserslautern,Bor. Mönchengladbach,3-0,0-0
 10,2010-08-20,FC St. Pauli,Eintracht Frankfurt,1-3,1-1
 10,2010-08-20,FC Schalke 04,Bayer Leverkusen,0-1,0-0
@@ -72,7 +72,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2010-08-20,Borussia Dortmund,Hamburgo,2-0,0-0
 12,2010-08-20,Werder Bremen,Eintracht Frankfurt,0-0,
 12,2010-08-20,Wolfsburg,FC Schalke 04,2-2,2-1
-12,2010-08-20,1.FC Köln,Bor. Mönchengladbach,0-4,0-0
+12,2010-08-20,1. FC Köln,Bor. Mönchengladbach,0-4,0-0
 12,2010-08-20,FC Kaiserslautern,VfB Stuttgart,3-3,0-2
 12,2010-08-20,FC St. Pauli,Bayer Leverkusen,0-1,0-0
 12,2010-08-20,Mainz 05,Hannover 96,0-1,0-1
@@ -89,7 +89,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 14,2010-08-20,FC Kaiserslautern,FC Schalke 04,5-0,2-0
 14,2010-08-20,Borussia Dortmund,Bor. Mönchengladbach,4-1,1-1
 14,2010-08-20,Werder Bremen,FC St. Pauli,3-0,2-0
-14,2010-08-20,1.FC Köln,Wolfsburg,1-1,0-0
+14,2010-08-20,1. FC Köln,Wolfsburg,1-1,0-0
 15,2010-08-20,Wolfsburg,Werder Bremen,0-0,
 15,2010-08-20,Bor. Mönchengladbach,Hannover 96,1-2,1-0
 15,2010-08-20,Freiburg,Hamburgo,1-0,1-0
@@ -98,7 +98,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2010-08-20,Hannover 96,VfB Stuttgart,2-1,1-0
 16,2010-08-20,Bayern de Munique,FC St. Pauli,3-0,1-0
 16,2010-08-20,Hamburgo,Bayer Leverkusen,2-4,0-1
-16,2010-08-20,1.FC Köln,Eintracht Frankfurt,1-0,0-0
+16,2010-08-20,1. FC Köln,Eintracht Frankfurt,1-0,0-0
 16,2010-08-20,FC Kaiserslautern,Wolfsburg,0-0,
 16,2010-08-20,Borussia Dortmund,Werder Bremen,2-0,1-0
 16,2010-08-20,Freiburg,Bor. Mönchengladbach,3-0,2-0
@@ -118,7 +118,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2011-01-14,Hannover 96,FC Schalke 04,0-1,0-1
 19,2011-01-14,Borussia Dortmund,VfB Stuttgart,1-1,1-0
 19,2011-01-14,Mainz 05,Wolfsburg,0-1,0-0
-19,2011-01-14,1.FC Köln,Werder Bremen,3-0,2-0
+19,2011-01-14,1. FC Köln,Werder Bremen,3-0,2-0
 19,2011-01-14,Bor. Mönchengladbach,Bayer Leverkusen,1-3,0-2
 19,2011-01-14,Hoffenheim,FC St. Pauli,2-2,1-0
 20,2011-01-14,Bayer Leverkusen,Hannover 96,2-0,2-0
@@ -128,7 +128,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2011-01-14,VfB Stuttgart,Freiburg,0-1,0-1
 20,2011-01-14,Eintracht Frankfurt,Bor. Mönchengladbach,0-1,0-0
 21,2011-01-14,Borussia Dortmund,FC Schalke 04,0-0,
-21,2011-01-14,1.FC Köln,Bayern de Munique,3-2,0-2
+21,2011-01-14,1. FC Köln,Bayern de Munique,3-2,0-2
 21,2011-01-14,Mainz 05,Werder Bremen,1-1,1-0
 21,2011-01-14,FC Nürnberg,Bayer Leverkusen,1-0,0-0
 21,2011-01-14,Hannover 96,Wolfsburg,1-0,1-0
@@ -150,7 +150,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 23,2011-01-14,Bor. Mönchengladbach,FC Schalke 04,2-1,2-1
 24,2011-01-14,Wolfsburg,Bor. Mönchengladbach,2-1,2-0
 24,2011-01-14,FC Kaiserslautern,Hamburgo,1-1,1-0
-24,2011-01-14,1.FC Köln,Freiburg,1-0,0-0
+24,2011-01-14,1. FC Köln,Freiburg,1-0,0-0
 24,2011-01-14,FC St. Pauli,Hannover 96,0-1,0-0
 24,2011-01-14,Bayern de Munique,Borussia Dortmund,1-3,1-2
 24,2011-01-14,Eintracht Frankfurt,VfB Stuttgart,0-2,0-0
@@ -160,7 +160,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2011-01-14,FC Nürnberg,FC St. Pauli,5-0,3-0
 25,2011-01-14,Bayer Leverkusen,Wolfsburg,3-0,3-0
 25,2011-01-14,Freiburg,Werder Bremen,1-3,0-1
-26,2011-01-14,1.FC Köln,Hannover 96,4-0,1-0
+26,2011-01-14,1. FC Köln,Hannover 96,4-0,1-0
 26,2011-01-14,Hoffenheim,Borussia Dortmund,1-0,0-0
 26,2011-01-14,Bayern de Munique,Hamburgo,6-0,1-0
 26,2011-01-14,FC Schalke 04,Eintracht Frankfurt,2-1,1-0
@@ -187,7 +187,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 29,2011-01-14,FC Schalke 04,Wolfsburg,1-0,0-0
 29,2011-01-14,Bayer Leverkusen,FC St. Pauli,2-1,0-0
 30,2011-01-14,Mainz 05,Bor. Mönchengladbach,1-0,0-0
-30,2011-01-14,1.FC Köln,VfB Stuttgart,1-3,0-0
+30,2011-01-14,1. FC Köln,VfB Stuttgart,1-3,0-0
 30,2011-01-14,Hoffenheim,Eintracht Frankfurt,1-0,0-0
 30,2011-01-14,Hamburgo,Hannover 96,0-0,
 30,2011-01-14,Wolfsburg,FC St. Pauli,2-2,1-0
@@ -201,7 +201,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2011-01-14,Bor. Mönchengladbach,Borussia Dortmund,1-0,1-0
 32,2011-01-14,Werder Bremen,Wolfsburg,0-1,0-1
 32,2011-01-14,FC Kaiserslautern,FC St. Pauli,2-0,1-0
-32,2011-01-14,1.FC Köln,Bayer Leverkusen,2-0,0-0
+32,2011-01-14,1. FC Köln,Bayer Leverkusen,2-0,0-0
 32,2011-01-14,Hoffenheim,VfB Stuttgart,1-2,1-0
 32,2011-01-14,Mainz 05,Eintracht Frankfurt,3-0,3-0
 32,2011-01-14,Hannover 96,Bor. Mönchengladbach,0-1,0-0
@@ -212,7 +212,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2011-01-14,Bayer Leverkusen,Hamburgo,1-1,0-1
 33,2011-01-14,Bor. Mönchengladbach,Freiburg,2-0,0-0
 33,2011-01-14,VfB Stuttgart,Hannover 96,2-1,0-0
-34,2011-01-14,1.FC Köln,FC Schalke 04,2-1,1-0
+34,2011-01-14,1. FC Köln,FC Schalke 04,2-1,1-0
 34,2011-01-14,FC Kaiserslautern,Werder Bremen,3-2,3-1
 34,2011-01-14,Freiburg,Bayer Leverkusen,0-1,0-1
 34,2011-01-14,Bayern de Munique,VfB Stuttgart,2-1,1-1

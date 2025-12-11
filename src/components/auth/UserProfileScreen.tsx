@@ -1,13 +1,6 @@
-// src/screens/UserProfileScreen.tsx
+// src/components/auth/UserProfileScreen.tsx
 import React, { useState, useEffect, useRef } from "react";
-import {
-  Heart,
-  Trophy,
-  Users,
-  Search,
-  X,
-  Building,
-} from "lucide-react";
+import { Heart, Trophy, Users, Search, X, Building } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,9 +16,12 @@ import { useNavigate } from "react-router-dom";
 
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
-
-// 🔥 novo util para bandeiras (agora usando countryCode)
 import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+
+import {
+  loadPlayersFromCSV,
+  convertToPlayerOpt,
+} from "@/utils/loadPlayers";
 
 // ====================== Tipos ======================
 type TeamOpt = {
@@ -37,8 +33,21 @@ type TeamOpt = {
   flag?: string | null;
 };
 
-type LeagueOpt = { id: string; name: string; logo?: string | null };
-type PlayerOpt = { id: string; name: string; nationality?: string };
+type LeagueOpt = {
+  id: string;
+  name: string;
+  logo?: string | null;
+};
+
+// agora os jogadores usam logo + clube + liga
+type PlayerOpt = {
+  id: string;
+  name: string;
+  logo?: string | null;
+  club?: string | null;
+  league?: string | null;
+};
+
 type BettingHouseOpt = { id: string; name: string };
 
 // ====================== Funções utilitárias ======================
@@ -65,22 +74,10 @@ const KNOWN_LEAGUES: LeagueOpt[] = [
   { id: "ligue-1", name: "Ligue 1", logo: "/logos/Ligas/Ligue1.png" },
   { id: "bundesliga", name: "Bundesliga", logo: "/logos/Ligas/Bundesliga.png" },
 ];
+
 const ALL_LEAGUES = KNOWN_LEAGUES;
 
-// ====================== Jogadores / Casas ======================
-const ALL_PLAYERS: PlayerOpt[] = [
-  { id: "messi", name: "Lionel Messi", nationality: "Argentina" },
-  { id: "cr7", name: "Cristiano Ronaldo", nationality: "Portugal" },
-  { id: "neymar", name: "Neymar Jr.", nationality: "Brasil" },
-  { id: "vini", name: "Vinícius Júnior", nationality: "Brasil" },
-  { id: "mbappe", name: "Kylian Mbappé", nationality: "França" },
-  { id: "haaland", name: "Erling Haaland", nationality: "Noruega" },
-  { id: "bellingham", name: "Jude Bellingham", nationality: "Inglaterra" },
-  { id: "rodrygo", name: "Rodrygo", nationality: "Brasil" },
-  { id: "salah", name: "Mohamed Salah", nationality: "Egito" },
-  { id: "lewandowski", name: "Robert Lewandowski", nationality: "Polônia" },
-];
-
+// ====================== Casas ======================
 const BETTING_HOUSES: BettingHouseOpt[] = [
   { id: "betano", name: "Betano" },
   { id: "bet365", name: "Bet365" },
@@ -106,7 +103,7 @@ export const UserProfileScreen: React.FC = () => {
     investmentLimit: "abaixo-100",
   });
 
-  // ======= STATES =======
+  // ======= SEARCH STATES =======
   const [teamSearchTerm, setTeamSearchTerm] = useState("");
   const [leagueSearchTerm, setLeagueSearchTerm] = useState("");
   const [playerSearchTerm, setPlayerSearchTerm] = useState("");
@@ -128,9 +125,26 @@ export const UserProfileScreen: React.FC = () => {
   const playerDebRef = useRef<number>();
   const houseDebRef = useRef<number>();
 
+  // ======= REAL PLAYERS FROM CSV =======
+  const [allPlayers, setAllPlayers] = useState<PlayerOpt[]>([]);
+
+  useEffect(() => {
+    async function loadCSV() {
+      try {
+        const raw = await loadPlayersFromCSV();
+        const mapped = convertToPlayerOpt(raw);
+        setAllPlayers(mapped);
+      } catch (err) {
+        console.error("Erro ao carregar CSV de jogadores:", err);
+      }
+    }
+    loadCSV();
+  }, []);
+
   // ====================== Times ======================
   useEffect(() => {
     if (!showTeamSuggestions) return;
+
     window.clearTimeout(teamDebRef.current);
 
     teamDebRef.current = window.setTimeout(() => {
@@ -180,25 +194,28 @@ export const UserProfileScreen: React.FC = () => {
     return () => window.clearTimeout(leagueDebRef.current);
   }, [leagueSearchTerm, showLeagueSuggestions]);
 
-  // ====================== Jogadores ======================
+  // ====================== Jogadores REAL CSV ======================
   useEffect(() => {
     if (!showPlayerSuggestions) return;
+
     window.clearTimeout(playerDebRef.current);
 
     playerDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(playerSearchTerm);
 
-      const filtered = ALL_PLAYERS.filter(
-        (p) =>
-          normalizeKeyForLookup(p.name).includes(q) ||
-          normalizeKeyForLookup(p.nationality).includes(q)
-      ).slice(0, 20);
+      const filtered = allPlayers
+        .filter(
+          (p) =>
+            normalizeKeyForLookup(p.name).includes(q) ||
+            normalizeKeyForLookup(p.club ?? "").includes(q)
+        )
+        .slice(0, 40);
 
       setPlayerResults(filtered);
     }, 150);
 
     return () => window.clearTimeout(playerDebRef.current);
-  }, [playerSearchTerm, showPlayerSuggestions]);
+  }, [playerSearchTerm, showPlayerSuggestions, allPlayers]);
 
   // ====================== Casas ======================
   useEffect(() => {
@@ -314,8 +331,7 @@ export const UserProfileScreen: React.FC = () => {
       navigate("/login");
     } catch (err: any) {
       const message =
-        err.response?.data?.message ||
-        "Não foi possível concluir seu cadastro.";
+        err.response?.data?.message || "Não foi possível concluir seu cadastro.";
 
       setFormError(message);
       toast({
@@ -383,10 +399,7 @@ export const UserProfileScreen: React.FC = () => {
                       >
                         {t.logo && <img src={t.logo} className="h-4 w-4" />}
                         <span>{t.name}</span>
-
-                        {t.flag && (
-                          <img src={t.flag} className="h-4 w-4 ml-auto" />
-                        )}
+                        {t.flag && <img src={t.flag} className="h-4 w-4 ml-auto" />}
                       </div>
                     ))}
                   </div>
@@ -513,10 +526,21 @@ export const UserProfileScreen: React.FC = () => {
                     {playerResults.map((p) => (
                       <div
                         key={p.id}
-                        className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                        className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handlePlayerSelect(p)}
                       >
-                        {p.name}
+                        {p.logo && (
+                          <img
+                            src={p.logo}
+                            className="h-5 w-5 rounded-sm object-cover"
+                          />
+                        )}
+                        <span>{p.name}</span>
+                        {p.club && (
+                          <span className="ml-auto text-xs text-gray-500">
+                            {p.club}
+                          </span>
+                        )}
                       </div>
                     ))}
                   </div>
@@ -568,19 +592,20 @@ export const UserProfileScreen: React.FC = () => {
                   />
                 )}
 
-                {showBettingHouseSuggestions && bettingHouseResults.length > 0 && (
-                  <div className="absolute z-10 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
-                    {bettingHouseResults.map((h) => (
-                      <div
-                        key={h.id}
-                        className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                        onClick={() => handleHouseSelect(h)}
-                      >
-                        {h.name}
-                      </div>
-                    ))}
-                  </div>
-                )}
+                {showBettingHouseSuggestions &&
+                  bettingHouseResults.length > 0 && (
+                    <div className="absolute z-10 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
+                      {bettingHouseResults.map((h) => (
+                        <div
+                          key={h.id}
+                          className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                          onClick={() => handleHouseSelect(h)}
+                        >
+                          {h.name}
+                        </div>
+                      ))}
+                    </div>
+                  )}
               </div>
 
               {profile.favoriteBettingHouses.length > 0 && (
