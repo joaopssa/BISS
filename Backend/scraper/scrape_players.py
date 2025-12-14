@@ -67,13 +67,13 @@ LEAGUES_CONFIG: Dict[str, Dict[str, str]] = {
     },
 }
 
+
 # ==========================
 # MAPEAMENTO Transfermarkt → seu clubs-map.json
 # ==========================
 
 TM_TO_JSON: Dict[str, str] = {
     # --- BRASILEIRÃO SÉRIE A E B ---
-    "SE Palmeiras": "Palmeiras",
     "CR Flamengo": "Flamengo",
     "Cruzeiro EC": "Cruzeiro",
     "Botafogo FR": "Botafogo-RJ",
@@ -93,6 +93,7 @@ TM_TO_JSON: Dict[str, str] = {
     "EC Vitória": "Vitória",
     "Mirassol FC": "Mirassol",
     "EC Juventude": "Juventude-RS",
+    "SE Palmeiras": "Palmeiras",
     "Athletico Paranaense": "Athletico-PR",
     "Coritiba FC": "Coritiba",
     "Clube do Remo": "Remo",
