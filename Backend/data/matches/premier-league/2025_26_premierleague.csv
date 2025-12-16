@@ -149,16 +149,16 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Sun,2025-12-07,Brighton & Hove Albion,West Ham United,1-1,0-0
 15,Sun,2025-12-07,Fulham FC,Crystal Palace,1-2,1-1
 15,Mon,2025-12-08,Wolverhampton,Manchester United,1-4,1-1
-16,,2025-08-15,Chelsea,Everton,,
-16,,2025-08-15,Liverpool,Brighton & Hove Albion,,
-16,,2025-08-15,Burnley,Fulham FC,,
-16,,2025-08-15,Arsenal,Wolverhampton,,
-16,,2025-08-15,Sunderland,Newcastle United,,
-16,,2025-08-15,Crystal Palace,Manchester City,,
-16,,2025-08-15,Nottingham Forest,Tottenham,,
-16,,2025-08-15,West Ham United,Aston Villa,,
-16,,2025-08-15,Brentford,Leeds United,,
-16,,2025-08-15,Manchester United,AFC Bournemouth,,
+16,Sat,2025-12-13,Chelsea,Everton,2-0,2-0
+16,Sat,2025-12-13,Liverpool,Brighton & Hove Albion,2-0,1-0
+16,Sat,2025-12-13,Burnley,Fulham FC,2-3,1-2
+16,Sat,2025-12-13,Arsenal,Wolverhampton,2-1,0-0
+16,Sun,2025-12-14,Sunderland,Newcastle United,1-0,0-0
+16,Sun,2025-12-14,Crystal Palace,Manchester City,0-3,0-1
+16,Sun,2025-12-14,Nottingham Forest,Tottenham,3-0,1-0
+16,Sun,2025-12-14,West Ham United,Aston Villa,2-3,2-1
+16,Sun,2025-12-14,Brentford,Leeds United,1-1,0-0
+16,Mon,2025-12-15,Manchester United,AFC Bournemouth,4-4,2-1
 17,,2025-08-15,Newcastle United,Chelsea,,
 17,,2025-08-15,AFC Bournemouth,Burnley,,
 17,,2025-08-15,Brighton & Hove Albion,Sunderland,,

@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import api from "@/services/api";
+import { useFinance } from "@/contexts/FinanceContext";
 // Importações necessárias para o gráfico
 import {
   BarChart,
@@ -52,10 +53,14 @@ export default function FinancialBalanceScreen() {
 
   const [saldo, setSaldo] = useState<number>(0);
   const [extrato, setExtrato] = useState<Movimentacao[]>([]);
+  const [bilhetes, setBilhetes] = useState<any[]>([]);
   const [valor, setValor] = useState<number>(0);
   const [modo, setModo] = useState<"deposito" | "saque">("deposito");
   const [loading, setLoading] = useState<boolean>(false);
   const [feedback, setFeedback] = useState<string | null>(null);
+  
+  // Contexto de Finanças
+  const { refreshTrigger } = useFinance();
   
   // --- States da Meta ---
   const [goalValue, setGoalValue] = useState<number | "">("");
@@ -131,9 +136,20 @@ export default function FinancialBalanceScreen() {
     }
   };
 
+  const fetchBilhetes = async () => {
+    try {
+      const res = await api.get('/apostas/bilhetes');
+      const data = Array.isArray(res.data) ? res.data : [];
+      setBilhetes(data);
+    } catch (err) {
+      console.warn('Erro ao carregar bilhetes:', err);
+    }
+  };
+
   useEffect(() => {
     fetchSaldo();
     fetchExtrato();
+    fetchBilhetes();
     // Carrega meta do servidor (se houver), senão fallback para localStorage
     const loadMeta = async () => {
       try {
@@ -161,6 +177,12 @@ export default function FinancialBalanceScreen() {
 
     loadMeta();
   }, []);
+
+  // Monitora quando o extrato precisa ser atualizado (quando uma aposta é verificada)
+  useEffect(() => {
+    fetchExtrato();
+    fetchBilhetes();
+  }, [refreshTrigger]);
 
   // Hook para fechar dropdown ao clicar fora
   useEffect(() => {
@@ -307,11 +329,14 @@ export default function FinancialBalanceScreen() {
 
   const calculateProgress = () => {
     if (!savedGoal || !savedGoal.value) return 0;
-    const profit = extrato.reduce((acc, m) => {
-      if (m.tipo === 'premio') return acc + Number(m.valor || 0);
-      if (m.tipo === 'aposta') return acc - Number(m.valor || 0);
+    // Somar somente prêmios e subtrair apenas stakes de bilhetes perdidos
+    const totalPremios = extrato.reduce((acc, m) => m.tipo === 'premio' ? acc + Number(m.valor || 0) : acc, 0);
+    const totalPerdido = bilhetes.reduce((acc, b) => {
+      const st = (b.status || '').toString().toLowerCase();
+      if (st === 'perdido' || st === 'perdida') return acc + Number(b.stake_total || b.stake || 0);
       return acc;
     }, 0);
+    const profit = totalPremios - totalPerdido;
     const p = (profit / Number(savedGoal.value)) * 100;
     return Math.min(100, Math.max(0, p));
   };
@@ -348,19 +373,26 @@ export default function FinancialBalanceScreen() {
     const dataMap: Record<string, number> = {};
     days.forEach(day => { dataMap[day] = 0; });
 
-    // Preencher com os dados do extrato (usando chaves locais)
+    // Preencher com prêmios do extrato
     extrato.forEach(m => {
-      if (m.tipo !== 'premio' && m.tipo !== 'aposta') return;
+      if (m.tipo !== 'premio') return;
       const mDate = new Date(m.data_movimentacao);
       const key = toLocalDateKey(mDate);
 
       if (dataMap.hasOwnProperty(key)) {
         const val = Number(m.valor) || 0;
-        if (m.tipo === 'premio') {
-          dataMap[key] += val;
-        } else if (m.tipo === 'aposta') {
-          dataMap[key] -= val;
-        }
+        dataMap[key] += val;
+      }
+    });
+
+    // Subtrair stakes de bilhetes perdidos usando a data do bilhete
+    bilhetes.forEach(b => {
+      const st = (b.status || '').toString().toLowerCase();
+      if (st !== 'perdido' && st !== 'perdida') return;
+      const dt = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
+      const key = toLocalDateKey(dt);
+      if (dataMap.hasOwnProperty(key)) {
+        dataMap[key] -= Number(b.stake_total || b.stake || 0) || 0;
       }
     });
 
@@ -373,7 +405,7 @@ export default function FinancialBalanceScreen() {
         lucro: dataMap[dateStr] || 0
       };
     });
-  }, [extrato, chartPeriodDays]);
+  }, [extrato, chartPeriodDays, bilhetes]);
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {

@@ -102,3 +102,51 @@ exports.getPreferences = async (req, res) => {
         res.status(500).json({ message: "Erro no servidor ao carregar preferências." });
     }
 };
+
+// Verificar status do controle de apostas e contar apostas de hoje
+exports.checkBettingControl = async (req, res) => {
+    const userId = req.user.id;
+
+    try {
+        // 1. Buscar status de controle_apostas_ativo do usuário
+        const [userRows] = await pool.query(
+            "SELECT controle_apostas_ativo FROM usuarios WHERE id_usuario = ?",
+            [userId]
+        );
+
+        if (!userRows.length) {
+            return res.status(404).json({ message: "Usuário não encontrado." });
+        }
+
+        const bettingControlActive = userRows[0].controle_apostas_ativo === 1;
+
+        // 2. Contar bilhetes criados HOJE (data_criacao >= hoje às 00:00:00)
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const todayStr = today.toISOString().split('T')[0]; // YYYY-MM-DD
+
+        const [todayBetsRows] = await pool.query(
+            `SELECT COUNT(*) as count FROM bilhetes 
+             WHERE id_usuario = ? AND DATE(data_criacao) = ?
+            `,
+            [userId, todayStr]
+        );
+
+        const betsTodayCount = todayBetsRows[0]?.count || 0;
+
+        // 3. Retornar status
+        res.json({
+            bettingControlActive,
+            betsTodayCount,
+            dailyLimit: 3,
+            canPlaceBet: !bettingControlActive || betsTodayCount < 3,
+            message: bettingControlActive && betsTodayCount >= 3 
+                ? "Você atingiu o limite de 3 apostas por dia." 
+                : null
+        });
+
+    } catch (error) {
+        console.error("Erro ao verificar controle de apostas:", error);
+        res.status(500).json({ message: "Erro no servidor ao verificar controle de apostas." });
+    }
+};

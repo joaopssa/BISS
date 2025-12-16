@@ -43,7 +43,7 @@ const AppRoutes = () => {
       {/* Rotas Públicas */}
       <Route path="/login" element={isAuthenticated ? <Navigate to="/" /> : <LoginPage />} />
       <Route path="/register" element={isAuthenticated ? <Navigate to="/" /> : <RegisterPage />} />
-      <Route path="/profile-setup" element={isAuthenticated ? <Navigate to="/" /> : <UserProfilePage />} />
+      <Route path="/profile-setup" element={isAuthenticated ? <UserProfilePage /> : <Navigate to="/login" />} />
 
       {/* Rotas Protegidas */}
       <Route element={<ProtectedRoute />}>

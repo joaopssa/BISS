@@ -492,7 +492,7 @@ def _read_ligas_csv(path:str)->List[str]:
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--headless",type=int,default=1)
-    ap.add_argument("--janela_horas",type=int,default=24)
+    ap.add_argument("--janela_horas",type=int,default=120)
     ap.add_argument("--ligas_csv",type=str,required=True, help="CSV com coluna url_liga")
     ap.add_argument("--ligas_extras",type=str,default="", help="URLs separadas por vírgula")
     ap.add_argument("--limite_eventos",type=int,default=0)

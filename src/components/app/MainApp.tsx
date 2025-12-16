@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { ThemeProvider } from '@/contexts/ThemeContext';
+import { FinanceProvider } from '@/contexts/FinanceContext';
 import {
   Sidebar,
   SidebarContent,
@@ -51,8 +52,9 @@ export const MainApp: React.FC = () => {
 
   return (
     <ThemeProvider>
-      <SidebarProvider>
-        <div className="flex min-h-screen w-full">
+      <FinanceProvider>
+        <SidebarProvider>
+          <div className="flex min-h-screen w-full">
           {/* Sidebar desktop */}
           <Sidebar collapsible="icon" className="hidden md:flex">
             <SidebarContent>
@@ -110,6 +112,7 @@ export const MainApp: React.FC = () => {
           </SidebarInset>
         </div>
       </SidebarProvider>
+      </FinanceProvider>
     </ThemeProvider>
   );
 };

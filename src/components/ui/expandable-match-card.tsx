@@ -180,37 +180,44 @@ export default function ExpandableMatchCard({
             {/* ===================== MERCADOS EXTRAS ===================== */}
             {isOpen && hasExtra && (
               <div className="p-5 space-y-5 border-t border-gray-200 dark:border-neutral-700">
-                {Object.entries(m._extraMarkets).map(([market, options]) => (
-                  <div key={market}>
-                    <p className="font-semibold mb-2">{market}</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                      {Object.entries(options).map(([sel, val]) => (
-                        <button
-                          key={sel}
-                          onClick={() =>
-                            onSelectOdd({
-                              matchId: m.id,
-                              homeTeam: m.homeTeam,
-                              awayTeam: m.awayTeam,
-                              competition: m.competition,
-                              market,
-                              selection: sel,
-                              odd: val,
-                            })
-                          }
-                          className="
-                            border rounded-lg p-3 text-center 
-                            hover:bg-gray-50 dark:hover:bg-neutral-800 
-                            transition
-                          "
-                        >
-                          <span className="block font-medium">{sel}</span>
-                          <SafeOdd value={val} />
-                        </button>
-                      ))}
+                {Object.entries(m._extraMarkets).map(([market, options]) => {
+                  // detecta mercado do tipo "Total de Gols (2.5)" e separa a linha
+                  const totMatch = market.match(/^(Total de Gols)\s*\(([^)]+)\)/i);
+                  const baseMarket = totMatch ? totMatch[1] : market;
+                  const linha = totMatch ? totMatch[2] : null;
+                  return (
+                    <div key={market}>
+                      <p className="font-semibold mb-2">{market}</p>
+                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                        {Object.entries(options).map(([sel, val]) => (
+                          <button
+                            key={sel}
+                            onClick={() =>
+                              onSelectOdd({
+                                matchId: m.id,
+                                homeTeam: m.homeTeam,
+                                awayTeam: m.awayTeam,
+                                competition: m.competition,
+                                market: baseMarket,
+                                selection: sel,
+                                odd: val,
+                                linha: linha,
+                              })
+                            }
+                            className="
+                              border rounded-lg p-3 text-center 
+                              hover:bg-gray-50 dark:hover:bg-neutral-800 
+                              transition
+                            "
+                          >
+                            <span className="block font-medium">{sel}</span>
+                            <SafeOdd value={val} />
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>

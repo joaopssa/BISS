@@ -39,7 +39,6 @@ type LeagueOpt = {
   logo?: string | null;
 };
 
-// agora os jogadores usam logo + clube + liga
 type PlayerOpt = {
   id: string;
   name: string;
@@ -125,8 +124,37 @@ export const UserProfileScreen: React.FC = () => {
   const playerDebRef = useRef<number>();
   const houseDebRef = useRef<number>();
 
+  // ======= REFS PARA DETECTAR CLIQUE FORA =======
+  const teamWrapperRef = useRef<HTMLDivElement>(null);
+  const leagueWrapperRef = useRef<HTMLDivElement>(null);
+  const playerWrapperRef = useRef<HTMLDivElement>(null);
+  const houseWrapperRef = useRef<HTMLDivElement>(null);
+
   // ======= REAL PLAYERS FROM CSV =======
   const [allPlayers, setAllPlayers] = useState<PlayerOpt[]>([]);
+
+  // ======= USE EFFECT PARA FECHAR MENUS AO CLICAR FORA =======
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (teamWrapperRef.current && !teamWrapperRef.current.contains(event.target as Node)) {
+        setShowTeamSuggestions(false);
+      }
+      if (leagueWrapperRef.current && !leagueWrapperRef.current.contains(event.target as Node)) {
+        setShowLeagueSuggestions(false);
+      }
+      if (playerWrapperRef.current && !playerWrapperRef.current.contains(event.target as Node)) {
+        setShowPlayerSuggestions(false);
+      }
+      if (houseWrapperRef.current && !houseWrapperRef.current.contains(event.target as Node)) {
+        setShowBettingHouseSuggestions(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     async function loadCSV() {
@@ -144,21 +172,16 @@ export const UserProfileScreen: React.FC = () => {
   // ====================== Times ======================
   useEffect(() => {
     if (!showTeamSuggestions) return;
-
     window.clearTimeout(teamDebRef.current);
-
     teamDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(teamSearchTerm);
       const results: TeamOpt[] = [];
-
       for (const cname in clubsMap as Record<string, any>) {
         const club = clubsMap[cname];
         const nk = normalizeKeyForLookup(cname);
-
         if (!q || nk.includes(q)) {
           const logo = club?.logo ? getLocalLogo(club.logo) : null;
           const flag = getFlagByCountryCode(club?.countryCode);
-
           results.push({
             id: cname,
             name: cname,
@@ -169,10 +192,8 @@ export const UserProfileScreen: React.FC = () => {
           });
         }
       }
-
       setTeamResults(results.slice(0, 200));
     }, 150);
-
     return () => window.clearTimeout(teamDebRef.current);
   }, [teamSearchTerm, showTeamSuggestions]);
 
@@ -180,29 +201,22 @@ export const UserProfileScreen: React.FC = () => {
   useEffect(() => {
     if (!showLeagueSuggestions) return;
     window.clearTimeout(leagueDebRef.current);
-
     leagueDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(leagueSearchTerm);
-
       const filtered = ALL_LEAGUES.filter((l) =>
         normalizeKeyForLookup(l.name).includes(q)
       ).slice(0, 100);
-
       setLeagueResults(filtered);
     }, 150);
-
     return () => window.clearTimeout(leagueDebRef.current);
   }, [leagueSearchTerm, showLeagueSuggestions]);
 
   // ====================== Jogadores REAL CSV ======================
   useEffect(() => {
     if (!showPlayerSuggestions) return;
-
     window.clearTimeout(playerDebRef.current);
-
     playerDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(playerSearchTerm);
-
       const filtered = allPlayers
         .filter(
           (p) =>
@@ -210,10 +224,8 @@ export const UserProfileScreen: React.FC = () => {
             normalizeKeyForLookup(p.club ?? "").includes(q)
         )
         .slice(0, 40);
-
       setPlayerResults(filtered);
     }, 150);
-
     return () => window.clearTimeout(playerDebRef.current);
   }, [playerSearchTerm, showPlayerSuggestions, allPlayers]);
 
@@ -221,17 +233,13 @@ export const UserProfileScreen: React.FC = () => {
   useEffect(() => {
     if (!showBettingHouseSuggestions) return;
     window.clearTimeout(houseDebRef.current);
-
     houseDebRef.current = window.setTimeout(() => {
       const q = normalizeKeyForLookup(bettingHouseSearchTerm);
-
       const filtered = BETTING_HOUSES.filter((h) =>
         normalizeKeyForLookup(h.name).includes(q)
       );
-
       setBettingHouseResults(filtered);
     }, 150);
-
     return () => window.clearTimeout(houseDebRef.current);
   }, [bettingHouseSearchTerm, showBettingHouseSuggestions]);
 
@@ -315,20 +323,15 @@ export const UserProfileScreen: React.FC = () => {
 
     const storedData = localStorage.getItem("registrationData");
     if (!storedData) {
-      setFormError("Dados de registro não encontrados.");
-      toast({
-        title: "Erro",
-        description: "Dados de registro não encontrados.",
-        variant: "destructive",
-      });
-      navigate("/register");
-      return;
+      // Pode ser um usuário já autenticado editando o perfil — não abortamos.
+      console.warn("registrationData not found; proceeding to update profile");
     }
 
     try {
       await api.put("/user/profile", profile);
-      localStorage.removeItem("registrationData");
-      navigate("/login");
+      try { localStorage.removeItem("registrationData"); } catch {}
+      // Após salvar o perfil, volta para a home
+      navigate("/");
     } catch (err: any) {
       const message =
         err.response?.data?.message || "Não foi possível concluir seu cadastro.";
@@ -361,13 +364,12 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Clube Favorito ===== */}
             <div>
-              <Label className="flex items-center gap-2">
+              <Label className="flex items-center gap-2 mb-2">
                 <Heart className="w-4 h-4 text-red-500" /> Clube Favorito
               </Label>
 
-              <div className="relative">
+              <div className="relative" ref={teamWrapperRef}>
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
-
                 <Input
                   placeholder="Digite o nome do seu time"
                   className="pl-10 pr-10"
@@ -378,7 +380,6 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowTeamSuggestions(true)}
                 />
-
                 {teamSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
@@ -388,7 +389,6 @@ export const UserProfileScreen: React.FC = () => {
                     }}
                   />
                 )}
-
                 {showTeamSuggestions && teamResults.length > 0 && (
                   <div className="absolute z-40 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {teamResults.map((t) => (
@@ -397,9 +397,9 @@ export const UserProfileScreen: React.FC = () => {
                         className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleTeamSelect(t)}
                       >
-                        {t.logo && <img src={t.logo} className="h-4 w-4" />}
+                        {t.logo && <img src={t.logo} className="h-4 w-4" alt={t.name} />}
                         <span>{t.name}</span>
-                        {t.flag && <img src={t.flag} className="h-4 w-4 ml-auto" />}
+                        {t.flag && <img src={t.flag} className="h-4 w-4 ml-auto" alt={t.country} />}
                       </div>
                     ))}
                   </div>
@@ -411,20 +411,16 @@ export const UserProfileScreen: React.FC = () => {
                   {(() => {
                     const club = clubsMap[profile.favoriteTeam];
                     if (!club) return null;
-
                     const logo = club.logo ? getLocalLogo(club.logo) : null;
                     const flag = getFlagByCountryCode(club.countryCode);
-
                     return (
                       <>
-                        {logo && <img src={logo} className="h-5 w-5" />}
-                        {flag && <img src={flag} className="h-4 w-4 ml-1" />}
+                        {logo && <img src={logo} className="h-5 w-5" alt="logo" />}
+                        {flag && <img src={flag} className="h-4 w-4 ml-1" alt="flag" />}
                       </>
                     );
                   })()}
-
                   <span>{profile.favoriteTeam}</span>
-
                   <X
                     className="ml-1 h-3 w-3 cursor-pointer"
                     onClick={() => setProfile({ ...profile, favoriteTeam: "" })}
@@ -435,13 +431,12 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Ligas ===== */}
             <div>
-              <Label className="flex items-center gap-2">
+              <Label className="flex items-center gap-2 mb-2">
                 <Trophy className="w-4 h-4 text-yellow-500" /> Ligas Favoritas
               </Label>
 
-              <div className="relative">
+              <div className="relative" ref={leagueWrapperRef}>
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
-
                 <Input
                   placeholder="Digite o nome de uma liga"
                   className="pl-10 pr-10"
@@ -452,14 +447,12 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowLeagueSuggestions(true)}
                 />
-
                 {leagueSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
                     onClick={() => setLeagueSearchTerm("")}
                   />
                 )}
-
                 {showLeagueSuggestions && leagueResults.length > 0 && (
                   <div className="absolute z-30 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {leagueResults.map((l) => (
@@ -468,7 +461,7 @@ export const UserProfileScreen: React.FC = () => {
                         className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
                         onClick={() => handleLeagueSelect(l)}
                       >
-                        {l.logo && <img src={l.logo} className="h-4 w-4" />}
+                        {l.logo && <img src={l.logo} className="h-4 w-4" alt={l.name} />}
                         <span>{l.name}</span>
                       </div>
                     ))}
@@ -496,13 +489,12 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Jogadores ===== */}
             <div>
-              <Label className="flex items-center gap-2">
+              <Label className="flex items-center gap-2 mb-2">
                 <Users className="w-4 h-4 text-gray-700" /> Jogadores Favoritos
               </Label>
 
-              <div className="relative">
+              <div className="relative" ref={playerWrapperRef}>
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
-
                 <Input
                   placeholder="Digite o nome de um jogador"
                   className="pl-10 pr-10"
@@ -513,14 +505,12 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowPlayerSuggestions(true)}
                 />
-
                 {playerSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
                     onClick={() => setPlayerSearchTerm("")}
                   />
                 )}
-
                 {showPlayerSuggestions && playerResults.length > 0 && (
                   <div className="absolute z-20 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
                     {playerResults.map((p) => (
@@ -533,6 +523,7 @@ export const UserProfileScreen: React.FC = () => {
                           <img
                             src={p.logo}
                             className="h-5 w-5 rounded-sm object-cover"
+                            alt={p.name}
                           />
                         )}
                         <span>{p.name}</span>
@@ -567,13 +558,12 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Casas ===== */}
             <div>
-              <Label className="flex items-center gap-2">
+              <Label className="flex items-center gap-2 mb-2">
                 <Building className="w-4 h-4 text-gray-700" /> Casas de Apostas
               </Label>
 
-              <div className="relative">
+              <div className="relative" ref={houseWrapperRef}>
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
-
                 <Input
                   placeholder="Digite o nome da casa de apostas"
                   className="pl-10 pr-10"
@@ -584,14 +574,12 @@ export const UserProfileScreen: React.FC = () => {
                   }}
                   onFocus={() => setShowBettingHouseSuggestions(true)}
                 />
-
                 {bettingHouseSearchTerm && (
                   <X
                     className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
                     onClick={() => setBettingHouseSearchTerm("")}
                   />
                 )}
-
                 {showBettingHouseSuggestions &&
                   bettingHouseResults.length > 0 && (
                     <div className="absolute z-10 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
@@ -648,8 +636,10 @@ export const UserProfileScreen: React.FC = () => {
                 />
               </div>
 
-              <div>
-                <Label>Intervalo de odds</Label>
+              {/* ADICIONADO pt-4 para maior separação */}
+              <div className="pt-4">
+                {/* ALTERADO para mb-4 para maior espaço entre label e slider */}
+                <Label className="mb-4 block">Intervalo de odds</Label>
                 <Slider
                   value={profile.oddsRange}
                   onValueChange={(range) =>
@@ -659,7 +649,6 @@ export const UserProfileScreen: React.FC = () => {
                   max={10}
                   step={0.1}
                 />
-
                 <p className="text-sm text-gray-600 mt-1">
                   {profile.oddsRange[0].toFixed(2)} –{" "}
                   {profile.oddsRange[1].toFixed(2)}
@@ -667,7 +656,7 @@ export const UserProfileScreen: React.FC = () => {
               </div>
 
               <div>
-                <Label>Limite de investimento mensal</Label>
+                <Label className="mb-2 block">Limite de investimento mensal</Label>
 
                 <RadioGroup
                   value={profile.investmentLimit}
@@ -680,17 +669,14 @@ export const UserProfileScreen: React.FC = () => {
                       <RadioGroupItem value="abaixo-100" id="r1" />
                       <Label htmlFor="r1">Abaixo de R$100</Label>
                     </div>
-
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="100-200" id="r2" />
                       <Label htmlFor="r2">Entre R$100 e R$200</Label>
                     </div>
-
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="200-500" id="r3" />
                       <Label htmlFor="r3">Entre R$200 e R$500</Label>
                     </div>
-
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="acima-500" id="r4" />
                       <Label htmlFor="r4">Acima de R$500</Label>

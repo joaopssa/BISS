@@ -18,6 +18,8 @@ import api from "@/services/api";
 
 import { resolveLeagueName } from "@/utils/resolveLeagueName";
 
+import { useFinance } from "@/contexts/FinanceContext";
+
 import clubsMap from "@/utils/clubs-map.json";
 
  // ========= Helpers (copiados do MatchCard) =========
@@ -60,6 +62,7 @@ type TicketSelection = {
   time_casa?: string;
   time_fora?: string;
   campeonato?: string;
+  linha?: string | null;
   odd: number;
   market?: string;
   pick?: string;
@@ -102,6 +105,7 @@ type BetSelection = {
   mercado: string;
 
   selecao: string;
+  linha?: string | null;
 
   odd: number;
 
@@ -159,7 +163,26 @@ const Badge = ({ children }: React.PropsWithChildren) => (
 
  
 
+const getTicketStatusStyle = (status: string | undefined) => {
+  const normalizedStatus = (status || "PENDENTE").toUpperCase();
+  switch (normalizedStatus) {
+    case "GANHO":
+    case "GANHA":
+      return "text-green-600 bg-green-50 border border-green-200";
+    case "PERDIDO":
+    case "PERDIDA":
+      return "text-red-600 bg-red-50 border border-red-200";
+    case "CANCELADO":
+    case "CANCELADA":
+      return "text-gray-600 bg-gray-50 border border-gray-200";
+    default:
+      return "text-yellow-700 bg-yellow-50 border border-yellow-200";
+  }
+};
+
 export const HomeScreen: React.FC = () => {
+
+  const { refreshExtrato } = useFinance();
 
   const [tab, setTab] = useState<"favoritos" | "em-alta" | "bilhetes">("em-alta");
 
@@ -221,7 +244,8 @@ export const HomeScreen: React.FC = () => {
   }, [tab]);
 
   // ========= Helpers =========
-
+ 
+ 
  
 
   const fetchSaldo = async () => {
@@ -730,7 +754,18 @@ export const HomeScreen: React.FC = () => {
 
     }
 
- 
+    // Validar controle de apostas (limite de 3 diárias)
+    try {
+      const controlRes = await api.get("/user/betting-control-status");
+      const { canPlaceBet, message } = controlRes.data;
+      if (!canPlaceBet) {
+        setFeedback(message || "Você atingiu o limite de apostas para hoje.");
+        return;
+      }
+    } catch (err) {
+      console.error("Erro ao validar controle de apostas:", err);
+      // Se falhar, não bloqueia (compatibilidade com versões antigas)
+    }
 
     if (saldo < stake) {
 
@@ -773,6 +808,8 @@ export const HomeScreen: React.FC = () => {
           mercado: s.mercado,
 
           selecao: s.selecao,
+
+          linha: s.linha || null,
 
           odd: s.odd,
 
@@ -917,7 +954,9 @@ export const HomeScreen: React.FC = () => {
 
                   mercado: params.market,
 
-                  selecao: params.selection,
+                  selecao: params.market === 'Total de Gols' && params.linha ? String(params.linha) : params.selection,
+
+                  linha: params.linha ?? null,
 
                   odd: params.odd,
 
@@ -977,7 +1016,8 @@ export const HomeScreen: React.FC = () => {
                     time_casa: params.homeTeam,
                     time_fora: params.awayTeam,
                     mercado: params.market,
-                    selecao: params.selection,
+                    selecao: params.market === 'Total de Gols' && params.linha ? String(params.linha) : params.selection,
+                    linha: params.linha ?? null,
                     odd: params.odd,
                   };
                   handleAddSelection(sel);
@@ -1015,6 +1055,7 @@ export const HomeScreen: React.FC = () => {
               await api.post("/apostas/verificar");
               fetchTickets();
               fetchSaldo();
+              refreshExtrato();
             }}
           >
             Atualizar bilhetes
@@ -1048,14 +1089,11 @@ export const HomeScreen: React.FC = () => {
           ) : (
             <ul className="space-y-6">
               {filteredTickets.map((t) => {
-                const isPending = !t.status || t.status === "PENDENTE";
-
                 return (
                   <li
                     key={t.id}
                     className={`
                       rounded-xl bg-white dark:bg-neutral-900 p-5 shadow-sm
-                      ${isPending ? "border border-gray-300 dark:border-neutral-700" : ""}
                     `}
                   >
 
@@ -1068,11 +1106,7 @@ export const HomeScreen: React.FC = () => {
                       <span
                         className={`
                           text-[10px] font-semibold uppercase px-2 py-1 rounded-full
-                          ${
-                            isPending
-                              ? "bg-yellow-100 text-yellow-700"
-                              : "bg-green-100 text-green-700"
-                          }
+                          ${getTicketStatusStyle(t.status)}
                         `}
                       >
                         {t.status || "PENDENTE"}
@@ -1104,6 +1138,14 @@ export const HomeScreen: React.FC = () => {
                         const leagueCode = leagueCountries[s.campeonato];
                         const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
 
+                        // pick label logic (Vitória de {time})
+                        const pickText = (s.selecao || "").toLowerCase();
+                        const homeText = (s.time_casa || "").toLowerCase();
+                        const awayText = (s.time_fora || "").toLowerCase();
+                        const isHomePick = (homeText && pickText.includes(homeText)) || (s.mercado === "1X2" && /^(1)$/.test((s.selecao || "").trim()));
+                        const isAwayPick = (awayText && pickText.includes(awayText)) || (s.mercado === "1X2" && /^(2)$/.test((s.selecao || "").trim()));
+                        const pickLabel = isHomePick ? `Vitória de ${s.time_casa}` : isAwayPick ? `Vitória de ${s.time_fora}` : (s.selecao || 'Palpite');
+
                         return (
                           <div
                             key={i}
@@ -1122,14 +1164,28 @@ export const HomeScreen: React.FC = () => {
                                 {logoHome && (
                                   <img src={logoHome} className="w-5 h-5 object-contain" />
                                 )}
-                                <span className="font-semibold">{s.time_casa}</span>
+                                {(() => {
+                                  const pick = (s.selecao || "").toLowerCase();
+                                  const home = (s.time_casa || "").toLowerCase();
+                                  const isHomePick = pick.includes(home) || (s.mercado === "1X2" && /^(1)$/.test((s.selecao || "").trim()));
+                                  return (
+                                    <span className={`font-semibold ${isHomePick ? 'text-[#014a8f]' : ''}`}>{s.time_casa}</span>
+                                  );
+                                })()}
                               </div>
 
                               <span className="text-gray-500">x</span>
 
                               {/* TIME FORA */}
                               <div className="flex items-center gap-2">
-                                <span className="font-semibold">{s.time_fora}</span>
+                                {(() => {
+                                  const pick = (s.selecao || "").toLowerCase();
+                                  const away = (s.time_fora || "").toLowerCase();
+                                  const isAwayPick = pick.includes(away) || (s.mercado === "1X2" && /^(2)$/.test((s.selecao || "").trim()));
+                                  return (
+                                    <span className={`font-semibold ${isAwayPick ? 'text-[#014a8f]' : ''}`}>{s.time_fora}</span>
+                                  );
+                                })()}
                                 {logoAway && (
                                   <img src={logoAway} className="w-5 h-5 object-contain" />
                                 )}
@@ -1137,6 +1193,7 @@ export const HomeScreen: React.FC = () => {
                             </div>
 
                             {/* Mercado / Pick */}
+                            <div className="mb-1 text-xs text-gray-500">{pickLabel}</div>
                             <div className="flex justify-between text-sm">
                               <div>
                                 <p className="text-gray-600">{s.mercado}</p>
@@ -1398,6 +1455,14 @@ export const HomeScreen: React.FC = () => {
                       ? getFlagByCountryCode(leagueCode)
                       : null;
 
+                    // pick label logic (Vitória de {time}) for slip modal
+                    const pickText = (s.selecao || "").toLowerCase();
+                    const homeText = (s.time_casa || "").toLowerCase();
+                    const awayText = (s.time_fora || "").toLowerCase();
+                    const isHomePick = (homeText && pickText.includes(homeText)) || (s.mercado === "1X2" && /^(1)$/.test((s.selecao || "").trim()));
+                    const isAwayPick = (awayText && pickText.includes(awayText)) || (s.mercado === "1X2" && /^(2)$/.test((s.selecao || "").trim()));
+                    const pickLabel = isHomePick ? `Vitória de ${s.time_casa}` : isAwayPick ? `Vitória de ${s.time_fora}` : (s.selecao || 'Palpite');
+
                     return (
                       <div
                         key={i}
@@ -1458,6 +1523,7 @@ export const HomeScreen: React.FC = () => {
                         </div>
 
                         {/* Mercado / Seleção / Odd */}
+                        <div className="text-xs text-gray-500 mb-1">{pickLabel}</div>
                         <div className="mt-2 flex items-center justify-between">
                           <div className="text-xs">
                             <div className="text-gray-500">{s.mercado}</div>

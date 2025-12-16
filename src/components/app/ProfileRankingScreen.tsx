@@ -4,12 +4,15 @@ import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { User, Trophy, Target, TrendingUp, Award, Crown, Medal } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContexts';
+import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
 
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const auth = useAuth();
+  const navigate = useNavigate();
 
   const storedUser =
     auth?.user ||
@@ -55,13 +58,15 @@ export const ProfileRankingScreen: React.FC = () => {
       try {
         // Tenta buscar histórico de apostas e extrato financeiro
         const api = (await import('@/services/api')).default;
-        const [histRes, extrRes] = await Promise.allSettled([
+        const [histRes, extrRes, bilhetesRes] = await Promise.allSettled([
           api.get('/apostas/historico'),
-          api.get('/financeiro/extrato')
+          api.get('/financeiro/extrato'),
+          api.get('/apostas/bilhetes')
         ]);
 
         const apostas: any[] = histRes.status === 'fulfilled' && Array.isArray(histRes.value.data) ? histRes.value.data : [];
         const extrato: any[] = extrRes.status === 'fulfilled' && Array.isArray(extrRes.value.data) ? extrRes.value.data : [];
+        const bilhetes: any[] = bilhetesRes.status === 'fulfilled' && Array.isArray(bilhetesRes.value.data) ? bilhetesRes.value.data : [];
 
         // Mapeia apostas para formato consistente (compatível com BettingHistoryScreen)
         const mappedApostas = apostas.map((a: any) => ({
@@ -103,13 +108,14 @@ export const ProfileRankingScreen: React.FC = () => {
           }
         }
 
-        // Profit: somar extrato (premio positivo, aposta negativo)
-        const profit = extrato.reduce((acc: number, mv: any) => {
-          if (!mv || !mv.tipo) return acc;
-          if (mv.tipo === 'premio') return acc + Number(mv.valor || 0);
-          if (mv.tipo === 'aposta') return acc - Number(mv.valor || 0);
+        // Profit: soma apenas prêmios e subtrai stakes de bilhetes perdidos (valor ganho - valor perdido)
+        const totalPremios = extrato.reduce((acc: number, mv: any) => mv && mv.tipo === 'premio' ? acc + Number(mv.valor || 0) : acc, 0);
+        const totalPerdido = bilhetes.reduce((acc: number, b: any) => {
+          const st = (b.status || '').toString().toLowerCase();
+          if (st === 'perdido' || st === 'perdida') return acc + Number(b.stake_total || b.stake || 0);
           return acc;
         }, 0);
+        const profit = totalPremios - totalPerdido;
 
         // Monthly stats: agrupar por mês do registro (apostas) e calcular bets, winRate, profit (por mês via extrato)
         const statsMap: Record<string, { bets: number; wins: number; profit: number }> = {};
@@ -127,7 +133,16 @@ export const ProfileRankingScreen: React.FC = () => {
           const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
           if (!statsMap[key]) statsMap[key] = { bets: 0, wins: 0, profit: 0 };
           if (mv.tipo === 'premio') statsMap[key].profit += Number(mv.valor || 0);
-          if (mv.tipo === 'aposta') statsMap[key].profit -= Number(mv.valor || 0);
+        });
+
+        // Subtrair perdas por bilhete (por mês)
+        bilhetes.forEach((b: any) => {
+          const st = (b.status || '').toString().toLowerCase();
+          if (st !== 'perdido' && st !== 'perdida') return;
+          const d = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
+          const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+          if (!statsMap[key]) statsMap[key] = { bets: 0, wins: 0, profit: 0 };
+          statsMap[key].profit -= Number(b.stake_total || b.stake || 0);
         });
 
         const monthly = Object.entries(statsMap).sort((a, b) => b[0].localeCompare(a[0])).map(([k, v]) => ({
@@ -224,6 +239,11 @@ export const ProfileRankingScreen: React.FC = () => {
             Suas estatísticas e conquistas
           </p>
         </div>
+        <div>
+          <Button size="sm" className="bg-[#014a8f] text-white" onClick={() => navigate('/profile-setup')}>
+            Editar Perfil
+          </Button>
+        </div>
       </div>
 
       {/* Profile Card */}
@@ -288,9 +308,21 @@ export const ProfileRankingScreen: React.FC = () => {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className="text-center p-3 bg-green-50 rounded-lg">
-              <p className="text-lg font-bold text-green-600">R$ {userProfile.totalProfit.toFixed(2)}</p>
-              <p className="text-sm text-green-700">Lucro Total</p>
+            <div className={`text-center p-3 rounded-lg ${
+              userProfile.totalProfit >= 0 
+                ? 'bg-green-50' 
+                : 'bg-red-50'
+            }`}>
+              <p className={`text-lg font-bold ${
+                userProfile.totalProfit >= 0 
+                  ? 'text-green-600' 
+                  : 'text-red-600'
+              }`}>R$ {userProfile.totalProfit.toFixed(2)}</p>
+              <p className={`text-sm ${
+                userProfile.totalProfit >= 0 
+                  ? 'text-green-700' 
+                  : 'text-red-700'
+              }`}>Lucro Total</p>
             </div>
             <div className="text-center p-3 bg-blue-50 rounded-lg">
               <p className="text-lg font-bold text-blue-600">{userProfile.longestStreak}</p>

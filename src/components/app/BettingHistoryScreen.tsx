@@ -431,6 +431,12 @@ export default function BettingHistoryScreen() {
 
               const logoA = findLogo(teamA);
               const logoB = findLogo(teamB);
+              const pick = (a.selecao || "").toLowerCase();
+              const teamALow = (teamA || "").toLowerCase();
+              const teamBLow = (teamB || "").toLowerCase();
+              const isTeamAPick = (teamA && pick.includes(teamALow)) || (a.mercado === '1X2' && /^(1)$/.test((a.selecao || '').trim()));
+              const isTeamBPick = (teamB && pick.includes(teamBLow)) || (a.mercado === '1X2' && /^(2)$/.test((a.selecao || '').trim()));
+              const pickLabel = isTeamAPick ? `Vitória de ${teamA || a.selecao}` : isTeamBPick ? `Vitória de ${teamB || a.selecao}` : (a.selecao || 'Palpite');
               // ------------------------------------------
 
               return (
@@ -446,11 +452,11 @@ export default function BettingHistoryScreen() {
                         <div className="w-8 h-8 shrink-0 rounded-full bg-gray-50 dark:bg-neutral-800 p-1 border dark:border-neutral-700">
                            {logoA ? <img src={logoA} alt="Team A" className="w-full h-full object-contain" /> : <div className="w-full h-full flex items-center justify-center text-[10px] text-gray-400">?</div>}
                         </div>
-                        <span className="text-sm font-semibold truncate text-gray-800 dark:text-gray-200">{teamA}</span>
+                        <span className={`text-sm font-semibold truncate text-gray-800 dark:text-gray-200 ${isTeamAPick ? 'text-[#014a8f]' : ''}`}>{teamA}</span>
                         
                         <span className="text-xs text-gray-400 px-1">vs</span>
                         
-                        <span className="text-sm font-semibold truncate text-gray-800 dark:text-gray-200">{teamB}</span>
+                        <span className={`text-sm font-semibold truncate text-gray-800 dark:text-gray-200 ${isTeamBPick ? 'text-[#014a8f]' : ''}`}>{teamB}</span>
                         <div className="w-8 h-8 shrink-0 rounded-full bg-gray-50 dark:bg-neutral-800 p-1 border dark:border-neutral-700">
                            {logoB ? <img src={logoB} alt="Team B" className="w-full h-full object-contain" /> : <div className="w-full h-full flex items-center justify-center text-[10px] text-gray-400">?</div>}
                         </div>
@@ -473,6 +479,7 @@ export default function BettingHistoryScreen() {
                     </div>
                     <div>
                       <span className="text-gray-400 text-[10px] uppercase font-bold tracking-wider">Seleção</span>
+                      <div className="text-xs text-gray-500">{pickLabel}</div>
                       <div className="font-medium truncate text-[#014a8f] dark:text-blue-400" title={a.selecao}>{a.selecao}</div>
                     </div>
                     <div>
