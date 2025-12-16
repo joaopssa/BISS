@@ -10,74 +10,26 @@ export type PlayerRow = {
 };
 
 export async function loadPlayersFromCSV(): Promise<PlayerRow[]> {
-  try {
-    const resp = await fetch("/data/players/players_by_club_2025.csv");
-    
-    if (!resp.ok) {
-      console.error("Erro ao buscar CSV:", resp.status);
-      return [];
-    }
-    
-    const text = await resp.text();
-    const rows: PlayerRow[] = [];
-    
-    // Parse CSV com suporte a quoted fields
-    const lines = text.split("\n");
-    
-    for (let i = 1; i < lines.length; i++) {
-      const line = lines[i].trim();
-      if (!line) continue;
-      
-      // Parser básico de CSV que suporta aspas
-      const cols = parseCSVLine(line);
-      
-      if (cols.length >= 4) {
-        const playerName = cols[0].trim();
-        const clubName = cols[1].trim();
-        const jsonClub = cols[2].trim();
-        const leagueName = cols[3].trim();
-        
-        // Validar que os campos têm conteúdo
-        if (playerName && clubName && jsonClub && leagueName) {
-          rows.push({
-            player_name: playerName,
-            club_name: clubName,
-            json_club: jsonClub,
-            league_name: leagueName,
-          });
-        }
-      }
-    }
+  const resp = await fetch("http://localhost:3001/api/players/csv");
+  const text = await resp.text();
 
-    console.log(`Carregados ${rows.length} jogadores do CSV`);
-    return rows;
-  } catch (error) {
-    console.error("Erro ao carregar CSV de jogadores:", error);
-    return [];
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
+  const header = lines[0].split(",");
+
+  const rows: PlayerRow[] = [];
+
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split(",");
+
+    rows.push({
+      player_name: cols[0],
+      club_name: cols[1],
+      json_club: cols[2],
+      league_name: cols[3],
+    });
   }
-}
 
-// Função auxiliar para fazer parsing de linhas CSV
-function parseCSVLine(line: string): string[] {
-  const result: string[] = [];
-  let current = "";
-  let inQuotes = false;
-
-  for (let i = 0; i < line.length; i++) {
-    const char = line[i];
-    
-    if (char === '"') {
-      inQuotes = !inQuotes;
-    } else if (char === "," && !inQuotes) {
-      result.push(current);
-      current = "";
-    } else {
-      current += char;
-    }
-  }
-  
-  result.push(current);
-  return result;
+  return rows;
 }
 
 // Converte PlayerRow para PlayerOpt que o componente usa

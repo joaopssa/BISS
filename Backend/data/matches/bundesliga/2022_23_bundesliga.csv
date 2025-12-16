@@ -7,12 +7,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2022-08-06,1.FC Union Berlin,Hertha BSC,3-1,1-0
 1,2022-08-06,Borussia Dortmund,Bayer Leverkusen,1-0,1-0
 1,2022-08-07,VfB Stuttgart,RB Leipzig,1-1,1-1
-1,2022-08-07,1.FC Köln,FC Schalke 04,3-1,0-0
+1,2022-08-07,1. FC Köln,FC Schalke 04,3-1,0-0
 2,2022-08-12,Freiburg,Borussia Dortmund,1-3,1-0
 2,2022-08-13,Werder Bremen,VfB Stuttgart,2-2,1-1
 2,2022-08-13,Hertha BSC,Eintracht Frankfurt,1-1,1-0
 2,2022-08-13,Hoffenheim,VfL Bochum 1848,3-2,2-2
-2,2022-08-13,RB Leipzig,1.FC Köln,2-2,1-1
+2,2022-08-13,RB Leipzig,1. FC Köln,2-2,1-1
 2,2022-08-13,Bayer Leverkusen,Augsburg,1-2,1-1
 2,2022-08-13,FC Schalke 04,Borussia Monchengladbach,2-2,1-0
 2,2022-08-14,Mainz 05,1.FC Union Berlin,0-0,
@@ -24,7 +24,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2022-08-20,Bayer Leverkusen,Hoffenheim,0-3,0-2
 3,2022-08-20,Borussia Dortmund,Werder Bremen,2-3,1-0
 3,2022-08-20,1.FC Union Berlin,RB Leipzig,2-1,2-0
-3,2022-08-21,Eintracht Frankfurt,1.FC Köln,1-1,0-0
+3,2022-08-21,Eintracht Frankfurt,1. FC Köln,1-1,0-0
 3,2022-08-21,VfL Bochum 1848,Bayern de Munique,0-7,0-4
 4,2022-08-26,Freiburg,VfL Bochum 1848,1-0,0-0
 4,2022-08-27,FC Schalke 04,1.FC Union Berlin,1-6,1-3
@@ -33,12 +33,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 4,2022-08-27,Mainz 05,Bayer Leverkusen,0-3,0-3
 4,2022-08-27,RB Leipzig,Wolfsburg,2-0,1-0
 4,2022-08-27,Bayern de Munique,Borussia Monchengladbach,1-1,0-1
-4,2022-08-28,1.FC Köln,VfB Stuttgart,0-0,
+4,2022-08-28,1. FC Köln,VfB Stuttgart,0-0,
 4,2022-08-28,Werder Bremen,Eintracht Frankfurt,3-4,2-3
 5,2022-09-02,Borussia Dortmund,Hoffenheim,1-0,1-0
 5,2022-09-03,VfB Stuttgart,FC Schalke 04,1-1,1-1
 5,2022-09-03,VfL Bochum 1848,Werder Bremen,0-2,0-0
-5,2022-09-03,Wolfsburg,1.FC Köln,2-4,1-3
+5,2022-09-03,Wolfsburg,1. FC Köln,2-4,1-3
 5,2022-09-03,1.FC Union Berlin,Bayern de Munique,1-1,1-1
 5,2022-09-03,Bayer Leverkusen,Freiburg,2-3,1-0
 5,2022-09-03,Eintracht Frankfurt,RB Leipzig,4-0,2-0
@@ -51,7 +51,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 6,2022-09-10,RB Leipzig,Borussia Dortmund,3-0,2-0
 6,2022-09-10,Bayern de Munique,VfB Stuttgart,2-2,1-0
 6,2022-09-10,FC Schalke 04,VfL Bochum 1848,3-1,1-0
-6,2022-09-11,1.FC Köln,1.FC Union Berlin,0-1,0-1
+6,2022-09-11,1. FC Köln,1.FC Union Berlin,0-1,0-1
 6,2022-09-11,Freiburg,Borussia Monchengladbach,0-0,
 7,2022-09-16,Mainz 05,Hertha BSC,1-1,0-1
 7,2022-09-17,VfB Stuttgart,Eintracht Frankfurt,1-3,0-1
@@ -60,12 +60,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2022-09-17,Borussia Dortmund,FC Schalke 04,1-0,0-0
 7,2022-09-17,Borussia Monchengladbach,RB Leipzig,3-0,2-0
 7,2022-09-18,1.FC Union Berlin,Wolfsburg,2-0,0-0
-7,2022-09-18,VfL Bochum 1848,1.FC Köln,1-1,1-0
+7,2022-09-18,VfL Bochum 1848,1. FC Köln,1-1,1-0
 7,2022-09-18,Hoffenheim,Freiburg,0-0,
 8,2022-09-30,Bayern de Munique,Bayer Leverkusen,4-0,3-0
 8,2022-10-01,Wolfsburg,VfB Stuttgart,3-2,2-2
 8,2022-10-01,Eintracht Frankfurt,1.FC Union Berlin,2-0,2-0
-8,2022-10-01,1.FC Köln,Borussia Dortmund,3-2,0-1
+8,2022-10-01,1. FC Köln,Borussia Dortmund,3-2,0-1
 8,2022-10-01,Freiburg,Mainz 05,2-1,2-0
 8,2022-10-01,RB Leipzig,VfL Bochum 1848,4-0,2-0
 8,2022-10-01,Werder Bremen,Borussia Monchengladbach,5-1,4-0
@@ -77,7 +77,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2022-10-08,Mainz 05,RB Leipzig,1-1,1-0
 9,2022-10-08,Bayer Leverkusen,FC Schalke 04,4-0,2-0
 9,2022-10-08,Borussia Dortmund,Bayern de Munique,2-2,0-1
-9,2022-10-09,Borussia Monchengladbach,1.FC Köln,5-2,2-1
+9,2022-10-09,Borussia Monchengladbach,1. FC Köln,5-2,2-1
 9,2022-10-09,Hertha BSC,Freiburg,2-2,1-1
 9,2022-10-09,VfB Stuttgart,1.FC Union Berlin,0-1,0-0
 10,2022-10-14,FC Schalke 04,Hoffenheim,0-3,0-2
@@ -86,10 +86,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 10,2022-10-15,Wolfsburg,Borussia Monchengladbach,2-2,1-1
 10,2022-10-15,Eintracht Frankfurt,Bayer Leverkusen,5-1,1-0
 10,2022-10-15,RB Leipzig,Hertha BSC,3-2,3-0
-10,2022-10-16,1.FC Köln,Augsburg,3-2,0-1
+10,2022-10-16,1. FC Köln,Augsburg,3-2,0-1
 10,2022-10-16,1.FC Union Berlin,Borussia Dortmund,2-0,2-0
 10,2022-10-16,Bayern de Munique,Freiburg,5-0,2-0
-11,2022-10-21,Mainz 05,1.FC Köln,5-0,3-0
+11,2022-10-21,Mainz 05,1. FC Köln,5-0,3-0
 11,2022-10-22,Augsburg,RB Leipzig,3-3,1-0
 11,2022-10-22,Hoffenheim,Bayern de Munique,0-2,0-2
 11,2022-10-22,Freiburg,Werder Bremen,2-0,0-0
@@ -106,7 +106,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2022-10-29,Eintracht Frankfurt,Borussia Dortmund,1-2,1-1
 12,2022-10-30,1.FC Union Berlin,Borussia Monchengladbach,2-1,0-1
 12,2022-10-30,FC Schalke 04,Freiburg,0-2,0-1
-12,2022-10-30,1.FC Köln,Hoffenheim,1-1,1-1
+12,2022-10-30,1. FC Köln,Hoffenheim,1-1,1-1
 13,2022-11-04,Borussia Monchengladbach,VfB Stuttgart,3-1,2-1
 13,2022-11-05,Hertha BSC,Bayern de Munique,2-3,2-3
 13,2022-11-05,Augsburg,Eintracht Frankfurt,1-2,1-1
@@ -115,19 +115,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2022-11-05,Borussia Dortmund,VfL Bochum 1848,3-0,3-0
 13,2022-11-05,Werder Bremen,FC Schalke 04,2-1,1-0
 13,2022-11-06,Bayer Leverkusen,1.FC Union Berlin,5-0,0-0
-13,2022-11-06,Freiburg,1.FC Köln,2-0,0-0
+13,2022-11-06,Freiburg,1. FC Köln,2-0,0-0
 14,2022-11-08,Wolfsburg,Borussia Dortmund,2-0,1-0
 14,2022-11-08,VfB Stuttgart,Hertha BSC,2-1,1-1
 14,2022-11-08,VfL Bochum 1848,Borussia Monchengladbach,2-1,2-0
 14,2022-11-08,Bayern de Munique,Werder Bremen,6-1,4-1
-14,2022-11-09,1.FC Köln,Bayer Leverkusen,1-2,1-0
+14,2022-11-09,1. FC Köln,Bayer Leverkusen,1-2,1-0
 14,2022-11-09,FC Schalke 04,Mainz 05,1-0,1-0
 14,2022-11-09,Eintracht Frankfurt,Hoffenheim,4-2,3-1
 14,2022-11-09,1.FC Union Berlin,Augsburg,2-2,2-2
 14,2022-11-09,RB Leipzig,Freiburg,3-1,0-0
 15,2022-11-11,Borussia Monchengladbach,Borussia Dortmund,4-2,3-2
 15,2022-11-12,Werder Bremen,RB Leipzig,1-2,0-1
-15,2022-11-12,Hertha BSC,1.FC Köln,2-0,1-0
+15,2022-11-12,Hertha BSC,1. FC Köln,2-0,1-0
 15,2022-11-12,Augsburg,VfL Bochum 1848,0-1,0-0
 15,2022-11-12,Hoffenheim,Wolfsburg,1-2,1-1
 15,2022-11-12,Bayer Leverkusen,VfB Stuttgart,2-0,1-0
@@ -140,13 +140,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2023-01-21,Wolfsburg,Freiburg,6-0,3-0
 16,2023-01-21,Eintracht Frankfurt,FC Schalke 04,3-0,1-0
 16,2023-01-21,1.FC Union Berlin,Hoffenheim,3-1,0-1
-16,2023-01-21,1.FC Köln,Werder Bremen,7-1,5-1
+16,2023-01-21,1. FC Köln,Werder Bremen,7-1,5-1
 16,2023-01-22,Borussia Dortmund,Augsburg,4-3,2-2
 16,2023-01-22,Borussia Monchengladbach,Bayer Leverkusen,2-3,0-2
 17,2023-01-24,FC Schalke 04,RB Leipzig,1-6,0-4
 17,2023-01-24,Hertha BSC,Wolfsburg,0-5,0-3
 17,2023-01-24,Hoffenheim,VfB Stuttgart,2-2,1-1
-17,2023-01-24,Bayern de Munique,1.FC Köln,1-1,0-1
+17,2023-01-24,Bayern de Munique,1. FC Köln,1-1,0-1
 17,2023-01-25,Mainz 05,Borussia Dortmund,1-2,1-1
 17,2023-01-25,Werder Bremen,1.FC Union Berlin,1-2,1-1
 17,2023-01-25,Augsburg,Borussia Monchengladbach,1-0,0-0
@@ -159,12 +159,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 18,2023-01-28,Mainz 05,VfL Bochum 1848,5-2,3-0
 18,2023-01-28,Freiburg,Augsburg,3-1,2-1
 18,2023-01-28,Bayern de Munique,Eintracht Frankfurt,1-1,1-0
-18,2023-01-29,FC Schalke 04,1.FC Köln,0-0,
+18,2023-01-29,FC Schalke 04,1. FC Köln,0-0,
 18,2023-01-29,Bayer Leverkusen,Borussia Dortmund,0-2,0-1
 19,2023-02-03,Augsburg,Bayer Leverkusen,1-0,0-0
 19,2023-02-04,VfL Bochum 1848,Hoffenheim,5-2,3-0
 19,2023-02-04,Eintracht Frankfurt,Hertha BSC,3-0,2-0
-19,2023-02-04,1.FC Köln,RB Leipzig,0-0,
+19,2023-02-04,1. FC Köln,RB Leipzig,0-0,
 19,2023-02-04,1.FC Union Berlin,Mainz 05,2-1,1-0
 19,2023-02-04,Borussia Dortmund,Freiburg,5-1,1-1
 19,2023-02-04,Borussia Monchengladbach,FC Schalke 04,0-0,
@@ -178,12 +178,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2023-02-11,Bayern de Munique,VfL Bochum 1848,3-0,1-0
 20,2023-02-11,RB Leipzig,1.FC Union Berlin,1-2,1-0
 20,2023-02-12,Hertha BSC,Borussia Monchengladbach,4-1,1-1
-20,2023-02-12,1.FC Köln,Eintracht Frankfurt,3-0,0-0
+20,2023-02-12,1. FC Köln,Eintracht Frankfurt,3-0,0-0
 21,2023-02-17,Augsburg,Hoffenheim,1-0,0-0
 21,2023-02-18,VfL Bochum 1848,Freiburg,0-2,0-1
 21,2023-02-18,Wolfsburg,RB Leipzig,0-3,0-1
 21,2023-02-18,Borussia Monchengladbach,Bayern de Munique,3-2,1-1
-21,2023-02-18,VfB Stuttgart,1.FC Köln,3-0,1-0
+21,2023-02-18,VfB Stuttgart,1. FC Köln,3-0,1-0
 21,2023-02-18,Eintracht Frankfurt,Werder Bremen,2-0,1-0
 21,2023-02-19,1.FC Union Berlin,FC Schalke 04,0-0,
 21,2023-02-19,Borussia Dortmund,Hertha BSC,4-1,2-0
@@ -192,7 +192,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2023-02-25,Werder Bremen,VfL Bochum 1848,3-0,2-0
 22,2023-02-25,Hertha BSC,Augsburg,2-0,0-0
 22,2023-02-25,Hoffenheim,Borussia Dortmund,0-1,0-1
-22,2023-02-25,1.FC Köln,Wolfsburg,0-2,0-1
+22,2023-02-25,1. FC Köln,Wolfsburg,0-2,0-1
 22,2023-02-25,RB Leipzig,Eintracht Frankfurt,2-1,2-0
 22,2023-02-25,FC Schalke 04,VfB Stuttgart,2-1,2-0
 22,2023-02-26,Freiburg,Bayer Leverkusen,1-1,1-0
@@ -202,11 +202,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 23,2023-03-04,VfL Bochum 1848,FC Schalke 04,0-2,0-1
 23,2023-03-04,Borussia Monchengladbach,Freiburg,0-0,
 23,2023-03-04,Mainz 05,Hoffenheim,1-0,1-0
-23,2023-03-04,1.FC Union Berlin,1.FC Köln,0-0,
+23,2023-03-04,1.FC Union Berlin,1. FC Köln,0-0,
 23,2023-03-04,VfB Stuttgart,Bayern de Munique,1-2,0-1
 23,2023-03-05,Bayer Leverkusen,Hertha BSC,4-1,2-0
 23,2023-03-05,Wolfsburg,Eintracht Frankfurt,2-2,2-2
-24,2023-03-10,1.FC Köln,VfL Bochum 1848,0-2,0-1
+24,2023-03-10,1. FC Köln,VfL Bochum 1848,0-2,0-1
 24,2023-03-11,Hertha BSC,Mainz 05,1-1,1-0
 24,2023-03-11,Eintracht Frankfurt,VfB Stuttgart,1-1,0-0
 24,2023-03-11,RB Leipzig,Borussia Monchengladbach,3-0,0-0
@@ -220,7 +220,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2023-03-18,Augsburg,FC Schalke 04,1-1,0-0
 25,2023-03-18,VfL Bochum 1848,RB Leipzig,1-0,0-0
 25,2023-03-18,Hoffenheim,Hertha BSC,3-1,2-0
-25,2023-03-18,Borussia Dortmund,1.FC Köln,6-1,4-1
+25,2023-03-18,Borussia Dortmund,1. FC Köln,6-1,4-1
 25,2023-03-19,1.FC Union Berlin,Eintracht Frankfurt,2-0,0-0
 25,2023-03-19,Bayer Leverkusen,Bayern de Munique,2-1,0-1
 25,2023-03-19,Mainz 05,Freiburg,1-1,0-0
@@ -231,9 +231,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 26,2023-04-01,1.FC Union Berlin,VfB Stuttgart,3-0,0-0
 26,2023-04-01,RB Leipzig,Mainz 05,0-3,0-1
 26,2023-04-01,Bayern de Munique,Borussia Dortmund,4-2,3-0
-26,2023-04-02,1.FC Köln,Borussia Monchengladbach,0-0,
+26,2023-04-02,1. FC Köln,Borussia Monchengladbach,0-0,
 26,2023-04-02,Werder Bremen,Hoffenheim,1-2,0-0
-27,2023-04-08,Augsburg,1.FC Köln,1-3,1-2
+27,2023-04-08,Augsburg,1. FC Köln,1-3,1-2
 27,2023-04-08,Mainz 05,Werder Bremen,2-2,0-0
 27,2023-04-08,Freiburg,Bayern de Munique,0-1,0-0
 27,2023-04-08,Bayer Leverkusen,Eintracht Frankfurt,3-1,2-0
@@ -244,7 +244,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2023-04-09,Hoffenheim,FC Schalke 04,2-0,1-0
 28,2023-04-14,FC Schalke 04,Hertha BSC,5-2,2-1
 28,2023-04-15,VfB Stuttgart,Borussia Dortmund,3-3,0-2
-28,2023-04-15,1.FC Köln,Mainz 05,1-1,0-1
+28,2023-04-15,1. FC Köln,Mainz 05,1-1,0-1
 28,2023-04-15,RB Leipzig,Augsburg,3-2,3-1
 28,2023-04-15,Bayern de Munique,Hoffenheim,1-1,1-0
 28,2023-04-15,Eintracht Frankfurt,Borussia Monchengladbach,1-1,0-1
@@ -254,7 +254,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 29,2023-04-21,Augsburg,VfB Stuttgart,1-1,1-0
 29,2023-04-22,Hertha BSC,Werder Bremen,2-4,0-2
 29,2023-04-22,VfL Bochum 1848,Wolfsburg,1-5,0-3
-29,2023-04-22,Hoffenheim,1.FC Köln,1-3,0-2
+29,2023-04-22,Hoffenheim,1. FC Köln,1-3,0-2
 29,2023-04-22,Mainz 05,Bayern de Munique,3-1,0-1
 29,2023-04-22,Borussia Dortmund,Eintracht Frankfurt,4-0,3-0
 29,2023-04-23,Freiburg,FC Schalke 04,4-0,2-0
@@ -263,14 +263,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2023-04-28,VfL Bochum 1848,Borussia Dortmund,1-1,1-1
 30,2023-04-29,VfB Stuttgart,Borussia Monchengladbach,2-1,1-0
 30,2023-04-29,Eintracht Frankfurt,Augsburg,1-1,1-0
-30,2023-04-29,1.FC Köln,Freiburg,0-1,0-0
+30,2023-04-29,1. FC Köln,Freiburg,0-1,0-0
 30,2023-04-29,1.FC Union Berlin,Bayer Leverkusen,0-0,
 30,2023-04-29,RB Leipzig,Hoffenheim,1-0,1-0
 30,2023-04-29,FC Schalke 04,Werder Bremen,2-1,0-1
 30,2023-04-30,Bayern de Munique,Hertha BSC,2-0,0-0
 30,2023-04-30,Wolfsburg,Mainz 05,3-0,3-0
 31,2023-05-05,Mainz 05,FC Schalke 04,2-3,0-1
-31,2023-05-05,Bayer Leverkusen,1.FC Köln,1-2,1-2
+31,2023-05-05,Bayer Leverkusen,1. FC Köln,1-2,1-2
 31,2023-05-06,Hertha BSC,VfB Stuttgart,2-1,2-1
 31,2023-05-06,Augsburg,1.FC Union Berlin,1-0,0-0
 31,2023-05-06,Borussia Monchengladbach,VfL Bochum 1848,2-0,1-0
@@ -278,7 +278,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2023-05-06,Freiburg,RB Leipzig,0-1,0-0
 31,2023-05-06,Werder Bremen,Bayern de Munique,1-2,0-0
 31,2023-05-07,Borussia Dortmund,Wolfsburg,6-0,3-0
-32,2023-05-12,1.FC Köln,Hertha BSC,5-2,3-2
+32,2023-05-12,1. FC Köln,Hertha BSC,5-2,3-2
 32,2023-05-13,VfL Bochum 1848,Augsburg,3-2,1-1
 32,2023-05-13,Wolfsburg,Hoffenheim,2-1,1-0
 32,2023-05-13,Eintracht Frankfurt,Mainz 05,3-0,2-0
@@ -288,7 +288,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2023-05-14,VfB Stuttgart,Bayer Leverkusen,1-1,0-0
 32,2023-05-14,RB Leipzig,Werder Bremen,2-1,0-0
 33,2023-05-19,Freiburg,Wolfsburg,2-0,0-0
-33,2023-05-20,Werder Bremen,1.FC Köln,1-1,0-1
+33,2023-05-20,Werder Bremen,1. FC Köln,1-1,0-1
 33,2023-05-20,FC Schalke 04,Eintracht Frankfurt,2-2,1-1
 33,2023-05-20,Hertha BSC,VfL Bochum 1848,1-1,0-0
 33,2023-05-20,Hoffenheim,1.FC Union Berlin,4-2,2-1
@@ -301,7 +301,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 34,2023-05-27,Wolfsburg,Hertha BSC,1-2,1-0
 34,2023-05-27,Eintracht Frankfurt,Freiburg,2-1,0-1
 34,2023-05-27,Borussia Monchengladbach,Augsburg,2-0,2-0
-34,2023-05-27,1.FC Köln,Bayern de Munique,1-2,0-1
+34,2023-05-27,1. FC Köln,Bayern de Munique,1-2,0-1
 34,2023-05-27,1.FC Union Berlin,Werder Bremen,1-0,0-0
 34,2023-05-27,RB Leipzig,FC Schalke 04,4-2,2-1
 34,2023-05-27,Borussia Dortmund,Mainz 05,2-2,0-2

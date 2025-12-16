@@ -125,12 +125,6 @@ export const UserProfileScreen: React.FC = () => {
   const playerDebRef = useRef<number>();
   const houseDebRef = useRef<number>();
 
-  // Refs para detectar clique fora
-  const teamWrapperRef = useRef<HTMLDivElement>(null);
-  const leagueWrapperRef = useRef<HTMLDivElement>(null);
-  const playerWrapperRef = useRef<HTMLDivElement>(null);
-  const houseWrapperRef = useRef<HTMLDivElement>(null);
-
   // ======= REAL PLAYERS FROM CSV =======
   const [allPlayers, setAllPlayers] = useState<PlayerOpt[]>([]);
 
@@ -145,29 +139,6 @@ export const UserProfileScreen: React.FC = () => {
       }
     }
     loadCSV();
-  }, []);
-
-  // Hook para fechar sugestões ao clicar fora
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (teamWrapperRef.current && !teamWrapperRef.current.contains(event.target as Node)) {
-        setShowTeamSuggestions(false);
-      }
-      if (leagueWrapperRef.current && !leagueWrapperRef.current.contains(event.target as Node)) {
-        setShowLeagueSuggestions(false);
-      }
-      if (playerWrapperRef.current && !playerWrapperRef.current.contains(event.target as Node)) {
-        setShowPlayerSuggestions(false);
-      }
-      if (houseWrapperRef.current && !houseWrapperRef.current.contains(event.target as Node)) {
-        setShowBettingHouseSuggestions(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
   }, []);
 
   // ====================== Times ======================
@@ -390,11 +361,11 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Clube Favorito ===== */}
             <div>
-              <Label className="flex items-center gap-2 mb-3">
+              <Label className="flex items-center gap-2">
                 <Heart className="w-4 h-4 text-red-500" /> Clube Favorito
               </Label>
 
-              <div className="relative" ref={teamWrapperRef}>
+              <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
 
                 <Input
@@ -464,11 +435,11 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Ligas ===== */}
             <div>
-              <Label className="flex items-center gap-2 mb-3">
+              <Label className="flex items-center gap-2">
                 <Trophy className="w-4 h-4 text-yellow-500" /> Ligas Favoritas
               </Label>
 
-              <div className="relative" ref={leagueWrapperRef}>
+              <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
 
                 <Input
@@ -525,11 +496,11 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Jogadores ===== */}
             <div>
-              <Label className="flex items-center gap-2 mb-3">
+              <Label className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-gray-700" /> Jogadores Favoritos
               </Label>
 
-              <div className="relative" ref={playerWrapperRef}>
+              <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
 
                 <Input
@@ -596,11 +567,11 @@ export const UserProfileScreen: React.FC = () => {
 
             {/* ===== Casas ===== */}
             <div>
-              <Label className="flex items-center gap-2 mb-3">
+              <Label className="flex items-center gap-2">
                 <Building className="w-4 h-4 text-gray-700" /> Casas de Apostas
               </Label>
 
-              <div className="relative" ref={houseWrapperRef}>
+              <div className="relative">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
 
                 <Input
@@ -678,8 +649,7 @@ export const UserProfileScreen: React.FC = () => {
               </div>
 
               <div>
-                {/* [ALTERAÇÃO] Adicionado mb-3 e block para o Intervalo de Odds */}
-                <Label className="mb-3 block">Intervalo de odds</Label>
+                <Label>Intervalo de odds</Label>
                 <Slider
                   value={profile.oddsRange}
                   onValueChange={(range) =>
@@ -697,8 +667,7 @@ export const UserProfileScreen: React.FC = () => {
               </div>
 
               <div>
-                {/* [ALTERAÇÃO] Adicionado mb-3 e block para manter a consistência */}
-                <Label className="mb-3 block">Limite de investimento mensal</Label>
+                <Label>Limite de investimento mensal</Label>
 
                 <RadioGroup
                   value={profile.investmentLimit}

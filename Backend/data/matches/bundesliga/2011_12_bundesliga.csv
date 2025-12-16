@@ -1,7 +1,7 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
 1,,Borussia Dortmund,Hamburgo,3-1,2-0
 1,,VfB Stuttgart,FC Schalke 04,3-0,1-0
-1,,1.FC Köln,Wolfsburg,0-3,0-1
+1,,1. FC Köln,Wolfsburg,0-3,0-1
 1,,Augsburg,Freiburg,2-2,0-0
 1,,Mainz 05,Bayer Leverkusen,2-0,1-0
 1,,Bayern de Munique,Bor. Mönchengladbach,0-1,0-0
@@ -56,7 +56,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,,Mainz 05,Augsburg,0-1,0-0
 9,,Bor. Mönchengladbach,Bayer Leverkusen,2-2,0-1
 9,,Freiburg,Hamburgo,1-2,0-1
-9,,1.FC Köln,Hannover 96,2-0,1-0
+9,,1. FC Köln,Hannover 96,2-0,1-0
 10,,Augsburg,Werder Bremen,1-1,0-0
 10,,FC Nürnberg,VfB Stuttgart,2-2,1-0
 10,,FC Kaiserslautern,Freiburg,1-0,0-0
@@ -69,7 +69,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,,Bor. Mönchengladbach,Hannover 96,2-1,1-1
 11,,VfB Stuttgart,Borussia Dortmund,1-1,1-1
 11,,Mainz 05,Werder Bremen,1-3,1-1
-11,,1.FC Köln,Augsburg,3-0,2-0
+11,,1. FC Köln,Augsburg,3-0,2-0
 12,,Mainz 05,VfB Stuttgart,3-1,0-0
 12,,Borussia Dortmund,Wolfsburg,5-1,2-0
 12,,FC Nürnberg,Freiburg,1-2,1-1
@@ -83,7 +83,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,,Bor. Mönchengladbach,Werder Bremen,5-0,3-0
 13,,Bayern de Munique,Borussia Dortmund,0-1,0-0
 13,,VfB Stuttgart,Augsburg,2-1,1-0
-14,,1.FC Köln,Bor. Mönchengladbach,0-3,0-2
+14,,1. FC Köln,Bor. Mönchengladbach,0-3,0-2
 14,,Borussia Dortmund,FC Schalke 04,2-0,1-0
 14,,Hoffenheim,Freiburg,1-1,1-0
 14,,Augsburg,Wolfsburg,2-0,0-0
@@ -99,7 +99,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,,Hertha BSC,FC Schalke 04,1-2,1-2
 16,,Werder Bremen,Wolfsburg,4-1,2-0
 16,,Mainz 05,Hamburgo,0-0,
-16,,1.FC Köln,Freiburg,4-0,1-0
+16,,1. FC Köln,Freiburg,4-0,1-0
 16,,Augsburg,Bor. Mönchengladbach,1-0,0-0
 16,,Hannover 96,Bayer Leverkusen,0-0,
 16,,VfB Stuttgart,Bayern de Munique,1-2,1-1
@@ -119,7 +119,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2012-01-20,Werder Bremen,Bayer Leverkusen,1-1,1-0
 19,2012-01-20,Hertha BSC,Hamburgo,1-2,0-2
 19,2012-01-20,Bayern de Munique,Wolfsburg,2-0,0-0
-19,2012-01-20,1.FC Köln,FC Schalke 04,1-4,1-0
+19,2012-01-20,1. FC Köln,FC Schalke 04,1-4,1-0
 19,2012-01-20,Mainz 05,Freiburg,3-1,3-0
 19,2012-01-20,VfB Stuttgart,Bor. Mönchengladbach,0-3,0-1
 20,2012-01-20,FC Nürnberg,Borussia Dortmund,0-2,0-0
@@ -134,7 +134,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2012-01-20,Mainz 05,Hannover 96,1-1,1-0
 21,2012-01-20,VfB Stuttgart,Hertha BSC,5-0,4-0
 21,2012-01-20,Bor. Mönchengladbach,FC Schalke 04,3-0,3-0
-21,2012-01-20,1.FC Köln,Hamburgo,0-1,0-0
+21,2012-01-20,1. FC Köln,Hamburgo,0-1,0-0
 22,2012-01-20,Hertha BSC,Borussia Dortmund,0-1,0-0
 22,2012-01-20,Hamburgo,Werder Bremen,1-3,0-2
 22,2012-01-20,FC Kaiserslautern,Bor. Mönchengladbach,1-2,0-2
@@ -143,7 +143,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2012-01-20,FC Schalke 04,Wolfsburg,4-0,2-0
 22,2012-01-20,Hannover 96,VfB Stuttgart,4-2,2-0
 23,2012-01-20,Bor. Mönchengladbach,Hamburgo,1-1,1-0
-23,2012-01-20,1.FC Köln,Bayer Leverkusen,0-2,0-1
+23,2012-01-20,1. FC Köln,Bayer Leverkusen,0-2,0-1
 23,2012-01-20,VfB Stuttgart,Freiburg,4-1,2-1
 23,2012-01-20,Augsburg,Hertha BSC,3-0,0-0
 23,2012-01-20,Bayern de Munique,FC Schalke 04,2-0,1-0
@@ -157,7 +157,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 24,2012-01-20,FC Nürnberg,Bor. Mönchengladbach,1-0,0-0
 25,2012-01-20,Wolfsburg,Bayer Leverkusen,3-2,2-1
 25,2012-01-20,Bor. Mönchengladbach,Freiburg,0-0,
-25,2012-01-20,1.FC Köln,Hertha BSC,1-0,1-0
+25,2012-01-20,1. FC Köln,Hertha BSC,1-0,1-0
 25,2012-01-20,Augsburg,Borussia Dortmund,0-0,
 25,2012-01-20,Werder Bremen,Hannover 96,3-0,1-0
 25,2012-01-20,FC Schalke 04,Hamburgo,3-1,3-1
@@ -173,7 +173,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2012-01-20,Werder Bremen,Augsburg,1-1,0-0
 27,2012-01-20,Mainz 05,Hertha BSC,1-3,0-1
 27,2012-01-20,FC Schalke 04,Bayer Leverkusen,2-0,1-0
-27,2012-01-20,1.FC Köln,Borussia Dortmund,1-6,1-1
+27,2012-01-20,1. FC Köln,Borussia Dortmund,1-6,1-1
 28,2012-01-20,Borussia Dortmund,VfB Stuttgart,4-4,1-0
 28,2012-01-20,FC Nürnberg,Bayern de Munique,0-1,0-0
 28,2012-01-20,FC Kaiserslautern,Hamburgo,0-1,0-1
@@ -182,7 +182,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2012-01-20,Hannover 96,Bor. Mönchengladbach,2-1,0-0
 28,2012-01-20,Hoffenheim,FC Schalke 04,1-1,1-0
 29,2012-01-20,Wolfsburg,Borussia Dortmund,1-3,0-1
-29,2012-01-20,1.FC Köln,Werder Bremen,1-1,1-1
+29,2012-01-20,1. FC Köln,Werder Bremen,1-1,1-1
 29,2012-01-20,Bayern de Munique,Augsburg,2-1,1-1
 29,2012-01-20,Bor. Mönchengladbach,Hertha BSC,0-0,
 29,2012-01-20,FC Schalke 04,Hannover 96,3-0,1-0
@@ -203,7 +203,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2012-01-20,Hoffenheim,Bayer Leverkusen,0-1,0-0
 32,2012-01-20,Werder Bremen,Bayern de Munique,1-2,0-0
 32,2012-01-20,FC Nürnberg,Hamburgo,1-1,0-0
-32,2012-01-20,1.FC Köln,VfB Stuttgart,1-1,0-0
+32,2012-01-20,1. FC Köln,VfB Stuttgart,1-1,0-0
 32,2012-01-20,Borussia Dortmund,Bor. Mönchengladbach,2-0,1-0
 32,2012-01-20,Augsburg,FC Schalke 04,1-1,1-1
 32,2012-01-20,Hannover 96,Freiburg,0-0,
@@ -214,7 +214,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2012-01-20,Bor. Mönchengladbach,Augsburg,0-0,
 33,2012-01-20,FC Schalke 04,Hertha BSC,4-0,1-0
 34,2012-01-20,FC Nürnberg,Bayer Leverkusen,1-4,0-2
-34,2012-01-20,1.FC Köln,Bayern de Munique,1-4,0-1
+34,2012-01-20,1. FC Köln,Bayern de Munique,1-4,0-1
 34,2012-01-20,Werder Bremen,FC Schalke 04,2-3,1-1
 34,2012-01-20,Augsburg,Hamburgo,1-0,1-0
 34,2012-01-20,Borussia Dortmund,Freiburg,4-0,4-0
