@@ -94,6 +94,33 @@ function calcularStakeKelly1Way(
   return Math.max(stakeCalc, stakeMinAbs);
 }
 
+function getPickLabel(s: {
+  mercado?: string;
+  selecao?: string;
+  time_casa?: string;
+  time_fora?: string;
+}) {
+  const pickText = (s.selecao || "").toLowerCase().trim();
+  const homeText = (s.time_casa || "").toLowerCase();
+  const awayText = (s.time_fora || "").toLowerCase();
+
+  if (s.mercado === "1X2") {
+    if (pickText === "1" || pickText.includes(homeText)) {
+      return `Vitória de ${s.time_casa}`;
+    }
+
+    if (pickText === "2" || pickText.includes(awayText)) {
+      return `Vitória de ${s.time_fora}`;
+    }
+
+    if (pickText === "x" || pickText === "empate") {
+      return "Empate";
+    }
+  }
+
+  return s.selecao || "Palpite";
+}
+
 
 type UIMatch = import("@/data/matchData").UIMatch;
 
@@ -800,7 +827,21 @@ export const HomeScreen: React.FC = () => {
 
     }
 
- 
+    // ✅ NOVO — Controle de limite diário (3 apostas)
+    try {
+      const controlRes = await api.get("/user/betting-control-status");
+      const { canPlaceBet, message } = controlRes.data || {};
+
+      if (canPlaceBet === false) {
+        setFeedback(message || "Você atingiu o limite de apostas para hoje.");
+        return;
+      }
+    } catch (err) {
+      console.warn(
+        "Controle de apostas indisponível — seguindo sem bloqueio."
+      );
+      // compatibilidade com versões antigas
+    }
 
     setPlacingBet(true);
 
@@ -1192,7 +1233,7 @@ export const HomeScreen: React.FC = () => {
                             <div className="flex justify-between text-sm">
                               <div>
                                 <p className="text-gray-600">{s.mercado}</p>
-                                <p className="font-semibold">{s.selecao}</p>
+                                <p className="font-semibold">{getPickLabel(s)}</p>
                               </div>
 
                               <p className="font-semibold">Odd {s.odd.toFixed(2)}</p>
@@ -1514,7 +1555,7 @@ export const HomeScreen: React.FC = () => {
                           <div className="text-xs">
                             <div className="text-gray-500">{s.mercado}</div>
                             <div className="font-semibold text-gray-800 dark:text-gray-100">
-                              {s.selecao}
+                              {getPickLabel(s)}
                             </div>
                           </div>
 
