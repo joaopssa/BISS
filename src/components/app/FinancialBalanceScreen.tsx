@@ -5,17 +5,6 @@ import { Button } from "@/components/ui/button";
 import api from "@/services/api";
 import { useFinance } from "@/contexts/FinanceContext";
 // Importações necessárias para o gráfico
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Cell,
-  ReferenceLine
-} from "recharts";
 
 // --- Ícones SVG ---
 const TargetIcon = () => (
@@ -73,8 +62,6 @@ export default function FinancialBalanceScreen() {
   const [showPeriodDropdown, setShowPeriodDropdown] = useState<boolean>(false);
   const [editingMetaId, setEditingMetaId] = useState<number | null>(null);
 
-  // --- States do Gráfico ---
-  const [chartPeriodDays, setChartPeriodDays] = useState<number>(7); // Padrão 7 dias
 
   // REF para detectar clique fora do dropdown
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -348,80 +335,72 @@ export default function FinancialBalanceScreen() {
     return diff > 0 ? diff : 0;
   };
 
-  // --- LÓGICA DO GRÁFICO ---
-  const chartData = useMemo(() => {
-    // Helper para gerar chave de data no fuso local (YYYY-MM-DD)
-    const toLocalDateKey = (d: Date) => {
-      const Y = d.getFullYear();
-      const M = String(d.getMonth() + 1).padStart(2, "0");
-      const D = String(d.getDate()).padStart(2, "0");
-      return `${Y}-${M}-${D}`;
-    };
+  // --- LÓGICA DO CALENDÁRIO ANUAL (GitHub real) ---
+const calendarData = useMemo(() => {
+  const year = new Date().getFullYear();
 
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
+  const toKey = (d: Date) =>
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 
-    // Gerar um array com os últimos N dias (chaves locais)
-    const days: string[] = [];
-    for (let i = chartPeriodDays - 1; i >= 0; i--) {
-      const d = new Date(today);
-      d.setDate(d.getDate() - i);
-      days.push(toLocalDateKey(d));
-    }
+  const start = new Date(year, 0, 1);
+  const end = new Date(year, 11, 31);
 
-    // Criar mapa inicial com zeros
-    const dataMap: Record<string, number> = {};
-    days.forEach(day => { dataMap[day] = 0; });
+  // Mapa com lucro/prejuízo por dia
+  const values: Record<string, number> = {};
 
-    // Preencher com prêmios do extrato
-    extrato.forEach(m => {
-      if (m.tipo !== 'premio') return;
-      const mDate = new Date(m.data_movimentacao);
-      const key = toLocalDateKey(mDate);
+  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+    values[toKey(d)] = 0;
+  }
 
-      if (dataMap.hasOwnProperty(key)) {
-        const val = Number(m.valor) || 0;
-        dataMap[key] += val;
-      }
-    });
+  extrato.forEach(m => {
+    if (m.tipo !== "premio") return;
+    const key = toKey(new Date(m.data_movimentacao));
+    if (key in values) values[key] += Number(m.valor) || 0;
+  });
 
-    // Subtrair stakes de bilhetes perdidos usando a data do bilhete
-    bilhetes.forEach(b => {
-      const st = (b.status || '').toString().toLowerCase();
-      if (st !== 'perdido' && st !== 'perdida') return;
-      const dt = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
-      const key = toLocalDateKey(dt);
-      if (dataMap.hasOwnProperty(key)) {
-        dataMap[key] -= Number(b.stake_total || b.stake || 0) || 0;
-      }
-    });
+  bilhetes.forEach(b => {
+    const st = (b.status || "").toLowerCase();
+    if (st !== "perdido" && st !== "perdida") return;
+    const key = toKey(new Date(b.data_criacao || b.createdAt || Date.now()));
+    if (key in values) values[key] -= Number(b.stake_total || b.stake || 0);
+  });
 
-    // Converter para array para o Recharts
-    return days.map(dateStr => {
-      const [year, month, day] = dateStr.split('-');
-      return {
-        date: `${day}/${month}`,
-        fullDate: dateStr,
-        lucro: dataMap[dateStr] || 0
-      };
-    });
-  }, [extrato, chartPeriodDays, bilhetes]);
+  // Descobrir dia da semana do primeiro dia do ano
+  const firstDayWeek = start.getDay(); // 0 = domingo
 
-  const CustomTooltip = ({ active, payload, label }: any) => {
-    if (active && payload && payload.length) {
-      const val = payload[0].value;
-      return (
-        <div className="bg-white dark:bg-neutral-800 p-2 border border-gray-200 dark:border-neutral-700 rounded shadow-lg text-sm">
-          <p className="font-semibold text-gray-700 dark:text-gray-200 mb-1">{label}</p>
-          <p className={`${val >= 0 ? 'text-green-600' : 'text-red-600'} font-bold`}>
-            {val >= 0 ? 'Lucro: ' : 'Prejuízo: '} 
-            R$ {Math.abs(val).toFixed(2)}
-          </p>
-        </div>
-      );
-    }
-    return null;
+  const weeks: {
+    date: string;
+    value: number;
+  }[][] = [];
+
+  let currentWeek: any[] = [];
+
+  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+    const dow = d.getDay(); // 0..6
+    const key = toKey(d);
+
+  currentWeek[dow] = {
+    date: key,
+    value: values[key] ?? 0
   };
+
+
+    // Se sábado, fecha semana
+    if (dow === 6) {
+      weeks.push(currentWeek);
+      currentWeek = [];
+    }
+  }
+
+  // Última semana incompleta
+  if (currentWeek.length > 0) {
+    weeks.push(currentWeek);
+  }
+
+
+  return weeks;
+}, [extrato, bilhetes]);
+
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
@@ -480,306 +459,80 @@ export default function FinancialBalanceScreen() {
             </div>
           )}
         </div>
-        {/* CARD META */}
-        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800">
-          
-          {!savedGoal ? (
-            <div className="p-6">
-              <div className="flex items-center gap-2 mb-5">
-                <div className="p-2 bg-blue-100 rounded-full">
-                  <TrendingUpIcon />
-                </div>
-                <h2 className="text-lg font-bold text-gray-800 dark:text-white">Definir Nova Meta</h2>
+
+        {/* --- CALENDÁRIO ANUAL DE DESEMPENHO (GitHub Style) --- */}
+        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-6">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="p-2 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
+              <ChartIcon />
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-gray-800 dark:text-white">
+                Desempenho Anual
+              </h2>
+              <p className="text-xs text-gray-500">
+                Lucro Diário
+              </p>
+            </div>
+          </div>
+
+
+
+          <div className="flex gap-4 mt-4 text-xs text-gray-500">
+            <div className="flex items-center gap-1">
+              <span className="w-3 h-3 bg-gray-200 rounded-sm"></span> Neutro
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="w-3 h-3 bg-green-500 rounded-sm"></span> Lucro
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="w-3 h-3 bg-red-500 rounded-sm"></span> Prejuízo
+            </div>
+          </div>
+        </div>
+
+          <div className="overflow-x-auto">
+            <div className="flex">
+
+              {/* COLUNA DOS DIAS */}
+              <div className="flex flex-col justify-between mr-2 text-xs text-gray-400 h-[130px] pt-[1px]">
+                <span>Ter</span>
+                <span>Seg</span>
               </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div>
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-1.5">
-                    Valor Alvo (R$)
-                  </label>
-                  <input
-                    type="number"
-                    min={0}
-                    value={goalValue === "" ? "" : goalValue}
-                    onChange={(e) => setGoalValue(e.target.value === "" ? "" : Number(e.target.value))}
-                    className="border border-gray-300 rounded-lg px-4 py-2.5 text-sm w-full focus:ring-2 focus:ring-blue-500 outline-none dark:bg-neutral-800 dark:border-neutral-700"
-                    placeholder="Ex: 5000.00"
-                  />
-                </div>
 
-                <div className="relative" ref={dropdownRef}>
-                  <label className="text-sm font-medium text-gray-700 dark:text-gray-300 block mb-1.5">
-                    Prazo para conquistar
-                  </label>
-                  
-                  <button
-                    type="button"
-                    className="w-full flex items-center justify-between px-4 py-2.5 border border-gray-300 rounded-lg bg-white dark:bg-neutral-800 dark:border-neutral-700 text-left hover:bg-gray-50 focus:ring-2 focus:ring-blue-500 transition-colors"
-                    onClick={() => setShowPeriodDropdown(!showPeriodDropdown)}
-                  >
-                    <span className="text-sm text-gray-700 dark:text-gray-200">
-                      {goalPeriod === "1_semana" && "1 semana"}
-                      {goalPeriod === "2_semanas" && "2 semanas"}
-                      {goalPeriod === "1_mes" && "1 mês"}
-                      {goalPeriod === "6_meses" && "6 meses"}
-                      {goalPeriod === "1_ano" && "1 ano"}
-                      {goalPeriod === "personalizado" && "Personalizado"}
-                    </span>
-                    <svg className={`h-4 w-4 text-gray-500 transition-transform ${showPeriodDropdown ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+              <div>
+                {/* GRID PRINCIPAL */}
+                <div
+                  className="grid gap-1"
+                  style={{
+                    gridTemplateColumns: `repeat(${calendarData.length}, 14px)`,
+                    gridTemplateRows: "repeat(7, 14px)",
+                    gridAutoFlow: "column"
+                  }}
+                >
+                  {calendarData.map((week, wIdx) =>
+                    week.map((day, dIdx) => {
+                      if (!day) return <div key={`${wIdx}-${dIdx}`} />;
 
-                  {showPeriodDropdown && (
-                    <div className="absolute z-50 mt-2 w-full bg-white dark:bg-neutral-900 border dark:border-neutral-700 rounded-lg shadow-2xl p-3 animate-in fade-in zoom-in duration-200">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
-                        {[
-                          ["1_semana", "1 semana"],
-                          ["2_semanas", "2 semanas"],
-                          ["1_mes", "1 mês"],
-                          ["6_meses", "6 meses"],
-                          ["1_ano", "1 ano"],
-                          ["personalizado", "Personalizado"],
-                        ].map(([value, label]) => (
-                          <label key={String(value)} className="flex items-center gap-3 text-sm cursor-pointer hover:bg-blue-50 dark:hover:bg-neutral-800 p-2 rounded transition-colors">
-                            <input
-                              type="radio"
-                              name="goalPeriod"
-                              value={String(value)}
-                              checked={goalPeriod === value}
-                              onChange={() => {
-                                setGoalPeriod(value as any);
-                                if (value !== "personalizado") {
-                                  setShowPeriodDropdown(false);
-                                }
-                              }}
-                              className="accent-[#014a8f] w-4 h-4"
-                            />
-                            <span className="dark:text-gray-200">{label}</span>
-                          </label>
-                        ))}
-                      </div>
-                      
-                      {goalPeriod === "personalizado" && (
-                        <div className="mt-3 pt-3 border-t dark:border-neutral-700">
-                          <label className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wide block mb-1.5">
-                            Selecione a Data Final
-                          </label>
-                          <div className="flex gap-2">
-                            <input
-                              type="date"
-                              value={customEndDate}
-                              onChange={(e) => setCustomEndDate(e.target.value)}
-                              className="border border-gray-300 rounded-md px-3 py-2 text-sm w-full dark:bg-neutral-800 dark:border-neutral-600"
-                            />
-                            <Button 
-                                size="icon"
-                                className="bg-blue-600 hover:bg-blue-700 text-white shrink-0"
-                                onClick={() => setShowPeriodDropdown(false)}
-                                title="Confirmar Data"
-                            >
-                                <CheckIcon />
-                            </Button>
-                          </div>
-                        </div>
-                      )}
-                    </div>
+                      let color = "bg-gray-200 dark:bg-neutral-700";
+                      if (day.value > 0) color = "bg-green-500";
+                      if (day.value < 0) color = "bg-red-500";
+
+                      return (
+                        <div
+                          key={day.date}
+                          title={`${new Date(day.date).toLocaleDateString("pt-BR")} — R$ ${day.value.toFixed(2)}`}
+                          className={`w-3.5 h-3.5 rounded-sm ${color}`}
+                        />
+                      );
+                    })
                   )}
                 </div>
-              </div>
 
-              <div className="mt-6 flex justify-end">
-                <Button className="bg-[#014a8f] hover:bg-[#003b70] text-white w-full sm:w-auto shadow-md" onClick={handleSaveGoal}>
-                  Salvar Meta
-                </Button>
               </div>
             </div>
-          ) : (
-            /* MODO DE VISUALIZAÇÃO (Meta Salva) */
-            <div>
-              <div className="bg-gradient-to-r from-[#014a8f] to-[#003b70] p-6 text-white relative overflow-hidden rounded-t-xl">
-                <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-white opacity-10 rounded-full blur-xl pointer-events-none"></div>
-                
-                <div className="flex justify-between items-start relative z-10">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2.5 bg-white/20 rounded-lg backdrop-blur-sm border border-white/10 shadow-inner">
-                      <TargetIcon />
-                    </div>
-                    <div>
-                      <h2 className="text-lg font-bold leading-tight">Meta Ativa</h2>
-                      <p className="text-blue-100 text-xs opacity-90">Continue investindo para alcançar</p>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs text-blue-200 uppercase font-bold tracking-wider">Objetivo</p>
-                    <p className="text-2xl font-bold text-white shadow-black drop-shadow-sm">
-                      R$ {Number(savedGoal.value).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
-                    </p>
-                  </div>
-                </div>
-              </div>
+          </div>
 
-              <div className="p-6 bg-white dark:bg-neutral-900 rounded-b-xl">
-                
-                <div className="mb-8">
-                  <div className="flex justify-between items-end mb-2">
-                    <span className="text-sm font-semibold text-gray-600 dark:text-gray-400 flex items-center gap-1.5">
-                      <TrendingUpIcon /> Progresso
-                    </span>
-                    <span className="text-2xl font-bold text-[#014a8f] dark:text-blue-400">
-                      {calculateProgress().toFixed(0)}%
-                    </span>
-                  </div>
-                  
-                  <div className="h-3.5 bg-gray-100 dark:bg-neutral-800 rounded-full overflow-hidden shadow-inner border border-gray-100 dark:border-neutral-700">
-                    <div
-                      className="h-full bg-gradient-to-r from-blue-400 to-[#014a8f] transition-all duration-1000 ease-out relative"
-                      style={{ width: `${calculateProgress()}%` }}
-                    >
-                      <div className="absolute top-0 left-0 w-full h-full bg-white/20 animate-pulse"></div>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-1.5 flex justify-between text-xs text-gray-500">
-                    <span>R$ 0,00</span>
-                    <span>Saldo atual: R$ {saldo.toFixed(2)}</span>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-gray-50 dark:bg-neutral-800 p-4 rounded-xl border border-gray-100 dark:border-neutral-700 flex flex-col justify-between">
-                    <div className="flex items-center gap-2 text-gray-500 mb-2">
-                      <CalendarIcon />
-                      <span className="text-xs font-bold uppercase tracking-wide">Data Alvo</span>
-                    </div>
-                    <p className="font-bold text-gray-800 dark:text-white text-lg">
-                      {savedGoal.endDate ? new Date(savedGoal.endDate).toLocaleDateString("pt-BR") : "—"}
-                    </p>
-                  </div>
-                  
-                  <div className="bg-blue-50 dark:bg-blue-900/10 p-4 rounded-xl border border-blue-100 dark:border-blue-800/30 flex flex-col justify-between">
-                    <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 mb-2">
-                      <ClockIcon />
-                      <span className="text-xs font-bold uppercase tracking-wide">Tempo Restante</span>
-                    </div>
-                    <p className="font-bold text-blue-800 dark:text-blue-300 text-lg">
-                      {calculateDaysRemaining()} dias
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-3 pt-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 border-gray-200 hover:bg-gray-50 dark:border-neutral-700 dark:hover:bg-neutral-800"
-                    onClick={() => {
-                      setGoalValue(Number(savedGoal.value));
-                      setGoalPeriod(savedGoal.period || "1_mes");
-                      setCustomEndDate(savedGoal.customEndDate || "");
-                      setShowPeriodDropdown(true);
-                      setGoalFeedback(null);
-                      setSavedGoal(null);
-                    }}
-                  >
-                    Editar Meta
-                  </Button>
-                 <button
-                    onClick={handleClearGoal}
-                    className="text-gray-500 hover:text-red-500 transition p-2 rounded-md hover:bg-red-50 dark:hover:bg-red-900/20"
-                    title="Excluir meta"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M3 6h18" />
-                      <path d="M8 6V4h8v2" />
-                      <path d="M10 11v6" />
-                      <path d="M14 11v6" />
-                      <path d="M5 6l1 14h12l1-14" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {goalFeedback && !savedGoal && (
-            <div className="p-3 mx-6 mb-6 text-center rounded-lg bg-blue-50 text-blue-700 text-sm border border-blue-100">
-              {goalFeedback}
-            </div>
-          )}
-        </div>
-
-        {/* --- NOVO CARD: GRÁFICO DE DESEMPENHO --- */}
-        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
-                <div className="flex items-center gap-2">
-                    <div className="p-2 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
-                        <ChartIcon />
-                    </div>
-                    <div>
-                        <h2 className="text-lg font-bold text-gray-800 dark:text-white">Desempenho de Apostas</h2>
-                        <p className="text-xs text-gray-500">Prêmios - Apostas (Lucro líquido)</p>
-                    </div>
-                </div>
-
-                <div className="flex bg-gray-100 dark:bg-neutral-800 p-1 rounded-lg self-start">
-                    {[
-                        { label: '7 dias', val: 7 },
-                        { label: '15 dias', val: 15 },
-                        { label: '30 dias', val: 30 }
-                    ].map((opt) => (
-                        <button
-                            key={opt.val}
-                            onClick={() => setChartPeriodDays(opt.val)}
-                            className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all ${
-                                chartPeriodDays === opt.val
-                                    ? 'bg-white dark:bg-neutral-700 shadow-sm text-indigo-600 dark:text-indigo-300'
-                                    : 'text-gray-500 hover:text-gray-800 dark:text-gray-400'
-                            }`}
-                        >
-                            {opt.label}
-                        </button>
-                    ))}
-                </div>
-            </div>
-
-            <div className="w-full h-[250px]">
-                <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={chartData} margin={{ top: 5, right: 0, left: -20, bottom: 0 }}>
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
-                        <XAxis 
-                            dataKey="date" 
-                            axisLine={false} 
-                            tickLine={false} 
-                            tick={{ fontSize: 12, fill: '#6B7280' }} 
-                            dy={10}
-                        />
-                        <YAxis 
-                            axisLine={false} 
-                            tickLine={false} 
-                            tick={{ fontSize: 11, fill: '#6B7280' }}
-                        />
-                        <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f3f4f6', opacity: 0.4 }} />
-                        <ReferenceLine y={0} stroke="#9CA3AF" />
-                        <Bar dataKey="lucro" radius={[4, 4, 0, 0]}>
-                            {chartData.map((entry, index) => (
-                                <Cell 
-                                    key={`cell-${index}`} 
-                                    fill={entry.lucro >= 0 ? '#16a34a' : '#dc2626'} 
-                                />
-                            ))}
-                        </Bar>
-                    </BarChart>
-                </ResponsiveContainer>
-            </div>
-        </div>
 
         
 
