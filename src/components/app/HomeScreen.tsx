@@ -1461,7 +1461,18 @@ export const HomeScreen: React.FC = () => {
 
       {isSlipOpen && (
         <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50">
-          <div className="w-full sm:max-w-md bg-white dark:bg-neutral-900 rounded-t-2xl sm:rounded-2xl p-4 space-y-4 shadow-2xl">
+          <div className="
+            w-full
+            sm:max-w-lg
+            md:max-w-xl
+            lg:max-w-2xl
+            bg-white dark:bg-neutral-900
+            rounded-t-2xl sm:rounded-2xl
+            p-6
+            space-y-6
+            shadow-2xl
+          ">
+
 
             {/* Header */}
             <div className="flex items-center justify-between pb-2 border-b border-gray-200 dark:border-neutral-700">
@@ -1574,13 +1585,12 @@ export const HomeScreen: React.FC = () => {
                 {/* Totais */}
                 <div className="pt-2 space-y-3 text-sm border-t border-gray-200 dark:border-neutral-700">
 
-                  <div className="flex justify-between">
-                    <span>Odd Total</span>
-                    <span className="font-semibold">{oddTotal.toFixed(2)}</span>
-                  </div>
-
                   <div className="space-y-1">
-
+                      <div className="flex justify-between text-xs text-gray-500">
+                          <span>Saldo disponível:</span>
+                          <span>R$ {saldo.toFixed(2)}</span>
+                        </div>
+                      </div>
                     {recommendedStake > 0 && (
                       <div className="flex items-center justify-between text-xs bg-blue-50 border border-blue-200 rounded-md px-2 py-1">
                         <span>Valor recomendado</span>
@@ -1628,11 +1638,7 @@ export const HomeScreen: React.FC = () => {
                     </span>
                   </div>
 
-                  <div className="flex justify-between text-xs text-gray-500">
-                    <span>Saldo disponível:</span>
-                    <span>R$ {saldo.toFixed(2)}</span>
-                  </div>
-                </div>
+
 
                 {/* Botões */}
                 <div className="pt-2 flex gap-2">
