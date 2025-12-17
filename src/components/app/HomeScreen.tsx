@@ -18,8 +18,6 @@ import api from "@/services/api";
 
 import { resolveLeagueName } from "@/utils/resolveLeagueName";
 
-import { useFinance } from "@/contexts/FinanceContext";
-
 import clubsMap from "@/utils/clubs-map.json";
 
  // ========= Helpers (copiados do MatchCard) =========
@@ -49,6 +47,53 @@ const findClubLogo = (teamName: string): string | null => {
 import { leagueCountries } from "@/utils/league-countries";
 import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
 
+// ========= KELLY 1-WAY (FRONTEND) =========
+type KellyPerfil = "Agressivo" | "Normal" | "Conservador";
+
+function calcularStakeKelly1Way(
+  odd: number,
+  saldo: number,
+  tipoKelly: "Meio" | "Completo" | "Quarto" = "Meio",
+  stakeMinPercent = 0.005, // 0,5% da banca
+  stakeMinAbs = 0.5       // R$ 0,50 (mínimo absoluto)
+): number {
+  if (!odd || odd <= 1 || saldo <= 0) return stakeMinAbs;
+
+  const pBase = 1 / odd;
+  const b = odd - 1;
+
+  const edges: Record<KellyPerfil, number> = {
+    Agressivo: 0.04,
+    Normal: 0.025,
+    Conservador: 0.012,
+  };
+
+  let perfil: KellyPerfil;
+  if (odd <= 1.5) perfil = "Agressivo";
+  else if (odd <= 2.5) perfil = "Normal";
+  else perfil = "Conservador";
+
+  const fatorKelly =
+    tipoKelly === "Completo"
+      ? 1
+      : tipoKelly === "Quarto"
+      ? 0.25
+      : 0.5; // Meio
+
+  const pEst = Math.min(
+    Math.max(pBase + edges[perfil], 1e-6),
+    1 - 1e-6
+  );
+
+  const q = 1 - pEst;
+  const f = ((b * pEst) - q) / b;
+
+  const stakePerc = f <= 0 ? stakeMinPercent : f * fatorKelly;
+  const stakeCalc = stakePerc * saldo;
+
+  return Math.max(stakeCalc, stakeMinAbs);
+}
+
 
 type UIMatch = import("@/data/matchData").UIMatch;
 
@@ -62,7 +107,6 @@ type TicketSelection = {
   time_casa?: string;
   time_fora?: string;
   campeonato?: string;
-  linha?: string | null;
   odd: number;
   market?: string;
   pick?: string;
@@ -105,7 +149,6 @@ type BetSelection = {
   mercado: string;
 
   selecao: string;
-  linha?: string | null;
 
   odd: number;
 
@@ -149,8 +192,6 @@ type H2HRequest = {
   competition: string;
 };
 
-
-
 const Badge = ({ children }: React.PropsWithChildren) => (
 
   <span className="inline-flex items-center rounded-full bg-blue-100 text-blue-800 px-3 py-1 text-xs font-semibold dark:bg-blue-800/30 dark:text-blue-200">
@@ -163,26 +204,7 @@ const Badge = ({ children }: React.PropsWithChildren) => (
 
  
 
-const getTicketStatusStyle = (status: string | undefined) => {
-  const normalizedStatus = (status || "PENDENTE").toUpperCase();
-  switch (normalizedStatus) {
-    case "GANHO":
-    case "GANHA":
-      return "text-green-600 bg-green-50 border border-green-200";
-    case "PERDIDO":
-    case "PERDIDA":
-      return "text-red-600 bg-red-50 border border-red-200";
-    case "CANCELADO":
-    case "CANCELADA":
-      return "text-gray-600 bg-gray-50 border border-gray-200";
-    default:
-      return "text-yellow-700 bg-yellow-50 border border-yellow-200";
-  }
-};
-
 export const HomeScreen: React.FC = () => {
-
-  const { refreshExtrato } = useFinance();
 
   const [tab, setTab] = useState<"favoritos" | "em-alta" | "bilhetes">("em-alta");
 
@@ -244,8 +266,7 @@ export const HomeScreen: React.FC = () => {
   }, [tab]);
 
   // ========= Helpers =========
- 
- 
+
  
 
   const fetchSaldo = async () => {
@@ -704,7 +725,14 @@ export const HomeScreen: React.FC = () => {
 
       : 0;
 
- 
+  const recommendedStake = useMemo(() => {
+    if (oddTotal <= 1 || saldo <= 0) return 0;
+
+    return Number(
+      calcularStakeKelly1Way(oddTotal, saldo, "Meio").toFixed(2)
+    );
+  }, [oddTotal, saldo]);
+
 
   const possibleReturn =
 
@@ -746,26 +774,15 @@ export const HomeScreen: React.FC = () => {
 
  
 
-    if (!stake || stake <= 0) {
+    if (!stake || stake <= 0.5) {
 
-      setFeedback("Informe um valor de aposta maior que R$ 0,00.");
+      setFeedback("Informe um valor de aposta maior que R$ 0,50.");
 
       return;
 
     }
 
-    // Validar controle de apostas (limite de 3 diárias)
-    try {
-      const controlRes = await api.get("/user/betting-control-status");
-      const { canPlaceBet, message } = controlRes.data;
-      if (!canPlaceBet) {
-        setFeedback(message || "Você atingiu o limite de apostas para hoje.");
-        return;
-      }
-    } catch (err) {
-      console.error("Erro ao validar controle de apostas:", err);
-      // Se falhar, não bloqueia (compatibilidade com versões antigas)
-    }
+ 
 
     if (saldo < stake) {
 
@@ -808,8 +825,6 @@ export const HomeScreen: React.FC = () => {
           mercado: s.mercado,
 
           selecao: s.selecao,
-
-          linha: s.linha || null,
 
           odd: s.odd,
 
@@ -954,9 +969,7 @@ export const HomeScreen: React.FC = () => {
 
                   mercado: params.market,
 
-                  selecao: params.market === 'Total de Gols' && params.linha ? String(params.linha) : params.selection,
-
-                  linha: params.linha ?? null,
+                  selecao: params.selection,
 
                   odd: params.odd,
 
@@ -1016,8 +1029,7 @@ export const HomeScreen: React.FC = () => {
                     time_casa: params.homeTeam,
                     time_fora: params.awayTeam,
                     mercado: params.market,
-                    selecao: params.market === 'Total de Gols' && params.linha ? String(params.linha) : params.selection,
-                    linha: params.linha ?? null,
+                    selecao: params.selection,
                     odd: params.odd,
                   };
                   handleAddSelection(sel);
@@ -1055,7 +1067,6 @@ export const HomeScreen: React.FC = () => {
               await api.post("/apostas/verificar");
               fetchTickets();
               fetchSaldo();
-              refreshExtrato();
             }}
           >
             Atualizar bilhetes
@@ -1089,11 +1100,14 @@ export const HomeScreen: React.FC = () => {
           ) : (
             <ul className="space-y-6">
               {filteredTickets.map((t) => {
+                const isPending = !t.status || t.status === "PENDENTE";
+
                 return (
                   <li
                     key={t.id}
                     className={`
                       rounded-xl bg-white dark:bg-neutral-900 p-5 shadow-sm
+                      ${isPending ? "border border-gray-300 dark:border-neutral-700" : ""}
                     `}
                   >
 
@@ -1106,7 +1120,11 @@ export const HomeScreen: React.FC = () => {
                       <span
                         className={`
                           text-[10px] font-semibold uppercase px-2 py-1 rounded-full
-                          ${getTicketStatusStyle(t.status)}
+                          ${
+                            isPending
+                              ? "bg-yellow-100 text-yellow-700"
+                              : "bg-green-100 text-green-700"
+                          }
                         `}
                       >
                         {t.status || "PENDENTE"}
@@ -1138,14 +1156,6 @@ export const HomeScreen: React.FC = () => {
                         const leagueCode = leagueCountries[s.campeonato];
                         const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
 
-                        // pick label logic (Vitória de {time})
-                        const pickText = (s.selecao || "").toLowerCase();
-                        const homeText = (s.time_casa || "").toLowerCase();
-                        const awayText = (s.time_fora || "").toLowerCase();
-                        const isHomePick = (homeText && pickText.includes(homeText)) || (s.mercado === "1X2" && /^(1)$/.test((s.selecao || "").trim()));
-                        const isAwayPick = (awayText && pickText.includes(awayText)) || (s.mercado === "1X2" && /^(2)$/.test((s.selecao || "").trim()));
-                        const pickLabel = isHomePick ? `Vitória de ${s.time_casa}` : isAwayPick ? `Vitória de ${s.time_fora}` : (s.selecao || 'Palpite');
-
                         return (
                           <div
                             key={i}
@@ -1164,28 +1174,14 @@ export const HomeScreen: React.FC = () => {
                                 {logoHome && (
                                   <img src={logoHome} className="w-5 h-5 object-contain" />
                                 )}
-                                {(() => {
-                                  const pick = (s.selecao || "").toLowerCase();
-                                  const home = (s.time_casa || "").toLowerCase();
-                                  const isHomePick = pick.includes(home) || (s.mercado === "1X2" && /^(1)$/.test((s.selecao || "").trim()));
-                                  return (
-                                    <span className={`font-semibold ${isHomePick ? 'text-[#014a8f]' : ''}`}>{s.time_casa}</span>
-                                  );
-                                })()}
+                                <span className="font-semibold">{s.time_casa}</span>
                               </div>
 
                               <span className="text-gray-500">x</span>
 
                               {/* TIME FORA */}
                               <div className="flex items-center gap-2">
-                                {(() => {
-                                  const pick = (s.selecao || "").toLowerCase();
-                                  const away = (s.time_fora || "").toLowerCase();
-                                  const isAwayPick = pick.includes(away) || (s.mercado === "1X2" && /^(2)$/.test((s.selecao || "").trim()));
-                                  return (
-                                    <span className={`font-semibold ${isAwayPick ? 'text-[#014a8f]' : ''}`}>{s.time_fora}</span>
-                                  );
-                                })()}
+                                <span className="font-semibold">{s.time_fora}</span>
                                 {logoAway && (
                                   <img src={logoAway} className="w-5 h-5 object-contain" />
                                 )}
@@ -1193,7 +1189,6 @@ export const HomeScreen: React.FC = () => {
                             </div>
 
                             {/* Mercado / Pick */}
-                            <div className="mb-1 text-xs text-gray-500">{pickLabel}</div>
                             <div className="flex justify-between text-sm">
                               <div>
                                 <p className="text-gray-600">{s.mercado}</p>
@@ -1455,14 +1450,6 @@ export const HomeScreen: React.FC = () => {
                       ? getFlagByCountryCode(leagueCode)
                       : null;
 
-                    // pick label logic (Vitória de {time}) for slip modal
-                    const pickText = (s.selecao || "").toLowerCase();
-                    const homeText = (s.time_casa || "").toLowerCase();
-                    const awayText = (s.time_fora || "").toLowerCase();
-                    const isHomePick = (homeText && pickText.includes(homeText)) || (s.mercado === "1X2" && /^(1)$/.test((s.selecao || "").trim()));
-                    const isAwayPick = (awayText && pickText.includes(awayText)) || (s.mercado === "1X2" && /^(2)$/.test((s.selecao || "").trim()));
-                    const pickLabel = isHomePick ? `Vitória de ${s.time_casa}` : isAwayPick ? `Vitória de ${s.time_fora}` : (s.selecao || 'Palpite');
-
                     return (
                       <div
                         key={i}
@@ -1523,7 +1510,6 @@ export const HomeScreen: React.FC = () => {
                         </div>
 
                         {/* Mercado / Seleção / Odd */}
-                        <div className="text-xs text-gray-500 mb-1">{pickLabel}</div>
                         <div className="mt-2 flex items-center justify-between">
                           <div className="text-xs">
                             <div className="text-gray-500">{s.mercado}</div>
@@ -1552,17 +1538,47 @@ export const HomeScreen: React.FC = () => {
                     <span className="font-semibold">{oddTotal.toFixed(2)}</span>
                   </div>
 
-                  <div className="flex items-center justify-between">
-                    <span>Valor da aposta (R$)</span>
-                    <input
-                      type="number"
-                      min={0}
-                      step={1}
-                      value={stake || ""}
-                      onChange={(e) => setStake(Number(e.target.value) || 0)}
-                      className="w-28 border rounded-md px-2 py-1 text-sm"
-                    />
+                  <div className="space-y-1">
+
+                    {recommendedStake > 0 && (
+                      <div className="flex items-center justify-between text-xs bg-blue-50 border border-blue-200 rounded-md px-2 py-1">
+                        <span>Valor recomendado</span>
+
+                        <div className="flex items-center gap-2">
+                          <span className="font-semibold text-blue-800">
+                            R$ {recommendedStake.toFixed(2)}
+                          </span>
+
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="text-xs px-2 py-0 h-6"
+                            onClick={() => {
+                              if (!stake || stake <= 0) {
+                                setStake(recommendedStake);
+                              }
+                            }}
+                          >
+                            Usar
+                          </Button>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex items-center justify-between">
+                      <span>Valor da aposta (R$)</span>
+                      <input
+                        type="number"
+                        min={0.5}
+                        step={0.5}
+                        value={stake || ""}
+                        onChange={(e) => setStake(Number(e.target.value) || 0)}
+                        className="w-28 border rounded-md px-2 py-1 text-sm"
+                      />
+                    </div>
+
                   </div>
+
 
                   <div className="flex justify-between">
                     <span>Retorno potencial</span>
