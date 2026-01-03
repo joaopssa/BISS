@@ -43,6 +43,74 @@ exports.updateProfile = async (req, res) => {
     }
 };
 
+exports.getProfile = async (req, res) => {
+  const userId = req.user.id;
+
+  try {
+    const [rows] = await pool.query(
+      `SELECT 
+        clubes_favoritos,
+        ligas_favoritas,
+        jogadores_favoritos,
+        casas_apostas_favoritas,
+        controle_apostas_ativo,
+        monitoramento_financeiro_ativo,
+        apostar_apenas_ligas_favoritas,
+        odd_minima,
+        odd_maxima,
+        limite_investimento_mensal
+      FROM usuarios
+      WHERE id_usuario = ?`,
+      [userId]
+    );
+
+    if (!rows.length) {
+      return res.status(404).json({ message: "Usuário não encontrado." });
+    }
+
+    const row = rows[0];
+
+    // helper seguro para JSON
+    const parseJsonArray = (raw) => {
+      if (!raw) return [];
+      if (Array.isArray(raw)) return raw;
+      if (typeof raw === "string") {
+        try {
+          const parsed = JSON.parse(raw);
+          return Array.isArray(parsed) ? parsed : [];
+        } catch {
+          return [];
+        }
+      }
+      return [];
+    };
+
+    const profile = {
+      favoriteTeam: row.clubes_favoritos || "",
+      favoriteLeagues: parseJsonArray(row.ligas_favoritas),
+      favoritePlayers: parseJsonArray(row.jogadores_favoritos),
+      favoriteBettingHouses: parseJsonArray(row.casas_apostas_favoritas),
+
+      bettingControl: row.controle_apostas_ativo === 1,
+      financialMonitoring: row.monitoramento_financeiro_ativo === 1,
+      betOnlyFavoriteLeagues: row.apostar_apenas_ligas_favoritas === 1,
+
+      oddsRange: [
+        Number(row.odd_minima ?? 1.5),
+        Number(row.odd_maxima ?? 3.0),
+      ],
+
+      investmentLimit: row.limite_investimento_mensal || "abaixo-100",
+    };
+
+    return res.json(profile);
+  } catch (error) {
+    console.error("❌ Erro ao obter perfil:", error);
+    return res.status(500).json({ message: "Erro no servidor ao carregar o perfil." });
+  }
+};
+
+
 exports.getPreferences = async (req, res) => {
     const userId = req.user.id;
 

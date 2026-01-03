@@ -7,6 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { useNavigate } from 'react-router-dom';
 import { useToast } from "@/components/ui/use-toast";
+import { useAuth } from "@/contexts/AuthContexts";
 import api from "@/services/api";
 
 
@@ -26,6 +27,7 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const { toast } = useToast();
+  const { login } = useAuth();
 
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -48,20 +50,14 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
   }
 
   try {
-    const response = await api.post('/auth/register-complete', {
+    await api.post("/auth/register-complete", {
       nomeCompleto,
       email,
       dataNascimento,
-      senha: password, // O backend espera "senha", não "password"
+      senha: password, // mantém senha aqui se o backend do cadastro exige "senha"
     });
 
-    // ✅ Mostra o toast com nome personalizado
-    toast({
-      title: `Conta criada com sucesso, ${nomeCompleto}!`,
-      description: "Personalize suas preferências na próxima tela.",
-    });
-
-    // 💾 Salva temporariamente os dados no localStorage
+    // opcional: manter se você usa isso na tela seguinte
     const registrationData = {
       nomeCompleto,
       email,
@@ -69,18 +65,26 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
       senha: password,
     };
     localStorage.setItem("registrationData", JSON.stringify(registrationData));
-    const resp = await api.post('/auth/login', { email, password });
+
+    // ✅ LOGIN AUTOMÁTICO (payload igual ao LoginScreen)
+    const resp = await api.post("/auth/login", { email, password });
+
     const { token, user } = resp.data;
 
-    // 🔐 Salva token e dados localmente
-    localStorage.setItem("token", token);
-    localStorage.setItem("user", JSON.stringify(user));
-    // 🔁 Redireciona para completar o perfil
-    navigate('/profile-setup');
+    // ✅ Atualiza contexto + storage + header Authorization
+    login(token, user);
+
+    // ✅ Agora sim: toast de sucesso
+    toast({
+      title: `Conta criada com sucesso, ${nomeCompleto}!`,
+      description: "Personalize suas preferências na próxima tela.",
+    });
+
+    // ✅ Redireciona para UserProfileScreen
+    navigate("/profile-setup", { replace: true });
 
   } catch (error: any) {
-    const message =
-      error.response?.data?.message || "Erro ao registrar usuário.";
+    const message = error.response?.data?.message || "Erro ao registrar usuário.";
     setError(message);
 
     toast({
@@ -90,7 +94,6 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
     });
   }
 };
-
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4">

@@ -3,10 +3,14 @@ const express = require("express");
 const router = express.Router();
 
 const authMiddleware = require("../middleware/authMiddleware");
-const { updateProfile, getPreferences, checkBettingControl } = require("../controllers/userController");
+const { updateProfile, getProfile, getPreferences, checkBettingControl } = require("../controllers/userController");
+
 
 // Atualizar perfil
 router.put("/profile", authMiddleware, updateProfile);
+
+// Obter perfil do usuário
+router.get("/profile", authMiddleware, getProfile);
 
 // Obter preferências do usuário
 router.get("/preferences", authMiddleware, getPreferences);

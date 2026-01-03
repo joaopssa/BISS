@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
-import EditProfileCard from '@/components/app/EditProfileCard'
+import EditProfileCard from '@/components/app/EditProfileCard';
 
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -33,6 +33,16 @@ export const ProfileRankingScreen: React.FC = () => {
     // 👇 AGORA TEM FAVORITE TEAM AQUI
     favoriteTeam: storedUser?.favoriteTeam || null,
 
+    // Preferências (para preencher o EditProfileCard)
+    favoriteLeagues: [],
+    favoritePlayers: [],
+    favoriteBettingHouses: [],
+    bettingControl: false,
+    financialMonitoring: false,
+    betOnlyFavoriteLeagues: false,
+    oddsRange: [1.5, 3.0],
+    investmentLimit: 'abaixo-100',
+
     rank: null,
     points: 0,
     level: "Usuário",
@@ -44,7 +54,6 @@ export const ProfileRankingScreen: React.FC = () => {
     joinDate: null,
   });
 
-
   const [achievements, setAchievements] = useState<any[]>([]);
   const [monthlyStats, setMonthlyStats] = useState<any[]>([]);
   const [showEdit, setShowEdit] = useState(false);
@@ -52,6 +61,153 @@ export const ProfileRankingScreen: React.FC = () => {
   // Utilitários
   const formatCurrency = (v: number) => Number(v || 0).toFixed(2);
 
+  // ---------------------------------------------------------
+  // Normalizadores / mapeamento de payload do backend → frontend
+  // ---------------------------------------------------------
+  const normalizeArrayField = (raw: any): string[] => {
+    if (!raw) return [];
+    if (Array.isArray(raw)) return raw.filter(Boolean).map(String);
+    if (typeof raw === "string") {
+      try {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) return parsed.filter(Boolean).map(String);
+        if (typeof parsed === "string") return [parsed];
+        return [];
+      } catch {
+        return raw ? [raw] : [];
+      }
+    }
+    return [String(raw)];
+  };
+
+  const toBool = (v: any) => v === true || v === 1 || v === "1" || v === "true";
+
+  const normalizeOddsRange = (minV: any, maxV: any, fallback: [number, number] = [1.5, 3.0]) => {
+    const min = Number(minV);
+    const max = Number(maxV);
+    if (!Number.isFinite(min) || !Number.isFinite(max)) return fallback;
+    return [min, max];
+  };
+
+  const mapBackendProfileToFront = (data: any) => {
+    // Aceita tanto camelCase quanto snake_case (seu banco usa snake_case)
+    const favoriteTeam =
+      data?.favoriteTeam ??
+      data?.clubes_favoritos ??
+      data?.clube_favorito ??
+      null;
+
+    const favoriteLeagues =
+      data?.favoriteLeagues ??
+      data?.ligasFavoritas ??
+      normalizeArrayField(data?.ligas_favoritas);
+
+    const favoritePlayers =
+      data?.favoritePlayers ??
+      normalizeArrayField(data?.jogadores_favoritos);
+
+    const favoriteBettingHouses =
+      data?.favoriteBettingHouses ??
+      normalizeArrayField(data?.casas_apostas_favoritas);
+
+    const bettingControl =
+      data?.bettingControl ??
+      toBool(data?.controle_apostas_ativo);
+
+    const financialMonitoring =
+      data?.financialMonitoring ??
+      toBool(data?.monitoramento_financeiro_ativo);
+
+    const betOnlyFavoriteLeagues =
+      data?.betOnlyFavoriteLeagues ??
+      toBool(data?.apostar_apenas_ligas_favoritas);
+
+    const oddsRange =
+      data?.oddsRange ??
+      normalizeOddsRange(data?.odd_minima, data?.odd_maxima, [1.5, 3.0]);
+
+    const investmentLimit =
+      data?.investmentLimit ??
+      data?.limite_investimento_mensal ??
+      'abaixo-100';
+
+    return {
+      favoriteTeam,
+      favoriteLeagues: Array.isArray(favoriteLeagues) ? favoriteLeagues : [],
+      favoritePlayers: Array.isArray(favoritePlayers) ? favoritePlayers : [],
+      favoriteBettingHouses: Array.isArray(favoriteBettingHouses) ? favoriteBettingHouses : [],
+      bettingControl: !!bettingControl,
+      financialMonitoring: !!financialMonitoring,
+      betOnlyFavoriteLeagues: !!betOnlyFavoriteLeagues,
+      oddsRange: Array.isArray(oddsRange) ? oddsRange : [1.5, 3.0],
+      investmentLimit: investmentLimit || 'abaixo-100',
+    };
+  };
+
+  // ---------------------------------------------------------
+  // Carrega preferências atuais para preencher o EditProfileCard
+  // ---------------------------------------------------------
+  const fetchAndApplyPreferences = async (opts?: { silent?: boolean }) => {
+    try {
+      const api = (await import('@/services/api')).default;
+
+      // 1) Se existir no seu backend: GET /user/profile (NÃO está no trecho que você mandou,
+      //    mas você disse que alterou o backend, então pode existir.)
+      try {
+        const pr = await api.get('/user/profile');
+        if (pr?.data) {
+          const mapped = mapBackendProfileToFront(pr.data);
+          setUserProfile((p: any) => ({ ...p, ...mapped }));
+          return;
+        }
+      } catch {
+        // fallback abaixo
+      }
+
+      // 2) Fallback: /auth/me + /user/preferences + /user/betting-control-status
+      const [meRes, prefsRes, bcRes] = await Promise.allSettled([
+        api.get('/auth/me'),
+        api.get('/user/preferences'),
+        api.get('/user/betting-control-status'),
+      ]);
+
+      const partial: any = {};
+
+      // /auth/me costuma trazer name/email e possivelmente favoriteTeam
+      if (meRes.status === 'fulfilled' && meRes.value?.data?.user) {
+        const u = meRes.value.data.user;
+        partial.favoriteTeam = u.favoriteTeam ?? partial.favoriteTeam ?? null;
+
+        const name = u.name || userProfile.name;
+        const username = u.email ? `@${u.email.split('@')[0]}` : userProfile.username;
+        partial.name = name;
+        partial.username = username;
+        partial.avatar = (name && name.trim().slice(0, 1).toUpperCase()) || userProfile.avatar;
+      }
+
+      // /user/preferences pelo seu backend retorna { ligasFavoritas: [] }
+      if (prefsRes.status === 'fulfilled' && prefsRes.value?.data) {
+        const ligas = prefsRes.value.data.ligasFavoritas;
+        partial.favoriteLeagues = Array.isArray(ligas) ? ligas : [];
+      }
+
+      // /user/betting-control-status retorna { bettingControlActive: boolean }
+      if (bcRes.status === 'fulfilled' && bcRes.value?.data) {
+        partial.bettingControl = !!bcRes.value.data.bettingControlActive;
+      }
+
+      setUserProfile((p: any) => ({
+        ...p,
+        ...partial,
+      }));
+    } catch (e) {
+      if (!opts?.silent) console.error("Erro ao carregar preferências do usuário:", e);
+    }
+  };
+
+  // ---------------------------------------------------------
+  // Carregamento principal (estatísticas + dados básicos)
+  // ---------------------------------------------------------
   useEffect(() => {
     let mounted = true;
 
@@ -92,11 +248,14 @@ export const ProfileRankingScreen: React.FC = () => {
         const winRate = settled.length > 0 ? (wins / settled.length) * 100 : 0;
 
         // Calcula streaks (sequência atual de vitórias e maior sequência)
-        const byDateDesc = [...mappedApostas].sort((a, b) => new Date(b.data_registro).getTime() - new Date(a.data_registro).getTime());
+        const byDateDesc = [...mappedApostas].sort(
+          (a, b) => new Date(b.data_registro).getTime() - new Date(a.data_registro).getTime()
+        );
         let currentStreak = 0;
         for (const a of byDateDesc) {
           if (a.status_aposta === 'pendente') continue;
-          if (a.status_aposta === 'ganha') currentStreak++; else break;
+          if (a.status_aposta === 'ganha') currentStreak++;
+          else break;
         }
 
         let longestStreak = 0;
@@ -111,7 +270,10 @@ export const ProfileRankingScreen: React.FC = () => {
         }
 
         // Profit: soma apenas prêmios e subtrai stakes de bilhetes perdidos (valor ganho - valor perdido)
-        const totalPremios = extrato.reduce((acc: number, mv: any) => mv && mv.tipo === 'premio' ? acc + Number(mv.valor || 0) : acc, 0);
+        const totalPremios = extrato.reduce(
+          (acc: number, mv: any) => (mv && mv.tipo === 'premio' ? acc + Number(mv.valor || 0) : acc),
+          0
+        );
         const totalPerdido = bilhetes.reduce((acc: number, b: any) => {
           const st = (b.status || '').toString().toLowerCase();
           if (st === 'perdido' || st === 'perdida') return acc + Number(b.stake_total || b.stake || 0);
@@ -147,43 +309,46 @@ export const ProfileRankingScreen: React.FC = () => {
           statsMap[key].profit -= Number(b.stake_total || b.stake || 0);
         });
 
-        const monthly = Object.entries(statsMap).sort((a, b) => b[0].localeCompare(a[0])).map(([k, v]) => ({
-          month: k,
-          bets: v.bets,
-          winRate: v.bets > 0 ? Math.round((v.wins / v.bets) * 1000) / 10 : 0,
-          profit: Math.round(v.profit * 100) / 100,
-        }));
+        const monthly = Object.entries(statsMap)
+          .sort((a, b) => b[0].localeCompare(a[0]))
+          .map(([k, v]) => ({
+            month: k,
+            bets: v.bets,
+            winRate: v.bets > 0 ? Math.round((v.wins / v.bets) * 1000) / 10 : 0,
+            profit: Math.round(v.profit * 100) / 100,
+          }));
 
         // Tentativa de obter dados de perfil (nome/username) — preferir dado do contexto/auth ou localStorage
         let name = storedUser?.name || 'Usuário';
         let username = storedUser?.email ? `@${storedUser.email.split('@')[0]}` : '@seunome';
+
         try {
           const api2 = (await import('@/services/api')).default;
           try {
             const me = await api2.get('/auth/me');
             if (me?.data?.user) {
-                name = me.data.user.name || name;
-                username = me.data.user.email ? `@${me.data.user.email.split('@')[0]}` : username;
+              name = me.data.user.name || name;
+              username = me.data.user.email ? `@${me.data.user.email.split('@')[0]}` : username;
 
-                // 🔥 Capturar o clube favorito
-                if (me.data.user.favoriteTeam) {
-                    setUserProfile((p:any) => ({
-                        ...p,
-                        favoriteTeam: me.data.user.favoriteTeam
-                    }));
-                }
+              // 🔥 Capturar o clube favorito
+              if (me.data.user.favoriteTeam) {
+                setUserProfile((p: any) => ({
+                  ...p,
+                  favoriteTeam: me.data.user.favoriteTeam
+                }));
+              }
             }
-          } catch (e) {
-            // fallback para /user/profile
+          } catch {
+            // fallback para /user/profile (se existir GET)
             try {
               const pr = await api2.get('/user/profile');
               if (pr?.data?.name) {
                 name = pr.data.name;
                 username = pr.data.username || username;
               }
-            } catch {}
+            } catch { }
           }
-        } catch {}
+        } catch { }
 
         if (!mounted) return;
 
@@ -191,7 +356,7 @@ export const ProfileRankingScreen: React.FC = () => {
           ...p,
           name,
           username,
-          avatar: (name && name.trim().slice(0,1).toUpperCase()) || p.avatar,
+          avatar: (name && name.trim().slice(0, 1).toUpperCase()) || p.avatar,
           totalBets,
           winRate: Math.round(winRate * 10) / 10,
           totalProfit: Math.round(profit * 100) / 100,
@@ -202,13 +367,16 @@ export const ProfileRankingScreen: React.FC = () => {
         // Achievements: mínimo — derive alguns targets a partir das estatísticas
         const derivedAchievements = [
           { id: 'first-win', title: 'Primeira Vitória', description: 'Ganhe sua primeira aposta', icon: Trophy, earned: wins > 0, earnedDate: wins > 0 ? undefined : undefined },
-          { id: 'five-win-streak', title: 'Sequência de 5', description: 'Ganhe 5 apostas consecutivas', icon: TrendingUp, earned: longestStreak >= 5, progress: `${Math.min(longestStreak,5)}/5` },
+          { id: 'five-win-streak', title: 'Sequência de 5', description: 'Ganhe 5 apostas consecutivas', icon: TrendingUp, earned: longestStreak >= 5, progress: `${Math.min(longestStreak, 5)}/5` },
           { id: 'consistent', title: 'Apostador Consistente', description: 'Mantenha taxa de acerto acima de 60%', icon: Target, earned: winRate >= 60 },
           { id: 'profit-100', title: 'Centena de Lucro', description: 'Obtenha R$ 100 de lucro', icon: Award, earned: profit >= 100 },
         ];
 
         setAchievements(derivedAchievements);
         setMonthlyStats(monthly.slice(0, 12));
+
+        // ✅ Por fim, carregar preferências atuais (para EditProfileCard abrir preenchido)
+        await fetchAndApplyPreferences({ silent: true });
       } catch (err) {
         console.error('Erro ao carregar dados do perfil:', err);
       } finally {
@@ -230,6 +398,25 @@ export const ProfileRankingScreen: React.FC = () => {
     }
   };
 
+  const handleToggleEdit = async () => {
+    const next = !showEdit;
+
+    // Ao abrir, forçar refresh das preferências do usuário
+    if (next) {
+      await fetchAndApplyPreferences({ silent: true });
+    }
+
+    setShowEdit(next);
+  };
+
+  if (loading) {
+    return (
+      <div className="p-6">
+        <div className="text-sm text-gray-600">Carregando...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="p-4 space-y-6">
       {/* Header */}
@@ -242,7 +429,11 @@ export const ProfileRankingScreen: React.FC = () => {
           </p>
         </div>
         <div>
-          <Button size="sm" className="bg-[#014a8f] text-white" onClick={() => setShowEdit((s)=>!s)}>
+          <Button
+            size="sm"
+            className="bg-[#014a8f] text-white"
+            onClick={handleToggleEdit}
+          >
             {showEdit ? 'Fechar' : 'Editar Perfil'}
           </Button>
         </div>
@@ -254,32 +445,33 @@ export const ProfileRankingScreen: React.FC = () => {
           <EditProfileCard
             profile={userProfile}
             onCancel={() => setShowEdit(false)}
-            onSave={(newProfile:any) => {
-              setUserProfile((p:any)=>({ ...p, ...newProfile }))
-              setShowEdit(false)
+            onSave={(newProfile: any) => {
+              setUserProfile((p: any) => ({ ...p, ...newProfile }));
+              setShowEdit(false);
             }}
           />
         </div>
       )}
+
       <Card>
         <CardContent className="p-6">
           <div className="flex items-center gap-4 mb-4">
             {/* Avatar com logo do clube favorito */}
-          <Avatar className="w-16 h-16 rounded-full overflow-hidden border border-gray-300">
-            {userProfile.favoriteTeam &&
-              clubsMap[userProfile.favoriteTeam] &&
-              clubsMap[userProfile.favoriteTeam].logo ? (
+            <Avatar className="w-16 h-16 rounded-full overflow-hidden border border-gray-300">
+              {userProfile.favoriteTeam &&
+                (clubsMap as any)[userProfile.favoriteTeam] &&
+                (clubsMap as any)[userProfile.favoriteTeam].logo ? (
                 <img
-                  src={getLocalLogo(clubsMap[userProfile.favoriteTeam].logo)}
+                  src={getLocalLogo((clubsMap as any)[userProfile.favoriteTeam].logo)}
                   alt={userProfile.favoriteTeam}
                   className="w-full h-full object-contain p-1"
                 />
-            ) : (
-              <AvatarFallback className="bg-blue-100 text-blue-600 font-bold text-lg">
-                {userProfile.avatar}
-              </AvatarFallback>
-            )}
-          </Avatar>
+              ) : (
+                <AvatarFallback className="bg-blue-100 text-blue-600 font-bold text-lg">
+                  {userProfile.avatar}
+                </AvatarFallback>
+              )}
+            </Avatar>
 
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
@@ -322,21 +514,12 @@ export const ProfileRankingScreen: React.FC = () => {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className={`text-center p-3 rounded-lg ${
-              userProfile.totalProfit >= 0 
-                ? 'bg-green-50' 
-                : 'bg-red-50'
-            }`}>
-              <p className={`text-lg font-bold ${
-                userProfile.totalProfit >= 0 
-                  ? 'text-green-600' 
-                  : 'text-red-600'
-              }`}>R$ {userProfile.totalProfit.toFixed(2)}</p>
-              <p className={`text-sm ${
-                userProfile.totalProfit >= 0 
-                  ? 'text-green-700' 
-                  : 'text-red-700'
-              }`}>Lucro Total</p>
+            <div className={`text-center p-3 rounded-lg ${userProfile.totalProfit >= 0 ? 'bg-green-50' : 'bg-red-50'
+              }`}>
+              <p className={`text-lg font-bold ${userProfile.totalProfit >= 0 ? 'text-green-600' : 'text-red-600'
+                }`}>R$ {userProfile.totalProfit.toFixed(2)}</p>
+              <p className={`text-sm ${userProfile.totalProfit >= 0 ? 'text-green-700' : 'text-red-700'
+                }`}>Lucro Total</p>
             </div>
             <div className="text-center p-3 bg-blue-50 rounded-lg">
               <p className="text-lg font-bold text-blue-600">{userProfile.longestStreak}</p>
@@ -347,9 +530,8 @@ export const ProfileRankingScreen: React.FC = () => {
           <div className="space-y-2">
             <h4 className="font-semibold text-gray-800">Evolução Mensal</h4>
             {monthlyStats.map((stat, index) => (
-              <div key={index} className={`flex items-center justify-between p-2 rounded ${
-                index === monthlyStats.length - 1 ? 'bg-blue-50 border border-blue-200' : 'bg-gray-50'
-              }`}>
+              <div key={index} className={`flex items-center justify-between p-2 rounded ${index === monthlyStats.length - 1 ? 'bg-blue-50 border border-blue-200' : 'bg-gray-50'
+                }`}>
                 <span className="font-medium text-gray-800">{stat.month}</span>
                 <div className="flex gap-4 text-sm">
                   <span>{stat.bets} apostas</span>
@@ -375,25 +557,21 @@ export const ProfileRankingScreen: React.FC = () => {
             {achievements.map((achievement) => {
               const Icon = achievement.icon;
               return (
-                <div 
-                  key={achievement.id} 
-                  className={`flex items-center gap-3 p-3 rounded-lg border ${
-                    achievement.earned 
-                      ? 'bg-green-50 border-green-200' 
+                <div
+                  key={achievement.id}
+                  className={`flex items-center gap-3 p-3 rounded-lg border ${achievement.earned
+                      ? 'bg-green-50 border-green-200'
                       : 'bg-gray-50 border-gray-200'
-                  }`}
+                    }`}
                 >
-                  <div className={`p-2 rounded-full ${
-                    achievement.earned ? 'bg-green-100' : 'bg-gray-100'
-                  }`}>
-                    <Icon className={`w-5 h-5 ${
-                      achievement.earned ? 'text-green-600' : 'text-gray-400'
-                    }`} />
+                  <div className={`p-2 rounded-full ${achievement.earned ? 'bg-green-100' : 'bg-gray-100'
+                    }`}>
+                    <Icon className={`w-5 h-5 ${achievement.earned ? 'text-green-600' : 'text-gray-400'
+                      }`} />
                   </div>
                   <div className="flex-1">
-                    <h4 className={`font-semibold ${
-                      achievement.earned ? 'text-green-800' : 'text-gray-600'
-                    }`}>
+                    <h4 className={`font-semibold ${achievement.earned ? 'text-green-800' : 'text-gray-600'
+                      }`}>
                       {achievement.title}
                     </h4>
                     <p className="text-sm text-gray-600">{achievement.description}</p>
@@ -422,3 +600,5 @@ export const ProfileRankingScreen: React.FC = () => {
     </div>
   );
 };
+
+export default ProfileRankingScreen;
