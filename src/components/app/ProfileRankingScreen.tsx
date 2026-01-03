@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
+import EditProfileCard from '@/components/app/EditProfileCard'
 
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,7 @@ export const ProfileRankingScreen: React.FC = () => {
 
   const [achievements, setAchievements] = useState<any[]>([]);
   const [monthlyStats, setMonthlyStats] = useState<any[]>([]);
+  const [showEdit, setShowEdit] = useState(false);
 
   // Utilitários
   const formatCurrency = (v: number) => Number(v || 0).toFixed(2);
@@ -240,13 +242,25 @@ export const ProfileRankingScreen: React.FC = () => {
           </p>
         </div>
         <div>
-          <Button size="sm" className="bg-[#014a8f] text-white" onClick={() => navigate('/profile-setup')}>
-            Editar Perfil
+          <Button size="sm" className="bg-[#014a8f] text-white" onClick={() => setShowEdit((s)=>!s)}>
+            {showEdit ? 'Fechar' : 'Editar Perfil'}
           </Button>
         </div>
       </div>
 
       {/* Profile Card */}
+      {showEdit && (
+        <div className="mb-4">
+          <EditProfileCard
+            profile={userProfile}
+            onCancel={() => setShowEdit(false)}
+            onSave={(newProfile:any) => {
+              setUserProfile((p:any)=>({ ...p, ...newProfile }))
+              setShowEdit(false)
+            }}
+          />
+        </div>
+      )}
       <Card>
         <CardContent className="p-6">
           <div className="flex items-center gap-4 mb-4">
