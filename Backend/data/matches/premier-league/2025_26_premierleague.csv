@@ -159,26 +159,26 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 16,Sun,2025-12-14,West Ham United,Aston Villa,2-3,2-1
 16,Sun,2025-12-14,Brentford,Leeds United,1-1,0-0
 16,Mon,2025-12-15,Manchester United,AFC Bournemouth,4-4,2-1
-17,,2025-08-15,Newcastle United,Chelsea,,
-17,,2025-08-15,AFC Bournemouth,Burnley,,
-17,,2025-08-15,Brighton & Hove Albion,Sunderland,,
-17,,2025-08-15,Manchester City,West Ham United,,
-17,,2025-08-15,Wolverhampton,Brentford,,
-17,,2025-08-15,Tottenham,Liverpool,,
-17,,2025-08-15,Everton,Arsenal,,
-17,,2025-08-15,Leeds United,Crystal Palace,,
-17,,2025-08-15,Aston Villa,Manchester United,,
-17,,2025-08-15,Fulham FC,Nottingham Forest,,
-18,,2025-08-15,Manchester United,Newcastle United,,
-18,,2025-08-15,Nottingham Forest,Manchester City,,
-18,,2025-08-15,Arsenal,Brighton & Hove Albion,,
-18,,2025-08-15,Brentford,AFC Bournemouth,,
-18,,2025-08-15,Burnley,Everton,,
-18,,2025-08-15,Liverpool,Wolverhampton,,
-18,,2025-08-15,West Ham United,Fulham FC,,
-18,,2025-08-15,Chelsea,Aston Villa,,
-18,,2025-08-15,Sunderland,Leeds United,,
-18,,2025-08-15,Crystal Palace,Tottenham,,
+17,Sat,2025-12-20,Newcastle United,Chelsea,2-2,2-0
+17,Sat,2025-12-20,AFC Bournemouth,Burnley,1-1,0-0
+17,Sat,2025-12-20,Brighton & Hove Albion,Sunderland,0-0,0-0
+17,Sat,2025-12-20,Manchester City,West Ham United,3-0,2-0
+17,Sat,2025-12-20,Wolverhampton,Brentford,0-2,0-0
+17,Sat,2025-12-20,Tottenham,Liverpool,1-2,0-0
+17,Sat,2025-12-20,Everton,Arsenal,0-1,0-1
+17,Sat,2025-12-20,Leeds United,Crystal Palace,4-1,2-0
+17,Sun,2025-12-21,Aston Villa,Manchester United,2-1,1-1
+17,Mon,2025-12-22,Fulham FC,Nottingham Forest,1-0,1-0
+18,Fri,2025-12-26,Manchester United,Newcastle United,1-0,1-0
+18,Sat,2025-12-27,Nottingham Forest,Manchester City,1-2,0-0
+18,Sat,2025-12-27,Arsenal,Brighton & Hove Albion,2-1,1-0
+18,Sat,2025-12-27,Brentford,AFC Bournemouth,4-1,2-0
+18,Sat,2025-12-27,Burnley,Everton,0-0,0-0
+18,Sat,2025-12-27,Liverpool,Wolverhampton,2-1,2-0
+18,Sat,2025-12-27,West Ham United,Fulham FC,0-1,0-0
+18,Sat,2025-12-27,Chelsea,Aston Villa,1-2,1-0
+18,Sun,2025-12-28,Sunderland,Leeds United,1-1,1-0
+18,Sun,2025-12-28,Crystal Palace,Tottenham,0-1,0-1
 19,,2025-08-15,Burnley,Newcastle United,,
 19,,2025-08-15,Chelsea,AFC Bournemouth,,
 19,,2025-08-15,Nottingham Forest,Everton,,

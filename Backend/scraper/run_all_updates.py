@@ -30,7 +30,7 @@ def run_script(script_name):
         print(result.stderr)
 
 if __name__ == "__main__":
-    print("INICIANDO ROTINA COMPLETA DE ATUALIZAÇÃO 🔥")
+    print("INICIANDO ROTINA COMPLETA DE ATUALIZAÇÃO")
 
     for script in SCRIPTS:
         run_script(script)
