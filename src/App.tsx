@@ -5,8 +5,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "../src/contexts/AuthContexts";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
-import ForgotPasswordScreen from "./components/auth/ForgotPasswordScreen";
-import ResetPasswordScreen from "./components/auth/ResetPasswordScreen";
 
 // Páginas / Telas
 import Index from "./pages/Index";
@@ -51,15 +49,6 @@ const AppRoutes = () => {
       </Route>
 
       <Route path="*" element={<NotFound />} />
-
-      <Route
-        path="/forgot-password"
-        element={isAuthenticated ? <Navigate to="/" /> : <ForgotPasswordScreen />}
-      />
-      <Route
-        path="/reset-password"
-        element={isAuthenticated ? <Navigate to="/" /> : <ResetPasswordScreen />}
-      />
     </Routes>
   );
 };
