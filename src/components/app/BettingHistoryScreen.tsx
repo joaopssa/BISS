@@ -18,6 +18,7 @@ type Aposta = {
   partida: string;
   mercado: string; // Tipo de aposta
   selecao: string;
+  linha?: string | null;
   odd: number;
   valor_apostado: number;
   possivel_retorno: number;
@@ -71,6 +72,7 @@ export default function BettingHistoryScreen() {
         partida: a.partida || "—",
         mercado: a.mercado || "—",
         selecao: a.selecao || "—",
+        linha: a.linha ?? null,
         odd: Number(a.odd) || 0,
         valor_apostado: Number(a.valor_apostado) || 0,
         possivel_retorno: Number(a.possivel_retorno) || 0,
@@ -111,6 +113,29 @@ export default function BettingHistoryScreen() {
       case "cancelada": return "text-gray-600 bg-gray-50 border-gray-200";
       default: return "text-yellow-700 bg-yellow-50 border-yellow-200";
     }
+  };
+
+  const formatTotalGoalsPick = (mercado?: string, selecao?: string, linha?: string | null) => {
+    const m = (mercado || "").toLowerCase();
+    const s = (selecao || "").toLowerCase().trim();
+
+    const isTotalsMarket = /total|gols|over|under|mais\/menos|mais menos/i.test(m);
+    if (!isTotalsMarket) return null;
+
+    // se não veio linha, tenta extrair do texto (ex: "Under 2.5")
+    let ln = (linha || "").toString().trim();
+    if (!ln) {
+      const match = s.match(/(\d+(?:[.,]\d+)?)/);
+      if (match) ln = match[1];
+    }
+
+    // normaliza "2,5" -> "2.5"
+    if (ln) ln = ln.replace(",", ".");
+
+    if (/under|menos/i.test(s)) return ln ? `Menos de ${ln} gols` : "Menos gols";
+    if (/over|mais/i.test(s)) return ln ? `Mais de ${ln} gols` : "Mais gols";
+
+    return null;
   };
 
   const handleClearFilters = () => {
@@ -436,7 +461,17 @@ export default function BettingHistoryScreen() {
               const teamBLow = (teamB || "").toLowerCase();
               const isTeamAPick = (teamA && pick.includes(teamALow)) || (a.mercado === '1X2' && /^(1)$/.test((a.selecao || '').trim()));
               const isTeamBPick = (teamB && pick.includes(teamBLow)) || (a.mercado === '1X2' && /^(2)$/.test((a.selecao || '').trim()));
-              const pickLabel = isTeamAPick ? `Vitória de ${teamA || a.selecao}` : isTeamBPick ? `Vitória de ${teamB || a.selecao}` : (a.selecao || 'Palpite');
+              const totalLabel = formatTotalGoalsPick(a.mercado, a.selecao, a.linha);
+
+              const pickLabel =
+                totalLabel
+                  ? totalLabel
+                  : isTeamAPick
+                  ? `Vitória de ${teamA || a.selecao}`
+                  : isTeamBPick
+                  ? `Vitória de ${teamB || a.selecao}`
+                  : (a.selecao || "Palpite");
+
               // ------------------------------------------
 
               return (

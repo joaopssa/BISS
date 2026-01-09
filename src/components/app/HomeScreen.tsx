@@ -31,6 +31,12 @@ const normalize = (str: string) =>
     .trim()
     .toLowerCase();
 
+const extractLineFromText = (text?: string) => {
+  if (!text) return undefined;
+  const m = String(text).match(/(\d+(?:[.,]\d+)?)/);
+  return m ? m[1].replace(",", ".") : undefined;
+};
+
 const findClubLogo = (teamName: string): string | null => {
   const target = normalize(teamName);
 
@@ -97,29 +103,42 @@ function calcularStakeKelly1Way(
 function getPickLabel(s: {
   mercado?: string;
   selecao?: string;
+  linha?: string;
   time_casa?: string;
   time_fora?: string;
 }) {
+  const market = (s.mercado || "").toLowerCase();
   const pickText = (s.selecao || "").toLowerCase().trim();
   const homeText = (s.time_casa || "").toLowerCase();
   const awayText = (s.time_fora || "").toLowerCase();
 
+  // 1X2
   if (s.mercado === "1X2") {
-    if (pickText === "1" || pickText.includes(homeText)) {
-      return `Vitória de ${s.time_casa}`;
+    if (pickText === "1" || (homeText && pickText.includes(homeText))) return `Vitória de ${s.time_casa}`;
+    if (pickText === "2" || (awayText && pickText.includes(awayText))) return `Vitória de ${s.time_fora}`;
+    if (pickText === "x" || pickText === "empate") return "Empate";
+  }
+
+  // Total de gols / Over-Under
+  const isTotalsMarket = /total|gols|over|under|mais\/menos|mais menos/i.test(market);
+  if (isTotalsMarket) {
+    let ln = (s.linha || "").trim();
+
+    // fallback: tenta extrair linha do texto "Under 2.5"
+    if (!ln) {
+      const match = pickText.match(/(\d+(?:[.,]\d+)?)/);
+      if (match) ln = match[1];
     }
 
-    if (pickText === "2" || pickText.includes(awayText)) {
-      return `Vitória de ${s.time_fora}`;
-    }
+    ln = ln ? ln.replace(",", ".") : "";
 
-    if (pickText === "x" || pickText === "empate") {
-      return "Empate";
-    }
+    if (/under|menos/i.test(pickText)) return ln ? `Menos de ${ln} gols` : "Menos gols";
+    if (/over|mais/i.test(pickText)) return ln ? `Mais de ${ln} gols` : "Mais gols";
   }
 
   return s.selecao || "Palpite";
 }
+
 
 
 type UIMatch = import("@/data/matchData").UIMatch;
@@ -129,7 +148,8 @@ type UIMatch = import("@/data/matchData").UIMatch;
 type TicketSelection = {
   // formato do backend
   mercado?: string;     
-  selecao?: string;      
+  selecao?: string;
+  linha?: string;      
   partida?: string;      
   time_casa?: string;
   time_fora?: string;
@@ -176,6 +196,8 @@ type BetSelection = {
   mercado: string;
 
   selecao: string;
+
+  linha?: string;
 
   odd: number;
 
@@ -406,6 +428,7 @@ export const HomeScreen: React.FC = () => {
 
           mercado: s.mercado,
           selecao: s.selecao,
+          linha: s.linha,
 
           match: s.partida,
           market: s.mercado,
@@ -867,6 +890,8 @@ export const HomeScreen: React.FC = () => {
 
           selecao: s.selecao,
 
+          linha: s.linha ?? null,
+
           odd: s.odd,
 
         })),
@@ -996,28 +1021,30 @@ export const HomeScreen: React.FC = () => {
 
               onSelectOdd={(params) => {
 
+                const anyParams: any = params;
+
+                const linha =
+                  anyParams.linha ??
+                  anyParams.line ??
+                  anyParams.total ??
+                  anyParams.threshold ??
+                  extractLineFromText(anyParams.selection) ??
+                  extractLineFromText(anyParams.marketLabel) ??
+                  extractLineFromText(anyParams.market);
+
                 const sel: BetSelection = {
-
                   matchId: params.matchId,
-
                   partida: `${params.homeTeam} x ${params.awayTeam}`,
-
                   campeonato: params.competition,
-
                   time_casa: params.homeTeam,
-
                   time_fora: params.awayTeam,
-
                   mercado: params.market,
-
                   selecao: params.selection,
-
+                  linha, // ✅ NOVO
                   odd: params.odd,
-
                 };
 
-                handleAddSelection(sel);
-
+                handleAddSelection(sel); 
               }}
 
 
@@ -1063,6 +1090,17 @@ export const HomeScreen: React.FC = () => {
               <ExpandableMatchCard
                 matches={trending}
                 onSelectOdd={(params) => {
+                  const anyParams: any = params;
+
+                  const linha =
+                    anyParams.linha ??
+                    anyParams.line ??
+                    anyParams.total ??
+                    anyParams.threshold ??
+                    extractLineFromText(anyParams.selection) ??
+                    extractLineFromText(anyParams.marketLabel) ??
+                    extractLineFromText(anyParams.market);
+
                   const sel: BetSelection = {
                     matchId: params.matchId,
                     partida: `${params.homeTeam} x ${params.awayTeam}`,
@@ -1071,10 +1109,13 @@ export const HomeScreen: React.FC = () => {
                     time_fora: params.awayTeam,
                     mercado: params.market,
                     selecao: params.selection,
+                    linha, // ✅ AQUI
                     odd: params.odd,
                   };
+
                   handleAddSelection(sel);
                 }}
+
 
                 onSelectHistory={(params) => handleOpenH2H(params)}   // <-- ADICIONAR ISSO
               />
@@ -1141,6 +1182,7 @@ export const HomeScreen: React.FC = () => {
           ) : (
             <ul className="space-y-6">
               {filteredTickets.map((t) => {
+                const statusNorm = (t.status || "").toUpperCase();
                 const isPending = !t.status || t.status === "PENDENTE";
 
                 return (
@@ -1158,18 +1200,23 @@ export const HomeScreen: React.FC = () => {
                         {new Date(t.createdAt).toLocaleString("pt-BR")}
                       </span>
 
-                      <span
-                        className={`
-                          text-[10px] font-semibold uppercase px-2 py-1 rounded-full
-                          ${
-                            isPending
-                              ? "bg-yellow-100 text-yellow-700"
-                              : "bg-green-100 text-green-700"
-                          }
-                        `}
-                      >
-                        {t.status || "PENDENTE"}
-                      </span>
+                    
+
+                    <span
+                      className={`
+                        text-[10px] font-semibold uppercase px-2 py-1 rounded-full
+                        ${
+                          statusNorm === "PENDENTE"
+                            ? "bg-yellow-100 text-yellow-700"
+                            : statusNorm === "PERDIDO"
+                            ? "bg-red-100 text-red-700"
+                            : "bg-green-100 text-green-700"
+                        }
+                      `}
+                    >
+                      {statusNorm || "PENDENTE"}
+                    </span>
+
 
                     </div>
 
@@ -1177,14 +1224,24 @@ export const HomeScreen: React.FC = () => {
                     <div className="grid grid-cols-2 mb-5 text-sm">
                       <div>
                         <span className="text-gray-500">Aposta</span>
-                        <p className="font-semibold">R$ {t.stake.toFixed(2)}</p>
+                        <p className="font-semibold text-grey-600">
+                          R$ {t.stake.toFixed(2)}
+                        </p>
+
+
                       </div>
 
                       <div>
                         <span className="text-gray-500">Retorno potencial</span>
-                        <p className="font-semibold text-green-600">
-                          R$ {t.potentialReturn.toFixed(2)}
-                        </p>
+                          <p
+                            className={`font-semibold ${
+                              statusNorm === "PERDIDO"
+                                ? "text-red-600"
+                                : "text-green-600"
+                            }`}
+                          >
+                            R$ {t.potentialReturn.toFixed(2)}
+                          </p>
                       </div>
                     </div>
 

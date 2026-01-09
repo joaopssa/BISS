@@ -179,35 +179,35 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 18,Sat,2025-12-27,Chelsea,Aston Villa,1-2,1-0
 18,Sun,2025-12-28,Sunderland,Leeds United,1-1,1-0
 18,Sun,2025-12-28,Crystal Palace,Tottenham,0-1,0-1
-19,,2025-08-15,Burnley,Newcastle United,,
-19,,2025-08-15,Chelsea,AFC Bournemouth,,
-19,,2025-08-15,Nottingham Forest,Everton,,
-19,,2025-08-15,West Ham United,Brighton & Hove Albion,,
-19,,2025-08-15,Arsenal,Aston Villa,,
-19,,2025-08-15,Manchester United,Wolverhampton,,
-19,,2026-01-01,Crystal Palace,Fulham FC,,
-19,,2026-01-01,Liverpool,Leeds United,,
-19,,2026-01-01,Sunderland,Manchester City,,
-19,,2026-01-01,Brentford,Tottenham,,
-20,,2026-01-01,Aston Villa,Nottingham Forest,,
-20,,2026-01-01,Brighton & Hove Albion,Burnley,,
-20,,2026-01-01,Wolverhampton,West Ham United,,
-20,,2026-01-01,AFC Bournemouth,Arsenal,,
-20,,2026-01-01,Leeds United,Manchester United,,
-20,,2026-01-01,Everton,Brentford,,
-20,,2026-01-01,Fulham FC,Liverpool,,
-20,,2026-01-01,Newcastle United,Crystal Palace,,
-20,,2026-01-01,Tottenham,Sunderland,,
-20,,2026-01-01,Manchester City,Chelsea,,
-21,,2026-01-01,West Ham United,Nottingham Forest,,
-21,,2026-01-01,AFC Bournemouth,Tottenham,,
-21,,2026-01-01,Crystal Palace,Aston Villa,,
-21,,2026-01-01,Brentford,Sunderland,,
-21,,2026-01-01,Everton,Wolverhampton,,
-21,,2026-01-01,Fulham FC,Chelsea,,
-21,,2026-01-01,Manchester City,Brighton & Hove Albion,,
-21,,2026-01-01,Burnley,Manchester United,,
-21,,2026-01-01,Newcastle United,Leeds United,,
+19,Tue,2025-12-30,Burnley,Newcastle United,1-3,1-2
+19,Tue,2025-12-30,Chelsea,AFC Bournemouth,2-2,2-2
+19,Tue,2025-12-30,Nottingham Forest,Everton,0-2,0-1
+19,Tue,2025-12-30,West Ham United,Brighton & Hove Albion,2-2,2-1
+19,Tue,2025-12-30,Arsenal,Aston Villa,4-1,0-0
+19,Tue,2025-12-30,Manchester United,Wolverhampton,1-1,1-1
+19,,2026-01-01,Crystal Palace,Fulham FC,1-1,1-0
+19,,2026-01-01,Liverpool,Leeds United,0-0,0-0
+19,,2026-01-01,Sunderland,Manchester City,0-0,0-0
+19,,2026-01-01,Brentford,Tottenham,0-0,0-0
+20,Sat,2026-01-03,Aston Villa,Nottingham Forest,3-1,1-0
+20,Sat,2026-01-03,Brighton & Hove Albion,Burnley,2-0,1-0
+20,Sat,2026-01-03,Wolverhampton,West Ham United,3-0,3-0
+20,Sat,2026-01-03,AFC Bournemouth,Arsenal,2-3,1-1
+20,Sun,2026-01-04,Leeds United,Manchester United,1-1,0-0
+20,Sun,2026-01-04,Everton,Brentford,2-4,0-1
+20,Sun,2026-01-04,Fulham FC,Liverpool,2-2,1-0
+20,Sun,2026-01-04,Newcastle United,Crystal Palace,2-0,0-0
+20,Sun,2026-01-04,Tottenham,Sunderland,1-1,1-0
+20,Sun,2026-01-04,Manchester City,Chelsea,1-1,1-0
+21,Tue,2026-01-06,West Ham United,Nottingham Forest,1-2,1-0
+21,Wed,2026-01-07,AFC Bournemouth,Tottenham,3-2,2-1
+21,Wed,2026-01-07,Crystal Palace,Aston Villa,0-0,0-0
+21,Wed,2026-01-07,Brentford,Sunderland,3-0,1-0
+21,Wed,2026-01-07,Everton,Wolverhampton,1-1,1-0
+21,Wed,2026-01-07,Fulham FC,Chelsea,2-1,0-0
+21,Wed,2026-01-07,Manchester City,Brighton & Hove Albion,1-1,1-0
+21,Wed,2026-01-07,Burnley,Manchester United,2-2,1-0
+21,Wed,2026-01-07,Newcastle United,Leeds United,4-3,1-2
 21,,2026-01-01,Arsenal,Liverpool,,
 22,,2026-01-01,Sunderland,Crystal Palace,,
 22,,2026-01-01,Aston Villa,Everton,,

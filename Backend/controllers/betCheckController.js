@@ -135,9 +135,9 @@ exports.verificarBilhetesPendentes = async (req, res) => {
         );
 
         await db.query(
-          `INSERT INTO movimentacoes_financeiras (id_usuario, tipo, valor, descricao, referencia)
-           VALUES (?, 'premio', ?, 'Bilhete cancelado', ?)`,
-          [id_usuario, b.stake_total, b.id_bilhete]
+          `INSERT INTO movimentacoes_financeiras (id_usuario, tipo, valor, descricao, referencia, data_movimentacao)
+          VALUES (?, 'premio', ?, 'Bilhete cancelado', ?, ?)`,
+          [id_usuario, b.stake_total, b.id_bilhete, b.data_criacao]
         );
 
         resultados.push({
@@ -211,10 +211,11 @@ exports.verificarBilhetesPendentes = async (req, res) => {
         console.log(`💰 Registrando prêmio de ${b.possivel_retorno}...`);
 
         await db.query(
-          `INSERT INTO movimentacoes_financeiras (id_usuario, tipo, valor, descricao, referencia)
-          VALUES (?, 'premio', ?, 'Bilhete vencedor', ?)`,
-          [id_usuario, b.possivel_retorno, b.id_bilhete]
-        );
+        `INSERT INTO movimentacoes_financeiras (id_usuario, tipo, valor, descricao, referencia, data_movimentacao)
+        VALUES (?, 'premio', ?, 'Bilhete vencedor', ?, ?)`,
+        [id_usuario, b.possivel_retorno, b.id_bilhete, b.data_criacao]
+      );
+
       }
 
       resultados.push({

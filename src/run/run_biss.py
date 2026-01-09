@@ -38,6 +38,7 @@ def safe_print(*args, **kwargs):
 _setup_stdout()
 # -------------------------------------------------------------------------
 
+
 def find_repo_root(start: Path) -> Path:
     cur = start.resolve()
     for _ in range(10):
@@ -52,6 +53,7 @@ def find_repo_root(start: Path) -> Path:
             fallback = fallback.parent
     return fallback
 
+
 def has_dev_script(pkg_path: Path) -> bool:
     try:
         with pkg_path.open(encoding="utf-8") as f:
@@ -60,6 +62,7 @@ def has_dev_script(pkg_path: Path) -> bool:
         return isinstance(scripts, dict) and "dev" in scripts
     except Exception:
         return False
+
 
 def find_frontend_dir(repo_root: Path) -> Path | None:
     candidates = [
@@ -83,6 +86,7 @@ def find_frontend_dir(repo_root: Path) -> Path | None:
             return c
     return None
 
+
 def find_backend_dir(repo_root: Path) -> Path | None:
     candidates = [
         repo_root / "Backend",
@@ -96,6 +100,22 @@ def find_backend_dir(repo_root: Path) -> Path | None:
             return c.resolve()
     return None
 
+
+def find_scraper_script(backend_dir: Path) -> Path | None:
+    """
+    Procura Backend/scraper/run_all_updates.py (ou variações).
+    """
+    candidates = [
+        backend_dir / "scraper" / "run_all_updates.py",
+        backend_dir / "scrapers" / "run_all_updates.py",
+        backend_dir / "Backend" / "scraper" / "run_all_updates.py",  # fallback extra
+    ]
+    for p in candidates:
+        if p.exists():
+            return p.resolve()
+    return None
+
+
 def ensure_commands():
     missing = []
     if shutil.which("node") is None:
@@ -108,6 +128,7 @@ def ensure_commands():
             "\nInstale o Node.js (que inclui o npm) ou adicione-os ao PATH."
         )
 
+
 def which_powershell() -> list[str]:
     """
     Prefere Windows PowerShell (powershell.exe). Se não achar, tenta pwsh.
@@ -118,6 +139,7 @@ def which_powershell() -> list[str]:
     # último recurso: assume 'powershell'
     return ["powershell"]
 
+
 def open_powershell_in_new_window(cwd: Path, command: str):
     ps = which_powershell()
     ps_command = f"cd '{cwd}' ; {command}"
@@ -127,6 +149,7 @@ def open_powershell_in_new_window(cwd: Path, command: str):
         creationflags=creation,
         cwd=str(cwd)
     )
+
 
 def main():
     script_dir = Path(__file__).resolve().parent
@@ -161,16 +184,35 @@ def main():
     safe_print("OK  Frontend   :", frontend_dir)
     safe_print("OK  Backend    :", backend_dir)
 
+    # --- NOVO: localizar script do scraper ---
+    scraper_script = find_scraper_script(backend_dir)
+    if scraper_script:
+        safe_print("OK  Scraper    :", scraper_script)
+    else:
+        safe_print("AVISO: Não encontrei o script do scraper (run_all_updates.py) dentro de:", backend_dir)
+
     try:
+        # --- NOVO: abre a janela do scraper primeiro (opcional) ---
+        if scraper_script:
+            py = sys.executable  # usa o python que está rodando este run_biss.py
+            # -u = saída sem buffer (melhor pra acompanhar logs)
+            open_powershell_in_new_window(
+                scraper_script.parent,
+                f'& "{py}" -u "{scraper_script.name}"'
+            )
         open_powershell_in_new_window(frontend_dir, "npm run dev")
         open_powershell_in_new_window(backend_dir, "node server.js")
+
         safe_print("\nINICIADO:")
+        if scraper_script:
+            safe_print(f" - Scraper  -> {sys.executable} -u {scraper_script}")
         safe_print(" - Frontend -> npm run dev")
         safe_print(" - Backend  -> node server.js")
-        safe_print("\nAs duas janelas do PowerShell foram abertas com os processos rodando.")
+        safe_print("\nAs janelas do PowerShell foram abertas com os processos rodando.")
     except Exception as e:
         safe_print(f"ERRO ao iniciar os processos: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
