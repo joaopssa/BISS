@@ -181,14 +181,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 18,Fri,2026-01-02,Rayo Vallecano,Getafe CF,1-1,1-0
 18,,2026-01-04,Mallorca,Girona FC,1-2,0-1
 18,,2026-01-04,Sevilha FC,Levante,0-3,0-1
-19,,2026-01-11,Getafe CF,Real Sociedad,,
-19,,2026-01-11,Girona FC,Osasuna,,
-19,,2026-01-11,Villarreal CF,Deportivo Alavés,,
-19,,2026-01-11,Real Oviedo,Bétis,,
-19,,2026-01-11,Sevilha FC,Celta de Vigo,,
-19,,2026-01-11,Valencia,Elche,,
-19,,2026-01-11,Levante,Espanyol,,
-19,,2026-01-11,Rayo Vallecano,Mallorca,,
+19,Fri,2026-01-09,Getafe CF,Real Sociedad,1-2,0-1
+19,Sat,2026-01-10,Girona FC,Osasuna,1-0,1-0
+19,Sat,2026-01-10,Villarreal CF,Deportivo Alavés,3-1,0-0
+19,Sat,2026-01-10,Real Oviedo,Bétis,1-1,0-0
+19,Mon,2026-01-12,Sevilha FC,Celta de Vigo,0-1,0-0
+19,Sat,2026-01-10,Valencia,Elche,1-1,0-0
+19,,2026-01-11,Levante,Espanyol,1-1,0-0
+19,,2026-01-11,Rayo Vallecano,Mallorca,2-1,2-1
 20,,2026-01-18,Bétis,Villarreal CF,,
 20,,2026-01-18,Celta de Vigo,Rayo Vallecano,,
 20,,2026-01-18,Elche,Sevilha FC,,

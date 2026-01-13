@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { User, Trophy, Target, TrendingUp, Award, Crown, Medal } from 'lucide-react';
+import { User, Trophy, Target, TrendingUp, Award, Crown, Medal, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContexts';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
@@ -18,7 +18,6 @@ type BISSTier = {
   wins: number;
   acc: number; // % mínimo de acerto
 };
-
 
 export const BISS_TIERS: BISSTier[] = [
   { key: "INI", name: "Iniciante", xp: 0, bets: 0, wins: 0, acc: 0 },
@@ -47,7 +46,6 @@ export const BISS_TIERS: BISSTier[] = [
   { key: "GM2", name: "Grão Mestre II", xp: 520000, bets: 2250, wins: 1750, acc: 92 },
   { key: "GM3", name: "Grão Mestre III", xp: 650000, bets: 2350, wins: 1900, acc: 95 },
 ];
-
 
 export const getXPForStreak = (streak: number) => {
   if (streak <= 1) return 260;
@@ -84,7 +82,6 @@ export const getUserTier = (
   );
 };
 
-
 export const getNextTier = (tierKey: string) => {
   const idx = BISS_TIERS.findIndex((t) => t.key === tierKey);
   return idx >= 0 ? BISS_TIERS[idx + 1] || null : null;
@@ -98,6 +95,13 @@ const XP_BONUS_BILHETE_GANHO = 100;     // placeholder (ajustável)
 const XP_PENALIDADE_ERRO = 100;         // fixo por sua regra
 
 const clamp = (v: number, min: number, max: number) => Math.max(min, Math.min(max, v));
+
+const getTierBadgeSrc = (tierKey?: string | null) => {
+  const key = String(tierKey || "INI").toLowerCase(); // "AM1" -> "am1"
+  return `${import.meta.env.BASE_URL}classes/${key}.png`;
+};
+
+const fmtPct1 = (v: number) => `${Number(v || 0).toFixed(1)}%`;
 
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -324,13 +328,12 @@ export const ProfileRankingScreen: React.FC = () => {
           api.get('/challenges/daily/today'),
         ]);
 
-const daily =
-  dailyRes.status === 'fulfilled' && dailyRes.value?.data
-    ? dailyRes.value.data
-    : null;
+        const daily =
+          dailyRes.status === 'fulfilled' && dailyRes.value?.data
+            ? dailyRes.value.data
+            : null;
 
-setDailyPayload(daily);
-
+        setDailyPayload(daily);
 
         const apostas: any[] = histRes.status === 'fulfilled' && Array.isArray(histRes.value.data) ? histRes.value.data : [];
         const extrato: any[] = extrRes.status === 'fulfilled' && Array.isArray(extrRes.value.data) ? extrRes.value.data : [];
@@ -392,19 +395,7 @@ setDailyPayload(daily);
         const profit = totalPremios - totalPerdido;
 
         // =======================================================
-        // 🔥 BISS: Yield (%) (mais "desafiador" por tier)
-        // - aqui é percentual de retorno sobre stake total
-        // =======================================================
-        const stakesSettled = bilhetes.reduce((acc: number, b: any) => {
-          const st = (b.status || '').toString().toLowerCase();
-          if (st === 'pendente' || st === 'cancelado') return acc;
-          return acc + Number(b.stake_total || b.stake || 0);
-        }, 0);
-
-        // =======================================================
         // 🔥 BISS: XP (somente acertos + bilhetes; derrota -100)
-        // - streak XP cresce conforme sua tabela
-        // - XP nunca fica negativo (clamp 0)
         // =======================================================
         const settledChrono = [...mappedApostas]
           .filter((a: any) => a.status_aposta !== 'pendente')
@@ -612,9 +603,8 @@ setDailyPayload(daily);
     : 1;
 
   const accProgress = nextTier
-  ? clamp((Number(userProfile.winRate || 0) / Math.max(1, nextTier.acc)), 0, 1)
-  : 1;
-
+    ? clamp((Number(userProfile.winRate || 0) / Math.max(1, nextTier.acc)), 0, 1)
+    : 1;
 
   const safeXP = Number(userProfile.points || 0);
   const safeBets = Number(userProfile.totalBets || 0);
@@ -631,6 +621,65 @@ setDailyPayload(daily);
     return Math.round(clamp(current / target, 0, 1) * 100);
   };
 
+  // =======================================================
+  // UI Piece: progress row (com "thumb" + check à direita)
+  // =======================================================
+  const ProgressRow = (props: {
+    label: string;
+    leftValue: string;
+    rightValue: string;
+    pct: number; // 0-100
+    done?: boolean;
+    tone?: "primary" | "blue" | "green" | "danger";
+  }) => {
+    const tone = props.tone || "primary";
+    const barColor =
+      tone === "green" ? "bg-green-600" :
+        tone === "danger" ? "bg-red-600" :
+          tone === "blue" ? "bg-blue-600" :
+            "bg-[#014a8f]";
+
+    const ringColor =
+      tone === "green" ? "border-green-600" :
+        tone === "danger" ? "border-red-600" :
+          tone === "blue" ? "border-blue-600" :
+            "border-[#014a8f]";
+
+    return (
+      <div className="space-y-1">
+        <div className="flex items-center justify-between text-xs text-gray-600">
+          <span>{props.label}</span>
+          <span className="tabular-nums">{props.leftValue} / {props.rightValue}</span>
+        </div>
+
+        <div className="relative w-full h-3 rounded-full bg-gray-200 overflow-hidden">
+          <div
+            className={`h-3 ${barColor}`}
+            style={{ width: `${clamp(props.pct, 0, 100)}%` }}
+          />
+          {/* "thumb" no fim do progresso (estilo do seu esboço) */}
+          <div
+            className={`absolute top-1/2 -translate-y-1/2 h-4 w-4 rounded-full bg-white border-2 ${ringColor} shadow-sm`}
+            style={{
+              left: `calc(${clamp(props.pct, 0, 100)}% - 8px)`,
+            }}
+          />
+        </div>
+
+        <div className="flex items-center justify-end">
+          {props.done ? (
+            <div className="inline-flex items-center gap-1 text-xs text-green-700">
+              <CheckCircle2 className="w-4 h-4" />
+              <span>OK</span>
+            </div>
+          ) : (
+            <div className="text-xs text-gray-400">—</div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="p-4 space-y-6">
       {/* Header */}
@@ -642,18 +691,9 @@ setDailyPayload(daily);
             Suas estatísticas e conquistas
           </p>
         </div>
-        <div>
-          <Button
-            size="sm"
-            className="bg-[#014a8f] text-white"
-            onClick={handleToggleEdit}
-          >
-            {showEdit ? 'Fechar' : 'Editar Perfil'}
-          </Button>
-        </div>
       </div>
 
-      {/* Profile Card */}
+      {/* Profile Edit */}
       {showEdit && (
         <div className="mb-4">
           <EditProfileCard
@@ -667,9 +707,13 @@ setDailyPayload(daily);
         </div>
       )}
 
+      {/* =======================================================
+          ✅ NOVO TOPO (igual ao esboço “depois”):
+          Card de perfil com Editar Perfil dentro + Sequência Atual
+         ======================================================= */}
       <Card>
         <CardContent className="p-6">
-          <div className="flex items-center gap-4 mb-4">
+          <div className="flex items-start gap-4">
             {/* Avatar com logo do clube favorito */}
             <Avatar className="w-16 h-16 rounded-full overflow-hidden border border-gray-300">
               {userProfile.favoriteTeam &&
@@ -688,143 +732,181 @@ setDailyPayload(daily);
             </Avatar>
 
             <div className="flex-1">
-              <div className="flex items-center gap-2 mb-1">
+              <div className="flex items-center gap-2">
                 <h2 className="text-xl font-bold text-gray-800">{userProfile.name}</h2>
                 {getRankIcon(userProfile.rank)}
               </div>
-              <p className="text-gray-600">{userProfile.username}</p>
-              <Badge className="mt-1 bg-blue-100 text-blue-700 hover:bg-blue-100">
-                {userProfile.level}
-              </Badge>
-            </div>
-            {/* position removed per UI request */}
-          </div>
 
-          <div className="grid grid-cols-4 gap-4 text-center">
-            <div>
-              <p className="text-lg font-bold text-gray-800">
-                {Number(userProfile.points || 0).toLocaleString()}
-              </p>
-              <p className="text-xs text-gray-600">XP BISS</p>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-1">
+                <p className="text-gray-600">{userProfile.username}</p>
+
+                {/* Tier pill com imagem */}
+                <div className="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1">
+                  <img
+                    src={getTierBadgeSrc(userProfile.bissTierKey)}
+                    alt={userProfile.level}
+                    className="h-5 w-5 object-contain"
+                    loading="lazy"
+                  />
+                  <span className="text-xs font-semibold text-gray-800">{userProfile.level}</span>
+                </div>
+
+                {/* Sequência Atual (como no seu esboço) */}
+                <span className="text-xs text-gray-600">
+                  <span className="font-semibold text-gray-800">Sequência Atual</span>:{" "}
+                  <span className="font-semibold text-blue-700">{safeStreak}</span>
+                </span>
+              </div>
             </div>
-            <div>
-              <p className="text-lg font-bold text-green-600">{userProfile.winRate}%</p>
-              <p className="text-xs text-gray-600">Taxa de Acerto</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-800">{userProfile.totalBets}</p>
+
+            <Button
+              size="sm"
+              className="bg-[#014a8f] text-white shrink-0"
+              onClick={handleToggleEdit}
+            >
+              {showEdit ? 'Fechar' : 'Editar Perfil'}
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* =======================================================
+          ✅ NOVO: Painel de Estatísticas e Progresso (4 boxes)
+         ======================================================= */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-lg">Painel de Estatísticas e Progresso</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
               <p className="text-xs text-gray-600">Apostas</p>
+              <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeBets}</p>
             </div>
-            <div>
-              <p className="text-lg font-bold text-blue-600">{userProfile.currentStreak}</p>
-              <p className="text-xs text-gray-600">Sequência</p>
+
+            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+              <p className="text-xs text-gray-600">Vitórias</p>
+              <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeWins}</p>
+            </div>
+
+            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+              <p className="text-xs text-gray-600">Sequência Maior</p>
+              <p className="text-2xl font-bold text-gray-800 tabular-nums">
+                {Number(userProfile.longestStreak || 0)}
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+              <p className="text-xs text-gray-600">Percentual Acertos</p>
+              <p className="text-2xl font-bold text-green-600 tabular-nums">
+                {fmtPct1(Number(userProfile.winRate || 0))}
+              </p>
             </div>
           </div>
         </CardContent>
       </Card>
 
       {/* =======================================================
-          🔥 NOVO: Painel de Progresso BISS (sem remover nada)
+          ✅ NOVO: Tier Atual (esquerda) + Próximo Tier (direita)
          ======================================================= */}
       <Card>
-        <CardHeader>
-          <CardTitle className="text-lg flex items-center justify-between">
-            <span>Painel de Progresso BISS</span>
-            <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
-              {tier.name}
-            </Badge>
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-3 gap-3 mb-4">
-            <div className="p-3 rounded-lg bg-gray-50 border border-gray-200">
-              <p className="text-xs text-gray-600">XP Total</p>
-              <p className="text-lg font-bold text-gray-800">{Number(userProfile.points || 0).toLocaleString()}</p>
-            </div>
-            <div className="p-3 rounded-lg bg-gray-50 border border-gray-200">
-              <p className="text-xs text-gray-600">Percentual de acertos</p>
-              <p className={`text-lg font-bold ${Number(userProfile.winRate || 0) >= 0 ? "text-green-600" : "text-red-600"}`}>
-                {Number(userProfile.winRate || 0).toFixed(1)}%
-              </p>
-            </div>
-            <div className="p-3 rounded-lg bg-gray-50 border border-gray-200">
-              <p className="text-xs text-gray-600">Vitórias</p>
-              <p className="text-lg font-bold text-gray-800">{winsApprox}</p>
-            </div>
-          </div>
-
-          {nextTier ? (
-            <div className="space-y-3">
+        <CardContent className="p-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Left: Tier Atual */}
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
               <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-semibold text-gray-800">Próximo Tier</p>
-                  <p className="text-xs text-gray-600">{nextTier.name}</p>
-                </div>
+                <p className="text-sm font-semibold text-gray-800">Tier Atual</p>
                 <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
-                  {nextTier.xp.toLocaleString()} XP
+                  {tier.name}
                 </Badge>
               </div>
 
-              {/* XP progress */}
-              <div>
-                <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
-                  <span>XP</span>
-                  <span>{xpCurrent.toLocaleString()} / {xpEnd.toLocaleString()}</span>
-                </div>
-                <div className="w-full h-2 rounded bg-gray-200 overflow-hidden">
-                  <div className="h-2 bg-[#014a8f]" style={{ width: `${Math.round(xpProgress * 100)}%` }} />
-                </div>
-              </div>
-
-              {/* Bets progress */}
-              <div>
-                <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
-                  <span>Apostas</span>
-                  <span>{Number(userProfile.totalBets || 0)} / {nextTier.bets}</span>
-                </div>
-                <div className="w-full h-2 rounded bg-gray-200 overflow-hidden">
-                  <div className="h-2 bg-blue-600" style={{ width: `${Math.round(betsProgress * 100)}%` }} />
-                </div>
-              </div>
-
-              {/* Wins progress */}
-              <div>
-                <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
-                  <span>Vitórias</span>
-                  <span>{winsApprox} / {nextTier.wins}</span>
-                </div>
-                <div className="w-full h-2 rounded bg-gray-200 overflow-hidden">
-                  <div className="h-2 bg-green-600" style={{ width: `${Math.round(winsProgress * 100)}%` }} />
-                </div>
-              </div>
-
-              {/* Percentual de acertos (mínimo) */}
-              <div>
-                <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
-                  <span>Acertos (mínimo)</span>
-                  <span>{Number(userProfile.winRate || 0).toFixed(1)}% / {nextTier.acc.toFixed(1)}%</span>
-                </div>
-                <div className="w-full h-2 rounded bg-gray-200 overflow-hidden">
-                  <div
-                    className={`h-2 ${Number(userProfile.winRate || 0) >= nextTier.acc ? "bg-green-600" : "bg-red-600"}`}
-                    style={{ width: `${Math.round(accProgress * 100)}%` }}
+              {/* Onde estava escrito "Classe": usar imagem da classe */}
+              <div className="mt-4 flex items-center justify-center">
+                <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 w-full flex flex-col items-center justify-center">
+                  <img
+                    src={getTierBadgeSrc(tier.key)}
+                    alt={tier.name}
+                    className="h-104 w-104 object-contain"
+                    loading="lazy"
                   />
+                  <p className="text-xs text-gray-500">Classe</p>
+                  <p className="mt-3 text-sm font-semibold text-gray-800">{tier.name}</p>
                 </div>
-                <p className="text-[11px] text-gray-500 mt-1">
-                  O Tier sobe apenas quando cumprir XP + apostas + vitórias + % acerto mínimo.
-                </p>
               </div>
             </div>
-          ) : (
-            <div className="p-3 rounded-lg bg-green-50 border border-green-200 text-green-800">
-              <p className="font-semibold">Você chegou ao topo: {tier.name} 🎉</p>
-              <p className="text-sm">Agora é manter consistência e defender o nível.</p>
+
+            {/* Right: Próximo Tier */}
+            <div className="rounded-xl border border-gray-200 bg-white p-5">
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold text-gray-800">
+                  Próximo Tier: <span className="text-gray-700">{nextTier?.name || "—"}</span>
+                </p>
+                {nextTier ? (
+                  <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
+                    {nextTier.xp.toLocaleString()} XP
+                  </Badge>
+                ) : (
+                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100">
+                    Topo
+                  </Badge>
+                )}
+              </div>
+
+              {nextTier ? (
+                <div className="mt-4 space-y-4">
+                  <ProgressRow
+                    label="XP"
+                    leftValue={xpCurrent.toLocaleString()}
+                    rightValue={xpEnd.toLocaleString()}
+                    pct={Math.round(xpProgress * 100)}
+                    done={xpCurrent >= xpEnd}
+                    tone="primary"
+                  />
+
+                  <ProgressRow
+                    label="Apostas"
+                    leftValue={Number(userProfile.totalBets || 0).toString()}
+                    rightValue={nextTier.bets.toString()}
+                    pct={Math.round(betsProgress * 100)}
+                    done={Number(userProfile.totalBets || 0) >= nextTier.bets}
+                    tone="blue"
+                  />
+
+                  <ProgressRow
+                    label="Vitórias"
+                    leftValue={winsApprox.toString()}
+                    rightValue={nextTier.wins.toString()}
+                    pct={Math.round(winsProgress * 100)}
+                    done={winsApprox >= nextTier.wins}
+                    tone="green"
+                  />
+
+                  <ProgressRow
+                    label="% Acertos"
+                    leftValue={Number(userProfile.winRate || 0).toFixed(1)}
+                    rightValue={nextTier.acc.toFixed(1)}
+                    pct={Math.round(accProgress * 100)}
+                    done={Number(userProfile.winRate || 0) >= nextTier.acc}
+                    tone={Number(userProfile.winRate || 0) >= nextTier.acc ? "green" : "danger"}
+                  />
+
+                  <p className="text-[11px] text-gray-500">
+                    O Tier sobe apenas quando cumprir XP + apostas + vitórias + % acerto mínimo.
+                  </p>
+                </div>
+              ) : (
+                <div className="mt-4 p-3 rounded-lg bg-green-50 border border-green-200 text-green-800">
+                  <p className="font-semibold">Você chegou ao topo: {tier.name} 🎉</p>
+                  <p className="text-sm">Agora é manter consistência e defender o nível.</p>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </CardContent>
       </Card>
-      
-            {/* =======================================================
+
+      {/* =======================================================
           🎯 NOVO: Desafios (Hoje / Semana)
          ======================================================= */}
       <Card>
@@ -842,11 +924,9 @@ setDailyPayload(daily);
               <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
                 🔥 {dailyStreakDays} dias
               </Badge>
-
             </div>
           </CardTitle>
         </CardHeader>
-
 
         <CardContent className="space-y-6">
           {/* Hoje */}
@@ -857,17 +937,15 @@ setDailyPayload(daily);
             </div>
 
             <div className="grid grid-cols-1 gap-3">
-              {dailyChallenges.map((c) => {
+              {dailyChallenges.map((c: any) => {
                 const pct = progressPct(c.current, c.target);
                 const done = !!c.done;
-
 
                 return (
                   <div
                     key={c.id}
-                    className={`p-3 rounded-lg border ${
-                      done ? "bg-green-50 border-green-200" : "bg-gray-50 border-gray-200"
-                    }`}
+                    className={`p-3 rounded-lg border ${done ? "bg-green-50 border-green-200" : "bg-gray-50 border-gray-200"
+                      }`}
                   >
                     <div className="flex items-center justify-between">
                       <div>
