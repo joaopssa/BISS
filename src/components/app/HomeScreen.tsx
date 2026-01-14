@@ -824,7 +824,7 @@ export const HomeScreen: React.FC = () => {
 
  
 
-    if (!stake || stake <= 0.5) {
+    if (!stake || stake <= 0.49) {
 
       setFeedback("Informe um valor de aposta maior que R$ 0,50.");
 
@@ -1329,16 +1329,6 @@ export const HomeScreen: React.FC = () => {
 
           <TopTab
 
-            label="Jogos Favoritos"
-
-            active={tab === "favoritos"}
-
-            onClick={() => setTab("favoritos")}
-
-          />
-
-          <TopTab
-
             label="Em Alta"
 
             active={tab === "em-alta"}
@@ -1354,6 +1344,16 @@ export const HomeScreen: React.FC = () => {
             active={tab === "bilhetes"}
 
             onClick={() => setTab("bilhetes")}
+
+          />
+
+          <TopTab
+
+            label="Jogos Favoritos"
+
+            active={tab === "favoritos"}
+
+            onClick={() => setTab("favoritos")}
 
           />
 

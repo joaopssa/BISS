@@ -60,7 +60,7 @@ export const MainApp: React.FC = () => {
             <SidebarContent>
               <SidebarHeader>
                 <img
-                  src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png"
+                  src="/lovable-uploads/logonormal.jpg"
                   alt="Logo do App"
                   className="h-10 w-10 object-contain transition-all duration-300"
                 />

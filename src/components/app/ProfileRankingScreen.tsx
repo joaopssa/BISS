@@ -164,7 +164,7 @@ export const ProfileRankingScreen: React.FC = () => {
   });
 
   const [achievements, setAchievements] = useState<any[]>([]);
-  const [monthlyStats, setMonthlyStats] = useState<any[]>([]);
+
   const [showEdit, setShowEdit] = useState(false);
 
   const [dailyPayload, setDailyPayload] = useState<any>(null);
@@ -401,6 +401,17 @@ export const ProfileRankingScreen: React.FC = () => {
         const profit = totalPremios - totalPerdido;
 
         // =======================================================
+        // ✅ ROI (Yield %): (premios - stakes) / stakes
+        // stakes aqui é o total investido em bilhetes (todos)
+        // =======================================================
+        const totalStakes = bilhetes.reduce((acc: number, b: any) => {
+          return acc + Number(b.stake_total || b.stake || 0);
+        }, 0);
+
+        const roiPct = computeYieldPct(totalPremios, totalStakes); // pode ser negativo
+
+
+        // =======================================================
         // 🔥 BISS: XP (somente acertos + bilhetes; derrota -100)
         // =======================================================
         const settledChrono = [...mappedApostas]
@@ -437,7 +448,6 @@ export const ProfileRankingScreen: React.FC = () => {
         const tier = getUserTier(bissXP, totalBets, wins, Math.round(winRate * 10) / 10);
         const nextTier = getNextTier(tier.key);
 
-        // Monthly stats: agrupar por mês do registro (apostas) e calcular bets, winRate, profit (por mês via extrato)
         const statsMap: Record<string, { bets: number; wins: number; profit: number }> = {};
 
         mappedApostas.forEach((a: any) => {
@@ -516,6 +526,7 @@ export const ProfileRankingScreen: React.FC = () => {
           totalBets,
           winRate: Math.round(winRate * 10) / 10,
           totalProfit: Math.round(profit * 100) / 100,
+          bissYield: Math.round(roiPct * 10) / 10,
           currentStreak,
           longestStreak,
 
@@ -535,7 +546,6 @@ export const ProfileRankingScreen: React.FC = () => {
         ];
 
         setAchievements(derivedAchievements);
-        setMonthlyStats(monthly.slice(0, 12));
 
         // ✅ Por fim, carregar preferências atuais (para EditProfileCard abrir preenchido)
         await fetchAndApplyPreferences({ silent: true });
@@ -694,7 +704,7 @@ export const ProfileRankingScreen: React.FC = () => {
           <h1 className="text-2xl font-bold text-gray-800">Perfil & Ranking</h1>
           <p className="text-blue-600 flex items-center gap-1">
             <User className="w-4 h-4" />
-            Suas estatísticas e conquistas
+            Estatísticas e Conquistas
           </p>
         </div>
       </div>
@@ -734,40 +744,41 @@ export const ProfileRankingScreen: React.FC = () => {
             </Avatar>
 
             <div className="flex-1">
-            <div className="flex items-start justify-between gap-4">
+              <div className="flex items-start gap-4">
               {/* ESQUERDA: Nome + Username */}
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
                   <h2 className="text-xl font-bold text-gray-800 truncate">
                     {userProfile.name}
                   </h2>
-                  {getRankIcon(userProfile.rank)}
                 </div>
 
                 <p className="text-gray-600 truncate">{userProfile.username}</p>
               </div>
 
-              {/* MEIO: Tier + Sequência (lado a lado do nome/@) */}
-              <div className="flex items-center gap-3 shrink-0">
-                <div className="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1">
-                  <span className="text-xs font-semibold text-gray-800">
-                    {userProfile.level}
-                  </span>
-                </div>
-
-                <span className="text-xs text-gray-600 whitespace-nowrap">
-                  <span className="font-semibold text-gray-800">Sequência Atual</span>:{" "}
-                  <span className="font-semibold text-blue-700">{safeStreak}</span>
-                </span>
-              </div>
-
-              {/* DIREITA: Escudo (à direita de tudo dentro do bloco do perfil) */}
+              {/* Iniciante + Sequência (logo ao lado do nome/@) */}
+              {/* Escudo (logo após a sequência, ainda no canto esquerdo) */}
               <img
                 src={getTierBadgeSrc(userProfile.bissTierKey)}
                 alt={userProfile.level}
                 className="w-16 h-16 object-contain shrink-0"
                 loading="lazy"
               />
+
+              <div className="min-w-0">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-xs font-semibold text-gray-800 truncate">
+                    {userProfile.level}
+                  </h2>
+                </div>
+
+                <p className="text-xs text-gray-600 truncate whitespace-nowrap">
+                  <span className="font-semibold text-gray-800">Sequência Atual</span>:{" "}
+                  <span className="font-semibold text-blue-700">{safeStreak}</span>
+                </p>
+              </div>
+
+              
             </div>
           </div>
 
@@ -790,7 +801,7 @@ export const ProfileRankingScreen: React.FC = () => {
           <CardTitle className="text-lg">Painel de Estatísticas e Progresso</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
             <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
               <p className="text-xs text-gray-600">Apostas</p>
               <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeBets}</p>
@@ -813,6 +824,13 @@ export const ProfileRankingScreen: React.FC = () => {
               <p className={`text-2xl font-bold ${userProfile.totalProfit >= 0 ? 'text-green-600' : 'text-red-600'
                 }`}>R$ {userProfile.totalProfit.toFixed(2)}</p>
               
+            </div>
+
+            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+              <p className="text-xs text-gray-600">ROI</p>
+              <p className={`text-2xl font-bold ${Number(userProfile.bissYield || 0) >= 0 ? 'text-green-700' : 'text-red-700'}`}>
+                {fmtPct1(Number(userProfile.bissYield || 0))}
+              </p>
             </div>
 
             <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
@@ -1002,83 +1020,6 @@ export const ProfileRankingScreen: React.FC = () => {
         </CardContent>
       </Card>
 
-      {/* Performance Stats */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-lg">Estatísticas de Performance</CardTitle>
-        </CardHeader>
-        <CardContent>
-
-          <div className="space-y-2">
-            <h4 className="font-semibold text-gray-800">Evolução Mensal</h4>
-            {monthlyStats.map((stat, index) => (
-              <div key={index} className={`flex items-center justify-between p-2 rounded ${index === monthlyStats.length - 1 ? 'bg-blue-50 border border-blue-200' : 'bg-gray-50'
-                }`}>
-                <span className="font-medium text-gray-800">{stat.month}</span>
-                <div className="flex gap-4 text-sm">
-                  <span>{stat.bets} apostas</span>
-                  <span className="text-green-600">{stat.winRate}%</span>
-                  <span className="text-blue-600">R$ {stat.profit.toFixed(2)}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Achievements */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-lg flex items-center gap-2">
-            <Award className="w-5 h-5" />
-            Conquistas & Medalhas
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 gap-3">
-            {achievements.map((achievement) => {
-              const Icon = achievement.icon;
-              return (
-                <div
-                  key={achievement.id}
-                  className={`flex items-center gap-3 p-3 rounded-lg border ${achievement.earned
-                    ? 'bg-green-50 border-green-200'
-                    : 'bg-gray-50 border-gray-200'
-                    }`}
-                >
-                  <div className={`p-2 rounded-full ${achievement.earned ? 'bg-green-100' : 'bg-gray-100'
-                    }`}>
-                    <Icon className={`w-5 h-5 ${achievement.earned ? 'text-green-600' : 'text-gray-400'
-                      }`} />
-                  </div>
-                  <div className="flex-1">
-                    <h4 className={`font-semibold ${achievement.earned ? 'text-green-800' : 'text-gray-600'
-                      }`}>
-                      {achievement.title}
-                    </h4>
-                    <p className="text-sm text-gray-600">{achievement.description}</p>
-                    {achievement.earned && achievement.earnedDate && (
-                      <p className="text-xs text-green-600 mt-1">
-                        Conquistado em {achievement.earnedDate}
-                      </p>
-                    )}
-                    {!achievement.earned && achievement.progress && (
-                      <p className="text-xs text-gray-500 mt-1">
-                        Progresso: {achievement.progress}
-                      </p>
-                    )}
-                  </div>
-                  {achievement.earned && (
-                    <Badge className="bg-green-100 text-green-700 hover:bg-green-100">
-                      ✓
-                    </Badge>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 };

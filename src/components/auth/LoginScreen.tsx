@@ -60,27 +60,38 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onGoToRegister }) => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="mx-auto mb-4 w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center">
+          <div className="mx-auto mb-4 w-48 h-48 bg-[#014a8f] rounded-lg flex items-center justify-center">
             <img 
-              src="/lovable-uploads/f77e9c7d-1d78-46ea-9b89-391284783838.png" 
+              src="/lovable-uploads/logonormal.jpg" 
               alt="BISS Logo" 
-              className="w-16 h-16 object-contain"
+              className="w-120 h-120 object-contain"
             />
           </div>
-          <CardTitle className="text-2xl font-bold text-blue-800">BISS</CardTitle>
 
-          <div className="max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto overflow-hidden">
-            <TypewriterEffectSmooth
-              words={[
-                { text: "Inteligência" },
-                { text: "que" },
-                { text: "joga" },
-                { text: "do" },
-                { text: "seu" },
-                { text: "lado", className: "text-blue-600 dark:text-blue-400" },
-              ]}
-            />
+          <div className="w-full flex justify-center">
+            <div className="w-full max-w-[520px] overflow-hidden flex justify-center">
+              <div
+                className="whitespace-nowrap origin-center"
+                style={{
+                  transform: "scale(1.6)",        // aumente/diminua aqui
+                  transformOrigin: "center",
+                }}
+              >
+                <TypewriterEffectSmooth
+                  words={[
+                    { text: "Inteligência"},
+                    { text: "que" },
+                    { text: "joga"},
+                    { text: "do"},
+                    { text: "seu"},
+                    { text: "lado.", className: "text-[#014a8f] dark:text-[#014a8f]" },
+                  ]}
+                />
+              </div>
+            </div>
           </div>
+
+
         </CardHeader>
 
         <CardContent>

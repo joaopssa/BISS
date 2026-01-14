@@ -4,6 +4,17 @@ import React, { useEffect, useState, useRef, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import api from "@/services/api";
 import { useFinance } from "@/contexts/FinanceContext";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  Cell
+} from "recharts";
+
 // Importações necessárias para o gráfico
 
 // --- Ícones SVG ---
@@ -47,7 +58,9 @@ export default function FinancialBalanceScreen() {
   const [modo, setModo] = useState<"deposito" | "saque">("deposito");
   const [loading, setLoading] = useState<boolean>(false);
   const [feedback, setFeedback] = useState<string | null>(null);
-  
+  type MonthlyMetric = "bets" | "winRate" | "profit";
+  const [monthlyMetric, setMonthlyMetric] = useState<MonthlyMetric>("bets");
+
   // Contexto de Finanças
   const { refreshTrigger } = useFinance();
   
@@ -61,6 +74,61 @@ export default function FinancialBalanceScreen() {
   const [savedGoal, setSavedGoal] = useState<any>(null);
   const [showPeriodDropdown, setShowPeriodDropdown] = useState<boolean>(false);
   const [editingMetaId, setEditingMetaId] = useState<number | null>(null);
+
+  const [showFullHistory, setShowFullHistory] = useState(false);
+    // --- EVOLUÇÃO MENSAL (derivada do extrato + bilhetes) ---
+  const monthlyStats = useMemo(() => {
+    const keyMonth = (d: Date) =>
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+
+    const map: Record<
+      string,
+      { bets: number; wins: number; stakeAll: number; premios: number; lostStake: number }
+    > = {};
+
+    // Bilhetes: bets / wins / stakes
+    bilhetes.forEach((b: any) => {
+      const dt = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
+      const k = keyMonth(dt);
+      if (!map[k]) map[k] = { bets: 0, wins: 0, stakeAll: 0, premios: 0, lostStake: 0 };
+
+      map[k].bets += 1;
+
+      const stake = Number(b.stake_total || b.stake || 0);
+      map[k].stakeAll += stake;
+
+      const st = String(b.status || "").toLowerCase();
+      if (st === "ganho" || st === "ganha") map[k].wins += 1;
+      if (st === "perdido" || st === "perdida") map[k].lostStake += stake;
+    });
+
+    // Extrato: prêmios por mês
+    extrato.forEach((m) => {
+      if (m.tipo !== "premio") return;
+      const dt = new Date(m.data_movimentacao);
+      const k = keyMonth(dt);
+      if (!map[k]) map[k] = { bets: 0, wins: 0, stakeAll: 0, premios: 0, lostStake: 0 };
+
+      map[k].premios += Number(m.valor || 0);
+    });
+
+    // Monta lista (mais recente primeiro)
+    return Object.entries(map)
+      .sort((a, b) => b[0].localeCompare(a[0]))
+      .map(([month, v]) => {
+        const winRate = v.bets > 0 ? Math.round((v.wins / v.bets) * 1000) / 10 : 0;
+
+        // Profit mantendo sua lógica do progresso: prêmios - (apenas perdas)
+        const profit = Math.round((v.premios - v.lostStake) * 100) / 100;
+
+        return {
+          month,
+          bets: v.bets,
+          winRate,
+          profit,
+        };
+      });
+  }, [extrato, bilhetes]);
 
 
   // REF para detectar clique fora do dropdown
@@ -397,10 +465,15 @@ const calendarData = useMemo(() => {
     weeks.push(currentWeek);
   }
 
-
   return weeks;
 }, [extrato, bilhetes]);
 
+const formatMonth = (ym: string) => {
+  // espera "YYYY-MM"
+  if (!ym || !ym.includes("-")) return ym;
+  const [year, month] = ym.split("-");
+  return `${month}/${year}`;
+};
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
@@ -409,168 +482,393 @@ const calendarData = useMemo(() => {
       </header>
 
       <main className="p-6 space-y-6">
-        {/* ... Restante da tela (Saldo, Operações, Histórico) ... */}
-        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-6 space-y-4">
-          <h2 className="text-xl font-bold text-[#014a8f]">Saldo atual</h2>
+        {/* Saldo + Operação lado a lado */}
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4 items-stretch">
+          {/* Saldo atual (esquerda) */}
+          <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-6">
+            <h2 className="text-xl font-bold text-[#014a8f]">Saldo atual</h2>
 
-          <div className="border-t pt-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400">Disponível</p>
-            <h2 className="text-3xl font-bold text-[#014a8f]">R$ {saldo.toFixed(2)}</h2>
+            <div className="border-t pt-4">
+              <p className="text-sm text-gray-500 dark:text-gray-400">Disponível</p>
+              <h2 className="text-3xl font-bold text-[#014a8f]">R$ {saldo.toFixed(2)}</h2>
+            </div>
+          </div>
+
+          {/* Operação (direita) */}
+          <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-6">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold text-[#014a8f]">Operação</h2>
+            </div>
+
+            <div className="border-t pt-4">
+              {/* Linha alinhada à direita (Depósito/Saque + Valor + Botão) */}
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-end gap-3">
+                <div className="flex gap-2 justify-end">
+                  <Button
+                    variant={modo === "deposito" ? "default" : "outline"}
+                    className={modo === "deposito" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                    onClick={() => setModo("deposito")}
+                  >
+                    Depósito
+                  </Button>
+
+                  <Button
+                    variant={modo === "saque" ? "default" : "outline"}
+                    className={modo === "saque" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                    onClick={() => setModo("saque")}
+                  >
+                    Saque
+                  </Button>
+                </div>
+
+                <input
+                  type="number"
+                  value={valor || ""}
+                  onChange={(e) => setValor(Number(e.target.value))}
+                  placeholder="Valor em R$"
+                  className="border rounded-md px-3 py-2 text-sm w-full lg:w-48"
+                />
+
+                <Button
+                  className="bg-[#014a8f] hover:bg-[#003b70] text-white w-full lg:w-auto"
+                  onClick={handleTransacao}
+                  disabled={loading}
+                >
+                  {loading ? "Processando..." : modo === "deposito" ? "Depositar" : "Sacar"}
+                </Button>
+              </div>
+
+              {feedback && (
+                <div
+                  className={`mt-3 rounded-lg border px-4 py-2 text-sm ${
+                    /sucesso|realizado/i.test(feedback)
+                      ? "bg-green-50 border-green-200 text-green-800"
+                      : "bg-blue-50 border-blue-200 text-blue-800"
+                  }`}
+                >
+                  {feedback}
+                </div>
+              )}
+            </div>
           </div>
         </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* --- EVOLUÇÃO MENSAL (GRÁFICO) --- */}
+        <div className="mt-4 bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-4">
+          <div className="flex items-start sm:items-center justify-between gap-3 mb-3">
+            <div>
+              <h3 className="text-xl font-bold text-[#014a8f]">
+                Evolução Mensal
+              </h3>
+            </div>
 
-        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4 space-y-4">
-          <h2 className="text-lg font-semibold">Operação</h2>
-          <div className="flex flex-col sm:flex-row gap-3">
             <div className="flex gap-2">
               <Button
-                variant={modo === "deposito" ? "default" : "outline"}
-                className={modo === "deposito" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
-                onClick={() => setModo("deposito")}
+                size="sm"
+                variant={monthlyMetric === "profit" ? "default" : "outline"}
+                className={monthlyMetric === "profit" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                onClick={() => setMonthlyMetric("profit")}
               >
-                Depósito
+                Lucro
               </Button>
+
+                            <Button
+                size="sm"
+                variant={monthlyMetric === "winRate" ? "default" : "outline"}
+                className={monthlyMetric === "winRate" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                onClick={() => setMonthlyMetric("winRate")}
+              >
+                %Acerto
+              </Button>
+
               <Button
-                variant={modo === "saque" ? "default" : "outline"}
-                className={modo === "saque" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
-                onClick={() => setModo("saque")}
+                size="sm"
+                variant={monthlyMetric === "bets" ? "default" : "outline"}
+                className={monthlyMetric === "bets" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                onClick={() => setMonthlyMetric("bets")}
               >
-                Saque
+                Apostas
               </Button>
+              
             </div>
-            <input
-              type="number"
-              value={valor || ""}
-              onChange={(e) => setValor(Number(e.target.value))}
-              placeholder="Valor em R$"
-              className="border rounded-md px-3 py-2 text-sm w-full sm:w-40"
-            />
-            <Button
-              className="bg-[#014a8f] hover:bg-[#003b70] text-white"
-              onClick={handleTransacao}
-              disabled={loading}
-            >
-              {loading ? "Processando..." : modo === "deposito" ? "Depositar" : "Sacar"}
-            </Button>
           </div>
-          {feedback && (
-            <div className={`rounded-lg border px-4 py-2 text-sm ${/sucesso|realizado/i.test(feedback) ? "bg-green-50 border-green-200 text-green-800" : "bg-blue-50 border-blue-200 text-blue-800"}`}>
-              {feedback}
+
+          {/* dados em ordem cronológica (mais antigo -> mais recente) pra ficar natural no gráfico */}
+          {monthlyStats.length === 0 ? (
+            <p className="text-sm text-gray-500 text-center py-10">
+              Sem dados mensais ainda.
+            </p>
+          ) : (
+            <div className="h-56 w-full">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={[...monthlyStats].reverse()}
+                  margin={{ top: 8, right: 12, left: 0, bottom: 0 }}
+                >
+                  <CartesianGrid vertical={false} />
+                  <XAxis
+                    dataKey="month"
+                    tickLine={false}
+                    axisLine={false}
+                    fontSize={12}
+                    tickFormatter={(v) => formatMonth(String(v))}
+                  />
+                  <YAxis
+                    tickLine={false}
+                    axisLine={false}
+                    fontSize={12}
+                    domain={
+                      monthlyMetric === "bets"
+                        ? [0, "auto"]
+                        : monthlyMetric === "winRate"
+                        ? [0, 100]
+                        : ["auto", "auto"]   // lucro
+                    }
+                    tickFormatter={(v) => {
+                      const n = Number(v);
+                      if (monthlyMetric === "profit") return `R$${n.toFixed(0)}`;
+                      if (monthlyMetric === "winRate") return `${n.toFixed(0)}%`;
+                      return `${n.toFixed(0)}`;
+                    }}
+                  />
+
+                  <Tooltip
+                    labelFormatter={(label) => `Mês: ${formatMonth(String(label))}`}
+                    formatter={(value: any) => {
+                      const n = Number(value);
+                      if (monthlyMetric === "profit") return [`R$ ${n.toFixed(2)}`, "Lucro"];
+                      if (monthlyMetric === "winRate") return [`${n.toFixed(1)}%`, "% Acerto"];
+                      return [`${Math.round(n)}`, "Apostas"];
+                    }}
+                  />
+                  {monthlyMetric !== "profit" ? (
+                  <Bar
+                    dataKey={monthlyMetric}
+                    radius={[8, 8, 0, 0]}
+                    fill={monthlyMetric === "bets" ? "#014a8f" : "#16a34a"}
+                  />
+                ) : (
+                  <Bar dataKey="profit" radius={[8, 8, 0, 0]}>
+                    {[...monthlyStats].reverse().map((row, idx) => (
+                      <Cell
+                        key={`cell-${idx}`}
+                        fill={Number(row.profit) >= 0 ? "#16a34a" : "#dc2626"}
+                      />
+                    ))}
+                  </Bar>
+                )}
+
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           )}
         </div>
 
+
         {/* --- CALENDÁRIO ANUAL DE DESEMPENHO (GitHub Style) --- */}
-        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-6">
+        <div className="mt-4 bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-6">
           <div className="flex items-center gap-2 mb-4">
             <div className="p-2 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
               <ChartIcon />
             </div>
             <div>
-              <h2 className="text-lg font-bold text-gray-800 dark:text-white">
+              <h2 className="text-xl font-bold text-[#014a8f]">
                 Desempenho Anual
               </h2>
-              <p className="text-xs text-gray-500">
-                Lucro Diário
-              </p>
+              <p className="text-xs text-gray-500">Lucro Diário</p>
             </div>
           </div>
 
-
-
-          <div className="flex gap-4 mt-4 text-xs text-gray-500">
+          {/* Legenda */}
+          <div className="flex flex-wrap gap-4 mt-2 text-xs text-gray-500">
             <div className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-gray-200 rounded-sm"></span> Neutro
+              <span className="w-3 h-3 bg-gray-200 dark:bg-neutral-700 rounded-sm" />
+              Neutro
             </div>
             <div className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-green-500 rounded-sm"></span> Lucro
+              <span className="w-3 h-3 bg-green-500 rounded-sm" />
+              Lucro
             </div>
             <div className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-red-500 rounded-sm"></span> Prejuízo
+              <span className="w-3 h-3 bg-red-500 rounded-sm" />
+              Prejuízo
+            </div>
+          </div>
+
+          {/* Grid do calendário */}
+          <div className="mt-4 overflow-hidden">
+            <div
+              className="grid"
+              style={{
+                // controle fino aqui:
+                ["--cell" as any]: "13px",
+                ["--gap" as any]: "2px",
+
+                gridTemplateColumns: `repeat(${calendarData.length}, var(--cell))`,
+                gridTemplateRows: `repeat(7, var(--cell))`,
+                gap: "var(--gap)",
+                gridAutoFlow: "column",
+              }}
+            >
+              {calendarData.map((week, wIdx) =>
+                week.map((day, dIdx) => {
+                  if (!day) return <div key={`${wIdx}-${dIdx}`} />;
+
+                  let color = "bg-gray-200 dark:bg-neutral-700";
+                  if (day.value > 0) color = "bg-green-500";
+                  if (day.value < 0) color = "bg-red-500";
+
+                  return (
+                    <div
+                      key={day.date}
+                      title={`${new Date(day.date).toLocaleDateString("pt-BR")} — R$ ${day.value.toFixed(2)}`}
+                      className={`rounded-sm ${color}`}
+                      style={{
+                        width: "var(--cell)",
+                        height: "var(--cell)",
+                      }}
+                    />
+                  );
+                })
+              )}
             </div>
           </div>
         </div>
-
-          <div className="overflow-x-auto">
-            <div className="flex">
-
-              {/* COLUNA DOS DIAS */}
-              <div className="flex flex-col justify-between mr-2 text-xs text-gray-400 h-[130px] pt-[1px]">
-                <span>Ter</span>
-                <span>Seg</span>
-              </div>
-
-              <div>
-                {/* GRID PRINCIPAL */}
-                <div
-                  className="grid gap-1"
-                  style={{
-                    gridTemplateColumns: `repeat(${calendarData.length}, 14px)`,
-                    gridTemplateRows: "repeat(7, 14px)",
-                    gridAutoFlow: "column"
-                  }}
-                >
-                  {calendarData.map((week, wIdx) =>
-                    week.map((day, dIdx) => {
-                      if (!day) return <div key={`${wIdx}-${dIdx}`} />;
-
-                      let color = "bg-gray-200 dark:bg-neutral-700";
-                      if (day.value > 0) color = "bg-green-500";
-                      if (day.value < 0) color = "bg-red-500";
-
-                      return (
-                        <div
-                          key={day.date}
-                          title={`${new Date(day.date).toLocaleDateString("pt-BR")} — R$ ${day.value.toFixed(2)}`}
-                          className={`w-3.5 h-3.5 rounded-sm ${color}`}
-                        />
-                      );
-                    })
-                  )}
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-
+        </div>
         
-
         <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4">
-          <h2 className="text-lg font-semibold mb-2">Histórico de Movimentações</h2>
+          <h2 className="text-xl font-bold text-[#014a8f]">Histórico de Movimentações</h2>
+
           {extrato.length === 0 ? (
             <p className="text-sm text-gray-500 text-center">Nenhuma movimentação registrada.</p>
           ) : (
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="text-left border-b">
-                  <th className="py-2">Data</th>
-                  <th className="py-2">Tipo</th>
-                  <th className="py-2">Valor</th>
-                  <th className="py-2">Descrição</th>
-                </tr>
-              </thead>
-              <tbody>
-                {extrato.map((m) => (
-                  <tr key={m.id_movimentacao} className="border-b">
-                    <td className="py-2">{new Date(m.data_movimentacao).toLocaleString("pt-BR")}</td>
-                    <td>{m.tipo}</td>
-                    <td
-                      className={
-                        m.tipo === "deposito" || m.tipo === "premio"
-                          ? "text-green-600"
-                          : "text-red-600"
-                      }
-                    >
-                      {(m.tipo === "deposito" || m.tipo === "premio") ? "+" : "-"} R$ {m.valor.toFixed(2)}
-                    </td>
-                    <td>{m.descricao || "—"}</td>
+            <>
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="text-left border-b">
+                    <th className="py-2">Data</th>
+                    <th className="py-2">Tipo</th>
+                    <th className="py-2">Valor</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {extrato
+                    .slice(0, 5)
+                    .map((m) => (
+                      <tr key={m.id_movimentacao} className="border-b last:border-b-0">
+                        <td className="py-2">
+                          {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
+                        </td>
+                        <td className="capitalize">{m.tipo}</td>
+                        <td
+                          className={
+                            m.tipo === "deposito" || m.tipo === "premio"
+                              ? "text-green-600"
+                              : "text-red-600"
+                          }
+                        >
+                          {(m.tipo === "deposito" || m.tipo === "premio") ? "+" : "-"} R${" "}
+                          {m.valor.toFixed(2)}
+                        </td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+
+              <div className="mt-3 flex justify-center">
+                <Button
+                  variant="ghost"
+                  className="text-[#014a8f]"
+                  onClick={() => setShowFullHistory(true)}
+                >
+                  Ver histórico completo
+                </Button>
+              </div>
+            </>
           )}
         </div>
+
+        {showFullHistory && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+          <div className="bg-white dark:bg-neutral-900 rounded-xl shadow-lg w-full max-w-3xl max-h-[80vh] overflow-hidden border border-gray-100 dark:border-neutral-800">
+            
+            {/* SCROLL CONTAINER (tudo que rola fica aqui) */}
+            <div className="relative max-h-[80vh] overflow-auto">
+              
+              {/* Header do modal (AGORA sticky e com máscara) */}
+              <div className="sticky top-0 z-40 bg-white/95 dark:bg-neutral-900/95 backdrop-blur border-b dark:border-neutral-700">
+                <div className="flex items-center justify-between p-4">
+                  <h3 className="text-lg font-semibold">Histórico Completo</h3>
+                  <button
+                    onClick={() => setShowFullHistory(false)}
+                    className="text-gray-500 hover:text-gray-800 dark:hover:text-white text-xl leading-none"
+                    aria-label="Fechar"
+                  >
+                    ✕
+                  </button>
+                </div>
+
+                {/* Linha sombra/máscara para tapar o conteúdo rolando */}
+                <div className="h-3 bg-gradient-to-b from-white dark:from-neutral-900 to-transparent pointer-events-none" />
+              </div>
+
+              {/* Conteúdo (tabela) */}
+              <div className="p-4 pt-2">
+                <table className="w-full text-sm border-separate border-spacing-0">
+                  <thead className="sticky top-[64px] z-30">
+                    {/* 64px = altura aproximada do header (p-4 + linha); ajustável se quiser */}
+                    <tr>
+                      <th className="py-2 text-left bg-white dark:bg-neutral-900 shadow-sm border-b dark:border-neutral-700">
+                        Data
+                      </th>
+                      <th className="py-2 text-left bg-white dark:bg-neutral-900 shadow-sm border-b dark:border-neutral-700">
+                        Tipo
+                      </th>
+                      <th className="py-2 text-left bg-white dark:bg-neutral-900 shadow-sm border-b dark:border-neutral-700">
+                        Valor
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {extrato.map((m) => {
+                      const tipoLabel =
+                        m.tipo === "premio" ? "Prêmio" :
+                        m.tipo === "deposito" ? "Depósito" :
+                        m.tipo === "saque" ? "Saque" :
+                        m.tipo === "aposta" ? "Aposta" :
+                        m.tipo === "ajuste" ? "Ajuste" :
+                        m.tipo;
+
+                      const isPositive = m.tipo === "deposito" || m.tipo === "premio";
+
+                      return (
+                        <tr
+                          key={m.id_movimentacao}
+                          className="border-b last:border-b-0 dark:border-neutral-800"
+                        >
+                          <td className="py-2">
+                            {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
+                          </td>
+
+                          <td>{tipoLabel}</td>
+
+                          <td className={isPositive ? "text-green-600" : "text-red-600"}>
+                            {isPositive ? "+" : "-"} R$ {m.valor.toFixed(2)}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      )}
+
+
       </main>
     </div>
   );
