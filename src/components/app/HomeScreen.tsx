@@ -20,6 +20,9 @@ import { resolveLeagueName } from "@/utils/resolveLeagueName";
 
 import clubsMap from "@/utils/clubs-map.json";
 
+// UI (novo)
+import { SkeletonMatchCard } from "@/components/ui/skeletons";
+
  // ========= Helpers (copiados do MatchCard) =========
 
 const normalize = (str: string) =>
@@ -257,6 +260,9 @@ export const HomeScreen: React.FC = () => {
 
   const [tab, setTab] = useState<"favoritos" | "em-alta" | "bilhetes">("em-alta");
 
+  // Quick-Action Chips (novo)
+  const [quickFilter, setQuickFilter] = useState<"today" | "live" | "top" | null>(null);
+
   const [query, setQuery] = useState("");
 
   const [tickets, setTickets] = useState<Ticket[]>([]);
@@ -315,6 +321,39 @@ export const HomeScreen: React.FC = () => {
   }, [tab]);
 
   // ========= Helpers =========
+    // ===== Scroll-to-match (para botão "Ver odds" do Featured) =====
+  const [scrollToMatchId, setScrollToMatchId] = useState<string | number | null>(null);
+
+  useEffect(() => {
+    if (!scrollToMatchId) return;
+    if (tab !== "em-alta") return;
+
+    // tenta algumas vezes (caso o card ainda não tenha sido montado)
+    let tries = 0;
+    const maxTries = 12;
+
+    const tick = () => {
+      tries += 1;
+
+      const el =
+        document.getElementById(`match-${scrollToMatchId}`) ||
+        document.querySelector(`[data-match-id="${scrollToMatchId}"]`) as HTMLElement | null;
+
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        setScrollToMatchId(null);
+        return;
+      }
+
+      if (tries < maxTries) {
+        window.setTimeout(tick, 120);
+      } else {
+        setScrollToMatchId(null);
+      }
+    };
+
+    window.setTimeout(tick, 80);
+  }, [scrollToMatchId, tab]);
 
  
 
@@ -571,56 +610,48 @@ export const HomeScreen: React.FC = () => {
  
 
   const filtered = useMemo(() => {
+    let list = (upcoming ?? []).slice();
 
-    const q = query.trim().toLowerCase();
-
- 
-
-    if (!q) return upcoming ?? [];
-
- 
-
-    // ---- 1. Detectar se o texto digitado é um clube do clubs-map.json ----
-
-    const matchedClub = Object.keys(clubsMap).find(
-
-      (club) => club.toLowerCase().includes(q)
-
-    );
-
- 
-
-    // Se digitou um clube existente → filtra apenas jogos desse clube
-
-    if (matchedClub) {
-
-      return (upcoming ?? []).filter(
-
-        (m) =>
-
-          m.homeTeam?.toLowerCase().includes(matchedClub.toLowerCase()) ||
-
-          m.awayTeam?.toLowerCase().includes(matchedClub.toLowerCase())
-
-      );
-
+    // (1) Autocomplete selecionado: filtra por id
+    if (selectedMatchId != null) {
+      list = list.filter((m: any) => String(m.id) === String(selectedMatchId));
     }
 
- 
+    // (2) Quick chips
+    if (quickFilter === "live") {
+      list = list.filter((m: any) => {
+        const flag = (m?.isLive ?? m?.live ?? false) as boolean;
+        const status = String(m?.status ?? "").toLowerCase();
+        const time = String(m?.time ?? "").toLowerCase();
+        return flag || status.includes("live") || status.includes("ao vivo") || time.includes("ao vivo") || time.includes("live");
+      });
+    }
+    if (quickFilter === "top") {
+      const isTopLeague = (comp?: string) =>
+        /brasileir|premier|la liga|bundesliga|serie a\b|ligue 1|champions|libertadores|copa do mundo|euro/i.test(comp || "");
+      list = list.filter((m) => isTopLeague((m as any).competition));
+    }
 
-    // ---- 2. Caso NÃO seja um clube, funciona como busca normal (time/competição) ----
+    // (3) Busca por texto/clube
+    const q = query.trim().toLowerCase();
+    if (!q || selectedMatchId != null) return list;
 
-    return (upcoming ?? []).filter((m) =>
 
-      [m.homeTeam, m.awayTeam, m.competition].some((t) =>
+    // detecta se o texto digitado é um clube do clubs-map.json
+    const matchedClub = Object.keys(clubsMap).find((club) => club.toLowerCase().includes(q));
+    if (matchedClub) {
+      return list.filter(
+        (m) =>
+          m.homeTeam?.toLowerCase().includes(matchedClub.toLowerCase()) ||
+          m.awayTeam?.toLowerCase().includes(matchedClub.toLowerCase())
+      );
+    }
 
-        t?.toLowerCase().includes(q)
-
-      )
-
+    // fallback: time/competição
+    return list.filter((m) =>
+      [m.homeTeam, m.awayTeam, m.competition].some((t) => t?.toLowerCase().includes(q))
     );
-
-  }, [query, upcoming]);
+  }, [query, upcoming, selectedMatchId, quickFilter]);
 
  
 
@@ -632,6 +663,53 @@ export const HomeScreen: React.FC = () => {
         second: "2-digit",
       })}`
     : "—";
+
+  // ========= Featured Match (Hero) =========
+  const getKickoffDate = (m: any): Date | null => {
+    // tenta campos comuns
+    const raw = m?.kickoff || m?.dateTime || m?.datetime || m?.startTime || m?.start_time || m?.start;
+    if (raw) {
+      const d = new Date(raw);
+      if (!Number.isNaN(d.getTime())) return d;
+    }
+
+    // fallback: combina "hoje" + m.time (HH:mm)
+    const t = String(m?.time ?? "").match(/(\d{1,2}):(\d{2})/);
+    if (!t) return null;
+    const now = new Date();
+    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), Number(t[1]), Number(t[2]), 0);
+    return Number.isNaN(d.getTime()) ? null : d;
+  };
+
+  const featuredMatch = useMemo(() => {
+    const list = (filtered ?? []).slice();
+    // prioriza o jogo mais próximo no tempo
+    list.sort((a: any, b: any) => {
+      const da = getKickoffDate(a)?.getTime() ?? Number.POSITIVE_INFINITY;
+      const db = getKickoffDate(b)?.getTime() ?? Number.POSITIVE_INFINITY;
+      return da - db;
+    });
+    return list[0] ?? null;
+  }, [filtered]);
+
+  const [nowTick, setNowTick] = useState(() => Date.now());
+  useEffect(() => {
+    const id = setInterval(() => setNowTick(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const featuredCountdown = useMemo(() => {
+    if (!featuredMatch) return null;
+    const kickoff = getKickoffDate(featuredMatch);
+    if (!kickoff) return null;
+    const diff = kickoff.getTime() - nowTick;
+    if (diff <= 0) return "Ao vivo / Em breve";
+    const total = Math.floor(diff / 1000);
+    const hh = String(Math.floor(total / 3600)).padStart(2, "0");
+    const mm = String(Math.floor((total % 3600) / 60)).padStart(2, "0");
+    const ss = String(total % 60).padStart(2, "0");
+    return `${hh}:${mm}:${ss}`;
+  }, [featuredMatch, nowTick]);
 
  
 
@@ -960,6 +1038,14 @@ export const HomeScreen: React.FC = () => {
     return tickets;
   }, [tickets, ticketFilter]);
 
+  const LoadingSkeletonList = () => (
+    <div className="space-y-3">
+      {Array.from({ length: 4 }).map((_, i) => (
+        <SkeletonMatchCard key={i} />
+      ))}
+    </div>
+  );
+
 
 
 
@@ -1007,7 +1093,7 @@ export const HomeScreen: React.FC = () => {
 
           {loading ? (
 
-            <EmptyState text="Carregando partidas…" />
+            <LoadingSkeletonList />
 
           ) : error ? (
 
@@ -1079,7 +1165,7 @@ export const HomeScreen: React.FC = () => {
 
             {loading ? (
 
-              <EmptyState text="Carregando partidas…" />
+              <LoadingSkeletonList />
 
             ) : error ? (
 
@@ -1394,39 +1480,58 @@ export const HomeScreen: React.FC = () => {
 
                 <ul className="max-h-56 overflow-auto">
 
-                  {suggestions.map((m) => (
+                  {suggestions.map((m) => {
+                    const logoHome = findClubLogo(m.homeTeam);
+                    const logoAway = findClubLogo(m.awayTeam);
 
-                    <li
+                    return (
+                      <li
+                        key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
+                        onMouseDown={() => {
+                          setQuery("");               // 🔥 limpa o filtro textual
+                          setSelectedMatchId(m.id);   // filtra só por ID
+                        }}
+                        className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
+                      >
+                        {/* Linha principal: logos + times */}
+                        <div className="flex items-center gap-2">
+                          {/* Logo casa */}
+                          {logoHome ? (
+                            <img
+                              src={logoHome}
+                              alt={m.homeTeam}
+                              className="w-5 h-5 object-contain shrink-0"
+                            />
+                          ) : (
+                            <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
+                          )}
 
-                      key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
+                          {/* Times */}
+                          <div className="min-w-0 flex-1">
+                            <div className="font-xs text-gray-800 dark:text-gray-200 truncate">
+                              {m.homeTeam} <span className="text-gray-400">x</span> {m.awayTeam}
+                            </div>
 
-                      onMouseDown={() => {
+                            <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                              {m.competition} • {m.time}
+                            </div>
+                          </div>
 
-                        setQuery(`${m.homeTeam} x ${m.awayTeam}`);
+                          {/* Logo fora */}
+                          {logoAway ? (
+                            <img
+                              src={logoAway}
+                              alt={m.awayTeam}
+                              className="w-5 h-5 object-contain shrink-0"
+                            />
+                          ) : (
+                            <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
 
-                        setSelectedMatchId(m.id);
-
-                      }}
-
-                      className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
-
-                    >
-
-                      <div className="font-medium text-gray-800 dark:text-gray-200">
-
-                        {m.homeTeam} x {m.awayTeam}
-
-                      </div>
-
-                      <div className="text-xs text-gray-500 dark:text-gray-400">
-
-                        {m.competition} • {m.time}
-
-                      </div>
-
-                    </li>
-
-                  ))}
 
                 </ul>
 
@@ -1468,7 +1573,75 @@ export const HomeScreen: React.FC = () => {
 
         </div>
 
- 
+        {/* Hero: Featured Match (apenas na aba Em Alta) */}
+        {tab === "em-alta" && !loading && featuredMatch && (
+          <div className="rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div>
+                <div className="text-xs font-semibold text-[#014a8f]">Partida em Alta</div>
+
+                {/* Linha com escudos + times */}
+                <div className="mt-1 flex items-center gap-3">
+                  {findClubLogo((featuredMatch as any).homeTeam) && (
+                    <img
+                      src={findClubLogo((featuredMatch as any).homeTeam)!}
+                      alt={(featuredMatch as any).homeTeam}
+                      className="w-8 h-8 object-contain drop-shadow-sm"
+                    />
+                  )}
+
+                  <div className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
+                    {(featuredMatch as any).homeTeam}{" "}
+                    <span className="text-gray-400">x</span>{" "}
+                    {(featuredMatch as any).awayTeam}
+                  </div>
+
+                  {findClubLogo((featuredMatch as any).awayTeam) && (
+                    <img
+                      src={findClubLogo((featuredMatch as any).awayTeam)!}
+                      alt={(featuredMatch as any).awayTeam}
+                      className="w-8 h-8 object-contain drop-shadow-sm"
+                    />
+                  )}
+                </div>
+
+                <div className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                  {(featuredMatch as any).competition} • {(featuredMatch as any).time}
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-4 py-2">
+                  <div className="text-[10px] uppercase tracking-wider text-gray-500">Começa em</div>
+
+                  {/* Fonte igual ao “número de odd” (monospace + tabular) */}
+                  <div className="font-mono tabular-nums text-lg font-bold text-gray-900 dark:text-white">
+                    {featuredCountdown ?? "—"}
+                  </div>
+                </div>
+
+                <Button
+                  className="bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl"
+                  onClick={() => {
+                    const id = (featuredMatch as any).id;
+
+                    // garante que estamos na aba correta
+                    setTab("em-alta");
+
+                    setQuery("");              // 🔥 NÃO filtra lista
+                    setSelectedMatchId(null);  // garante lista completa
+                    setScrollToMatchId(id);    // scroll funciona
+                    // se você ainda quiser filtrar quando clicar, descomente:
+                    // setSelectedMatchId(id);
+                  }}
+                >
+                  Ver odds
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+
 
         {/* Feedback de regras / erros */}
 

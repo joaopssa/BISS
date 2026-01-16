@@ -61,8 +61,11 @@ export default function ExpandableMatchCard({
         return (
           <div
             key={m.id}
-            className="bg-white dark:bg-neutral-900 rounded-2xl shadow border border-gray-200 dark:border-neutral-700 overflow-hidden"
+            id={`match-${m.id}`}
+            data-match-id={m.id}
+            className="bg-white dark:bg-neutral-900 rounded-2xl shadow border border-gray-200 dark:border-neutral-700 overflow-hidden scroll-mt-24"
           >
+
             {/* ================= HEADER ================= */}
             <div className="flex items-center justify-between px-5 py-4">
 
