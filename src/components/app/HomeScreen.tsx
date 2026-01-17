@@ -715,123 +715,96 @@ export const HomeScreen: React.FC = () => {
 
   // ========= Lógica do Bilhete =========
 
- 
-
-  const canAddSelection = (
-
-    current: BetSelection[],
-
-    candidate: BetSelection
-
-  ): string | null => {
-
-    const sameMatch = current.filter(
-
-      (s) =>
-
-        s.matchId === candidate.matchId ||
-
-        s.partida === candidate.partida
-
-    );
-
- 
-
-    for (const s of sameMatch) {
-
-      // Regra 1: não permitir 1X2 conflitante
-
-      if (
-
-        s.mercado === "1X2" &&
-
-        candidate.mercado === "1X2" &&
-
-        s.selecao !== candidate.selecao
-
-      ) {
-
-        return "Você já selecionou outro resultado 1X2 para este jogo.";
-
-      }
-
- 
-
-      // Regra 2: Over x Under no mesmo jogo
-
-      const isOver = /over/i.test(s.selecao) || /over/i.test(candidate.selecao);
-
-      const isUnder =
-
-        /under/i.test(s.selecao) || /under/i.test(candidate.selecao);
-
- 
-
-      if (isOver && isUnder) {
-
-        return "Não é permitido combinar Over e Under do mesmo jogo no mesmo bilhete.";
-
-      }
-
-    }
-
- 
-
+ const canAddSelection = (_current: BetSelection[], _candidate: BetSelection): string | null => {
+    // por enquanto, sem bloqueios (vamos fazer troca automática)
     return null;
-
   };
 
- 
+const isTotalsMarket = (market?: string) =>
+    /total|gols|over|under|mais\/menos|mais menos/i.test(market || "");
+
+  const sameMatchFn = (a: BetSelection, b: BetSelection) =>
+    String(a.matchId) === String(b.matchId) || a.partida === b.partida;
 
   const handleAddSelection = (sel: BetSelection) => {
-
     setFeedback(null);
 
     setSelections((prev) => {
-
       const err = canAddSelection(prev, sel);
-
       if (err) {
-
         setFeedback(err);
-
         return prev;
-
       }
 
- 
-
-      // evita duplicata exata
-
-      const exists = prev.some(
-
-        (p) =>
-
-          p.matchId === sel.matchId &&
-
+      // 1) Se clicou exatamente a MESMA seleção (mesmo mercado/linha/selecao/odd), não faz nada
+      const existsExact = prev.some((p) => {
+        const lnP = (p.linha || "").trim();
+        const lnS = (sel.linha || "").trim();
+        return (
+          sameMatchFn(p, sel) &&
           p.mercado === sel.mercado &&
-
           p.selecao === sel.selecao &&
+          Number(p.odd) === Number(sel.odd) &&
+          lnP === lnS
+        );
+      });
 
-          p.odd === sel.odd
-
-      );
-
-      if (exists) {
-
+      if (existsExact) {
         setFeedback("Essa seleção já está no seu bilhete.");
-
         return prev;
-
       }
+
+      // 2) ✅ 1X2: se já existe 1X2 no mesmo jogo, TROCA
+      if (sel.mercado === "1X2") {
+        const idx = prev.findIndex(
+          (p) => sameMatchFn(p, sel) && p.mercado === "1X2"
+        );
+        if (idx >= 0) {
+          const next = prev.slice();
+          next[idx] = sel;
+          return next;
+        }
+        return [...prev, sel];
+      }
+
+      // 3) ✅ Totals (Over/Under): se já existe totals no jogo, TROCA
+      if (isTotalsMarket(sel.mercado)) {
+        const idx = prev.findIndex(
+          (p) => sameMatchFn(p, sel) && isTotalsMarket(p.mercado)
+        );
+        if (idx >= 0) {
+          const next = prev.slice();
+          next[idx] = sel;
+          return next;
+        }
+        return [...prev, sel];
+      }
+
+      // 4) ✅ Outros mercados: se já existe o MESMO mercado + MESMA linha no jogo, TROCA
+      const idxSameMarketLine = prev.findIndex((p) => {
+        if (!sameMatchFn(p, sel)) return false;
+        if (p.mercado !== sel.mercado) return false;
+        const lnP = (p.linha || "").trim();
+        const lnS = (sel.linha || "").trim();
+        return lnP === lnS;
+      });
+
+      if (idxSameMarketLine >= 0) {
+        const next = prev.slice();
+        next[idxSameMarketLine] = sel;
+        return next;
+      }
+
+      // 5) Caso contrário: adiciona normalmente
+      return [...prev, sel];
+    });
+  };
+
+
 
  
 
-      return [...prev, sel];
-
-    });
-
-  };
+  
 
  
 
@@ -1104,7 +1077,7 @@ export const HomeScreen: React.FC = () => {
             <ExpandableMatchCard
 
               matches={favMatches}
-
+              selections={selections}
               onSelectOdd={(params) => {
 
                 const anyParams: any = params;
@@ -1175,6 +1148,7 @@ export const HomeScreen: React.FC = () => {
 
               <ExpandableMatchCard
                 matches={trending}
+                selections={selections}
                 onSelectOdd={(params) => {
                   const anyParams: any = params;
 
@@ -1614,10 +1588,10 @@ export const HomeScreen: React.FC = () => {
                 <div className="rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-4 py-2">
                   <div className="text-[10px] uppercase tracking-wider text-gray-500">Começa em</div>
 
-                  {/* Fonte igual ao “número de odd” (monospace + tabular) */}
-                  <div className="font-mono tabular-nums text-lg font-bold text-gray-900 dark:text-white">
-                    {featuredCountdown ?? "—"}
-                  </div>
+                  {/* Fonte igual às odds */}
+                <div className="tabular-nums text-lg font-bold text-[#0a2a5e] dark:text-white">
+                  {featuredCountdown ?? "—"}
+                </div>
                 </div>
 
                 <Button
