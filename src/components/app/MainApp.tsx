@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { FinanceProvider } from '@/contexts/FinanceContext';
+import React, { useEffect, useState } from "react";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import { FinanceProvider } from "@/contexts/FinanceContext";
 import {
   Sidebar,
   SidebarContent,
@@ -11,39 +11,48 @@ import {
   SidebarMenuButton,
   SidebarHeader,
   SidebarInset,
-} from '@/components/ui/sidebar';
-import { BottomNavigation } from './BottomNavigation';
-import { HomeScreen } from './HomeScreen';
-import FinancialBalanceScreen  from './FinancialBalanceScreen';
-import  BettingHistoryScreen  from './BettingHistoryScreen';
-import { ProfileRankingScreen } from './ProfileRankingScreen';
-// --- (1/3) IMPORTAÇÕES ADICIONADAS ---
-import { Home, DollarSign, History, Users, User, LogOut } from 'lucide-react';
-import { useAuth } from '../../contexts/AuthContexts';
-import { useNavigate } from 'react-router-dom';
+} from "@/components/ui/sidebar";
+import { BottomNavigation } from "./BottomNavigation";
+import { HomeScreen } from "./HomeScreen";
+import FinancialBalanceScreen from "./FinancialBalanceScreen";
+import BettingHistoryScreen from "./BettingHistoryScreen";
+import { ProfileRankingScreen } from "./ProfileRankingScreen";
+import { Home, DollarSign, History, User, LogOut } from "lucide-react";
+import { useAuth } from "../../contexts/AuthContexts";
+import { useNavigate, useLocation } from "react-router-dom";
 
-export type AppScreen = 'home' | 'balance' | 'history' | 'profile';
+export type AppScreen = "home" | "balance" | "history" | "profile";
 
-export const MainApp: React.FC = () => {
-  const [currentScreen, setCurrentScreen] = useState<AppScreen>('home');
-  // --- (2/3) LÓGICA DE LOGOUT ADICIONADA ---
+type MainAppProps = {
+  initialScreen?: AppScreen;
+};
+
+export const MainApp: React.FC<MainAppProps> = ({ initialScreen = "home" }) => {
+  const [currentScreen, setCurrentScreen] = useState<AppScreen>(initialScreen);
+
+  const location = useLocation();
+  useEffect(() => {
+    const s = (location.state as any)?.screen as AppScreen | undefined;
+    if (s) setCurrentScreen(s);
+  }, [location.state]);
+
   const { logout } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate("/login");
   };
 
   const renderScreen = () => {
     switch (currentScreen) {
-      case 'home':
+      case "home":
         return <HomeScreen />;
-      case 'balance':
+      case "balance":
         return <FinancialBalanceScreen />;
-      case 'history':
+      case "history":
         return <BettingHistoryScreen />;
-      case 'profile':
+      case "profile":
         return <ProfileRankingScreen />;
       default:
         return <HomeScreen />;
@@ -55,63 +64,76 @@ export const MainApp: React.FC = () => {
       <FinanceProvider>
         <SidebarProvider>
           <div className="flex min-h-screen w-full">
-          {/* Sidebar desktop */}
-          <Sidebar collapsible="icon" className="hidden md:flex">
-            <SidebarContent>
-              <SidebarHeader>
-                <img
-                  src="/lovable-uploads/logonormal.jpg"
-                  alt="Logo do App"
-                  className="h-10 w-10 object-contain transition-all duration-300"
+            <Sidebar collapsible="icon" className="hidden md:flex">
+              <SidebarContent>
+                <SidebarHeader>
+                  <img
+                    src="/lovable-uploads/logonormal.jpg"
+                    alt="Logo do App"
+                    className="h-10 w-10 object-contain transition-all duration-300"
+                  />
+                </SidebarHeader>
+
+                <SidebarMenu>
+                  <SidebarMenuItem>
+                    <SidebarMenuButton
+                      onClick={() => setCurrentScreen("home")}
+                      isActive={currentScreen === "home"}
+                    >
+                      <Home className="h-4 w-4" /> <span>Partidas</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+
+                  <SidebarMenuItem>
+                    <SidebarMenuButton
+                      onClick={() => setCurrentScreen("balance")}
+                      isActive={currentScreen === "balance"}
+                    >
+                      <DollarSign className="h-4 w-4" /> <span>Balanço</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+
+                  <SidebarMenuItem>
+                    <SidebarMenuButton
+                      onClick={() => setCurrentScreen("history")}
+                      isActive={currentScreen === "history"}
+                    >
+                      <History className="h-4 w-4" /> <span>Histórico</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+
+                  <SidebarMenuItem>
+                    <SidebarMenuButton
+                      onClick={() => setCurrentScreen("profile")}
+                      isActive={currentScreen === "profile"}
+                    >
+                      <User className="h-4 w-4" /> <span>Perfil</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                </SidebarMenu>
+
+                <SidebarMenu className="mt-auto">
+                  <SidebarMenuItem>
+                    <SidebarMenuButton onClick={handleLogout}>
+                      <LogOut className="h-4 w-4" />
+                      <span>Sair</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                </SidebarMenu>
+              </SidebarContent>
+            </Sidebar>
+
+            <SidebarInset className="bg-gray-50 dark:bg-neutral-950 pb-24">
+              <div className="p-4">{renderScreen()}</div>
+              <div className="md:hidden">
+                <BottomNavigation
+                  currentScreen={currentScreen}
+                  onScreenChange={setCurrentScreen}
                 />
-              </SidebarHeader>
-
-              <SidebarMenu>
-                {/* ... (Os outros itens do menu permanecem iguais) ... */}
-                <SidebarMenuItem>
-                  <SidebarMenuButton onClick={() => setCurrentScreen('home')} isActive={currentScreen === 'home'}>
-                    <Home className="h-4 w-4" /> <span>Partidas</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                  <SidebarMenuButton onClick={() => setCurrentScreen('balance')} isActive={currentScreen === 'balance'}>
-                    <DollarSign className="h-4 w-4" /> <span>Balanço</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                  <SidebarMenuButton onClick={() => setCurrentScreen('history')} isActive={currentScreen === 'history'}>
-                    <History className="h-4 w-4" /> <span>Histórico</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-                <SidebarMenuItem>
-                  <SidebarMenuButton onClick={() => setCurrentScreen('profile')} isActive={currentScreen === 'profile'}>
-                    <User className="h-4 w-4" /> <span>Perfil</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </SidebarMenu>
-
-              {/* --- (3/3) BOTÃO DE SAIR ADICIONADO NO FINAL --- */}
-              <SidebarMenu className="mt-auto">
-                <SidebarMenuItem>
-                  <SidebarMenuButton onClick={handleLogout}>
-                    <LogOut className="h-4 w-4" />
-                    <span>Sair</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </SidebarMenu>
-
-            </SidebarContent>
-          </Sidebar>
-
-          {/* Conteúdo principal */}
-          <SidebarInset className="bg-gray-50 dark:bg-neutral-950 pb-24">
-            <div className="p-4">{renderScreen()}</div>
-            <div className="md:hidden">
-              <BottomNavigation currentScreen={currentScreen} onScreenChange={setCurrentScreen} />
-            </div>
-          </SidebarInset>
-        </div>
-      </SidebarProvider>
+              </div>
+            </SidebarInset>
+          </div>
+        </SidebarProvider>
       </FinanceProvider>
     </ThemeProvider>
   );

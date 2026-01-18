@@ -1,8 +1,9 @@
-import { MainApp } from "@/components/app/MainApp";
+// src/pages/Index.tsx
+import React from "react";
+import { MainApp, AppScreen } from "@/components/app/MainApp";
 
-// O Index agora serve apenas como um container para o seu aplicativo principal.
-const Index = () => {
-  return <MainApp />;
-};
+type Props = { initialScreen?: AppScreen };
 
-export default Index;
+export default function Index({ initialScreen }: Props) {
+  return <MainApp initialScreen={initialScreen ?? "home"} />;
+}

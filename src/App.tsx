@@ -12,7 +12,9 @@ import NotFound from "./pages/NotFound";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import UserProfilePage from "./pages/UserProfilePage";
+import BettingHistoryScreen from "./components/app/BettingHistoryScreen";
 import React, { useEffect, useState } from "react";
+import { MainApp } from "./components/app/MainApp";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +48,7 @@ const AppRoutes = () => {
       {/* Rotas Protegidas */}
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={<Index />} />
+        <Route path="/historico-apostas" element={<Index initialScreen="history" />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

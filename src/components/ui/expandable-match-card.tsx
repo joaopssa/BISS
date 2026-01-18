@@ -3,6 +3,7 @@ import { ChevronDown, ChevronUp, BarChart2 } from "lucide-react";
 import clubsMap from "@/utils/clubs-map.json";
 import { leagueCountries } from "@/utils/league-countries";
 import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+import { getLocalLogo } from "@/utils/getLocalLogo";
 
 const normalize = (str: string) =>
   (str || "")
@@ -16,10 +17,14 @@ const normalize = (str: string) =>
 const findClubLogo = (name: string) => {
   const target = normalize(name);
   for (const [key, val] of Object.entries(clubsMap)) {
-    if (normalize(key) === target) return (val as any).logo;
+    if (normalize(key) === target) {
+      const p = (val as any).logo;
+      return p ? getLocalLogo(p) : null;
+    }
   }
   return null;
 };
+
 
 const SafeOdd = ({ value, selected }: { value: number; selected?: boolean }) => {
   if (value == null || Number.isNaN(value)) return <span>-</span>;
@@ -102,22 +107,38 @@ export default function ExpandableMatchCard({
   };
 
   const baseBtn =
-    "flex flex-col items-center justify-center py-4 transition font-semibold";
+  "relative flex flex-col items-center justify-center py-4 font-semibold transition-all duration-200 cursor-pointer select-none";
 
   const normalBtn =
-    "hover:bg-gray-50 dark:hover:bg-neutral-800";
+  "hover:bg-gray-50 dark:hover:bg-neutral-800 hover:shadow-sm hover:-translate-y-[1px]";
+
 
   const selectedBtn =
-    "bg-blue-50 border-blue-200 ring-2 ring-[#014a8f]/25 dark:bg-[#014a8f]/15 dark:border-[#014a8f]/40";
+  "relative bg-gradient-to-b from-[#014a8f]/10 to-white dark:to-neutral-900 " +
+  "ring-2 ring-[#014a8f]/35 z-10 " +
+  "shadow-md shadow-blue-500/20 " +
+  "scale-[1.02]";
+
+  const cardBase =
+    "relative rounded-2xl overflow-hidden scroll-mt-24 bg-white dark:bg-neutral-900 transition";
+
+  const cardNormal =
+    "border border-[#014a8f]/15 dark:border-neutral-700 shadow-xl shadow-blue-500/10";
+
+  const cardActive =
+    "border-2 border-[#014a8f]/45 shadow-2xl shadow-blue-500/25 ring-4 ring-[#014a8f]/10";
 
   const baseExtraBtn =
-    "border rounded-lg p-3 text-center transition";
+  "border rounded-lg p-3 text-center transition-all duration-200 cursor-pointer select-none";
 
   const normalExtraBtn =
-    "hover:bg-gray-50 dark:hover:bg-neutral-800 border-gray-200 dark:border-neutral-700";
+  "hover:bg-gray-50 dark:hover:bg-neutral-800 border-gray-200 dark:border-neutral-700 hover:shadow-sm hover:-translate-y-[1px]";
+
 
   const selectedExtraBtn =
-    "bg-blue-50 border-blue-300 ring-2 ring-[#014a8f]/25 dark:bg-[#014a8f]/15 dark:border-[#014a8f]/40";
+  "border border-[#014a8f]/40 bg-gradient-to-b from-[#014a8f]/10 to-white " +
+  "dark:to-neutral-900 ring-2 ring-[#014a8f]/30 shadow-md shadow-blue-500/15 scale-[1.01]";
+
 
   return (
     <div className="space-y-6">
@@ -135,16 +156,28 @@ export default function ExpandableMatchCard({
 
         const hasH2hButton =
           m.hasH2H === true || (m.homeTeam && m.awayTeam && m.competition);
+        const hasSelection = (byMatch.get(String(m.id)) || []).length > 0;
+
 
         return (
           <div
             key={m.id}
             id={`match-${m.id}`}
             data-match-id={m.id}
-            className="bg-white dark:bg-neutral-900 rounded-2xl shadow border border-gray-200 dark:border-neutral-700 overflow-hidden scroll-mt-24"
-          >
+            className={[cardBase, hasSelection ? cardActive : cardNormal].join(" ")}
+>
+            {/* brilho sutil estilo “featured” */}
+            <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
             {/* ================= HEADER ================= */}
-            <div className="flex items-center justify-between px-5 py-4">
+            <div
+              className={[
+                "flex items-center justify-between px-5 py-4 bg-gradient-to-r transition",
+                hasSelection
+                  ? "from-[#014a8f]/18 via-white to-emerald-50 dark:from-[#014a8f]/25 dark:via-neutral-900 dark:to-emerald-950/25"
+                  : "from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-900 dark:to-emerald-950/20",
+              ].join(" ")}
+            >
               {/* ==== ESQUERDA — HISTÓRICO ==== */}
               <div className="flex items-center gap-2">
                 {hasH2hButton && onSelectHistory && (
@@ -248,6 +281,9 @@ export default function ExpandableMatchCard({
                       selected ? selectedBtn : normalBtn,
                     ].join(" ")}
                   >
+                  {selected && (
+                    <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-[#014a8f] shadow-sm" />
+                  )}
                     <span
                       className={[
                         "text-xs",
@@ -306,6 +342,10 @@ export default function ExpandableMatchCard({
                                 selected ? selectedExtraBtn : normalExtraBtn,
                               ].join(" ")}
                             >
+                              {selected && (
+                                <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-[#014a8f] shadow-sm" />
+                              )}
+
                               <span
                                 className={[
                                   "block font-medium",

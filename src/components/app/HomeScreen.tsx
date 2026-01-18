@@ -22,7 +22,10 @@ import clubsMap from "@/utils/clubs-map.json";
 
 // UI (novo)
 import { SkeletonMatchCard } from "@/components/ui/skeletons";
-
+import { getLocalLogo } from "@/utils/getLocalLogo";
+import { useNavigate } from "react-router-dom";
+import { leagueCountries } from "@/utils/league-countries";
+import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
  // ========= Helpers (copiados do MatchCard) =========
 
 const normalize = (str: string) =>
@@ -46,15 +49,14 @@ const findClubLogo = (teamName: string): string | null => {
   for (const [key, data] of Object.entries(clubsMap)) {
     const normKey = normalize(key);
     if (target.includes(normKey) || normKey.includes(target)) {
-      return data.logo ? data.logo : null;
+      return data.logo ? getLocalLogo(data.logo) : null;
     }
   }
-
   return null;
 };
 
-import { leagueCountries } from "@/utils/league-countries";
-import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+
+
 
 // ========= KELLY 1-WAY (FRONTEND) =========
 type KellyPerfil = "Agressivo" | "Normal" | "Conservador";
@@ -182,7 +184,78 @@ type Ticket = {
 
 };
 
- 
+// ===== BISS Tiers (reuso do ProfileRankingScreen) =====
+type BISSTier = {
+  key: string;
+  name: string;
+  xp: number;
+  bets: number;
+  wins: number;
+  acc: number;
+};
+
+const BISS_TIERS: BISSTier[] = [
+  { key: "INI", name: "Iniciante", xp: 0, bets: 0, wins: 0, acc: 0 },
+
+  { key: "AM1", name: "Amador I", xp: 2500, bets: 12, wins: 4, acc: 25 },
+  { key: "AM2", name: "Amador II", xp: 5000, bets: 25, wins: 10, acc: 25 },
+  { key: "AM3", name: "Amador III", xp: 8000, bets: 40, wins: 18, acc: 25 },
+
+  { key: "SP1", name: "Semi-Profissional I", xp: 12000, bets: 70, wins: 35, acc: 30 },
+  { key: "SP2", name: "Semi-Profissional II", xp: 18000, bets: 110, wins: 60, acc: 35 },
+  { key: "SP3", name: "Semi-Profissional III", xp: 25000, bets: 160, wins: 90, acc: 40 },
+
+  { key: "PR1", name: "Profissional I", xp: 35000, bets: 230, wins: 130, acc: 45 },
+  { key: "PR2", name: "Profissional II", xp: 50000, bets: 320, wins: 190, acc: 50 },
+  { key: "PR3", name: "Profissional III", xp: 70000, bets: 450, wins: 280, acc: 55 },
+
+  { key: "MW1", name: "Nível Mundial I", xp: 95000, bets: 650, wins: 420, acc: 60 },
+  { key: "MW2", name: "Nível Mundial II", xp: 125000, bets: 900, wins: 600, acc: 65 },
+  { key: "MW3", name: "Nível Mundial III", xp: 160000, bets: 1200, wins: 800, acc: 70 },
+
+  { key: "LE1", name: "Lendário I", xp: 210000, bets: 1500, wins: 1000, acc: 75 },
+  { key: "LE2", name: "Lendário II", xp: 270000, bets: 1700, wins: 1150, acc: 80 },
+  { key: "LE3", name: "Lendário III", xp: 340000, bets: 1900, wins: 1300, acc: 85 },
+
+  { key: "GM1", name: "Grão Mestre I", xp: 420000, bets: 2150, wins: 1600, acc: 90 },
+  { key: "GM2", name: "Grão Mestre II", xp: 520000, bets: 2250, wins: 1750, acc: 92 },
+  { key: "GM3", name: "Grão Mestre III", xp: 650000, bets: 2350, wins: 1900, acc: 95 },
+];
+
+const getXPForStreak = (streak: number) => {
+  if (streak <= 1) return 260;
+  if (streak === 2) return 285;
+  if (streak === 3) return 310;
+  if (streak === 4) return 335;
+  if (streak <= 9) return 360;
+  if (streak <= 14) return 410;
+  if (streak <= 19) return 460;
+  return 460 + Math.floor((streak - 15) / 5) * 50;
+};
+
+const XP_PER_BILHETE_CRIADO = 50;
+const XP_BONUS_BILHETE_GANHO = 100;
+const XP_PENALIDADE_ERRO = 100;
+
+const getUserTier = (xp: number, bets: number, wins: number, winRatePct: number) => {
+  return (
+    [...BISS_TIERS]
+      .reverse()
+      .find(
+        (t) =>
+          xp >= t.xp &&
+          bets >= t.bets &&
+          wins >= t.wins &&
+          winRatePct >= t.acc
+      ) || BISS_TIERS[0]
+  );
+};
+
+const getTierBadgeSrc = (tierKey?: string | null) => {
+  const key = String(tierKey || "INI").toLowerCase();
+  return `${import.meta.env.BASE_URL}classes/${key}.png`;
+};
+
 
 type BetSelection = {
 
@@ -245,20 +318,20 @@ type H2HRequest = {
 };
 
 const Badge = ({ children }: React.PropsWithChildren) => (
-
-  <span className="inline-flex items-center rounded-full bg-blue-100 text-blue-800 px-3 py-1 text-xs font-semibold dark:bg-blue-800/30 dark:text-blue-200">
-
+  <span className="inline-flex items-center rounded-xl border border-[#014a8f]/20 bg-white/70 px-3 py-1.5 text-xs font-semibold text-[#014a8f] dark:bg-neutral-900/60 dark:text-white">
     {children}
-
   </span>
-
 );
+
 
  
 
 export const HomeScreen: React.FC = () => {
-
+  
+  const navigate = useNavigate();
   const [tab, setTab] = useState<"favoritos" | "em-alta" | "bilhetes">("em-alta");
+  const [tierKey, setTierKey] = useState<string>("INI");
+  const [tierName, setTierName] = useState<string>("Iniciante");
 
   // Quick-Action Chips (novo)
   const [quickFilter, setQuickFilter] = useState<"today" | "live" | "top" | null>(null);
@@ -314,7 +387,7 @@ export const HomeScreen: React.FC = () => {
   const [h2hMatches, setH2hMatches] = useState<H2HMatch[]>([]);
   const [h2hMeta, setH2hMeta] = useState<H2HMeta | null>(null);
 
-
+  
   // Scroll para o topo quando a aba mudar
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -589,13 +662,13 @@ export const HomeScreen: React.FC = () => {
 
   fetchUserLeagues();
 
- 
+  fetchTierHome();
 
-  const interval = setInterval(() => {
+const interval = setInterval(() => {
+  fetchSaldo();
+  fetchTierHome(); // opcional: se quiser atualizar junto do saldo
+}, 5000);
 
-    fetchSaldo();
-
-  }, 5000); // atualiza a cada 5s
 
  
 
@@ -603,11 +676,76 @@ export const HomeScreen: React.FC = () => {
 
 }, []);
 
- 
+ const fetchTierHome = async () => {
+  try {
+    const [histRes, bilhetesRes] = await Promise.allSettled([
+      api.get("/apostas/historico"),
+      api.get("/apostas/bilhetes"),
+    ]);
+
+    const apostas: any[] =
+      histRes.status === "fulfilled" && Array.isArray(histRes.value.data)
+        ? histRes.value.data
+        : [];
+
+    const bilhetes: any[] =
+      bilhetesRes.status === "fulfilled" && Array.isArray(bilhetesRes.value.data)
+        ? bilhetesRes.value.data
+        : [];
+
+    // map mínimo (igual seu Profile)
+    const mappedApostas = apostas.map((a: any) => ({
+      status_aposta: a.status_aposta || a.status || "pendente",
+      data_registro: a.data_registro || a.createdAt || new Date().toISOString(),
+    }));
+
+    const totalBets = mappedApostas.length;
+    const settled = mappedApostas.filter((x: any) => x.status_aposta !== "pendente");
+    const wins = settled.filter((x: any) => x.status_aposta === "ganha").length;
+    const winRate = settled.length > 0 ? (wins / settled.length) * 100 : 0;
+
+    // XP por streak (cronológico)
+    const settledChrono = [...mappedApostas]
+      .filter((a: any) => a.status_aposta !== "pendente")
+      .sort((a, b) => new Date(a.data_registro).getTime() - new Date(b.data_registro).getTime());
+
+    let bissXP = 0;
+    let streak = 0;
+
+    for (const a of settledChrono) {
+      if (a.status_aposta === "ganha") {
+        streak += 1;
+        bissXP += getXPForStreak(streak);
+      } else if (a.status_aposta === "perdida") {
+        streak = 0;
+        bissXP -= XP_PENALIDADE_ERRO;
+      }
+      bissXP = Math.max(0, bissXP);
+    }
+
+    // XP por bilhetes
+    const bilhetesXP = bilhetes.reduce((acc: number, b: any) => {
+      acc += XP_PER_BILHETE_CRIADO;
+      const st = (b.status || "").toString().toLowerCase();
+      if (st === "ganho" || st === "ganha") acc += XP_BONUS_BILHETE_GANHO;
+      return acc;
+    }, 0);
+
+    bissXP = Math.max(0, bissXP + bilhetesXP);
+
+    const tier = getUserTier(bissXP, totalBets, wins, Math.round(winRate * 10) / 10);
+
+    setTierKey(tier.key);
+    setTierName(tier.name);
+  } catch {
+    // silencioso
+  }
+};
+
 
   // ========= Filtro de Partidas =========
 
- 
+  
 
   const filtered = useMemo(() => {
     let list = (upcoming ?? []).slice();
@@ -665,21 +803,62 @@ export const HomeScreen: React.FC = () => {
     : "—";
 
   // ========= Featured Match (Hero) =========
+  const parseMatchDate = (raw?: string): { y: number; m: number; d: number } | null => {
+    if (!raw) return null;
+    const s = String(raw).trim();
+
+    // ISO: 2026-01-18 ou 2026/01/18
+    let m1 = s.match(/^(\d{4})[-/](\d{2})[-/](\d{2})$/);
+    if (m1) return { y: Number(m1[1]), m: Number(m1[2]), d: Number(m1[3]) };
+
+    // BR: 18/01/2026 ou 18-01-2026
+    let m2 = s.match(/^(\d{2})[/-](\d{2})[/-](\d{4})$/);
+    if (m2) return { y: Number(m2[3]), m: Number(m2[2]), d: Number(m2[1]) };
+
+    // fallback Date nativo
+    const d = new Date(s);
+    if (!Number.isNaN(d.getTime())) {
+      return { y: d.getFullYear(), m: d.getMonth() + 1, d: d.getDate() };
+    }
+
+    return null;
+  };
+
   const getKickoffDate = (m: any): Date | null => {
-    // tenta campos comuns
-    const raw = m?.kickoff || m?.dateTime || m?.datetime || m?.startTime || m?.start_time || m?.start;
+    // 1) tenta campos comuns (datetime completo)
+    const raw =
+      m?.kickoff || m?.dateTime || m?.datetime || m?.startTime || m?.start_time || m?.start;
+
     if (raw) {
       const d = new Date(raw);
       if (!Number.isNaN(d.getTime())) return d;
     }
 
-    // fallback: combina "hoje" + m.time (HH:mm)
+    // precisa de HH:mm
     const t = String(m?.time ?? "").match(/(\d{1,2}):(\d{2})/);
     if (!t) return null;
+
+    const hh = Number(t[1]);
+    const mm = Number(t[2]);
+
+    // 2) se vier m.date, combina date + time (corrige "dia seguinte")
+    const parts = parseMatchDate(m?.date);
+    if (parts) {
+      const d = new Date(parts.y, parts.m - 1, parts.d, hh, mm, 0);
+      return Number.isNaN(d.getTime()) ? null : d;
+    }
+
+    // 3) fallback inteligente: hoje às HH:mm; se já passou, assume amanhã
     const now = new Date();
-    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), Number(t[1]), Number(t[2]), 0);
-    return Number.isNaN(d.getTime()) ? null : d;
+    let d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hh, mm, 0);
+
+    if (d.getTime() < now.getTime() - 30_000) {
+      d = new Date(d.getTime() + 24 * 60 * 60 * 1000);
+    }
+
+    return d;
   };
+
 
   const featuredMatch = useMemo(() => {
     const list = (filtered ?? []).slice();
@@ -1019,12 +1198,60 @@ const isTotalsMarket = (market?: string) =>
     </div>
   );
 
+  const pendingTickets = useMemo(() => {
+        const norm = (s?: string) => (s || "").toUpperCase().trim();
+        return tickets.filter((t) => {
+          const st = norm(t.status);
+          return st === "" || st === "PENDENTE" || st === "EM ABERTO" || t.status == null;
+        });
+      }, [tickets]);
 
+      const resolvedTickets = useMemo(() => {
+        const norm = (s?: string) => (s || "").toUpperCase().trim();
+        return tickets
+          .filter((t) => {
+            const st = norm(t.status);
+            return st !== "" && st !== "PENDENTE" && st !== "EM ABERTO";
+          })
+          .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+      }, [tickets]);
+
+      const last5Resolved = useMemo(() => resolvedTickets.slice(0, 5), [resolvedTickets]);
 
 
   // ========= View das Abas =========
+  const normalizeStatus = (s?: string) => (s || "").toUpperCase().trim();
+  const isWonTicket = (t: Ticket) => ["GANHO", "GANHA", "WIN"].includes(normalizeStatus(t.status));
+  const isLostTicket = (t: Ticket) => ["PERDIDO", "PERDIDA", "LOSS"].includes(normalizeStatus(t.status));
+
+  const last5Stats = useMemo(() => {
+    const slice = resolvedTickets.slice(0, 5);
+    const wins = slice.filter(isWonTicket).length;
+    const losses = slice.filter(isLostTicket).length;
+
+    let msg = "Sem dados suficientes ainda.";
+    if (slice.length > 0) {
+      if (wins === 0) msg = "Reveja suas apostas e reduza odds altas.";
+      else if (wins === 1) msg = "Que azar! Ajuste stake e foque em ligas que você domina.";
+      else if (wins === 2) msg = "Não desanime — você está pegando o ritmo.";
+      else if (wins === 3) msg = "Indo bem, mas dá para melhorar na consistência.";
+      else if (wins === 4) msg = "Excelente! Mantenha a disciplina e não aumente o risco demais.";
+      else if (wins === 5) msg = "Rei das apostas! Só cuidado com excesso de confiança.";
+    }
+
+    return { total: slice.length, wins, losses, msg };
+  }, [resolvedTickets]);
 
  
+  const getSelectionsPreview = (t: Ticket, limit = 2) => {
+  const sels = t.selections || [];
+  const shown = sels.slice(0, limit);
+  const rest = Math.max(0, sels.length - shown.length);
+  return { shown, rest, total: sels.length };
+};
+
+const calcOddTotal = (t: Ticket) =>
+  (t.selections?.length ? t.selections.reduce((acc, s) => acc * (Number(s.odd) || 1), 1) : 0);
 
   const viewMatches = useMemo(() => {
 
@@ -1124,17 +1351,15 @@ const isTotalsMarket = (market?: string) =>
 
       case "em-alta": {
 
-        const trending = filtered.slice(0, 30);
+        const trending = filtered
+        .filter((m: any) => String(m.id) !== String((featuredMatch as any)?.id))
+        .slice(0, 30);
 
         return (
 
-          <Section
+          <Section title="Em Alta" subtitle="Partidas com maior interesse">
+            <div className="-mt-2" />
 
-            title="Em Alta"
-
-            subtitle="Partidas com maior interesse"
-
-          >
 
             {loading ? (
 
@@ -1198,178 +1423,333 @@ const isTotalsMarket = (market?: string) =>
  
 
      case "bilhetes":
-    default:
-      return (
-        <Section title="Bilhetes" subtitle="Histórico de apostas registradas">
-          
-          {/* Botões de filtro */}
-          <Button
-            className="bg-[#014a8f] text-white mb-4"
-            onClick={async () => {
-              await api.post("/apostas/verificar");
-              fetchTickets();
-              fetchSaldo();
-            }}
-          >
-            Atualizar bilhetes
-          </Button>
+      default: {
+        const openCount = pendingTickets.length;
 
-          <div className="flex gap-2 mb-6">
-            {[
-              { key: "todos", label: "Todos" },
-              { key: "pendentes", label: "Pendentes" },
-              { key: "liquidados", label: "Liquidados" },
-            ].map(btn => (
-              <button
-                key={btn.key}
-                onClick={() => setTicketFilter(btn.key as any)}
-                className={`
-                  px-4 py-2 text-sm rounded-full border transition
-                  ${
-                    ticketFilter === btn.key
-                      ? "bg-[#014a8f] text-white border-[#014a8f]"
-                      : "bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-200 border-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-700"
-                  }
-                `}
-              >
-                {btn.label}
-              </button>
-            ))}
-          </div>
+        const openLabel =
+          openCount === 0
+            ? "Nenhum bilhete em aberto no momento."
+            : openCount === 1
+            ? "Você tem 1 bilhete em aberto."
+            : `Você tem ${openCount} bilhetes em aberto.`;
 
-          {filteredTickets.length === 0 ? (
-            <EmptyState text="Nenhum bilhete encontrado." />
-          ) : (
-            <ul className="space-y-6">
-              {filteredTickets.map((t) => {
-                const statusNorm = (t.status || "").toUpperCase();
-                const isPending = !t.status || t.status === "PENDENTE";
+        return (
+          <Section title="Bilhetes" subtitle="Central de apostas ativas">
+            {/* Header/Resumo + Ações */}
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <p className="text-sm text-gray-600 dark:text-gray-300">{openLabel}</p>
 
-                return (
-                  <li
-                    key={t.id}
-                    className={`
-                      rounded-xl bg-white dark:bg-neutral-900 p-5 shadow-sm
-                      ${isPending ? "border border-gray-300 dark:border-neutral-700" : ""}
-                    `}
-                  >
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  className="border-gray-200 dark:border-neutral-700"
+                  onClick={() => {
+                    navigate("/", { state: { screen: "history" } });
+                  }}
+                >
+                  Ver histórico
+                </Button>
+              </div>
+            </div>
 
-                    {/* Topo com data + badge */}
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-xs text-gray-500">
-                        {new Date(t.createdAt).toLocaleString("pt-BR")}
-                      </span>
+            {/* ====== EM ABERTO ====== */}
+            <div className="mt-4 rounded-2xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-4 sm:p-5 shadow-sm">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">
+                    Em aberto
+                  </h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Bilhetes aguardando resultado
+                  </p>
+                </div>
 
-                    
+                <span className="text-xs font-semibold px-3 py-1 rounded-full border border-[#014a8f]/20 bg-[#014a8f]/10 text-[#014a8f]">
+                  {openCount}
+                </span>
+              </div>
 
-                    <span
-                      className={`
-                        text-[10px] font-semibold uppercase px-2 py-1 rounded-full
-                        ${
-                          statusNorm === "PENDENTE"
-                            ? "bg-yellow-100 text-yellow-700"
-                            : statusNorm === "PERDIDO"
-                            ? "bg-red-100 text-red-700"
-                            : "bg-green-100 text-green-700"
-                        }
-                      `}
+              {openCount === 0 ? (
+                <EmptyState text="Nada pendente por aqui. Que tal montar um novo bilhete?" />
+              ) : (
+                <ul className="space-y-3">
+                  {pendingTickets.map((t) => (
+                    <li
+                      key={t.id}
+                      className="rounded-xl border border-gray-200 dark:border-neutral-800 bg-gray-50 dark:bg-neutral-800/40 p-3 sm:p-4"
                     >
-                      {statusNorm || "PENDENTE"}
-                    </span>
+                      {/* topo */}
+                      <div className="flex items-center justify-between gap-3 mb-2">
+                        <div className="text-xs text-gray-500">
+                          {new Date(t.createdAt).toLocaleString("pt-BR")}
+                        </div>
 
-
-                    </div>
-
-                    {/* Valores */}
-                    <div className="grid grid-cols-2 mb-5 text-sm">
-                      <div>
-                        <span className="text-gray-500">Aposta</span>
-                        <p className="font-semibold text-grey-600">
-                          R$ {t.stake.toFixed(2)}
-                        </p>
-
-
+                        <span className="text-[10px] font-semibold uppercase px-2 py-1 rounded-full bg-yellow-100 text-yellow-700">
+                          PENDENTE
+                        </span>
                       </div>
 
-                      <div>
-                        <span className="text-gray-500">Retorno potencial</span>
-                          <p
-                            className={`font-semibold ${
-                              statusNorm === "PERDIDO"
-                                ? "text-red-600"
-                                : "text-green-600"
-                            }`}
-                          >
+                      {/* valores */}
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <div className="text-xs text-gray-500">Aposta</div>
+                          <div className="text-sm font-semibold text-gray-900 dark:text-white tabular-nums">
+                            R$ {t.stake.toFixed(2)}
+                          </div>
+                        </div>
+
+                        <div className="text-right">
+                          <div className="text-xs text-gray-500">Retorno potencial</div>
+                          <div className="text-sm font-semibold text-[#014a8f] dark:text-white tabular-nums">
                             R$ {t.potentialReturn.toFixed(2)}
-                          </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
 
-                    {/* Seleções — ESTILO LUXO (logo + bandeira + mercado) */}
-                    <div className="space-y-4">
-                      {t.selections?.map((s, i) => {
-                        const logoHome = findClubLogo(s.time_casa || s.match?.split(" x ")[0]);
-                        const logoAway = findClubLogo(s.time_fora || s.match?.split(" x ")[1]);
-
-                        const leagueCode = leagueCountries[s.campeonato];
-                        const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
-
-                        return (
-                          <div
-                            key={i}
-                            className="bg-gray-50 dark:bg-neutral-800 p-4 rounded-lg shadow-sm"
-                          >
-                            {/* Linha dos times (AGORA COM A BANDEIRA À ESQUERDA) */}
-                            <div className="flex items-center gap-3 mb-2">
-
-                              {/* BANDEIRA DA LIGA */}
-                              {leagueFlag && (
-                                <img src={leagueFlag} className="w-5 h-5 object-contain" />
-                              )}
-
-                              {/* TIME CASA */}
-                              <div className="flex items-center gap-2">
-                                {logoHome && (
-                                  <img src={logoHome} className="w-5 h-5 object-contain" />
-                                )}
-                                <span className="font-semibold">{s.time_casa}</span>
-                              </div>
-
-                              <span className="text-gray-500">x</span>
-
-                              {/* TIME FORA */}
-                              <div className="flex items-center gap-2">
-                                <span className="font-semibold">{s.time_fora}</span>
-                                {logoAway && (
-                                  <img src={logoAway} className="w-5 h-5 object-contain" />
-                                )}
-                              </div>
-                            </div>
-
-                            {/* Mercado / Pick */}
-                            <div className="flex justify-between text-sm">
-                              <div>
-                                <p className="text-gray-600">{s.mercado}</p>
-                                <p className="font-semibold">{getPickLabel(s)}</p>
-                              </div>
-
-                              <p className="font-semibold">Odd {s.odd.toFixed(2)}</p>
+                      {/* preview das seleções + odd total */}
+                      {t.selections?.length ? (
+                        <div className="mt-2 border-t border-gray-200 dark:border-neutral-700 pt-2">
+                          <div className="flex items-center justify-between">
+                            <div className="text-xs text-gray-500">Seleções</div>
+                            <div className="text-xs text-gray-500">
+                              Odd total{" "}
+                              <span className="font-semibold tabular-nums">
+                                {calcOddTotal(t).toFixed(2)}
+                              </span>
                             </div>
                           </div>
-                        );
-                      })}
-                    </div>
 
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </Section>
-      );
+                          <div className="mt-1 space-y-1.5">
+                            {getSelectionsPreview(t, 2).shown.map((s, idx) => {
+                              const logoHome = findClubLogo(s.time_casa || "");
+                              const logoAway = findClubLogo(s.time_fora || "");
+
+                              return (
+                                <div
+                                  key={idx}
+                                  className="flex items-center justify-between gap-3"
+                                >
+                                  <div className="min-w-0">
+                                    {/* Linha principal: logos + times (compacto) */}
+                                    <div className="flex items-center gap-2 min-w-0">
+                                      {logoHome && (
+                                        <img
+                                          src={logoHome}
+                                          alt={s.time_casa}
+                                          className="w-4 h-4 object-contain shrink-0"
+                                          loading="lazy"
+                                        />
+                                      )}
+
+                                      <div className="min-w-0 truncate font-semibold text-sm text-gray-900 dark:text-white">
+                                        {s.time_casa}{" "}
+                                        <span className="mx-1 text-gray-400">x</span>{" "}
+                                        {s.time_fora}
+                                      </div>
+
+                                      {logoAway && (
+                                        <img
+                                          src={logoAway}
+                                          alt={s.time_fora}
+                                          className="w-4 h-4 object-contain shrink-0"
+                                          loading="lazy"
+                                        />
+                                      )}
+                                    </div>
+
+                                    <div className="text-xs text-gray-500 truncate">
+                                      {s.campeonato} • {s.mercado} • {getPickLabel(s)}
+                                    </div>
+                                  </div>
+
+                                  <div className="text-right">
+                                    <div className="text-[11px] text-gray-500">Odd</div>
+                                    <div className="text-sm font-extrabold text-[#0a2a5e] dark:text-white tabular-nums">
+                                      {(Number(s.odd) || 0).toFixed(2)}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+
+                            {getSelectionsPreview(t, 2).rest > 0 && (
+                              <div className="text-xs text-gray-500">
+                                +{getSelectionsPreview(t, 2).rest} seleção(ões)…
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {/* ====== ÚLTIMOS RESULTADOS ====== */}
+            <div className="mt-6 rounded-2xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-4 sm:p-5 shadow-sm">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h3 className="text-base font-bold text-gray-900 dark:text-white">
+                    Últimos resultados
+                  </h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Últimos 5 bilhetes liquidados
+                  </p>
+                </div>
+              </div>
+
+              {last5Stats.total > 0 && (
+                <div className="mb-4 rounded-xl border border-[#014a8f]/15 bg-[#014a8f]/5 px-4 py-3">
+                  <div className="text-xs text-gray-700 dark:text-gray-200">
+                    <span className="font-semibold">
+                      Resumo:
+                    </span>{" "}
+                    {last5Stats.wins} vitórias
+                    <span className="font-semibold">{last5Stats.msg}</span>
+                  </div>
+                </div>
+              )}
+
+              {last5Resolved.length === 0 ? (
+                <EmptyState text="Ainda não há bilhetes liquidados." />
+              ) : (
+                <ul className="space-y-3">
+                  {last5Resolved.map((t) => {
+                    const st = (t.status || "").toUpperCase().trim();
+                    const isLost = st === "PERDIDO" || st === "PERDIDA";
+                    const isWon = st === "GANHO" || st === "GANHA";
+
+                    return (
+                      <li
+                        key={t.id}
+                        className="rounded-xl border border-gray-200 dark:border-neutral-800 bg-gray-50 dark:bg-neutral-800/40 p-3 sm:p-4"
+                      >
+                        <div className="flex items-center justify-between gap-3 mb-2">
+                          <div className="text-xs text-gray-500">
+                            {new Date(t.createdAt).toLocaleString("pt-BR")}
+                          </div>
+
+                          <span
+                            className={`text-[10px] font-semibold uppercase px-2 py-1 rounded-full ${
+                              isWon
+                                ? "bg-green-100 text-green-700"
+                                : isLost
+                                ? "bg-red-100 text-red-700"
+                                : "bg-gray-100 text-gray-700"
+                            }`}
+                          >
+                            {st || "LIQUIDADO"}
+                          </span>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-4">
+                          <div>
+                            <div className="text-xs text-gray-500">Aposta</div>
+                            <div className="text-sm font-semibold text-gray-900 dark:text-white tabular-nums">
+                              R$ {t.stake.toFixed(2)}
+                            </div>
+                          </div>
+
+                          <div className="text-right">
+                            <div className="text-xs text-gray-500">Retorno</div>
+                            <div
+                              className={`text-sm font-semibold tabular-nums ${
+                                isLost ? "text-red-600" : "text-green-600"
+                              }`}
+                            >
+                              R$ {t.potentialReturn.toFixed(2)}
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* preview das seleções + odd total */}
+                        {t.selections?.length ? (
+                          <div className="mt-2 border-t border-gray-200 dark:border-neutral-700 pt-2">
+                            <div className="flex items-center justify-between">
+                              <div className="text-xs text-gray-500">Seleções</div>
+                              <div className="text-xs text-gray-500">
+                                Odd total{" "}
+                                <span className="font-semibold tabular-nums">
+                                  {calcOddTotal(t).toFixed(2)}
+                                </span>
+                              </div>
+                            </div>
+
+                            <div className="mt-1 space-y-1.5">
+                              {getSelectionsPreview(t, 2).shown.map((s, idx) => {
+                                const logoHome = findClubLogo(s.time_casa || "");
+                                const logoAway = findClubLogo(s.time_fora || "");
+
+                                return (
+                                  <div
+                                    key={idx}
+                                    className="flex items-center justify-between gap-3"
+                                  >
+                                    <div className="min-w-0">
+                                      <div className="flex items-center gap-2 min-w-0">
+                                        {logoHome && (
+                                          <img
+                                            src={logoHome}
+                                            alt={s.time_casa}
+                                            className="w-4 h-4 object-contain shrink-0"
+                                            loading="lazy"
+                                          />
+                                        )}
+
+                                        <div className="min-w-0 truncate font-semibold text-sm text-gray-900 dark:text-white">
+                                          {s.time_casa}{" "}
+                                          <span className="mx-1 text-gray-400">x</span>{" "}
+                                          {s.time_fora}
+                                        </div>
+
+                                        {logoAway && (
+                                          <img
+                                            src={logoAway}
+                                            alt={s.time_fora}
+                                            className="w-4 h-4 object-contain shrink-0"
+                                            loading="lazy"
+                                          />
+                                        )}
+                                      </div>
+
+                                      <div className="text-xs text-gray-500 truncate">
+                                        {s.campeonato} • {s.mercado} • {getPickLabel(s)}
+                                      </div>
+                                    </div>
+
+                                    <div className="text-right">
+                                      <div className="text-[11px] text-gray-500">Odd</div>
+                                      <div className="text-sm font-extrabold text-[#0a2a5e] dark:text-white tabular-nums">
+                                        {(Number(s.odd) || 0).toFixed(2)}
+                                      </div>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+
+                              {getSelectionsPreview(t, 2).rest > 0 && (
+                                <div className="text-xs text-gray-500">
+                                  +{getSelectionsPreview(t, 2).rest} seleção(ões)…
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        ) : null}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </div>
+          </Section>
+        );
+      }
+
     }
 
-  }, [tab, filtered, loading, error, tickets, logos, handleAddSelection]);
+  }, [tab, filtered, loading, error, tickets, userLeagues, selections, saldo, stake, last5Resolved, pendingTickets]);
+
 
  
 
@@ -1381,9 +1761,39 @@ const isTotalsMarket = (market?: string) =>
 
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
 
+      {/* Conteúdo */}
+
+      <div className="p-4 space-y-6">
+
+        <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+        {/* brilhos sutis */}
+        <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
+
+        <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Partidas do Dia
+            </h1>
+            <p className="text-sm text-gray-600 dark:text-gray-300">
+              Acompanhe aqui os melhores jogos
+            </p>
+          </div>
+
+          <div className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-3 py-2">
+            <span className="text-[11px] font-semibold text-[#014a8f]">Atualizado</span>
+            <span className="text-xs text-gray-600 dark:text-gray-300">{updatedTime}</span>
+          </div>
+        </div>
+      </div>
+
+
       {/* Top bar */}
 
-      <div className="flex flex-wrap items-center justify-between px-6 py-4 bg-[#014a8f] text-white shadow">
+      <div className="relative flex flex-wrap items-center justify-between px-5 py-3 rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f] via-[#014a8f]/95 to-[#003b70] text-white shadow-xl shadow-blue-500/15 overflow-visible">
+        <div className="pointer-events-none absolute -top-20 -left-20 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -right-24 h-56 w-56 rounded-full bg-emerald-300/10 blur-3xl" />
+
 
         <div className="flex flex-wrap gap-2">
 
@@ -1419,15 +1829,23 @@ const isTotalsMarket = (market?: string) =>
 
         </div>
 
-        <div className="mt-2 sm:mt-0 flex items-center gap-3">
+        <div className="mt-2 sm:mt-0 flex items-center gap-2">
+          {/* Badge de classe (discreto, premium) */}
+          <div className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-2.5 py-1.5">
+            <img
+              src={getTierBadgeSrc(tierKey)}
+              alt={tierName}
+              className="w-6 h-6 object-contain"
+              loading="lazy"
+            />
+            <span className="text-xs font-semibold whitespace-nowrap">{tierName}</span>
+          </div>
 
-          <span className="text-xs sm:text-sm">
-
-            Saldo:{" "}
-
-            <b>R$ {saldo.toFixed(2)}</b>
-
+          <span className="text-xs font-medium whitespace-nowrap">
+            Saldo: <b>R$ {saldo.toFixed(2)}</b>
           </span>
+
+          <div className="hidden sm:block h-6 w-px bg-white/20" />
 
           <div className="relative">
 
@@ -1444,8 +1862,18 @@ const isTotalsMarket = (market?: string) =>
 
               placeholder="Encontre aqui seu jogo"
 
-              className="w-52 sm:w-64 h-9 px-3 py-2 text-xs sm:text-sm font-medium text-white placeholder-white bg-[#014a8f] border border-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white"
-
+              className="
+                w-52 sm:w-60 h-9
+                px-3
+                text-xs sm:text-sm font-medium
+                text-white placeholder-white/70
+                bg-white/15 backdrop-blur
+                border border-white/30
+                rounded-xl
+                shadow-sm
+                focus:outline-none
+                focus:ring-2 focus:ring-white/60
+              "
             />
 
             {suggestions.length > 0 && (
@@ -1521,38 +1949,22 @@ const isTotalsMarket = (market?: string) =>
 
  
 
-      {/* Conteúdo */}
-
-      <div className="p-4 space-y-6">
-
-        <div>
-
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-
-            Partidas do Dia
-
-          </h1>
-
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-
-            Acompanhe aqui os melhores jogos
-
-          </p>
-
-          <div className="mt-2">
-
-            <Badge>Atualizado em {updatedTime}</Badge>
-
-          </div>
-
-        </div>
+      
 
         {/* Hero: Featured Match (apenas na aba Em Alta) */}
         {tab === "em-alta" && !loading && featuredMatch && (
           <div className="rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
               <div>
-                <div className="text-xs font-semibold text-[#014a8f]">Partida em Alta</div>
+                <div className="inline-flex items-center gap-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#014a8f] bg-white/70 border border-[#014a8f]/20 px-3 py-1 rounded-full">
+                    Destaque
+                  </span>
+                  <span className="text-xs text-gray-600 dark:text-gray-300">
+                    Partida mais próxima
+                  </span>
+                </div>
+
 
                 {/* Linha com escudos + times */}
                 <div className="mt-1 flex items-center gap-3">
@@ -1560,11 +1972,11 @@ const isTotalsMarket = (market?: string) =>
                     <img
                       src={findClubLogo((featuredMatch as any).homeTeam)!}
                       alt={(featuredMatch as any).homeTeam}
-                      className="w-8 h-8 object-contain drop-shadow-sm"
+                      className="w-9 h-9 object-contain drop-shadow-sm"
                     />
                   )}
 
-                  <div className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
+                  <div className="text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-white">
                     {(featuredMatch as any).homeTeam}{" "}
                     <span className="text-gray-400">x</span>{" "}
                     {(featuredMatch as any).awayTeam}
@@ -1574,7 +1986,7 @@ const isTotalsMarket = (market?: string) =>
                     <img
                       src={findClubLogo((featuredMatch as any).awayTeam)!}
                       alt={(featuredMatch as any).awayTeam}
-                      className="w-8 h-8 object-contain drop-shadow-sm"
+                      className="w-9 h-9 object-contain drop-shadow-sm"
                     />
                   )}
                 </div>
@@ -1595,7 +2007,10 @@ const isTotalsMarket = (market?: string) =>
                 </div>
 
                 <Button
-                  className="bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl"
+                  className="
+                    bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl
+                    shadow-sm hover:shadow-md transition
+                  "
                   onClick={() => {
                     const id = (featuredMatch as any).id;
 
@@ -1603,7 +2018,8 @@ const isTotalsMarket = (market?: string) =>
                     setTab("em-alta");
 
                     setQuery("");              // 🔥 NÃO filtra lista
-                    setSelectedMatchId(null);  // garante lista completa
+                    setSelectedMatchId(null);
+                     // garante lista completa
                     setScrollToMatchId(id);    // scroll funciona
                     // se você ainda quiser filtrar quando clicar, descomente:
                     // setSelectedMatchId(id);
@@ -1638,217 +2054,330 @@ const isTotalsMarket = (market?: string) =>
  
 
       {/* Botão flutuante "Ver Bilhete" */}
-
       {selections.length > 0 && (
-
         <div className="fixed bottom-4 right-4 z-40">
-
           <Button
-
-            className="bg-[#014a8f] hover:bg-[#003b70] text-white shadow-xl rounded-full px-5 py-2 text-sm"
-
+            className="
+              bg-[#014a8f] hover:bg-[#003b70] text-white
+              shadow-2xl rounded-full px-5 py-2 text-sm
+              transition-all hover:-translate-y-0.5
+            "
             onClick={() => setIsSlipOpen(true)}
-
           >
-
             Ver Bilhete ({selections.length}) • Odd {oddTotal.toFixed(2)}
-
           </Button>
-
         </div>
-
       )}
 
- 
-
-      {/* Modal simples do Bilhete */}
-
+      {/* Modal premium do Bilhete */}
       {isSlipOpen && (
-        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50">
-          <div className="
-            w-full
-            sm:max-w-lg
-            md:max-w-xl
-            lg:max-w-2xl
-            bg-white dark:bg-neutral-900
-            rounded-t-2xl sm:rounded-2xl
-            p-6
-            space-y-6
-            shadow-2xl
-          ">
+        <div
+          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50"
+          onMouseDown={(e) => {
+            // fecha ao clicar no backdrop
+            if (e.target === e.currentTarget) setIsSlipOpen(false);
+          }}
+        >
+          <div
+            className="
+              w-full
+              sm:max-w-lg
+              md:max-w-xl
+              lg:max-w-2xl
+              bg-white dark:bg-neutral-900
+              rounded-t-2xl sm:rounded-2xl
+              shadow-2xl
+              overflow-hidden
+            "
+            onMouseDown={(e) => e.stopPropagation()}
+          >
+            {/* Header — PREMIUM com respiro */}
+            <div className="px-6 pt-5 pb-4 border-b border-gray-200 dark:border-neutral-700">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
 
+                {/* Esquerda: título + pills */}
+                <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">
+                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+                    Seu Bilhete
+                  </h2>
 
-            {/* Header */}
-            <div className="flex items-center justify-between pb-2 border-b border-gray-200 dark:border-neutral-700">
-              <h2 className="text-lg font-semibold">Seu Bilhete</h2>
-              <button
-                className="text-sm text-gray-500 hover:text-gray-800"
-                onClick={() => setIsSlipOpen(false)}
-              >
-                Fechar
-              </button>
-            </div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span
+                      className="
+                        inline-flex items-center
+                        rounded-2xl
+                        border border-[#014a8f]/25
+                        bg-[#014a8f]/10
+                        px-4 py-1.5
+                        text-sm font-bold
+                        text-[#014a8f]
+                      "
+                    >
+                      {selections.length} seleção{selections.length > 1 ? "s" : ""}
+                    </span>
 
-            {/* Se não tiver nada */}
-            {selections.length === 0 ? (
-              <p className="text-sm text-gray-500">Nenhuma seleção no bilhete.</p>
-            ) : (
-              <>
-                {/* LISTA DE SELEÇÕES */}
-                <div className="max-h-64 overflow-y-auto space-y-3 pr-1">
-
-                  {selections.map((s, i) => {
-                    const logoHome = findClubLogo(s.time_casa);
-                    const logoAway = findClubLogo(s.time_fora);
-
-                    const leagueCode = leagueCountries[s.campeonato];
-                    const leagueFlag = leagueCode
-                      ? getFlagByCountryCode(leagueCode)
-                      : null;
-
-                    return (
-                      <div
-                        key={i}
-                        className="rounded-xl border border-gray-200 dark:border-neutral-700 bg-gray-50 dark:bg-neutral-800 p-3"
-                      >
-                        {/* Linha superior com times */}
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            {logoHome && (
-                              <img
-                                src={logoHome}
-                                className="w-5 h-5 object-contain"
-                              />
-                            )}
-                            <span className="font-semibold text-sm">
-                              {s.time_casa}
-                            </span>
-                            <span className="text-gray-400 font-medium">x</span>
-                            <span className="font-semibold text-sm">
-                              {s.time_fora}
-                            </span>
-                            {logoAway && (
-                              <img
-                                src={logoAway}
-                                className="w-5 h-5 object-contain"
-                              />
-                            )}
-                          </div>
-
-                          {/* Botão remover (ícone lixeira) */}
-                          <button
-                            onClick={() => handleRemoveSelection(i)}
-                            className="text-gray-500 hover:text-red-500 transition"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="w-4 h-4"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                            >
-                              <path d="M3 6h18" />
-                              <path d="M8 6V4h8v2" />
-                              <path d="M10 11v6" />
-                              <path d="M14 11v6" />
-                              <path d="M5 6l1 14h12l1-14" />
-                            </svg>
-                          </button>
-                        </div>
-
-                        {/* Informações da liga + horário */}
-                        <div className="flex items-center gap-1 mt-1 text-xs text-gray-500">
-                          {leagueFlag && (
-                            <img src={leagueFlag} className="w-4 h-4" />
-                          )}
-                          <span>{s.campeonato}</span>
-                        </div>
-
-                        {/* Mercado / Seleção / Odd */}
-                        <div className="mt-2 flex items-center justify-between">
-                          <div className="text-xs">
-                            <div className="text-gray-500">{s.mercado}</div>
-                            <div className="font-semibold text-gray-800 dark:text-gray-100">
-                              {getPickLabel(s)}
-                            </div>
-                          </div>
-
-                          <div className="text-right">
-                            <span className="text-xs text-gray-500">Odd</span>
-                            <div className="text-sm font-bold">
-                              {s.odd.toFixed(2)}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
+                    <span
+                      className="
+                        inline-flex items-center gap-2
+                        rounded-2xl
+                        border border-gray-200 dark:border-neutral-700
+                        bg-white dark:bg-neutral-800
+                        px-4 py-1.5
+                      "
+                    >
+                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                        Odd total
+                      </span>
+                      <span className="text-lg font-extrabold text-gray-900 dark:text-white tabular-nums">
+                        {oddTotal.toFixed(2)}
+                      </span>
+                    </span>
+                  </div>
                 </div>
 
-                {/* Totais */}
-                <div className="pt-2 space-y-3 text-sm border-t border-gray-200 dark:border-neutral-700">
+                {/* Direita: fechar */}
+                <button
+                  className="
+                    self-start sm:self-auto
+                    rounded-xl px-3 py-2
+                    text-sm font-medium
+                    text-gray-500 hover:text-gray-800
+                    hover:bg-gray-50
+                    dark:text-gray-400 dark:hover:text-gray-200
+                    dark:hover:bg-neutral-800
+                    transition
+                  "
+                  onClick={() => setIsSlipOpen(false)}
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
 
-                  <div className="space-y-1">
-                      <div className="flex justify-between text-xs text-gray-500">
-                          <span>Saldo disponível:</span>
-                          <span>R$ {saldo.toFixed(2)}</span>
+
+
+            {/* BODY (scroll) */}
+            <div className="p-5 max-h-[70vh] overflow-y-auto">
+              {selections.length === 0 ? (
+                <p className="text-sm text-gray-500">Nenhuma seleção no bilhete.</p>
+              ) : (
+                <>
+                  {/* LISTA DE SELEÇÕES */}
+                  <div className="space-y-3">
+                    {selections.map((s, i) => {
+                      const logoHome = findClubLogo(s.time_casa);
+                      const logoAway = findClubLogo(s.time_fora);
+
+                      const leagueCode = leagueCountries[s.campeonato];
+                      const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
+
+                      return (
+                        <div
+                          key={i}
+                          className="
+                            rounded-2xl border border-gray-200 dark:border-neutral-800
+                            bg-white dark:bg-neutral-900
+                            p-4 shadow-sm
+                          "
+                        >
+                          {/* Topo: times + remover */}
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="min-w-0">
+                              <div className="flex items-center gap-2">
+                                {logoHome && (
+                                  <img
+                                    src={logoHome}
+                                    alt={s.time_casa}
+                                    className="w-5 h-5 object-contain"
+                                    loading="lazy"
+                                  />
+                                )}
+
+                                <span className="font-semibold text-sm text-gray-900 dark:text-white truncate">
+                                  {s.time_casa}
+                                </span>
+
+                                <span className="text-gray-400 font-medium">x</span>
+
+                                <span className="font-semibold text-sm text-gray-900 dark:text-white truncate">
+                                  {s.time_fora}
+                                </span>
+
+                                {logoAway && (
+                                  <img
+                                    src={logoAway}
+                                    alt={s.time_fora}
+                                    className="w-5 h-5 object-contain"
+                                    loading="lazy"
+                                  />
+                                )}
+                              </div>
+
+                              <div className="mt-1 flex items-center gap-2 text-xs text-gray-500">
+                                {leagueFlag && (
+                                  <img
+                                    src={leagueFlag}
+                                    alt="Liga"
+                                    className="w-4 h-4 object-contain"
+                                    loading="lazy"
+                                  />
+                                )}
+                                <span className="truncate">{s.campeonato}</span>
+                              </div>
+                            </div>
+
+                            <button
+                              onClick={() => handleRemoveSelection(i)}
+                              className="
+                                shrink-0 rounded-xl
+                                border border-gray-200 dark:border-neutral-700
+                                p-2 text-gray-500 hover:text-red-600
+                                hover:bg-gray-50 dark:hover:bg-neutral-800
+                                transition
+                              "
+                              aria-label="Remover seleção"
+                              title="Remover"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-4 h-4"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                              >
+                                <path d="M3 6h18" />
+                                <path d="M8 6V4h8v2" />
+                                <path d="M10 11v6" />
+                                <path d="M14 11v6" />
+                                <path d="M5 6l1 14h12l1-14" />
+                              </svg>
+                            </button>
+                          </div>
+
+                          {/* Meio: mercado/pick + odd */}
+                          <div className="mt-3 flex items-center justify-between gap-3">
+                            <div className="min-w-0">
+                              <div className="text-xs text-gray-500">{s.mercado}</div>
+                              <div className="text-sm font-semibold text-gray-900 dark:text-white truncate">
+                                {getPickLabel(s)}
+                              </div>
+                            </div>
+
+                            <div className="text-right">
+                              <div className="text-[11px] text-gray-500">Odd</div>
+                              <div className="text-base font-extrabold text-[#0a2a5e] dark:text-white tabular-nums">
+                                {s.odd.toFixed(2)}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* FINANCEIRO */}
+                  <div className="mt-5 space-y-3 pt-4 border-t border-gray-200 dark:border-neutral-700">
+                    {/* Linha principal: saldo + recomendado */}
+                    <div className="flex items-center justify-between">
+                      {/* Saldo */}
+                      <div>
+                        <div className="text-xs text-gray-500">Saldo disponível</div>
+                        <div className="text-base font-semibold text-gray-900 dark:text-white">
+                          R$ {saldo.toFixed(2)}
                         </div>
                       </div>
-                    {recommendedStake > 0 && (
-                      <div className="flex items-center justify-between text-xs bg-blue-50 border border-blue-200 rounded-md px-2 py-1">
-                        <span>Valor recomendado</span>
 
-                        <div className="flex items-center gap-2">
-                          <span className="font-semibold text-blue-800">
-                            R$ {recommendedStake.toFixed(2)}
-                          </span>
+                      {/* Valor recomendado */}
+                      {recommendedStake > 0 && (
+                        <div className="flex items-center gap-3">
+                          <div className="text-right">
+                            <div className="text-xs text-gray-500">Valor recomendado</div>
+                            <div className="text-sm font-bold text-[#014a8f] tabular-nums">
+                              R$ {recommendedStake.toFixed(2)}
+                            </div>
+                          </div>
 
                           <Button
                             size="sm"
                             variant="outline"
-                            className="text-xs px-2 py-0 h-6"
+                            className="h-8 px-3 text-xs font-semibold"
                             onClick={() => {
-                              if (!stake || stake <= 0) {
-                                setStake(recommendedStake);
-                              }
+                              if (!stake || stake <= 0) setStake(recommendedStake);
                             }}
                           >
                             Usar
                           </Button>
                         </div>
-                      </div>
-                    )}
-
-                    <div className="flex items-center justify-between">
-                      <span>Valor da aposta (R$)</span>
-                      <input
-                        type="number"
-                        min={0.5}
-                        step={0.5}
-                        value={stake || ""}
-                        onChange={(e) => setStake(Number(e.target.value) || 0)}
-                        className="w-28 border rounded-md px-2 py-1 text-sm"
-                      />
+                      )}
                     </div>
 
+                    {/* Retorno (esq) + Stake (dir) */}
+                    <div className="grid grid-cols-2 gap-6 items-end">
+                      {/* Retorno potencial — ESQ */}
+                      <div>
+                        <div className="text-sm text-gray-600">Retorno potencial</div>
+                        <div className="h-11 flex items-end">
+                        <div className="text-2xl font-extrabold tabular-nums">
+                          R$ {possibleReturn.toFixed(2)}
+                        </div>
+                      </div>
+                      </div>
+
+                      {/* Valor da aposta — DIR */}
+                      <div className="text-right">
+                        <div className="text-sm font-semibold text-gray-900 dark:text-white">
+                          Valor da aposta
+                        </div>
+
+                        <div className="mt-2 inline-flex items-center gap-2 justify-end">
+                          <span className="text-sm text-gray-500">R$</span>
+
+                          <input
+                            type="number"
+                            min={0.5}
+                            step={0.5}
+                            value={stake || ""}
+                            onChange={(e) => setStake(Number(e.target.value) || 0)}
+                            className="
+                              w-40
+                              h-11
+                              rounded-xl
+                              border border-gray-300 dark:border-neutral-700
+                              px-4
+                              text-lg
+                              font-extrabold
+                              text-right
+                              tabular-nums
+                              focus:outline-none
+                              focus:ring-2 focus:ring-[#014a8f]/40
+                            "
+                            placeholder="0,00"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </>
+              )}
+            </div>
 
 
-                  <div className="flex justify-between">
-                    <span>Retorno potencial</span>
-                    <span className="font-semibold">
-                      R$ {possibleReturn.toFixed(2)}
-                    </span>
-                  </div>
-
-
-
-                {/* Botões */}
-                <div className="pt-2 flex gap-2">
+            {/* FOOTER (fixo) */}
+            <div className="p-5 border-t border-gray-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/80 backdrop-blur">
+              {selections.length === 0 ? (
+                <Button
+                  variant="outline"
+                  className="w-full rounded-xl"
+                  onClick={() => setIsSlipOpen(false)}
+                >
+                  Voltar
+                </Button>
+              ) : (
+                <div className="flex gap-2">
                   <Button
                     variant="outline"
-                    className="w-1/3 text-xs"
+                    className="w-1/3 rounded-xl"
                     onClick={resetSlip}
                     disabled={placingBet}
                   >
@@ -1856,19 +2385,19 @@ const isTotalsMarket = (market?: string) =>
                   </Button>
 
                   <Button
-                    className="w-2/3 bg-[#014a8f] hover:bg-[#003b70] text-xs"
+                    className="w-2/3 bg-[#014a8f] hover:bg-[#003b70] rounded-xl"
                     onClick={handleConfirmBet}
                     disabled={placingBet}
                   >
                     {placingBet ? "Registrando..." : "Apostar agora"}
                   </Button>
                 </div>
-              </>
-            )}
-
+              )}
+            </div>
           </div>
         </div>
       )}
+
       {/* Modal H2H */}
       {h2hMeta && (
         <H2HModal
@@ -1884,6 +2413,7 @@ const isTotalsMarket = (market?: string) =>
           error={h2hError}
         />
       )}
+
 
 
 
@@ -1921,15 +2451,12 @@ function TopTab({
 
       onClick={onClick}
 
-      className={`text-white ${
-
-        active
-
-          ? "bg.white/15 bg-white/15 hover:bg-white/20"
-
-          : "hover:bg-white/10"
-
-      }`}
+      className={`
+        text-white rounded-xl
+        px-4 py-2 h-9
+        text-sm font-semibold
+        ${active ? "bg-white/15 hover:bg-white/20" : "hover:bg-white/10"}
+      `}
 
     >
 
@@ -1965,7 +2492,7 @@ function Section({
 
       <div>
 
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
+        <h2 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
 
           {title}
 
