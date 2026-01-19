@@ -53,6 +53,7 @@ export default function BettingHistoryScreen() {
   const [apostas, setApostas] = useState<Aposta[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [erro, setErro] = useState<string | null>(null);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
   // Estados dos Filtros
   const [showFilters, setShowFilters] = useState<boolean>(false);
@@ -103,6 +104,7 @@ export default function BettingHistoryScreen() {
       }));
 
       setApostas(mapped);
+      setLastUpdated(new Date());
     } catch (err: any) {
       console.error(err);
       setErro("Erro ao carregar histórico de apostas.");
@@ -185,6 +187,15 @@ export default function BettingHistoryScreen() {
 
   // --- MÉTRICAS BASEADAS NO FILTRO ---
   const base = filteredApostas;
+  const totalApostas = base.length;
+
+  const totalGanhas = base.filter((a) => a.status_aposta === "ganha").length;
+  const totalPerdidas = base.filter((a) => a.status_aposta === "perdida").length;
+  const totalCanceladas = base.filter((a) => a.status_aposta === "cancelada").length;
+  const totalPendentes = base.filter((a) => a.status_aposta === "pendente").length;
+
+  const decididas = totalGanhas + totalPerdidas;
+  const taxaAcerto = decididas > 0 ? (totalGanhas / decididas) * 100 : 0;
 
   const normalize = (s: string) =>
     s.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").trim();
@@ -319,6 +330,17 @@ export default function BettingHistoryScreen() {
     return arr.slice(0, 3);
   }, [filteredApostas]);
 
+  const updatedTime =
+    lastUpdated != null
+      ? `${new Date(lastUpdated).toLocaleDateString("pt-BR")} - ${new Date(
+        lastUpdated
+      ).toLocaleTimeString("pt-BR", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      })}`
+      : "—";
+
   // Card de aposta reutilizável (Recentes + Modal)
   const BetCard = ({ a }: { a: Aposta }) => {
     const parseTeamsLocal = (partida: string) => {
@@ -367,10 +389,10 @@ export default function BettingHistoryScreen() {
     const pickLabel = totalLabel
       ? totalLabel
       : isTeamAPick
-      ? `Vitória de ${teamA || a.selecao}`
-      : isTeamBPick
-      ? `Vitória de ${teamB || a.selecao}`
-      : a.selecao || "Palpite";
+        ? `Vitória de ${teamA || a.selecao}`
+        : isTeamBPick
+          ? `Vitória de ${teamB || a.selecao}`
+          : a.selecao || "Palpite";
 
     return (
       <div className="border border-gray-200 dark:border-neutral-800 rounded-xl p-4 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
@@ -389,9 +411,8 @@ export default function BettingHistoryScreen() {
               </div>
 
               <span
-                className={`text-sm font-semibold truncate text-gray-800 dark:text-gray-200 ${
-                  isTeamAPick ? "text-[#014a8f]" : ""
-                }`}
+                className={`text-sm font-semibold truncate text-gray-800 dark:text-gray-200 ${isTeamAPick ? "text-[#014a8f]" : ""
+                  }`}
               >
                 {teamA}
               </span>
@@ -399,9 +420,8 @@ export default function BettingHistoryScreen() {
               <span className="text-xs text-gray-400 px-1">vs</span>
 
               <span
-                className={`text-sm font-semibold truncate text-gray-800 dark:text-gray-200 ${
-                  isTeamBPick ? "text-[#014a8f]" : ""
-                }`}
+                className={`text-sm font-semibold truncate text-gray-800 dark:text-gray-200 ${isTeamBPick ? "text-[#014a8f]" : ""
+                  }`}
               >
                 {teamB}
               </span>
@@ -477,11 +497,10 @@ export default function BettingHistoryScreen() {
           <div>
             <span className="text-gray-400 text-xs mr-2">Retorno:</span>
             <span
-              className={`font-bold ${
-                a.status_aposta === "ganha"
+              className={`font-bold ${a.status_aposta === "ganha"
                   ? "text-green-600"
                   : "text-gray-800 dark:text-white"
-              }`}
+                }`}
             >
               R$ {a.possivel_retorno.toFixed(2)}
             </span>
@@ -501,145 +520,172 @@ export default function BettingHistoryScreen() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
-      <header className="bg-[#014a8f] text-white p-4 shadow sticky top-0 z-40">
-        <div className="flex justify-between items-center max-w-7xl mx-auto px-2">
-          <h1 className="text-xl font-bold">Histórico de Apostas</h1>
+      {/* Topo estilo Home */}
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto">
+        <div className="relative rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+          {/* brilhos sutis */}
+          <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
 
-          <div className="flex items-center gap-3 relative">
-            <Button
-              className="bg-white text-[#014a8f] ml-3"
-              onClick={async () => {
-                await api.post("/apostas/verificar");
-                fetchHistorico(); // recarrega tela
-              }}
-            >
-              Atualizar resultados
-            </Button>
+          <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Histórico de Apostas
+              </h1>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Central de desempenho e análise
+              </p>
+            </div>
 
-            <Button
-              id="filters-toggle"
-              onClick={() => setShowFilters(!showFilters)}
-              className={`text-sm flex items-center gap-2 ${
-                showFilters || filterLeague || filterMarket || filterStatus
-                  ? "bg-white text-[#014a8f] hover:bg-gray-100"
-                  : "bg-[#013a70] text-white hover:bg-[#012a50]"
-              }`}
-            >
-              <FilterIcon />
-              Filtros
-              {(filterLeague || filterMarket || filterStatus) && (
-                <span className="ml-1 w-2 h-2 rounded-full bg-red-500"></span>
-              )}
-            </Button>
-
-            {showFilters && (
-              <div
-                ref={filtersRef}
-                className="absolute right-0 mt-2 w-72 p-4 bg-white dark:bg-neutral-900 rounded-lg shadow-xl border border-gray-200 dark:border-neutral-800 z-50 animate-in fade-in zoom-in-95 duration-200"
-              >
-                <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-3 text-sm">
-                  Filtrar por:
-                </h3>
-
-                {/* Filtro de Liga */}
-                <div className="mb-3">
-                  <label className="text-xs font-medium text-gray-500 mb-1 block">
-                    Liga / Campeonato
-                  </label>
-                  <select
-                    value={filterLeague ?? ""}
-                    onChange={(e) => setFilterLeague(e.target.value || null)}
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-[#014a8f] outline-none"
-                  >
-                    <option value="" className="text-gray-500">
-                      Todas
-                    </option>
-                    {uniqueLeagues.map((c) => (
-                      <option
-                        key={c}
-                        value={c}
-                        className="text-gray-900 dark:text-white bg-white dark:bg-neutral-800"
-                      >
-                        {c}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Filtro de Mercado */}
-                <div className="mb-3">
-                  <label className="text-xs font-medium text-gray-500 mb-1 block">
-                    Tipo de Aposta (Mercado)
-                  </label>
-                  <select
-                    value={filterMarket ?? ""}
-                    onChange={(e) => setFilterMarket(e.target.value || null)}
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-[#014a8f] outline-none"
-                  >
-                    <option value="" className="text-gray-500">
-                      Todos
-                    </option>
-                    {uniqueMarkets.map((m) => (
-                      <option
-                        key={m}
-                        value={m}
-                        className="text-gray-900 dark:text-white bg-white dark:bg-neutral-800"
-                      >
-                        {m}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Filtro de Status */}
-                <div className="mb-4">
-                  <label className="text-xs font-medium text-gray-500 mb-1 block">
-                    Status
-                  </label>
-                  <select
-                    value={filterStatus ?? ""}
-                    onChange={(e) => setFilterStatus(e.target.value || null)}
-                    className="w-full border border-gray-300 dark:border-neutral-700 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-[#014a8f] outline-none"
-                  >
-                    <option value="" className="text-gray-500">
-                      Todos
-                    </option>
-                    {uniqueStatus.map((s) => (
-                      <option
-                        key={s}
-                        value={s}
-                        className="text-gray-900 dark:text-white bg-white dark:bg-neutral-800"
-                      >
-                        {statusLabel(s)}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="flex gap-2 justify-end pt-2 border-t dark:border-neutral-800">
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="text-xs h-8 text-gray-600 dark:text-gray-300"
-                    onClick={handleClearFilters}
-                  >
-                    Limpar
-                  </Button>
-                  <Button
-                    size="sm"
-                    className="bg-[#014a8f] hover:bg-[#003b70] text-white h-8"
-                    onClick={() => setShowFilters(false)}
-                  >
-                    Concluir
-                  </Button>
-                </div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <div className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-3 py-2">
+                <span className="text-[11px] font-semibold text-[#014a8f]">
+                  Atualizado
+                </span>
+                <span className="text-xs text-gray-600 dark:text-gray-300">
+                  {updatedTime}
+                </span>
               </div>
-            )}
+
+              <div className="flex items-center gap-2 relative">
+                <Button
+                  className="bg-[#014a8f] hover:bg-[#003b70] text-white"
+                  onClick={async () => {
+                    await api.post("/apostas/verificar");
+                    fetchHistorico();
+                  }}
+                >
+                  Atualizar resultados
+                </Button>
+
+                <Button
+                  id="filters-toggle"
+                  onClick={() => setShowFilters(!showFilters)}
+                  className={`text-sm flex items-center gap-2 ${showFilters || filterLeague || filterMarket || filterStatus
+                      ? "bg-white text-[#014a8f] hover:bg-gray-100"
+                      : "bg-[#014a8f] text-white hover:bg-[#003b70]"
+                    }`}
+                >
+                  <FilterIcon />
+                  Filtros
+                  {(filterLeague || filterMarket || filterStatus) && (
+                    <span className="ml-1 w-2 h-2 rounded-full bg-red-500" />
+                  )}
+                </Button>
+
+                {/* Painel de filtros (mantém seu conteúdo como está) */}
+                {showFilters && (
+                  <div
+                    ref={filtersRef}
+                    className="absolute right-0 top-full mt-2 w-80 p-4 bg-white/95 dark:bg-neutral-900/95 backdrop-blur rounded-2xl shadow-2xl border border-gray-200/70 dark:border-neutral-800 z-50 animate-in fade-in zoom-in-95 duration-200"
+                  >
+                    <h3 className="font-semibold text-gray-800 dark:text-gray-100 mb-3 text-sm">
+                      Filtrar por:
+                    </h3>
+
+                    {/* === Cole aqui seus 3 filtros + botões (do jeito que já está) === */}
+                    {/* Filtro de Liga */}
+                    <div className="mb-3">
+                      <label className="text-xs font-medium text-gray-500 mb-1 block">
+                        Liga / Campeonato
+                      </label>
+                      <select
+                        value={filterLeague ?? ""}
+                        onChange={(e) => setFilterLeague(e.target.value || null)}
+                        className="w-full border border-gray-300 dark:border-neutral-700 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-[#014a8f] outline-none"
+                      >
+                        <option value="" className="text-gray-500">
+                          Todas
+                        </option>
+                        {uniqueLeagues.map((c) => (
+                          <option
+                            key={c}
+                            value={c}
+                            className="text-gray-900 dark:text-white bg-white dark:bg-neutral-800"
+                          >
+                            {c}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* Filtro de Mercado */}
+                    <div className="mb-3">
+                      <label className="text-xs font-medium text-gray-500 mb-1 block">
+                        Tipo de Aposta (Mercado)
+                      </label>
+                      <select
+                        value={filterMarket ?? ""}
+                        onChange={(e) => setFilterMarket(e.target.value || null)}
+                        className="w-full border border-gray-300 dark:border-neutral-700 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-[#014a8f] outline-none"
+                      >
+                        <option value="" className="text-gray-500">
+                          Todos
+                        </option>
+                        {uniqueMarkets.map((m) => (
+                          <option
+                            key={m}
+                            value={m}
+                            className="text-gray-900 dark:text-white bg-white dark:bg-neutral-800"
+                          >
+                            {m}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* Filtro de Status */}
+                    <div className="mb-4">
+                      <label className="text-xs font-medium text-gray-500 mb-1 block">
+                        Status
+                      </label>
+                      <select
+                        value={filterStatus ?? ""}
+                        onChange={(e) => setFilterStatus(e.target.value || null)}
+                        className="w-full border border-gray-300 dark:border-neutral-700 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-neutral-800 focus:ring-2 focus:ring-[#014a8f] outline-none"
+                      >
+                        <option value="" className="text-gray-500">
+                          Todos
+                        </option>
+                        {uniqueStatus.map((s) => (
+                          <option
+                            key={s}
+                            value={s}
+                            className="text-gray-900 dark:text-white bg-white dark:bg-neutral-800"
+                          >
+                            {statusLabel(s)}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="flex gap-2 justify-end pt-2 border-t dark:border-neutral-800">
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="text-xs h-8 text-gray-600 dark:text-gray-300"
+                        onClick={handleClearFilters}
+                      >
+                        Limpar
+                      </Button>
+                      <Button
+                        size="sm"
+                        className="bg-[#014a8f] hover:bg-[#003b70] text-white h-8"
+                        onClick={() => setShowFilters(false)}
+                      >
+                        Concluir
+                      </Button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
 
-      <main className="p-4 sm:p-6 max-w-7xl mx-auto">
+
+      <main className="pb-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Chips de filtros ativos */}
         {(filterLeague || filterMarket || filterStatus) && (
           <div className="flex flex-wrap gap-2 text-xs mb-4">
@@ -665,59 +711,121 @@ export default function BettingHistoryScreen() {
           {/* ESQUERDA */}
           <div className="lg:col-span-5 space-y-6">
             {/* Card Apostas / Seu desempenho */}
-            <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
-              <div className="flex justify-between items-center mb-4">
-                <div>
-                  <h2 className="text-2xl font-bold text-[#014a8f]">Apostas</h2>
-                  <p className="text-gray-500 text-sm">Seu desempenho</p>
-                </div>
+            <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 shadow-md">
+              {/* brilhos */}
+              <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl" />
 
-                <button
-                  onClick={() => setAllClubsOpen(true)}
-                  className="text-[#014a8f] text-sm font-medium hover:underline"
-                >
-                  Ver todos
-                </button>
-              </div>
-
-              <div className="flex items-center gap-8">
-                <div className="text-center">
-                  <div className="text-6xl font-extrabold text-[#014a8f] leading-none">
-                    {totalGames}
+              <div className="relative">
+                {/* Header */}
+                <div className="flex items-start justify-between gap-3 mb-5">
+                  <div>
+                    <h2 className="text-2xl font-extrabold text-[#014a8f] leading-tight">
+                      Apostas
+                    </h2>
+                    <p className="text-sm text-gray-600">Seu desempenho</p>
                   </div>
-                  <div className="text-gray-500 text-sm mt-1">Apostas</div>
+
+                  <button
+                    onClick={() => setAllClubsOpen(true)}
+                    className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 px-3 py-2 text-sm font-semibold text-[#014a8f] hover:bg-white transition"
+                  >
+                    Ver todos
+                    <span className="text-gray-400">→</span>
+                  </button>
                 </div>
 
-                <div className="flex-1">
-                  <p className="text-gray-600 font-semibold text-sm">
-                    Times ({distinctTeams})
-                  </p>
+                {/* KPIs */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  <div className="rounded-2xl bg-white/80 border border-gray-200/70 px-4 py-3 h-[110px] flex flex-col justify-between">
+                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                      Apostas
+                    </div>
+                    <div className="text-3xl font-extrabold text-[#014a8f] tabular-nums leading-none">
+                      {totalApostas}
+                    </div>
+                    <div className="text-xs text-gray-500">registros</div>
+                  </div>
 
-                  <div className="grid grid-cols-4 gap-3 mt-3">
+                  <div className="rounded-2xl bg-white/80 border border-gray-200/70 px-4 py-3 h-[110px] flex flex-col justify-between">
+                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                      Jogos únicos
+                    </div>
+                    <div className="text-3xl font-extrabold text-gray-900 tabular-nums leading-none">
+                      {totalGames}
+                    </div>
+                    <div className="text-xs text-gray-500">partidas</div>
+                  </div>
+
+                  <div className="rounded-2xl bg-white/80 border border-gray-200/70 px-4 py-3 h-[110px] flex flex-col justify-between">
+                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                      Decididas
+                    </div>
+                    <div className="text-3xl font-extrabold text-gray-900 tabular-nums leading-none">
+                      {decididas}
+                    </div>
+                    <div className="text-xs text-gray-600">
+                      <span className="font-semibold text-green-700">{totalGanhas}G</span>{" "}
+                      <span className="text-gray-400">•</span>{" "}
+                      <span className="font-semibold text-red-700">{totalPerdidas}P</span>
+                    </div>
+                  </div>
+
+                  <div className="rounded-2xl bg-white/80 border border-gray-200/70 px-4 py-3 h-[110px] flex flex-col justify-between">
+                    <div className="flex items-center justify-between">
+                      <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                        Acerto
+                      </div>
+                    </div>
+
+                    <div className="text-3xl font-extrabold text-gray-900 tabular-nums leading-none">
+                      {taxaAcerto.toFixed(0)}%
+                    </div>
+
+                    <div className="h-2 rounded-full bg-gray-100 border border-gray-200/70 overflow-hidden">
+                      <div
+                        className="h-full rounded-full bg-[#014a8f]"
+                        style={{ width: `${Math.max(0, Math.min(100, taxaAcerto))}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Times (Top 4) */}
+                <div className="mt-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-sm font-semibold text-gray-800">
+                      Times <span className="text-gray-500">({distinctTeams})</span>
+                    </p>
+                    <p className="text-xs text-gray-500">Top 4 por volume</p>
+                  </div>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                     {top4.map((club) => {
                       const logo = findLogo(club.name);
                       return (
                         <div
                           key={club.name}
-                          className="bg-[#f3f6f9] border border-[#dce3ea] rounded-xl py-4 flex flex-col items-center"
+                          className="rounded-2xl bg-white/80 border border-gray-200/70 p-4 flex flex-col items-center justify-center"
                         >
-                          <div className="w-12 h-12 mb-2 flex items-center justify-center">
+                          <div className="w-14 h-14 rounded-2xl bg-white border border-gray-200/70 shadow-sm flex items-center justify-center p-2">
                             {logo ? (
-                              <img
-                                src={logo}
-                                className="w-full h-full object-contain"
-                              />
+                              <img src={logo} className="w-full h-full object-contain" />
                             ) : (
                               <div className="text-gray-400 text-xs">?</div>
                             )}
                           </div>
 
-                          <span className="font-bold text-gray-800">
-                            {club.apostas}x
-                          </span>
-                          <span className="text-xs text-gray-500">
-                            {club.ganha}-{club.perdida}
-                          </span>
+                          <div className="mt-3 text-center">
+                            <div className="text-xl font-extrabold text-gray-900 tabular-nums">
+                              {club.apostas}x
+                            </div>
+                            <div className="text-xs text-gray-600">
+                              <span className="font-semibold text-green-700">{club.ganha}</span>
+                              <span className="text-gray-400">-</span>
+                              <span className="font-semibold text-red-700">{club.perdida}</span>
+                            </div>
+                          </div>
                         </div>
                       );
                     })}
@@ -730,9 +838,7 @@ export default function BettingHistoryScreen() {
             <div className="bg-white rounded-2xl shadow-md border border-gray-200 p-6">
               <div className="flex items-center justify-between mb-2">
                 <div>
-                  <h3 className="text-lg font-bold text-[#014a8f]">
-                    Acerto por clube
-                  </h3>
+                  <h3 className="text-lg font-bold text-[#014a8f]">Acerto por clube</h3>
                   <p className="text-gray-500 text-sm">
                     Clubes com melhor percentual de acerto
                   </p>
@@ -741,15 +847,13 @@ export default function BettingHistoryScreen() {
 
               {clubAccuracyList.length === 0 ? (
                 <div className="text-sm text-gray-500 py-6">
-                  Ainda não há apostas decididas (ganha/perdida) para calcular
-                  acerto.
+                  Ainda não há apostas decididas (ganha/perdida) para calcular acerto.
                 </div>
               ) : (
                 <div className="space-y-3">
                   {clubAccuracyList.map((c) => {
                     const logo = findLogo(c.name);
-                    const width =
-                      maxAcc > 0 ? Math.max(6, (c.acc / maxAcc) * 100) : 0;
+                    const width = maxAcc > 0 ? Math.max(6, (c.acc / maxAcc) * 100) : 0;
 
                     return (
                       <div key={c.name} className="group flex items-center gap-3">
@@ -859,16 +963,13 @@ export default function BettingHistoryScreen() {
                     </DialogTitle>
                   </DialogHeader>
                   <p className="text-xs text-gray-500 mt-1">
-                    Mostrando {filteredApostas.length} apostas (respeitando os
-                    filtros atuais).
+                    Mostrando {filteredApostas.length} apostas (respeitando os filtros atuais).
                   </p>
                 </div>
 
                 <div className="p-5 max-h-[75vh] overflow-auto">
                   {filteredApostas.length === 0 ? (
-                    <div className="text-sm text-gray-500">
-                      Nenhuma aposta encontrada.
-                    </div>
+                    <div className="text-sm text-gray-500">Nenhuma aposta encontrada.</div>
                   ) : (
                     <div className="space-y-4">
                       {[...filteredApostas]
@@ -955,6 +1056,6 @@ export default function BettingHistoryScreen() {
           </DialogContent>
         </Dialog>
       </main>
-    </div>
+    </div >
   );
 }
