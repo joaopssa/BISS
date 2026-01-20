@@ -66,7 +66,7 @@ export const getXPForStreak = (streak: number) => {
 
 export const computeYieldPct = (premios: number, stakes: number) => {
   if (stakes <= 0) return 0;
-  return ((premios - stakes) / stakes) * 100;
+  return (premios/ stakes) * 100;
 };
 
 export const getUserTier = (
@@ -632,7 +632,7 @@ export const ProfileRankingScreen: React.FC = () => {
   const dailyTotalCount = dailyPayload?.totalCountToday ?? (dailyChallenges?.length || 0);
   const dailyStreakDays = dailyPayload?.streakDays ?? 0;
 
-  const progressPct = (current: number, target: number) => {
+    const progressPct = (current: number, target: number) => {
     if (!target || target <= 0) return 0;
     return Math.round(clamp(current / target, 0, 1) * 100);
   };
@@ -650,30 +650,37 @@ export const ProfileRankingScreen: React.FC = () => {
   }) => {
     const tone = props.tone || "primary";
     const barColor =
-      tone === "green" ? "bg-green-600" :
-        tone === "danger" ? "bg-red-600" :
-          tone === "blue" ? "bg-blue-600" :
-            "bg-[#014a8f]";
+      tone === "green"
+        ? "bg-green-600"
+        : tone === "danger"
+        ? "bg-red-600"
+        : tone === "blue"
+        ? "bg-blue-600"
+        : "bg-[#014a8f]";
 
     const ringColor =
-      tone === "green" ? "border-green-600" :
-        tone === "danger" ? "border-red-600" :
-          tone === "blue" ? "border-blue-600" :
-            "border-[#014a8f]";
+      tone === "green"
+        ? "border-green-600"
+        : tone === "danger"
+        ? "border-red-600"
+        : tone === "blue"
+        ? "border-blue-600"
+        : "border-[#014a8f]";
 
     return (
       <div className="space-y-1">
-        <div className="flex items-center justify-between text-xs text-gray-600">
+        <div className="flex items-center justify-between text-xs text-gray-600 dark:text-gray-300">
           <span>{props.label}</span>
-          <span className="tabular-nums">{props.leftValue} / {props.rightValue}</span>
+          <span className="tabular-nums">
+            {props.leftValue} / {props.rightValue}
+          </span>
         </div>
 
-        <div className="relative w-full h-3 rounded-full bg-gray-200 overflow-hidden">
+        <div className="relative w-full h-3 rounded-full bg-gray-200 dark:bg-neutral-800 overflow-hidden">
           <div
             className={`h-3 ${barColor}`}
             style={{ width: `${clamp(props.pct, 0, 100)}%` }}
           />
-          {/* "thumb" no fim do progresso (estilo do seu esboço) */}
           <div
             className={`absolute top-1/2 -translate-y-1/2 h-4 w-4 rounded-full bg-white border-2 ${ringColor} shadow-sm`}
             style={{
@@ -696,54 +703,148 @@ export const ProfileRankingScreen: React.FC = () => {
     );
   };
 
-  return (
-    <div className="p-4 space-y-6">
-      {/* Header */}
-    <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 
-  bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 
-  dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 
-  p-5 shadow-xl shadow-blue-500/10">
-        <div className="relative">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-            Perfil e Ranking
-          </h1>
-          <p className="text-sm text-gray-600 dark:text-gray-300">
-            Estatísticas e conquistas
+  // =======================================================
+  // Panel (padrão Finance) + StatCard
+  // =======================================================
+  const panelClass =
+    "relative overflow-hidden rounded-2xl border border-[#014a8f]/15 " +
+    "bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 " +
+    "dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 " +
+    "p-6 shadow-xl shadow-blue-500/10";
+
+  const Panel = ({
+    children,
+    className = "",
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  }) => (
+    <div className={`${panelClass} ${className}`}>
+      <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
+      <div className="relative">{children}</div>
+    </div>
+  );
+
+  const StatCard = ({
+    label,
+    value,
+    tone = "neutral",
+    icon,
+    footer,
+  }: {
+    label: string;
+    value: React.ReactNode;
+    tone?: "neutral" | "green" | "red" | "blue";
+    icon?: React.ReactNode;
+    footer?: React.ReactNode;
+  }) => {
+    const toneRing =
+      tone === "green"
+        ? "border-green-200/70 dark:border-green-900/40"
+        : tone === "red"
+        ? "border-red-200/70 dark:border-red-900/40"
+        : tone === "blue"
+        ? "border-blue-200/70 dark:border-blue-900/40"
+        : "border-gray-200/70 dark:border-neutral-800";
+
+    const toneBg =
+      tone === "green"
+        ? "bg-green-50/60 dark:bg-green-950/20"
+        : tone === "red"
+        ? "bg-red-50/60 dark:bg-red-950/20"
+        : tone === "blue"
+        ? "bg-blue-50/60 dark:bg-blue-950/20"
+        : "bg-white/70 dark:bg-neutral-950/40";
+
+    return (
+      <div
+        className={`rounded-2xl ${toneBg} border ${toneRing} px-4 py-3 min-h-[112px] grid grid-rows-[auto_1fr_auto]`}
+      >
+        <div className="flex items-center justify-between">
+          <p className="text-[11px] font-bold tracking-wider text-gray-500 dark:text-gray-400 uppercase">
+            {label}
           </p>
+          {icon ? (
+            <div className="p-2 rounded-xl bg-white/70 dark:bg-neutral-900/60 border border-gray-200/60 dark:border-neutral-800">
+              {icon}
+            </div>
+          ) : null}
+        </div>
+
+        <div className="flex items-center min-h-[44px]">
+          <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none whitespace-nowrap">
+            {value}
+          </div>
+        </div>
+
+        <div className="h-[16px] text-xs text-gray-600 dark:text-gray-400">
+          {footer ?? null}
         </div>
       </div>
+    );
+  };
 
-      {/* Profile Edit */}
-      {showEdit && (
-        <div className="mb-4">
-          <EditProfileCard
-            profile={userProfile}
-            onCancel={() => setShowEdit(false)}
-            onSave={(newProfile: any) => {
-              setUserProfile((p: any) => ({ ...p, ...newProfile }));
-              setShowEdit(false);
-            }}
-          />
+  // =======================================================
+  // RETURN (novo layout)
+  // =======================================================
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
+      <div className="p-4 sm:p-6 max-w-7xl mx-auto space-y-6">
+        {/* Header padrão */}
+        <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+          <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
+
+          <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Perfil e Ranking
+              </h1>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Estatísticas e conquistas
+              </p>
+            </div>
+
+            <Button
+              size="sm"
+              className="bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl w-full sm:w-auto"
+              onClick={handleToggleEdit}
+            >
+              {showEdit ? "Fechar" : "Editar Perfil"}
+            </Button>
+          </div>
         </div>
-      )}
 
-      <Card className="overflow-hidden border border-gray-200/70 dark:border-neutral-800/70 rounded-2xl shadow-sm">
-        <CardContent className="p-0">
-          {/* Top strip igual as telas novas */}
-          <div className="relative overflow-hidden bg-white/80 dark:bg-neutral-900/60 backdrop-blur px-5 py-5">
-            <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
-            <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
+        {/* EditProfileCard */}
+        {showEdit && (
+          <Panel className="p-0">
+            <div className="p-5">
+              <EditProfileCard
+                profile={userProfile}
+                onCancel={() => setShowEdit(false)}
+                onSave={(newProfile: any) => {
+                  setUserProfile((p: any) => ({ ...p, ...newProfile }));
+                  setShowEdit(false);
+                }}
+              />
+            </div>
+          </Panel>
+        )}
 
-            <div className="relative flex items-start justify-between gap-4">
-              {/* ESQUERDA: avatar + infos */}
+        {/* Perfil (Tier + Sequência lado a lado + escudo à direita) */}
+        <Panel className="p-0">
+          <div className="p-5">
+            <div className="flex items-start justify-between gap-4">
               <div className="flex items-start gap-4 min-w-0">
-                {/* Avatar com logo do clube favorito */}
                 <Avatar className="w-16 h-16 rounded-2xl overflow-hidden border border-gray-200 dark:border-neutral-800 bg-white">
                   {userProfile.favoriteTeam &&
                   (clubsMap as any)[userProfile.favoriteTeam] &&
                   (clubsMap as any)[userProfile.favoriteTeam].logo ? (
                     <img
-                      src={getLocalLogo((clubsMap as any)[userProfile.favoriteTeam].logo)}
+                      src={getLocalLogo(
+                        (clubsMap as any)[userProfile.favoriteTeam].logo
+                      )}
                       alt={userProfile.favoriteTeam}
                       className="w-full h-full object-contain p-2"
                     />
@@ -754,26 +855,21 @@ export const ProfileRankingScreen: React.FC = () => {
                   )}
                 </Avatar>
 
-                {/* Nome / username + chips */}
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2 min-w-0">
-                    <h2 className="text-xl font-extrabold text-gray-900 dark:text-gray-100 truncate">
-                      {userProfile.name}
-                    </h2>
-                  </div>
-
+                  <h2 className="text-xl font-extrabold text-gray-900 dark:text-gray-100 truncate">
+                    {userProfile.name}
+                  </h2>
                   <p className="text-sm text-gray-600 dark:text-gray-300 truncate">
                     {userProfile.username}
                   </p>
 
-                  {/* Chips: Tier + Sequência (lado a lado) */}
                   <div className="mt-3 flex flex-wrap items-center gap-2">
                     <span className="inline-flex items-center rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-950/40 px-3 py-1 text-xs font-semibold text-[#014a8f]">
                       {userProfile.level}
                     </span>
 
                     <span className="inline-flex items-center rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 px-3 py-1 text-xs font-semibold text-gray-700 dark:text-gray-200">
-                      Sequência Atual:{" "}
+                      Sequência Atual:
                       <span className="ml-1 font-extrabold text-[#014a8f] tabular-nums">
                         {safeStreak}
                       </span>
@@ -782,8 +878,7 @@ export const ProfileRankingScreen: React.FC = () => {
                 </div>
               </div>
 
-              {/* DIREITA: escudo + botão */}
-              <div className="flex flex-col sm:flex-row items-end sm:items-center gap-3 shrink-0">
+              <div className="shrink-0">
                 <div className="w-16 h-16 rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/30 flex items-center justify-center p-2">
                   <img
                     src={getTierBadgeSrc(userProfile.bissTierKey)}
@@ -792,248 +887,278 @@ export const ProfileRankingScreen: React.FC = () => {
                     loading="lazy"
                   />
                 </div>
-
-                <Button
-                  size="sm"
-                  className="bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl w-full sm:w-auto"
-                  onClick={handleToggleEdit}
-                >
-                  {showEdit ? "Fechar" : "Editar Perfil"}
-                </Button>
               </div>
             </div>
           </div>
-        </CardContent>
-      </Card>
+        </Panel>
 
-
-      {/* =======================================================
-          ✅ NOVO: Painel de Estatísticas e Progresso (4 boxes)
-         ======================================================= */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-lg">Painel de Estatísticas e Progresso</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
-            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
-              <p className="text-xs text-gray-600">Apostas</p>
-              <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeBets}</p>
+        {/* Painel de Estatísticas (novo) */}
+        <Panel className="p-0">
+          <div className="p-5">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                Painel de Estatísticas
+              </h3>
+              <span className="text-xs text-gray-600 dark:text-gray-300">
+                base do seu histórico
+              </span>
             </div>
 
-            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
-              <p className="text-xs text-gray-600">Vitórias</p>
-              <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeWins}</p>
-            </div>
-
-            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
-              <p className="text-xs text-gray-600">Sequência Maior</p>
-              <p className="text-2xl font-bold text-gray-800 tabular-nums">
-                {Number(userProfile.longestStreak || 0)}
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
-              <p className="text-xs text-gray-600">Lucro Total</p>
-              <p className={`text-2xl font-bold ${userProfile.totalProfit >= 0 ? 'text-green-600' : 'text-red-600'
-                }`}>R$ {userProfile.totalProfit.toFixed(2)}</p>
-              
-            </div>
-
-            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
-              <p className="text-xs text-gray-600">ROI</p>
-              <p className={`text-2xl font-bold ${Number(userProfile.bissYield || 0) >= 0 ? 'text-green-700' : 'text-red-700'}`}>
-                {fmtPct1(Number(userProfile.bissYield || 0))}
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
-              <p className="text-xs text-gray-600">Percentual Acertos</p>
-              <p className="text-2xl font-bold text-green-600 tabular-nums">
-                {fmtPct1(Number(userProfile.winRate || 0))}
-              </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              <StatCard
+                label="Apostas"
+                value={safeBets}
+                icon={<Target className="w-4 h-4 text-[#014a8f]" />}
+              />
+              <StatCard
+                label="Vitórias"
+                value={safeWins}
+                icon={<Trophy className="w-4 h-4 text-[#014a8f]" />}
+              />
+              <StatCard
+                label="Sequência Maior"
+                value={Number(userProfile.longestStreak || 0)}
+                icon={<TrendingUp className="w-4 h-4 text-[#014a8f]" />}
+              />
+              <StatCard
+                label="Lucro Total"
+                value={
+                  <span
+                    className={
+                      Number(userProfile.totalProfit || 0) >= 0
+                        ? "text-green-700"
+                        : "text-red-700"
+                    }
+                  >
+                    R$ {Number(userProfile.totalProfit || 0).toFixed(2)}
+                  </span>
+                }
+                icon={<Award className="w-4 h-4 text-[#014a8f]" />}
+              />
+              <StatCard
+                label="ROI"
+                value={
+                  <span
+                    className={
+                      Number(userProfile.bissYield || 0) >= 0
+                        ? "text-green-700"
+                        : "text-red-700"
+                    }
+                  >
+                    {fmtPct1(Number(userProfile.bissYield || 0))}
+                  </span>
+                }
+                icon={<TrendingUp className="w-4 h-4 text-[#014a8f]" />}
+              />
+              <StatCard
+                label="% Acertos"
+                value={
+                  <span className="text-green-700">
+                    {fmtPct1(Number(userProfile.winRate || 0))}
+                  </span>
+                }
+                icon={<CheckCircle2 className="w-4 h-4 text-green-700" />}
+              />
             </div>
           </div>
-        </CardContent>
-      </Card>
+        </Panel>
 
-      <Card>
-        <CardContent className="p-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* =========================
-                COLUNA ESQUERDA: TIER ATUAL
-              ========================= */}
-            <div className="rounded-2xl bg-white/80 border border-gray-200/70 shadow-sm p-5">
-              <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold text-gray-800">Tier Atual</p>
+        {/* Tier + Desafios (AGORA no estilo Panel da página) */}
+        <Panel className="p-0">
+          <div className="p-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* =========================
+                  COLUNA ESQUERDA: TIER ATUAL
+                ========================= */}
+              <div className="rounded-2xl bg-white/80 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 shadow-sm p-5">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                    Tier Atual
+                  </p>
 
-                <div className="flex items-center gap-2">
-                  <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
-                    {xpCurrent.toLocaleString()} XP
-                  </Badge>
-                </div>
-              </div>
-
-              <HoverCard openDelay={120}>
-                <HoverCardTrigger asChild>
-                  <div className="mt-4 flex items-center justify-center cursor-pointer">
-                    <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 w-full flex flex-col items-center justify-center">
-                      <img
-                        src={getTierBadgeSrc(tier.key)}
-                        alt={tier.name}
-                        className="h-28 w-28 sm:h-32 sm:w-32 object-contain"
-                        loading="lazy"
-                      />
-                      <p className="mt-3 text-sm font-semibold text-gray-800">{tier.name}</p>
-                    </div>
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100 dark:bg-neutral-900 dark:text-gray-200">
+                      {xpCurrent.toLocaleString()} XP
+                    </Badge>
                   </div>
-                </HoverCardTrigger>
+                </div>
 
-                <HoverCardContent align="start" side="right" className="w-[520px] p-4">
-                  <div className="flex items-center justify-between">
-                    <p className="text-sm font-semibold text-gray-800">
-                      Próximo Tier:{" "}
-                      <span className="text-gray-700">{nextTier?.name || "—"}</span>
-                    </p>
+                <HoverCard openDelay={120}>
+                  <HoverCardTrigger asChild>
+                    <div className="mt-4 flex items-center justify-center cursor-pointer">
+                      <div className="rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-gray-50/70 dark:bg-neutral-900/40 p-6 w-full flex flex-col items-center justify-center">
+                        <img
+                          src={getTierBadgeSrc(tier.key)}
+                          alt={tier.name}
+                          className="h-28 w-28 sm:h-32 sm:w-32 object-contain"
+                          loading="lazy"
+                        />
+                        <p className="mt-3 text-sm font-semibold text-gray-800 dark:text-gray-100">
+                          {tier.name}
+                        </p>
+                      </div>
+                    </div>
+                  </HoverCardTrigger>
+
+                  <HoverCardContent
+                    align="start"
+                    side="right"
+                    className="w-[520px] p-4 dark:bg-neutral-950 dark:border-neutral-800"
+                  >
+                    <div className="flex items-center justify-between">
+                      <p className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                        Próximo Tier:{" "}
+                        <span className="text-gray-700 dark:text-gray-300">
+                          {nextTier?.name || "—"}
+                        </span>
+                      </p>
+
+                      {nextTier ? (
+                        <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100 dark:bg-neutral-900 dark:text-gray-200">
+                          {nextTier.xp.toLocaleString()} XP
+                        </Badge>
+                      ) : (
+                        <Badge className="bg-green-100 text-green-700 hover:bg-green-100 dark:bg-green-900/30 dark:text-green-200">
+                          Topo
+                        </Badge>
+                      )}
+                    </div>
 
                     {nextTier ? (
-                      <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
-                        {nextTier.xp.toLocaleString()} XP
-                      </Badge>
+                      <div className="mt-4 space-y-4">
+                        <ProgressRow
+                          label="XP"
+                          leftValue={xpCurrent.toLocaleString()}
+                          rightValue={xpEnd.toLocaleString()}
+                          pct={Math.round(xpProgress * 100)}
+                          done={xpCurrent >= xpEnd}
+                          tone="primary"
+                        />
+
+                        <ProgressRow
+                          label="Apostas"
+                          leftValue={Number(userProfile.totalBets || 0).toString()}
+                          rightValue={nextTier.bets.toString()}
+                          pct={Math.round(betsProgress * 100)}
+                          done={Number(userProfile.totalBets || 0) >= nextTier.bets}
+                          tone="blue"
+                        />
+
+                        <ProgressRow
+                          label="Vitórias"
+                          leftValue={winsApprox.toString()}
+                          rightValue={nextTier.wins.toString()}
+                          pct={Math.round(winsProgress * 100)}
+                          done={winsApprox >= nextTier.wins}
+                          tone="green"
+                        />
+
+                        <ProgressRow
+                          label="% Acertos"
+                          leftValue={Number(userProfile.winRate || 0).toFixed(1)}
+                          rightValue={nextTier.acc.toFixed(1)}
+                          pct={Math.round(accProgress * 100)}
+                          done={Number(userProfile.winRate || 0) >= nextTier.acc}
+                          tone={Number(userProfile.winRate || 0) >= nextTier.acc ? "green" : "danger"}
+                        />
+
+                        <p className="text-[11px] text-gray-500 dark:text-gray-400">
+                          O Tier sobe apenas quando cumprir XP + apostas + vitórias + % acerto mínimo.
+                        </p>
+                      </div>
                     ) : (
-                      <Badge className="bg-green-100 text-green-700 hover:bg-green-100">
-                        Topo
-                      </Badge>
+                      <div className="mt-4 p-3 rounded-lg bg-green-50 border border-green-200 text-green-800 dark:bg-green-950/20 dark:border-green-900/40 dark:text-green-200">
+                        <p className="font-semibold">Você chegou ao topo: {tier.name} 🎉</p>
+                        <p className="text-sm">Agora é manter consistência e defender o nível.</p>
+                      </div>
                     )}
-                  </div>
-
-                  {nextTier ? (
-                    <div className="mt-4 space-y-4">
-                      <ProgressRow
-                        label="XP"
-                        leftValue={xpCurrent.toLocaleString()}
-                        rightValue={xpEnd.toLocaleString()}
-                        pct={Math.round(xpProgress * 100)}
-                        done={xpCurrent >= xpEnd}
-                        tone="primary"
-                      />
-
-                      <ProgressRow
-                        label="Apostas"
-                        leftValue={Number(userProfile.totalBets || 0).toString()}
-                        rightValue={nextTier.bets.toString()}
-                        pct={Math.round(betsProgress * 100)}
-                        done={Number(userProfile.totalBets || 0) >= nextTier.bets}
-                        tone="blue"
-                      />
-
-                      <ProgressRow
-                        label="Vitórias"
-                        leftValue={winsApprox.toString()}
-                        rightValue={nextTier.wins.toString()}
-                        pct={Math.round(winsProgress * 100)}
-                        done={winsApprox >= nextTier.wins}
-                        tone="green"
-                      />
-
-                      <ProgressRow
-                        label="% Acertos"
-                        leftValue={Number(userProfile.winRate || 0).toFixed(1)}
-                        rightValue={nextTier.acc.toFixed(1)}
-                        pct={Math.round(accProgress * 100)}
-                        done={Number(userProfile.winRate || 0) >= nextTier.acc}
-                        tone={Number(userProfile.winRate || 0) >= nextTier.acc ? "green" : "danger"}
-                      />
-
-                      <p className="text-[11px] text-gray-500">
-                        O Tier sobe apenas quando cumprir XP + apostas + vitórias + % acerto mínimo.
-                      </p>
-                    </div>
-                  ) : (
-                    <div className="mt-4 p-3 rounded-lg bg-green-50 border border-green-200 text-green-800">
-                      <p className="font-semibold">Você chegou ao topo: {tier.name} 🎉</p>
-                      <p className="text-sm">Agora é manter consistência e defender o nível.</p>
-                    </div>
-                  )}
-                </HoverCardContent>
-              </HoverCard>
-            </div>
-
-            {/* ======================
-                COLUNA DIREITA: DESAFIOS
-              ====================== */}
-            <div className="rounded-2xl bg-white/80 border border-gray-200/70 shadow-sm p-5">
-              <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold text-gray-800">Desafios</p>
-
-                <div className="flex items-center gap-2">
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">
-                    {dailyDoneCount}/{dailyTotalCount} diários
-                  </Badge>
-                  <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
-                    🔥 {dailyStreakDays} dias
-                  </Badge>
-                </div>
+                  </HoverCardContent>
+                </HoverCard>
               </div>
 
-              <div className="mt-4">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-semibold text-gray-800">Hoje</h4>
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">Diário</Badge>
+              {/* ======================
+                  COLUNA DIREITA: DESAFIOS
+                ====================== */}
+              <div className="rounded-2xl bg-white/80 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 shadow-sm p-5">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+                    Desafios
+                  </p>
+
+                  <div className="flex items-center gap-2">
+                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-200">
+                      {dailyDoneCount}/{dailyTotalCount} diários
+                    </Badge>
+                    <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100 dark:bg-neutral-900 dark:text-gray-200">
+                      🔥 {dailyStreakDays} dias
+                    </Badge>
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-3">
-                  {dailyChallenges.map((c: any) => {
-                    const pct = progressPct(c.current, c.target);
-                    const done = !!c.done;
+                <div className="mt-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="font-semibold text-gray-800 dark:text-gray-100">Hoje</h4>
+                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-200">
+                      Diário
+                    </Badge>
+                  </div>
 
-                    return (
-                      <div
-                        key={c.id}
-                        className={`p-3 rounded-lg border ${
-                          done ? "bg-green-50 border-green-200" : "bg-gray-50 border-gray-200"
-                        }`}
-                      >
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <p className={`font-semibold ${done ? "text-green-800" : "text-gray-800"}`}>
-                              {c.title}
-                            </p>
-                            <p className="text-xs text-gray-600">{c.desc}</p>
+                  <div className="grid grid-cols-1 gap-3">
+                    {dailyChallenges.map((c: any) => {
+                      const pct = progressPct(c.current, c.target);
+                      const done = !!c.done;
+
+                      return (
+                        <div
+                          key={c.id}
+                          className={`p-3 rounded-xl border ${
+                            done
+                              ? "bg-green-50 border-green-200 dark:bg-green-950/20 dark:border-green-900/40"
+                              : "bg-gray-50 border-gray-200 dark:bg-neutral-900/40 dark:border-neutral-800"
+                          }`}
+                        >
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="min-w-0">
+                              <p className={`font-semibold ${done ? "text-green-800 dark:text-green-200" : "text-gray-800 dark:text-gray-100"}`}>
+                                {c.title}
+                              </p>
+                              <p className="text-xs text-gray-600 dark:text-gray-400 truncate">
+                                {c.desc}
+                              </p>
+                            </div>
+
+                            <div className="text-right shrink-0">
+                              <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100 dark:bg-neutral-900 dark:text-gray-200">
+                                +{c.rewardXp} XP
+                              </Badge>
+                            </div>
                           </div>
 
-                          <div className="text-right">
-                            <Badge className="bg-gray-100 text-gray-700 hover:bg-gray-100">
-                              +{c.rewardXp} XP
-                            </Badge>
+                          <div className="mt-3">
+                            <div className="flex items-center justify-between text-xs text-gray-600 dark:text-gray-400 mb-1">
+                              <span>Progresso</span>
+                              <span>
+                                {c.current}/{c.target} ({pct}%)
+                              </span>
+                            </div>
+
+                            <div className="w-full h-2 rounded bg-gray-200 dark:bg-neutral-800 overflow-hidden">
+                              <div
+                                className={`h-2 ${done ? "bg-green-600" : "bg-[#014a8f]"}`}
+                                style={{ width: `${pct}%` }}
+                              />
+                            </div>
                           </div>
                         </div>
-
-                        <div className="mt-3">
-                          <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
-                            <span>Progresso</span>
-                            <span>
-                              {c.current}/{c.target} ({pct}%)
-                            </span>
-                          </div>
-
-                          <div className="w-full h-2 rounded bg-gray-200 overflow-hidden">
-                            <div
-                              className={`h-2 ${done ? "bg-green-600" : "bg-[#014a8f]"}`}
-                              style={{ width: `${pct}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </CardContent>
-      </Card>
-
+        </Panel>
+      </div>
     </div>
   );
 };

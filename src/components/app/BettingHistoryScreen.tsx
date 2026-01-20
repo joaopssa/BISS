@@ -489,10 +489,11 @@ export default function BettingHistoryScreen() {
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
       {/* Header igual Finance */}
       <div className="p-4 sm:p-6 max-w-7xl mx-auto">
-        <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
-          <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
-
+        <div className="relative rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+          <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl">
+            <div className="absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+            <div className="absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
+          </div>
           <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div>
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -503,7 +504,7 @@ export default function BettingHistoryScreen() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto">
               <div className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-3 py-2">
                 <span className="text-[11px] font-semibold text-[#014a8f]">
                   Atualizado
@@ -513,7 +514,7 @@ export default function BettingHistoryScreen() {
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 relative">
+              <div className="flex items-center gap-2 relative flex-wrap sm:flex-nowrap">
                 <Button
                   className="bg-[#014a8f] hover:bg-[#003b70] text-white"
                   onClick={async () => {
@@ -526,12 +527,17 @@ export default function BettingHistoryScreen() {
 
                 <Button
                   id="filters-toggle"
-                  onClick={() => setShowFilters(!showFilters)}
-                  className={`text-sm flex items-center gap-2 ${
+                  type="button"
+                  variant={showFilters || filterLeague || filterMarket || filterStatus ? "outline" : "default"}
+                  onClick={() => setShowFilters((v) => !v)}
+                  className={[
+                    "h-10 whitespace-nowrap rounded-xl px-4 shadow-sm",
+                    "flex items-center gap-2",
+                    "border border-[#014a8f]/30",
                     showFilters || filterLeague || filterMarket || filterStatus
-                      ? "bg-white text-[#014a8f] hover:bg-gray-100 dark:bg-neutral-900 dark:hover:bg-neutral-800"
-                      : "bg-[#014a8f] text-white hover:bg-[#003b70]"
-                  }`}
+                      ? "bg-white text-[#014a8f] hover:bg-gray-50 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
+                      : "bg-[#014a8f] text-white hover:bg-[#003b70]",
+                  ].join(" ")}
                 >
                   <FilterIcon />
                   Filtros
@@ -539,6 +545,7 @@ export default function BettingHistoryScreen() {
                     <span className="ml-1 w-2 h-2 rounded-full bg-red-500" />
                   )}
                 </Button>
+
 
                 {/* Painel de filtros */}
                 {showFilters && (
@@ -692,53 +699,81 @@ export default function BettingHistoryScreen() {
                       </p>
                     </div>
                   </div>
-
-                  <button
-                    onClick={() => setAllClubsOpen(true)}
-                    className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-3 py-2 text-sm font-semibold text-[#014a8f] hover:bg-white dark:hover:bg-neutral-900 transition"
-                  >
-                    Ver todos
-                    <span className="text-gray-400">→</span>
-                  </button>
                 </div>
 
                 {/* KPIs (padrão Finance) */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">Apostas</div>
-                    <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
-                      {totalApostas}
+                  {/* Apostas */}
+                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px]
+                                  grid grid-rows-[auto_1fr_auto]">
+                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                      Apostas
                     </div>
+
+                    {/* SLOT DO NÚMERO (alinha todos) */}
+                    <div className="flex items-center min-h-[44px]">
+                      <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
+                        {totalApostas}
+                      </div>
+                    </div>
+
+                    {/* SLOT DO FOOTER (vazio mas ocupa) */}
+                    <div className="h-[16px]" />
                   </div>
 
-                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">Partidas</div>
-                    <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
-                      {totalGames}
+                  {/* Partidas */}
+                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px]
+                                  grid grid-rows-[auto_1fr_auto]">
+                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                      Partidas
                     </div>
+
+                    <div className="flex items-center min-h-[44px]">
+                      <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
+                        {totalGames}
+                      </div>
+                    </div>
+
+                    <div className="h-[16px]" />
                   </div>
 
-                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">Decididas</div>
-                    <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
-                      {decididas}
+                  {/* Decididas */}
+                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px]
+                                  grid grid-rows-[auto_1fr_auto]">
+                    <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                      Decididas
                     </div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">
+
+                    <div className="flex items-center min-h-[44px]">
+                      <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
+                        {decididas}
+                      </div>
+                    </div>
+
+                    {/* footer real */}
+                    <div className="text-xs text-gray-600 dark:text-gray-400 leading-none">
                       <span className="font-semibold text-green-700 dark:text-green-400">{totalGanhas}G</span>{" "}
                       <span className="text-gray-400">•</span>{" "}
                       <span className="font-semibold text-red-700 dark:text-red-400">{totalPerdidas}P</span>
                     </div>
                   </div>
 
-                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
+                  {/* Acerto */}
+                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px]
+                                  grid grid-rows-[auto_1fr_auto]">
                     <div className="flex items-center justify-between">
-                      <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">Acerto</div>
+                      <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                        Acerto
+                      </div>
                     </div>
 
-                    <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
-                      {taxaAcerto.toFixed(0)}%
+                    <div className="flex items-center min-h-[44px]">
+                      <div className="text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums leading-none">
+                        {taxaAcerto.toFixed(0)}%
+                      </div>
                     </div>
 
+                    {/* footer real (barra) */}
                     <div className="h-2 rounded-full bg-white/70 dark:bg-neutral-900/50 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
                       <div
                         className="h-full rounded-full bg-[#014a8f]"
@@ -751,10 +786,16 @@ export default function BettingHistoryScreen() {
                 {/* Top times */}
                 <div className="mt-6">
                   <div className="flex items-center justify-between mb-3">
-                    <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                    <p className="text-xl font-extrabold text-gray-900 dark:text-white leading-tight">
                       Times <span className="text-gray-500">({distinctTeams})</span>
                     </p>
-                    <p className="text-xs text-gray-500">Clubes com mais apostas</p>
+                    <button
+                    onClick={() => setAllClubsOpen(true)}
+                    className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-3 py-2 text-sm font-semibold text-[#014a8f] hover:bg-white dark:hover:bg-neutral-900 transition"
+                  >
+                    Ver todos
+                    <span className="text-gray-400">→</span>
+                  </button>
                   </div>
 
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -766,7 +807,6 @@ export default function BettingHistoryScreen() {
                           type="button"
                           onClick={() => setAllClubsOpen(true)}
                           className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-900/60 transition p-4 flex flex-col items-center justify-center focus:outline-none focus:ring-2 focus:ring-[#014a8f]/30"
-                          title="Ver todos os times"
                         >
                           <div className="w-14 h-14 rounded-2xl bg-white dark:bg-neutral-900 ring-1 ring-black/5 dark:ring-white/5 shadow-sm flex items-center justify-center p-2">
                             {logo ? <img src={logo} className="w-full h-full object-contain" /> : <div className="text-gray-400 text-xs">?</div>}
@@ -780,9 +820,6 @@ export default function BettingHistoryScreen() {
                               <span className="font-semibold text-green-700 dark:text-green-400">{club.ganha}</span>
                               <span className="text-gray-400">-</span>
                               <span className="font-semibold text-red-700 dark:text-red-400">{club.perdida}</span>
-                            </div>
-                            <div className="mt-1 text-[11px] text-gray-500 leading-snug line-clamp-2 min-h-[32px]">
-                              {displayClubName(club.name)}
                             </div>
                           </div>
                         </button>

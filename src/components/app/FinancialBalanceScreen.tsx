@@ -52,6 +52,38 @@ type Movimentacao = {
   data_movimentacao: string;
 };
 
+const KPIBox = ({
+  label,
+  value,
+  footer,
+  valueClass = "text-3xl",
+}: {
+  label: string;
+  value: React.ReactNode;
+  footer?: React.ReactNode;
+  valueClass?: string;
+}) => {
+  return (
+    <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] grid grid-rows-[auto_1fr_auto]">
+      <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+        {label}
+      </div>
+
+      <div className="flex items-center min-h-[44px]">
+        <div
+          className={`${valueClass} font-extrabold tabular-nums leading-none text-gray-900 dark:text-white`}
+        >
+          {value}
+        </div>
+      </div>
+
+      <div className="min-h-[16px] text-xs text-gray-600 dark:text-gray-400 leading-none">
+        {footer ?? <span className="opacity-0">.</span>}
+      </div>
+    </div>
+  );
+};
+
 export default function FinancialBalanceScreen() {
   // Scroll para o topo ao montar o componente
   useEffect(() => {
@@ -90,14 +122,14 @@ export default function FinancialBalanceScreen() {
 
     const map: Record<
       string,
-      { bets: number; wins: number; stakeAll: number; premios: number; lostStake: number }
+      { bets: number; decided: number; wins: number; stakeAll: number; premios: number; lostStake: number }
     > = {};
 
     // Bilhetes: bets / wins / stakes
     bilhetes.forEach((b: any) => {
       const dt = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
       const k = keyMonth(dt);
-      if (!map[k]) map[k] = { bets: 0, wins: 0, stakeAll: 0, premios: 0, lostStake: 0 };
+      if (!map[k]) map[k] = { bets: 0, decided: 0, wins: 0, stakeAll: 0, premios: 0, lostStake: 0 };
 
       map[k].bets += 1;
 
@@ -105,8 +137,16 @@ export default function FinancialBalanceScreen() {
       map[k].stakeAll += stake;
 
       const st = String(b.status || "").toLowerCase();
-      if (st === "ganho" || st === "ganha") map[k].wins += 1;
-      if (st === "perdido" || st === "perdida") map[k].lostStake += stake;
+      const isWin = st === "ganho" || st === "ganha";
+      const isLoss = st === "perdido" || st === "perdida";
+
+      if (isWin) {
+        map[k].wins += 1;
+        map[k].decided += 1;
+      } else if (isLoss) {
+        map[k].lostStake += stake;
+        map[k].decided += 1;
+      }
     });
 
     // Extrato: prêmios por mês
@@ -114,28 +154,23 @@ export default function FinancialBalanceScreen() {
       if (m.tipo !== "premio") return;
       const dt = new Date(m.data_movimentacao);
       const k = keyMonth(dt);
-      if (!map[k]) map[k] = { bets: 0, wins: 0, stakeAll: 0, premios: 0, lostStake: 0 };
-
+      if (!map[k]) map[k] = { bets: 0, decided: 0, wins: 0, stakeAll: 0, premios: 0, lostStake: 0 };
       map[k].premios += Number(m.valor || 0);
     });
 
     // Monta lista (mais recente primeiro)
     return Object.entries(map)
-      .sort((a, b) => b[0].localeCompare(a[0]))
-      .map(([month, v]) => {
-        const winRate = v.bets > 0 ? Math.round((v.wins / v.bets) * 1000) / 10 : 0;
+    .sort((a, b) => b[0].localeCompare(a[0]))
+    .map(([month, v]) => {
+      // ✅ agora %Acerto usa SOMENTE decididos (igual ao anual)
+      const winRate = v.decided > 0 ? Math.round((v.wins / v.decided) * 1000) / 10 : 0;
 
-        // Profit mantendo sua lógica do progresso: prêmios - (apenas perdas)
-        const profit = Math.round((v.premios - v.lostStake) * 100) / 100;
+      // sua lógica de lucro: prêmios - stakes perdidos
+      const profit = Math.round((v.premios - v.lostStake) * 100) / 100;
 
-        return {
-          month,
-          bets: v.bets,
-          winRate,
-          profit,
-        };
-      });
-  }, [extrato, bilhetes]);
+      return { month, bets: v.bets, winRate, profit };
+    });
+}, [extrato, bilhetes]);
 
 
   // REF para detectar clique fora do dropdown
@@ -410,70 +445,87 @@ export default function FinancialBalanceScreen() {
     return diff > 0 ? diff : 0;
   };
 
-  // --- LÓGICA DO CALENDÁRIO ANUAL (GitHub real) ---
-const calendarData = useMemo(() => {
+  const calendarHeatmap = useMemo(() => {
   const year = new Date().getFullYear();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
 
   const toKey = (d: Date) =>
-    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(
+      d.getDate()
+    ).padStart(2, "0")}`;
 
   const start = new Date(year, 0, 1);
   const end = new Date(year, 11, 31);
 
-  // Mapa com lucro/prejuízo por dia
-  const values: Record<string, number> = {};
+  const startSunday = new Date(start);
+  startSunday.setDate(startSunday.getDate() - startSunday.getDay()); // domingo anterior
 
-  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+  const endSaturday = new Date(end);
+  endSaturday.setDate(endSaturday.getDate() + (6 - endSaturday.getDay())); // sábado posterior
+
+  const values: Record<string, number> = {};
+  for (let d = new Date(startSunday); d <= endSaturday; d.setDate(d.getDate() + 1)) {
     values[toKey(d)] = 0;
   }
 
-  extrato.forEach(m => {
+  extrato.forEach((m) => {
     if (m.tipo !== "premio") return;
-    const key = toKey(new Date(m.data_movimentacao));
-    if (key in values) values[key] += Number(m.valor) || 0;
+    const dt = new Date(m.data_movimentacao);
+    const k = toKey(dt);
+    if (k in values) values[k] += Number(m.valor) || 0;
   });
 
-  bilhetes.forEach(b => {
-    const st = (b.status || "").toLowerCase();
+  bilhetes.forEach((b: any) => {
+    const st = String(b.status || "").toLowerCase();
     if (st !== "perdido" && st !== "perdida") return;
-    const key = toKey(new Date(b.data_criacao || b.createdAt || Date.now()));
-    if (key in values) values[key] -= Number(b.stake_total || b.stake || 0);
+    const dt = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
+    const k = toKey(dt);
+    if (k in values) values[k] -= Number(b.stake_total || b.stake || 0);
   });
 
-  // Descobrir dia da semana do primeiro dia do ano
-  const firstDayWeek = start.getDay(); // 0 = domingo
+  const weeks: { date: Date; key: string; value: number; inYear: boolean }[][] = [];
 
-  const weeks: {
-    date: string;
-    value: number;
-  }[][] = [];
-
-  let currentWeek: any[] = [];
-
-  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-    const dow = d.getDay(); // 0..6
-    const key = toKey(d);
-
-  currentWeek[dow] = {
-    date: key,
-    value: values[key] ?? 0
-  };
-
-
-    // Se sábado, fecha semana
-    if (dow === 6) {
-      weeks.push(currentWeek);
-      currentWeek = [];
+  let cursor = new Date(startSunday);
+  while (cursor <= endSaturday) {
+    const week: any[] = [];
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(cursor);
+      const k = toKey(d);
+      week.push({
+        date: d,
+        key: k,
+        value: values[k] ?? 0,
+        inYear: d.getFullYear() === year,
+      });
+      cursor.setDate(cursor.getDate() + 1);
     }
+    weeks.push(week);
   }
 
-  // Última semana incompleta
-  if (currentWeek.length > 0) {
-    weeks.push(currentWeek);
-  }
+  const absMax = Math.max(
+    1,
+    ...Object.entries(values)
+      .filter(([k]) => k.startsWith(`${year}-`))
+      .map(([, v]) => Math.abs(v))
+  );
 
-  return weeks;
+  const monthNames = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+  const monthLabels: { weekIndex: number; label: string }[] = [];
+
+  weeks.forEach((w, wi) => {
+    const firstInYear = w.find((x) => x.inYear);
+    if (!firstInYear) return;
+    const d = firstInYear.date;
+    if (d.getDate() <= 7) {
+      monthLabels.push({ weekIndex: wi, label: monthNames[d.getMonth()] });
+    }
+  });
+
+  return { weeks, absMax, monthLabels, year, todayKey };
 }, [extrato, bilhetes]);
+
 
 const formatMonth = (ym: string) => {
   // espera "YYYY-MM"
@@ -504,6 +556,23 @@ const formatBRLCompact = (value: number) => {
   });
 };
 
+const heatClass = (v: number, absMax: number) => {
+  if (v === 0) return "bg-gray-200 dark:bg-neutral-700";
+  const r = Math.min(1, Math.abs(v) / absMax);
+  const lvl = r < 0.25 ? 1 : r < 0.5 ? 2 : r < 0.75 ? 3 : 4;
+
+  if (v > 0) {
+    return lvl === 1 ? "bg-green-200"
+      : lvl === 2 ? "bg-green-300"
+      : lvl === 3 ? "bg-green-400"
+      : "bg-green-500";
+  }
+
+  return lvl === 1 ? "bg-red-200"
+    : lvl === 2 ? "bg-red-300"
+    : lvl === 3 ? "bg-red-400"
+    : "bg-red-500";
+};
 
 // ====== RESUMO ANUAL (KPIs) ======
 const annualSummary = useMemo(() => {
@@ -837,189 +906,124 @@ const annualSummary = useMemo(() => {
                     Resumo anual
                   </h2>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    KPIs + lucro diário (estilo calendário)
+                    KPIs + Lucro diário
                   </p>
                 </div>
               </div>
             </div>
 
             {/* KPIs ANUAIS */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
-              {/* Lucro total */}
-              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
-                  Lucro Anual
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+            <KPIBox
+              label="Lucro anual"
+              value={
+                <span className={annualSummary.profitAno >= 0 ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"}>
+                  {annualSummary.profitAno >= 0 ? "" : "-"}R$ {formatBRLCompact(Math.abs(annualSummary.profitAno))}
+                </span>
+              }
+              valueClass="text-[20px] sm:text-[22px]"
+            />
+
+            <KPIBox
+              label="Bilhetes"
+              value={annualSummary.bilhetesAno}
+              valueClass="text-[20px] sm:text-[22px]"
+            />
+
+            <KPIBox
+              label="Taxa acerto"
+              value={`${annualSummary.winRateAno.toFixed(0)}%`}
+              footer={
+                <div className="h-2 rounded-full bg-white/70 dark:bg-neutral-900/50 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-[#014a8f]"
+                    style={{ width: `${Math.max(0, Math.min(100, annualSummary.winRateAno))}%` }}
+                  />
                 </div>
-                <div className="mt-1 flex-1 flex items-center">
-                  {(() => {
-                    const totalPremios = extrato.reduce(
-                      (acc, m) => (m.tipo === "premio" ? acc + Number(m.valor || 0) : acc),
-                      0
-                    );
-                    const totalPerdido = bilhetes.reduce((acc, b) => {
-                      const st = String(b.status || "").toLowerCase();
-                      if (st === "perdido" || st === "perdida")
-                        return acc + Number(b.stake_total || b.stake || 0);
-                      return acc;
-                    }, 0);
-                    const profit = totalPremios - totalPerdido;
-                    const isPos = profit >= 0;
+              }
+              valueClass="text-[20px] sm:text-[22px]"
+            />
 
-                    return (
-                      <>
-                        <div
-                          className={`min-w-0 whitespace-nowrap font-extrabold tabular-nums leading-none text-[18px] sm:text-[20px] ${
-                            isPos ? "text-green-700" : "text-red-700"
-                          }`}
-                          title={`${isPos ? "" : "-"} ${formatBRL(Math.abs(profit))}`}
-                        >
-                          {isPos ? "" : "-"}R$ {formatBRLCompact(Math.abs(profit))}
-                        </div>
-                      </>
-                    );
-                  })()}
-                </div>
-              </div>
-
-              {/* Bilhetes */}
-              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
-                  Bilhetes
-                </div>
-                <div className="whitespace-nowrap font-extrabold text-gray-900 dark:text-gray-100 tabular-nums leading-none text-[20px] sm:text-[30px]">
-                  {bilhetes.length}
-                </div>
-              </div>
-
-              {/* % bilhetes ganhos */}
-              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
-                  Taxa Acerto
-                </div>
-
-                {(() => {
-                  const decided = bilhetes.reduce((acc, b) => {
-                    const st = String(b.status || "").toLowerCase();
-                    if (st === "ganho" || st === "ganha" || st === "perdido" || st === "perdida")
-                      return acc + 1;
-                    return acc;
-                  }, 0);
-
-                  const wins = bilhetes.reduce((acc, b) => {
-                    const st = String(b.status || "").toLowerCase();
-                    if (st === "ganho" || st === "ganha") return acc + 1;
-                    return acc;
-                  }, 0);
-
-                  const winRate = decided > 0 ? (wins / decided) * 100 : 0;
-
-                  return (
-                    <>
-                      <div className="whitespace-nowrap font-extrabold text-gray-900 dark:text-gray-100 tabular-nums leading-none text-[18px] sm:text-[20px]">
-                        {winRate.toFixed(0)}%
-                      </div>
-
-                      <div className="mt-2 h-2 rounded-full bg-gray-100 dark:bg-neutral-800 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
-                        <div
-                          className="h-full rounded-full bg-[#014a8f]"
-                          style={{ width: `${Math.max(0, Math.min(100, winRate))}%` }}
-                        />
-                      </div>
-                    </>
-                  );
-                })()}
-              </div>
-
-              {/* LUCRO MÉDIO POR BILHETE (substitui ROI) */}
-              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
-                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
-                  Lucro por bilhete
-                </div>
-
-                {(() => {
-                  const totalPremios = extrato.reduce(
-                    (acc, m) => (m.tipo === "premio" ? acc + Number(m.valor || 0) : acc),
-                    0
-                  );
-                  const totalPerdido = bilhetes.reduce((acc, b) => {
-                    const st = String(b.status || "").toLowerCase();
-                    if (st === "perdido" || st === "perdida")
-                      return acc + Number(b.stake_total || b.stake || 0);
-                    return acc;
-                  }, 0);
-
-                  const profit = totalPremios - totalPerdido;
-                  const denom = Math.max(1, bilhetes.length);
-                  const avg = profit / denom;
-                  const isPos = avg >= 0;
-
-                  return (
-                    <>
-                      <div
-                        className={`min-w-0 whitespace-nowrap font-extrabold tabular-nums leading-none text-[18px] sm:text-[20px] ${
-                          isPos ? "text-green-700" : "text-red-700"
-                        }`}
-                        title={`${isPos ? "" : "-"} ${formatBRL(Math.abs(avg))}`}
-                      >
-                        {isPos ? "" : "-"}R$ {formatBRLCompact(Math.abs(avg))}
-                      </div>
-                    </>
-                  );
-                })()}
-              </div>
-            </div>
-
-            {/* Legenda */}
-            <div className="flex flex-wrap gap-4 text-xs text-gray-500">
-              <div className="flex items-center gap-1">
-                <span className="w-3 h-3 bg-gray-200 dark:bg-neutral-700 rounded-sm" />
-                Neutro
-              </div>
-              <div className="flex items-center gap-1">
-                <span className="w-3 h-3 bg-green-500 rounded-sm" />
-                Lucro
-              </div>
-              <div className="flex items-center gap-1">
-                <span className="w-3 h-3 bg-red-500 rounded-sm" />
-                Prejuízo
-              </div>
-            </div>
+            <KPIBox
+              label="Lucro por bilhete"
+              value={
+                <span className={annualSummary.lucroMedioPorBilhete >= 0 ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"}>
+                  {annualSummary.lucroMedioPorBilhete >= 0 ? "" : "-"}R$ {formatBRLCompact(Math.abs(annualSummary.lucroMedioPorBilhete))}
+                </span>
+              }
+              valueClass="text-[20px] sm:text-[22px]"
+            />
+          </div>
 
             {/* Grid do calendário (mantido, só com “moldura” mais bonita) */}
-            <div className="mt-4 overflow-hidden rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 p-3">
-              <div
-                className="grid"
-                style={{
-                  ["--cell" as any]: "13px",
-                  ["--gap" as any]: "2px",
-                  gridTemplateColumns: `repeat(${calendarData.length}, var(--cell))`,
-                  gridTemplateRows: `repeat(7, var(--cell))`,
-                  gap: "var(--gap)",
-                  gridAutoFlow: "column",
-                }}
-              >
-                {calendarData.map((week, wIdx) =>
-                  week.map((day, dIdx) => {
-                    if (!day) return <div key={`${wIdx}-${dIdx}`} />;
-
-                    let color = "bg-gray-200 dark:bg-neutral-700";
-                    if (day.value > 0) color = "bg-green-500";
-                    if (day.value < 0) color = "bg-red-500";
-
-                    return (
+            <div className="mt-4 overflow-hidden rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 p-4">
+              {/* wrapper central */}
+              <div className="w-full flex justify-center">
+                {/* caixinha central */}
+                <div className="rounded-2xl border border-[#014a8f]/10 bg-white/80 dark:bg-neutral-950/50 px-4 py-3 shadow-sm max-w-full">
+                  <div className="flex justify-center">
+                    {/* SEM scroll feio: deixa o container central e scroll só se precisar */}
+                    <div className="max-w-[680px] w-full overflow-hidden [scrollbar-width:thin]">
                       <div
-                        key={day.date}
-                        title={`${new Date(day.date).toLocaleDateString("pt-BR")} — R$ ${day.value.toFixed(
-                          2
-                        )}`}
-                        className={`rounded-sm ${color}`}
-                        style={{ width: "var(--cell)", height: "var(--cell)" }}
-                      />
-                    );
-                  })
-                )}
+                        className="grid origin-top-left"
+                        style={{
+                          transform: "scale(var(--s))",
+                          ["--s" as any]: "0.92",
+                          gridAutoFlow: "column",
+                          gridTemplateRows: "repeat(7, 12px)",
+                          gridAutoColumns: "12px",
+                          gap: "2px",
+                        }}
+                      >
+                        {calendarHeatmap.weeks.map((week) =>
+                          week.map((day) => {
+                            const opacity = day.inYear ? "opacity-100" : "opacity-30";
+                            const title = `${day.date.toLocaleDateString("pt-BR")} — ${formatBRL(day.value)}`;
+
+                            const isToday = day.key === calendarHeatmap.todayKey;
+
+                            return (
+                              <div
+                                key={day.key}
+                                title={title}
+                                className={[
+                                  "rounded-[3px]",
+                                  opacity,
+                                  heatClass(day.value, calendarHeatmap.absMax),
+                                  // destaque do dia atual:
+                                  isToday
+                                    ? "ring-2 ring-[#014a8f]/35 ring-offset-2 ring-offset-white dark:ring-offset-neutral-950"
+                                    : "",
+                                ].join(" ")}
+                              />
+                            );
+                          })
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Rodapé: ano + Menos/Mais */}
+                  <div className="mt-3 flex items-center justify-between text-[11px] text-gray-500">
+                    <span>{calendarHeatmap.year}</span>
+
+                    <div className="flex items-center gap-2">
+                      <span>Menos</span>
+                      <div className="flex items-center gap-[2px]">
+                        <span className="w-3 h-3 rounded-[3px] bg-gray-200 dark:bg-neutral-700" />
+                        <span className="w-3 h-3 rounded-[3px] bg-green-200" />
+                        <span className="w-3 h-3 rounded-[3px] bg-green-300" />
+                        <span className="w-3 h-3 rounded-[3px] bg-green-400" />
+                        <span className="w-3 h-3 rounded-[3px] bg-green-500" />
+                      </div>
+                      <span>Mais</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>

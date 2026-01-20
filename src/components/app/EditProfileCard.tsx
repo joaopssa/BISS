@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -394,181 +393,371 @@ export const EditProfileCard: React.FC<Props> = ({ profile, onCancel, onSave }) 
   }
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Editar Perfil</CardTitle>
-      </CardHeader>
-      <CardContent>
+    <div className="w-full">
+      {/* Header no padrão das páginas */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+        <div>
+          <h3 className="text-xl font-extrabold text-gray-900 dark:text-white">
+            Editar Perfil
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Preferências do seu perfil e do robô
+          </p>
+        </div>
+
+        <div className="flex items-center gap-2 justify-end">
+          <Button
+            variant="ghost"
+            onClick={onCancel}
+            className="rounded-xl"
+          >
+            Cancelar
+          </Button>
+
+          <Button
+            onClick={handleSave}
+            className="rounded-xl bg-[#014a8f] hover:bg-[#003b70] text-white font-semibold"
+          >
+            Salvar
+          </Button>
+        </div>
+      </div>
+
+      {/* Corpo com “seções” no estilo panel */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {/* Coluna 1 */}
         <div className="space-y-4">
-          {/* Clube favorito */}
-          <div>
-            <Label className="flex items-center gap-2 mb-2"><Heart className="w-4 h-4 text-red-500" /> Clube Favorito</Label>
-            <div className="relative" ref={teamWrapperRef}>
-              <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+          {/* Clube Favorito */}
+          <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 p-4">
+            <Label className="flex items-center gap-2 mb-2 font-semibold text-gray-900 dark:text-gray-100">
+              <Heart className="w-4 h-4 text-red-500" />
+              Clube Favorito
+            </Label>
+
+            <div ref={teamWrapperRef}>
+            {/* INPUT AREA (o "relative" fica só aqui) */}
+            <div className="relative">
+              <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500 dark:text-gray-400 z-10" />
+
               <Input
-                className="pl-10 pr-10"
+                className="pl-10 pr-10 h-11 rounded-xl bg-white/80 dark:bg-neutral-900/40 border-gray-200/70 dark:border-neutral-800 focus-visible:ring-[#014a8f]/30"
                 placeholder="Digite o nome do seu time"
                 value={teamSearchTerm}
-                onChange={(e) => { setTeamSearchTerm(e.target.value); setShowTeamSuggestions(true) }}
+                onChange={(e) => {
+                  setTeamSearchTerm(e.target.value);
+                  setShowTeamSuggestions(true);
+                }}
                 onFocus={() => setShowTeamSuggestions(true)}
               />
+
               {teamSearchTerm && (
-                <X
-                  className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer"
-                  onClick={() => { setTeamSearchTerm(''); setForm({ ...form, favoriteTeam: '' }) }}
-                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    setTeamSearchTerm("");
+                    setForm({ ...form, favoriteTeam: "" });
+                  }}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                  aria-label="Limpar"
+                >
+                  <X className="h-4 w-4" />
+                </button>
               )}
 
               {showTeamSuggestions && teamResults.length > 0 && (
-                <div className="absolute z-40 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
-                  {teamResults.map(t => (
-                    <div
+                <div className="absolute z-40 mt-2 w-full max-h-64 overflow-auto rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/95 dark:bg-neutral-950/90 backdrop-blur shadow-lg">
+                  {teamResults.map((t) => (
+                    <button
+                      type="button"
                       key={t.id}
-                      className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => { setForm({ ...form, favoriteTeam: t.name }); setTeamSearchTerm(t.name); setShowTeamSuggestions(false) }}
-                    >
-                      {t.logo && <img src={t.logo} className="h-5 w-5" alt={t.name} />}
-                      <span>{t.name}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {form.favoriteTeam && (
-                <div className="mt-2 flex items-center bg-green-50 text-green-800 rounded-full px-3 py-1 text-sm gap-2">
-                  {(() => {
-                    const club = (clubsMap as any)[form.favoriteTeam]
-                    const logo = club?.logo ? getLocalLogo(club.logo) : null
-                    return logo ? <img src={logo} className="h-5 w-5" alt="logo" /> : null
-                  })()}
-                  <span>{form.favoriteTeam}</span>
-                  <X className="ml-1 h-3 w-3 cursor-pointer" onClick={() => setForm({ ...form, favoriteTeam: '' })} />
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Ligas favoritas */}
-          <div>
-            <Label className="flex items-center gap-2 mb-2"><Trophy className="w-4 h-4 text-yellow-500" /> Ligas Favoritas</Label>
-            <div className="relative" ref={leagueWrapperRef}>
-              <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
-              <Input
-                className="pl-10 pr-10"
-                placeholder="Digite o nome de uma liga"
-                value={leagueSearchTerm}
-                onChange={(e) => { setLeagueSearchTerm(e.target.value); setShowLeagueSuggestions(true) }}
-                onFocus={() => setShowLeagueSuggestions(true)}
-              />
-              {leagueSearchTerm && <X className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer" onClick={() => setLeagueSearchTerm('')} />}
-              {showLeagueSuggestions && leagueResults.length > 0 && (
-                <div className="absolute z-30 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
-                  {leagueResults.map((l: any) => (
-                    <div key={l.id} className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => handleLeagueSelect(l)}>
-                      {l.logo && <img src={l.logo} className="h-5 w-5" alt={l.name} />}
-                      <span>{l.name}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-            <div className="flex flex-wrap gap-2 mt-2">
-              {(form.favoriteLeagues || []).map((l: string) => (
-                <div key={l} className="flex items-center bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm gap-2">
-                  <span>{l}</span>
-                  <X className="ml-1 h-3 w-3 cursor-pointer" onClick={() => removeLeague(l)} />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Jogadores */}
-          <div>
-            <Label className="flex items-center gap-2 mb-2"><Users className="w-4 h-4 text-gray-700" /> Jogadores Favoritos</Label>
-            <div className="relative" ref={playerWrapperRef}>
-              <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
-              <Input
-                className="pl-10 pr-10"
-                placeholder="Digite o nome de um jogador"
-                value={playerSearchTerm}
-                onChange={(e) => { setPlayerSearchTerm(e.target.value); setShowPlayerSuggestions(true) }}
-                onFocus={() => setShowPlayerSuggestions(true)}
-              />
-              {playerSearchTerm && <X className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer" onClick={() => setPlayerSearchTerm('')} />}
-              {showPlayerSuggestions && playerResults.length > 0 && (
-                <div className="absolute z-20 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
-                  {playerResults.map((p: any) => (
-                    <div
-                      key={p.id}
-                      className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                      className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-50 dark:hover:bg-neutral-900/60"
                       onClick={() => {
-                        if (!(form.favoritePlayers || []).includes(p.name) && (form.favoritePlayers || []).length < 5) {
-                          setForm({ ...form, favoritePlayers: [...(form.favoritePlayers || []), p.name] })
-                        }
-                        setPlayerSearchTerm('')
-                        setShowPlayerSuggestions(false)
+                        setForm({ ...form, favoriteTeam: t.name });
+                        setTeamSearchTerm(t.name);
+                        setShowTeamSuggestions(false);
                       }}
                     >
-                      {p.logo && <img src={p.logo} className="h-5 w-5 rounded-sm object-cover" alt={p.name} />}
-                      <span>{p.name}</span>
-                      {p.club && <span className="ml-auto text-xs text-gray-500">{p.club}</span>}
-                    </div>
+                      {t.logo && <img src={t.logo} className="h-5 w-5" alt={t.name} />}
+                      <span className="text-sm text-gray-800 dark:text-gray-100">
+                        {t.name}
+                      </span>
+                    </button>
                   ))}
                 </div>
               )}
             </div>
 
-            <div className="flex flex-wrap gap-2 mt-2">
-              {(form.favoritePlayers || []).map((pl: string) => (
-                <div key={pl} className="flex items-center bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm gap-2">
-                  <span>{pl}</span>
-                  <X className="ml-1 h-3 w-3 cursor-pointer" onClick={() => removePlayer(pl)} />
+            {/* CHIP (fora do relative do input) */}
+            {form.favoriteTeam && (
+              <div className="mt-3 inline-flex items-center gap-2 rounded-xl border border-green-200/70 dark:border-green-900/40 bg-green-50/70 dark:bg-green-950/20 px-3 py-2 text-sm text-green-800 dark:text-green-200">
+                {(() => {
+                  const club = (clubsMap as any)[form.favoriteTeam];
+                  const logo = club?.logo ? getLocalLogo(club.logo) : null;
+                  return logo ? <img src={logo} className="h-5 w-5" alt="logo" /> : null;
+                })()}
+                <span className="font-semibold">{form.favoriteTeam}</span>
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, favoriteTeam: "" })}
+                  className="ml-1 p-1 rounded-md hover:bg-green-100 dark:hover:bg-green-900/20"
+                  aria-label="Remover"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              </div>
+            )}
+          </div>
+          </div>
+          {/* Ligas Favoritas */}
+          <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 p-4">
+            <Label className="flex items-center gap-2 mb-2 font-semibold text-gray-900 dark:text-gray-100">
+              <Trophy className="w-4 h-4 text-yellow-500" />
+              Ligas Favoritas
+            </Label>
+
+            <div className="relative" ref={leagueWrapperRef}>
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500 dark:text-gray-400" />
+              <Input
+                className="pl-10 pr-10 h-11 rounded-xl bg-white/80 dark:bg-neutral-900/40 border-gray-200/70 dark:border-neutral-800 focus-visible:ring-[#014a8f]/30"
+                placeholder="Digite o nome de uma liga"
+                value={leagueSearchTerm}
+                onChange={(e) => {
+                  setLeagueSearchTerm(e.target.value);
+                  setShowLeagueSuggestions(true);
+                }}
+                onFocus={() => setShowLeagueSuggestions(true)}
+              />
+
+              {leagueSearchTerm && (
+                <button
+                  type="button"
+                  onClick={() => setLeagueSearchTerm("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                  aria-label="Limpar"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+
+              {showLeagueSuggestions && leagueResults.length > 0 && (
+                <div className="absolute z-30 mt-2 w-full max-h-64 overflow-auto rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/95 dark:bg-neutral-950/90 backdrop-blur shadow-lg">
+                  {leagueResults.map((l: any) => (
+                    <button
+                      type="button"
+                      key={l.id}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-50 dark:hover:bg-neutral-900/60"
+                      onClick={() => handleLeagueSelect(l)}
+                    >
+                      {l.logo && (
+                        <img src={l.logo} className="h-5 w-5" alt={l.name} />
+                      )}
+                      <span className="text-sm text-gray-800 dark:text-gray-100">
+                        {l.name}
+                      </span>
+                    </button>
+                  ))}
                 </div>
+              )}
+            </div>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              {(form.favoriteLeagues || []).map((l: string) => (
+                <span
+                  key={l}
+                  className="inline-flex items-center gap-2 rounded-xl border border-blue-200/70 dark:border-blue-900/40 bg-blue-50/60 dark:bg-blue-950/20 px-3 py-1.5 text-sm text-blue-800 dark:text-blue-200"
+                >
+                  {l}
+                  <button
+                    type="button"
+                    onClick={() => removeLeague(l)}
+                    className="p-1 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/20"
+                    aria-label="Remover liga"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Coluna 2 */}
+        <div className="space-y-4">
+          {/* Jogadores */}
+          <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 p-4">
+            <Label className="flex items-center gap-2 mb-2 font-semibold text-gray-900 dark:text-gray-100">
+              <Users className="w-4 h-4 text-gray-700 dark:text-gray-300" />
+              Jogadores Favoritos
+            </Label>
+
+            <div className="relative" ref={playerWrapperRef}>
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500 dark:text-gray-400" />
+              <Input
+                className="pl-10 pr-10 h-11 rounded-xl bg-white/80 dark:bg-neutral-900/40 border-gray-200/70 dark:border-neutral-800 focus-visible:ring-[#014a8f]/30"
+                placeholder="Digite o nome de um jogador"
+                value={playerSearchTerm}
+                onChange={(e) => {
+                  setPlayerSearchTerm(e.target.value);
+                  setShowPlayerSuggestions(true);
+                }}
+                onFocus={() => setShowPlayerSuggestions(true)}
+              />
+
+              {playerSearchTerm && (
+                <button
+                  type="button"
+                  onClick={() => setPlayerSearchTerm("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                  aria-label="Limpar"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+
+              {showPlayerSuggestions && playerResults.length > 0 && (
+                <div className="absolute z-20 mt-2 w-full max-h-64 overflow-auto rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/95 dark:bg-neutral-950/90 backdrop-blur shadow-lg">
+                  {playerResults.map((p: any) => (
+                    <button
+                      type="button"
+                      key={p.id}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-50 dark:hover:bg-neutral-900/60"
+                      onClick={() => {
+                        if (
+                          !(form.favoritePlayers || []).includes(p.name) &&
+                          (form.favoritePlayers || []).length < 5
+                        ) {
+                          setForm({
+                            ...form,
+                            favoritePlayers: [...(form.favoritePlayers || []), p.name],
+                          });
+                        }
+                        setPlayerSearchTerm("");
+                        setShowPlayerSuggestions(false);
+                      }}
+                    >
+                      {p.logo && (
+                        <img
+                          src={p.logo}
+                          className="h-5 w-5 rounded-sm object-cover"
+                          alt={p.name}
+                        />
+                      )}
+                      <span className="text-sm text-gray-800 dark:text-gray-100">
+                        {p.name}
+                      </span>
+                      {p.club && (
+                        <span className="ml-auto text-xs text-gray-500 dark:text-gray-400">
+                          {p.club}
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              {(form.favoritePlayers || []).map((pl: string) => (
+                <span
+                  key={pl}
+                  className="inline-flex items-center gap-2 rounded-xl border border-blue-200/70 dark:border-blue-900/40 bg-blue-50/60 dark:bg-blue-950/20 px-3 py-1.5 text-sm text-blue-800 dark:text-blue-200"
+                >
+                  {pl}
+                  <button
+                    type="button"
+                    onClick={() => removePlayer(pl)}
+                    className="p-1 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/20"
+                    aria-label="Remover jogador"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                </span>
               ))}
             </div>
           </div>
 
-          {/* Casas de apostas */}
-          <div>
-            <Label className="flex items-center gap-2 mb-2"><Building className="w-4 h-4 text-gray-700" /> Casas de Apostas</Label>
+          {/* Casas de Apostas */}
+          <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 p-4">
+            <Label className="flex items-center gap-2 mb-2 font-semibold text-gray-900 dark:text-gray-100">
+              <Building className="w-4 h-4 text-gray-700 dark:text-gray-300" />
+              Casas de Apostas
+            </Label>
+
             <div className="relative" ref={houseWrapperRef}>
-              <Search className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500 dark:text-gray-400" />
               <Input
                 placeholder="Digite o nome da casa de apostas"
-                className="pl-10 pr-10"
+                className="pl-10 pr-10 h-11 rounded-xl bg-white/80 dark:bg-neutral-900/40 border-gray-200/70 dark:border-neutral-800 focus-visible:ring-[#014a8f]/30"
                 value={houseSearchTerm}
-                onChange={(e) => { setHouseSearchTerm(e.target.value); setShowHouseSuggestions(true) }}
+                onChange={(e) => {
+                  setHouseSearchTerm(e.target.value);
+                  setShowHouseSuggestions(true);
+                }}
                 onFocus={() => setShowHouseSuggestions(true)}
               />
-              {houseSearchTerm && <X className="absolute right-3 top-3 h-4 w-4 text-gray-500 cursor-pointer" onClick={() => setHouseSearchTerm('')} />}
+
+              {houseSearchTerm && (
+                <button
+                  type="button"
+                  onClick={() => setHouseSearchTerm("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-md text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                  aria-label="Limpar"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+
               {showHouseSuggestions && houseResults.length > 0 && (
-                <div className="absolute z-10 bg-white border rounded-md mt-1 w-full shadow-lg max-h-60 overflow-auto">
+                <div className="absolute z-10 mt-2 w-full max-h-64 overflow-auto rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/95 dark:bg-neutral-950/90 backdrop-blur shadow-lg">
                   {houseResults.map((h: any) => (
-                    <div key={h.id} className="px-3 py-2 hover:bg-gray-100 cursor-pointer" onClick={() => handleHouseSelect(h)}>{h.name}</div>
+                    <button
+                      type="button"
+                      key={h.id}
+                      className="w-full px-3 py-2 text-left text-sm text-gray-800 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-neutral-900/60"
+                      onClick={() => handleHouseSelect(h)}
+                    >
+                      {h.name}
+                    </button>
                   ))}
                 </div>
               )}
             </div>
-            <div className="flex flex-wrap gap-2 mt-2">
+
+            <div className="flex flex-wrap gap-2 mt-3">
               {(form.favoriteBettingHouses || []).map((h: string) => (
-                <div key={h} className="flex items-center bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm gap-2">
-                  <span>{h}</span>
-                  <X className="ml-1 h-3 w-3 cursor-pointer" onClick={() => removeHouse(h)} />
-                </div>
+                <span
+                  key={h}
+                  className="inline-flex items-center gap-2 rounded-xl border border-blue-200/70 dark:border-blue-900/40 bg-blue-50/60 dark:bg-blue-950/20 px-3 py-1.5 text-sm text-blue-800 dark:text-blue-200"
+                >
+                  {h}
+                  <button
+                    type="button"
+                    onClick={() => removeHouse(h)}
+                    className="p-1 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/20"
+                    aria-label="Remover casa"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                </span>
               ))}
             </div>
           </div>
 
-          {/* Controle de apostas / monitoramento financeiro / apostar apenas ligas favoritas */}
-          <div className="space-y-3 pt-2">
+          {/* Preferências / Controles */}
+          <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 p-4 space-y-4">
             <div className="flex items-center gap-2">
               <Checkbox
                 id="bettingControl"
                 checked={!!form.bettingControl}
-                onCheckedChange={(checked) => setForm({ ...form, bettingControl: checked as boolean })}
+                onCheckedChange={(checked) =>
+                  setForm({ ...form, bettingControl: checked as boolean })
+                }
               />
-              <Label htmlFor="bettingControl" className="flex items-center gap-2 cursor-pointer">
-                <ShieldCheck className="w-4 h-4 text-blue-700" />
+              <Label
+                htmlFor="bettingControl"
+                className="flex items-center gap-2 cursor-pointer text-sm text-gray-800 dark:text-gray-100"
+              >
+                <ShieldCheck className="w-4 h-4 text-[#014a8f]" />
                 Controle de Apostas (limite diário)
               </Label>
             </div>
@@ -577,51 +766,69 @@ export const EditProfileCard: React.FC<Props> = ({ profile, onCancel, onSave }) 
               <Checkbox
                 id="financialMonitoring"
                 checked={!!form.financialMonitoring}
-                onCheckedChange={(checked) => setForm({ ...form, financialMonitoring: checked as boolean })}
+                onCheckedChange={(checked) =>
+                  setForm({ ...form, financialMonitoring: checked as boolean })
+                }
               />
-              <Label htmlFor="financialMonitoring" className="flex items-center gap-2 cursor-pointer">
+              <Label
+                htmlFor="financialMonitoring"
+                className="flex items-center gap-2 cursor-pointer text-sm text-gray-800 dark:text-gray-100"
+              >
                 <Wallet className="w-4 h-4 text-green-700" />
                 Monitoramento Financeiro
               </Label>
             </div>
-          </div>
 
-          {/* Slider odds */}
-          <div>
-            <Label className="mb-2 block">Intervalo de odds</Label>
-            <Slider
-              value={form.oddsRange}
-              onValueChange={(v: any) => setForm({ ...form, oddsRange: v })}
-              min={1.01}
-              max={10}
-              step={0.1}
-            />
-            <p className="text-sm text-gray-600 mt-1">
-              {(form.oddsRange || [1, 2])[0].toFixed(2)} – {(form.oddsRange || [1, 2])[1].toFixed(2)}
-            </p>
-          </div>
+            <div>
+              <Label className="mb-2 block font-semibold text-gray-900 dark:text-gray-100">
+                Intervalo de odds
+              </Label>
+              <Slider
+                value={form.oddsRange}
+                onValueChange={(v: any) => setForm({ ...form, oddsRange: v })}
+                min={1.01}
+                max={10}
+                step={0.1}
+              />
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                {(form.oddsRange || [1, 2])[0].toFixed(2)} –{" "}
+                {(form.oddsRange || [1, 2])[1].toFixed(2)}
+              </p>
+            </div>
 
-          {/* Limite mensal */}
-          <div>
-            <Label className="mb-2 block">Limite de investimento mensal</Label>
-            <RadioGroup value={form.investmentLimit} onValueChange={(v: any) => setForm({ ...form, investmentLimit: v })}>
-              <div className="flex flex-col gap-1 mt-1">
-                <div className="flex items-center space-x-2"><RadioGroupItem value="abaixo-100" id="r1" /><Label htmlFor="r1">Abaixo de R$100</Label></div>
-                <div className="flex items-center space-x-2"><RadioGroupItem value="100-200" id="r2" /><Label htmlFor="r2">Entre R$100 e R$200</Label></div>
-                <div className="flex items-center space-x-2"><RadioGroupItem value="200-500" id="r3" /><Label htmlFor="r3">Entre R$200 e R$500</Label></div>
-                <div className="flex items-center space-x-2"><RadioGroupItem value="acima-500" id="r4" /><Label htmlFor="r4">Acima de R$500</Label></div>
-              </div>
-            </RadioGroup>
-          </div>
-
-          <div className="flex gap-2 justify-end mt-2">
-            <Button variant="ghost" onClick={onCancel}>Cancelar</Button>
-            <Button onClick={handleSave}>Salvar</Button>
+            <div>
+              <Label className="mb-2 block font-semibold text-gray-900 dark:text-gray-100">
+                Limite de investimento mensal
+              </Label>
+              <RadioGroup
+                value={form.investmentLimit}
+                onValueChange={(v: any) => setForm({ ...form, investmentLimit: v })}
+              >
+                <div className="flex flex-col gap-2 mt-1 text-sm">
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="abaixo-100" id="r1" />
+                    <Label htmlFor="r1">Abaixo de R$100</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="100-200" id="r2" />
+                    <Label htmlFor="r2">Entre R$100 e R$200</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="200-500" id="r3" />
+                    <Label htmlFor="r3">Entre R$200 e R$500</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="acima-500" id="r4" />
+                    <Label htmlFor="r4">Acima de R$500</Label>
+                  </div>
+                </div>
+              </RadioGroup>
+            </div>
           </div>
         </div>
-      </CardContent>
-    </Card>
-  )
+      </div>
+    </div>
+  );
 }
 
 export default EditProfileCard
