@@ -129,7 +129,8 @@ export default function ExpandableMatchCard({
     "border-2 border-[#014a8f]/45 shadow-2xl shadow-blue-500/25 ring-4 ring-[#014a8f]/10";
 
   const baseExtraBtn =
-  "border rounded-lg p-3 text-center transition-all duration-200 cursor-pointer select-none";
+  "relative border rounded-lg p-3 text-center transition-all duration-200 cursor-pointer select-none";
+
 
   const normalExtraBtn =
   "hover:bg-gray-50 dark:hover:bg-neutral-800 border-gray-200 dark:border-neutral-700 hover:shadow-sm hover:-translate-y-[1px]";
@@ -261,10 +262,15 @@ export default function ExpandableMatchCard({
                   linha: null,
                 });
 
+                const oddNum = Number(opt.val);
+                const disabled = !oddNum || Number.isNaN(oddNum);
                 return (
                   <button
                     key={opt.label}
-                    onClick={() =>
+                    disabled={disabled}
+                    onClick={() => {
+                      if (disabled) return;
+
                       onSelectOdd({
                         matchId: m.id,
                         homeTeam: m.homeTeam,
@@ -272,27 +278,25 @@ export default function ExpandableMatchCard({
                         competition: m.competition,
                         market: "1X2",
                         selection: opt.label,
-                        odd: opt.val,
-                      })
-                    }
+                        odd: oddNum,
+                      });
+                    }}
                     className={[
                       baseBtn,
                       "border-r last:border-r-0 border-gray-200 dark:border-neutral-700",
                       selected ? selectedBtn : normalBtn,
+                      disabled ? "opacity-40 cursor-not-allowed hover:shadow-none hover:translate-y-0" : "",
                     ].join(" ")}
                   >
-                  {selected && (
-                    <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-[#014a8f] shadow-sm" />
-                  )}
-                    <span
-                      className={[
-                        "text-xs",
-                        selected ? "text-[#014a8f] font-bold" : "text-gray-500",
-                      ].join(" ")}
-                    >
+                    {selected && (
+                      <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-[#014a8f] shadow-sm" />
+                    )}
+
+                    <span className={["text-xs", selected ? "text-[#014a8f] font-bold" : "text-gray-500"].join(" ")}>
                       {opt.label}
                     </span>
-                    <SafeOdd value={opt.val} selected={selected} />
+
+                    <SafeOdd value={oddNum} selected={selected} />
                   </button>
                 );
               })}
@@ -321,11 +325,16 @@ export default function ExpandableMatchCard({
                             selection: sel,
                             linha,
                           });
+                          const oddNum = Number(val);
+                          const disabled = !oddNum || Number.isNaN(oddNum);
 
                           return (
                             <button
                               key={sel}
-                              onClick={() =>
+                              disabled={disabled}
+                              onClick={() => {
+                                if (disabled) return;
+
                                 onSelectOdd({
                                   matchId: m.id,
                                   homeTeam: m.homeTeam,
@@ -333,28 +342,25 @@ export default function ExpandableMatchCard({
                                   competition: m.competition,
                                   market: baseMarket,
                                   selection: sel,
-                                  odd: val,
-                                  linha: linha,
-                                })
-                              }
+                                  odd: oddNum,
+                                  linha,
+                                });
+                              }}
                               className={[
                                 baseExtraBtn,
                                 selected ? selectedExtraBtn : normalExtraBtn,
+                                disabled ? "opacity-40 cursor-not-allowed hover:shadow-none hover:-translate-y-0" : "",
                               ].join(" ")}
                             >
                               {selected && (
                                 <span className="absolute top-2 right-2 h-2 w-2 rounded-full bg-[#014a8f] shadow-sm" />
                               )}
 
-                              <span
-                                className={[
-                                  "block font-medium",
-                                  selected ? "text-[#014a8f]" : "",
-                                ].join(" ")}
-                              >
+                              <span className={["block font-medium", selected ? "text-[#014a8f]" : ""].join(" ")}>
                                 {sel}
                               </span>
-                              <SafeOdd value={val as number} selected={selected} />
+
+                              <SafeOdd value={oddNum} selected={selected} />
                             </button>
                           );
                         })}

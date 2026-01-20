@@ -699,12 +699,16 @@ export const ProfileRankingScreen: React.FC = () => {
   return (
     <div className="p-4 space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">Perfil & Ranking</h1>
-          <p className="text-blue-600 flex items-center gap-1">
-            <User className="w-4 h-4" />
-            Estatísticas e Conquistas
+    <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 
+  bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 
+  dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 
+  p-5 shadow-xl shadow-blue-500/10">
+        <div className="relative">
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+            Perfil e Ranking
+          </h1>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Estatísticas e conquistas
           </p>
         </div>
       </div>
@@ -723,75 +727,85 @@ export const ProfileRankingScreen: React.FC = () => {
         </div>
       )}
 
-      <Card>
-        <CardContent className="p-6">
-          <div className="flex items-start gap-4">
-            {/* Avatar com logo do clube favorito */}
-            <Avatar className="w-16 h-16 rounded-full overflow-hidden border border-gray-300">
-              {userProfile.favoriteTeam &&
-                (clubsMap as any)[userProfile.favoriteTeam] &&
-                (clubsMap as any)[userProfile.favoriteTeam].logo ? (
-                <img
-                  src={getLocalLogo((clubsMap as any)[userProfile.favoriteTeam].logo)}
-                  alt={userProfile.favoriteTeam}
-                  className="w-full h-full object-contain p-1"
-                />
-              ) : (
-                <AvatarFallback className="bg-blue-100 text-blue-600 font-bold text-lg">
-                  {userProfile.avatar}
-                </AvatarFallback>
-              )}
-            </Avatar>
+      <Card className="overflow-hidden border border-gray-200/70 dark:border-neutral-800/70 rounded-2xl shadow-sm">
+        <CardContent className="p-0">
+          {/* Top strip igual as telas novas */}
+          <div className="relative overflow-hidden bg-white/80 dark:bg-neutral-900/60 backdrop-blur px-5 py-5">
+            <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
 
-            <div className="flex-1">
-              <div className="flex items-start gap-4">
-              {/* ESQUERDA: Nome + Username */}
-              <div className="min-w-0">
-                <div className="flex items-center gap-2">
-                  <h2 className="text-xl font-bold text-gray-800 truncate">
-                    {userProfile.name}
-                  </h2>
+            <div className="relative flex items-start justify-between gap-4">
+              {/* ESQUERDA: avatar + infos */}
+              <div className="flex items-start gap-4 min-w-0">
+                {/* Avatar com logo do clube favorito */}
+                <Avatar className="w-16 h-16 rounded-2xl overflow-hidden border border-gray-200 dark:border-neutral-800 bg-white">
+                  {userProfile.favoriteTeam &&
+                  (clubsMap as any)[userProfile.favoriteTeam] &&
+                  (clubsMap as any)[userProfile.favoriteTeam].logo ? (
+                    <img
+                      src={getLocalLogo((clubsMap as any)[userProfile.favoriteTeam].logo)}
+                      alt={userProfile.favoriteTeam}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  ) : (
+                    <AvatarFallback className="bg-[#014a8f]/10 text-[#014a8f] font-extrabold text-lg">
+                      {userProfile.avatar}
+                    </AvatarFallback>
+                  )}
+                </Avatar>
+
+                {/* Nome / username + chips */}
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <h2 className="text-xl font-extrabold text-gray-900 dark:text-gray-100 truncate">
+                      {userProfile.name}
+                    </h2>
+                  </div>
+
+                  <p className="text-sm text-gray-600 dark:text-gray-300 truncate">
+                    {userProfile.username}
+                  </p>
+
+                  {/* Chips: Tier + Sequência (lado a lado) */}
+                  <div className="mt-3 flex flex-wrap items-center gap-2">
+                    <span className="inline-flex items-center rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-950/40 px-3 py-1 text-xs font-semibold text-[#014a8f]">
+                      {userProfile.level}
+                    </span>
+
+                    <span className="inline-flex items-center rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 px-3 py-1 text-xs font-semibold text-gray-700 dark:text-gray-200">
+                      Sequência Atual:{" "}
+                      <span className="ml-1 font-extrabold text-[#014a8f] tabular-nums">
+                        {safeStreak}
+                      </span>
+                    </span>
+                  </div>
                 </div>
-
-                <p className="text-gray-600 truncate">{userProfile.username}</p>
               </div>
 
-              {/* Iniciante + Sequência (logo ao lado do nome/@) */}
-              {/* Escudo (logo após a sequência, ainda no canto esquerdo) */}
-              <img
-                src={getTierBadgeSrc(userProfile.bissTierKey)}
-                alt={userProfile.level}
-                className="w-16 h-16 object-contain shrink-0"
-                loading="lazy"
-              />
-
-              <div className="min-w-0">
-                <div className="flex items-center gap-2">
-                  <h2 className="text-xs font-semibold text-gray-800 truncate">
-                    {userProfile.level}
-                  </h2>
+              {/* DIREITA: escudo + botão */}
+              <div className="flex flex-col sm:flex-row items-end sm:items-center gap-3 shrink-0">
+                <div className="w-16 h-16 rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/30 flex items-center justify-center p-2">
+                  <img
+                    src={getTierBadgeSrc(userProfile.bissTierKey)}
+                    alt={userProfile.level}
+                    className="w-full h-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
 
-                <p className="text-xs text-gray-600 truncate whitespace-nowrap">
-                  <span className="font-semibold text-gray-800">Sequência Atual</span>:{" "}
-                  <span className="font-semibold text-blue-700">{safeStreak}</span>
-                </p>
+                <Button
+                  size="sm"
+                  className="bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl w-full sm:w-auto"
+                  onClick={handleToggleEdit}
+                >
+                  {showEdit ? "Fechar" : "Editar Perfil"}
+                </Button>
               </div>
-
-              
             </div>
-          </div>
-
-            <Button
-              size="sm"
-              className="bg-[#014a8f] text-white shrink-0"
-              onClick={handleToggleEdit}
-            >
-              {showEdit ? 'Fechar' : 'Editar Perfil'}
-            </Button>
           </div>
         </CardContent>
       </Card>
+
 
       {/* =======================================================
           ✅ NOVO: Painel de Estatísticas e Progresso (4 boxes)
@@ -802,38 +816,38 @@ export const ProfileRankingScreen: React.FC = () => {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
               <p className="text-xs text-gray-600">Apostas</p>
               <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeBets}</p>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
               <p className="text-xs text-gray-600">Vitórias</p>
               <p className="text-2xl font-bold text-gray-800 tabular-nums">{safeWins}</p>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
               <p className="text-xs text-gray-600">Sequência Maior</p>
               <p className="text-2xl font-bold text-gray-800 tabular-nums">
                 {Number(userProfile.longestStreak || 0)}
               </p>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
               <p className="text-xs text-gray-600">Lucro Total</p>
               <p className={`text-2xl font-bold ${userProfile.totalProfit >= 0 ? 'text-green-600' : 'text-red-600'
                 }`}>R$ {userProfile.totalProfit.toFixed(2)}</p>
               
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
               <p className="text-xs text-gray-600">ROI</p>
               <p className={`text-2xl font-bold ${Number(userProfile.bissYield || 0) >= 0 ? 'text-green-700' : 'text-red-700'}`}>
                 {fmtPct1(Number(userProfile.bissYield || 0))}
               </p>
             </div>
 
-            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+            <div className="rounded-2xl bg-white/70 dark:bg-neutral-950/40 border border-gray-200/70 dark:border-neutral-800 px-4 py-3">
               <p className="text-xs text-gray-600">Percentual Acertos</p>
               <p className="text-2xl font-bold text-green-600 tabular-nums">
                 {fmtPct1(Number(userProfile.winRate || 0))}
@@ -849,7 +863,7 @@ export const ProfileRankingScreen: React.FC = () => {
             {/* =========================
                 COLUNA ESQUERDA: TIER ATUAL
               ========================= */}
-            <div className="rounded-xl border border-gray-200 bg-white p-5">
+            <div className="rounded-2xl bg-white/80 border border-gray-200/70 shadow-sm p-5">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-semibold text-gray-800">Tier Atual</p>
 
@@ -867,7 +881,7 @@ export const ProfileRankingScreen: React.FC = () => {
                       <img
                         src={getTierBadgeSrc(tier.key)}
                         alt={tier.name}
-                        className="h-104 w-104 object-contain"
+                        className="h-28 w-28 sm:h-32 sm:w-32 object-contain"
                         loading="lazy"
                       />
                       <p className="mt-3 text-sm font-semibold text-gray-800">{tier.name}</p>
@@ -948,7 +962,7 @@ export const ProfileRankingScreen: React.FC = () => {
             {/* ======================
                 COLUNA DIREITA: DESAFIOS
               ====================== */}
-            <div className="rounded-xl border border-gray-200 bg-white p-5">
+            <div className="rounded-2xl bg-white/80 border border-gray-200/70 shadow-sm p-5">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-semibold text-gray-800">Desafios</p>
 

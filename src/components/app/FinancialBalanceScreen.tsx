@@ -14,6 +14,13 @@ import {
   CartesianGrid,
   Cell
 } from "recharts";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+
 
 // Importações necessárias para o gráfico
 
@@ -475,38 +482,167 @@ const formatMonth = (ym: string) => {
   return `${month}/${year}`;
 };
 
+const formatBRL = (value: number) =>
+  value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+const formatBRLCompact = (value: number) => {
+  const abs = Math.abs(value);
+
+  // Até 9999 -> mostra completo com 2 casas (ex: 0,76 / 27,60 / 9.999,99)
+  if (abs < 10000) {
+    return value.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+  }
+
+  // >= 10k -> compacto (ex: 12,3 mil / 4,5 mi)
+  return value.toLocaleString("pt-BR", {
+    notation: "compact",
+    compactDisplay: "short",
+    maximumFractionDigits: 1,
+  });
+};
+
+
+// ====== RESUMO ANUAL (KPIs) ======
+const annualSummary = useMemo(() => {
+  const year = new Date().getFullYear();
+
+  const isSameYear = (d: Date) => d.getFullYear() === year;
+
+  // Prêmios do extrato no ano
+  const premiosAno = extrato.reduce((acc, m) => {
+    if (m.tipo !== "premio") return acc;
+    const dt = new Date(m.data_movimentacao);
+    if (!isSameYear(dt)) return acc;
+    return acc + Number(m.valor || 0);
+  }, 0);
+
+  // Bilhetes do ano (contagem) + stake perdido no ano
+  let bilhetesAno = 0;
+  let lostStakeAno = 0;
+  let winsAno = 0;
+  let decidedAno = 0;
+
+  bilhetes.forEach((b: any) => {
+    const dt = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
+    if (!isSameYear(dt)) return;
+
+    bilhetesAno += 1;
+
+    const st = String(b.status || "").toLowerCase();
+    const stake = Number(b.stake_total || b.stake || 0);
+
+    const isWin = st === "ganho" || st === "ganha";
+    const isLoss = st === "perdido" || st === "perdida";
+
+    if (isWin) {
+      winsAno += 1;
+      decidedAno += 1;
+    } else if (isLoss) {
+      lostStakeAno += stake;
+      decidedAno += 1;
+    }
+  });
+
+  const profitAno = Math.round((premiosAno - lostStakeAno) * 100) / 100;
+
+  const winRateAno = decidedAno > 0 ? Math.round((winsAno / decidedAno) * 1000) / 10 : 0;
+
+  // ✅ MÉTRICA NOVA: lucro médio por bilhete (verde se + / vermelho se -)
+  const lucroMedioPorBilhete =
+    bilhetesAno > 0 ? Math.round((profitAno / bilhetesAno) * 100) / 100 : 0;
+
+  return {
+    year,
+    premiosAno,
+    lostStakeAno,
+    profitAno,
+    bilhetesAno,
+    decidedAno,
+    winsAno,
+    winRateAno,
+    lucroMedioPorBilhete,
+  };
+}, [extrato, bilhetes]);
+
+  const panelClass =
+  "relative overflow-hidden rounded-2xl border border-[#014a8f]/15 " +
+  "bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 " +
+  "dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 " +
+  "p-6 shadow-xl shadow-blue-500/10";
+
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
-      <header className="bg-[#014a8f] text-white p-4 shadow">
-        <h1 className="text-xl font-bold">Saldo e Movimentações</h1>
-      </header>
+  <div className="min-h-screen bg-gray-50 dark:bg-neutral-950">
+    <div className="p-4 space-y-6">
+    {/* Header (mais clean, igual às outras telas) */}
+    <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 
+  bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 
+  dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 
+  p-5 shadow-xl shadow-blue-500/10">
+      <div className="relative">
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+          Saldo e Movimentações
+        </h1>
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          Gerencie depósitos/saques e acompanhe desempenho.
+        </p>
+      </div>
+    </div>
 
-      <main className="p-6 space-y-6">
-        {/* Saldo + Operação lado a lado */}
-        <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4 items-stretch">
-          {/* Saldo atual (esquerda) */}
-          <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-6">
-            <h2 className="text-xl font-bold text-[#014a8f]">Saldo atual</h2>
 
-            <div className="border-t pt-4">
-              <p className="text-sm text-gray-500 dark:text-gray-400">Disponível</p>
-              <h2 className="text-3xl font-bold text-[#014a8f]">R$ {saldo.toFixed(2)}</h2>
+    <main className="pb-10 max-w-7xl mx-auto px-4 sm:px-6 pt-6 space-y-6">
+      {/* Saldo + Operação lado a lado */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+        {/* Saldo atual (esquerda) */}
+        <div className={panelClass}>
+          <div className="relative">
+            <div className="flex items-start justify-between gap-3 mb-4">
+              <div>
+                <h2 className="text-xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                  Saldo atual
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Disponível para operar</p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-5 py-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                Saldo
+              </p>
+              <div className="mt-2 text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums">
+                R$ {saldo.toFixed(2)}
+              </div>
             </div>
           </div>
+        </div>
 
-          {/* Operação (direita) */}
-          <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-6">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-bold text-[#014a8f]">Operação</h2>
+        {/* Operação (direita) */}
+        <div className={panelClass}>
+          <div className="relative">
+            <div className="flex items-start justify-between gap-3 mb-4">
+              <div>
+                <h2 className="text-xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                  Operação
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Depósito ou saque
+                </p>
+              </div>
             </div>
 
-            <div className="border-t pt-4">
-              {/* Linha alinhada à direita (Depósito/Saque + Valor + Botão) */}
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-end gap-3">
-                <div className="flex gap-2 justify-end">
+            {/* Controles */}
+            <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 p-4">
+              <div className="flex flex-col gap-3">
+                <div className="flex gap-2">
                   <Button
                     variant={modo === "deposito" ? "default" : "outline"}
-                    className={modo === "deposito" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                    className={
+                      modo === "deposito"
+                        ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                        : "border-gray-200 dark:border-neutral-800"
+                    }
                     onClick={() => setModo("deposito")}
                   >
                     Depósito
@@ -514,362 +650,597 @@ const formatMonth = (ym: string) => {
 
                   <Button
                     variant={modo === "saque" ? "default" : "outline"}
-                    className={modo === "saque" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
+                    className={
+                      modo === "saque"
+                        ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                        : "border-gray-200 dark:border-neutral-800"
+                    }
                     onClick={() => setModo("saque")}
                   >
                     Saque
                   </Button>
                 </div>
 
-                <input
-                  type="number"
-                  value={valor || ""}
-                  onChange={(e) => setValor(Number(e.target.value))}
-                  placeholder="Valor em R$"
-                  className="border rounded-md px-3 py-2 text-sm w-full lg:w-48"
-                />
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                  <input
+                    type="number"
+                    value={valor || ""}
+                    onChange={(e) => setValor(Number(e.target.value))}
+                    placeholder="Valor em R$"
+                    className="border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 rounded-xl px-3 py-2 text-sm w-full"
+                  />
 
-                <Button
-                  className="bg-[#014a8f] hover:bg-[#003b70] text-white w-full lg:w-auto"
-                  onClick={handleTransacao}
-                  disabled={loading}
-                >
-                  {loading ? "Processando..." : modo === "deposito" ? "Depositar" : "Sacar"}
-                </Button>
+                  <Button
+                    className="bg-[#014a8f] hover:bg-[#003b70] text-white w-full sm:w-auto"
+                    onClick={handleTransacao}
+                    disabled={loading}
+                  >
+                    {loading ? "Processando..." : modo === "deposito" ? "Depositar" : "Sacar"}
+                  </Button>
+                </div>
+
+                {feedback && (
+                  <div
+                    className={`rounded-xl border px-4 py-2 text-sm ${
+                      /sucesso|realizado/i.test(feedback)
+                        ? "bg-green-50 border-green-200 text-green-800"
+                        : "bg-blue-50 border-blue-200 text-blue-800"
+                    }`}
+                  >
+                    {feedback}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 2 colunas: Evolução Mensal + (a gente vai pôr o “Resumo Anual” aqui no próximo trecho) */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* --- EVOLUÇÃO MENSAL (GRÁFICO) --- */}
+        <div className={panelClass}>
+          <div className="relative">
+            <div className="flex items-start sm:items-center justify-between gap-3 mb-4">
+              <div>
+                <h3 className="text-xl font-extrabold text-gray-900 dark:text-white">
+                  Evolução Mensal
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Acompanhe volume, acerto e lucro por mês
+                </p>
               </div>
 
-              {feedback && (
-                <div
-                  className={`mt-3 rounded-lg border px-4 py-2 text-sm ${
-                    /sucesso|realizado/i.test(feedback)
-                      ? "bg-green-50 border-green-200 text-green-800"
-                      : "bg-blue-50 border-blue-200 text-blue-800"
-                  }`}
+              <div className="flex gap-2">
+                <Button
+                  size="sm"
+                  variant={monthlyMetric === "profit" ? "default" : "outline"}
+                  className={
+                    monthlyMetric === "profit"
+                      ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                      : "border-gray-200 dark:border-neutral-800"
+                  }
+                  onClick={() => setMonthlyMetric("profit")}
                 >
-                  {feedback}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {/* --- EVOLUÇÃO MENSAL (GRÁFICO) --- */}
-        <div className="mt-4 bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-4">
-          <div className="flex items-start sm:items-center justify-between gap-3 mb-3">
-            <div>
-              <h3 className="text-xl font-bold text-[#014a8f]">
-                Evolução Mensal
-              </h3>
-            </div>
+                  Lucro
+                </Button>
 
-            <div className="flex gap-2">
-              <Button
-                size="sm"
-                variant={monthlyMetric === "profit" ? "default" : "outline"}
-                className={monthlyMetric === "profit" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
-                onClick={() => setMonthlyMetric("profit")}
-              >
-                Lucro
-              </Button>
-
-                            <Button
-                size="sm"
-                variant={monthlyMetric === "winRate" ? "default" : "outline"}
-                className={monthlyMetric === "winRate" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
-                onClick={() => setMonthlyMetric("winRate")}
-              >
-                %Acerto
-              </Button>
-
-              <Button
-                size="sm"
-                variant={monthlyMetric === "bets" ? "default" : "outline"}
-                className={monthlyMetric === "bets" ? "bg-[#014a8f] hover:bg-[#003b70] text-white" : ""}
-                onClick={() => setMonthlyMetric("bets")}
-              >
-                Apostas
-              </Button>
-              
-            </div>
-          </div>
-
-          {/* dados em ordem cronológica (mais antigo -> mais recente) pra ficar natural no gráfico */}
-          {monthlyStats.length === 0 ? (
-            <p className="text-sm text-gray-500 text-center py-10">
-              Sem dados mensais ainda.
-            </p>
-          ) : (
-            <div className="h-56 w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={[...monthlyStats].reverse()}
-                  margin={{ top: 8, right: 12, left: 0, bottom: 0 }}
+                <Button
+                  size="sm"
+                  variant={monthlyMetric === "winRate" ? "default" : "outline"}
+                  className={
+                    monthlyMetric === "winRate"
+                      ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                      : "border-gray-200 dark:border-neutral-800"
+                  }
+                  onClick={() => setMonthlyMetric("winRate")}
                 >
-                  <CartesianGrid vertical={false} />
-                  <XAxis
-                    dataKey="month"
-                    tickLine={false}
-                    axisLine={false}
-                    fontSize={12}
-                    tickFormatter={(v) => formatMonth(String(v))}
-                  />
-                  <YAxis
-                    tickLine={false}
-                    axisLine={false}
-                    fontSize={12}
-                    domain={
-                      monthlyMetric === "bets"
-                        ? [0, "auto"]
-                        : monthlyMetric === "winRate"
-                        ? [0, 100]
-                        : ["auto", "auto"]   // lucro
-                    }
-                    tickFormatter={(v) => {
-                      const n = Number(v);
-                      if (monthlyMetric === "profit") return `R$${n.toFixed(0)}`;
-                      if (monthlyMetric === "winRate") return `${n.toFixed(0)}%`;
-                      return `${n.toFixed(0)}`;
-                    }}
-                  />
+                  %Acerto
+                </Button>
 
-                  <Tooltip
-                    labelFormatter={(label) => `Mês: ${formatMonth(String(label))}`}
-                    formatter={(value: any) => {
-                      const n = Number(value);
-                      if (monthlyMetric === "profit") return [`R$ ${n.toFixed(2)}`, "Lucro"];
-                      if (monthlyMetric === "winRate") return [`${n.toFixed(1)}%`, "% Acerto"];
-                      return [`${Math.round(n)}`, "Apostas"];
-                    }}
-                  />
-                  {monthlyMetric !== "profit" ? (
-                  <Bar
-                    dataKey={monthlyMetric}
-                    radius={[8, 8, 0, 0]}
-                    fill={monthlyMetric === "bets" ? "#014a8f" : "#16a34a"}
-                  />
-                ) : (
-                  <Bar dataKey="profit" radius={[8, 8, 0, 0]}>
-                    {[...monthlyStats].reverse().map((row, idx) => (
-                      <Cell
-                        key={`cell-${idx}`}
-                        fill={Number(row.profit) >= 0 ? "#16a34a" : "#dc2626"}
-                      />
-                    ))}
-                  </Bar>
-                )}
-
-                </BarChart>
-              </ResponsiveContainer>
+                <Button
+                  size="sm"
+                  variant={monthlyMetric === "bets" ? "default" : "outline"}
+                  className={
+                    monthlyMetric === "bets"
+                      ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                      : "border-gray-200 dark:border-neutral-800"
+                  }
+                  onClick={() => setMonthlyMetric("bets")}
+                >
+                  Apostas
+                </Button>
+              </div>
             </div>
-          )}
-        </div>
 
-
-        {/* --- CALENDÁRIO ANUAL DE DESEMPENHO (GitHub Style) --- */}
-        <div className="mt-4 bg-white dark:bg-neutral-900 rounded-xl shadow-sm border border-gray-100 dark:border-neutral-800 p-6">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="p-2 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
-              <ChartIcon />
-            </div>
-            <div>
-              <h2 className="text-xl font-bold text-[#014a8f]">
-                Desempenho Anual
-              </h2>
-              <p className="text-xs text-gray-500">Lucro Diário</p>
-            </div>
-          </div>
-
-          {/* Legenda */}
-          <div className="flex flex-wrap gap-4 mt-2 text-xs text-gray-500">
-            <div className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-gray-200 dark:bg-neutral-700 rounded-sm" />
-              Neutro
-            </div>
-            <div className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-green-500 rounded-sm" />
-              Lucro
-            </div>
-            <div className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-red-500 rounded-sm" />
-              Prejuízo
-            </div>
-          </div>
-
-          {/* Grid do calendário */}
-          <div className="mt-4 overflow-hidden">
-            <div
-              className="grid"
-              style={{
-                // controle fino aqui:
-                ["--cell" as any]: "13px",
-                ["--gap" as any]: "2px",
-
-                gridTemplateColumns: `repeat(${calendarData.length}, var(--cell))`,
-                gridTemplateRows: `repeat(7, var(--cell))`,
-                gap: "var(--gap)",
-                gridAutoFlow: "column",
-              }}
-            >
-              {calendarData.map((week, wIdx) =>
-                week.map((day, dIdx) => {
-                  if (!day) return <div key={`${wIdx}-${dIdx}`} />;
-
-                  let color = "bg-gray-200 dark:bg-neutral-700";
-                  if (day.value > 0) color = "bg-green-500";
-                  if (day.value < 0) color = "bg-red-500";
-
-                  return (
-                    <div
-                      key={day.date}
-                      title={`${new Date(day.date).toLocaleDateString("pt-BR")} — R$ ${day.value.toFixed(2)}`}
-                      className={`rounded-sm ${color}`}
-                      style={{
-                        width: "var(--cell)",
-                        height: "var(--cell)",
+            {monthlyStats.length === 0 ? (
+              <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-gray-50/60 dark:bg-neutral-950/40 px-4 py-10 text-center text-gray-500 text-sm">
+                Sem dados mensais ainda.
+              </div>
+            ) : (
+              <div className="h-56 w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart
+                    data={[...monthlyStats].reverse()}
+                    margin={{ top: 8, right: 12, left: 0, bottom: 0 }}
+                  >
+                    <CartesianGrid vertical={false} />
+                    <XAxis
+                      dataKey="month"
+                      tickLine={false}
+                      axisLine={false}
+                      fontSize={12}
+                      tickFormatter={(v) => formatMonth(String(v))}
+                    />
+                    <YAxis
+                      tickLine={false}
+                      axisLine={false}
+                      fontSize={12}
+                      domain={
+                        monthlyMetric === "bets"
+                          ? [0, "auto"]
+                          : monthlyMetric === "winRate"
+                          ? [0, 100]
+                          : ["auto", "auto"]
+                      }
+                      tickFormatter={(v) => {
+                        const n = Number(v);
+                        if (monthlyMetric === "profit") return `R$${n.toFixed(0)}`;
+                        if (monthlyMetric === "winRate") return `${n.toFixed(0)}%`;
+                        return `${n.toFixed(0)}`;
                       }}
                     />
-                  );
-                })
-              )}
-            </div>
+
+                    <Tooltip
+                      labelFormatter={(label) => `Mês: ${formatMonth(String(label))}`}
+                      formatter={(value: any) => {
+                        const n = Number(value);
+                        if (monthlyMetric === "profit") return [`R$ ${n.toFixed(2)}`, "Lucro"];
+                        if (monthlyMetric === "winRate") return [`${n.toFixed(1)}%`, "% Acerto"];
+                        return [`${Math.round(n)}`, "Apostas"];
+                      }}
+                    />
+
+                    {monthlyMetric !== "profit" ? (
+                      <Bar
+                        dataKey={monthlyMetric}
+                        radius={[8, 8, 0, 0]}
+                        fill={monthlyMetric === "bets" ? "#014a8f" : "#16a34a"}
+                      />
+                    ) : (
+                      <Bar dataKey="profit" radius={[8, 8, 0, 0]}>
+                        {[...monthlyStats].reverse().map((row, idx) => (
+                          <Cell
+                            key={`cell-${idx}`}
+                            fill={Number(row.profit) >= 0 ? "#16a34a" : "#dc2626"}
+                          />
+                        ))}
+                      </Bar>
+                    )}
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            )}
           </div>
         </div>
-        </div>
-        
-        <div className="bg-white dark:bg-neutral-900 rounded-xl shadow p-4">
-          <h2 className="text-xl font-bold text-[#014a8f]">Histórico de Movimentações</h2>
 
-          {extrato.length === 0 ? (
-            <p className="text-sm text-gray-500 text-center">Nenhuma movimentação registrada.</p>
-          ) : (
-            <>
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="text-left border-b">
-                    <th className="py-2">Data</th>
-                    <th className="py-2">Tipo</th>
-                    <th className="py-2">Valor</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {extrato
-                    .slice(0, 5)
-                    .map((m) => (
-                      <tr key={m.id_movimentacao} className="border-b last:border-b-0">
-                        <td className="py-2">
-                          {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
-                        </td>
-                        <td className="capitalize">{m.tipo}</td>
-                        <td
-                          className={
-                            m.tipo === "deposito" || m.tipo === "premio"
-                              ? "text-green-600"
-                              : "text-red-600"
-                          }
-                        >
-                          {(m.tipo === "deposito" || m.tipo === "premio") ? "+" : "-"} R${" "}
-                          {m.valor.toFixed(2)}
-                        </td>
-                      </tr>
-                    ))}
-                </tbody>
-              </table>
-
-              <div className="mt-3 flex justify-center">
-                <Button
-                  variant="ghost"
-                  className="text-[#014a8f]"
-                  onClick={() => setShowFullHistory(true)}
-                >
-                  Ver histórico completo
-                </Button>
+        {/* --- RESUMO ANUAL (KPIs) + CALENDÁRIO --- */}
+        <div className={panelClass}>
+          <div className="relative">
+            <div className="flex items-start justify-between gap-3 mb-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-xl bg-[#014a8f]/10 border border-[#014a8f]/15">
+                  <ChartIcon />
+                </div>
+                <div>
+                  <h2 className="text-xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                    Resumo anual
+                  </h2>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    KPIs + lucro diário (estilo calendário)
+                  </p>
+                </div>
               </div>
-            </>
-          )}
-        </div>
+            </div>
 
-        {showFullHistory && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-          <div className="bg-white dark:bg-neutral-900 rounded-xl shadow-lg w-full max-w-3xl max-h-[80vh] overflow-hidden border border-gray-100 dark:border-neutral-800">
-            
-            {/* SCROLL CONTAINER (tudo que rola fica aqui) */}
-            <div className="relative max-h-[80vh] overflow-auto">
-              
-              {/* Header do modal (AGORA sticky e com máscara) */}
-              <div className="sticky top-0 z-40 bg-white/95 dark:bg-neutral-900/95 backdrop-blur border-b dark:border-neutral-700">
-                <div className="flex items-center justify-between p-4">
-                  <h3 className="text-lg font-semibold">Histórico Completo</h3>
-                  <button
-                    onClick={() => setShowFullHistory(false)}
-                    className="text-gray-500 hover:text-gray-800 dark:hover:text-white text-xl leading-none"
-                    aria-label="Fechar"
-                  >
-                    ✕
-                  </button>
+            {/* KPIs ANUAIS */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
+              {/* Lucro total */}
+              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
+                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                  Lucro Anual
+                </div>
+                <div className="mt-1 flex-1 flex items-center">
+                  {(() => {
+                    const totalPremios = extrato.reduce(
+                      (acc, m) => (m.tipo === "premio" ? acc + Number(m.valor || 0) : acc),
+                      0
+                    );
+                    const totalPerdido = bilhetes.reduce((acc, b) => {
+                      const st = String(b.status || "").toLowerCase();
+                      if (st === "perdido" || st === "perdida")
+                        return acc + Number(b.stake_total || b.stake || 0);
+                      return acc;
+                    }, 0);
+                    const profit = totalPremios - totalPerdido;
+                    const isPos = profit >= 0;
+
+                    return (
+                      <>
+                        <div
+                          className={`min-w-0 whitespace-nowrap font-extrabold tabular-nums leading-none text-[18px] sm:text-[20px] ${
+                            isPos ? "text-green-700" : "text-red-700"
+                          }`}
+                          title={`${isPos ? "" : "-"} ${formatBRL(Math.abs(profit))}`}
+                        >
+                          {isPos ? "" : "-"}R$ {formatBRLCompact(Math.abs(profit))}
+                        </div>
+                      </>
+                    );
+                  })()}
+                </div>
+              </div>
+
+              {/* Bilhetes */}
+              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
+                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                  Bilhetes
+                </div>
+                <div className="whitespace-nowrap font-extrabold text-gray-900 dark:text-gray-100 tabular-nums leading-none text-[20px] sm:text-[30px]">
+                  {bilhetes.length}
+                </div>
+              </div>
+
+              {/* % bilhetes ganhos */}
+              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
+                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                  Taxa Acerto
                 </div>
 
-                {/* Linha sombra/máscara para tapar o conteúdo rolando */}
-                <div className="h-3 bg-gradient-to-b from-white dark:from-neutral-900 to-transparent pointer-events-none" />
+                {(() => {
+                  const decided = bilhetes.reduce((acc, b) => {
+                    const st = String(b.status || "").toLowerCase();
+                    if (st === "ganho" || st === "ganha" || st === "perdido" || st === "perdida")
+                      return acc + 1;
+                    return acc;
+                  }, 0);
+
+                  const wins = bilhetes.reduce((acc, b) => {
+                    const st = String(b.status || "").toLowerCase();
+                    if (st === "ganho" || st === "ganha") return acc + 1;
+                    return acc;
+                  }, 0);
+
+                  const winRate = decided > 0 ? (wins / decided) * 100 : 0;
+
+                  return (
+                    <>
+                      <div className="whitespace-nowrap font-extrabold text-gray-900 dark:text-gray-100 tabular-nums leading-none text-[18px] sm:text-[20px]">
+                        {winRate.toFixed(0)}%
+                      </div>
+
+                      <div className="mt-2 h-2 rounded-full bg-gray-100 dark:bg-neutral-800 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
+                        <div
+                          className="h-full rounded-full bg-[#014a8f]"
+                          style={{ width: `${Math.max(0, Math.min(100, winRate))}%` }}
+                        />
+                      </div>
+                    </>
+                  );
+                })()}
               </div>
 
-              {/* Conteúdo (tabela) */}
-              <div className="p-4 pt-2">
-                <table className="w-full text-sm border-separate border-spacing-0">
-                  <thead className="sticky top-[64px] z-30">
-                    {/* 64px = altura aproximada do header (p-4 + linha); ajustável se quiser */}
-                    <tr>
-                      <th className="py-2 text-left bg-white dark:bg-neutral-900 shadow-sm border-b dark:border-neutral-700">
-                        Data
-                      </th>
-                      <th className="py-2 text-left bg-white dark:bg-neutral-900 shadow-sm border-b dark:border-neutral-700">
-                        Tipo
-                      </th>
-                      <th className="py-2 text-left bg-white dark:bg-neutral-900 shadow-sm border-b dark:border-neutral-700">
-                        Valor
-                      </th>
-                    </tr>
-                  </thead>
+              {/* LUCRO MÉDIO POR BILHETE (substitui ROI) */}
+              <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] flex flex-col justify-between">
+                <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+                  Lucro por bilhete
+                </div>
 
-                  <tbody>
-                    {extrato.map((m) => {
-                      const tipoLabel =
-                        m.tipo === "premio" ? "Prêmio" :
-                        m.tipo === "deposito" ? "Depósito" :
-                        m.tipo === "saque" ? "Saque" :
-                        m.tipo === "aposta" ? "Aposta" :
-                        m.tipo === "ajuste" ? "Ajuste" :
-                        m.tipo;
+                {(() => {
+                  const totalPremios = extrato.reduce(
+                    (acc, m) => (m.tipo === "premio" ? acc + Number(m.valor || 0) : acc),
+                    0
+                  );
+                  const totalPerdido = bilhetes.reduce((acc, b) => {
+                    const st = String(b.status || "").toLowerCase();
+                    if (st === "perdido" || st === "perdida")
+                      return acc + Number(b.stake_total || b.stake || 0);
+                    return acc;
+                  }, 0);
 
-                      const isPositive = m.tipo === "deposito" || m.tipo === "premio";
+                  const profit = totalPremios - totalPerdido;
+                  const denom = Math.max(1, bilhetes.length);
+                  const avg = profit / denom;
+                  const isPos = avg >= 0;
 
-                      return (
-                        <tr
-                          key={m.id_movimentacao}
-                          className="border-b last:border-b-0 dark:border-neutral-800"
-                        >
-                          <td className="py-2">
-                            {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
-                          </td>
-
-                          <td>{tipoLabel}</td>
-
-                          <td className={isPositive ? "text-green-600" : "text-red-600"}>
-                            {isPositive ? "+" : "-"} R$ {m.valor.toFixed(2)}
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
+                  return (
+                    <>
+                      <div
+                        className={`min-w-0 whitespace-nowrap font-extrabold tabular-nums leading-none text-[18px] sm:text-[20px] ${
+                          isPos ? "text-green-700" : "text-red-700"
+                        }`}
+                        title={`${isPos ? "" : "-"} ${formatBRL(Math.abs(avg))}`}
+                      >
+                        {isPos ? "" : "-"}R$ {formatBRLCompact(Math.abs(avg))}
+                      </div>
+                    </>
+                  );
+                })()}
               </div>
+            </div>
 
+            {/* Legenda */}
+            <div className="flex flex-wrap gap-4 text-xs text-gray-500">
+              <div className="flex items-center gap-1">
+                <span className="w-3 h-3 bg-gray-200 dark:bg-neutral-700 rounded-sm" />
+                Neutro
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="w-3 h-3 bg-green-500 rounded-sm" />
+                Lucro
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="w-3 h-3 bg-red-500 rounded-sm" />
+                Prejuízo
+              </div>
+            </div>
+
+            {/* Grid do calendário (mantido, só com “moldura” mais bonita) */}
+            <div className="mt-4 overflow-hidden rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 p-3">
+              <div
+                className="grid"
+                style={{
+                  ["--cell" as any]: "13px",
+                  ["--gap" as any]: "2px",
+                  gridTemplateColumns: `repeat(${calendarData.length}, var(--cell))`,
+                  gridTemplateRows: `repeat(7, var(--cell))`,
+                  gap: "var(--gap)",
+                  gridAutoFlow: "column",
+                }}
+              >
+                {calendarData.map((week, wIdx) =>
+                  week.map((day, dIdx) => {
+                    if (!day) return <div key={`${wIdx}-${dIdx}`} />;
+
+                    let color = "bg-gray-200 dark:bg-neutral-700";
+                    if (day.value > 0) color = "bg-green-500";
+                    if (day.value < 0) color = "bg-red-500";
+
+                    return (
+                      <div
+                        key={day.date}
+                        title={`${new Date(day.date).toLocaleDateString("pt-BR")} — R$ ${day.value.toFixed(
+                          2
+                        )}`}
+                        className={`rounded-sm ${color}`}
+                        style={{ width: "var(--cell)", height: "var(--cell)" }}
+                      />
+                    );
+                  })
+                )}
+              </div>
             </div>
           </div>
         </div>
-      )}
+      </div>
+        
+        {/* ===== HISTÓRICO DE MOVIMENTAÇÕES (PADRÃO HOME) ===== */}
+        <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+          {/* brilhos sutis */}
+          <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
+
+          <div className="relative">
+            {/* Header igual Home */}
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+              <div>
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
+                  Histórico de Movimentações
+                </h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Últimas movimentações financeiras registradas
+                </p>
+              </div>
+
+              <div className="inline-flex items-center gap-2 rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-3 py-2">
+                <span className="text-[11px] font-semibold text-[#014a8f]">
+                  Últimas
+                </span>
+                <span className="text-xs text-gray-600 dark:text-gray-300">
+                  {Math.min(5, extrato.length)}/{extrato.length || 0}
+                </span>
+              </div>
+            </div>
+
+            {extrato.length === 0 ? (
+              <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/40 px-4 py-10 text-center text-gray-600 dark:text-gray-300">
+                Nenhuma movimentação registrada.
+              </div>
+            ) : (
+              <>
+                {/* Tabela “premium” (moldura + header leve) */}
+                <div className="overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-white/70 dark:bg-neutral-950/30 backdrop-blur">
+                  <table className="w-full text-sm">
+                    <thead className="bg-white/70 dark:bg-neutral-900/60 border-b border-[#014a8f]/10">
+                      <tr className="text-left">
+                        <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-200">
+                          Data
+                        </th>
+                        <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-200">
+                          Tipo
+                        </th>
+                        <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 text-right">
+                          Valor
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      {extrato.slice(0, 5).map((m) => {
+                        const tipoLabel =
+                          m.tipo === "premio" ? "Prêmio" :
+                          m.tipo === "deposito" ? "Depósito" :
+                          m.tipo === "saque" ? "Saque" :
+                          m.tipo === "aposta" ? "Aposta" :
+                          m.tipo === "ajuste" ? "Ajuste" :
+                          m.tipo;
+
+                        const isPositive = m.tipo === "deposito" || m.tipo === "premio";
+
+                        return (
+                          <tr
+                            key={m.id_movimentacao}
+                            className="border-b last:border-b-0 border-[#014a8f]/10 dark:border-white/10"
+                          >
+                            <td className="px-4 py-3 text-gray-700 dark:text-gray-200">
+                              {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
+                            </td>
+
+                            <td className="px-4 py-3">
+                              <span className="inline-flex items-center rounded-xl border border-[#014a8f]/20 bg-white/60 dark:bg-neutral-900/50 px-3 py-1 text-xs font-semibold text-[#014a8f]">
+                                {tipoLabel}
+                              </span>
+                            </td>
+
+                            <td
+                              className={`px-4 py-3 text-right font-extrabold tabular-nums ${
+                                isPositive ? "text-green-600" : "text-red-600"
+                              }`}
+                            >
+                              {isPositive ? "+" : "-"} R$ {m.valor.toFixed(2)}
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* CTA igual Home */}
+                <div className="mt-4 flex justify-center">
+                  <Button
+                    variant="ghost"
+                    className="text-[#014a8f] hover:bg-white/40 dark:hover:bg-neutral-900/40 rounded-xl"
+                    onClick={() => setShowFullHistory(true)}
+                  >
+                    Ver histórico completo
+                  </Button>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+
+
+        {/* Modal do Histórico Completo (mesmo tamanho do BettingHistoryScreen) */}
+        <Dialog open={showFullHistory} onOpenChange={setShowFullHistory}>
+          <DialogContent className="max-w-5xl w-[94vw] sm:w-full p-0 overflow-hidden">
+            {/* Header */}
+            <div className="p-5 border-b border-gray-200 dark:border-neutral-800">
+              <DialogHeader>
+                <DialogTitle className="text-[#014a8f] text-xl font-extrabold">
+                  Histórico completo
+                </DialogTitle>
+              </DialogHeader>
+
+              <p className="text-xs text-gray-500 mt-1">
+                Mostrando{" "}
+                <span className="font-semibold text-gray-700 dark:text-gray-200">
+                  {extrato.length}
+                </span>{" "}
+                movimentações.
+              </p>
+            </div>
+
+            {/* Body */}
+            <div className="p-5 max-h-[78vh] overflow-auto bg-gray-50/60 dark:bg-neutral-950">
+              {extrato.length === 0 ? (
+                <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-white dark:bg-neutral-900 px-4 py-10 text-center text-gray-500 text-sm">
+                  Nenhuma movimentação registrada.
+                </div>
+              ) : (
+                <div className="overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-white dark:bg-neutral-900">
+                  <table className="w-full text-sm">
+                    <thead className="sticky top-0 z-10 bg-white dark:bg-neutral-900 border-b border-[#014a8f]/10">
+                      <tr className="text-left">
+                        <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-200">
+                          Data
+                        </th>
+                        <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-200">
+                          Tipo
+                        </th>
+                        <th className="px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 text-right">
+                          Valor
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      {[...extrato]
+                        .sort(
+                          (a, b) =>
+                            new Date(b.data_movimentacao).getTime() -
+                            new Date(a.data_movimentacao).getTime()
+                        )
+                        .map((m) => {
+                          const tipoLabel =
+                            m.tipo === "premio" ? "Prêmio" :
+                            m.tipo === "deposito" ? "Depósito" :
+                            m.tipo === "saque" ? "Saque" :
+                            m.tipo === "aposta" ? "Aposta" :
+                            m.tipo === "ajuste" ? "Ajuste" :
+                            m.tipo;
+
+                          const isPositive = m.tipo === "deposito" || m.tipo === "premio";
+
+                          return (
+                            <tr
+                              key={m.id_movimentacao}
+                              className="border-b last:border-b-0 border-gray-200 dark:border-neutral-800"
+                            >
+                              <td className="px-4 py-3 text-gray-700 dark:text-gray-200">
+                                {new Date(m.data_movimentacao).toLocaleString("pt-BR")}
+                              </td>
+
+                              <td className="px-4 py-3">
+                                <span className="inline-flex items-center rounded-xl border border-[#014a8f]/20 bg-[#014a8f]/5 px-3 py-1 text-xs font-semibold text-[#014a8f]">
+                                  {tipoLabel}
+                                </span>
+                              </td>
+
+                              <td
+                                className={`px-4 py-3 text-right font-extrabold tabular-nums ${
+                                  isPositive ? "text-green-600" : "text-red-600"
+                                }`}
+                              >
+                                {isPositive ? "+" : "-"} R$ {Number(m.valor || 0).toFixed(2)}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+
+            {/* Footer */}
+            <div className="p-4 border-t border-gray-200 dark:border-neutral-800 flex items-center justify-end bg-white dark:bg-neutral-900">
+              <Button
+                className="bg-[#014a8f] hover:bg-[#003b70] text-white h-9"
+                onClick={() => setShowFullHistory(false)}
+              >
+                Fechar
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
+
+
 
 
       </main>
+    </div>
     </div>
   );
 }

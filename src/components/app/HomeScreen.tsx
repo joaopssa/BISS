@@ -26,6 +26,15 @@ import { getLocalLogo } from "@/utils/getLocalLogo";
 import { useNavigate } from "react-router-dom";
 import { leagueCountries } from "@/utils/league-countries";
 import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+import { createPortal } from "react-dom";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+
+
  // ========= Helpers (copiados do MatchCard) =========
 
 const normalize = (str: string) =>
@@ -1229,14 +1238,14 @@ const isTotalsMarket = (market?: string) =>
     const wins = slice.filter(isWonTicket).length;
     const losses = slice.filter(isLostTicket).length;
 
-    let msg = "Sem dados suficientes ainda.";
+    let msg = " Sem dados suficientes ainda.";
     if (slice.length > 0) {
-      if (wins === 0) msg = "Reveja suas apostas e reduza odds altas.";
-      else if (wins === 1) msg = "Que azar! Ajuste stake e foque em ligas que você domina.";
-      else if (wins === 2) msg = "Não desanime — você está pegando o ritmo.";
-      else if (wins === 3) msg = "Indo bem, mas dá para melhorar na consistência.";
-      else if (wins === 4) msg = "Excelente! Mantenha a disciplina e não aumente o risco demais.";
-      else if (wins === 5) msg = "Rei das apostas! Só cuidado com excesso de confiança.";
+      if (wins === 0) msg = " Reveja suas apostas e reduza odds altas.";
+      else if (wins === 1) msg = " Que azar! Ajuste stake e foque em ligas que você domina.";
+      else if (wins === 2) msg = " Não desanime — você está pegando o ritmo.";
+      else if (wins === 3) msg = " Indo bem, mas dá para melhorar na consistência.";
+      else if (wins === 4) msg = " Excelente! Mantenha a disciplina e não aumente o risco demais.";
+      else if (wins === 5) msg = " Rei das apostas! Só cuidado com excesso de confiança.";
     }
 
     return { total: slice.length, wins, losses, msg };
@@ -1308,7 +1317,15 @@ const calcOddTotal = (t: Ticket) =>
               onSelectOdd={(params) => {
 
                 const anyParams: any = params;
+                
+                const matchIdSafe =
+                  anyParams.matchId ?? anyParams.id ?? anyParams.match?.id ?? "unknown";
 
+                const oddNum = Number(anyParams.odd);
+                if (!oddNum || Number.isNaN(oddNum)) {
+                  setFeedback("Odd indisponível para este mercado.");
+                  return;
+                }
                 const linha =
                   anyParams.linha ??
                   anyParams.line ??
@@ -1330,7 +1347,8 @@ const calcOddTotal = (t: Ticket) =>
                   odd: params.odd,
                 };
 
-                handleAddSelection(sel); 
+                handleAddSelection(sel);
+                setIsSlipOpen(true);
               }}
 
 
@@ -1351,9 +1369,7 @@ const calcOddTotal = (t: Ticket) =>
 
       case "em-alta": {
 
-        const trending = filtered
-        .filter((m: any) => String(m.id) !== String((featuredMatch as any)?.id))
-        .slice(0, 30);
+        const trending = filtered.slice(0, 30); 
 
         return (
 
@@ -1766,9 +1782,6 @@ const calcOddTotal = (t: Ticket) =>
       <div className="p-4 space-y-6">
 
         <div className="relative overflow-hidden rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:from-[#014a8f]/15 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
-        {/* brilhos sutis */}
-        <div className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-[#014a8f]/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
 
         <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div>
@@ -1791,8 +1804,6 @@ const calcOddTotal = (t: Ticket) =>
       {/* Top bar */}
 
       <div className="relative flex flex-wrap items-center justify-between px-5 py-3 rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f] via-[#014a8f]/95 to-[#003b70] text-white shadow-xl shadow-blue-500/15 overflow-visible">
-        <div className="pointer-events-none absolute -top-20 -left-20 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-24 -right-24 h-56 w-56 rounded-full bg-emerald-300/10 blur-3xl" />
 
 
         <div className="flex flex-wrap gap-2">
@@ -2054,349 +2065,295 @@ const calcOddTotal = (t: Ticket) =>
  
 
       {/* Botão flutuante "Ver Bilhete" */}
-      {selections.length > 0 && (
-        <div className="fixed bottom-4 right-4 z-40">
-          <Button
-            className="
-              bg-[#014a8f] hover:bg-[#003b70] text-white
-              shadow-2xl rounded-full px-5 py-2 text-sm
-              transition-all hover:-translate-y-0.5
-            "
-            onClick={() => setIsSlipOpen(true)}
-          >
-            Ver Bilhete ({selections.length}) • Odd {oddTotal.toFixed(2)}
-          </Button>
-        </div>
-      )}
-
-      {/* Modal premium do Bilhete */}
-      {isSlipOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50"
-          onMouseDown={(e) => {
-            // fecha ao clicar no backdrop
-            if (e.target === e.currentTarget) setIsSlipOpen(false);
-          }}
-        >
-          <div
-            className="
-              w-full
-              sm:max-w-lg
-              md:max-w-xl
-              lg:max-w-2xl
-              bg-white dark:bg-neutral-900
-              rounded-t-2xl sm:rounded-2xl
-              shadow-2xl
-              overflow-hidden
-            "
-            onMouseDown={(e) => e.stopPropagation()}
-          >
-            {/* Header — PREMIUM com respiro */}
-            <div className="px-6 pt-5 pb-4 border-b border-gray-200 dark:border-neutral-700">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-
-                {/* Esquerda: título + pills */}
-                <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">
-                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Seu Bilhete
-                  </h2>
-
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span
-                      className="
-                        inline-flex items-center
-                        rounded-2xl
-                        border border-[#014a8f]/25
-                        bg-[#014a8f]/10
-                        px-4 py-1.5
-                        text-sm font-bold
-                        text-[#014a8f]
-                      "
-                    >
-                      {selections.length} seleção{selections.length > 1 ? "s" : ""}
-                    </span>
-
-                    <span
-                      className="
-                        inline-flex items-center gap-2
-                        rounded-2xl
-                        border border-gray-200 dark:border-neutral-700
-                        bg-white dark:bg-neutral-800
-                        px-4 py-1.5
-                      "
-                    >
-                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
-                        Odd total
-                      </span>
-                      <span className="text-lg font-extrabold text-gray-900 dark:text-white tabular-nums">
-                        {oddTotal.toFixed(2)}
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                {/* Direita: fechar */}
-                <button
-                  className="
-                    self-start sm:self-auto
-                    rounded-xl px-3 py-2
-                    text-sm font-medium
-                    text-gray-500 hover:text-gray-800
-                    hover:bg-gray-50
-                    dark:text-gray-400 dark:hover:text-gray-200
-                    dark:hover:bg-neutral-800
-                    transition
-                  "
-                  onClick={() => setIsSlipOpen(false)}
-                >
-                  Fechar
-                </button>
-              </div>
-            </div>
+      {selections.length > 0 &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div className="fixed bottom-4 right-4 z-[9999]">
+            <Button
+              className="
+                bg-[#014a8f] hover:bg-[#003b70] text-white
+                shadow-2xl rounded-full px-5 py-2 text-sm
+                transition-all hover:-translate-y-0.5
+              "
+              onClick={() => setIsSlipOpen(true)}
+            >
+              Ver Bilhete ({selections.length}) • Odd {oddTotal.toFixed(2)}
+            </Button>
+          </div>,
+          document.body
+        )
+      }
 
 
 
-            {/* BODY (scroll) */}
-            <div className="p-5 max-h-[70vh] overflow-y-auto">
-              {selections.length === 0 ? (
-                <p className="text-sm text-gray-500">Nenhuma seleção no bilhete.</p>
-              ) : (
-                <>
-                  {/* LISTA DE SELEÇÕES */}
-                  <div className="space-y-3">
-                    {selections.map((s, i) => {
-                      const logoHome = findClubLogo(s.time_casa);
-                      const logoAway = findClubLogo(s.time_fora);
+      {/* Modal premium do Bilhete — padrão Histórico */}
+      <Dialog open={isSlipOpen} onOpenChange={setIsSlipOpen}>
+        <DialogContent className="max-w-5xl w-[94vw] sm:w-full p-0 overflow-hidden">
+          {/* Header */}
+          <div className="p-5 border-b border-gray-200 dark:border-neutral-800">
+            <DialogHeader>
+              <DialogTitle className="text-[#014a8f] text-xl font-extrabold">
+                Seu Bilhete
+              </DialogTitle>
+            </DialogHeader>
 
-                      const leagueCode = leagueCountries[s.campeonato];
-                      const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <span
+                className="
+                  inline-flex items-center
+                  rounded-2xl border border-[#014a8f]/25 bg-[#014a8f]/10
+                  px-4 py-1.5 text-sm font-bold text-[#014a8f]
+                "
+              >
+                {selections.length} seleção{selections.length > 1 ? "s" : ""}
+              </span>
 
-                      return (
-                        <div
-                          key={i}
-                          className="
-                            rounded-2xl border border-gray-200 dark:border-neutral-800
-                            bg-white dark:bg-neutral-900
-                            p-4 shadow-sm
-                          "
-                        >
-                          {/* Topo: times + remover */}
-                          <div className="flex items-start justify-between gap-3">
-                            <div className="min-w-0">
-                              <div className="flex items-center gap-2">
-                                {logoHome && (
-                                  <img
-                                    src={logoHome}
-                                    alt={s.time_casa}
-                                    className="w-5 h-5 object-contain"
-                                    loading="lazy"
-                                  />
-                                )}
-
-                                <span className="font-semibold text-sm text-gray-900 dark:text-white truncate">
-                                  {s.time_casa}
-                                </span>
-
-                                <span className="text-gray-400 font-medium">x</span>
-
-                                <span className="font-semibold text-sm text-gray-900 dark:text-white truncate">
-                                  {s.time_fora}
-                                </span>
-
-                                {logoAway && (
-                                  <img
-                                    src={logoAway}
-                                    alt={s.time_fora}
-                                    className="w-5 h-5 object-contain"
-                                    loading="lazy"
-                                  />
-                                )}
-                              </div>
-
-                              <div className="mt-1 flex items-center gap-2 text-xs text-gray-500">
-                                {leagueFlag && (
-                                  <img
-                                    src={leagueFlag}
-                                    alt="Liga"
-                                    className="w-4 h-4 object-contain"
-                                    loading="lazy"
-                                  />
-                                )}
-                                <span className="truncate">{s.campeonato}</span>
-                              </div>
-                            </div>
-
-                            <button
-                              onClick={() => handleRemoveSelection(i)}
-                              className="
-                                shrink-0 rounded-xl
-                                border border-gray-200 dark:border-neutral-700
-                                p-2 text-gray-500 hover:text-red-600
-                                hover:bg-gray-50 dark:hover:bg-neutral-800
-                                transition
-                              "
-                              aria-label="Remover seleção"
-                              title="Remover"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-4 h-4"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                              >
-                                <path d="M3 6h18" />
-                                <path d="M8 6V4h8v2" />
-                                <path d="M10 11v6" />
-                                <path d="M14 11v6" />
-                                <path d="M5 6l1 14h12l1-14" />
-                              </svg>
-                            </button>
-                          </div>
-
-                          {/* Meio: mercado/pick + odd */}
-                          <div className="mt-3 flex items-center justify-between gap-3">
-                            <div className="min-w-0">
-                              <div className="text-xs text-gray-500">{s.mercado}</div>
-                              <div className="text-sm font-semibold text-gray-900 dark:text-white truncate">
-                                {getPickLabel(s)}
-                              </div>
-                            </div>
-
-                            <div className="text-right">
-                              <div className="text-[11px] text-gray-500">Odd</div>
-                              <div className="text-base font-extrabold text-[#0a2a5e] dark:text-white tabular-nums">
-                                {s.odd.toFixed(2)}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  {/* FINANCEIRO */}
-                  <div className="mt-5 space-y-3 pt-4 border-t border-gray-200 dark:border-neutral-700">
-                    {/* Linha principal: saldo + recomendado */}
-                    <div className="flex items-center justify-between">
-                      {/* Saldo */}
-                      <div>
-                        <div className="text-xs text-gray-500">Saldo disponível</div>
-                        <div className="text-base font-semibold text-gray-900 dark:text-white">
-                          R$ {saldo.toFixed(2)}
-                        </div>
-                      </div>
-
-                      {/* Valor recomendado */}
-                      {recommendedStake > 0 && (
-                        <div className="flex items-center gap-3">
-                          <div className="text-right">
-                            <div className="text-xs text-gray-500">Valor recomendado</div>
-                            <div className="text-sm font-bold text-[#014a8f] tabular-nums">
-                              R$ {recommendedStake.toFixed(2)}
-                            </div>
-                          </div>
-
-                          <Button
-                            size="sm"
-                            variant="outline"
-                            className="h-8 px-3 text-xs font-semibold"
-                            onClick={() => {
-                              if (!stake || stake <= 0) setStake(recommendedStake);
-                            }}
-                          >
-                            Usar
-                          </Button>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Retorno (esq) + Stake (dir) */}
-                    <div className="grid grid-cols-2 gap-6 items-end">
-                      {/* Retorno potencial — ESQ */}
-                      <div>
-                        <div className="text-sm text-gray-600">Retorno potencial</div>
-                        <div className="h-11 flex items-end">
-                        <div className="text-2xl font-extrabold tabular-nums">
-                          R$ {possibleReturn.toFixed(2)}
-                        </div>
-                      </div>
-                      </div>
-
-                      {/* Valor da aposta — DIR */}
-                      <div className="text-right">
-                        <div className="text-sm font-semibold text-gray-900 dark:text-white">
-                          Valor da aposta
-                        </div>
-
-                        <div className="mt-2 inline-flex items-center gap-2 justify-end">
-                          <span className="text-sm text-gray-500">R$</span>
-
-                          <input
-                            type="number"
-                            min={0.5}
-                            step={0.5}
-                            value={stake || ""}
-                            onChange={(e) => setStake(Number(e.target.value) || 0)}
-                            className="
-                              w-40
-                              h-11
-                              rounded-xl
-                              border border-gray-300 dark:border-neutral-700
-                              px-4
-                              text-lg
-                              font-extrabold
-                              text-right
-                              tabular-nums
-                              focus:outline-none
-                              focus:ring-2 focus:ring-[#014a8f]/40
-                            "
-                            placeholder="0,00"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-
-
-            {/* FOOTER (fixo) */}
-            <div className="p-5 border-t border-gray-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/80 backdrop-blur">
-              {selections.length === 0 ? (
-                <Button
-                  variant="outline"
-                  className="w-full rounded-xl"
-                  onClick={() => setIsSlipOpen(false)}
-                >
-                  Voltar
-                </Button>
-              ) : (
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    className="w-1/3 rounded-xl"
-                    onClick={resetSlip}
-                    disabled={placingBet}
-                  >
-                    Limpar
-                  </Button>
-
-                  <Button
-                    className="w-2/3 bg-[#014a8f] hover:bg-[#003b70] rounded-xl"
-                    onClick={handleConfirmBet}
-                    disabled={placingBet}
-                  >
-                    {placingBet ? "Registrando..." : "Apostar agora"}
-                  </Button>
-                </div>
-              )}
+              <span
+                className="
+                  inline-flex items-center gap-2
+                  rounded-2xl border border-gray-200 dark:border-neutral-700
+                  bg-white dark:bg-neutral-900
+                  px-4 py-1.5
+                "
+              >
+                <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                  Odd total
+                </span>
+                <span className="text-lg font-extrabold text-gray-900 dark:text-white tabular-nums">
+                  {oddTotal.toFixed(2)}
+                </span>
+              </span>
             </div>
           </div>
-        </div>
-      )}
+
+          {/* Body */}
+          <div className="p-5 max-h-[78vh] overflow-auto bg-gray-50/60 dark:bg-neutral-950">
+            {selections.length === 0 ? (
+              <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-white dark:bg-neutral-900 px-4 py-10 text-center text-gray-500 text-sm">
+                Nenhuma seleção no bilhete.
+              </div>
+            ) : (
+              <>
+                {/* LISTA */}
+                <div className="space-y-4">
+                  {selections.map((s, i) => {
+                    const logoHome = findClubLogo(s.time_casa);
+                    const logoAway = findClubLogo(s.time_fora);
+
+                    const leagueCode = leagueCountries[s.campeonato];
+                    const leagueFlag = leagueCode ? getFlagByCountryCode(leagueCode) : null;
+
+                    return (
+                      <div
+                        key={i}
+                        className="
+                          rounded-2xl border border-gray-200 dark:border-neutral-800
+                          bg-white dark:bg-neutral-900 p-4 shadow-sm
+                        "
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-2">
+                              {logoHome && (
+                                <img
+                                  src={logoHome}
+                                  alt={s.time_casa}
+                                  className="w-5 h-5 object-contain shrink-0"
+                                  loading="lazy"
+                                />
+                              )}
+
+                              <span className="font-semibold text-sm text-gray-900 dark:text-white truncate">
+                                {s.time_casa}
+                              </span>
+
+                              <span className="text-gray-400 font-medium">x</span>
+
+                              <span className="font-semibold text-sm text-gray-900 dark:text-white truncate">
+                                {s.time_fora}
+                              </span>
+
+                              {logoAway && (
+                                <img
+                                  src={logoAway}
+                                  alt={s.time_fora}
+                                  className="w-5 h-5 object-contain shrink-0"
+                                  loading="lazy"
+                                />
+                              )}
+                            </div>
+
+                            <div className="mt-1 flex items-center gap-2 text-xs text-gray-500">
+                              {leagueFlag && (
+                                <img
+                                  src={leagueFlag}
+                                  alt="Liga"
+                                  className="w-4 h-4 object-contain"
+                                  loading="lazy"
+                                />
+                              )}
+                              <span className="truncate">{s.campeonato}</span>
+                            </div>
+                          </div>
+
+                          <button
+                            onClick={() => handleRemoveSelection(i)}
+                            className="
+                              shrink-0 rounded-xl
+                              border border-gray-200 dark:border-neutral-700
+                              p-2 text-gray-500 hover:text-red-600
+                              hover:bg-gray-50 dark:hover:bg-neutral-800
+                              transition
+                            "
+                            aria-label="Remover seleção"
+                            title="Remover"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-4 h-4"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                            >
+                              <path d="M3 6h18" />
+                              <path d="M8 6V4h8v2" />
+                              <path d="M10 11v6" />
+                              <path d="M14 11v6" />
+                              <path d="M5 6l1 14h12l1-14" />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <div className="mt-3 flex items-center justify-between gap-3">
+                          <div className="min-w-0">
+                            <div className="text-xs text-gray-500">{s.mercado}</div>
+                            <div className="text-sm font-semibold text-gray-900 dark:text-white truncate">
+                              {getPickLabel(s)}
+                            </div>
+                          </div>
+
+                          <div className="text-right">
+                            <div className="text-[11px] text-gray-500">Odd</div>
+                            <div className="text-base font-extrabold text-[#0a2a5e] dark:text-white tabular-nums">
+                              {s.odd.toFixed(2)}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* FINANCEIRO */}
+                <div className="mt-5 rounded-2xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-4 sm:p-5">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                    <div>
+                      <div className="text-xs text-gray-500">Saldo disponível</div>
+                      <div className="text-base font-semibold text-gray-900 dark:text-white tabular-nums">
+                        R$ {saldo.toFixed(2)}
+                      </div>
+                    </div>
+
+                    {recommendedStake > 0 && (
+                      <div className="flex items-center gap-3">
+                        <div className="text-right">
+                          <div className="text-xs text-gray-500">Valor recomendado</div>
+                          <div className="text-sm font-bold text-[#014a8f] tabular-nums">
+                            R$ {recommendedStake.toFixed(2)}
+                          </div>
+                        </div>
+
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="h-9 px-3 text-xs font-semibold"
+                          onClick={() => {
+                            if (!stake || stake <= 0) setStake(recommendedStake);
+                          }}
+                        >
+                          Usar
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-5 items-end">
+                    <div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300">
+                        Retorno potencial
+                      </div>
+                      <div className="text-2xl font-extrabold tabular-nums text-gray-900 dark:text-white">
+                        R$ {possibleReturn.toFixed(2)}
+                      </div>
+                    </div>
+
+                    <div className="sm:text-right">
+                      <div className="text-sm font-semibold text-gray-900 dark:text-white">
+                        Valor da aposta
+                      </div>
+
+                      <div className="mt-2 inline-flex items-center gap-2 sm:justify-end">
+                        <span className="text-sm text-gray-500">R$</span>
+
+                        <input
+                          type="number"
+                          min={0.5}
+                          step={0.5}
+                          value={stake || ""}
+                          onChange={(e) => setStake(Number(e.target.value) || 0)}
+                          className="
+                            w-44 h-11 rounded-xl
+                            border border-gray-300 dark:border-neutral-700
+                            px-4 text-lg font-extrabold
+                            text-right tabular-nums
+                            bg-white dark:bg-neutral-900
+                            focus:outline-none focus:ring-2 focus:ring-[#014a8f]/40
+                          "
+                          placeholder="0,00"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Footer */}
+          <div className="p-4 border-t border-gray-200 dark:border-neutral-800 flex items-center justify-end bg-white dark:bg-neutral-900">
+            {selections.length === 0 ? (
+              <Button
+                variant="outline"
+                className="h-9"
+                onClick={() => setIsSlipOpen(false)}
+              >
+                Fechar
+              </Button>
+            ) : (
+              <div className="flex w-full gap-2">
+                <Button
+                  variant="outline"
+                  className="w-1/3 h-10 rounded-xl"
+                  onClick={resetSlip}
+                  disabled={placingBet}
+                >
+                  Limpar
+                </Button>
+
+                <Button
+                  className="w-2/3 h-10 bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl"
+                  onClick={handleConfirmBet}
+                  disabled={placingBet}
+                >
+                  {placingBet ? "Registrando..." : "Apostar agora"}
+                </Button>
+              </div>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
+
 
       {/* Modal H2H */}
       {h2hMeta && (
