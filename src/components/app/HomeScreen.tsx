@@ -33,6 +33,12 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import {
+  HoverCard,
+  HoverCardTrigger,
+  HoverCardContent,
+} from "@/components/ui/hover-card";
+
 
 
  // ========= Helpers (copiados do MatchCard) =========
@@ -341,6 +347,22 @@ export const HomeScreen: React.FC = () => {
   const [tab, setTab] = useState<"favoritos" | "em-alta" | "bilhetes">("em-alta");
   const [tierKey, setTierKey] = useState<string>("INI");
   const [tierName, setTierName] = useState<string>("Iniciante");
+  const [tierStats, setTierStats] = useState<{
+    xp: number;
+    bets: number;
+    wins: number;
+    winRate: number;
+  }>({ xp: 0, bets: 0, wins: 0, winRate: 0 });
+  const getNextTier = (tierKey: string) => {
+    const idx = BISS_TIERS.findIndex((t) => t.key === tierKey);
+    return idx >= 0 ? BISS_TIERS[idx + 1] || null : null;
+  };
+
+  const fmtMoney = (v: number) =>
+    Number(v || 0).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  const fmtPct1 = (v: number) =>
+    `${Number(v || 0).toFixed(1)}%`;
 
   // Quick-Action Chips (novo)
   const [quickFilter, setQuickFilter] = useState<"today" | "live" | "top" | null>(null);
@@ -746,11 +768,20 @@ const interval = setInterval(() => {
 
     setTierKey(tier.key);
     setTierName(tier.name);
-  } catch {
-    // silencioso
+
+    // ✅ pra hover do tier
+    setTierStats({
+      xp: bissXP,
+      bets: totalBets,
+      wins,
+      winRate: Math.round(winRate * 10) / 10,
+    });
+  } catch (err) {
   }
 };
 
+  const tier = BISS_TIERS.find(t => t.key === tierKey) || BISS_TIERS[0];
+  const nextTier = getNextTier(tierKey);
 
   // ========= Filtro de Partidas =========
 
@@ -987,13 +1018,6 @@ const isTotalsMarket = (market?: string) =>
       return [...prev, sel];
     });
   };
-
-
-
- 
-
-  
-
  
 
   const handleRemoveSelection = (index: number) => {
@@ -1177,7 +1201,6 @@ const isTotalsMarket = (market?: string) =>
 
   };
 
- 
   const filteredTickets = useMemo(() => {
     const normalize = (s?: string) =>
       (s || "").toUpperCase().trim();
@@ -1232,7 +1255,10 @@ const isTotalsMarket = (market?: string) =>
   const normalizeStatus = (s?: string) => (s || "").toUpperCase().trim();
   const isWonTicket = (t: Ticket) => ["GANHO", "GANHA", "WIN"].includes(normalizeStatus(t.status));
   const isLostTicket = (t: Ticket) => ["PERDIDO", "PERDIDA", "LOSS"].includes(normalizeStatus(t.status));
-
+  const saldoEmAposta = pendingTickets.reduce(
+  (acc, t) => acc + Number(t.stake || 0),
+  0
+);
   const last5Stats = useMemo(() => {
     const slice = resolvedTickets.slice(0, 5);
     const wins = slice.filter(isWonTicket).length;
@@ -1802,164 +1828,291 @@ const calcOddTotal = (t: Ticket) =>
 
 
       {/* Top bar */}
+      <div className="relative flex flex-wrap items-center gap-3 px-5 py-3 rounded-2xl
+                      border border-[#014a8f]/15
+                      bg-gradient-to-r from-[#014a8f] via-[#014a8f]/95 to-[#003b70]
+                      text-white shadow-xl shadow-blue-500/15 overflow-visible">
 
-      <div className="relative flex flex-wrap items-center justify-between px-5 py-3 rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f] via-[#014a8f]/95 to-[#003b70] text-white shadow-xl shadow-blue-500/15 overflow-visible">
-
-
-        <div className="flex flex-wrap gap-2">
-
+        {/* TABS — REFINO */}
+        <div className="flex flex-wrap gap-2 shrink-0">
           <TopTab
-
             label="Em Alta"
-
             active={tab === "em-alta"}
-
             onClick={() => setTab("em-alta")}
-
           />
-
           <TopTab
-
             label="Bilhetes"
-
             active={tab === "bilhetes"}
-
             onClick={() => setTab("bilhetes")}
-
           />
-
           <TopTab
-
             label="Jogos Favoritos"
-
             active={tab === "favoritos"}
-
             onClick={() => setTab("favoritos")}
+          />
+        </div>
 
+        {/* BUSCA — AÇÃO PRINCIPAL */}
+        <div className="relative flex-1 min-w-[220px]">
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.currentTarget.value);
+              setSelectedMatchId(null);
+            }}
+            placeholder="Encontre aqui seu jogo"
+            className="
+              w-full h-9
+              px-3
+              text-xs sm:text-sm font-medium
+              text-white placeholder-white/70
+              bg-white/20 backdrop-blur
+              border border-white/30
+              rounded-xl
+              shadow-sm
+              focus:outline-none
+              focus:ring-2 focus:ring-white/60
+            "
           />
 
-        </div>
+          {suggestions.length > 0 && (
+            <div className="absolute left-0 mt-1 w-full sm:w-[26rem]
+                            bg-white dark:bg-neutral-900
+                            border border-gray-200 dark:border-neutral-800
+                            rounded-md shadow-lg z-50 overflow-hidden">
+              <ul className="max-h-56 overflow-auto">
+                {suggestions.map((m) => {
+                  const logoHome = findClubLogo(m.homeTeam);
+                  const logoAway = findClubLogo(m.awayTeam);
 
-        <div className="mt-2 sm:mt-0 flex items-center gap-2">
-          {/* Badge de classe (discreto, premium) */}
-          <div className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-2.5 py-1.5">
-            <img
-              src={getTierBadgeSrc(tierKey)}
-              alt={tierName}
-              className="w-6 h-6 object-contain"
-              loading="lazy"
-            />
-            <span className="text-xs font-semibold whitespace-nowrap">{tierName}</span>
-          </div>
+                  return (
+                    <li
+                      key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
+                      onMouseDown={() => {
+                        setQuery("");
+                        setSelectedMatchId(m.id);
+                      }}
+                      className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
+                    >
+                      <div className="flex items-center gap-2">
+                        {logoHome ? (
+                          <img src={logoHome} className="w-5 h-5 object-contain shrink-0" />
+                        ) : (
+                          <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
+                        )}
 
-          <span className="text-xs font-medium whitespace-nowrap">
-            Saldo: <b>R$ {saldo.toFixed(2)}</b>
-          </span>
-
-          <div className="hidden sm:block h-6 w-px bg-white/20" />
-
-          <div className="relative">
-
-            <input
-
-              type="text"
-
-              value={query}
-
-              onChange={(e) => {
-                setQuery(e.currentTarget.value);
-                setSelectedMatchId(null);
-              }}
-
-              placeholder="Encontre aqui seu jogo"
-
-              className="
-                w-52 sm:w-60 h-9
-                px-3
-                text-xs sm:text-sm font-medium
-                text-white placeholder-white/70
-                bg-white/15 backdrop-blur
-                border border-white/30
-                rounded-xl
-                shadow-sm
-                focus:outline-none
-                focus:ring-2 focus:ring-white/60
-              "
-            />
-
-            {suggestions.length > 0 && (
-
-              <div className="absolute left-0 mt-1 w-52 sm:w-64 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-md shadow-lg z-50 overflow-hidden">
-
-                <ul className="max-h-56 overflow-auto">
-
-                  {suggestions.map((m) => {
-                    const logoHome = findClubLogo(m.homeTeam);
-                    const logoAway = findClubLogo(m.awayTeam);
-
-                    return (
-                      <li
-                        key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
-                        onMouseDown={() => {
-                          setQuery("");               // 🔥 limpa o filtro textual
-                          setSelectedMatchId(m.id);   // filtra só por ID
-                        }}
-                        className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
-                      >
-                        {/* Linha principal: logos + times */}
-                        <div className="flex items-center gap-2">
-                          {/* Logo casa */}
-                          {logoHome ? (
-                            <img
-                              src={logoHome}
-                              alt={m.homeTeam}
-                              className="w-5 h-5 object-contain shrink-0"
-                            />
-                          ) : (
-                            <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
-                          )}
-
-                          {/* Times */}
-                          <div className="min-w-0 flex-1">
-                            <div className="font-xs text-gray-800 dark:text-gray-200 truncate">
-                              {m.homeTeam} <span className="text-gray-400">x</span> {m.awayTeam}
-                            </div>
-
-                            <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                              {m.competition} • {m.time}
-                            </div>
+                        <div className="min-w-0 flex-1">
+                          <div className="text-gray-800 dark:text-gray-200 truncate">
+                            {m.homeTeam} <span className="text-gray-400">x</span> {m.awayTeam}
                           </div>
-
-                          {/* Logo fora */}
-                          {logoAway ? (
-                            <img
-                              src={logoAway}
-                              alt={m.awayTeam}
-                              className="w-5 h-5 object-contain shrink-0"
-                            />
-                          ) : (
-                            <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
-                          )}
+                          <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                            {m.competition} • {m.time}
+                          </div>
                         </div>
-                      </li>
-                    );
-                  })}
 
-
-                </ul>
-
-              </div>
-
-            )}
-
-          </div>
-
+                        {logoAway ? (
+                          <img src={logoAway} className="w-5 h-5 object-contain shrink-0" />
+                        ) : (
+                          <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
+                        )}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
         </div>
 
+                {/* CONTEXTO — TIER + SALDO (com Hover) */}
+        <div
+          className="flex items-center gap-2 shrink-0
+                     rounded-xl border border-white/20
+                     bg-white/10 px-2.5 py-1.5"
+        >
+          {/* ===== HOVER: TIER ===== */}
+          <HoverCard openDelay={120}>
+            <HoverCardTrigger asChild>
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 rounded-lg px-1.5 py-1 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40"
+                title="Ver progresso do Tier"
+              >
+                <img
+                  src={getTierBadgeSrc(tierKey)}
+                  alt={tierName}
+                  className="w-5 h-5 object-contain"
+                  loading="lazy"
+                />
+                <span className="hidden sm:inline text-xs font-medium whitespace-nowrap text-white/80">
+                  {tierName}
+                </span>
+              </button>
+            </HoverCardTrigger>
+
+            <HoverCardContent
+              align="end"
+              side="bottom"
+              className="w-[360px] p-4 dark:bg-neutral-950 dark:border-neutral-800"
+            >
+              {(() => {
+                const next = getNextTier(tierKey);
+                const xp = tierStats.xp || 0;
+                const bets = tierStats.bets || 0;
+                const wins = tierStats.wins || 0;
+                const acc = tierStats.winRate || 0;
+
+                if (!next) {
+                  return (
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                          Você está no topo 🎉
+                        </p>
+                        <span className="text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-200">
+                          {tierName}
+                        </span>
+                      </div>
+                      <p className="text-xs text-gray-600 dark:text-gray-300">
+                        Agora é manter consistência pra defender o nível.
+                      </p>
+                    </div>
+                  );
+                }
+
+                const needXP = Math.max(0, next.xp - xp);
+                const needBets = Math.max(0, next.bets - bets);
+                const needWins = Math.max(0, next.wins - wins);
+                const needAcc = Math.max(0, next.acc - acc);
+
+                return (
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                          Próximo Tier
+                        </p>
+                        <p className="text-xs text-gray-600 dark:text-gray-300 truncate">
+                          {next.name}
+                        </p>
+                      </div>
+
+                      <div className="shrink-0 flex items-center gap-2">
+                        <img
+                          src={getTierBadgeSrc(next.key)}
+                          alt={next.name}
+                          className="w-8 h-8 object-contain"
+                          loading="lazy"
+                        />
+                        <span className="text-xs font-semibold px-2 py-1 rounded-full bg-gray-100 text-gray-700 dark:bg-neutral-900 dark:text-gray-200">
+                          {next.xp.toLocaleString()} XP
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 p-3">
+                      <div className="text-[11px] font-bold tracking-wider text-gray-500 dark:text-gray-400 uppercase">
+                        Falta para subir
+                      </div>
+
+                      <div className="mt-2 grid grid-cols-2 gap-2 text-xs">
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">XP</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needXP.toLocaleString()}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">Apostas</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needBets}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">Vitórias</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needWins}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">% Acerto</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needAcc > 0 ? fmtPct1(needAcc) : "OK"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-[11px] text-gray-500 dark:text-gray-400">
+                      Atual: <b>{xp.toLocaleString()} XP</b> • {bets} apostas • {wins} vitórias • {fmtPct1(acc)} acerto
+                    </div>
+                  </div>
+                );
+              })()}
+            </HoverCardContent>
+          </HoverCard>
+
+          <span className="hidden sm:block h-4 w-px bg-white/20" />
+
+          {/* ===== HOVER: SALDO ===== */}
+          <HoverCard openDelay={120}>
+            <HoverCardTrigger asChild>
+              <button
+                type="button"
+                className="text-xs font-medium whitespace-nowrap text-white/75 tabular-nums rounded-lg px-1.5 py-1 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40"
+                title="Ver saldo em apostas"
+              >
+                R$ {saldo.toFixed(2)}
+              </button>
+            </HoverCardTrigger>
+
+            <HoverCardContent
+              align="end"
+              side="bottom"
+              className="w-[320px] p-4 dark:bg-neutral-950 dark:border-neutral-800"
+            >
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Detalhes do saldo
+                </p>
+
+                <div className="rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 p-3 space-y-2 text-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600 dark:text-gray-300">Disponível</span>
+                    <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                      R$ {fmtMoney(saldo)}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600 dark:text-gray-300">Em apostas</span>
+                    <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                      R$ {fmtMoney(saldoEmAposta)}
+                    </span>
+                  </div>
+
+                  <div className="h-px bg-gray-200/70 dark:bg-neutral-800 my-1" />
+
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600 dark:text-gray-300">Total estimado</span>
+                    <span className="font-extrabold tabular-nums text-[#0a2a5e] dark:text-white">
+                      R$ {fmtMoney(saldo + saldoEmAposta)}
+                    </span>
+                  </div>
+                </div>
+
+                <p className="text-[11px] text-gray-500 dark:text-gray-400">
+                  “Em apostas” soma o stake dos bilhetes pendentes.
+                </p>
+              </div>
+            </HoverCardContent>
+          </HoverCard>
+        </div>
       </div>
-
- 
-
       
 
         {/* Hero: Featured Match (apenas na aba Em Alta) */}
