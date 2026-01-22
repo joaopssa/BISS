@@ -7,6 +7,7 @@ import api from "@/services/api";
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Slider } from "../ui/slider";
 
 // ===== Ícones (mesmo estilo do Finance) =====
 const FilterIcon = () => (
@@ -56,7 +57,7 @@ export default function BettingHistoryScreen() {
   const [filterLeague, setFilterLeague] = useState<string | null>(null);
   const [filterMarket, setFilterMarket] = useState<string | null>(null);
   const [filterStatus, setFilterStatus] = useState<string | null>(null);
-
+  const [filterOdds, setFilterOdds] = useState<[number, number] | null>(null);
   const filtersRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -128,8 +129,17 @@ export default function BettingHistoryScreen() {
     if (filterLeague && a.campeonato !== filterLeague) return false;
     if (filterMarket && a.mercado !== filterMarket) return false;
     if (filterStatus && a.status_aposta !== filterStatus) return false;
+
+    if (filterOdds) {
+      const [min, max] = filterOdds;
+      if (a.odd < min) return false;
+      if (max < 10 && a.odd > max) return false;
+      // max === 10 → aceita tudo acima
+    }
+
     return true;
   });
+
 
   const handleClearFilters = () => {
     setFilterLeague(null);
@@ -463,6 +473,10 @@ export default function BettingHistoryScreen() {
     );
   };
 
+  const isOddsFiltered =
+  filterOdds &&
+  (filterOdds[0] > 1.01 || filterOdds[1] < 10);
+
   // ===== Layout base do Finance =====
   const panelClass =
     "relative overflow-hidden rounded-2xl border border-[#014a8f]/15 " +
@@ -629,6 +643,32 @@ export default function BettingHistoryScreen() {
                       </select>
                     </div>
 
+                    <div className="mb-4">
+                      <label className="text-xs font-medium text-gray-500 mb-1 block">
+                        Faixa de Odds
+                      </label>
+
+                      <Slider
+                        min={1.01}
+                        max={10}
+                        step={0.01}
+                        value={filterOdds ?? [1.01, 10]}
+                        onValueChange={(v) => setFilterOdds(v as [number, number])}
+                      />
+
+                      <div className="mt-1 text-xs text-gray-600 dark:text-gray-300 flex justify-between">
+                        <span>{filterOdds ? filterOdds[0].toFixed(2) : "1.01"}</span>
+                        <span>
+                          {filterOdds
+                            ? filterOdds[1] >= 10
+                              ? "10+"
+                              : filterOdds[1].toFixed(2)
+                            : "10+"}
+                        </span>
+                      </div>
+                    </div>
+
+
                     <div className="flex gap-2 justify-end pt-2 border-t dark:border-neutral-800">
                       <Button
                         size="sm"
@@ -656,7 +696,7 @@ export default function BettingHistoryScreen() {
 
       <main className="pb-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Chips */}
-        {(filterLeague || filterMarket || filterStatus) && (
+        {(filterLeague || filterMarket || filterStatus || filterOdds) && (
           <div className="flex flex-wrap gap-2 text-xs mb-4">
             {filterLeague && (
               <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full border border-blue-200">
@@ -671,6 +711,12 @@ export default function BettingHistoryScreen() {
             {filterStatus && (
               <span className="px-2 py-1 bg-gray-200 text-gray-800 rounded-full border border-gray-300">
                 Status: {filterStatus}
+              </span>
+            )}
+            {isOddsFiltered && (
+              <span className="px-2 py-1 bg-indigo-100 text-indigo-800 rounded-full border border-indigo-200">
+                Odds: {filterOdds![0].toFixed(2)} –{" "}
+                {filterOdds![1] >= 10 ? "10+" : filterOdds![1].toFixed(2)}
               </span>
             )}
           </div>

@@ -119,7 +119,6 @@ export default function FinancialBalanceScreen() {
   const monthlyStats = useMemo(() => {
     const keyMonth = (d: Date) =>
       `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
-
     const map: Record<
       string,
       { bets: number; decided: number; wins: number; stakeAll: number; premios: number; lostStake: number }
@@ -171,6 +170,35 @@ export default function FinancialBalanceScreen() {
       return { month, bets: v.bets, winRate, profit };
     });
 }, [extrato, bilhetes]);
+
+   // --- VARIAÇÃO MÊS ATUAL VS ANTERIOR (apenas para leitura analítica) ---
+  const monthlyDelta = useMemo(() => {
+    if (monthlyStats.length < 2) return null;
+
+    const current = monthlyStats[0];
+    const previous = monthlyStats[1];
+
+    return {
+      profit: Math.round((current.profit - previous.profit) * 100) / 100,
+      winRate: Math.round((current.winRate - previous.winRate) * 10) / 10, // p.p.
+      bets: current.bets - previous.bets,
+      currentMonth: current.month,
+      previousMonth: previous.month,
+    };
+  }, [monthlyStats]);
+
+  const saldoEmAposta = useMemo(() => {
+    return bilhetes.reduce((acc, b: any) => {
+      const st = String(b.status || "").toLowerCase();
+
+      // considera apenas bilhetes em aberto
+      if (st === "aberto" || st === "pendente") {
+        return acc + Number(b.stake_total || b.stake || 0);
+      }
+
+      return acc;
+    }, 0);
+  }, [bilhetes]);
 
 
   // REF para detectar clique fora do dropdown
@@ -676,14 +704,38 @@ const annualSummary = useMemo(() => {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-5 py-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">
-                Saldo
-              </p>
-              <div className="mt-2 text-3xl font-extrabold text-gray-900 dark:text-white tabular-nums">
-                R$ {saldo.toFixed(2)}
+            <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-5 py-4 space-y-3">
+              {/* Saldo disponível */}
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                  Disponível
+                </span>
+                <span className="text-2xl font-extrabold text-gray-900 dark:text-white tabular-nums">
+                  R$ {saldo.toFixed(2)}
+                </span>
+              </div>
+
+              {/* Em aberto */}
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                  Em aberto
+                </span>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-200 tabular-nums">
+                  R$ {saldoEmAposta.toFixed(2)}
+                </span>
+              </div>
+
+              {/* Total estimado (opcional, mas recomendado) */}
+              <div className="pt-2 border-t border-gray-200/70 dark:border-neutral-800 flex items-center justify-between">
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">
+                  Total
+                </span>
+                <span className="text-base font-extrabold text-[#014a8f] dark:text-white tabular-nums">
+                  R$ {(saldo + saldoEmAposta).toFixed(2)}
+                </span>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -775,9 +827,42 @@ const annualSummary = useMemo(() => {
                 <h3 className="text-xl font-extrabold text-gray-900 dark:text-white">
                   Evolução Mensal
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Acompanhe volume, acerto e lucro por mês
-                </p>
+                {monthlyDelta && (
+                  <p
+                    className={`text-s font-semibold mt-1 ${
+                      (
+                        (monthlyMetric === "profit" && monthlyDelta.profit >= 0) ||
+                        (monthlyMetric === "winRate" && monthlyDelta.winRate >= 0) ||
+                        (monthlyMetric === "bets" && monthlyDelta.bets >= 0)
+                      )
+                        ? "text-green-600"
+                        : "text-red-600"
+                    }`}
+                  >
+                    {monthlyMetric === "profit" && (
+                      <>
+                        {monthlyDelta.profit >= 0 ? "▲" : "▼"}{" "}
+                        R$ {formatBRLCompact(Math.abs(monthlyDelta.profit))} x mês anterior
+                      </>
+                    )}
+
+                    {monthlyMetric === "winRate" && (
+                      <>
+                        {monthlyDelta.winRate >= 0 ? "▲" : "▼"}{" "}
+                        {Math.abs(monthlyDelta.winRate)} p.p. x mês anterior
+                      </>
+                    )}
+
+                    {monthlyMetric === "bets" && (
+                      <>
+                        {monthlyDelta.bets >= 0 ? "▲" : "▼"}{" "}
+                        {Math.abs(monthlyDelta.bets)} apostas x mês anterior
+                      </>
+                    )}
+                  </p>
+                )}
+
+
               </div>
 
               <div className="flex gap-2">

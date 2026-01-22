@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -13,6 +13,34 @@ import api from "@/services/api";
 
 interface RegisterScreenProps {
   onGoToLogin: () => void;
+}
+
+const MIN_AGE = 18;
+
+function calcAge(dateISO: string) {
+  // dateISO esperado: "YYYY-MM-DD"
+  const [y, m, d] = dateISO.split("-").map(Number);
+  if (!y || !m || !d) return NaN;
+
+  const today = new Date();
+  const birth = new Date(y, m - 1, d);
+
+  let age = today.getFullYear() - birth.getFullYear();
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
+
+  if (!hasHadBirthdayThisYear) age -= 1;
+  return age;
+}
+
+function maxDateForMinAge(minAge: number) {
+  const t = new Date();
+  const y = t.getFullYear() - minAge;
+  const m = String(t.getMonth() + 1).padStart(2, "0");
+  const d = String(t.getDate()).padStart(2, "0");
+  // Ex.: hoje 2026-01-22 => max 2008-01-22 (para 18+)
+  return `${y}-${m}-${d}`;
 }
 
 export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) => {
@@ -30,12 +58,21 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
   const { toast } = useToast();
   const { login } = useAuth();
 
+  const maxDOB = useMemo(() => maxDateForMinAge(MIN_AGE), []);
+  const age = useMemo(() => (dataNascimento ? calcAge(dataNascimento) : NaN), [dataNascimento]);
+  const isUnderage = Number.isFinite(age) ? age < MIN_AGE : false;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
     if (!nomeCompleto || !email || !dataNascimento || !password || !confirmPassword) {
       setError("Todos os campos são obrigatórios.");
+      return;
+    }
+
+    // ✅ BLOQUEIO 18+
+    if (isUnderage) {
       return;
     }
 
@@ -54,23 +91,15 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
         nomeCompleto,
         email,
         dataNascimento,
-        senha: password, // mantém senha aqui se o backend do cadastro exige "senha"
+        senha: password,
       });
 
-      // opcional: manter se você usa isso na tela seguinte
-      const registrationData = {
-        nomeCompleto,
-        email,
-        dataNascimento,
-        senha: password,
-      };
+      const registrationData = { nomeCompleto, email, dataNascimento, senha: password };
       localStorage.setItem("registrationData", JSON.stringify(registrationData));
 
-      // ✅ LOGIN AUTOMÁTICO (payload igual ao LoginScreen)
       const resp = await api.post("/auth/login", { email, password });
       const { token, user } = resp.data;
 
-      // ✅ Atualiza contexto + storage + header Authorization
       login(token, user);
 
       toast({
@@ -107,7 +136,6 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-56 w-56 rounded-full bg-emerald-200/20 blur-3xl dark:bg-emerald-500/10" />
 
           <CardHeader className="relative text-center py-8 sm:py-10">
-            {/* Logo maior, sem “quadrado pesado” */}
             <div className="mx-auto mb-5 sm:mb-6 w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-white/80 dark:bg-neutral-900/40 border border-gray-200/60 dark:border-neutral-800/60 shadow-sm flex items-center justify-center p-3">
               <img
                 src="/lovable-uploads/logonormal.jpg"
@@ -117,7 +145,6 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
               />
             </div>
 
-            {/* Slogan (Typewriter) */}
             <div className="mt-2 flex justify-center">
               <div className="w-full max-w-[760px] px-2 sm:px-4">
                 <div className="min-h-[44px] sm:min-h-[52px] md:min-h-[60px] flex items-center justify-center">
@@ -144,7 +171,7 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
         </div>
 
         <CardContent className="p-6 sm:p-8">
-          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+            <form noValidate onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
             <div className="relative">
               <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
               <Input
@@ -168,17 +195,27 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
               />
             </div>
 
-            <div className="relative">
-              <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-              <Input
-                type="date"
-                placeholder="Data de nascimento"
-                value={dataNascimento}
-                onChange={(e) => setDataNascimento(e.target.value)}
-                className="pl-10 h-11 sm:h-12 rounded-xl bg-white/80 dark:bg-neutral-900/40 border-gray-200/70 dark:border-neutral-800 focus-visible:ring-[#014a8f]/30"
-                required
-              />
+            <div className="space-y-1.5">
+              <div className="relative">
+                <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
+                <Input
+                  type="date"
+                  value={dataNascimento}
+                  onChange={(e) => setDataNascimento(e.target.value)}
+                  className="pl-10 h-11 sm:h-12 rounded-xl bg-white/80 dark:bg-neutral-900/40 border-gray-200/70 dark:border-neutral-800 focus-visible:ring-[#014a8f]/30"
+                  required
+                />
+              </div>
+
+              <div className="min-h-[18px]">
+                {dataNascimento && isUnderage && (
+                  <p className="text-xs sm:text-sm text-red-600 dark:text-red-300 pl-1">
+                    Cadastro permitido apenas para maiores de {MIN_AGE} anos.
+                  </p>
+                )}
+              </div>
             </div>
+
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="relative">
@@ -222,6 +259,7 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onGoToLogin }) =
               </div>
             </div>
 
+            {/* ✅ MANTIDO: Termo de Consentimento */}
             <div className="rounded-2xl border border-gray-200/70 dark:border-neutral-800/70 bg-white/70 dark:bg-neutral-900/20 px-4 py-3">
               <div className="flex items-start gap-3">
                 <Checkbox
