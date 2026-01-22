@@ -418,6 +418,33 @@ export const HomeScreen: React.FC = () => {
   const [h2hMatches, setH2hMatches] = useState<H2HMatch[]>([]);
   const [h2hMeta, setH2hMeta] = useState<H2HMeta | null>(null);
 
+  // ===== Search UX =====
+  const searchWrapRef = React.useRef<HTMLDivElement | null>(null);
+  const inputRef = React.useRef<HTMLInputElement | null>(null);
+
+  const [isSuggestOpen, setIsSuggestOpen] = useState(false);
+
+  const closeSuggest = () => setIsSuggestOpen(false);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeSuggest();
+    };
+    const onClickOutside = (e: MouseEvent) => {
+      const el = searchWrapRef.current;
+      if (!el) return;
+      if (!el.contains(e.target as Node)) closeSuggest();
+    };
+
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClickOutside);
+
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClickOutside);
+    };
+  }, []);
+
   
   // Scroll para o topo quando a aba mudar
   useEffect(() => {
@@ -683,7 +710,78 @@ export const HomeScreen: React.FC = () => {
       setH2hLoading(false);
     }
   };
+   const fetchTierHome = async () => {
+    try {
+      const [histRes, bilhetesRes] = await Promise.allSettled([
+        api.get("/apostas/historico"),
+        api.get("/apostas/bilhetes"),
+      ]);
 
+      const apostas: any[] =
+        histRes.status === "fulfilled" && Array.isArray(histRes.value.data)
+          ? histRes.value.data
+          : [];
+
+      const bilhetes: any[] =
+        bilhetesRes.status === "fulfilled" && Array.isArray(bilhetesRes.value.data)
+          ? bilhetesRes.value.data
+          : [];
+
+      // map mínimo (igual seu Profile)
+      const mappedApostas = apostas.map((a: any) => ({
+        status_aposta: a.status_aposta || a.status || "pendente",
+        data_registro: a.data_registro || a.createdAt || new Date().toISOString(),
+      }));
+
+      const totalBets = mappedApostas.length;
+      const settled = mappedApostas.filter((x: any) => x.status_aposta !== "pendente");
+      const wins = settled.filter((x: any) => x.status_aposta === "ganha").length;
+      const winRate = settled.length > 0 ? (wins / settled.length) * 100 : 0;
+
+      // XP por streak (cronológico)
+      const settledChrono = [...mappedApostas]
+        .filter((a: any) => a.status_aposta !== "pendente")
+        .sort((a, b) => new Date(a.data_registro).getTime() - new Date(b.data_registro).getTime());
+
+      let bissXP = 0;
+      let streak = 0;
+
+      for (const a of settledChrono) {
+        if (a.status_aposta === "ganha") {
+          streak += 1;
+          bissXP += getXPForStreak(streak);
+        } else if (a.status_aposta === "perdida") {
+          streak = 0;
+          bissXP -= XP_PENALIDADE_ERRO;
+        }
+        bissXP = Math.max(0, bissXP);
+      }
+
+      // XP por bilhetes
+      const bilhetesXP = bilhetes.reduce((acc: number, b: any) => {
+        acc += XP_PER_BILHETE_CRIADO;
+        const st = (b.status || "").toString().toLowerCase();
+        if (st === "ganho" || st === "ganha") acc += XP_BONUS_BILHETE_GANHO;
+        return acc;
+      }, 0);
+
+      bissXP = Math.max(0, bissXP + bilhetesXP);
+
+      const tier = getUserTier(bissXP, totalBets, wins, Math.round(winRate * 10) / 10);
+
+      setTierKey(tier.key);
+      setTierName(tier.name);
+
+      // ✅ pra hover do tier
+      setTierStats({
+        xp: bissXP,
+        bets: totalBets,
+        wins,
+        winRate: Math.round(winRate * 10) / 10,
+      });
+    } catch (err) {
+    }
+  };
 
   useEffect(() => {
 
@@ -695,90 +793,18 @@ export const HomeScreen: React.FC = () => {
 
   fetchTierHome();
 
-const interval = setInterval(() => {
-  fetchSaldo();
-  fetchTierHome(); // opcional: se quiser atualizar junto do saldo
-}, 5000);
+  const saldoInterval = setInterval(fetchSaldo, 5000);
+  const tierInterval = setInterval(fetchTierHome, 30000);
 
 
  
 
-  return () => clearInterval(interval);
+   return () => {
+    clearInterval(saldoInterval);
+    clearInterval(tierInterval);
+  };
 
 }, []);
-
- const fetchTierHome = async () => {
-  try {
-    const [histRes, bilhetesRes] = await Promise.allSettled([
-      api.get("/apostas/historico"),
-      api.get("/apostas/bilhetes"),
-    ]);
-
-    const apostas: any[] =
-      histRes.status === "fulfilled" && Array.isArray(histRes.value.data)
-        ? histRes.value.data
-        : [];
-
-    const bilhetes: any[] =
-      bilhetesRes.status === "fulfilled" && Array.isArray(bilhetesRes.value.data)
-        ? bilhetesRes.value.data
-        : [];
-
-    // map mínimo (igual seu Profile)
-    const mappedApostas = apostas.map((a: any) => ({
-      status_aposta: a.status_aposta || a.status || "pendente",
-      data_registro: a.data_registro || a.createdAt || new Date().toISOString(),
-    }));
-
-    const totalBets = mappedApostas.length;
-    const settled = mappedApostas.filter((x: any) => x.status_aposta !== "pendente");
-    const wins = settled.filter((x: any) => x.status_aposta === "ganha").length;
-    const winRate = settled.length > 0 ? (wins / settled.length) * 100 : 0;
-
-    // XP por streak (cronológico)
-    const settledChrono = [...mappedApostas]
-      .filter((a: any) => a.status_aposta !== "pendente")
-      .sort((a, b) => new Date(a.data_registro).getTime() - new Date(b.data_registro).getTime());
-
-    let bissXP = 0;
-    let streak = 0;
-
-    for (const a of settledChrono) {
-      if (a.status_aposta === "ganha") {
-        streak += 1;
-        bissXP += getXPForStreak(streak);
-      } else if (a.status_aposta === "perdida") {
-        streak = 0;
-        bissXP -= XP_PENALIDADE_ERRO;
-      }
-      bissXP = Math.max(0, bissXP);
-    }
-
-    // XP por bilhetes
-    const bilhetesXP = bilhetes.reduce((acc: number, b: any) => {
-      acc += XP_PER_BILHETE_CRIADO;
-      const st = (b.status || "").toString().toLowerCase();
-      if (st === "ganho" || st === "ganha") acc += XP_BONUS_BILHETE_GANHO;
-      return acc;
-    }, 0);
-
-    bissXP = Math.max(0, bissXP + bilhetesXP);
-
-    const tier = getUserTier(bissXP, totalBets, wins, Math.round(winRate * 10) / 10);
-
-    setTierKey(tier.key);
-    setTierName(tier.name);
-
-    // ✅ pra hover do tier
-    setTierStats({
-      xp: bissXP,
-      bets: totalBets,
-      wins,
-      winRate: Math.round(winRate * 10) / 10,
-    });
-  } catch (err) {
-  }
-};
 
   const tier = BISS_TIERS.find(t => t.key === tierKey) || BISS_TIERS[0];
   const nextTier = getNextTier(tierKey);
@@ -809,6 +835,19 @@ const interval = setInterval(() => {
         /brasileir|premier|la liga|bundesliga|serie a\b|ligue 1|champions|libertadores|copa do mundo|euro/i.test(comp || "");
       list = list.filter((m) => isTopLeague((m as any).competition));
     }
+    if (quickFilter === "today") {
+      const now = new Date();
+      const y = now.getFullYear();
+      const m = now.getMonth();
+      const d = now.getDate();
+
+      list = list.filter((mm: any) => {
+        const kd = getKickoffDate(mm);
+        if (!kd) return false;
+        return kd.getFullYear() === y && kd.getMonth() === m && kd.getDate() === d;
+      });
+    }
+
 
     // (3) Busca por texto/clube
     const q = query.trim().toLowerCase();
@@ -1362,7 +1401,7 @@ const calcOddTotal = (t: Ticket) =>
                   extractLineFromText(anyParams.market);
 
                 const sel: BetSelection = {
-                  matchId: params.matchId,
+                  matchId: matchIdSafe,
                   partida: `${params.homeTeam} x ${params.awayTeam}`,
                   campeonato: params.competition,
                   time_casa: params.homeTeam,
@@ -1370,7 +1409,7 @@ const calcOddTotal = (t: Ticket) =>
                   mercado: params.market,
                   selecao: params.selection,
                   linha, // ✅ NOVO
-                  odd: params.odd,
+                  odd: oddNum,
                 };
 
                 handleAddSelection(sel);
@@ -1418,6 +1457,15 @@ const calcOddTotal = (t: Ticket) =>
                 selections={selections}
                 onSelectOdd={(params) => {
                   const anyParams: any = params;
+                  
+                  const matchIdSafe =
+                    anyParams.matchId ?? anyParams.id ?? anyParams.match?.id ?? "unknown";
+                  
+                  const oddNum = Number(anyParams.odd);
+                  if (!oddNum || Number.isNaN(oddNum)) {
+                    setFeedback("Odd indisponível para este mercado.");
+                    return;
+                  }
 
                   const linha =
                     anyParams.linha ??
@@ -1429,7 +1477,7 @@ const calcOddTotal = (t: Ticket) =>
                     extractLineFromText(anyParams.market);
 
                   const sel: BetSelection = {
-                    matchId: params.matchId,
+                    matchId: matchIdSafe,
                     partida: `${params.homeTeam} x ${params.awayTeam}`,
                     campeonato: params.competition,
                     time_casa: params.homeTeam,
@@ -1437,10 +1485,11 @@ const calcOddTotal = (t: Ticket) =>
                     mercado: params.market,
                     selecao: params.selection,
                     linha, // ✅ AQUI
-                    odd: params.odd,
+                    odd: oddNum,
                   };
 
                   handleAddSelection(sel);
+                  setIsSlipOpen(true);
                 }}
 
 
@@ -1852,19 +1901,22 @@ const calcOddTotal = (t: Ticket) =>
           />
         </div>
 
-        {/* BUSCA — AÇÃO PRINCIPAL */}
-        <div className="relative flex-1 min-w-[220px]">
+        {/* BUSCA — AÇÃO PRINCIPAL (fase 2) */}
+        <div ref={searchWrapRef} className="relative flex-1 min-w-[220px]">
           <input
+            ref={inputRef}
             type="text"
             value={query}
+            onFocus={() => setIsSuggestOpen(true)}
             onChange={(e) => {
               setQuery(e.currentTarget.value);
               setSelectedMatchId(null);
+              setIsSuggestOpen(true);
             }}
             placeholder="Encontre aqui seu jogo"
             className="
               w-full h-9
-              px-3
+              pl-3 pr-10
               text-xs sm:text-sm font-medium
               text-white placeholder-white/70
               bg-white/20 backdrop-blur
@@ -1876,11 +1928,42 @@ const calcOddTotal = (t: Ticket) =>
             "
           />
 
-          {suggestions.length > 0 && (
-            <div className="absolute left-0 mt-1 w-full sm:w-[26rem]
-                            bg-white dark:bg-neutral-900
-                            border border-gray-200 dark:border-neutral-800
-                            rounded-md shadow-lg z-50 overflow-hidden">
+          {/* Botão limpar */}
+          {(query.trim().length > 0 || selectedMatchId != null) && (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                setSelectedMatchId(null);
+                setIsSuggestOpen(false);
+                inputRef.current?.focus();
+              }}
+              className="
+                absolute right-2 top-1/2 -translate-y-1/2
+                w-6 h-6 rounded-lg
+                text-white/80 hover:text-white
+                hover:bg-white/10
+                flex items-center justify-center
+                focus:outline-none focus:ring-2 focus:ring-white/40
+              "
+              aria-label="Limpar busca"
+              title="Limpar"
+            >
+              ×
+            </button>
+          )}
+
+
+          {/* Sugestões */}
+          {isSuggestOpen && suggestions.length > 0 && (
+            <div
+              className="
+                absolute left-0 mt-1 w-full sm:w-[26rem]
+                bg-white dark:bg-neutral-900
+                border border-gray-200 dark:border-neutral-800
+                rounded-md shadow-lg z-[9999] overflow-hidden
+              "
+            >
               <ul className="max-h-56 overflow-auto">
                 {suggestions.map((m) => {
                   const logoHome = findClubLogo(m.homeTeam);
@@ -1889,9 +1972,21 @@ const calcOddTotal = (t: Ticket) =>
                   return (
                     <li
                       key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
-                      onMouseDown={() => {
+                      // onMouseDown evita perder o foco antes do click (melhor em dropdown)
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+
+                        // (A) limpa input
                         setQuery("");
-                        setSelectedMatchId(m.id);
+                        setIsSuggestOpen(false);
+
+                        // (B) não filtra a lista — só faz scroll até o card
+                        setSelectedMatchId(null);
+                        setTab("em-alta");
+                        setScrollToMatchId(m.id);
+
+                        // opcional: se quiser "fixar" como seleção, troque pra:
+                        // setSelectedMatchId(m.id);
                       }}
                       className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
                     >
