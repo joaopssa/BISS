@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   "Brasileirão - Série A Betano": path.join(
     __dirname,
-    "../data/matches/brasileirao-serie-a/brasileirao_2025.csv"
+    "../data/matches/brasileirao-serie-a/brasileirao_2026.csv"
   ),
   "Brasileirão - Série B": path.join(
     __dirname,

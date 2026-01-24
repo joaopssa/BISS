@@ -46,10 +46,10 @@ LEAGUES = [
     {
         "nome": "Brasileirão Série A",
         "pasta": "brasileirao-serie-a",
-        "arquivo": "brasileirao_2025.csv",
+        "arquivo": "brasileirao_2026.csv",
         "tipo_fonte": "football-data-new",
         "url": "https://www.football-data.co.uk/new/BRA.csv",
-        "filtro_ano": 2025,
+        "filtro_ano": 2026,
         "divisao_filtro": "Serie A",
         "has_penalties": False
     },
@@ -87,7 +87,11 @@ TEAM_MAP = {
     "Mirassol FC": "Mirassol",
     "Juventude": "Juventude-RS",
     "Palmeiras": "Palmeiras",
-
+    "Athletico-PR":"Athletico-PR",
+    "Coritiba": "Coritiba",
+    "Remo": "Remo",
+    "Chapecoense-SC": "Chapecoense",
+    
     # --- PREMIER LEAGUE ---
     "Man City": "Manchester City",
     "Chelsea": "Chelsea",
@@ -352,15 +356,33 @@ def update_csv_file(config):
         if key in local_index:
             idx = local_index[key]
 
-            # 🔄 ATUALIZA DATA E DIA (JOGO REMARCADO)
-            if df_local.at[idx, 'Date'] != row['Date']:
-                df_local.at[idx, 'Date'] = row['Date']
-                try:
-                    dt = datetime.strptime(row['Date'], "%Y-%m-%d")
-                    df_local.at[idx, 'Day'] = get_day_of_week(dt)
-                except:
-                    pass
-                updated += 1
+            # 🔄 ATUALIZA DATE/DAY (para Brasileirão 2026 preencher do zero também)
+            new_date = row.get("Date")
+            old_date = df_local.at[idx, "Date"]
+
+            # Só tenta atualizar se o feed trouxe uma data válida
+            if pd.notna(new_date) and str(new_date).strip() != "":
+                # Atualiza se o local está vazio OU a data mudou
+                if pd.isna(old_date) or str(old_date).strip() == "" or str(old_date) != str(new_date):
+                    df_local.at[idx, "Date"] = new_date
+                    try:
+                        dt = datetime.strptime(str(new_date), "%Y-%m-%d")
+                        df_local.at[idx, "Day"] = get_day_of_week(dt)
+                    except:
+                        pass
+                    updated += 1
+                else:
+                    # Date igual, mas Day vazio -> recalcula
+                    old_day = df_local.at[idx, "Day"]
+                    if pd.isna(old_day) or str(old_day).strip() == "":
+                        try:
+                            dt = datetime.strptime(str(old_date), "%Y-%m-%d")
+                            df_local.at[idx, "Day"] = get_day_of_week(dt)
+                            updated += 1
+                        except:
+                            pass
+
+
 
             # 🔄 ATUALIZA PLACAR SE NECESSÁRIO
             if pd.isna(df_local.at[idx, 'FullTime']) and pd.notna(row['FullTime']):
