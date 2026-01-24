@@ -1,5 +1,5 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,,2025-08-15,Liverpool,AFC Bournemouth,4-2,1-0
+1,Fri,2025-08-15,Liverpool,AFC Bournemouth,4-2,1-0
 1,Sat,2025-08-16,Brighton & Hove Albion,Fulham FC,1-1,0-0
 1,Sat,2025-08-16,Sunderland,West Ham United,3-0,0-0
 1,Sat,2025-08-16,Tottenham,Burnley,3-0,1-0
@@ -185,10 +185,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Tue,2025-12-30,West Ham United,Brighton & Hove Albion,2-2,2-1
 19,Tue,2025-12-30,Arsenal,Aston Villa,4-1,0-0
 19,Tue,2025-12-30,Manchester United,Wolverhampton,1-1,1-1
-19,,2026-01-01,Crystal Palace,Fulham FC,1-1,1-0
-19,,2026-01-01,Liverpool,Leeds United,0-0,0-0
-19,,2026-01-01,Sunderland,Manchester City,0-0,0-0
-19,,2026-01-01,Brentford,Tottenham,0-0,0-0
+19,Thu,2026-01-01,Crystal Palace,Fulham FC,1-1,1-0
+19,Thu,2026-01-01,Liverpool,Leeds United,0-0,0-0
+19,Thu,2026-01-01,Sunderland,Manchester City,0-0,0-0
+19,Thu,2026-01-01,Brentford,Tottenham,0-0,0-0
 20,Sat,2026-01-03,Aston Villa,Nottingham Forest,3-1,1-0
 20,Sat,2026-01-03,Brighton & Hove Albion,Burnley,2-0,1-0
 20,Sat,2026-01-03,Wolverhampton,West Ham United,3-0,3-0

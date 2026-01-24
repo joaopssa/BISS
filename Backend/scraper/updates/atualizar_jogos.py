@@ -335,6 +335,22 @@ def update_csv_file(config):
             df_local[col] = None
     df_local = df_local[target_cols]
 
+    # ✅ FIX: garantir dtypes (evita FutureWarning e futuros erros)
+    STRING_COLS = ["Day", "Date", "Home", "Away", "FullTime", "HalfTime"]
+    if "Penalties" in target_cols:
+        STRING_COLS.append("Penalties")
+
+    for c in STRING_COLS:
+        if c in df_new.columns:
+            df_new[c] = df_new[c].astype("string")
+        if c in df_local.columns:
+            df_local[c] = df_local[c].astype("string")
+
+    # Matchday: mantém numérico nullable (se você quiser)
+    if "Matchday" in target_cols:
+        df_new["Matchday"] = pd.to_numeric(df_new["Matchday"], errors="coerce").astype("Int64")
+        df_local["Matchday"] = pd.to_numeric(df_local["Matchday"], errors="coerce").astype("Int64")
+
     # 🔑 CHAVE REAL DO JOGO (SEM DATA)
     def make_key(row):
         return (
