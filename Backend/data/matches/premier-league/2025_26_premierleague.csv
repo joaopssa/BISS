@@ -219,16 +219,16 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Sat,2026-01-17,Nottingham Forest,Arsenal,0-0,0-0
 22,Sat,2026-01-17,Tottenham,West Ham United,1-2,0-1
 22,Sun,2026-01-18,Wolverhampton,Newcastle United,0-0,0-0
-23,,2026-01-01,AFC Bournemouth,Liverpool,,
-23,,2026-01-01,Crystal Palace,Chelsea,,
-23,,2026-01-01,Arsenal,Manchester United,,
-23,,2026-01-01,Brentford,Nottingham Forest,,
-23,,2026-01-01,Burnley,Tottenham,,
-23,,2026-01-01,Everton,Leeds United,,
-23,,2026-01-01,Fulham FC,Brighton & Hove Albion,,
-23,,2026-01-01,Manchester City,Wolverhampton,,
-23,,2026-01-01,Newcastle United,Aston Villa,,
-23,,2026-01-01,West Ham United,Sunderland,,
+23,Sat,2026-01-24,AFC Bournemouth,Liverpool,3-2,2-1
+23,Sun,2026-01-25,Crystal Palace,Chelsea,1-3,0-1
+23,Sun,2026-01-25,Arsenal,Manchester United,2-3,1-1
+23,Sun,2026-01-25,Brentford,Nottingham Forest,0-2,0-1
+23,Sat,2026-01-24,Burnley,Tottenham,2-2,1-1
+23,Mon,2026-01-26,Everton,Leeds United,1-1,0-1
+23,Sat,2026-01-24,Fulham FC,Brighton & Hove Albion,2-1,0-1
+23,Sat,2026-01-24,Manchester City,Wolverhampton,2-0,2-0
+23,Sun,2026-01-25,Newcastle United,Aston Villa,0-2,0-1
+23,Sat,2026-01-24,West Ham United,Sunderland,3-1,3-0
 24,,2026-01-01,Sunderland,Burnley,,
 24,,2026-01-01,Aston Villa,Brentford,,
 24,,2026-01-01,Brighton & Hove Albion,Everton,,

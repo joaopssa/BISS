@@ -205,8 +205,6 @@ export default function BettingHistoryScreen() {
   const totalApostas = base.length;
   const totalGanhas = base.filter((a) => a.status_aposta === "ganha").length;
   const totalPerdidas = base.filter((a) => a.status_aposta === "perdida").length;
-  const totalCanceladas = base.filter((a) => a.status_aposta === "cancelada").length;
-  const totalPendentes = base.filter((a) => a.status_aposta === "pendente").length;
 
   const decididas = totalGanhas + totalPerdidas;
   const taxaAcerto = decididas > 0 ? (totalGanhas / decididas) * 100 : 0;

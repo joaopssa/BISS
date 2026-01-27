@@ -1,11 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import React, { useEffect, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { User, Trophy, Target, TrendingUp, Award, Crown, Medal, CheckCircle2 } from 'lucide-react';
+import { Trophy, Target, TrendingUp, Award, Crown, Medal, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContexts';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
 import EditProfileCard from '@/components/app/EditProfileCard';
@@ -112,7 +110,6 @@ const fmtPct1 = (v: number) => `${Number(v || 0).toFixed(1)}%`;
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const auth = useAuth();
-  const navigate = useNavigate();
 
   const storedUser =
     auth?.user ||
@@ -163,15 +160,9 @@ export const ProfileRankingScreen: React.FC = () => {
     bissNextTierKey: null,
   });
 
-  const [achievements, setAchievements] = useState<any[]>([]);
-
   const [showEdit, setShowEdit] = useState(false);
 
   const [dailyPayload, setDailyPayload] = useState<any>(null);
-  const [dailyLoading, setDailyLoading] = useState<boolean>(false);
-
-  // Utilitários
-  const formatCurrency = (v: number) => Number(v || 0).toFixed(2);
 
   // ---------------------------------------------------------
   // Normalizadores / mapeamento de payload do backend → frontend
@@ -361,9 +352,11 @@ export const ProfileRankingScreen: React.FC = () => {
 
         // Estatísticas básicas
         const totalBets = mappedApostas.length;
+        const finishedBets = mappedApostas.filter(
+          (x: any) => x.status_aposta === "ganha" || x.status_aposta === "perdida"
+        ).length;
         const settled = mappedApostas.filter((x: any) => x.status_aposta !== 'pendente');
         const wins = settled.filter((x: any) => x.status_aposta === 'ganha').length;
-        const losses = settled.filter((x: any) => x.status_aposta === 'perdida').length;
         const winRate = settled.length > 0 ? (wins / settled.length) * 100 : 0;
 
         // Calcula streaks (sequência atual de vitórias e maior sequência)
@@ -523,7 +516,7 @@ export const ProfileRankingScreen: React.FC = () => {
           name,
           username,
           avatar: (name && name.trim().slice(0, 1).toUpperCase()) || p.avatar,
-          totalBets,
+          totalBets: finishedBets,
           winRate: Math.round(winRate * 10) / 10,
           totalProfit: Math.round(profit * 100) / 100,
           bissYield: Math.round(roiPct * 10) / 10,
@@ -536,16 +529,6 @@ export const ProfileRankingScreen: React.FC = () => {
           bissTierKey: tier?.key || "INI",
           bissNextTierKey: nextTier?.key || null,
         }));
-
-        // Achievements: mínimo — derive alguns targets a partir das estatísticas
-        const derivedAchievements = [
-          { id: 'first-win', title: 'Primeira Vitória', description: 'Ganhe sua primeira aposta', icon: Trophy, earned: wins > 0, earnedDate: wins > 0 ? undefined : undefined },
-          { id: 'five-win-streak', title: 'Sequência de 5', description: 'Ganhe 5 apostas consecutivas', icon: TrendingUp, earned: longestStreak >= 5, progress: `${Math.min(longestStreak, 5)}/5` },
-          { id: 'consistent', title: 'Apostador Consistente', description: 'Mantenha taxa de acerto acima de 60%', icon: Target, earned: winRate >= 60 },
-          { id: 'profit-100', title: 'Centena de Lucro', description: 'Obtenha R$ 100 de lucro', icon: Award, earned: profit >= 100 },
-        ];
-
-        setAchievements(derivedAchievements);
 
         // ✅ Por fim, carregar preferências atuais (para EditProfileCard abrir preenchido)
         await fetchAndApplyPreferences({ silent: true });
@@ -560,15 +543,6 @@ export const ProfileRankingScreen: React.FC = () => {
 
     return () => { mounted = false; };
   }, []);
-
-  const getRankIcon = (rank: number) => {
-    switch (rank) {
-      case 1: return <Crown className="w-5 h-5 text-yellow-500" />;
-      case 2: return <Medal className="w-5 h-5 text-gray-400" />;
-      case 3: return <Medal className="w-5 h-5 text-orange-500" />;
-      default: return <Trophy className="w-5 h-5 text-blue-600" />;
-    }
-  };
 
   const handleToggleEdit = async () => {
     const next = !showEdit;
