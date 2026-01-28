@@ -46,7 +46,7 @@ export default function BettingHistoryScreen() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-
+  
   const [apostas, setApostas] = useState<Aposta[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [erro, setErro] = useState<string | null>(null);
@@ -58,7 +58,9 @@ export default function BettingHistoryScreen() {
   const [filterMarket, setFilterMarket] = useState<string | null>(null);
   const [filterStatus, setFilterStatus] = useState<string | null>(null);
   const [filterOdds, setFilterOdds] = useState<[number, number] | null>(null);
+  const [clubSearch, setClubSearch] = useState("");
   const filtersRef = useRef<HTMLDivElement | null>(null);
+
 
   useEffect(() => {
     if (!showFilters) return;
@@ -139,7 +141,6 @@ export default function BettingHistoryScreen() {
 
     return true;
   });
-
 
   const handleClearFilters = () => {
     setFilterLeague(null);
@@ -249,7 +250,7 @@ export default function BettingHistoryScreen() {
 
   const top4 = sortedClubs.slice(0, 4);
 
-  const clubAccuracyList = Object.entries(clubAccStats)
+    const clubAccuracyList = Object.entries(clubAccStats)
     .map(([name, st]) => {
       const decided = st.ganha + st.perdida;
       const acc = decided > 0 ? (st.ganha / decided) * 100 : 0;
@@ -257,8 +258,18 @@ export default function BettingHistoryScreen() {
       return { name, displayName, ...st, decided, acc };
     })
     .filter((c) => c.decided > 0)
-    .sort((a, b) => b.acc - a.acc)
+    .sort((a, b) => {
+      // 1) maior % primeiro
+      if (b.acc !== a.acc) return b.acc - a.acc;
+
+      // 2) empate no % -> quem tem mais acertos (ganhas) primeiro
+      if (b.ganha !== a.ganha) return b.ganha - a.ganha;
+
+      // 3) (opcional) ainda empatou -> quem tem mais decididas primeiro
+      return b.decided - a.decided;
+    })
     .slice(0, 5);
+
 
   const maxAcc = clubAccuracyList.length
     ? Math.max(...clubAccuracyList.map((c) => c.acc))
@@ -475,6 +486,14 @@ export default function BettingHistoryScreen() {
   filterOdds &&
   (filterOdds[0] > 1.01 || filterOdds[1] < 10);
 
+  const filteredClubsBySearch = useMemo(() => {
+    const term = normalize(clubSearch);
+    if (!term) return sortedClubs;
+
+    return sortedClubs.filter((club) =>
+      normalize(displayClubName(club.name)).includes(term)
+    );
+  }, [clubSearch, sortedClubs, clubDisplayByNorm]);
   // ===== Layout base do Finance =====
   const panelClass =
     "relative overflow-hidden rounded-2xl border border-[#014a8f]/15 " +
@@ -1046,6 +1065,7 @@ export default function BettingHistoryScreen() {
         </DialogContent>
       </Dialog>
 
+      
       {/* Modal dos Times (Ver todos) */}
       <Dialog open={allClubsOpen} onOpenChange={setAllClubsOpen}>
         <DialogContent className="max-w-4xl w-[94vw] sm:w-full p-0 overflow-hidden bg-white dark:bg-neutral-900">
@@ -1056,20 +1076,38 @@ export default function BettingHistoryScreen() {
                 Times ({distinctTeams})
               </DialogTitle>
             </DialogHeader>
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-gray-500 mt-1 mb-3">
               Resumo por clube com quantidade de apostas e desempenho.
             </p>
+
+            <input
+              type="text"
+              placeholder="Buscar time..."
+              value={clubSearch}
+              onChange={(e) => setClubSearch(e.target.value)}
+              className="
+                w-full
+                rounded-xl
+                border border-gray-300 dark:border-neutral-700
+                bg-white dark:bg-neutral-800
+                px-3 py-2
+                text-sm text-gray-900 dark:text-white
+                placeholder:text-gray-400
+                focus:ring-2 focus:ring-[#014a8f]
+                outline-none
+              "
+            />
           </div>
 
           {/* Body */}
           <div className="p-5 max-h-[72vh] overflow-auto bg-gray-50/60 dark:bg-neutral-950">
-            {sortedClubs.length === 0 ? (
+            {filteredClubsBySearch.length === 0 ? (
               <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-white dark:bg-neutral-900 px-4 py-10 text-center text-gray-500 text-sm">
                 Nenhum clube encontrado.
               </div>
             ) : (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                {sortedClubs.map((club) => {
+                {filteredClubsBySearch.map((club) => {
                   const logo = findLogo(club.name);
                   return (
                     <div
