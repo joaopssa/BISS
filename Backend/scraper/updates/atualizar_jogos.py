@@ -60,7 +60,15 @@ LEAGUES = [
         "tipo_fonte": "football-data-uk",
         "url": "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
         "has_penalties": False
-    }
+    },
+    {
+        "nome": "Ligue 1",
+        "pasta": "ligue1",
+        "arquivo": "ligue1_2025_26.csv",
+        "tipo_fonte": "football-data-uk",
+        "url": "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
+        "has_penalties": False
+    },
 
 ]
 
@@ -188,21 +196,21 @@ TEAM_MAP = {
     
 
     # --- LIGUE 1 ---
-    "Olympique Marseille": "Olympique de Marseille",
-    "Paris Saint-Germain": "Paris Saint Germain",
+    "Marseille": "Olympique de Marseille",
+    "Paris SG": "Paris Saint Germain",
     "Paris FC": "Paris FC",
     "RC Lens": "Lens",
-    "RC Strasbourg Alsace": "Estrasburgo",
-    "Stade Brestois 29": "Brestois",
+    "Strasbourg": "Estrasburgo",
+    "Brest": "Brestois",
     "Stade Rennais FC": "Rennes",
-    "AJ Auxerre": "AJ Auxerre",
+    "Auxerre": "AJ Auxerre",
     "Angers SCO": "Angers",
     "AS Monaco": "Monaco",
-    "FC Lorient": "FC Lorient",
-    "FC Metz": "FC Metz",
+    "Lorient": "FC Lorient",
+    "Metz": "FC Metz",
     "FC Nantes": "Nantes",
-    "Toulouse FC": "Toulouse FC",
-    "Le Havre AC": "Le Havre AC",
+    "Toulouse": "Toulouse FC",
+    "Le Havre": "Le Havre AC",
     "LOSC Lille": "Lille",
     "OGC Nice": "Nice",
     "Olympique Lyon,Lyonnais": "Lyon",
