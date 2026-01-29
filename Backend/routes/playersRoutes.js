@@ -3,7 +3,7 @@ const path = require("path");
 const router = express.Router();
 
 router.get("/players/csv", (req, res) => {
-  const filePath = path.join(__dirname, "..", "data", "players", "players_by_club_2025.csv");
+  const filePath = path.join(__dirname, "..", "data", "players", "players_by_club.csv");
   res.sendFile(filePath);
 });
 
