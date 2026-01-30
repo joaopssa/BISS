@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Trophy, Target, TrendingUp, Award, Crown, Medal, CheckCircle2 } from 'lucide-react';
+import {
+  Layers,
+  Trophy,
+  Activity,
+  Wallet,
+  Gauge,
+  CheckCircle2,
+  TrendingUp,
+} from "lucide-react";
 import { useAuth } from '@/contexts/AuthContexts';
 import { Button } from '@/components/ui/button';
 import clubsMap from "@/utils/clubs-map.json";
@@ -62,10 +70,19 @@ export const getXPForStreak = (streak: number) => {
   return 460 + Math.floor((streak - 15) / 5) * 50;
 };
 
-export const computeYieldPct = (premios: number, stakes: number) => {
-  if (stakes <= 0) return 0;
-  return (premios/ stakes) * 100;
+const isBilheteFinalizado = (b: any) => {
+  const st = (b?.status || "").toString().toLowerCase().trim();
+  return st === "ganho" || st === "ganha" || st === "perdido" || st === "perdida";
 };
+
+export const computeRoiPct = (retorno: number, investido: number) => {
+  const r = Number(retorno) || 0;
+  const i = Number(investido) || 0;
+  if (i <= 0) return 0; // sem base de investimento finalizado, ROI fica neutro
+  return ((r - i) / i) * 100;
+};
+
+
 
 export const getUserTier = (
   xp: number,
@@ -138,7 +155,7 @@ export const ProfileRankingScreen: React.FC = () => {
     betOnlyFavoriteLeagues: false,
     oddsRange: [1.5, 3.0],
     investmentLimit: 'abaixo-100',
-
+    avgOddUser: 0,
     rank: null,
 
     // 🔥 points agora será o XP BISS (ainda sem BD, calculado no front)
@@ -336,6 +353,9 @@ export const ProfileRankingScreen: React.FC = () => {
         const extrato: any[] = extrRes.status === 'fulfilled' && Array.isArray(extrRes.value.data) ? extrRes.value.data : [];
         const bilhetes: any[] = bilhetesRes.status === 'fulfilled' && Array.isArray(bilhetesRes.value.data) ? bilhetesRes.value.data : [];
 
+        const investidoFinalizado = bilhetes
+          .filter(isBilheteFinalizado)
+          .reduce((acc: number, b: any) => acc + Number(b.stake_total || b.stake || 0), 0);
         // Mapeia apostas para formato consistente (compatível com BettingHistoryScreen)
         const mappedApostas = apostas.map((a: any) => ({
           id_aposta: a.id_aposta ?? a.id ?? 0,
@@ -349,6 +369,17 @@ export const ProfileRankingScreen: React.FC = () => {
           status_aposta: a.status_aposta || 'pendente',
           data_registro: a.data_registro || new Date().toISOString(),
         }));
+
+        // ✅ Odd média do usuário (apostas finalizadas no geral)
+        const finishedApostas = mappedApostas.filter(
+          (x: any) => x.status_aposta === "ganha" || x.status_aposta === "perdida"
+        );
+
+        const avgOddUser = (() => {
+          if (!finishedApostas.length) return 0;
+          const sum = finishedApostas.reduce((acc: number, a: any) => acc + Number(a.odd || 0), 0);
+          return sum / finishedApostas.length;
+        })();
 
         // Estatísticas básicas
         const totalBets = mappedApostas.length;
@@ -392,16 +423,8 @@ export const ProfileRankingScreen: React.FC = () => {
           return acc;
         }, 0);
         const profit = totalPremios - totalPerdido;
-
-        // =======================================================
-        // ✅ ROI (Yield %): (premios - stakes) / stakes
-        // stakes aqui é o total investido em bilhetes (todos)
-        // =======================================================
-        const totalStakes = bilhetes.reduce((acc: number, b: any) => {
-          return acc + Number(b.stake_total || b.stake || 0);
-        }, 0);
-
-        const roiPct = computeYieldPct(totalPremios, totalStakes); // pode ser negativo
+        const roiPct = computeRoiPct(totalPremios, investidoFinalizado);
+ // pode ser negativo
 
 
         // =======================================================
@@ -522,7 +545,7 @@ export const ProfileRankingScreen: React.FC = () => {
           bissYield: Math.round(roiPct * 10) / 10,
           currentStreak,
           longestStreak,
-
+          avgOddUser: Math.round(avgOddUser * 100) / 100,
           // 🔥 BISS (novo)
           points: bissXP,
           level: tier?.name || p.level,
@@ -871,44 +894,77 @@ export const ProfileRankingScreen: React.FC = () => {
           <div className="p-5">
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                Painel de Estatísticas
+                Histórico
               </h3>
-              <span className="text-xs text-gray-600 dark:text-gray-300">
-                base do seu histórico
-              </span>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            <StatCard
+              label="Apostas"
+              value={safeBets}
+              icon={<Layers className="w-4 h-4 text-[#014a8f]" />}
+            />
+
+            <StatCard
+              label="Vitórias"
+              value={safeWins}
+              icon={<Trophy className="w-4 h-4 text-[#014a8f]" />}
+            />
+
+            <StatCard
+              label="Sequência Maior"
+              value={Number(userProfile.longestStreak || 0)}
+              icon={<Gauge className="w-4 h-4 text-[#014a8f]" />}
+            />
+
+            <StatCard
+              label="Saldo"
+              value={
+                <span
+                  className={
+                    Number(userProfile.totalProfit || 0) >= 0
+                      ? "text-green-700"
+                      : "text-red-700"
+                  }
+                >
+                  R$ {Number(userProfile.totalProfit || 0).toFixed(2)}
+                </span>
+              }
+              icon={<Wallet className="w-4 h-4 text-[#014a8f]" />}
+            />
+          </div>
+
+              
+            </div>
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                Estatísticas
+              </h3>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3">
               <StatCard
-                label="Apostas"
-                value={safeBets}
-                icon={<Target className="w-4 h-4 text-[#014a8f]" />}
-              />
-              <StatCard
-                label="Vitórias"
-                value={safeWins}
-                icon={<Trophy className="w-4 h-4 text-[#014a8f]" />}
-              />
-              <StatCard
-                label="Sequência Maior"
-                value={Number(userProfile.longestStreak || 0)}
-                icon={<TrendingUp className="w-4 h-4 text-[#014a8f]" />}
-              />
-              <StatCard
-                label="Lucro Total"
+                label="Odd Média"
                 value={
-                  <span
-                    className={
-                      Number(userProfile.totalProfit || 0) >= 0
-                        ? "text-green-700"
-                        : "text-red-700"
-                    }
-                  >
-                    R$ {Number(userProfile.totalProfit || 0).toFixed(2)}
+                  <span className="tabular-nums">
+                    {Number(userProfile.avgOddUser || 0) > 0
+                      ? Number(userProfile.avgOddUser || 0).toFixed(2)
+                      : "—"}
                   </span>
                 }
-                icon={<Award className="w-4 h-4 text-[#014a8f]" />}
+
+                icon={<Activity className="w-4 h-4 text-[#014a8f]" />}
               />
+
+              <StatCard
+                label="% Acertos"
+                value={
+                  <span className="text-green-700">
+                    {fmtPct1(Number(userProfile.winRate || 0))}
+                  </span>
+                }
+                icon={<CheckCircle2 className="w-4 h-4 text-green-700" />}
+              />
+
               <StatCard
                 label="ROI"
                 value={
@@ -924,17 +980,8 @@ export const ProfileRankingScreen: React.FC = () => {
                 }
                 icon={<TrendingUp className="w-4 h-4 text-[#014a8f]" />}
               />
-              <StatCard
-                label="% Acertos"
-                value={
-                  <span className="text-green-700">
-                    {fmtPct1(Number(userProfile.winRate || 0))}
-                  </span>
-                }
-                icon={<CheckCircle2 className="w-4 h-4 text-green-700" />}
-              />
             </div>
-          </div>
+
         </Panel>
 
         {/* Tier + Desafios (AGORA no estilo Panel da página) */}

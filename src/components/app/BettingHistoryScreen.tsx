@@ -8,6 +8,8 @@ import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Slider } from "../ui/slider";
+import { useAuth } from "@/contexts/AuthContexts";
+
 
 // ===== Ícones (mesmo estilo do Finance) =====
 const FilterIcon = () => (
@@ -61,6 +63,7 @@ export default function BettingHistoryScreen() {
   const [clubSearch, setClubSearch] = useState("");
   const filtersRef = useRef<HTMLDivElement | null>(null);
 
+  
 
   useEffect(() => {
     if (!showFilters) return;
@@ -202,6 +205,81 @@ export default function BettingHistoryScreen() {
     return parts.length >= 2 ? parts.slice(0, 2) : [];
   };
 
+  const auth = useAuth();
+
+      const storedUser =
+        auth?.user ||
+        (localStorage.getItem("user")
+          ? JSON.parse(localStorage.getItem("user") as string)
+          : null);
+
+      const [favoriteTeam, setFavoriteTeam] = useState<string | null>(
+        storedUser?.favoriteTeam || null
+      );
+
+      useEffect(() => {
+  let mounted = true;
+
+  const pickFavoriteTeam = (data: any) => {
+    // tenta em vários lugares/campos (camelCase + snake_case)
+    return (
+      data?.favoriteTeam ??
+      data?.favorite_team ??
+      data?.clube_favorito ??
+      data?.clubeFavorito ??
+      data?.clubes_favoritos ??
+      data?.user?.favoriteTeam ??
+      data?.user?.favorite_team ??
+      data?.user?.clube_favorito ??
+      data?.user?.clubeFavorito ??
+      data?.user?.clubes_favoritos ??
+      null
+    );
+  };
+
+  const loadFavoriteTeam = async () => {
+    try {
+      // 0) localStorage primeiro (rápido)
+      const ls = localStorage.getItem("user");
+      if (ls) {
+        const u = JSON.parse(ls);
+        const ft0 = pickFavoriteTeam(u);
+        if (mounted && ft0) setFavoriteTeam(ft0);
+      }
+
+      // 1) /user/profile (se existir)
+      try {
+        const pr = await api.get("/user/profile");
+        const ft1 = pickFavoriteTeam(pr?.data);
+        if (mounted && ft1) {
+          setFavoriteTeam(ft1);
+          return;
+        }
+      } catch {}
+
+      // 2) /auth/me (muito comum)
+      try {
+        const me = await api.get("/auth/me");
+        const ft2 = pickFavoriteTeam(me?.data);
+        if (mounted && ft2) {
+          setFavoriteTeam(ft2);
+          return;
+        }
+      } catch {}
+
+      // se não achou, mantém null (mas agora com tentativas reais)
+    } catch (e) {
+      console.error("Erro ao carregar favoriteTeam no BettingHistoryScreen:", e);
+    }
+  };
+
+  loadFavoriteTeam();
+  return () => {
+    mounted = false;
+  };
+}, []);
+
+
   const base = filteredApostas;
   const totalApostas = base.length;
   const totalGanhas = base.filter((a) => a.status_aposta === "ganha").length;
@@ -291,6 +369,135 @@ export default function BettingHistoryScreen() {
         )}`
       : "—";
 
+    const favoriteTeamNorm = favoriteTeam ? normalize(favoriteTeam) : null;
+
+    const isFavoriteMatch = (partida: string) => {
+      if (!favoriteTeamNorm) return false;
+      const teams = parseTeams(partida).map((t) => normalize(t));
+      return teams.some((t) => t === favoriteTeamNorm || t.includes(favoriteTeamNorm) || favoriteTeamNorm.includes(t));
+    };
+
+    const finished = base.filter((a) => a.status_aposta === "ganha" || a.status_aposta === "perdida");
+    const favoriteFinished = favoriteTeamNorm ? finished.filter((a) => isFavoriteMatch(a.partida)) : [];
+
+    const favFinishedCount = favoriteFinished.length;
+    const favWins = favoriteFinished.filter((a) => a.status_aposta === "ganha").length;
+    const favLosses = favoriteFinished.filter((a) => a.status_aposta === "perdida").length;
+
+    
+
+    type OddBucket = "low" | "mid" | "high";
+
+    const getOddBucket = (odd: number): OddBucket => {
+      const o = Number(odd || 0);
+      if (o <= 1.6) return "low";
+      if (o <= 2.4) return "mid";
+      return "high";
+    };
+
+    // pesos (ajustáveis depois)
+    const WIN_W  = { low: +4, mid: +2, high: +1 };
+    const LOSS_W = { low: -2, mid: -3, high: -8 };
+
+
+    // só apostas FINALIZADAS do time favorito
+    const favFinishedBets = favoriteTeamNorm ? finished.filter((a) => isFavoriteMatch(a.partida)) : [];
+
+    // breakdown por faixa
+    const breakdown = {
+      low:  { w: 0, l: 0 },
+      mid:  { w: 0, l: 0 },
+      high: { w: 0, l: 0 },
+    };
+
+    const avgOddFav = (() => {
+      if (!favFinishedBets.length) return 0;
+      const sum = favFinishedBets.reduce((acc, a) => acc + Number(a.odd || 0), 0);
+      return sum / favFinishedBets.length;
+    })();
+
+    let rawScore = 0;
+
+    for (const a of favFinishedBets) {
+      const b = getOddBucket(a.odd);
+      if (a.status_aposta === "ganha") {
+        breakdown[b].w += 1;
+        rawScore += WIN_W[b];
+      } else if (a.status_aposta === "perdida") {
+        breakdown[b].l += 1;
+        rawScore += LOSS_W[b];
+      }
+    }
+
+    // normalização por volume (pra nota não ficar absurda com muitos jogos)
+    const n = favFinishedBets.length;
+
+    // neutro = 50. Quanto mais perdas “ruins” (odd alta) → cai muito.
+    const clubismoNota = (() => {
+  if (n === 0) return 50;
+
+  // impacto do score (suave)
+  const norm = rawScore / Math.sqrt(n);
+
+  // base 50; escala menor do que antes (antes era *10)
+  let scaled = 50 + norm * 6;
+
+  // amortecimento: pouca amostra => puxa pra 50
+  // (ex: n=3 => força 62.5% pra 50)
+  const shrink = Math.min(1, n / 8); // 0..1
+  scaled = 50 + (scaled - 50) * shrink;
+
+  return Math.max(0, Math.min(100, scaled));
+})();
+
+  type ClubismoClass = "Alto" | "Médio" | "Baixo";
+
+  // ---- NOVO: "ALTO" só se houver evidência de underdog teimoso (odd alta perdendo)
+  const highLosses = breakdown.high.l;
+  const highBets = breakdown.high.w + breakdown.high.l;
+  const midBets = breakdown.mid.w + breakdown.mid.l;
+
+  // thresholds por nota
+  let clubismoClass: ClubismoClass =
+    clubismoNota < 35 ? "Alto" : clubismoNota < 60 ? "Médio" : "Baixo";
+
+  // GATE: se não teve odd alta (ou não perdeu em odd alta), não pode ser "Alto"
+  if (clubismoClass === "Alto") {
+    const hasEvidence = highLosses >= 1; // evidência mínima
+    const hasVolumeAlt = highBets >= 2;  // opcional: reforça “recorrência”
+    if (!hasEvidence || !hasVolumeAlt) {
+      clubismoClass = "Médio";
+    }
+  }
+
+  // EXTRA: com volume muito baixo, nunca rotula "Alto"
+  if (n < 6 && clubismoClass === "Alto") clubismoClass = "Médio";
+
+  // (opcional) se só tem low/mid e foi ok, favorece "Baixo"
+  if (highBets === 0 && midBets <= 2 && clubismoNota >= 55) {
+    clubismoClass = "Baixo";
+  }
+    const clubismoTone =
+      clubismoClass === "Alto"
+        ? "text-red-700 bg-red-50 border-red-200 dark:text-red-300 dark:bg-red-950/20 dark:border-red-900/40"
+        : clubismoClass === "Médio"
+        ? "text-yellow-800 bg-yellow-50 border-yellow-200 dark:text-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-900/40"
+        : "text-green-700 bg-green-50 border-green-200 dark:text-green-300 dark:bg-green-950/20 dark:border-green-900/40";
+
+    const clubismoMsg =
+      clubismoClass === "Alto"
+        ? "Cuidado com o clubismo! Assim você vai acabar com seu dinheiro!"
+        : clubismoClass === "Médio"
+        ? "Seja menos clubista: aposte só quando estiver bem confiante!"
+        : "Você e seu time se entendem! Continue assim.";
+
+    const favoriteLogo =
+      favoriteTeam && (clubsMap as any)[favoriteTeam]?.logo
+        ? getLocalLogo((clubsMap as any)[favoriteTeam].logo)
+        : favoriteTeamNorm
+        ? findLogo(favoriteTeamNorm)
+        : null;
+
   const recent3 = useMemo(() => {
     const arr = [...filteredApostas];
     arr.sort((a, b) => new Date(b.data_registro).getTime() - new Date(a.data_registro).getTime());
@@ -300,6 +507,7 @@ export default function BettingHistoryScreen() {
   // Modals
   const [allClubsOpen, setAllClubsOpen] = useState(false);
   const [allHistoryOpen, setAllHistoryOpen] = useState(false);
+  const [clubismoDetailsOpen, setClubismoDetailsOpen] = useState(false);
 
   // ===== Helpers de mercado/linha =====
   const formatTotalGoalsPick = (mercado?: string, selecao?: string, linha?: string | null) => {
@@ -973,6 +1181,94 @@ export default function BettingHistoryScreen() {
 
           {/* RIGHT */}
           <div className="lg:col-span-7 space-y-6">
+                        {/* Medidor de Clubismo */}
+            <div className={`${panelClass} py-5 px-6`}>
+              <div className="flex items-start gap-4">
+                {/* Logo */}
+                <div className="w-14 h-14 rounded-2xl bg-white/90 dark:bg-neutral-900/60 border border-gray-200/70 dark:border-neutral-800 flex items-center justify-center p-2 shrink-0">
+                  {favoriteLogo ? (
+                    <img
+                      src={favoriteLogo}
+                      alt={favoriteTeam || "Time favorito"}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <div className="text-[11px] text-gray-400 text-center leading-tight">
+                      Sem
+                      <br />
+                      time
+                    </div>
+                  )}
+                </div>
+
+                {/* Conteúdo */}
+                <div className="min-w-0 flex-1">
+                  {/* Linha 1: Título + badge */}
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <h3 className="text-2xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                      Medidor de Clubismo
+                    </h3>
+
+                    <span className={`text-xs font-extrabold uppercase border px-3 py-1.5 rounded-full ${clubismoTone}`}>
+                      {clubismoClass}
+                    </span>
+                  </div>
+
+                  {/* Linha 2: Time favorito + KPIs (TODOS AO LADO) */}
+                  <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
+                    <div className="text-gray-700 dark:text-gray-200">
+                      {favoriteTeam ? (
+                        <>
+                          Time favorito: <span className="font-semibold">{favoriteTeam}</span>
+                        </>
+                      ) : (
+                        <>
+                          Defina seu <span className="font-semibold">time favorito</span> no Perfil para ativar o medidor.
+                        </>
+                      )}
+                    </div>
+
+                    {favoriteTeam && favFinishedBets.length > 0 && (
+                      <>
+                        <span className="text-gray-300 dark:text-neutral-700">|</span>
+
+                        <span className="inline-flex items-center gap-2 rounded-xl bg-white/70 dark:bg-neutral-900/50 px-3 py-1.5">
+                          <span className="text-gray-500 dark:text-gray-300 font-semibold">Odd média</span>
+                          <span className="text-base font-extrabold text-gray-900 dark:text-white tabular-nums">
+                            {avgOddFav.toFixed(2)}
+                          </span>
+                        </span>
+
+                        <span className="text-gray-400">•</span>
+                        <span className="font-semibold text-gray-700 dark:text-gray-200 tabular-nums">
+                          {favFinishedCount} finalizadas
+                        </span>
+
+                        <span className="text-gray-400">•</span>
+                        <span className="font-semibold text-green-700 dark:text-green-400 tabular-nums">
+                          {favWins}V
+                        </span>
+
+                        <span className="text-gray-400">•</span>
+                        <span className="font-semibold text-red-700 dark:text-red-400 tabular-nums">
+                          {favLosses}D
+                        </span>
+                      </>
+                    )}
+                  </div>
+
+                  {/* Feedback: começa logo abaixo do logo (sem espaçamento gigante) */}
+                  <div className="mt-2 text-sm sm:text-base text-gray-700 dark:text-gray-200 leading-relaxed">
+                    {favoriteTeam
+                      ? clubismoMsg
+                      : "Assim que você escolher um time, eu começo a medir seu clubismo automaticamente."}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
             <Panel>
               <div className="flex items-start sm:items-center justify-between gap-3 mb-4">
                 <div>
