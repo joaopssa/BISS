@@ -172,7 +172,7 @@ TM_TO_JSON: Dict[str, str] = {
     "SC Freiburg": "Freiburg",
     "1.FSV Mainz 05": "Mainz 05",
     "FC Augsburg": "Augsburg",
-    "1.FC Union Berlim": "1.FC Union Berlin",
+    "1.FC Union Berlim": "1. FC Union Berlin",
     "SV Werder Bremen": "Werder Bremen",
     "1.FC Heidenheim 1846": "1. FC Heidenheim",
     "FC St. Pauli": "FC St. Pauli",

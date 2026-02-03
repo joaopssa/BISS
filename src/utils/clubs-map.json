@@ -1156,6 +1156,65 @@
     "logo": "logos/Libertadores/Bolivar.png",
     "country": "Bolivia",
     "countryCode": "bo"
+  },
+  "The Strongest": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Strongest.png",
+    "country": "Bolivia",
+    "countryCode": "bo"
+  },
+  "2 de Mayo": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/2deMayo.png",
+    "country": "Paraguay",
+    "countryCode": "py"
+  },
+  "Juventud de Las Piedras": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/JuventuddeLasPiedras.png",
+    "country": "Uruguay",
+    "countryCode": "uy"
+  },"Universidad Catolica Ecuador": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/UniversidadCatolicaEcuador.png",
+    "country": "Ecuador",
+    "countryCode": "ec"
+  },
+  "Huachipato": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Huachipato.png",
+    "country": "Chile",
+    "countryCode": "cl"
+  },
+  "Liverpool Montevideo": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/LiverpoolMontevideo.png",
+    "country": "Uruguay",
+    "countryCode": "uy"
+  },
+  "Independiente Medellin": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Independiente Medellin.png",
+    "country": "Colombia",
+    "countryCode": "co"
+  },
+  "O'Higgins": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/O'Higgins.png",
+    "country": "Chile",
+    "countryCode": "cl"
+  },
+  "Argentinos Juniors": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Argentinos Juniors.png",
+    "country": "Argentina",
+    "countryCode": "ar"
+  },
+  "CA Nacional Potosi": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Nacional Potosi.png",
+    "country": "Bolivia",
+    "countryCode": "bo"
   }
 }
 

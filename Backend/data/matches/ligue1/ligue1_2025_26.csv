@@ -170,15 +170,15 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sun,2026-01-25,Paris FC,Angers,0-0,0-0
 19,Sun,2026-01-25,Brestois,Toulouse FC,0-2,0-2
 19,Sun,2026-01-25,Lille,Estrasburgo,1-4,0-2
-20,Sat,2026-01-30,Lens,Le Havre AC,,
-20,Sun,2026-01-31,Paris FC,Olympique de Marseille,,
-20,Sun,2026-01-31,FC Lorient,Nantes,,
-20,Sun,2026-01-31,Monaco,Rennes,,
-20,Mon,2026-02-01,Lyon,Lille,,
-20,Mon,2026-02-01,Toulouse FC,AJ Auxerre,,
-20,Mon,2026-02-01,Nice,Brestois,,
-20,Mon,2026-02-01,Angers,FC Metz,,
-20,Mon,2026-02-01,Estrasburgo,Paris Saint Germain,,
+20,Sat,2026-01-30,Lens,Le Havre AC,1-0,1-0
+20,Sun,2026-01-31,Paris FC,Olympique de Marseille,2-2,0-1
+20,Sun,2026-01-31,FC Lorient,Nantes,2-1,1-0
+20,Sun,2026-01-31,Monaco,Rennes,4-0,1-0
+20,Mon,2026-02-01,Lyon,Lille,1-0,1-0
+20,Mon,2026-02-01,Toulouse FC,AJ Auxerre,0-0,0-0
+20,Mon,2026-02-01,Nice,Brestois,2-2,0-2
+20,Mon,2026-02-01,Angers,FC Metz,1-0,1-0
+20,Mon,2026-02-01,Estrasburgo,Paris Saint Germain,1-2,1-1
 21,Tue,2026-02-08,Le Havre AC,Estrasburgo,,
 21,Tue,2026-02-08,AJ Auxerre,Paris FC,,
 21,Tue,2026-02-08,FC Metz,Lille,,

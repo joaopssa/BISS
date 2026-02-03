@@ -229,16 +229,16 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 23,Sat,2026-01-24,Manchester City,Wolverhampton,2-0,2-0
 23,Sun,2026-01-25,Newcastle United,Aston Villa,0-2,0-1
 23,Sat,2026-01-24,West Ham United,Sunderland,3-1,3-0
-24,,2026-01-01,Sunderland,Burnley,,
-24,,2026-01-01,Aston Villa,Brentford,,
-24,,2026-01-01,Brighton & Hove Albion,Everton,,
-24,,2026-01-01,Chelsea,West Ham United,,
-24,,2026-01-01,Liverpool,Newcastle United,,
-24,,2026-01-01,Leeds United,Arsenal,,
-24,,2026-01-01,Manchester United,Fulham FC,,
-24,,2026-01-01,Nottingham Forest,Crystal Palace,,
-24,,2026-01-01,Tottenham,Manchester City,,
-24,,2026-01-01,Wolverhampton,AFC Bournemouth,,
+24,Mon,2026-02-02,Sunderland,Burnley,3-0,2-0
+24,Sun,2026-02-01,Aston Villa,Brentford,0-1,0-1
+24,Sat,2026-01-31,Brighton & Hove Albion,Everton,1-1,0-0
+24,Sat,2026-01-31,Chelsea,West Ham United,3-2,0-2
+24,Sat,2026-01-31,Liverpool,Newcastle United,4-1,2-1
+24,Sat,2026-01-31,Leeds United,Arsenal,0-4,0-2
+24,Sun,2026-02-01,Manchester United,Fulham FC,3-2,1-0
+24,Sun,2026-02-01,Nottingham Forest,Crystal Palace,1-1,1-1
+24,Sun,2026-02-01,Tottenham,Manchester City,2-2,0-2
+24,Sat,2026-01-31,Wolverhampton,AFC Bournemouth,0-2,0-1
 25,,2026-01-01,AFC Bournemouth,Aston Villa,,
 25,,2026-01-01,Brighton & Hove Albion,Crystal Palace,,
 25,,2026-01-01,Arsenal,Sunderland,,

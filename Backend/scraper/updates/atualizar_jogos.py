@@ -185,7 +185,7 @@ TEAM_MAP = {
     "Freiburg": "Freiburg",
     "Mainz": "Mainz 05",
     "Augsburg": "Augsburg",
-    "Union Berlin": "1.FC Union Berlin",
+    "Union Berlin": "1. FC Union Berlin",
     "Werder Bremen": "Werder Bremen",
     "Heidenheim": "1. FC Heidenheim",
     "St Pauli": "FC St. Pauli",
