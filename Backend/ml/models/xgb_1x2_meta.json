@@ -1,0 +1,45 @@
+{
+  "data_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\processed\\matches_enriched.csv",
+  "n_rows": 34135,
+  "date_min": "2000-08-19",
+  "date_max": "2026-02-02",
+  "split": {
+    "train_rows": 27308,
+    "val_rows": 3413,
+    "test_rows": 3414,
+    "train_end_date": "2023-04-16",
+    "val_end_date": "2024-08-30",
+    "test_end_date": "2026-02-02"
+  },
+  "metrics": {
+    "train": {
+      "accuracy": 0.5832723011571701,
+      "logloss": 0.8837444733217448
+    },
+    "val": {
+      "accuracy": 0.5057134485789628,
+      "logloss": 1.0146534257944786
+    },
+    "test": {
+      "accuracy": 0.5096660808435852,
+      "logloss": 1.0117957119733472
+    }
+  },
+  "num_cols": [
+    "elo_home_pre",
+    "elo_away_pre",
+    "elo_diff",
+    "form_pts_home_3",
+    "form_pts_home_5",
+    "form_pts_away_3",
+    "form_pts_away_5",
+    "gd_home_5",
+    "gd_away_5"
+  ],
+  "cat_cols": [
+    "pool_key",
+    "competition"
+  ],
+  "model_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\models\\xgb_1x2.json",
+  "columns_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\models\\xgb_1x2_columns.pkl"
+}
