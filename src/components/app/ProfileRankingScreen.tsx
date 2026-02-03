@@ -75,6 +75,123 @@ const isBilheteFinalizado = (b: any) => {
   return st === "ganho" || st === "ganha" || st === "perdido" || st === "perdida";
 };
 
+const normStatus = (s: any) => String(s || "").toLowerCase().trim();
+
+const isWinBilhete = (b: any) => {
+  const st = normStatus(b?.status);
+  return st === "ganho" || st === "ganha";
+};
+
+const toNum = (v: any) => {
+  if (v === null || v === undefined) return 0;
+  if (typeof v === "number") return Number.isFinite(v) ? v : 0;
+
+  let s = String(v).trim();
+
+  // remove moeda e espaços (inclui NBSP)
+  s = s.replace(/\s|\u00A0/g, "");
+  s = s.replace(/^R\$\s?/i, "");
+
+  // mantém só dígitos, ponto, vírgula e sinal
+  s = s.replace(/[^\d.,-]/g, "");
+
+  if (!s) return 0;
+
+  const hasDot = s.includes(".");
+  const hasComma = s.includes(",");
+
+  // ambos presentes: decidir qual é decimal pela última ocorrência
+  if (hasDot && hasComma) {
+    const lastDot = s.lastIndexOf(".");
+    const lastComma = s.lastIndexOf(",");
+
+    if (lastComma > lastDot) {
+      // 1.234,56 (pt-BR)
+      s = s.replace(/\./g, "").replace(",", ".");
+    } else {
+      // 1,234.56 (en-US)
+      s = s.replace(/,/g, "");
+    }
+  } else if (hasComma && !hasDot) {
+    // 1234,56
+    s = s.replace(",", ".");
+  }
+  // hasDot && !hasComma => 1234.56 (ok, não mexe)
+
+  const n = Number(s);
+  return Number.isFinite(n) ? n : 0;
+};
+
+
+const getStake = (b: any) =>
+  toNum(
+    b?.stake_total ??
+    b?.stakeTotal ??
+    b?.stake ??
+    b?.valor_apostado ??
+    b?.valorApostado ??
+    b?.valor ??
+    b?.total_apostado ??
+    b?.totalApostado ??
+    0
+  );
+
+
+const getOdd = (b: any) =>
+  toNum(
+    b?.odd_total ??
+    b?.oddTotal ??
+    b?.oddFinal ??
+    b?.odd ??
+    b?.odd_acumulada ??
+    b?.oddAcumulada ??
+    b?.cotacao_total ??
+    b?.cotacao ??
+    0
+  );
+
+const getPayout = (b: any) => {
+  const explicit = toNum(
+    b?.payout_total ??
+    b?.payoutTotal ??
+    b?.retorno_total ??
+    b?.retornoTotal ??
+    b?.valor_retorno ??
+    b?.valorRetorno ??
+    b?.premio_total ??
+    b?.premioTotal ??
+    b?.valor_premio ??
+    b?.valorPremio ??
+    b?.premio ??
+    b?.retorno ??
+    0
+  );
+
+  if (explicit > 0) return explicit;
+
+  const stake = getStake(b);
+  const odd = getOdd(b);
+  if (stake > 0 && odd > 0) return stake * odd;
+
+  return 0;
+};
+
+
+const profitFromDecidedBilhete = (b: any) => {
+  if (!isBilheteFinalizado(b)) return 0;
+
+  const stake = getStake(b);
+  if (!Number.isFinite(stake) || stake <= 0) return 0;
+
+  if (!isWinBilhete(b)) return -stake;
+
+  const payout = getPayout(b);
+  if (!Number.isFinite(payout) || payout <= 0) return 0; // evita lucro lixo
+
+  return payout - stake;
+};
+
+
 export const computeRoiPct = (retorno: number, investido: number) => {
   const r = Number(retorno) || 0;
   const i = Number(investido) || 0;
@@ -82,6 +199,54 @@ export const computeRoiPct = (retorno: number, investido: number) => {
   return ((r - i) / i) * 100;
 };
 
+const parseDbDate = (s: string) => {
+  if (!s) return new Date(NaN);
+
+  const m1 = s.match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+  if (m1) {
+    const [, Y, M, D, hh = "00", mm = "00", ss = "00"] = m1;
+    return new Date(Number(Y), Number(M) - 1, Number(D), Number(hh), Number(mm), Number(ss));
+  }
+
+  const m2 = s.match(/^(\d{2})\/(\d{2})\/(\d{4})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+  if (m2) {
+    const [, D, M, Y, hh = "00", mm = "00", ss = "00"] = m2;
+    return new Date(Number(Y), Number(M) - 1, Number(D), Number(hh), Number(mm), Number(ss));
+  }
+
+  return new Date(s);
+};
+
+const absValor = (x: any) => Math.abs(toNum(x));
+
+const signedFlow = (mv: any) => {
+  const t = String(mv?.tipo || "").toLowerCase();
+  const vAbs = absValor(mv?.valor);
+
+  if (t === "deposito" || t === "premio") return +vAbs;
+  if (t === "saque" || t === "aposta") return -vAbs;
+  if (t === "ajuste") return toNum(mv?.valor);
+ // pode ser +/-
+  return 0;
+};
+
+
+
+const calcNetDeposits = (extr: any[]) => {
+  let dep = 0, saq = 0;
+  for (const mv of extr) {
+    const t = String(mv?.tipo || "").toLowerCase();
+    const v = absValor(mv?.valor);
+    if (t === "deposito") dep += v;
+    if (t === "saque") saq += v;
+  }
+  return dep - saq;
+};
+
+const calcSaldoDisponivelFromExtrato = (extr: any[]) => {
+  // se seu backend sempre registra aposta/premio/ajuste, isso bate com o saldo disponível
+  return extr.reduce((acc, mv) => acc + signedFlow(mv), 0);
+};
 
 
 export const getUserTier = (
@@ -124,6 +289,71 @@ const getTierBadgeSrc = (tierKey?: string | null) => {
 
 const fmtPct1 = (v: number) => `${Number(v || 0).toFixed(1)}%`;
 
+const fmtOdd2 = (v: number) => Number(v || 0).toFixed(2);
+const fmtPct0 = (v: number) => `${Math.round(Number(v || 0))}%`;
+
+const clamp01 = (x: number) => Math.max(0, Math.min(1, x));
+
+const sustainableByAvg = (p: number, avgOdd: number) => {
+  // p em 0..1, avgOdd > 0
+  if (!Number.isFinite(p) || p <= 0) return false;
+  if (!Number.isFinite(avgOdd) || avgOdd <= 0) return false;
+  // sustentável se sua odd média está acima (ou igual) do break-even para essa taxa de acerto
+  return avgOdd >= (1 / p);
+};
+
+const getAdviceText = (params: {
+  profit: number;      // userProfile.totalProfit
+  winRatePct: number;  // userProfile.winRate (0-100)
+  avgOdd: number;      // userProfile.avgOddUser
+  avgStake?: number;   // userProfile.avgStake (opcional)
+}) => {
+  const profit = Number(params.profit || 0);
+  const p = clamp01(Number(params.winRatePct || 0) / 100); // 0..1
+  const avgOdd = Number(params.avgOdd || 0);
+  const avgStake = Number(params.avgStake || 0);
+
+  // sem base suficiente -> sem mensagem
+  if (!Number.isFinite(p) || p <= 0 || !Number.isFinite(avgOdd) || avgOdd <= 0) {
+    return null;
+  }
+
+  const oddMinIdeal = 1 / p;         // break-even odd mínima para esse p
+  const accMinIdeal = 1 / avgOdd;    // break-even taxa mínima para essa odd (0..1)
+
+  const isSustainable = sustainableByAvg(p, avgOdd);
+
+  // 1) Lucro positivo: elogiar
+  if (profit > 0) {
+    return `Perfeito! Sua combinação de odd média (${fmtOdd2(avgOdd)}) e taxa de acerto (${fmtPct0(p * 100)}) está saudável! Continue consistente.`;
+  }
+
+  // 2) Lucro negativo e intervalo insustentável: oferecer ajuste "coerente"
+  if (!isSustainable) {
+    // Escolhe recomendação que faça sentido vs. a taxa atual:
+    // - Se a taxa mínima ideal (para manter a odd atual) for MAIOR que a taxa atual, sugerir aumentar acerto.
+    // - Caso contrário (raro aqui), sugerir aumentar odd mínima.
+    const needHigherAcc = accMinIdeal > p;
+
+    if (needHigherAcc) {
+      return `Hoje o seu intervalo está insustentável! Com odd média ${fmtOdd2(avgOdd)}, você precisaria elevar sua taxa de acerto para pelo menos ${fmtPct0(accMinIdeal * 100)} para ficar no positivo.`;
+    }
+
+    return `Hoje o seu intervalo está insustentável! Com taxa de acerto ${fmtPct0(p * 100)}, procure fazer apostas acima de ${fmtOdd2(oddMinIdeal)} para ficar no positivo.`;
+  }
+
+  // 3) Lucro negativo e intervalo sustentável: elogiar evolução + alertar stake (distribuição)
+  // Aqui o “culpado” provável é stake desbalanceada / outliers (apostas fora do usual com stake alto).
+  const stakeHint =
+    avgStake > 0
+      ? ` (sua stake média é R$ ${avgStake.toFixed(2)})`
+      : "";
+
+  return `No longo prazo, sua odd média (${fmtOdd2(avgOdd)}) com taxa de acerto (${fmtPct0(p * 100)}) tende a gerar lucro! O prejuízo atual indica que provavelmente você perdeu mais dinheiro em apostas fora do seu padrão. Tente equilibrar o valor em cada bilhete e evitar concentrar stakes altas em apostas.`;
+};
+
+
+
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const auth = useAuth();
@@ -156,6 +386,7 @@ export const ProfileRankingScreen: React.FC = () => {
     oddsRange: [1.5, 3.0],
     investmentLimit: 'abaixo-100',
     avgOddUser: 0,
+    avgStake: 0,
     rank: null,
 
     // 🔥 points agora será o XP BISS (ainda sem BD, calculado no front)
@@ -353,9 +584,32 @@ export const ProfileRankingScreen: React.FC = () => {
         const extrato: any[] = extrRes.status === 'fulfilled' && Array.isArray(extrRes.value.data) ? extrRes.value.data : [];
         const bilhetes: any[] = bilhetesRes.status === 'fulfilled' && Array.isArray(bilhetesRes.value.data) ? bilhetesRes.value.data : [];
 
-        const investidoFinalizado = bilhetes
-          .filter(isBilheteFinalizado)
-          .reduce((acc: number, b: any) => acc + Number(b.stake_total || b.stake || 0), 0);
+        const bilhetesFinalizados = bilhetes.filter(isBilheteFinalizado);
+
+        const investidoFinalizado = bilhetesFinalizados.reduce(
+          (acc: number, b: any) => acc + getStake(b),
+          0
+        );
+
+        const avgStakeFinalizada =
+          bilhetesFinalizados.length > 0
+            ? investidoFinalizado / bilhetesFinalizados.length
+            : 0;
+
+
+        const profitBilhetes = bilhetesFinalizados.reduce(
+          (acc: number, b: any) => acc + profitFromDecidedBilhete(b),
+          0
+        );
+
+        // ROI de verdade sobre bilhetes finalizados
+        const roiPctBilhetes =
+          investidoFinalizado > 0
+            ? (profitBilhetes / investidoFinalizado) * 100
+            : 0;
+
+        const roiPct = roiPctBilhetes;
+
         // Mapeia apostas para formato consistente (compatível com BettingHistoryScreen)
         const mappedApostas = apostas.map((a: any) => ({
           id_aposta: a.id_aposta ?? a.id ?? 0,
@@ -413,17 +667,24 @@ export const ProfileRankingScreen: React.FC = () => {
         }
 
         // Profit: soma apenas prêmios e subtrai stakes de bilhetes perdidos (valor ganho - valor perdido)
-        const totalPremios = extrato.reduce(
-          (acc: number, mv: any) => (mv && mv.tipo === 'premio' ? acc + Number(mv.valor || 0) : acc),
-          0
-        );
-        const totalPerdido = bilhetes.reduce((acc: number, b: any) => {
-          const st = (b.status || '').toString().toLowerCase();
-          if (st === 'perdido' || st === 'perdida') return acc + Number(b.stake_total || b.stake || 0);
+        const saldoDisponivel = calcSaldoDisponivelFromExtrato(extrato);
+
+        const saldoEmAposta = bilhetes.reduce((acc: number, b: any) => {
+          const st = String(b.status || "").toLowerCase();
+          if (st === "aberto" || st === "pendente") {
+            return acc + Number(b.stake_total || b.stake || 0);
+          }
           return acc;
         }, 0);
-        const profit = totalPremios - totalPerdido;
-        const roiPct = computeRoiPct(totalPremios, investidoFinalizado);
+
+        const equity = saldoDisponivel + saldoEmAposta;
+
+        const netDeposits = calcNetDeposits(extrato);
+
+        // ✅ lucro correto desde o começo
+        const profit = Math.round((equity - netDeposits) * 100) / 100;
+
+
  // pode ser negativo
 
 
@@ -478,17 +739,13 @@ export const ProfileRankingScreen: React.FC = () => {
           const d = new Date(mv.data_movimentacao || mv.data || mv.createdAt || Date.now());
           const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
           if (!statsMap[key]) statsMap[key] = { bets: 0, wins: 0, profit: 0 };
-          if (mv.tipo === 'premio') statsMap[key].profit += Number(mv.valor || 0);
-        });
 
-        // Subtrair perdas por bilhete (por mês)
-        bilhetes.forEach((b: any) => {
-          const st = (b.status || '').toString().toLowerCase();
-          if (st !== 'perdido' && st !== 'perdida') return;
-          const d = new Date(b.data_criacao || b.createdAt || b.data_registro || Date.now());
-          const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
-          if (!statsMap[key]) statsMap[key] = { bets: 0, wins: 0, profit: 0 };
-          statsMap[key].profit -= Number(b.stake_total || b.stake || 0);
+          const tipo = String(mv.tipo || "").toLowerCase();
+          const v = toNum(mv.valor);
+
+          if (tipo === "premio") statsMap[key].profit += v;
+          if (tipo === "aposta") statsMap[key].profit -= v;
+          if (tipo === "ajuste") statsMap[key].profit += v; // pode ser negativo também
         });
 
         const monthly = Object.entries(statsMap)
@@ -541,7 +798,7 @@ export const ProfileRankingScreen: React.FC = () => {
           avatar: (name && name.trim().slice(0, 1).toUpperCase()) || p.avatar,
           totalBets: finishedBets,
           winRate: Math.round(winRate * 10) / 10,
-          totalProfit: Math.round(profit * 100) / 100,
+          totalProfit: Math.round(profitBilhetes * 100) / 100,
           bissYield: Math.round(roiPct * 10) / 10,
           currentStreak,
           longestStreak,
@@ -551,6 +808,8 @@ export const ProfileRankingScreen: React.FC = () => {
           level: tier?.name || p.level,
           bissTierKey: tier?.key || "INI",
           bissNextTierKey: nextTier?.key || null,
+          avgStake: Math.round(avgStakeFinalizada * 100) / 100,
+
         }));
 
         // ✅ Por fim, carregar preferências atuais (para EditProfileCard abrir preenchido)
@@ -637,6 +896,15 @@ export const ProfileRankingScreen: React.FC = () => {
   // =======================================================
   // UI Piece: progress row (com "thumb" + check à direita)
   // =======================================================
+
+  const statsAdvice = getAdviceText({
+    profit: Number(userProfile.totalProfit || 0),
+    winRatePct: Number(userProfile.winRate || 0),
+    avgOdd: Number(userProfile.avgOddUser || 0),
+    avgStake: Number(userProfile.avgStake || 0),
+  });
+
+
   const ProgressRow = (props: {
     label: string;
     leftValue: string;
@@ -918,7 +1186,7 @@ export const ProfileRankingScreen: React.FC = () => {
             />
 
             <StatCard
-              label="Saldo"
+              label="Lucro"
               value={
                 <span
                   className={
@@ -941,7 +1209,7 @@ export const ProfileRankingScreen: React.FC = () => {
                 Estatísticas
               </h3>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               <StatCard
                 label="Odd Média"
                 value={
@@ -953,6 +1221,18 @@ export const ProfileRankingScreen: React.FC = () => {
                 }
 
                 icon={<Activity className="w-4 h-4 text-[#014a8f]" />}
+              />
+
+              <StatCard
+                label="Stake Média"
+                value={
+                  <span className="tabular-nums text-gray-900 dark:text-white">
+                    {Number(userProfile.avgStake || 0) > 0
+                      ? `R$ ${Number(userProfile.avgStake || 0).toFixed(2)}`
+                      : "—"}
+                  </span>
+                }
+                icon={<Wallet className="w-4 h-4 text-[#014a8f]" />}
               />
 
               <StatCard
@@ -981,9 +1261,15 @@ export const ProfileRankingScreen: React.FC = () => {
                 icon={<TrendingUp className="w-4 h-4 text-[#014a8f]" />}
               />
             </div>
-
+            {statsAdvice && (
+            <div className="mt-4 rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 px-4 py-3">
+              <p className="text-sm text-gray-700 dark:text-gray-200">
+                {statsAdvice}
+              </p>
+            </div>
+            )}
         </Panel>
-
+                
         {/* Tier + Desafios (AGORA no estilo Panel da página) */}
         <Panel className="p-0">
           <div className="p-5">
