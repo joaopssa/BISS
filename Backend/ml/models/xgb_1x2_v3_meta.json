@@ -1,0 +1,79 @@
+{
+  "version": "v3_with_odds_injuries",
+  "data_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\processed\\matches_enriched_with_odds_injuries.csv",
+  "n_rows": 32781,
+  "date_min": "2000-08-19",
+  "date_max": "2026-02-02",
+  "split": {
+    "train_rows": 22946,
+    "val_rows": 4917,
+    "test_rows": 4918,
+    "train_end_date": "2021-11-27",
+    "val_end_date": "2023-11-25",
+    "test_end_date": "2026-02-02"
+  },
+  "metrics": {
+    "train": {
+      "accuracy": 0.4758999389871873,
+      "logloss": 1.0147812036074966
+    },
+    "val": {
+      "accuracy": 0.45718934309538334,
+      "logloss": 1.0342077334320205
+    },
+    "test": {
+      "accuracy": 0.45973973159821063,
+      "logloss": 1.0318199513488775
+    },
+    "cv_mean": 0.5009937238493724,
+    "cv_std": 0.012144031616198973
+  },
+  "num_cols": [
+    "elo_home_pre",
+    "elo_away_pre",
+    "elo_diff",
+    "form_pts_home_3",
+    "form_pts_home_5",
+    "form_pts_away_3",
+    "form_pts_away_5",
+    "gd_home_5",
+    "gd_away_5",
+    "form_avg_home_5",
+    "form_avg_away_5",
+    "gd_avg_home_5",
+    "gd_avg_away_5",
+    "momentum_home",
+    "momentum_away",
+    "consistency_home",
+    "consistency_away",
+    "prob_home_implied",
+    "prob_draw_implied",
+    "prob_away_implied",
+    "market_margin",
+    "injury_impact_home",
+    "injury_impact_away"
+  ],
+  "cat_cols": [
+    "pool_key",
+    "competition"
+  ],
+  "best_params": {
+    "n_estimators": 315,
+    "max_depth": 4,
+    "learning_rate": 0.011662890273931383,
+    "subsample": 0.7301321323053057,
+    "colsample_bytree": 0.7554709158757928,
+    "reg_lambda": 0.28907721743726744,
+    "reg_alpha": 2.558586885593425,
+    "min_child_weight": 2.105389970121152
+  },
+  "model_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\models\\xgb_1x2_v3.json",
+  "columns_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\models\\xgb_1x2_v3_columns.pkl",
+  "scaler_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\models\\xgb_1x2_v3_scaler.pkl",
+  "improvements": [
+    "✨ v2: Normalização, balanceamento, tuning, validação cruzada",
+    "✨ v3: ODDS IMPLÍCITAS (feature mais poderosa)",
+    "✨ v3: DADOS DE LESÕES (impacto em desempenho)",
+    "✨ Validação cruzada temporal (5 folds)"
+  ]
+}

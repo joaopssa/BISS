@@ -1,0 +1,31 @@
+{
+  "version": "v4",
+  "features": 20,
+  "features_base": 9,
+  "features_engineered": 8,
+  "features_odds": 3,
+  "training_set_size": 23894,
+  "validation_set_size": 5120,
+  "test_set_size": 5121,
+  "train_accuracy": 0.5144387712396418,
+  "train_logloss": 0.9865275181595641,
+  "val_accuracy": 0.5435546875,
+  "val_logloss": 0.9734610617317557,
+  "test_accuracy": 0.5315368092169498,
+  "test_logloss": 0.9799998462379791,
+  "cv_mean_accuracy": 0.5183336262963614,
+  "cv_std_accuracy": 0.018264118756017907,
+  "best_params": {
+    "max_depth": 12,
+    "learning_rate": 0.06819074809771597,
+    "subsample": 0.6538471057251313,
+    "colsample_bytree": 0.5089809378074099,
+    "min_child_weight": 3,
+    "gamma": 2.606165441675251,
+    "lambda": 0.16172672993694878,
+    "alpha": 0.313569713135636,
+    "n_estimators": 100
+  },
+  "optuna_trials": 30,
+  "best_trial_number": 10
+}

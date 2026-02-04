@@ -1,0 +1,76 @@
+{
+  "version": "v2_improved",
+  "data_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\processed\\matches_enriched.csv",
+  "n_rows": 32781,
+  "date_min": "2000-08-19",
+  "date_max": "2026-02-02",
+  "split": {
+    "train_rows": 22946,
+    "val_rows": 4917,
+    "test_rows": 4918,
+    "train_end_date": "2021-11-27",
+    "val_end_date": "2023-11-25",
+    "test_end_date": "2026-02-02"
+  },
+  "metrics": {
+    "train": {
+      "accuracy": 0.4758999389871873,
+      "logloss": 1.0148269632678824
+    },
+    "val": {
+      "accuracy": 0.4592231035184055,
+      "logloss": 1.034450785650982
+    },
+    "test": {
+      "accuracy": 0.4638064253761692,
+      "logloss": 1.0313144863552197
+    },
+    "cv_mean": 0.5003138075313808,
+    "cv_std": 0.012421300371896274
+  },
+  "num_cols": [
+    "elo_home_pre",
+    "elo_away_pre",
+    "elo_diff",
+    "form_pts_home_3",
+    "form_pts_home_5",
+    "form_pts_away_3",
+    "form_pts_away_5",
+    "gd_home_5",
+    "gd_away_5",
+    "form_avg_home_5",
+    "form_avg_away_5",
+    "gd_avg_home_5",
+    "gd_avg_away_5",
+    "momentum_home",
+    "momentum_away",
+    "consistency_home",
+    "consistency_away"
+  ],
+  "cat_cols": [
+    "pool_key",
+    "competition"
+  ],
+  "best_params": {
+    "n_estimators": 315,
+    "max_depth": 4,
+    "learning_rate": 0.011662890273931383,
+    "subsample": 0.7301321323053057,
+    "colsample_bytree": 0.7554709158757928,
+    "reg_lambda": 0.28907721743726744,
+    "reg_alpha": 2.558586885593425,
+    "min_child_weight": 2.105389970121152
+  },
+  "model_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\models\\xgb_1x2_v2.json",
+  "columns_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\models\\xgb_1x2_v2_columns.pkl",
+  "scaler_path": "C:\\Users\\estev\\Trabalhos Faculdade\\BISS\\Backend\\ml\\models\\xgb_1x2_v2_scaler.pkl",
+  "improvements": [
+    "Normalização StandardScaler em features numéricas",
+    "Balanceamento automático de classes",
+    "Tuning de hiperparâmetros com Optuna (50 trials)",
+    "Validação cruzada temporal (5 folds)",
+    "Remoção de outliers extremos",
+    "6 novas features: form_avg, gd_avg, momentum, consistency",
+    "Feature importance analysis"
+  ]
+}
