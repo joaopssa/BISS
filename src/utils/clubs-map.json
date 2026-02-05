@@ -1215,6 +1215,18 @@
     "logo": "logos/Libertadores/Nacional Potosi.png",
     "country": "Bolivia",
     "countryCode": "bo"
+  },
+  "Deportes Tolima": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Deportes Tolima.png",
+    "country": "Colombia",
+    "countryCode": "co"
+  },
+  "Guarani Asuncion": {
+    "league": "Libertadores",
+    "logo": "logos/Libertadores/Guarani Asuncion.png",
+    "country": "Paraguay",
+    "countryCode": "py"
   }
 }
 

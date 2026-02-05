@@ -24,7 +24,7 @@ module.exports = {
   ),
   "Copa Libertadores": path.join(
     __dirname,
-    "../data/matches/libertadores/libertadores_2025.csv"
+    "../data/matches/libertadores/libertadores_2026.csv"
   ),
   "Ligue 1": path.join(
     __dirname,
