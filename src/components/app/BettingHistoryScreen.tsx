@@ -294,6 +294,8 @@ export default function BettingHistoryScreen() {
   const allTeams = base.flatMap((a) => parseTeams(a.partida));
   const distinctTeams = new Set(allTeams.map((t) => normalize(t))).size;
 
+  // ================= CLUB STATS + ACC STATS =================
+const { clubStats, clubAccStats } = useMemo(() => {
   const clubStats: Record<string, { apostas: number; ganha: number; perdida: number }> = {};
   const clubAccStats: Record<
     string,
@@ -302,25 +304,208 @@ export default function BettingHistoryScreen() {
 
   base.forEach((a) => {
     const teams = parseTeams(a.partida);
+
     teams.forEach((team) => {
       if (!team) return;
+
       const key = normalize(team);
 
+      // ---- clubStats ----
       if (!clubStats[key]) clubStats[key] = { apostas: 0, ganha: 0, perdida: 0 };
       clubStats[key].apostas++;
       if (a.status_aposta === "ganha") clubStats[key].ganha++;
       if (a.status_aposta === "perdida") clubStats[key].perdida++;
 
+      // ---- clubAccStats ----
       if (!clubAccStats[key]) {
-        clubAccStats[key] = { apostas: 0, ganha: 0, perdida: 0, cancelada: 0, pendente: 0 };
+        clubAccStats[key] = {
+          apostas: 0,
+          ganha: 0,
+          perdida: 0,
+          cancelada: 0,
+          pendente: 0,
+        };
       }
+
       clubAccStats[key].apostas++;
+
       if (a.status_aposta === "ganha") clubAccStats[key].ganha++;
       else if (a.status_aposta === "perdida") clubAccStats[key].perdida++;
       else if (a.status_aposta === "cancelada") clubAccStats[key].cancelada++;
       else clubAccStats[key].pendente++;
     });
   });
+
+  return { clubStats, clubAccStats };
+}, [base]);
+
+
+  type ClubMetrics = {
+    name: string;
+    displayName: string;
+    apostas: number;
+    ganha: number;
+    perdida: number;
+    decided: number;
+    acc: number;
+    avgOdd: number;
+    avgReturn: number;
+    avgProfit: number; // ⭐ NOVO
+  };
+
+
+  const clubMetrics: ClubMetrics[] = useMemo(() => {
+    return Object.entries(clubAccStats)
+      .map(([name, st]) => {
+        const decided = st.ganha + st.perdida;
+
+        // apostas do clube
+        const clubBets = base.filter((a) =>
+          parseTeams(a.partida).some((t) => normalize(t) === name)
+        );
+
+        // ⭐ somente decididas
+        const decidedBets = clubBets.filter(
+          (a) => a.status_aposta === "ganha" || a.status_aposta === "perdida"
+        );
+
+        const totalStake = decidedBets.reduce((s, a) => s + a.valor_apostado, 0);
+
+        const totalReturn = decidedBets.reduce(
+          (s, a) => (a.status_aposta === "ganha" ? s + a.possivel_retorno : s),
+          0
+        );
+
+        const lucroTotal = totalReturn - totalStake; // ⭐ NOVO
+
+        const avgOdd =
+          decidedBets.length > 0
+            ? decidedBets.reduce((s, a) => s + a.odd, 0) / decidedBets.length
+            : 0;
+
+        const avgReturn =
+          totalStake > 0 ? ((totalReturn - totalStake) / totalStake) * 100 : 0;
+
+        return {
+          name,
+          displayName: displayClubName(name),
+          apostas: st.apostas,
+          ganha: st.ganha,
+          perdida: st.perdida,
+          decided,
+          acc: decided > 0 ? (st.ganha / decided) * 100 : 0,
+          avgOdd,
+          avgReturn,
+          avgProfit: decided > 0 ? lucroTotal / decided : 0, // ⭐ AQUI
+        };
+      })
+      .filter((c) => c.decided >= 3); // ⭐ mínimo estatístico correto
+  }, [base, clubAccStats]);
+
+
+    const getTop5 = (
+      arr: ClubMetrics[],
+      key: keyof ClubMetrics,
+      order: "asc" | "desc"
+    ) => {
+      return [...arr]
+        .sort((a, b) => {
+          const diff =
+            order === "asc"
+              ? (a[key] as number) - (b[key] as number)
+              : (b[key] as number) - (a[key] as number);
+
+          // ⭐ empate no valor principal → desempata por volume de amostra
+          if (diff === 0) {
+            return b.decided - a.decided; // mais apostas decididas primeiro
+          }
+
+          return diff;
+        })
+        .slice(0, 5);
+    };
+
+
+  const rankings = useMemo(
+    () => ({
+      accDesc: getTop5(clubMetrics, "acc", "desc"),
+      accAsc: getTop5(clubMetrics, "acc", "asc"),
+
+      oddDesc: getTop5(clubMetrics, "avgOdd", "desc"),
+      oddAsc: getTop5(clubMetrics, "avgOdd", "asc"),
+
+      roiDesc: getTop5(clubMetrics, "avgReturn", "desc"),
+      roiAsc: getTop5(clubMetrics, "avgReturn", "asc"),
+    }),
+    [clubMetrics]
+  );
+
+  const bestROIClub = rankings.roiDesc[0] ?? null;
+
+
+  const RankingList = ({
+    title,
+    list,
+    valueKey,
+    isPercent,
+    isROI,
+  }: {
+    title: string;
+    list: ClubMetrics[];
+    valueKey: keyof ClubMetrics;
+    isPercent?: boolean;
+    isROI?: boolean;
+  }) => {
+    
+    return (
+      <Panel>
+        <h3 className="text-lg font-extrabold text-gray-900 dark:text-white mb-3">
+          {title}
+        </h3>
+
+        <div className="space-y-2">
+          {list.map((c) => {
+            const logo = findLogo(c.name);
+            const value = c[valueKey] as number;
+
+            const tone = isROI
+              ? value >= 0
+                ? "text-green-600"
+                : "text-red-600"
+              : "text-gray-900 dark:text-white";
+
+            return (
+              <div
+                key={c.name}
+                className="flex items-center justify-between rounded-xl border border-gray-200 dark:border-neutral-800 p-3 bg-white dark:bg-neutral-900"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8">
+                    {logo ? (
+                      <img src={logo} className="w-full h-full object-contain" />
+                    ) : (
+                      <div className="text-xs text-gray-400">?</div>
+                    )}
+                  </div>
+
+                  <span className="text-sm font-semibold text-gray-900 dark:text-white">
+                    {c.displayName}
+                  </span>
+                </div>
+
+                <span className={`font-extrabold tabular-nums ${tone}`}>
+                  {isPercent ? `${value.toFixed(0)}%` : value.toFixed(2)}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </Panel>
+    );
+  };
+
+  const [clubTab, setClubTab] = useState<"acc" | "odd" | "profit">("acc");
+  const [clubAsc, setClubAsc] = useState(false);
 
   const sortedClubs = Object.entries(clubStats)
     .sort((a, b) => b[1].apostas - a[1].apostas)
@@ -335,7 +520,7 @@ export default function BettingHistoryScreen() {
       const displayName = displayClubName(name);
       return { name, displayName, ...st, decided, acc };
     })
-    .filter((c) => c.decided > 0)
+    .filter((c) => c.decided >= 3)
     .sort((a, b) => {
       // 1) maior % primeiro
       if (b.acc !== a.acc) return b.acc - a.acc;
@@ -1101,82 +1286,168 @@ export default function BettingHistoryScreen() {
               </div>
             </div>
 
-            {/* Acerto por clube */}
+            {/* Acerto / Odds / Lucro médio por clube */}
             <Panel>
               <div className="flex items-start justify-between gap-3 mb-4">
                 <div>
-                  <h3 className="text-lg font-extrabold text-gray-900 dark:text-white">Acerto por clube</h3>
-                  <p className="text-gray-500 text-sm">Clubes com melhor percentual</p>
+                  <h3 className="text-lg font-extrabold text-gray-900 dark:text-white">
+                    Clubes
+                  </h3>
+                  <p className="text-gray-500 text-sm">
+                    {clubTab === "acc" && "Percentual de acerto"}
+                    {clubTab === "odd" && "Odd média das apostas"}
+                    {clubTab === "profit" && "Lucro médio por bilhete"}
+                  </p>
                 </div>
-                <div className="text-xs text-gray-500">
-                  Top <span className="font-semibold text-gray-700 dark:text-gray-200">{clubAccuracyList.length}</span>
+
+                <div className="flex items-center gap-2">
+                  {/* Ordenação */}
+                  <button
+                    onClick={() => setClubAsc((v) => !v)}
+                    className="text-xs px-2 py-1 rounded-lg border border-gray-300 dark:border-neutral-700 hover:bg-gray-100 dark:hover:bg-neutral-800"
+                  >
+                    {clubAsc ? "↑ Crescente" : "↓ Decrescente"}
+                  </button>
+
+                  {/* Tabs */}
+                  <div className="flex gap-1 bg-gray-100 dark:bg-neutral-900 p-1 rounded-xl">
+                    {[
+                      { key: "acc", label: "Acerto" },
+                      { key: "odd", label: "Odds" },
+                      { key: "profit", label: "Lucro" },
+                    ].map((t) => (
+                      <button
+                        key={t.key}
+                        onClick={() => setClubTab(t.key as any)}
+                        className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition ${
+                          clubTab === t.key
+                            ? "bg-white dark:bg-neutral-800 text-gray-900 dark:text-white shadow"
+                            : "text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                        }`}
+                      >
+                        {t.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
 
-              {clubAccuracyList.length === 0 ? (
+              {clubMetrics.length === 0 ? (
                 <div className="text-sm text-gray-500 py-6">
-                  Ainda não há apostas decididas (ganha/perdida) para calcular acerto.
+                  Ainda não há apostas decididas suficientes.
                 </div>
               ) : (
                 <div className="space-y-2">
-                  {clubAccuracyList.map((c) => {
-                    const logo = findLogo(c.name);
-                    const width = maxAcc > 0 ? Math.max(6, (c.acc / maxAcc) * 100) : 0;
+                  {getTop5(
+                    clubMetrics,
+                    clubTab === "acc"
+                      ? "acc"
+                      : clubTab === "odd"
+                      ? "avgOdd"
+                      : "avgProfit",
+                    clubAsc ? "asc" : "desc"
+                  ).map((c) => {
+                      const logo = findLogo(c.name);
 
-                    return (
-                      <div
-                        key={c.name}
-                        className="group rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-900/60 transition p-3"
-                      >
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 shrink-0 rounded-2xl bg-white dark:bg-neutral-900 ring-1 ring-black/5 dark:ring-white/5 shadow-sm flex items-center justify-center p-2">
-                            {logo ? (
-                              <img src={logo} className="w-full h-full object-contain" />
-                            ) : (
-                              <div className="text-gray-400 text-[10px]">?</div>
-                            )}
-                          </div>
+                      const value =
+                        clubTab === "acc"
+                          ? c.acc
+                          : clubTab === "odd"
+                          ? c.avgOdd
+                          : c.avgProfit;
 
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center justify-between gap-3">
-                              <div className="min-w-0">
-                                <div className="truncate text-sm font-semibold text-gray-900 dark:text-white">
-                                  {c.displayName}
+                      const maxValue = Math.max(
+                        ...clubMetrics.map((x) =>
+                          clubTab === "acc"
+                            ? x.acc
+                            : clubTab === "odd"
+                            ? x.avgOdd
+                            : Math.abs(x.avgProfit)
+                        )
+                      );
+
+                      const width =
+                        maxValue > 0 ? Math.max(6, (Math.abs(value) / maxValue) * 100) : 0;
+
+                      const valueText =
+                        clubTab === "acc"
+                          ? `${value.toFixed(0)}%`
+                          : clubTab === "odd"
+                          ? value.toFixed(2)
+                          : `R$ ${value.toFixed(2)}`;
+
+                      const barColor =
+                        clubTab === "profit"
+                          ? value >= 0
+                            ? "bg-green-500"
+                            : "bg-red-500"
+                          : "bg-[#014a8f]";
+
+                      return (
+                        <div
+                          key={c.name}
+                          className="group rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-900/60 transition p-3"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 shrink-0 rounded-2xl bg-white dark:bg-neutral-900 ring-1 ring-black/5 dark:ring-white/5 shadow-sm flex items-center justify-center p-2">
+                              {logo ? (
+                                <img src={logo} className="w-full h-full object-contain" />
+                              ) : (
+                                <div className="text-gray-400 text-[10px]">?</div>
+                              )}
+                            </div>
+
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-center justify-between gap-3">
+                                <div className="min-w-0">
+                                  <div className="truncate text-sm font-semibold text-gray-900 dark:text-white">
+                                    {c.displayName}
+                                  </div>
+                                  <div className="text-[11px] text-gray-500 tabular-nums">
+                                    {c.ganha} ganhas • {c.perdida} perdidas
+                                  </div>
                                 </div>
-                                <div className="text-[11px] text-gray-500 tabular-nums">
-                                  {c.ganha} ganhas • {c.perdida} perdidas
+
+                                <div className="shrink-0 text-sm font-extrabold text-gray-900 dark:text-white tabular-nums">
+                                  {valueText}
                                 </div>
                               </div>
 
-                              <div className="shrink-0 text-sm font-extrabold text-gray-900 dark:text-white tabular-nums">
-                                {c.acc.toFixed(0)}%
+                              <div className="mt-2 h-2 rounded-full bg-white dark:bg-neutral-900 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
+                                <div
+                                  className={`h-full rounded-full ${barColor}`}
+                                  style={{ width: `${width}%` }}
+                                />
                               </div>
                             </div>
+                          </div>
 
-                            <div className="mt-2 h-2 rounded-full bg-white dark:bg-neutral-900 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
-                              <div
-                                className="h-full rounded-full bg-[#014a8f]"
-                                style={{ width: `${width}%` }}
-                              />
+                          {/* Tooltip */}
+                          <div className="relative">
+                            <div className="pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity absolute z-10 mt-2 w-max max-w-[280px] rounded-xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-xl px-3 py-2 text-xs text-gray-700 dark:text-gray-200">
+                              <div className="font-semibold text-gray-900 dark:text-white mb-1">
+                                Detalhes
+                              </div>
+                              <div>Apostas: <span className="font-bold">{c.apostas}</span></div>
+                              <div>Decididas: <span className="font-bold">{c.decided}</span></div>
+                              <div>Ganhas: <span className="font-bold">{c.ganha}</span></div>
+                              <div>Perdidas: <span className="font-bold">{c.perdida}</span></div>
+                              <div>Odd média: <span className="font-bold">{c.avgOdd.toFixed(2)}</span></div>
+                              <div>
+                                Lucro médio:{" "}
+                                <span className={`font-bold ${c.avgProfit >= 0 ? "text-green-600" : "text-red-600"}`}>
+                                  R$ {c.avgProfit.toFixed(2)}
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </div>
-
-                        <div className="relative">
-                          <div className="pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity absolute z-10 mt-2 w-max max-w-[280px] rounded-xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-xl px-3 py-2 text-xs text-gray-700 dark:text-gray-200">
-                            <div className="font-semibold text-gray-900 dark:text-white mb-1">Detalhes</div>
-                            <div>Apostas: <span className="font-bold">{c.apostas}</span></div>
-                            <div>Decididas: <span className="font-bold">{c.decided}</span></div>
-                            <div>Ganhas: <span className="font-bold">{c.ganha}</span></div>
-                            <div>Perdidas: <span className="font-bold">{c.perdida}</span></div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
                 </div>
               )}
             </Panel>
+
           </div>
 
           {/* RIGHT */}
