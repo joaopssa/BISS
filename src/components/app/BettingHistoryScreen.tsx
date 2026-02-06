@@ -1324,7 +1324,7 @@ const { clubStats, clubAccStats } = useMemo(() => {
             </div>
 
             {/* Acerto / Odds / Lucro médio por clube */}
-            <Panel>
+            <Panel className="overflow-visible">
               <div className="flex items-start justify-between gap-3 mb-4">
                 <div>
                   <h3 className="text-lg font-extrabold text-gray-900 dark:text-white">
@@ -1435,7 +1435,7 @@ const { clubStats, clubAccStats } = useMemo(() => {
                       return (
                         <div
                           key={c.name}
-                          className="group rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-900/60 transition p-3"
+                          className="group relative overflow-visible rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-900/60 transition p-3"
                         >
                           <div className="flex items-center gap-3">
                             <div className="w-10 h-10 shrink-0 rounded-2xl bg-white dark:bg-neutral-900 ring-1 ring-black/5 dark:ring-white/5 shadow-sm flex items-center justify-center p-2">
@@ -1472,22 +1472,36 @@ const { clubStats, clubAccStats } = useMemo(() => {
                           </div>
 
                           {/* Tooltip */}
-                          <div className="relative">
-                            <div className="pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity absolute z-10 mt-2 w-max max-w-[280px] rounded-xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-xl px-3 py-2 text-xs text-gray-700 dark:text-gray-200">
-                              <div className="font-semibold text-gray-900 dark:text-white mb-1">
-                                Detalhes
-                              </div>
-                              <div>Apostas: <span className="font-bold">{c.apostas}</span></div>
-                              <div>Decididas: <span className="font-bold">{c.decided}</span></div>
-                              <div>Ganhas: <span className="font-bold">{c.ganha}</span></div>
-                              <div>Perdidas: <span className="font-bold">{c.perdida}</span></div>
-                              <div>Odd média: <span className="font-bold">{c.avgOdd.toFixed(2)}</span></div>
-                              <div>
-                                Lucro médio:{" "}
-                                <span className={`font-bold ${c.avgProfit >= 0 ? "text-green-600" : "text-red-600"}`}>
-                                  R$ {c.avgProfit.toFixed(2)}
-                                </span>
-                              </div>
+                          <div
+                            className="
+                              pointer-events-none
+                              opacity-0 group-hover:opacity-100
+                              transition-opacity
+                              absolute
+                              z-[9999]
+                              top-full left-0 mt-2
+                              w-max max-w-[280px]
+                              rounded-xl
+                              border border-gray-200 dark:border-neutral-800
+                              bg-white dark:bg-neutral-900
+                              shadow-xl
+                              px-3 py-2
+                              text-xs text-gray-700 dark:text-gray-200
+                            "
+                          >
+                            <div className="font-semibold text-gray-900 dark:text-white mb-1">
+                              Detalhes
+                            </div>
+                            <div>Apostas: <span className="font-bold">{c.apostas}</span></div>
+                            <div>Decididas: <span className="font-bold">{c.decided}</span></div>
+                            <div>Ganhas: <span className="font-bold">{c.ganha}</span></div>
+                            <div>Perdidas: <span className="font-bold">{c.perdida}</span></div>
+                            <div>Odd média: <span className="font-bold">{c.avgOdd.toFixed(2)}</span></div>
+                            <div>
+                              Lucro médio:{" "}
+                              <span className={`font-bold ${c.avgProfit >= 0 ? "text-green-600" : "text-red-600"}`}>
+                                R$ {c.avgProfit.toFixed(2)}
+                              </span>
                             </div>
                           </div>
                         </div>

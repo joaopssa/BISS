@@ -15,6 +15,7 @@ import {
   Cell,
 } from "recharts";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { LabelList } from "recharts";
 
 // --- Ícones SVG ---
 const TargetIcon = () => (
@@ -454,6 +455,72 @@ export default function FinancialBalanceScreen() {
   }, [bilhetes]);
 
   // =======================
+  // 📈 PROJEÇÃO DE CARTEIRA
+  // =======================
+  const projection = useMemo(() => {
+    if (bilhetes.length === 0) {
+      return {
+        lucroDiario: 0,
+        base: saldo + saldoEmAposta,
+        projecoes: {
+          semana: saldo + saldoEmAposta,
+          mes: saldo + saldoEmAposta,
+          ano: saldo + saldoEmAposta,
+        },
+      };
+    }
+
+    // pega datas de decisão válidas
+    const decidedDates = bilhetes
+      .filter(b => isDecided(b.status))
+      .map(b => getBilheteDecisionDate(b))
+      .filter(d => Number.isFinite(d.getTime()));
+
+    if (decidedDates.length === 0) {
+      return {
+        lucroDiario: 0,
+        base: saldo + saldoEmAposta,
+        projecoes: {
+          semana: saldo + saldoEmAposta,
+          mes: saldo + saldoEmAposta,
+          ano: saldo + saldoEmAposta,
+        },
+      };
+    }
+
+    const first = new Date(Math.min(...decidedDates.map(d => d.getTime())));
+    const last = new Date(Math.max(...decidedDates.map(d => d.getTime())));
+
+    const diasAtivos = Math.max(
+      1,
+      Math.ceil((last.getTime() - first.getTime()) / (1000 * 60 * 60 * 24))
+    );
+
+    const lucroTotal = bilhetes.reduce(
+      (acc, b) => acc + profitFromDecidedBilhete(b),
+      0
+    );
+
+    const lucroDiario = lucroTotal / diasAtivos;
+    const base = saldo + saldoEmAposta;
+
+    return {
+      lucroDiario: round2(lucroDiario),
+      base,
+      projecoes: {
+        semana: round2(base + lucroDiario * 7),
+        mes: round2(base + lucroDiario * 30),
+        ano: round2(base + lucroDiario * 365),
+      },
+    };
+  }, [bilhetes, saldo, saldoEmAposta]);
+
+  const [projectionRange, setProjectionRange] = useState<
+    "semana" | "mes" | "ano"
+  >("mes");
+
+
+  // =======================
   // ✅ EVOLUÇÃO MENSAL (LUCRO = bilhetes finalizados no mês)
   // =======================
   const monthlyStats = useMemo(() => {
@@ -786,286 +853,376 @@ export default function FinancialBalanceScreen() {
             </div>
           </div>
 
-          {/* Gráfico + Resumo */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Evolução Mensal */}
-            <div className={panelClass}>
-              <div className="relative">
-                <div className="flex items-start sm:items-center justify-between gap-3 mb-4">
-                  <div>
-                    <h3 className="text-xl font-extrabold text-gray-900 dark:text-white">
-                      Evolução Mensal
-                    </h3>
+          {/* Projeção + Evolução (esquerda) | Resumo anual (direita) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+            {/* COLUNA ESQUERDA (2/3) */}
+            <div className="flex flex-col gap-6">
+              {/* Projeção de Carteira */}
+              <div className={panelClass}>
+                <div className="relative">
+                  <div className="flex items-start justify-between gap-3 mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 rounded-xl bg-[#014a8f]/10 border border-[#014a8f]/15">
+                        <TrendingUpIcon />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-extrabold text-gray-900 dark:text-white">
+                          Projeção de carteira
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">
+                          Mantendo o ritmo atual de lucro
+                        </p>
+                      </div>
+                    </div>
 
-                    {monthlyDelta && (
-                      <p
-                        className={`text-s font-semibold mt-1 ${(
-                          (monthlyMetric === "profit" && monthlyDelta.profit >= 0) ||
-                          (monthlyMetric === "winRate" && monthlyDelta.winRate >= 0) ||
-                          (monthlyMetric === "bets" && monthlyDelta.bets >= 0)
-                        )
-                          ? "text-green-600"
-                          : "text-red-600"
-                          }`}
-                      >
-                        {monthlyMetric === "profit" && (
-                          <>
-                            {monthlyDelta.profit >= 0 ? "▲" : "▼"}{" "}
-                            R$ {formatBRLCompact(Math.abs(monthlyDelta.profit))} x mês anterior
-                          </>
-                        )}
-                        {monthlyMetric === "winRate" && (
-                          <>
-                            {monthlyDelta.winRate >= 0 ? "▲" : "▼"}{" "}
-                            {Math.abs(monthlyDelta.winRate)} p.p. x mês anterior
-                          </>
-                        )}
-                        {monthlyMetric === "bets" && (
-                          <>
-                            {monthlyDelta.bets >= 0 ? "▲" : "▼"}{" "}
-                            {Math.abs(monthlyDelta.bets)} bilhetes x mês anterior
-                          </>
-                        )}
-                      </p>
-                    )}
+                    <div className="flex gap-2">
+                      {(["semana", "mes", "ano"] as const).map((k) => (
+                        <Button
+                          key={k}
+                          size="sm"
+                          variant={projectionRange === k ? "default" : "outline"}
+                          className={
+                            projectionRange === k
+                              ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                              : "border-gray-200 dark:border-neutral-800"
+                          }
+                          onClick={() => setProjectionRange(k)}
+                        >
+                          {k === "semana" && "1 semana"}
+                          {k === "mes" && "1 mês"}
+                          {k === "ano" && "1 ano"}
+                        </Button>
+                      ))}
+                    </div>
                   </div>
 
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant={monthlyMetric === "profit" ? "default" : "outline"}
-                      className={
-                        monthlyMetric === "profit"
-                          ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
-                          : "border-gray-200 dark:border-neutral-800"
-                      }
-                      onClick={() => setMonthlyMetric("profit")}
-                    >
-                      Lucro
-                    </Button>
+                  <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-5 py-4">
+                    <div className="text-xs uppercase font-semibold tracking-wider text-gray-500 mb-1">
+                      Saldo projetado
+                    </div>
 
-                    <Button
-                      size="sm"
-                      variant={monthlyMetric === "winRate" ? "default" : "outline"}
-                      className={
-                        monthlyMetric === "winRate"
-                          ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
-                          : "border-gray-200 dark:border-neutral-800"
-                      }
-                      onClick={() => setMonthlyMetric("winRate")}
-                    >
-                      %Acerto
-                    </Button>
+                    <div className="text-3xl font-extrabold tabular-nums text-[#014a8f] dark:text-white">
+                      {formatBRL(projection.projecoes[projectionRange])}
+                    </div>
 
-                    <Button
-                      size="sm"
-                      variant={monthlyMetric === "bets" ? "default" : "outline"}
-                      className={
-                        monthlyMetric === "bets"
-                          ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
-                          : "border-gray-200 dark:border-neutral-800"
-                      }
-                      onClick={() => setMonthlyMetric("bets")}
-                    >
-                      Bilhetes
-                    </Button>
+                    <div className="mt-2 text-xs text-gray-600 dark:text-gray-400 flex items-center gap-2">
+                      <ClockIcon />
+                      Lucro médio diário:{" "}
+                      <span
+                        className={
+                          projection.lucroDiario >= 0
+                            ? "text-green-600 font-semibold"
+                            : "text-red-600 font-semibold"
+                        }
+                      >
+                        {formatBRL(projection.lucroDiario)}
+                      </span>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                {monthlyStats.length === 0 ? (
-                  <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-gray-50/60 dark:bg-neutral-950/40 px-4 py-10 text-center text-gray-500 text-sm">
-                    Sem dados mensais ainda.
-                  </div>
-                ) : (
-                  <div className="h-56 w-full">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <BarChart
-                        data={[...monthlyStats].reverse()}
-                        margin={{ top: 8, right: 12, left: 0, bottom: 0 }}
+              {/* Evolução Mensal */}
+              <div className={panelClass}>
+                <div className="relative">
+                  <div className="flex items-start sm:items-center justify-between gap-3 mb-4">
+                    <div>
+                      <h3 className="text-xl font-extrabold text-gray-900 dark:text-white">
+                        Evolução Mensal
+                      </h3>
+
+                      {monthlyDelta && (
+                        <p
+                          className={`text-s font-semibold mt-1 ${(
+                            (monthlyMetric === "profit" && monthlyDelta.profit >= 0) ||
+                            (monthlyMetric === "winRate" && monthlyDelta.winRate >= 0) ||
+                            (monthlyMetric === "bets" && monthlyDelta.bets >= 0)
+                          )
+                            ? "text-green-600"
+                            : "text-red-600"
+                            }`}
+                        >
+                          {monthlyMetric === "profit" && (
+                            <>
+                              {monthlyDelta.profit >= 0 ? "▲" : "▼"}{" "}
+                              R$ {formatBRLCompact(Math.abs(monthlyDelta.profit))} x mês anterior
+                            </>
+                          )}
+                          {monthlyMetric === "winRate" && (
+                            <>
+                              {monthlyDelta.winRate >= 0 ? "▲" : "▼"}{" "}
+                              {Math.abs(monthlyDelta.winRate)} p.p. x mês anterior
+                            </>
+                          )}
+                          {monthlyMetric === "bets" && (
+                            <>
+                              {monthlyDelta.bets >= 0 ? "▲" : "▼"}{" "}
+                              {Math.abs(monthlyDelta.bets)} bilhetes x mês anterior
+                            </>
+                          )}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="flex gap-2">
+                      <Button
+                        size="sm"
+                        variant={monthlyMetric === "profit" ? "default" : "outline"}
+                        className={
+                          monthlyMetric === "profit"
+                            ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                            : "border-gray-200 dark:border-neutral-800"
+                        }
+                        onClick={() => setMonthlyMetric("profit")}
                       >
-                        <CartesianGrid vertical={false} />
-                        <XAxis
-                          dataKey="month"
-                          tickLine={false}
-                          axisLine={false}
-                          fontSize={12}
-                          tickFormatter={(v) => formatMonth(String(v))}
-                        />
-                        <YAxis
-                          tickLine={false}
-                          axisLine={false}
-                          fontSize={12}
-                          domain={
-                            monthlyMetric === "bets"
-                              ? [0, "auto"]
-                              : monthlyMetric === "winRate"
-                                ? [0, 100]
-                                : ["auto", "auto"]
-                          }
-                          tickFormatter={(v) => {
-                            const n = Number(v);
-                            if (monthlyMetric === "profit") return `R$${n.toFixed(0)}`;
-                            if (monthlyMetric === "winRate") return `${n.toFixed(0)}%`;
-                            return `${n.toFixed(0)}`;
-                          }}
-                        />
+                        Lucro
+                      </Button>
 
-                        <Tooltip
-                          labelFormatter={(label) => `Mês: ${formatMonth(String(label))}`}
-                          formatter={(value: any) => {
-                            const n = Number(value);
-                            if (monthlyMetric === "profit") return [`R$ ${n.toFixed(2)}`, "Lucro"];
-                            if (monthlyMetric === "winRate") return [`${n.toFixed(1)}%`, "% Acerto"];
-                            return [`${Math.round(n)}`, "Bilhetes"];
-                          }}
-                        />
+                      <Button
+                        size="sm"
+                        variant={monthlyMetric === "winRate" ? "default" : "outline"}
+                        className={
+                          monthlyMetric === "winRate"
+                            ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                            : "border-gray-200 dark:border-neutral-800"
+                        }
+                        onClick={() => setMonthlyMetric("winRate")}
+                      >
+                        %Acerto
+                      </Button>
 
-                        {monthlyMetric !== "profit" ? (
-                          <Bar
-                            dataKey={monthlyMetric}
-                            radius={[8, 8, 0, 0]}
-                            fill={monthlyMetric === "bets" ? "#014a8f" : "#16a34a"}
-                          />
-                        ) : (
-                          <Bar dataKey="profit" radius={[8, 8, 0, 0]}>
-                            {[...monthlyStats].reverse().map((row, idx) => (
-                              <Cell
-                                key={`cell-${idx}`}
-                                fill={Number(row.profit) >= 0 ? "#16a34a" : "#dc2626"}
-                              />
-                            ))}
-                          </Bar>
-                        )}
-                      </BarChart>
-                    </ResponsiveContainer>
+                      <Button
+                        size="sm"
+                        variant={monthlyMetric === "bets" ? "default" : "outline"}
+                        className={
+                          monthlyMetric === "bets"
+                            ? "bg-[#014a8f] hover:bg-[#003b70] text-white"
+                            : "border-gray-200 dark:border-neutral-800"
+                        }
+                        onClick={() => setMonthlyMetric("bets")}
+                      >
+                        Bilhetes
+                      </Button>
+                    </div>
                   </div>
-                )}
+
+                  {monthlyStats.length === 0 ? (
+                    <div className="rounded-xl border border-dashed border-gray-300 dark:border-neutral-800 bg-gray-50/60 dark:bg-neutral-950/40 px-4 py-10 text-center text-gray-500 text-sm">
+                      Sem dados mensais ainda.
+                    </div>
+                  ) : (
+                    <div className="h-56 w-full">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <BarChart
+                          data={[...monthlyStats].reverse()}
+                          margin={{ top: 18, right: 12, left: 0, bottom: 0 }}
+                        >
+                          <CartesianGrid vertical={false} />
+                          <XAxis
+                            dataKey="month"
+                            tickLine={false}
+                            axisLine={false}
+                            fontSize={12}
+                            tickFormatter={(v) => formatMonth(String(v))}
+                          />
+                          <YAxis
+                            tickLine={false}
+                            axisLine={false}
+                            fontSize={12}
+                            domain={
+                              monthlyMetric === "bets"
+                                ? [0, "auto"]
+                                : monthlyMetric === "winRate"
+                                  ? [0, 100]
+                                  : ["auto", "auto"]
+                            }
+                            tickFormatter={(v) => {
+                              const n = Number(v);
+                              if (monthlyMetric === "profit") return `R$${n.toFixed(0)}`;
+                              if (monthlyMetric === "winRate") return `${n.toFixed(0)}%`;
+                              return `${n.toFixed(0)}`;
+                            }}
+                          />
+
+                          <Tooltip
+                            labelFormatter={(label) => `Mês: ${formatMonth(String(label))}`}
+                            formatter={(value: any) => {
+                              const n = Number(value);
+                              if (monthlyMetric === "profit") return [`R$ ${n.toFixed(2)}`, "Lucro"];
+                              if (monthlyMetric === "winRate") return [`${n.toFixed(1)}%`, "% Acerto"];
+                              return [`${Math.round(n)}`, "Bilhetes"];
+                            }}
+                          />
+
+                          {monthlyMetric !== "profit" ? (
+                            <Bar
+                              dataKey={monthlyMetric}
+                              radius={[8, 8, 0, 0]}
+                              fill={monthlyMetric === "bets" ? "#014a8f" : "#16a34a"}
+                            >
+                              <LabelList
+                                dataKey={monthlyMetric}
+                                position="top"
+                                formatter={(v: any) => {
+                                  const n = Number(v);
+                                  if (monthlyMetric === "winRate") return `${n.toFixed(0)}%`;
+                                  return `${Math.round(n)}`;
+                                }}
+                                className="fill-gray-700"
+                              />
+                            </Bar>
+                          ) : (
+                            <Bar dataKey="profit" radius={[8, 8, 0, 0]}>
+                              <LabelList
+                                dataKey="profit"
+                                position="top"
+                                formatter={(v: any) => {
+                                  const n = Number(v);
+                                  return `R$ ${Math.abs(n).toFixed(0)}`;
+                                }}
+                                className="fill-gray-700"
+                              />
+                              {[...monthlyStats].reverse().map((row, idx) => (
+                                <Cell
+                                  key={`cell-${idx}`}
+                                  fill={Number(row.profit) >= 0 ? "#16a34a" : "#dc2626"}
+                                />
+                              ))}
+                            </Bar>
+                          )}
+                        </BarChart>
+                      </ResponsiveContainer>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
-            {/* Resumo anual + Heatmap */}
-            <div className={panelClass}>
-              <div className="relative">
-                <div className="flex items-start justify-between gap-3 mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-xl bg-[#014a8f]/10 border border-[#014a8f]/15">
-                      <ChartIcon />
-                    </div>
-                    <div>
-                      <h2 className="text-xl font-extrabold text-gray-900 dark:text-white leading-tight">
-                        Resumo anual
-                      </h2>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        KPIs + Lucro diário (bilhetes finalizados)
-                      </p>
+            {/* COLUNA DIREITA (1/3) - card alto */}
+            <div className="h-full">
+              <div className={`${panelClass} h-full`}>
+                <div className="relative">
+                  <div className="flex items-start justify-between gap-3 mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 rounded-xl bg-[#014a8f]/10 border border-[#014a8f]/15">
+                        <ChartIcon />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                          Resumo anual
+                        </h2>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">
+                          KPIs + Lucro diário (bilhetes finalizados)
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
-                  <KPIBox
-                    label="Lucro anual"
-                    value={
-                      <span className={annualSummary.profitAno >= 0 ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"}>
-                        {annualSummary.profitAno >= 0 ? "" : "-"}R$ {formatBRLCompact(Math.abs(annualSummary.profitAno))}
-                      </span>
-                    }
-                    valueClass="text-[20px] sm:text-[22px]"
-                  />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+                    <KPIBox
+                      label="Lucro anual"
+                      value={
+                        <span className={annualSummary.profitAno >= 0 ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"}>
+                          {annualSummary.profitAno >= 0 ? "" : "-"}R$ {formatBRLCompact(Math.abs(annualSummary.profitAno))}
+                        </span>
+                      }
+                      valueClass="text-[20px] sm:text-[22px]"
+                    />
 
-                  <KPIBox
-                    label="Bilhetes"
-                    value={annualSummary.bilhetesAno}
-                    valueClass="text-[20px] sm:text-[22px]"
-                  />
+                    <KPIBox
+                      label="Bilhetes"
+                      value={annualSummary.bilhetesAno}
+                      valueClass="text-[20px] sm:text-[22px]"
+                    />
 
-                  <KPIBox
-                    label="Taxa acerto"
-                    value={`${annualSummary.winRateAno.toFixed(0)}%`}
-                    footer={
-                      <div className="h-2 rounded-full bg-white/70 dark:bg-neutral-900/50 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
-                        <div
-                          className="h-full rounded-full bg-[#014a8f]"
-                          style={{ width: `${Math.max(0, Math.min(100, annualSummary.winRateAno))}%` }}
-                        />
-                      </div>
-                    }
-                    valueClass="text-[20px] sm:text-[22px]"
-                  />
-
-                  <KPIBox
-                    label="Lucro por bilhete"
-                    value={
-                      <span className={annualSummary.lucroMedioPorBilhete >= 0 ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"}>
-                        {annualSummary.lucroMedioPorBilhete >= 0 ? "" : "-"}R$ {formatBRLCompact(Math.abs(annualSummary.lucroMedioPorBilhete))}
-                      </span>
-                    }
-                    valueClass="text-[20px] sm:text-[22px]"
-                  />
-                </div>
-
-                {/* Heatmap */}
-                <div className="mt-4 overflow-hidden rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 p-4">
-                  <div className="w-full flex justify-center">
-                    <div className="rounded-2xl border border-[#014a8f]/10 bg-white/80 dark:bg-neutral-950/50 px-4 py-3 shadow-sm max-w-full">
-                      <div className="flex justify-center">
-                        <div className="max-w-[680px] w-full overflow-hidden [scrollbar-width:thin]">
+                    <KPIBox
+                      label="Taxa acerto"
+                      value={`${annualSummary.winRateAno.toFixed(0)}%`}
+                      footer={
+                        <div className="h-2 rounded-full bg-white/70 dark:bg-neutral-900/50 border border-gray-200/70 dark:border-neutral-800 overflow-hidden">
                           <div
-                            className="grid origin-top-left"
-                            style={{
-                              transform: "scale(var(--s))",
-                              ["--s" as any]: "0.92",
-                              gridAutoFlow: "column",
-                              gridTemplateRows: "repeat(7, 12px)",
-                              gridAutoColumns: "12px",
-                              gap: "2px",
-                            }}
-                          >
-                            {calendarHeatmap.weeks.map((week) =>
-                              week.map((day) => {
-                                const opacity = day.inYear ? "opacity-100" : "opacity-30";
-                                const title = `${day.date.toLocaleDateString("pt-BR")} — ${formatBRL(day.value)}`;
-                                const isToday = day.key === calendarHeatmap.todayKey;
+                            className="h-full rounded-full bg-[#014a8f]"
+                            style={{ width: `${Math.max(0, Math.min(100, annualSummary.winRateAno))}%` }}
+                          />
+                        </div>
+                      }
+                      valueClass="text-[20px] sm:text-[22px]"
+                    />
 
-                                return (
-                                  <div
-                                    key={day.key}
-                                    title={title}
-                                    className={[
-                                      "rounded-[3px]",
-                                      opacity,
-                                      heatClass(day.value, calendarHeatmap.absMax),
-                                      isToday
-                                        ? "ring-2 ring-[#014a8f]/35 ring-offset-2 ring-offset-white dark:ring-offset-neutral-950"
-                                        : "",
-                                    ].join(" ")}
-                                  />
-                                );
-                              })
-                            )}
+                    <KPIBox
+                      label="Lucro por bilhete"
+                      value={
+                        <span className={annualSummary.lucroMedioPorBilhete >= 0 ? "text-green-700 dark:text-green-400" : "text-red-700 dark:text-red-400"}>
+                          {annualSummary.lucroMedioPorBilhete >= 0 ? "" : "-"}R$ {formatBRLCompact(Math.abs(annualSummary.lucroMedioPorBilhete))}
+                        </span>
+                      }
+                      valueClass="text-[20px] sm:text-[22px]"
+                    />
+                  </div>
+
+                  {/* Heatmap */}
+                  <div className="mt-4 overflow-hidden rounded-2xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 p-4">
+                    <div className="w-full flex justify-center">
+                      <div className="rounded-2xl border border-[#014a8f]/10 bg-white/80 dark:bg-neutral-950/50 px-4 py-3 shadow-sm max-w-full">
+                        <div className="flex justify-center">
+                          <div className="max-w-[680px] w-full overflow-hidden [scrollbar-width:thin]">
+                            <div
+                              className="grid origin-top-left"
+                              style={{
+                                transform: "scale(var(--s))",
+                                ["--s" as any]: "0.92",
+                                gridAutoFlow: "column",
+                                gridTemplateRows: "repeat(7, 12px)",
+                                gridAutoColumns: "12px",
+                                gap: "2px",
+                              }}
+                            >
+                              {calendarHeatmap.weeks.map((week) =>
+                                week.map((day) => {
+                                  const opacity = day.inYear ? "opacity-100" : "opacity-30";
+                                  const title = `${day.date.toLocaleDateString("pt-BR")} — ${formatBRL(day.value)}`;
+                                  const isToday = day.key === calendarHeatmap.todayKey;
+
+                                  return (
+                                    <div
+                                      key={day.key}
+                                      title={title}
+                                      className={[
+                                        "rounded-[3px]",
+                                        opacity,
+                                        heatClass(day.value, calendarHeatmap.absMax),
+                                        isToday
+                                          ? "ring-2 ring-[#014a8f]/35 ring-offset-2 ring-offset-white dark:ring-offset-neutral-950"
+                                          : "",
+                                      ].join(" ")}
+                                    />
+                                  );
+                                })
+                              )}
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className="mt-3 flex items-center justify-between text-[11px] text-gray-500">
-                        <span>{calendarHeatmap.year}</span>
+                        <div className="mt-3 flex items-center justify-between text-[11px] text-gray-500">
+                          <span>{calendarHeatmap.year}</span>
 
-                        <div className="flex items-center gap-2">
-                          <span>Menos</span>
-                          <div className="flex items-center gap-[2px]">
-                            <span className="w-3 h-3 rounded-[3px] bg-gray-200 dark:bg-neutral-700" />
-                            <span className="w-3 h-3 rounded-[3px] bg-green-200" />
-                            <span className="w-3 h-3 rounded-[3px] bg-green-300" />
-                            <span className="w-3 h-3 rounded-[3px] bg-green-400" />
-                            <span className="w-3 h-3 rounded-[3px] bg-green-500" />
+                          <div className="flex items-center gap-2">
+                            <span>Menos</span>
+                            <div className="flex items-center gap-[2px]">
+                              <span className="w-3 h-3 rounded-[3px] bg-gray-200 dark:bg-neutral-700" />
+                              <span className="w-3 h-3 rounded-[3px] bg-green-200" />
+                              <span className="w-3 h-3 rounded-[3px] bg-green-300" />
+                              <span className="w-3 h-3 rounded-[3px] bg-green-400" />
+                              <span className="w-3 h-3 rounded-[3px] bg-green-500" />
+                            </div>
+                            <span>Mais</span>
                           </div>
-                          <span>Mais</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
           </div>
