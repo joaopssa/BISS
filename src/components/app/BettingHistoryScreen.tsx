@@ -887,6 +887,43 @@ const { clubStats, clubAccStats } = useMemo(() => {
       normalize(displayClubName(club.name)).includes(term)
     );
   }, [clubSearch, sortedClubs, clubDisplayByNorm]);
+
+  // ===== Cores por faixa de acerto =====
+  type AccTone = "veryLow" | "low" | "mid" | "high" | "veryHigh";
+
+  const getAccTone = (acc: number): AccTone => {
+    const a = Number.isFinite(acc) ? acc : 0;
+
+    // Ajuste fino se quiser:
+    if (a < 20) return "veryLow";     // muito baixo
+    if (a < 45) return "low";         // baixo
+    if (a < 65) return "mid";         // médio
+    if (a < 80) return "high";        // alto
+    return "veryHigh";                // muito alto
+  };
+
+  const accBarClass = (acc: number) => {
+    const t = getAccTone(acc);
+    switch (t) {
+      case "veryLow":  return "bg-red-900";
+      case "low":      return "bg-red-600";
+      case "mid":      return "bg-yellow-500";
+      case "high":     return "bg-green-500";
+      case "veryHigh": return "bg-green-800";
+    }
+  };
+
+  const accTextClass = (acc: number) => {
+    const t = getAccTone(acc);
+    switch (t) {
+      case "veryLow":  return "text-red-900 dark:text-red-300";
+      case "low":      return "text-red-600 dark:text-red-300";
+      case "mid":      return "text-yellow-600 dark:text-yellow-300";
+      case "high":     return "text-green-600 dark:text-green-300";
+      case "veryHigh": return "text-green-800 dark:text-green-300";
+    }
+  };
+
   // ===== Layout base do Finance =====
   const panelClass =
     "relative overflow-hidden rounded-2xl border border-[#014a8f]/15 " +
@@ -1303,10 +1340,20 @@ const { clubStats, clubAccStats } = useMemo(() => {
                 <div className="flex items-center gap-2">
                   {/* Ordenação */}
                   <button
+                    type="button"
                     onClick={() => setClubAsc((v) => !v)}
-                    className="text-xs px-2 py-1 rounded-lg border border-gray-300 dark:border-neutral-700 hover:bg-gray-100 dark:hover:bg-neutral-800"
+                    title={clubAsc ? "Ordenação: Crescente" : "Ordenação: Decrescente"}
+                    className={[
+                      "h-9 w-9 inline-flex items-center justify-center rounded-xl",
+                      "border border-gray-300 dark:border-neutral-700",
+                      "bg-white/70 dark:bg-neutral-900/50",
+                      "hover:bg-gray-100 dark:hover:bg-neutral-800",
+                      "transition shadow-sm",
+                    ].join(" ")}
                   >
-                    {clubAsc ? "↑ Crescente" : "↓ Decrescente"}
+                    <span className="text-base leading-none">
+                      {clubAsc ? "↑" : "↓"}
+                    </span>
                   </button>
 
                   {/* Tabs */}
@@ -1381,6 +1428,8 @@ const { clubStats, clubAccStats } = useMemo(() => {
                           ? value >= 0
                             ? "bg-green-500"
                             : "bg-red-500"
+                          : clubTab === "acc"
+                          ? accBarClass(value) // <-- cor por faixa
                           : "bg-[#014a8f]";
 
                       return (
@@ -1408,7 +1457,7 @@ const { clubStats, clubAccStats } = useMemo(() => {
                                   </div>
                                 </div>
 
-                                <div className="shrink-0 text-sm font-extrabold text-gray-900 dark:text-white tabular-nums">
+                                <div className="shrink-0 text-sm font-extrabold tabular-nums text-gray-900 dark:text-white">
                                   {valueText}
                                 </div>
                               </div>
