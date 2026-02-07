@@ -9,6 +9,7 @@ SCRIPTS = [
     "atualizar_jogos.py",
     #"cbf_serie_b_scraper.py",
     "champions_scraper.py"
+    "scrape_libertadores_ge.py"
 ]
 
 def run_script(script_name):

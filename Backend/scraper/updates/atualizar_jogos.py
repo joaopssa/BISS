@@ -211,7 +211,7 @@ TEAM_MAP = {
     "FC Nantes": "Nantes",
     "Toulouse": "Toulouse FC",
     "Le Havre": "Le Havre AC",
-    "LOSC Lille": "Lille",
+    "Lille": "Lille",
     "OGC Nice": "Nice",
     "Olympique Lyon,Lyonnais": "Lyon",
 }
