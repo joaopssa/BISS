@@ -519,6 +519,8 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
     date_norm = out["Date"].apply(_norm_date) if "Date" in out.columns else pd.Series([None]*len(out))
     md_clean  = out["Matchday"].apply(_clean_text) if "Matchday" in out.columns else pd.Series([None]*len(out))
     bad_no_key = date_norm.isna() & md_clean.isna()
+    # ✅ Segurança: se tem Home/Away bons, não remove só por falta de chave
+    bad_no_key = bad_no_key & (home.apply(_is_blank) | away.apply(_is_blank))
 
     bad = bad_home_blank | bad_away_blank | bad_home_score | bad_away_score | bad_no_key
 
@@ -543,9 +545,14 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
         print(f"   [Erro] {e}")
         return pd.DataFrame()
 
+    if df_raw.empty:
+        return df_raw
+
     df_raw.columns = [str(c).strip() for c in df_raw.columns]
 
     matches = []
+    has_mw_col = "MW" in df_raw.columns
+
     for _, row in df_raw.iterrows():
         date_str = str(row.get("Date", "")).strip()
         home_raw = row.get("HomeTeam")
@@ -574,7 +581,7 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
         htag = safe_int(row.get("HTAG"))
 
         matches.append({
-            "Matchday": safe_int(row.get("MW")) if "MW" in df_raw.columns else None,
+            "Matchday": safe_int(row.get("MW")) if has_mw_col else None,
             "Day": day,
             "Date": date_iso,
             "Home": home,
@@ -641,16 +648,20 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
             "Bet365HomeClose": None, "Bet365DrawClose": None, "Bet365AwayClose": None,
         })
 
-        df = pd.DataFrame(matches)
+    df = pd.DataFrame(matches)
+    if df.empty:
+        return df
 
-        # ✅ se a fonte não traz MW e Matchday ficou toda vazia, calculamos
-        if not df.empty:
-            if "Matchday" in df.columns:
-                all_empty = df["Matchday"].isna().all()
-                if all_empty:
-                    df = compute_matchday_from_counts(df)
+    # ✅ Calcula Matchday e preenche apenas os NaN (resolve “parcialmente vazio”)
+    computed = compute_matchday_from_counts(df)
+    if "Matchday" in df.columns:
+        df["Matchday"] = pd.to_numeric(df["Matchday"], errors="coerce")
+        df["Matchday"] = df["Matchday"].fillna(computed["Matchday"])
+    else:
+        df["Matchday"] = computed["Matchday"]
 
     return df
+
 
 # ================= BRAZIL (new/BRA.csv) =================
 
@@ -940,7 +951,7 @@ def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
             df_local.at[idx, col] = newv
 
 
-def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
+def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, force_recompute_matchday: bool = False):
     df_new = ensure_cols(df_new, TARGET_COLS)
 
     if os.path.exists(file_path):
@@ -1024,6 +1035,12 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
         na_position="last"
     ).drop(columns=["_md_sort", "_date_sort"], errors="ignore")
 
+    # ✅ opção: recomputa Matchday no arquivo final (ideal para Brasil)
+    if force_recompute_matchday:
+        df_local["Date"] = df_local["Date"].apply(_norm_date)
+        df_local = compute_matchday_from_counts(df_local)
+        df_local["Matchday"] = pd.to_numeric(df_local["Matchday"], errors="coerce").astype("Int64")
+
 
     df_local.to_csv(file_path, index=False, encoding="utf-8")
     print(f"   [Sucesso] {updated} jogos atualizados, {added} novos adicionados. -> {os.path.basename(file_path)}")
@@ -1097,12 +1114,19 @@ def update_league_brasil(config: dict):
 
         df_year = df_all[df_all["__Season"] == str(year)].copy()
         df_year = df_year.drop(columns=["__Season"], errors="ignore")
+        # ✅ Brasil: gera Matchday automaticamente (BRA.csv não fornece)
+        df_year = df_year.copy()
+        df_year["Date"] = df_year["Date"].apply(_norm_date)
+        df_year = compute_matchday_from_counts(df_year)
+
+        # força Matchday a ficar “limpo” (1..38) como número
+        df_year["Matchday"] = pd.to_numeric(df_year["Matchday"], errors="coerce").astype("Int64")
 
         if df_year.empty:
             continue
 
         df_year = ensure_cols(df_year, TARGET_COLS)
-        update_csv_merge(os.path.join(folder_path, fname), df_year, season_key=str(year))
+        update_csv_merge(os.path.join(folder_path, fname), df_year, season_key=str(year), force_recompute_matchday=True)
         years_done.add(year)
 
     if not years_done:
@@ -1112,7 +1136,7 @@ def update_league_brasil(config: dict):
         df_year = ensure_cols(df_year, TARGET_COLS)
 
         out_name = f"brasileirao_{last_year}.csv"
-        update_csv_merge(os.path.join(folder_path, out_name), df_year, season_key=str(last_year))
+        update_csv_merge(os.path.join(folder_path, out_name), df_year, season_key=str(last_year), force_recompute_matchday=True)
 
 # ================= MAIN =================
 
