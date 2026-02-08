@@ -492,6 +492,7 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
     - Home/Away vazios
     - Home ou Away com cara de placar (ex: '2-2')
     - Date inválida E Matchday inválida (sem chave)
+    - Linhas “super vazias” (sem gols, sem odds e sem FT/HT)
     """
     if df.empty:
         return df
@@ -506,23 +507,52 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
             return False
         return bool(SCORE_RE.match(str(x).strip()))
 
-    # Home/Away
-    home = out["Home"] if "Home" in out.columns else pd.Series([None]*len(out))
-    away = out["Away"] if "Away" in out.columns else pd.Series([None]*len(out))
+    def _is_emptyish(v):
+        return v is None or (isinstance(v, float) and pd.isna(v)) or str(v).strip() == ""
+
+    # ✅ INICIALIZA "bad"
+    bad = pd.Series([False] * len(out), index=out.index)
+
+    # --- regras de “linha super vazia” ---
+    if "FullTimeHomeGoals" in out.columns and "FullTimeAwayGoals" in out.columns:
+        core_goal_missing = out["FullTimeHomeGoals"].apply(_is_emptyish) & out["FullTimeAwayGoals"].apply(_is_emptyish)
+    else:
+        core_goal_missing = pd.Series([True] * len(out), index=out.index)
+
+    ft_missing = out["FullTime"].apply(_is_emptyish) if "FullTime" in out.columns else pd.Series([True]*len(out), index=out.index)
+    ht_missing = out["HalfTime"].apply(_is_emptyish) if "HalfTime" in out.columns else pd.Series([True]*len(out), index=out.index)
+
+    odd_cols = [
+        "PinnacleHomeOpen","PinnacleDrawOpen","PinnacleAwayOpen",
+        "AvgHomeOpen","AvgDrawOpen","AvgAwayOpen",
+        "Bet365HomeOpen","Bet365DrawOpen","Bet365AwayOpen"
+    ]
+    has_any_odd = pd.Series([False]*len(out), index=out.index)
+    for c in odd_cols:
+        if c in out.columns:
+            has_any_odd = has_any_odd | (~out[c].apply(_is_emptyish))
+
+    bad_super_empty = core_goal_missing & (~has_any_odd) & ft_missing & ht_missing
+    bad = bad | bad_super_empty
+
+    # --- Home/Away ---
+    home = out["Home"] if "Home" in out.columns else pd.Series([None]*len(out), index=out.index)
+    away = out["Away"] if "Away" in out.columns else pd.Series([None]*len(out), index=out.index)
 
     bad_home_blank = home.apply(_is_blank)
     bad_away_blank = away.apply(_is_blank)
     bad_home_score = home.apply(_looks_like_score)
     bad_away_score = away.apply(_looks_like_score)
 
-    # Date/Matchday (sem chave)
-    date_norm = out["Date"].apply(_norm_date) if "Date" in out.columns else pd.Series([None]*len(out))
-    md_clean  = out["Matchday"].apply(_clean_text) if "Matchday" in out.columns else pd.Series([None]*len(out))
-    bad_no_key = date_norm.isna() & md_clean.isna()
-    # ✅ Segurança: se tem Home/Away bons, não remove só por falta de chave
-    bad_no_key = bad_no_key & (home.apply(_is_blank) | away.apply(_is_blank))
+    # --- Date/Matchday (sem chave) ---
+    date_norm = out["Date"].apply(_norm_date) if "Date" in out.columns else pd.Series([None]*len(out), index=out.index)
+    md_clean  = out["Matchday"].apply(_clean_text) if "Matchday" in out.columns else pd.Series([None]*len(out), index=out.index)
 
-    bad = bad_home_blank | bad_away_blank | bad_home_score | bad_away_score | bad_no_key
+    bad_no_key = date_norm.isna() & md_clean.isna()
+    # segurança: só remove por “sem chave” se Home/Away também estiverem ruins
+    bad_no_key = bad_no_key & (bad_home_blank | bad_away_blank)
+
+    bad = bad | bad_home_blank | bad_away_blank | bad_home_score | bad_away_score | bad_no_key
 
     removed = int(bad.sum())
     if removed > 0:
@@ -530,6 +560,7 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
         print(f"   [Clean] removidas {removed} linhas inválidas do CSV local")
 
     return out
+
 
 # ================= FOOTBALL-DATA.CO.UK (mmz4281) =================
 
@@ -960,7 +991,14 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
 
         # ✅ limpa sujeira antiga (linhas deslocadas/semântica quebrada)
         df_local = drop_invalid_rows(df_local)
+        before_n = len(df_local)
+        df_local2 = drop_invalid_rows(df_local)
 
+        if before_n > 0 and len(df_local2) < before_n * 0.6:
+            print(f"   [Warn] limpeza removeu {before_n-len(df_local2)} de {before_n} linhas. Abortando limpeza/rewrite para evitar perda.")
+            # mantém o original para não “matar” a temporada inteira
+        else:
+            df_local = df_local2
         # ✅ dedup do CSV local antes de indexar
         df_local = dedup_matches(df_local, season_key)
 
@@ -993,8 +1031,10 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
         idx = None
         if kd and kd in local_index_date:
             idx = local_index_date[kd]
-        elif km and km in local_index_md:
+        elif (kd is None) and km and km in local_index_md:
+            # só cai aqui se o NOVO não tem date (bem raro no FD-UK)
             idx = local_index_md[km]
+
 
         if idx is not None:
             before = df_local.loc[idx].copy()
