@@ -1,45 +1,94 @@
 {
   "data_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\processed\\matches_enriched.csv",
-  "n_rows": 34135,
+  "n_rows": 35427,
   "date_min": "2000-08-19",
-  "date_max": "2026-02-02",
+  "date_max": "2026-02-06",
   "split": {
-    "train_rows": 27308,
-    "val_rows": 3413,
-    "test_rows": 3414,
-    "train_end_date": "2023-04-16",
-    "val_end_date": "2024-08-30",
-    "test_end_date": "2026-02-02"
+    "strategy": "temporal_by_pool_key",
+    "train_rows": 28340,
+    "val_rows": 3543,
+    "test_rows": 3544,
+    "train_end_date": "2024-06-15",
+    "val_end_date": "2025-04-25",
+    "test_end_date": "2026-02-06"
   },
   "metrics": {
     "train": {
-      "accuracy": 0.5832723011571701,
-      "logloss": 0.8837444733217448
+      "accuracy": 0.5662314749470713,
+      "logloss": 0.9361267069508922
     },
     "val": {
-      "accuracy": 0.5057134485789628,
-      "logloss": 1.0146534257944786
+      "accuracy": 0.5218741179791138,
+      "logloss": 0.987903011099184
     },
     "test": {
-      "accuracy": 0.5096660808435852,
-      "logloss": 1.0117957119733472
+      "accuracy": 0.5220090293453724,
+      "logloss": 0.9875758499313673
     }
   },
+  "best_iteration": 202,
   "num_cols": [
     "elo_home_pre",
     "elo_away_pre",
     "elo_diff",
+    "abs_elo_diff",
     "form_pts_home_3",
     "form_pts_home_5",
     "form_pts_away_3",
     "form_pts_away_5",
     "gd_home_5",
-    "gd_away_5"
+    "gd_away_5",
+    "odds_h",
+    "odds_d",
+    "odds_a",
+    "imp_ph",
+    "imp_pd",
+    "imp_pa",
+    "imp_overround_1x2",
+    "imp_ph_minus_pa",
+    "abs_imp_ph_minus_pa",
+    "imp_entropy_1x2",
+    "fav_prob",
+    "draw_edge",
+    "balanced_flag",
+    "ou_p_over25",
+    "ou_p_under25",
+    "ou_overround",
+    "ou_p_over_minus_under",
+    "has_odds_1x2",
+    "has_ou_25"
   ],
   "cat_cols": [
     "pool_key",
     "competition"
   ],
+  "class_counts_train": {
+    "0": 12887,
+    "2": 8147,
+    "1": 7306
+  },
+  "class_weights_train": {
+    "0": 0.8366296063468017,
+    "1": 1.1111413494117308,
+    "2": 1.052229044241467
+  },
+  "xgb_params": {
+    "objective": "multi:softprob",
+    "num_class": 3,
+    "eval_metric": "mlogloss",
+    "max_depth": 5,
+    "eta": 0.02,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "min_child_weight": 2.0,
+    "gamma": 0.2,
+    "lambda": 2.0,
+    "alpha": 0.1,
+    "tree_method": "hist",
+    "seed": 42
+  },
+  "num_boost_round": 8000,
+  "early_stopping_rounds": 200,
   "model_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\models\\xgb_1x2.json",
   "columns_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\models\\xgb_1x2_columns.pkl"
 }

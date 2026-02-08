@@ -1,4 +1,9 @@
 # Backend/ml/datasets/build_dataset.py
+# ------------------------------------------------------------
+# Gera dataset enriquecido (Elo + forma rolling + odds pré-jogo)
+# Lê CSVs em Backend/data/matches/<pasta-liga>/*.csv
+# Salva em: Backend/ml/processed/matches_enriched.csv
+# ------------------------------------------------------------
 
 import os
 import re
@@ -97,6 +102,52 @@ def rolling_sum(vals: List[int], n: int) -> float:
 
 
 # =========================
+# Helpers de odds (pré-jogo)
+# =========================
+
+def safe_float(x) -> Optional[float]:
+    if x is None:
+        return None
+    if isinstance(x, float) and pd.isna(x):
+        return None
+    s = str(x).strip()
+    if s == "" or s.lower() == "nan":
+        return None
+    try:
+        return float(s.replace(",", "."))
+    except Exception:
+        return None
+
+
+def implied_prob(odds: Optional[float]) -> Optional[float]:
+    """Probabilidade implícita 1/odds (sem remover vigorish)."""
+    if odds is None:
+        return None
+    if odds <= 1e-9:
+        return None
+    return 1.0 / odds
+
+
+def normalize_probs(p_home, p_draw, p_away) -> Tuple[Optional[float], Optional[float], Optional[float], Optional[float]]:
+    """
+    Normaliza probabilidades removendo o overround.
+    Retorna (ph, pd, pa, overround) onde overround = soma - 1.
+    """
+    if p_home is None or p_draw is None or p_away is None:
+        return None, None, None, None
+    s = p_home + p_draw + p_away
+    if s <= 1e-9:
+        return None, None, None, None
+    return p_home / s, p_draw / s, p_away / s, (s - 1.0)
+
+
+def prob_diff(ph: Optional[float], pa: Optional[float]) -> Optional[float]:
+    if ph is None or pa is None:
+        return None
+    return ph - pa
+
+
+# =========================
 # Helpers de arquivos
 # =========================
 
@@ -138,12 +189,10 @@ FOLDER_TO_COMP = {
     "bundesliga": "Bundesliga",
     "ligue1": "Ligue 1",
 
-    # se existir no seu data/matches
     "liga-dos-campeoes": "Liga dos Campeões",
     "champions-league": "Liga dos Campeões",
 }
 
-# ✅ Só essas pastas entram no dataset (remove Copa do Mundo / Internacional etc)
 ALLOWED_FOLDERS = set(FOLDER_TO_COMP.keys())
 
 BRA_A = "Brasileirão - Série A Betano"
@@ -158,12 +207,6 @@ def competition_from_folder(folder: str) -> str:
 
 
 def pool_key_for_comp(comp: str) -> str:
-    """
-    Retorna a 'chave do pool' que define onde Elo/Forma são compartilhados.
-    - Brasil (A/B/Lib) compartilha tudo entre si
-    - Champions compartilha com Top5 + Champions
-    - Top5 compartilha com a própria liga + Champions (pool da liga)
-    """
     c = (comp or "").strip()
 
     if c in {BRA_A, BRA_B, LIB}:
@@ -175,7 +218,6 @@ def pool_key_for_comp(comp: str) -> str:
     if c in TOP5:
         return f"POOL_{c.upper().replace(' ', '_')}+UCL"
 
-    # fallback: pool próprio por competição
     return f"POOL_{c.upper().replace(' ', '_')}" if c else "POOL_UNKNOWN"
 
 
@@ -195,7 +237,6 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
     for fp in sorted(files):
         folder = league_from_path(fp, matches_root)
 
-        # ✅ remove Copa do Mundo / Internacional / qualquer coisa fora do escopo
         if folder not in ALLOWED_FOLDERS:
             skipped_folder += 1
             continue
@@ -205,7 +246,6 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
         except Exception:
             continue
 
-        # Checagem mínima
         required = {"Home", "Away", "Date"}
         if not required.issubset(set(df.columns)):
             continue
@@ -214,6 +254,24 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
             df["FullTime"] = None
         if "HalfTime" not in df.columns:
             df["HalfTime"] = None
+
+        # === garante colunas de odds (podem não existir em ligas antigas) ===
+        ODDS_COLS = [
+            "PinnacleHomeOpen", "PinnacleDrawOpen", "PinnacleAwayOpen",
+            "AvgHomeOpen", "AvgDrawOpen", "AvgAwayOpen",
+            "MaxHomeOpen", "MaxDrawOpen", "MaxAwayOpen",
+            "Bet365HomeOpen", "Bet365DrawOpen", "Bet365AwayOpen",
+
+            "Bet365Over25Open", "Bet365Under25Open",
+            "PinnacleOver25Open", "PinnacleUnder25Open",
+            "AvgOver25Open", "AvgUnder25Open",
+
+            "PinnacleHomeClose", "PinnacleDrawClose", "PinnacleAwayClose",
+            "AvgHomeClose", "AvgDrawClose", "AvgAwayClose",
+        ]
+        for c in ODDS_COLS:
+            if c not in df.columns:
+                df[c] = None
 
         df["league"] = folder
         df["competition"] = competition_from_folder(folder)
@@ -234,7 +292,24 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
     raw["ft_home_goals"] = ft_scores.apply(lambda x: x[0] if x else None)
     raw["ft_away_goals"] = ft_scores.apply(lambda x: x[1] if x else None)
 
-    # Histórico: só jogos com date + placar
+    # Converte odds para float (sem quebrar)
+    ODDS_COLS = [
+        "PinnacleHomeOpen", "PinnacleDrawOpen", "PinnacleAwayOpen",
+        "AvgHomeOpen", "AvgDrawOpen", "AvgAwayOpen",
+        "MaxHomeOpen", "MaxDrawOpen", "MaxAwayOpen",
+        "Bet365HomeOpen", "Bet365DrawOpen", "Bet365AwayOpen",
+
+        "Bet365Over25Open", "Bet365Under25Open",
+        "PinnacleOver25Open", "PinnacleUnder25Open",
+        "AvgOver25Open", "AvgUnder25Open",
+
+        "PinnacleHomeClose", "PinnacleDrawClose", "PinnacleAwayClose",
+        "AvgHomeClose", "AvgDrawClose", "AvgAwayClose",
+    ]
+    for c in ODDS_COLS:
+        raw[c] = raw[c].apply(safe_float)
+
+    # Histórico: só jogos com date + placar (sem leak)
     hist = raw.dropna(subset=["date", "ft_home_goals", "ft_away_goals"]).copy()
     if hist.empty:
         raise RuntimeError("Não há jogos com Date + FullTime para gerar dataset.")
@@ -245,8 +320,7 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
     # Target 1X2
     hist["target_1x2"] = hist.apply(lambda r: result_1x2(r["ft_home_goals"], r["ft_away_goals"]), axis=1)
 
-    # ✅ Dedup APENAS de duplicatas reais (cópias), sem remover ida/volta:
-    # Mesma competição + mesma data + mesmos times (mandante/visitante) + mesmo placar
+    # Dedup de cópias reais
     before = len(hist)
     hist = hist.drop_duplicates(
         subset=["competition", "date", "Home", "Away", "ft_home_goals", "ft_away_goals"],
@@ -254,14 +328,13 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
     ).copy()
     removed = before - len(hist)
 
-    # Ordenação temporal (essencial para não vazar futuro)
-    # pool_key define onde Elo/Forma são compartilhados
+    # Ordenação temporal por pool
     hist = hist.sort_values(["pool_key", "date", "competition", "season"]).reset_index(drop=True)
 
-    # Estados por pool_key (não misturar Elo/Forma entre pools)
-    elo_state: Dict[Tuple[str, str], float] = {}            # (pool_key, team) -> elo real
-    form_points: Dict[Tuple[str, str], List[int]] = {}      # (pool_key, team) -> últimos pontos
-    form_gd: Dict[Tuple[str, str], List[int]] = {}          # (pool_key, team) -> últimos saldos
+    # Estados por pool_key
+    elo_state: Dict[Tuple[str, str], float] = {}
+    form_points: Dict[Tuple[str, str], List[int]] = {}
+    form_gd: Dict[Tuple[str, str], List[int]] = {}
 
     def get_elo(pool_key: str, team: str) -> float:
         return float(elo_state.get((pool_key, team), elo_cfg.base_elo))
@@ -271,7 +344,6 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
         form_points.setdefault(key, []).append(int(pts))
         form_gd.setdefault(key, []).append(int(gd))
 
-        # guarda no máximo 30 jogos
         if len(form_points[key]) > 30:
             form_points[key] = form_points[key][-30:]
         if len(form_gd[key]) > 30:
@@ -284,7 +356,7 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
         home = str(r["Home"])
         away = str(r["Away"])
 
-        # Elo pré-jogo (para feature, aplicamos home_adv no mandante)
+        # Elo pré-jogo
         elo_home_pre = get_elo(pool_key, home) + elo_cfg.home_adv
         elo_away_pre = get_elo(pool_key, away)
         elo_diff = elo_home_pre - elo_away_pre
@@ -294,6 +366,34 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
         ap = form_points.get((pool_key, away), [])
         hgd = form_gd.get((pool_key, home), [])
         agd = form_gd.get((pool_key, away), [])
+
+        # ===== Odds features (pré-jogo) =====
+        # Preferência: Pinnacle Close -> Pinnacle Open -> Avg Open -> Bet365 Open
+        p_h = r.get("PinnacleHomeClose") or r.get("PinnacleHomeOpen") or r.get("AvgHomeOpen") or r.get("Bet365HomeOpen")
+        p_d = r.get("PinnacleDrawClose") or r.get("PinnacleDrawOpen") or r.get("AvgDrawOpen") or r.get("Bet365DrawOpen")
+        p_a = r.get("PinnacleAwayClose") or r.get("PinnacleAwayOpen") or r.get("AvgAwayOpen") or r.get("Bet365AwayOpen")
+
+        ip_h = implied_prob(p_h)
+        ip_d = implied_prob(p_d)
+        ip_a = implied_prob(p_a)
+
+        ph, pd_, pa, overround = normalize_probs(ip_h, ip_d, ip_a)
+        ph_pa_diff = prob_diff(ph, pa)
+
+        # O/U 2.5 (se tiver)
+        ou_over = r.get("PinnacleOver25Open") or r.get("AvgOver25Open") or r.get("Bet365Over25Open")
+        ou_under = r.get("PinnacleUnder25Open") or r.get("AvgUnder25Open") or r.get("Bet365Under25Open")
+        ip_over = implied_prob(ou_over)
+        ip_under = implied_prob(ou_under)
+
+        # normaliza 2-way
+        if ip_over is not None and ip_under is not None and (ip_over + ip_under) > 1e-9:
+            s2 = ip_over + ip_under
+            p_over = ip_over / s2
+            p_under = ip_under / s2
+            overround_ou = s2 - 1.0
+        else:
+            p_over, p_under, overround_ou = None, None, None
 
         row = {
             "pool_key": pool_key,
@@ -305,6 +405,8 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
             "ft_home_goals": int(r["ft_home_goals"]),
             "ft_away_goals": int(r["ft_away_goals"]),
             "target_1x2": int(r["target_1x2"]),
+
+            # Elo + forma
             "elo_home_pre": float(elo_home_pre),
             "elo_away_pre": float(elo_away_pre),
             "elo_diff": float(elo_diff),
@@ -314,6 +416,23 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
             "form_pts_away_5": rolling_sum(ap, 5),
             "gd_home_5": rolling_sum(hgd, 5),
             "gd_away_5": rolling_sum(agd, 5),
+
+            # Odds “raw” selecionadas + derivadas
+            "odds_h": p_h,
+            "odds_d": p_d,
+            "odds_a": p_a,
+            "imp_ph": ph,
+            "imp_pd": pd_,
+            "imp_pa": pa,
+            "imp_overround_1x2": overround,
+            "imp_ph_minus_pa": ph_pa_diff,
+
+            "ou_odds_over25": ou_over,
+            "ou_odds_under25": ou_under,
+            "ou_p_over25": p_over,
+            "ou_p_under25": p_under,
+            "ou_overround": overround_ou,
+            "ou_p_over_minus_under": (p_over - p_under) if (p_over is not None and p_under is not None) else None,
         }
 
         enriched_rows.append(row)
@@ -344,7 +463,6 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
 
     out_df = pd.DataFrame(enriched_rows)
 
-    # Garante pasta de saída
     os.makedirs(os.path.dirname(out_csv), exist_ok=True)
     out_df.to_csv(out_csv, index=False, encoding="utf-8")
 
