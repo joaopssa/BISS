@@ -484,6 +484,51 @@ def read_local_csv_robust(file_path: str) -> pd.DataFrame:
     df.columns = [str(c).strip() for c in df.columns]
     return df
 
+SCORE_RE = re.compile(r"^\s*\d{1,2}\s*-\s*\d{1,2}\s*$")
+
+def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove linhas claramente quebradas:
+    - Home/Away vazios
+    - Home ou Away com cara de placar (ex: '2-2')
+    - Date inválida E Matchday inválida (sem chave)
+    """
+    if df.empty:
+        return df
+
+    out = df.copy()
+
+    def _is_blank(x):
+        return x is None or (isinstance(x, float) and pd.isna(x)) or str(x).strip() == ""
+
+    def _looks_like_score(x):
+        if _is_blank(x):
+            return False
+        return bool(SCORE_RE.match(str(x).strip()))
+
+    # Home/Away
+    home = out["Home"] if "Home" in out.columns else pd.Series([None]*len(out))
+    away = out["Away"] if "Away" in out.columns else pd.Series([None]*len(out))
+
+    bad_home_blank = home.apply(_is_blank)
+    bad_away_blank = away.apply(_is_blank)
+    bad_home_score = home.apply(_looks_like_score)
+    bad_away_score = away.apply(_looks_like_score)
+
+    # Date/Matchday (sem chave)
+    date_norm = out["Date"].apply(_norm_date) if "Date" in out.columns else pd.Series([None]*len(out))
+    md_clean  = out["Matchday"].apply(_clean_text) if "Matchday" in out.columns else pd.Series([None]*len(out))
+    bad_no_key = date_norm.isna() & md_clean.isna()
+
+    bad = bad_home_blank | bad_away_blank | bad_home_score | bad_away_score | bad_no_key
+
+    removed = int(bad.sum())
+    if removed > 0:
+        out = out.loc[~bad].copy()
+        print(f"   [Clean] removidas {removed} linhas inválidas do CSV local")
+
+    return out
+
 # ================= FOOTBALL-DATA.CO.UK (mmz4281) =================
 
 def build_fd_uk_url(season_code: str, league_code: str) -> str:
@@ -902,7 +947,10 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
         df_local = read_local_csv_robust(file_path)
         df_local = ensure_cols(df_local, TARGET_COLS)
 
-        # ✅ 1) dedup do CSV local antes de indexar (remove repetidos antigos)
+        # ✅ limpa sujeira antiga (linhas deslocadas/semântica quebrada)
+        df_local = drop_invalid_rows(df_local)
+
+        # ✅ dedup do CSV local antes de indexar
         df_local = dedup_matches(df_local, season_key)
 
         # ✅ regrava já “limpo”
@@ -948,6 +996,7 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
 
     # ✅ 3) dedup de novo depois do merge (casos sujos / duplicados residuais)
     df_local = dedup_matches(df_local, season_key)
+    df_local = drop_invalid_rows(df_local)
 
     # ✅ 4) ordenar por Matchday (quando existir) e depois por Date
     if "Matchday" in df_local.columns:
