@@ -270,6 +270,7 @@ TEAM_MAP = {
     "VfL Bochum": "VfL Bochum",
     "Holstein Kiel": "Holstein Kiel",
     "FC Koln":"1. FC Köln",
+    "FC Köln":"1. FC Köln",
     "Hamburg":"Hamburgo",
     "Hannover 96":"Hannover 96",
     "Hannover":"Hannover 96",
