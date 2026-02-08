@@ -682,15 +682,109 @@ def parse_brazil_all_seasons(url: str, league_filter: str = "Serie A") -> pd.Dat
     return out
 
 # ================= MERGE / UPDATE =================
+def _clean_text(v):
+    if v is None:
+        return None
+    s = str(v).strip()
+    if s == "" or s.lower() == "nan":
+        return None
+    # remove lixo comum que quebra chave
+    s = s.replace("\ufeff", "").strip()
+    s = re.sub(r'[")]+$', "", s)         # remove ) ou " no final
+    s = re.sub(r'^[("]+', "", s)         # remove ( ou " no começo
+    s = s.strip()
+    return s or None
+
+def _norm_date(v):
+    s = _clean_text(v)
+    if not s:
+        return None
+    # tenta converter qualquer coisa para YYYY-MM-DD
+    dt = pd.to_datetime(s, errors="coerce", dayfirst=False)
+    if pd.isna(dt):
+        return None
+    return dt.strftime("%Y-%m-%d")
+
+def _row_completeness(row: pd.Series, cols) -> int:
+    score = 0
+    for c in cols:
+        v = row.get(c, None)
+        if v is None:
+            continue
+        if isinstance(v, float) and pd.isna(v):
+            continue
+        if isinstance(v, str) and v.strip() == "":
+            continue
+        score += 1
+    return score
+
+def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
+    """
+    Remove duplicados por (Date, Home, Away, season_key), mantendo a melhor linha
+    e mesclando campos (primeiro valor não-vazio por coluna).
+    """
+    if df.empty:
+        return df
+
+    df = df.copy()
+
+    # normaliza chave
+    df["_k_date"] = df["Date"].apply(_norm_date)
+    df["_k_home"] = df["Home"].apply(lambda x: normalize_key(_clean_text(x)))
+    df["_k_away"] = df["Away"].apply(lambda x: normalize_key(_clean_text(x)))
+    df["_k_season"] = season_key
+
+    # se Date não existe/ inválida, cai para Matchday (mas tenta manter consistência)
+    df["_k_md"] = df["Matchday"].apply(lambda x: _clean_text(x))
+    df["_k"] = df.apply(
+        lambda r: (r["_k_home"], r["_k_away"], r["_k_date"], r["_k_season"])
+        if r["_k_date"] else (r["_k_home"], r["_k_away"], r["_k_md"], r["_k_season"]),
+        axis=1
+    )
+
+    # ordena por "linha mais completa" primeiro
+    df["_score"] = df.apply(lambda r: _row_completeness(r, TARGET_COLS), axis=1)
+    df = df.sort_values(["_k", "_score"], ascending=[True, False])
+
+    # mescla por chave
+    rows = []
+    for k, g in df.groupby("_k", sort=False):
+        base = g.iloc[0].copy()  # mais completa
+        # preenche buracos com as outras
+        for _, rr in g.iloc[1:].iterrows():
+            for col in TARGET_COLS:
+                bv = base.get(col, None)
+                if bv is None or (isinstance(bv, float) and pd.isna(bv)) or (isinstance(bv, str) and bv.strip() == ""):
+                    nv = rr.get(col, None)
+                    if nv is None or (isinstance(nv, float) and pd.isna(nv)) or (isinstance(nv, str) and str(nv).strip() == ""):
+                        continue
+                    # respeita regra: não derrubar Matchday existente
+                    if col == "Matchday" and bv not in [None, "", "nan", "NaN"]:
+                        continue
+                    base[col] = nv
+        rows.append(base)
+
+    out = pd.DataFrame(rows)
+
+    # limpa colunas auxiliares se vierem junto
+    drop_aux = [c for c in out.columns if c.startswith("_k") or c in ["_score"]]
+    out = out.drop(columns=drop_aux, errors="ignore")
+
+    # normaliza Date final (pra não gerar duplicado de novo)
+    out["Date"] = out["Date"].apply(_norm_date)
+
+    return out
 
 def make_match_key(row, season_key: str):
-    home = normalize_key(row.get("Home"))
-    away = normalize_key(row.get("Away"))
-    date = str(row.get("Date")) if pd.notna(row.get("Date")) and str(row.get("Date")).strip() != "" else None
-    md = str(row.get("Matchday")) if pd.notna(row.get("Matchday")) and str(row.get("Matchday")).strip() != "" else None
+    home = normalize_key(_clean_text(row.get("Home")))
+    away = normalize_key(_clean_text(row.get("Away")))
+    date = _norm_date(row.get("Date"))
+    md = _clean_text(row.get("Matchday"))
+
     if date:
         return (home, away, date, season_key)
     return (home, away, md, season_key)
+
 
 def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
     for col in df_local.columns:
@@ -714,20 +808,20 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
     df_new = ensure_cols(df_new, TARGET_COLS)
 
     if os.path.exists(file_path):
-        # ✅ agora o LOCAL também é robusto (não dá ParserError)
         df_local = read_local_csv_robust(file_path)
-
-        # 🔧 auto-normaliza: garante que o arquivo local tenha todas as colunas alvo
         df_local = ensure_cols(df_local, TARGET_COLS)
 
-        # opcional: regrava imediatamente o arquivo “corrigido” (remove sujeira de delimitador/colunas)
-        # isso evita cair de novo no futuro
+        # ✅ 1) dedup do CSV local antes de indexar (remove repetidos antigos)
+        df_local = dedup_matches(df_local, season_key)
+
+        # ✅ regrava já “limpo”
         df_local.to_csv(file_path, index=False, encoding="utf-8")
     else:
         df_local = pd.DataFrame(columns=TARGET_COLS)
 
     df_local = ensure_cols(df_local, TARGET_COLS)
 
+    # ✅ 2) index agora fica consistente
     local_index = {make_match_key(r, season_key): idx for idx, r in df_local.iterrows()}
 
     added = 0
@@ -745,12 +839,16 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
             df_local = pd.concat([df_local, pd.DataFrame([rnew])], ignore_index=True)
             added += 1
 
+    # ✅ 3) dedup de novo depois do merge (se a chave falhar em algum caso sujo)
+    df_local = dedup_matches(df_local, season_key)
+
     if "Date" in df_local.columns:
         df_local["Date_sort"] = pd.to_datetime(df_local["Date"], errors="coerce")
         df_local = df_local.sort_values(["Date_sort", "Home", "Away"]).drop(columns=["Date_sort"])
 
     df_local.to_csv(file_path, index=False, encoding="utf-8")
     print(f"   [Sucesso] {updated} jogos atualizados, {added} novos adicionados. -> {os.path.basename(file_path)}")
+
 
 # ================= FILENAME HELPERS =================
 
