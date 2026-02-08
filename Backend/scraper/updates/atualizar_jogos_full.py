@@ -940,6 +940,87 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
 
     return out
 
+def dedup_fixtures_by_pair(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
+    """
+    DEDUP FORTE por fixture (Home, Away, temporada), ignorando Date/Matchday como chave primária.
+    Mantém 1 linha por (Home,Away), escolhendo a mais "completa"/"real" e mesclando campos.
+
+    Regras:
+      1) Preferir linha com placar (FullTimeHomeGoals/AwayGoals ou FullTime preenchido)
+      2) Depois, maior completude (_row_completeness)
+      3) Desempate: Date mais recente (reagendamento)
+    """
+    if df is None or df.empty:
+        return df
+
+    out = df.copy()
+
+    # canoniza antes (garante Home/Away limpos)
+    out = canonicalize_for_merge(out)
+    out = ensure_cols(out, TARGET_COLS)
+
+    # colunas auxiliares
+    out["_h"] = out["Home"].apply(lambda x: normalize_key(_clean_text(x)))
+    out["_a"] = out["Away"].apply(lambda x: normalize_key(_clean_text(x)))
+    out["_season"] = season_key
+
+    dt = pd.to_datetime(out["Date"].apply(_norm_date), errors="coerce")
+    out["_dt"] = dt
+
+    # "jogo jogado" = tem gols ou FullTime preenchido
+    def _has_score(r):
+        if r.get("FullTimeHomeGoals") is not None and not (isinstance(r.get("FullTimeHomeGoals"), float) and pd.isna(r.get("FullTimeHomeGoals"))):
+            return 1
+        if r.get("FullTimeAwayGoals") is not None and not (isinstance(r.get("FullTimeAwayGoals"), float) and pd.isna(r.get("FullTimeAwayGoals"))):
+            return 1
+        ft = r.get("FullTime")
+        if isinstance(ft, str) and ft.strip():
+            return 1
+        return 0
+
+    out["_played"] = out.apply(_has_score, axis=1)
+    out["_score"] = out.apply(lambda r: _row_completeness(r, TARGET_COLS), axis=1)
+
+    # ordena: jogado > completude > data mais recente
+    out = out.sort_values(
+        ["_h", "_a", "_played", "_score", "_dt"],
+        ascending=[True, True, False, False, False],
+        na_position="last"
+    )
+
+    rows = []
+    for _, g in out.groupby(["_h", "_a"], sort=False):
+        base = g.iloc[0].copy()
+
+        # mescla campos das outras linhas (preenche vazios)
+        for _, rr in g.iloc[1:].iterrows():
+            for col in TARGET_COLS:
+                bv = base.get(col, None)
+                if bv is None or (isinstance(bv, float) and pd.isna(bv)) or (isinstance(bv, str) and bv.strip() == ""):
+                    nv = rr.get(col, None)
+                    if nv is None or (isinstance(nv, float) and pd.isna(nv)) or (isinstance(nv, str) and str(nv).strip() == ""):
+                        continue
+                    # não sobrescreve Matchday se já existe
+                    if col == "Matchday":
+                        if base.get("Matchday") not in [None, "", "nan", "NaN"] and str(base.get("Matchday")).strip() != "":
+                            continue
+                    base[col] = nv
+
+        rows.append(base)
+
+    out2 = pd.DataFrame(rows)
+
+    # limpa auxiliares
+    out2 = out2.drop(columns=[c for c in out2.columns if c.startswith("_")], errors="ignore")
+
+    # normaliza tipos finais
+    out2["Date"] = out2["Date"].apply(lambda x: _norm_date(x) or _clean_text(x))
+    md_num = pd.to_numeric(out2["Matchday"], errors="coerce")
+    if md_num.notna().any():
+        out2["Matchday"] = md_num.round(0).astype("Int64")
+
+    return out2
+
 def make_match_key_date(row, season_key: str):
     home = normalize_key(_clean_text(row.get("Home")))
     away = normalize_key(_clean_text(row.get("Away")))
@@ -995,6 +1076,7 @@ def update_csv_merge(
     df_new = ensure_cols(df_new, TARGET_COLS)
     df_new = canonicalize_for_merge(df_new)
     df_new = dedup_matches(df_new, season_key)
+    df_new = dedup_fixtures_by_pair(df_new, season_key)
     df_new = drop_invalid_rows(df_new)
 
     if os.path.exists(file_path):
@@ -1011,7 +1093,7 @@ def update_csv_merge(
             df_local = df_local2
 
         df_local = dedup_matches(df_local, season_key)
-
+        df_local = dedup_fixtures_by_pair(df_local, season_key)
         # regrava normalizado
         df_local.to_csv(file_path, index=False, encoding="utf-8")
     else:
@@ -1091,6 +1173,7 @@ def update_csv_merge(
 
     df_local = canonicalize_for_merge(df_local)
     df_local = dedup_matches(df_local, season_key)
+    df_local = dedup_fixtures_by_pair(df_local, season_key)
     df_local = drop_invalid_rows(df_local)
 
     df_local["_md_sort"] = pd.to_numeric(df_local["Matchday"], errors="coerce").fillna(9999)
