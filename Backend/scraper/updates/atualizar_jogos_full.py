@@ -11,6 +11,7 @@
 # ✅ FIX 1 (CRÍTICO): NÃO apaga jogos futuros (sem FT/HT/odds/stats)
 # ✅ FIX 2 (CRÍTICO): Dedup inteligente mantém a linha mais completa e mescla campos
 # ✅ FIX 3 (OPCIONAL/RECOMENDADO): Normaliza Matchday para não ficar 1.0
+# ✅ FIX 4 (CRÍTICO): Canoniza Home/Away/Date (LOCAL e REMOTO) + overwrite seguro se CSV local estiver inconsistente
 # ------------------------------------------------------------
 
 import pandas as pd
@@ -72,6 +73,10 @@ LEAGUES = [
         "league_filter": "Serie A",
     },
 ]
+
+# ============================================================
+# TEAM MAP (obrigatório) — use exatamente como você enviou
+# ============================================================
 
 TEAM_MAP = {
     # --- BRASILEIRÃO SÉRIE A E B ---
@@ -491,7 +496,6 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
     - Home/Away vazios
     - Home ou Away com cara de placar (ex: '2-2')
     - Date inválida + Matchday inválida (sem chave), E Home/Away ruins
-    - Linhas com "colunas essenciais" vazias demais NÃO são removidas (para não apagar futuros)
     """
     if df.empty:
         return df
@@ -506,7 +510,6 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
             return False
         return bool(SCORE_RE.match(str(x).strip()))
 
-    # ✅ INICIALIZA "bad"
     bad = pd.Series([False] * len(out), index=out.index)
 
     home = out["Home"] if "Home" in out.columns else pd.Series([None]*len(out), index=out.index)
@@ -517,12 +520,10 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
     bad_home_score = home.apply(_looks_like_score)
     bad_away_score = away.apply(_looks_like_score)
 
-    # --- Date/Matchday (sem chave) ---
     date_norm = out["Date"].apply(_norm_date) if "Date" in out.columns else pd.Series([None]*len(out), index=out.index)
     md_clean  = out["Matchday"].apply(_clean_text) if "Matchday" in out.columns else pd.Series([None]*len(out), index=out.index)
 
     bad_no_key = date_norm.isna() & md_clean.isna()
-    # segurança: só remove por “sem chave” se Home/Away também estiverem ruins
     bad_no_key = bad_no_key & (bad_home_blank | bad_away_blank)
 
     bad = bad | bad_home_blank | bad_away_blank | bad_home_score | bad_away_score | bad_no_key
@@ -561,7 +562,6 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
         home_raw = row.get("HomeTeam")
         away_raw = row.get("AwayTeam")
 
-        # ✅ mantém futuros: só exige Date/Home/Away
         if date_str == "" or home_raw in [None, ""] or away_raw in [None, ""]:
             continue
 
@@ -656,7 +656,6 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
     if df.empty:
         return df
 
-    # ✅ Preenche Matchday apenas onde estiver vazio (não derruba MW real)
     computed = compute_matchday_from_counts(df)
     if "Matchday" in df.columns:
         df["Matchday"] = pd.to_numeric(df["Matchday"], errors="coerce")
@@ -664,9 +663,7 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
     else:
         df["Matchday"] = pd.to_numeric(computed["Matchday"], errors="coerce")
 
-    # ✅ (FIX 3) evita Matchday 1.0
     df["Matchday"] = df["Matchday"].round(0).astype("Int64")
-
     return df
 
 # ================= BRAZIL (new/BRA.csv) =================
@@ -708,7 +705,6 @@ def parse_brazil_all_seasons(url: str, league_filter: str = "Serie A") -> pd.Dat
         try:
             dt = datetime.strptime(date_str, "%d/%m/%Y")
         except:
-            # ✅ se vier em outro formato, tenta parse genérico
             dt2 = pd.to_datetime(date_str, errors="coerce", dayfirst=True)
             if pd.isna(dt2):
                 continue
@@ -833,12 +829,37 @@ def _norm_date(v):
 
     dt = pd.to_datetime(s, errors="coerce", dayfirst=False)
     if pd.isna(dt):
-        # tentativa final: dayfirst True
         dt2 = pd.to_datetime(s, errors="coerce", dayfirst=True)
         if pd.isna(dt2):
             return None
         return dt2.strftime("%Y-%m-%d")
     return dt.strftime("%Y-%m-%d")
+
+def canonicalize_for_merge(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    ✅ Canoniza LOCAL e REMOTO para evitar duplicação por:
+    - nomes diferentes (Man City vs Manchester City)
+    - datas em formatos diferentes
+    - lixo de texto/BOM
+    """
+    if df is None or df.empty:
+        return df
+
+    out = df.copy()
+
+    for c in ["Date", "Home", "Away", "Matchday"]:
+        if c not in out.columns:
+            out[c] = None
+
+    out["Date"] = out["Date"].apply(lambda x: _norm_date(x) or _clean_text(x))
+    out["Home"] = out["Home"].apply(lambda x: normalize_team(_clean_text(x)))
+    out["Away"] = out["Away"].apply(lambda x: normalize_team(_clean_text(x)))
+
+    md_num = pd.to_numeric(out["Matchday"], errors="coerce")
+    if md_num.notna().any():
+        out["Matchday"] = md_num.round(0).astype("Int64")
+
+    return out
 
 def _row_completeness(row: pd.Series, cols) -> int:
     score = 0
@@ -898,7 +919,6 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
                     nv = rr.get(col, None)
                     if nv is None or (isinstance(nv, float) and pd.isna(nv)) or (isinstance(nv, str) and str(nv).strip() == ""):
                         continue
-                    # ✅ não derruba Matchday existente
                     if col == "Matchday" and base.get("Matchday") not in [None, "", "nan", "NaN"]:
                         if str(base.get("Matchday")).strip() != "":
                             continue
@@ -907,15 +927,12 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
 
     out = pd.DataFrame(rows)
 
-    # limpa auxiliares
     drop_aux = [c for c in out.columns if c.startswith("_k") or c in ["_score", "_has_date"]]
     out = out.drop(columns=drop_aux, errors="ignore")
 
-    # normaliza Date (sem apagar se não parsear)
     if "Date" in out.columns:
         out["Date"] = out["Date"].apply(lambda x: _norm_date(x) or _clean_text(x))
 
-    # ✅ (FIX 3) normaliza Matchday para não ficar 1.0
     if "Matchday" in out.columns:
         md_num = pd.to_numeric(out["Matchday"], errors="coerce")
         if md_num.notna().any():
@@ -960,34 +977,85 @@ def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
         if oldv is None or (isinstance(oldv, float) and pd.isna(oldv)) or str(oldv).strip() == "" or str(oldv) != str(newv):
             df_local.at[idx, col] = newv
 
-def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, force_recompute_matchday: bool = False):
+def update_csv_merge(
+    file_path: str,
+    df_new: pd.DataFrame,
+    season_key: str,
+    force_recompute_matchday: bool = False,
+    overwrite_if_inconsistent: bool = True,
+    inconsistency_ratio_low: float = 0.70,
+    inconsistency_ratio_high: float = 1.20,
+):
+    """
+    ✅ Merge robusto:
+    - Canoniza local e remoto (Date/Home/Away)
+    - Dedup no df_new e df_local
+    - Overwrite seguro se o CSV local estiver muito inconsistente (evita duplicação eterna)
+    """
     df_new = ensure_cols(df_new, TARGET_COLS)
+    df_new = canonicalize_for_merge(df_new)
+    df_new = dedup_matches(df_new, season_key)
+    df_new = drop_invalid_rows(df_new)
 
     if os.path.exists(file_path):
         df_local = read_local_csv_robust(file_path)
         df_local = ensure_cols(df_local, TARGET_COLS)
+        df_local = canonicalize_for_merge(df_local)
 
-        # ✅ limpeza segura (não mata futuros)
         before_n = len(df_local)
         df_local2 = drop_invalid_rows(df_local)
 
-        # se por algum motivo removesse MUITO (deveria remover bem pouco agora), protege:
         if before_n > 0 and len(df_local2) < before_n * 0.6:
-            print(f"   [Warn] limpeza removeu {before_n-len(df_local2)} de {before_n} linhas. Abortando rewrite para evitar perda.")
+            print(f"   [Warn] limpeza removeu {before_n-len(df_local2)} de {before_n}. Mantendo original para evitar perda.")
         else:
             df_local = df_local2
 
-        # ✅ dedup local ANTES do merge
         df_local = dedup_matches(df_local, season_key)
 
-        # ✅ regrava normalizado (corrige malformações antigas)
+        # regrava normalizado
         df_local.to_csv(file_path, index=False, encoding="utf-8")
     else:
         df_local = pd.DataFrame(columns=TARGET_COLS)
 
     df_local = ensure_cols(df_local, TARGET_COLS)
+    df_local = canonicalize_for_merge(df_local)
 
-    # index duplo (Date e Matchday)
+    # ---------- sanity check (overwrite seguro) ----------
+    n_new = len(df_new)
+    n_local = len(df_local)
+
+    if overwrite_if_inconsistent and n_new > 0:
+        ratio = (n_local / n_new) if n_new else 1.0
+        if (ratio < inconsistency_ratio_low) or (ratio > inconsistency_ratio_high):
+            print(
+                f"   [Fix] CSV local inconsistente: local={n_local}, remoto={n_new} (ratio={ratio:.2f}). "
+                f"Substituindo pelo remoto para eliminar duplicações/colunas deslocadas."
+            )
+            df_out = df_new.copy()
+
+            if force_recompute_matchday:
+                df_out["Date"] = df_out["Date"].apply(_norm_date)
+                df_out = compute_matchday_from_counts(df_out)
+                df_out["Matchday"] = pd.to_numeric(df_out["Matchday"], errors="coerce").round(0).astype("Int64")
+
+            df_out = ensure_cols(df_out, TARGET_COLS)
+            df_out = canonicalize_for_merge(df_out)
+            df_out = dedup_matches(df_out, season_key)
+            df_out = drop_invalid_rows(df_out)
+
+            df_out["_md_sort"] = pd.to_numeric(df_out["Matchday"], errors="coerce").fillna(9999)
+            df_out["_date_sort"] = pd.to_datetime(df_out["Date"], errors="coerce")
+            df_out = df_out.sort_values(
+                ["_md_sort", "_date_sort", "Home", "Away"],
+                ascending=[True, True, True, True],
+                na_position="last"
+            ).drop(columns=["_md_sort", "_date_sort"], errors="ignore")
+
+            df_out.to_csv(file_path, index=False, encoding="utf-8")
+            print(f"   [Sucesso] 0 jogos atualizados, {len(df_out)} regravados (overwrite seguro). -> {os.path.basename(file_path)}")
+            return
+
+    # ---------- merge normal ----------
     local_index_date = {}
     local_index_md = {}
 
@@ -1021,24 +1089,12 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
             df_local = pd.concat([df_local, pd.DataFrame([rnew])], ignore_index=True)
             added += 1
 
-    # ✅ dedup final (resolve PL 2024_25 duplicada + escolhe linha mais completa)
+    df_local = canonicalize_for_merge(df_local)
     df_local = dedup_matches(df_local, season_key)
-
-    # ✅ limpeza segura final (não remove futuros)
     df_local = drop_invalid_rows(df_local)
 
-    # ordenar
-    if "Matchday" in df_local.columns:
-        df_local["_md_sort"] = pd.to_numeric(df_local["Matchday"], errors="coerce")
-    else:
-        df_local["_md_sort"] = None
-
-    df_local["_md_sort"] = df_local["_md_sort"].fillna(9999)
-
-    if "Date" in df_local.columns:
-        df_local["_date_sort"] = pd.to_datetime(df_local["Date"], errors="coerce")
-    else:
-        df_local["_date_sort"] = pd.NaT
+    df_local["_md_sort"] = pd.to_numeric(df_local["Matchday"], errors="coerce").fillna(9999)
+    df_local["_date_sort"] = pd.to_datetime(df_local["Date"], errors="coerce")
 
     if "Date" in df_local.columns and "Day" in df_local.columns:
         dt = pd.to_datetime(df_local["Date"], errors="coerce")
@@ -1051,11 +1107,11 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
         na_position="last"
     ).drop(columns=["_md_sort", "_date_sort"], errors="ignore")
 
-    # opção: recomputa Matchday no arquivo final (ideal para Brasil)
     if force_recompute_matchday:
         df_local["Date"] = df_local["Date"].apply(_norm_date)
         df_local = compute_matchday_from_counts(df_local)
         df_local["Matchday"] = pd.to_numeric(df_local["Matchday"], errors="coerce").round(0).astype("Int64")
+        df_local = dedup_matches(df_local, season_key)
 
     df_local.to_csv(file_path, index=False, encoding="utf-8")
     print(f"   [Sucesso] {updated} jogos atualizados, {added} novos adicionados. -> {os.path.basename(file_path)}")
@@ -1138,7 +1194,12 @@ def update_league_brasil(config: dict):
             continue
 
         df_year = ensure_cols(df_year, TARGET_COLS)
-        update_csv_merge(os.path.join(folder_path, fname), df_year, season_key=str(year), force_recompute_matchday=True)
+        update_csv_merge(
+            os.path.join(folder_path, fname),
+            df_year,
+            season_key=str(year),
+            force_recompute_matchday=True
+        )
         years_done.add(year)
 
     if not years_done:
@@ -1151,7 +1212,12 @@ def update_league_brasil(config: dict):
 
         df_year = ensure_cols(df_year, TARGET_COLS)
         out_name = f"brasileirao_{last_year}.csv"
-        update_csv_merge(os.path.join(folder_path, out_name), df_year, season_key=str(last_year), force_recompute_matchday=True)
+        update_csv_merge(
+            os.path.join(folder_path, out_name),
+            df_year,
+            season_key=str(last_year),
+            force_recompute_matchday=True
+        )
 
 # ================= MAIN =================
 
