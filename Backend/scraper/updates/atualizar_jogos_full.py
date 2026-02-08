@@ -695,6 +695,7 @@ def _clean_text(v):
     s = s.strip()
     return s or None
 
+
 def _norm_date(v):
     s = _clean_text(v)
     if not s:
@@ -704,6 +705,7 @@ def _norm_date(v):
     if pd.isna(dt):
         return None
     return dt.strftime("%Y-%m-%d")
+
 
 def _row_completeness(row: pd.Series, cols) -> int:
     score = 0
@@ -718,10 +720,15 @@ def _row_completeness(row: pd.Series, cols) -> int:
         score += 1
     return score
 
+
 def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
     """
     Remove duplicados por (Date, Home, Away, season_key), mantendo a melhor linha
     e mesclando campos (primeiro valor não-vazio por coluna).
+
+    ✅ Preferência:
+    1) linha com Date válida
+    2) linha mais completa (mais campos preenchidos)
     """
     if df.empty:
         return df
@@ -734,7 +741,7 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
     df["_k_away"] = df["Away"].apply(lambda x: normalize_key(_clean_text(x)))
     df["_k_season"] = season_key
 
-    # se Date não existe/ inválida, cai para Matchday (mas tenta manter consistência)
+    # se Date não existe/ inválida, cai para Matchday
     df["_k_md"] = df["Matchday"].apply(lambda x: _clean_text(x))
     df["_k"] = df.apply(
         lambda r: (r["_k_home"], r["_k_away"], r["_k_date"], r["_k_season"])
@@ -742,14 +749,15 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
         axis=1
     )
 
-    # ordena por "linha mais completa" primeiro
+    # ✅ ordenação: primeiro quem tem Date, depois quem é mais completo
+    df["_has_date"] = df["_k_date"].apply(lambda x: 1 if x else 0)
     df["_score"] = df.apply(lambda r: _row_completeness(r, TARGET_COLS), axis=1)
-    df = df.sort_values(["_k", "_score"], ascending=[True, False])
+    df = df.sort_values(["_k", "_has_date", "_score"], ascending=[True, False, False])
 
     # mescla por chave
     rows = []
-    for k, g in df.groupby("_k", sort=False):
-        base = g.iloc[0].copy()  # mais completa
+    for _, g in df.groupby("_k", sort=False):
+        base = g.iloc[0].copy()  # preferida
         # preenche buracos com as outras
         for _, rr in g.iloc[1:].iterrows():
             for col in TARGET_COLS:
@@ -758,7 +766,7 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
                     nv = rr.get(col, None)
                     if nv is None or (isinstance(nv, float) and pd.isna(nv)) or (isinstance(nv, str) and str(nv).strip() == ""):
                         continue
-                    # respeita regra: não derrubar Matchday existente
+                    # ✅ respeita regra: não derrubar Matchday existente
                     if col == "Matchday" and bv not in [None, "", "nan", "NaN"]:
                         continue
                     base[col] = nv
@@ -766,27 +774,39 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
 
     out = pd.DataFrame(rows)
 
-    # limpa colunas auxiliares se vierem junto
-    drop_aux = [c for c in out.columns if c.startswith("_k") or c in ["_score"]]
+    # limpa colunas auxiliares
+    drop_aux = [c for c in out.columns if c.startswith("_k") or c in ["_score", "_has_date"]]
     out = out.drop(columns=drop_aux, errors="ignore")
 
-    # normaliza Date final (pra não gerar duplicado de novo)
+    # normaliza Date final
     out["Date"] = out["Date"].apply(_norm_date)
 
     return out
 
-def make_match_key(row, season_key: str):
+
+def make_match_key_date(row, season_key: str):
     home = normalize_key(_clean_text(row.get("Home")))
     away = normalize_key(_clean_text(row.get("Away")))
     date = _norm_date(row.get("Date"))
-    md = _clean_text(row.get("Matchday"))
+    if not date:
+        return None
+    return (home, away, date, season_key)
 
-    if date:
-        return (home, away, date, season_key)
+
+def make_match_key_md(row, season_key: str):
+    home = normalize_key(_clean_text(row.get("Home")))
+    away = normalize_key(_clean_text(row.get("Away")))
+    md = _clean_text(row.get("Matchday"))
+    if not md:
+        return None
     return (home, away, md, season_key)
 
 
 def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
+    """
+    ✅ Só atualiza com valores não-vazios (não apaga dado local)
+    ✅ Não derruba Matchday já existente
+    """
     for col in df_local.columns:
         newv = row_new.get(col, None)
         if newv is None or (isinstance(newv, float) and pd.isna(newv)):
@@ -803,6 +823,7 @@ def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
 
         if oldv is None or (isinstance(oldv, float) and pd.isna(oldv)) or str(oldv).strip() == "" or str(oldv) != str(newv):
             df_local.at[idx, col] = newv
+
 
 def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
     df_new = ensure_cols(df_new, TARGET_COLS)
@@ -821,16 +842,32 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
 
     df_local = ensure_cols(df_local, TARGET_COLS)
 
-    # ✅ 2) index agora fica consistente
-    local_index = {make_match_key(r, season_key): idx for idx, r in df_local.iterrows()}
+    # ✅ 2) index duplo (Date e Matchday) para casar mesmo se Date vier vazia/zoada
+    local_index_date = {}
+    local_index_md = {}
+
+    for idx, r in df_local.iterrows():
+        kd = make_match_key_date(r, season_key)
+        if kd:
+            local_index_date[kd] = idx
+        km = make_match_key_md(r, season_key)
+        if km:
+            local_index_md[km] = idx
 
     added = 0
     updated = 0
 
     for _, rnew in df_new.iterrows():
-        key = make_match_key(rnew, season_key)
-        if key in local_index:
-            idx = local_index[key]
+        kd = make_match_key_date(rnew, season_key)
+        km = make_match_key_md(rnew, season_key)
+
+        idx = None
+        if kd and kd in local_index_date:
+            idx = local_index_date[kd]
+        elif km and km in local_index_md:
+            idx = local_index_md[km]
+
+        if idx is not None:
             before = df_local.loc[idx].copy()
             smart_update_row(df_local, idx, rnew)
             if not before.equals(df_local.loc[idx]):
@@ -839,7 +876,7 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
             df_local = pd.concat([df_local, pd.DataFrame([rnew])], ignore_index=True)
             added += 1
 
-    # ✅ 3) dedup de novo depois do merge (se a chave falhar em algum caso sujo)
+    # ✅ 3) dedup de novo depois do merge (casos sujos / duplicados residuais)
     df_local = dedup_matches(df_local, season_key)
 
     if "Date" in df_local.columns:
