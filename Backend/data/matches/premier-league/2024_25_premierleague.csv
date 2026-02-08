@@ -1,6 +1,6 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
 1,2024-08-16,Manchester United,Fulham FC,1-0,0-0
-1,2024-08-16,Ipswich Town FC,Liverpool,0-2,0-0
+1,2024-08-16,Ipswich Town,Liverpool,0-2,0-0
 1,2024-08-16,Arsenal,Wolverhampton,2-0,1-0
 1,2024-08-16,Everton,Brighton & Hove Albion,0-3,0-1
 1,2024-08-16,Newcastle United,Southampton FC,1-0,1-0
@@ -12,7 +12,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 2,2024-08-16,Brighton & Hove Albion,Manchester United,2-1,1-0
 2,2024-08-16,Crystal Palace,West Ham United,0-2,0-0
 2,2024-08-16,Fulham FC,Leicester,2-1,1-1)
-2,2024-08-16,Manchester City,Ipswich Town FC,4-1,3-1
+2,2024-08-16,Manchester City,Ipswich Town,4-1,3-1
 2,2024-08-16,Southampton FC,Nottingham Forest,0-1,0-0
 2,2024-08-16,Tottenham,Everton,4-0,2-0
 2,2024-08-16,Aston Villa,Arsenal,0-2,0-0
@@ -22,7 +22,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2024-08-16,Arsenal,Brighton & Hove Albion,1-1,1-0
 3,2024-08-16,Brentford,Southampton FC,3-1,1-0
 3,2024-08-16,Everton,AFC Bournemouth,2-3,0-0
-3,2024-08-16,Ipswich Town FC,Fulham FC,1-1,1-1
+3,2024-08-16,Ipswich Town,Fulham FC,1-1,1-1
 3,2024-08-16,Leicester,Aston Villa,1-2,0-1
 3,2024-08-16,Nottingham Forest,Wolverhampton,1-1,1-1
 3,2024-08-16,West Ham United,Manchester City,1-3,1-2
@@ -30,7 +30,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2024-08-16,Newcastle United,Tottenham,2-1,1-0
 3,2024-08-16,Manchester United,Liverpool,0-3,0-2
 4,2024-08-16,Southampton FC,Manchester United,0-3,0-2
-4,2024-08-16,Brighton & Hove Albion,Ipswich Town FC,0-0,,
+4,2024-08-16,Brighton & Hove Albion,Ipswich Town,0-0,,
 4,2024-08-16,Crystal Palace,Leicester,2-2,0-1
 4,2024-08-16,Fulham FC,West Ham United,1-1,1-0
 4,2024-08-16,Liverpool,Nottingham Forest,0-1,0-0
@@ -44,7 +44,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 5,2024-08-16,Fulham FC,Newcastle United,3-1,2-0
 5,2024-08-16,Leicester,Everton,1-1,0-1
 5,2024-08-16,Liverpool,AFC Bournemouth,3-0,3-0
-5,2024-08-16,Southampton FC,Ipswich Town FC,1-1,1-0
+5,2024-08-16,Southampton FC,Ipswich Town,1-1,1-0
 5,2024-08-16,Tottenham,Brentford,3-1,2-1
 5,2024-08-16,Crystal Palace,Manchester United,0-0,,
 5,2024-08-16,Brighton & Hove Albion,Nottingham Forest,2-2,2-1
@@ -56,7 +56,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 6,2024-08-16,Everton,Crystal Palace,2-1,0-1
 6,2024-08-16,Nottingham Forest,Fulham FC,0-1,0-0
 6,2024-08-16,Wolverhampton,Liverpool,1-2,0-1
-6,2024-08-16,Ipswich Town FC,Aston Villa,2-2,1-2
+6,2024-08-16,Ipswich Town,Aston Villa,2-2,1-2
 6,2024-08-16,Manchester United,Tottenham,0-3,0-1
 6,2024-08-16,AFC Bournemouth,Southampton FC,3-1,3-0
 7,2024-08-16,Crystal Palace,Liverpool,0-1,0-1
@@ -64,14 +64,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2024-08-16,Brentford,Wolverhampton,5-3,4-2
 7,2024-08-16,Leicester,AFC Bournemouth,1-0,1-0
 7,2024-08-16,Manchester City,Fulham FC,3-2,1-1
-7,2024-08-16,West Ham United,Ipswich Town FC,4-1,2-1
+7,2024-08-16,West Ham United,Ipswich Town,4-1,2-1
 7,2024-08-16,Everton,Newcastle United,0-0,,
 7,2024-08-16,Aston Villa,Manchester United,0-0,,
 7,2024-08-16,Chelsea,Nottingham Forest,1-1,0-0
 7,2024-08-16,Brighton & Hove Albion,Tottenham,3-2,0-2
 8,2024-08-16,Tottenham,West Ham United,4-1,1-1
 8,2024-08-16,Fulham FC,Aston Villa,1-3,1-1
-8,2024-08-16,Ipswich Town FC,Everton,0-2,0-2
+8,2024-08-16,Ipswich Town,Everton,0-2,0-2
 8,2024-08-16,Manchester United,Brentford,2-1,0-1
 8,2024-08-16,Newcastle United,Brighton & Hove Albion,0-1,0-1
 8,2024-08-16,Southampton FC,Leicester,2-3,2-0
@@ -81,7 +81,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 8,2024-08-16,Nottingham Forest,Crystal Palace,1-0,0-0
 9,2024-08-16,Leicester,Nottingham Forest,1-3,1-1
 9,2024-08-16,Aston Villa,AFC Bournemouth,1-1,0-0
-9,2024-08-16,Brentford,Ipswich Town FC,4-3,2-2
+9,2024-08-16,Brentford,Ipswich Town,4-3,2-2
 9,2024-08-16,Brighton & Hove Albion,Wolverhampton,2-2,1-0
 9,2024-08-16,Manchester City,Southampton FC,1-0,1-0
 9,2024-08-16,Everton,Fulham FC,1-1,0-0
@@ -91,7 +91,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2024-08-16,Arsenal,Liverpool,2-2,2-1
 10,2024-08-16,Newcastle United,Arsenal,1-0,1-0
 10,2024-08-16,AFC Bournemouth,Manchester City,2-1,1-0
-10,2024-08-16,Ipswich Town FC,Leicester,1-1,0-0
+10,2024-08-16,Ipswich Town,Leicester,1-1,0-0
 10,2024-08-16,Liverpool,Brighton & Hove Albion,2-1,0-1
 10,2024-08-16,Nottingham Forest,West Ham United,3-0,1-0
 10,2024-08-16,Southampton FC,Everton,1-0,0-0
@@ -107,7 +107,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,2024-08-16,Liverpool,Aston Villa,2-0,1-0
 11,2024-08-16,Manchester United,Leicester,3-0,2-0
 11,2024-08-16,Nottingham Forest,Newcastle United,1-3,1-0
-11,2024-08-16,Tottenham,Ipswich Town FC,1-2,0-2
+11,2024-08-16,Tottenham,Ipswich Town,1-2,0-2
 11,2024-08-16,Chelsea,Arsenal,1-1,0-0
 12,2024-08-16,Leicester,Chelsea,1-2,0-1
 12,2024-08-16,AFC Bournemouth,Brighton & Hove Albion,1-2,0-1
@@ -117,19 +117,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2024-08-16,Fulham FC,Wolverhampton,1-4,1-1
 12,2024-08-16,Manchester City,Tottenham,0-4,0-2
 12,2024-08-16,Southampton FC,Liverpool,2-3,1-1
-12,2024-08-16,Ipswich Town FC,Manchester United,1-1,1-1
+12,2024-08-16,Ipswich Town,Manchester United,1-1,1-1
 12,2024-08-16,Newcastle United,West Ham United,0-2,0-1
 13,2024-08-16,Brighton & Hove Albion,Southampton FC,1-1,1-0
 13,2024-08-16,Brentford,Leicester,4-1,3-1
 13,2024-08-16,Crystal Palace,Newcastle United,1-1,0-0
-13,2024-08-16,Nottingham Forest,Ipswich Town FC,1-0,0-0
+13,2024-08-16,Nottingham Forest,Ipswich Town,1-0,0-0
 13,2024-08-16,Wolverhampton,AFC Bournemouth,2-4,1-3
 13,2024-08-16,West Ham United,Arsenal,2-5,2-5
 13,2024-08-16,Chelsea,Aston Villa,3-0,2-0
 13,2024-08-16,Manchester United,Everton,4-0,2-0
 13,2024-08-16,Tottenham,Fulham FC,1-1,0-0
 13,2024-08-16,Liverpool,Manchester City,2-0,1-0
-14,2024-08-16,Ipswich Town FC,Crystal Palace,0-1,0-0
+14,2024-08-16,Ipswich Town,Crystal Palace,0-1,0-0
 14,2024-08-16,Leicester,West Ham United,3-1,1-0
 14,2024-08-16,Everton,Wolverhampton,4-0,2-0
 14,2024-08-16,Manchester City,Nottingham Forest,3-0,2-0
@@ -144,14 +144,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2024-08-16,Crystal Palace,Manchester City,2-2,1-1
 15,2024-08-16,Manchester United,Nottingham Forest,2-3,1-1
 15,2024-08-16,Fulham FC,Arsenal,1-1,1-0
-15,2024-08-16,Ipswich Town FC,AFC Bournemouth,1-2,1-0
+15,2024-08-16,Ipswich Town,AFC Bournemouth,1-2,1-0
 15,2024-08-16,Leicester,Brighton & Hove Albion,2-2,0-1
 15,2024-08-16,Tottenham,Chelsea,3-4,2-1
 15,2024-08-16,West Ham United,Wolverhampton,2-1,0-0
 16,2024-08-16,Arsenal,Everton,0-0,,
 16,2024-08-16,Liverpool,Fulham FC,2-2,0-1
 16,2024-08-16,Newcastle United,Leicester,4-0,1-0
-16,2024-08-16,Wolverhampton,Ipswich Town FC,1-2,0-1
+16,2024-08-16,Wolverhampton,Ipswich Town,1-2,0-1
 16,2024-08-16,Nottingham Forest,Aston Villa,2-1,0-0
 16,2024-08-16,Brighton & Hove Albion,Crystal Palace,1-3,0-2
 16,2024-08-16,Manchester City,Manchester United,1-2,1-0
@@ -160,7 +160,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2024-08-16,AFC Bournemouth,West Ham United,1-1,0-0
 17,2024-08-16,Aston Villa,Manchester City,2-1,1-0
 17,2024-08-16,Brentford,Nottingham Forest,0-2,0-1
-17,2024-08-16,Ipswich Town FC,Newcastle United,0-4,0-3
+17,2024-08-16,Ipswich Town,Newcastle United,0-4,0-3
 17,2024-08-16,West Ham United,Brighton & Hove Albion,1-1,0-0
 17,2024-08-16,Crystal Palace,Arsenal,1-5,1-3
 17,2024-08-16,Everton,Chelsea,0-0,,
@@ -177,7 +177,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 18,2024-08-16,Wolverhampton,Manchester United,2-0,0-0
 18,2024-08-16,Liverpool,Leicester,3-1,1-1
 18,2024-08-16,Brighton & Hove Albion,Brentford,0-0,,
-18,2024-08-16,Arsenal,Ipswich Town FC,1-0,1-0
+18,2024-08-16,Arsenal,Ipswich Town,1-0,1-0
 19,2024-08-16,Leicester,Manchester City,0-2,0-1
 19,2024-08-16,Crystal Palace,Southampton FC,2-1,1-1
 19,2024-08-16,Everton,Nottingham Forest,0-2,0-1
@@ -185,7 +185,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2024-08-16,Tottenham,Wolverhampton,2-2,2-1
 19,2024-08-16,West Ham United,Liverpool,0-5,0-3
 19,2024-08-16,Aston Villa,Brighton & Hove Albion,2-2,1-1
-19,2024-08-16,Ipswich Town FC,Chelsea,2-0,1-0
+19,2024-08-16,Ipswich Town,Chelsea,2-0,1-0
 19,2024-08-16,Manchester United,Newcastle United,0-2,0-2
 19,2025-01-01,Brentford,Arsenal,1-3,1-1
 20,2025-01-01,Tottenham,Newcastle United,1-2,1-2
@@ -195,7 +195,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2025-01-01,Aston Villa,Leicester,2-1,0-0
 20,2025-01-01,Manchester City,West Ham United,4-1,2-0
 20,2025-01-01,Brighton & Hove Albion,Arsenal,1-1,0-1
-20,2025-01-01,Fulham FC,Ipswich Town FC,2-2,0-1
+20,2025-01-01,Fulham FC,Ipswich Town,2-2,0-1
 20,2025-01-01,Liverpool,Manchester United,2-2,0-0
 20,2025-01-01,Wolverhampton,Nottingham Forest,0-3,0-2
 21,2025-01-01,West Ham United,Fulham FC,3-2,2-0
@@ -206,7 +206,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2025-01-01,Leicester,Crystal Palace,0-2,0-0
 21,2025-01-01,Newcastle United,Wolverhampton,3-0,1-0
 21,2025-01-01,Arsenal,Tottenham,2-1,2-1
-21,2025-01-01,Ipswich Town FC,Brighton & Hove Albion,0-2,0-0
+21,2025-01-01,Ipswich Town,Brighton & Hove Albion,0-2,0-0
 21,2025-01-01,Manchester United,Southampton FC,3-1,0-1
 22,2025-01-01,Newcastle United,AFC Bournemouth,1-4,1-2
 22,2025-01-01,West Ham United,Crystal Palace,0-2,0-0
@@ -216,9 +216,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2025-01-01,Manchester United,Brighton & Hove Albion,1-3,1-1
 22,2025-01-01,Nottingham Forest,Southampton FC,3-2,3-0
 22,2025-01-01,Everton,Tottenham,3-2,3-0
-22,2025-01-01,Ipswich Town FC,Manchester City,0-6,0-3
+22,2025-01-01,Ipswich Town,Manchester City,0-6,0-3
 22,2025-01-01,Chelsea,Wolverhampton,3-1,1-1
-23,2025-01-01,Liverpool,Ipswich Town FC,4-1,3-0
+23,2025-01-01,Liverpool,Ipswich Town,4-1,3-0
 23,2025-01-01,Wolverhampton,Arsenal,0-1,0-0
 23,2025-01-01,Brighton & Hove Albion,Everton,0-1,0-1
 23,2025-01-01,Southampton FC,Newcastle United,1-3,1-2
@@ -232,7 +232,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 24,2025-01-01,Newcastle United,Fulham FC,1-2,1-0
 24,2025-01-01,Everton,Leicester,4-0,3-0
 24,2025-01-01,AFC Bournemouth,Liverpool,0-2,0-1
-24,2025-01-01,Ipswich Town FC,Southampton FC,1-2,1-1
+24,2025-01-01,Ipswich Town,Southampton FC,1-2,1-1
 24,2025-01-01,Wolverhampton,Aston Villa,2-0,1-0
 24,2025-01-01,Manchester United,Crystal Palace,0-2,0-0
 24,2025-01-01,Brentford,Tottenham,0-2,0-1
@@ -243,7 +243,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2025-01-01,Leicester,Arsenal,0-2,0-0
 25,2025-01-01,Southampton FC,AFC Bournemouth,1-3,0-2
 25,2025-01-01,West Ham United,Brentford,0-1,0-1
-25,2025-01-01,Aston Villa,Ipswich Town FC,1-1,0-0
+25,2025-01-01,Aston Villa,Ipswich Town,1-1,0-0
 25,2025-01-01,Manchester City,Newcastle United,4-0,3-0
 25,2025-01-01,Fulham FC,Nottingham Forest,2-1,1-1
 25,2025-01-01,Crystal Palace,Everton,1-2,0-1
@@ -252,7 +252,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 29,2025-01-01,Aston Villa,Liverpool,2-2,2-1
 26,2025-01-01,Leicester,Brentford,0-4,0-3
 26,2025-01-01,Everton,Manchester United,2-2,2-0
-26,2025-01-01,Ipswich Town FC,Tottenham,1-4,1-2
+26,2025-01-01,Ipswich Town,Tottenham,1-4,1-2
 26,2025-01-01,Fulham FC,Crystal Palace,0-2,0-1
 26,2025-01-01,Arsenal,West Ham United,0-1,0-1
 26,2025-01-01,AFC Bournemouth,Wolverhampton,0-1,0-1
@@ -267,12 +267,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2025-01-01,Nottingham Forest,Arsenal,0-0,,
 27,2025-01-01,Brentford,Everton,1-1,1-0
 27,2025-01-01,Tottenham,Manchester City,0-1,0-1
-27,2025-01-01,Manchester United,Ipswich Town FC,3-2,2-2
+27,2025-01-01,Manchester United,Ipswich Town,3-2,2-2
 27,2025-01-01,Liverpool,Newcastle United,2-0,1-0
 27,2025-01-01,West Ham United,Leicester,2-0,2-0
 28,2025-01-01,Nottingham Forest,Manchester City,1-0,0-0
 28,2025-01-01,Brighton & Hove Albion,Fulham FC,2-1,1-1
-28,2025-01-01,Crystal Palace,Ipswich Town FC,1-0,0-0
+28,2025-01-01,Crystal Palace,Ipswich Town,1-0,0-0
 28,2025-01-01,Liverpool,Southampton FC,3-1,0-1
 28,2025-01-01,Brentford,Aston Villa,0-1,0-0
 28,2025-01-01,Wolverhampton,Everton,1-1,1-1
@@ -281,7 +281,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2025-01-01,Manchester United,Arsenal,1-1,1-0
 28,2025-01-01,West Ham United,Newcastle United,0-1,0-0
 29,2025-01-01,Everton,West Ham United,1-1,0-0
-29,2025-01-01,Ipswich Town FC,Nottingham Forest,2-4,0-3
+29,2025-01-01,Ipswich Town,Nottingham Forest,2-4,0-3
 29,2025-01-01,Manchester City,Brighton & Hove Albion,2-2,2-1
 29,2025-01-01,Southampton FC,Wolverhampton,1-2,0-1
 29,2025-01-01,AFC Bournemouth,Brentford,1-2,1-1
@@ -291,7 +291,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2025-01-01,Arsenal,Fulham FC,2-1,1-0
 30,2025-01-01,Wolverhampton,West Ham United,1-0,1-0
 30,2025-01-01,Nottingham Forest,Manchester United,1-0,1-0
-30,2025-01-01,AFC Bournemouth,Ipswich Town FC,1-2,0-1
+30,2025-01-01,AFC Bournemouth,Ipswich Town,1-2,0-1
 30,2025-01-01,Brighton & Hove Albion,Aston Villa,0-3,0-0
 30,2025-01-01,Manchester City,Leicester,2-0,2-0
 30,2025-01-01,Newcastle United,Brentford,2-1,1-0
@@ -300,7 +300,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2025-01-01,Chelsea,Tottenham,1-0,0-0
 31,2025-01-01,Everton,Arsenal,1-1,0-1
 31,2025-01-01,Crystal Palace,Brighton & Hove Albion,2-1,1-1
-31,2025-01-01,Ipswich Town FC,Wolverhampton,1-2,1-0
+31,2025-01-01,Ipswich Town,Wolverhampton,1-2,1-0
 31,2025-01-01,West Ham United,AFC Bournemouth,2-2,0-1
 31,2025-01-01,Aston Villa,Nottingham Forest,2-1,2-0
 31,2025-01-01,Brentford,Chelsea,0-0,,
@@ -313,7 +313,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2025-01-01,Nottingham Forest,Everton,0-1,0-0
 32,2025-01-01,Southampton FC,Aston Villa,0-3,0-0
 32,2025-01-01,Arsenal,Brentford,1-1,0-0
-32,2025-01-01,Chelsea,Ipswich Town FC,2-2,0-2
+32,2025-01-01,Chelsea,Ipswich Town,2-2,0-2
 32,2025-01-01,Liverpool,West Ham United,2-1,1-0
 32,2025-01-01,Wolverhampton,Tottenham,4-2,2-0
 32,2025-01-01,Newcastle United,Manchester United,4-1,1-1
@@ -325,7 +325,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2025-01-01,West Ham United,Southampton FC,1-1,0-0
 33,2025-01-01,Aston Villa,Newcastle United,4-1,1-1
 33,2025-01-01,Fulham FC,Chelsea,1-2,1-0
-33,2025-01-01,Ipswich Town FC,Arsenal,0-4,0-2
+33,2025-01-01,Ipswich Town,Arsenal,0-4,0-2
 33,2025-01-01,Manchester United,Wolverhampton,0-1,0-0
 33,2025-01-01,Leicester,Liverpool,0-1,0-0
 33,2025-01-01,Tottenham,Nottingham Forest,1-2,0-2
@@ -333,7 +333,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 34,2025-01-01,Arsenal,Crystal Palace,2-2,2-1
 34,2025-01-01,Chelsea,Everton,1-0,1-0
 34,2025-01-01,Brighton & Hove Albion,West Ham United,3-2,1-0
-34,2025-01-01,Newcastle United,Ipswich Town FC,3-0,1-0
+34,2025-01-01,Newcastle United,Ipswich Town,3-0,1-0
 34,2025-01-01,Southampton FC,Fulham FC,1-2,1-0
 34,2025-01-01,Wolverhampton,Leicester,3-0,1-0
 34,2025-01-01,AFC Bournemouth,Manchester United,1-1,1-0
@@ -341,7 +341,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 34,2025-01-01,Nottingham Forest,Brentford,0-2,0-1
 35,2025-01-01,Manchester City,Wolverhampton,1-0,1-0
 35,2025-01-01,Aston Villa,Fulham FC,1-0,1-0
-35,2025-01-01,Everton,Ipswich Town FC,2-2,2-1
+35,2025-01-01,Everton,Ipswich Town,2-2,2-1
 35,2025-01-01,Leicester,Southampton FC,2-0,2-0
 35,2025-01-01,Arsenal,AFC Bournemouth,1-2,1-0
 35,2025-01-01,Brentford,Manchester United,4-3,2-1
@@ -350,7 +350,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 35,2025-01-01,Chelsea,Liverpool,3-1,1-0
 35,2025-01-01,Crystal Palace,Nottingham Forest,1-1,0-0
 36,2025-01-01,Fulham FC,Everton,1-3,1-1
-36,2025-01-01,Ipswich Town FC,Brentford,0-1,0-1
+36,2025-01-01,Ipswich Town,Brentford,0-1,0-1
 36,2025-01-01,Southampton FC,Manchester City,0-0,,
 36,2025-01-01,Wolverhampton,Brighton & Hove Albion,0-2,0-1
 36,2025-01-01,AFC Bournemouth,Aston Villa,0-1,0-1
@@ -364,14 +364,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 37,2025-01-01,Everton,Southampton FC,2-0,2-0
 37,2025-01-01,West Ham United,Nottingham Forest,1-2,0-1
 37,2025-01-01,Brentford,Fulham FC,2-3,2-1
-37,2025-01-01,Leicester,Ipswich Town FC,2-0,1-0
+37,2025-01-01,Leicester,Ipswich Town,2-0,1-0
 37,2025-01-01,Arsenal,Newcastle United,1-0,0-0
 37,2025-01-01,Brighton & Hove Albion,Liverpool,3-2,1-2
 37,2025-01-01,Crystal Palace,Wolverhampton,4-2,2-1
 37,2025-01-01,Manchester City,AFC Bournemouth,3-1,2-0
 38,2025-01-01,AFC Bournemouth,Leicester,2-0,0-0
 38,2025-01-01,Fulham FC,Manchester City,0-2,0-1
-38,2025-01-01,Ipswich Town FC,West Ham United,1-3,0-1
+38,2025-01-01,Ipswich Town,West Ham United,1-3,0-1
 38,2025-01-01,Liverpool,Crystal Palace,1-1,0-1
 38,2025-01-01,Manchester United,Aston Villa,2-0,0-0
 38,2025-01-01,Newcastle United,Everton,0-1,0-0

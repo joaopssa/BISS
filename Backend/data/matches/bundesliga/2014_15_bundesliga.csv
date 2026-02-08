@@ -6,19 +6,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2014-08-22,Eintracht Frankfurt,Freiburg,1-0,1-0
 1,2014-08-22,1. FC Köln,Hamburgo,0-0,
 1,2014-08-22,Borussia Dortmund,Bayer Leverkusen,0-2,0-1
-1,2014-08-22,Bor. Mönchengladbach,VfB Stuttgart,1-1,0-0
+1,2014-08-22,Borussia Monchengladbach,VfB Stuttgart,1-1,0-0
 2,2014-08-22,Augsburg,Borussia Dortmund,2-3,0-2
 2,2014-08-22,Bayer Leverkusen,Hertha Berlin,4-2,0-1
 2,2014-08-22,Wolfsburg,Eintracht Frankfurt,2-2,1-1
 2,2014-08-22,Hamburgo,SC Paderborn 07,0-3,0-1
 2,2014-08-22,FC Schalke 04,Bayern de Munique,1-1,0-1
 2,2014-08-22,Mainz 05,Hannover 96,0-0,
-2,2014-08-22,Freiburg,Bor. Mönchengladbach,0-0,
+2,2014-08-22,Freiburg,Borussia Monchengladbach,0-0,
 3,2014-08-22,Bayer Leverkusen,Werder Bremen,3-3,1-1
 3,2014-08-22,Bayern de Munique,VfB Stuttgart,2-0,1-0
 3,2014-08-22,Borussia Dortmund,Freiburg,3-1,2-0
 3,2014-08-22,Hoffenheim,Wolfsburg,1-1,0-0
-3,2014-08-22,Bor. Mönchengladbach,FC Schalke 04,4-1,1-0
+3,2014-08-22,Borussia Monchengladbach,FC Schalke 04,4-1,1-0
 3,2014-08-22,Eintracht Frankfurt,Augsburg,0-1,0-0
 3,2014-08-22,Hannover 96,Hamburgo,2-0,2-0
 4,2014-08-22,Freiburg,Hertha Berlin,2-2,1-1
@@ -28,19 +28,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 4,2014-08-22,SC Paderborn 07,Hannover 96,2-0,0-0
 4,2014-08-22,Mainz 05,Borussia Dortmund,2-0,0-0
 4,2014-08-22,Wolfsburg,Bayer Leverkusen,4-1,2-1
-4,2014-08-22,1. FC Köln,Bor. Mönchengladbach,0-0,
+4,2014-08-22,1. FC Köln,Borussia Monchengladbach,0-0,
 5,2014-08-22,Bayern de Munique,SC Paderborn 07,4-0,2-0
 5,2014-08-22,Hoffenheim,Freiburg,3-3,1-2
 5,2014-08-22,Werder Bremen,FC Schalke 04,0-3,0-0
 5,2014-08-22,Borussia Dortmund,VfB Stuttgart,2-2,0-0
 5,2014-08-22,Bayer Leverkusen,Augsburg,1-0,1-0
-5,2014-08-22,Bor. Mönchengladbach,Hamburgo,1-0,1-0
+5,2014-08-22,Borussia Monchengladbach,Hamburgo,1-0,1-0
 5,2014-08-22,Hertha Berlin,Wolfsburg,1-0,1-0
 6,2014-08-22,FC Schalke 04,Borussia Dortmund,2-1,2-1
 6,2014-08-22,Freiburg,Bayer Leverkusen,0-0,
 6,2014-08-22,VfB Stuttgart,Hannover 96,1-0,0-0
 6,2014-08-22,1. FC Köln,Bayern de Munique,0-2,0-1
-6,2014-08-22,SC Paderborn 07,Bor. Mönchengladbach,1-2,0-2
+6,2014-08-22,SC Paderborn 07,Borussia Monchengladbach,1-2,0-2
 6,2014-08-22,Wolfsburg,Werder Bremen,2-1,1-1
 6,2014-08-22,Augsburg,Hertha Berlin,1-0,1-0
 6,2014-08-22,Hamburgo,Eintracht Frankfurt,1-2,0-1
@@ -53,7 +53,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2014-08-22,Wolfsburg,Augsburg,1-0,0-0
 8,2014-08-22,Bayern de Munique,Werder Bremen,6-0,4-0
 8,2014-08-22,Mainz 05,Augsburg,2-1,2-0
-8,2014-08-22,Hannover 96,Bor. Mönchengladbach,0-3,0-1
+8,2014-08-22,Hannover 96,Borussia Monchengladbach,0-3,0-1
 8,2014-08-22,Freiburg,Wolfsburg,1-2,0-1
 8,2014-08-22,VfB Stuttgart,Bayer Leverkusen,3-3,0-3
 8,2014-08-22,1. FC Köln,Borussia Dortmund,2-1,1-0
@@ -65,7 +65,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2014-08-22,Hertha Berlin,Hamburgo,3-0,0-0
 9,2014-08-22,Eintracht Frankfurt,VfB Stuttgart,4-5,1-2
 9,2014-08-22,Bayer Leverkusen,FC Schalke 04,1-0,0-0
-9,2014-08-22,Bor. Mönchengladbach,Bayern de Munique,0-0,
+9,2014-08-22,Borussia Monchengladbach,Bayern de Munique,0-0,
 10,2014-08-22,FC Schalke 04,Augsburg,1-0,1-0
 10,2014-08-22,Mainz 05,Werder Bremen,1-2,1-1
 10,2014-08-22,Hannover 96,Eintracht Frankfurt,1-0,0-0
@@ -80,9 +80,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,2014-08-22,Freiburg,FC Schalke 04,2-0,1-0
 11,2014-08-22,Werder Bremen,VfB Stuttgart,2-0,1-0
 11,2014-08-22,Wolfsburg,Hamburgo,2-0,1-0
-11,2014-08-22,Borussia Dortmund,Bor. Mönchengladbach,1-0,0-0
+11,2014-08-22,Borussia Dortmund,Borussia Monchengladbach,1-0,0-0
 12,2014-08-22,FC Schalke 04,Wolfsburg,3-2,3-1
-12,2014-08-22,Bor. Mönchengladbach,Eintracht Frankfurt,1-3,1-0
+12,2014-08-22,Borussia Monchengladbach,Eintracht Frankfurt,1-3,1-0
 12,2014-08-22,Mainz 05,Freiburg,2-2,1-1
 12,2014-08-22,Hannover 96,Bayer Leverkusen,1-3,0-0
 12,2014-08-22,SC Paderborn 07,Borussia Dortmund,2-2,0-2
@@ -94,9 +94,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2014-08-22,Hertha Berlin,Bayern de Munique,0-1,0-1
 13,2014-08-22,Werder Bremen,SC Paderborn 07,4-0,1-0
 13,2014-08-22,Hoffenheim,Hannover 96,4-3,2-1
-13,2014-08-22,Wolfsburg,Bor. Mönchengladbach,1-0,1-0
+13,2014-08-22,Wolfsburg,Borussia Monchengladbach,1-0,1-0
 13,2014-08-22,Eintracht Frankfurt,Borussia Dortmund,2-0,1-0
-14,2014-08-22,Bor. Mönchengladbach,Hertha Berlin,3-2,1-1
+14,2014-08-22,Borussia Monchengladbach,Hertha Berlin,3-2,1-1
 14,2014-08-22,Hannover 96,Wolfsburg,1-3,1-1
 14,2014-08-22,VfB Stuttgart,FC Schalke 04,0-4,0-3
 14,2014-08-22,1. FC Köln,Augsburg,1-2,1-0
@@ -109,25 +109,25 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2014-08-22,Werder Bremen,Hannover 96,3-3,1-1
 15,2014-08-22,Freiburg,Hamburgo,0-0,
 15,2014-08-22,Mainz 05,VfB Stuttgart,1-1,1-0
-15,2014-08-22,Bayer Leverkusen,Bor. Mönchengladbach,1-1,1-1
+15,2014-08-22,Bayer Leverkusen,Borussia Monchengladbach,1-1,1-1
 15,2014-08-22,Wolfsburg,SC Paderborn 07,1-1,1-0
 16,2014-08-22,Bayern de Munique,Freiburg,2-0,1-0
 16,2014-08-22,Hannover 96,Augsburg,2-0,1-0
 16,2014-08-22,Hamburgo,VfB Stuttgart,0-1,0-1
 16,2014-08-22,Borussia Dortmund,Wolfsburg,2-2,1-1
-16,2014-08-22,Bor. Mönchengladbach,Werder Bremen,4-1,2-0
+16,2014-08-22,Borussia Monchengladbach,Werder Bremen,4-1,2-0
 16,2014-08-22,Hoffenheim,Bayer Leverkusen,0-1,0-0
 16,2014-08-22,Eintracht Frankfurt,Hertha Berlin,4-4,1-3
 16,2014-08-22,SC Paderborn 07,FC Schalke 04,1-2,1-1
 17,2014-08-22,Mainz 05,Bayern de Munique,1-2,1-1
 17,2014-08-22,FC Schalke 04,Hamburgo,0-0,
 17,2014-08-22,Bayer Leverkusen,Eintracht Frankfurt,1-1,0-1
-17,2014-08-22,Augsburg,Bor. Mönchengladbach,2-1,1-1
+17,2014-08-22,Augsburg,Borussia Monchengladbach,2-1,1-1
 17,2014-08-22,Werder Bremen,Borussia Dortmund,2-1,1-0
 17,2014-08-22,VfB Stuttgart,SC Paderborn 07,0-0,
 17,2014-08-22,Freiburg,Hannover 96,2-2,1-0
 18,2015-01-30,Wolfsburg,Bayern de Munique,4-1,2-0
-18,2015-01-30,VfB Stuttgart,Bor. Mönchengladbach,0-1,0-0
+18,2015-01-30,VfB Stuttgart,Borussia Monchengladbach,0-1,0-0
 18,2015-01-30,FC Schalke 04,Hannover 96,1-0,1-0
 18,2015-01-30,Freiburg,Eintracht Frankfurt,4-1,0-1
 18,2015-01-30,Mainz 05,SC Paderborn 07,5-0,1-0
@@ -135,13 +135,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 18,2015-01-30,Werder Bremen,Hertha Berlin,2-0,1-0
 19,2015-01-30,Bayern de Munique,FC Schalke 04,1-1,0-0
 19,2015-01-30,Eintracht Frankfurt,Wolfsburg,1-1,0-0
-19,2015-01-30,Bor. Mönchengladbach,Freiburg,1-0,1-0
+19,2015-01-30,Borussia Monchengladbach,Freiburg,1-0,1-0
 19,2015-01-30,Hertha Berlin,Bayer Leverkusen,0-1,0-0
 19,2015-01-30,Borussia Dortmund,Augsburg,0-1,0-0
 19,2015-01-30,Hoffenheim,Werder Bremen,1-2,1-1
 19,2015-01-30,1. FC Köln,VfB Stuttgart,0-0,
 19,2015-01-30,SC Paderborn 07,Hamburgo,0-3,0-1
-20,2015-01-30,FC Schalke 04,Bor. Mönchengladbach,1-0,1-0
+20,2015-01-30,FC Schalke 04,Borussia Monchengladbach,1-0,1-0
 20,2015-01-30,VfB Stuttgart,Bayern de Munique,0-2,0-1
 20,2015-01-30,Freiburg,Borussia Dortmund,0-3,0-1
 20,2015-01-30,Mainz 05,Hertha Berlin,0-2,0-2
@@ -162,21 +162,21 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2015-01-30,FC Schalke 04,Werder Bremen,1-1,0-0
 22,2015-01-30,Mainz 05,Eintracht Frankfurt,3-1,1-1
 22,2015-01-30,1. FC Köln,Hannover 96,1-1,1-1
-22,2015-01-30,Hamburgo,Bor. Mönchengladbach,1-1,0-0
+22,2015-01-30,Hamburgo,Borussia Monchengladbach,1-1,0-0
 22,2015-01-30,Wolfsburg,Hertha Berlin,2-1,1-1
 23,2015-01-30,Borussia Dortmund,FC Schalke 04,3-0,0-0
 23,2015-01-30,Hertha Berlin,Augsburg,1-0,0-0
 23,2015-01-30,Bayer Leverkusen,Freiburg,1-0,1-0
 23,2015-01-30,Hannover 96,VfB Stuttgart,1-1,0-0
 23,2015-01-30,Eintracht Frankfurt,Hamburgo,2-1,1-1
-23,2015-01-30,Bor. Mönchengladbach,SC Paderborn 07,2-0,1-0
+23,2015-01-30,Borussia Monchengladbach,SC Paderborn 07,2-0,1-0
 23,2015-01-30,Werder Bremen,Wolfsburg,3-5,3-2
 24,2015-01-30,VfB Stuttgart,Hertha Berlin,0-0,
 24,2015-01-30,Hannover 96,Bayern de Munique,1-3,1-1
 24,2015-01-30,Hamburgo,Borussia Dortmund,0-0,
 24,2015-01-30,Augsburg,Wolfsburg,1-0,0-0
 24,2015-01-30,Freiburg,Werder Bremen,0-1,0-1
-24,2015-01-30,Mainz 05,Bor. Mönchengladbach,2-2,0-1
+24,2015-01-30,Mainz 05,Borussia Monchengladbach,2-2,0-1
 24,2015-01-30,1. FC Köln,Eintracht Frankfurt,4-2,1-0
 24,2015-01-30,SC Paderborn 07,Bayer Leverkusen,0-3,0-0
 25,2015-01-30,Bayer Leverkusen,VfB Stuttgart,4-0,2-0
@@ -185,7 +185,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2015-01-30,Hoffenheim,Hamburgo,3-0,1-0
 25,2015-01-30,Eintracht Frankfurt,SC Paderborn 07,4-0,2-0
 25,2015-01-30,Wolfsburg,Freiburg,3-0,1-0
-25,2015-01-30,Bor. Mönchengladbach,Hannover 96,2-0,1-0
+25,2015-01-30,Borussia Monchengladbach,Hannover 96,2-0,1-0
 26,2015-01-30,Hamburgo,Hertha Berlin,0-1,0-0
 26,2015-01-30,Hannover 96,Borussia Dortmund,2-3,1-1
 26,2015-01-30,Freiburg,Augsburg,2-0,0-0
@@ -193,8 +193,8 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 26,2015-01-30,VfB Stuttgart,Eintracht Frankfurt,3-1,0-0
 26,2015-01-30,FC Schalke 04,Bayer Leverkusen,0-1,0-1
 26,2015-01-30,Mainz 05,Wolfsburg,1-1,1-0
-26,2015-01-30,Bayern de Munique,Bor. Mönchengladbach,0-2,0-1
-27,2015-01-30,Hoffenheim,Bor. Mönchengladbach,1-4,1-3
+26,2015-01-30,Bayern de Munique,Borussia Monchengladbach,0-2,0-1
+27,2015-01-30,Hoffenheim,Borussia Monchengladbach,1-4,1-3
 27,2015-01-30,Eintracht Frankfurt,Hannover 96,2-2,1-0
 27,2015-01-30,Wolfsburg,VfB Stuttgart,3-1,1-1
 27,2015-01-30,Bayer Leverkusen,Hamburgo,4-0,2-0
@@ -202,14 +202,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2015-01-30,Augsburg,FC Schalke 04,0-0,
 27,2015-01-30,Hertha Berlin,SC Paderborn 07,2-0,0-0
 28,2015-01-30,Hannover 96,Hertha Berlin,1-1,0-0
-28,2015-01-30,Bor. Mönchengladbach,Borussia Dortmund,3-1,2-0
+28,2015-01-30,Borussia Monchengladbach,Borussia Dortmund,3-1,2-0
 28,2015-01-30,Mainz 05,Bayer Leverkusen,2-3,0-1
 28,2015-01-30,SC Paderborn 07,Augsburg,2-1,0-0
 28,2015-01-30,Bayern de Munique,Eintracht Frankfurt,3-0,1-0
 28,2015-01-30,FC Schalke 04,Freiburg,0-0,
 28,2015-01-30,Hamburgo,Wolfsburg,0-2,0-1
 28,2015-01-30,VfB Stuttgart,Werder Bremen,3-2,1-0
-29,2015-01-30,Eintracht Frankfurt,Bor. Mönchengladbach,0-0,
+29,2015-01-30,Eintracht Frankfurt,Borussia Monchengladbach,0-0,
 29,2015-01-30,Hoffenheim,Bayern de Munique,0-2,0-1
 29,2015-01-30,Bayer Leverkusen,Hannover 96,4-0,2-0
 29,2015-01-30,Borussia Dortmund,SC Paderborn 07,3-0,0-0
@@ -223,7 +223,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2015-01-30,VfB Stuttgart,Freiburg,2-2,2-0
 30,2015-01-30,Bayern de Munique,Hertha Berlin,1-0,0-0
 30,2015-01-30,SC Paderborn 07,Werder Bremen,2-2,2-1
-30,2015-01-30,Bor. Mönchengladbach,Wolfsburg,1-0,0-0
+30,2015-01-30,Borussia Monchengladbach,Wolfsburg,1-0,0-0
 31,2015-01-30,Hoffenheim,Borussia Dortmund,1-1,1-1
 31,2015-01-30,Wolfsburg,Hannover 96,2-2,2-0
 31,2015-01-30,Werder Bremen,Eintracht Frankfurt,1-0,0-0
@@ -231,9 +231,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2015-01-30,Freiburg,SC Paderborn 07,1-2,1-0
 31,2015-01-30,Bayer Leverkusen,Bayern de Munique,2-0,0-0
 31,2015-01-30,Mainz 05,Hamburgo,1-2,0-1
-31,2015-01-30,Hertha Berlin,Bor. Mönchengladbach,1-2,1-1
+31,2015-01-30,Hertha Berlin,Borussia Monchengladbach,1-2,1-1
 32,2015-01-30,Hamburgo,Freiburg,1-1,0-1
-32,2015-01-30,Bor. Mönchengladbach,Bayer Leverkusen,3-0,0-0
+32,2015-01-30,Borussia Monchengladbach,Bayer Leverkusen,3-0,0-0
 32,2015-01-30,Bayern de Munique,Augsburg,0-1,0-0
 32,2015-01-30,Borussia Dortmund,Hertha Berlin,2-0,1-0
 32,2015-01-30,Hannover 96,Werder Bremen,1-1,1-0
@@ -245,11 +245,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2015-01-30,Hertha Berlin,Eintracht Frankfurt,0-0,
 33,2015-01-30,VfB Stuttgart,Hamburgo,2-1,2-1
 33,2015-01-30,FC Schalke 04,SC Paderborn 07,1-0,0-0
-33,2015-01-30,Werder Bremen,Bor. Mönchengladbach,0-2,0-0
+33,2015-01-30,Werder Bremen,Borussia Monchengladbach,0-2,0-0
 34,2015-01-30,Hamburgo,FC Schalke 04,2-0,0-0
 34,2015-01-30,Eintracht Frankfurt,Bayer Leverkusen,2-1,2-1
 34,2015-01-30,1. FC Köln,Wolfsburg,2-2,1-2
-34,2015-01-30,Bor. Mönchengladbach,Augsburg,1-3,1-0
+34,2015-01-30,Borussia Monchengladbach,Augsburg,1-3,1-0
 34,2015-01-30,Hoffenheim,Hertha Berlin,2-1,1-0
 34,2015-01-30,Borussia Dortmund,Werder Bremen,3-2,3-1
 34,2015-01-30,Hannover 96,Freiburg,2-1,1-0

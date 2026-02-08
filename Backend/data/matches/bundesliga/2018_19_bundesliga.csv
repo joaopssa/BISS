@@ -3,14 +3,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2018-08-24,Freiburg,Eintracht Frankfurt,0-2,0-1
 1,2018-08-24,Wolfsburg,FC Schalke 04,2-1,1-0
 1,2018-08-24,Fortuna Dusseldorf,Augsburg,1-2,1-0
-1,2018-08-24,Bor. Mönchengladbach,Bayer Leverkusen,2-0,0-0
+1,2018-08-24,Borussia Monchengladbach,Bayer Leverkusen,2-0,0-0
 1,2018-08-24,Mainz 05,VfB Stuttgart,1-0,0-0
 1,2018-08-24,Borussia Dortmund,RB Leipzig,4-1,3-1
 2,2018-08-24,Hannover 96,Borussia Dortmund,0-0,
 2,2018-08-24,Hoffenheim,Freiburg,3-1,0-1
 2,2018-08-24,Bayer Leverkusen,Wolfsburg,1-3,1-1
 2,2018-08-24,Eintracht Frankfurt,Werder Bremen,1-2,0-1
-2,2018-08-24,Augsburg,Bor. Mönchengladbach,1-1,1-0
+2,2018-08-24,Augsburg,Borussia Monchengladbach,1-1,1-0
 2,2018-08-24,VfB Stuttgart,Bayern de Munique,0-3,0-1
 2,2018-08-24,RB Leipzig,Fortuna Dusseldorf,1-1,0-0
 2,2018-08-24,FC Schalke 04,Hertha Berlin,0-2,0-1
@@ -19,11 +19,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2018-08-24,Mainz 05,Augsburg,2-1,0-0
 3,2018-08-24,Wolfsburg,Hertha Berlin,2-2,0-0
 3,2018-08-24,Bayern de Munique,Bayer Leverkusen,3-1,2-1
-3,2018-08-24,Bor. Mönchengladbach,FC Schalke 04,2-1,1-0
+3,2018-08-24,Borussia Monchengladbach,FC Schalke 04,2-1,1-0
 3,2018-08-24,Freiburg,VfB Stuttgart,3-3,1-1
 4,2018-08-24,VfB Stuttgart,Fortuna Dusseldorf,0-0,
 4,2018-08-24,Hoffenheim,Borussia Dortmund,1-1,1-0
-4,2018-08-24,Hertha Berlin,Bor. Mönchengladbach,4-2,2-1
+4,2018-08-24,Hertha Berlin,Borussia Monchengladbach,4-2,2-1
 4,2018-08-24,Augsburg,Werder Bremen,2-3,1-2
 4,2018-08-24,Wolfsburg,Freiburg,1-3,0-2
 4,2018-08-24,1. FC Nurnberg,Hannover 96,2-0,0-0
@@ -34,12 +34,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 5,2018-08-24,Freiburg,FC Schalke 04,1-0,0-0
 5,2018-08-24,Fortuna Dusseldorf,Bayer Leverkusen,1-2,0-0
 5,2018-08-24,RB Leipzig,VfB Stuttgart,2-0,1-0
-5,2018-08-24,Bor. Mönchengladbach,Eintracht Frankfurt,3-1,0-0
+5,2018-08-24,Borussia Monchengladbach,Eintracht Frankfurt,3-1,0-0
 5,2018-08-24,Mainz 05,Wolfsburg,0-0,
 6,2018-08-24,Hertha Berlin,Bayern de Munique,2-0,2-0
 6,2018-08-24,Hoffenheim,RB Leipzig,1-2,0-0
 6,2018-08-24,VfB Stuttgart,Werder Bremen,2-1,1-0
-6,2018-08-24,Wolfsburg,Bor. Mönchengladbach,2-2,1-1
+6,2018-08-24,Wolfsburg,Borussia Monchengladbach,2-2,1-1
 6,2018-08-24,1. FC Nurnberg,Fortuna Dusseldorf,3-0,1-0
 6,2018-08-24,Bayer Leverkusen,Borussia Dortmund,2-4,2-0
 6,2018-08-24,Eintracht Frankfurt,Hannover 96,4-1,2-0
@@ -49,7 +49,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2018-08-24,Hannover 96,VfB Stuttgart,3-1,2-0
 7,2018-08-24,Mainz 05,Hertha Berlin,0-0,
 7,2018-08-24,Fortuna Dusseldorf,FC Schalke 04,0-2,0-0
-7,2018-08-24,Bayern de Munique,Bor. Mönchengladbach,0-3,0-2
+7,2018-08-24,Bayern de Munique,Borussia Monchengladbach,0-3,0-2
 7,2018-08-24,Freiburg,Bayer Leverkusen,0-0,
 7,2018-08-24,Hoffenheim,Eintracht Frankfurt,1-2,0-1
 8,2018-08-24,Eintracht Frankfurt,Fortuna Dusseldorf,7-1,3-0
@@ -59,7 +59,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 8,2018-08-24,Wolfsburg,Bayern de Munique,1-3,0-1
 8,2018-08-24,FC Schalke 04,Werder Bremen,0-2,0-1
 8,2018-08-24,Hertha Berlin,Freiburg,1-1,1-1
-9,2018-08-24,Freiburg,Bor. Mönchengladbach,3-1,1-1
+9,2018-08-24,Freiburg,Borussia Monchengladbach,3-1,1-1
 9,2018-08-24,Borussia Dortmund,Hertha Berlin,2-2,1-1
 9,2018-08-24,Hannover 96,Augsburg,1-2,0-1
 9,2018-08-24,Mainz 05,Bayern de Munique,1-2,0-1
@@ -73,11 +73,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 10,2018-08-24,FC Schalke 04,Hannover 96,3-1,0-0
 10,2018-08-24,Wolfsburg,Borussia Dortmund,0-1,0-1
 10,2018-08-24,Hertha Berlin,RB Leipzig,0-3,0-1
-10,2018-08-24,Bor. Mönchengladbach,Fortuna Dusseldorf,3-0,0-0
+10,2018-08-24,Borussia Monchengladbach,Fortuna Dusseldorf,3-0,0-0
 10,2018-08-24,Mainz 05,Werder Bremen,2-1,1-0
 11,2018-08-24,Hannover 96,Wolfsburg,2-1,1-0
 11,2018-08-24,Hoffenheim,Augsburg,2-1,0-0
-11,2018-08-24,Werder Bremen,Bor. Mönchengladbach,1-3,0-1
+11,2018-08-24,Werder Bremen,Borussia Monchengladbach,1-3,0-1
 11,2018-08-24,Fortuna Dusseldorf,Hertha Berlin,4-1,0-0
 11,2018-08-24,1. FC Nurnberg,VfB Stuttgart,0-2,0-0
 11,2018-08-24,Borussia Dortmund,Bayern de Munique,3-2,0-1
@@ -89,13 +89,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2018-08-24,Mainz 05,Borussia Dortmund,1-2,0-0
 12,2018-08-24,Wolfsburg,RB Leipzig,1-0,0-0
 12,2018-08-24,Freiburg,Werder Bremen,1-1,1-0
-12,2018-08-24,Bor. Mönchengladbach,Hannover 96,4-1,2-1
+12,2018-08-24,Borussia Monchengladbach,Hannover 96,4-1,2-1
 13,2018-08-24,Borussia Dortmund,Freiburg,2-0,1-0
 13,2018-08-24,VfB Stuttgart,Augsburg,1-0,1-0
 13,2018-08-24,Werder Bremen,Bayern de Munique,1-2,1-1
 13,2018-08-24,Hannover 96,Hertha Berlin,0-2,0-1
 13,2018-08-24,Hoffenheim,FC Schalke 04,1-1,0-0
-13,2018-08-24,RB Leipzig,Bor. Mönchengladbach,2-0,2-0
+13,2018-08-24,RB Leipzig,Borussia Monchengladbach,2-0,2-0
 13,2018-08-24,Eintracht Frankfurt,Wolfsburg,1-2,0-1
 13,2018-08-24,1. FC Nurnberg,Bayer Leverkusen,1-1,0-1
 14,2018-08-24,Werder Bremen,Fortuna Dusseldorf,3-1,1-1
@@ -104,9 +104,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 14,2018-08-24,Freiburg,RB Leipzig,3-0,2-0
 14,2018-08-24,Hertha Berlin,Eintracht Frankfurt,1-0,1-0
 14,2018-08-24,Mainz 05,Hannover 96,1-1,0-1
-14,2018-08-24,Bor. Mönchengladbach,VfB Stuttgart,3-0,0-0
+14,2018-08-24,Borussia Monchengladbach,VfB Stuttgart,3-0,0-0
 15,2018-08-24,1. FC Nurnberg,Wolfsburg,0-2,0-0
-15,2018-08-24,Hoffenheim,Bor. Mönchengladbach,0-0,
+15,2018-08-24,Hoffenheim,Borussia Monchengladbach,0-0,
 15,2018-08-24,VfB Stuttgart,Hertha Berlin,2-1,0-1
 15,2018-08-24,Augsburg,FC Schalke 04,1-1,1-0
 15,2018-08-24,Hannover 96,Bayern de Munique,0-4,0-2
@@ -120,7 +120,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2018-08-24,Bayern de Munique,RB Leipzig,1-0,0-0
 16,2018-08-24,Freiburg,Hannover 96,1-1,1-1
 16,2018-08-24,Mainz 05,Eintracht Frankfurt,2-2,2-2
-17,2018-08-24,Borussia Dortmund,Bor. Mönchengladbach,2-1,1-1
+17,2018-08-24,Borussia Dortmund,Borussia Monchengladbach,2-1,1-1
 17,2018-08-24,Bayer Leverkusen,Hertha Berlin,3-1,2-1
 17,2018-08-24,RB Leipzig,Werder Bremen,3-2,2-0
 17,2018-08-24,VfB Stuttgart,FC Schalke 04,1-3,0-1
@@ -129,7 +129,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 17,2018-08-24,Eintracht Frankfurt,Bayern de Munique,0-3,0-1
 17,2018-08-24,Augsburg,Wolfsburg,2-3,0-2
 18,2019-01-18,Hoffenheim,Bayern de Munique,1-3,0-2
-18,2019-01-18,Bayer Leverkusen,Bor. Mönchengladbach,0-1,0-1
+18,2019-01-18,Bayer Leverkusen,Borussia Monchengladbach,0-1,0-1
 18,2019-01-18,Hannover 96,Werder Bremen,0-1,0-1
 18,2019-01-18,Eintracht Frankfurt,Freiburg,3-1,3-0
 18,2019-01-18,Augsburg,Fortuna Dusseldorf,1-2,0-1
@@ -138,7 +138,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 18,2019-01-18,FC Schalke 04,Wolfsburg,2-1,1-1
 19,2019-01-18,Hertha Berlin,FC Schalke 04,2-2,2-2
 19,2019-01-18,Wolfsburg,Bayer Leverkusen,0-3,0-1
-19,2019-01-18,Bor. Mönchengladbach,Augsburg,2-0,0-0
+19,2019-01-18,Borussia Monchengladbach,Augsburg,2-0,0-0
 19,2019-01-18,Borussia Dortmund,Hannover 96,5-1,1-0
 19,2019-01-18,Werder Bremen,Eintracht Frankfurt,2-2,1-1
 19,2019-01-18,Bayern de Munique,VfB Stuttgart,4-1,1-1
@@ -149,11 +149,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2019-01-18,Hertha Berlin,Wolfsburg,0-1,0-0
 20,2019-01-18,Hoffenheim,Fortuna Dusseldorf,1-1,1-0
 20,2019-01-18,Bayer Leverkusen,Bayern de Munique,3-1,0-1
-20,2019-01-18,FC Schalke 04,Bor. Mönchengladbach,0-2,0-0
+20,2019-01-18,FC Schalke 04,Borussia Monchengladbach,0-2,0-0
 20,2019-01-18,VfB Stuttgart,Freiburg,2-2,0-1
 21,2019-01-18,Mainz 05,Bayer Leverkusen,1-5,1-4
 21,2019-01-18,RB Leipzig,Eintracht Frankfurt,0-0,
-21,2019-01-18,Bor. Mönchengladbach,Hertha Berlin,0-3,0-1
+21,2019-01-18,Borussia Monchengladbach,Hertha Berlin,0-3,0-1
 21,2019-01-18,Freiburg,Wolfsburg,3-3,1-1
 21,2019-01-18,Bayern de Munique,FC Schalke 04,3-1,2-1
 21,2019-01-18,Werder Bremen,Augsburg,4-0,3-0
@@ -163,21 +163,21 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2019-01-18,Hoffenheim,Hannover 96,3-0,2-0
 22,2019-01-18,FC Schalke 04,Freiburg,0-0,
 22,2019-01-18,Hertha Berlin,Werder Bremen,1-1,1-0
-22,2019-01-18,Eintracht Frankfurt,Bor. Mönchengladbach,1-1,1-0
+22,2019-01-18,Eintracht Frankfurt,Borussia Monchengladbach,1-1,1-0
 22,2019-01-18,Bayer Leverkusen,Fortuna Dusseldorf,2-0,1-0
 22,2019-01-18,1. FC Nurnberg,Borussia Dortmund,0-0,
 23,2019-01-18,Werder Bremen,VfB Stuttgart,1-1,1-1
 23,2019-01-18,Mainz 05,FC Schalke 04,3-0,1-0
 23,2019-01-18,Bayern de Munique,Hertha Berlin,1-0,0-0
 23,2019-01-18,Freiburg,Augsburg,5-1,3-0
-23,2019-01-18,Bor. Mönchengladbach,Wolfsburg,0-3,0-1
+23,2019-01-18,Borussia Monchengladbach,Wolfsburg,0-3,0-1
 23,2019-01-18,Hannover 96,Eintracht Frankfurt,0-3,0-0
 23,2019-01-18,Borussia Dortmund,Bayer Leverkusen,3-2,2-1
 24,2019-01-18,Augsburg,Borussia Dortmund,2-1,1-0
 24,2019-01-18,1. FC Nurnberg,RB Leipzig,0-1,0-1
 24,2019-01-18,Bayer Leverkusen,Freiburg,2-0,1-0
 24,2019-01-18,FC Schalke 04,Fortuna Dusseldorf,0-4,0-1
-24,2019-01-18,Bor. Mönchengladbach,Bayern de Munique,1-5,1-2
+24,2019-01-18,Borussia Monchengladbach,Bayern de Munique,1-5,1-2
 24,2019-01-18,VfB Stuttgart,Hannover 96,5-1,3-0
 24,2019-01-18,Wolfsburg,Werder Bremen,1-1,0-0
 25,2019-01-18,Werder Bremen,FC Schalke 04,4-2,1-1
@@ -185,10 +185,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2019-01-18,Freiburg,Hertha Berlin,2-1,1-0
 25,2019-01-18,RB Leipzig,Augsburg,0-0,
 25,2019-01-18,Bayern de Munique,Wolfsburg,6-0,2-0
-25,2019-01-18,Mainz 05,Bor. Mönchengladbach,0-1,0-0
+25,2019-01-18,Mainz 05,Borussia Monchengladbach,0-1,0-0
 25,2019-01-18,Hannover 96,Bayer Leverkusen,2-3,0-2
 25,2019-01-18,Fortuna Dusseldorf,Eintracht Frankfurt,0-3,0-0
-26,2019-01-18,Bor. Mönchengladbach,Freiburg,1-1,1-1
+26,2019-01-18,Borussia Monchengladbach,Freiburg,1-1,1-1
 26,2019-01-18,FC Schalke 04,RB Leipzig,0-1,0-1
 26,2019-01-18,Augsburg,Hannover 96,3-1,0-1
 26,2019-01-18,Wolfsburg,Fortuna Dusseldorf,5-2,1-1
@@ -196,7 +196,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 26,2019-01-18,Bayer Leverkusen,Werder Bremen,1-3,0-2
 27,2019-01-18,Hoffenheim,Bayer Leverkusen,4-1,1-1
 27,2019-01-18,Freiburg,Bayern de Munique,1-1,1-1
-27,2019-01-18,Fortuna Dusseldorf,Bor. Mönchengladbach,3-1,3-0
+27,2019-01-18,Fortuna Dusseldorf,Borussia Monchengladbach,3-1,3-0
 27,2019-01-18,1. FC Nurnberg,Augsburg,3-0,0-0
 27,2019-01-18,Borussia Dortmund,Wolfsburg,2-0,0-0
 27,2019-01-18,RB Leipzig,Hertha Berlin,5-0,2-0
@@ -208,10 +208,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2019-01-18,Wolfsburg,Hannover 96,3-1,1-1
 28,2019-01-18,Hertha Berlin,Fortuna Dusseldorf,1-2,1-1
 28,2019-01-18,Bayern de Munique,Borussia Dortmund,5-0,4-0
-28,2019-01-18,Bor. Mönchengladbach,Werder Bremen,1-1,0-0
+28,2019-01-18,Borussia Monchengladbach,Werder Bremen,1-1,0-0
 29,2019-01-18,1. FC Nurnberg,FC Schalke 04,1-1,0-0
 29,2019-01-18,VfB Stuttgart,Bayer Leverkusen,0-1,0-0
-29,2019-01-18,Hannover 96,Bor. Mönchengladbach,0-1,0-0
+29,2019-01-18,Hannover 96,Borussia Monchengladbach,0-1,0-0
 29,2019-01-18,Werder Bremen,Freiburg,2-1,0-0
 29,2019-01-18,RB Leipzig,Wolfsburg,2-0,2-0
 29,2019-01-18,Hoffenheim,Hertha Berlin,2-0,1-0
@@ -220,7 +220,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2019-01-18,Augsburg,VfB Stuttgart,6-0,3-0
 30,2019-01-18,Bayern de Munique,Werder Bremen,1-0,0-0
 30,2019-01-18,Mainz 05,Fortuna Dusseldorf,3-1,1-1
-30,2019-01-18,Bor. Mönchengladbach,RB Leipzig,1-2,0-1
+30,2019-01-18,Borussia Monchengladbach,RB Leipzig,1-2,0-1
 30,2019-01-18,Freiburg,Borussia Dortmund,0-4,0-1
 30,2019-01-18,Hertha Berlin,Hannover 96,0-0,
 30,2019-01-18,Wolfsburg,Eintracht Frankfurt,1-1,0-0
@@ -229,7 +229,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2019-01-18,Eintracht Frankfurt,Hertha Berlin,0-0,
 31,2019-01-18,Fortuna Dusseldorf,Werder Bremen,4-1,2-1
 31,2019-01-18,RB Leipzig,Freiburg,2-1,1-0
-31,2019-01-18,VfB Stuttgart,Bor. Mönchengladbach,1-0,0-0
+31,2019-01-18,VfB Stuttgart,Borussia Monchengladbach,1-0,0-0
 31,2019-01-18,Hoffenheim,Wolfsburg,1-4,1-1
 31,2019-01-18,1. FC Nurnberg,Bayern de Munique,1-1,0-0
 32,2019-01-18,Mainz 05,RB Leipzig,3-3,1-2
@@ -241,13 +241,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2019-01-18,Bayer Leverkusen,Eintracht Frankfurt,6-1,6-1
 33,2019-01-18,RB Leipzig,Bayern de Munique,0-0,
 33,2019-01-18,Bayer Leverkusen,FC Schalke 04,1-1,1-0
-33,2019-01-18,1. FC Nurnberg,Bor. Mönchengladbach,0-4,0-0
+33,2019-01-18,1. FC Nurnberg,Borussia Monchengladbach,0-4,0-0
 33,2019-01-18,Augsburg,Hertha Berlin,3-4,1-0
 33,2019-01-18,Hoffenheim,Werder Bremen,0-1,0-1
 33,2019-01-18,Hannover 96,Freiburg,3-0,1-0
 33,2019-01-18,VfB Stuttgart,Wolfsburg,3-0,1-0
 33,2019-01-18,Borussia Dortmund,Fortuna Dusseldorf,3-2,1-0
-34,2019-01-18,Bor. Mönchengladbach,Borussia Dortmund,0-2,0-1
+34,2019-01-18,Borussia Monchengladbach,Borussia Dortmund,0-2,0-1
 34,2019-01-18,Hertha Berlin,Bayer Leverkusen,1-5,1-2
 34,2019-01-18,Werder Bremen,RB Leipzig,2-1,1-0
 34,2019-01-18,FC Schalke 04,VfB Stuttgart,0-0,

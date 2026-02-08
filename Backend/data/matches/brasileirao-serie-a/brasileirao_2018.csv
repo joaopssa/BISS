@@ -8,10 +8,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Sun,2018-04-15,Internacional,Bahia,2-0,1-0
 1,Sun,2018-04-15,Athletico-PR,Chapecoense,5-1,0-0
 1,Mon,2018-04-16,Botafogo-RJ,Palmeiras,1-1,0-0
-1,Mon,2018-04-16,São Paulo,Paraná Clube,1-0,1-0
+1,Mon,2018-04-16,São Paulo,Paraná,1-0,1-0
 2,Sat,2018-04-21,Bahia,Santos,1-0,0-0
 2,Sat,2018-04-21,Flamengo,América-MG,2-0,2-0
-2,Sun,2018-04-22,Paraná Clube,Corinthians,0-4,0-2
+2,Sun,2018-04-22,Paraná,Corinthians,0-4,0-2
 2,Sun,2018-04-22,Atlético-MG,Vitória,2-1,1-0
 2,Sun,2018-04-22,Chapecoense,Vasco da Gama,1-1,1-0
 2,Sun,2018-04-22,Fluminense,Cruzeiro,1-0,0-0
@@ -21,7 +21,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 2,Mon,2018-04-23,Sport Recife,Botafogo-RJ,1-1,0-0
 3,Sat,2018-04-28,Botafogo-RJ,Grêmio,2-1,1-1
 3,Sun,2018-04-29,Atlético-MG,Corinthians,1-0,0-0
-3,Sun,2018-04-29,Paraná Clube,Sport Recife,1-2,0-1
+3,Sun,2018-04-29,Paraná,Sport Recife,1-2,0-1
 3,Sun,2018-04-29,Bahia,Athletico-PR,0-0,
 3,Sun,2018-04-29,Fluminense,São Paulo,1-1,0-1
 3,Sun,2018-04-29,Ceará,Flamengo,0-3,0-1
@@ -38,7 +38,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Sun,2018-05-06,Flamengo,Internacional,2-0,0-0
 4,Sun,2018-05-06,Sport Recife,Bahia,2-0,1-0
 4,Sun,2018-05-06,Grêmio,Santos,5-1,2-1
-4,Mon,2018-05-07,Chapecoense,Paraná Clube,1-1,0-0
+4,Mon,2018-05-07,Chapecoense,Paraná,1-1,0-0
 5,Sat,2018-05-12,Grêmio,Internacional,0-0,
 5,Sun,2018-05-13,Cruzeiro,Sport Recife,2-0,1-0
 5,Sun,2018-05-13,Athletico-PR,Atlético-MG,1-2,1-0
@@ -46,14 +46,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 5,Sun,2018-05-13,Bahia,São Paulo,2-2,2-1
 5,Sun,2018-05-13,Vasco da Gama,Vitória,2-3,1-1
 5,Sun,2018-05-13,Corinthians,Palmeiras,1-0,1-0
-5,Sun,2018-05-13,Santos,Paraná Clube,3-1,0-0
+5,Sun,2018-05-13,Santos,Paraná,3-1,0-0
 5,Mon,2018-05-14,Botafogo-RJ,Fluminense,2-1,1-1
 5,Mon,2018-05-14,Ceará,América-MG,2-2,1-2
 6,Sat,2018-05-19,Atlético-MG,Cruzeiro,1-0,0-0
 6,Sat,2018-05-19,Flamengo,Vasco da Gama,1-1,1-1
 6,Sat,2018-05-19,Palmeiras,Bahia,3-0,3-0
 6,Sun,2018-05-20,Vitória,Ceará,2-1,1-0
-6,Sun,2018-05-20,Paraná Clube,Grêmio,0-0,
+6,Sun,2018-05-20,Paraná,Grêmio,0-0,
 6,Sun,2018-05-20,América-MG,Botafogo-RJ,1-0,0-0
 6,Sun,2018-05-20,São Paulo,Santos,1-0,0-0
 6,Sun,2018-05-20,Sport Recife,Corinthians,1-1,0-0
@@ -62,7 +62,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Sat,2018-05-26,Fluminense,Chapecoense,3-1,2-0
 7,Sat,2018-05-26,Palmeiras,Sport Recife,2-3,1-0
 7,Sat,2018-05-26,Atlético-MG,Flamengo,0-1,0-0
-7,Sun,2018-05-27,Paraná Clube,Athletico-PR,0-0,
+7,Sun,2018-05-27,Paraná,Athletico-PR,0-0,
 7,Sun,2018-05-27,Bahia,Vasco da Gama,3-0,0-0
 7,Sun,2018-05-27,Botafogo-RJ,Vitória,1-1,1-1
 7,Sun,2018-05-27,Santos,Cruzeiro,0-1,0-0
@@ -70,7 +70,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Sun,2018-05-27,América-MG,São Paulo,1-3,1-2
 7,Sun,2018-05-27,Ceará,Grêmio,0-1,0-0
 8,Wed,2018-05-30,Vitória,Internacional,2-3,1-2
-8,Wed,2018-05-30,Vasco da Gama,Paraná Clube,1-0,1-0
+8,Wed,2018-05-30,Vasco da Gama,Paraná,1-0,1-0
 8,Wed,2018-05-30,Sport Recife,Atlético-MG,3-2,1-0
 8,Wed,2018-05-30,Chapecoense,Ceará,2-0,0-0
 8,Wed,2018-05-30,São Paulo,Botafogo-RJ,3-2,3-1
@@ -88,7 +88,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 9,Sun,2018-06-03,Flamengo,Corinthians,1-0,0-0
 9,Sun,2018-06-03,Santos,Vitória,5-2,4-0
 9,Sun,2018-06-03,Ceará,Cruzeiro,0-1,0-1
-9,Mon,2018-06-04,Paraná Clube,Fluminense,2-1,0-0
+9,Mon,2018-06-04,Paraná,Fluminense,2-1,0-0
 10,Tue,2018-06-05,São Paulo,Internacional,0-0,
 10,Wed,2018-06-06,Vitória,Chapecoense,1-0,0-0
 10,Wed,2018-06-06,Botafogo-RJ,Ceará,0-0,
@@ -96,7 +96,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Wed,2018-06-06,Corinthians,Santos,1-1,0-0
 10,Wed,2018-06-06,Cruzeiro,Vasco da Gama,1-1,0-1
 10,Wed,2018-06-06,Grêmio,Palmeiras,0-2,0-0
-10,Thu,2018-06-07,Paraná Clube,Bahia,1-0,0-0
+10,Thu,2018-06-07,Paraná,Bahia,1-0,0-0
 10,Thu,2018-06-07,Fluminense,Flamengo,0-2,0-1
 10,Thu,2018-06-07,América-MG,Atlético-MG,1-3,0-2
 11,Sat,2018-06-09,Athletico-PR,São Paulo,0-1,0-0
@@ -107,12 +107,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Sun,2018-06-10,Bahia,Botafogo-RJ,3-3,1-1
 11,Sun,2018-06-10,Ceará,Palmeiras,2-2,1-2
 11,Sun,2018-06-10,Grêmio,América-MG,1-0,1-0
-11,Sun,2018-06-10,Flamengo,Paraná Clube,2-0,1-0
+11,Sun,2018-06-10,Flamengo,Paraná,2-0,1-0
 11,Sun,2018-06-10,Santos,Internacional,1-2,0-1
 12,Tue,2018-06-12,São Paulo,Vitória,3-0,2-0
 12,Wed,2018-06-13,América-MG,Chapecoense,0-0,
 12,Wed,2018-06-13,Fluminense,Santos,0-1,0-0
-12,Wed,2018-06-13,Paraná Clube,Cruzeiro,1-1,0-0
+12,Wed,2018-06-13,Paraná,Cruzeiro,1-1,0-0
 12,Wed,2018-06-13,Sport Recife,Grêmio,0-0,
 12,Wed,2018-06-13,Botafogo-RJ,Athletico-PR,2-0,1-0
 12,Wed,2018-06-13,Palmeiras,Flamengo,1-1,1-0
@@ -120,7 +120,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 12,Wed,2018-06-13,Bahia,Corinthians,1-0,0-0
 12,Wed,2018-06-13,Internacional,Vasco da Gama,3-1,2-0
 13,Wed,2018-07-18,Ceará,Sport Recife,1-0,0-0
-13,Wed,2018-07-18,Vitória,Paraná Clube,1-0,1-0
+13,Wed,2018-07-18,Vitória,Paraná,1-0,1-0
 13,Wed,2018-07-18,Flamengo,São Paulo,0-1,0-0
 13,Wed,2018-07-18,Corinthians,Botafogo-RJ,2-0,1-0
 13,Wed,2018-07-18,Grêmio,Atlético-MG,2-0,0-0
@@ -131,7 +131,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 13,Thu,2018-07-19,Athletico-PR,Internacional,2-2,1-1
 14,Sat,2018-07-21,Flamengo,Botafogo-RJ,2-0,2-0
 14,Sat,2018-07-21,São Paulo,Corinthians,3-1,0-0
-14,Sun,2018-07-22,Paraná Clube,América-MG,1-0,1-0
+14,Sun,2018-07-22,Paraná,América-MG,1-0,1-0
 14,Sun,2018-07-22,Bahia,Vitória,4-1,2-0
 14,Sun,2018-07-22,Vasco da Gama,Grêmio,1-0,1-0
 14,Sun,2018-07-22,Sport Recife,Fluminense,1-2,1-1
@@ -140,7 +140,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 14,Sun,2018-07-22,Chapecoense,Santos,0-0,
 14,Mon,2018-07-23,Internacional,Ceará,1-0,0-0
 15,Wed,2018-07-25,Fluminense,Palmeiras,1-0,1-0
-15,Wed,2018-07-25,Atlético-MG,Paraná Clube,2-0,1-0
+15,Wed,2018-07-25,Atlético-MG,Paraná,2-0,1-0
 15,Wed,2018-07-25,Santos,Flamengo,1-1,1-1
 15,Wed,2018-07-25,Corinthians,Cruzeiro,2-0,0-0
 15,Thu,2018-07-26,Vitória,Sport Recife,1-0,0-0
@@ -151,7 +151,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Wed,2018-08-29,Ceará,Bahia,0-2,0-1
 16,Sat,2018-07-28,Ceará,Fluminense,1-0,1-0
 16,Sun,2018-07-29,Vasco da Gama,Corinthians,1-4,1-0
-16,Sun,2018-07-29,Palmeiras,Paraná Clube,3-0,2-0
+16,Sun,2018-07-29,Palmeiras,Paraná,3-0,2-0
 16,Sun,2018-07-29,Cruzeiro,São Paulo,0-2,0-1
 16,Sun,2018-07-29,Athletico-PR,Vitória,4-0,3-0
 16,Sun,2018-07-29,Flamengo,Sport Recife,4-1,1-1
@@ -162,7 +162,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Sat,2018-08-04,Botafogo-RJ,Santos,0-0,
 17,Sat,2018-08-04,Grêmio,Flamengo,2-0,1-0
 17,Sat,2018-08-04,Corinthians,Athletico-PR,0-0,
-17,Sun,2018-08-05,Paraná Clube,Ceará,0-1,0-1
+17,Sun,2018-08-05,Paraná,Ceará,0-1,0-1
 17,Sun,2018-08-05,América-MG,Palmeiras,0-0,
 17,Sun,2018-08-05,Vitória,Cruzeiro,1-1,0-0
 17,Sun,2018-08-05,São Paulo,Vasco da Gama,2-1,1-0
@@ -172,7 +172,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 18,Sat,2018-08-11,Ceará,Athletico-PR,0-0,
 18,Sat,2018-08-11,Bahia,América-MG,1-0,0-0
 18,Sun,2018-08-12,Atlético-MG,Santos,3-1,1-1
-18,Sun,2018-08-12,Paraná Clube,Botafogo-RJ,1-1,0-0
+18,Sun,2018-08-12,Paraná,Botafogo-RJ,1-1,0-0
 18,Sun,2018-08-12,Chapecoense,Corinthians,2-1,0-1
 18,Sun,2018-08-12,Flamengo,Cruzeiro,1-0,1-0
 18,Sun,2018-08-12,Sport Recife,São Paulo,1-3,0-1
@@ -182,7 +182,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sat,2018-08-18,Santos,Sport Recife,3-0,1-0
 19,Sat,2018-08-18,Corinthians,Grêmio,0-1,0-0
 19,Sun,2018-08-19,Athletico-PR,Flamengo,3-0,3-0
-19,Sun,2018-08-19,Internacional,Paraná Clube,1-0,0-0
+19,Sun,2018-08-19,Internacional,Paraná,1-0,0-0
 19,Sun,2018-08-19,Cruzeiro,Bahia,1-1,0-0
 19,Sun,2018-08-19,Vitória,Palmeiras,0-3,0-2
 19,Sun,2018-08-19,Botafogo-RJ,Atlético-MG,0-3,0-0
@@ -190,7 +190,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sun,2018-08-19,São Paulo,Chapecoense,2-0,1-0
 19,Mon,2018-08-20,Vasco da Gama,Ceará,1-1,0-0
 20,Wed,2018-08-08,Ceará,Santos,1-1,0-0
-20,Wed,2018-08-22,Paraná Clube,São Paulo,1-1,1-1
+20,Wed,2018-08-22,Paraná,São Paulo,1-1,1-1
 20,Wed,2018-08-22,Bahia,Internacional,0-1,0-1
 20,Wed,2018-08-22,Sport Recife,América-MG,0-2,0-0
 20,Wed,2018-08-22,Palmeiras,Botafogo-RJ,2-0,0-0
@@ -201,7 +201,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 20,Thu,2018-09-13,Chapecoense,Athletico-PR,2-1,0-0
 21,Sat,2018-08-25,Santos,Bahia,2-0,0-0
 21,Sat,2018-08-25,Athletico-PR,Grêmio,2-1,1-1
-21,Sat,2018-08-25,Corinthians,Paraná Clube,1-0,1-0
+21,Sat,2018-08-25,Corinthians,Paraná,1-0,1-0
 21,Sat,2018-08-25,Cruzeiro,Fluminense,2-1,1-1
 21,Sat,2018-08-25,Botafogo-RJ,Sport Recife,2-0,0-0
 21,Sun,2018-08-26,São Paulo,Ceará,1-0,0-0
@@ -216,13 +216,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Sun,2018-09-02,Flamengo,Ceará,0-1,0-0
 22,Sun,2018-09-02,Athletico-PR,Bahia,2-0,0-0
 22,Sun,2018-09-02,São Paulo,Fluminense,1-1,0-0
-22,Sun,2018-09-02,Sport Recife,Paraná Clube,1-0,1-0
+22,Sun,2018-09-02,Sport Recife,Paraná,1-0,1-0
 22,Sun,2018-09-02,Cruzeiro,Internacional,0-0,
 22,Sun,2018-09-02,Chapecoense,Palmeiras,1-2,0-1
 23,Wed,2018-09-05,Bahia,Sport Recife,2-0,0-0
 23,Wed,2018-09-05,Botafogo-RJ,Cruzeiro,1-1,1-1
 23,Wed,2018-09-05,Ceará,Corinthians,2-1,1-0
-23,Wed,2018-09-05,Paraná Clube,Chapecoense,1-1,1-0
+23,Wed,2018-09-05,Paraná,Chapecoense,1-1,1-0
 23,Wed,2018-09-05,Palmeiras,Athletico-PR,2-0,0-0
 23,Wed,2018-09-05,Atlético-MG,São Paulo,1-0,1-0
 23,Wed,2018-09-05,Internacional,Flamengo,2-1,1-0
@@ -236,11 +236,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 24,Sun,2018-09-09,Fluminense,Botafogo-RJ,1-0,1-0
 24,Sun,2018-09-09,Palmeiras,Corinthians,1-0,0-0
 24,Sun,2018-09-09,Internacional,Grêmio,1-0,0-0
-24,Sun,2018-09-09,Paraná Clube,Santos,0-2,0-0
+24,Sun,2018-09-09,Paraná,Santos,0-2,0-0
 24,Sun,2018-09-09,Vitória,Vasco da Gama,1-0,0-0
 24,Mon,2018-09-10,Atlético-MG,Athletico-PR,3-1,1-1
 25,Sat,2018-09-15,Ceará,Vitória,2-0,1-0
-25,Sat,2018-09-15,Grêmio,Paraná Clube,2-0,0-0
+25,Sat,2018-09-15,Grêmio,Paraná,2-0,0-0
 25,Sat,2018-09-15,Vasco da Gama,Flamengo,1-1,1-0
 25,Sun,2018-09-16,Botafogo-RJ,América-MG,1-0,1-0
 25,Sun,2018-09-16,Cruzeiro,Atlético-MG,0-0,
@@ -251,7 +251,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 25,Mon,2018-09-17,Chapecoense,Internacional,2-1,1-1
 26,Sat,2018-09-22,São Paulo,América-MG,1-1,1-0
 26,Sun,2018-09-23,Grêmio,Ceará,3-2,2-2
-26,Sun,2018-09-23,Athletico-PR,Paraná Clube,3-0,2-0
+26,Sun,2018-09-23,Athletico-PR,Paraná,3-0,2-0
 26,Sun,2018-09-23,Flamengo,Atlético-MG,2-1,1-1
 26,Sun,2018-09-23,Corinthians,Internacional,1-1,0-1
 26,Sun,2018-09-23,Vitória,Botafogo-RJ,3-4,1-2
@@ -268,7 +268,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Sun,2018-09-30,Santos,Athletico-PR,1-0,0-0
 27,Sun,2018-09-30,Internacional,Vitória,2-1,0-1
 27,Sun,2018-09-30,Ceará,Chapecoense,3-1,0-1
-27,Mon,2018-10-01,Paraná Clube,Vasco da Gama,1-1,1-1
+27,Mon,2018-10-01,Paraná,Vasco da Gama,1-1,1-1
 28,Fri,2018-10-05,Sport Recife,Internacional,2-1,0-0
 28,Fri,2018-10-05,Corinthians,Flamengo,0-3,0-0
 28,Fri,2018-10-05,Vitória,Santos,0-1,0-1
@@ -276,12 +276,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 28,Sat,2018-10-06,Chapecoense,Atlético-MG,1-0,0-0
 28,Sat,2018-10-06,São Paulo,Palmeiras,0-2,0-2
 28,Sat,2018-10-06,Grêmio,Bahia,2-2,0-1
-28,Mon,2018-10-08,Fluminense,Paraná Clube,4-0,2-0
+28,Mon,2018-10-08,Fluminense,Paraná,4-0,2-0
 28,Tue,2018-10-09,Botafogo-RJ,Vasco da Gama,1-1,1-1
 28,Wed,2018-10-24,Cruzeiro,Ceará,0-2,0-0
 29,Sat,2018-10-13,Flamengo,Fluminense,3-0,2-0
 29,Sat,2018-10-13,Santos,Corinthians,1-0,1-0
-29,Sat,2018-10-13,Bahia,Paraná Clube,2-0,0-0
+29,Sat,2018-10-13,Bahia,Paraná,2-0,0-0
 29,Sun,2018-10-14,Chapecoense,Vitória,0-1,0-1
 29,Sun,2018-10-14,Vasco da Gama,Cruzeiro,2-0,0-0
 29,Sun,2018-10-14,Palmeiras,Grêmio,2-0,1-0
@@ -297,7 +297,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 30,Sun,2018-10-21,Fluminense,Atlético-MG,1-0,0-0
 30,Sun,2018-10-21,Palmeiras,Ceará,2-1,2-0
 30,Sun,2018-10-21,Cruzeiro,Chapecoense,3-0,3-0
-30,Sun,2018-10-21,Paraná Clube,Flamengo,0-4,0-1
+30,Sun,2018-10-21,Paraná,Flamengo,0-4,0-1
 30,Mon,2018-10-22,Internacional,Santos,2-2,1-0
 31,Fri,2018-10-26,Vitória,São Paulo,0-1,0-1
 31,Fri,2018-10-26,Vasco da Gama,Internacional,1-1,0-0
@@ -306,20 +306,20 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Sat,2018-10-27,Chapecoense,América-MG,1-0,0-0
 31,Sat,2018-10-27,Flamengo,Palmeiras,1-1,0-0
 31,Sat,2018-10-27,Corinthians,Bahia,2-1,0-0
-31,Sat,2018-10-27,Cruzeiro,Paraná Clube,3-1,2-1
+31,Sat,2018-10-27,Cruzeiro,Paraná,3-1,2-1
 31,Sat,2018-10-27,Athletico-PR,Botafogo-RJ,2-1,0-1
 31,Mon,2018-10-29,Ceará,Atlético-MG,2-1,1-1
 32,Sat,2018-11-03,Atlético-MG,Grêmio,0-1,0-1
 32,Sat,2018-11-03,Fluminense,Vasco da Gama,0-1,0-0
 32,Sat,2018-11-03,Palmeiras,Santos,3-2,2-0
-32,Sun,2018-11-04,Paraná Clube,Vitória,1-1,0-0
+32,Sun,2018-11-04,Paraná,Vitória,1-1,0-0
 32,Sun,2018-11-04,América-MG,Cruzeiro,1-2,0-1
 32,Sun,2018-11-04,Botafogo-RJ,Corinthians,1-0,1-0
 32,Sun,2018-11-04,São Paulo,Flamengo,2-2,1-1
 32,Sun,2018-11-04,Bahia,Chapecoense,1-0,0-0
 32,Sun,2018-11-04,Internacional,Athletico-PR,2-1,0-0
 32,Mon,2018-11-05,Sport Recife,Ceará,1-0,0-0
-33,Sat,2018-11-10,América-MG,Paraná Clube,0-1,0-0
+33,Sat,2018-11-10,América-MG,Paraná,0-1,0-0
 33,Sat,2018-11-10,Corinthians,São Paulo,1-1,0-0
 33,Sat,2018-11-10,Athletico-PR,Cruzeiro,2-0,2-0
 33,Sat,2018-11-10,Botafogo-RJ,Flamengo,2-1,2-0
@@ -330,7 +330,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 33,Sun,2018-11-11,Fluminense,Sport Recife,0-0,
 33,Mon,2018-11-12,Santos,Chapecoense,0-1,0-1
 34,Wed,2018-11-14,Vasco da Gama,Athletico-PR,1-1,0-0
-34,Wed,2018-11-14,Paraná Clube,Atlético-MG,0-1,0-1
+34,Wed,2018-11-14,Paraná,Atlético-MG,0-1,0-1
 34,Wed,2018-11-14,Bahia,Ceará,2-1,1-1
 34,Wed,2018-11-14,Cruzeiro,Corinthians,1-0,1-0
 34,Wed,2018-11-14,Sport Recife,Vitória,0-0,
@@ -342,7 +342,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 35,Sat,2018-11-17,Vitória,Athletico-PR,1-2,0-1
 35,Sat,2018-11-17,Corinthians,Vasco da Gama,1-0,0-0
 35,Sat,2018-11-17,Atlético-MG,Bahia,1-0,0-0
-35,Sun,2018-11-18,Paraná Clube,Palmeiras,1-1,1-0
+35,Sun,2018-11-18,Paraná,Palmeiras,1-1,1-0
 35,Sun,2018-11-18,América-MG,Santos,2-1,1-1
 35,Sun,2018-11-18,Botafogo-RJ,Internacional,1-0,1-0
 35,Sun,2018-11-18,Sport Recife,Flamengo,0-1,0-0
@@ -358,7 +358,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Thu,2018-11-22,Vasco da Gama,São Paulo,2-0,1-0
 36,Thu,2018-11-22,Chapecoense,Sport Recife,2-1,2-0
 36,Thu,2018-11-22,Bahia,Fluminense,2-0,0-0
-36,Thu,2018-11-22,Ceará,Paraná Clube,1-0,1-0
+36,Thu,2018-11-22,Ceará,Paraná,1-0,1-0
 37,Sat,2018-11-24,Santos,Atlético-MG,3-2,3-1
 37,Sun,2018-11-25,Cruzeiro,Flamengo,0-2,0-1
 37,Sun,2018-11-25,Athletico-PR,Ceará,2-2,0-1
@@ -367,11 +367,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 37,Sun,2018-11-25,América-MG,Bahia,1-0,0-0
 37,Sun,2018-11-25,Corinthians,Chapecoense,0-0,
 37,Sun,2018-11-25,Internacional,Fluminense,2-0,0-0
-37,Mon,2018-11-26,Botafogo-RJ,Paraná Clube,2-1,1-0
+37,Mon,2018-11-26,Botafogo-RJ,Paraná,2-1,1-0
 37,Mon,2018-11-26,São Paulo,Sport Recife,0-0,
 38,Sat,2018-12-01,Atlético-MG,Botafogo-RJ,1-0,1-0
 38,Sat,2018-12-01,Flamengo,Athletico-PR,1-2,1-0
-38,Sun,2018-12-02,Paraná Clube,Internacional,1-1,0-0
+38,Sun,2018-12-02,Paraná,Internacional,1-1,0-0
 38,Sun,2018-12-02,Chapecoense,São Paulo,1-0,0-0
 38,Sun,2018-12-02,Bahia,Cruzeiro,0-0,
 38,Sun,2018-12-02,Fluminense,América-MG,1-0,1-0
