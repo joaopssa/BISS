@@ -1,4 +1,4 @@
-# Backend/scraper/updates/atualizar_jogos_v3.py
+# Backend/scraper/updates/atualizar_jogos_full.py
 # ------------------------------------------------------------
 # ✅ Nomes intuitivos
 # ✅ Removido 100% Asian Handicap
@@ -7,6 +7,10 @@
 # ✅ Auto-corrige CSV local malformado (regrava normalizado)
 # ✅ Brasil BRA.csv: detecção automática de separador e atualização por ano
 # ✅ Não derruba Matchday se já existe
+#
+# ✅ FIX 1 (CRÍTICO): NÃO apaga jogos futuros (sem FT/HT/odds/stats)
+# ✅ FIX 2 (CRÍTICO): Dedup inteligente mantém a linha mais completa e mescla campos
+# ✅ FIX 3 (OPCIONAL/RECOMENDADO): Normaliza Matchday para não ficar 1.0
 # ------------------------------------------------------------
 
 import pandas as pd
@@ -93,22 +97,22 @@ TEAM_MAP = {
     "Mirassol FC": "Mirassol",
     "Juventude": "Juventude-RS",
     "Palmeiras": "Palmeiras",
-    "Athletico-PR":"Athletico-PR",
+    "Athletico-PR": "Athletico-PR",
     "Coritiba": "Coritiba",
     "Remo": "Remo",
     "Chapecoense-SC": "Chapecoense",
     "America MG": "América-MG",
     "Atletico GO": "Atlético-GO",
     "AC Goianiense": "Atlético-GO",
-    "Avai":"Avaí",
-    "Parana":"Paraná",
-    "Paraná Clube":"Paraná",
-    "CSA AL":"CSA",
-    "Goias":"Goiás",
-    "Juventude-RS":"Juventude-RS",
-    "Cuiaba":"Cuiabá",
-    "Criciuma":"Criciúma",
-    "Criciúma EC":"Criciúma",
+    "Avai": "Avaí",
+    "Parana": "Paraná",
+    "Paraná Clube": "Paraná",
+    "CSA AL": "CSA",
+    "Goias": "Goiás",
+    "Juventude-RS": "Juventude-RS",
+    "Cuiaba": "Cuiabá",
+    "Criciuma": "Criciúma",
+    "Criciúma EC": "Criciúma",
 
     # --- PREMIER LEAGUE ---
     "Man City": "Manchester City",
@@ -130,34 +134,34 @@ TEAM_MAP = {
     "Fulham": "Fulham FC",
     "Burnley": "Burnley",
     "Sunderland": "Sunderland",
-    "Leeds":"Leeds United",
-    "Charlton":"Charlton Athletic",
-    "Southampton":"Southampton FC",
-    "Derby":"Derby County",
-    "Coventry":"Coventry City",
-    "Middlesbrough":"Middlesbrough FC",
-    "Ipswich":"Ipswich Town",
-    "Ipswich Town FC":"Ipswich Town",
-    "Bolton":"Bolton Wanderers",
-    "Bradford":"Bradford City",
-    "Blackburn":"Blackburn Rovers",
-    "West Brom":"West Bromwich Albion",
-    "Birmingham City":"Birmingham",
-    "Portsmouth":"Portsmouth FC",
-    "Norwich":"Norwich City",
-    "Wigan Athletic":"Wigan",
-    "Watford FC":"Watford",
-    "Reading FC":"Reading",
-    "Hull":"Hull City",
+    "Leeds": "Leeds United",
+    "Charlton": "Charlton Athletic",
+    "Southampton": "Southampton FC",
+    "Derby": "Derby County",
+    "Coventry": "Coventry City",
+    "Middlesbrough": "Middlesbrough FC",
+    "Ipswich": "Ipswich Town",
+    "Ipswich Town FC": "Ipswich Town",
+    "Bolton": "Bolton Wanderers",
+    "Bradford": "Bradford City",
+    "Blackburn": "Blackburn Rovers",
+    "West Brom": "West Bromwich Albion",
+    "Birmingham City": "Birmingham",
+    "Portsmouth": "Portsmouth FC",
+    "Norwich": "Norwich City",
+    "Wigan Athletic": "Wigan",
+    "Watford FC": "Watford",
+    "Reading FC": "Reading",
+    "Hull": "Hull City",
     "Stoke": "Stoke City",
-    "Blackpool":"Blackpool FC",
-    "QPR":"Queens Park Rangers",
-    "Swansea":"Swansea City",
-    "Huddersfield":"Huddersfield Town",
-    "Cardiff":"Cardiff City",
-    "Sheffield United FC":"Sheffield United",
-    "Luton":"Luton Town",
-    "Luton Town FC":"Luton Town",
+    "Blackpool": "Blackpool FC",
+    "QPR": "Queens Park Rangers",
+    "Swansea": "Swansea City",
+    "Huddersfield": "Huddersfield Town",
+    "Cardiff": "Cardiff City",
+    "Sheffield United FC": "Sheffield United",
+    "Luton": "Luton Town",
+    "Luton Town FC": "Luton Town",
 
     # --- LA LIGA ---
     "Real Madrid": "Real Madrid",
@@ -167,7 +171,7 @@ TEAM_MAP = {
     "Sociedad": "Real Sociedad",
     "Betis": "Bétis",
     "Real Betis": "Bétis",
-    "Real Betis Balompié":"Bétis",
+    "Real Betis Balompié": "Bétis",
     "Villarreal": "Villarreal CF",
     "Valencia": "Valencia",
     "Sevilla": "Sevilha FC",
@@ -183,22 +187,22 @@ TEAM_MAP = {
     "CD Leganés": "Leganés",
     "Oviedo": "Real Oviedo",
     "Levante": "Levante",
-    "Elche":"Elche",
-    "Malaga":"Málaga CF",
-    "La Coruna":"Deportivo La Coruña",
-    "Granada CF":"Granada",
-    "Zaragoza":"Real Zaragoza",
-    "Almeria":"UD Almería",
-    "Real Valladolid":"Valladolid",
+    "Elche": "Elche",
+    "Malaga": "Málaga CF",
+    "La Coruna": "Deportivo La Coruña",
+    "Granada CF": "Granada",
+    "Zaragoza": "Real Zaragoza",
+    "Almeria": "UD Almería",
+    "Real Valladolid": "Valladolid",
     "Real Valladolid CF": "Valladolid",
-    "SD Eibar":"Eibar",
-    "Cordoba":"Cordoba CF",
-    "Córdoba CF":"Cordoba CF",
-    "Sp Gijon":"Sporting Gijón",
-    "Leganes":"Leganés",
-    "SD Huesca":"Huesca",
-    "Cadiz":"Cádiz CF",
-    "Deportivo Alaves":"Deportivo Alavés",
+    "SD Eibar": "Eibar",
+    "Cordoba": "Cordoba CF",
+    "Córdoba CF": "Cordoba CF",
+    "Sp Gijon": "Sporting Gijón",
+    "Leganes": "Leganés",
+    "SD Huesca": "Huesca",
+    "Cadiz": "Cádiz CF",
+    "Deportivo Alaves": "Deportivo Alavés",
 
     # --- SERIE A ---
     "Inter": "Inter de Milão",
@@ -220,35 +224,35 @@ TEAM_MAP = {
     "Verona": "Hellas Verona",
     "FC Empoli": "FC Empoli",
     "Empoli FC": "FC Empoli",
-    "Empoli":"FC Empoli",
+    "Empoli": "FC Empoli",
     "AC Monza": "AC Monza",
     "Venezia FC": "Venezia",
     "Cagliari Calcio": "Cagliari",
-    "Cremonese":"US Cremonese",
-    "Pisa":"AC Pisa 1909",
-    "Sassuolo":"Sassuolo", 
-    "Sampdoria":"Sampdoria",
-    "AS Livorno":"US Livorno 1915",
-    "Livorno":"US Livorno 1915",
-    "Chievo Verona":"AC Chievo Verona",
-    "Chievo":"AC Chievo Verona",
-    "Calcio Catania":"Catania",
-    "AC Cesena":"Cesena",
-    "US Palermo":"US Palermo",
-    "Palermo":"US Palermo",
-    "Frosinone Calcio":"Frosinone",
+    "Cremonese": "US Cremonese",
+    "Pisa": "AC Pisa 1909",
+    "Sassuolo": "Sassuolo",
+    "Sampdoria": "Sampdoria",
+    "AS Livorno": "US Livorno 1915",
+    "Livorno": "US Livorno 1915",
+    "Chievo Verona": "AC Chievo Verona",
+    "Chievo": "AC Chievo Verona",
+    "Calcio Catania": "Catania",
+    "AC Cesena": "Cesena",
+    "US Palermo": "US Palermo",
+    "Palermo": "US Palermo",
+    "Frosinone Calcio": "Frosinone",
     "Carpi": "Carpi FC",
-    "Crotone":"FC Crotone",
-    "Pescara":"Pescara Calcio",
-    "Delfino Pescara":"Pescara Calcio",
-    "Spal":"SPAL 2013 Ferrara",
-    "Benevento":"Benevento Calcio",
-    "Brescia Calcio":"Brescia",
-    "UC Sampdoria":"Sampdoria",
-    "US Salernitana 1919":"Salernitana",
-    "Spezia Calcio":"Spezia",
-    "Monza":"AC Monza",
-    
+    "Crotone": "FC Crotone",
+    "Pescara": "Pescara Calcio",
+    "Delfino Pescara": "Pescara Calcio",
+    "Spal": "SPAL 2013 Ferrara",
+    "Benevento": "Benevento Calcio",
+    "Brescia Calcio": "Brescia",
+    "UC Sampdoria": "Sampdoria",
+    "US Salernitana 1919": "Salernitana",
+    "Spezia Calcio": "Spezia",
+    "Monza": "AC Monza",
+
     # --- BUNDESLIGA ---
     "Bayern Munich": "Bayern de Munique",
     "Leverkusen": "Bayer Leverkusen",
@@ -269,33 +273,33 @@ TEAM_MAP = {
     "St Pauli": "FC St. Pauli",
     "VfL Bochum": "VfL Bochum",
     "Holstein Kiel": "Holstein Kiel",
-    "FC Koln":"1. FC Köln",
-    "FC Köln":"1. FC Köln",
-    "Hamburg":"Hamburgo",
-    "Hannover 96":"Hannover 96",
-    "Hannover":"Hannover 96",
-    "FC Kaiserslautern":"1. FC Kaiserslautern",
-    "Kaiserslautern":"1. FC Kaiserslautern",
+    "FC Koln": "1. FC Köln",
+    "FC Köln": "1. FC Köln",
+    "Hamburg": "Hamburgo",
+    "Hannover 96": "Hannover 96",
+    "Hannover": "Hannover 96",
+    "FC Kaiserslautern": "1. FC Kaiserslautern",
+    "Kaiserslautern": "1. FC Kaiserslautern",
     "Nurnberg": "1. FC Nurnberg",
-    "FC Nürnberg":"1. FC Nurnberg",
-    "FC Schalke 04":"FC Schalke 04",
-    "Schalke 04":"FC Schalke 04",
-    "Hertha":"Hertha Berlin",
-    "Hertha BSC":"Hertha Berlin",
-    "Fortuna Düsseldorf":"Fortuna Dusseldorf",
-    "Greuther Furth":"SpVgg Greuther Furth",
-    "SpVgg Greuther Fürth":"SpVgg Greuther Furth",
-    "SpVgg Greuther Fürth 1903":"SpVgg Greuther Furth",
-    "Braunschweig":"Eintracht Braunschweig",
-    "SC Paderborn 07":"SC Paderborn 07",
-    "Paderborn":"SC Paderborn 07",
-    "SV Darmstadt 98":"SV Darmstadt 98",
-    "Darmstadt":"SV Darmstadt 98",
-    "Ingolstadt":"FC Ingolstadt 04",
-    "Arminia Bielefeld":"Arminia Bielefeld",
-    "Bielefeld":"Arminia Bielefeld",
-    "Bochum":"VfL Bochum",
-    "VfL Bochum 1848":"VfL Bochum",
+    "FC Nürnberg": "1. FC Nurnberg",
+    "FC Schalke 04": "FC Schalke 04",
+    "Schalke 04": "FC Schalke 04",
+    "Hertha": "Hertha Berlin",
+    "Hertha BSC": "Hertha Berlin",
+    "Fortuna Düsseldorf": "Fortuna Dusseldorf",
+    "Greuther Furth": "SpVgg Greuther Furth",
+    "SpVgg Greuther Fürth": "SpVgg Greuther Furth",
+    "SpVgg Greuther Fürth 1903": "SpVgg Greuther Furth",
+    "Braunschweig": "Eintracht Braunschweig",
+    "SC Paderborn 07": "SC Paderborn 07",
+    "Paderborn": "SC Paderborn 07",
+    "SV Darmstadt 98": "SV Darmstadt 98",
+    "Darmstadt": "SV Darmstadt 98",
+    "Ingolstadt": "FC Ingolstadt 04",
+    "Arminia Bielefeld": "Arminia Bielefeld",
+    "Bielefeld": "Arminia Bielefeld",
+    "Bochum": "VfL Bochum",
+    "VfL Bochum 1848": "VfL Bochum",
 
     # --- LIGUE 1 ---
     "Marseille": "Olympique de Marseille",
@@ -319,17 +323,17 @@ TEAM_MAP = {
     "Stade de Reims": "Reims",
     "Bastia": "SC Bastia",
     "EA Guingamp": "Guingamp",
-    "AS Saint-Étienne":"Saint-Étienne",
-    "St Etienne":"Saint-Étienne",
-    "Évian Thonon Gaillard":"Evian Thonon Gaillard",
-    "SM Caen":"Caen",
-    "Girondins Bordeaux":"Bordeaux",
-    "Amiens":"Amiens SC",
-    "ESTAC Troyes":"Troyes",
-    "Dijon":"Dijon FCO",
-    "Nîmes Olympique":"Nimes",
-    "Clermont Foot 63":"Clermont",
-    "Ajaccio":"AC Ajaccio",
+    "AS Saint-Étienne": "Saint-Étienne",
+    "St Etienne": "Saint-Étienne",
+    "Évian Thonon Gaillard": "Evian Thonon Gaillard",
+    "SM Caen": "Caen",
+    "Girondins Bordeaux": "Bordeaux",
+    "Amiens": "Amiens SC",
+    "ESTAC Troyes": "Troyes",
+    "Dijon": "Dijon FCO",
+    "Nîmes Olympique": "Nimes",
+    "Clermont Foot 63": "Clermont",
+    "Ajaccio": "AC Ajaccio",
 }
 
 # ================= HELPERS =================
@@ -355,26 +359,20 @@ def compute_matchday_from_counts(df: pd.DataFrame) -> pd.DataFrame:
     Calcula Matchday quando a fonte não fornece MW.
     Estratégia: ordenar por Date e usar 'games played' por time:
       Matchday = max(jogos_do_home, jogos_do_away) + 1
-
-    ✅ Funciona muito bem para ligas (E0, D1 etc.)
-    ⚠️ Pode ficar levemente imperfeito em casos de jogos muito adiados,
-       mas é MUITO melhor do que deixar tudo vazio.
     """
     if df.empty:
         return df
 
     out = df.copy()
 
-    # precisa de Date/Home/Away
     if "Date" not in out.columns or "Home" not in out.columns or "Away" not in out.columns:
         return out
 
     dt = pd.to_datetime(out["Date"], errors="coerce")
     out["_dt_sort"] = dt
-
     out = out.sort_values(["_dt_sort", "Home", "Away"], na_position="last").reset_index(drop=True)
 
-    gp = {}  # jogos já "contados" por time
+    gp = {}
     mds = []
 
     for _, r in out.iterrows():
@@ -388,7 +386,6 @@ def compute_matchday_from_counts(df: pd.DataFrame) -> pd.DataFrame:
     out["Matchday"] = mds
     out = out.drop(columns=["_dt_sort"], errors="ignore")
     return out
-
 
 def safe_int(x):
     try:
@@ -480,7 +477,6 @@ def read_local_csv_robust(file_path: str) -> pd.DataFrame:
 
     delim = _detect_delimiter(text)
     df = read_csv_robust_from_text(text, delimiter=delim)
-    # normaliza colunas
     df.columns = [str(c).strip() for c in df.columns]
     return df
 
@@ -488,11 +484,14 @@ SCORE_RE = re.compile(r"^\s*\d{1,2}\s*-\s*\d{1,2}\s*$")
 
 def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Remove linhas claramente quebradas:
+    ✅ (FIX) Remove APENAS linhas claramente quebradas.
+    ❌ NÃO remove jogos futuros (placar/odds/stats vazios é normal).
+
+    Remove:
     - Home/Away vazios
     - Home ou Away com cara de placar (ex: '2-2')
-    - Date inválida E Matchday inválida (sem chave)
-    - Linhas “super vazias” (sem gols, sem odds e sem FT/HT)
+    - Date inválida + Matchday inválida (sem chave), E Home/Away ruins
+    - Linhas com "colunas essenciais" vazias demais NÃO são removidas (para não apagar futuros)
     """
     if df.empty:
         return df
@@ -507,35 +506,9 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
             return False
         return bool(SCORE_RE.match(str(x).strip()))
 
-    def _is_emptyish(v):
-        return v is None or (isinstance(v, float) and pd.isna(v)) or str(v).strip() == ""
-
     # ✅ INICIALIZA "bad"
     bad = pd.Series([False] * len(out), index=out.index)
 
-    # --- regras de “linha super vazia” ---
-    if "FullTimeHomeGoals" in out.columns and "FullTimeAwayGoals" in out.columns:
-        core_goal_missing = out["FullTimeHomeGoals"].apply(_is_emptyish) & out["FullTimeAwayGoals"].apply(_is_emptyish)
-    else:
-        core_goal_missing = pd.Series([True] * len(out), index=out.index)
-
-    ft_missing = out["FullTime"].apply(_is_emptyish) if "FullTime" in out.columns else pd.Series([True]*len(out), index=out.index)
-    ht_missing = out["HalfTime"].apply(_is_emptyish) if "HalfTime" in out.columns else pd.Series([True]*len(out), index=out.index)
-
-    odd_cols = [
-        "PinnacleHomeOpen","PinnacleDrawOpen","PinnacleAwayOpen",
-        "AvgHomeOpen","AvgDrawOpen","AvgAwayOpen",
-        "Bet365HomeOpen","Bet365DrawOpen","Bet365AwayOpen"
-    ]
-    has_any_odd = pd.Series([False]*len(out), index=out.index)
-    for c in odd_cols:
-        if c in out.columns:
-            has_any_odd = has_any_odd | (~out[c].apply(_is_emptyish))
-
-    bad_super_empty = core_goal_missing & (~has_any_odd) & ft_missing & ht_missing
-    bad = bad | bad_super_empty
-
-    # --- Home/Away ---
     home = out["Home"] if "Home" in out.columns else pd.Series([None]*len(out), index=out.index)
     away = out["Away"] if "Away" in out.columns else pd.Series([None]*len(out), index=out.index)
 
@@ -557,10 +530,9 @@ def drop_invalid_rows(df: pd.DataFrame) -> pd.DataFrame:
     removed = int(bad.sum())
     if removed > 0:
         out = out.loc[~bad].copy()
-        print(f"   [Clean] removidas {removed} linhas inválidas do CSV local")
+        print(f"   [Clean] removidas {removed} linhas realmente inválidas (sem apagar jogos futuros)")
 
     return out
-
 
 # ================= FOOTBALL-DATA.CO.UK (mmz4281) =================
 
@@ -589,6 +561,7 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
         home_raw = row.get("HomeTeam")
         away_raw = row.get("AwayTeam")
 
+        # ✅ mantém futuros: só exige Date/Home/Away
         if date_str == "" or home_raw in [None, ""] or away_raw in [None, ""]:
             continue
 
@@ -683,16 +656,18 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
     if df.empty:
         return df
 
-    # ✅ Calcula Matchday e preenche apenas os NaN (resolve “parcialmente vazio”)
+    # ✅ Preenche Matchday apenas onde estiver vazio (não derruba MW real)
     computed = compute_matchday_from_counts(df)
     if "Matchday" in df.columns:
         df["Matchday"] = pd.to_numeric(df["Matchday"], errors="coerce")
-        df["Matchday"] = df["Matchday"].fillna(computed["Matchday"])
+        df["Matchday"] = df["Matchday"].fillna(pd.to_numeric(computed["Matchday"], errors="coerce"))
     else:
-        df["Matchday"] = computed["Matchday"]
+        df["Matchday"] = pd.to_numeric(computed["Matchday"], errors="coerce")
+
+    # ✅ (FIX 3) evita Matchday 1.0
+    df["Matchday"] = df["Matchday"].round(0).astype("Int64")
 
     return df
-
 
 # ================= BRAZIL (new/BRA.csv) =================
 
@@ -733,7 +708,11 @@ def parse_brazil_all_seasons(url: str, league_filter: str = "Serie A") -> pd.Dat
         try:
             dt = datetime.strptime(date_str, "%d/%m/%Y")
         except:
-            continue
+            # ✅ se vier em outro formato, tenta parse genérico
+            dt2 = pd.to_datetime(date_str, errors="coerce", dayfirst=True)
+            if pd.isna(dt2):
+                continue
+            dt = dt2.to_pydatetime()
 
         home = normalize_team(row.get("Home"))
         away = normalize_team(row.get("Away"))
@@ -818,51 +797,48 @@ def parse_brazil_all_seasons(url: str, league_filter: str = "Serie A") -> pd.Dat
     return out
 
 # ================= MERGE / UPDATE =================
+
 def _clean_text(v):
     if v is None:
         return None
     s = str(v).strip()
     if s == "" or s.lower() == "nan":
         return None
-    # remove lixo comum que quebra chave
     s = s.replace("\ufeff", "").strip()
-    s = re.sub(r'[")]+$', "", s)         # remove ) ou " no final
-    s = re.sub(r'^[("]+', "", s)         # remove ( ou " no começo
+    s = re.sub(r'[")]+$', "", s)
+    s = re.sub(r'^[("]+', "", s)
     s = s.strip()
     return s or None
-
 
 def _norm_date(v):
     """
     Normaliza para YYYY-MM-DD.
-    ✅ Entende:
+    Entende:
       - YYYY-MM-DD
       - DD/MM/YYYY e DD/MM/YY
       - strings com horário (timestamp)
-    ✅ NÃO retorna None se houver um texto de data válido mas fora do formato esperado.
     """
     s = _clean_text(v)
     if not s:
         return None
 
-    # já está ISO?
     if re.fullmatch(r"\d{4}-\d{2}-\d{2}", s):
         return s
 
-    # dd/mm/yyyy ou dd/mm/yy -> dayfirst=True
     if re.fullmatch(r"\d{1,2}/\d{1,2}/\d{2,4}", s):
         dt = pd.to_datetime(s, errors="coerce", dayfirst=True)
         if pd.isna(dt):
             return None
         return dt.strftime("%Y-%m-%d")
 
-    # fallback geral
     dt = pd.to_datetime(s, errors="coerce", dayfirst=False)
     if pd.isna(dt):
-        return None
+        # tentativa final: dayfirst True
+        dt2 = pd.to_datetime(s, errors="coerce", dayfirst=True)
+        if pd.isna(dt2):
+            return None
+        return dt2.strftime("%Y-%m-%d")
     return dt.strftime("%Y-%m-%d")
-
-
 
 def _row_completeness(row: pd.Series, cols) -> int:
     score = 0
@@ -877,45 +853,44 @@ def _row_completeness(row: pd.Series, cols) -> int:
         score += 1
     return score
 
-
 def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
     """
-    Remove duplicados por (Date, Home, Away, season_key), mantendo a melhor linha
-    e mesclando campos (primeiro valor não-vazio por coluna).
+    ✅ (FIX 2) Remove duplicados por jogo, mantendo a linha mais completa,
+    e mesclando campos (pega o primeiro valor não-vazio por coluna).
 
-    ✅ Preferência:
-    1) linha com Date válida
-    2) linha mais completa (mais campos preenchidos)
+    Chave:
+      - preferencial: (Home, Away, Date, season_key)
+      - fallback:     (Home, Away, Matchday, season_key) se Date inválida
+
+    Preferência:
+      1) linha com Date válida
+      2) linha mais completa (mais campos preenchidos)
     """
     if df.empty:
         return df
 
     df = df.copy()
-
-    # normaliza chave
-    df["_k_date"] = df["Date"].apply(_norm_date)
+    df["_k_date"] = df["Date"].apply(_norm_date) if "Date" in df.columns else None
     df["_k_home"] = df["Home"].apply(lambda x: normalize_key(_clean_text(x)))
     df["_k_away"] = df["Away"].apply(lambda x: normalize_key(_clean_text(x)))
     df["_k_season"] = season_key
 
-    # se Date não existe/ inválida, cai para Matchday
-    df["_k_md"] = df["Matchday"].apply(lambda x: _clean_text(x))
-    df["_k"] = df.apply(
-        lambda r: (r["_k_home"], r["_k_away"], r["_k_date"], r["_k_season"])
-        if r["_k_date"] else (r["_k_home"], r["_k_away"], r["_k_md"], r["_k_season"]),
-        axis=1
-    )
+    df["_k_md"] = df["Matchday"].apply(lambda x: _clean_text(x)) if "Matchday" in df.columns else None
 
-    # ✅ ordenação: primeiro quem tem Date, depois quem é mais completo
+    def _make_key(r):
+        if r.get("_k_date"):
+            return (r["_k_home"], r["_k_away"], r["_k_date"], r["_k_season"])
+        return (r["_k_home"], r["_k_away"], r.get("_k_md"), r["_k_season"])
+
+    df["_k"] = df.apply(_make_key, axis=1)
+
     df["_has_date"] = df["_k_date"].apply(lambda x: 1 if x else 0)
     df["_score"] = df.apply(lambda r: _row_completeness(r, TARGET_COLS), axis=1)
     df = df.sort_values(["_k", "_has_date", "_score"], ascending=[True, False, False])
 
-    # mescla por chave
     rows = []
     for _, g in df.groupby("_k", sort=False):
-        base = g.iloc[0].copy()  # preferida
-        # preenche buracos com as outras
+        base = g.iloc[0].copy()
         for _, rr in g.iloc[1:].iterrows():
             for col in TARGET_COLS:
                 bv = base.get(col, None)
@@ -923,23 +898,30 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
                     nv = rr.get(col, None)
                     if nv is None or (isinstance(nv, float) and pd.isna(nv)) or (isinstance(nv, str) and str(nv).strip() == ""):
                         continue
-                    # ✅ respeita regra: não derrubar Matchday existente
-                    if col == "Matchday" and bv not in [None, "", "nan", "NaN"]:
-                        continue
+                    # ✅ não derruba Matchday existente
+                    if col == "Matchday" and base.get("Matchday") not in [None, "", "nan", "NaN"]:
+                        if str(base.get("Matchday")).strip() != "":
+                            continue
                     base[col] = nv
         rows.append(base)
 
     out = pd.DataFrame(rows)
 
-    # limpa colunas auxiliares
+    # limpa auxiliares
     drop_aux = [c for c in out.columns if c.startswith("_k") or c in ["_score", "_has_date"]]
     out = out.drop(columns=drop_aux, errors="ignore")
 
-    # ✅ normaliza Date final SEM apagar: se não conseguir normalizar, mantém o valor original limpo
-    out["Date"] = out["Date"].apply(lambda x: _norm_date(x) or _clean_text(x))
+    # normaliza Date (sem apagar se não parsear)
+    if "Date" in out.columns:
+        out["Date"] = out["Date"].apply(lambda x: _norm_date(x) or _clean_text(x))
+
+    # ✅ (FIX 3) normaliza Matchday para não ficar 1.0
+    if "Matchday" in out.columns:
+        md_num = pd.to_numeric(out["Matchday"], errors="coerce")
+        if md_num.notna().any():
+            out["Matchday"] = md_num.round(0).astype("Int64")
 
     return out
-
 
 def make_match_key_date(row, season_key: str):
     home = normalize_key(_clean_text(row.get("Home")))
@@ -949,7 +931,6 @@ def make_match_key_date(row, season_key: str):
         return None
     return (home, away, date, season_key)
 
-
 def make_match_key_md(row, season_key: str):
     home = normalize_key(_clean_text(row.get("Home")))
     away = normalize_key(_clean_text(row.get("Away")))
@@ -957,7 +938,6 @@ def make_match_key_md(row, season_key: str):
     if not md:
         return None
     return (home, away, md, season_key)
-
 
 def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
     """
@@ -973,14 +953,12 @@ def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
 
         oldv = df_local.at[idx, col]
 
-        # ✅ não derruba Matchday já existente
         if col == "Matchday":
             if oldv not in [None, "", "nan", "NaN"] and str(oldv).strip() != "":
                 continue
 
         if oldv is None or (isinstance(oldv, float) and pd.isna(oldv)) or str(oldv).strip() == "" or str(oldv) != str(newv):
             df_local.at[idx, col] = newv
-
 
 def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, force_recompute_matchday: bool = False):
     df_new = ensure_cols(df_new, TARGET_COLS)
@@ -989,27 +967,27 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
         df_local = read_local_csv_robust(file_path)
         df_local = ensure_cols(df_local, TARGET_COLS)
 
-        # ✅ limpa sujeira antiga (linhas deslocadas/semântica quebrada)
-        df_local = drop_invalid_rows(df_local)
+        # ✅ limpeza segura (não mata futuros)
         before_n = len(df_local)
         df_local2 = drop_invalid_rows(df_local)
 
+        # se por algum motivo removesse MUITO (deveria remover bem pouco agora), protege:
         if before_n > 0 and len(df_local2) < before_n * 0.6:
-            print(f"   [Warn] limpeza removeu {before_n-len(df_local2)} de {before_n} linhas. Abortando limpeza/rewrite para evitar perda.")
-            # mantém o original para não “matar” a temporada inteira
+            print(f"   [Warn] limpeza removeu {before_n-len(df_local2)} de {before_n} linhas. Abortando rewrite para evitar perda.")
         else:
             df_local = df_local2
-        # ✅ dedup do CSV local antes de indexar
+
+        # ✅ dedup local ANTES do merge
         df_local = dedup_matches(df_local, season_key)
 
-        # ✅ regrava já “limpo”
+        # ✅ regrava normalizado (corrige malformações antigas)
         df_local.to_csv(file_path, index=False, encoding="utf-8")
     else:
         df_local = pd.DataFrame(columns=TARGET_COLS)
 
     df_local = ensure_cols(df_local, TARGET_COLS)
 
-    # ✅ 2) index duplo (Date e Matchday) para casar mesmo se Date vier vazia/zoada
+    # index duplo (Date e Matchday)
     local_index_date = {}
     local_index_md = {}
 
@@ -1032,9 +1010,7 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
         if kd and kd in local_index_date:
             idx = local_index_date[kd]
         elif (kd is None) and km and km in local_index_md:
-            # só cai aqui se o NOVO não tem date (bem raro no FD-UK)
             idx = local_index_md[km]
-
 
         if idx is not None:
             before = df_local.loc[idx].copy()
@@ -1045,17 +1021,19 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
             df_local = pd.concat([df_local, pd.DataFrame([rnew])], ignore_index=True)
             added += 1
 
-    # ✅ 3) dedup de novo depois do merge (casos sujos / duplicados residuais)
+    # ✅ dedup final (resolve PL 2024_25 duplicada + escolhe linha mais completa)
     df_local = dedup_matches(df_local, season_key)
+
+    # ✅ limpeza segura final (não remove futuros)
     df_local = drop_invalid_rows(df_local)
 
-    # ✅ 4) ordenar por Matchday (quando existir) e depois por Date
+    # ordenar
     if "Matchday" in df_local.columns:
         df_local["_md_sort"] = pd.to_numeric(df_local["Matchday"], errors="coerce")
     else:
         df_local["_md_sort"] = None
 
-    df_local["_md_sort"] = df_local["_md_sort"].fillna(9999)  # sem matchday vai pro fim
+    df_local["_md_sort"] = df_local["_md_sort"].fillna(9999)
 
     if "Date" in df_local.columns:
         df_local["_date_sort"] = pd.to_datetime(df_local["Date"], errors="coerce")
@@ -1066,25 +1044,21 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str, forc
         dt = pd.to_datetime(df_local["Date"], errors="coerce")
         mask = df_local["Day"].isna() | (df_local["Day"].astype(str).str.strip() == "")
         df_local.loc[mask & dt.notna(), "Day"] = dt[mask & dt.notna()].dt.day_name().str[:3]
-        # vai ficar Mon/Tue/... em inglês; se quiser pt-BR eu adapto
 
-    # ✅ agrupa naturalmente por Matchday e ordena dentro
     df_local = df_local.sort_values(
         ["_md_sort", "_date_sort", "Home", "Away"],
         ascending=[True, True, True, True],
         na_position="last"
     ).drop(columns=["_md_sort", "_date_sort"], errors="ignore")
 
-    # ✅ opção: recomputa Matchday no arquivo final (ideal para Brasil)
+    # opção: recomputa Matchday no arquivo final (ideal para Brasil)
     if force_recompute_matchday:
         df_local["Date"] = df_local["Date"].apply(_norm_date)
         df_local = compute_matchday_from_counts(df_local)
-        df_local["Matchday"] = pd.to_numeric(df_local["Matchday"], errors="coerce").astype("Int64")
-
+        df_local["Matchday"] = pd.to_numeric(df_local["Matchday"], errors="coerce").round(0).astype("Int64")
 
     df_local.to_csv(file_path, index=False, encoding="utf-8")
     print(f"   [Sucesso] {updated} jogos atualizados, {added} novos adicionados. -> {os.path.basename(file_path)}")
-
 
 # ================= FILENAME HELPERS =================
 
@@ -1154,13 +1128,11 @@ def update_league_brasil(config: dict):
 
         df_year = df_all[df_all["__Season"] == str(year)].copy()
         df_year = df_year.drop(columns=["__Season"], errors="ignore")
+
         # ✅ Brasil: gera Matchday automaticamente (BRA.csv não fornece)
-        df_year = df_year.copy()
         df_year["Date"] = df_year["Date"].apply(_norm_date)
         df_year = compute_matchday_from_counts(df_year)
-
-        # força Matchday a ficar “limpo” (1..38) como número
-        df_year["Matchday"] = pd.to_numeric(df_year["Matchday"], errors="coerce").astype("Int64")
+        df_year["Matchday"] = pd.to_numeric(df_year["Matchday"], errors="coerce").round(0).astype("Int64")
 
         if df_year.empty:
             continue
@@ -1173,8 +1145,11 @@ def update_league_brasil(config: dict):
         last_year = max([int(x) for x in df_all["__Season"].dropna().unique()])
         df_year = df_all[df_all["__Season"] == str(last_year)].copy()
         df_year = df_year.drop(columns=["__Season"], errors="ignore")
-        df_year = ensure_cols(df_year, TARGET_COLS)
+        df_year["Date"] = df_year["Date"].apply(_norm_date)
+        df_year = compute_matchday_from_counts(df_year)
+        df_year["Matchday"] = pd.to_numeric(df_year["Matchday"], errors="coerce").round(0).astype("Int64")
 
+        df_year = ensure_cols(df_year, TARGET_COLS)
         out_name = f"brasileirao_{last_year}.csv"
         update_csv_merge(os.path.join(folder_path, out_name), df_year, season_key=str(last_year), force_recompute_matchday=True)
 
