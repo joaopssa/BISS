@@ -1,381 +1,381 @@
-Matchday,Date,Home,Away,FullTime,HalfTime
-1,2015-08-21,Málaga CF,Sevilha FC,0-0,
-1,2015-08-22,Espanyol,Getafe CF,1-0,1-0
-1,2015-08-22,Deportivo La Coruña,Real Sociedad,0-0,
-1,2015-08-22,Atlético de Madrid,Las Palmas,1-0,1-0
-1,2015-08-22,Rayo Vallecano,Valencia,0-0,
-1,2015-08-23,Athletic Bilbao,Barcelona,0-1,0-0
-1,2015-08-23,Sporting Gijón,Real Madrid,0-0,
-1,2015-08-23,Levante,Celta de Vigo,1-2,0-1
-1,2015-08-23,Bétis,Villarreal CF,1-1,0-1
-1,2015-08-24,Granada,Eibar,1-3,0-2
-2,2015-08-28,Villarreal CF,Espanyol,3-1,0-1
-2,2015-08-29,Real Sociedad,Sporting Gijón,0-0,
-2,2015-08-29,Barcelona,Málaga CF,1-0,0-0
-2,2015-08-29,Celta de Vigo,Rayo Vallecano,3-0,1-0
-2,2015-08-29,Real Madrid,Bétis,5-0,2-0
-2,2015-08-30,Eibar,Athletic Bilbao,2-0,1-0
-2,2015-08-30,Sevilha FC,Atlético de Madrid,0-3,0-1
-2,2015-08-30,Valencia,Deportivo La Coruña,1-1,1-1
-2,2015-08-30,Las Palmas,Levante,0-0,
-2,2015-08-30,Getafe CF,Granada,1-2,0-2
-3,2015-09-11,Levante,Sevilha FC,1-1,0-1
-3,2015-09-12,Espanyol,Real Madrid,0-6,0-4
-3,2015-09-12,Sporting Gijón,Valencia,0-1,0-0
-3,2015-09-12,Atlético de Madrid,Barcelona,1-2,0-0
-3,2015-09-12,Bétis,Real Sociedad,1-0,1-0
-3,2015-09-13,Granada,Villarreal CF,1-3,0-0
-3,2015-09-13,Athletic Bilbao,Getafe CF,3-1,2-0
-3,2015-09-13,Celta de Vigo,Las Palmas,3-3,2-1
-3,2015-09-13,Málaga CF,Eibar,0-0,
-3,2015-09-14,Rayo Vallecano,Deportivo La Coruña,1-3,1-2
-4,2015-09-18,Getafe CF,Málaga CF,1-0,1-0
-4,2015-09-19,Real Madrid,Granada,1-0,0-0
-4,2015-09-19,Valencia,Bétis,0-0,
-4,2015-09-19,Eibar,Atlético de Madrid,0-2,0-0
-4,2015-09-19,Real Sociedad,Espanyol,2-3,1-1
-4,2015-09-20,Sevilha FC,Celta de Vigo,1-2,0-2
-4,2015-09-20,Deportivo La Coruña,Sporting Gijón,2-3,2-3
-4,2015-09-20,Villarreal CF,Athletic Bilbao,3-1,1-0
-4,2015-09-20,Las Palmas,Rayo Vallecano,0-1,0-1
-4,2015-09-20,Barcelona,Levante,4-1,0-0
-5,2015-09-22,Atlético de Madrid,Getafe CF,2-0,1-0
-5,2015-09-22,Espanyol,Valencia,1-0,1-0
-5,2015-09-22,Granada,Real Sociedad,0-3,0-2
-5,2015-09-23,Celta de Vigo,Barcelona,4-1,2-0
-5,2015-09-23,Levante,Eibar,2-2,0-1
-5,2015-09-23,Rayo Vallecano,Sporting Gijón,2-1,1-0
-5,2015-09-23,Athletic Bilbao,Real Madrid,1-2,0-1
-5,2015-09-23,Las Palmas,Sevilha FC,2-0,1-0
-5,2015-09-23,Málaga CF,Villarreal CF,0-1,0-0
-5,2015-09-24,Bétis,Deportivo La Coruña,1-2,0-0
-6,2015-09-25,Valencia,Granada,1-0,1-0
-6,2015-09-26,Barcelona,Las Palmas,2-1,1-0
-6,2015-09-26,Real Madrid,Málaga CF,0-0,
-6,2015-09-26,Sevilha FC,Rayo Vallecano,3-2,2-0
-6,2015-09-26,Villarreal CF,Atlético de Madrid,1-0,1-0
-6,2015-09-26,Eibar,Celta de Vigo,1-1,1-0
-6,2015-09-27,Sporting Gijón,Bétis,1-2,1-0
-6,2015-09-27,Deportivo La Coruña,Espanyol,3-0,2-0
-6,2015-09-27,Getafe CF,Levante,3-0,0-0
-6,2015-09-27,Real Sociedad,Athletic Bilbao,0-0,
-7,2015-10-02,Celta de Vigo,Getafe CF,0-0,
-7,2015-10-03,Sevilha FC,Barcelona,2-1,0-0
-7,2015-10-03,Granada,Deportivo La Coruña,1-1,0-1
-7,2015-10-03,Espanyol,Sporting Gijón,1-2,0-1
-7,2015-10-03,Las Palmas,Eibar,0-2,0-1
-7,2015-10-03,Málaga CF,Real Sociedad,3-1,2-1
-7,2015-10-04,Rayo Vallecano,Bétis,0-2,0-1
-7,2015-10-04,Athletic Bilbao,Valencia,3-1,1-1
-7,2015-10-04,Levante,Villarreal CF,1-0,0-0
-7,2015-10-04,Atlético de Madrid,Real Madrid,1-1,0-1
-8,2015-10-17,Real Madrid,Levante,3-0,2-0
-8,2015-10-17,Eibar,Sevilha FC,1-1,1-0
-8,2015-10-17,Barcelona,Rayo Vallecano,5-2,2-1
-8,2015-10-17,Valencia,Málaga CF,3-0,2-0
-8,2015-10-17,Bétis,Espanyol,1-3,0-1
-8,2015-10-18,Villarreal CF,Celta de Vigo,1-2,0-1
-8,2015-10-18,Real Sociedad,Atlético de Madrid,0-2,0-1
-8,2015-10-18,Getafe CF,Las Palmas,4-0,2-0
-8,2015-10-18,Deportivo La Coruña,Athletic Bilbao,2-2,0-1
-8,2015-10-19,Sporting Gijón,Granada,3-3,1-2
-9,2015-10-23,Rayo Vallecano,Espanyol,3-0,1-0
-9,2015-10-24,Celta de Vigo,Real Madrid,1-3,0-2
-9,2015-10-24,Granada,Bétis,1-1,1-1
-9,2015-10-24,Sevilha FC,Getafe CF,5-0,2-0
-9,2015-10-24,Málaga CF,Deportivo La Coruña,2-0,0-0
-9,2015-10-25,Levante,Real Sociedad,0-4,0-2
-9,2015-10-25,Las Palmas,Villarreal CF,0-0,
-9,2015-10-25,Barcelona,Eibar,3-1,1-1
-9,2015-10-25,Atlético de Madrid,Valencia,2-1,2-0
-9,2015-10-26,Athletic Bilbao,Sporting Gijón,3-0,2-0
-10,2015-10-30,Deportivo La Coruña,Atlético de Madrid,1-1,0-1
-10,2015-10-31,Real Madrid,Las Palmas,3-1,3-1
-10,2015-10-31,Villarreal CF,Sevilha FC,2-1,1-0
-10,2015-10-31,Valencia,Levante,3-0,0-0
-10,2015-10-31,Getafe CF,Barcelona,0-2,0-1
-10,2015-10-31,Real Sociedad,Celta de Vigo,2-3,2-1
-10,2015-11-01,Eibar,Rayo Vallecano,1-0,1-0
-10,2015-11-01,Espanyol,Granada,1-1,0-0
-10,2015-11-01,Sporting Gijón,Málaga CF,1-0,1-0
-10,2015-11-01,Bétis,Athletic Bilbao,1-3,0-2
-11,2015-11-06,Las Palmas,Real Sociedad,2-0,1-0
-11,2015-11-07,Celta de Vigo,Valencia,1-5,1-2
-11,2015-11-07,Levante,Deportivo La Coruña,1-1,0-1
-11,2015-11-07,Eibar,Getafe CF,3-1,2-1
-11,2015-11-07,Rayo Vallecano,Granada,2-1,2-0
-11,2015-11-07,Málaga CF,Bétis,0-1,0-0
-11,2015-11-08,Athletic Bilbao,Espanyol,2-1,1-0
-11,2015-11-08,Barcelona,Villarreal CF,3-0,0-0
-11,2015-11-08,Atlético de Madrid,Sporting Gijón,1-0,0-0
-11,2015-11-08,Sevilha FC,Real Madrid,3-2,1-1
-12,2015-11-21,Real Sociedad,Sevilha FC,2-0,0-0
-12,2015-11-21,Real Madrid,Barcelona,0-4,0-2
-12,2015-11-21,Espanyol,Málaga CF,2-0,2-0
-12,2015-11-21,Valencia,Las Palmas,1-1,1-0
-12,2015-11-21,Deportivo La Coruña,Celta de Vigo,2-0,1-0
-12,2015-11-22,Sporting Gijón,Levante,0-3,0-3
-12,2015-11-22,Villarreal CF,Eibar,1-1,0-1
-12,2015-11-22,Granada,Athletic Bilbao,2-0,1-0
-12,2015-11-22,Bétis,Atlético de Madrid,0-1,0-1
-12,2015-11-23,Getafe CF,Rayo Vallecano,1-1,0-0
-13,2015-11-27,Levante,Bétis,0-1,0-1
-13,2015-11-28,Barcelona,Real Sociedad,4-0,2-0
-13,2015-11-28,Atlético de Madrid,Espanyol,1-0,1-0
-13,2015-11-28,Málaga CF,Granada,2-2,1-0
-13,2015-11-28,Las Palmas,Deportivo La Coruña,0-2,0-1
-13,2015-11-28,Celta de Vigo,Sporting Gijón,2-1,1-0
-13,2015-11-29,Getafe CF,Villarreal CF,2-0,1-0
-13,2015-11-29,Eibar,Real Madrid,0-2,0-1
-13,2015-11-29,Rayo Vallecano,Athletic Bilbao,0-3,0-2
-13,2015-11-29,Sevilha FC,Valencia,1-0,0-0
-14,2015-12-05,Real Madrid,Getafe CF,4-1,4-0
-14,2015-12-05,Granada,Atlético de Madrid,0-2,0-1
-14,2015-12-05,Valencia,Barcelona,1-1,0-0
-14,2015-12-05,Deportivo La Coruña,Sevilha FC,1-1,1-0
-14,2015-12-05,Bétis,Celta de Vigo,1-1,0-1
-14,2015-12-06,Real Sociedad,Eibar,2-1,1-1
-14,2015-12-06,Villarreal CF,Rayo Vallecano,2-1,0-1
-14,2015-12-06,Sporting Gijón,Las Palmas,3-1,1-1
-14,2015-12-06,Athletic Bilbao,Málaga CF,0-0,
-14,2015-12-07,Espanyol,Levante,1-1,0-1
-15,2015-12-11,Getafe CF,Real Sociedad,1-1,0-0
-15,2015-12-12,Barcelona,Deportivo La Coruña,2-2,1-0
-15,2015-12-12,Celta de Vigo,Espanyol,1-0,1-0
-15,2015-12-12,Levante,Granada,1-2,0-0
-15,2015-12-12,Sevilha FC,Sporting Gijón,2-0,0-0
-15,2015-12-12,Las Palmas,Bétis,1-0,0-0
-15,2015-12-13,Rayo Vallecano,Málaga CF,1-2,1-0
-15,2015-12-13,Eibar,Valencia,1-1,1-0
-15,2015-12-13,Atlético de Madrid,Athletic Bilbao,2-1,1-1
-15,2015-12-13,Villarreal CF,Real Madrid,1-0,1-0
-16,2015-12-19,Valencia,Getafe CF,2-2,2-2
-16,2015-12-19,Espanyol,Las Palmas,1-0,0-0
-16,2015-12-19,Bétis,Sevilha FC,0-0,
-16,2015-12-19,Deportivo La Coruña,Eibar,2-0,1-0
-16,2015-12-20,Real Madrid,Rayo Vallecano,10-2,4-2
-16,2015-12-20,Real Sociedad,Villarreal CF,0-2,0-1
-16,2015-12-20,Granada,Celta de Vigo,0-2,0-2
-16,2015-12-20,Athletic Bilbao,Levante,2-0,0-0
-16,2015-12-20,Málaga CF,Atlético de Madrid,1-0,0-0
-16,2016-02-17,Sporting Gijón,Barcelona,1-3,1-2
-17,2015-12-30,Real Madrid,Real Sociedad,3-1,1-0
-17,2015-12-30,Levante,Málaga CF,0-1,0-0
-17,2015-12-30,Sevilha FC,Espanyol,2-0,2-0
-17,2015-12-30,Rayo Vallecano,Atlético de Madrid,0-2,0-0
-17,2015-12-30,Eibar,Sporting Gijón,2-0,0-0
-17,2015-12-30,Getafe CF,Deportivo La Coruña,0-0,
-17,2015-12-30,Barcelona,Bétis,4-0,2-0
-17,2015-12-30,Celta de Vigo,Athletic Bilbao,0-1,0-0
-17,2015-12-30,Las Palmas,Granada,4-1,1-0
-17,2015-12-31,Villarreal CF,Valencia,1-0,0-0
-18,2016-01-02,Espanyol,Barcelona,0-0,
-18,2016-01-02,Atlético de Madrid,Levante,1-0,0-0
-18,2016-01-02,Málaga CF,Celta de Vigo,2-0,2-0
-18,2016-01-03,Rayo Vallecano,Real Sociedad,2-2,1-1
-18,2016-01-03,Bétis,Eibar,0-4,0-2
-18,2016-01-03,Granada,Sevilha FC,2-1,2-1
-18,2016-01-03,Deportivo La Coruña,Villarreal CF,1-2,0-1
-18,2016-01-03,Athletic Bilbao,Las Palmas,2-2,1-0
-18,2016-01-03,Valencia,Real Madrid,2-2,1-1
-18,2016-01-04,Sporting Gijón,Getafe CF,1-2,1-0
-19,2016-01-09,Barcelona,Granada,4-0,2-0
-19,2016-01-09,Getafe CF,Bétis,1-0,0-0
-19,2016-01-09,Sevilha FC,Athletic Bilbao,2-0,1-0
-19,2016-01-09,Real Madrid,Deportivo La Coruña,5-0,2-0
-19,2016-01-09,Levante,Rayo Vallecano,2-1,0-0
-19,2016-01-10,Villarreal CF,Sporting Gijón,2-0,1-0
-19,2016-01-10,Real Sociedad,Valencia,2-0,0-0
-19,2016-01-10,Eibar,Espanyol,2-1,1-1
-19,2016-01-10,Las Palmas,Málaga CF,1-1,0-0
-19,2016-01-10,Celta de Vigo,Atlético de Madrid,0-2,0-0
-20,2016-01-16,Sevilha FC,Málaga CF,2-1,2-0
-20,2016-01-16,Celta de Vigo,Levante,4-3,2-0
-20,2016-01-16,Villarreal CF,Bétis,0-0,
-20,2016-01-16,Real Sociedad,Deportivo La Coruña,1-1,0-1
-20,2016-01-17,Valencia,Rayo Vallecano,2-2,0-1
-20,2016-01-17,Real Madrid,Sporting Gijón,5-1,5-0
-20,2016-01-17,Getafe CF,Espanyol,3-1,2-1
-20,2016-01-17,Las Palmas,Atlético de Madrid,0-3,0-1
-20,2016-01-17,Barcelona,Athletic Bilbao,6-0,2-0
-20,2016-01-18,Eibar,Granada,5-1,2-0
-21,2016-01-22,Sporting Gijón,Real Sociedad,5-1,3-1
-21,2016-01-23,Málaga CF,Barcelona,1-2,1-1
-21,2016-01-23,Espanyol,Villarreal CF,2-2,2-1
-21,2016-01-23,Granada,Getafe CF,3-2,2-0
-21,2016-01-23,Rayo Vallecano,Celta de Vigo,3-0,3-0
-21,2016-01-24,Athletic Bilbao,Eibar,5-2,3-1
-21,2016-01-24,Atlético de Madrid,Sevilha FC,0-0,
-21,2016-01-24,Deportivo La Coruña,Valencia,1-1,1-0
-21,2016-01-24,Bétis,Real Madrid,1-1,1-0
-21,2016-01-25,Levante,Las Palmas,3-2,1-0
-22,2016-01-30,Barcelona,Atlético de Madrid,2-1,2-1
-22,2016-01-30,Eibar,Málaga CF,1-2,0-1
-22,2016-01-30,Getafe CF,Athletic Bilbao,0-1,0-1
-22,2016-01-30,Villarreal CF,Granada,1-0,0-0
-22,2016-01-30,Real Sociedad,Bétis,2-1,2-0
-22,2016-01-31,Sevilha FC,Levante,3-1,1-0
-22,2016-01-31,Valencia,Sporting Gijón,0-1,0-0
-22,2016-01-31,Las Palmas,Celta de Vigo,2-1,1-1
-22,2016-01-31,Real Madrid,Espanyol,6-0,4-0
-22,2016-02-01,Deportivo La Coruña,Rayo Vallecano,2-2,1-2
-23,2016-02-05,Málaga CF,Getafe CF,3-0,3-0
-23,2016-02-06,Atlético de Madrid,Eibar,3-1,0-0
-23,2016-02-06,Rayo Vallecano,Las Palmas,2-0,1-0
-23,2016-02-06,Athletic Bilbao,Villarreal CF,0-0,
-23,2016-02-06,Sporting Gijón,Deportivo La Coruña,1-1,1-1
-23,2016-02-07,Levante,Barcelona,0-2,0-1
-23,2016-02-07,Bétis,Valencia,1-0,0-0
-23,2016-02-07,Celta de Vigo,Sevilha FC,1-1,0-1
-23,2016-02-07,Granada,Real Madrid,1-2,0-1
-23,2016-02-08,Espanyol,Real Sociedad,0-5,0-2
-24,2016-02-12,Sporting Gijón,Rayo Vallecano,2-2,2-1
-24,2016-02-13,Real Madrid,Athletic Bilbao,4-2,3-1
-24,2016-02-13,Villarreal CF,Málaga CF,1-0,1-0
-24,2016-02-13,Valencia,Espanyol,2-1,0-0
-24,2016-02-13,Deportivo La Coruña,Bétis,2-2,1-2
-24,2016-02-14,Real Sociedad,Granada,3-0,2-0
-24,2016-02-14,Sevilha FC,Las Palmas,2-0,0-0
-24,2016-02-14,Eibar,Levante,2-0,1-0
-24,2016-02-14,Getafe CF,Atlético de Madrid,0-1,0-1
-24,2016-02-14,Barcelona,Celta de Vigo,6-1,1-1
-25,2016-02-19,Levante,Getafe CF,3-0,2-0
-25,2016-02-20,Las Palmas,Barcelona,1-2,1-2
-25,2016-02-20,Espanyol,Deportivo La Coruña,1-0,0-0
-25,2016-02-20,Bétis,Sporting Gijón,1-1,0-0
-25,2016-02-20,Celta de Vigo,Eibar,3-2,2-0
-25,2016-02-21,Rayo Vallecano,Sevilha FC,2-2,1-2
-25,2016-02-21,Málaga CF,Real Madrid,1-1,0-1
-25,2016-02-21,Athletic Bilbao,Real Sociedad,0-1,0-1
-25,2016-02-21,Granada,Valencia,1-2,0-0
-25,2016-02-21,Atlético de Madrid,Villarreal CF,0-0,
-26,2016-02-26,Eibar,Las Palmas,0-1,0-1
-26,2016-02-27,Real Madrid,Atlético de Madrid,0-1,0-0
-26,2016-02-27,Getafe CF,Celta de Vigo,0-1,0-0
-26,2016-02-27,Sporting Gijón,Espanyol,2-4,1-1
-26,2016-02-27,Bétis,Rayo Vallecano,2-2,2-0
-26,2016-02-27,Real Sociedad,Málaga CF,1-1,0-0
-26,2016-02-28,Villarreal CF,Levante,3-0,2-0
-26,2016-02-28,Valencia,Athletic Bilbao,0-3,0-0
-26,2016-02-28,Deportivo La Coruña,Granada,0-1,0-1
-26,2016-02-28,Barcelona,Sevilha FC,2-1,1-1
-27,2016-03-01,Atlético de Madrid,Real Sociedad,3-0,1-0
-27,2016-03-01,Las Palmas,Getafe CF,4-0,2-0
-27,2016-03-02,Sevilha FC,Eibar,1-0,1-0
-27,2016-03-02,Celta de Vigo,Villarreal CF,0-0,
-27,2016-03-02,Málaga CF,Valencia,1-2,1-1
-27,2016-03-02,Athletic Bilbao,Deportivo La Coruña,4-1,2-0
-27,2016-03-02,Levante,Real Madrid,1-3,1-2
-27,2016-03-03,Granada,Sporting Gijón,2-0,0-0
-27,2016-03-03,Espanyol,Bétis,0-3,0-2
-27,2016-03-03,Rayo Vallecano,Barcelona,1-5,0-2
-28,2016-03-05,Real Madrid,Celta de Vigo,7-1,1-0
-28,2016-03-05,Villarreal CF,Las Palmas,0-1,0-1
-28,2016-03-05,Getafe CF,Sevilha FC,1-1,0-0
-28,2016-03-05,Deportivo La Coruña,Málaga CF,3-3,1-1
-28,2016-03-06,Bétis,Granada,2-0,0-0
-28,2016-03-06,Eibar,Barcelona,0-4,0-2
-28,2016-03-06,Real Sociedad,Levante,1-1,1-1
-28,2016-03-06,Sporting Gijón,Athletic Bilbao,0-2,0-1
-28,2016-03-06,Valencia,Atlético de Madrid,1-3,1-1
-28,2016-03-07,Espanyol,Rayo Vallecano,2-1,1-0
-29,2016-03-11,Málaga CF,Sporting Gijón,1-0,1-0
-29,2016-03-12,Barcelona,Getafe CF,6-0,4-0
-29,2016-03-12,Celta de Vigo,Real Sociedad,1-0,1-0
-29,2016-03-12,Atlético de Madrid,Deportivo La Coruña,3-0,1-0
-29,2016-03-12,Rayo Vallecano,Eibar,1-1,1-1
-29,2016-03-13,Levante,Valencia,1-0,0-0
-29,2016-03-13,Sevilha FC,Villarreal CF,4-2,1-2
-29,2016-03-13,Athletic Bilbao,Bétis,3-1,2-0
-29,2016-03-13,Las Palmas,Real Madrid,1-2,0-1
-29,2016-03-14,Granada,Espanyol,1-1,1-0
-30,2016-03-18,Getafe CF,Eibar,1-1,1-0
-30,2016-03-19,Sporting Gijón,Atlético de Madrid,2-1,0-1
-30,2016-03-19,Real Sociedad,Las Palmas,0-1,0-1
-30,2016-03-19,Granada,Rayo Vallecano,2-2,1-1
-30,2016-03-19,Deportivo La Coruña,Levante,2-1,1-0
-30,2016-03-19,Bétis,Málaga CF,0-1,0-0
-30,2016-03-20,Espanyol,Athletic Bilbao,2-1,0-1
-30,2016-03-20,Villarreal CF,Barcelona,2-2,0-2
-30,2016-03-20,Valencia,Celta de Vigo,0-2,0-0
-30,2016-03-20,Real Madrid,Sevilha FC,4-0,1-0
-31,2016-04-01,Rayo Vallecano,Getafe CF,2-0,1-0
-31,2016-04-02,Atlético de Madrid,Bétis,5-1,2-0
-31,2016-04-02,Las Palmas,Valencia,2-1,0-1
-31,2016-04-02,Barcelona,Real Madrid,1-2,0-0
-31,2016-04-02,Celta de Vigo,Deportivo La Coruña,1-1,1-1
-31,2016-04-03,Athletic Bilbao,Granada,1-1,1-0
-31,2016-04-03,Málaga CF,Espanyol,1-1,1-1
-31,2016-04-03,Eibar,Villarreal CF,1-2,1-1
-31,2016-04-03,Sevilha FC,Real Sociedad,1-2,0-2
-31,2016-04-04,Levante,Sporting Gijón,0-0,
-32,2016-04-08,Granada,Málaga CF,0-0,
-32,2016-04-09,Real Madrid,Eibar,4-0,4-0
-32,2016-04-09,Espanyol,Atlético de Madrid,1-3,1-1
-32,2016-04-09,Real Sociedad,Barcelona,1-0,1-0
-32,2016-04-09,Bétis,Levante,1-0,0-0
-32,2016-04-10,Sporting Gijón,Celta de Vigo,0-1,0-0
-32,2016-04-10,Valencia,Sevilha FC,2-1,1-0
-32,2016-04-10,Villarreal CF,Getafe CF,2-0,1-0
-32,2016-04-10,Athletic Bilbao,Rayo Vallecano,1-0,0-0
-32,2016-04-11,Deportivo La Coruña,Las Palmas,1-3,0-0
-33,2016-04-15,Levante,Espanyol,2-1,1-1
-33,2016-04-16,Getafe CF,Real Madrid,1-5,0-2
-33,2016-04-16,Las Palmas,Sporting Gijón,1-1,1-0
-33,2016-04-16,Eibar,Real Sociedad,2-1,1-1
-33,2016-04-16,Celta de Vigo,Bétis,1-1,0-1
-33,2016-04-17,Málaga CF,Athletic Bilbao,0-1,0-0
-33,2016-04-17,Sevilha FC,Deportivo La Coruña,1-1,1-0
-33,2016-04-17,Rayo Vallecano,Villarreal CF,2-1,1-1
-33,2016-04-17,Atlético de Madrid,Granada,3-0,1-0
-33,2016-04-17,Barcelona,Valencia,1-2,0-2
-34,2016-04-19,Espanyol,Celta de Vigo,1-1,1-1
-34,2016-04-19,Bétis,Las Palmas,1-0,0-0
-34,2016-04-20,Deportivo La Coruña,Barcelona,0-8,0-2
-34,2016-04-20,Valencia,Eibar,4-0,3-0
-34,2016-04-20,Sporting Gijón,Sevilha FC,2-1,1-1
-34,2016-04-20,Athletic Bilbao,Atlético de Madrid,0-1,0-1
-34,2016-04-20,Málaga CF,Rayo Vallecano,1-1,0-0
-34,2016-04-20,Real Madrid,Villarreal CF,3-0,1-0
-34,2016-04-21,Real Sociedad,Getafe CF,1-2,1-1
-34,2016-04-21,Granada,Levante,5-1,3-0
-35,2016-04-22,Las Palmas,Espanyol,4-0,1-0
-35,2016-04-23,Rayo Vallecano,Real Madrid,2-3,2-1
-35,2016-04-23,Atlético de Madrid,Málaga CF,1-0,0-0
-35,2016-04-23,Barcelona,Sporting Gijón,6-0,1-0
-35,2016-04-23,Eibar,Deportivo La Coruña,1-1,1-0
-35,2016-04-24,Levante,Athletic Bilbao,2-2,1-0
-35,2016-04-24,Sevilha FC,Bétis,2-0,0-0
-35,2016-04-24,Getafe CF,Valencia,2-2,0-0
-35,2016-04-24,Villarreal CF,Real Sociedad,0-0,
-35,2016-04-25,Celta de Vigo,Granada,2-1,1-0
-36,2016-04-29,Sporting Gijón,Eibar,2-0,1-0
-36,2016-04-30,Real Sociedad,Real Madrid,0-1,0-0
-36,2016-04-30,Atlético de Madrid,Rayo Vallecano,1-0,0-0
-36,2016-04-30,Bétis,Barcelona,0-2,0-0
-36,2016-04-30,Granada,Las Palmas,3-2,2-2
-36,2016-05-01,Athletic Bilbao,Celta de Vigo,2-1,1-1
-36,2016-05-01,Espanyol,Sevilha FC,1-0,0-0
-36,2016-05-01,Deportivo La Coruña,Getafe CF,0-2,0-1
-36,2016-05-01,Valencia,Villarreal CF,0-2,0-2
-36,2016-05-02,Málaga CF,Levante,3-1,1-1
-37,2016-05-08,Real Sociedad,Rayo Vallecano,2-1,1-0
-37,2016-05-08,Real Madrid,Valencia,3-2,2-0
-37,2016-05-08,Villarreal CF,Deportivo La Coruña,0-2,0-1
-37,2016-05-08,Getafe CF,Sporting Gijón,1-1,0-0
-37,2016-05-08,Eibar,Bétis,1-1,0-1
-37,2016-05-08,Barcelona,Espanyol,5-0,1-0
-37,2016-05-08,Sevilha FC,Granada,1-4,0-1
-37,2016-05-08,Las Palmas,Athletic Bilbao,0-0,
-37,2016-05-08,Celta de Vigo,Málaga CF,1-0,1-0
-37,2016-05-08,Levante,Atlético de Madrid,2-1,1-1
-38,2016-05-13,Valencia,Real Sociedad,0-1,0-0
-38,2016-05-14,Deportivo La Coruña,Real Madrid,0-2,0-2
-38,2016-05-14,Granada,Barcelona,0-3,0-2
-38,2016-05-14,Athletic Bilbao,Sevilha FC,3-1,2-0
-38,2016-05-14,Atlético de Madrid,Celta de Vigo,2-0,0-0
-38,2016-05-15,Málaga CF,Las Palmas,4-1,2-1
-38,2016-05-15,Espanyol,Eibar,4-2,2-0
-38,2016-05-15,Sporting Gijón,Villarreal CF,2-0,1-0
-38,2016-05-15,Bétis,Getafe CF,2-1,0-0
-38,2016-05-15,Rayo Vallecano,Levante,3-1,2-0
+Matchday,Day,Date,Home,Away,FullTime,HalfTime,Penalties,FullTimeHomeGoals,FullTimeAwayGoals,FullTimeResult,HalfTimeHomeGoals,HalfTimeAwayGoals,HalfTimeResult,HomeShots,AwayShots,HomeShotsOnTarget,AwayShotsOnTarget,HomeFouls,AwayFouls,HomeCorners,AwayCorners,HomeYellowCards,AwayYellowCards,HomeRedCards,AwayRedCards,PinnacleHomeOpen,PinnacleDrawOpen,PinnacleAwayOpen,AvgHomeOpen,AvgDrawOpen,AvgAwayOpen,MaxHomeOpen,MaxDrawOpen,MaxAwayOpen,Bet365HomeOpen,Bet365DrawOpen,Bet365AwayOpen,Bet365Over25Open,Bet365Under25Open,PinnacleOver25Open,PinnacleUnder25Open,AvgOver25Open,AvgUnder25Open,PinnacleHomeClose,PinnacleDrawClose,PinnacleAwayClose,AvgHomeClose,AvgDrawClose,AvgAwayClose,MaxHomeClose,MaxDrawClose,MaxAwayClose,Bet365HomeClose,Bet365DrawClose,Bet365AwayClose
+1,Fri,2015-08-21,Málaga CF,Sevilha FC,0-0,0-0,,0,0,D,0,0,D,25,10,5,2,19,11,7,2,3,3,0,1,3.39,3.57,2.25,,,,,,,3.4,3.4,2.15,,,,,,,3.22,3.5,2.36,,,,,,,,,
+1,Sat,2015-08-22,Atlético de Madrid,Las Palmas,1-0,1-0,,1,0,H,1,0,H,14,8,3,1,11,16,4,4,2,0,0,0,1.23,6.78,16.86,,,,,,,1.2,6.5,15.0,,,,,,,1.25,6.24,16.9,,,,,,,,,
+1,Sat,2015-08-22,Deportivo La Coruña,Real Sociedad,0-0,0-0,,0,0,D,0,0,D,15,9,5,2,16,10,5,4,3,2,0,0,2.59,3.23,3.08,,,,,,,2.5,3.2,3.0,,,,,,,2.44,3.41,3.15,,,,,,,,,
+1,Sat,2015-08-22,Espanyol,Getafe CF,1-0,1-0,,1,0,H,1,0,H,4,14,2,3,19,14,5,6,2,3,0,1,1.93,3.47,4.68,,,,,,,1.91,3.4,4.33,,,,,,,2.1,3.28,4.19,,,,,,,,,
+1,Sat,2015-08-22,Rayo Vallecano,Valencia,0-0,0-0,,0,0,D,0,0,D,8,10,3,4,19,11,3,3,3,1,0,0,3.72,3.77,2.06,,,,,,,3.6,3.5,2.05,,,,,,,2.93,3.68,2.46,,,,,,,,,
+1,Sun,2015-08-23,Athletic Bilbao,Barcelona,0-1,0-0,,0,1,A,0,0,D,8,10,2,4,16,11,2,4,3,3,0,0,7.06,4.53,1.52,,,,,,,6.5,4.33,1.5,,,,,,,6.0,4.28,1.61,,,,,,,,,
+1,Sun,2015-08-23,Bétis,Villarreal CF,1-1,0-1,,1,1,D,0,1,A,22,8,6,4,11,26,7,5,3,1,0,1,2.93,3.34,2.63,,,,,,,2.8,3.25,2.6,,,,,,,3.15,3.48,2.41,,,,,,,,,
+1,Sun,2015-08-23,Levante,Celta de Vigo,1-2,0-1,,1,2,A,0,1,A,11,15,2,6,12,17,4,6,1,3,1,0,3.84,3.4,2.15,,,,,,,3.6,3.3,2.15,,,,,,,3.73,3.34,2.21,,,,,,,,,
+1,Sun,2015-08-23,Sporting Gijón,Real Madrid,0-0,0-0,,0,0,D,0,0,D,6,27,0,8,20,4,2,5,4,0,0,0,12.98,6.6,1.26,,,,,,,13.0,6.5,1.22,,,,,,,11.7,6.04,1.3,,,,,,,,,
+1,Mon,2015-08-24,Granada,Eibar,1-3,0-2,,1,3,A,0,2,A,12,10,6,4,5,23,6,5,1,6,1,0,1.9,3.34,5.15,,,,,,,1.91,3.3,4.5,,,,,,,2.02,3.17,4.8,,,,,,,,,
+2,Fri,2015-08-28,Villarreal CF,Espanyol,3-1,0-1,,3,1,H,0,1,A,14,4,4,2,10,20,2,3,1,6,0,0,1.6,4.09,6.69,,,,,,,1.57,3.8,6.5,,,,,,,1.59,4.05,6.9,,,,,,,,,
+2,Sat,2015-08-29,Barcelona,Málaga CF,1-0,0-0,,1,0,H,0,0,D,22,4,13,1,4,21,15,2,0,3,0,0,1.14,10.0,24.1,,,,,,,1.1,10.0,26.0,,,,,,,1.13,10.98,24.24,,,,,,,,,
+2,Sat,2015-08-29,Celta de Vigo,Rayo Vallecano,3-0,1-0,,3,0,H,1,0,H,11,3,7,0,7,11,5,4,2,2,0,1,1.57,4.41,6.29,,,,,,,1.53,4.33,6.0,,,,,,,1.49,4.72,7.28,,,,,,,,,
+2,Sat,2015-08-29,Real Madrid,Bétis,5-0,2-0,,5,0,H,2,0,H,21,7,11,1,12,14,11,4,3,3,0,0,1.13,11.4,23.0,,,,,,,1.1,10.0,26.0,,,,,,,1.12,12.0,22.6,,,,,,,,,
+2,Sat,2015-08-29,Real Sociedad,Sporting Gijón,0-0,0-0,,0,0,D,0,0,D,12,7,1,2,10,15,6,4,4,5,0,0,1.88,3.47,4.99,,,,,,,1.85,3.5,4.5,,,,,,,1.81,3.45,5.64,,,,,,,,,
+2,Sun,2015-08-30,Eibar,Athletic Bilbao,2-0,1-0,,2,0,H,1,0,H,9,9,8,1,14,13,11,4,2,2,0,0,4.04,3.27,2.15,,,,,,,4.0,3.1,2.1,,,,,,,3.6,3.21,2.32,,,,,,,,,
+2,Sun,2015-08-30,Getafe CF,Granada,1-2,0-2,,1,2,A,0,2,A,16,9,4,4,16,15,6,6,5,3,0,0,2.1,3.3,4.14,,,,,,,2.05,3.2,4.0,,,,,,,2.16,3.26,4.0,,,,,,,,,
+2,Sun,2015-08-30,Las Palmas,Levante,0-0,0-0,,0,0,D,0,0,D,16,3,2,2,14,21,3,0,2,4,0,0,1.92,3.47,4.75,,,,,,,1.91,3.3,4.5,,,,,,,1.85,3.6,4.96,,,,,,,,,
+2,Sun,2015-08-30,Sevilha FC,Atlético de Madrid,0-3,0-1,,0,3,A,0,1,A,25,17,7,7,17,13,11,1,3,4,0,0,2.84,3.3,2.75,,,,,,,2.8,3.2,2.63,,,,,,,2.65,3.27,2.97,,,,,,,,,
+2,Sun,2015-08-30,Valencia,Deportivo La Coruña,1-1,1-1,,1,1,D,1,1,D,12,12,5,3,13,15,5,7,2,1,1,0,1.4,4.86,10.04,,,,,,,1.44,4.33,8.0,,,,,,,1.49,4.4,8.12,,,,,,,,,
+3,Fri,2015-09-11,Levante,Sevilha FC,1-1,0-1,,1,1,D,0,1,A,14,8,4,3,12,8,5,4,3,3,0,0,4.83,3.82,1.81,,,,,,,4.75,3.75,1.75,,,,,,,4.01,3.58,2.04,,,,,,,,,
+3,Sat,2015-09-12,Atlético de Madrid,Barcelona,1-2,0-0,,1,2,A,0,0,D,11,13,3,5,17,5,1,10,3,1,0,0,3.41,3.4,2.31,,,,,,,3.3,3.2,2.3,,,,,,,3.11,3.2,2.59,,,,,,,,,
+3,Sat,2015-09-12,Bétis,Real Sociedad,1-0,1-0,,1,0,H,1,0,H,9,15,2,3,12,9,2,4,4,3,1,0,2.39,3.36,3.28,,,,,,,2.3,3.3,3.2,,,,,,,2.4,3.33,3.29,,,,,,,,,
+3,Sat,2015-09-12,Espanyol,Real Madrid,0-6,0-4,,0,6,A,0,4,A,14,15,3,8,19,10,5,6,2,2,0,0,9.75,5.51,1.36,,,,,,,10.0,5.0,1.33,,,,,,,9.68,5.43,1.37,,,,,,,,,
+3,Sat,2015-09-12,Sporting Gijón,Valencia,0-1,0-0,,0,1,A,0,0,D,16,17,8,3,16,11,5,6,3,3,0,0,3.39,3.42,2.31,,,,,,,3.4,3.2,2.25,,,,,,,3.4,3.29,2.37,,,,,,,,,
+3,Sun,2015-09-13,Athletic Bilbao,Getafe CF,3-1,2-0,,3,1,H,2,0,H,14,11,6,3,12,15,12,5,1,4,0,0,1.59,4.03,7.05,,,,,,,1.57,3.75,7.0,,,,,,,1.56,4.01,7.66,,,,,,,,,
+3,Sun,2015-09-13,Celta de Vigo,Las Palmas,3-3,2-1,,3,3,D,2,1,H,26,9,12,5,19,14,7,2,0,3,0,1,1.52,4.48,7.3,,,,,,,1.5,4.2,7.0,,,,,,,1.52,4.41,7.34,,,,,,,,,
+3,Sun,2015-09-13,Granada,Villarreal CF,1-3,0-0,,1,3,A,0,0,D,13,8,2,5,16,21,8,6,2,4,0,0,3.63,3.36,2.24,,,,,,,3.5,3.1,2.25,,,,,,,3.43,3.28,2.36,,,,,,,,,
+3,Sun,2015-09-13,Málaga CF,Eibar,0-0,0-0,,0,0,D,0,0,D,10,7,4,0,11,13,7,3,2,4,0,0,1.81,3.65,5.2,,,,,,,1.75,3.5,5.25,,,,,,,1.85,3.62,4.97,,,,,,,,,
+3,Mon,2015-09-14,Rayo Vallecano,Deportivo La Coruña,1-3,1-2,,1,3,A,1,2,A,8,14,2,8,12,10,5,4,2,2,1,0,2.2,3.61,3.46,,,,,,,2.1,3.5,3.5,,,,,,,2.3,3.54,3.3,,,,,,,,,
+4,Fri,2015-09-18,Getafe CF,Málaga CF,1-0,1-0,,1,0,H,1,0,H,10,13,4,3,18,11,4,7,5,2,0,0,2.71,3.15,3.0,,,,,,,2.6,3.1,2.9,,,,,,,2.75,3.15,2.97,,,,,,,,,
+4,Sat,2015-09-19,Eibar,Atlético de Madrid,0-2,0-0,,0,2,A,0,0,D,9,14,3,6,13,7,1,4,2,1,0,0,7.15,3.95,1.6,,,,,,,7.0,3.75,1.57,,,,,,,5.76,3.42,1.81,,,,,,,,,
+4,Sat,2015-09-19,Real Madrid,Granada,1-0,0-0,,1,0,H,0,0,D,20,12,10,3,9,15,10,1,1,3,0,0,1.08,16.0,31.5,,,,,,,1.06,15.0,26.0,,,,,,,1.09,14.7,28.5,,,,,,,,,
+4,Sat,2015-09-19,Real Sociedad,Espanyol,2-3,1-1,,2,3,A,1,1,D,10,18,3,6,15,16,7,6,2,3,1,0,2.0,3.46,4.35,,,,,,,2.0,3.4,4.0,,,,,,,1.82,3.68,5.01,,,,,,,,,
+4,Sat,2015-09-19,Valencia,Bétis,0-0,0-0,,0,0,D,0,0,D,22,3,5,1,17,15,7,1,4,2,0,1,1.52,4.59,7.02,,,,,,,1.5,4.33,6.5,,,,,,,1.49,4.86,7.11,,,,,,,,,
+4,Sun,2015-09-20,Barcelona,Levante,4-1,0-0,,4,1,H,0,0,D,21,11,8,4,8,16,4,4,0,1,0,0,1.08,16.5,30.0,,,,,,,1.06,12.0,29.0,,,,,,,1.1,13.0,29.0,,,,,,,,,
+4,Sun,2015-09-20,Deportivo La Coruña,Sporting Gijón,2-3,2-3,,2,3,A,2,3,A,19,4,9,4,11,16,8,3,3,3,0,0,2.05,3.39,4.21,,,,,,,2.05,3.1,4.2,,,,,,,1.86,3.48,5.1,,,,,,,,,
+4,Sun,2015-09-20,Las Palmas,Rayo Vallecano,0-1,0-1,,0,1,A,0,1,A,8,17,2,6,13,19,3,5,3,5,0,0,1.9,3.9,4.19,,,,,,,1.91,3.5,4.0,,,,,,,2.03,3.86,3.72,,,,,,,,,
+4,Sun,2015-09-20,Sevilha FC,Celta de Vigo,1-2,0-2,,1,2,A,0,2,A,13,15,5,5,16,16,5,5,3,5,0,1,1.85,3.88,4.47,,,,,,,1.8,3.75,4.33,,,,,,,1.89,3.94,4.21,,,,,,,,,
+4,Sun,2015-09-20,Villarreal CF,Athletic Bilbao,3-1,1-0,,3,1,H,1,0,H,14,11,7,2,17,6,9,4,4,4,0,0,2.03,3.43,4.22,,,,,,,2.0,3.5,3.75,,,,,,,1.79,3.72,5.22,,,,,,,,,
+5,Tue,2015-09-22,Atlético de Madrid,Getafe CF,2-0,1-0,,2,0,H,1,0,H,12,6,3,2,14,10,6,1,3,2,0,0,1.27,5.64,17.44,,,,,,,1.25,5.5,15.0,,,,,,,1.35,5.01,12.61,,,,,,,,,
+5,Tue,2015-09-22,Espanyol,Valencia,1-0,1-0,,1,0,H,1,0,H,17,10,5,4,22,14,7,6,5,7,0,0,3.33,3.43,2.34,,,,,,,3.25,3.25,2.3,,,,,,,3.29,3.43,2.36,,,,,,,,,
+5,Tue,2015-09-22,Granada,Real Sociedad,0-3,0-2,,0,3,A,0,2,A,11,8,1,5,20,18,4,3,5,4,0,0,2.47,3.25,3.25,,,,,,,2.4,3.1,3.2,,,,,,,2.58,3.24,3.09,,,,,,,,,
+5,Wed,2015-09-23,Athletic Bilbao,Real Madrid,1-2,0-1,,1,2,A,0,1,A,11,22,5,6,17,10,6,8,4,3,0,0,5.49,4.31,1.65,,,,,,,5.25,4.2,1.62,,,,,,,4.73,3.98,1.79,,,,,,,,,
+5,Wed,2015-09-23,Celta de Vigo,Barcelona,4-1,2-0,,4,1,H,2,0,H,18,18,5,7,19,4,5,10,2,2,0,0,6.44,4.85,1.52,,,,,,,6.5,4.5,1.5,,,,,,,7.18,4.74,1.49,,,,,,,,,
+5,Wed,2015-09-23,Las Palmas,Sevilha FC,2-0,1-0,,2,0,H,1,0,H,12,17,4,3,9,13,5,5,3,4,0,0,3.45,3.58,2.22,,,,,,,3.3,3.4,2.2,,,,,,,3.02,3.48,2.49,,,,,,,,,
+5,Wed,2015-09-23,Levante,Eibar,2-2,0-1,,2,2,D,0,1,A,12,10,2,4,13,23,4,7,2,5,0,0,2.4,3.18,3.46,,,,,,,2.38,3.1,3.25,,,,,,,2.35,3.09,3.7,,,,,,,,,
+5,Wed,2015-09-23,Málaga CF,Villarreal CF,0-1,0-0,,0,1,A,0,0,D,15,9,4,3,18,14,8,5,2,3,0,0,2.85,3.33,2.72,,,,,,,2.63,3.3,2.75,,,,,,,2.96,3.36,2.6,,,,,,,,,
+5,Wed,2015-09-23,Rayo Vallecano,Sporting Gijón,2-1,1-0,,2,1,H,1,0,H,18,5,6,2,14,17,4,4,2,1,0,1,2.24,3.5,3.47,,,,,,,2.25,3.4,3.2,,,,,,,2.14,3.61,3.63,,,,,,,,,
+5,Thu,2015-09-24,Bétis,Deportivo La Coruña,1-2,0-0,,1,2,A,0,0,D,9,8,2,3,11,22,3,4,3,5,0,0,2.24,3.41,3.57,,,,,,,2.25,3.3,3.3,,,,,,,2.29,3.38,3.46,,,,,,,,,
+6,Fri,2015-09-25,Valencia,Granada,1-0,1-0,,1,0,H,1,0,H,12,18,5,3,19,20,11,3,3,3,0,0,1.47,4.61,8.23,,,,,,,1.45,4.5,7.5,,,,,,,1.45,4.62,8.9,,,,,,,,,
+6,Sat,2015-09-26,Barcelona,Las Palmas,2-1,1-0,,2,1,H,1,0,H,18,10,6,6,12,23,3,4,2,4,0,0,1.11,12.8,26.0,,,,,,,1.08,11.0,26.0,,,,,,,1.09,14.8,31.0,,,,,,,,,
+6,Sat,2015-09-26,Eibar,Celta de Vigo,1-1,1-0,,1,1,D,1,0,H,10,9,3,2,25,16,4,4,5,4,0,0,3.98,3.46,2.08,,,,,,,3.75,3.4,2.05,,,,,,,3.83,3.5,2.11,,,,,,,,,
+6,Sat,2015-09-26,Real Madrid,Málaga CF,0-0,0-0,,0,0,D,0,0,D,31,12,9,3,11,10,12,6,4,4,0,1,1.15,9.55,23.0,,,,,,,1.11,10.0,21.0,,,,,,,1.13,9.65,20.5,,,,,,,,,
+6,Sat,2015-09-26,Sevilha FC,Rayo Vallecano,3-2,2-0,,3,2,H,2,0,H,17,18,8,5,9,18,6,5,1,2,0,1,1.49,4.76,7.33,,,,,,,1.44,4.75,7.0,,,,,,,1.45,5.25,7.04,,,,,,,,,
+6,Sat,2015-09-26,Villarreal CF,Atlético de Madrid,1-0,1-0,,1,0,H,1,0,H,5,9,2,4,11,15,1,5,2,2,0,0,2.96,3.27,2.65,,,,,,,2.9,3.1,2.6,,,,,,,2.77,3.27,2.83,,,,,,,,,
+6,Sun,2015-09-27,Deportivo La Coruña,Espanyol,3-0,2-0,,3,0,H,2,0,H,14,7,5,3,11,11,7,5,4,3,0,1,2.08,3.44,4.02,,,,,,,2.1,3.3,3.75,,,,,,,2.15,3.38,3.86,,,,,,,,,
+6,Sun,2015-09-27,Getafe CF,Levante,3-0,0-0,,3,0,H,0,0,D,15,10,8,3,11,10,4,4,2,3,0,0,1.94,3.39,4.75,,,,,,,1.95,3.3,4.2,,,,,,,2.3,2.99,4.0,,,,,,,,,
+6,Sun,2015-09-27,Real Sociedad,Athletic Bilbao,0-0,0-0,,0,0,D,0,0,D,14,9,4,2,15,19,4,2,3,4,0,0,2.54,3.31,3.08,,,,,,,2.4,3.2,3.0,,,,,,,2.47,3.14,3.38,,,,,,,,,
+6,Sun,2015-09-27,Sporting Gijón,Bétis,1-2,1-0,,1,2,A,1,0,H,19,13,10,5,11,9,10,4,1,1,0,0,2.36,3.33,3.38,,,,,,,2.3,3.2,3.3,,,,,,,2.4,3.39,3.25,,,,,,,,,
+7,Fri,2015-10-02,Celta de Vigo,Getafe CF,0-0,0-0,,0,0,D,0,0,D,18,8,7,2,11,18,9,1,1,5,0,0,1.48,4.56,7.9,,,,,,,1.44,4.5,7.5,,,,,,,1.45,4.8,8.08,,,,,,,,,
+7,Sat,2015-10-03,Espanyol,Sporting Gijón,1-2,0-1,,1,2,A,0,1,A,13,12,9,2,17,16,9,1,3,3,0,0,1.97,3.56,4.33,,,,,,,2.0,3.3,4.0,,,,,,,2.1,3.32,4.13,,,,,,,,,
+7,Sat,2015-10-03,Granada,Deportivo La Coruña,1-1,0-1,,1,1,D,0,1,A,10,14,3,3,13,21,2,5,1,3,0,0,2.7,3.27,2.9,,,,,,,2.6,3.2,2.8,,,,,,,2.6,3.29,3.01,,,,,,,,,
+7,Sat,2015-10-03,Las Palmas,Eibar,0-2,0-1,,0,2,A,0,1,A,18,9,4,4,5,16,3,2,2,2,0,0,2.1,3.36,4.06,,,,,,,2.1,3.3,3.75,,,,,,,2.1,3.41,3.98,,,,,,,,,
+7,Sat,2015-10-03,Málaga CF,Real Sociedad,3-1,2-1,,3,1,H,2,1,H,11,13,7,5,15,16,2,4,3,2,1,0,2.4,3.23,3.41,,,,,,,2.38,3.1,3.3,,,,,,,2.52,3.25,3.16,,,,,,,,,
+7,Sat,2015-10-03,Sevilha FC,Barcelona,2-1,0-0,,2,1,H,0,0,D,12,28,5,9,16,16,7,9,5,3,0,0,4.23,3.9,1.89,,,,,,,4.0,3.6,1.91,,,,,,,4.82,3.89,1.8,,,,,,,,,
+7,Sun,2015-10-04,Athletic Bilbao,Valencia,3-1,1-1,,3,1,H,1,1,D,16,9,7,4,12,9,11,4,0,4,0,0,2.39,3.37,3.29,,,,,,,2.3,3.3,3.2,,,,,,,2.21,3.41,3.65,,,,,,,,,
+7,Sun,2015-10-04,Atlético de Madrid,Real Madrid,1-1,0-1,,1,1,D,0,1,A,18,9,4,2,19,12,5,1,6,4,0,0,3.23,3.4,2.4,,,,,,,3.2,3.3,2.3,,,,,,,3.23,3.36,2.42,,,,,,,,,
+7,Sun,2015-10-04,Levante,Villarreal CF,1-0,0-0,,1,0,H,0,0,D,15,3,5,2,15,17,8,2,4,3,0,1,4.53,3.46,1.96,,,,,,,4.33,3.4,1.91,,,,,,,4.37,3.54,1.96,,,,,,,,,
+7,Sun,2015-10-04,Rayo Vallecano,Bétis,0-2,0-1,,0,2,A,0,1,A,23,9,9,6,13,14,8,3,4,2,0,0,2.16,3.8,3.42,,,,,,,2.2,3.5,3.2,,,,,,,1.97,3.69,4.14,,,,,,,,,
+8,Sat,2015-10-17,Barcelona,Rayo Vallecano,5-2,2-1,,5,2,H,2,1,H,14,22,9,8,8,15,7,10,1,2,0,0,1.15,9.84,18.9,,,,,,,1.14,9.0,15.0,,,,,,,1.15,9.87,21.66,,,,,,,,,
+8,Sat,2015-10-17,Bétis,Espanyol,1-3,0-1,,1,3,A,0,1,A,21,13,6,4,18,21,4,3,2,4,0,0,2.06,3.49,4.05,,,,,,,2.0,3.3,4.0,,,,,,,2.28,3.4,3.47,,,,,,,,,
+8,Sat,2015-10-17,Eibar,Sevilha FC,1-1,1-0,,1,1,D,1,0,H,14,15,4,5,16,9,2,5,3,3,0,0,3.76,3.54,2.12,,,,,,,3.6,3.4,2.1,,,,,,,3.49,3.52,2.23,,,,,,,,,
+8,Sat,2015-10-17,Real Madrid,Levante,3-0,2-0,,3,0,H,2,0,H,20,15,6,5,8,10,4,4,1,4,0,0,1.1,13.0,32.0,,,,,,,1.08,12.0,23.0,,,,,,,1.11,12.6,26.03,,,,,,,,,
+8,Sat,2015-10-17,Valencia,Málaga CF,3-0,2-0,,3,0,H,2,0,H,6,10,3,3,18,21,6,8,3,3,0,0,1.65,4.09,5.91,,,,,,,1.62,3.75,6.0,,,,,,,1.57,4.1,7.22,,,,,,,,,
+8,Sun,2015-10-18,Deportivo La Coruña,Athletic Bilbao,2-2,0-1,,2,2,D,0,1,A,16,7,3,2,8,18,4,6,2,2,0,0,2.74,3.26,2.87,,,,,,,2.7,3.1,2.8,,,,,,,3.08,3.14,2.66,,,,,,,,,
+8,Sun,2015-10-18,Getafe CF,Las Palmas,4-0,2-0,,4,0,H,2,0,H,14,16,7,3,18,15,5,1,2,1,0,1,2.18,3.31,3.86,,,,,,,2.15,3.2,3.6,,,,,,,2.29,3.24,3.65,,,,,,,,,
+8,Sun,2015-10-18,Real Sociedad,Atlético de Madrid,0-2,0-1,,0,2,A,0,1,A,11,7,1,3,14,11,5,2,4,5,2,0,4.37,3.27,2.06,,,,,,,4.0,3.2,2.05,,,,,,,4.19,3.3,2.09,,,,,,,,,
+8,Sun,2015-10-18,Villarreal CF,Celta de Vigo,1-2,0-1,,1,2,A,0,1,A,12,13,3,2,10,12,7,4,1,3,1,0,2.01,3.67,4.0,,,,,,,2.0,3.5,3.75,,,,,,,2.14,3.58,3.65,,,,,,,,,
+8,Mon,2015-10-19,Sporting Gijón,Granada,3-3,1-2,,3,3,D,1,2,A,16,14,6,7,10,13,6,1,3,4,0,2,2.05,3.39,4.23,,,,,,,2.0,3.2,4.2,,,,,,,2.02,3.55,4.12,,,,,,,,,
+9,Fri,2015-10-23,Rayo Vallecano,Espanyol,3-0,1-0,,3,0,H,1,0,H,13,9,7,3,15,11,6,5,2,1,1,1,2.2,3.61,3.46,,,,,,,2.2,3.4,3.2,,,,,,,2.05,3.68,3.84,,,,,,,,,
+9,Sat,2015-10-24,Celta de Vigo,Real Madrid,1-3,0-2,,1,3,A,0,2,A,17,14,7,8,17,16,5,7,4,1,1,0,4.02,4.04,1.91,,,,,,,3.8,3.8,1.91,,,,,,,3.33,3.8,2.18,,,,,,,,,
+9,Sat,2015-10-24,Granada,Bétis,1-1,1-1,,1,1,D,1,1,D,17,7,7,2,8,11,3,3,3,3,0,0,2.34,3.4,3.35,,,,,,,2.3,3.25,3.25,,,,,,,2.43,3.37,3.2,,,,,,,,,
+9,Sat,2015-10-24,Málaga CF,Deportivo La Coruña,2-0,0-0,,2,0,H,0,0,D,9,10,4,1,11,10,3,5,0,1,0,0,2.36,3.36,3.36,,,,,,,2.25,3.25,3.4,,,,,,,2.29,3.36,3.5,,,,,,,,,
+9,Sat,2015-10-24,Sevilha FC,Getafe CF,5-0,2-0,,5,0,H,2,0,H,22,6,13,0,18,15,7,3,1,1,0,1,1.5,4.61,7.39,,,,,,,1.44,4.33,8.0,,,,,,,1.42,4.87,8.56,,,,,,,,,
+9,Sun,2015-10-25,Atlético de Madrid,Valencia,2-1,2-0,,2,1,H,2,0,H,16,6,8,1,26,10,9,2,4,4,0,0,1.58,4.05,7.06,,,,,,,1.57,3.8,6.5,,,,,,,1.61,4.12,6.43,,,,,,,,,
+9,Sun,2015-10-25,Barcelona,Eibar,3-1,1-1,,3,1,H,1,1,D,14,7,5,5,14,18,6,2,3,5,1,0,1.13,11.0,23.0,,,,,,,1.11,10.0,19.0,,,,,,,1.12,10.73,27.0,,,,,,,,,
+9,Sun,2015-10-25,Las Palmas,Villarreal CF,0-0,0-0,,0,0,D,0,0,D,6,5,2,0,12,14,6,6,1,2,0,0,3.72,3.42,2.18,,,,,,,3.5,3.25,2.2,,,,,,,3.72,3.48,2.15,,,,,,,,,
+9,Sun,2015-10-25,Levante,Real Sociedad,0-4,0-2,,0,4,A,0,2,A,13,13,3,6,24,15,10,3,4,3,1,0,2.78,3.1,2.97,,,,,,,2.63,3.2,2.8,,,,,,,2.91,3.1,2.82,,,,,,,,,
+9,Mon,2015-10-26,Athletic Bilbao,Sporting Gijón,3-0,2-0,,3,0,H,2,0,H,20,6,6,0,8,15,9,3,1,3,0,0,1.55,4.31,6.95,,,,,,,1.53,4.0,7.0,,,,,,,1.49,4.49,7.97,,,,,,,,,
+10,Fri,2015-10-30,Deportivo La Coruña,Atlético de Madrid,1-1,0-1,,1,1,D,0,1,A,7,12,3,3,4,9,1,5,2,0,0,0,5.54,3.62,1.78,,,,,,,5.5,3.4,1.7,,,,,,,5.71,3.67,1.75,,,,,,,,,
+10,Sat,2015-10-31,Getafe CF,Barcelona,0-2,0-1,,0,2,A,0,1,A,6,14,0,6,10,3,3,5,3,0,0,0,11.4,6.08,1.3,,,,,,,10.0,5.75,1.29,,,,,,,9.53,5.55,1.36,,,,,,,,,
+10,Sat,2015-10-31,Real Madrid,Las Palmas,3-1,3-1,,3,1,H,3,1,H,17,8,11,5,12,9,6,3,0,3,0,0,1.11,13.0,26.0,,,,,,,1.09,11.0,23.0,,,,,,,1.13,11.46,22.22,,,,,,,,,
+10,Sat,2015-10-31,Real Sociedad,Celta de Vigo,2-3,2-1,,2,3,A,2,1,H,20,16,5,8,9,12,8,7,2,5,0,0,2.79,3.31,2.79,,,,,,,2.7,3.2,2.75,,,,,,,2.59,3.4,2.94,,,,,,,,,
+10,Sat,2015-10-31,Valencia,Levante,3-0,0-0,,3,0,H,0,0,D,13,10,6,5,19,21,5,5,2,3,0,0,1.46,4.6,8.39,,,,,,,1.44,4.5,7.5,,,,,,,1.55,4.23,7.21,,,,,,,,,
+10,Sat,2015-10-31,Villarreal CF,Sevilha FC,2-1,1-0,,2,1,H,1,0,H,11,6,5,3,17,14,7,5,5,3,0,0,2.24,3.53,3.44,,,,,,,2.25,3.4,3.25,,,,,,,2.12,3.63,3.65,,,,,,,,,
+10,Sun,2015-11-01,Bétis,Athletic Bilbao,1-3,0-2,,1,3,A,0,2,A,11,23,3,9,9,13,7,9,2,4,0,0,3.32,3.43,2.34,,,,,,,3.25,3.25,2.3,,,,,,,3.46,3.53,2.23,,,,,,,,,
+10,Sun,2015-11-01,Eibar,Rayo Vallecano,1-0,1-0,,1,0,H,1,0,H,12,6,1,2,17,11,2,6,2,3,0,0,2.23,3.48,3.53,,,,,,,2.2,3.4,3.3,,,,,,,2.38,3.35,3.3,,,,,,,,,
+10,Sun,2015-11-01,Espanyol,Granada,1-1,0-0,,1,1,D,0,0,D,10,9,4,5,16,19,5,6,1,6,1,0,2.04,3.45,4.17,,,,,,,2.0,3.3,4.0,,,,,,,2.24,3.35,3.63,,,,,,,,,
+10,Sun,2015-11-01,Sporting Gijón,Málaga CF,1-0,1-0,,1,0,H,1,0,H,8,13,6,5,11,8,7,5,1,3,0,0,2.44,3.33,3.23,,,,,,,2.38,3.2,3.2,,,,,,,2.7,3.4,2.81,,,,,,,,,
+11,Fri,2015-11-06,Las Palmas,Real Sociedad,2-0,1-0,,2,0,H,1,0,H,8,11,4,6,17,14,0,8,1,4,0,0,2.74,3.25,2.88,,,,,,,2.75,3.1,2.75,,,,,,,2.68,3.24,2.95,,,,,,,,,
+11,Sat,2015-11-07,Celta de Vigo,Valencia,1-5,1-2,,1,5,A,1,2,A,17,9,3,5,16,27,15,5,1,3,0,0,1.86,3.87,4.46,,,,,,,1.85,3.75,4.2,,,,,,,1.79,3.95,4.81,,,,,,,,,
+11,Sat,2015-11-07,Eibar,Getafe CF,3-1,2-1,,3,1,H,2,1,H,16,10,7,4,13,9,5,7,3,1,0,1,2.14,3.27,4.05,,,,,,,2.1,3.25,3.75,,,,,,,2.17,3.36,3.81,,,,,,,,,
+11,Sat,2015-11-07,Levante,Deportivo La Coruña,1-1,0-1,,1,1,D,0,1,A,15,9,5,5,13,10,9,5,4,2,0,0,2.65,3.29,2.95,,,,,,,2.6,3.1,2.9,,,,,,,2.78,3.2,2.87,,,,,,,,,
+11,Sat,2015-11-07,Málaga CF,Bétis,0-1,0-0,,0,1,A,0,0,D,12,7,5,2,16,12,6,3,2,5,0,0,1.93,3.64,4.43,,,,,,,1.95,3.5,4.0,,,,,,,1.79,3.78,5.12,,,,,,,,,
+11,Sat,2015-11-07,Rayo Vallecano,Granada,2-1,2-0,,2,1,H,2,0,H,7,8,2,2,15,14,4,1,2,3,1,0,1.93,3.79,4.24,,,,,,,1.95,3.5,4.0,,,,,,,1.9,3.69,4.5,,,,,,,,,
+11,Sun,2015-11-08,Athletic Bilbao,Espanyol,2-1,1-0,,2,1,H,1,0,H,8,5,2,1,17,25,4,5,2,6,0,0,1.48,4.62,7.95,,,,,,,1.44,4.5,7.5,,,,,,,1.51,4.61,7.08,,,,,,,,,
+11,Sun,2015-11-08,Atlético de Madrid,Sporting Gijón,1-0,0-0,,1,0,H,0,0,D,15,9,3,2,14,15,5,1,4,3,0,0,1.25,6.33,16.0,,,,,,,1.2,6.5,17.0,,,,,,,1.24,6.34,17.0,,,,,,,,,
+11,Sun,2015-11-08,Barcelona,Villarreal CF,3-0,0-0,,3,0,H,0,0,D,20,5,9,2,12,19,7,2,5,3,0,0,1.33,5.8,10.34,,,,,,,1.3,5.5,10.0,,,,,,,1.32,5.87,10.56,,,,,,,,,
+11,Sun,2015-11-08,Sevilha FC,Real Madrid,3-2,1-1,,3,2,H,1,1,D,14,28,5,10,13,11,4,6,1,1,0,0,3.96,4.04,1.93,,,,,,,3.6,4.0,1.91,,,,,,,3.44,4.04,2.07,,,,,,,,,
+12,Sat,2015-11-21,Deportivo La Coruña,Celta de Vigo,2-0,1-0,,2,0,H,1,0,H,5,6,2,4,16,13,2,10,6,3,0,0,3.35,3.64,2.24,,,,,,,3.3,3.4,2.2,,,,,,,3.43,3.58,2.23,,,,,,,,,
+12,Sat,2015-11-21,Espanyol,Málaga CF,2-0,2-0,,2,0,H,2,0,H,7,14,3,5,20,16,3,8,3,2,0,0,2.41,3.27,3.34,,,,,,,2.4,3.2,3.1,,,,,,,2.42,3.26,3.33,,,,,,,,,
+12,Sat,2015-11-21,Real Madrid,Barcelona,0-4,0-2,,0,4,A,0,2,A,13,18,7,7,13,10,10,4,3,2,1,0,2.47,3.74,2.87,,,,,,,2.5,3.75,2.8,,,,,,,2.5,3.67,2.87,,,,,,,,,
+12,Sat,2015-11-21,Real Sociedad,Sevilha FC,2-0,0-0,,2,0,H,0,0,D,14,12,7,5,6,14,7,5,2,1,0,0,2.67,3.6,2.72,,,,,,,2.63,3.3,2.7,,,,,,,2.65,3.55,2.77,,,,,,,,,
+12,Sat,2015-11-21,Valencia,Las Palmas,1-1,1-0,,1,1,D,1,0,H,9,18,3,7,22,12,1,8,3,3,0,0,1.53,4.38,7.21,,,,,,,1.44,4.2,7.5,,,,,,,1.51,4.42,7.54,,,,,,,,,
+12,Sun,2015-11-22,Bétis,Atlético de Madrid,0-1,0-1,,0,1,A,0,1,A,6,11,3,4,12,8,2,6,1,4,0,0,6.29,3.92,1.65,,,,,,,5.5,3.8,1.67,,,,,,,7.11,3.94,1.6,,,,,,,,,
+12,Sun,2015-11-22,Granada,Athletic Bilbao,2-0,1-0,,2,0,H,1,0,H,8,11,1,6,21,15,2,7,6,3,0,0,4.03,3.41,2.09,,,,,,,3.75,3.3,2.1,,,,,,,4.37,3.57,1.95,,,,,,,,,
+12,Sun,2015-11-22,Sporting Gijón,Levante,0-3,0-3,,0,3,A,0,3,A,13,13,2,6,15,15,5,3,4,5,0,0,2.17,3.39,3.78,,,,,,,2.2,3.2,3.5,,,,,,,2.23,3.37,3.63,,,,,,,,,
+12,Sun,2015-11-22,Villarreal CF,Eibar,1-1,0-1,,1,1,D,0,1,A,12,17,5,7,8,13,12,6,3,2,0,1,1.54,4.26,7.41,,,,,,,1.53,4.0,7.0,,,,,,,1.61,4.11,6.47,,,,,,,,,
+12,Mon,2015-11-23,Getafe CF,Rayo Vallecano,1-1,0-0,,1,1,D,0,0,D,15,8,8,4,20,15,5,7,5,4,0,0,2.52,3.45,2.99,,,,,,,2.4,3.3,3.0,,,,,,,2.34,3.55,3.21,,,,,,,,,
+13,Fri,2015-11-27,Levante,Bétis,0-1,0-1,,0,1,A,0,1,A,14,11,1,5,12,15,7,4,6,4,1,1,2.07,3.47,4.02,,,,,,,2.05,3.4,3.75,,,,,,,2.08,3.47,3.98,,,,,,,,,
+13,Sat,2015-11-28,Atlético de Madrid,Espanyol,1-0,1-0,,1,0,H,1,0,H,21,5,6,0,16,26,6,2,0,4,0,0,1.28,5.94,13.84,,,,,,,1.22,6.0,15.0,,,,,,,1.32,5.4,12.61,,,,,,,,,
+13,Sat,2015-11-28,Barcelona,Real Sociedad,4-0,2-0,,4,0,H,2,0,H,11,10,6,2,11,14,6,4,0,5,0,0,1.09,15.34,27.61,,,,,,,1.07,13.0,23.0,,,,,,,1.08,15.98,28.5,,,,,,,,,
+13,Sat,2015-11-28,Celta de Vigo,Sporting Gijón,2-1,1-0,,2,1,H,1,0,H,6,9,4,2,14,9,3,5,3,0,0,0,1.42,5.16,8.06,,,,,,,1.4,5.0,7.5,,,,,,,1.45,5.04,7.49,,,,,,,,,
+13,Sat,2015-11-28,Las Palmas,Deportivo La Coruña,0-2,0-1,,0,2,A,0,1,A,8,10,5,5,14,13,6,4,4,3,0,0,2.37,3.33,3.36,,,,,,,2.3,3.3,3.2,,,,,,,2.35,3.36,3.36,,,,,,,,,
+13,Sat,2015-11-28,Málaga CF,Granada,2-2,1-0,,2,2,D,1,0,H,12,11,7,4,15,20,7,4,2,6,1,0,1.83,3.59,5.13,,,,,,,1.83,3.4,4.75,,,,,,,1.76,3.63,5.72,,,,,,,,,
+13,Sun,2015-11-29,Eibar,Real Madrid,0-2,0-1,,0,2,A,0,1,A,8,17,3,6,20,7,6,5,3,4,0,0,6.97,5.19,1.46,,,,,,,7.5,5.0,1.4,,,,,,,7.5,5.15,1.44,,,,,,,,,
+13,Sun,2015-11-29,Getafe CF,Villarreal CF,2-0,1-0,,2,0,H,1,0,H,11,7,5,0,11,15,6,6,4,2,0,0,3.25,3.28,2.46,,,,,,,3.0,3.3,2.4,,,,,,,3.13,3.33,2.5,,,,,,,,,
+13,Sun,2015-11-29,Rayo Vallecano,Athletic Bilbao,0-3,0-2,,0,3,A,0,2,A,15,10,3,4,16,14,6,2,4,0,0,1,3.21,3.57,2.33,,,,,,,3.1,3.4,2.3,,,,,,,3.4,3.59,2.23,,,,,,,,,
+13,Sun,2015-11-29,Sevilha FC,Valencia,1-0,0-0,,1,0,H,0,0,D,15,0,5,0,26,20,17,0,3,2,0,2,1.78,4.08,4.71,,,,,,,1.75,4.0,4.33,,,,,,,1.68,4.39,5.07,,,,,,,,,
+14,Sat,2015-12-05,Bétis,Celta de Vigo,1-1,0-1,,1,1,D,0,1,A,27,5,6,1,9,16,8,0,5,5,0,1,3.43,3.72,2.18,,,,,,,3.3,3.5,2.15,,,,,,,3.72,3.76,2.06,,,,,,,,,
+14,Sat,2015-12-05,Deportivo La Coruña,Sevilha FC,1-1,1-0,,1,1,D,1,0,H,8,8,4,2,10,9,6,2,2,3,0,0,3.06,3.64,2.39,,,,,,,3.0,3.3,2.4,,,,,,,2.88,3.61,2.54,,,,,,,,,
+14,Sat,2015-12-05,Granada,Atlético de Madrid,0-2,0-1,,0,2,A,0,1,A,18,11,3,4,7,8,6,8,2,1,0,0,7.66,3.83,1.59,,,,,,,7.0,3.75,1.57,,,,,,,7.89,4.12,1.54,,,,,,,,,
+14,Sat,2015-12-05,Real Madrid,Getafe CF,4-1,4-0,,4,1,H,4,0,H,16,7,8,3,9,12,3,4,1,0,0,0,1.13,11.03,23.94,,,,,,,1.1,11.0,21.0,,,,,,,1.12,11.94,25.24,,,,,,,,,
+14,Sat,2015-12-05,Valencia,Barcelona,1-1,0-0,,1,1,D,0,0,D,10,16,3,5,13,15,0,6,3,1,0,0,10.05,5.95,1.33,,,,,,,9.0,6.0,1.3,,,,,,,13.45,7.25,1.24,,,,,,,,,
+14,Sun,2015-12-06,Athletic Bilbao,Málaga CF,0-0,0-0,,0,0,D,0,0,D,11,7,2,2,7,21,6,1,2,3,1,0,1.49,4.58,7.76,,,,,,,1.45,4.33,7.5,,,,,,,1.53,4.44,7.0,,,,,,,,,
+14,Sun,2015-12-06,Real Sociedad,Eibar,2-1,1-1,,2,1,H,1,1,D,10,5,7,1,12,16,4,3,3,3,0,0,1.87,3.68,4.7,,,,,,,1.85,3.5,4.5,,,,,,,1.99,3.46,4.36,,,,,,,,,
+14,Sun,2015-12-06,Sporting Gijón,Las Palmas,3-1,1-1,,3,1,H,1,1,D,21,12,9,7,9,10,8,4,2,1,0,1,2.35,3.4,3.33,,,,,,,2.3,3.3,3.25,,,,,,,2.3,3.4,3.43,,,,,,,,,
+14,Sun,2015-12-06,Villarreal CF,Rayo Vallecano,2-1,0-1,,2,1,H,0,1,A,14,8,5,4,16,14,5,4,1,4,0,0,1.58,4.23,6.55,,,,,,,1.57,3.8,6.5,,,,,,,1.48,4.72,7.57,,,,,,,,,
+14,Mon,2015-12-07,Espanyol,Levante,1-1,0-1,,1,1,D,0,1,A,9,12,1,5,13,14,2,6,4,5,0,0,2.03,3.42,4.27,,,,,,,2.0,3.5,3.8,,,,,,,2.03,3.42,4.22,,,,,,,,,
+15,Fri,2015-12-11,Getafe CF,Real Sociedad,1-1,0-0,,1,1,D,0,0,D,9,10,5,6,15,12,5,5,3,3,0,0,2.81,3.28,2.78,,,,,,,2.88,3.2,2.6,,,,,,,2.93,3.25,2.7,,,,,,,,,
+15,Sat,2015-12-12,Barcelona,Deportivo La Coruña,2-2,1-0,,2,2,D,1,0,H,17,13,7,4,4,11,6,2,0,2,0,0,1.08,15.5,33.0,,,,,,,1.07,13.0,26.0,,,,,,,1.09,13.91,32.14,,,,,,,,,
+15,Sat,2015-12-12,Celta de Vigo,Espanyol,1-0,1-0,,1,0,H,1,0,H,16,6,3,2,13,23,4,9,3,2,1,0,1.53,4.55,6.72,,,,,,,1.53,4.33,6.0,,,,,,,1.58,4.32,6.36,,,,,,,,,
+15,Sat,2015-12-12,Las Palmas,Bétis,1-0,0-0,,1,0,H,0,0,D,16,8,4,2,10,9,2,2,3,0,0,0,2.12,3.59,3.7,,,,,,,2.15,3.3,3.5,,,,,,,2.22,3.49,3.54,,,,,,,,,
+15,Sat,2015-12-12,Levante,Granada,1-2,0-0,,1,2,A,0,0,D,7,8,5,3,25,27,2,1,2,2,0,0,2.13,3.3,4.04,,,,,,,2.1,3.1,4.0,,,,,,,2.16,3.35,3.86,,,,,,,,,
+15,Sat,2015-12-12,Sevilha FC,Sporting Gijón,2-0,0-0,,2,0,H,0,0,D,18,4,7,1,13,10,3,1,3,2,0,1,1.35,5.61,9.87,,,,,,,1.36,5.0,8.5,,,,,,,1.39,5.38,8.72,,,,,,,,,
+15,Sun,2015-12-13,Atlético de Madrid,Athletic Bilbao,2-1,1-1,,2,1,H,1,1,D,8,10,4,5,13,10,3,6,1,1,0,0,1.6,4.01,6.85,,,,,,,1.57,3.75,7.0,,,,,,,1.58,4.01,7.24,,,,,,,,,
+15,Sun,2015-12-13,Eibar,Valencia,1-1,1-0,,1,1,D,1,0,H,14,6,5,1,20,14,9,2,4,4,1,1,2.57,3.34,3.01,,,,,,,2.45,3.2,3.0,,,,,,,2.52,3.4,3.04,,,,,,,,,
+15,Sun,2015-12-13,Rayo Vallecano,Málaga CF,1-2,1-0,,1,2,A,1,0,H,13,15,3,5,13,17,6,7,1,2,0,0,2.35,3.45,3.28,,,,,,,2.3,3.25,3.25,,,,,,,2.43,3.42,3.16,,,,,,,,,
+15,Sun,2015-12-13,Villarreal CF,Real Madrid,1-0,1-0,,1,0,H,1,0,H,7,20,3,1,11,9,3,9,2,2,0,0,5.0,4.29,1.7,,,,,,,5.0,4.2,1.65,,,,,,,4.9,4.34,1.71,,,,,,,,,
+16,Sat,2015-12-19,Bétis,Sevilha FC,0-0,0-0,,0,0,D,0,0,D,12,8,0,2,23,19,8,8,7,5,0,0,4.06,3.79,1.96,,,,,,,3.75,3.5,2.0,,,,,,,3.94,3.76,2.0,,,,,,,,,
+16,Sat,2015-12-19,Deportivo La Coruña,Eibar,2-0,1-0,,2,0,H,1,0,H,13,13,3,1,10,11,9,8,0,2,1,0,2.02,3.53,4.13,,,,,,,2.0,3.3,4.0,,,,,,,2.08,3.36,4.13,,,,,,,,,
+16,Sat,2015-12-19,Espanyol,Las Palmas,1-0,0-0,,1,0,H,0,0,D,12,9,2,4,29,21,7,5,4,4,0,0,2.08,3.49,3.95,,,,,,,2.05,3.4,3.75,,,,,,,2.02,3.5,4.18,,,,,,,,,
+16,Sat,2015-12-19,Valencia,Getafe CF,2-2,2-2,,2,2,D,2,2,D,12,9,7,3,13,20,5,1,2,6,0,0,1.69,3.87,5.81,,,,,,,1.67,3.75,5.5,,,,,,,1.77,3.75,5.32,,,,,,,,,
+16,Sun,2015-12-20,Athletic Bilbao,Levante,2-0,0-0,,2,0,H,0,0,D,18,6,7,1,15,17,10,3,0,5,0,0,1.42,4.62,10.01,,,,,,,1.4,4.5,9.0,,,,,,,1.41,4.87,9.52,,,,,,,,,
+16,Sun,2015-12-20,Granada,Celta de Vigo,0-2,0-2,,0,2,A,0,2,A,11,10,1,4,17,11,9,3,4,2,0,0,3.37,3.37,2.34,,,,,,,3.2,3.3,2.3,,,,,,,2.81,3.33,2.75,,,,,,,,,
+16,Sun,2015-12-20,Málaga CF,Atlético de Madrid,1-0,0-0,,1,0,H,0,0,D,17,6,4,3,9,13,4,1,3,4,0,1,5.15,3.56,1.83,,,,,,,5.25,3.5,1.75,,,,,,,6.07,3.6,1.73,,,,,,,,,
+16,Sun,2015-12-20,Real Madrid,Rayo Vallecano,10-2,4-2,,10,2,H,4,2,H,30,9,15,4,12,12,10,4,1,2,0,2,1.1,14.99,23.11,,,,,,,1.1,11.0,21.0,,,,,,,1.09,16.55,23.1,,,,,,,,,
+16,Sun,2015-12-20,Real Sociedad,Villarreal CF,0-2,0-1,,0,2,A,0,1,A,16,7,2,5,12,21,9,1,2,1,0,0,2.46,3.3,3.22,,,,,,,2.4,3.2,3.1,,,,,,,2.41,3.37,3.24,,,,,,,,,
+16,Wed,2016-02-17,Sporting Gijón,Barcelona,1-3,1-2,,1,3,A,1,2,A,6,17,2,8,11,7,1,4,2,1,0,0,21.1,9.15,1.16,,,,,,,19.0,8.0,1.14,,,,,,,19.75,8.75,1.17,,,,,,,,,
+17,Wed,2015-12-30,Barcelona,Bétis,4-0,2-0,,4,0,H,2,0,H,16,11,7,4,16,20,2,3,1,3,0,0,1.07,18.8,33.5,,,,,,,1.06,13.0,26.0,,,,,,,1.06,22.0,31.0,,,,,,,,,
+17,Wed,2015-12-30,Celta de Vigo,Athletic Bilbao,0-1,0-0,,0,1,A,0,0,D,7,13,3,5,11,11,3,3,3,4,0,0,2.56,3.47,2.93,,,,,,,2.38,3.3,2.9,,,,,,,2.87,3.3,2.71,,,,,,,,,
+17,Wed,2015-12-30,Eibar,Sporting Gijón,2-0,0-0,,2,0,H,0,0,D,16,6,5,0,16,17,5,7,3,3,0,0,1.88,3.56,4.81,,,,,,,1.85,3.5,4.2,,,,,,,1.95,3.45,4.6,,,,,,,,,
+17,Wed,2015-12-30,Getafe CF,Deportivo La Coruña,0-0,0-0,,0,0,D,0,0,D,15,10,5,3,9,8,9,2,3,1,0,0,2.65,3.22,3.02,,,,,,,2.5,3.2,2.88,,,,,,,2.7,3.32,2.87,,,,,,,,,
+17,Wed,2015-12-30,Las Palmas,Granada,4-1,1-0,,4,1,H,1,0,H,7,11,4,4,5,21,4,4,2,5,0,1,2.08,3.37,4.13,,,,,,,2.0,3.3,3.75,,,,,,,2.04,3.58,3.95,,,,,,,,,
+17,Wed,2015-12-30,Levante,Málaga CF,0-1,0-0,,0,1,A,0,0,D,7,9,1,5,20,12,6,5,7,5,0,0,2.74,3.23,2.89,,,,,,,2.75,3.0,2.75,,,,,,,3.29,3.24,2.46,,,,,,,,,
+17,Wed,2015-12-30,Rayo Vallecano,Atlético de Madrid,0-2,0-0,,0,2,A,0,0,D,10,17,3,6,12,15,3,8,3,3,0,0,6.85,4.21,1.57,,,,,,,6.5,3.8,1.53,,,,,,,7.0,4.5,1.53,,,,,,,,,
+17,Wed,2015-12-30,Real Madrid,Real Sociedad,3-1,1-0,,3,1,H,1,0,H,23,13,13,2,12,9,13,2,1,4,0,0,1.13,11.1,22.0,,,,,,,1.1,10.0,19.0,,,,,,,1.17,9.64,15.54,,,,,,,,,
+17,Wed,2015-12-30,Sevilha FC,Espanyol,2-0,2-0,,2,0,H,2,0,H,15,12,10,1,15,16,6,6,3,3,0,0,1.44,4.95,8.05,,,,,,,1.4,4.75,7.0,,,,,,,1.47,4.84,7.48,,,,,,,,,
+17,Thu,2015-12-31,Villarreal CF,Valencia,1-0,0-0,,1,0,H,0,0,D,9,6,3,2,21,19,3,6,1,3,0,0,1.9,3.63,4.55,,,,,,,1.8,3.5,4.5,,,,,,,1.92,3.52,4.66,,,,,,,,,
+18,Sat,2016-01-02,Atlético de Madrid,Levante,1-0,0-0,,1,0,H,0,0,D,16,9,2,1,12,14,13,1,0,4,0,0,1.22,6.75,18.7,,,,,,,1.2,6.5,17.0,,,,,,,1.22,6.82,18.37,,,,,,,,,
+18,Sat,2016-01-02,Espanyol,Barcelona,0-0,0-0,,0,0,D,0,0,D,4,10,1,2,22,10,6,10,5,3,0,0,15.2,7.5,1.22,,,,,,,14.0,7.0,1.2,,,,,,,16.8,8.2,1.19,,,,,,,,,
+18,Sat,2016-01-02,Málaga CF,Celta de Vigo,2-0,2-0,,2,0,H,2,0,H,14,8,4,1,22,11,5,2,4,2,0,1,2.4,3.3,3.33,,,,,,,2.4,3.3,3.0,,,,,,,2.16,3.3,3.94,,,,,,,,,
+18,Sun,2016-01-03,Athletic Bilbao,Las Palmas,2-2,1-0,,2,2,D,1,0,H,16,11,5,5,24,13,5,5,3,4,0,0,1.38,4.98,10.76,,,,,,,1.36,5.0,8.5,,,,,,,1.41,5.22,8.5,,,,,,,,,
+18,Sun,2016-01-03,Bétis,Eibar,0-4,0-2,,0,4,A,0,2,A,9,6,5,5,16,14,6,2,4,3,0,0,2.5,3.4,3.06,,,,,,,2.4,3.25,3.1,,,,,,,2.46,3.36,3.18,,,,,,,,,
+18,Sun,2016-01-03,Deportivo La Coruña,Villarreal CF,1-2,0-1,,1,2,A,0,1,A,11,6,4,4,13,11,9,3,3,3,0,0,2.79,3.3,2.79,,,,,,,2.7,3.2,2.7,,,,,,,2.72,3.23,2.92,,,,,,,,,
+18,Sun,2016-01-03,Granada,Sevilha FC,2-1,2-1,,2,1,H,2,1,H,9,14,4,7,17,13,2,9,2,2,0,1,4.65,3.6,1.89,,,,,,,4.33,3.6,1.85,,,,,,,5.27,3.97,1.73,,,,,,,,,
+18,Sun,2016-01-03,Rayo Vallecano,Real Sociedad,2-2,1-1,,2,2,D,1,1,D,12,15,5,7,15,11,7,7,3,3,0,0,2.61,3.4,2.92,,,,,,,2.63,3.3,2.75,,,,,,,2.69,3.48,2.77,,,,,,,,,
+18,Sun,2016-01-03,Valencia,Real Madrid,2-2,1-1,,2,2,D,1,1,D,11,17,4,4,18,17,4,7,1,1,0,1,5.87,4.72,1.57,,,,,,,6.0,4.33,1.53,,,,,,,6.6,4.76,1.52,,,,,,,,,
+18,Mon,2016-01-04,Sporting Gijón,Getafe CF,1-2,1-0,,1,2,A,1,0,H,17,11,4,2,13,14,4,2,3,3,0,0,2.26,3.37,3.55,,,,,,,2.25,3.3,3.3,,,,,,,2.36,3.27,3.44,,,,,,,,,
+19,Sat,2016-01-09,Barcelona,Granada,4-0,2-0,,4,0,H,2,0,H,17,8,8,4,14,19,7,0,1,4,0,0,1.06,20.5,39.0,,,,,,,1.05,15.0,34.0,,,,,,,1.05,24.5,35.0,,,,,,,,,
+19,Sat,2016-01-09,Getafe CF,Bétis,1-0,0-0,,1,0,H,0,0,D,8,11,3,2,19,11,8,4,1,3,0,0,1.99,3.55,4.23,,,,,,,1.95,3.5,4.0,,,,,,,1.94,3.58,4.42,,,,,,,,,
+19,Sat,2016-01-09,Levante,Rayo Vallecano,2-1,0-0,,2,1,H,0,0,D,10,10,4,4,16,15,5,5,5,1,0,0,2.22,3.51,3.51,,,,,,,2.15,3.4,3.4,,,,,,,2.39,3.33,3.32,,,,,,,,,
+19,Sat,2016-01-09,Real Madrid,Deportivo La Coruña,5-0,2-0,,5,0,H,2,0,H,23,18,9,4,9,8,5,9,0,3,0,0,1.13,11.45,23.0,,,,,,,1.11,9.0,21.0,,,,,,,1.19,8.59,16.6,,,,,,,,,
+19,Sat,2016-01-09,Sevilha FC,Athletic Bilbao,2-0,1-0,,2,0,H,1,0,H,4,11,4,3,14,13,6,8,2,3,0,0,2.02,3.74,3.88,,,,,,,2.1,3.5,3.5,,,,,,,2.12,3.63,3.66,,,,,,,,,
+19,Sun,2016-01-10,Celta de Vigo,Atlético de Madrid,0-2,0-0,,0,2,A,0,0,D,6,10,1,3,14,14,4,4,2,1,0,0,4.7,3.56,1.9,,,,,,,4.5,3.5,1.8,,,,,,,4.28,3.31,2.07,,,,,,,,,
+19,Sun,2016-01-10,Eibar,Espanyol,2-1,1-1,,2,1,H,1,1,D,20,7,6,4,13,15,8,2,3,2,0,0,2.02,3.4,4.36,,,,,,,2.0,3.3,4.0,,,,,,,2.08,3.46,3.98,,,,,,,,,
+19,Sun,2016-01-10,Las Palmas,Málaga CF,1-1,0-0,,1,1,D,0,0,D,5,11,3,3,21,11,2,5,5,4,0,0,2.71,3.21,2.94,,,,,,,2.7,3.1,2.8,,,,,,,2.74,3.14,2.97,,,,,,,,,
+19,Sun,2016-01-10,Real Sociedad,Valencia,2-0,0-0,,2,0,H,0,0,D,24,10,7,3,16,13,5,6,3,4,0,0,2.25,3.5,3.45,,,,,,,2.25,3.3,3.3,,,,,,,2.21,3.62,3.43,,,,,,,,,
+19,Sun,2016-01-10,Villarreal CF,Sporting Gijón,2-0,1-0,,2,0,H,1,0,H,7,12,4,2,10,12,3,9,4,2,0,0,1.51,4.42,7.6,,,,,,,1.5,4.33,6.5,,,,,,,1.48,4.54,8.17,,,,,,,,,
+20,Sat,2016-01-16,Celta de Vigo,Levante,4-3,2-0,,4,3,H,2,0,H,14,17,6,7,14,16,6,2,1,4,0,0,1.63,4.05,6.2,,,,,,,1.62,3.8,6.0,,,,,,,1.56,4.12,7.45,,,,,,,,,
+20,Sat,2016-01-16,Real Sociedad,Deportivo La Coruña,1-1,0-1,,1,1,D,0,1,A,16,7,6,4,9,11,9,4,1,3,0,0,2.01,3.52,4.18,,,,,,,1.95,3.3,4.2,,,,,,,1.92,3.57,4.57,,,,,,,,,
+20,Sat,2016-01-16,Sevilha FC,Málaga CF,2-1,2-0,,2,1,H,2,0,H,8,14,4,3,21,21,6,4,2,2,1,1,1.69,4.05,5.5,,,,,,,1.67,3.8,5.25,,,,,,,1.79,3.81,5.05,,,,,,,,,
+20,Sat,2016-01-16,Villarreal CF,Bétis,0-0,0-0,,0,0,D,0,0,D,9,15,2,2,12,11,7,11,2,1,0,0,1.52,4.37,7.6,,,,,,,1.45,4.33,8.0,,,,,,,1.55,4.3,7.05,,,,,,,,,
+20,Sun,2016-01-17,Barcelona,Athletic Bilbao,6-0,2-0,,6,0,H,2,0,H,20,9,8,3,6,7,6,2,2,2,0,1,1.15,9.75,19.7,,,,,,,1.14,8.0,19.0,,,,,,,1.16,9.0,19.93,,,,,,,,,
+20,Sun,2016-01-17,Getafe CF,Espanyol,3-1,2-1,,3,1,H,2,1,H,18,13,4,6,12,13,3,7,2,2,0,0,2.18,3.3,3.86,,,,,,,2.2,3.2,3.5,,,,,,,2.27,3.26,3.66,,,,,,,,,
+20,Sun,2016-01-17,Las Palmas,Atlético de Madrid,0-3,0-1,,0,3,A,0,1,A,11,11,3,5,7,21,3,4,0,2,0,0,6.88,4.01,1.6,,,,,,,6.5,3.6,1.62,,,,,,,7.07,3.84,1.62,,,,,,,,,
+20,Sun,2016-01-17,Real Madrid,Sporting Gijón,5-1,5-0,,5,1,H,5,0,H,17,9,10,2,10,15,4,4,1,1,0,0,1.09,15.75,24.5,,,,,,,1.05,17.0,26.0,,,,,,,1.09,14.85,25.7,,,,,,,,,
+20,Sun,2016-01-17,Valencia,Rayo Vallecano,2-2,0-1,,2,2,D,0,1,A,13,18,5,8,17,20,7,9,1,3,0,0,1.62,4.33,5.8,,,,,,,1.62,4.0,5.5,,,,,,,1.6,4.4,6.03,,,,,,,,,
+20,Mon,2016-01-18,Eibar,Granada,5-1,2-0,,5,1,H,2,0,H,12,4,7,1,11,17,3,2,1,4,0,0,1.81,3.62,5.25,,,,,,,1.83,3.5,4.5,,,,,,,1.82,3.64,5.12,,,,,,,,,
+21,Fri,2016-01-22,Sporting Gijón,Real Sociedad,5-1,3-1,,5,1,H,3,1,H,11,9,7,3,13,12,6,2,2,2,0,0,3.0,3.34,2.58,,,,,,,3.1,3.2,2.45,,,,,,,3.18,3.31,2.48,,,,,,,,,
+21,Sat,2016-01-23,Espanyol,Villarreal CF,2-2,2-1,,2,2,D,2,1,H,11,14,5,5,12,15,3,9,3,1,1,0,2.98,3.24,2.66,,,,,,,2.9,3.2,2.55,,,,,,,3.0,3.25,2.64,,,,,,,,,
+21,Sat,2016-01-23,Granada,Getafe CF,3-2,2-0,,3,2,H,2,0,H,20,9,9,2,12,16,5,3,3,3,0,0,2.56,3.35,3.02,,,,,,,2.63,3.1,2.88,,,,,,,2.52,3.27,3.15,,,,,,,,,
+21,Sat,2016-01-23,Málaga CF,Barcelona,1-2,1-1,,1,2,A,1,1,D,15,12,9,6,16,9,4,3,3,3,0,0,10.09,5.41,1.36,,,,,,,8.5,5.5,1.33,,,,,,,6.31,4.27,1.59,,,,,,,,,
+21,Sat,2016-01-23,Rayo Vallecano,Celta de Vigo,3-0,3-0,,3,0,H,3,0,H,26,3,10,1,20,13,7,1,3,5,0,0,2.73,3.67,2.62,,,,,,,2.7,3.4,2.63,,,,,,,2.14,3.78,3.46,,,,,,,,,
+21,Sun,2016-01-24,Athletic Bilbao,Eibar,5-2,3-1,,5,2,H,3,1,H,10,9,5,2,13,14,7,2,2,2,0,0,1.7,3.95,5.55,,,,,,,1.67,3.75,5.5,,,,,,,1.69,3.95,5.64,,,,,,,,,
+21,Sun,2016-01-24,Atlético de Madrid,Sevilha FC,0-0,0-0,,0,0,D,0,0,D,21,7,3,1,13,13,8,5,4,3,0,1,1.65,3.82,6.55,,,,,,,1.67,3.5,6.0,,,,,,,1.53,4.15,7.9,,,,,,,,,
+21,Sun,2016-01-24,Bétis,Real Madrid,1-1,1-0,,1,1,D,1,0,H,4,18,2,8,17,13,1,9,3,2,0,0,11.08,6.16,1.3,,,,,,,9.5,5.75,1.3,,,,,,,8.63,5.69,1.37,,,,,,,,,
+21,Sun,2016-01-24,Deportivo La Coruña,Valencia,1-1,1-0,,1,1,D,1,0,H,10,10,2,3,13,9,8,6,3,3,0,0,2.19,3.44,3.66,,,,,,,2.25,3.3,3.3,,,,,,,2.18,3.4,3.75,,,,,,,,,
+21,Mon,2016-01-25,Levante,Las Palmas,3-2,1-0,,3,2,H,1,0,H,12,13,8,4,22,11,2,4,2,4,1,0,2.38,3.3,3.38,,,,,,,2.38,3.1,3.25,,,,,,,2.2,3.36,3.79,,,,,,,,,
+22,Sat,2016-01-30,Barcelona,Atlético de Madrid,2-1,2-1,,2,1,H,2,1,H,10,7,4,4,7,18,8,6,0,3,0,2,1.52,4.48,7.23,,,,,,,1.5,4.2,7.0,,,,,,,1.55,4.29,7.09,,,,,,,,,
+22,Sat,2016-01-30,Eibar,Málaga CF,1-2,0-1,,1,2,A,0,1,A,11,7,3,4,9,15,1,2,1,3,0,0,2.45,3.31,3.23,,,,,,,2.38,3.25,3.0,,,,,,,2.52,3.26,3.16,,,,,,,,,
+22,Sat,2016-01-30,Getafe CF,Athletic Bilbao,0-1,0-1,,0,1,A,0,1,A,11,13,3,3,13,18,7,5,2,5,1,0,3.5,3.41,2.27,,,,,,,3.4,3.3,2.2,,,,,,,3.8,3.49,2.13,,,,,,,,,
+22,Sat,2016-01-30,Real Sociedad,Bétis,2-1,2-0,,2,1,H,2,0,H,11,8,4,1,13,9,3,4,1,4,0,0,1.69,3.95,5.64,,,,,,,1.67,3.75,5.5,,,,,,,1.63,4.01,6.36,,,,,,,,,
+22,Sat,2016-01-30,Villarreal CF,Granada,1-0,0-0,,1,0,H,0,0,D,12,7,6,2,10,11,8,0,4,3,0,0,1.51,4.35,7.83,,,,,,,1.44,4.5,7.5,,,,,,,1.54,4.28,7.33,,,,,,,,,
+22,Sun,2016-01-31,Las Palmas,Celta de Vigo,2-1,1-1,,2,1,H,1,1,D,13,5,5,2,13,18,7,3,6,2,0,1,2.48,3.39,3.1,,,,,,,2.38,3.3,3.1,,,,,,,2.66,3.45,2.82,,,,,,,,,
+22,Sun,2016-01-31,Real Madrid,Espanyol,6-0,4-0,,6,0,H,4,0,H,18,15,7,5,20,20,3,1,1,5,0,0,1.11,12.22,26.45,,,,,,,1.1,11.0,21.0,,,,,,,1.1,12.5,29.0,,,,,,,,,
+22,Sun,2016-01-31,Sevilha FC,Levante,3-1,1-0,,3,1,H,1,0,H,14,22,8,4,8,8,5,9,1,1,0,0,1.37,5.28,10.03,,,,,,,1.33,5.0,10.0,,,,,,,1.37,5.29,9.85,,,,,,,,,
+22,Sun,2016-01-31,Valencia,Sporting Gijón,0-1,0-0,,0,1,A,0,0,D,16,7,3,3,15,21,6,3,0,2,0,0,1.78,4.0,4.79,,,,,,,1.75,3.75,4.75,,,,,,,1.68,3.9,5.88,,,,,,,,,
+22,Mon,2016-02-01,Deportivo La Coruña,Rayo Vallecano,2-2,1-2,,2,2,D,1,2,A,17,7,5,3,6,15,5,4,0,0,0,0,1.89,3.73,4.47,,,,,,,1.91,3.6,4.0,,,,,,,1.88,3.84,4.4,,,,,,,,,
+23,Fri,2016-02-05,Málaga CF,Getafe CF,3-0,3-0,,3,0,H,3,0,H,8,6,4,2,10,10,4,6,3,3,0,0,1.66,3.84,6.32,,,,,,,1.57,3.75,6.5,,,,,,,1.65,3.88,6.39,,,,,,,,,
+23,Sat,2016-02-06,Athletic Bilbao,Villarreal CF,0-0,0-0,,0,0,D,0,0,D,10,2,1,2,19,20,5,3,4,4,1,1,1.87,3.69,4.67,,,,,,,1.83,3.6,4.5,,,,,,,1.84,3.57,5.07,,,,,,,,,
+23,Sat,2016-02-06,Atlético de Madrid,Eibar,3-1,0-0,,3,1,H,0,0,D,13,6,4,2,15,18,5,2,2,3,0,0,1.42,4.69,9.6,,,,,,,1.36,4.5,9.5,,,,,,,1.44,4.68,9.1,,,,,,,,,
+23,Sat,2016-02-06,Rayo Vallecano,Las Palmas,2-0,1-0,,2,0,H,1,0,H,18,9,8,4,16,15,5,5,3,1,0,0,1.91,3.79,4.3,,,,,,,1.91,3.6,4.0,,,,,,,1.8,4.03,4.63,,,,,,,,,
+23,Sat,2016-02-06,Sporting Gijón,Deportivo La Coruña,1-1,1-1,,1,1,D,1,1,D,11,5,2,4,10,13,4,3,2,2,0,0,2.62,3.3,2.98,,,,,,,2.5,3.25,2.9,,,,,,,2.59,3.45,2.9,,,,,,,,,
+23,Sun,2016-02-07,Bétis,Valencia,1-0,0-0,,1,0,H,0,0,D,6,7,2,2,17,19,4,5,4,5,0,1,2.69,3.32,2.88,,,,,,,2.63,3.1,2.88,,,,,,,2.72,3.28,2.88,,,,,,,,,
+23,Sun,2016-02-07,Celta de Vigo,Sevilha FC,1-1,0-1,,1,1,D,0,1,A,25,9,5,2,15,16,10,5,3,3,0,1,3.23,3.47,2.37,,,,,,,3.2,3.3,2.3,,,,,,,3.11,3.57,2.39,,,,,,,,,
+23,Sun,2016-02-07,Granada,Real Madrid,1-2,0-1,,1,2,A,0,1,A,14,14,2,4,20,8,3,6,3,2,0,0,12.45,6.58,1.27,,,,,,,12.0,6.0,1.25,,,,,,,11.18,6.56,1.28,,,,,,,,,
+23,Sun,2016-02-07,Levante,Barcelona,0-2,0-1,,0,2,A,0,1,A,11,11,3,4,15,10,2,5,4,3,0,0,18.95,8.2,1.18,,,,,,,15.0,7.5,1.18,,,,,,,24.32,10.05,1.14,,,,,,,,,
+23,Mon,2016-02-08,Espanyol,Real Sociedad,0-5,0-2,,0,5,A,0,2,A,5,12,1,6,13,11,4,5,1,2,0,0,2.71,3.21,2.94,,,,,,,2.7,3.1,2.8,,,,,,,2.61,3.26,3.02,,,,,,,,,
+24,Fri,2016-02-12,Sporting Gijón,Rayo Vallecano,2-2,2-1,,2,2,D,2,1,H,11,15,5,4,14,12,3,7,3,4,0,0,2.55,3.42,2.98,,,,,,,2.38,3.4,3.0,,,,,,,2.39,3.36,3.29,,,,,,,,,
+24,Sat,2016-02-13,Deportivo La Coruña,Bétis,2-2,1-2,,2,2,D,1,2,A,25,4,11,2,14,13,11,0,1,0,0,0,1.86,3.66,4.76,,,,,,,1.8,3.5,4.75,,,,,,,1.83,3.42,5.48,,,,,,,,,
+24,Sat,2016-02-13,Real Madrid,Athletic Bilbao,4-2,3-1,,4,2,H,3,1,H,19,10,9,3,6,8,5,2,1,2,1,0,1.31,6.1,10.48,,,,,,,1.29,6.0,9.5,,,,,,,1.39,5.38,8.6,,,,,,,,,
+24,Sat,2016-02-13,Valencia,Espanyol,2-1,0-0,,2,1,H,0,0,D,17,19,4,6,8,19,9,9,1,3,0,0,1.77,3.78,5.26,,,,,,,1.75,3.6,5.0,,,,,,,1.69,3.89,5.77,,,,,,,,,
+24,Sat,2016-02-13,Villarreal CF,Málaga CF,1-0,1-0,,1,0,H,1,0,H,12,7,5,2,13,15,5,1,2,1,0,0,2.12,3.32,4.04,,,,,,,2.05,3.3,3.8,,,,,,,2.19,3.24,3.94,,,,,,,,,
+24,Sun,2016-02-14,Barcelona,Celta de Vigo,6-1,1-1,,6,1,H,1,1,D,19,10,11,4,10,16,1,1,0,4,0,0,1.08,15.0,33.0,,,,,,,1.08,11.0,26.0,,,,,,,1.08,15.17,34.36,,,,,,,,,
+24,Sun,2016-02-14,Eibar,Levante,2-0,1-0,,2,0,H,1,0,H,15,8,6,3,15,12,8,2,3,2,0,0,1.86,3.64,4.79,,,,,,,1.8,3.5,4.75,,,,,,,2.09,3.46,3.95,,,,,,,,,
+24,Sun,2016-02-14,Getafe CF,Atlético de Madrid,0-1,0-1,,0,1,A,0,1,A,11,6,0,3,9,9,5,4,2,3,0,0,7.45,3.99,1.57,,,,,,,6.5,3.8,1.57,,,,,,,8.6,4.2,1.5,,,,,,,,,
+24,Sun,2016-02-14,Real Sociedad,Granada,3-0,2-0,,3,0,H,2,0,H,12,15,6,2,9,18,7,13,1,2,0,0,1.61,4.2,6.15,,,,,,,1.53,4.0,6.5,,,,,,,1.69,3.98,5.61,,,,,,,,,
+24,Sun,2016-02-14,Sevilha FC,Las Palmas,2-0,0-0,,2,0,H,0,0,D,9,11,5,3,15,11,8,3,1,3,0,0,1.33,5.66,10.97,,,,,,,1.33,5.0,10.0,,,,,,,1.34,5.68,10.17,,,,,,,,,
+25,Fri,2016-02-19,Levante,Getafe CF,3-0,2-0,,3,0,H,2,0,H,12,14,6,6,12,13,6,8,2,2,0,0,2.19,3.45,3.66,,,,,,,2.2,3.3,3.4,,,,,,,2.18,3.44,3.71,,,,,,,,,
+25,Sat,2016-02-20,Bétis,Sporting Gijón,1-1,0-0,,1,1,D,0,0,D,17,4,6,3,15,25,10,4,2,3,0,0,2.04,3.44,4.18,,,,,,,2.05,3.3,3.8,,,,,,,2.11,3.32,4.05,,,,,,,,,
+25,Sat,2016-02-20,Celta de Vigo,Eibar,3-2,2-0,,3,2,H,2,0,H,14,7,9,3,6,25,6,1,3,2,0,0,2.01,3.7,3.95,,,,,,,2.0,3.5,3.8,,,,,,,1.71,3.99,5.37,,,,,,,,,
+25,Sat,2016-02-20,Espanyol,Deportivo La Coruña,1-0,0-0,,1,0,H,0,0,D,16,17,9,3,19,4,7,4,3,1,0,0,2.49,3.39,3.09,,,,,,,2.38,3.3,3.0,,,,,,,2.29,3.34,3.52,,,,,,,,,
+25,Sat,2016-02-20,Las Palmas,Barcelona,1-2,1-2,,1,2,A,1,2,A,16,13,3,8,10,13,3,6,1,2,0,0,18.0,7.35,1.21,,,,,,,15.0,7.5,1.18,,,,,,,15.85,7.65,1.21,,,,,,,,,
+25,Sun,2016-02-21,Athletic Bilbao,Real Sociedad,0-1,0-1,,0,1,A,0,1,A,9,9,2,4,21,16,9,3,7,6,0,0,1.84,3.74,4.77,,,,,,,1.8,3.5,4.75,,,,,,,1.81,3.55,5.35,,,,,,,,,
+25,Sun,2016-02-21,Atlético de Madrid,Villarreal CF,0-0,0-0,,0,0,D,0,0,D,12,5,3,0,11,13,10,2,2,2,0,0,1.54,4.11,7.74,,,,,,,1.53,3.8,7.5,,,,,,,1.49,4.1,9.49,,,,,,,,,
+25,Sun,2016-02-21,Granada,Valencia,1-2,0-0,,1,2,A,0,0,D,15,10,4,6,18,18,6,3,2,3,0,0,2.88,3.44,2.62,,,,,,,2.88,3.2,2.55,,,,,,,3.07,3.29,2.55,,,,,,,,,
+25,Sun,2016-02-21,Málaga CF,Real Madrid,1-1,0-1,,1,1,D,0,1,A,11,14,5,7,14,12,6,6,5,2,0,0,4.79,4.15,1.75,,,,,,,4.75,3.8,1.73,,,,,,,4.56,3.66,1.89,,,,,,,,,
+25,Sun,2016-02-21,Rayo Vallecano,Sevilha FC,2-2,1-2,,2,2,D,1,2,A,13,14,4,7,14,23,3,17,6,2,0,0,3.07,3.82,2.31,,,,,,,3.1,3.6,2.2,,,,,,,3.27,3.79,2.22,,,,,,,,,
+26,Fri,2016-02-26,Eibar,Las Palmas,0-1,0-1,,0,1,A,0,1,A,10,12,4,4,16,9,6,6,4,1,0,0,1.77,3.81,5.21,,,,,,,1.75,3.6,5.0,,,,,,,1.82,3.79,4.84,,,,,,,,,
+26,Sat,2016-02-27,Bétis,Rayo Vallecano,2-2,2-0,,2,2,D,2,0,H,20,11,4,4,16,15,8,8,2,3,0,0,2.28,3.52,3.36,,,,,,,2.2,3.3,3.4,,,,,,,2.31,3.6,3.24,,,,,,,,,
+26,Sat,2016-02-27,Getafe CF,Celta de Vigo,0-1,0-0,,0,1,A,0,0,D,14,9,2,3,11,14,4,5,3,4,0,0,3.09,3.55,2.41,,,,,,,3.2,3.3,2.3,,,,,,,2.94,3.35,2.62,,,,,,,,,
+26,Sat,2016-02-27,Real Madrid,Atlético de Madrid,0-1,0-0,,0,1,A,0,0,D,15,9,3,5,15,13,2,5,3,4,0,0,1.8,3.8,4.95,,,,,,,1.73,3.6,5.25,,,,,,,2.0,3.46,4.33,,,,,,,,,
+26,Sat,2016-02-27,Real Sociedad,Málaga CF,1-1,0-0,,1,1,D,0,0,D,11,8,3,3,17,14,8,3,4,5,0,0,2.29,3.34,3.54,,,,,,,2.2,3.25,3.5,,,,,,,2.12,3.33,4.02,,,,,,,,,
+26,Sat,2016-02-27,Sporting Gijón,Espanyol,2-4,1-1,,2,4,A,1,1,D,13,12,5,7,14,14,5,2,5,2,1,0,2.32,3.4,3.39,,,,,,,2.3,3.2,3.3,,,,,,,2.4,3.36,3.27,,,,,,,,,
+26,Sun,2016-02-28,Barcelona,Sevilha FC,2-1,1-1,,2,1,H,1,1,D,17,11,8,4,13,10,6,7,3,2,0,0,1.18,8.68,17.17,,,,,,,1.14,8.0,15.0,,,,,,,1.2,8.67,14.23,,,,,,,,,
+26,Sun,2016-02-28,Deportivo La Coruña,Granada,0-1,0-1,,0,1,A,0,1,A,13,10,2,3,12,12,6,6,2,3,1,0,1.83,3.61,5.05,,,,,,,1.8,3.5,4.75,,,,,,,1.85,3.61,4.9,,,,,,,,,
+26,Sun,2016-02-28,Valencia,Athletic Bilbao,0-3,0-0,,0,3,A,0,0,D,9,13,3,4,9,13,7,7,2,0,0,0,2.33,3.4,3.37,,,,,,,2.3,3.2,3.3,,,,,,,2.12,3.43,3.89,,,,,,,,,
+26,Sun,2016-02-28,Villarreal CF,Levante,3-0,2-0,,3,0,H,2,0,H,9,7,3,1,15,12,3,4,0,2,0,1,1.71,3.81,5.8,,,,,,,1.67,3.6,5.75,,,,,,,1.8,3.57,5.41,,,,,,,,,
+27,Tue,2016-03-01,Atlético de Madrid,Real Sociedad,3-0,1-0,,3,0,H,1,0,H,12,7,5,1,19,10,8,1,1,2,0,0,1.47,4.35,9.14,,,,,,,1.4,4.33,9.0,,,,,,,1.41,4.48,11.38,,,,,,,,,
+27,Tue,2016-03-01,Las Palmas,Getafe CF,4-0,2-0,,4,0,H,2,0,H,11,10,5,2,20,12,2,6,5,2,0,1,2.07,3.58,3.9,,,,,,,2.05,3.4,3.75,,,,,,,2.03,3.53,4.09,,,,,,,,,
+27,Wed,2016-03-02,Athletic Bilbao,Deportivo La Coruña,4-1,2-0,,4,1,H,2,0,H,12,7,6,4,5,14,1,2,1,3,0,0,1.53,4.32,7.4,,,,,,,1.53,4.0,7.0,,,,,,,1.47,4.52,8.52,,,,,,,,,
+27,Wed,2016-03-02,Celta de Vigo,Villarreal CF,0-0,0-0,,0,0,D,0,0,D,11,6,4,3,9,2,2,1,2,5,0,0,2.22,3.37,3.65,,,,,,,2.2,3.3,3.4,,,,,,,2.11,3.36,4.02,,,,,,,,,
+27,Wed,2016-03-02,Levante,Real Madrid,1-3,1-2,,1,3,A,1,2,A,11,21,4,8,12,11,3,10,2,1,0,0,6.56,4.78,1.52,,,,,,,7.0,4.75,1.44,,,,,,,6.91,4.56,1.52,,,,,,,,,
+27,Wed,2016-03-02,Málaga CF,Valencia,1-2,1-1,,1,2,A,1,1,D,10,11,1,2,19,16,4,5,6,5,0,0,2.03,3.41,4.07,,,,,,,2.05,3.3,3.8,,,,,,,2.02,3.51,4.16,,,,,,,,,
+27,Wed,2016-03-02,Sevilha FC,Eibar,1-0,1-0,,1,0,H,1,0,H,14,11,4,6,12,13,12,6,1,2,0,1,1.44,4.97,8.17,,,,,,,1.4,4.75,8.0,,,,,,,1.47,4.89,7.41,,,,,,,,,
+27,Thu,2016-03-03,Espanyol,Bétis,0-3,0-2,,0,3,A,0,2,A,16,9,3,6,20,13,5,0,4,2,0,0,2.12,3.49,3.81,,,,,,,1.95,3.5,4.0,,,,,,,2.19,3.32,3.81,,,,,,,,,
+27,Thu,2016-03-03,Granada,Sporting Gijón,2-0,0-0,,2,0,H,0,0,D,13,4,8,0,24,13,4,1,7,3,0,1,2.1,3.51,3.79,,,,,,,2.1,3.3,3.75,,,,,,,1.89,3.51,4.83,,,,,,,,,
+27,Thu,2016-03-03,Rayo Vallecano,Barcelona,1-5,0-2,,1,5,A,0,2,A,8,20,4,8,17,9,3,5,0,2,2,0,16.56,8.15,1.19,,,,,,,13.0,7.0,1.2,,,,,,,16.8,8.9,1.18,,,,,,,,,
+28,Sat,2016-03-05,Deportivo La Coruña,Málaga CF,3-3,1-1,,3,3,D,1,1,D,14,5,7,2,11,13,10,4,4,2,0,1,2.65,3.21,3.02,,,,,,,2.5,3.1,3.0,,,,,,,2.43,3.27,3.31,,,,,,,,,
+28,Sat,2016-03-05,Getafe CF,Sevilha FC,1-1,0-0,,1,1,D,0,0,D,13,7,3,4,12,14,10,9,5,2,0,0,3.77,3.67,2.07,,,,,,,3.8,3.5,2.0,,,,,,,4.44,3.88,1.86,,,,,,,,,
+28,Sat,2016-03-05,Real Madrid,Celta de Vigo,7-1,1-0,,7,1,H,1,0,H,20,8,12,3,13,12,10,5,2,3,0,0,1.33,6.11,9.6,,,,,,,1.3,6.0,8.0,,,,,,,1.37,5.99,8.11,,,,,,,,,
+28,Sat,2016-03-05,Villarreal CF,Las Palmas,0-1,0-1,,0,1,A,0,1,A,13,10,2,3,9,8,6,2,1,2,0,0,1.65,3.96,6.21,,,,,,,1.62,3.75,6.0,,,,,,,1.54,4.36,7.09,,,,,,,,,
+28,Sun,2016-03-06,Bétis,Granada,2-0,0-0,,2,0,H,0,0,D,10,10,4,4,9,19,6,4,3,7,1,1,2.11,3.48,3.86,,,,,,,2.1,3.4,3.6,,,,,,,2.1,3.47,3.91,,,,,,,,,
+28,Sun,2016-03-06,Eibar,Barcelona,0-4,0-2,,0,4,A,0,2,A,7,9,0,7,18,10,6,2,3,2,0,0,13.2,6.64,1.26,,,,,,,10.0,6.5,1.25,,,,,,,12.85,6.56,1.27,,,,,,,,,
+28,Sun,2016-03-06,Real Sociedad,Levante,1-1,1-1,,1,1,D,1,1,D,15,10,3,3,12,16,10,3,3,3,0,0,1.61,4.18,6.26,,,,,,,1.57,3.75,7.0,,,,,,,1.58,4.3,6.47,,,,,,,,,
+28,Sun,2016-03-06,Sporting Gijón,Athletic Bilbao,0-2,0-1,,0,2,A,0,1,A,5,10,1,6,17,14,3,0,1,1,0,1,4.16,3.53,2.01,,,,,,,4.0,3.3,2.0,,,,,,,5.27,3.68,1.79,,,,,,,,,
+28,Sun,2016-03-06,Valencia,Atlético de Madrid,1-3,1-1,,1,3,A,1,1,D,10,21,3,5,13,11,6,7,1,1,1,0,4.41,3.35,2.02,,,,,,,4.0,3.3,2.0,,,,,,,4.3,3.23,2.09,,,,,,,,,
+28,Mon,2016-03-07,Espanyol,Rayo Vallecano,2-1,1-0,,2,1,H,1,0,H,9,7,8,1,16,15,8,3,3,4,1,0,1.99,3.86,3.86,,,,,,,1.95,3.5,4.0,,,,,,,1.88,3.78,4.46,,,,,,,,,
+29,Fri,2016-03-11,Málaga CF,Sporting Gijón,1-0,1-0,,1,0,H,1,0,H,13,9,3,4,8,13,3,4,2,4,0,0,1.64,4.01,6.18,,,,,,,1.62,3.8,6.0,,,,,,,1.69,3.81,6.03,,,,,,,,,
+29,Sat,2016-03-12,Atlético de Madrid,Deportivo La Coruña,3-0,1-0,,3,0,H,1,0,H,15,6,7,2,12,8,10,1,1,1,0,0,1.26,5.83,19.06,,,,,,,1.25,5.5,15.0,,,,,,,1.23,6.45,18.8,,,,,,,,,
+29,Sat,2016-03-12,Barcelona,Getafe CF,6-0,4-0,,6,0,H,4,0,H,16,6,9,1,7,13,5,3,0,3,0,0,1.07,20.0,30.0,,,,,,,1.06,15.0,26.0,,,,,,,1.06,20.0,35.0,,,,,,,,,
+29,Sat,2016-03-12,Celta de Vigo,Real Sociedad,1-0,1-0,,1,0,H,1,0,H,7,15,1,6,21,9,5,3,3,2,0,0,2.12,3.59,3.7,,,,,,,2.1,3.4,3.5,,,,,,,2.11,3.68,3.64,,,,,,,,,
+29,Sat,2016-03-12,Rayo Vallecano,Eibar,1-1,1-1,,1,1,D,1,1,D,12,7,3,1,17,18,8,0,5,1,0,1,2.18,3.72,3.41,,,,,,,2.2,3.6,3.1,,,,,,,2.08,3.68,3.73,,,,,,,,,
+29,Sun,2016-03-13,Athletic Bilbao,Bétis,3-1,2-0,,3,1,H,2,0,H,18,3,9,1,12,9,5,6,1,0,0,0,1.51,4.59,7.24,,,,,,,1.44,4.33,8.0,,,,,,,1.62,4.04,6.51,,,,,,,,,
+29,Sun,2016-03-13,Las Palmas,Real Madrid,1-2,0-1,,1,2,A,0,1,A,15,12,6,4,10,13,6,5,4,3,0,1,8.69,5.48,1.38,,,,,,,9.5,5.25,1.33,,,,,,,8.09,5.54,1.4,,,,,,,,,
+29,Sun,2016-03-13,Levante,Valencia,1-0,0-0,,1,0,H,0,0,D,13,6,6,1,16,16,8,0,2,4,0,0,2.67,3.37,2.87,,,,,,,2.63,3.25,2.8,,,,,,,3.23,3.4,2.4,,,,,,,,,
+29,Sun,2016-03-13,Sevilha FC,Villarreal CF,4-2,1-2,,4,2,H,1,2,A,14,13,4,6,10,12,5,8,1,1,1,0,1.69,3.95,5.69,,,,,,,1.73,3.75,5.0,,,,,,,1.79,3.74,5.16,,,,,,,,,
+29,Mon,2016-03-14,Granada,Espanyol,1-1,1-0,,1,1,D,1,0,H,8,10,1,2,12,20,2,8,5,3,1,0,2.25,3.41,3.55,,,,,,,2.15,3.3,3.5,,,,,,,2.16,3.33,3.89,,,,,,,,,
+30,Fri,2016-03-18,Getafe CF,Eibar,1-1,1-0,,1,1,D,1,0,H,8,20,4,6,12,12,3,3,1,2,0,0,2.14,3.39,3.86,,,,,,,2.1,3.25,3.75,,,,,,,2.15,3.37,3.88,,,,,,,,,
+30,Sat,2016-03-19,Bétis,Málaga CF,0-1,0-0,,0,1,A,0,0,D,16,13,5,5,15,9,5,7,3,2,0,0,2.7,3.27,2.9,,,,,,,2.6,3.1,2.9,,,,,,,2.71,3.22,2.93,,,,,,,,,
+30,Sat,2016-03-19,Deportivo La Coruña,Levante,2-1,1-0,,2,1,H,1,0,H,15,7,6,1,8,12,2,1,2,3,0,0,1.91,3.61,4.59,,,,,,,1.91,3.4,4.33,,,,,,,1.98,3.63,4.18,,,,,,,,,
+30,Sat,2016-03-19,Granada,Rayo Vallecano,2-2,1-1,,2,2,D,1,1,D,11,22,2,6,8,9,6,12,1,5,1,0,2.17,3.66,3.49,,,,,,,2.15,3.4,3.4,,,,,,,2.1,3.77,3.6,,,,,,,,,
+30,Sat,2016-03-19,Real Sociedad,Las Palmas,0-1,0-1,,0,1,A,0,1,A,13,12,3,7,16,17,11,5,4,5,0,0,1.69,3.98,5.63,,,,,,,1.67,3.5,6.0,,,,,,,1.72,3.79,5.69,,,,,,,,,
+30,Sat,2016-03-19,Sporting Gijón,Atlético de Madrid,2-1,0-1,,2,1,H,0,1,A,12,4,3,1,14,11,7,2,5,2,0,0,7.96,4.12,1.53,,,,,,,8.5,3.6,1.53,,,,,,,9.08,3.83,1.54,,,,,,,,,
+30,Sun,2016-03-20,Espanyol,Athletic Bilbao,2-1,0-1,,2,1,H,0,1,A,16,14,7,4,7,13,6,2,3,3,0,0,3.18,3.58,2.34,,,,,,,3.1,3.4,2.3,,,,,,,2.94,3.35,2.62,,,,,,,,,
+30,Sun,2016-03-20,Real Madrid,Sevilha FC,4-0,1-0,,4,0,H,1,0,H,26,8,12,4,10,9,8,8,2,2,0,0,1.37,5.86,8.41,,,,,,,1.33,5.5,8.5,,,,,,,1.33,6.26,9.17,,,,,,,,,
+30,Sun,2016-03-20,Valencia,Celta de Vigo,0-2,0-0,,0,2,A,0,0,D,14,13,4,6,14,14,4,5,1,0,0,0,2.31,3.63,3.2,,,,,,,2.3,3.5,3.0,,,,,,,2.22,3.56,3.47,,,,,,,,,
+30,Sun,2016-03-20,Villarreal CF,Barcelona,2-2,0-2,,2,2,D,0,2,A,15,15,6,6,17,9,4,4,8,4,0,0,9.15,5.41,1.38,,,,,,,8.5,5.25,1.33,,,,,,,8.78,5.14,1.4,,,,,,,,,
+31,Fri,2016-04-01,Rayo Vallecano,Getafe CF,2-0,1-0,,2,0,H,1,0,H,16,14,7,3,10,10,9,6,4,5,1,0,1.95,3.74,4.16,,,,,,,1.91,3.6,4.0,,,,,,,2.03,3.72,3.86,,,,,,,,,
+31,Sat,2016-04-02,Atlético de Madrid,Bétis,5-1,2-0,,5,1,H,2,0,H,19,8,12,5,14,12,5,5,1,3,0,0,1.4,4.8,10.19,,,,,,,1.4,4.33,10.0,,,,,,,1.35,5.2,11.73,,,,,,,,,
+31,Sat,2016-04-02,Barcelona,Real Madrid,1-2,0-0,,1,2,A,0,0,D,14,14,3,6,17,15,4,3,3,2,0,1,1.62,4.63,5.39,,,,,,,1.57,4.5,5.5,,,,,,,1.53,5.21,5.69,,,,,,,,,
+31,Sat,2016-04-02,Celta de Vigo,Deportivo La Coruña,1-1,1-1,,1,1,D,1,1,D,9,7,2,3,15,8,11,0,4,2,0,1,1.79,3.93,4.88,,,,,,,1.75,3.8,4.75,,,,,,,1.78,3.98,4.86,,,,,,,,,
+31,Sat,2016-04-02,Las Palmas,Valencia,2-1,0-1,,2,1,H,0,1,A,13,7,6,4,8,17,8,2,2,4,0,0,2.45,3.48,3.08,,,,,,,2.38,3.25,3.1,,,,,,,2.42,3.48,3.13,,,,,,,,,
+31,Sun,2016-04-03,Athletic Bilbao,Granada,1-1,1-0,,1,1,D,1,0,H,8,9,1,2,16,14,13,1,2,5,0,0,1.53,4.4,7.24,,,,,,,1.44,4.33,8.0,,,,,,,1.41,4.9,9.15,,,,,,,,,
+31,Sun,2016-04-03,Eibar,Villarreal CF,1-2,1-1,,1,2,A,1,1,D,10,8,3,4,15,12,4,3,3,3,0,0,3.11,3.2,2.59,,,,,,,3.1,3.0,2.55,,,,,,,3.08,3.27,2.57,,,,,,,,,
+31,Sun,2016-04-03,Málaga CF,Espanyol,1-1,1-1,,1,1,D,1,1,D,11,5,5,1,14,15,5,1,2,4,0,0,1.85,3.63,4.88,,,,,,,1.85,3.4,4.75,,,,,,,1.91,3.56,4.62,,,,,,,,,
+31,Sun,2016-04-03,Sevilha FC,Real Sociedad,1-2,0-2,,1,2,A,0,2,A,15,9,6,2,22,12,8,3,4,3,0,1,1.63,4.14,6.03,,,,,,,1.62,4.0,5.5,,,,,,,1.61,4.48,5.71,,,,,,,,,
+31,Mon,2016-04-04,Levante,Sporting Gijón,0-0,0-0,,0,0,D,0,0,D,16,11,4,1,17,12,4,6,4,4,1,0,2.12,3.54,3.77,,,,,,,2.1,3.25,3.75,,,,,,,2.24,3.49,3.48,,,,,,,,,
+32,Fri,2016-04-08,Granada,Málaga CF,0-0,0-0,,0,0,D,0,0,D,9,9,1,2,14,10,5,5,1,3,0,0,2.33,3.36,3.41,,,,,,,2.3,3.2,3.3,,,,,,,2.37,3.33,3.35,,,,,,,,,
+32,Sat,2016-04-09,Bétis,Levante,1-0,0-0,,1,0,H,0,0,D,7,12,2,3,13,18,4,3,4,3,0,0,2.09,3.51,3.9,,,,,,,2.05,3.25,3.75,,,,,,,1.88,3.68,4.57,,,,,,,,,
+32,Sat,2016-04-09,Espanyol,Atlético de Madrid,1-3,1-1,,1,3,A,1,1,D,10,14,3,5,13,14,3,5,2,2,0,0,4.38,3.42,2.0,,,,,,,4.0,3.1,2.05,,,,,,,5.61,3.62,1.77,,,,,,,,,
+32,Sat,2016-04-09,Real Madrid,Eibar,4-0,4-0,,4,0,H,4,0,H,13,9,6,2,9,13,6,7,1,3,0,0,1.17,8.94,18.95,,,,,,,1.17,7.5,13.0,,,,,,,1.2,8.2,15.85,,,,,,,,,
+32,Sat,2016-04-09,Real Sociedad,Barcelona,1-0,1-0,,1,0,H,1,0,H,5,13,1,6,14,13,5,9,1,3,0,0,6.73,4.65,1.52,,,,,,,6.0,4.33,1.5,,,,,,,6.02,4.46,1.59,,,,,,,,,
+32,Sun,2016-04-10,Athletic Bilbao,Rayo Vallecano,1-0,0-0,,1,0,H,0,0,D,14,12,7,4,8,14,0,5,1,3,0,0,1.61,4.44,5.77,,,,,,,1.53,4.0,6.0,,,,,,,1.57,4.7,5.9,,,,,,,,,
+32,Sun,2016-04-10,Sporting Gijón,Celta de Vigo,0-1,0-0,,0,1,A,0,0,D,9,17,2,5,8,11,7,7,2,5,0,0,3.08,3.5,2.45,,,,,,,3.1,3.25,2.3,,,,,,,2.93,3.45,2.57,,,,,,,,,
+32,Sun,2016-04-10,Valencia,Sevilha FC,2-1,1-0,,2,1,H,1,0,H,23,7,9,4,15,18,10,3,2,2,0,0,2.36,3.67,3.08,,,,,,,2.2,3.4,3.2,,,,,,,2.32,3.7,3.14,,,,,,,,,
+32,Sun,2016-04-10,Villarreal CF,Getafe CF,2-0,1-0,,2,0,H,1,0,H,13,16,3,3,9,12,8,5,2,2,0,0,1.53,4.21,7.66,,,,,,,1.5,3.8,7.5,,,,,,,1.53,4.49,6.96,,,,,,,,,
+32,Mon,2016-04-11,Deportivo La Coruña,Las Palmas,1-3,0-0,,1,3,A,0,0,D,19,13,5,6,8,9,7,4,1,1,0,0,2.19,3.33,3.78,,,,,,,2.05,3.3,3.6,,,,,,,2.03,3.59,4.02,,,,,,,,,
+33,Fri,2016-04-15,Levante,Espanyol,2-1,1-1,,2,1,H,1,1,D,12,10,4,2,10,12,4,6,5,0,0,0,2.51,3.4,3.05,,,,,,,2.45,3.3,3.0,,,,,,,2.34,3.45,3.31,,,,,,,,,
+33,Sat,2016-04-16,Celta de Vigo,Bétis,1-1,0-1,,1,1,D,0,1,A,18,9,5,4,14,18,12,4,4,3,0,0,1.56,4.45,6.56,,,,,,,1.6,4.2,5.5,,,,,,,1.56,4.52,6.39,,,,,,,,,
+33,Sat,2016-04-16,Eibar,Real Sociedad,2-1,1-1,,2,1,H,1,1,D,9,7,4,4,16,11,2,0,3,3,0,0,2.85,3.27,2.75,,,,,,,2.7,3.25,2.7,,,,,,,2.87,3.23,2.76,,,,,,,,,
+33,Sat,2016-04-16,Getafe CF,Real Madrid,1-5,0-2,,1,5,A,0,2,A,12,21,5,11,10,10,5,6,4,1,0,0,11.2,6.05,1.31,,,,,,,9.5,6.0,1.29,,,,,,,14.4,7.6,1.22,,,,,,,,,
+33,Sat,2016-04-16,Las Palmas,Sporting Gijón,1-1,1-0,,1,1,D,1,0,H,10,12,4,2,11,21,3,10,2,5,0,0,1.95,3.69,4.22,,,,,,,1.95,3.5,4.0,,,,,,,1.92,3.66,4.45,,,,,,,,,
+33,Sun,2016-04-17,Atlético de Madrid,Granada,3-0,1-0,,3,0,H,1,0,H,8,11,3,0,16,14,4,2,3,5,0,0,1.24,6.25,17.93,,,,,,,1.22,6.0,15.0,,,,,,,1.28,5.82,15.57,,,,,,,,,
+33,Sun,2016-04-17,Barcelona,Valencia,1-2,0-2,,1,2,A,0,2,A,22,7,7,2,12,15,7,2,3,3,0,0,1.17,9.25,17.2,,,,,,,1.14,9.0,17.0,,,,,,,1.11,12.7,22.2,,,,,,,,,
+33,Sun,2016-04-17,Málaga CF,Athletic Bilbao,0-1,0-0,,0,1,A,0,0,D,17,6,7,3,13,14,8,2,3,5,0,0,2.4,3.29,3.33,,,,,,,2.3,3.25,3.25,,,,,,,2.29,3.22,3.67,,,,,,,,,
+33,Sun,2016-04-17,Rayo Vallecano,Villarreal CF,2-1,1-1,,2,1,H,1,1,D,14,6,6,2,14,15,4,3,2,3,0,0,2.66,3.52,2.78,,,,,,,2.6,3.3,2.75,,,,,,,2.61,3.58,2.8,,,,,,,,,
+33,Sun,2016-04-17,Sevilha FC,Deportivo La Coruña,1-1,1-0,,1,1,D,1,0,H,12,5,3,4,15,8,10,0,2,2,0,0,1.55,4.58,6.38,,,,,,,1.53,4.2,6.0,,,,,,,1.49,4.9,6.97,,,,,,,,,
+34,Tue,2016-04-19,Bétis,Las Palmas,1-0,0-0,,1,0,H,0,0,D,20,3,6,0,14,12,6,3,2,1,0,1,2.19,3.49,3.6,,,,,,,2.1,3.5,3.5,,,,,,,2.04,3.61,3.95,,,,,,,,,
+34,Tue,2016-04-19,Espanyol,Celta de Vigo,1-1,1-1,,1,1,D,1,1,D,8,3,3,1,15,13,2,2,1,1,0,0,2.52,3.45,3.0,,,,,,,2.38,3.3,3.0,,,,,,,2.56,3.48,2.93,,,,,,,,,
+34,Wed,2016-04-20,Athletic Bilbao,Atlético de Madrid,0-1,0-1,,0,1,A,0,1,A,12,8,6,2,9,6,6,4,0,0,0,0,4.32,3.45,2.01,,,,,,,4.0,3.3,2.0,,,,,,,4.57,3.34,1.99,,,,,,,,,
+34,Wed,2016-04-20,Deportivo La Coruña,Barcelona,0-8,0-2,,0,8,A,0,2,A,16,19,5,10,11,8,6,2,1,0,0,0,15.6,7.71,1.21,,,,,,,13.0,7.0,1.2,,,,,,,15.58,7.94,1.2,,,,,,,,,
+34,Wed,2016-04-20,Málaga CF,Rayo Vallecano,1-1,0-0,,1,1,D,0,0,D,12,11,4,4,19,13,7,7,1,3,0,0,1.98,3.74,4.04,,,,,,,1.85,3.75,4.2,,,,,,,2.07,3.71,3.75,,,,,,,,,
+34,Wed,2016-04-20,Real Madrid,Villarreal CF,3-0,1-0,,3,0,H,1,0,H,20,5,6,2,9,8,11,1,2,1,0,0,1.22,8.08,13.21,,,,,,,1.22,7.0,11.0,,,,,,,1.24,7.5,12.0,,,,,,,,,
+34,Wed,2016-04-20,Sporting Gijón,Sevilha FC,2-1,1-1,,2,1,H,1,1,D,14,18,2,8,7,15,5,7,2,1,0,0,3.2,3.54,2.35,,,,,,,3.1,3.4,2.3,,,,,,,2.77,3.62,2.62,,,,,,,,,
+34,Wed,2016-04-20,Valencia,Eibar,4-0,3-0,,4,0,H,3,0,H,9,9,6,2,10,6,6,3,1,2,0,0,1.65,4.22,5.58,,,,,,,1.62,4.2,5.25,,,,,,,1.66,4.22,5.51,,,,,,,,,
+34,Thu,2016-04-21,Granada,Levante,5-1,3-0,,5,1,H,3,0,H,13,15,6,5,16,11,3,4,6,5,0,1,2.02,3.52,4.17,,,,,,,1.95,3.5,3.8,,,,,,,2.22,3.43,3.6,,,,,,,,,
+34,Thu,2016-04-21,Real Sociedad,Getafe CF,1-2,1-1,,1,2,A,1,1,D,14,7,5,3,10,17,8,2,2,4,0,0,1.57,4.37,6.52,,,,,,,1.53,4.2,6.0,,,,,,,1.72,3.97,5.37,,,,,,,,,
+35,Fri,2016-04-22,Las Palmas,Espanyol,4-0,1-0,,4,0,H,1,0,H,14,11,9,5,14,9,5,5,4,4,0,0,2.31,3.34,3.48,,,,,,,2.25,3.3,3.3,,,,,,,2.44,3.46,3.11,,,,,,,,,
+35,Sat,2016-04-23,Atlético de Madrid,Málaga CF,1-0,0-0,,1,0,H,0,0,D,14,7,4,4,6,14,10,4,3,3,0,0,1.36,4.99,11.68,,,,,,,1.33,5.0,11.0,,,,,,,1.31,5.54,13.34,,,,,,,,,
+35,Sat,2016-04-23,Barcelona,Sporting Gijón,6-0,1-0,,6,0,H,1,0,H,24,5,10,3,11,11,6,1,0,2,0,1,,,,,,,,,,1.04,17.0,34.0,,,,,,,1.05,22.0,46.0,,,,,,,,,
+35,Sat,2016-04-23,Eibar,Deportivo La Coruña,1-1,1-0,,1,1,D,1,0,H,9,9,2,1,14,8,11,7,0,1,0,0,2.28,3.55,3.35,,,,,,,2.25,3.2,3.4,,,,,,,2.4,3.41,3.22,,,,,,,,,
+35,Sat,2016-04-23,Rayo Vallecano,Real Madrid,2-3,2-1,,2,3,A,2,1,H,11,16,6,6,15,9,4,6,6,1,0,0,8.92,5.62,1.37,,,,,,,8.5,5.5,1.33,,,,,,,7.5,6.2,1.38,,,,,,,,,
+35,Sun,2016-04-24,Getafe CF,Valencia,2-2,0-0,,2,2,D,0,0,D,18,5,11,4,14,12,8,2,4,1,0,0,3.11,3.62,2.37,,,,,,,3.2,3.3,2.3,,,,,,,3.2,3.7,2.28,,,,,,,,,
+35,Sun,2016-04-24,Levante,Athletic Bilbao,2-2,1-0,,2,2,D,1,0,H,10,19,5,8,13,8,4,9,2,1,0,0,3.41,3.46,2.28,,,,,,,3.4,3.2,2.25,,,,,,,3.4,3.76,2.17,,,,,,,,,
+35,Sun,2016-04-24,Sevilha FC,Bétis,2-0,0-0,,2,0,H,0,0,D,13,8,3,2,25,13,8,5,5,4,0,0,1.57,4.55,6.1,,,,,,,1.5,4.33,6.5,,,,,,,1.47,4.88,7.32,,,,,,,,,
+35,Sun,2016-04-24,Villarreal CF,Real Sociedad,0-0,0-0,,0,0,D,0,0,D,8,7,3,2,17,12,3,5,4,1,0,0,1.81,3.73,5.03,,,,,,,1.73,3.75,5.0,,,,,,,1.83,3.76,4.8,,,,,,,,,
+35,Mon,2016-04-25,Celta de Vigo,Granada,2-1,1-0,,2,1,H,1,0,H,15,11,4,3,13,15,4,4,2,2,0,0,1.59,4.36,6.21,,,,,,,1.53,4.33,6.0,,,,,,,1.61,4.35,5.95,,,,,,,,,
+36,Fri,2016-04-29,Sporting Gijón,Eibar,2-0,1-0,,2,0,H,1,0,H,3,12,3,6,16,17,1,5,2,2,0,0,1.64,4.12,5.99,,,,,,,1.6,3.8,5.75,,,,,,,1.66,4.15,5.68,,,,,,,,,
+36,Sat,2016-04-30,Atlético de Madrid,Rayo Vallecano,1-0,0-0,,1,0,H,0,0,D,12,13,6,3,14,12,5,7,1,1,0,0,1.29,6.15,11.98,,,,,,,1.33,5.0,10.0,,,,,,,1.36,5.4,9.99,,,,,,,,,
+36,Sat,2016-04-30,Bétis,Barcelona,0-2,0-0,,0,2,A,0,0,D,2,11,1,4,9,11,2,4,3,3,1,0,25.51,10.49,1.13,,,,,,,21.0,9.0,1.13,,,,,,,27.63,11.26,1.12,,,,,,,,,
+36,Sat,2016-04-30,Granada,Las Palmas,3-2,2-2,,3,2,H,2,2,D,14,12,5,6,11,9,4,3,3,2,0,0,1.62,4.06,6.39,,,,,,,1.6,3.8,6.0,,,,,,,1.59,4.27,6.4,,,,,,,,,
+36,Sat,2016-04-30,Real Sociedad,Real Madrid,0-1,0-0,,0,1,A,0,0,D,11,18,4,6,15,17,6,6,4,4,0,0,5.11,4.27,1.69,,,,,,,5.0,4.0,1.67,,,,,,,4.92,4.32,1.71,,,,,,,,,
+36,Sun,2016-05-01,Athletic Bilbao,Celta de Vigo,2-1,1-1,,2,1,H,1,1,D,10,5,2,2,12,19,7,2,1,5,0,1,1.86,3.84,4.5,,,,,,,1.85,3.6,4.33,,,,,,,1.94,3.77,4.16,,,,,,,,,
+36,Sun,2016-05-01,Deportivo La Coruña,Getafe CF,0-2,0-1,,0,2,A,0,1,A,15,11,5,5,7,19,8,5,1,6,1,0,2.3,3.53,3.31,,,,,,,2.3,3.3,3.2,,,,,,,2.08,3.55,3.88,,,,,,,,,
+36,Sun,2016-05-01,Espanyol,Sevilha FC,1-0,0-0,,1,0,H,0,0,D,11,7,7,0,20,15,4,2,3,3,0,0,2.37,3.62,3.11,,,,,,,2.3,3.3,3.1,,,,,,,1.95,3.74,4.16,,,,,,,,,
+36,Sun,2016-05-01,Valencia,Villarreal CF,0-2,0-2,,0,2,A,0,2,A,7,8,1,3,15,11,9,3,0,2,0,0,2.16,3.53,3.64,,,,,,,2.2,3.3,3.4,,,,,,,1.94,3.61,4.39,,,,,,,,,
+36,Mon,2016-05-02,Málaga CF,Levante,3-1,1-1,,3,1,H,1,1,D,21,11,11,5,18,10,13,7,2,4,0,0,2.22,3.52,3.51,,,,,,,2.2,3.2,3.5,,,,,,,1.88,3.68,4.64,,,,,,,,,
+37,Sun,2016-05-08,Barcelona,Espanyol,5-0,1-0,,5,0,H,1,0,H,13,4,7,1,13,25,8,0,2,7,0,0,1.04,29.0,41.0,,,,,,,1.04,17.0,41.0,,,,,,,1.05,22.15,40.78,,,,,,,,,
+37,Sun,2016-05-08,Celta de Vigo,Málaga CF,1-0,1-0,,1,0,H,1,0,H,12,13,3,5,11,10,4,3,0,2,0,0,1.53,4.62,6.57,,,,,,,1.5,4.2,7.0,,,,,,,1.65,4.28,5.56,,,,,,,,,
+37,Sun,2016-05-08,Eibar,Bétis,1-1,0-1,,1,1,D,0,1,A,21,6,10,3,15,9,8,2,1,3,0,0,2.16,3.6,3.57,,,,,,,2.1,3.6,3.4,,,,,,,2.19,3.5,3.61,,,,,,,,,
+37,Sun,2016-05-08,Getafe CF,Sporting Gijón,1-1,0-0,,1,1,D,0,0,D,19,9,9,3,15,13,7,3,3,1,0,1,2.16,3.57,3.6,,,,,,,2.1,3.6,3.4,,,,,,,2.07,3.69,3.77,,,,,,,,,
+37,Sun,2016-05-08,Las Palmas,Athletic Bilbao,0-0,0-0,,0,0,D,0,0,D,4,8,2,3,9,18,2,2,1,1,0,0,3.97,3.9,1.95,,,,,,,4.0,3.6,1.91,,,,,,,4.26,3.76,1.93,,,,,,,,,
+37,Sun,2016-05-08,Levante,Atlético de Madrid,2-1,1-1,,2,1,H,1,1,D,12,17,5,5,8,11,4,5,1,1,0,0,18.89,6.59,1.23,,,,,,,17.0,6.5,1.2,,,,,,,15.44,6.23,1.26,,,,,,,,,
+37,Sun,2016-05-08,Real Madrid,Valencia,3-2,2-0,,3,2,H,2,0,H,15,17,8,8,10,11,5,8,1,4,0,1,1.21,8.2,13.5,,,,,,,1.2,7.5,11.0,,,,,,,1.2,8.8,13.87,,,,,,,,,
+37,Sun,2016-05-08,Real Sociedad,Rayo Vallecano,2-1,1-0,,2,1,H,1,0,H,12,18,6,5,7,12,5,11,2,1,1,0,3.63,3.82,2.07,,,,,,,3.5,3.6,2.05,,,,,,,2.74,3.63,2.64,,,,,,,,,
+37,Sun,2016-05-08,Sevilha FC,Granada,1-4,0-1,,1,4,A,0,1,A,12,10,6,6,18,11,5,4,4,1,0,0,2.86,3.83,2.44,,,,,,,2.88,3.75,2.3,,,,,,,3.03,4.18,2.22,,,,,,,,,
+37,Sun,2016-05-08,Villarreal CF,Deportivo La Coruña,0-2,0-1,,0,2,A,0,1,A,11,8,4,4,14,4,8,5,3,1,0,0,2.52,3.32,3.09,,,,,,,2.45,3.1,3.1,,,,,,,2.53,3.32,3.09,,,,,,,,,
+38,Fri,2016-05-13,Valencia,Real Sociedad,0-1,0-0,,0,1,A,0,0,D,8,14,0,7,17,12,4,6,2,2,0,0,2.06,3.84,3.63,,,,,,,1.95,3.75,3.75,,,,,,,2.08,3.76,3.65,,,,,,,,,
+38,Sat,2016-05-14,Athletic Bilbao,Sevilha FC,3-1,2-0,,3,1,H,2,0,H,13,8,6,4,13,11,7,6,1,2,1,2,1.37,5.72,8.69,,,,,,,1.33,5.75,8.0,,,,,,,1.35,5.88,9.25,,,,,,,,,
+38,Sat,2016-05-14,Atlético de Madrid,Celta de Vigo,2-0,0-0,,2,0,H,0,0,D,12,7,5,4,16,16,4,4,4,5,0,0,1.85,4.07,4.25,,,,,,,1.75,3.75,4.5,,,,,,,1.58,4.3,6.48,,,,,,,,,
+38,Sat,2016-05-14,Deportivo La Coruña,Real Madrid,0-2,0-2,,0,2,A,0,2,A,10,16,2,5,6,9,4,8,1,3,0,0,13.27,8.55,1.21,,,,,,,13.0,8.0,1.18,,,,,,,15.64,8.93,1.18,,,,,,,,,
+38,Sat,2016-05-14,Granada,Barcelona,0-3,0-2,,0,3,A,0,2,A,8,12,2,10,12,10,5,6,5,2,0,0,31.13,13.64,1.09,,,,,,,26.0,11.0,1.08,,,,,,,35.5,14.0,1.09,,,,,,,,,
+38,Sun,2016-05-15,Bétis,Getafe CF,2-1,0-0,,2,1,H,0,0,D,7,14,4,5,8,27,3,2,1,8,0,1,5.08,4.07,1.73,,,,,,,5.0,3.8,1.7,,,,,,,3.4,3.86,2.14,,,,,,,,,
+38,Sun,2016-05-15,Espanyol,Eibar,4-2,2-0,,4,2,H,2,0,H,11,13,7,8,10,14,3,4,4,3,0,0,2.06,3.65,3.83,,,,,,,2.0,3.6,3.7,,,,,,,2.0,3.76,3.95,,,,,,,,,
+38,Sun,2016-05-15,Málaga CF,Las Palmas,4-1,2-1,,4,1,H,2,1,H,14,12,8,7,16,10,3,6,1,1,0,0,1.86,3.83,4.5,,,,,,,1.8,3.75,4.5,,,,,,,1.67,4.2,5.44,,,,,,,,,
+38,Sun,2016-05-15,Rayo Vallecano,Levante,3-1,2-0,,3,1,H,2,0,H,21,8,9,2,12,8,9,3,1,3,0,0,1.34,5.84,9.51,,,,,,,1.33,5.25,9.0,,,,,,,1.36,6.0,8.52,,,,,,,,,
+38,Sun,2016-05-15,Sporting Gijón,Villarreal CF,2-0,1-0,,2,0,H,1,0,H,16,10,7,5,9,6,4,1,1,2,0,0,1.47,4.69,7.79,,,,,,,1.44,4.5,7.5,,,,,,,1.48,5.08,6.89,,,,,,,,,

@@ -22,7 +22,7 @@ import re
 import csv
 import unicodedata
 from datetime import datetime
-
+from pandas.api.types import is_string_dtype
 # ================= CONFIGURAÇÕES =================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -792,6 +792,37 @@ def parse_brazil_all_seasons(url: str, league_filter: str = "Serie A") -> pd.Dat
     out["__Season"] = seasons
     return out
 
+
+def _cast_value_for_column(df_local: pd.DataFrame, col: str, val):
+    """
+    Converte o valor 'val' para um tipo compatível com o dtype da coluna em df_local.
+    - Se a coluna é string (StringDtype), garante str ou NA.
+    - Se a coluna é Int64, tenta int (ou NA).
+    - Se a coluna é float, tenta float (ou NA).
+    - Caso contrário, retorna como está.
+    """
+    if val is None or (isinstance(val, float) and pd.isna(val)):
+        return pd.NA
+
+    # pandas "string"
+    try:
+        if is_string_dtype(df_local[col].dtype):
+            return str(val)
+    except Exception:
+        pass
+
+    # Int64 (nullable)
+    if str(df_local[col].dtype) == "Int64":
+        iv = safe_int(val)
+        return pd.NA if iv is None else iv
+
+    # floats
+    if str(df_local[col].dtype) in ("float64", "Float64"):
+        fv = safe_float(val)
+        return pd.NA if fv is None else fv
+
+    return val
+
 # ================= MERGE / UPDATE =================
 
 def _clean_text(v):
@@ -1041,9 +1072,11 @@ def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
     """
     ✅ Só atualiza com valores não-vazios (não apaga dado local)
     ✅ Não derruba Matchday já existente
+    ✅ FIX: evita TypeError quando df_local tem coluna string e newv é int/float
     """
     for col in df_local.columns:
         newv = row_new.get(col, None)
+
         if newv is None or (isinstance(newv, float) and pd.isna(newv)):
             continue
         if isinstance(newv, str) and newv.strip() == "":
@@ -1051,10 +1084,20 @@ def smart_update_row(df_local: pd.DataFrame, idx: int, row_new: pd.Series):
 
         oldv = df_local.at[idx, col]
 
+        # Não sobrescreve Matchday se já existe
         if col == "Matchday":
             if oldv not in [None, "", "nan", "NaN"] and str(oldv).strip() != "":
                 continue
 
+        # ✅ FIX CRÍTICO: se a coluna no df_local é string, garanta que o valor é string
+        # (isso evita: TypeError: Invalid value '2' for dtype 'str')
+        try:
+            if col in df_local.columns and is_string_dtype(df_local[col].dtype) and not isinstance(newv, str):
+                newv = str(newv)
+        except Exception:
+            pass
+
+        # Atualiza apenas se mudou / estava vazio
         if oldv is None or (isinstance(oldv, float) and pd.isna(oldv)) or str(oldv).strip() == "" or str(oldv) != str(newv):
             df_local.at[idx, col] = newv
 
@@ -1168,8 +1211,20 @@ def update_csv_merge(
             if not before.equals(df_local.loc[idx]):
                 updated += 1
         else:
-            df_local = pd.concat([df_local, pd.DataFrame([rnew])], ignore_index=True)
+            new_idx = len(df_local)
+            # garante que rnew tem exatamente as colunas do df_local
+            vals = [_cast_value_for_column(df_local, c, rnew.get(c, None)) for c in df_local.columns]
+            df_local.loc[new_idx, df_local.columns] = vals
+
+
+            # atualiza os índices locais para não quebrar nas próximas iterações
+            if kd:
+                local_index_date[kd] = new_idx
+            if km:
+                local_index_md[km] = new_idx
+
             added += 1
+
 
     df_local = canonicalize_for_merge(df_local)
     df_local = dedup_matches(df_local, season_key)

@@ -1,222 +1,307 @@
-Matchday,Date,Home,Away,FullTime,HalfTime
-1,2010-08-20,Bayern de Munique,Wolfsburg,2-1,1-0
-1,2010-08-20,Hoffenheim,Werder Bremen,4-1,4-1
-1,2010-08-20,Freiburg,FC St. Pauli,1-3,0-0
-1,2010-08-20,Hannover 96,Eintracht Frankfurt,2-1,1-1
-1,2010-08-20,Hamburgo,FC Schalke 04,2-1,0-0
-1,2010-08-20,Mainz 05,VfB Stuttgart,2-0,1-0
-1,2010-08-20,Borussia Dortmund,Bayer Leverkusen,0-2,0-2
-2,2010-08-20,1. FC Kaiserslautern,Bayern de Munique,2-0,2-0
-2,2010-08-20,FC Schalke 04,Hannover 96,1-2,0-1
-2,2010-08-20,Eintracht Frankfurt,Hamburgo,1-3,1-0
-2,2010-08-20,1. FC Nurnberg,Freiburg,1-2,1-1
-2,2010-08-20,Bayer Leverkusen,Borussia Monchengladbach,3-6,1-3
-2,2010-08-20,VfB Stuttgart,Borussia Dortmund,1-3,0-3
-3,2010-08-20,Hoffenheim,FC Schalke 04,2-0,1-0
-3,2010-08-20,Borussia Dortmund,Wolfsburg,2-0,0-0
-3,2010-08-20,Borussia Monchengladbach,Eintracht Frankfurt,0-4,0-2
-3,2010-08-20,Freiburg,VfB Stuttgart,2-1,0-1
-3,2010-08-20,Hannover 96,Bayer Leverkusen,2-2,1-0
-3,2010-08-20,Bayern de Munique,Werder Bremen,0-0,
-3,2010-08-20,1. FC Köln,FC St. Pauli,1-0,1-0
-4,2010-08-20,Eintracht Frankfurt,Freiburg,0-1,0-0
-4,2010-08-20,VfB Stuttgart,Borussia Monchengladbach,7-0,2-0
-4,2010-08-20,Wolfsburg,Hannover 96,2-0,0-0
-4,2010-08-20,FC St. Pauli,Hamburgo,1-1,0-0
-4,2010-08-20,FC Schalke 04,Borussia Dortmund,1-3,0-1
-5,2010-08-20,Hoffenheim,Bayern de Munique,1-2,1-0
-5,2010-08-20,Hannover 96,Werder Bremen,4-1,1-1
-5,2010-08-20,Bayer Leverkusen,Eintracht Frankfurt,2-1,1-1
-5,2010-08-20,Hamburgo,Wolfsburg,1-3,1-1
-5,2010-08-20,Borussia Monchengladbach,FC St. Pauli,1-2,1-0
-5,2010-08-20,Freiburg,FC Schalke 04,1-2,0-1
-5,2010-08-20,1. FC Nurnberg,VfB Stuttgart,2-1,1-0
-6,2010-08-20,FC Schalke 04,Borussia Monchengladbach,2-2,0-2
-6,2010-08-20,VfB Stuttgart,Bayer Leverkusen,1-4,0-2
-6,2010-08-20,FC St. Pauli,Borussia Dortmund,1-3,1-1
-6,2010-08-20,Werder Bremen,Hamburgo,3-2,2-0
-6,2010-08-20,Wolfsburg,Freiburg,2-1,1-1
-6,2010-08-20,1. FC Kaiserslautern,Hannover 96,0-1,0-1
-7,2010-08-20,Hannover 96,FC St. Pauli,0-1,0-1
-7,2010-08-20,Borussia Monchengladbach,Wolfsburg,1-1,0-1
-7,2010-08-20,1. FC Nurnberg,FC Schalke 04,2-1,0-0
-7,2010-08-20,VfB Stuttgart,Eintracht Frankfurt,1-2,0-1
-7,2010-08-20,Borussia Dortmund,Bayern de Munique,2-0,0-0
-7,2010-08-20,Bayer Leverkusen,Werder Bremen,2-2,1-0
-8,2010-08-20,1. FC Köln,Borussia Dortmund,1-2,0-1
-8,2010-08-20,Bayern de Munique,Hannover 96,3-0,1-0
-8,2010-08-20,FC Schalke 04,VfB Stuttgart,2-2,1-1
-8,2010-08-20,Werder Bremen,Freiburg,2-1,1-0
-8,2010-08-20,Mainz 05,Hamburgo,0-1,0-0
-8,2010-08-20,Wolfsburg,Bayer Leverkusen,2-3,1-0
-8,2010-08-20,1. FC Kaiserslautern,Eintracht Frankfurt,0-3,0-1
-8,2010-08-20,Hoffenheim,Borussia Monchengladbach,3-2,0-1
-9,2010-08-20,Hamburgo,Bayern de Munique,0-0,
-9,2010-08-20,Eintracht Frankfurt,FC Schalke 04,0-0,
-9,2010-08-20,Borussia Monchengladbach,Werder Bremen,1-4,0-2
-9,2010-08-20,1. FC Nurnberg,Wolfsburg,2-1,1-1
-9,2010-08-20,VfB Stuttgart,FC St. Pauli,2-0,1-0
-10,2010-08-20,Bayern de Munique,Freiburg,4-2,1-0
-10,2010-08-20,Wolfsburg,VfB Stuttgart,2-0,1-0
-10,2010-08-20,1. FC Köln,Hamburgo,3-2,2-2
-10,2010-08-20,1. FC Kaiserslautern,Borussia Monchengladbach,3-0,0-0
-10,2010-08-20,FC St. Pauli,Eintracht Frankfurt,1-3,1-1
-10,2010-08-20,FC Schalke 04,Bayer Leverkusen,0-1,0-0
-10,2010-08-20,Mainz 05,Borussia Dortmund,0-2,0-1
-10,2010-08-20,Hoffenheim,Hannover 96,4-0,1-0
-11,2010-08-20,FC Schalke 04,FC St. Pauli,3-0,1-0
-11,2010-08-20,Eintracht Frankfurt,Wolfsburg,3-1,2-0
-11,2010-08-20,Borussia Monchengladbach,Bayern de Munique,3-3,1-2
-11,2010-08-20,Hannover 96,Borussia Dortmund,0-4,0-1
-11,2010-08-20,VfB Stuttgart,Werder Bremen,6-0,3-0
-12,2010-08-20,Borussia Dortmund,Hamburgo,2-0,0-0
-12,2010-08-20,Werder Bremen,Eintracht Frankfurt,0-0,
-12,2010-08-20,Wolfsburg,FC Schalke 04,2-2,2-1
-12,2010-08-20,1. FC Köln,Borussia Monchengladbach,0-4,0-0
-12,2010-08-20,1. FC Kaiserslautern,VfB Stuttgart,3-3,0-2
-12,2010-08-20,FC St. Pauli,Bayer Leverkusen,0-1,0-0
-12,2010-08-20,Mainz 05,Hannover 96,0-1,0-1
-12,2010-08-20,Hoffenheim,Freiburg,0-1,0-0
-13,2010-08-20,FC Schalke 04,Werder Bremen,4-0,2-0
-13,2010-08-20,Freiburg,Borussia Dortmund,1-2,1-0
-13,2010-08-20,Hannover 96,Hamburgo,3-2,1-1
-13,2010-08-20,Bayer Leverkusen,Bayern de Munique,1-1,1-1
-13,2010-08-20,FC St. Pauli,Wolfsburg,1-1,1-0
-14,2010-08-20,Bayern de Munique,Eintracht Frankfurt,4-1,1-1
-14,2010-08-20,Hamburgo,VfB Stuttgart,4-2,3-1
-14,2010-08-20,Hoffenheim,Bayer Leverkusen,2-2,1-2
-14,2010-08-20,Hannover 96,Freiburg,3-0,1-0
-14,2010-08-20,1. FC Kaiserslautern,FC Schalke 04,5-0,2-0
-14,2010-08-20,Borussia Dortmund,Borussia Monchengladbach,4-1,1-1
-14,2010-08-20,Werder Bremen,FC St. Pauli,3-0,2-0
-14,2010-08-20,1. FC Köln,Wolfsburg,1-1,0-0
-15,2010-08-20,Wolfsburg,Werder Bremen,0-0,
-15,2010-08-20,Borussia Monchengladbach,Hannover 96,1-2,1-0
-15,2010-08-20,Freiburg,Hamburgo,1-0,1-0
-15,2010-08-20,FC Schalke 04,Bayern de Munique,2-0,0-0
-15,2010-08-20,1. FC Nurnberg,Borussia Dortmund,0-2,0-1
-16,2010-08-20,Hannover 96,VfB Stuttgart,2-1,1-0
-16,2010-08-20,Bayern de Munique,FC St. Pauli,3-0,1-0
-16,2010-08-20,Hamburgo,Bayer Leverkusen,2-4,0-1
-16,2010-08-20,1. FC Köln,Eintracht Frankfurt,1-0,0-0
-16,2010-08-20,1. FC Kaiserslautern,Wolfsburg,0-0,
-16,2010-08-20,Borussia Dortmund,Werder Bremen,2-0,1-0
-16,2010-08-20,Freiburg,Borussia Monchengladbach,3-0,2-0
-16,2010-08-20,Mainz 05,FC Schalke 04,0-1,0-1
-17,2010-08-20,Borussia Monchengladbach,Hamburgo,1-2,0-0
-17,2010-08-20,Eintracht Frankfurt,Borussia Dortmund,1-0,0-0
-17,2010-08-20,1. FC Nurnberg,Hannover 96,3-1,2-0
-17,2010-08-20,Bayer Leverkusen,Freiburg,2-2,1-1
-17,2010-08-20,VfB Stuttgart,Bayern de Munique,3-5,0-3
-18,2011-01-14,Bayer Leverkusen,Borussia Dortmund,1-3,0-0
-18,2011-01-14,Wolfsburg,Bayern de Munique,1-1,0-1
-18,2011-01-14,1. FC Nurnberg,Borussia Monchengladbach,0-1,0-1
-18,2011-01-14,FC St. Pauli,Freiburg,2-2,1-0
-18,2011-01-14,FC Schalke 04,Hamburgo,0-1,0-0
-18,2011-01-14,Eintracht Frankfurt,Hannover 96,0-3,0-2
-19,2011-01-14,Hamburgo,Eintracht Frankfurt,1-0,0-0
-19,2011-01-14,Hannover 96,FC Schalke 04,0-1,0-1
-19,2011-01-14,Borussia Dortmund,VfB Stuttgart,1-1,1-0
-19,2011-01-14,Mainz 05,Wolfsburg,0-1,0-0
-19,2011-01-14,1. FC Köln,Werder Bremen,3-0,2-0
-19,2011-01-14,Borussia Monchengladbach,Bayer Leverkusen,1-3,0-2
-19,2011-01-14,Hoffenheim,FC St. Pauli,2-2,1-0
-20,2011-01-14,Bayer Leverkusen,Hannover 96,2-0,2-0
-20,2011-01-14,Werder Bremen,Bayern de Munique,1-3,0-0
-20,2011-01-14,Wolfsburg,Borussia Dortmund,0-3,0-2
-20,2011-01-14,1. FC Nurnberg,Hamburgo,2-0,0-0
-20,2011-01-14,VfB Stuttgart,Freiburg,0-1,0-1
-20,2011-01-14,Eintracht Frankfurt,Borussia Monchengladbach,0-1,0-0
-21,2011-01-14,Borussia Dortmund,FC Schalke 04,0-0,
-21,2011-01-14,1. FC Köln,Bayern de Munique,3-2,0-2
-21,2011-01-14,Mainz 05,Werder Bremen,1-1,1-0
-21,2011-01-14,1. FC Nurnberg,Bayer Leverkusen,1-0,0-0
-21,2011-01-14,Hannover 96,Wolfsburg,1-0,1-0
-21,2011-01-14,Borussia Monchengladbach,VfB Stuttgart,2-3,2-0
-21,2011-01-14,Freiburg,Eintracht Frankfurt,0-0,
-21,2011-01-14,Hamburgo,FC St. Pauli,0-1,0-0
-22,2011-01-14,Eintracht Frankfurt,Bayer Leverkusen,0-3,0-2
-22,2011-01-14,Wolfsburg,Hamburgo,0-1,0-1
-22,2011-01-14,FC St. Pauli,Borussia Monchengladbach,3-1,1-1
-22,2011-01-14,FC Schalke 04,Freiburg,1-0,0-0
-22,2011-01-14,1. FC Kaiserslautern,Borussia Dortmund,1-1,0-0
-22,2011-01-14,Werder Bremen,Hannover 96,1-1,0-1
-23,2011-01-14,1. FC Nurnberg,Eintracht Frankfurt,3-0,0-0
-23,2011-01-14,Hamburgo,Werder Bremen,4-0,1-0
-23,2011-01-14,Freiburg,Wolfsburg,2-1,1-1
-23,2011-01-14,Borussia Dortmund,FC St. Pauli,2-0,1-0
-23,2011-01-14,Mainz 05,Bayern de Munique,1-3,0-1
-23,2011-01-14,Bayer Leverkusen,VfB Stuttgart,4-2,2-1
-23,2011-01-14,Borussia Monchengladbach,FC Schalke 04,2-1,2-1
-24,2011-01-14,Wolfsburg,Borussia Monchengladbach,2-1,2-0
-24,2011-01-14,1. FC Kaiserslautern,Hamburgo,1-1,1-0
-24,2011-01-14,1. FC Köln,Freiburg,1-0,0-0
-24,2011-01-14,FC St. Pauli,Hannover 96,0-1,0-0
-24,2011-01-14,Bayern de Munique,Borussia Dortmund,1-3,1-2
-24,2011-01-14,Eintracht Frankfurt,VfB Stuttgart,0-2,0-0
-24,2011-01-14,Werder Bremen,Bayer Leverkusen,2-2,0-1
-25,2011-01-14,Hannover 96,Bayern de Munique,3-1,1-0
-25,2011-01-14,VfB Stuttgart,FC Schalke 04,1-0,1-0
-25,2011-01-14,1. FC Nurnberg,FC St. Pauli,5-0,3-0
-25,2011-01-14,Bayer Leverkusen,Wolfsburg,3-0,3-0
-25,2011-01-14,Freiburg,Werder Bremen,1-3,0-1
-26,2011-01-14,1. FC Köln,Hannover 96,4-0,1-0
-26,2011-01-14,Hoffenheim,Borussia Dortmund,1-0,0-0
-26,2011-01-14,Bayern de Munique,Hamburgo,6-0,1-0
-26,2011-01-14,FC Schalke 04,Eintracht Frankfurt,2-1,1-0
-26,2011-01-14,1. FC Kaiserslautern,Freiburg,2-1,1-1
-26,2011-01-14,Werder Bremen,Borussia Monchengladbach,1-1,1-0
-26,2011-01-14,Mainz 05,Bayer Leverkusen,0-1,0-0
-26,2011-01-14,FC St. Pauli,VfB Stuttgart,1-2,1-1
-27,2011-01-14,Freiburg,Bayern de Munique,1-2,1-1
-27,2011-01-14,1. FC Nurnberg,Werder Bremen,1-3,1-1
-27,2011-01-14,Eintracht Frankfurt,FC St. Pauli,2-1,1-1
-27,2011-01-14,Bayer Leverkusen,FC Schalke 04,2-0,2-0
-27,2011-01-14,VfB Stuttgart,Wolfsburg,1-1,0-1
-28,2011-01-14,FC St. Pauli,FC Schalke 04,0-2,0-1
-28,2011-01-14,1. FC Kaiserslautern,Bayer Leverkusen,0-1,0-0
-28,2011-01-14,Werder Bremen,VfB Stuttgart,1-1,1-1
-28,2011-01-14,Bayern de Munique,Borussia Monchengladbach,1-0,0-0
-28,2011-01-14,Mainz 05,Freiburg,1-1,0-1
-28,2011-01-14,Borussia Dortmund,Hannover 96,4-1,0-0
-28,2011-01-14,Hoffenheim,Hamburgo,0-0,
-28,2011-01-14,Wolfsburg,Eintracht Frankfurt,1-1,0-0
-29,2011-01-14,Eintracht Frankfurt,Werder Bremen,1-1,0-0
-29,2011-01-14,1. FC Nurnberg,Bayern de Munique,1-1,0-1
-29,2011-01-14,Hamburgo,Borussia Dortmund,1-1,1-0
-29,2011-01-14,FC Schalke 04,Wolfsburg,1-0,0-0
-29,2011-01-14,Bayer Leverkusen,FC St. Pauli,2-1,0-0
-30,2011-01-14,Mainz 05,Borussia Monchengladbach,1-0,0-0
-30,2011-01-14,1. FC Köln,VfB Stuttgart,1-3,0-0
-30,2011-01-14,Hoffenheim,Eintracht Frankfurt,1-0,0-0
-30,2011-01-14,Hamburgo,Hannover 96,0-0,
-30,2011-01-14,Wolfsburg,FC St. Pauli,2-2,1-0
-30,2011-01-14,Werder Bremen,FC Schalke 04,1-1,0-0
-30,2011-01-14,Bayern de Munique,Bayer Leverkusen,5-1,4-0
-30,2011-01-14,Borussia Dortmund,Freiburg,3-0,2-0
-31,2011-01-14,Freiburg,Hannover 96,1-3,0-2
-31,2011-01-14,Eintracht Frankfurt,Bayern de Munique,1-1,0-0
-31,2011-01-14,FC St. Pauli,Werder Bremen,1-3,1-0
-31,2011-01-14,VfB Stuttgart,Hamburgo,3-0,1-0
-31,2011-01-14,Borussia Monchengladbach,Borussia Dortmund,1-0,1-0
-32,2011-01-14,Werder Bremen,Wolfsburg,0-1,0-1
-32,2011-01-14,1. FC Kaiserslautern,FC St. Pauli,2-0,1-0
-32,2011-01-14,1. FC Köln,Bayer Leverkusen,2-0,0-0
-32,2011-01-14,Hoffenheim,VfB Stuttgart,1-2,1-0
-32,2011-01-14,Mainz 05,Eintracht Frankfurt,3-0,3-0
-32,2011-01-14,Hannover 96,Borussia Monchengladbach,0-1,0-0
-32,2011-01-14,Hamburgo,Freiburg,0-2,0-1
-32,2011-01-14,Bayern de Munique,FC Schalke 04,4-1,3-1
-33,2011-01-14,FC St. Pauli,Bayern de Munique,1-8,0-2
-33,2011-01-14,Werder Bremen,Borussia Dortmund,2-0,1-0
-33,2011-01-14,Bayer Leverkusen,Hamburgo,1-1,0-1
-33,2011-01-14,Borussia Monchengladbach,Freiburg,2-0,0-0
-33,2011-01-14,VfB Stuttgart,Hannover 96,2-1,0-0
-34,2011-01-14,1. FC Köln,FC Schalke 04,2-1,1-0
-34,2011-01-14,1. FC Kaiserslautern,Werder Bremen,3-2,3-1
-34,2011-01-14,Freiburg,Bayer Leverkusen,0-1,0-1
-34,2011-01-14,Bayern de Munique,VfB Stuttgart,2-1,1-1
-34,2011-01-14,Hoffenheim,Wolfsburg,1-3,0-0
-34,2011-01-14,Borussia Dortmund,Eintracht Frankfurt,3-1,0-0
-34,2011-01-14,Hamburgo,Borussia Monchengladbach,1-1,0-1
-34,2011-01-14,Mainz 05,FC St. Pauli,2-1,0-1
+Matchday,Day,Date,Home,Away,FullTime,HalfTime,Penalties,FullTimeHomeGoals,FullTimeAwayGoals,FullTimeResult,HalfTimeHomeGoals,HalfTimeAwayGoals,HalfTimeResult,HomeShots,AwayShots,HomeShotsOnTarget,AwayShotsOnTarget,HomeFouls,AwayFouls,HomeCorners,AwayCorners,HomeYellowCards,AwayYellowCards,HomeRedCards,AwayRedCards,PinnacleHomeOpen,PinnacleDrawOpen,PinnacleAwayOpen,AvgHomeOpen,AvgDrawOpen,AvgAwayOpen,MaxHomeOpen,MaxDrawOpen,MaxAwayOpen,Bet365HomeOpen,Bet365DrawOpen,Bet365AwayOpen,Bet365Over25Open,Bet365Under25Open,PinnacleOver25Open,PinnacleUnder25Open,AvgOver25Open,AvgUnder25Open,PinnacleHomeClose,PinnacleDrawClose,PinnacleAwayClose,AvgHomeClose,AvgDrawClose,AvgAwayClose,MaxHomeClose,MaxDrawClose,MaxAwayClose,Bet365HomeClose,Bet365DrawClose,Bet365AwayClose
+1,Sat,2010-08-21,1. FC Köln,1. FC Kaiserslautern,1-3,1-0,,1,3,A,1,0,H,10,17,4,6,10,25,5,6,1,2,1,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+1,Sat,2010-08-21,Borussia Monchengladbach,1. FC Nurnberg,1-1,1-1,,1,1,D,1,1,D,12,10,5,5,15,18,6,5,1,1,0,0,,,,,,,,,,1.91,3.4,4.0,,,,,,,,,,,,,,,,,,
+1,Sat,2010-08-21,Freiburg,FC St. Pauli,1-3,0-0,,1,3,A,0,0,D,9,17,3,7,12,13,3,6,0,0,0,0,,,,,,,,,,2.2,3.3,3.25,,,,,,,,,,,,,,,,,,
+1,Sat,2010-08-21,Hamburgo,FC Schalke 04,2-1,0-0,,2,1,H,0,0,D,18,13,6,4,11,17,7,4,2,0,0,1,,,,,,,,,,2.38,3.4,2.88,,,,,,,,,,,,,,,,,,
+1,Sat,2010-08-21,Hannover 96,Eintracht Frankfurt,2-1,1-1,,2,1,H,1,1,D,13,17,7,3,9,14,2,6,0,1,0,0,,,,,,,,,,2.6,3.25,2.7,,,,,,,,,,,,,,,,,,
+1,Sat,2010-08-21,Hoffenheim,Werder Bremen,4-1,4-1,,4,1,H,4,1,H,10,10,7,2,24,16,5,5,1,2,0,0,,,,,,,,,,2.88,3.4,2.38,,,,,,,,,,,,,,,,,,
+1,Sun,2010-08-22,Borussia Dortmund,Bayer Leverkusen,0-2,0-2,,0,2,A,0,2,A,14,15,6,4,20,13,8,1,0,0,0,0,,,,,,,,,,2.38,3.4,2.88,,,,,,,,,,,,,,,,,,
+1,Sun,2010-08-22,Mainz 05,VfB Stuttgart,2-0,1-0,,2,0,H,1,0,H,17,14,6,5,16,13,5,4,4,1,0,0,,,,,,,,,,3.1,3.4,2.25,,,,,,,,,,,,,,,,,,
+2,Fri,2010-08-27,1. FC Kaiserslautern,Bayern de Munique,2-0,2-0,,2,0,H,2,0,H,11,20,2,3,24,13,7,7,0,1,1,0,,,,,,,,,,7.0,4.33,1.44,,,,,,,,,,,,,,,,,,
+2,Sat,2010-08-28,1. FC Nurnberg,Freiburg,1-2,1-1,,1,2,A,1,1,D,17,5,4,3,12,28,4,2,2,1,0,0,,,,,,,,,,1.91,3.4,4.0,,,,,,,,,,,,,,,,,,
+2,Sat,2010-08-28,Eintracht Frankfurt,Hamburgo,1-3,1-0,,1,3,A,1,0,H,12,14,7,4,12,12,4,6,2,1,0,0,,,,,,,,,,3.1,3.5,2.2,,,,,,,,,,,,,,,,,,
+2,Sat,2010-08-28,FC Schalke 04,Hannover 96,1-2,0-1,,1,2,A,0,1,A,15,11,5,4,10,22,15,1,2,2,0,0,,,,,,,,,,1.33,4.75,10.0,,,,,,,,,,,,,,,,,,
+2,Sat,2010-08-28,FC St. Pauli,Hoffenheim,0-1,0-0,,0,1,A,0,0,D,12,8,4,3,16,16,5,9,2,0,0,0,,,,,,,,,,3.2,3.4,2.2,,,,,,,,,,,,,,,,,,
+2,Sat,2010-08-28,Werder Bremen,1. FC Köln,4-2,2-1,,4,2,H,2,1,H,17,11,9,5,14,18,6,7,1,2,0,0,,,,,,,,,,1.4,4.75,7.0,,,,,,,,,,,,,,,,,,
+2,Sat,2010-08-28,Wolfsburg,Mainz 05,3-4,3-1,,3,4,A,3,1,H,8,13,4,4,11,19,5,5,3,3,0,0,,,,,,,,,,1.57,4.0,5.5,,,,,,,,,,,,,,,,,,
+2,Sun,2010-08-29,Bayer Leverkusen,Borussia Monchengladbach,3-6,1-3,,3,6,A,1,3,A,12,16,6,10,12,11,4,8,1,1,0,0,,,,,,,,,,1.36,4.75,8.0,,,,,,,,,,,,,,,,,,
+2,Sun,2010-08-29,VfB Stuttgart,Borussia Dortmund,1-3,0-3,,1,3,A,0,3,A,11,16,5,9,16,18,7,3,0,2,0,0,,,,,,,,,,2.2,3.3,3.25,,,,,,,,,,,,,,,,,,
+3,Fri,2010-09-10,Hoffenheim,FC Schalke 04,2-0,1-0,,2,0,H,1,0,H,23,14,8,5,18,16,3,6,1,1,0,0,,,,,,,,,,2.4,3.3,2.88,,,,,,,,,,,,,,,,,,
+3,Sat,2010-09-11,Bayern de Munique,Werder Bremen,0-0,0-0,,0,0,D,0,0,D,14,13,7,3,14,13,11,4,0,0,0,0,,,,,,,,,,1.57,4.0,5.5,,,,,,,,,,,,,,,,,,
+3,Sat,2010-09-11,Borussia Dortmund,Wolfsburg,2-0,0-0,,2,0,H,0,0,D,20,6,10,1,18,23,4,0,2,3,0,0,,,,,,,,,,2.1,3.5,3.25,,,,,,,,,,,,,,,,,,
+3,Sat,2010-09-11,Borussia Monchengladbach,Eintracht Frankfurt,0-4,0-2,,0,4,A,0,2,A,16,11,5,6,18,12,9,6,3,2,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+3,Sat,2010-09-11,Freiburg,VfB Stuttgart,2-1,0-1,,2,1,H,0,1,A,19,18,5,8,20,17,6,7,1,1,0,0,,,,,,,,,,3.4,3.4,2.1,,,,,,,,,,,,,,,,,,
+3,Sat,2010-09-11,Hamburgo,1. FC Nurnberg,1-1,0-0,,1,1,D,0,0,D,7,10,2,3,12,18,4,2,3,3,0,0,,,,,,,,,,1.36,4.75,8.5,,,,,,,,,,,,,,,,,,
+3,Sat,2010-09-11,Hannover 96,Bayer Leverkusen,2-2,1-0,,2,2,D,1,0,H,9,12,3,4,18,14,6,5,2,4,1,0,,,,,,,,,,3.75,3.4,2.0,,,,,,,,,,,,,,,,,,
+3,Sun,2010-09-12,1. FC Köln,FC St. Pauli,1-0,1-0,,1,0,H,1,0,H,15,11,6,1,19,15,6,10,3,3,0,0,,,,,,,,,,2.2,3.25,3.25,,,,,,,,,,,,,,,,,,
+3,Sun,2010-09-12,Mainz 05,1. FC Kaiserslautern,2-1,0-1,,2,1,H,0,1,A,16,10,5,4,12,25,2,7,1,5,0,0,,,,,,,,,,2.2,3.3,3.25,,,,,,,,,,,,,,,,,,
+4,Fri,2010-09-17,Eintracht Frankfurt,Freiburg,0-1,0-0,,0,1,A,0,0,D,10,17,3,5,13,17,4,4,1,2,0,0,,,,,,,,,,1.8,3.5,4.5,,,,,,,,,,,,,,,,,,
+4,Sat,2010-09-18,1. FC Kaiserslautern,Hoffenheim,2-2,0-1,,2,2,D,0,1,A,16,6,5,4,17,16,9,3,1,0,0,0,,,,,,,,,,2.8,3.4,2.4,,,,,,,,,,,,,,,,,,
+4,Sat,2010-09-18,Bayern de Munique,1. FC Köln,0-0,0-0,,0,0,D,0,0,D,21,8,4,2,10,20,10,1,0,1,0,0,,,,,,,,,,1.22,6.0,12.0,,,,,,,,,,,,,,,,,,
+4,Sat,2010-09-18,VfB Stuttgart,Borussia Monchengladbach,7-0,2-0,,7,0,H,2,0,H,24,7,12,2,10,15,8,4,0,2,0,0,,,,,,,,,,1.8,3.5,4.5,,,,,,,,,,,,,,,,,,
+4,Sat,2010-09-18,Werder Bremen,Mainz 05,0-2,0-0,,0,2,A,0,0,D,12,11,4,7,11,10,5,6,1,1,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+4,Sat,2010-09-18,Wolfsburg,Hannover 96,2-0,0-0,,2,0,H,0,0,D,12,9,6,1,13,17,3,5,2,2,0,0,,,,,,,,,,1.53,4.0,6.0,,,,,,,,,,,,,,,,,,
+4,Sun,2010-09-19,Bayer Leverkusen,1. FC Nurnberg,0-0,0-0,,0,0,D,0,0,D,10,7,3,2,10,16,3,2,1,2,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+4,Sun,2010-09-19,FC Schalke 04,Borussia Dortmund,1-3,0-1,,1,3,A,0,1,A,8,23,1,11,16,15,4,10,0,3,1,0,,,,,,,,,,2.25,3.3,3.2,,,,,,,,,,,,,,,,,,
+4,Sun,2010-09-19,FC St. Pauli,Hamburgo,1-1,0-0,,1,1,D,0,0,D,7,10,3,2,19,15,6,5,2,2,0,0,,,,,,,,,,3.6,3.5,2.0,,,,,,,,,,,,,,,,,,
+5,Tue,2010-09-21,Hannover 96,Werder Bremen,4-1,1-1,,4,1,H,1,1,D,14,12,8,2,21,18,5,2,2,3,0,0,,,,,,,,,,3.6,3.5,2.0,,,,,,,,,,,,,,,,,,
+5,Tue,2010-09-21,Hoffenheim,Bayern de Munique,1-2,1-0,,1,2,A,1,0,H,11,12,3,6,12,15,3,8,1,2,0,0,,,,,,,,,,3.6,3.5,2.0,,,,,,,,,,,,,,,,,,
+5,Tue,2010-09-21,Mainz 05,1. FC Köln,2-0,0-0,,2,0,H,0,0,D,20,8,7,2,17,21,9,1,3,3,0,0,,,,,,,,,,1.91,3.4,4.0,,,,,,,,,,,,,,,,,,
+5,Wed,2010-09-22,1. FC Nurnberg,VfB Stuttgart,2-1,1-0,,2,1,H,1,0,H,11,9,3,2,17,17,0,5,3,3,1,0,,,,,,,,,,3.1,3.3,2.3,,,,,,,,,,,,,,,,,,
+5,Wed,2010-09-22,Bayer Leverkusen,Eintracht Frankfurt,2-1,1-1,,2,1,H,1,1,D,13,7,4,3,9,18,4,7,2,1,0,1,,,,,,,,,,1.67,3.6,5.25,,,,,,,,,,,,,,,,,,
+5,Wed,2010-09-22,Borussia Dortmund,1. FC Kaiserslautern,5-0,2-0,,5,0,H,2,0,H,21,9,11,3,8,16,1,4,1,4,0,0,,,,,,,,,,1.5,4.0,7.0,,,,,,,,,,,,,,,,,,
+5,Wed,2010-09-22,Borussia Monchengladbach,FC St. Pauli,1-2,1-0,,1,2,A,1,0,H,16,11,5,5,18,17,2,7,1,2,1,0,,,,,,,,,,2.0,3.3,3.8,,,,,,,,,,,,,,,,,,
+5,Wed,2010-09-22,Freiburg,FC Schalke 04,1-2,0-1,,1,2,A,0,1,A,8,7,1,6,16,12,7,2,3,3,1,0,,,,,,,,,,3.1,3.3,2.25,,,,,,,,,,,,,,,,,,
+5,Wed,2010-09-22,Hamburgo,Wolfsburg,1-3,1-1,,1,3,A,1,1,D,19,8,7,4,10,15,15,1,0,0,0,0,,,,,,,,,,1.91,3.5,3.9,,,,,,,,,,,,,,,,,,
+6,Fri,2010-09-24,1. FC Köln,Hoffenheim,1-1,1-0,,1,1,D,1,0,H,13,13,6,4,16,20,8,9,3,1,0,0,,,,,,,,,,3.25,3.3,2.2,,,,,,,,,,,,,,,,,,
+6,Sat,2010-09-25,Bayern de Munique,Mainz 05,1-2,1-1,,1,2,A,1,1,D,14,7,4,4,11,27,7,5,0,2,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+6,Sat,2010-09-25,Eintracht Frankfurt,1. FC Nurnberg,2-0,1-0,,2,0,H,1,0,H,12,15,4,1,17,14,7,5,4,1,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+6,Sat,2010-09-25,FC Schalke 04,Borussia Monchengladbach,2-2,0-2,,2,2,D,0,2,A,22,11,8,6,18,23,11,2,1,4,0,1,,,,,,,,,,1.53,3.8,6.5,,,,,,,,,,,,,,,,,,
+6,Sat,2010-09-25,FC St. Pauli,Borussia Dortmund,1-3,1-1,,1,3,A,1,1,D,11,11,2,6,12,20,9,3,0,0,0,0,,,,,,,,,,3.75,3.4,2.0,,,,,,,,,,,,,,,,,,
+6,Sat,2010-09-25,VfB Stuttgart,Bayer Leverkusen,1-4,0-2,,1,4,A,0,2,A,6,16,1,9,24,26,3,7,2,1,1,0,,,,,,,,,,2.4,3.3,2.9,,,,,,,,,,,,,,,,,,
+6,Sat,2010-09-25,Werder Bremen,Hamburgo,3-2,2-0,,3,2,H,2,0,H,15,13,7,5,19,16,3,7,2,2,0,0,,,,,,,,,,2.4,3.3,2.9,,,,,,,,,,,,,,,,,,
+6,Sun,2010-09-26,1. FC Kaiserslautern,Hannover 96,0-1,0-1,,0,1,A,0,1,A,19,5,5,2,18,20,7,4,0,3,0,0,,,,,,,,,,2.25,3.25,3.2,,,,,,,,,,,,,,,,,,
+6,Sun,2010-09-26,Wolfsburg,Freiburg,2-1,1-1,,2,1,H,1,1,D,13,15,5,5,13,17,5,3,1,2,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+7,Fri,2010-10-01,Hannover 96,FC St. Pauli,0-1,0-1,,0,1,A,0,1,A,7,10,2,4,15,16,3,3,2,2,1,0,,,,,,,,,,2.0,3.4,3.6,,,,,,,,,,,,,,,,,,
+7,Sat,2010-10-02,1. FC Nurnberg,FC Schalke 04,2-1,0-0,,2,1,H,0,0,D,10,6,4,2,11,22,5,5,1,3,0,1,,,,,,,,,,3.0,3.4,2.3,,,,,,,,,,,,,,,,,,
+7,Sat,2010-10-02,Borussia Monchengladbach,Wolfsburg,1-1,0-1,,1,1,D,0,1,A,26,11,8,2,9,15,5,3,2,2,0,0,,,,,,,,,,3.5,3.4,2.05,,,,,,,,,,,,,,,,,,
+7,Sat,2010-10-02,Freiburg,1. FC Köln,3-2,2-1,,3,2,H,2,1,H,13,12,4,5,10,19,5,4,1,4,0,0,,,,,,,,,,2.25,3.3,3.2,,,,,,,,,,,,,,,,,,
+7,Sat,2010-10-02,Hamburgo,1. FC Kaiserslautern,2-1,0-1,,2,1,H,0,1,A,12,8,5,2,13,29,8,7,1,2,0,0,,,,,,,,,,1.5,4.0,6.75,,,,,,,,,,,,,,,,,,
+7,Sat,2010-10-02,Mainz 05,Hoffenheim,4-2,1-1,,4,2,H,1,1,D,12,17,5,6,15,22,4,11,1,5,0,1,,,,,,,,,,2.2,3.3,3.3,,,,,,,,,,,,,,,,,,
+7,Sun,2010-10-03,Bayer Leverkusen,Werder Bremen,2-2,1-0,,2,2,D,1,0,H,17,10,6,3,13,19,4,3,2,4,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+7,Sun,2010-10-03,Borussia Dortmund,Bayern de Munique,2-0,0-0,,2,0,H,0,0,D,13,9,3,2,17,17,1,8,0,3,0,0,,,,,,,,,,2.55,3.3,2.7,,,,,,,,,,,,,,,,,,
+7,Sun,2010-10-03,VfB Stuttgart,Eintracht Frankfurt,1-2,0-1,,1,2,A,0,1,A,13,12,5,3,16,15,6,3,2,4,1,0,,,,,,,,,,1.91,3.5,3.9,,,,,,,,,,,,,,,,,,
+8,Fri,2010-10-15,1. FC Köln,Borussia Dortmund,1-2,0-1,,1,2,A,0,1,A,16,20,5,5,24,17,4,2,2,4,0,0,,,,,,,,,,4.33,3.6,1.8,,,,,,,,,,,,,,,,,,
+8,Sat,2010-10-16,Bayern de Munique,Hannover 96,3-0,1-0,,3,0,H,1,0,H,15,7,8,1,9,18,5,3,3,1,0,0,,,,,,,,,,1.4,4.5,7.5,,,,,,,,,,,,,,,,,,
+8,Sat,2010-10-16,FC Schalke 04,VfB Stuttgart,2-2,1-1,,2,2,D,1,1,D,16,10,5,6,16,13,7,3,0,3,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+8,Sat,2010-10-16,FC St. Pauli,1. FC Nurnberg,3-2,1-0,,3,2,H,1,0,H,14,14,7,6,14,18,6,6,2,3,0,0,,,,,,,,,,2.25,3.2,3.4,,,,,,,,,,,,,,,,,,
+8,Sat,2010-10-16,Mainz 05,Hamburgo,0-1,0-0,,0,1,A,0,0,D,13,12,5,4,14,14,7,4,1,3,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+8,Sat,2010-10-16,Werder Bremen,Freiburg,2-1,1-0,,2,1,H,1,0,H,21,13,6,3,13,19,11,0,0,0,0,0,,,,,,,,,,1.53,4.33,5.5,,,,,,,,,,,,,,,,,,
+8,Sat,2010-10-16,Wolfsburg,Bayer Leverkusen,2-3,1-0,,2,3,A,1,0,H,9,16,5,5,14,15,5,7,1,5,0,0,,,,,,,,,,2.3,3.4,3.0,,,,,,,,,,,,,,,,,,
+8,Sun,2010-10-17,1. FC Kaiserslautern,Eintracht Frankfurt,0-3,0-1,,0,3,A,0,1,A,10,9,3,6,18,16,4,2,1,3,0,0,,,,,,,,,,2.38,3.25,3.0,,,,,,,,,,,,,,,,,,
+8,Sun,2010-10-17,Hoffenheim,Borussia Monchengladbach,3-2,0-1,,3,2,H,0,1,A,27,12,6,6,23,19,9,6,1,3,0,2,,,,,,,,,,1.65,3.75,5.25,,,,,,,,,,,,,,,,,,
+9,Fri,2010-10-22,Hamburgo,Bayern de Munique,0-0,0-0,,0,0,D,0,0,D,16,11,3,1,7,13,5,2,1,2,0,0,,,,,,,,,,2.63,3.3,2.63,,,,,,,,,,,,,,,,,,
+9,Sat,2010-10-23,1. FC Nurnberg,Wolfsburg,2-1,1-1,,2,1,H,1,1,D,17,8,4,2,12,15,4,4,1,3,0,0,,,,,,,,,,2.9,3.3,2.38,,,,,,,,,,,,,,,,,,
+9,Sat,2010-10-23,Borussia Monchengladbach,Werder Bremen,1-4,0-2,,1,4,A,0,2,A,17,14,9,7,16,19,3,3,2,2,0,0,,,,,,,,,,3.3,3.5,2.1,,,,,,,,,,,,,,,,,,
+9,Sat,2010-10-23,Eintracht Frankfurt,FC Schalke 04,0-0,0-0,,0,0,D,0,0,D,17,5,1,2,11,19,8,5,2,1,0,0,,,,,,,,,,2.8,3.25,2.5,,,,,,,,,,,,,,,,,,
+9,Sat,2010-10-23,Freiburg,1. FC Kaiserslautern,2-1,1-1,,2,1,H,1,1,D,13,17,5,2,18,15,6,7,2,1,0,0,,,,,,,,,,2.25,3.25,3.2,,,,,,,,,,,,,,,,,,
+9,Sat,2010-10-23,Hannover 96,1. FC Köln,2-1,2-0,,2,1,H,2,0,H,8,9,4,2,15,18,3,11,1,1,0,0,,,,,,,,,,2.1,3.25,3.5,,,,,,,,,,,,,,,,,,
+9,Sun,2010-10-24,Bayer Leverkusen,Mainz 05,0-1,0-0,,0,1,A,0,0,D,16,10,2,4,16,20,9,3,0,1,0,0,,,,,,,,,,1.8,3.75,4.2,,,,,,,,,,,,,,,,,,
+9,Sun,2010-10-24,Borussia Dortmund,Hoffenheim,1-1,0-1,,1,1,D,0,1,A,17,9,4,5,8,31,8,3,1,3,0,1,,,,,,,,,,1.75,3.6,4.6,,,,,,,,,,,,,,,,,,
+9,Sun,2010-10-24,VfB Stuttgart,FC St. Pauli,2-0,1-0,,2,0,H,1,0,H,15,17,7,5,16,19,5,4,3,2,0,0,,,,,,,,,,1.67,3.75,5.0,,,,,,,,,,,,,,,,,,
+10,Fri,2010-10-29,Bayern de Munique,Freiburg,4-2,1-0,,4,2,H,1,0,H,16,6,5,2,8,12,4,1,0,3,0,0,,,,,,,,,,1.29,5.0,11.0,,,,,,,,,,,,,,,,,,
+10,Sat,2010-10-30,1. FC Kaiserslautern,Borussia Monchengladbach,3-0,0-0,,3,0,H,0,0,D,14,13,5,3,22,15,9,4,2,1,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+10,Sat,2010-10-30,1. FC Köln,Hamburgo,3-2,2-2,,3,2,H,2,2,D,8,11,3,4,21,22,6,3,2,1,0,0,,,,,,,,,,3.7,3.4,2.0,,,,,,,,,,,,,,,,,,
+10,Sat,2010-10-30,FC Schalke 04,Bayer Leverkusen,0-1,0-0,,0,1,A,0,0,D,7,11,4,3,21,10,5,5,1,0,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+10,Sat,2010-10-30,FC St. Pauli,Eintracht Frankfurt,1-3,1-1,,1,3,A,1,1,D,14,8,3,4,22,18,6,4,2,2,1,0,,,,,,,,,,2.5,3.25,2.8,,,,,,,,,,,,,,,,,,
+10,Sat,2010-10-30,Werder Bremen,1. FC Nurnberg,2-3,1-1,,2,3,A,1,1,D,12,17,6,8,23,15,4,2,2,2,0,0,,,,,,,,,,1.5,4.33,6.0,,,,,,,,,,,,,,,,,,
+10,Sat,2010-10-30,Wolfsburg,VfB Stuttgart,2-0,1-0,,2,0,H,1,0,H,18,12,9,6,12,14,7,4,0,2,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+10,Sun,2010-10-31,Hoffenheim,Hannover 96,4-0,1-0,,4,0,H,1,0,H,18,5,7,2,10,15,4,2,1,1,0,1,,,,,,,,,,1.62,3.7,5.5,,,,,,,,,,,,,,,,,,
+10,Sun,2010-10-31,Mainz 05,Borussia Dortmund,0-2,0-1,,0,2,A,0,1,A,11,17,4,8,13,25,5,8,1,0,0,0,,,,,,,,,,2.75,3.3,2.5,,,,,,,,,,,,,,,,,,
+11,Fri,2010-11-05,FC Schalke 04,FC St. Pauli,3-0,1-0,,3,0,H,1,0,H,13,6,6,0,15,11,5,3,1,2,0,0,,,,,,,,,,1.7,3.6,5.0,,,,,,,,,,,,,,,,,,
+11,Sat,2010-11-06,1. FC Nurnberg,1. FC Köln,3-1,2-1,,3,1,H,2,1,H,20,7,6,4,8,15,13,7,1,1,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+11,Sat,2010-11-06,Borussia Monchengladbach,Bayern de Munique,3-3,1-2,,3,3,D,1,2,A,9,16,4,6,14,8,2,9,1,0,0,0,,,,,,,,,,5.5,4.0,1.57,,,,,,,,,,,,,,,,,,
+11,Sat,2010-11-06,Eintracht Frankfurt,Wolfsburg,3-1,2-0,,3,1,H,2,0,H,15,13,8,7,18,25,3,4,1,2,0,0,,,,,,,,,,2.38,3.4,2.88,,,,,,,,,,,,,,,,,,
+11,Sat,2010-11-06,Freiburg,Mainz 05,1-0,0-0,,1,0,H,0,0,D,14,6,4,1,18,17,3,9,2,1,0,0,,,,,,,,,,2.9,3.3,2.4,,,,,,,,,,,,,,,,,,
+11,Sat,2010-11-06,Hamburgo,Hoffenheim,2-1,1-1,,2,1,H,1,1,D,18,13,2,6,15,27,8,6,1,4,0,0,,,,,,,,,,2.25,3.25,3.2,,,,,,,,,,,,,,,,,,
+11,Sun,2010-11-07,Bayer Leverkusen,1. FC Kaiserslautern,3-1,1-1,,3,1,H,1,1,D,25,12,7,4,14,20,6,2,1,3,0,0,,,,,,,,,,1.44,4.5,6.5,,,,,,,,,,,,,,,,,,
+11,Sun,2010-11-07,Hannover 96,Borussia Dortmund,0-4,0-1,,0,4,A,0,1,A,7,19,2,13,18,10,2,4,0,2,1,0,,,,,,,,,,4.33,3.6,1.8,,,,,,,,,,,,,,,,,,
+11,Sun,2010-11-07,VfB Stuttgart,Werder Bremen,6-0,3-0,,6,0,H,3,0,H,16,11,12,4,10,15,5,7,1,0,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+12,Fri,2010-11-12,Borussia Dortmund,Hamburgo,2-0,0-0,,2,0,H,0,0,D,11,7,4,1,22,17,4,0,0,1,0,0,,,,,,,,,,1.73,3.75,4.5,,,,,,,,,,,,,,,,,,
+12,Sat,2010-11-13,1. FC Kaiserslautern,VfB Stuttgart,3-3,0-2,,3,3,D,0,2,A,16,12,5,7,17,18,3,4,3,2,0,0,,,,,,,,,,3.0,3.4,2.3,,,,,,,,,,,,,,,,,,
+12,Sat,2010-11-13,1. FC Köln,Borussia Monchengladbach,0-4,0-0,,0,4,A,0,0,D,17,19,3,4,16,19,6,7,0,2,0,0,,,,,,,,,,2.1,3.5,3.3,,,,,,,,,,,,,,,,,,
+12,Sat,2010-11-13,FC St. Pauli,Bayer Leverkusen,0-1,0-0,,0,1,A,0,0,D,8,23,1,8,22,16,1,3,3,4,0,0,,,,,,,,,,3.4,3.4,2.1,,,,,,,,,,,,,,,,,,
+12,Sat,2010-11-13,Mainz 05,Hannover 96,0-1,0-1,,0,1,A,0,1,A,12,12,2,5,14,22,3,7,0,1,0,1,,,,,,,,,,1.73,3.5,5.0,,,,,,,,,,,,,,,,,,
+12,Sat,2010-11-13,Werder Bremen,Eintracht Frankfurt,0-0,0-0,,0,0,D,0,0,D,18,13,7,1,14,9,10,3,1,1,0,0,,,,,,,,,,1.91,3.6,3.75,,,,,,,,,,,,,,,,,,
+12,Sat,2010-11-13,Wolfsburg,FC Schalke 04,2-2,2-1,,2,2,D,2,1,H,17,13,4,5,12,20,7,7,2,3,1,0,,,,,,,,,,2.25,3.5,3.0,,,,,,,,,,,,,,,,,,
+12,Sun,2010-11-14,Bayern de Munique,1. FC Nurnberg,3-0,1-0,,3,0,H,1,0,H,13,12,7,2,16,9,3,2,1,1,0,0,,,,,,,,,,1.33,5.0,8.5,,,,,,,,,,,,,,,,,,
+12,Sun,2010-11-14,Hoffenheim,Freiburg,0-1,0-0,,0,1,A,0,0,D,12,10,7,3,16,20,3,6,0,1,0,0,,,,,,,,,,1.62,3.75,5.5,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,1. FC Nurnberg,1. FC Kaiserslautern,1-3,0-3,,1,3,A,0,3,A,18,10,6,7,12,18,8,4,1,3,0,1,,,,,,,,,,1.95,3.5,3.75,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,Bayer Leverkusen,Bayern de Munique,1-1,1-1,,1,1,D,1,1,D,17,8,8,1,23,14,4,5,2,2,0,0,,,,,,,,,,3.0,3.4,2.3,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,Borussia Monchengladbach,Mainz 05,2-3,0-0,,2,3,A,0,0,D,8,16,4,8,20,13,3,4,1,1,0,0,,,,,,,,,,2.4,3.4,2.8,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,Eintracht Frankfurt,Hoffenheim,0-4,0-1,,0,4,A,0,1,A,8,18,3,9,12,21,2,6,4,4,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,FC Schalke 04,Werder Bremen,4-0,2-0,,4,0,H,2,0,H,14,10,8,2,19,14,8,2,1,1,0,1,,,,,,,,,,2.2,3.4,3.2,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,Freiburg,Borussia Dortmund,1-2,1-0,,1,2,A,1,0,H,9,18,2,8,8,10,3,6,0,1,0,0,,,,,,,,,,5.5,3.75,1.62,,,,,,,,,,,,,,,,,,
+13,Sat,2010-11-20,Hannover 96,Hamburgo,3-2,1-1,,3,2,H,1,1,D,14,11,5,4,18,20,6,4,2,4,0,0,,,,,,,,,,2.88,3.4,2.38,,,,,,,,,,,,,,,,,,
+13,Sun,2010-11-21,FC St. Pauli,Wolfsburg,1-1,1-0,,1,1,D,1,0,H,18,3,5,2,14,27,2,4,0,3,0,0,,,,,,,,,,3.2,3.4,2.2,,,,,,,,,,,,,,,,,,
+13,Sun,2010-11-21,VfB Stuttgart,1. FC Köln,0-1,0-0,,0,1,A,0,0,D,20,18,5,8,16,15,10,9,4,3,0,0,,,,,,,,,,1.53,4.0,6.0,,,,,,,,,,,,,,,,,,
+13,Fri,2011-01-14,Bayer Leverkusen,Borussia Dortmund,1-3,0-0,,1,3,A,0,0,D,12,11,3,5,11,18,6,7,2,1,0,0,,,,,,,,,,2.38,3.4,2.88,,,,,,,,,,,,,,,,,,
+14,Fri,2010-11-26,Mainz 05,1. FC Nurnberg,3-0,1-0,,3,0,H,1,0,H,10,13,4,3,17,15,1,4,4,2,0,0,,,,,,,,,,1.85,3.4,4.33,,,,,,,,,,,,,,,,,,
+14,Sat,2010-11-27,1. FC Kaiserslautern,FC Schalke 04,5-0,2-0,,5,0,H,2,0,H,15,6,8,3,19,16,8,2,3,2,0,0,,,,,,,,,,3.25,3.3,2.2,,,,,,,,,,,,,,,,,,
+14,Sat,2010-11-27,Bayern de Munique,Eintracht Frankfurt,4-1,1-1,,4,1,H,1,1,D,25,8,8,4,11,11,15,7,1,0,0,0,,,,,,,,,,1.36,4.75,8.0,,,,,,,,,,,,,,,,,,
+14,Sat,2010-11-27,Borussia Dortmund,Borussia Monchengladbach,4-1,1-1,,4,1,H,1,1,D,22,8,8,4,15,13,7,1,1,1,0,0,,,,,,,,,,1.29,5.5,9.5,,,,,,,,,,,,,,,,,,
+14,Sat,2010-11-27,Hamburgo,VfB Stuttgart,4-2,3-1,,4,2,H,3,1,H,15,14,8,3,9,16,6,7,2,3,0,1,,,,,,,,,,2.1,3.3,3.5,,,,,,,,,,,,,,,,,,
+14,Sat,2010-11-27,Hannover 96,Freiburg,3-0,1-0,,3,0,H,1,0,H,12,13,8,2,18,15,7,4,0,1,0,0,,,,,,,,,,2.25,3.2,3.25,,,,,,,,,,,,,,,,,,
+14,Sat,2010-11-27,Hoffenheim,Bayer Leverkusen,2-2,1-2,,2,2,D,1,2,A,15,7,6,2,18,19,5,2,1,3,0,0,,,,,,,,,,2.55,3.3,2.7,,,,,,,,,,,,,,,,,,
+14,Sun,2010-11-28,1. FC Köln,Wolfsburg,1-1,0-0,,1,1,D,0,0,D,13,11,3,1,10,16,3,2,2,2,0,0,,,,,,,,,,2.8,3.3,2.45,,,,,,,,,,,,,,,,,,
+14,Sun,2010-11-28,Werder Bremen,FC St. Pauli,3-0,2-0,,3,0,H,2,0,H,14,16,8,4,14,16,5,10,2,0,1,1,,,,,,,,,,1.75,3.75,4.5,,,,,,,,,,,,,,,,,,
+15,Fri,2010-12-03,FC St. Pauli,1. FC Kaiserslautern,1-0,0-0,,1,0,H,0,0,D,16,12,6,4,11,15,2,3,1,3,0,0,,,,,,,,,,2.4,3.4,2.8,,,,,,,,,,,,,,,,,,
+15,Sat,2010-12-04,Borussia Monchengladbach,Hannover 96,1-2,1-0,,1,2,A,1,0,H,15,12,3,4,11,17,1,3,2,1,1,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+15,Sat,2010-12-04,Eintracht Frankfurt,Mainz 05,2-1,1-1,,2,1,H,1,1,D,15,10,4,2,21,27,2,5,0,2,0,0,,,,,,,,,,2.2,3.2,3.4,,,,,,,,,,,,,,,,,,
+15,Sat,2010-12-04,FC Schalke 04,Bayern de Munique,2-0,0-0,,2,0,H,0,0,D,12,17,4,5,13,7,4,9,0,1,0,0,,,,,,,,,,3.4,3.4,2.1,,,,,,,,,,,,,,,,,,
+15,Sat,2010-12-04,Freiburg,Hamburgo,1-0,1-0,,1,0,H,1,0,H,10,12,4,6,16,15,8,4,1,0,0,0,,,,,,,,,,3.0,3.4,2.3,,,,,,,,,,,,,,,,,,
+15,Sat,2010-12-04,VfB Stuttgart,Hoffenheim,1-1,1-1,,1,1,D,1,1,D,19,11,5,7,18,19,4,2,3,2,0,1,,,,,,,,,,2.2,3.5,3.1,,,,,,,,,,,,,,,,,,
+15,Sat,2010-12-04,Wolfsburg,Werder Bremen,0-0,0-0,,0,0,D,0,0,D,11,15,4,7,19,16,2,7,3,1,0,0,,,,,,,,,,2.0,3.6,3.5,,,,,,,,,,,,,,,,,,
+15,Sun,2010-12-05,1. FC Nurnberg,Borussia Dortmund,0-2,0-1,,0,2,A,0,1,A,7,16,1,7,13,17,3,6,2,2,0,0,,,,,,,,,,4.5,3.75,1.73,,,,,,,,,,,,,,,,,,
+15,Sun,2010-12-05,Bayer Leverkusen,1. FC Köln,3-2,1-1,,3,2,H,1,1,D,11,14,5,5,9,19,5,0,1,1,0,0,,,,,,,,,,1.4,4.5,8.0,,,,,,,,,,,,,,,,,,
+16,Fri,2010-12-10,Hannover 96,VfB Stuttgart,2-1,1-0,,2,1,H,1,0,H,16,22,8,3,15,18,5,3,2,3,0,0,,,,,,,,,,2.4,3.4,2.8,,,,,,,,,,,,,,,,,,
+16,Sat,2010-12-11,1. FC Kaiserslautern,Wolfsburg,0-0,0-0,,0,0,D,0,0,D,18,5,2,0,15,16,5,0,1,3,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+16,Sat,2010-12-11,1. FC Köln,Eintracht Frankfurt,1-0,0-0,,1,0,H,0,0,D,10,14,5,3,20,14,7,6,5,3,0,0,,,,,,,,,,2.38,3.4,2.88,,,,,,,,,,,,,,,,,,
+16,Sat,2010-12-11,Bayern de Munique,FC St. Pauli,3-0,1-0,,3,0,H,1,0,H,22,9,10,1,13,21,13,4,0,1,0,1,,,,,,,,,,1.2,6.5,13.0,,,,,,,,,,,,,,,,,,
+16,Sat,2010-12-11,Borussia Dortmund,Werder Bremen,2-0,1-0,,2,0,H,1,0,H,11,8,5,2,20,22,3,5,2,5,0,0,,,,,,,,,,1.57,4.2,5.25,,,,,,,,,,,,,,,,,,
+16,Sat,2010-12-11,Hamburgo,Bayer Leverkusen,2-4,0-1,,2,4,A,0,1,A,8,16,3,8,23,18,3,4,3,3,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+16,Sat,2010-12-11,Hoffenheim,1. FC Nurnberg,1-1,0-0,,1,1,D,0,0,D,19,11,4,4,18,23,11,5,1,3,0,0,,,,,,,,,,1.62,3.8,5.5,,,,,,,,,,,,,,,,,,
+16,Sun,2010-12-12,Freiburg,Borussia Monchengladbach,3-0,2-0,,3,0,H,2,0,H,22,14,8,6,14,14,7,2,1,2,0,0,,,,,,,,,,1.91,3.6,3.8,,,,,,,,,,,,,,,,,,
+16,Sun,2010-12-12,Mainz 05,FC Schalke 04,0-1,0-1,,0,1,A,0,1,A,7,10,4,2,11,20,1,10,3,2,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+17,Fri,2010-12-17,Borussia Monchengladbach,Hamburgo,1-2,0-0,,1,2,A,0,0,D,18,15,8,9,12,11,5,8,1,0,0,0,,,,,,,,,,3.25,3.5,2.1,,,,,,,,,,,,,,,,,,
+17,Sat,2010-12-18,1. FC Nurnberg,Hannover 96,3-1,2-0,,3,1,H,2,0,H,19,5,9,1,24,23,6,3,1,4,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+17,Sat,2010-12-18,Eintracht Frankfurt,Borussia Dortmund,1-0,0-0,,1,0,H,0,0,D,12,9,4,1,18,14,3,8,2,2,0,0,,,,,,,,,,4.5,3.75,1.75,,,,,,,,,,,,,,,,,,
+17,Sat,2010-12-18,FC Schalke 04,1. FC Köln,3-0,1-0,,3,0,H,1,0,H,16,6,6,1,10,13,6,6,0,1,0,0,,,,,,,,,,1.44,4.2,7.5,,,,,,,,,,,,,,,,,,
+17,Sat,2010-12-18,FC St. Pauli,Mainz 05,2-4,1-3,,2,4,A,1,3,A,14,20,6,7,21,18,11,8,2,1,0,0,,,,,,,,,,2.6,3.2,2.75,,,,,,,,,,,,,,,,,,
+17,Sat,2010-12-18,Werder Bremen,1. FC Kaiserslautern,1-2,1-1,,1,2,A,1,1,D,22,17,5,7,16,15,8,2,2,2,1,1,,,,,,,,,,1.62,4.0,5.0,,,,,,,,,,,,,,,,,,
+17,Sat,2010-12-18,Wolfsburg,Hoffenheim,2-2,0-2,,2,2,D,0,2,A,13,15,5,7,22,15,4,3,2,1,0,0,,,,,,,,,,2.1,3.5,3.3,,,,,,,,,,,,,,,,,,
+17,Sun,2010-12-19,Bayer Leverkusen,Freiburg,2-2,1-1,,2,2,D,1,1,D,14,8,6,4,17,15,3,1,3,1,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+17,Sun,2010-12-19,VfB Stuttgart,Bayern de Munique,3-5,0-3,,3,5,A,0,3,A,12,10,7,9,20,16,3,4,3,1,0,0,,,,,,,,,,4.0,3.6,1.85,,,,,,,,,,,,,,,,,,
+18,Sat,2011-01-15,1. FC Nurnberg,Borussia Monchengladbach,0-1,0-1,,0,1,A,0,1,A,17,6,4,3,16,29,6,3,1,3,0,0,,,,,,,,,,2.0,3.5,3.6,,,,,,,,,,,,,,,,,,
+18,Sat,2011-01-15,FC Schalke 04,Hamburgo,0-1,0-0,,0,1,A,0,0,D,10,9,1,3,26,12,7,5,3,3,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+18,Sat,2011-01-15,FC St. Pauli,Freiburg,2-2,1-0,,2,2,D,1,0,H,11,9,6,7,15,20,5,3,1,1,0,0,,,,,,,,,,2.3,3.3,3.1,,,,,,,,,,,,,,,,,,
+18,Sat,2011-01-15,VfB Stuttgart,Mainz 05,1-0,0-0,,1,0,H,0,0,D,7,16,2,4,20,14,6,7,1,2,0,0,,,,,,,,,,1.95,3.4,3.8,,,,,,,,,,,,,,,,,,
+18,Sat,2011-01-15,Werder Bremen,Hoffenheim,2-1,1-0,,2,1,H,1,0,H,12,8,4,2,24,19,8,4,3,2,0,0,,,,,,,,,,2.0,3.5,3.6,,,,,,,,,,,,,,,,,,
+18,Sat,2011-01-15,Wolfsburg,Bayern de Munique,1-1,0-1,,1,1,D,0,1,A,10,14,4,6,16,16,5,9,2,2,0,0,,,,,,,,,,5.0,3.6,1.7,,,,,,,,,,,,,,,,,,
+18,Sun,2011-01-16,1. FC Kaiserslautern,1. FC Köln,1-1,0-1,,1,1,D,0,1,A,15,14,4,3,18,24,10,4,1,6,1,0,,,,,,,,,,1.91,3.5,4.2,,,,,,,,,,,,,,,,,,
+18,Sun,2011-01-16,Eintracht Frankfurt,Hannover 96,0-3,0-2,,0,3,A,0,2,A,12,16,4,6,13,26,5,5,1,1,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+19,Fri,2011-01-21,Hamburgo,Eintracht Frankfurt,1-0,0-0,,1,0,H,0,0,D,9,6,4,1,13,15,6,4,0,0,0,0,,,,,,,,,,1.53,4.0,6.0,,,,,,,,,,,,,,,,,,
+19,Sat,2011-01-22,1. FC Köln,Werder Bremen,3-0,2-0,,3,0,H,2,0,H,11,3,5,1,11,25,7,3,3,2,0,0,,,,,,,,,,2.9,3.3,2.38,,,,,,,,,,,,,,,,,,
+19,Sat,2011-01-22,Bayern de Munique,1. FC Kaiserslautern,5-1,1-0,,5,1,H,1,0,H,19,13,9,6,8,11,6,5,0,3,0,0,,,,,,,,,,1.22,6.0,12.0,,,,,,,,,,,,,,,,,,
+19,Sat,2011-01-22,Borussia Dortmund,VfB Stuttgart,1-1,1-0,,1,1,D,1,0,H,18,7,7,3,9,8,8,6,0,2,0,0,,,,,,,,,,1.5,4.33,6.5,,,,,,,,,,,,,,,,,,
+19,Sat,2011-01-22,Freiburg,1. FC Nurnberg,1-1,1-0,,1,1,D,1,0,H,6,11,2,2,21,13,4,5,0,1,0,0,,,,,,,,,,2.38,3.2,3.0,,,,,,,,,,,,,,,,,,
+19,Sat,2011-01-22,Hannover 96,FC Schalke 04,0-1,0-1,,0,1,A,0,1,A,11,11,4,4,11,21,4,5,1,2,0,0,,,,,,,,,,2.9,3.3,2.38,,,,,,,,,,,,,,,,,,
+19,Sat,2011-01-22,Mainz 05,Wolfsburg,0-1,0-0,,0,1,A,0,0,D,14,8,3,2,16,23,3,5,1,1,0,0,,,,,,,,,,2.3,3.25,3.1,,,,,,,,,,,,,,,,,,
+19,Sun,2011-01-23,Borussia Monchengladbach,Bayer Leverkusen,1-3,0-2,,1,3,A,0,2,A,16,8,6,4,19,15,3,1,1,1,0,0,,,,,,,,,,4.2,3.75,1.8,,,,,,,,,,,,,,,,,,
+19,Sun,2011-01-23,Hoffenheim,FC St. Pauli,2-2,1-0,,2,2,D,1,0,H,10,14,4,5,25,16,4,4,1,1,0,0,,,,,,,,,,1.6,3.75,5.75,,,,,,,,,,,,,,,,,,
+20,Fri,2011-01-28,Bayer Leverkusen,Hannover 96,2-0,2-0,,2,0,H,2,0,H,11,9,6,3,18,12,5,3,0,0,0,0,,,,,,,,,,1.53,4.0,6.0,,,,,,,,,,,,,,,,,,
+20,Sat,2011-01-29,1. FC Kaiserslautern,Mainz 05,0-1,0-1,,0,1,A,0,1,A,17,12,6,5,15,16,6,3,1,0,0,0,,,,,,,,,,2.2,3.3,3.25,,,,,,,,,,,,,,,,,,
+20,Sat,2011-01-29,1. FC Nurnberg,Hamburgo,2-0,0-0,,2,0,H,0,0,D,17,7,7,1,18,20,6,3,1,2,0,1,,,,,,,,,,3.3,3.5,2.1,,,,,,,,,,,,,,,,,,
+20,Sat,2011-01-29,FC Schalke 04,Hoffenheim,0-1,0-1,,0,1,A,0,1,A,10,16,1,5,19,16,9,4,2,1,0,0,,,,,,,,,,1.73,3.5,5.0,,,,,,,,,,,,,,,,,,
+20,Sat,2011-01-29,FC St. Pauli,1. FC Köln,3-0,2-0,,3,0,H,2,0,H,30,3,10,2,16,16,11,2,0,4,0,0,,,,,,,,,,2.3,3.3,3.1,,,,,,,,,,,,,,,,,,
+20,Sat,2011-01-29,Werder Bremen,Bayern de Munique,1-3,0-0,,1,3,A,0,0,D,9,17,4,6,21,18,7,4,2,2,1,0,,,,,,,,,,4.75,4.0,1.67,,,,,,,,,,,,,,,,,,
+20,Sat,2011-01-29,Wolfsburg,Borussia Dortmund,0-3,0-2,,0,3,A,0,2,A,9,17,2,8,18,12,4,3,2,2,0,0,,,,,,,,,,4.0,3.75,1.83,,,,,,,,,,,,,,,,,,
+20,Sun,2011-01-30,Eintracht Frankfurt,Borussia Monchengladbach,0-1,0-0,,0,1,A,0,0,D,17,16,2,7,7,18,4,4,0,2,0,0,,,,,,,,,,2.0,3.5,3.6,,,,,,,,,,,,,,,,,,
+20,Sun,2011-01-30,VfB Stuttgart,Freiburg,0-1,0-1,,0,1,A,0,1,A,15,9,4,3,10,20,9,3,0,2,0,0,,,,,,,,,,1.53,3.8,6.5,,,,,,,,,,,,,,,,,,
+21,Fri,2011-02-04,Borussia Dortmund,FC Schalke 04,0-0,0-0,,0,0,D,0,0,D,21,6,9,2,13,19,1,2,2,3,0,0,,,,,,,,,,1.62,3.8,5.5,,,,,,,,,,,,,,,,,,
+21,Sat,2011-02-05,1. FC Köln,Bayern de Munique,3-2,0-2,,3,2,H,0,2,A,17,12,6,4,19,17,5,7,0,2,0,0,,,,,,,,,,7.0,4.33,1.44,,,,,,,,,,,,,,,,,,
+21,Sat,2011-02-05,1. FC Nurnberg,Bayer Leverkusen,1-0,0-0,,1,0,H,0,0,D,9,11,3,0,25,19,3,2,1,3,1,0,,,,,,,,,,3.4,3.4,2.1,,,,,,,,,,,,,,,,,,
+21,Sat,2011-02-05,Borussia Monchengladbach,VfB Stuttgart,2-3,2-0,,2,3,A,2,0,H,12,9,5,3,19,14,5,3,1,2,1,0,,,,,,,,,,2.88,3.3,2.4,,,,,,,,,,,,,,,,,,
+21,Sat,2011-02-05,Hannover 96,Wolfsburg,1-0,1-0,,1,0,H,1,0,H,10,12,4,3,18,16,4,4,1,3,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+21,Sat,2011-02-05,Hoffenheim,1. FC Kaiserslautern,3-2,2-0,,3,2,H,2,0,H,17,24,8,7,17,24,4,7,1,2,1,0,,,,,,,,,,1.8,3.6,4.33,,,,,,,,,,,,,,,,,,
+21,Sat,2011-02-05,Mainz 05,Werder Bremen,1-1,1-0,,1,1,D,1,0,H,10,9,5,3,19,24,6,3,1,4,0,0,,,,,,,,,,2.4,3.4,2.8,,,,,,,,,,,,,,,,,,
+21,Sun,2011-02-06,Freiburg,Eintracht Frankfurt,0-0,0-0,,0,0,D,0,0,D,12,12,0,3,14,21,5,6,0,2,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,1. FC Kaiserslautern,Borussia Dortmund,1-1,0-0,,1,1,D,0,0,D,15,17,3,6,14,16,6,2,1,0,0,1,,,,,,,,,,5.5,3.8,1.62,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,Bayern de Munique,Hoffenheim,4-0,2-0,,4,0,H,2,0,H,17,14,11,4,5,17,8,3,0,4,0,0,,,,,,,,,,1.33,5.0,9.0,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,Eintracht Frankfurt,Bayer Leverkusen,0-3,0-2,,0,3,A,0,2,A,12,12,3,6,25,15,1,6,3,1,0,0,,,,,,,,,,3.75,3.4,2.0,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,FC Schalke 04,Freiburg,1-0,0-0,,1,0,H,0,0,D,20,3,7,1,7,22,12,0,2,2,0,0,,,,,,,,,,1.67,3.75,5.0,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,FC St. Pauli,Borussia Monchengladbach,3-1,1-1,,3,1,H,1,1,D,23,7,9,2,14,15,9,1,1,1,0,1,,,,,,,,,,2.0,3.5,3.6,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,VfB Stuttgart,1. FC Nurnberg,1-4,1-2,,1,4,A,1,2,A,10,20,5,10,10,21,3,7,3,1,0,0,,,,,,,,,,1.73,3.6,4.75,,,,,,,,,,,,,,,,,,
+22,Sat,2011-02-12,Wolfsburg,Hamburgo,0-1,0-1,,0,1,A,0,1,A,8,9,1,4,25,15,5,5,4,1,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+22,Sun,2011-02-13,1. FC Köln,Mainz 05,4-2,2-1,,4,2,H,2,1,H,15,9,9,4,20,17,5,1,2,1,0,0,,,,,,,,,,2.4,3.3,2.9,,,,,,,,,,,,,,,,,,
+22,Sun,2011-02-13,Werder Bremen,Hannover 96,1-1,0-1,,1,1,D,0,1,A,13,6,5,4,18,21,11,3,0,3,0,0,,,,,,,,,,1.73,3.75,4.5,,,,,,,,,,,,,,,,,,
+22,Wed,2011-02-16,Hamburgo,FC St. Pauli,0-1,0-0,,0,1,A,0,0,D,22,5,6,3,15,19,11,5,4,2,0,0,,,,,,,,,,1.62,3.75,5.5,,,,,,,,,,,,,,,,,,
+23,Fri,2011-02-18,1. FC Nurnberg,Eintracht Frankfurt,3-0,0-0,,3,0,H,0,0,D,16,3,7,1,13,21,8,1,2,2,0,0,,,,,,,,,,1.91,3.6,3.8,,,,,,,,,,,,,,,,,,
+23,Sat,2011-02-19,Borussia Dortmund,FC St. Pauli,2-0,1-0,,2,0,H,1,0,H,25,3,12,1,16,14,8,1,1,2,0,0,,,,,,,,,,1.25,5.5,12.0,,,,,,,,,,,,,,,,,,
+23,Sat,2011-02-19,Freiburg,Wolfsburg,2-1,1-1,,2,1,H,1,1,D,14,18,5,8,14,12,7,9,3,0,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+23,Sat,2011-02-19,Hamburgo,Werder Bremen,4-0,1-0,,4,0,H,1,0,H,14,8,6,2,21,19,6,3,3,3,0,0,,,,,,,,,,1.91,3.6,3.75,,,,,,,,,,,,,,,,,,
+23,Sat,2011-02-19,Hannover 96,1. FC Kaiserslautern,3-0,2-0,,3,0,H,2,0,H,12,10,5,4,12,14,7,6,1,1,0,0,,,,,,,,,,2.0,3.5,3.6,,,,,,,,,,,,,,,,,,
+23,Sat,2011-02-19,Hoffenheim,1. FC Köln,1-1,0-0,,1,1,D,0,0,D,17,8,4,2,20,21,4,1,2,5,0,0,,,,,,,,,,1.75,3.7,4.5,,,,,,,,,,,,,,,,,,
+23,Sat,2011-02-19,Mainz 05,Bayern de Munique,1-3,0-1,,1,3,A,0,1,A,18,19,7,9,18,13,4,11,2,1,0,0,,,,,,,,,,5.0,4.0,1.62,,,,,,,,,,,,,,,,,,
+23,Sun,2011-02-20,Bayer Leverkusen,VfB Stuttgart,4-2,2-1,,4,2,H,2,1,H,18,11,7,4,11,12,6,4,1,2,0,0,,,,,,,,,,1.62,4.0,5.0,,,,,,,,,,,,,,,,,,
+23,Sun,2011-02-20,Borussia Monchengladbach,FC Schalke 04,2-1,2-1,,2,1,H,2,1,H,13,4,7,1,19,17,3,0,0,0,0,0,,,,,,,,,,3.4,3.4,2.1,,,,,,,,,,,,,,,,,,
+24,Fri,2011-02-25,Wolfsburg,Borussia Monchengladbach,2-1,2-0,,2,1,H,2,0,H,15,14,6,6,17,25,5,3,4,3,0,0,,,,,,,,,,1.8,3.75,4.2,,,,,,,,,,,,,,,,,,
+24,Sat,2011-02-26,1. FC Kaiserslautern,Hamburgo,1-1,1-0,,1,1,D,1,0,H,16,16,8,5,17,10,4,3,3,0,0,0,,,,,,,,,,3.1,3.4,2.25,,,,,,,,,,,,,,,,,,
+24,Sat,2011-02-26,1. FC Köln,Freiburg,1-0,0-0,,1,0,H,0,0,D,22,12,6,1,12,20,8,5,2,3,0,0,,,,,,,,,,2.25,3.25,3.2,,,,,,,,,,,,,,,,,,
+24,Sat,2011-02-26,Bayern de Munique,Borussia Dortmund,1-3,1-2,,1,3,A,1,2,A,14,16,4,5,10,11,10,4,2,3,0,0,,,,,,,,,,1.73,3.6,4.75,,,,,,,,,,,,,,,,,,
+24,Sat,2011-02-26,FC Schalke 04,1. FC Nurnberg,1-1,0-1,,1,1,D,0,1,A,16,16,8,4,13,17,10,3,1,3,0,0,,,,,,,,,,1.83,3.5,4.33,,,,,,,,,,,,,,,,,,
+24,Sat,2011-02-26,FC St. Pauli,Hannover 96,0-1,0-0,,0,1,A,0,0,D,7,8,1,5,20,21,3,5,0,2,0,0,,,,,,,,,,2.3,3.5,2.88,,,,,,,,,,,,,,,,,,
+24,Sat,2011-02-26,Hoffenheim,Mainz 05,1-2,0-1,,1,2,A,0,1,A,13,10,4,7,18,23,6,4,1,0,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+24,Sun,2011-02-27,Eintracht Frankfurt,VfB Stuttgart,0-2,0-0,,0,2,A,0,0,D,30,11,5,6,19,13,13,3,2,1,0,1,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+24,Sun,2011-02-27,Werder Bremen,Bayer Leverkusen,2-2,0-1,,2,2,D,0,1,A,9,17,6,6,19,11,2,6,2,1,0,1,,,,,,,,,,3.1,3.4,2.25,,,,,,,,,,,,,,,,,,
+25,Fri,2011-03-04,Borussia Dortmund,1. FC Köln,1-0,1-0,,1,0,H,1,0,H,24,7,8,1,19,18,10,3,0,3,0,0,,,,,,,,,,1.33,5.0,9.0,,,,,,,,,,,,,,,,,,
+25,Sat,2011-03-05,1. FC Nurnberg,FC St. Pauli,5-0,3-0,,5,0,H,3,0,H,20,4,7,1,17,16,4,1,1,3,0,0,,,,,,,,,,1.83,3.5,4.33,,,,,,,,,,,,,,,,,,
+25,Sat,2011-03-05,Bayer Leverkusen,Wolfsburg,3-0,3-0,,3,0,H,3,0,H,14,9,9,1,19,15,7,2,0,4,0,0,,,,,,,,,,1.57,4.0,5.5,,,,,,,,,,,,,,,,,,
+25,Sat,2011-03-05,Borussia Monchengladbach,Hoffenheim,2-0,0-0,,2,0,H,0,0,D,13,9,6,0,17,30,8,4,1,4,0,0,,,,,,,,,,2.6,3.4,2.6,,,,,,,,,,,,,,,,,,
+25,Sat,2011-03-05,Eintracht Frankfurt,1. FC Kaiserslautern,0-0,0-0,,0,0,D,0,0,D,6,9,0,2,10,22,2,5,4,3,0,0,,,,,,,,,,2.3,3.4,3.0,,,,,,,,,,,,,,,,,,
+25,Sat,2011-03-05,Hannover 96,Bayern de Munique,3-1,1-0,,3,1,H,1,0,H,13,12,7,6,24,9,2,2,3,1,0,1,,,,,,,,,,5.0,3.75,1.67,,,,,,,,,,,,,,,,,,
+25,Sat,2011-03-05,VfB Stuttgart,FC Schalke 04,1-0,1-0,,1,0,H,1,0,H,22,14,5,3,12,18,5,5,1,2,0,1,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+25,Sun,2011-03-06,Freiburg,Werder Bremen,1-3,0-1,,1,3,A,0,1,A,9,16,1,7,19,21,3,4,3,6,0,0,,,,,,,,,,2.38,3.4,2.88,,,,,,,,,,,,,,,,,,
+25,Sun,2011-03-06,Hamburgo,Mainz 05,2-4,1-0,,2,4,A,1,0,H,8,12,4,6,17,15,4,5,2,2,0,0,,,,,,,,,,1.91,3.4,4.0,,,,,,,,,,,,,,,,,,
+26,Fri,2011-03-11,1. FC Köln,Hannover 96,4-0,1-0,,4,0,H,1,0,H,12,14,7,4,15,20,2,6,0,3,0,0,,,,,,,,,,2.4,3.3,2.9,,,,,,,,,,,,,,,,,,
+26,Sat,2011-03-12,1. FC Kaiserslautern,Freiburg,2-1,1-1,,2,1,H,1,1,D,19,9,6,2,14,15,3,3,0,0,0,0,,,,,,,,,,2.15,3.3,3.4,,,,,,,,,,,,,,,,,,
+26,Sat,2011-03-12,Bayern de Munique,Hamburgo,6-0,1-0,,6,0,H,1,0,H,17,10,8,3,11,12,4,4,2,1,0,0,,,,,,,,,,1.53,4.0,6.0,,,,,,,,,,,,,,,,,,
+26,Sat,2011-03-12,FC Schalke 04,Eintracht Frankfurt,2-1,1-0,,2,1,H,1,0,H,9,7,5,5,17,19,6,3,1,3,0,0,,,,,,,,,,1.67,3.5,5.5,,,,,,,,,,,,,,,,,,
+26,Sat,2011-03-12,Hoffenheim,Borussia Dortmund,1-0,0-0,,1,0,H,0,0,D,11,16,4,3,21,15,2,5,2,1,0,0,,,,,,,,,,4.75,3.6,1.73,,,,,,,,,,,,,,,,,,
+26,Sat,2011-03-12,Werder Bremen,Borussia Monchengladbach,1-1,1-0,,1,1,D,1,0,H,18,12,5,3,12,9,9,7,3,0,0,0,,,,,,,,,,1.67,3.75,5.0,,,,,,,,,,,,,,,,,,
+26,Sat,2011-03-12,Wolfsburg,1. FC Nurnberg,1-2,1-1,,1,2,A,1,1,D,12,8,5,4,19,28,2,5,2,3,0,0,,,,,,,,,,2.2,3.4,3.2,,,,,,,,,,,,,,,,,,
+26,Sun,2011-03-13,FC St. Pauli,VfB Stuttgart,1-2,1-1,,1,2,A,1,1,D,9,17,2,9,19,15,5,2,2,2,0,0,,,,,,,,,,3.2,3.4,2.2,,,,,,,,,,,,,,,,,,
+26,Sun,2011-03-13,Mainz 05,Bayer Leverkusen,0-1,0-0,,0,1,A,0,0,D,5,14,1,3,25,15,6,4,3,3,0,0,,,,,,,,,,3.25,3.3,2.2,,,,,,,,,,,,,,,,,,
+27,Fri,2011-03-18,Borussia Monchengladbach,1. FC Kaiserslautern,0-1,0-0,,0,1,A,0,0,D,8,13,4,3,15,20,4,3,2,0,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+27,Sat,2011-03-19,1. FC Nurnberg,Werder Bremen,1-3,1-1,,1,3,A,1,1,D,8,8,4,6,18,19,3,7,3,3,1,0,,,,,,,,,,2.2,3.4,3.2,,,,,,,,,,,,,,,,,,
+27,Sat,2011-03-19,Borussia Dortmund,Mainz 05,1-1,1-0,,1,1,D,1,0,H,15,9,3,3,13,14,7,2,1,1,0,0,,,,,,,,,,1.4,4.33,8.5,,,,,,,,,,,,,,,,,,
+27,Sat,2011-03-19,Eintracht Frankfurt,FC St. Pauli,2-1,1-1,,2,1,H,1,1,D,13,11,6,3,18,23,3,3,1,4,0,0,,,,,,,,,,2.0,3.4,3.7,,,,,,,,,,,,,,,,,,
+27,Sat,2011-03-19,Freiburg,Bayern de Munique,1-2,1-1,,1,2,A,1,1,D,12,11,4,6,14,18,5,6,2,0,0,0,,,,,,,,,,6.5,4.1,1.5,,,,,,,,,,,,,,,,,,
+27,Sat,2011-03-19,Hamburgo,1. FC Köln,6-2,4-0,,6,2,H,4,0,H,21,9,7,3,14,20,2,1,1,2,0,0,,,,,,,,,,1.7,3.6,4.75,,,,,,,,,,,,,,,,,,
+27,Sat,2011-03-19,Hannover 96,Hoffenheim,2-0,1-0,,2,0,H,1,0,H,9,12,3,2,14,21,4,4,0,1,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+27,Sun,2011-03-20,Bayer Leverkusen,FC Schalke 04,2-0,2-0,,2,0,H,2,0,H,13,7,7,5,14,24,8,3,2,3,0,0,,,,,,,,,,1.75,3.6,4.5,,,,,,,,,,,,,,,,,,
+27,Sun,2011-03-20,VfB Stuttgart,Wolfsburg,1-1,0-1,,1,1,D,0,1,A,16,9,4,6,18,22,1,3,1,3,0,0,,,,,,,,,,1.95,3.5,3.75,,,,,,,,,,,,,,,,,,
+28,Fri,2010-08-20,Bayern de Munique,Wolfsburg,2-1,1-0,,2,1,H,1,0,H,17,11,5,5,6,25,9,3,1,3,0,0,,,,,,,,,,1.57,4.0,5.5,,,,,,,,,,,,,,,,,,
+28,Fri,2011-04-01,FC St. Pauli,FC Schalke 04,0-2,0-1,,0,2,A,0,1,A,17,11,2,3,16,13,7,5,1,2,2,0,,,,,,,,,,3.4,3.25,2.15,,,,,,,,,,,,,,,,,,
+28,Sat,2011-04-02,1. FC Kaiserslautern,Bayer Leverkusen,0-1,0-0,,0,1,A,0,0,D,6,9,1,5,22,15,3,1,1,2,0,0,,,,,,,,,,3.6,3.5,2.0,,,,,,,,,,,,,,,,,,
+28,Sat,2011-04-02,Bayern de Munique,Borussia Monchengladbach,1-0,0-0,,1,0,H,0,0,D,16,7,5,2,11,16,7,4,2,1,0,0,,,,,,,,,,1.17,7.0,15.0,,,,,,,,,,,,,,,,,,
+28,Sat,2011-04-02,Borussia Dortmund,Hannover 96,4-1,0-0,,4,1,H,0,0,D,21,7,10,3,8,10,4,6,1,2,0,0,,,,,,,,,,1.4,4.5,8.0,,,,,,,,,,,,,,,,,,
+28,Sat,2011-04-02,Hoffenheim,Hamburgo,0-0,0-0,,0,0,D,0,0,D,16,6,3,2,18,12,4,5,2,1,0,0,,,,,,,,,,2.5,3.3,2.75,,,,,,,,,,,,,,,,,,
+28,Sat,2011-04-02,Mainz 05,Freiburg,1-1,0-1,,1,1,D,0,1,A,12,7,3,1,15,22,5,1,1,3,0,0,,,,,,,,,,1.85,3.6,4.0,,,,,,,,,,,,,,,,,,
+28,Sat,2011-04-02,Werder Bremen,VfB Stuttgart,1-1,1-1,,1,1,D,1,1,D,27,6,8,2,12,23,12,3,1,3,0,0,,,,,,,,,,2.2,3.4,3.2,,,,,,,,,,,,,,,,,,
+28,Sun,2011-04-03,1. FC Köln,1. FC Nurnberg,1-0,0-0,,1,0,H,0,0,D,15,12,3,4,27,23,3,5,2,2,0,0,,,,,,,,,,2.38,3.3,2.9,,,,,,,,,,,,,,,,,,
+28,Sun,2011-04-03,Wolfsburg,Eintracht Frankfurt,1-1,0-0,,1,1,D,0,0,D,27,6,9,4,12,14,14,1,1,5,1,0,,,,,,,,,,1.8,3.5,4.5,,,,,,,,,,,,,,,,,,
+29,Fri,2011-04-08,Eintracht Frankfurt,Werder Bremen,1-1,0-0,,1,1,D,0,0,D,14,19,8,6,25,21,8,6,3,3,0,0,,,,,,,,,,2.8,3.4,2.4,,,,,,,,,,,,,,,,,,
+29,Sat,2011-04-09,1. FC Nurnberg,Bayern de Munique,1-1,0-1,,1,1,D,0,1,A,24,9,3,4,15,21,6,6,2,2,0,1,,,,,,,,,,5.25,4.0,1.6,,,,,,,,,,,,,,,,,,
+29,Sat,2011-04-09,FC Schalke 04,Wolfsburg,1-0,0-0,,1,0,H,0,0,D,13,6,4,1,16,17,5,5,1,3,0,0,,,,,,,,,,2.2,3.4,3.2,,,,,,,,,,,,,,,,,,
+29,Sat,2011-04-09,Freiburg,Hoffenheim,3-2,1-2,,3,2,H,1,2,A,14,15,5,9,12,20,6,4,1,5,1,0,,,,,,,,,,2.6,3.25,2.7,,,,,,,,,,,,,,,,,,
+29,Sat,2011-04-09,Hamburgo,Borussia Dortmund,1-1,1-0,,1,1,D,1,0,H,8,15,4,7,21,13,2,4,0,1,1,0,,,,,,,,,,3.1,3.5,2.2,,,,,,,,,,,,,,,,,,
+29,Sat,2011-04-09,Hannover 96,Mainz 05,2-0,1-0,,2,0,H,1,0,H,21,9,9,4,14,14,15,4,1,3,0,1,,,,,,,,,,2.2,3.3,3.25,,,,,,,,,,,,,,,,,,
+29,Sat,2011-04-09,VfB Stuttgart,1. FC Kaiserslautern,2-4,2-1,,2,4,A,2,1,H,8,15,3,5,20,18,4,4,1,2,0,0,,,,,,,,,,1.73,3.75,4.5,,,,,,,,,,,,,,,,,,
+29,Sun,2011-04-10,Bayer Leverkusen,FC St. Pauli,2-1,0-0,,2,1,H,0,0,D,19,6,5,1,15,22,4,1,1,3,0,0,,,,,,,,,,1.2,6.0,15.0,,,,,,,,,,,,,,,,,,
+29,Sun,2011-04-10,Borussia Monchengladbach,1. FC Köln,5-1,3-0,,5,1,H,3,0,H,19,8,10,4,13,19,4,6,1,2,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+30,Fri,2011-04-15,Mainz 05,Borussia Monchengladbach,1-0,0-0,,1,0,H,0,0,D,10,11,2,3,17,11,6,4,1,1,0,1,,,,,,,,,,1.91,3.6,3.75,,,,,,,,,,,,,,,,,,
+30,Sat,2011-04-16,1. FC Kaiserslautern,1. FC Nurnberg,0-2,0-1,,0,2,A,0,1,A,10,12,2,7,17,13,0,6,1,2,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+30,Sat,2011-04-16,1. FC Köln,VfB Stuttgart,1-3,0-0,,1,3,A,0,0,D,13,22,4,11,26,19,2,7,6,2,0,0,,,,,,,,,,2.5,3.4,2.7,,,,,,,,,,,,,,,,,,
+30,Sat,2011-04-16,Hamburgo,Hannover 96,0-0,0-0,,0,0,D,0,0,D,11,15,3,6,12,19,7,4,1,3,0,0,,,,,,,,,,1.91,3.6,3.75,,,,,,,,,,,,,,,,,,
+30,Sat,2011-04-16,Hoffenheim,Eintracht Frankfurt,1-0,0-0,,1,0,H,0,0,D,16,13,4,5,20,9,3,8,3,3,0,0,,,,,,,,,,2.0,3.5,3.6,,,,,,,,,,,,,,,,,,
+30,Sat,2011-04-16,Werder Bremen,FC Schalke 04,1-1,0-0,,1,1,D,0,0,D,15,14,5,6,12,24,8,3,0,3,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+30,Sat,2011-04-16,Wolfsburg,FC St. Pauli,2-2,1-0,,2,2,D,1,0,H,9,19,3,8,14,12,4,7,2,2,0,0,,,,,,,,,,1.5,4.2,6.5,,,,,,,,,,,,,,,,,,
+30,Sun,2011-04-17,Bayern de Munique,Bayer Leverkusen,5-1,4-0,,5,1,H,4,0,H,5,7,4,3,15,12,3,2,1,1,0,0,,,,,,,,,,1.83,3.75,4.0,,,,,,,,,,,,,,,,,,
+30,Sun,2011-04-17,Borussia Dortmund,Freiburg,3-0,2-0,,3,0,H,2,0,H,20,2,5,2,13,23,4,1,1,2,0,0,,,,,,,,,,1.29,5.5,9.5,,,,,,,,,,,,,,,,,,
+31,Thu,2011-04-21,Freiburg,Hannover 96,1-3,0-2,,1,3,A,0,2,A,14,9,7,5,8,17,7,2,0,2,0,0,,,,,,,,,,2.5,3.3,2.8,,,,,,,,,,,,,,,,,,
+31,Sat,2011-04-23,Bayer Leverkusen,Hoffenheim,2-1,1-1,,2,1,H,1,1,D,15,9,4,3,14,16,7,2,0,1,0,0,,,,,,,,,,1.53,4.0,6.0,,,,,,,,,,,,,,,,,,
+31,Sat,2011-04-23,Borussia Monchengladbach,Borussia Dortmund,1-0,1-0,,1,0,H,1,0,H,7,21,2,8,7,13,3,11,0,0,0,0,,,,,,,,,,5.25,4.2,1.57,,,,,,,,,,,,,,,,,,
+31,Sat,2011-04-23,Eintracht Frankfurt,Bayern de Munique,1-1,0-0,,1,1,D,0,0,D,8,18,2,9,13,15,0,9,4,3,0,0,,,,,,,,,,5.5,4.33,1.53,,,,,,,,,,,,,,,,,,
+31,Sat,2011-04-23,FC Schalke 04,1. FC Kaiserslautern,0-1,0-1,,0,1,A,0,1,A,11,9,2,3,10,19,6,3,0,3,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+31,Sat,2011-04-23,FC St. Pauli,Werder Bremen,1-3,1-0,,1,3,A,1,0,H,5,14,3,4,22,13,4,4,2,0,0,0,,,,,,,,,,3.25,3.5,2.1,,,,,,,,,,,,,,,,,,
+31,Sat,2011-04-23,VfB Stuttgart,Hamburgo,3-0,1-0,,3,0,H,1,0,H,14,11,6,4,9,12,3,6,2,0,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+31,Sun,2011-04-24,1. FC Nurnberg,Mainz 05,0-0,0-0,,0,0,D,0,0,D,11,10,2,1,15,14,5,1,5,3,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+31,Sun,2011-04-24,Wolfsburg,1. FC Köln,4-1,2-1,,4,1,H,2,1,H,18,14,9,4,18,17,7,2,0,0,0,0,,,,,,,,,,1.67,4.0,4.75,,,,,,,,,,,,,,,,,,
+32,Fri,2011-04-29,1. FC Kaiserslautern,FC St. Pauli,2-0,1-0,,2,0,H,1,0,H,17,15,5,6,19,15,5,3,0,1,0,0,,,,,,,,,,1.8,3.6,4.33,,,,,,,,,,,,,,,,,,
+32,Fri,2011-04-29,Werder Bremen,Wolfsburg,0-1,0-1,,0,1,A,0,1,A,14,10,4,2,11,22,9,5,2,4,0,0,,,,,,,,,,2.1,3.6,3.2,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,1. FC Köln,Bayer Leverkusen,2-0,0-0,,2,0,H,0,0,D,4,16,4,4,18,19,1,6,2,2,0,0,,,,,,,,,,3.8,3.6,1.91,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,Bayern de Munique,FC Schalke 04,4-1,3-1,,4,1,H,3,1,H,22,3,8,0,9,19,7,1,1,2,0,0,,,,,,,,,,1.29,5.5,9.5,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,Borussia Dortmund,1. FC Nurnberg,2-0,2-0,,2,0,H,2,0,H,11,8,5,2,20,13,4,4,1,2,0,0,,,,,,,,,,1.4,4.5,7.5,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,Hamburgo,Freiburg,0-2,0-1,,0,2,A,0,1,A,16,9,5,5,26,14,4,1,3,1,0,0,,,,,,,,,,1.62,4.0,5.0,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,Hannover 96,Borussia Monchengladbach,0-1,0-0,,0,1,A,0,0,D,10,15,2,4,9,9,7,2,2,0,0,0,,,,,,,,,,1.8,3.6,4.33,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,Hoffenheim,VfB Stuttgart,1-2,1-0,,1,2,A,1,0,H,14,14,5,4,19,14,3,4,2,2,0,0,,,,,,,,,,2.8,3.4,2.38,,,,,,,,,,,,,,,,,,
+32,Sat,2011-04-30,Mainz 05,Eintracht Frankfurt,3-0,3-0,,3,0,H,3,0,H,23,7,11,2,19,16,5,1,1,2,0,1,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,1. FC Nurnberg,Hoffenheim,1-2,1-1,,1,2,A,1,1,D,11,15,5,4,15,20,9,4,0,2,0,0,,,,,,,,,,1.8,3.6,4.33,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,Bayer Leverkusen,Hamburgo,1-1,0-1,,1,1,D,0,1,A,13,11,3,5,13,20,5,3,1,3,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,Borussia Monchengladbach,Freiburg,2-0,0-0,,2,0,H,0,0,D,10,6,5,3,20,15,3,9,2,1,0,1,,,,,,,,,,1.57,4.0,5.5,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,Eintracht Frankfurt,1. FC Köln,0-2,0-1,,0,2,A,0,1,A,11,10,0,7,10,18,2,3,3,3,0,0,,,,,,,,,,2.0,3.4,3.75,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,FC Schalke 04,Mainz 05,1-3,0-0,,1,3,A,0,0,D,15,9,4,4,14,14,7,5,2,1,0,0,,,,,,,,,,2.38,3.25,3.0,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,FC St. Pauli,Bayern de Munique,1-8,0-2,,1,8,A,0,2,A,12,17,5,10,15,15,3,8,3,2,0,0,,,,,,,,,,11.0,6.5,1.22,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,VfB Stuttgart,Hannover 96,2-1,0-0,,2,1,H,0,0,D,13,11,4,3,20,24,2,0,2,1,0,0,,,,,,,,,,2.1,3.4,3.4,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,Werder Bremen,Borussia Dortmund,2-0,1-0,,2,0,H,1,0,H,11,12,4,2,11,9,2,10,2,0,0,0,,,,,,,,,,2.0,3.6,3.5,,,,,,,,,,,,,,,,,,
+33,Sat,2011-05-07,Wolfsburg,1. FC Kaiserslautern,1-2,1-2,,1,2,A,1,2,A,21,3,3,2,18,22,10,3,0,1,0,0,,,,,,,,,,1.44,4.33,7.0,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,1. FC Kaiserslautern,Werder Bremen,3-2,3-1,,3,2,H,3,1,H,12,17,4,7,14,10,4,8,0,2,0,0,,,,,,,,,,2.3,3.5,2.88,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,1. FC Köln,FC Schalke 04,2-1,1-0,,2,1,H,1,0,H,10,17,6,5,21,23,4,10,2,1,0,0,,,,,,,,,,2.25,3.4,3.1,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Bayern de Munique,VfB Stuttgart,2-1,1-1,,2,1,H,1,1,D,10,10,5,5,17,21,6,4,2,2,0,0,,,,,,,,,,1.29,5.5,10.0,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Borussia Dortmund,Eintracht Frankfurt,3-1,0-0,,3,1,H,0,0,D,18,9,11,3,9,10,7,4,1,2,0,1,,,,,,,,,,1.57,4.33,5.0,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Freiburg,Bayer Leverkusen,0-1,0-1,,0,1,A,0,1,A,8,13,2,6,8,20,1,9,0,1,0,0,,,,,,,,,,4.33,3.6,1.8,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Hamburgo,Borussia Monchengladbach,1-1,0-1,,1,1,D,0,1,A,16,9,4,3,8,10,7,5,1,2,0,0,,,,,,,,,,2.88,3.5,2.3,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Hannover 96,1. FC Nurnberg,3-1,1-1,,3,1,H,1,1,D,20,9,5,2,22,23,5,4,2,2,0,0,,,,,,,,,,2.05,3.5,3.4,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Hoffenheim,Wolfsburg,1-3,0-0,,1,3,A,0,0,D,17,20,4,6,11,17,7,7,0,1,0,0,,,,,,,,,,3.5,3.6,2.0,,,,,,,,,,,,,,,,,,
+34,Sat,2011-05-14,Mainz 05,FC St. Pauli,2-1,0-1,,2,1,H,0,1,A,19,14,7,4,11,13,7,3,0,2,0,0,,,,,,,,,,1.36,5.0,7.5,,,,,,,,,,,,,,,,,,
