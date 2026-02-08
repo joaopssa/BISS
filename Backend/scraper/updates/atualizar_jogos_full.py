@@ -697,14 +697,35 @@ def _clean_text(v):
 
 
 def _norm_date(v):
+    """
+    Normaliza para YYYY-MM-DD.
+    ✅ Entende:
+      - YYYY-MM-DD
+      - DD/MM/YYYY e DD/MM/YY
+      - strings com horário (timestamp)
+    ✅ NÃO retorna None se houver um texto de data válido mas fora do formato esperado.
+    """
     s = _clean_text(v)
     if not s:
         return None
-    # tenta converter qualquer coisa para YYYY-MM-DD
+
+    # já está ISO?
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", s):
+        return s
+
+    # dd/mm/yyyy ou dd/mm/yy -> dayfirst=True
+    if re.fullmatch(r"\d{1,2}/\d{1,2}/\d{2,4}", s):
+        dt = pd.to_datetime(s, errors="coerce", dayfirst=True)
+        if pd.isna(dt):
+            return None
+        return dt.strftime("%Y-%m-%d")
+
+    # fallback geral
     dt = pd.to_datetime(s, errors="coerce", dayfirst=False)
     if pd.isna(dt):
         return None
     return dt.strftime("%Y-%m-%d")
+
 
 
 def _row_completeness(row: pd.Series, cols) -> int:
@@ -778,8 +799,8 @@ def dedup_matches(df: pd.DataFrame, season_key: str) -> pd.DataFrame:
     drop_aux = [c for c in out.columns if c.startswith("_k") or c in ["_score", "_has_date"]]
     out = out.drop(columns=drop_aux, errors="ignore")
 
-    # normaliza Date final
-    out["Date"] = out["Date"].apply(_norm_date)
+    # ✅ normaliza Date final SEM apagar: se não conseguir normalizar, mantém o valor original limpo
+    out["Date"] = out["Date"].apply(lambda x: _norm_date(x) or _clean_text(x))
 
     return out
 
