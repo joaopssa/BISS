@@ -1,23 +1,23 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Sat,2024-04-13,Internacional,Bahia,2-1,0-0
-1,Sat,2024-04-13,Criciúma EC,Juventude-RS,1-1,1-0
+1,Sat,2024-04-13,Criciúma,Juventude-RS,1-1,1-0
 1,Sat,2024-04-13,Fluminense,Bragantino,2-2,1-0
 1,Sat,2024-04-13,São Paulo,Fortaleza,1-2,0-0
 1,Sun,2024-04-14,Vasco da Gama,Grêmio,2-1,2-0
 1,Sun,2024-04-14,Corinthians,Atlético-MG,0-0,
 1,Sun,2024-04-14,Athletico-PR,Cuiabá,4-0,3-0
-1,Sun,2024-04-14,AC Goianiense,Flamengo,1-2,0-1
+1,Sun,2024-04-14,Atlético-GO,Flamengo,1-2,0-1
 1,Sun,2024-04-14,Cruzeiro,Botafogo-RJ,3-2,1-1
 1,Sun,2024-04-14,Vitória,Palmeiras,0-1,0-1
 2,Tue,2024-04-16,Bahia,Fluminense,2-1,1-1
 2,Wed,2024-04-17,Bragantino,Vasco da Gama,2-1,1-0
 2,Wed,2024-04-17,Grêmio,Athletico-PR,2-0,1-0
-2,Wed,2024-04-17,Atlético-MG,Criciúma EC,1-1,1-0
+2,Wed,2024-04-17,Atlético-MG,Criciúma,1-1,1-0
 2,Wed,2024-04-17,Fortaleza,Cruzeiro,1-1,1-0
 2,Wed,2024-04-17,Juventude-RS,Corinthians,2-0,0-0
 2,Wed,2024-04-17,Palmeiras,Internacional,0-1,0-1
 2,Wed,2024-04-17,Flamengo,São Paulo,2-1,1-0
-2,Thu,2024-04-18,Botafogo-RJ,AC Goianiense,1-0,1-0
+2,Thu,2024-04-18,Botafogo-RJ,Atlético-GO,1-0,1-0
 3,Sat,2024-04-20,Fluminense,Vasco da Gama,2-1,1-0
 3,Sat,2024-04-20,Bragantino,Corinthians,1-0,1-0
 3,Sat,2024-04-20,Grêmio,Cuiabá,1-0,1-0
@@ -25,9 +25,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 3,Sun,2024-04-21,Athletico-PR,Internacional,1-0,0-0
 3,Sun,2024-04-21,Palmeiras,Flamengo,0-0,
 3,Sun,2024-04-21,Vitória,Bahia,2-2,1-0
-3,Sun,2024-04-21,AC Goianiense,São Paulo,0-3,0-1
+3,Sun,2024-04-21,Atlético-GO,São Paulo,0-3,0-1
 3,Sun,2024-04-21,Botafogo-RJ,Juventude-RS,5-1,2-0
-4,Sat,2024-04-27,Vasco da Gama,Criciúma EC,0-4,0-1
+4,Sat,2024-04-27,Vasco da Gama,Criciúma,0-4,0-1
 4,Sat,2024-04-27,Cuiabá,Atlético-MG,0-3,0-1
 4,Sat,2024-04-27,Bahia,Grêmio,1-0,1-0
 4,Sun,2024-04-28,Flamengo,Botafogo-RJ,0-2,0-0
@@ -35,7 +35,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Sun,2024-04-28,Cruzeiro,Vitória,3-1,0-0
 4,Sun,2024-04-28,Fortaleza,Bragantino,1-1,1-1
 4,Sun,2024-04-28,Juventude-RS,Athletico-PR,1-1,1-0
-4,Sun,2024-04-28,Internacional,AC Goianiense,1-1,0-0
+4,Sun,2024-04-28,Internacional,Atlético-GO,1-1,0-0
 4,Mon,2024-04-29,São Paulo,Palmeiras,0-0,
 5,Sat,2024-05-04,Fluminense,Atlético-MG,2-2,1-0
 5,Sat,2024-05-04,Bragantino,Flamengo,1-1,1-0
@@ -45,46 +45,46 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 5,Sun,2024-05-05,Botafogo-RJ,Bahia,1-2,0-1
 5,Sun,2024-05-05,Cuiabá,Palmeiras,0-2,0-1
 6,Sat,2024-05-11,Flamengo,Corinthians,2-0,1-0
-6,Sun,2024-05-12,AC Goianiense,Cruzeiro,0-1,0-0
+6,Sun,2024-05-12,Atlético-GO,Cruzeiro,0-1,0-0
 6,Sun,2024-05-12,Fortaleza,Botafogo-RJ,1-1,1-1
 6,Sun,2024-05-12,Palmeiras,Athletico-PR,0-2,0-1
 6,Sun,2024-05-12,Bahia,Bragantino,1-0,1-0
 6,Sun,2024-05-12,Vasco da Gama,Vitória,2-1,0-0
 6,Mon,2024-05-13,São Paulo,Fluminense,2-1,1-1
 7,Sat,2024-06-01,Grêmio,Bragantino,0-2,0-1
-7,Sat,2024-06-01,Vitória,AC Goianiense,0-2,0-1
+7,Sat,2024-06-01,Vitória,Atlético-GO,0-2,0-1
 7,Sat,2024-06-01,Cuiabá,Internacional,0-1,0-0
 7,Sat,2024-06-01,Fluminense,Juventude-RS,1-1,1-0
 7,Sat,2024-06-01,Corinthians,Botafogo-RJ,0-1,0-0
 7,Sun,2024-06-02,Atlético-MG,Bahia,1-1,0-0
-7,Sun,2024-06-02,Criciúma EC,Palmeiras,1-2,0-0
+7,Sun,2024-06-02,Criciúma,Palmeiras,1-2,0-0
 7,Sun,2024-06-02,Vasco da Gama,Flamengo,1-6,1-3
 7,Sun,2024-06-02,Fortaleza,Athletico-PR,1-0,1-0
 7,Sun,2024-06-02,São Paulo,Cruzeiro,2-0,1-0
-5,Wed,2024-06-05,Juventude-RS,AC Goianiense,1-0,1-0
+5,Wed,2024-06-05,Juventude-RS,Atlético-GO,1-0,1-0
 2,Wed,2024-06-05,Cuiabá,Vitória,0-0,
-6,Sun,2024-06-09,Criciúma EC,Cuiabá,2-5,0-3
-8,Tue,2024-06-11,AC Goianiense,Corinthians,2-2,0-1
+6,Sun,2024-06-09,Criciúma,Cuiabá,2-5,0-3
+8,Tue,2024-06-11,Atlético-GO,Corinthians,2-2,0-1
 8,Tue,2024-06-11,Juventude-RS,Vitória,1-1,1-1
 8,Tue,2024-06-11,Botafogo-RJ,Fluminense,1-0,0-0
 8,Tue,2024-06-11,Bragantino,Atlético-MG,1-2,1-2
 8,Thu,2024-06-13,Cruzeiro,Cuiabá,2-1,1-0
 8,Thu,2024-06-13,Flamengo,Grêmio,2-1,1-0
 8,Thu,2024-06-13,Internacional,São Paulo,0-0,
-8,Thu,2024-06-13,Athletico-PR,Criciúma EC,3-1,1-1
+8,Thu,2024-06-13,Athletico-PR,Criciúma,3-1,1-1
 8,Thu,2024-06-13,Bahia,Fortaleza,1-0,0-0
 8,Thu,2024-06-13,Palmeiras,Vasco da Gama,2-0,1-0
 9,Sat,2024-06-15,Bragantino,Juventude-RS,2-1,1-1
-9,Sat,2024-06-15,Fluminense,AC Goianiense,1-2,1-0
+9,Sat,2024-06-15,Fluminense,Atlético-GO,1-2,1-0
 9,Sun,2024-06-16,Athletico-PR,Flamengo,1-1,0-0
 9,Sun,2024-06-16,Corinthians,São Paulo,2-2,2-2
 9,Sun,2024-06-16,Vitória,Internacional,2-1,1-0
-9,Sun,2024-06-16,Criciúma EC,Bahia,2-2,1-0
+9,Sun,2024-06-16,Criciúma,Bahia,2-2,1-0
 9,Sun,2024-06-16,Cuiabá,Fortaleza,5-0,4-0
 9,Sun,2024-06-16,Grêmio,Botafogo-RJ,1-2,1-1
 9,Sun,2024-06-16,Vasco da Gama,Cruzeiro,0-0,
 9,Mon,2024-06-17,Atlético-MG,Palmeiras,0-4,0-1
-10,Wed,2024-06-19,AC Goianiense,Criciúma EC,1-2,1-0
+10,Wed,2024-06-19,Atlético-GO,Criciúma,1-2,1-0
 10,Wed,2024-06-19,Botafogo-RJ,Athletico-PR,1-1,0-0
 10,Wed,2024-06-19,Fortaleza,Grêmio,1-0,1-0
 10,Wed,2024-06-19,Juventude-RS,Vasco da Gama,2-0,0-0
@@ -94,9 +94,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Thu,2024-06-20,Vitória,Atlético-MG,4-2,2-1
 10,Thu,2024-06-20,Flamengo,Bahia,2-1,1-1
 10,Thu,2024-06-20,Palmeiras,Bragantino,2-1,1-0
-11,Sat,2024-06-22,Criciúma EC,Botafogo-RJ,2-1,1-0
+11,Sat,2024-06-22,Criciúma,Botafogo-RJ,2-1,1-0
 11,Sat,2024-06-22,Grêmio,Internacional,0-1,0-0
-11,Sat,2024-06-22,Cuiabá,AC Goianiense,0-0,
+11,Sat,2024-06-22,Cuiabá,Atlético-GO,0-0,
 11,Sat,2024-06-22,Vasco da Gama,São Paulo,4-1,2-1
 11,Sun,2024-06-23,Athletico-PR,Corinthians,1-1,1-0
 11,Sun,2024-06-23,Bahia,Cruzeiro,4-1,1-1
@@ -106,30 +106,30 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Sun,2024-06-23,Palmeiras,Juventude-RS,3-1,0-0
 12,Wed,2024-06-26,Botafogo-RJ,Bragantino,2-1,1-1
 12,Wed,2024-06-26,Cruzeiro,Athletico-PR,2-0,1-0
-12,Wed,2024-06-26,AC Goianiense,Grêmio,1-1,0-0
+12,Wed,2024-06-26,Atlético-GO,Grêmio,1-1,0-0
 12,Wed,2024-06-26,Corinthians,Cuiabá,1-1,0-1
 12,Wed,2024-06-26,Juventude-RS,Flamengo,2-1,1-1
 12,Wed,2024-06-26,Bahia,Vasco da Gama,2-1,1-1
 12,Wed,2024-06-26,Fortaleza,Palmeiras,3-0,1-0
 12,Wed,2024-06-26,Internacional,Atlético-MG,1-2,0-0
 12,Thu,2024-06-27,Fluminense,Vitória,0-1,0-0
-12,Thu,2024-06-27,São Paulo,Criciúma EC,2-1,2-0
+12,Thu,2024-06-27,São Paulo,Criciúma,2-1,2-0
 13,Sat,2024-06-29,Cuiabá,Bragantino,1-1,1-1
 13,Sat,2024-06-29,Vasco da Gama,Botafogo-RJ,1-1,0-0
-13,Sun,2024-06-30,Atlético-MG,AC Goianiense,1-1,1-1
+13,Sun,2024-06-30,Atlético-MG,Atlético-GO,1-1,1-1
 13,Sun,2024-06-30,Fortaleza,Juventude-RS,2-1,2-0
 13,Sun,2024-06-30,Grêmio,Fluminense,1-0,0-0
 13,Sun,2024-06-30,São Paulo,Bahia,3-1,2-0
-13,Sun,2024-06-30,Criciúma EC,Internacional,1-1,0-1
+13,Sun,2024-06-30,Criciúma,Internacional,1-1,0-1
 13,Sun,2024-06-30,Flamengo,Cruzeiro,2-1,1-1
 13,Sun,2024-06-30,Vitória,Athletico-PR,0-1,0-0
 13,Mon,2024-07-01,Palmeiras,Corinthians,2-0,0-0
 14,Wed,2024-07-03,Cuiabá,Botafogo-RJ,1-2,1-1
-14,Wed,2024-07-03,Criciúma EC,Cruzeiro,1-0,0-0
+14,Wed,2024-07-03,Criciúma,Cruzeiro,1-0,0-0
 14,Wed,2024-07-03,Vasco da Gama,Fortaleza,2-0,1-0
 14,Wed,2024-07-03,Athletico-PR,São Paulo,1-2,1-1
 14,Wed,2024-07-03,Atlético-MG,Flamengo,2-4,0-2
-14,Wed,2024-07-03,Bragantino,AC Goianiense,3-1,3-1
+14,Wed,2024-07-03,Bragantino,Atlético-GO,3-1,3-1
 14,Thu,2024-07-04,Bahia,Juventude-RS,2-0,0-0
 14,Thu,2024-07-04,Grêmio,Palmeiras,2-2,1-0
 14,Thu,2024-07-04,Corinthians,Vitória,3-2,2-1
@@ -140,64 +140,64 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Sun,2024-07-07,Fortaleza,Fluminense,1-0,0-0
 15,Sun,2024-07-07,Juventude-RS,Grêmio,3-0,2-0
 15,Sun,2024-07-07,Internacional,Vasco da Gama,1-2,0-0
-15,Sun,2024-07-07,AC Goianiense,Athletico-PR,1-2,0-0
+15,Sun,2024-07-07,Atlético-GO,Athletico-PR,1-2,0-0
 15,Sun,2024-07-07,Palmeiras,Bahia,2-0,1-0
-15,Sun,2024-07-07,Vitória,Criciúma EC,2-1,2-1
+15,Sun,2024-07-07,Vitória,Criciúma,2-1,2-1
 15,Sun,2024-07-07,Botafogo-RJ,Atlético-MG,3-0,1-0
 16,Wed,2024-07-10,Grêmio,Cruzeiro,0-2,0-2
 16,Wed,2024-07-10,Athletico-PR,Bahia,1-3,0-2
 16,Wed,2024-07-10,Vasco da Gama,Corinthians,2-0,0-0
-16,Thu,2024-07-11,Palmeiras,AC Goianiense,3-1,1-1
-16,Thu,2024-07-11,Criciúma EC,Fluminense,1-1,0-0
+16,Thu,2024-07-11,Palmeiras,Atlético-GO,3-1,1-1
+16,Thu,2024-07-11,Criciúma,Fluminense,1-1,0-0
 16,Thu,2024-07-11,Flamengo,Fortaleza,1-2,1-1
 16,Thu,2024-07-11,Atlético-MG,São Paulo,2-1,2-1
 16,Thu,2024-07-11,Vitória,Botafogo-RJ,0-1,0-0
 17,Sat,2024-07-13,Bahia,Cuiabá,1-2,0-1
 17,Sat,2024-07-13,Cruzeiro,Bragantino,2-1,1-0
 17,Tue,2024-07-16,Juventude-RS,Atlético-MG,1-1,1-1
-17,Tue,2024-07-16,Corinthians,Criciúma EC,2-1,0-1
-17,Wed,2024-07-17,AC Goianiense,Vasco da Gama,0-1,0-0
+17,Tue,2024-07-16,Corinthians,Criciúma,2-1,0-1
+17,Wed,2024-07-17,Atlético-GO,Vasco da Gama,0-1,0-0
 17,Wed,2024-07-17,São Paulo,Grêmio,1-0,1-0
 17,Wed,2024-07-17,Botafogo-RJ,Palmeiras,1-0,0-0
 17,Wed,2024-07-17,Fortaleza,Vitória,3-1,2-0
-18,Sat,2024-07-20,Flamengo,Criciúma EC,2-1,0-1
+18,Sat,2024-07-20,Flamengo,Criciúma,2-1,0-1
 18,Sat,2024-07-20,Botafogo-RJ,Internacional,1-0,1-0
 18,Sat,2024-07-20,Palmeiras,Cruzeiro,2-0,1-0
 18,Sun,2024-07-21,Grêmio,Vitória,2-0,0-0
 18,Sun,2024-07-21,Atlético-MG,Vasco da Gama,2-0,2-0
 18,Sun,2024-07-21,Bahia,Corinthians,0-1,0-1
 18,Sun,2024-07-21,Bragantino,Athletico-PR,1-0,1-0
-18,Sun,2024-07-21,Fortaleza,AC Goianiense,3-1,1-1
+18,Sun,2024-07-21,Fortaleza,Atlético-GO,3-1,1-1
 18,Sun,2024-07-21,Juventude-RS,São Paulo,0-0,
 18,Sun,2024-07-21,Cuiabá,Fluminense,0-1,0-0
 19,Wed,2024-07-24,Cruzeiro,Juventude-RS,2-0,1-0
-3,Wed,2024-07-24,Criciúma EC,Fortaleza,1-1,1-0
+3,Wed,2024-07-24,Criciúma,Fortaleza,1-1,1-0
 19,Wed,2024-07-24,São Paulo,Botafogo-RJ,2-2,1-2
 19,Wed,2024-07-24,Vitória,Flamengo,1-2,0-1
-19,Wed,2024-07-24,AC Goianiense,Bahia,1-1,0-0
+19,Wed,2024-07-24,Atlético-GO,Bahia,1-1,0-0
 19,Wed,2024-07-24,Fluminense,Palmeiras,1-0,0-0
 19,Thu,2024-07-25,Corinthians,Grêmio,2-2,1-1
-20,Sat,2024-07-27,Juventude-RS,Criciúma EC,1-2,0-0
+20,Sat,2024-07-27,Juventude-RS,Criciúma,1-2,0-0
 20,Sat,2024-07-27,Palmeiras,Vitória,0-2,0-0
 20,Sat,2024-07-27,Bahia,Internacional,1-1,1-0
 20,Sat,2024-07-27,Botafogo-RJ,Cruzeiro,0-3,0-2
 20,Sat,2024-07-27,Fortaleza,São Paulo,1-0,1-0
 20,Sun,2024-07-28,Bragantino,Fluminense,0-1,0-1
-20,Sun,2024-07-28,Flamengo,AC Goianiense,2-0,1-0
+20,Sun,2024-07-28,Flamengo,Atlético-GO,2-0,1-0
 20,Sun,2024-07-28,Atlético-MG,Corinthians,2-1,1-1
 20,Sun,2024-07-28,Cuiabá,Athletico-PR,1-2,0-1
 20,Sun,2024-07-28,Grêmio,Vasco da Gama,1-0,0-0
 21,Sat,2024-08-03,Vitória,Cuiabá,1-0,0-0
 21,Sat,2024-08-03,Vasco da Gama,Bragantino,2-2,0-1
-21,Sat,2024-08-03,AC Goianiense,Botafogo-RJ,1-4,1-1
-21,Sat,2024-08-03,Criciúma EC,Atlético-MG,2-1,0-0
+21,Sat,2024-08-03,Atlético-GO,Botafogo-RJ,1-4,1-1
+21,Sat,2024-08-03,Criciúma,Atlético-MG,2-1,0-0
 21,Sat,2024-08-03,São Paulo,Flamengo,1-0,0-0
 21,Sun,2024-08-04,Athletico-PR,Grêmio,0-2,0-2
 21,Sun,2024-08-04,Corinthians,Juventude-RS,1-1,0-1
 21,Sun,2024-08-04,Fluminense,Bahia,1-0,1-0
 21,Sun,2024-08-04,Internacional,Palmeiras,1-1,1-0
 21,Mon,2024-08-05,Cruzeiro,Fortaleza,1-2,1-2
-22,Sat,2024-08-10,Fortaleza,Criciúma EC,1-0,0-0
+22,Sat,2024-08-10,Fortaleza,Criciúma,1-0,0-0
 22,Sat,2024-08-10,Cuiabá,Grêmio,1-3,0-1
 22,Sat,2024-08-10,Corinthians,Bragantino,1-1,1-1
 22,Sat,2024-08-10,Cruzeiro,Atlético-MG,0-0,
@@ -205,34 +205,34 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Sun,2024-08-11,Juventude-RS,Botafogo-RJ,3-2,2-0
 22,Sun,2024-08-11,Bahia,Vitória,2-0,1-0
 22,Sun,2024-08-11,Flamengo,Palmeiras,1-1,0-0
-22,Sun,2024-08-11,São Paulo,AC Goianiense,1-0,1-0
+22,Sun,2024-08-11,São Paulo,Atlético-GO,1-0,1-0
 22,Sun,2024-08-11,Internacional,Athletico-PR,2-2,1-1
 6,Wed,2024-08-14,Internacional,Juventude-RS,2-1,0-1
 23,Sat,2024-08-17,Atlético-MG,Cuiabá,1-1,1-1
 23,Sat,2024-08-17,Grêmio,Bahia,0-2,0-1
 23,Sat,2024-08-17,Bragantino,Fortaleza,1-2,1-1
 23,Sat,2024-08-17,Fluminense,Corinthians,0-0,
-23,Sun,2024-08-18,AC Goianiense,Internacional,1-0,0-0
-23,Sun,2024-08-18,Criciúma EC,Vasco da Gama,2-2,1-2
+23,Sun,2024-08-18,Atlético-GO,Internacional,1-0,0-0
+23,Sun,2024-08-18,Criciúma,Vasco da Gama,2-2,1-2
 23,Sun,2024-08-18,Palmeiras,São Paulo,2-1,0-0
 23,Sun,2024-08-18,Athletico-PR,Juventude-RS,1-2,1-1
 23,Sun,2024-08-18,Botafogo-RJ,Flamengo,4-1,1-1
 23,Mon,2024-08-19,Vitória,Cruzeiro,2-2,2-0
-24,Sat,2024-08-24,AC Goianiense,Juventude-RS,2-1,0-0
+24,Sat,2024-08-24,Atlético-GO,Juventude-RS,2-1,0-0
 24,Sat,2024-08-24,Palmeiras,Cuiabá,5-0,4-0
 24,Sat,2024-08-24,Atlético-MG,Fluminense,0-2,0-1
 24,Sun,2024-08-25,Bahia,Botafogo-RJ,0-0,
-24,Sun,2024-08-25,Criciúma EC,Grêmio,0-1,0-0
+24,Sun,2024-08-25,Criciúma,Grêmio,0-1,0-0
 24,Sun,2024-08-25,Fortaleza,Corinthians,1-0,0-0
 24,Sun,2024-08-25,São Paulo,Vitória,2-1,2-0
 24,Sun,2024-08-25,Internacional,Cruzeiro,1-0,0-0
 24,Sun,2024-08-25,Flamengo,Bragantino,2-1,1-0
 24,Mon,2024-08-26,Vasco da Gama,Athletico-PR,2-1,0-1
-19,Wed,2024-08-28,Criciúma EC,Bragantino,1-0,1-0
+19,Wed,2024-08-28,Criciúma,Bragantino,1-0,1-0
 5,Wed,2024-08-28,Cruzeiro,Internacional,0-0,
-25,Sat,2024-08-31,Cuiabá,Criciúma EC,2-1,0-1
+25,Sat,2024-08-31,Cuiabá,Criciúma,2-1,0-1
 25,Sat,2024-08-31,Botafogo-RJ,Fortaleza,2-0,0-0
-25,Sun,2024-09-01,Cruzeiro,AC Goianiense,3-1,2-1
+25,Sun,2024-09-01,Cruzeiro,Atlético-GO,3-1,2-1
 25,Sun,2024-09-01,Grêmio,Atlético-MG,2-3,2-0
 25,Sun,2024-09-01,Corinthians,Flamengo,2-1,1-1
 25,Sun,2024-09-01,Athletico-PR,Palmeiras,0-2,0-1
@@ -242,17 +242,17 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 25,Sun,2024-09-01,Vitória,Vasco da Gama,0-1,0-0
 16,Thu,2024-09-05,Cuiabá,Juventude-RS,0-0,
 19,Wed,2024-09-11,Internacional,Fortaleza,2-1,1-1
-26,Sat,2024-09-14,AC Goianiense,Vitória,0-2,0-1
+26,Sat,2024-09-14,Atlético-GO,Vitória,0-2,0-1
 26,Sat,2024-09-14,Athletico-PR,Fortaleza,1-1,1-1
 26,Sat,2024-09-14,Botafogo-RJ,Corinthians,2-1,1-0
 26,Sun,2024-09-15,Bragantino,Grêmio,2-2,1-1
 26,Sun,2024-09-15,Juventude-RS,Fluminense,2-1,0-1
-26,Sun,2024-09-15,Palmeiras,Criciúma EC,5-0,3-0
+26,Sun,2024-09-15,Palmeiras,Criciúma,5-0,3-0
 26,Sun,2024-09-15,Bahia,Atlético-MG,3-0,0-0
 26,Sun,2024-09-15,Cruzeiro,São Paulo,0-1,0-0
 26,Sun,2024-09-15,Flamengo,Vasco da Gama,1-1,0-0
 26,Mon,2024-09-16,Internacional,Cuiabá,3-0,2-0
-27,Sat,2024-09-21,Corinthians,AC Goianiense,3-0,1-0
+27,Sat,2024-09-21,Corinthians,Atlético-GO,3-0,1-0
 27,Sat,2024-09-21,Vitória,Juventude-RS,1-0,1-0
 27,Sat,2024-09-21,Fluminense,Botafogo-RJ,0-1,0-0
 27,Sat,2024-09-21,Fortaleza,Bahia,4-1,2-1
@@ -261,20 +261,20 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Sun,2024-09-22,Cuiabá,Cruzeiro,0-0,
 27,Sun,2024-09-22,Grêmio,Flamengo,3-2,1-1
 27,Sun,2024-09-22,São Paulo,Internacional,1-3,1-1
-27,Sun,2024-09-22,Criciúma EC,Athletico-PR,0-0,
+27,Sun,2024-09-22,Criciúma,Athletico-PR,0-0,
 16,Wed,2024-09-25,Bragantino,Internacional,2-2,1-1
-5,Wed,2024-09-25,Grêmio,Criciúma EC,1-2,0-1
+5,Wed,2024-09-25,Grêmio,Criciúma,1-2,0-1
 28,Sat,2024-09-28,Palmeiras,Atlético-MG,2-1,1-0
 28,Sat,2024-09-28,Botafogo-RJ,Grêmio,0-0,
 28,Sun,2024-09-29,Juventude-RS,Bragantino,1-1,0-0
-28,Sun,2024-09-29,AC Goianiense,Fluminense,1-0,0-0
+28,Sun,2024-09-29,Atlético-GO,Fluminense,1-0,0-0
 28,Sun,2024-09-29,Fortaleza,Cuiabá,1-0,1-0
 28,Sun,2024-09-29,São Paulo,Corinthians,3-1,1-0
-28,Sun,2024-09-29,Bahia,Criciúma EC,1-0,1-0
+28,Sun,2024-09-29,Bahia,Criciúma,1-0,1-0
 28,Sun,2024-09-29,Cruzeiro,Vasco da Gama,1-1,0-1
 28,Sun,2024-09-29,Internacional,Vitória,3-1,1-0
 28,Sun,2024-09-29,Flamengo,Athletico-PR,1-0,0-0
-29,Thu,2024-10-03,Criciúma EC,AC Goianiense,2-0,1-0
+29,Thu,2024-10-03,Criciúma,Atlético-GO,2-0,1-0
 29,Thu,2024-10-03,Fluminense,Cruzeiro,1-0,0-0
 29,Fri,2024-10-04,Grêmio,Fortaleza,3-1,1-1
 29,Sat,2024-10-05,Athletico-PR,Botafogo-RJ,0-1,0-1
@@ -289,8 +289,8 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 30,Wed,2024-10-16,São Paulo,Vasco da Gama,3-0,1-0
 30,Thu,2024-10-17,Corinthians,Athletico-PR,5-2,2-2
 30,Thu,2024-10-17,Flamengo,Fluminense,0-2,0-0
-30,Fri,2024-10-18,AC Goianiense,Cuiabá,0-0,
-30,Fri,2024-10-18,Botafogo-RJ,Criciúma EC,1-1,0-0
+30,Fri,2024-10-18,Atlético-GO,Cuiabá,0-0,
+30,Fri,2024-10-18,Botafogo-RJ,Criciúma,1-1,0-0
 30,Fri,2024-10-18,Cruzeiro,Bahia,1-1,0-0
 30,Sat,2024-10-19,Internacional,Grêmio,1-0,0-0
 30,Sat,2024-10-19,Vitória,Bragantino,1-0,0-0
@@ -298,13 +298,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Tue,2024-10-22,Fluminense,Athletico-PR,1-0,0-0
 19,Thu,2024-10-24,Vasco da Gama,Cuiabá,1-0,0-0
 31,Sat,2024-10-26,Flamengo,Juventude-RS,4-2,1-1
-31,Sat,2024-10-26,Grêmio,AC Goianiense,3-1,1-1
+31,Sat,2024-10-26,Grêmio,Atlético-GO,3-1,1-1
 31,Sat,2024-10-26,Palmeiras,Fortaleza,2-2,1-1
 31,Sat,2024-10-26,Vitória,Fluminense,2-1,1-0
 31,Sat,2024-10-26,Athletico-PR,Cruzeiro,3-0,1-0
 31,Sat,2024-10-26,Atlético-MG,Internacional,1-3,1-2
 31,Sat,2024-10-26,Bragantino,Botafogo-RJ,0-1,0-0
-31,Sat,2024-10-26,Criciúma EC,São Paulo,1-1,1-0
+31,Sat,2024-10-26,Criciúma,São Paulo,1-1,1-0
 31,Mon,2024-10-28,Cuiabá,Corinthians,0-1,0-1
 31,Mon,2024-10-28,Vasco da Gama,Bahia,3-2,3-1
 17,Wed,2024-10-30,Internacional,Flamengo,1-1,0-1
@@ -315,45 +315,45 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 32,Mon,2024-11-04,Corinthians,Palmeiras,2-0,1-0
 32,Tue,2024-11-05,Bahia,São Paulo,0-3,0-1
 32,Tue,2024-11-05,Botafogo-RJ,Vasco da Gama,3-0,2-0
-32,Tue,2024-11-05,Internacional,Criciúma EC,2-0,1-0
-32,Wed,2024-11-06,AC Goianiense,Atlético-MG,1-0,0-0
+32,Tue,2024-11-05,Internacional,Criciúma,2-0,1-0
+32,Wed,2024-11-06,Atlético-GO,Atlético-MG,1-0,0-0
 32,Wed,2024-11-06,Cruzeiro,Flamengo,0-1,0-0
 33,Fri,2024-11-08,Internacional,Fluminense,2-0,0-0
 33,Fri,2024-11-08,Palmeiras,Grêmio,1-0,0-0
 33,Sat,2024-11-09,Vitória,Corinthians,1-2,1-1
 33,Sat,2024-11-09,Botafogo-RJ,Cuiabá,0-0,
-33,Sat,2024-11-09,AC Goianiense,Bragantino,0-0,
-33,Sat,2024-11-09,Cruzeiro,Criciúma EC,2-1,1-0
+33,Sat,2024-11-09,Atlético-GO,Bragantino,0-0,
+33,Sat,2024-11-09,Cruzeiro,Criciúma,2-1,1-0
 33,Sat,2024-11-09,Fortaleza,Vasco da Gama,3-0,1-0
 33,Sat,2024-11-09,Juventude-RS,Bahia,2-1,0-1
 33,Sat,2024-11-09,São Paulo,Athletico-PR,2-1,0-0
 33,Wed,2024-11-13,Flamengo,Atlético-MG,0-0,
 19,Sat,2024-11-16,Athletico-PR,Atlético-MG,1-0,1-0
 34,Wed,2024-11-20,Corinthians,Cruzeiro,2-1,2-1
-34,Wed,2024-11-20,Athletico-PR,AC Goianiense,2-0,1-0
+34,Wed,2024-11-20,Athletico-PR,Atlético-GO,2-0,1-0
 34,Wed,2024-11-20,Bragantino,São Paulo,1-1,1-1
-34,Wed,2024-11-20,Criciúma EC,Vitória,0-1,0-0
+34,Wed,2024-11-20,Criciúma,Vitória,0-1,0-0
 34,Wed,2024-11-20,Bahia,Palmeiras,1-2,1-1
 34,Wed,2024-11-20,Cuiabá,Flamengo,1-2,0-0
 34,Wed,2024-11-20,Grêmio,Juventude-RS,2-2,1-1
 34,Wed,2024-11-20,Atlético-MG,Botafogo-RJ,0-0,
 34,Thu,2024-11-21,Vasco da Gama,Internacional,0-1,0-0
 34,Fri,2024-11-22,Fluminense,Fortaleza,2-2,1-2
-35,Sat,2024-11-23,AC Goianiense,Palmeiras,0-1,0-1
+35,Sat,2024-11-23,Atlético-GO,Palmeiras,0-1,0-1
 35,Sat,2024-11-23,Botafogo-RJ,Vitória,1-1,0-1
 35,Sat,2024-11-23,Juventude-RS,Cuiabá,1-1,0-0
 35,Sat,2024-11-23,São Paulo,Atlético-MG,2-2,2-2
 35,Sun,2024-11-24,Bahia,Athletico-PR,1-1,0-0
 35,Sun,2024-11-24,Corinthians,Vasco da Gama,3-1,3-0
 35,Sun,2024-11-24,Internacional,Bragantino,4-1,2-1
-35,Tue,2024-11-26,Fluminense,Criciúma EC,0-0,
+35,Tue,2024-11-26,Fluminense,Criciúma,0-0,
 35,Tue,2024-11-26,Fortaleza,Flamengo,0-0,
 36,Tue,2024-11-26,Atlético-MG,Juventude-RS,2-3,0-1
 36,Tue,2024-11-26,Palmeiras,Botafogo-RJ,1-3,0-1
 35,Wed,2024-11-27,Cruzeiro,Grêmio,1-1,1-1
-36,Sat,2024-11-30,Criciúma EC,Corinthians,2-4,2-0
+36,Sat,2024-11-30,Criciúma,Corinthians,2-4,2-0
 36,Sat,2024-11-30,Cuiabá,Bahia,1-2,1-1
-36,Sat,2024-11-30,Vasco da Gama,AC Goianiense,2-2,0-1
+36,Sat,2024-11-30,Vasco da Gama,Atlético-GO,2-2,0-1
 36,Sun,2024-12-01,Flamengo,Internacional,3-2,3-0
 36,Sun,2024-12-01,Grêmio,São Paulo,2-1,2-0
 36,Sun,2024-12-01,Athletico-PR,Fluminense,1-1,1-0
@@ -361,18 +361,18 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Sun,2024-12-01,Vitória,Fortaleza,2-0,2-0
 37,Tue,2024-12-03,Corinthians,Bahia,3-0,2-0
 37,Wed,2024-12-04,Vasco da Gama,Atlético-MG,2-0,0-0
-37,Wed,2024-12-04,Criciúma EC,Flamengo,0-3,0-1
+37,Wed,2024-12-04,Criciúma,Flamengo,0-3,0-1
 37,Wed,2024-12-04,São Paulo,Juventude-RS,1-2,0-0
 37,Wed,2024-12-04,Vitória,Grêmio,1-1,0-1
-37,Wed,2024-12-04,AC Goianiense,Fortaleza,3-1,1-1
+37,Wed,2024-12-04,Atlético-GO,Fortaleza,3-1,1-1
 37,Wed,2024-12-04,Cruzeiro,Palmeiras,1-2,0-0
 37,Wed,2024-12-04,Internacional,Botafogo-RJ,0-1,0-1
 37,Thu,2024-12-05,Athletico-PR,Bragantino,1-2,0-1
 37,Thu,2024-12-05,Fluminense,Cuiabá,1-0,0-0
 38,Sun,2024-12-08,Atlético-MG,Athletico-PR,1-0,0-0
-38,Sun,2024-12-08,Bahia,AC Goianiense,2-0,1-0
+38,Sun,2024-12-08,Bahia,Atlético-GO,2-0,1-0
 38,Sun,2024-12-08,Botafogo-RJ,São Paulo,2-1,1-0
-38,Sun,2024-12-08,Bragantino,Criciúma EC,5-1,2-1
+38,Sun,2024-12-08,Bragantino,Criciúma,5-1,2-1
 38,Sun,2024-12-08,Cuiabá,Vasco da Gama,1-2,1-2
 38,Sun,2024-12-08,Flamengo,Vitória,2-2,0-1
 38,Sun,2024-12-08,Fortaleza,Internacional,3-0,2-0

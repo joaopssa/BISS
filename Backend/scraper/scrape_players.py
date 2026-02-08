@@ -79,7 +79,7 @@ TM_TO_JSON: Dict[str, str] = {
     "Cuiabá EC": "Cuiabá",
     "Grêmio Novorizontino": "Grêmio Novorizontino",
     "CRB": "CRB",
-    "Criciúma EC": "Criciúma",
+    "Criciúma": "Criciúma",
     "Goiás EC": "Goiás",
     "Avaí FC": "Avaí",
     "Chapecoense": "Chapecoense",

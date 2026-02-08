@@ -5,11 +5,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2016-08-26,Hamburgo,FC Ingolstadt 04,1-1,1-0
 1,2016-08-26,1. FC Köln,SV Darmstadt 98,2-0,1-0
 1,2016-08-26,Bor. Mönchengladbach,Bayer Leverkusen,2-1,1-0
-1,2016-08-26,Hertha BSC,Freiburg,2-1,0-0
+1,2016-08-26,Hertha Berlin,Freiburg,2-1,0-0
 1,2016-08-26,Hoffenheim,RB Leipzig,2-2,0-0
 2,2016-08-26,FC Schalke 04,Bayern de Munique,0-2,0-0
 2,2016-08-26,Bayer Leverkusen,Hamburgo,3-1,0-0
-2,2016-08-26,FC Ingolstadt 04,Hertha BSC,0-2,0-1
+2,2016-08-26,FC Ingolstadt 04,Hertha Berlin,0-2,0-1
 2,2016-08-26,SV Darmstadt 98,Eintracht Frankfurt,1-0,0-0
 2,2016-08-26,Freiburg,Bor. Mönchengladbach,3-1,0-1
 2,2016-08-26,RB Leipzig,Borussia Dortmund,1-0,0-0
@@ -21,11 +21,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2016-08-26,Hoffenheim,Wolfsburg,0-0,
 3,2016-08-26,Eintracht Frankfurt,Bayer Leverkusen,2-1,0-0
 3,2016-08-26,Bor. Mönchengladbach,Werder Bremen,4-1,4-0
-3,2016-08-26,Hertha BSC,FC Schalke 04,2-0,0-0
+3,2016-08-26,Hertha Berlin,FC Schalke 04,2-0,0-0
 4,2016-08-26,Wolfsburg,Borussia Dortmund,1-5,0-2
 4,2016-08-26,FC Ingolstadt 04,Eintracht Frankfurt,0-2,0-1
 4,2016-08-26,Freiburg,Hamburgo,1-0,0-0
-4,2016-08-26,Bayern de Munique,Hertha BSC,3-0,1-0
+4,2016-08-26,Bayern de Munique,Hertha Berlin,3-0,1-0
 4,2016-08-26,Bayer Leverkusen,Augsburg,0-0,
 4,2016-08-26,RB Leipzig,Bor. Mönchengladbach,1-1,1-0
 5,2016-08-26,Borussia Dortmund,Freiburg,3-1,1-0
@@ -33,17 +33,17 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 5,2016-08-26,Mainz 05,Bayer Leverkusen,2-3,2-1
 5,2016-08-26,Hamburgo,Bayern de Munique,0-1,0-0
 5,2016-08-26,Augsburg,SV Darmstadt 98,1-0,0-0
-5,2016-08-26,Eintracht Frankfurt,Hertha BSC,3-3,2-1
+5,2016-08-26,Eintracht Frankfurt,Hertha Berlin,3-3,2-1
 5,2016-08-26,Werder Bremen,Wolfsburg,2-1,0-0
 5,2016-08-26,Hoffenheim,FC Schalke 04,2-1,2-1
 5,2016-08-26,1. FC Köln,RB Leipzig,1-1,1-1
 6,2016-08-26,RB Leipzig,Augsburg,2-1,1-1
-6,2016-08-26,Hertha BSC,Hamburgo,2-0,1-0
+6,2016-08-26,Hertha Berlin,Hamburgo,2-0,1-0
 6,2016-08-26,SV Darmstadt 98,Werder Bremen,2-2,1-0
 6,2016-08-26,Freiburg,Eintracht Frankfurt,1-0,1-0
 6,2016-08-26,Bayer Leverkusen,Borussia Dortmund,2-0,1-0
 6,2016-08-26,FC Schalke 04,Bor. Mönchengladbach,4-0,0-0
-7,2016-08-26,Borussia Dortmund,Hertha BSC,1-1,0-0
+7,2016-08-26,Borussia Dortmund,Hertha Berlin,1-1,0-0
 7,2016-08-26,Bor. Mönchengladbach,Hamburgo,0-0,
 7,2016-08-26,1. FC Köln,FC Ingolstadt 04,2-1,2-0
 7,2016-08-26,Augsburg,FC Schalke 04,1-1,0-0
@@ -65,9 +65,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2016-08-26,Werder Bremen,Freiburg,1-3,0-2
 9,2016-08-26,SV Darmstadt 98,RB Leipzig,0-2,0-0
 9,2016-08-26,Borussia Dortmund,FC Schalke 04,0-0,
-9,2016-08-26,Hoffenheim,Hertha BSC,1-0,1-0
+9,2016-08-26,Hoffenheim,Hertha Berlin,1-0,1-0
 9,2016-08-26,1. FC Köln,Hamburgo,3-0,0-0
-10,2016-08-26,Hertha BSC,Bor. Mönchengladbach,3-0,2-0
+10,2016-08-26,Hertha Berlin,Bor. Mönchengladbach,3-0,2-0
 10,2016-08-26,Bayer Leverkusen,SV Darmstadt 98,3-2,1-0
 10,2016-08-26,Hamburgo,Borussia Dortmund,2-5,0-3
 10,2016-08-26,FC Ingolstadt 04,Augsburg,0-2,0-0
@@ -76,7 +76,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,2016-08-26,Bayer Leverkusen,RB Leipzig,2-3,2-1
 11,2016-08-26,Mainz 05,Freiburg,4-2,2-0
 11,2016-08-26,Wolfsburg,FC Schalke 04,0-1,0-0
-11,2016-08-26,Augsburg,Hertha BSC,0-0,
+11,2016-08-26,Augsburg,Hertha Berlin,0-0,
 11,2016-08-26,SV Darmstadt 98,FC Ingolstadt 04,0-1,0-0
 11,2016-08-26,Borussia Dortmund,Bayern de Munique,1-0,1-0
 11,2016-08-26,Hoffenheim,Hamburgo,2-2,1-1
@@ -91,7 +91,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2016-08-26,Mainz 05,Bayern de Munique,1-3,1-2
 13,2016-08-26,Borussia Dortmund,Bor. Mönchengladbach,4-1,2-1
 13,2016-08-26,Bayer Leverkusen,Freiburg,1-1,0-1
-13,2016-08-26,Wolfsburg,Hertha BSC,2-3,2-1
+13,2016-08-26,Wolfsburg,Hertha Berlin,2-3,2-1
 13,2016-08-26,Werder Bremen,FC Ingolstadt 04,2-1,1-0
 13,2016-08-26,RB Leipzig,FC Schalke 04,2-1,1-1
 13,2016-08-26,SV Darmstadt 98,Hamburgo,0-2,0-1
@@ -101,13 +101,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 14,2016-08-26,Hamburgo,Augsburg,1-0,0-0
 14,2016-08-26,FC Ingolstadt 04,RB Leipzig,1-0,1-0
 14,2016-08-26,Freiburg,SV Darmstadt 98,1-0,0-0
-14,2016-08-26,Hertha BSC,Werder Bremen,0-1,0-1
+14,2016-08-26,Hertha Berlin,Werder Bremen,0-1,0-1
 14,2016-08-26,FC Schalke 04,Bayer Leverkusen,0-1,0-0
 15,2016-08-26,Hoffenheim,Borussia Dortmund,2-2,2-1
 15,2016-08-26,FC Schalke 04,Freiburg,1-1,0-0
 15,2016-08-26,Mainz 05,Hamburgo,3-1,1-1
 15,2016-08-26,Augsburg,Bor. Mönchengladbach,1-0,0-0
-15,2016-08-26,RB Leipzig,Hertha BSC,2-0,1-0
+15,2016-08-26,RB Leipzig,Hertha Berlin,2-0,1-0
 15,2016-08-26,Wolfsburg,Eintracht Frankfurt,1-0,1-0
 15,2016-08-26,SV Darmstadt 98,Bayern de Munique,0-1,0-0
 15,2016-08-26,Bayer Leverkusen,FC Ingolstadt 04,1-2,0-1
@@ -115,7 +115,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2016-08-26,Bor. Mönchengladbach,Wolfsburg,1-2,0-1
 16,2016-08-26,Hamburgo,FC Schalke 04,2-1,0-0
 16,2016-08-26,Bayern de Munique,RB Leipzig,3-0,3-0
-16,2016-08-26,Hertha BSC,SV Darmstadt 98,2-0,0-0
+16,2016-08-26,Hertha Berlin,SV Darmstadt 98,2-0,0-0
 16,2016-08-26,1. FC Köln,Bayer Leverkusen,1-1,1-1
 16,2016-08-26,FC Ingolstadt 04,Freiburg,1-2,0-2
 16,2016-08-26,Hoffenheim,Werder Bremen,1-1,1-0
@@ -125,18 +125,18 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 17,2017-01-20,Werder Bremen,Borussia Dortmund,1-2,0-1
 17,2017-01-20,SV Darmstadt 98,Bor. Mönchengladbach,0-0,
 17,2017-01-20,RB Leipzig,Eintracht Frankfurt,3-0,2-0
-17,2017-01-20,Bayer Leverkusen,Hertha BSC,3-1,2-1
+17,2017-01-20,Bayer Leverkusen,Hertha Berlin,3-1,2-1
 18,2017-01-20,FC Schalke 04,Eintracht Frankfurt,0-1,0-1
 18,2017-01-20,Werder Bremen,Bayern de Munique,1-2,0-2
 18,2017-01-20,Wolfsburg,Augsburg,1-2,1-1
 18,2017-01-20,FC Ingolstadt 04,Hamburgo,3-1,2-0
 18,2017-01-20,Bayer Leverkusen,Bor. Mönchengladbach,2-3,2-0
-18,2017-01-20,Freiburg,Hertha BSC,2-1,1-0
+18,2017-01-20,Freiburg,Hertha Berlin,2-1,1-0
 18,2017-01-20,Mainz 05,Borussia Dortmund,1-1,0-1
 19,2017-01-20,Hamburgo,Bayer Leverkusen,1-0,0-0
 19,2017-01-20,Bayern de Munique,FC Schalke 04,1-1,1-1
 19,2017-01-20,1. FC Köln,Wolfsburg,1-0,0-0
-19,2017-01-20,Hertha BSC,FC Ingolstadt 04,1-0,1-0
+19,2017-01-20,Hertha Berlin,FC Ingolstadt 04,1-0,1-0
 19,2017-01-20,Bor. Mönchengladbach,Freiburg,3-0,0-0
 19,2017-01-20,Borussia Dortmund,RB Leipzig,1-0,1-0
 19,2017-01-20,Augsburg,Werder Bremen,3-2,1-1
@@ -147,9 +147,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2017-01-20,Werder Bremen,Bor. Mönchengladbach,0-1,0-1
 20,2017-01-20,RB Leipzig,Hamburgo,0-3,0-2
 20,2017-01-20,Bayer Leverkusen,Eintracht Frankfurt,3-0,1-0
-20,2017-01-20,FC Schalke 04,Hertha BSC,2-0,1-0
+20,2017-01-20,FC Schalke 04,Hertha Berlin,2-0,1-0
 21,2017-01-20,Augsburg,Bayer Leverkusen,1-3,0-2
-21,2017-01-20,Hertha BSC,Bayern de Munique,1-1,1-0
+21,2017-01-20,Hertha Berlin,Bayern de Munique,1-1,1-0
 21,2017-01-20,Borussia Dortmund,Wolfsburg,3-0,1-0
 21,2017-01-20,Eintracht Frankfurt,FC Ingolstadt 04,0-2,0-1
 21,2017-01-20,Mainz 05,Werder Bremen,0-2,0-2
@@ -161,7 +161,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2017-01-20,Freiburg,Borussia Dortmund,0-3,0-1
 22,2017-01-20,Bayern de Munique,Hamburgo,8-0,3-0
 22,2017-01-20,SV Darmstadt 98,Augsburg,1-2,0-0
-22,2017-01-20,Hertha BSC,Eintracht Frankfurt,2-0,0-0
+22,2017-01-20,Hertha Berlin,Eintracht Frankfurt,2-0,0-0
 22,2017-01-20,FC Ingolstadt 04,Bor. Mönchengladbach,0-2,0-0
 23,2017-01-20,Augsburg,RB Leipzig,2-2,1-1
 23,2017-01-20,1. FC Köln,Bayern de Munique,0-3,0-1
@@ -171,16 +171,16 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 23,2017-01-20,Werder Bremen,SV Darmstadt 98,2-0,0-0
 23,2017-01-20,Bor. Mönchengladbach,FC Schalke 04,4-2,1-1
 23,2017-01-20,Eintracht Frankfurt,Freiburg,1-2,1-1
-23,2017-01-20,Hamburgo,Hertha BSC,1-0,0-0
+23,2017-01-20,Hamburgo,Hertha Berlin,1-0,0-0
 24,2017-01-20,Bayer Leverkusen,Werder Bremen,1-1,1-0
-24,2017-01-20,Hertha BSC,Borussia Dortmund,2-1,1-0
+24,2017-01-20,Hertha Berlin,Borussia Dortmund,2-1,1-0
 24,2017-01-20,RB Leipzig,Wolfsburg,0-1,0-1
 24,2017-01-20,Bayern de Munique,Eintracht Frankfurt,3-0,2-0
 24,2017-01-20,FC Schalke 04,Augsburg,3-0,3-0
 24,2017-01-20,Hamburgo,Bor. Mönchengladbach,2-1,1-1
 25,2017-01-20,Borussia Dortmund,FC Ingolstadt 04,1-0,1-0
 25,2017-01-20,Hoffenheim,Bayer Leverkusen,1-0,0-0
-25,2017-01-20,1. FC Köln,Hertha BSC,4-2,3-0
+25,2017-01-20,1. FC Köln,Hertha Berlin,4-2,3-0
 25,2017-01-20,Wolfsburg,SV Darmstadt 98,1-0,1-0
 25,2017-01-20,Werder Bremen,RB Leipzig,3-0,1-0
 25,2017-01-20,Augsburg,Freiburg,1-1,1-1
@@ -198,7 +198,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2017-01-20,Borussia Dortmund,Hamburgo,3-0,1-0
 27,2017-01-20,1. FC Köln,Eintracht Frankfurt,1-0,0-0
 27,2017-01-20,SV Darmstadt 98,Bayer Leverkusen,0-2,0-1
-27,2017-01-20,Bor. Mönchengladbach,Hertha BSC,1-0,1-0
+27,2017-01-20,Bor. Mönchengladbach,Hertha Berlin,1-0,1-0
 27,2017-01-20,Augsburg,FC Ingolstadt 04,2-3,0-2
 27,2017-01-20,Wolfsburg,Freiburg,0-1,0-0
 27,2017-01-20,Mainz 05,RB Leipzig,2-3,0-0
@@ -207,17 +207,17 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2017-01-20,1. FC Köln,Bor. Mönchengladbach,2-3,1-1
 28,2017-01-20,FC Schalke 04,Wolfsburg,4-1,2-0
 28,2017-01-20,Bayern de Munique,Borussia Dortmund,4-1,2-1
-28,2017-01-20,Hertha BSC,Augsburg,2-0,2-0
+28,2017-01-20,Hertha Berlin,Augsburg,2-0,2-0
 28,2017-01-20,FC Ingolstadt 04,SV Darmstadt 98,3-2,1-2
 29,2017-01-20,Hoffenheim,Bor. Mönchengladbach,5-3,2-2
-29,2017-01-20,Mainz 05,Hertha BSC,1-0,1-0
+29,2017-01-20,Mainz 05,Hertha Berlin,1-0,1-0
 29,2017-01-20,Wolfsburg,FC Ingolstadt 04,3-0,1-0
 29,2017-01-20,Borussia Dortmund,Eintracht Frankfurt,3-1,2-1
 29,2017-01-20,RB Leipzig,Freiburg,4-0,2-0
 29,2017-01-20,Bayer Leverkusen,Bayern de Munique,0-0,
 29,2017-01-20,Werder Bremen,Hamburgo,2-1,1-1
 29,2017-01-20,SV Darmstadt 98,FC Schalke 04,2-1,1-0
-30,2017-01-20,Hertha BSC,Wolfsburg,1-0,0-0
+30,2017-01-20,Hertha Berlin,Wolfsburg,1-0,0-0
 30,2017-01-20,Eintracht Frankfurt,Augsburg,3-1,0-1
 30,2017-01-20,FC Ingolstadt 04,Werder Bremen,2-4,1-1
 30,2017-01-20,Hamburgo,SV Darmstadt 98,1-2,0-0
@@ -226,7 +226,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2017-01-20,FC Schalke 04,RB Leipzig,1-1,0-1
 31,2017-01-20,Bayer Leverkusen,FC Schalke 04,1-4,0-3
 31,2017-01-20,Mainz 05,Bor. Mönchengladbach,1-2,0-1
-31,2017-01-20,Werder Bremen,Hertha BSC,2-0,2-0
+31,2017-01-20,Werder Bremen,Hertha Berlin,2-0,2-0
 31,2017-01-20,RB Leipzig,FC Ingolstadt 04,0-0,
 31,2017-01-20,SV Darmstadt 98,Freiburg,3-0,2-0
 31,2017-01-20,Wolfsburg,Bayern de Munique,0-6,0-3
@@ -237,16 +237,16 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2017-01-20,Eintracht Frankfurt,Wolfsburg,0-2,0-0
 32,2017-01-20,Bor. Mönchengladbach,Augsburg,1-1,0-0
 32,2017-01-20,Bayern de Munique,SV Darmstadt 98,1-0,1-0
-32,2017-01-20,Hertha BSC,RB Leipzig,1-4,0-1
+32,2017-01-20,Hertha Berlin,RB Leipzig,1-4,0-1
 32,2017-01-20,Freiburg,FC Schalke 04,2-0,2-0
 33,2017-01-20,RB Leipzig,Bayern de Munique,4-5,2-1
 33,2017-01-20,Augsburg,Borussia Dortmund,1-1,1-1
 33,2017-01-20,Wolfsburg,Bor. Mönchengladbach,1-1,0-1
-33,2017-01-20,SV Darmstadt 98,Hertha BSC,0-2,0-2
+33,2017-01-20,SV Darmstadt 98,Hertha Berlin,0-2,0-2
 33,2017-01-20,FC Schalke 04,Hamburgo,1-1,1-0
 33,2017-01-20,Freiburg,FC Ingolstadt 04,1-1,1-1
 33,2017-01-20,Mainz 05,Eintracht Frankfurt,4-2,0-1
-34,2017-01-20,Hertha BSC,Bayer Leverkusen,2-6,0-3
+34,2017-01-20,Hertha Berlin,Bayer Leverkusen,2-6,0-3
 34,2017-01-20,FC Ingolstadt 04,FC Schalke 04,1-1,1-1
 34,2017-01-20,Hamburgo,Wolfsburg,2-1,1-1
 34,2017-01-20,Hoffenheim,Augsburg,0-0,

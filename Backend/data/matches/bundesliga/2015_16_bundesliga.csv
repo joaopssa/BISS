@@ -3,10 +3,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2015-08-14,Mainz 05,FC Ingolstadt 04,0-1,0-0
 1,2015-08-14,SV Darmstadt 98,Hannover 96,2-2,1-0
 1,2015-08-14,Werder Bremen,FC Schalke 04,0-3,0-1
-1,2015-08-14,Augsburg,Hertha BSC,0-1,0-0
+1,2015-08-14,Augsburg,Hertha Berlin,0-1,0-0
 1,2015-08-14,Borussia Dortmund,Bor. Mönchengladbach,4-0,3-0
 1,2015-08-14,Wolfsburg,Eintracht Frankfurt,2-1,2-1
-2,2015-08-14,Hertha BSC,Werder Bremen,1-1,1-1
+2,2015-08-14,Hertha Berlin,Werder Bremen,1-1,1-1
 2,2015-08-14,FC Schalke 04,SV Darmstadt 98,1-1,0-1
 2,2015-08-14,Eintracht Frankfurt,Augsburg,1-1,0-1
 2,2015-08-14,1. FC Köln,Wolfsburg,1-1,1-0
@@ -20,16 +20,16 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2015-08-14,1. FC Köln,Hamburgo,2-1,0-0
 3,2015-08-14,Mainz 05,Hannover 96,3-0,2-0
 3,2015-08-14,Bayern de Munique,Bayer Leverkusen,3-0,1-0
-3,2015-08-14,Borussia Dortmund,Hertha BSC,3-1,1-0
+3,2015-08-14,Borussia Dortmund,Hertha Berlin,3-1,1-0
 3,2015-08-14,Werder Bremen,Bor. Mönchengladbach,2-1,1-1
 4,2015-08-14,Bor. Mönchengladbach,Hamburgo,0-3,0-2
 4,2015-08-14,Bayern de Munique,Augsburg,2-1,0-1
 4,2015-08-14,Bayer Leverkusen,SV Darmstadt 98,0-1,0-1
 4,2015-08-14,Hannover 96,Borussia Dortmund,2-4,1-2
-4,2015-08-14,Hertha BSC,VfB Stuttgart,2-1,2-1
+4,2015-08-14,Hertha Berlin,VfB Stuttgart,2-1,2-1
 4,2015-08-14,FC Ingolstadt 04,Wolfsburg,0-0,
 4,2015-08-14,Hoffenheim,Werder Bremen,1-3,0-1
-5,2015-08-14,Wolfsburg,Hertha BSC,2-0,0-0
+5,2015-08-14,Wolfsburg,Hertha Berlin,2-0,0-0
 5,2015-08-14,Hamburgo,Eintracht Frankfurt,0-0,
 5,2015-08-14,Werder Bremen,FC Ingolstadt 04,0-1,0-0
 5,2015-08-14,1. FC Köln,Bor. Mönchengladbach,1-0,0-0
@@ -50,17 +50,17 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2015-08-14,Werder Bremen,Bayer Leverkusen,0-3,0-1
 7,2015-08-14,Mainz 05,Bayern de Munique,0-3,0-0
 7,2015-08-14,Hamburgo,FC Schalke 04,0-1,0-0
-7,2015-08-14,Eintracht Frankfurt,Hertha BSC,1-1,1-0
+7,2015-08-14,Eintracht Frankfurt,Hertha Berlin,1-1,1-0
 7,2015-08-14,Borussia Dortmund,SV Darmstadt 98,2-2,0-1
 8,2015-08-14,Bor. Mönchengladbach,Wolfsburg,2-0,0-0
 8,2015-08-14,Hannover 96,Werder Bremen,1-0,0-0
-8,2015-08-14,Hertha BSC,Hamburgo,3-0,1-0
+8,2015-08-14,Hertha Berlin,Hamburgo,3-0,1-0
 8,2015-08-14,Hoffenheim,VfB Stuttgart,2-2,1-0
 8,2015-08-14,FC Ingolstadt 04,Eintracht Frankfurt,2-0,0-0
 8,2015-08-14,Bayern de Munique,Borussia Dortmund,5-1,2-1
 8,2015-08-14,Bayer Leverkusen,Augsburg,1-1,1-1
 9,2015-08-14,Mainz 05,Borussia Dortmund,0-2,0-1
-9,2015-08-14,FC Schalke 04,Hertha BSC,2-1,1-0
+9,2015-08-14,FC Schalke 04,Hertha Berlin,2-1,1-0
 9,2015-08-14,Hamburgo,Bayer Leverkusen,0-0,
 9,2015-08-14,Augsburg,SV Darmstadt 98,0-2,0-2
 9,2015-08-14,Werder Bremen,Bayern de Munique,0-1,0-1
@@ -72,17 +72,17 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 10,2015-08-14,Hannover 96,Eintracht Frankfurt,1-2,0-0
 10,2015-08-14,Mainz 05,Werder Bremen,1-3,0-3
 10,2015-08-14,SV Darmstadt 98,Wolfsburg,0-1,0-0
-10,2015-08-14,FC Ingolstadt 04,Hertha BSC,0-1,0-1
+10,2015-08-14,FC Ingolstadt 04,Hertha Berlin,0-1,0-1
 10,2015-08-14,Borussia Dortmund,Augsburg,5-1,3-0
 10,2015-08-14,Bor. Mönchengladbach,FC Schalke 04,3-1,1-1
 11,2015-08-14,Eintracht Frankfurt,Bayern de Munique,0-0,
 11,2015-08-14,FC Schalke 04,FC Ingolstadt 04,1-1,0-1
 11,2015-08-14,Werder Bremen,Borussia Dortmund,1-3,1-2
-11,2015-08-14,Hertha BSC,Bor. Mönchengladbach,1-4,0-2
+11,2015-08-14,Hertha Berlin,Bor. Mönchengladbach,1-4,0-2
 11,2015-08-14,Wolfsburg,Bayer Leverkusen,2-1,1-1
 11,2015-08-14,VfB Stuttgart,SV Darmstadt 98,2-0,0-0
 11,2015-08-14,Hamburgo,Hannover 96,1-2,1-0
-12,2015-08-14,Hannover 96,Hertha BSC,1-3,0-1
+12,2015-08-14,Hannover 96,Hertha Berlin,1-3,0-1
 12,2015-08-14,Bayern de Munique,VfB Stuttgart,4-0,4-0
 12,2015-08-14,Bor. Mönchengladbach,FC Ingolstadt 04,0-0,
 12,2015-08-14,Hoffenheim,Eintracht Frankfurt,0-0,
@@ -97,7 +97,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2015-08-14,VfB Stuttgart,Augsburg,0-4,0-3
 13,2015-08-14,FC Schalke 04,Bayern de Munique,1-3,1-1
 13,2015-08-14,FC Ingolstadt 04,SV Darmstadt 98,3-1,0-1
-14,2015-08-14,Bayern de Munique,Hertha BSC,2-0,2-0
+14,2015-08-14,Bayern de Munique,Hertha Berlin,2-0,2-0
 14,2015-08-14,Werder Bremen,Hamburgo,1-3,0-2
 14,2015-08-14,Hannover 96,FC Ingolstadt 04,4-0,3-0
 14,2015-08-14,Hoffenheim,Bor. Mönchengladbach,3-3,2-1
@@ -108,7 +108,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2015-08-14,FC Schalke 04,Hannover 96,3-1,0-0
 15,2015-08-14,Bor. Mönchengladbach,Bayern de Munique,3-1,0-0
 15,2015-08-14,1. FC Köln,Augsburg,0-1,0-0
-15,2015-08-14,Hertha BSC,Bayer Leverkusen,2-1,1-1
+15,2015-08-14,Hertha Berlin,Bayer Leverkusen,2-1,1-1
 15,2015-08-14,Wolfsburg,Borussia Dortmund,1-2,0-1
 15,2015-08-14,VfB Stuttgart,Werder Bremen,1-1,1-0
 15,2015-08-14,Eintracht Frankfurt,SV Darmstadt 98,0-1,0-1
@@ -116,7 +116,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2015-08-14,Bayern de Munique,FC Ingolstadt 04,2-0,0-0
 16,2015-08-14,Wolfsburg,Hamburgo,1-1,0-1
 16,2015-08-14,Hoffenheim,Hannover 96,1-0,1-0
-16,2015-08-14,SV Darmstadt 98,Hertha BSC,0-4,0-2
+16,2015-08-14,SV Darmstadt 98,Hertha Berlin,0-4,0-2
 16,2015-08-14,Bayer Leverkusen,Bor. Mönchengladbach,5-0,1-0
 16,2015-08-14,Augsburg,FC Schalke 04,2-1,1-0
 16,2015-08-14,Borussia Dortmund,Eintracht Frankfurt,4-1,1-1
@@ -129,7 +129,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 17,2015-08-14,Bor. Mönchengladbach,SV Darmstadt 98,3-2,1-1
 18,2016-01-22,Hamburgo,Bayern de Munique,1-2,0-1
 18,2016-01-22,Hannover 96,SV Darmstadt 98,1-2,1-1
-18,2016-01-22,Hertha BSC,Augsburg,0-0,
+18,2016-01-22,Hertha Berlin,Augsburg,0-0,
 18,2016-01-22,1. FC Köln,VfB Stuttgart,1-3,1-1
 18,2016-01-22,Hoffenheim,Bayer Leverkusen,1-1,1-0
 18,2016-01-22,Bor. Mönchengladbach,Borussia Dortmund,1-3,0-1
@@ -139,11 +139,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2016-01-22,SV Darmstadt 98,FC Schalke 04,0-2,0-1
 19,2016-01-22,Augsburg,Eintracht Frankfurt,0-0,
 19,2016-01-22,Bayer Leverkusen,Hannover 96,3-0,1-0
-19,2016-01-22,Werder Bremen,Hertha BSC,3-3,0-2
+19,2016-01-22,Werder Bremen,Hertha Berlin,3-3,0-2
 19,2016-01-22,Borussia Dortmund,FC Ingolstadt 04,2-0,0-0
 19,2016-01-22,VfB Stuttgart,Hamburgo,2-1,0-0
 20,2016-01-22,Bor. Mönchengladbach,Werder Bremen,5-1,2-0
-20,2016-01-22,Hertha BSC,Borussia Dortmund,0-0,
+20,2016-01-22,Hertha Berlin,Borussia Dortmund,0-0,
 20,2016-01-22,FC Schalke 04,Wolfsburg,3-0,2-0
 20,2016-01-22,Eintracht Frankfurt,VfB Stuttgart,2-4,0-2
 20,2016-01-22,FC Ingolstadt 04,Augsburg,2-1,0-1
@@ -152,19 +152,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2016-01-22,Mainz 05,FC Schalke 04,2-1,1-0
 21,2016-01-22,SV Darmstadt 98,Bayer Leverkusen,1-2,1-0
 21,2016-01-22,Borussia Dortmund,Hannover 96,1-0,0-0
-21,2016-01-22,VfB Stuttgart,Hertha BSC,2-0,0-0
+21,2016-01-22,VfB Stuttgart,Hertha Berlin,2-0,0-0
 21,2016-01-22,Wolfsburg,FC Ingolstadt 04,2-0,2-0
 21,2016-01-22,1. FC Köln,Eintracht Frankfurt,3-1,1-1
 21,2016-01-22,Hamburgo,Bor. Mönchengladbach,3-2,2-1
 21,2016-01-22,Augsburg,Bayern de Munique,1-3,0-1
 22,2016-01-22,Eintracht Frankfurt,Hamburgo,0-0,
-22,2016-01-22,Hertha BSC,Wolfsburg,1-1,0-0
+22,2016-01-22,Hertha Berlin,Wolfsburg,1-1,0-0
 22,2016-01-22,FC Ingolstadt 04,Werder Bremen,2-0,1-0
 22,2016-01-22,Bayern de Munique,SV Darmstadt 98,3-1,0-1
 22,2016-01-22,Bayer Leverkusen,Borussia Dortmund,0-1,0-0
 22,2016-01-22,FC Schalke 04,VfB Stuttgart,1-1,1-0
 22,2016-01-22,Hannover 96,Augsburg,0-1,0-1
-23,2016-01-22,1. FC Köln,Hertha BSC,0-1,0-1
+23,2016-01-22,1. FC Köln,Hertha Berlin,0-1,0-1
 23,2016-01-22,Wolfsburg,Bayern de Munique,0-2,0-0
 23,2016-01-22,VfB Stuttgart,Hannover 96,1-2,1-1
 23,2016-01-22,Hamburgo,FC Ingolstadt 04,1-1,1-0
@@ -178,7 +178,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 24,2016-01-22,Bor. Mönchengladbach,VfB Stuttgart,4-0,1-0
 24,2016-01-22,Hoffenheim,Augsburg,2-1,1-1
 24,2016-01-22,Bayer Leverkusen,Werder Bremen,1-4,0-1
-24,2016-01-22,Hertha BSC,Eintracht Frankfurt,2-0,0-0
+24,2016-01-22,Hertha Berlin,Eintracht Frankfurt,2-0,0-0
 25,2016-01-22,1. FC Köln,FC Schalke 04,1-3,1-2
 25,2016-01-22,Augsburg,Bayer Leverkusen,3-3,2-0
 25,2016-01-22,Wolfsburg,Bor. Mönchengladbach,2-1,2-1
@@ -186,8 +186,8 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2016-01-22,Eintracht Frankfurt,FC Ingolstadt 04,1-1,0-1
 25,2016-01-22,Borussia Dortmund,Bayern de Munique,0-0,
 25,2016-01-22,Mainz 05,SV Darmstadt 98,0-0,
-25,2016-01-22,Hamburgo,Hertha BSC,2-0,0-0
-26,2016-01-22,Hertha BSC,FC Schalke 04,2-0,1-0
+25,2016-01-22,Hamburgo,Hertha Berlin,2-0,0-0
+26,2016-01-22,Hertha Berlin,FC Schalke 04,2-0,1-0
 26,2016-01-22,Hoffenheim,Wolfsburg,1-0,1-0
 26,2016-01-22,FC Ingolstadt 04,VfB Stuttgart,3-3,1-1
 26,2016-01-22,SV Darmstadt 98,Augsburg,2-2,2-0
@@ -196,7 +196,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 26,2016-01-22,Bayer Leverkusen,Hamburgo,1-0,1-0
 27,2016-01-22,FC Schalke 04,Bor. Mönchengladbach,2-1,0-0
 27,2016-01-22,1. FC Köln,Bayern de Munique,0-1,0-1
-27,2016-01-22,Hertha BSC,FC Ingolstadt 04,2-1,0-0
+27,2016-01-22,Hertha Berlin,FC Ingolstadt 04,2-1,0-0
 27,2016-01-22,Wolfsburg,SV Darmstadt 98,1-1,0-0
 27,2016-01-22,Eintracht Frankfurt,Hannover 96,1-0,1-0
 27,2016-01-22,VfB Stuttgart,Bayer Leverkusen,0-2,0-1
@@ -208,8 +208,8 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2016-01-22,Mainz 05,Augsburg,4-2,2-2
 28,2016-01-22,Bayern de Munique,Eintracht Frankfurt,1-0,1-0
 28,2016-01-22,Borussia Dortmund,Werder Bremen,3-2,0-0
-28,2016-01-22,Bor. Mönchengladbach,Hertha BSC,5-0,1-0
-29,2016-01-22,Hertha BSC,Hannover 96,2-2,1-1
+28,2016-01-22,Bor. Mönchengladbach,Hertha Berlin,5-0,1-0
+29,2016-01-22,Hertha Berlin,Hannover 96,2-2,1-1
 29,2016-01-22,VfB Stuttgart,Bayern de Munique,1-3,0-1
 29,2016-01-22,FC Ingolstadt 04,Bor. Mönchengladbach,1-0,0-0
 29,2016-01-22,Werder Bremen,Augsburg,1-2,1-0
@@ -220,12 +220,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2016-01-22,Werder Bremen,Wolfsburg,3-2,1-1
 30,2016-01-22,Augsburg,VfB Stuttgart,1-0,1-0
 30,2016-01-22,Bayer Leverkusen,Eintracht Frankfurt,3-0,0-0
-30,2016-01-22,Hoffenheim,Hertha BSC,2-1,1-1
+30,2016-01-22,Hoffenheim,Hertha Berlin,2-1,1-1
 30,2016-01-22,SV Darmstadt 98,FC Ingolstadt 04,2-0,0-0
 30,2016-01-22,Bayern de Munique,FC Schalke 04,3-0,0-0
 30,2016-01-22,Borussia Dortmund,Hamburgo,3-0,2-0
 31,2016-01-22,Hamburgo,Werder Bremen,2-1,2-0
-31,2016-01-22,Hertha BSC,Bayern de Munique,0-2,0-0
+31,2016-01-22,Hertha Berlin,Bayern de Munique,0-2,0-0
 31,2016-01-22,VfB Stuttgart,Borussia Dortmund,0-3,0-2
 31,2016-01-22,Wolfsburg,Augsburg,0-2,0-1
 31,2016-01-22,FC Ingolstadt 04,Hannover 96,2-2,2-0
@@ -237,7 +237,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2016-01-22,Mainz 05,Hamburgo,0-0,
 32,2016-01-22,SV Darmstadt 98,Eintracht Frankfurt,1-2,1-0
 32,2016-01-22,Hoffenheim,FC Ingolstadt 04,2-1,1-1
-32,2016-01-22,Bayer Leverkusen,Hertha BSC,2-1,2-1
+32,2016-01-22,Bayer Leverkusen,Hertha Berlin,2-1,2-1
 32,2016-01-22,Werder Bremen,VfB Stuttgart,6-2,3-1
 33,2016-01-22,FC Ingolstadt 04,Bayern de Munique,1-2,1-2
 33,2016-01-22,Eintracht Frankfurt,Borussia Dortmund,1-0,1-0
@@ -245,12 +245,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2016-01-22,Hamburgo,Wolfsburg,0-1,0-0
 33,2016-01-22,FC Schalke 04,Augsburg,1-1,0-0
 33,2016-01-22,1. FC Köln,Werder Bremen,0-0,
-33,2016-01-22,Hertha BSC,SV Darmstadt 98,1-2,1-1
+33,2016-01-22,Hertha Berlin,SV Darmstadt 98,1-2,1-1
 34,2016-01-22,Hoffenheim,FC Schalke 04,1-4,1-2
 34,2016-01-22,SV Darmstadt 98,Bor. Mönchengladbach,0-2,0-1
 34,2016-01-22,Augsburg,Hamburgo,1-3,1-1
 34,2016-01-22,Wolfsburg,VfB Stuttgart,3-1,2-0
 34,2016-01-22,Werder Bremen,Eintracht Frankfurt,1-0,0-0
 34,2016-01-22,Bayern de Munique,Hannover 96,3-1,2-0
-34,2016-01-22,Mainz 05,Hertha BSC,0-0,
+34,2016-01-22,Mainz 05,Hertha Berlin,0-0,
 34,2016-01-22,Bayer Leverkusen,FC Ingolstadt 04,3-2,2-1

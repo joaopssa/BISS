@@ -1,7 +1,7 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Fri,2021-05-28,Brasil de Pelotas RS,Londrina PR,0-0,
 1,Fri,2021-05-28,Guarani SP,Vitória,1-1,1-1
-1,Fri,2021-05-28,Náutico PE,CSA AL,1-0,1-0
+1,Fri,2021-05-28,Náutico PE,CSA,1-0,1-0
 1,Fri,2021-05-28,Vila Nova,Botafogo-RJ,1-1,0-0
 1,Sat,2021-05-29,Vasco da Gama,Operário-PR,0-2,0-2
 1,Sat,2021-05-29,CRB,Remo,2-2,1-2
@@ -12,7 +12,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 2,Tue,2021-06-01,Operário-PR,Guarani SP,2-5,1-3
 2,Fri,2021-06-04,Goiás,Confiança SE,2-0,1-0
 2,Sat,2021-06-05,Londrina PR,Brusque SC,0-1,0-1
-2,Sat,2021-06-05,CSA AL,Sampaio Corrêa MA,0-0,
+2,Sat,2021-06-05,CSA,Sampaio Corrêa MA,0-0,
 2,Sat,2021-06-05,Remo,Brasil de Pelotas RS,1-0,1-0
 2,Sat,2021-06-05,Botafogo-RJ,Coritiba,2-0,0-0
 2,Sun,2021-06-06,Ponte Preta,Vasco da Gama,1-1,0-0
@@ -23,13 +23,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 3,Fri,2021-06-11,Guarani SP,Náutico PE,1-3,0-0
 3,Sat,2021-06-12,CRB,Confiança SE,3-2,2-2
 3,Sat,2021-06-12,Brasil de Pelotas RS,Vasco da Gama,1-2,1-0
-3,Sat,2021-06-12,Vila Nova,CSA AL,1-0,1-0
+3,Sat,2021-06-12,Vila Nova,CSA,1-0,1-0
 3,Sat,2021-06-12,Cruzeiro,Goiás,1-1,0-1
 3,Sun,2021-06-13,Avaí,Brusque SC,1-2,0-0
 3,Sun,2021-06-13,Botafogo-RJ,Remo,3-0,1-0
 3,Sun,2021-06-13,Coritiba,Londrina PR,1-1,1-0
 3,Sun,2021-06-13,Vitória,Operário-PR,0-0,
-4,Tue,2021-06-15,CSA AL,Guarani SP,1-1,0-0
+4,Tue,2021-06-15,CSA,Guarani SP,1-1,0-0
 4,Tue,2021-06-15,Náutico PE,Vila Nova,2-0,1-0
 4,Tue,2021-06-15,Confiança SE,Brasil de Pelotas RS,1-1,1-1
 4,Tue,2021-06-15,Goiás,CRB,1-0,1-0
@@ -47,7 +47,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 5,Sat,2021-06-19,Sampaio Corrêa MA,Confiança SE,3-1,0-1
 5,Sat,2021-06-19,Vila Nova,Coritiba,0-1,0-0
 5,Sun,2021-06-20,Náutico PE,Botafogo-RJ,3-1,1-0
-5,Sun,2021-06-20,CSA AL,Londrina PR,1-0,1-0
+5,Sun,2021-06-20,CSA,Londrina PR,1-0,1-0
 5,Wed,2021-07-28,Avaí,Remo,1-0,0-0
 6,Tue,2021-06-22,Brusque SC,Sampaio Corrêa MA,0-0,
 6,Tue,2021-06-22,Confiança SE,Vila Nova,1-0,1-0
@@ -58,7 +58,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 6,Tue,2021-06-22,Remo,Guarani SP,0-0,
 6,Wed,2021-06-23,Londrina PR,Náutico PE,0-0,
 6,Thu,2021-06-24,Cruzeiro,Vasco da Gama,2-1,2-1
-6,Tue,2021-07-27,Botafogo-RJ,CSA AL,2-0,1-0
+6,Tue,2021-07-27,Botafogo-RJ,CSA,2-0,1-0
 7,Fri,2021-06-25,Avaí,CRB,1-0,1-0
 7,Fri,2021-06-25,Brasil de Pelotas RS,Ponte Preta,1-1,0-0
 7,Fri,2021-06-25,Guarani SP,Coritiba,0-2,0-1
@@ -67,13 +67,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Sat,2021-06-26,Sampaio Corrêa MA,Botafogo-RJ,2-0,1-0
 7,Sat,2021-06-26,Vitória,Londrina PR,1-2,1-0
 7,Sat,2021-06-26,Náutico PE,Remo,1-1,0-1
-7,Sun,2021-06-27,CSA AL,Cruzeiro,2-1,2-1
+7,Sun,2021-06-27,CSA,Cruzeiro,2-1,2-1
 7,Sun,2021-06-27,Vasco da Gama,Brusque SC,2-1,0-0
 8,Mon,2021-06-28,Operário-PR,Vila Nova,1-2,1-1
 8,Tue,2021-06-29,Confiança SE,Coritiba,0-1,0-1
 8,Tue,2021-06-29,CRB,Náutico PE,1-1,0-0
 8,Tue,2021-06-29,Remo,Sampaio Corrêa MA,0-2,0-0
-8,Wed,2021-06-30,Ponte Preta,CSA AL,2-1,1-0
+8,Wed,2021-06-30,Ponte Preta,CSA,2-1,1-0
 8,Wed,2021-06-30,Brusque SC,Brasil de Pelotas RS,1-0,0-0
 8,Wed,2021-06-30,Cruzeiro,Guarani SP,3-3,3-2
 8,Wed,2021-06-30,Goiás,Vasco da Gama,1-0,0-0
@@ -82,7 +82,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 9,Fri,2021-07-02,Coritiba,Remo,2-1,0-0
 9,Fri,2021-07-02,Náutico PE,Operário-PR,5-0,2-0
 9,Sat,2021-07-03,Vasco da Gama,Confiança SE,1-0,1-0
-9,Sat,2021-07-03,CSA AL,CRB,0-1,0-0
+9,Sat,2021-07-03,CSA,CRB,0-1,0-0
 9,Sat,2021-07-03,Brasil de Pelotas RS,Cruzeiro,0-0,
 9,Sat,2021-07-03,Sampaio Corrêa MA,Londrina PR,1-0,1-0
 9,Sat,2021-07-03,Avaí,Botafogo-RJ,1-1,0-0
@@ -98,7 +98,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Fri,2021-07-09,Goiás,Náutico PE,0-1,0-0
 10,Sat,2021-07-10,Operário-PR,Brasil de Pelotas RS,2-1,0-0
 10,Sat,2021-07-10,Confiança SE,Vitória,1-1,1-1
-10,Sun,2021-07-11,Brusque SC,CSA AL,2-3,0-2
+10,Sun,2021-07-11,Brusque SC,CSA,2-3,0-2
 11,Sat,2021-07-10,Botafogo-RJ,Cruzeiro,3-3,1-0
 11,Mon,2021-07-12,Náutico PE,Ponte Preta,1-1,0-1
 11,Tue,2021-07-13,Vila Nova,Brasil de Pelotas RS,0-0,
@@ -107,7 +107,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Tue,2021-07-13,Coritiba,Vasco da Gama,1-1,0-0
 11,Tue,2021-07-13,Londrina PR,Operário-PR,1-2,0-1
 11,Tue,2021-07-13,Vitória,Sampaio Corrêa MA,2-2,2-0
-11,Wed,2021-07-14,CSA AL,Goiás,0-1,0-1
+11,Wed,2021-07-14,CSA,Goiás,0-1,0-1
 11,Wed,2021-07-14,Remo,Brusque SC,2-1,0-0
 12,Fri,2021-07-16,Confiança SE,Guarani SP,1-4,0-2
 12,Fri,2021-07-16,Sampaio Corrêa MA,Coritiba,2-3,1-2
@@ -116,7 +116,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 12,Sat,2021-07-17,Cruzeiro,Avaí,0-3,0-1
 12,Sat,2021-07-17,Ponte Preta,Remo,1-2,0-1
 12,Sat,2021-07-17,Brusque SC,Botafogo-RJ,2-1,0-1
-12,Sat,2021-07-17,Operário-PR,CSA AL,0-2,0-1
+12,Sat,2021-07-17,Operário-PR,CSA,0-2,0-1
 12,Sun,2021-07-18,Vasco da Gama,Náutico PE,1-1,0-1
 12,Sun,2021-07-18,CRB,Vila Nova,2-1,1-0
 13,Tue,2021-07-20,Botafogo-RJ,Goiás,0-2,0-2
@@ -125,7 +125,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 13,Tue,2021-07-20,Remo,Cruzeiro,1-0,1-0
 13,Tue,2021-07-20,Vitória,Ponte Preta,1-0,0-0
 13,Wed,2021-07-21,Vila Nova,Brusque SC,0-1,0-0
-13,Wed,2021-07-21,CSA AL,Vasco da Gama,2-2,1-1
+13,Wed,2021-07-21,CSA,Vasco da Gama,2-2,1-1
 13,Wed,2021-07-21,Náutico PE,Brasil de Pelotas RS,2-1,2-1
 13,Thu,2021-07-22,Coritiba,CRB,1-1,1-0
 13,Thu,2021-07-22,Avaí,Operário-PR,1-0,0-0
@@ -134,7 +134,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 14,Sat,2021-07-24,Confiança SE,Botafogo-RJ,0-1,0-1
 14,Sat,2021-07-24,Vila Nova,Cruzeiro,0-0,
 14,Sat,2021-07-24,Náutico PE,Brusque SC,1-1,1-0
-14,Sat,2021-07-24,CSA AL,Vitória,2-1,0-0
+14,Sat,2021-07-24,CSA,Vitória,2-1,0-0
 14,Sat,2021-07-24,Vasco da Gama,Guarani SP,4-1,2-0
 14,Sun,2021-07-25,Operário-PR,Coritiba,1-0,1-0
 14,Sun,2021-07-25,Avaí,Brasil de Pelotas RS,1-1,0-1
@@ -148,19 +148,19 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Sat,2021-07-31,Botafogo-RJ,Vasco da Gama,2-0,1-0
 15,Sat,2021-07-31,Brusque SC,Confiança SE,3-0,3-0
 15,Sun,2021-08-01,CRB,Ponte Preta,1-1,1-1
-15,Sun,2021-08-01,Remo,CSA AL,1-0,1-0
+15,Sun,2021-08-01,Remo,CSA,1-0,1-0
 16,Fri,2021-08-06,Remo,Operário-PR,0-1,0-0
 16,Fri,2021-08-06,Guarani SP,Brasil de Pelotas RS,2-0,1-0
 16,Fri,2021-08-06,Coritiba,Goiás,1-1,0-0
 16,Sat,2021-08-07,Brusque SC,Cruzeiro,1-2,0-0
 16,Sat,2021-08-07,Náutico PE,Confiança SE,0-4,0-2
-16,Sat,2021-08-07,CSA AL,Avaí,0-0,
+16,Sat,2021-08-07,CSA,Avaí,0-0,
 16,Sat,2021-08-07,Vitória,Vasco da Gama,0-1,0-1
 16,Sat,2021-08-07,Vila Nova,Sampaio Corrêa MA,0-2,0-2
 16,Sun,2021-08-08,Botafogo-RJ,Ponte Preta,2-0,1-0
 16,Sun,2021-08-08,Londrina PR,CRB,0-2,0-1
 17,Tue,2021-08-10,Avaí,Guarani SP,0-1,0-0
-17,Tue,2021-08-10,Confiança SE,CSA AL,0-2,0-0
+17,Tue,2021-08-10,Confiança SE,CSA,0-2,0-0
 17,Tue,2021-08-10,Goiás,Remo,1-1,0-0
 17,Tue,2021-08-10,Vasco da Gama,Vila Nova,1-0,1-0
 17,Wed,2021-08-11,Brasil de Pelotas RS,Coritiba,0-2,0-1
@@ -172,7 +172,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 18,Fri,2021-08-13,Goiás,Guarani SP,2-1,1-0
 18,Fri,2021-08-13,Remo,Vasco da Gama,2-1,2-1
 18,Sat,2021-08-14,Cruzeiro,Sampaio Corrêa MA,1-1,0-1
-18,Sat,2021-08-14,CSA AL,Coritiba,3-0,2-0
+18,Sat,2021-08-14,CSA,Coritiba,3-0,2-0
 18,Sat,2021-08-14,Ponte Preta,Confiança SE,4-2,2-1
 18,Sat,2021-08-14,Avaí,Náutico PE,2-0,0-0
 18,Sun,2021-08-15,Londrina PR,Vila Nova,1-0,0-0
@@ -188,7 +188,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Wed,2021-08-18,CRB,Operário-PR,0-0,
 19,Wed,2021-08-18,Vasco da Gama,Londrina PR,1-2,0-0
 19,Thu,2021-08-19,Brusque SC,Goiás,0-1,0-0
-19,Thu,2021-08-19,Brasil de Pelotas RS,CSA AL,0-1,0-1
+19,Thu,2021-08-19,Brasil de Pelotas RS,CSA,0-1,0-1
 20,Fri,2021-08-20,Avaí,Coritiba,1-2,1-1
 20,Fri,2021-08-20,Cruzeiro,Confiança SE,1-0,0-0
 20,Sat,2021-08-21,Vitória,Guarani SP,1-0,1-0
@@ -198,14 +198,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 20,Sun,2021-08-22,Goiás,Sampaio Corrêa MA,2-2,1-1
 20,Sun,2021-08-22,Londrina PR,Brasil de Pelotas RS,0-0,
 20,Sun,2021-08-22,Ponte Preta,Brusque SC,3-0,2-0
-20,Tue,2021-08-24,CSA AL,Náutico PE,0-1,0-0
+20,Tue,2021-08-24,CSA,Náutico PE,0-1,0-0
 21,Tue,2021-08-24,Guarani SP,Operário-PR,3-0,1-0
 21,Wed,2021-08-25,Vila Nova,Avaí,1-0,0-0
 21,Thu,2021-08-26,Confiança SE,Goiás,1-2,0-1
 21,Fri,2021-08-27,Brasil de Pelotas RS,Remo,1-1,1-1
 21,Fri,2021-08-27,Coritiba,Botafogo-RJ,0-1,0-1
 21,Sat,2021-08-28,Brusque SC,Londrina PR,0-0,
-21,Sat,2021-08-28,Sampaio Corrêa MA,CSA AL,2-0,1-0
+21,Sat,2021-08-28,Sampaio Corrêa MA,CSA,2-0,1-0
 21,Sun,2021-08-29,CRB,Cruzeiro,0-0,
 21,Sun,2021-08-29,Náutico PE,Vitória,1-1,0-0
 21,Sun,2021-08-29,Vasco da Gama,Ponte Preta,2-0,1-0
@@ -214,14 +214,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Fri,2021-09-03,Brusque SC,Avaí,0-0,
 22,Fri,2021-09-03,Ponte Preta,Sampaio Corrêa MA,3-2,1-0
 22,Fri,2021-09-03,Vasco da Gama,Brasil de Pelotas RS,1-1,0-0
-22,Fri,2021-09-03,CSA AL,Vila Nova,1-1,0-0
+22,Fri,2021-09-03,CSA,Vila Nova,1-1,0-0
 22,Sat,2021-09-04,Operário-PR,Vitória,0-1,0-1
 22,Sat,2021-09-04,Náutico PE,Guarani SP,1-1,1-0
 22,Sat,2021-09-04,Remo,Botafogo-RJ,0-1,0-0
 22,Tue,2021-09-07,Goiás,Cruzeiro,1-1,0-0
 23,Mon,2021-09-06,Avaí,Vasco da Gama,3-1,1-1
 23,Tue,2021-09-07,Brasil de Pelotas RS,Confiança SE,1-1,1-1
-23,Tue,2021-09-07,Guarani SP,CSA AL,1-0,0-0
+23,Tue,2021-09-07,Guarani SP,CSA,1-0,0-0
 23,Tue,2021-09-07,Coritiba,Brusque SC,4-0,2-0
 23,Fri,2021-09-10,Vitória,Remo,1-2,1-0
 23,Fri,2021-09-10,Vila Nova,Náutico PE,1-0,1-0
@@ -237,7 +237,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 24,Fri,2021-09-17,Confiança SE,Sampaio Corrêa MA,2-0,1-0
 24,Fri,2021-09-17,Ponte Preta,Guarani SP,0-0,
 24,Sat,2021-09-18,Botafogo-RJ,Náutico PE,3-1,1-1
-24,Sat,2021-09-18,Londrina PR,CSA AL,0-2,0-2
+24,Sat,2021-09-18,Londrina PR,CSA,0-2,0-2
 24,Sat,2021-09-18,Goiás,Brasil de Pelotas RS,2-1,1-0
 25,Sun,2021-09-19,Vasco da Gama,Cruzeiro,1-1,1-0
 25,Tue,2021-09-21,Guarani SP,Remo,2-0,2-0
@@ -248,7 +248,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 25,Tue,2021-09-21,Vila Nova,Confiança SE,0-0,
 25,Wed,2021-09-22,Vitória,Coritiba,0-0,
 25,Wed,2021-09-22,Operário-PR,Ponte Preta,1-2,1-2
-25,Thu,2021-09-23,CSA AL,Botafogo-RJ,2-0,0-0
+25,Thu,2021-09-23,CSA,Botafogo-RJ,2-0,0-0
 26,Fri,2021-09-24,Goiás,Vila Nova,1-2,0-1
 26,Fri,2021-09-24,Remo,Náutico PE,1-0,0-0
 26,Fri,2021-09-24,Brusque SC,Vasco da Gama,0-1,0-0
@@ -256,7 +256,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 26,Sat,2021-09-25,Confiança SE,Operário-PR,1-0,0-0
 26,Sat,2021-09-25,CRB,Avaí,1-2,1-2
 26,Sat,2021-09-25,Coritiba,Guarani SP,1-0,1-0
-26,Sun,2021-09-26,Cruzeiro,CSA AL,1-2,1-0
+26,Sun,2021-09-26,Cruzeiro,CSA,1-2,1-0
 26,Sun,2021-09-26,Botafogo-RJ,Sampaio Corrêa MA,2-0,1-0
 26,Sun,2021-09-26,Ponte Preta,Brasil de Pelotas RS,1-0,0-0
 27,Mon,2021-09-27,Vasco da Gama,Goiás,2-0,1-0
@@ -266,13 +266,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Tue,2021-09-28,Vila Nova,Operário-PR,2-1,1-0
 27,Wed,2021-09-29,Brasil de Pelotas RS,Brusque SC,0-2,0-0
 27,Wed,2021-09-29,Guarani SP,Cruzeiro,1-1,0-1
-27,Wed,2021-09-29,CSA AL,Ponte Preta,2-1,1-1
+27,Wed,2021-09-29,CSA,Ponte Preta,2-1,1-1
 27,Wed,2021-09-29,Vitória,Botafogo-RJ,0-0,
 27,Thu,2021-09-30,Sampaio Corrêa MA,Remo,1-1,1-0
 28,Fri,2021-10-01,Operário-PR,Náutico PE,1-2,1-0
 28,Sat,2021-10-02,Brusque SC,Guarani SP,2-0,0-0
 28,Sat,2021-10-02,Goiás,Vitória,3-0,2-0
-28,Sat,2021-10-02,CRB,CSA AL,0-0,
+28,Sat,2021-10-02,CRB,CSA,0-0,
 28,Sat,2021-10-02,Botafogo-RJ,Avaí,1-2,0-0
 28,Sat,2021-10-02,Ponte Preta,Vila Nova,1-1,0-0
 28,Sun,2021-10-03,Cruzeiro,Brasil de Pelotas RS,2-0,2-0
@@ -287,14 +287,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 29,Fri,2021-10-08,Coritiba,Cruzeiro,0-3,0-2
 29,Sat,2021-10-09,Guarani SP,Londrina PR,3-0,0-0
 29,Sat,2021-10-09,Vitória,Confiança SE,0-1,0-1
-29,Sat,2021-10-09,CSA AL,Brusque SC,4-1,2-1
+29,Sat,2021-10-09,CSA,Brusque SC,4-1,2-1
 29,Sat,2021-10-09,Sampaio Corrêa MA,Vasco da Gama,1-0,0-0
 30,Tue,2021-10-12,Sampaio Corrêa MA,Vitória,0-1,0-1
 30,Tue,2021-10-12,Cruzeiro,Botafogo-RJ,0-0,
 30,Fri,2021-10-15,Brusque SC,Remo,3-1,0-1
 30,Fri,2021-10-15,CRB,Guarani SP,2-2,0-1
 30,Fri,2021-10-15,Brasil de Pelotas RS,Vila Nova,2-2,1-2
-30,Fri,2021-10-15,Goiás,CSA AL,3-1,2-0
+30,Fri,2021-10-15,Goiás,CSA,3-1,2-0
 30,Sat,2021-10-16,Ponte Preta,Náutico PE,2-3,2-1
 30,Sat,2021-10-16,Vasco da Gama,Coritiba,2-1,1-0
 30,Sat,2021-10-16,Operário-PR,Londrina PR,0-0,
@@ -306,7 +306,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Fri,2021-10-22,Guarani SP,Confiança SE,1-2,1-0
 31,Fri,2021-10-22,Avaí,Cruzeiro,1-0,0-0
 31,Sat,2021-10-23,Vitória,Brasil de Pelotas RS,4-0,3-0
-31,Sat,2021-10-23,CSA AL,Operário-PR,2-4,2-1
+31,Sat,2021-10-23,CSA,Operário-PR,2-4,2-1
 31,Sun,2021-10-24,Náutico PE,Vasco da Gama,2-2,1-2
 31,Sun,2021-10-24,Remo,Ponte Preta,0-1,0-1
 32,Sun,2021-10-24,Brusque SC,Vila Nova,2-3,1-2
@@ -316,12 +316,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 32,Thu,2021-10-28,Brasil de Pelotas RS,Náutico PE,3-2,1-1
 32,Thu,2021-10-28,Cruzeiro,Remo,1-3,1-1
 32,Fri,2021-10-29,Operário-PR,Avaí,2-1,0-0
-32,Fri,2021-10-29,Vasco da Gama,CSA AL,1-3,1-1
+32,Fri,2021-10-29,Vasco da Gama,CSA,1-3,1-1
 32,Sat,2021-10-30,Ponte Preta,Vitória,0-0,
 32,Sat,2021-10-30,Confiança SE,Londrina PR,0-2,0-2
 33,Mon,2021-11-01,Cruzeiro,Vila Nova,1-1,1-1
 33,Tue,2021-11-02,Brasil de Pelotas RS,Avaí,0-1,0-0
-33,Tue,2021-11-02,Vitória,CSA AL,0-1,0-1
+33,Tue,2021-11-02,Vitória,CSA,0-1,0-1
 33,Tue,2021-11-02,Brusque SC,Náutico PE,4-3,3-2
 33,Tue,2021-11-02,Remo,Londrina PR,0-1,0-1
 33,Tue,2021-11-02,Goiás,Ponte Preta,2-2,0-2
@@ -329,7 +329,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 33,Wed,2021-11-03,Botafogo-RJ,Confiança SE,1-0,0-0
 33,Thu,2021-11-04,Guarani SP,Vasco da Gama,1-0,0-0
 33,Thu,2021-11-04,CRB,Sampaio Corrêa MA,1-0,0-0
-34,Fri,2021-11-05,CSA AL,Remo,2-0,1-0
+34,Fri,2021-11-05,CSA,Remo,2-0,1-0
 34,Fri,2021-11-05,Avaí,Vitória,1-1,1-0
 34,Fri,2021-11-05,Londrina PR,Cruzeiro,0-1,0-0
 34,Sat,2021-11-06,Náutico PE,Coritiba,2-1,1-0
@@ -339,7 +339,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Sun,2021-11-07,Sampaio Corrêa MA,Brasil de Pelotas RS,2-1,0-0
 34,Sun,2021-11-07,Vila Nova,Guarani SP,2-2,1-0
 34,Sun,2021-11-07,Ponte Preta,CRB,1-0,1-0
-35,Mon,2021-11-08,Avaí,CSA AL,1-1,0-1
+35,Mon,2021-11-08,Avaí,CSA,1-1,0-1
 35,Tue,2021-11-09,Confiança SE,Náutico PE,0-0,
 35,Tue,2021-11-09,Operário-PR,Remo,2-1,0-0
 35,Tue,2021-11-09,Cruzeiro,Brusque SC,2-0,1-0
@@ -349,7 +349,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 35,Wed,2021-11-10,Vasco da Gama,Vitória,0-3,0-1
 35,Thu,2021-11-11,Ponte Preta,Botafogo-RJ,0-0,
 35,Thu,2021-11-11,Sampaio Corrêa MA,Vila Nova,3-0,1-0
-36,Fri,2021-11-12,CSA AL,Confiança SE,0-0,
+36,Fri,2021-11-12,CSA,Confiança SE,0-0,
 36,Sat,2021-11-13,Guarani SP,Avaí,4-0,2-0
 36,Sun,2021-11-14,Coritiba,Brasil de Pelotas RS,2-1,0-0
 36,Sun,2021-11-14,Vitória,Cruzeiro,3-0,3-0
@@ -365,7 +365,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 37,Fri,2021-11-19,Vila Nova,Londrina PR,2-1,2-0
 37,Sat,2021-11-20,Confiança SE,Ponte Preta,0-1,0-0
 37,Sun,2021-11-21,Brasil de Pelotas RS,Botafogo-RJ,0-1,0-1
-37,Sun,2021-11-21,Coritiba,CSA AL,0-1,0-0
+37,Sun,2021-11-21,Coritiba,CSA,0-1,0-0
 37,Sun,2021-11-21,Náutico PE,Avaí,1-2,0-1
 37,Mon,2021-11-22,CRB,Vitória,3-1,1-1
 37,Mon,2021-11-22,Guarani SP,Goiás,0-2,0-2
@@ -373,7 +373,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 38,Fri,2021-11-26,Ponte Preta,Coritiba,3-2,0-2
 38,Sun,2021-11-28,Avaí,Sampaio Corrêa MA,2-1,0-1
 38,Sun,2021-11-28,Botafogo-RJ,Guarani SP,2-2,0-0
-38,Sun,2021-11-28,CSA AL,Brasil de Pelotas RS,4-0,3-0
+38,Sun,2021-11-28,CSA,Brasil de Pelotas RS,4-0,3-0
 38,Sun,2021-11-28,Goiás,Brusque SC,2-2,0-1
 38,Sun,2021-11-28,Londrina PR,Vasco da Gama,3-0,2-0
 38,Sun,2021-11-28,Operário-PR,CRB,2-1,2-0

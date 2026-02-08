@@ -6,7 +6,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Sat,2020-08-08,Cruzeiro,Botafogo-SP,2-1,0-0
 1,Sat,2020-08-08,Avaí,Náutico PE,3-1,2-0
 1,Sat,2020-08-08,Vitória,Sampaio Corrêa MA,1-0,1-0
-1,Sat,2020-08-08,CSA AL,Guarani SP,1-0,1-0
+1,Sat,2020-08-08,CSA,Guarani SP,1-0,1-0
 1,Sat,2020-08-08,Ponte Preta,América-MG,0-1,0-1
 1,Sun,2020-08-09,Oeste SP,Chapecoense,0-0,
 2,Tue,2020-08-11,Botafogo-SP,Confiança SE,2-0,1-0
@@ -18,7 +18,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 2,Tue,2020-08-11,Figueirense SC,Vitória,0-0,
 2,Tue,2020-08-11,Náutico PE,Operário-PR,0-0,
 2,Wed,2020-08-12,CRB,Oeste SP,1-0,0-0
-2,Tue,2020-10-27,Chapecoense,CSA AL,0-0,
+2,Tue,2020-10-27,Chapecoense,CSA,0-0,
 3,Fri,2020-08-14,América-MG,Operário-PR,1-1,1-0
 3,Fri,2020-08-14,Ponte Preta,Vitória,3-3,2-2
 3,Fri,2020-08-14,Paraná Clube,Juventude-RS,3-1,2-1
@@ -28,10 +28,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 3,Sun,2020-08-16,Chapecoense,Sampaio Corrêa MA,1-0,1-0
 3,Sun,2020-08-16,Figueirense SC,Cruzeiro,0-1,0-1
 3,Tue,2020-09-15,Confiança SE,Avaí,2-2,0-1
-3,Wed,2020-09-16,CSA AL,Cuiabá,1-2,1-1
+3,Wed,2020-09-16,CSA,Cuiabá,1-2,1-1
 4,Mon,2020-08-17,Juventude-RS,América-MG,0-0,
 4,Tue,2020-08-18,Avaí,Botafogo-SP,0-1,0-0
-4,Tue,2020-08-18,Operário-PR,CSA AL,3-0,0-0
+4,Tue,2020-08-18,Operário-PR,CSA,3-0,0-0
 4,Tue,2020-08-18,Oeste SP,Ponte Preta,1-3,1-1
 4,Tue,2020-08-18,CRB,Brasil de Pelotas RS,1-0,0-0
 4,Tue,2020-08-18,Guarani SP,Paraná Clube,1-2,1-0
@@ -40,7 +40,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Thu,2020-08-20,Cruzeiro,Chapecoense,0-1,0-1
 4,Wed,2020-10-14,Sampaio Corrêa MA,Figueirense SC,3-0,1-0
 5,Fri,2020-08-21,América-MG,Oeste SP,2-1,1-1
-5,Fri,2020-08-21,Ponte Preta,CSA AL,2-1,1-1
+5,Fri,2020-08-21,Ponte Preta,CSA,2-1,1-1
 5,Sat,2020-08-22,Avaí,Cuiabá,0-2,0-0
 5,Sat,2020-08-22,Botafogo-SP,Figueirense SC,0-1,0-0
 5,Sat,2020-08-22,Náutico PE,Juventude-RS,3-3,2-2
@@ -57,7 +57,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 6,Sat,2020-08-29,Cruzeiro,América-MG,1-2,0-2
 6,Sat,2020-08-29,Figueirense SC,Confiança SE,0-0,
 6,Sat,2020-08-29,Sampaio Corrêa MA,Ponte Preta,1-2,0-2
-6,Sun,2020-08-30,CSA AL,CRB,0-2,0-2
+6,Sun,2020-08-30,CSA,CRB,0-2,0-2
 6,Sun,2020-08-30,Operário-PR,Brasil de Pelotas RS,2-1,1-1
 7,Mon,2020-08-31,Guarani SP,Oeste SP,1-1,0-0
 7,Tue,2020-09-01,Botafogo-SP,Cuiabá,1-1,0-1
@@ -65,14 +65,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Tue,2020-09-01,Chapecoense,Juventude-RS,1-0,0-0
 7,Tue,2020-09-01,Náutico PE,Figueirense SC,1-0,0-0
 7,Tue,2020-09-01,Confiança SE,Vitória,1-0,0-0
-7,Wed,2020-09-02,América-MG,CSA AL,2-1,1-0
+7,Wed,2020-09-02,América-MG,CSA,2-1,1-0
 7,Wed,2020-09-02,Avaí,Operário-PR,2-0,2-0
 7,Wed,2020-09-02,CRB,Sampaio Corrêa MA,2-2,0-1
 7,Wed,2020-09-02,Brasil de Pelotas RS,Cruzeiro,1-0,0-0
 8,Fri,2020-09-04,Figueirense SC,Paraná Clube,0-1,0-0
 8,Fri,2020-09-04,Ponte Preta,Botafogo-SP,1-0,0-0
 8,Sat,2020-09-05,Oeste SP,Juventude-RS,1-3,0-1
-8,Sat,2020-09-05,CSA AL,Confiança SE,1-1,1-0
+8,Sat,2020-09-05,CSA,Confiança SE,1-1,1-0
 8,Sat,2020-09-05,Vitória,Cuiabá,4-2,2-1
 8,Sat,2020-09-05,Operário-PR,Guarani SP,1-2,1-1
 8,Sat,2020-09-05,Sampaio Corrêa MA,América-MG,1-0,0-0
@@ -87,7 +87,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 9,Sat,2020-09-12,Guarani SP,Brasil de Pelotas RS,0-0,
 9,Sat,2020-09-12,Sampaio Corrêa MA,Operário-PR,0-1,0-0
 9,Sat,2020-09-12,Náutico PE,Botafogo-SP,3-1,3-0
-9,Sun,2020-09-13,Oeste SP,CSA AL,2-1,1-1
+9,Sun,2020-09-13,Oeste SP,CSA,2-1,1-1
 9,Wed,2020-10-14,CRB,Chapecoense,0-1,0-0
 10,Mon,2020-09-14,Paraná Clube,CRB,2-0,1-0
 10,Mon,2020-09-14,Juventude-RS,Vitória,1-1,1-0
@@ -95,7 +95,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Fri,2020-09-18,Náutico PE,Chapecoense,1-1,0-0
 10,Sat,2020-09-19,América-MG,Figueirense SC,0-1,0-0
 10,Sat,2020-09-19,Ponte Preta,Operário-PR,1-1,1-0
-10,Sat,2020-09-19,CSA AL,Cruzeiro,3-1,2-0
+10,Sat,2020-09-19,CSA,Cruzeiro,3-1,2-0
 10,Sat,2020-09-19,Cuiabá,Oeste SP,3-0,2-0
 10,Sun,2020-09-20,Avaí,Sampaio Corrêa MA,2-5,1-3
 10,Mon,2020-09-21,Botafogo-SP,Brasil de Pelotas RS,0-1,0-0
@@ -104,7 +104,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Fri,2020-09-25,Chapecoense,América-MG,0-0,
 11,Fri,2020-09-25,Cruzeiro,Avaí,0-1,0-0
 11,Sat,2020-09-26,Figueirense SC,Guarani SP,2-2,1-2
-11,Sat,2020-09-26,CSA AL,Juventude-RS,3-2,2-0
+11,Sat,2020-09-26,CSA,Juventude-RS,3-2,2-0
 11,Sat,2020-09-26,Vitória,Oeste SP,3-1,1-1
 11,Sat,2020-09-26,Brasil de Pelotas RS,Paraná Clube,1-1,0-0
 11,Sun,2020-09-27,Ponte Preta,Confiança SE,2-1,0-0
@@ -112,7 +112,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 12,Mon,2020-09-28,CRB,América-MG,0-0,
 12,Tue,2020-09-29,Avaí,Figueirense SC,1-0,0-0
 12,Tue,2020-09-29,Juventude-RS,Operário-PR,1-0,0-0
-12,Tue,2020-09-29,Vitória,CSA AL,0-1,0-1
+12,Tue,2020-09-29,Vitória,CSA,0-1,0-1
 12,Tue,2020-09-29,Oeste SP,Botafogo-SP,0-1,0-0
 12,Tue,2020-09-29,Guarani SP,Sampaio Corrêa MA,1-1,1-0
 12,Tue,2020-09-29,Paraná Clube,Chapecoense,1-1,0-0
@@ -126,14 +126,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 13,Sat,2020-10-03,América-MG,Guarani SP,0-0,
 13,Sat,2020-10-03,Náutico PE,Confiança SE,0-1,0-1
 13,Sat,2020-10-03,Brasil de Pelotas RS,Chapecoense,0-1,0-0
-13,Sat,2020-10-03,Sampaio Corrêa MA,CSA AL,1-0,1-0
+13,Sat,2020-10-03,Sampaio Corrêa MA,CSA,1-0,1-0
 13,Sat,2020-10-03,Ponte Preta,Juventude-RS,1-3,0-1
 13,Sat,2020-10-03,Cuiabá,Cruzeiro,1-0,0-0
 14,Mon,2020-10-05,Oeste SP,Operário-PR,0-1,0-1
 14,Tue,2020-10-06,Confiança SE,CRB,1-0,0-0
 14,Tue,2020-10-06,Chapecoense,Botafogo-SP,1-0,0-0
 14,Tue,2020-10-06,Avaí,Brasil de Pelotas RS,2-1,1-0
-14,Tue,2020-10-06,CSA AL,Figueirense SC,3-0,2-0
+14,Tue,2020-10-06,CSA,Figueirense SC,3-0,2-0
 14,Tue,2020-10-06,Paraná Clube,Náutico PE,0-0,
 14,Tue,2020-10-06,Juventude-RS,Cuiabá,1-1,0-1
 14,Tue,2020-10-06,Vitória,América-MG,1-2,0-2
@@ -146,11 +146,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Sat,2020-10-10,Juventude-RS,Brasil de Pelotas RS,1-2,0-2
 15,Sat,2020-10-10,Vitória,Avaí,1-2,1-2
 15,Sat,2020-10-10,Guarani SP,CRB,3-1,2-1
-15,Sat,2020-10-10,CSA AL,Paraná Clube,4-0,3-0
+15,Sat,2020-10-10,CSA,Paraná Clube,4-0,3-0
 15,Sun,2020-10-11,Oeste SP,Cruzeiro,0-0,
 15,Sun,2020-10-11,Sampaio Corrêa MA,Botafogo-SP,2-0,1-0
 16,Mon,2020-10-12,Náutico PE,Ponte Preta,0-2,0-0
-16,Tue,2020-10-13,Avaí,CSA AL,1-1,1-1
+16,Tue,2020-10-13,Avaí,CSA,1-1,1-1
 16,Tue,2020-10-13,Guarani SP,Cuiabá,1-0,1-0
 16,Fri,2020-10-16,Botafogo-SP,América-MG,1-2,0-0
 16,Fri,2020-10-16,Cruzeiro,Juventude-RS,0-0,
@@ -160,7 +160,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 16,Sat,2020-10-17,Brasil de Pelotas RS,Figueirense SC,0-0,
 16,Sun,2020-10-18,Paraná Clube,Sampaio Corrêa MA,0-0,
 17,Tue,2020-10-20,América-MG,Brasil de Pelotas RS,3-1,2-1
-17,Tue,2020-10-20,CSA AL,Botafogo-SP,1-0,0-0
+17,Tue,2020-10-20,CSA,Botafogo-SP,1-0,0-0
 17,Tue,2020-10-20,Oeste SP,Náutico PE,0-1,0-0
 17,Tue,2020-10-20,Juventude-RS,Avaí,3-0,1-0
 17,Tue,2020-10-20,Ponte Preta,Chapecoense,0-5,0-2
@@ -169,7 +169,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Wed,2020-10-21,Sampaio Corrêa MA,Confiança SE,1-3,0-2
 17,Wed,2020-10-21,Cuiabá,Paraná Clube,3-3,1-1
 17,Thu,2020-10-22,Vitória,Guarani SP,1-1,1-0
-18,Fri,2020-10-23,Brasil de Pelotas RS,CSA AL,1-1,1-1
+18,Fri,2020-10-23,Brasil de Pelotas RS,CSA,1-1,1-1
 18,Fri,2020-10-23,Chapecoense,Operário-PR,1-0,0-0
 18,Sat,2020-10-24,CRB,Ponte Preta,1-0,1-0
 18,Sat,2020-10-24,Sampaio Corrêa MA,Cuiabá,3-0,2-0
@@ -185,11 +185,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sat,2020-10-31,Confiança SE,Chapecoense,0-2,0-1
 19,Sat,2020-10-31,Avaí,América-MG,1-0,0-0
 19,Sat,2020-10-31,Operário-PR,Botafogo-SP,0-0,
-19,Sat,2020-10-31,CSA AL,Náutico PE,3-1,2-1
+19,Sat,2020-10-31,CSA,Náutico PE,3-1,2-1
 19,Sat,2020-10-31,Cuiabá,CRB,3-0,0-0
 19,Sun,2020-11-01,Juventude-RS,Guarani SP,1-0,1-0
 19,Mon,2020-11-02,Ponte Preta,Figueirense SC,2-1,0-1
-20,Fri,2020-11-06,Guarani SP,CSA AL,2-1,1-1
+20,Fri,2020-11-06,Guarani SP,CSA,2-1,1-1
 20,Fri,2020-11-06,Botafogo-SP,Cruzeiro,0-1,0-0
 20,Fri,2020-11-06,Náutico PE,Avaí,2-2,0-1
 20,Fri,2020-11-06,Paraná Clube,Confiança SE,1-1,0-0
@@ -200,7 +200,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 20,Sun,2020-11-08,Sampaio Corrêa MA,Vitória,2-1,0-1
 20,Sun,2020-11-08,CRB,Juventude-RS,0-1,0-0
 21,Mon,2020-11-09,Cruzeiro,Guarani SP,3-3,2-2
-21,Tue,2020-11-10,CSA AL,Chapecoense,0-1,0-0
+21,Tue,2020-11-10,CSA,Chapecoense,0-1,0-0
 21,Tue,2020-11-10,Confiança SE,Botafogo-SP,1-0,0-0
 21,Thu,2020-11-12,Vitória,Figueirense SC,3-0,2-0
 21,Fri,2020-11-13,Ponte Preta,Brasil de Pelotas RS,1-1,1-1
@@ -218,11 +218,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Sat,2020-11-21,Oeste SP,Brasil de Pelotas RS,2-1,2-0
 22,Sat,2020-11-21,Operário-PR,América-MG,0-1,0-1
 22,Sat,2020-11-21,CRB,Náutico PE,2-1,1-0
-22,Sat,2020-11-21,Cuiabá,CSA AL,0-1,0-1
+22,Sat,2020-11-21,Cuiabá,CSA,0-1,0-1
 23,Mon,2020-11-23,Figueirense SC,Sampaio Corrêa MA,1-2,1-0
 23,Mon,2020-11-23,Botafogo-SP,Avaí,0-1,0-1
 23,Tue,2020-11-24,Paraná Clube,Guarani SP,1-2,0-1
-23,Tue,2020-11-24,CSA AL,Operário-PR,1-0,0-0
+23,Tue,2020-11-24,CSA,Operário-PR,1-0,0-0
 23,Tue,2020-11-24,Ponte Preta,Oeste SP,1-0,0-0
 23,Tue,2020-11-24,Confiança SE,Cuiabá,2-0,0-0
 23,Tue,2020-11-24,América-MG,Juventude-RS,2-1,2-1
@@ -235,14 +235,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 24,Fri,2020-11-27,Sampaio Corrêa MA,Brasil de Pelotas RS,0-1,0-0
 24,Fri,2020-11-27,Cruzeiro,Confiança SE,1-2,0-2
 24,Fri,2020-11-27,Cuiabá,Avaí,2-1,1-0
-24,Sat,2020-11-28,CSA AL,Ponte Preta,2-1,0-1
+24,Sat,2020-11-28,CSA,Ponte Preta,2-1,0-1
 24,Sat,2020-11-28,Vitória,CRB,2-1,2-1
 24,Sat,2020-11-28,Guarani SP,Chapecoense,2-0,2-0
 24,Sat,2020-11-28,Juventude-RS,Náutico PE,1-0,0-0
 25,Mon,2020-11-30,Brasil de Pelotas RS,Operário-PR,0-0,
 25,Mon,2020-11-30,Avaí,Oeste SP,0-3,0-0
 25,Tue,2020-12-01,Chapecoense,Cuiabá,1-0,0-0
-25,Tue,2020-12-01,CRB,CSA AL,0-0,
+25,Tue,2020-12-01,CRB,CSA,0-0,
 25,Tue,2020-12-01,Náutico PE,Guarani SP,2-0,1-0
 25,Tue,2020-12-01,Confiança SE,Figueirense SC,1-1,1-0
 25,Tue,2020-12-01,Ponte Preta,Sampaio Corrêa MA,1-1,0-1
@@ -254,7 +254,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 26,Fri,2020-12-04,Vitória,Confiança SE,2-3,1-1
 26,Fri,2020-12-04,Ponte Preta,Paraná Clube,2-1,1-1
 26,Sat,2020-12-05,Juventude-RS,Chapecoense,1-1,0-0
-26,Sat,2020-12-05,CSA AL,América-MG,0-1,0-1
+26,Sat,2020-12-05,CSA,América-MG,0-1,0-1
 26,Sat,2020-12-05,Sampaio Corrêa MA,CRB,3-0,2-0
 26,Sat,2020-12-05,Cruzeiro,Brasil de Pelotas RS,4-1,3-1
 26,Sat,2020-12-05,Cuiabá,Botafogo-SP,2-0,0-0
@@ -265,12 +265,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Tue,2020-12-08,Botafogo-SP,Ponte Preta,2-1,1-0
 27,Tue,2020-12-08,Avaí,Chapecoense,0-2,0-1
 27,Tue,2020-12-08,CRB,Cruzeiro,0-0,
-27,Tue,2020-12-08,Confiança SE,CSA AL,1-5,1-2
+27,Tue,2020-12-08,Confiança SE,CSA,1-5,1-2
 27,Tue,2020-12-08,Cuiabá,Vitória,3-3,1-1
 27,Wed,2020-12-09,Paraná Clube,Figueirense SC,0-2,0-0
 27,Thu,2020-12-10,Náutico PE,Brasil de Pelotas RS,1-0,1-0
 28,Fri,2020-12-11,Operário-PR,Sampaio Corrêa MA,1-1,1-0
-28,Fri,2020-12-11,CSA AL,Oeste SP,2-1,2-0
+28,Fri,2020-12-11,CSA,Oeste SP,2-1,2-0
 28,Fri,2020-12-11,Ponte Preta,Avaí,1-2,1-1
 28,Fri,2020-12-11,Vitória,Cruzeiro,0-1,0-1
 28,Sat,2020-12-12,Figueirense SC,Cuiabá,1-0,0-0
@@ -282,7 +282,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 29,Mon,2020-12-14,Operário-PR,Ponte Preta,1-0,1-0
 29,Tue,2020-12-15,Oeste SP,Cuiabá,0-2,0-1
 29,Tue,2020-12-15,Sampaio Corrêa MA,Avaí,0-1,0-1
-29,Tue,2020-12-15,Cruzeiro,CSA AL,1-1,0-1
+29,Tue,2020-12-15,Cruzeiro,CSA,1-1,0-1
 29,Tue,2020-12-15,Vitória,Juventude-RS,1-0,1-0
 29,Wed,2020-12-16,Brasil de Pelotas RS,Botafogo-SP,0-0,
 29,Wed,2020-12-16,Guarani SP,Confiança SE,1-0,1-0
@@ -290,7 +290,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 29,Thu,2020-12-17,Figueirense SC,América-MG,1-2,1-1
 29,Thu,2020-12-17,CRB,Paraná Clube,0-2,0-1
 30,Fri,2020-12-18,Oeste SP,Vitória,2-1,1-0
-30,Fri,2020-12-18,Juventude-RS,CSA AL,1-0,1-0
+30,Fri,2020-12-18,Juventude-RS,CSA,1-0,1-0
 30,Fri,2020-12-18,Avaí,Cruzeiro,1-1,0-1
 30,Fri,2020-12-18,Cuiabá,Operário-PR,2-0,1-0
 30,Sat,2020-12-19,Náutico PE,Sampaio Corrêa MA,1-0,0-0
@@ -300,7 +300,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 30,Sun,2020-12-20,Guarani SP,Figueirense SC,2-2,2-1
 30,Mon,2020-12-21,Paraná Clube,Brasil de Pelotas RS,0-1,0-0
 31,Tue,2020-12-22,Operário-PR,Juventude-RS,3-0,1-0
-31,Tue,2020-12-22,CSA AL,Vitória,3-0,2-0
+31,Tue,2020-12-22,CSA,Vitória,3-0,2-0
 31,Tue,2020-12-22,Ponte Preta,Cruzeiro,2-1,0-1
 31,Tue,2020-12-22,Náutico PE,Cuiabá,2-0,0-0
 31,Wed,2020-12-23,Sampaio Corrêa MA,Guarani SP,0-1,0-0
@@ -312,7 +312,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 32,Tue,2020-12-29,Avaí,CRB,0-1,0-0
 32,Tue,2020-12-29,Cruzeiro,Cuiabá,0-0,
 32,Wed,2020-12-30,Juventude-RS,Ponte Preta,2-1,0-0
-32,Sat,2021-01-02,CSA AL,Sampaio Corrêa MA,2-1,0-0
+32,Sat,2021-01-02,CSA,Sampaio Corrêa MA,2-1,0-0
 32,Sat,2021-01-02,Oeste SP,Figueirense SC,2-1,2-0
 32,Sat,2021-01-02,Guarani SP,América-MG,0-1,0-1
 32,Sun,2021-01-03,Chapecoense,Brasil de Pelotas RS,0-0,
@@ -325,7 +325,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 33,Fri,2021-01-08,CRB,Confiança SE,2-0,0-0
 33,Fri,2021-01-08,Operário-PR,Oeste SP,2-0,0-0
 33,Fri,2021-01-08,Náutico PE,Paraná Clube,2-1,1-1
-33,Fri,2021-01-08,Figueirense SC,CSA AL,0-0,
+33,Fri,2021-01-08,Figueirense SC,CSA,0-0,
 33,Fri,2021-01-08,Sampaio Corrêa MA,Cruzeiro,0-1,0-1
 33,Sat,2021-01-09,América-MG,Vitória,4-0,2-0
 33,Sat,2021-01-09,Botafogo-SP,Chapecoense,3-0,2-0
@@ -333,7 +333,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Mon,2021-01-11,CRB,Guarani SP,2-0,0-0
 34,Mon,2021-01-11,Confiança SE,Operário-PR,1-2,1-0
 34,Tue,2021-01-12,Botafogo-SP,Sampaio Corrêa MA,2-1,0-1
-34,Tue,2021-01-12,Paraná Clube,CSA AL,2-0,2-0
+34,Tue,2021-01-12,Paraná Clube,CSA,2-0,2-0
 34,Tue,2021-01-12,Brasil de Pelotas RS,Juventude-RS,2-1,2-1
 34,Tue,2021-01-12,Náutico PE,América-MG,0-0,
 34,Tue,2021-01-12,Chapecoense,Figueirense SC,2-1,1-0
@@ -344,7 +344,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 35,Fri,2021-01-15,Figueirense SC,Brasil de Pelotas RS,3-0,3-0
 35,Fri,2021-01-15,Sampaio Corrêa MA,Paraná Clube,2-1,1-0
 35,Fri,2021-01-15,América-MG,Botafogo-SP,1-1,0-1
-35,Sat,2021-01-16,CSA AL,Avaí,1-1,1-0
+35,Sat,2021-01-16,CSA,Avaí,1-1,1-0
 35,Sat,2021-01-16,Juventude-RS,Cruzeiro,1-0,1-0
 35,Sat,2021-01-16,Oeste SP,Confiança SE,0-1,0-1
 35,Sun,2021-01-17,Ponte Preta,Náutico PE,2-0,2-0
@@ -352,7 +352,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Tue,2021-01-19,Brasil de Pelotas RS,América-MG,0-0,
 36,Tue,2021-01-19,Avaí,Juventude-RS,5-2,4-2
 36,Tue,2021-01-19,CRB,Figueirense SC,5-1,3-0
-36,Tue,2021-01-19,Botafogo-SP,CSA AL,1-3,0-1
+36,Tue,2021-01-19,Botafogo-SP,CSA,1-3,0-1
 36,Tue,2021-01-19,Confiança SE,Sampaio Corrêa MA,0-1,0-0
 36,Tue,2021-01-19,Paraná Clube,Cuiabá,0-2,0-1
 36,Wed,2021-01-20,Guarani SP,Vitória,1-2,1-1
@@ -360,7 +360,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Wed,2021-01-20,Cruzeiro,Operário-PR,2-1,1-0
 36,Thu,2021-01-21,Chapecoense,Ponte Preta,1-0,0-0
 37,Fri,2021-01-22,Juventude-RS,Figueirense SC,2-1,0-0
-37,Fri,2021-01-22,CSA AL,Brasil de Pelotas RS,1-1,0-1
+37,Fri,2021-01-22,CSA,Brasil de Pelotas RS,1-1,0-1
 37,Fri,2021-01-22,Cuiabá,Sampaio Corrêa MA,1-3,0-2
 37,Sat,2021-01-23,Confiança SE,América-MG,0-0,
 37,Sat,2021-01-23,Avaí,Guarani SP,2-1,1-0
@@ -377,5 +377,5 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 38,Fri,2021-01-29,Guarani SP,Juventude-RS,0-1,0-1
 38,Fri,2021-01-29,Paraná Clube,Cruzeiro,0-0,
 38,Fri,2021-01-29,Brasil de Pelotas RS,Vitória,0-1,0-0
-38,Fri,2021-01-29,Náutico PE,CSA AL,1-1,1-0
+38,Fri,2021-01-29,Náutico PE,CSA,1-1,1-0
 38,Fri,2021-01-29,Chapecoense,Confiança SE,3-1,1-0

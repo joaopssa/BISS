@@ -7,7 +7,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2024-08-17,Valencia,Barcelona,1-2,1-1
 1,2024-08-18,Real Sociedad,Rayo Vallecano,1-2,0-0
 1,2024-08-18,Mallorca,Real Madrid,1-1,0-1
-1,2024-08-19,Real Valladolid CF,Espanyol,1-0,1-0
+1,2024-08-19,Valladolid,Espanyol,1-0,1-0
 1,2024-08-19,Villarreal CF,Atlético de Madrid,2-2,2-2
 2,2024-08-23,Celta de Vigo,Valencia,3-1,2-1
 2,2024-08-23,Sevilha FC,Villarreal CF,1-2,1-1
@@ -15,7 +15,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 2,2024-08-24,Barcelona,Athletic Bilbao,2-1,1-1
 2,2024-08-24,Getafe CF,Rayo Vallecano,0-0,
 2,2024-08-24,Espanyol,Real Sociedad,0-1,0-0
-2,2024-08-25,Real Madrid,Real Valladolid CF,3-0,0-0
+2,2024-08-25,Real Madrid,Valladolid,3-0,0-0
 2,2024-08-25,CD Leganés,UD Las Palmas,2-1,0-0
 2,2024-08-25,Deportivo Alavés,Bétis,0-0,
 2,2024-08-25,Atlético de Madrid,Girona FC,3-0,1-0
@@ -23,12 +23,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2024-08-27,Mallorca,Sevilha FC,0-0,
 3,2024-08-27,Rayo Vallecano,Barcelona,1-2,1-0
 3,2024-08-28,Athletic Bilbao,Valencia,1-0,1-0
-3,2024-08-28,Real Valladolid CF,CD Leganés,0-0,
+3,2024-08-28,Valladolid,CD Leganés,0-0,
 3,2024-08-28,Real Sociedad,Deportivo Alavés,1-2,1-1
 3,2024-08-28,Atlético de Madrid,Espanyol,0-0,
 3,2024-08-29,Girona FC,Osasuna,4-0,1-0
 3,2024-08-29,UD Las Palmas,Real Madrid,1-1,1-0
-4,2024-08-31,Barcelona,Real Valladolid CF,7-0,3-0
+4,2024-08-31,Barcelona,Valladolid,7-0,3-0
 4,2024-08-31,Athletic Bilbao,Atlético de Madrid,0-1,0-0
 4,2024-08-31,Espanyol,Rayo Vallecano,2-1,1-1
 4,2024-08-31,CD Leganés,Mallorca,0-1,0-1
@@ -43,7 +43,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 5,2024-09-14,Espanyol,Deportivo Alavés,3-2,1-1
 5,2024-09-14,Sevilha FC,Getafe CF,1-0,1-0
 5,2024-09-14,Real Sociedad,Real Madrid,0-2,0-0
-5,2024-09-15,Celta de Vigo,Real Valladolid CF,3-1,2-0
+5,2024-09-15,Celta de Vigo,Valladolid,3-1,2-0
 5,2024-09-15,Girona FC,Barcelona,1-4,0-2
 5,2024-09-15,UD Las Palmas,Athletic Bilbao,2-3,0-2
 5,2024-09-15,Atlético de Madrid,Valencia,3-0,1-0
@@ -52,7 +52,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2024-09-18,Bétis,Getafe CF,2-1,0-0
 7,2024-09-19,CD Leganés,Athletic Bilbao,0-2,0-0
 6,2024-09-20,Deportivo Alavés,Sevilha FC,2-1,1-0
-6,2024-09-21,Real Valladolid CF,Real Sociedad,0-0,
+6,2024-09-21,Valladolid,Real Sociedad,0-0,
 6,2024-09-21,Osasuna,UD Las Palmas,2-1,1-1
 6,2024-09-21,Valencia,Girona FC,2-0,0-0
 6,2024-09-21,Real Madrid,Espanyol,4-1,0-0
@@ -61,7 +61,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 6,2024-09-22,Villarreal CF,Barcelona,1-5,1-2
 6,2024-09-22,Rayo Vallecano,Atlético de Madrid,1-1,1-0
 6,2024-09-23,Bétis,Mallorca,1-2,1-1
-7,2024-09-24,Sevilha FC,Real Valladolid CF,2-1,1-0
+7,2024-09-24,Sevilha FC,Valladolid,2-1,1-0
 7,2024-09-24,Valencia,Osasuna,0-0,
 7,2024-09-24,Real Madrid,Deportivo Alavés,3-2,2-0
 7,2024-09-25,Girona FC,Rayo Vallecano,0-0,
@@ -69,7 +69,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2024-09-26,UD Las Palmas,Bétis,1-1,1-1
 7,2024-09-26,Espanyol,Villarreal CF,1-2,1-1
 7,2024-09-26,Celta de Vigo,Atlético de Madrid,0-1,0-0
-8,2024-09-27,Real Valladolid CF,Mallorca,1-2,0-0
+8,2024-09-27,Valladolid,Mallorca,1-2,0-0
 8,2024-09-28,Getafe CF,Deportivo Alavés,2-0,1-0
 8,2024-09-28,Rayo Vallecano,CD Leganés,1-1,1-0
 8,2024-09-28,Real Sociedad,Valencia,3-0,1-0
@@ -82,14 +82,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2024-10-04,CD Leganés,Valencia,0-0,
 9,2024-10-05,Espanyol,Mallorca,2-1,1-0
 9,2024-10-05,Getafe CF,Osasuna,1-1,1-0
-9,2024-10-05,Real Valladolid CF,Rayo Vallecano,1-2,0-0
+9,2024-10-05,Valladolid,Rayo Vallecano,1-2,0-0
 9,2024-10-05,UD Las Palmas,Celta de Vigo,0-1,0-1
 9,2024-10-05,Real Madrid,Villarreal CF,2-0,1-0
 9,2024-10-06,Girona FC,Athletic Bilbao,2-1,1-1
 9,2024-10-06,Deportivo Alavés,Barcelona,0-3,0-3
 9,2024-10-06,Sevilha FC,Bétis,1-0,0-0
 9,2024-10-06,Real Sociedad,Atlético de Madrid,1-1,0-1
-10,2024-10-18,Deportivo Alavés,Real Valladolid CF,2-3,1-1
+10,2024-10-18,Deportivo Alavés,Valladolid,2-3,1-1
 10,2024-10-19,Athletic Bilbao,Espanyol,4-1,3-0
 10,2024-10-19,Osasuna,Bétis,1-2,0-1
 10,2024-10-19,Girona FC,Real Sociedad,0-1,0-1
@@ -100,7 +100,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 10,2024-10-20,Barcelona,Sevilha FC,5-1,3-0
 10,2024-10-21,Valencia,UD Las Palmas,2-3,1-1
 11,2024-10-25,Espanyol,Sevilha FC,0-2,0-2
-11,2024-10-26,Real Valladolid CF,Villarreal CF,1-2,0-1
+11,2024-10-26,Valladolid,Villarreal CF,1-2,0-1
 11,2024-10-26,Rayo Vallecano,Deportivo Alavés,1-0,0-0
 11,2024-10-26,UD Las Palmas,Girona FC,1-0,1-0
 11,2024-10-26,Real Madrid,Barcelona,0-4,0-0
@@ -110,7 +110,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,2024-10-27,Real Sociedad,Osasuna,0-2,0-2
 11,2024-10-28,Mallorca,Athletic Bilbao,0-0,
 12,2024-11-01,Deportivo Alavés,Mallorca,1-0,0-0
-12,2024-11-02,Osasuna,Real Valladolid CF,1-0,1-0
+12,2024-11-02,Osasuna,Valladolid,1-0,1-0
 12,2024-11-02,Girona FC,CD Leganés,4-3,2-2
 12,2024-11-03,Atlético de Madrid,UD Las Palmas,2-0,1-0
 12,2024-11-03,Barcelona,Espanyol,3-1,3-0
@@ -124,9 +124,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2024-11-10,Bétis,Celta de Vigo,2-2,1-1
 13,2024-11-10,Mallorca,Atlético de Madrid,0-1,0-0
 13,2024-11-10,Getafe CF,Girona FC,0-1,0-1
-13,2024-11-10,Real Valladolid CF,Athletic Bilbao,1-1,0-0
+13,2024-11-10,Valladolid,Athletic Bilbao,1-1,0-0
 13,2024-11-10,Real Sociedad,Barcelona,1-0,1-0
-14,2024-11-22,Getafe CF,Real Valladolid CF,2-0,0-0
+14,2024-11-22,Getafe CF,Valladolid,2-0,0-0
 14,2024-11-23,Valencia,Bétis,4-2,1-1
 14,2024-11-23,Atlético de Madrid,Deportivo Alavés,2-1,0-1
 14,2024-11-23,UD Las Palmas,Mallorca,2-3,0-0
@@ -140,7 +140,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2024-11-30,Barcelona,UD Las Palmas,1-2,0-0
 15,2024-11-30,Deportivo Alavés,CD Leganés,1-1,0-0
 15,2024-11-30,Espanyol,Celta de Vigo,3-1,1-0
-15,2024-11-30,Real Valladolid CF,Atlético de Madrid,0-5,0-3
+15,2024-11-30,Valladolid,Atlético de Madrid,0-5,0-3
 15,2024-12-01,Villarreal CF,Girona FC,2-2,1-0
 15,2024-12-01,Real Madrid,Getafe CF,2-0,2-0
 15,2024-12-01,Rayo Vallecano,Athletic Bilbao,1-2,1-0
@@ -149,7 +149,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2024-12-03,Mallorca,Barcelona,1-5,1-1
 19,2024-12-04,Athletic Bilbao,Real Madrid,2-1,0-0
 16,2024-12-06,Celta de Vigo,Mallorca,2-0,1-0
-16,2024-12-07,UD Las Palmas,Real Valladolid CF,2-1,1-1
+16,2024-12-07,UD Las Palmas,Valladolid,2-1,1-1
 16,2024-12-07,Bétis,Barcelona,2-2,0-1
 16,2024-12-07,Valencia,Rayo Vallecano,0-1,0-1
 16,2024-12-07,Girona FC,Real Madrid,0-3,0-1
@@ -158,7 +158,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2024-12-08,Osasuna,Deportivo Alavés,2-2,0-1
 16,2024-12-08,Atlético de Madrid,Sevilha FC,4-3,1-2
 16,2024-12-09,Getafe CF,Espanyol,1-0,1-0
-17,2024-12-13,Real Valladolid CF,Valencia,1-0,1-0
+17,2024-12-13,Valladolid,Valencia,1-0,1-0
 17,2024-12-14,Espanyol,Osasuna,0-0,
 17,2024-12-14,Mallorca,Girona FC,2-1,1-1
 17,2024-12-14,Sevilha FC,Celta de Vigo,1-0,0-0
@@ -170,7 +170,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 17,2024-12-15,Barcelona,CD Leganés,0-1,0-1
 12,2024-12-18,Villarreal CF,Rayo Vallecano,1-1,1-1
 13,2024-12-18,Espanyol,Valencia,1-1,1-0
-18,2024-12-20,Girona FC,Real Valladolid CF,3-0,2-0
+18,2024-12-20,Girona FC,Valladolid,3-0,2-0
 18,2024-12-21,Getafe CF,Mallorca,0-1,0-0
 18,2024-12-21,Celta de Vigo,Real Sociedad,2-0,2-0
 18,2024-12-21,Osasuna,Athletic Bilbao,1-2,1-1
@@ -183,13 +183,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2025-01-03,Valencia,Real Madrid,1-2,1-0
 19,2025-01-10,Rayo Vallecano,Celta de Vigo,2-1,1-1
 19,2025-01-11,Deportivo Alavés,Girona FC,0-1,0-0
-19,2025-01-11,Real Valladolid CF,Bétis,1-0,0-0
+19,2025-01-11,Valladolid,Bétis,1-0,0-0
 19,2025-01-11,Espanyol,CD Leganés,1-1,1-1
 19,2025-01-11,Sevilha FC,Valencia,1-1,0-0
 19,2025-01-12,UD Las Palmas,Getafe CF,1-2,0-0
 19,2025-01-12,Atlético de Madrid,Osasuna,1-0,0-0
 19,2025-01-13,Real Sociedad,Villarreal CF,1-0,0-0
-20,2025-01-17,Espanyol,Real Valladolid CF,2-1,1-0
+20,2025-01-17,Espanyol,Valladolid,2-1,1-0
 20,2025-01-18,Girona FC,Sevilha FC,1-2,1-0
 20,2025-01-18,CD Leganés,Atlético de Madrid,1-0,0-0
 20,2025-01-18,Bétis,Deportivo Alavés,1-3,1-1
@@ -203,7 +203,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2025-01-25,Mallorca,Bétis,0-1,0-0
 21,2025-01-25,Atlético de Madrid,Villarreal CF,1-1,0-1
 21,2025-01-25,Sevilha FC,Espanyol,1-1,0-1
-21,2025-01-25,Real Valladolid CF,Real Madrid,0-3,0-1
+21,2025-01-25,Valladolid,Real Madrid,0-3,0-1
 21,2025-01-26,Rayo Vallecano,Girona FC,2-1,0-0
 21,2025-01-26,Real Sociedad,Getafe CF,0-3,0-0
 21,2025-01-26,Athletic Bilbao,CD Leganés,0-0,
@@ -211,7 +211,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2025-01-27,Deportivo Alavés,Celta de Vigo,1-1,1-0
 22,2025-01-31,CD Leganés,Rayo Vallecano,0-1,0-0
 22,2025-02-01,Getafe CF,Sevilha FC,0-0,
-22,2025-02-01,Villarreal CF,Real Valladolid CF,5-1,1-0
+22,2025-02-01,Villarreal CF,Valladolid,5-1,1-0
 22,2025-02-01,Atlético de Madrid,Mallorca,2-0,1-0
 22,2025-02-01,Espanyol,Real Madrid,1-0,0-0
 22,2025-02-02,Barcelona,Deportivo Alavés,1-0,0-0
@@ -219,7 +219,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2025-02-02,Osasuna,Real Sociedad,2-1,1-0
 22,2025-02-02,Bétis,Athletic Bilbao,2-2,2-1
 22,2025-02-03,Girona FC,UD Las Palmas,2-1,1-0
-23,2025-02-07,Rayo Vallecano,Real Valladolid CF,1-0,0-0
+23,2025-02-07,Rayo Vallecano,Valladolid,1-0,0-0
 23,2025-02-08,Celta de Vigo,Bétis,3-2,0-2
 23,2025-02-08,Athletic Bilbao,Girona FC,3-0,2-0
 23,2025-02-08,UD Las Palmas,Villarreal CF,1-2,0-0
@@ -235,7 +235,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 24,2025-02-15,Atlético de Madrid,Celta de Vigo,1-1,0-0
 24,2025-02-15,Villarreal CF,Valencia,1-1,1-0
 24,2025-02-16,Espanyol,Athletic Bilbao,1-1,0-0
-24,2025-02-16,Real Valladolid CF,Sevilha FC,0-4,0-2
+24,2025-02-16,Valladolid,Sevilha FC,0-4,0-2
 24,2025-02-16,Mallorca,UD Las Palmas,3-1,3-0
 24,2025-02-16,Bétis,Real Sociedad,3-0,0-0
 24,2025-02-17,Barcelona,Rayo Vallecano,1-0,1-0
@@ -244,12 +244,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2025-02-22,Rayo Vallecano,Villarreal CF,0-1,0-0
 25,2025-02-22,Valencia,Atlético de Madrid,0-3,0-2
 25,2025-02-22,UD Las Palmas,Barcelona,0-2,0-0
-25,2025-02-23,Athletic Bilbao,Real Valladolid CF,7-1,4-0
+25,2025-02-23,Athletic Bilbao,Valladolid,7-1,4-0
 25,2025-02-23,Real Madrid,Girona FC,2-0,1-0
 25,2025-02-23,Getafe CF,Bétis,1-2,0-1
 25,2025-02-23,Real Sociedad,CD Leganés,3-0,1-0
 25,2025-02-24,Sevilha FC,Mallorca,1-1,1-0
-26,2025-02-28,Real Valladolid CF,UD Las Palmas,1-1,0-1
+26,2025-02-28,Valladolid,UD Las Palmas,1-1,0-1
 26,2025-03-01,Girona FC,Celta de Vigo,2-2,1-1
 26,2025-03-01,Rayo Vallecano,Sevilha FC,1-1,0-0
 26,2025-03-01,Bétis,Real Madrid,2-1,1-1
@@ -260,7 +260,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 26,2025-03-02,Osasuna,Valencia,3-3,3-2
 27,2025-03-08,Celta de Vigo,CD Leganés,2-1,2-1
 27,2025-03-08,Deportivo Alavés,Villarreal CF,1-0,1-0
-27,2025-03-08,Valencia,Real Valladolid CF,2-1,1-1
+27,2025-03-08,Valencia,Valladolid,2-1,1-1
 27,2025-03-09,Getafe CF,Atlético de Madrid,2-1,0-0
 27,2025-03-09,Real Madrid,Rayo Vallecano,2-1,2-1
 27,2025-03-09,Athletic Bilbao,Mallorca,1-1,0-0
@@ -268,7 +268,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2025-03-09,Real Sociedad,Sevilha FC,0-1,0-0
 27,2025-03-10,Espanyol,Girona FC,1-1,0-0
 28,2025-03-14,UD Las Palmas,Deportivo Alavés,2-2,0-1
-28,2025-03-15,Real Valladolid CF,Celta de Vigo,0-1,0-0
+28,2025-03-15,Valladolid,Celta de Vigo,0-1,0-0
 28,2025-03-15,Mallorca,Espanyol,2-1,0-0
 28,2025-03-15,Villarreal CF,Real Madrid,1-2,1-2
 28,2025-03-15,Girona FC,Valencia,1-1,0-0
@@ -278,7 +278,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2025-03-16,Rayo Vallecano,Real Sociedad,2-2,0-1
 28,2025-03-16,Atlético de Madrid,Barcelona,2-4,1-0
 27,2025-03-27,Barcelona,Osasuna,3-0,2-0
-29,2025-03-29,Real Sociedad,Real Valladolid CF,2-1,1-0
+29,2025-03-29,Real Sociedad,Valladolid,2-1,1-0
 29,2025-03-29,Espanyol,Atlético de Madrid,1-1,0-1
 29,2025-03-29,Deportivo Alavés,Rayo Vallecano,0-2,0-1
 29,2025-03-29,Real Madrid,CD Leganés,3-2,1-2
@@ -295,7 +295,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2025-04-05,Barcelona,Bétis,1-1,1-1
 30,2025-04-06,UD Las Palmas,Real Sociedad,1-3,0-1
 30,2025-04-06,Sevilha FC,Atlético de Madrid,1-2,1-1
-30,2025-04-06,Real Valladolid CF,Getafe CF,0-4,0-3
+30,2025-04-06,Valladolid,Getafe CF,0-4,0-3
 30,2025-04-06,Villarreal CF,Athletic Bilbao,0-0,
 30,2025-04-07,CD Leganés,Osasuna,1-1,0-0
 31,2025-04-11,Valencia,Sevilha FC,1-0,1-0
@@ -307,13 +307,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2025-04-13,Deportivo Alavés,Real Madrid,0-1,0-1
 31,2025-04-13,Bétis,Villarreal CF,1-2,1-1
 31,2025-04-13,Athletic Bilbao,Rayo Vallecano,3-1,0-1
-31,2025-04-14,Atlético de Madrid,Real Valladolid CF,4-2,2-1
+31,2025-04-14,Atlético de Madrid,Valladolid,4-2,2-1
 32,2025-04-18,Espanyol,Getafe CF,1-0,1-0
 32,2025-04-19,Rayo Vallecano,Valencia,1-1,1-0
 32,2025-04-19,Barcelona,Celta de Vigo,4-3,1-1
 32,2025-04-19,Mallorca,CD Leganés,0-0,
 32,2025-04-19,UD Las Palmas,Atlético de Madrid,1-0,0-0
-32,2025-04-20,Real Valladolid CF,Osasuna,2-3,0-2
+32,2025-04-20,Valladolid,Osasuna,2-3,0-2
 32,2025-04-20,Villarreal CF,Real Sociedad,2-2,1-1
 32,2025-04-20,Sevilha FC,Deportivo Alavés,1-1,1-1
 32,2025-04-20,Real Madrid,Athletic Bilbao,1-0,0-0
@@ -327,13 +327,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2025-04-24,Osasuna,Sevilha FC,1-0,1-0
 33,2025-04-24,CD Leganés,Girona FC,1-1,0-0
 33,2025-04-24,Atlético de Madrid,Rayo Vallecano,3-0,2-0
-33,2025-04-24,Bétis,Real Valladolid CF,5-1,1-1
+33,2025-04-24,Bétis,Valladolid,5-1,1-1
 26,2025-04-27,Villarreal CF,Espanyol,1-0,0-0
 34,2025-05-02,Rayo Vallecano,Getafe CF,1-0,1-0
 34,2025-05-03,Deportivo Alavés,Atlético de Madrid,0-0,
 34,2025-05-03,Villarreal CF,Osasuna,4-2,3-0
 34,2025-05-03,UD Las Palmas,Valencia,2-3,1-1
-34,2025-05-03,Real Valladolid CF,Barcelona,1-2,1-0
+34,2025-05-03,Valladolid,Barcelona,1-2,1-0
 34,2025-05-04,Real Madrid,Celta de Vigo,3-2,2-0
 34,2025-05-04,Sevilha FC,CD Leganés,2-2,1-1
 34,2025-05-04,Espanyol,Bétis,1-2,1-0
@@ -343,13 +343,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 35,2025-05-10,Valencia,Getafe CF,3-0,3-0
 35,2025-05-10,Celta de Vigo,Sevilha FC,3-2,1-1
 35,2025-05-10,Girona FC,Villarreal CF,0-1,0-0
-35,2025-05-10,Mallorca,Real Valladolid CF,2-1,1-1
+35,2025-05-10,Mallorca,Valladolid,2-1,1-1
 35,2025-05-10,Atlético de Madrid,Real Sociedad,4-0,4-0
 35,2025-05-11,CD Leganés,Espanyol,3-2,2-0
 35,2025-05-11,Barcelona,Real Madrid,4-3,4-2
 35,2025-05-11,Athletic Bilbao,Deportivo Alavés,1-0,0-0
 35,2025-05-11,Bétis,Osasuna,1-1,0-0
-36,2025-05-13,Real Valladolid CF,Girona FC,0-1,0-0
+36,2025-05-13,Valladolid,Girona FC,0-1,0-0
 36,2025-05-13,Real Sociedad,Celta de Vigo,0-1,0-1
 36,2025-05-13,Sevilha FC,UD Las Palmas,1-0,0-0
 36,2025-05-14,Deportivo Alavés,Valencia,1-0,0-0
@@ -366,12 +366,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 37,2025-05-18,Valencia,Athletic Bilbao,0-1,0-0
 37,2025-05-18,Mallorca,Getafe CF,1-2,0-0
 37,2025-05-18,Real Sociedad,Girona FC,3-2,2-1
-37,2025-05-18,Real Valladolid CF,Deportivo Alavés,0-1,0-1
+37,2025-05-18,Valladolid,Deportivo Alavés,0-1,0-1
 37,2025-05-18,UD Las Palmas,CD Leganés,0-1,0-1
 37,2025-05-18,Osasuna,Espanyol,2-0,1-0
 38,2025-05-23,Bétis,Valencia,1-1,1-0
 38,2025-05-24,Real Madrid,Real Sociedad,2-0,1-0
-38,2025-05-24,CD Leganés,Real Valladolid CF,3-0,3-0
+38,2025-05-24,CD Leganés,Valladolid,3-0,3-0
 38,2025-05-24,Espanyol,UD Las Palmas,2-0,0-0
 38,2025-05-24,Deportivo Alavés,Osasuna,1-1,0-0
 38,2025-05-24,Getafe CF,Celta de Vigo,1-2,1-1

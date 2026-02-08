@@ -5,14 +5,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Fri,2018-04-13,Figueirense SC,Juventude-RS,2-1,2-0
 1,Sat,2018-04-14,Brasil de Pelotas RS,São Bento SP,1-1,1-1
 1,Sat,2018-04-14,Vila Nova,Avaí,1-0,0-0
-1,Sat,2018-04-14,CSA AL,Goiás,2-1,0-0
+1,Sat,2018-04-14,CSA,Goiás,2-1,0-0
 1,Sat,2018-04-14,Londrina PR,Boa Esporte MG,1-0,0-0
 1,Sat,2018-04-14,Sampaio Corrêa MA,Coritiba,2-0,1-0
 1,Sat,2018-04-14,Ponte Preta,Paysandu,0-1,0-1
 2,Tue,2018-04-17,Boa Esporte MG,Fortaleza,0-2,0-0
 2,Tue,2018-04-17,Coritiba,Atlético-GO,1-0,0-0
 2,Fri,2018-04-20,Juventude-RS,Oeste SP,1-1,1-0
-2,Fri,2018-04-20,São Bento SP,CSA AL,2-1,0-1
+2,Fri,2018-04-20,São Bento SP,CSA,2-1,0-1
 2,Fri,2018-04-20,Paysandu,Londrina PR,1-0,1-0
 2,Sat,2018-04-21,Guarani SP,Sampaio Corrêa MA,2-0,1-0
 2,Sat,2018-04-21,Avaí,Brasil de Pelotas RS,2-2,1-1
@@ -22,14 +22,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 3,Tue,2018-04-24,Atlético-GO,Guarani SP,3-2,2-0
 3,Tue,2018-04-24,Fortaleza,CRB,3-1,1-0
 3,Fri,2018-04-27,Figueirense SC,Boa Esporte MG,2-0,1-0
-3,Fri,2018-04-27,CSA AL,Oeste SP,5-1,3-1
+3,Fri,2018-04-27,CSA,Oeste SP,5-1,3-1
 3,Fri,2018-04-27,Coritiba,Criciúma,2-1,1-1
 3,Sat,2018-04-28,Juventude-RS,Avaí,1-3,1-1
 3,Sat,2018-04-28,Vila Nova,Sampaio Corrêa MA,3-1,1-1
 3,Sat,2018-04-28,Paysandu,Brasil de Pelotas RS,2-1,2-1
 3,Sat,2018-04-28,Ponte Preta,Londrina PR,0-1,0-0
 3,Sat,2018-04-28,São Bento SP,Goiás,1-1,0-1
-4,Tue,2018-05-01,Criciúma,CSA AL,1-3,0-1
+4,Tue,2018-05-01,Criciúma,CSA,1-3,0-1
 4,Tue,2018-05-01,Boa Esporte MG,Juventude-RS,1-2,0-0
 4,Tue,2018-05-01,Brasil de Pelotas RS,Figueirense SC,1-0,1-0
 4,Tue,2018-05-01,Londrina PR,Fortaleza,1-1,1-1
@@ -46,7 +46,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 5,Fri,2018-05-11,Atlético-GO,Londrina PR,0-0,
 5,Sat,2018-05-12,São Bento SP,Oeste SP,1-0,0-0
 5,Sat,2018-05-12,Figueirense SC,Avaí,0-1,0-0
-5,Sat,2018-05-12,CSA AL,Boa Esporte MG,1-0,0-0
+5,Sat,2018-05-12,CSA,Boa Esporte MG,1-0,0-0
 5,Sat,2018-05-12,Fortaleza,Goiás,3-0,0-0
 5,Sun,2018-05-13,Vila Nova,Ponte Preta,0-0,
 6,Tue,2018-05-15,CRB,Avaí,0-4,0-3
@@ -55,11 +55,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 6,Fri,2018-05-18,Figueirense SC,Fortaleza,1-3,1-2
 6,Sat,2018-05-19,Ponte Preta,Atlético-GO,1-3,1-0
 6,Sat,2018-05-19,Oeste SP,Vila Nova,2-0,1-0
-6,Sat,2018-05-19,Londrina PR,CSA AL,1-2,1-1
+6,Sat,2018-05-19,Londrina PR,CSA,1-2,1-1
 6,Sat,2018-05-19,Paysandu,São Bento SP,1-1,0-1
 6,Sat,2018-05-19,Boa Esporte MG,Coritiba,1-1,1-1
 6,Sat,2018-05-19,Brasil de Pelotas RS,Sampaio Corrêa MA,1-2,0-2
-7,Tue,2018-05-22,CSA AL,Figueirense SC,1-4,1-1
+7,Tue,2018-05-22,CSA,Figueirense SC,1-4,1-1
 7,Tue,2018-05-22,Fortaleza,Criciúma,2-0,1-0
 7,Fri,2018-05-25,Avaí,Paysandu,3-1,1-0
 7,Fri,2018-05-25,Atlético-GO,Oeste SP,2-2,2-1
@@ -72,7 +72,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 8,Tue,2018-05-29,São Bento SP,Figueirense SC,1-1,0-0
 8,Tue,2018-05-29,Londrina PR,Coritiba,3-2,1-1
 8,Fri,2018-06-01,Juventude-RS,Guarani SP,1-0,1-0
-8,Fri,2018-06-01,Vila Nova,CSA AL,0-1,0-0
+8,Fri,2018-06-01,Vila Nova,CSA,0-1,0-0
 8,Fri,2018-06-01,Avaí,Criciúma,0-1,0-0
 8,Fri,2018-06-01,Paysandu,Boa Esporte MG,2-0,2-0
 8,Sat,2018-06-02,Fortaleza,Sampaio Corrêa MA,1-0,0-0
@@ -84,7 +84,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 9,Tue,2018-06-05,Criciúma,Paysandu,4-1,2-0
 9,Tue,2018-06-05,Coritiba,CRB,1-0,1-0
 9,Tue,2018-06-05,Boa Esporte MG,São Bento SP,2-2,1-1
-9,Tue,2018-06-05,CSA AL,Guarani SP,1-2,1-0
+9,Tue,2018-06-05,CSA,Guarani SP,1-2,1-0
 9,Tue,2018-06-05,Sampaio Corrêa MA,Avaí,1-1,0-0
 9,Tue,2018-06-05,Ponte Preta,Goiás,2-1,1-1
 9,Tue,2018-06-05,Oeste SP,Brasil de Pelotas RS,0-0,
@@ -95,7 +95,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Sat,2018-06-09,Guarani SP,Vila Nova,1-1,0-0
 10,Sat,2018-06-09,São Bento SP,Fortaleza,2-1,0-0
 10,Sat,2018-06-09,Criciúma,Boa Esporte MG,1-1,1-1
-10,Sat,2018-06-09,CSA AL,CRB,0-0,
+10,Sat,2018-06-09,CSA,CRB,0-0,
 10,Sat,2018-06-09,Sampaio Corrêa MA,Oeste SP,2-0,2-0
 10,Sat,2018-06-09,Atlético-GO,Figueirense SC,3-4,2-3
 10,Sat,2018-06-09,Brasil de Pelotas RS,Ponte Preta,0-2,0-1
@@ -108,8 +108,8 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Fri,2018-06-15,CRB,Ponte Preta,2-0,1-0
 11,Sat,2018-06-16,Vila Nova,Atlético-GO,0-0,
 11,Sat,2018-06-16,Oeste SP,Criciúma,2-2,1-1
-11,Sat,2018-06-16,Paysandu,CSA AL,0-0,
-12,Tue,2018-06-19,Ponte Preta,CSA AL,1-1,1-0
+11,Sat,2018-06-16,Paysandu,CSA,0-0,
+12,Tue,2018-06-19,Ponte Preta,CSA,1-1,1-0
 12,Tue,2018-06-19,Avaí,Guarani SP,3-3,2-0
 12,Thu,2018-06-21,Brasil de Pelotas RS,Criciúma,1-0,1-0
 12,Thu,2018-06-21,Goiás,Juventude-RS,1-1,1-1
@@ -122,7 +122,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 13,Tue,2018-06-26,Juventude-RS,Vila Nova,0-1,0-1
 13,Tue,2018-06-26,Oeste SP,Avaí,1-0,1-0
 13,Tue,2018-06-26,Goiás,CRB,2-1,0-0
-13,Fri,2018-06-29,CSA AL,Coritiba,2-2,0-0
+13,Fri,2018-06-29,CSA,Coritiba,2-2,0-0
 13,Fri,2018-06-29,Atlético-GO,Brasil de Pelotas RS,2-1,1-1
 13,Fri,2018-06-29,Guarani SP,Boa Esporte MG,1-1,0-0
 13,Sat,2018-06-30,Figueirense SC,Ponte Preta,0-2,0-1
@@ -134,7 +134,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 14,Wed,2018-07-04,Atlético-GO,Boa Esporte MG,2-0,0-0
 14,Wed,2018-07-04,CRB,São Bento SP,1-0,0-0
 14,Thu,2018-07-05,Oeste SP,Guarani SP,0-1,0-1
-14,Thu,2018-07-05,Brasil de Pelotas RS,CSA AL,0-2,0-2
+14,Thu,2018-07-05,Brasil de Pelotas RS,CSA,0-2,0-2
 14,Thu,2018-07-05,Vila Nova,Londrina PR,1-1,1-0
 14,Thu,2018-07-05,Criciúma,Figueirense SC,1-1,1-0
 14,Sun,2018-07-08,Ponte Preta,Fortaleza,2-0,2-0
@@ -146,7 +146,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Fri,2018-07-13,Brasil de Pelotas RS,Juventude-RS,1-1,1-1
 15,Fri,2018-07-13,Goiás,Criciúma,2-1,1-1
 15,Fri,2018-07-13,Boa Esporte MG,CRB,0-1,0-0
-15,Fri,2018-07-13,CSA AL,Sampaio Corrêa MA,1-0,1-0
+15,Fri,2018-07-13,CSA,Sampaio Corrêa MA,1-0,1-0
 15,Sat,2018-07-14,Fortaleza,Atlético-GO,0-1,0-1
 15,Sat,2018-07-14,São Bento SP,Ponte Preta,0-2,0-1
 16,Tue,2018-07-17,Avaí,Atlético-GO,0-0,
@@ -154,12 +154,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 16,Tue,2018-07-17,Guarani SP,Figueirense SC,2-3,2-2
 16,Fri,2018-07-20,Criciúma,Londrina PR,2-1,1-1
 16,Fri,2018-07-20,Sampaio Corrêa MA,Goiás,1-3,1-0
-16,Fri,2018-07-20,CSA AL,Fortaleza,0-0,
+16,Fri,2018-07-20,CSA,Fortaleza,0-0,
 16,Sat,2018-07-21,Juventude-RS,CRB,1-0,0-0
 16,Sat,2018-07-21,Coritiba,São Bento SP,2-2,2-1
 16,Sat,2018-07-21,Oeste SP,Paysandu,2-2,1-2
 16,Sat,2018-07-21,Boa Esporte MG,Ponte Preta,2-1,2-0
-17,Mon,2018-07-23,Atlético-GO,CSA AL,2-2,1-2
+17,Mon,2018-07-23,Atlético-GO,CSA,2-2,1-2
 17,Tue,2018-07-24,Brasil de Pelotas RS,Boa Esporte MG,2-0,0-0
 17,Tue,2018-07-24,Figueirense SC,Vila Nova,2-1,2-0
 17,Tue,2018-07-24,Goiás,Coritiba,0-1,0-0
@@ -169,7 +169,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Tue,2018-07-24,Paysandu,Guarani SP,1-0,0-0
 17,Tue,2018-07-24,São Bento SP,Sampaio Corrêa MA,2-1,2-0
 17,Tue,2018-07-24,Fortaleza,Avaí,1-1,1-0
-18,Fri,2018-07-27,Avaí,CSA AL,0-0,
+18,Fri,2018-07-27,Avaí,CSA,0-0,
 18,Fri,2018-07-27,Paysandu,Figueirense SC,2-0,0-0
 18,Sat,2018-07-28,Guarani SP,Brasil de Pelotas RS,2-1,1-0
 18,Sat,2018-07-28,São Bento SP,Atlético-GO,2-1,1-0
@@ -183,7 +183,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Tue,2018-07-31,Atlético-GO,Paysandu,1-0,0-0
 19,Fri,2018-08-03,Londrina PR,Guarani SP,1-2,0-1
 19,Fri,2018-08-03,Oeste SP,Boa Esporte MG,1-1,1-0
-19,Fri,2018-08-03,CSA AL,Juventude-RS,1-0,0-0
+19,Fri,2018-08-03,CSA,Juventude-RS,1-0,0-0
 19,Sat,2018-08-04,Brasil de Pelotas RS,Goiás,1-0,0-0
 19,Sat,2018-08-04,Fortaleza,Coritiba,2-1,0-0
 19,Sat,2018-08-04,Vila Nova,São Bento SP,1-0,0-0
@@ -191,7 +191,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sat,2018-08-04,Sampaio Corrêa MA,Criciúma,0-1,0-0
 20,Tue,2018-08-07,Avaí,Vila Nova,1-0,0-0
 20,Tue,2018-08-07,Paysandu,Ponte Preta,0-4,0-2
-20,Fri,2018-08-10,Goiás,CSA AL,3-0,1-0
+20,Fri,2018-08-10,Goiás,CSA,3-0,1-0
 20,Fri,2018-08-10,Boa Esporte MG,Londrina PR,1-0,0-0
 20,Fri,2018-08-10,Coritiba,Sampaio Corrêa MA,0-0,
 20,Sat,2018-08-11,Guarani SP,Fortaleza,2-3,2-0
@@ -208,7 +208,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 21,Sat,2018-08-18,Fortaleza,Boa Esporte MG,2-1,0-0
 21,Sat,2018-08-18,Atlético-GO,Coritiba,1-0,1-0
 21,Sat,2018-08-18,Sampaio Corrêa MA,Guarani SP,0-2,0-1
-21,Sat,2018-08-18,CSA AL,São Bento SP,1-0,0-0
+21,Sat,2018-08-18,CSA,São Bento SP,1-0,0-0
 22,Tue,2018-08-21,Brasil de Pelotas RS,Paysandu,0-0,
 22,Tue,2018-08-21,Avaí,Juventude-RS,1-0,0-0
 22,Tue,2018-08-21,Criciúma,Coritiba,2-2,2-1
@@ -217,7 +217,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Tue,2018-08-21,Boa Esporte MG,Figueirense SC,0-2,0-2
 22,Tue,2018-08-21,CRB,Fortaleza,2-1,0-0
 22,Tue,2018-08-21,Guarani SP,Atlético-GO,2-0,1-0
-22,Tue,2018-08-21,Oeste SP,CSA AL,2-1,1-1
+22,Tue,2018-08-21,Oeste SP,CSA,2-1,1-1
 22,Tue,2018-08-21,Sampaio Corrêa MA,Vila Nova,0-0,
 23,Fri,2018-08-24,Figueirense SC,Brasil de Pelotas RS,1-1,1-1
 23,Fri,2018-08-24,Coritiba,Oeste SP,0-2,0-2
@@ -225,7 +225,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 23,Sat,2018-08-25,Ponte Preta,Guarani SP,0-0,
 23,Sat,2018-08-25,São Bento SP,Avaí,0-1,0-1
 23,Sat,2018-08-25,Vila Nova,Goiás,3-0,1-0
-23,Sat,2018-08-25,CSA AL,Criciúma,3-0,1-0
+23,Sat,2018-08-25,CSA,Criciúma,3-0,1-0
 23,Sat,2018-08-25,Paysandu,Sampaio Corrêa MA,0-1,0-0
 23,Sat,2018-08-25,Fortaleza,Londrina PR,2-1,0-1
 23,Sat,2018-08-25,Juventude-RS,Boa Esporte MG,0-0,
@@ -238,7 +238,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 24,Fri,2018-08-31,CRB,Sampaio Corrêa MA,2-1,1-0
 24,Sat,2018-09-01,Avaí,Figueirense SC,0-1,0-1
 24,Sat,2018-09-01,Goiás,Fortaleza,3-1,2-0
-24,Sat,2018-09-01,Boa Esporte MG,CSA AL,3-0,0-0
+24,Sat,2018-09-01,Boa Esporte MG,CSA,3-0,0-0
 25,Mon,2018-09-03,Vila Nova,Oeste SP,1-1,0-0
 25,Tue,2018-09-04,Guarani SP,Goiás,0-2,0-1
 25,Tue,2018-09-04,Avaí,CRB,1-0,1-0
@@ -246,7 +246,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 25,Tue,2018-09-04,Coritiba,Boa Esporte MG,2-1,1-1
 25,Tue,2018-09-04,São Bento SP,Paysandu,1-0,0-0
 25,Tue,2018-09-04,Juventude-RS,Criciúma,0-1,0-0
-25,Tue,2018-09-04,CSA AL,Londrina PR,4-1,2-1
+25,Tue,2018-09-04,CSA,Londrina PR,4-1,2-1
 25,Tue,2018-09-04,Fortaleza,Figueirense SC,2-2,1-1
 25,Tue,2018-09-04,Sampaio Corrêa MA,Brasil de Pelotas RS,1-2,0-1
 26,Fri,2018-09-07,Oeste SP,Atlético-GO,1-2,1-1
@@ -254,12 +254,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 26,Fri,2018-09-07,CRB,Guarani SP,1-1,0-0
 26,Fri,2018-09-07,Paysandu,Avaí,2-1,1-0
 26,Sat,2018-09-08,Juventude-RS,São Bento SP,0-2,0-1
-26,Sat,2018-09-08,Figueirense SC,CSA AL,1-2,1-1
+26,Sat,2018-09-08,Figueirense SC,CSA,1-2,1-1
 26,Sat,2018-09-08,Criciúma,Fortaleza,2-0,1-0
 26,Sat,2018-09-08,Londrina PR,Brasil de Pelotas RS,1-0,1-0
 26,Sat,2018-09-08,Ponte Preta,Sampaio Corrêa MA,0-0,
 26,Sat,2018-09-08,Vila Nova,Coritiba,2-1,2-1
-27,Tue,2018-09-11,CSA AL,Vila Nova,1-2,1-0
+27,Tue,2018-09-11,CSA,Vila Nova,1-2,1-0
 27,Thu,2018-09-13,Guarani SP,Juventude-RS,1-0,0-0
 27,Fri,2018-09-14,Coritiba,Londrina PR,0-1,0-1
 27,Fri,2018-09-14,Figueirense SC,São Bento SP,2-2,1-1
@@ -277,7 +277,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 28,Fri,2018-09-21,Fortaleza,Vila Nova,2-0,0-0
 28,Sat,2018-09-22,Brasil de Pelotas RS,Oeste SP,1-3,0-2
 28,Sat,2018-09-22,Paysandu,Criciúma,1-1,1-1
-28,Sat,2018-09-22,Guarani SP,CSA AL,1-0,1-0
+28,Sat,2018-09-22,Guarani SP,CSA,1-0,1-0
 28,Sat,2018-09-22,Avaí,Sampaio Corrêa MA,3-1,0-1
 29,Tue,2018-09-25,Fortaleza,São Bento SP,2-1,2-0
 29,Tue,2018-09-25,Ponte Preta,Brasil de Pelotas RS,0-1,0-1
@@ -286,13 +286,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 29,Fri,2018-09-28,Vila Nova,Guarani SP,1-1,0-1
 29,Sat,2018-09-29,Oeste SP,Sampaio Corrêa MA,0-0,
 29,Sat,2018-09-29,Figueirense SC,Atlético-GO,2-2,1-1
-29,Sat,2018-09-29,CRB,CSA AL,0-0,
+29,Sat,2018-09-29,CRB,CSA,0-0,
 29,Sat,2018-09-29,Coritiba,Avaí,1-0,0-0
 29,Sat,2018-09-29,Boa Esporte MG,Criciúma,1-2,0-2
 30,Tue,2018-10-02,Sampaio Corrêa MA,Figueirense SC,1-0,1-0
 30,Tue,2018-10-02,Criciúma,Oeste SP,0-0,
 30,Tue,2018-10-02,Goiás,Londrina PR,0-0,
-30,Tue,2018-10-02,CSA AL,Paysandu,1-0,0-0
+30,Tue,2018-10-02,CSA,Paysandu,1-0,0-0
 30,Fri,2018-10-05,São Bento SP,Guarani SP,1-0,0-0
 30,Fri,2018-10-05,Brasil de Pelotas RS,Fortaleza,0-1,0-0
 30,Fri,2018-10-05,Avaí,Boa Esporte MG,2-0,1-0
@@ -303,13 +303,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Tue,2018-10-09,Criciúma,Brasil de Pelotas RS,0-1,0-0
 31,Fri,2018-10-12,Juventude-RS,Goiás,3-5,2-0
 31,Fri,2018-10-12,Atlético-GO,Sampaio Corrêa MA,1-2,0-1
-31,Fri,2018-10-12,CSA AL,Ponte Preta,1-2,0-2
+31,Fri,2018-10-12,CSA,Ponte Preta,1-2,0-2
 31,Sat,2018-10-13,Guarani SP,Avaí,1-2,1-1
 31,Sat,2018-10-13,Oeste SP,Fortaleza,0-0,
 31,Sat,2018-10-13,Vila Nova,Boa Esporte MG,2-0,1-0
 31,Sat,2018-10-13,Figueirense SC,Coritiba,2-2,1-0
 31,Sat,2018-10-13,Londrina PR,São Bento SP,2-1,2-0
-32,Tue,2018-10-16,Coritiba,CSA AL,1-1,1-1
+32,Tue,2018-10-16,Coritiba,CSA,1-1,1-1
 32,Tue,2018-10-16,Brasil de Pelotas RS,Atlético-GO,1-2,1-0
 32,Fri,2018-10-19,CRB,Goiás,2-0,0-0
 32,Fri,2018-10-19,São Bento SP,Criciúma,0-0,
@@ -319,7 +319,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 32,Sat,2018-10-20,Boa Esporte MG,Guarani SP,2-1,1-1
 32,Sat,2018-10-20,Fortaleza,Paysandu,1-0,0-0
 32,Sat,2018-10-20,Sampaio Corrêa MA,Londrina PR,1-2,1-1
-33,Tue,2018-10-23,CSA AL,Brasil de Pelotas RS,2-0,1-0
+33,Tue,2018-10-23,CSA,Brasil de Pelotas RS,2-0,1-0
 33,Fri,2018-10-26,Londrina PR,Vila Nova,3-2,0-0
 33,Fri,2018-10-26,Juventude-RS,Sampaio Corrêa MA,1-0,0-0
 33,Fri,2018-10-26,Fortaleza,Ponte Preta,1-1,0-0
@@ -334,7 +334,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Fri,2018-11-02,Ponte Preta,São Bento SP,2-1,1-1
 34,Fri,2018-11-02,Vila Nova,Paysandu,0-0,
 34,Fri,2018-11-02,Oeste SP,Figueirense SC,0-0,
-34,Fri,2018-11-02,Sampaio Corrêa MA,CSA AL,2-3,2-1
+34,Fri,2018-11-02,Sampaio Corrêa MA,CSA,2-3,2-1
 34,Sat,2018-11-03,Avaí,Londrina PR,1-1,1-1
 34,Sat,2018-11-03,CRB,Boa Esporte MG,2-1,1-0
 34,Sat,2018-11-03,Atlético-GO,Fortaleza,1-2,0-2
@@ -346,7 +346,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 35,Tue,2018-11-06,Ponte Preta,Boa Esporte MG,1-0,0-0
 35,Tue,2018-11-06,São Bento SP,Coritiba,5-2,2-2
 35,Tue,2018-11-06,Figueirense SC,Guarani SP,0-0,
-35,Tue,2018-11-06,Fortaleza,CSA AL,1-1,1-0
+35,Tue,2018-11-06,Fortaleza,CSA,1-1,1-0
 35,Tue,2018-11-06,CRB,Juventude-RS,2-0,1-0
 35,Tue,2018-11-06,Paysandu,Oeste SP,4-3,1-1
 36,Fri,2018-11-09,Vila Nova,Figueirense SC,3-1,1-0
@@ -355,7 +355,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Fri,2018-11-09,Coritiba,Goiás,1-0,0-0
 36,Sat,2018-11-10,Oeste SP,Londrina PR,0-0,
 36,Sat,2018-11-10,Criciúma,CRB,3-3,2-1
-36,Sat,2018-11-10,CSA AL,Atlético-GO,0-0,
+36,Sat,2018-11-10,CSA,Atlético-GO,0-0,
 36,Sat,2018-11-10,Avaí,Fortaleza,0-1,0-0
 36,Sat,2018-11-10,Sampaio Corrêa MA,São Bento SP,2-1,0-0
 36,Sat,2018-11-10,Guarani SP,Paysandu,0-2,0-1
@@ -365,14 +365,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 37,Fri,2018-11-16,Atlético-GO,São Bento SP,1-0,1-0
 37,Fri,2018-11-16,Londrina PR,CRB,1-2,1-1
 37,Sat,2018-11-17,Brasil de Pelotas RS,Guarani SP,1-1,1-1
-37,Sat,2018-11-17,CSA AL,Avaí,0-1,0-1
+37,Sat,2018-11-17,CSA,Avaí,0-1,0-1
 37,Sat,2018-11-17,Sampaio Corrêa MA,Boa Esporte MG,1-0,1-0
 37,Sat,2018-11-17,Vila Nova,Criciúma,2-2,2-2
 37,Sat,2018-11-17,Oeste SP,Goiás,1-3,0-0
 38,Fri,2018-11-23,Coritiba,Fortaleza,1-0,0-0
 38,Sat,2018-11-24,Guarani SP,Londrina PR,1-0,1-0
 38,Sat,2018-11-24,São Bento SP,Vila Nova,2-2,1-0
-38,Sat,2018-11-24,Juventude-RS,CSA AL,0-4,0-1
+38,Sat,2018-11-24,Juventude-RS,CSA,0-4,0-1
 38,Sat,2018-11-24,Avaí,Ponte Preta,0-0,
 38,Sat,2018-11-24,Criciúma,Sampaio Corrêa MA,2-0,0-0
 38,Sat,2018-11-24,Goiás,Brasil de Pelotas RS,0-1,0-1

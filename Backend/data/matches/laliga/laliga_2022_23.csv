@@ -1,7 +1,7 @@
 Matchday,Date,Home,Away,FullTime,HalfTime
 1,2022-08-12,Osasuna,Sevilha FC,2-1,1-1
 1,2022-08-13,Celta de Vigo,Espanyol,2-2,1-0
-1,2022-08-13,Real Valladolid CF,Villarreal CF,0-3,0-0
+1,2022-08-13,Valladolid,Villarreal CF,0-3,0-0
 1,2022-08-13,Barcelona,Rayo Vallecano,0-0,
 1,2022-08-14,Cádiz CF,Real Sociedad,0-1,0-1
 1,2022-08-14,Valencia,Girona FC,1-0,1-0
@@ -10,7 +10,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2022-08-15,Getafe CF,Atlético de Madrid,0-3,0-1
 1,2022-08-15,Bétis,Elche,3-0,2-0
 2,2022-08-19,Espanyol,Rayo Vallecano,0-2,0-1
-2,2022-08-19,Sevilha FC,Real Valladolid CF,1-1,0-0
+2,2022-08-19,Sevilha FC,Valladolid,1-1,0-0
 2,2022-08-20,Osasuna,Cádiz CF,2-0,1-0
 2,2022-08-20,Mallorca,Bétis,1-2,0-1
 2,2022-08-20,Celta de Vigo,Real Madrid,1-4,1-2
@@ -25,7 +25,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2022-08-27,Rayo Vallecano,Mallorca,0-2,0-1
 3,2022-08-27,UD Almería,Sevilha FC,2-1,1-1
 3,2022-08-28,Getafe CF,Villarreal CF,0-0,
-3,2022-08-28,Barcelona,Real Valladolid CF,4-0,2-0
+3,2022-08-28,Barcelona,Valladolid,4-0,2-0
 3,2022-08-28,Espanyol,Real Madrid,1-3,1-1
 3,2022-08-29,Cádiz CF,Athletic Bilbao,0-4,0-1
 3,2022-08-29,Valencia,Atlético de Madrid,0-1,0-0
@@ -38,8 +38,8 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 4,2022-09-04,Athletic Bilbao,Espanyol,0-1,0-0
 4,2022-09-04,Villarreal CF,Elche,4-0,2-0
 4,2022-09-04,Valencia,Getafe CF,5-1,3-0
-4,2022-09-05,Real Valladolid CF,UD Almería,1-0,0-0
-5,2022-09-09,Girona FC,Real Valladolid CF,2-1,1-1
+4,2022-09-05,Valladolid,UD Almería,1-0,0-0
+5,2022-09-09,Girona FC,Valladolid,2-1,1-1
 5,2022-09-10,Rayo Vallecano,Valencia,2-1,1-0
 5,2022-09-10,Espanyol,Sevilha FC,2-3,1-3
 5,2022-09-10,Cádiz CF,Barcelona,0-4,0-0
@@ -49,7 +49,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 5,2022-09-11,Getafe CF,Real Sociedad,2-1,1-0
 5,2022-09-11,Bétis,Villarreal CF,1-0,0-0
 5,2022-09-12,UD Almería,Osasuna,0-1,0-1
-6,2022-09-16,Real Valladolid CF,Cádiz CF,0-1,0-0
+6,2022-09-16,Valladolid,Cádiz CF,0-1,0-0
 6,2022-09-17,Mallorca,UD Almería,1-0,1-0
 6,2022-09-17,Barcelona,Elche,3-0,2-0
 6,2022-09-17,Valencia,Celta de Vigo,3-0,1-0
@@ -61,7 +61,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 6,2022-09-18,Atlético de Madrid,Real Madrid,1-2,0-2
 7,2022-09-30,Athletic Bilbao,UD Almería,4-0,2-0
 7,2022-10-01,Cádiz CF,Villarreal CF,0-0,
-7,2022-10-01,Getafe CF,Real Valladolid CF,2-3,2-2
+7,2022-10-01,Getafe CF,Valladolid,2-3,2-2
 7,2022-10-01,Sevilha FC,Atlético de Madrid,0-2,0-1
 7,2022-10-01,Mallorca,Barcelona,0-1,0-1
 7,2022-10-02,Espanyol,Valencia,2-2,0-0
@@ -74,7 +74,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 8,2022-10-08,Atlético de Madrid,Girona FC,2-1,1-0
 8,2022-10-08,Sevilha FC,Athletic Bilbao,1-1,1-0
 8,2022-10-08,Getafe CF,Real Madrid,0-1,0-1
-8,2022-10-09,Real Valladolid CF,Bétis,0-0,
+8,2022-10-09,Valladolid,Bétis,0-0,
 8,2022-10-09,Cádiz CF,Espanyol,2-2,1-0
 8,2022-10-09,Real Sociedad,Villarreal CF,1-0,1-0
 8,2022-10-09,Barcelona,Celta de Vigo,1-0,1-0
@@ -86,13 +86,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2022-10-15,Athletic Bilbao,Atlético de Madrid,0-1,0-0
 9,2022-10-16,Celta de Vigo,Real Sociedad,1-2,1-1
 9,2022-10-16,Real Madrid,Barcelona,3-1,2-0
-9,2022-10-16,Espanyol,Real Valladolid CF,1-0,0-0
+9,2022-10-16,Espanyol,Valladolid,1-0,0-0
 9,2022-10-16,Bétis,UD Almería,3-1,1-0
 9,2022-10-17,Villarreal CF,Osasuna,2-0,1-0
 10,2022-10-18,Sevilha FC,Valencia,1-1,0-1
 10,2022-10-18,Getafe CF,Athletic Bilbao,2-2,1-1
 10,2022-10-18,Atlético de Madrid,Rayo Vallecano,1-1,1-0
-10,2022-10-19,Real Valladolid CF,Celta de Vigo,4-1,1-1
+10,2022-10-19,Valladolid,Celta de Vigo,4-1,1-1
 10,2022-10-19,Cádiz CF,Bétis,0-0,
 10,2022-10-19,Real Sociedad,Mallorca,1-0,1-0
 10,2022-10-19,Elche,Real Madrid,0-3,0-1
@@ -100,7 +100,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 10,2022-10-20,Osasuna,Espanyol,1-0,0-0
 10,2022-10-20,Barcelona,Villarreal CF,3-0,3-0
 11,2022-10-22,Rayo Vallecano,Cádiz CF,5-1,2-0
-11,2022-10-22,Real Valladolid CF,Real Sociedad,1-0,1-0
+11,2022-10-22,Valladolid,Real Sociedad,1-0,1-0
 11,2022-10-22,Valencia,Mallorca,1-2,0-0
 11,2022-10-22,Real Madrid,Sevilha FC,3-1,1-0
 11,2022-10-23,Espanyol,Elche,2-2,1-1
@@ -114,14 +114,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2022-10-29,Cádiz CF,Atlético de Madrid,3-2,1-0
 12,2022-10-29,Sevilha FC,Rayo Vallecano,0-1,0-0
 12,2022-10-29,Valencia,Barcelona,0-1,0-0
-12,2022-10-30,Osasuna,Real Valladolid CF,2-0,2-0
+12,2022-10-30,Osasuna,Valladolid,2-0,2-0
 12,2022-10-30,Real Madrid,Girona FC,1-1,0-0
 12,2022-10-30,Athletic Bilbao,Villarreal CF,1-0,0-0
 12,2022-10-30,Real Sociedad,Bétis,0-2,0-0
 12,2022-10-31,Elche,Getafe CF,0-1,0-0
 13,2022-11-04,Girona FC,Athletic Bilbao,2-1,0-0
 13,2022-11-05,Getafe CF,Cádiz CF,0-0,
-13,2022-11-05,Real Valladolid CF,Elche,2-1,1-0
+13,2022-11-05,Valladolid,Elche,2-1,1-0
 13,2022-11-05,Celta de Vigo,Osasuna,1-2,1-2
 13,2022-11-05,Barcelona,UD Almería,2-0,0-0
 13,2022-11-06,Atlético de Madrid,Espanyol,1-1,0-0
@@ -130,7 +130,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2022-11-06,Bétis,Sevilha FC,1-1,1-0
 13,2022-11-07,Rayo Vallecano,Real Madrid,3-2,2-2
 14,2022-11-08,Elche,Girona FC,1-2,1-1
-14,2022-11-08,Athletic Bilbao,Real Valladolid CF,3-0,1-0
+14,2022-11-08,Athletic Bilbao,Valladolid,3-0,1-0
 14,2022-11-08,Osasuna,Barcelona,1-2,1-0
 14,2022-11-09,Sevilha FC,Real Sociedad,1-2,1-2
 14,2022-11-09,UD Almería,Getafe CF,1-0,1-0
@@ -145,14 +145,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2022-12-30,Getafe CF,Mallorca,2-0,0-0
 15,2022-12-30,Cádiz CF,UD Almería,1-1,0-1
 15,2022-12-30,Celta de Vigo,Sevilha FC,1-1,1-0
-15,2022-12-30,Real Valladolid CF,Real Madrid,0-2,0-0
+15,2022-12-30,Valladolid,Real Madrid,0-2,0-0
 15,2022-12-31,Barcelona,Espanyol,1-1,1-0
 15,2022-12-31,Villarreal CF,Valencia,2-1,1-1
 15,2022-12-31,Real Sociedad,Osasuna,2-0,1-0
 16,2023-01-06,Elche,Celta de Vigo,0-1,0-1
 16,2023-01-06,Valencia,Cádiz CF,0-1,0-1
 16,2023-01-07,Villarreal CF,Real Madrid,2-1,0-0
-16,2023-01-07,Mallorca,Real Valladolid CF,1-0,0-0
+16,2023-01-07,Mallorca,Valladolid,1-0,0-0
 16,2023-01-07,Espanyol,Girona FC,2-2,0-1
 16,2023-01-08,UD Almería,Real Sociedad,0-2,0-0
 16,2023-01-08,Rayo Vallecano,Bétis,1-2,1-2
@@ -160,7 +160,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2023-01-08,Atlético de Madrid,Barcelona,0-1,0-1
 16,2023-01-09,Athletic Bilbao,Osasuna,0-0,
 17,2023-01-13,Celta de Vigo,Villarreal CF,1-1,0-1
-17,2023-01-14,Real Valladolid CF,Rayo Vallecano,0-1,0-0
+17,2023-01-14,Valladolid,Rayo Vallecano,0-1,0-0
 17,2023-01-14,Girona FC,Sevilha FC,2-1,0-1
 17,2023-01-14,Osasuna,Mallorca,1-0,0-0
 17,2023-01-14,Real Sociedad,Athletic Bilbao,3-1,2-1
@@ -170,7 +170,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 18,2023-01-20,Mallorca,Celta de Vigo,1-0,0-0
 18,2023-01-21,Rayo Vallecano,Real Sociedad,0-2,0-2
 18,2023-01-21,Espanyol,Bétis,1-0,1-0
-18,2023-01-21,Atlético de Madrid,Real Valladolid CF,3-0,3-0
+18,2023-01-21,Atlético de Madrid,Valladolid,3-0,3-0
 18,2023-01-21,Sevilha FC,Cádiz CF,1-0,0-0
 18,2023-01-22,Villarreal CF,Girona FC,1-0,0-0
 18,2023-01-22,Elche,Osasuna,1-1,0-1
@@ -182,7 +182,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2023-01-28,Girona FC,Barcelona,0-1,0-0
 19,2023-01-28,Sevilha FC,Elche,3-0,3-0
 19,2023-01-28,Getafe CF,Bétis,0-1,0-0
-19,2023-01-29,Real Valladolid CF,Valencia,1-0,0-0
+19,2023-01-29,Valladolid,Valencia,1-0,0-0
 19,2023-01-29,Osasuna,Atlético de Madrid,0-1,0-0
 19,2023-01-29,Celta de Vigo,Athletic Bilbao,1-0,0-0
 19,2023-01-29,Real Madrid,Real Sociedad,0-0,
@@ -196,7 +196,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2023-02-04,Bétis,Celta de Vigo,3-4,2-2
 20,2023-02-05,Mallorca,Real Madrid,1-0,1-0
 20,2023-02-05,Girona FC,Valencia,1-0,0-0
-20,2023-02-05,Real Sociedad,Real Valladolid CF,0-1,0-0
+20,2023-02-05,Real Sociedad,Valladolid,0-1,0-0
 20,2023-02-05,Barcelona,Sevilha FC,3-0,0-0
 20,2023-02-06,Rayo Vallecano,UD Almería,2-0,0-0
 21,2023-02-10,Cádiz CF,Girona FC,2-0,2-0
@@ -205,13 +205,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2023-02-11,Valencia,Athletic Bilbao,1-2,1-1
 21,2023-02-12,Getafe CF,Rayo Vallecano,1-1,0-1
 21,2023-02-12,Celta de Vigo,Atlético de Madrid,0-1,0-0
-21,2023-02-12,Real Valladolid CF,Osasuna,0-0,
+21,2023-02-12,Valladolid,Osasuna,0-0,
 21,2023-02-12,Villarreal CF,Barcelona,0-1,0-1
 21,2023-02-13,Espanyol,Real Sociedad,2-3,0-1
 21,2023-02-15,Real Madrid,Elche,4-0,3-0
 22,2023-02-17,Girona FC,UD Almería,6-2,4-0
 22,2023-02-18,Real Sociedad,Celta de Vigo,1-1,1-0
-22,2023-02-18,Bétis,Real Valladolid CF,2-1,2-1
+22,2023-02-18,Bétis,Valladolid,2-1,2-1
 22,2023-02-18,Mallorca,Villarreal CF,4-2,2-1
 22,2023-02-18,Osasuna,Real Madrid,0-2,0-0
 22,2023-02-19,Elche,Espanyol,0-1,0-0
@@ -225,7 +225,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 23,2023-02-25,Real Madrid,Atlético de Madrid,1-1,0-0
 23,2023-02-25,Valencia,Real Sociedad,1-0,1-0
 23,2023-02-26,Athletic Bilbao,Girona FC,2-3,1-3
-23,2023-02-26,Celta de Vigo,Real Valladolid CF,3-0,2-0
+23,2023-02-26,Celta de Vigo,Valladolid,3-0,2-0
 23,2023-02-26,UD Almería,Barcelona,1-0,1-0
 23,2023-02-26,Sevilha FC,Osasuna,2-3,0-1
 23,2023-02-27,Villarreal CF,Getafe CF,2-1,1-1
@@ -234,14 +234,14 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 24,2023-03-04,UD Almería,Villarreal CF,0-2,0-0
 24,2023-03-04,Mallorca,Elche,0-1,0-0
 24,2023-03-04,Atlético de Madrid,Sevilha FC,6-1,2-1
-24,2023-03-05,Real Valladolid CF,Espanyol,2-1,1-0
+24,2023-03-05,Valladolid,Espanyol,2-1,1-0
 24,2023-03-05,Barcelona,Valencia,1-0,1-0
 24,2023-03-05,Rayo Vallecano,Athletic Bilbao,0-0,
 24,2023-03-05,Bétis,Real Madrid,0-0,
 24,2023-03-06,Osasuna,Celta de Vigo,0-0,
 25,2023-03-10,Cádiz CF,Getafe CF,2-2,1-0
 25,2023-03-11,Real Madrid,Espanyol,3-1,2-1
-25,2023-03-11,Elche,Real Valladolid CF,1-1,0-1
+25,2023-03-11,Elche,Valladolid,1-1,0-1
 25,2023-03-11,Celta de Vigo,Rayo Vallecano,3-0,0-0
 25,2023-03-11,Valencia,Osasuna,1-0,0-0
 25,2023-03-12,Mallorca,Real Sociedad,1-1,0-1
@@ -249,7 +249,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2023-03-12,Villarreal CF,Bétis,1-1,0-1
 25,2023-03-12,Athletic Bilbao,Barcelona,0-1,0-1
 25,2023-03-13,Girona FC,Atlético de Madrid,0-1,0-0
-26,2023-03-17,Real Valladolid CF,Athletic Bilbao,1-3,0-1
+26,2023-03-17,Valladolid,Athletic Bilbao,1-3,0-1
 26,2023-03-18,UD Almería,Cádiz CF,1-1,0-0
 26,2023-03-18,Rayo Vallecano,Girona FC,2-2,2-1
 26,2023-03-18,Espanyol,Celta de Vigo,1-3,0-2
@@ -265,7 +265,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2023-04-01,Cádiz CF,Sevilha FC,0-2,0-0
 27,2023-04-01,Elche,Barcelona,0-4,0-1
 27,2023-04-02,Celta de Vigo,UD Almería,2-2,2-2
-27,2023-04-02,Real Madrid,Real Valladolid CF,6-0,4-0
+27,2023-04-02,Real Madrid,Valladolid,6-0,4-0
 27,2023-04-02,Villarreal CF,Real Sociedad,2-0,0-0
 27,2023-04-02,Atlético de Madrid,Bétis,1-0,0-0
 27,2023-04-03,Valencia,Rayo Vallecano,1-1,0-1
@@ -274,13 +274,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2023-04-08,Espanyol,Athletic Bilbao,1-2,0-1
 28,2023-04-08,Real Sociedad,Getafe CF,2-0,1-0
 28,2023-04-08,Real Madrid,Villarreal CF,2-3,1-1
-28,2023-04-09,Real Valladolid CF,Mallorca,3-3,1-0
+28,2023-04-09,Valladolid,Mallorca,3-3,1-0
 28,2023-04-09,Bétis,Cádiz CF,0-2,0-0
 28,2023-04-09,UD Almería,Valencia,2-1,0-0
 28,2023-04-09,Rayo Vallecano,Atlético de Madrid,1-2,0-2
 28,2023-04-10,Barcelona,Girona FC,0-0,
 29,2023-04-14,Rayo Vallecano,Osasuna,2-1,2-0
-29,2023-04-15,Villarreal CF,Real Valladolid CF,1-2,0-2
+29,2023-04-15,Villarreal CF,Valladolid,1-2,0-2
 29,2023-04-15,Athletic Bilbao,Real Sociedad,2-0,1-0
 29,2023-04-15,Bétis,Espanyol,3-1,2-0
 29,2023-04-15,Cádiz CF,Real Madrid,0-2,0-0
@@ -292,7 +292,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2023-04-21,Espanyol,Cádiz CF,0-0,
 30,2023-04-22,Osasuna,Bétis,3-2,3-1
 30,2023-04-22,UD Almería,Athletic Bilbao,1-2,0-1
-30,2023-04-22,Real Valladolid CF,Girona FC,1-0,1-0
+30,2023-04-22,Valladolid,Girona FC,1-0,1-0
 30,2023-04-22,Real Sociedad,Rayo Vallecano,2-1,0-0
 30,2023-04-22,Real Madrid,Celta de Vigo,2-0,1-0
 30,2023-04-23,Elche,Valencia,0-2,0-2
@@ -307,7 +307,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2023-04-26,Rayo Vallecano,Barcelona,2-1,1-0
 31,2023-04-26,Celta de Vigo,Elche,1-0,0-0
 31,2023-04-27,Villarreal CF,Espanyol,4-2,0-1
-31,2023-04-27,Valencia,Real Valladolid CF,2-1,0-1
+31,2023-04-27,Valencia,Valladolid,2-1,0-1
 31,2023-04-27,Athletic Bilbao,Sevilha FC,0-1,0-0
 32,2023-04-28,Osasuna,Real Sociedad,0-2,0-1
 32,2023-04-29,Elche,Rayo Vallecano,4-0,1-0
@@ -316,7 +316,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 32,2023-04-30,Cádiz CF,Valencia,2-1,1-0
 32,2023-04-30,Villarreal CF,Celta de Vigo,3-1,2-1
 32,2023-04-30,Espanyol,Getafe CF,1-0,1-0
-32,2023-04-30,Real Valladolid CF,Atlético de Madrid,2-5,1-3
+32,2023-04-30,Valladolid,Atlético de Madrid,2-5,1-3
 32,2023-05-01,Mallorca,Athletic Bilbao,1-1,0-0
 32,2023-05-01,Sevilha FC,Girona FC,0-2,0-1
 33,2023-05-02,UD Almería,Elche,2-1,1-0
@@ -327,7 +327,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2023-05-03,Atlético de Madrid,Cádiz CF,5-1,2-0
 33,2023-05-04,Sevilha FC,Espanyol,3-2,1-2
 33,2023-05-04,Girona FC,Mallorca,2-1,1-0
-33,2023-05-04,Rayo Vallecano,Real Valladolid CF,2-1,0-0
+33,2023-05-04,Rayo Vallecano,Valladolid,2-1,0-0
 33,2023-05-04,Athletic Bilbao,Bétis,0-1,0-1
 34,2023-05-12,Mallorca,Cádiz CF,1-0,1-0
 34,2023-05-13,Real Sociedad,Girona FC,2-2,2-2
@@ -336,10 +336,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 34,2023-05-13,Real Madrid,Getafe CF,1-0,0-0
 34,2023-05-14,Celta de Vigo,Valencia,1-2,0-1
 34,2023-05-14,Elche,Atlético de Madrid,1-0,1-0
-34,2023-05-14,Real Valladolid CF,Sevilha FC,0-3,0-0
+34,2023-05-14,Valladolid,Sevilha FC,0-3,0-0
 34,2023-05-14,Espanyol,Barcelona,2-4,0-3
 34,2023-05-15,Bétis,Rayo Vallecano,3-1,2-0
-35,2023-05-19,Cádiz CF,Real Valladolid CF,2-0,0-0
+35,2023-05-19,Cádiz CF,Valladolid,2-0,0-0
 35,2023-05-20,Girona FC,Villarreal CF,1-2,1-1
 35,2023-05-20,Athletic Bilbao,Celta de Vigo,2-1,1-0
 35,2023-05-20,Getafe CF,Elche,1-1,1-1
@@ -351,7 +351,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 35,2023-05-21,Sevilha FC,Bétis,0-0,
 36,2023-05-23,Real Sociedad,UD Almería,1-0,1-0
 36,2023-05-23,Celta de Vigo,Girona FC,1-1,1-0
-36,2023-05-23,Real Valladolid CF,Barcelona,3-1,2-0
+36,2023-05-23,Valladolid,Barcelona,3-1,2-0
 36,2023-05-24,Real Madrid,Rayo Vallecano,2-1,1-0
 36,2023-05-24,Villarreal CF,Cádiz CF,2-0,2-0
 36,2023-05-24,Elche,Sevilha FC,1-1,1-1
@@ -362,7 +362,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 37,2023-05-27,Sevilha FC,Real Madrid,1-2,1-1
 37,2023-05-28,Valencia,Espanyol,2-2,1-1
 37,2023-05-28,Girona FC,Bétis,1-2,1-0
-37,2023-05-28,UD Almería,Real Valladolid CF,0-0,
+37,2023-05-28,UD Almería,Valladolid,0-0,
 37,2023-05-28,Rayo Vallecano,Villarreal CF,2-1,0-0
 37,2023-05-28,Cádiz CF,Celta de Vigo,1-0,0-0
 37,2023-05-28,Getafe CF,Osasuna,2-1,1-1
@@ -376,6 +376,6 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 38,2023-06-04,Mallorca,Rayo Vallecano,3-0,0-0
 38,2023-06-04,Espanyol,UD Almería,3-3,1-1
 38,2023-06-04,Elche,Cádiz CF,1-1,0-1
-38,2023-06-04,Real Valladolid CF,Getafe CF,0-0,
+38,2023-06-04,Valladolid,Getafe CF,0-0,
 38,2023-06-04,Celta de Vigo,Barcelona,2-1,1-0
 38,2023-06-04,Bétis,Valencia,1-1,1-0
