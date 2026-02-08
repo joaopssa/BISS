@@ -4,7 +4,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Sat,2019-08-10,AFC Bournemouth,Sheffield United,1-1,0-0
 1,Sat,2019-08-10,Burnley,Southampton FC,3-0,0-0
 1,Sat,2019-08-10,Crystal Palace,Everton,0-0,
-1,Sat,2019-08-10,Watford FC,Brighton & Hove Albion,0-3,0-1
+1,Sat,2019-08-10,Watford,Brighton & Hove Albion,0-3,0-1
 1,Sat,2019-08-10,Tottenham,Aston Villa,3-1,0-1
 1,Sun,2019-08-11,Newcastle United,Arsenal,0-1,0-0
 1,Sun,2019-08-11,Manchester United,Chelsea,4-0,1-0
@@ -12,7 +12,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 2,Sat,2019-08-17,Arsenal,Burnley,2-1,1-1
 2,Sat,2019-08-17,Aston Villa,AFC Bournemouth,1-2,0-2
 2,Sat,2019-08-17,Brighton & Hove Albion,West Ham United,1-1,0-0
-2,Sat,2019-08-17,Everton,Watford FC,1-0,1-0
+2,Sat,2019-08-17,Everton,Watford,1-0,1-0
 2,Sat,2019-08-17,Norwich City,Newcastle United,3-1,1-0
 2,Sat,2019-08-17,Southampton FC,Liverpool,1-2,0-1
 2,Sat,2019-08-17,Manchester City,Tottenham,2-2,2-1
@@ -24,7 +24,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 3,Sat,2019-08-24,Brighton & Hove Albion,Southampton FC,0-2,0-0
 3,Sat,2019-08-24,Manchester United,Crystal Palace,1-2,0-1
 3,Sat,2019-08-24,Sheffield United,Leicester,1-2,0-1
-3,Sat,2019-08-24,Watford FC,West Ham United,1-3,1-1
+3,Sat,2019-08-24,Watford,West Ham United,1-3,1-1
 3,Sat,2019-08-24,Liverpool,Arsenal,3-1,1-0
 3,Sun,2019-08-25,Tottenham,Newcastle United,0-1,0-1
 3,Sun,2019-08-25,Wolverhampton,Burnley,1-1,0-1
@@ -34,7 +34,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Sat,2019-08-31,Crystal Palace,Aston Villa,1-0,0-0
 4,Sat,2019-08-31,Leicester,AFC Bournemouth,3-1,2-1
 4,Sat,2019-08-31,Manchester City,Brighton & Hove Albion,4-0,2-0
-4,Sat,2019-08-31,Newcastle United,Watford FC,1-1,1-1
+4,Sat,2019-08-31,Newcastle United,Watford,1-1,1-1
 4,Sat,2019-08-31,West Ham United,Norwich City,2-0,1-0
 4,Sat,2019-08-31,Burnley,Liverpool,0-3,0-2
 4,Sun,2019-09-01,Arsenal,Tottenham,2-2,1-2
@@ -46,14 +46,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 5,Sat,2019-09-14,Tottenham,Crystal Palace,4-0,4-0
 5,Sat,2019-09-14,Wolverhampton,Chelsea,2-5,0-3
 5,Sat,2019-09-14,Norwich City,Manchester City,3-2,2-1
-5,Sun,2019-09-15,Watford FC,Arsenal,2-2,0-2
+5,Sun,2019-09-15,Watford,Arsenal,2-2,0-2
 5,Sun,2019-09-15,AFC Bournemouth,Everton,3-1,1-1
 5,Mon,2019-09-16,Aston Villa,West Ham United,0-0,
 6,Fri,2019-09-20,Southampton FC,AFC Bournemouth,1-3,0-2
 6,Sat,2019-09-21,Leicester,Tottenham,2-1,0-1
 6,Sat,2019-09-21,Burnley,Norwich City,2-0,2-0
 6,Sat,2019-09-21,Everton,Sheffield United,0-2,0-1
-6,Sat,2019-09-21,Manchester City,Watford FC,8-0,5-0
+6,Sat,2019-09-21,Manchester City,Watford,8-0,5-0
 6,Sat,2019-09-21,Newcastle United,Brighton & Hove Albion,0-0,
 6,Sun,2019-09-22,Crystal Palace,Wolverhampton,1-1,0-0
 6,Sun,2019-09-22,West Ham United,Manchester United,2-0,1-0
@@ -65,7 +65,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Sat,2019-09-28,Chelsea,Brighton & Hove Albion,2-0,0-0
 7,Sat,2019-09-28,Crystal Palace,Norwich City,2-0,1-0
 7,Sat,2019-09-28,Tottenham,Southampton FC,2-1,2-1
-7,Sat,2019-09-28,Wolverhampton,Watford FC,2-0,1-0
+7,Sat,2019-09-28,Wolverhampton,Watford,2-0,1-0
 7,Sat,2019-09-28,Everton,Manchester City,1-3,1-1
 7,Sun,2019-09-29,Leicester,Newcastle United,5-0,1-0
 7,Mon,2019-09-30,Manchester United,Arsenal,1-1,1-0
@@ -73,7 +73,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 8,Sat,2019-10-05,Burnley,Everton,1-0,0-0
 8,Sat,2019-10-05,Liverpool,Leicester,2-1,1-0
 8,Sat,2019-10-05,Norwich City,Aston Villa,1-5,0-2
-8,Sat,2019-10-05,Watford FC,Sheffield United,0-0,
+8,Sat,2019-10-05,Watford,Sheffield United,0-0,
 8,Sat,2019-10-05,West Ham United,Crystal Palace,1-2,0-0
 8,Sun,2019-10-06,Manchester City,Wolverhampton,0-2,0-0
 8,Sun,2019-10-06,Southampton FC,Chelsea,1-4,1-3
@@ -84,7 +84,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 9,Sat,2019-10-19,Aston Villa,Brighton & Hove Albion,2-1,1-1
 9,Sat,2019-10-19,Chelsea,Newcastle United,1-0,0-0
 9,Sat,2019-10-19,Leicester,Burnley,2-1,1-1
-9,Sat,2019-10-19,Tottenham,Watford FC,1-1,0-1
+9,Sat,2019-10-19,Tottenham,Watford,1-1,0-1
 9,Sat,2019-10-19,Wolverhampton,Southampton FC,1-1,0-0
 9,Sat,2019-10-19,Crystal Palace,Manchester City,0-2,0-2
 9,Sun,2019-10-20,Manchester United,Liverpool,1-1,1-0
@@ -92,7 +92,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Fri,2019-10-25,Southampton FC,Leicester,0-9,0-5
 10,Sat,2019-10-26,Manchester City,Aston Villa,3-0,0-0
 10,Sat,2019-10-26,Brighton & Hove Albion,Everton,3-2,1-1
-10,Sat,2019-10-26,Watford FC,AFC Bournemouth,0-0,
+10,Sat,2019-10-26,Watford,AFC Bournemouth,0-0,
 10,Sat,2019-10-26,West Ham United,Sheffield United,1-1,1-0
 10,Sat,2019-10-26,Burnley,Chelsea,2-4,0-2
 10,Sun,2019-10-27,Arsenal,Crystal Palace,2-2,2-1
@@ -106,10 +106,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Sat,2019-11-02,Manchester City,Southampton FC,2-1,0-1
 11,Sat,2019-11-02,Sheffield United,Burnley,3-0,3-0
 11,Sat,2019-11-02,West Ham United,Newcastle United,2-3,0-2
-11,Sat,2019-11-02,Watford FC,Chelsea,1-2,0-1
+11,Sat,2019-11-02,Watford,Chelsea,1-2,0-1
 11,Sun,2019-11-03,Everton,Tottenham,1-1,0-0
 11,Sun,2019-11-03,Crystal Palace,Leicester,0-2,0-0
-12,Fri,2019-11-08,Norwich City,Watford FC,0-2,0-1
+12,Fri,2019-11-08,Norwich City,Watford,0-2,0-1
 12,Sat,2019-11-09,Chelsea,Crystal Palace,2-0,0-0
 12,Sat,2019-11-09,Burnley,West Ham United,3-0,2-0
 12,Sat,2019-11-09,Newcastle United,AFC Bournemouth,2-1,1-1
@@ -125,7 +125,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 13,Sat,2019-11-23,Brighton & Hove Albion,Leicester,0-2,0-0
 13,Sat,2019-11-23,Crystal Palace,Liverpool,1-2,0-0
 13,Sat,2019-11-23,Everton,Norwich City,0-2,0-0
-13,Sat,2019-11-23,Watford FC,Burnley,0-3,0-0
+13,Sat,2019-11-23,Watford,Burnley,0-3,0-0
 13,Sat,2019-11-23,Manchester City,Chelsea,2-1,2-1
 13,Sun,2019-11-24,Sheffield United,Manchester United,3-3,1-0
 13,Mon,2019-11-25,Aston Villa,Newcastle United,2-0,2-0
@@ -134,14 +134,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 14,Sat,2019-11-30,Chelsea,West Ham United,0-1,0-0
 14,Sat,2019-11-30,Liverpool,Brighton & Hove Albion,2-1,2-0
 14,Sat,2019-11-30,Tottenham,AFC Bournemouth,3-2,1-0
-14,Sat,2019-11-30,Southampton FC,Watford FC,2-1,0-1
+14,Sat,2019-11-30,Southampton FC,Watford,2-1,0-1
 14,Sun,2019-12-01,Wolverhampton,Sheffield United,1-1,0-1
 14,Sun,2019-12-01,Leicester,Everton,2-1,0-1
 14,Sun,2019-12-01,Manchester United,Aston Villa,2-2,1-1
 14,Sun,2019-12-01,Norwich City,Arsenal,2-2,2-1
 15,Tue,2019-12-03,Burnley,Manchester City,1-4,0-1
 15,Tue,2019-12-03,Crystal Palace,AFC Bournemouth,1-0,0-0
-15,Wed,2019-12-04,Leicester,Watford FC,2-0,0-0
+15,Wed,2019-12-04,Leicester,Watford,2-0,0-0
 15,Wed,2019-12-04,Wolverhampton,West Ham United,2-0,1-0
 15,Wed,2019-12-04,Manchester United,Tottenham,2-1,1-1
 15,Wed,2019-12-04,Chelsea,Aston Villa,2-1,1-1
@@ -151,7 +151,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Thu,2019-12-05,Sheffield United,Newcastle United,0-2,0-1
 16,Sat,2019-12-07,AFC Bournemouth,Liverpool,0-3,0-2
 16,Sat,2019-12-07,Tottenham,Burnley,5-0,3-0
-16,Sat,2019-12-07,Watford FC,Crystal Palace,0-0,
+16,Sat,2019-12-07,Watford,Crystal Palace,0-0,
 16,Sat,2019-12-07,Manchester City,Manchester United,1-2,0-2
 16,Sat,2019-12-07,Everton,Chelsea,3-1,1-0
 16,Sun,2019-12-08,Aston Villa,Leicester,1-4,1-2
@@ -159,7 +159,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 16,Sun,2019-12-08,Norwich City,Sheffield United,1-2,1-0
 16,Sun,2019-12-08,Brighton & Hove Albion,Wolverhampton,2-2,2-2
 16,Mon,2019-12-09,West Ham United,Arsenal,1-3,1-0
-17,Sat,2019-12-14,Liverpool,Watford FC,2-0,1-0
+17,Sat,2019-12-14,Liverpool,Watford,2-0,1-0
 17,Sat,2019-12-14,Burnley,Newcastle United,1-0,0-0
 17,Sat,2019-12-14,Chelsea,AFC Bournemouth,0-1,0-0
 17,Sat,2019-12-14,Leicester,Norwich City,1-1,1-1
@@ -177,7 +177,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 18,Sat,2019-12-21,Norwich City,Wolverhampton,1-2,1-0
 18,Sat,2019-12-21,Manchester City,Leicester,3-1,2-1
 18,Sun,2019-12-22,Tottenham,Chelsea,0-2,0-2
-18,Sun,2019-12-22,Watford FC,Manchester United,2-0,0-0
+18,Sun,2019-12-22,Watford,Manchester United,2-0,0-0
 19,Thu,2019-12-26,Leicester,Liverpool,0-4,0-1
 19,Thu,2019-12-26,Tottenham,Brighton & Hove Albion,2-1,0-1
 19,Thu,2019-12-26,AFC Bournemouth,Arsenal,1-1,1-0
@@ -185,14 +185,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Thu,2019-12-26,Chelsea,Southampton FC,0-2,0-1
 19,Thu,2019-12-26,Crystal Palace,West Ham United,2-1,0-0
 19,Thu,2019-12-26,Everton,Burnley,1-0,0-0
-19,Thu,2019-12-26,Sheffield United,Watford FC,1-1,1-1
+19,Thu,2019-12-26,Sheffield United,Watford,1-1,1-1
 19,Thu,2019-12-26,Manchester United,Newcastle United,4-1,3-1
 19,Fri,2019-12-27,Wolverhampton,Manchester City,3-2,0-1
 20,Sat,2019-12-28,Burnley,Manchester United,0-2,0-1
 20,Sat,2019-12-28,Brighton & Hove Albion,AFC Bournemouth,2-0,1-0
 20,Sat,2019-12-28,Newcastle United,Everton,1-2,0-1
 20,Sat,2019-12-28,Southampton FC,Crystal Palace,1-1,0-0
-20,Sat,2019-12-28,Watford FC,Aston Villa,3-0,1-0
+20,Sat,2019-12-28,Watford,Aston Villa,3-0,1-0
 20,Sat,2019-12-28,Norwich City,Tottenham,2-2,1-0
 20,Sat,2019-12-28,West Ham United,Leicester,1-2,1-1
 20,Sun,2019-12-29,Arsenal,Chelsea,1-2,1-0
@@ -203,7 +203,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 21,Wed,2020-01-01,Burnley,Aston Villa,1-2,0-2
 21,Wed,2020-01-01,Newcastle United,Leicester,0-3,0-2
 21,Wed,2020-01-01,Southampton FC,Tottenham,1-0,1-0
-21,Wed,2020-01-01,Watford FC,Wolverhampton,2-1,1-0
+21,Wed,2020-01-01,Watford,Wolverhampton,2-1,1-0
 21,Wed,2020-01-01,Manchester City,Everton,2-1,0-0
 21,Wed,2020-01-01,Arsenal,Manchester United,2-0,2-0
 21,Wed,2020-01-01,West Ham United,AFC Bournemouth,4-0,3-0
@@ -216,9 +216,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Sat,2020-01-11,Leicester,Southampton FC,1-2,1-1
 22,Sat,2020-01-11,Manchester United,Norwich City,4-0,1-0
 22,Sat,2020-01-11,Wolverhampton,Newcastle United,1-1,1-1
-22,Sun,2020-01-12,AFC Bournemouth,Watford FC,0-3,0-1
+22,Sun,2020-01-12,AFC Bournemouth,Watford,0-3,0-1
 22,Sun,2020-01-12,Aston Villa,Manchester City,1-6,0-4
-23,Sat,2020-01-18,Watford FC,Tottenham,0-0,
+23,Sat,2020-01-18,Watford,Tottenham,0-0,
 23,Sat,2020-01-18,Arsenal,Sheffield United,1-1,1-0
 23,Sat,2020-01-18,Brighton & Hove Albion,Aston Villa,1-1,1-0
 23,Sat,2020-01-18,Manchester City,Crystal Palace,2-2,0-1
@@ -229,7 +229,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 23,Sun,2020-01-19,Liverpool,Manchester United,2-0,1-0
 23,Sun,2020-01-19,Burnley,Leicester,2-1,0-1
 24,Tue,2020-01-21,AFC Bournemouth,Brighton & Hove Albion,3-1,2-0
-24,Tue,2020-01-21,Aston Villa,Watford FC,2-1,0-1
+24,Tue,2020-01-21,Aston Villa,Watford,2-1,0-1
 24,Tue,2020-01-21,Everton,Newcastle United,2-2,1-0
 24,Tue,2020-01-21,Sheffield United,Manchester City,0-1,0-0
 24,Tue,2020-01-21,Crystal Palace,Southampton FC,0-2,0-1
@@ -244,12 +244,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 25,Sat,2020-02-01,Crystal Palace,Sheffield United,0-1,0-0
 25,Sat,2020-02-01,Liverpool,Southampton FC,4-0,0-0
 25,Sat,2020-02-01,Newcastle United,Norwich City,0-0,
-25,Sat,2020-02-01,Watford FC,Everton,2-3,2-2
+25,Sat,2020-02-01,Watford,Everton,2-3,2-2
 25,Sat,2020-02-01,West Ham United,Brighton & Hove Albion,3-3,2-0
 25,Sat,2020-02-01,Manchester United,Wolverhampton,0-0,
 25,Sun,2020-02-02,Tottenham,Manchester City,2-0,0-0
 25,Sun,2020-02-02,Burnley,Arsenal,0-0,
-26,Sat,2020-02-08,Brighton & Hove Albion,Watford FC,1-1,0-1
+26,Sat,2020-02-08,Brighton & Hove Albion,Watford,1-1,0-1
 26,Sat,2020-02-08,Everton,Crystal Palace,3-1,1-0
 26,Sun,2020-02-09,Sheffield United,AFC Bournemouth,2-1,1-1
 26,Fri,2020-02-14,Wolverhampton,Leicester,0-0,
@@ -265,7 +265,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Sat,2020-02-22,Southampton FC,Aston Villa,2-0,1-0
 27,Sat,2020-02-22,Leicester,Manchester City,0-1,0-0
 27,Sat,2020-02-22,Chelsea,Tottenham,2-1,1-0
-27,Sun,2020-02-23,Manchester United,Watford FC,3-0,1-0
+27,Sun,2020-02-23,Manchester United,Watford,3-0,1-0
 27,Sun,2020-02-23,Wolverhampton,Norwich City,3-0,2-0
 27,Sun,2020-02-23,Arsenal,Everton,3-2,2-2
 27,Mon,2020-02-24,Liverpool,West Ham United,3-2,1-1
@@ -274,14 +274,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 28,Sat,2020-02-29,AFC Bournemouth,Chelsea,2-2,0-1
 28,Sat,2020-02-29,Newcastle United,Burnley,0-0,
 28,Sat,2020-02-29,West Ham United,Southampton FC,3-1,2-1
-28,Sat,2020-02-29,Watford FC,Liverpool,3-0,0-0
+28,Sat,2020-02-29,Watford,Liverpool,3-0,0-0
 28,Sun,2020-03-01,Tottenham,Wolverhampton,2-3,2-1
 28,Sun,2020-03-01,Everton,Manchester United,1-1,1-1
 29,Sat,2020-03-07,Burnley,Tottenham,1-1,1-0
 29,Sat,2020-03-07,Wolverhampton,Brighton & Hove Albion,0-0,
 29,Sat,2020-03-07,Liverpool,AFC Bournemouth,2-1,2-1
 29,Sat,2020-03-07,Arsenal,West Ham United,1-0,0-0
-29,Sat,2020-03-07,Crystal Palace,Watford FC,1-0,1-0
+29,Sat,2020-03-07,Crystal Palace,Watford,1-0,1-0
 29,Sat,2020-03-07,Sheffield United,Norwich City,1-0,1-0
 29,Sat,2020-03-07,Southampton FC,Newcastle United,0-1,0-0
 29,Sun,2020-03-08,Manchester United,Manchester City,2-0,1-0
@@ -294,7 +294,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 30,Sat,2020-06-20,Brighton & Hove Albion,Arsenal,2-1,0-0
 30,Sat,2020-06-20,West Ham United,Wolverhampton,0-2,0-0
 30,Sat,2020-06-20,AFC Bournemouth,Crystal Palace,0-2,0-2
-30,Sat,2020-06-20,Watford FC,Leicester,1-1,0-0
+30,Sat,2020-06-20,Watford,Leicester,1-1,0-0
 30,Sun,2020-06-21,Newcastle United,Sheffield United,3-0,0-0
 30,Sun,2020-06-21,Aston Villa,Chelsea,1-2,1-0
 30,Sun,2020-06-21,Everton,Liverpool,0-0,
@@ -308,9 +308,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Wed,2020-06-24,Liverpool,Crystal Palace,4-0,2-0
 31,Thu,2020-06-25,Southampton FC,Arsenal,0-2,0-1
 31,Thu,2020-06-25,Chelsea,Manchester City,2-1,1-0
-31,Thu,2020-06-25,Burnley,Watford FC,1-0,0-0
+31,Thu,2020-06-25,Burnley,Watford,1-0,0-0
 32,Sat,2020-06-27,Aston Villa,Wolverhampton,0-1,0-0
-32,Sun,2020-06-28,Watford FC,Southampton FC,1-3,0-1
+32,Sun,2020-06-28,Watford,Southampton FC,1-3,0-1
 32,Mon,2020-06-29,Crystal Palace,Burnley,0-1,0-0
 32,Tue,2020-06-30,Brighton & Hove Albion,Manchester United,0-3,0-2
 32,Wed,2020-07-01,AFC Bournemouth,Newcastle United,1-4,0-2
@@ -323,13 +323,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 33,Sat,2020-07-04,Leicester,Crystal Palace,3-0,0-0
 33,Sat,2020-07-04,Manchester United,AFC Bournemouth,5-2,3-1
 33,Sat,2020-07-04,Wolverhampton,Arsenal,0-2,0-1
-33,Sat,2020-07-04,Chelsea,Watford FC,3-0,2-0
+33,Sat,2020-07-04,Chelsea,Watford,3-0,2-0
 33,Sun,2020-07-05,Newcastle United,West Ham United,2-2,1-1
 33,Sun,2020-07-05,Liverpool,Aston Villa,2-0,0-0
 33,Sun,2020-07-05,Southampton FC,Manchester City,1-0,1-0
 33,Sun,2020-07-05,Burnley,Sheffield United,1-1,1-0
 33,Mon,2020-07-06,Tottenham,Everton,1-0,1-0
-34,Tue,2020-07-07,Watford FC,Norwich City,2-1,1-1
+34,Tue,2020-07-07,Watford,Norwich City,2-1,1-1
 34,Tue,2020-07-07,Arsenal,Leicester,1-1,1-0
 34,Tue,2020-07-07,Crystal Palace,Chelsea,2-3,1-2
 34,Wed,2020-07-08,Manchester City,Newcastle United,5-0,2-0
@@ -339,7 +339,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Thu,2020-07-09,Everton,Southampton FC,1-1,1-1
 34,Thu,2020-07-09,Aston Villa,Manchester United,0-3,0-2
 34,Thu,2020-07-09,AFC Bournemouth,Tottenham,0-0,
-35,Sat,2020-07-11,Watford FC,Newcastle United,2-1,0-1
+35,Sat,2020-07-11,Watford,Newcastle United,2-1,0-1
 35,Sat,2020-07-11,Liverpool,Burnley,1-1,1-0
 35,Sat,2020-07-11,Sheffield United,Chelsea,3-0,2-0
 35,Sat,2020-07-11,Brighton & Hove Albion,Manchester City,0-5,0-2
@@ -358,7 +358,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Thu,2020-07-16,Leicester,Sheffield United,2-0,1-0
 36,Thu,2020-07-16,Crystal Palace,Manchester United,0-2,0-1
 36,Thu,2020-07-16,Southampton FC,Brighton & Hove Albion,1-1,0-1
-36,Fri,2020-07-17,West Ham United,Watford FC,3-1,3-0
+36,Fri,2020-07-17,West Ham United,Watford,3-1,3-0
 37,Sat,2020-07-18,Norwich City,Burnley,0-2,0-1
 37,Sun,2020-07-19,Tottenham,Leicester,3-0,3-0
 37,Sun,2020-07-19,AFC Bournemouth,Southampton FC,0-2,0-1
@@ -366,10 +366,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 37,Mon,2020-07-20,Sheffield United,Everton,0-1,0-0
 37,Mon,2020-07-20,Wolverhampton,Crystal Palace,2-0,1-0
 37,Tue,2020-07-21,Aston Villa,Arsenal,1-0,1-0
-37,Tue,2020-07-21,Watford FC,Manchester City,0-4,0-2
+37,Tue,2020-07-21,Watford,Manchester City,0-4,0-2
 37,Wed,2020-07-22,Manchester United,West Ham United,1-1,0-1
 37,Wed,2020-07-22,Liverpool,Chelsea,5-3,3-1
-38,Sun,2020-07-26,Arsenal,Watford FC,3-2,3-1
+38,Sun,2020-07-26,Arsenal,Watford,3-2,3-1
 38,Sun,2020-07-26,Burnley,Brighton & Hove Albion,1-2,1-1
 38,Sun,2020-07-26,Chelsea,Wolverhampton,2-0,2-0
 38,Sun,2020-07-26,Crystal Palace,Tottenham,1-1,0-1

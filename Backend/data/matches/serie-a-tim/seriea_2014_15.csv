@@ -1,27 +1,27 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
-1,Sat,2014-08-30,Chievo Verona,Juventus FC,0-1,0-1
+1,Sat,2014-08-30,AC Chievo Verona,Juventus FC,0-1,0-1
 1,Sat,2014-08-30,Roma,Fiorentina,2-0,1-0
 1,Sun,2014-08-31,Atalanta,Hellas Verona,0-0,
 1,Sun,2014-08-31,AC Milan,Lazio,3-1,1-0
-1,Sun,2014-08-31,Cesena,Parma FC,1-0,1-0
+1,Sun,2014-08-31,Cesena,Parma Calcio 1913,1-0,1-0
 1,Sun,2014-08-31,Genoa CFC,Napoli,1-2,1-1
 1,Sun,2014-08-31,US Palermo,Sampdoria,1-1,1-0
 1,Sun,2014-08-31,Sassuolo,Cagliari,1-1,1-1
 1,Sun,2014-08-31,Torino,Inter de Milão,0-0,
-1,Sun,2014-08-31,Udinese,Empoli FC,2-0,0-0
-2,Sat,2014-09-13,Empoli FC,Roma,0-1,0-1
+1,Sun,2014-08-31,Udinese,FC Empoli,2-0,0-0
+2,Sat,2014-09-13,FC Empoli,Roma,0-1,0-1
 2,Sat,2014-09-13,Juventus FC,Udinese,2-0,1-0
 2,Sun,2014-09-14,Sampdoria,Torino,2-0,1-0
 2,Sun,2014-09-14,Cagliari,Atalanta,1-2,0-1
 2,Sun,2014-09-14,Fiorentina,Genoa CFC,0-0,
 2,Sun,2014-09-14,Inter de Milão,Sassuolo,7-0,4-0
 2,Sun,2014-09-14,Lazio,Cesena,3-0,1-0
-2,Sun,2014-09-14,Napoli,Chievo Verona,0-1,0-0
-2,Sun,2014-09-14,Parma FC,AC Milan,4-5,1-3
+2,Sun,2014-09-14,Napoli,AC Chievo Verona,0-1,0-0
+2,Sun,2014-09-14,Parma Calcio 1913,AC Milan,4-5,1-3
 2,Mon,2014-09-15,Hellas Verona,US Palermo,2-1,1-1
-3,Sat,2014-09-20,Cesena,Empoli FC,2-2,2-0
+3,Sat,2014-09-20,Cesena,FC Empoli,2-2,2-0
 3,Sat,2014-09-20,AC Milan,Juventus FC,0-1,0-0
-3,Sun,2014-09-21,Chievo Verona,Parma FC,2-3,1-0
+3,Sun,2014-09-21,AC Chievo Verona,Parma Calcio 1913,2-3,1-0
 3,Sun,2014-09-21,Genoa CFC,Lazio,1-0,0-0
 3,Sun,2014-09-21,Roma,Cagliari,2-0,2-0
 3,Sun,2014-09-21,Sassuolo,Sampdoria,0-0,
@@ -29,70 +29,70 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 3,Sun,2014-09-21,Udinese,Napoli,1-0,0-0
 3,Sun,2014-09-21,US Palermo,Inter de Milão,1-1,1-1
 3,Sun,2014-09-21,Torino,Hellas Verona,0-1,0-0
-4,Tue,2014-09-23,Empoli FC,AC Milan,2-2,2-1
+4,Tue,2014-09-23,FC Empoli,AC Milan,2-2,2-1
 4,Wed,2014-09-24,Cagliari,Torino,1-2,1-2
 4,Wed,2014-09-24,Fiorentina,Sassuolo,0-0,
 4,Wed,2014-09-24,Hellas Verona,Genoa CFC,2-2,0-1
 4,Wed,2014-09-24,Inter de Milão,Atalanta,2-0,1-0
 4,Wed,2014-09-24,Juventus FC,Cesena,3-0,1-0
 4,Wed,2014-09-24,Napoli,US Palermo,3-3,3-2
-4,Wed,2014-09-24,Parma FC,Roma,1-2,0-1
-4,Wed,2014-09-24,Sampdoria,Chievo Verona,2-1,1-0
+4,Wed,2014-09-24,Parma Calcio 1913,Roma,1-2,0-1
+4,Wed,2014-09-24,Sampdoria,AC Chievo Verona,2-1,1-0
 4,Thu,2014-09-25,Lazio,Udinese,0-1,0-1
 5,Sat,2014-09-27,Roma,Hellas Verona,2-0,0-0
 5,Sat,2014-09-27,Atalanta,Juventus FC,0-3,0-1
 5,Sun,2014-09-28,Sassuolo,Napoli,0-1,0-1
 5,Sun,2014-09-28,Cesena,AC Milan,1-1,1-1
-5,Sun,2014-09-28,Chievo Verona,Empoli FC,1-1,0-0
+5,Sun,2014-09-28,AC Chievo Verona,FC Empoli,1-1,0-0
 5,Sun,2014-09-28,Inter de Milão,Cagliari,1-4,1-4
 5,Sun,2014-09-28,Torino,Fiorentina,1-1,0-0
 5,Sun,2014-09-28,Genoa CFC,Sampdoria,0-1,0-0
-5,Mon,2014-09-29,Udinese,Parma FC,4-2,2-2
+5,Mon,2014-09-29,Udinese,Parma Calcio 1913,4-2,2-2
 5,Mon,2014-09-29,US Palermo,Lazio,0-4,0-1
 6,Sat,2014-10-04,Hellas Verona,Cagliari,1-0,0-0
-6,Sat,2014-10-04,AC Milan,Chievo Verona,2-0,0-0
-6,Sun,2014-10-05,Empoli FC,US Palermo,3-0,2-0
+6,Sat,2014-10-04,AC Milan,AC Chievo Verona,2-0,0-0
+6,Sun,2014-10-05,FC Empoli,US Palermo,3-0,2-0
 6,Sun,2014-10-05,Lazio,Sassuolo,3-2,3-1
-6,Sun,2014-10-05,Parma FC,Genoa CFC,1-2,0-0
+6,Sun,2014-10-05,Parma Calcio 1913,Genoa CFC,1-2,0-0
 6,Sun,2014-10-05,Sampdoria,Atalanta,1-0,1-0
 6,Sun,2014-10-05,Udinese,Cesena,1-1,0-0
 6,Sun,2014-10-05,Juventus FC,Roma,3-2,2-2
 6,Sun,2014-10-05,Fiorentina,Inter de Milão,3-0,2-0
 6,Sun,2014-10-05,Napoli,Torino,2-1,0-1
-7,Sat,2014-10-18,Roma,Chievo Verona,3-0,3-0
+7,Sat,2014-10-18,Roma,AC Chievo Verona,3-0,3-0
 7,Sat,2014-10-18,Sassuolo,Juventus FC,1-1,1-1
 7,Sun,2014-10-19,Fiorentina,Lazio,0-2,0-1
-7,Sun,2014-10-19,Atalanta,Parma FC,1-0,0-0
+7,Sun,2014-10-19,Atalanta,Parma Calcio 1913,1-0,0-0
 7,Sun,2014-10-19,Cagliari,Sampdoria,2-2,0-2
 7,Sun,2014-10-19,Hellas Verona,AC Milan,1-3,0-2
 7,Sun,2014-10-19,US Palermo,Cesena,2-1,1-0
 7,Sun,2014-10-19,Torino,Udinese,1-0,0-0
 7,Sun,2014-10-19,Inter de Milão,Napoli,2-2,0-0
-7,Mon,2014-10-20,Genoa CFC,Empoli FC,1-1,1-0
-8,Sat,2014-10-25,Empoli FC,Cagliari,0-4,0-4
-8,Sat,2014-10-25,Parma FC,Sassuolo,1-3,0-2
+7,Mon,2014-10-20,Genoa CFC,FC Empoli,1-1,1-0
+8,Sat,2014-10-25,FC Empoli,Cagliari,0-4,0-4
+8,Sat,2014-10-25,Parma Calcio 1913,Sassuolo,1-3,0-2
 8,Sat,2014-10-25,Sampdoria,Roma,0-0,
-8,Sun,2014-10-26,Chievo Verona,Genoa CFC,1-2,1-0
+8,Sun,2014-10-26,AC Chievo Verona,Genoa CFC,1-2,1-0
 8,Sun,2014-10-26,Juventus FC,US Palermo,2-0,1-0
 8,Sun,2014-10-26,Udinese,Atalanta,2-0,2-0
 8,Sun,2014-10-26,Cesena,Inter de Milão,0-1,0-1
 8,Sun,2014-10-26,Lazio,Torino,2-1,1-0
 8,Sun,2014-10-26,Napoli,Hellas Verona,6-2,1-1
 8,Sun,2014-10-26,AC Milan,Fiorentina,1-1,1-0
-9,Tue,2014-10-28,Sassuolo,Empoli FC,3-1,0-1
+9,Tue,2014-10-28,Sassuolo,FC Empoli,3-1,0-1
 9,Wed,2014-10-29,Atalanta,Napoli,1-1,0-0
 9,Wed,2014-10-29,Cagliari,AC Milan,1-1,1-1
 9,Wed,2014-10-29,Fiorentina,Udinese,3-0,1-0
 9,Wed,2014-10-29,Genoa CFC,Juventus FC,1-0,0-0
 9,Wed,2014-10-29,Inter de Milão,Sampdoria,1-0,0-0
-9,Wed,2014-10-29,US Palermo,Chievo Verona,1-0,0-0
+9,Wed,2014-10-29,US Palermo,AC Chievo Verona,1-0,0-0
 9,Wed,2014-10-29,Roma,Cesena,2-0,1-0
-9,Wed,2014-10-29,Torino,Parma FC,1-0,1-0
+9,Wed,2014-10-29,Torino,Parma Calcio 1913,1-0,1-0
 9,Thu,2014-10-30,Hellas Verona,Lazio,1-1,0-1
 10,Sat,2014-11-01,Napoli,Roma,2-0,1-0
-10,Sat,2014-11-01,Empoli FC,Juventus FC,0-2,0-0
-10,Sat,2014-11-01,Parma FC,Inter de Milão,2-0,1-0
-10,Sun,2014-11-02,Chievo Verona,Sassuolo,0-0,
+10,Sat,2014-11-01,FC Empoli,Juventus FC,0-2,0-0
+10,Sat,2014-11-01,Parma Calcio 1913,Inter de Milão,2-0,1-0
+10,Sun,2014-11-02,AC Chievo Verona,Sassuolo,0-0,
 10,Sun,2014-11-02,Sampdoria,Fiorentina,3-1,2-1
 10,Sun,2014-11-02,Torino,Atalanta,0-0,
 10,Sun,2014-11-02,Udinese,Genoa CFC,2-4,2-2
@@ -102,9 +102,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Sat,2014-11-08,Sassuolo,Atalanta,0-0,
 11,Sat,2014-11-08,Sampdoria,AC Milan,2-2,0-1
 11,Sun,2014-11-09,Cagliari,Genoa CFC,1-1,1-0
-11,Sun,2014-11-09,Chievo Verona,Cesena,2-1,0-0
-11,Sun,2014-11-09,Empoli FC,Lazio,2-1,0-0
-11,Sun,2014-11-09,Juventus FC,Parma FC,7-0,3-0
+11,Sun,2014-11-09,AC Chievo Verona,Cesena,2-1,0-0
+11,Sun,2014-11-09,FC Empoli,Lazio,2-1,0-0
+11,Sun,2014-11-09,Juventus FC,Parma Calcio 1913,7-0,3-0
 11,Sun,2014-11-09,US Palermo,Udinese,1-1,1-1
 11,Sun,2014-11-09,Fiorentina,Napoli,0-1,0-0
 11,Sun,2014-11-09,Inter de Milão,Hellas Verona,2-2,1-1
@@ -115,185 +115,185 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 12,Sun,2014-11-23,Cesena,Sampdoria,1-1,0-0
 12,Sun,2014-11-23,Hellas Verona,Fiorentina,1-2,1-1
 12,Sun,2014-11-23,Napoli,Cagliari,3-3,2-1
-12,Sun,2014-11-23,Parma FC,Empoli FC,0-2,0-1
-12,Sun,2014-11-23,Udinese,Chievo Verona,1-1,1-0
+12,Sun,2014-11-23,Parma Calcio 1913,FC Empoli,0-2,0-1
+12,Sun,2014-11-23,Udinese,AC Chievo Verona,1-1,1-0
 12,Sun,2014-11-23,AC Milan,Inter de Milão,1-1,1-0
 12,Mon,2014-11-24,Genoa CFC,US Palermo,1-1,1-1
 13,Sat,2014-11-29,Sassuolo,Hellas Verona,2-1,0-1
-13,Sat,2014-11-29,Chievo Verona,Lazio,0-0,
+13,Sat,2014-11-29,AC Chievo Verona,Lazio,0-0,
 13,Sun,2014-11-30,Cagliari,Fiorentina,0-4,0-1
 13,Sun,2014-11-30,Cesena,Genoa CFC,0-3,0-3
-13,Sun,2014-11-30,Empoli FC,Atalanta,0-0,
+13,Sun,2014-11-30,FC Empoli,Atalanta,0-0,
 13,Sun,2014-11-30,AC Milan,Udinese,2-0,0-0
-13,Sun,2014-11-30,US Palermo,Parma FC,2-1,1-1
+13,Sun,2014-11-30,US Palermo,Parma Calcio 1913,2-1,1-1
 13,Sun,2014-11-30,Juventus FC,Torino,2-1,1-1
 13,Sun,2014-11-30,Roma,Inter de Milão,4-2,1-1
 13,Mon,2014-12-01,Sampdoria,Napoli,1-1,0-0
 14,Fri,2014-12-05,Fiorentina,Juventus FC,0-0,
 14,Sat,2014-12-06,Roma,Sassuolo,2-2,0-2
 14,Sat,2014-12-06,Torino,US Palermo,2-2,1-2
-14,Sun,2014-12-07,Napoli,Empoli FC,2-2,0-1
+14,Sun,2014-12-07,Napoli,FC Empoli,2-2,0-1
 14,Sun,2014-12-07,Atalanta,Cesena,3-2,1-2
 14,Sun,2014-12-07,Genoa CFC,AC Milan,1-0,1-0
-14,Sun,2014-12-07,Parma FC,Lazio,1-2,1-1
+14,Sun,2014-12-07,Parma Calcio 1913,Lazio,1-2,1-1
 14,Sun,2014-12-07,Inter de Milão,Udinese,1-2,1-0
-14,Mon,2014-12-08,Cagliari,Chievo Verona,0-2,0-2
+14,Mon,2014-12-08,Cagliari,AC Chievo Verona,0-2,0-2
 14,Mon,2014-12-08,Hellas Verona,Sampdoria,1-3,1-1
 15,Sat,2014-12-13,US Palermo,Sassuolo,2-1,1-0
 15,Sat,2014-12-13,Lazio,Atalanta,3-0,0-0
 15,Sun,2014-12-14,Juventus FC,Sampdoria,1-1,1-0
 15,Sun,2014-12-14,Genoa CFC,Roma,0-1,0-1
-15,Sun,2014-12-14,Parma FC,Cagliari,0-0,
+15,Sun,2014-12-14,Parma Calcio 1913,Cagliari,0-0,
 15,Sun,2014-12-14,Udinese,Hellas Verona,1-2,1-1
 15,Sun,2014-12-14,Cesena,Fiorentina,1-4,0-1
 15,Sun,2014-12-14,AC Milan,Napoli,2-0,1-0
-15,Mon,2014-12-15,Empoli FC,Torino,0-0,
-15,Mon,2014-12-15,Chievo Verona,Inter de Milão,0-2,0-1
+15,Mon,2014-12-15,FC Empoli,Torino,0-0,
+15,Mon,2014-12-15,AC Chievo Verona,Inter de Milão,0-2,0-1
 16,Thu,2014-12-18,Cagliari,Juventus FC,1-3,0-2
-16,Thu,2014-12-18,Napoli,Parma FC,2-0,2-0
+16,Thu,2014-12-18,Napoli,Parma Calcio 1913,2-0,2-0
 16,Sat,2014-12-20,Sassuolo,Cesena,1-1,0-0
 16,Sat,2014-12-20,Roma,AC Milan,0-0,
-16,Sun,2014-12-21,Hellas Verona,Chievo Verona,0-1,0-0
+16,Sun,2014-12-21,Hellas Verona,AC Chievo Verona,0-1,0-0
 16,Sun,2014-12-21,Atalanta,US Palermo,3-3,1-3
-16,Sun,2014-12-21,Fiorentina,Empoli FC,1-1,1-0
+16,Sun,2014-12-21,Fiorentina,FC Empoli,1-1,1-0
 16,Sun,2014-12-21,Sampdoria,Udinese,2-2,1-2
 16,Sun,2014-12-21,Torino,Genoa CFC,2-1,0-1
 16,Sun,2014-12-21,Inter de Milão,Lazio,2-2,0-2
 17,Mon,2015-01-05,Lazio,Sampdoria,3-0,2-0
 17,Tue,2015-01-06,Udinese,Roma,0-1,0-1
-17,Tue,2015-01-06,Chievo Verona,Torino,0-0,
-17,Tue,2015-01-06,Empoli FC,Hellas Verona,0-0,
+17,Tue,2015-01-06,AC Chievo Verona,Torino,0-0,
+17,Tue,2015-01-06,FC Empoli,Hellas Verona,0-0,
 17,Tue,2015-01-06,Genoa CFC,Atalanta,2-2,0-1
 17,Tue,2015-01-06,AC Milan,Sassuolo,1-2,1-1
 17,Tue,2015-01-06,US Palermo,Cagliari,5-0,3-0
-17,Tue,2015-01-06,Parma FC,Fiorentina,1-0,1-0
+17,Tue,2015-01-06,Parma Calcio 1913,Fiorentina,1-0,1-0
 17,Tue,2015-01-06,Cesena,Napoli,1-4,0-2
 17,Tue,2015-01-06,Juventus FC,Inter de Milão,1-1,1-0
 18,Sat,2015-01-10,Sassuolo,Udinese,1-1,1-1
 18,Sat,2015-01-10,Torino,AC Milan,1-1,0-1
 18,Sun,2015-01-11,Inter de Milão,Genoa CFC,3-1,2-0
-18,Sun,2015-01-11,Atalanta,Chievo Verona,1-1,0-0
+18,Sun,2015-01-11,Atalanta,AC Chievo Verona,1-1,0-0
 18,Sun,2015-01-11,Cagliari,Cesena,2-1,2-0
 18,Sun,2015-01-11,Fiorentina,US Palermo,4-3,1-0
-18,Sun,2015-01-11,Hellas Verona,Parma FC,3-1,1-0
+18,Sun,2015-01-11,Hellas Verona,Parma Calcio 1913,3-1,1-0
 18,Sun,2015-01-11,Roma,Lazio,2-2,0-2
-18,Sun,2015-01-11,Sampdoria,Empoli FC,1-0,0-0
+18,Sun,2015-01-11,Sampdoria,FC Empoli,1-0,0-0
 18,Sun,2015-01-11,Napoli,Juventus FC,1-3,0-1
-19,Sat,2015-01-17,Empoli FC,Inter de Milão,0-0,
+19,Sat,2015-01-17,FC Empoli,Inter de Milão,0-0,
 19,Sat,2015-01-17,US Palermo,Roma,1-1,1-0
 19,Sun,2015-01-18,Lazio,Napoli,0-1,0-1
 19,Sun,2015-01-18,Cesena,Torino,2-3,1-2
-19,Sun,2015-01-18,Chievo Verona,Fiorentina,1-2,0-1
+19,Sun,2015-01-18,AC Chievo Verona,Fiorentina,1-2,0-1
 19,Sun,2015-01-18,Genoa CFC,Sassuolo,3-3,1-1
 19,Sun,2015-01-18,AC Milan,Atalanta,0-1,0-1
-19,Sun,2015-01-18,Parma FC,Sampdoria,0-2,0-0
+19,Sun,2015-01-18,Parma Calcio 1913,Sampdoria,0-2,0-0
 19,Sun,2015-01-18,Udinese,Cagliari,2-2,0-1
 19,Sun,2015-01-18,Juventus FC,Hellas Verona,4-0,2-0
 20,Sat,2015-01-24,Cagliari,Sassuolo,2-1,1-0
 20,Sat,2015-01-24,Lazio,AC Milan,3-1,0-1
 20,Sun,2015-01-25,Hellas Verona,Atalanta,1-0,0-0
-20,Sun,2015-01-25,Parma FC,Cesena,1-2,0-1
-20,Sun,2015-01-25,Juventus FC,Chievo Verona,2-0,0-0
+20,Sun,2015-01-25,Parma Calcio 1913,Cesena,1-2,0-1
+20,Sun,2015-01-25,Juventus FC,AC Chievo Verona,2-0,0-0
 20,Sun,2015-01-25,Sampdoria,US Palermo,1-1,1-0
 20,Sun,2015-01-25,Inter de Milão,Torino,0-1,0-0
 20,Sun,2015-01-25,Fiorentina,Roma,1-1,1-0
-20,Mon,2015-01-26,Empoli FC,Udinese,1-2,1-1
+20,Mon,2015-01-26,FC Empoli,Udinese,1-2,1-1
 20,Mon,2015-01-26,Napoli,Genoa CFC,2-1,1-0
 21,Sat,2015-01-31,Genoa CFC,Fiorentina,1-1,1-0
-21,Sat,2015-01-31,Roma,Empoli FC,1-1,0-1
+21,Sat,2015-01-31,Roma,FC Empoli,1-1,0-1
 21,Sun,2015-02-01,Sassuolo,Inter de Milão,3-1,2-0
 21,Sun,2015-02-01,Atalanta,Cagliari,2-1,1-1
 21,Sun,2015-02-01,US Palermo,Hellas Verona,2-1,1-1
 21,Sun,2015-02-01,Udinese,Juventus FC,0-0,
 21,Sun,2015-02-01,Cesena,Lazio,2-1,0-0
-21,Sun,2015-02-01,Chievo Verona,Napoli,1-2,1-1
+21,Sun,2015-02-01,AC Chievo Verona,Napoli,1-2,1-1
 21,Sun,2015-02-01,Torino,Sampdoria,5-1,2-0
-21,Sun,2015-02-01,AC Milan,Parma FC,3-1,1-1
+21,Sun,2015-02-01,AC Milan,Parma Calcio 1913,3-1,1-1
 22,Sat,2015-02-07,Hellas Verona,Torino,1-3,0-1
 22,Sat,2015-02-07,Juventus FC,AC Milan,3-1,2-1
 22,Sun,2015-02-08,Fiorentina,Atalanta,3-2,1-1
-22,Sun,2015-02-08,Empoli FC,Cesena,2-0,1-0
+22,Sun,2015-02-08,FC Empoli,Cesena,2-0,1-0
 22,Sun,2015-02-08,Cagliari,Roma,1-2,0-1
 22,Sun,2015-02-08,Sampdoria,Sassuolo,1-1,1-1
 22,Sun,2015-02-08,Napoli,Udinese,3-1,2-1
 22,Sun,2015-02-08,Inter de Milão,US Palermo,3-0,1-0
 22,Mon,2015-02-09,Lazio,Genoa CFC,0-1,0-1
-22,Wed,2015-02-11,Parma FC,Chievo Verona,0-1,0-0
+22,Wed,2015-02-11,Parma Calcio 1913,AC Chievo Verona,0-1,0-0
 23,Sat,2015-02-14,Sassuolo,Fiorentina,1-3,0-2
 23,Sat,2015-02-14,US Palermo,Napoli,3-1,2-0
-23,Sun,2015-02-15,AC Milan,Empoli FC,1-1,1-0
+23,Sun,2015-02-15,AC Milan,FC Empoli,1-1,1-0
 23,Sun,2015-02-15,Torino,Cagliari,1-1,1-1
 23,Sun,2015-02-15,Genoa CFC,Hellas Verona,5-2,3-1
 23,Sun,2015-02-15,Atalanta,Inter de Milão,1-4,1-2
 23,Sun,2015-02-15,Udinese,Lazio,0-1,0-1
-23,Sun,2015-02-15,Roma,Parma FC,0-0,
-23,Sun,2015-02-15,Chievo Verona,Sampdoria,2-1,2-0
+23,Sun,2015-02-15,Roma,Parma Calcio 1913,0-0,
+23,Sun,2015-02-15,AC Chievo Verona,Sampdoria,2-1,2-0
 23,Sun,2015-02-15,Cesena,Juventus FC,2-2,1-2
 24,Fri,2015-02-20,Juventus FC,Atalanta,2-1,2-1
 24,Sun,2015-02-22,AC Milan,Cesena,2-0,1-0
-24,Sun,2015-02-22,Empoli FC,Chievo Verona,3-0,1-0
+24,Sun,2015-02-22,FC Empoli,AC Chievo Verona,3-0,1-0
 24,Sun,2015-02-22,Lazio,US Palermo,2-1,1-1
 24,Sun,2015-02-22,Hellas Verona,Roma,1-1,1-1
 24,Sun,2015-02-22,Fiorentina,Torino,1-1,0-0
 24,Mon,2015-02-23,Napoli,Sassuolo,2-0,0-0
 24,Mon,2015-02-23,Cagliari,Inter de Milão,1-2,0-0
 24,Tue,2015-02-24,Sampdoria,Genoa CFC,1-1,1-1
-24,Wed,2015-04-08,Parma FC,Udinese,1-0,0-0
-25,Sat,2015-02-28,Chievo Verona,AC Milan,0-0,
+24,Wed,2015-04-08,Parma Calcio 1913,Udinese,1-0,0-0
+25,Sat,2015-02-28,AC Chievo Verona,AC Milan,0-0,
 25,Sun,2015-03-01,Cagliari,Hellas Verona,1-2,0-1
-25,Sun,2015-03-01,US Palermo,Empoli FC,0-0,
+25,Sun,2015-03-01,US Palermo,FC Empoli,0-0,
 25,Sun,2015-03-01,Sassuolo,Lazio,0-3,0-1
 25,Sun,2015-03-01,Atalanta,Sampdoria,1-2,1-0
 25,Sun,2015-03-01,Cesena,Udinese,1-0,0-0
 25,Sun,2015-03-01,Inter de Milão,Fiorentina,0-1,0-0
 25,Sun,2015-03-01,Torino,Napoli,1-0,0-0
 25,Mon,2015-03-02,Roma,Juventus FC,1-1,0-0
-25,Wed,2015-04-15,Genoa CFC,Parma FC,2-0,1-0
+25,Wed,2015-04-15,Genoa CFC,Parma Calcio 1913,2-0,1-0
 26,Sat,2015-03-07,Sampdoria,Cagliari,2-0,1-0
 26,Sat,2015-03-07,AC Milan,Hellas Verona,2-2,1-1
 26,Sun,2015-03-08,Cesena,US Palermo,0-0,
-26,Sun,2015-03-08,Parma FC,Atalanta,0-0,
-26,Sun,2015-03-08,Empoli FC,Genoa CFC,1-1,0-1
-26,Sun,2015-03-08,Chievo Verona,Roma,0-0,
+26,Sun,2015-03-08,Parma Calcio 1913,Atalanta,0-0,
+26,Sun,2015-03-08,FC Empoli,Genoa CFC,1-1,0-1
+26,Sun,2015-03-08,AC Chievo Verona,Roma,0-0,
 26,Sun,2015-03-08,Udinese,Torino,3-2,2-1
 26,Sun,2015-03-08,Napoli,Inter de Milão,2-2,0-0
 26,Mon,2015-03-09,Lazio,Fiorentina,4-0,1-0
 26,Mon,2015-03-09,Juventus FC,Sassuolo,1-0,0-0
 27,Sat,2015-03-14,US Palermo,Juventus FC,0-1,0-0
-27,Sat,2015-03-14,Cagliari,Empoli FC,1-1,1-0
-27,Sun,2015-03-15,Genoa CFC,Chievo Verona,0-2,0-0
-27,Sun,2015-03-15,Sassuolo,Parma FC,4-1,2-1
+27,Sat,2015-03-14,Cagliari,FC Empoli,1-1,1-0
+27,Sun,2015-03-15,Genoa CFC,AC Chievo Verona,0-2,0-0
+27,Sun,2015-03-15,Sassuolo,Parma Calcio 1913,4-1,2-1
 27,Sun,2015-03-15,Atalanta,Udinese,0-0,
 27,Sun,2015-03-15,Hellas Verona,Napoli,2-0,1-0
 27,Sun,2015-03-15,Inter de Milão,Cesena,1-1,0-1
 27,Mon,2015-03-16,Torino,Lazio,0-2,0-0
 27,Mon,2015-03-16,Fiorentina,AC Milan,2-1,0-0
 27,Mon,2015-03-16,Roma,Sampdoria,0-2,0-0
-28,Sat,2015-03-21,Chievo Verona,US Palermo,1-0,1-0
+28,Sat,2015-03-21,AC Chievo Verona,US Palermo,1-0,1-0
 28,Sat,2015-03-21,AC Milan,Cagliari,3-1,1-0
-28,Sun,2015-03-22,Empoli FC,Sassuolo,3-1,0-0
+28,Sun,2015-03-22,FC Empoli,Sassuolo,3-1,0-0
 28,Sun,2015-03-22,Juventus FC,Genoa CFC,1-0,1-0
 28,Sun,2015-03-22,Napoli,Atalanta,1-1,0-0
 28,Sun,2015-03-22,Udinese,Fiorentina,2-2,1-0
 28,Sun,2015-03-22,Lazio,Hellas Verona,2-0,2-0
 28,Sun,2015-03-22,Sampdoria,Inter de Milão,1-0,0-0
 28,Sun,2015-03-22,Cesena,Roma,0-1,0-1
-28,Sun,2015-03-22,Parma FC,Torino,0-2,0-1
+28,Sun,2015-03-22,Parma Calcio 1913,Torino,0-2,0-1
 29,Sat,2015-04-04,Roma,Napoli,1-0,1-0
 29,Sat,2015-04-04,Hellas Verona,Cesena,3-3,2-0
-29,Sat,2015-04-04,Sassuolo,Chievo Verona,1-0,1-0
+29,Sat,2015-04-04,Sassuolo,AC Chievo Verona,1-0,1-0
 29,Sat,2015-04-04,Cagliari,Lazio,1-3,0-1
 29,Sat,2015-04-04,US Palermo,AC Milan,1-2,0-1
-29,Sat,2015-04-04,Inter de Milão,Parma FC,1-1,1-1
+29,Sat,2015-04-04,Inter de Milão,Parma Calcio 1913,1-1,1-1
 29,Sat,2015-04-04,Atalanta,Torino,1-2,0-2
 29,Sat,2015-04-04,Genoa CFC,Udinese,1-1,1-0
 29,Sat,2015-04-04,Fiorentina,Sampdoria,2-0,0-0
-29,Sat,2015-04-04,Juventus FC,Empoli FC,2-0,1-0
+29,Sat,2015-04-04,Juventus FC,FC Empoli,2-0,1-0
 30,Sat,2015-04-11,Genoa CFC,Cagliari,2-0,0-0
-30,Sat,2015-04-11,Parma FC,Juventus FC,1-0,0-0
+30,Sat,2015-04-11,Parma Calcio 1913,Juventus FC,1-0,0-0
 30,Sat,2015-04-11,Hellas Verona,Inter de Milão,0-3,0-1
-30,Sun,2015-04-12,Cesena,Chievo Verona,0-1,0-0
-30,Sun,2015-04-12,Lazio,Empoli FC,4-0,3-0
+30,Sun,2015-04-12,Cesena,AC Chievo Verona,0-1,0-0
+30,Sun,2015-04-12,Lazio,FC Empoli,4-0,3-0
 30,Sun,2015-04-12,Napoli,Fiorentina,3-0,1-0
 30,Sun,2015-04-12,Udinese,US Palermo,1-3,0-2
 30,Sun,2015-04-12,Torino,Roma,1-1,0-0
@@ -304,68 +304,68 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Sun,2015-04-19,Sassuolo,Torino,1-1,1-0
 31,Sun,2015-04-19,Roma,Atalanta,1-1,1-1
 31,Sun,2015-04-19,US Palermo,Genoa CFC,2-1,2-0
-31,Sun,2015-04-19,Empoli FC,Parma FC,2-2,2-1
-31,Sun,2015-04-19,Chievo Verona,Udinese,1-1,1-0
+31,Sun,2015-04-19,FC Empoli,Parma Calcio 1913,2-2,2-1
+31,Sun,2015-04-19,AC Chievo Verona,Udinese,1-1,1-0
 31,Sun,2015-04-19,Cagliari,Napoli,0-3,0-2
 31,Sun,2015-04-19,Inter de Milão,AC Milan,0-0,
 31,Mon,2015-04-20,Fiorentina,Hellas Verona,0-1,0-0
 32,Sat,2015-04-25,Udinese,AC Milan,2-1,0-0
 32,Sat,2015-04-25,Inter de Milão,Roma,2-1,1-0
-32,Sun,2015-04-26,Atalanta,Empoli FC,2-2,1-1
+32,Sun,2015-04-26,Atalanta,FC Empoli,2-2,1-1
 32,Sun,2015-04-26,Genoa CFC,Cesena,3-1,2-0
-32,Sun,2015-04-26,Lazio,Chievo Verona,1-1,1-0
+32,Sun,2015-04-26,Lazio,AC Chievo Verona,1-1,1-0
 32,Sun,2015-04-26,Torino,Juventus FC,2-1,1-1
-32,Sun,2015-04-26,Parma FC,US Palermo,1-0,1-0
+32,Sun,2015-04-26,Parma Calcio 1913,US Palermo,1-0,1-0
 32,Sun,2015-04-26,Hellas Verona,Sassuolo,3-2,1-1
 32,Sun,2015-04-26,Fiorentina,Cagliari,1-3,0-1
 32,Sun,2015-04-26,Napoli,Sampdoria,4-2,2-1
 33,Tue,2015-04-28,Udinese,Inter de Milão,1-2,0-0
 33,Wed,2015-04-29,Cesena,Atalanta,2-2,0-0
-33,Wed,2015-04-29,Chievo Verona,Cagliari,1-0,1-0
+33,Wed,2015-04-29,AC Chievo Verona,Cagliari,1-0,1-0
 33,Wed,2015-04-29,Juventus FC,Fiorentina,3-2,2-1
 33,Wed,2015-04-29,AC Milan,Genoa CFC,1-3,0-1
 33,Wed,2015-04-29,Sampdoria,Hellas Verona,1-1,0-0
-33,Wed,2015-04-29,Lazio,Parma FC,4-0,3-0
+33,Wed,2015-04-29,Lazio,Parma Calcio 1913,4-0,3-0
 33,Wed,2015-04-29,Sassuolo,Roma,0-3,0-2
 33,Wed,2015-04-29,US Palermo,Torino,2-2,2-1
-33,Thu,2015-04-30,Empoli FC,Napoli,4-2,3-0
+33,Thu,2015-04-30,FC Empoli,Napoli,4-2,3-0
 34,Sat,2015-05-02,Sampdoria,Juventus FC,0-1,0-1
 34,Sat,2015-05-02,Sassuolo,US Palermo,0-0,
 34,Sun,2015-05-03,Roma,Genoa CFC,2-0,1-0
 34,Sun,2015-05-03,Fiorentina,Cesena,3-1,2-0
-34,Sun,2015-05-03,Inter de Milão,Chievo Verona,0-0,
+34,Sun,2015-05-03,Inter de Milão,AC Chievo Verona,0-0,
 34,Sun,2015-05-03,Atalanta,Lazio,1-1,0-0
 34,Sun,2015-05-03,Hellas Verona,Udinese,0-1,0-0
 34,Sun,2015-05-03,Napoli,AC Milan,3-0,0-0
-34,Mon,2015-05-04,Cagliari,Parma FC,4-0,3-0
-34,Wed,2015-05-06,Torino,Empoli FC,0-1,0-1
+34,Mon,2015-05-04,Cagliari,Parma Calcio 1913,4-0,3-0
+34,Wed,2015-05-06,Torino,FC Empoli,0-1,0-1
 35,Sat,2015-05-09,Juventus FC,Cagliari,1-1,1-0
 35,Sat,2015-05-09,AC Milan,Roma,2-1,1-0
-35,Sun,2015-05-10,Chievo Verona,Hellas Verona,2-2,2-2
+35,Sun,2015-05-10,AC Chievo Verona,Hellas Verona,2-2,2-2
 35,Sun,2015-05-10,US Palermo,Atalanta,2-3,1-2
 35,Sun,2015-05-10,Udinese,Sampdoria,1-4,0-1
 35,Sun,2015-05-10,Cesena,Sassuolo,2-3,2-0
-35,Sun,2015-05-10,Empoli FC,Fiorentina,2-3,1-1
-35,Sun,2015-05-10,Parma FC,Napoli,2-2,2-1
+35,Sun,2015-05-10,FC Empoli,Fiorentina,2-3,1-1
+35,Sun,2015-05-10,Parma Calcio 1913,Napoli,2-2,2-1
 35,Sun,2015-05-10,Lazio,Inter de Milão,1-2,1-1
 35,Mon,2015-05-11,Genoa CFC,Torino,5-1,1-0
 36,Sat,2015-05-16,Inter de Milão,Juventus FC,1-2,1-1
 36,Sat,2015-05-16,Sampdoria,Lazio,0-1,0-0
 36,Sun,2015-05-17,Sassuolo,AC Milan,3-2,2-1
-36,Sun,2015-05-17,Torino,Chievo Verona,2-0,0-0
-36,Sun,2015-05-17,Hellas Verona,Empoli FC,2-1,1-1
+36,Sun,2015-05-17,Torino,AC Chievo Verona,2-0,0-0
+36,Sun,2015-05-17,Hellas Verona,FC Empoli,2-1,1-1
 36,Sun,2015-05-17,Atalanta,Genoa CFC,1-4,1-1
 36,Sun,2015-05-17,Cagliari,US Palermo,0-1,0-1
 36,Sun,2015-05-17,Roma,Udinese,2-1,1-1
-36,Mon,2015-05-18,Fiorentina,Parma FC,3-0,2-0
+36,Mon,2015-05-18,Fiorentina,Parma Calcio 1913,3-0,2-0
 36,Mon,2015-05-18,Napoli,Cesena,3-2,2-2
 37,Sat,2015-05-23,Juventus FC,Napoli,3-1,1-0
 37,Sat,2015-05-23,Genoa CFC,Inter de Milão,3-2,2-2
-37,Sun,2015-05-24,Empoli FC,Sampdoria,1-1,0-0
-37,Sun,2015-05-24,Chievo Verona,Atalanta,1-1,0-0
+37,Sun,2015-05-24,FC Empoli,Sampdoria,1-1,0-0
+37,Sun,2015-05-24,AC Chievo Verona,Atalanta,1-1,0-0
 37,Sun,2015-05-24,Cesena,Cagliari,0-1,0-0
 37,Sun,2015-05-24,US Palermo,Fiorentina,2-3,1-2
-37,Sun,2015-05-24,Parma FC,Hellas Verona,2-2,2-1
+37,Sun,2015-05-24,Parma Calcio 1913,Hellas Verona,2-2,2-1
 37,Sun,2015-05-24,Udinese,Sassuolo,0-1,0-0
 37,Sun,2015-05-24,AC Milan,Torino,3-0,1-0
 37,Mon,2015-05-25,Lazio,Roma,1-2,0-0
@@ -373,9 +373,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 38,Sat,2015-05-30,Atalanta,AC Milan,1-3,1-2
 38,Sun,2015-05-31,Cagliari,Udinese,4-3,2-1
 38,Sun,2015-05-31,Torino,Cesena,5-0,3-0
-38,Sun,2015-05-31,Fiorentina,Chievo Verona,3-0,1-0
-38,Sun,2015-05-31,Inter de Milão,Empoli FC,4-3,0-0
+38,Sun,2015-05-31,Fiorentina,AC Chievo Verona,3-0,1-0
+38,Sun,2015-05-31,Inter de Milão,FC Empoli,4-3,0-0
 38,Sun,2015-05-31,Sassuolo,Genoa CFC,3-1,3-1
 38,Sun,2015-05-31,Napoli,Lazio,2-4,0-2
 38,Sun,2015-05-31,Roma,US Palermo,1-2,0-1
-38,Sun,2015-05-31,Sampdoria,Parma FC,2-2,0-0
+38,Sun,2015-05-31,Sampdoria,Parma Calcio 1913,2-2,0-0

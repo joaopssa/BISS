@@ -8,18 +8,18 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Sun,2017-08-20,Lazio,SPAL 2013 Ferrara,0-0,
 1,Sun,2017-08-20,Sampdoria,Benevento Calcio,2-1,1-1
 1,Sun,2017-08-20,Sassuolo,Genoa CFC,0-0,
-1,Sun,2017-08-20,Udinese,Chievo Verona,1-2,1-1
+1,Sun,2017-08-20,Udinese,AC Chievo Verona,1-2,1-1
 2,Sat,2017-08-26,Benevento Calcio,Bologna FC,0-1,0-0
 2,Sat,2017-08-26,Genoa CFC,Juventus FC,2-4,2-2
 2,Sat,2017-08-26,Roma,Inter de Milão,1-3,1-0
 2,Sun,2017-08-27,Torino,Sassuolo,3-0,1-0
-2,Sun,2017-08-27,Chievo Verona,Lazio,1-2,1-1
+2,Sun,2017-08-27,AC Chievo Verona,Lazio,1-2,1-1
 2,Sun,2017-08-27,FC Crotone,Hellas Verona,0-0,
 2,Sun,2017-08-27,Fiorentina,Sampdoria,1-2,0-2
 2,Sun,2017-08-27,AC Milan,Cagliari,2-1,1-0
 2,Sun,2017-08-27,Napoli,Atalanta,3-1,0-1
 2,Sun,2017-08-27,SPAL 2013 Ferrara,Udinese,3-2,1-0
-3,Sat,2017-09-09,Juventus FC,Chievo Verona,3-0,1-0
+3,Sat,2017-09-09,Juventus FC,AC Chievo Verona,3-0,1-0
 3,Sun,2017-09-10,Inter de Milão,SPAL 2013 Ferrara,2-0,1-0
 3,Sun,2017-09-10,Atalanta,Sassuolo,2-1,1-1
 3,Sun,2017-09-10,Cagliari,FC Crotone,1-0,1-0
@@ -37,13 +37,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Sun,2017-09-17,Napoli,Benevento Calcio,6-0,4-0
 4,Sun,2017-09-17,SPAL 2013 Ferrara,Cagliari,0-2,0-1
 4,Sun,2017-09-17,Torino,Sampdoria,2-2,2-2
-4,Sun,2017-09-17,Chievo Verona,Atalanta,1-1,0-0
+4,Sun,2017-09-17,AC Chievo Verona,Atalanta,1-1,0-0
 4,Sun,2017-09-17,Genoa CFC,Lazio,2-3,0-1
 5,Tue,2017-09-19,Bologna FC,Inter de Milão,1-1,1-0
 5,Wed,2017-09-20,Benevento Calcio,Roma,0-4,0-2
 5,Wed,2017-09-20,Atalanta,FC Crotone,5-1,3-0
 5,Wed,2017-09-20,Cagliari,Sassuolo,0-1,0-0
-5,Wed,2017-09-20,Genoa CFC,Chievo Verona,1-1,0-0
+5,Wed,2017-09-20,Genoa CFC,AC Chievo Verona,1-1,0-0
 5,Wed,2017-09-20,Hellas Verona,Sampdoria,0-0,
 5,Wed,2017-09-20,Juventus FC,Fiorentina,1-0,0-0
 5,Wed,2017-09-20,Lazio,Napoli,1-4,1-0
@@ -53,7 +53,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 6,Sat,2017-09-23,SPAL 2013 Ferrara,Napoli,2-3,1-1
 6,Sat,2017-09-23,Juventus FC,Torino,4-0,2-0
 6,Sun,2017-09-24,Sampdoria,AC Milan,2-0,0-0
-6,Sun,2017-09-24,Cagliari,Chievo Verona,0-2,0-0
+6,Sun,2017-09-24,Cagliari,AC Chievo Verona,0-2,0-0
 6,Sun,2017-09-24,FC Crotone,Benevento Calcio,2-0,1-0
 6,Sun,2017-09-24,Hellas Verona,Lazio,0-3,0-2
 6,Sun,2017-09-24,Inter de Milão,Genoa CFC,1-0,0-0
@@ -63,7 +63,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Sat,2017-09-30,Genoa CFC,Bologna FC,0-1,0-0
 7,Sun,2017-10-01,Napoli,Cagliari,3-0,2-0
 7,Sun,2017-10-01,Benevento Calcio,Inter de Milão,1-2,1-2
-7,Sun,2017-10-01,Chievo Verona,Fiorentina,2-1,1-1
+7,Sun,2017-10-01,AC Chievo Verona,Fiorentina,2-1,1-1
 7,Sun,2017-10-01,Lazio,Sassuolo,6-1,1-1
 7,Sun,2017-10-01,SPAL 2013 Ferrara,FC Crotone,1-1,1-0
 7,Sun,2017-10-01,Torino,Hellas Verona,2-2,2-0
@@ -76,12 +76,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 8,Sun,2017-10-15,Cagliari,Genoa CFC,2-3,0-2
 8,Sun,2017-10-15,FC Crotone,Torino,2-2,1-0
 8,Sun,2017-10-15,Sampdoria,Atalanta,3-1,0-1
-8,Sun,2017-10-15,Sassuolo,Chievo Verona,0-0,
+8,Sun,2017-10-15,Sassuolo,AC Chievo Verona,0-0,
 8,Sun,2017-10-15,Inter de Milão,AC Milan,3-2,1-0
 8,Mon,2017-10-16,Hellas Verona,Benevento Calcio,1-0,0-0
 9,Sat,2017-10-21,Sampdoria,FC Crotone,5-0,3-0
 9,Sat,2017-10-21,Napoli,Inter de Milão,0-0,
-9,Sun,2017-10-22,Chievo Verona,Hellas Verona,3-2,2-1
+9,Sun,2017-10-22,AC Chievo Verona,Hellas Verona,3-2,2-1
 9,Sun,2017-10-22,Atalanta,Bologna FC,1-0,0-0
 9,Sun,2017-10-22,Benevento Calcio,Fiorentina,0-3,0-1
 9,Sun,2017-10-22,AC Milan,Genoa CFC,0-0,
@@ -93,7 +93,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Wed,2017-10-25,Atalanta,Hellas Verona,3-0,0-0
 10,Wed,2017-10-25,Bologna FC,Lazio,1-2,0-2
 10,Wed,2017-10-25,Cagliari,Benevento Calcio,2-1,1-0
-10,Wed,2017-10-25,Chievo Verona,AC Milan,1-4,0-2
+10,Wed,2017-10-25,AC Chievo Verona,AC Milan,1-4,0-2
 10,Wed,2017-10-25,Fiorentina,Torino,3-0,1-0
 10,Wed,2017-10-25,Genoa CFC,Napoli,2-3,1-2
 10,Wed,2017-10-25,Juventus FC,SPAL 2013 Ferrara,4-1,2-1
@@ -104,7 +104,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Sun,2017-10-29,Benevento Calcio,Lazio,1-5,0-3
 11,Sun,2017-10-29,FC Crotone,Fiorentina,2-1,2-1
 11,Sun,2017-10-29,Napoli,Sassuolo,3-1,2-1
-11,Sun,2017-10-29,Sampdoria,Chievo Verona,4-1,3-1
+11,Sun,2017-10-29,Sampdoria,AC Chievo Verona,4-1,3-1
 11,Sun,2017-10-29,SPAL 2013 Ferrara,Genoa CFC,1-0,0-0
 11,Sun,2017-10-29,Udinese,Atalanta,2-1,1-1
 11,Sun,2017-10-29,Torino,Cagliari,2-1,1-1
@@ -113,7 +113,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 12,Sat,2017-11-04,Genoa CFC,Sampdoria,0-2,0-1
 12,Sun,2017-11-05,Inter de Milão,Torino,1-1,0-0
 12,Sun,2017-11-05,Cagliari,Hellas Verona,2-1,1-1
-12,Sun,2017-11-05,Chievo Verona,Napoli,0-0,
+12,Sun,2017-11-05,AC Chievo Verona,Napoli,0-0,
 12,Sun,2017-11-05,Fiorentina,Roma,2-4,2-2
 12,Sun,2017-11-05,Juventus FC,Benevento Calcio,2-1,0-1
 12,Sun,2017-11-05,Atalanta,SPAL 2013 Ferrara,1-1,1-0
@@ -125,12 +125,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 13,Sun,2017-11-19,Benevento Calcio,Sassuolo,1-2,0-0
 13,Sun,2017-11-19,Sampdoria,Juventus FC,3-2,0-0
 13,Sun,2017-11-19,SPAL 2013 Ferrara,Fiorentina,1-1,1-0
-13,Sun,2017-11-19,Torino,Chievo Verona,1-1,1-1
+13,Sun,2017-11-19,Torino,AC Chievo Verona,1-1,1-1
 13,Sun,2017-11-19,Udinese,Cagliari,0-1,0-0
 13,Sun,2017-11-19,Inter de Milão,Atalanta,2-0,0-0
 13,Mon,2017-11-20,Hellas Verona,Bologna FC,2-3,2-1
 14,Sat,2017-11-25,Bologna FC,Sampdoria,3-0,2-0
-14,Sat,2017-11-25,Chievo Verona,SPAL 2013 Ferrara,2-1,0-1
+14,Sat,2017-11-25,AC Chievo Verona,SPAL 2013 Ferrara,2-1,0-1
 14,Sat,2017-11-25,Sassuolo,Hellas Verona,0-2,0-2
 14,Sat,2017-11-25,Cagliari,Inter de Milão,1-3,0-1
 14,Sun,2017-11-26,Genoa CFC,Roma,1-1,0-0
@@ -145,13 +145,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Sun,2017-12-03,Benevento Calcio,AC Milan,2-2,0-1
 15,Sun,2017-12-03,Bologna FC,Cagliari,1-1,0-1
 15,Sun,2017-12-03,Fiorentina,Sassuolo,3-0,2-0
-15,Sun,2017-12-03,Inter de Milão,Chievo Verona,5-0,2-0
+15,Sun,2017-12-03,Inter de Milão,AC Chievo Verona,5-0,2-0
 15,Sun,2017-12-03,Sampdoria,Lazio,1-2,0-0
 15,Mon,2017-12-04,FC Crotone,Udinese,0-3,0-1
 15,Mon,2017-12-04,Hellas Verona,Genoa CFC,0-1,0-1
 16,Sat,2017-12-09,Cagliari,Sampdoria,2-2,0-2
 16,Sat,2017-12-09,Juventus FC,Inter de Milão,0-0,
-16,Sun,2017-12-10,Chievo Verona,Roma,0-0,
+16,Sun,2017-12-10,AC Chievo Verona,Roma,0-0,
 16,Sun,2017-12-10,Napoli,Fiorentina,0-0,
 16,Sun,2017-12-10,SPAL 2013 Ferrara,Hellas Verona,2-2,0-0
 16,Sun,2017-12-10,Udinese,Benevento Calcio,2-0,2-0
@@ -164,12 +164,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Sat,2017-12-16,Roma,Cagliari,1-0,0-0
 17,Sun,2017-12-17,Hellas Verona,AC Milan,3-0,1-0
 17,Sun,2017-12-17,Bologna FC,Juventus FC,0-3,0-2
-17,Sun,2017-12-17,FC Crotone,Chievo Verona,1-0,1-0
+17,Sun,2017-12-17,FC Crotone,AC Chievo Verona,1-0,1-0
 17,Sun,2017-12-17,Fiorentina,Genoa CFC,0-0,
 17,Sun,2017-12-17,Sampdoria,Sassuolo,0-1,0-0
 17,Sun,2017-12-17,Benevento Calcio,SPAL 2013 Ferrara,1-2,0-0
 17,Sun,2017-12-17,Atalanta,Lazio,3-3,2-2
-18,Fri,2017-12-22,Chievo Verona,Bologna FC,2-3,1-1
+18,Fri,2017-12-22,AC Chievo Verona,Bologna FC,2-3,1-1
 18,Fri,2017-12-22,Cagliari,Fiorentina,0-1,0-0
 18,Sat,2017-12-23,Lazio,FC Crotone,4-0,0-0
 18,Sat,2017-12-23,Genoa CFC,Benevento Calcio,1-0,0-0
@@ -182,14 +182,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Fri,2017-12-29,FC Crotone,Napoli,0-1,0-1
 19,Sat,2017-12-30,Fiorentina,AC Milan,1-1,0-0
 19,Sat,2017-12-30,Atalanta,Cagliari,1-2,0-2
-19,Sat,2017-12-30,Benevento Calcio,Chievo Verona,1-0,0-0
+19,Sat,2017-12-30,Benevento Calcio,AC Chievo Verona,1-0,0-0
 19,Sat,2017-12-30,Bologna FC,Udinese,1-2,1-1
 19,Sat,2017-12-30,Roma,Sassuolo,1-1,1-0
 19,Sat,2017-12-30,Sampdoria,SPAL 2013 Ferrara,2-0,0-0
 19,Sat,2017-12-30,Torino,Genoa CFC,0-0,
 19,Sat,2017-12-30,Inter de Milão,Lazio,0-0,
 19,Sat,2017-12-30,Hellas Verona,Juventus FC,1-3,0-1
-20,Fri,2018-01-05,Chievo Verona,Udinese,1-1,1-1
+20,Fri,2018-01-05,AC Chievo Verona,Udinese,1-1,1-1
 20,Fri,2018-01-05,Fiorentina,Inter de Milão,1-1,0-0
 20,Sat,2018-01-06,Torino,Bologna FC,3-0,1-0
 20,Sat,2018-01-06,AC Milan,FC Crotone,1-0,0-0
@@ -201,7 +201,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 20,Sat,2018-01-06,Cagliari,Juventus FC,0-1,0-0
 21,Sun,2018-01-21,Atalanta,Napoli,0-1,0-0
 21,Sun,2018-01-21,Bologna FC,Benevento Calcio,3-0,1-0
-21,Sun,2018-01-21,Lazio,Chievo Verona,5-1,2-1
+21,Sun,2018-01-21,Lazio,AC Chievo Verona,5-1,2-1
 21,Sun,2018-01-21,Hellas Verona,FC Crotone,0-3,0-1
 21,Sun,2018-01-21,Sampdoria,Fiorentina,3-1,1-0
 21,Sun,2018-01-21,Udinese,SPAL 2013 Ferrara,1-1,1-0
@@ -210,7 +210,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 21,Sun,2018-01-21,Inter de Milão,Roma,1-1,0-1
 21,Mon,2018-01-22,Juventus FC,Genoa CFC,1-0,1-0
 22,Sat,2018-01-27,Sassuolo,Atalanta,0-3,0-1
-22,Sat,2018-01-27,Chievo Verona,Juventus FC,0-2,0-0
+22,Sat,2018-01-27,AC Chievo Verona,Juventus FC,0-2,0-0
 22,Sun,2018-01-28,SPAL 2013 Ferrara,Inter de Milão,1-1,0-0
 22,Sun,2018-01-28,Torino,Benevento Calcio,3-0,3-0
 22,Sun,2018-01-28,Napoli,Bologna FC,3-1,2-1
@@ -222,7 +222,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 23,Sat,2018-02-03,Sampdoria,Torino,1-1,1-1
 23,Sat,2018-02-03,Inter de Milão,FC Crotone,1-1,1-0
 23,Sun,2018-02-04,Hellas Verona,Roma,0-1,0-1
-23,Sun,2018-02-04,Atalanta,Chievo Verona,1-0,0-0
+23,Sun,2018-02-04,Atalanta,AC Chievo Verona,1-0,0-0
 23,Sun,2018-02-04,Bologna FC,Fiorentina,1-2,1-1
 23,Sun,2018-02-04,Udinese,AC Milan,1-1,0-1
 23,Sun,2018-02-04,Juventus FC,Sassuolo,7-0,4-0
@@ -235,12 +235,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 24,Sat,2018-02-10,Napoli,Lazio,4-1,1-1
 24,Sun,2018-02-11,Sassuolo,Cagliari,0-0,
 24,Sun,2018-02-11,Inter de Milão,Bologna FC,2-1,1-1
-24,Sun,2018-02-11,Chievo Verona,Genoa CFC,0-1,0-0
+24,Sun,2018-02-11,AC Chievo Verona,Genoa CFC,0-1,0-0
 24,Sun,2018-02-11,Sampdoria,Hellas Verona,2-0,0-0
 24,Sun,2018-02-11,Torino,Udinese,2-0,1-0
 24,Sun,2018-02-11,Roma,Benevento Calcio,5-2,1-1
 25,Sat,2018-02-17,Udinese,Roma,0-2,0-0
-25,Sat,2018-02-17,Chievo Verona,Cagliari,2-1,0-0
+25,Sat,2018-02-17,AC Chievo Verona,Cagliari,2-1,0-0
 25,Sat,2018-02-17,Genoa CFC,Inter de Milão,2-0,1-0
 25,Sun,2018-02-18,Torino,Juventus FC,0-1,0-1
 25,Sun,2018-02-18,Benevento Calcio,FC Crotone,3-2,1-1
@@ -252,7 +252,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 26,Sat,2018-02-24,Bologna FC,Genoa CFC,2-0,0-0
 26,Sat,2018-02-24,Inter de Milão,Benevento Calcio,2-0,0-0
 26,Sun,2018-02-25,FC Crotone,SPAL 2013 Ferrara,2-3,0-1
-26,Sun,2018-02-25,Fiorentina,Chievo Verona,1-0,1-0
+26,Sun,2018-02-25,Fiorentina,AC Chievo Verona,1-0,1-0
 26,Sun,2018-02-25,Sassuolo,Lazio,0-3,0-2
 26,Sun,2018-02-25,Hellas Verona,Torino,2-1,1-0
 26,Sun,2018-02-25,Sampdoria,Udinese,2-1,1-0
@@ -268,9 +268,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Wed,2018-04-04,Benevento Calcio,Hellas Verona,3-0,1-0
 27,Wed,2018-04-04,Torino,FC Crotone,4-1,3-0
 27,Wed,2018-04-04,AC Milan,Inter de Milão,0-0,
-27,Wed,2018-04-04,Chievo Verona,Sassuolo,1-1,0-0
+27,Wed,2018-04-04,AC Chievo Verona,Sassuolo,1-1,0-0
 28,Fri,2018-03-09,Roma,Torino,3-0,0-0
-28,Sat,2018-03-10,Hellas Verona,Chievo Verona,1-0,0-0
+28,Sat,2018-03-10,Hellas Verona,AC Chievo Verona,1-0,0-0
 28,Sun,2018-03-11,Fiorentina,Benevento Calcio,1-0,1-0
 28,Sun,2018-03-11,Bologna FC,Atalanta,0-1,0-0
 28,Sun,2018-03-11,Cagliari,Lazio,2-2,1-1
@@ -284,7 +284,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 29,Sun,2018-03-18,Sampdoria,Inter de Milão,0-5,0-4
 29,Sun,2018-03-18,Hellas Verona,Atalanta,0-5,0-2
 29,Sun,2018-03-18,Benevento Calcio,Cagliari,1-2,0-0
-29,Sun,2018-03-18,AC Milan,Chievo Verona,3-2,1-2
+29,Sun,2018-03-18,AC Milan,AC Chievo Verona,3-2,1-2
 29,Sun,2018-03-18,Torino,Fiorentina,1-2,0-0
 29,Sun,2018-03-18,FC Crotone,Roma,0-2,0-1
 29,Sun,2018-03-18,Lazio,Bologna FC,1-1,1-1
@@ -297,7 +297,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 30,Sat,2018-03-31,Cagliari,Torino,0-4,0-0
 30,Sat,2018-03-31,Atalanta,Udinese,2-0,0-0
 30,Sat,2018-03-31,Sassuolo,Napoli,1-1,1-0
-30,Sat,2018-03-31,Chievo Verona,Sampdoria,2-1,0-1
+30,Sat,2018-03-31,AC Chievo Verona,Sampdoria,2-1,0-1
 30,Sat,2018-03-31,Juventus FC,AC Milan,3-1,1-1
 31,Sat,2018-04-07,Benevento Calcio,Juventus FC,2-4,1-2
 31,Sat,2018-04-07,SPAL 2013 Ferrara,Atalanta,1-1,1-0
@@ -306,12 +306,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Sun,2018-04-08,Torino,Inter de Milão,1-0,1-0
 31,Sun,2018-04-08,FC Crotone,Bologna FC,1-0,1-0
 31,Sun,2018-04-08,Hellas Verona,Cagliari,1-0,1-0
-31,Sun,2018-04-08,Napoli,Chievo Verona,2-1,0-0
+31,Sun,2018-04-08,Napoli,AC Chievo Verona,2-1,0-0
 31,Sun,2018-04-08,Udinese,Lazio,1-2,1-2
 31,Sun,2018-04-08,AC Milan,Sassuolo,1-1,0-0
 32,Sat,2018-04-14,Cagliari,Udinese,2-1,1-1
 32,Sat,2018-04-14,Genoa CFC,FC Crotone,1-0,1-0
-32,Sat,2018-04-14,Chievo Verona,Torino,0-0,
+32,Sat,2018-04-14,AC Chievo Verona,Torino,0-0,
 32,Sat,2018-04-14,Atalanta,Inter de Milão,0-0,
 32,Sun,2018-04-15,Fiorentina,SPAL 2013 Ferrara,0-0,
 32,Sun,2018-04-15,Sassuolo,Benevento Calcio,2-2,1-1
@@ -322,7 +322,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 33,Tue,2018-04-17,Inter de Milão,Cagliari,4-0,1-0
 33,Wed,2018-04-18,Benevento Calcio,Atalanta,0-3,0-1
 33,Wed,2018-04-18,Sampdoria,Bologna FC,1-0,0-0
-33,Wed,2018-04-18,SPAL 2013 Ferrara,Chievo Verona,0-0,
+33,Wed,2018-04-18,SPAL 2013 Ferrara,AC Chievo Verona,0-0,
 33,Wed,2018-04-18,Roma,Genoa CFC,2-1,1-0
 33,Wed,2018-04-18,FC Crotone,Juventus FC,1-1,0-1
 33,Wed,2018-04-18,Fiorentina,Lazio,3-4,2-2
@@ -334,12 +334,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Sat,2018-04-21,AC Milan,Benevento Calcio,0-1,0-1
 34,Sun,2018-04-22,Cagliari,Bologna FC,0-0,
 34,Sun,2018-04-22,Udinese,FC Crotone,1-2,1-1
-34,Sun,2018-04-22,Chievo Verona,Inter de Milão,1-2,0-0
+34,Sun,2018-04-22,AC Chievo Verona,Inter de Milão,1-2,0-0
 34,Sun,2018-04-22,Lazio,Sampdoria,4-0,2-0
 34,Sun,2018-04-22,Atalanta,Torino,2-1,0-0
 34,Sun,2018-04-22,Juventus FC,Napoli,0-1,0-0
 34,Mon,2018-04-23,Genoa CFC,Hellas Verona,3-1,1-0
-35,Sat,2018-04-28,Roma,Chievo Verona,4-1,2-0
+35,Sat,2018-04-28,Roma,AC Chievo Verona,4-1,2-0
 35,Sat,2018-04-28,Inter de Milão,Juventus FC,2-3,0-1
 35,Sun,2018-04-29,FC Crotone,Sassuolo,4-1,3-1
 35,Sun,2018-04-29,Sampdoria,Cagliari,4-1,3-0
@@ -354,7 +354,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Sun,2018-05-06,Udinese,Inter de Milão,0-4,0-3
 36,Sun,2018-05-06,Lazio,Atalanta,1-1,1-1
 36,Sun,2018-05-06,SPAL 2013 Ferrara,Benevento Calcio,2-0,1-0
-36,Sun,2018-05-06,Chievo Verona,FC Crotone,2-1,1-0
+36,Sun,2018-05-06,AC Chievo Verona,FC Crotone,2-1,1-0
 36,Sun,2018-05-06,Genoa CFC,Fiorentina,2-3,0-1
 36,Sun,2018-05-06,Napoli,Torino,2-2,1-0
 36,Sun,2018-05-06,Sassuolo,Sampdoria,1-0,0-0
@@ -362,7 +362,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 37,Sat,2018-05-12,Benevento Calcio,Genoa CFC,1-0,0-0
 37,Sat,2018-05-12,Inter de Milão,Sassuolo,1-2,0-1
 37,Sun,2018-05-13,Fiorentina,Cagliari,0-1,0-1
-37,Sun,2018-05-13,Bologna FC,Chievo Verona,1-2,1-0
+37,Sun,2018-05-13,Bologna FC,AC Chievo Verona,1-2,1-0
 37,Sun,2018-05-13,FC Crotone,Lazio,2-2,1-1
 37,Sun,2018-05-13,Torino,SPAL 2013 Ferrara,2-1,0-1
 37,Sun,2018-05-13,Hellas Verona,Udinese,0-1,0-1
@@ -372,7 +372,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 38,Sat,2018-05-19,Juventus FC,Hellas Verona,2-1,0-0
 38,Sun,2018-05-20,Genoa CFC,Torino,1-2,0-1
 38,Sun,2018-05-20,Cagliari,Atalanta,1-0,0-0
-38,Sun,2018-05-20,Chievo Verona,Benevento Calcio,1-0,0-0
+38,Sun,2018-05-20,AC Chievo Verona,Benevento Calcio,1-0,0-0
 38,Sun,2018-05-20,Udinese,Bologna FC,1-0,1-0
 38,Sun,2018-05-20,Napoli,FC Crotone,2-1,2-0
 38,Sun,2018-05-20,AC Milan,Fiorentina,5-1,2-1

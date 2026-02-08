@@ -3,7 +3,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2013-08-17,Valladolid,Athletic Bilbao,1-2,1-1
 1,2013-08-17,Valencia,Málaga CF,1-0,0-0
 1,2013-08-18,Barcelona,Levante,7-0,6-0
-1,2013-08-18,Real Madrid,Real Betis,2-1,1-1
+1,2013-08-18,Real Madrid,Bétis,2-1,1-1
 1,2013-08-18,Osasuna,Granada,1-2,0-2
 1,2013-08-18,Sevilha FC,Atlético de Madrid,1-3,1-1
 1,2013-08-19,Rayo Vallecano,Elche,3-0,2-0
@@ -17,7 +17,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 2,2013-08-25,Atlético de Madrid,Rayo Vallecano,5-0,3-0
 2,2013-08-25,Levante,Sevilha FC,0-0,
 2,2013-08-25,Málaga CF,Barcelona,0-1,0-1
-2,2013-08-25,Real Betis,Celta de Vigo,1-2,0-0
+2,2013-08-25,Bétis,Celta de Vigo,1-2,0-0
 2,2013-08-26,Granada,Real Madrid,0-1,0-1
 3,2013-08-30,UD Almería,Elche,2-2,2-1
 3,2013-08-30,Rayo Vallecano,Levante,1-2,0-1
@@ -25,7 +25,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 3,2013-08-31,Valladolid,Getafe CF,1-0,0-0
 3,2013-08-31,Osasuna,Villarreal CF,0-3,0-2
 3,2013-09-01,Real Madrid,Athletic Bilbao,3-1,2-0
-3,2013-09-01,Espanyol,Real Betis,0-0,
+3,2013-09-01,Espanyol,Bétis,0-0,
 3,2013-09-01,Real Sociedad,Atlético de Madrid,1-2,0-1
 3,2013-09-01,Sevilha FC,Málaga CF,2-2,1-1
 3,2013-09-01,Valencia,Barcelona,2-3,2-3
@@ -36,7 +36,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 4,2013-09-15,Granada,Espanyol,0-1,0-0
 4,2013-09-15,Getafe CF,Osasuna,2-1,1-1
 4,2013-09-15,Málaga CF,Rayo Vallecano,5-0,2-0
-4,2013-09-15,Real Betis,Valencia,3-1,3-0
+4,2013-09-15,Bétis,Valencia,3-1,3-0
 4,2013-09-16,Elche,Valladolid,0-0,
 4,2013-09-16,Athletic Bilbao,Celta de Vigo,3-2,1-1
 5,2013-09-20,Osasuna,Elche,2-1,1-0
@@ -44,7 +44,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 5,2013-09-21,UD Almería,Levante,2-2,1-0
 5,2013-09-21,Rayo Vallecano,Barcelona,0-4,0-1
 5,2013-09-21,Valladolid,Atlético de Madrid,0-2,0-0
-5,2013-09-22,Real Betis,Granada,0-0,
+5,2013-09-22,Bétis,Granada,0-0,
 5,2013-09-22,Celta de Vigo,Villarreal CF,0-0,
 5,2013-09-22,Real Madrid,Getafe CF,4-1,2-1
 5,2013-09-22,Valencia,Sevilha FC,3-1,1-0
@@ -56,7 +56,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 6,2013-09-25,Granada,Valencia,0-1,0-0
 6,2013-09-25,Sevilha FC,Rayo Vallecano,4-1,1-0
 6,2013-09-25,Elche,Real Madrid,1-2,0-0
-6,2013-09-26,Athletic Bilbao,Real Betis,2-1,0-0
+6,2013-09-26,Athletic Bilbao,Bétis,2-1,0-0
 6,2013-09-26,Villarreal CF,Espanyol,2-1,1-0
 6,2013-09-26,Getafe CF,Celta de Vigo,2-0,1-0
 7,2013-09-27,Valladolid,Málaga CF,2-2,0-1
@@ -67,7 +67,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 7,2013-09-29,Osasuna,Levante,0-1,0-0
 7,2013-09-29,Celta de Vigo,Elche,0-1,0-0
 7,2013-09-29,Espanyol,Getafe CF,0-2,0-0
-7,2013-09-29,Real Betis,Villarreal CF,1-0,1-0
+7,2013-09-29,Bétis,Villarreal CF,1-0,1-0
 7,2013-09-30,Granada,Athletic Bilbao,2-0,0-0
 8,2013-10-04,Villarreal CF,Granada,3-0,1-0
 8,2013-10-04,Málaga CF,Osasuna,0-1,0-1
@@ -77,7 +77,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 8,2013-10-05,Barcelona,Valladolid,4-1,1-1
 8,2013-10-06,Atlético de Madrid,Celta de Vigo,2-1,1-0
 8,2013-10-06,Sevilha FC,UD Almería,2-1,1-1
-8,2013-10-06,Getafe CF,Real Betis,3-1,3-0
+8,2013-10-06,Getafe CF,Bétis,3-1,3-0
 8,2013-10-06,Athletic Bilbao,Valencia,1-1,0-1
 9,2013-10-19,Real Madrid,Málaga CF,2-0,0-0
 9,2013-10-19,Valencia,Real Sociedad,1-2,0-1
@@ -85,7 +85,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2013-10-19,Espanyol,Atlético de Madrid,1-0,0-0
 9,2013-10-20,Granada,Getafe CF,0-2,0-0
 9,2013-10-20,UD Almería,Rayo Vallecano,0-1,0-0
-9,2013-10-20,Real Betis,Elche,1-2,1-2
+9,2013-10-20,Bétis,Elche,1-2,1-2
 9,2013-10-20,Valladolid,Sevilha FC,2-2,0-2
 9,2013-10-21,Celta de Vigo,Levante,0-1,0-0
 9,2013-10-21,Athletic Bilbao,Villarreal CF,2-0,2-0
@@ -97,7 +97,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 10,2013-10-27,Sevilha FC,Osasuna,2-1,0-0
 10,2013-10-27,Villarreal CF,Valencia,4-1,2-0
 10,2013-10-27,Real Sociedad,UD Almería,3-0,1-0
-10,2013-10-27,Atlético de Madrid,Real Betis,5-0,1-0
+10,2013-10-27,Atlético de Madrid,Bétis,5-0,1-0
 10,2013-10-28,Getafe CF,Athletic Bilbao,0-1,0-1
 11,2013-10-29,Espanyol,Málaga CF,0-0,
 11,2013-10-29,Celta de Vigo,Barcelona,0-3,0-1
@@ -108,7 +108,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,2013-10-31,Villarreal CF,Getafe CF,0-2,0-1
 11,2013-10-31,Granada,Atlético de Madrid,1-2,0-1
 11,2013-10-31,Athletic Bilbao,Elche,2-2,0-1
-11,2013-10-31,Real Betis,Levante,0-0,
+11,2013-10-31,Bétis,Levante,0-0,
 12,2013-11-01,Barcelona,Espanyol,1-0,0-0
 12,2013-11-02,Real Sociedad,Osasuna,5-0,1-0
 12,2013-11-02,UD Almería,Valladolid,1-0,1-0
@@ -117,7 +117,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 12,2013-11-03,Getafe CF,Valencia,0-1,0-1
 12,2013-11-03,Atlético de Madrid,Athletic Bilbao,2-0,2-0
 12,2013-11-03,Levante,Granada,0-1,0-0
-12,2013-11-03,Málaga CF,Real Betis,3-2,1-1
+12,2013-11-03,Málaga CF,Bétis,3-2,1-1
 12,2013-11-04,Elche,Villarreal CF,0-1,0-0
 13,2013-11-08,Osasuna,UD Almería,0-1,0-1
 13,2013-11-08,Granada,Málaga CF,3-1,0-0
@@ -128,7 +128,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2013-11-10,Espanyol,Sevilha FC,1-3,1-2
 13,2013-11-10,Valencia,Valladolid,2-2,1-1
 13,2013-11-10,Villarreal CF,Atlético de Madrid,1-1,0-1
-13,2013-11-10,Real Betis,Barcelona,1-4,0-2
+13,2013-11-10,Bétis,Barcelona,1-4,0-2
 14,2013-11-22,Valladolid,Osasuna,0-1,0-0
 14,2013-11-23,Barcelona,Granada,4-0,2-0
 14,2013-11-23,Real Sociedad,Celta de Vigo,4-3,1-2
@@ -137,7 +137,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 14,2013-11-24,Levante,Villarreal CF,0-3,0-1
 14,2013-11-24,Rayo Vallecano,Espanyol,1-4,0-1
 14,2013-11-24,Elche,Valencia,2-1,0-0
-14,2013-11-24,Sevilha FC,Real Betis,4-0,2-0
+14,2013-11-24,Sevilha FC,Bétis,4-0,2-0
 14,2013-11-25,Málaga CF,Athletic Bilbao,1-2,1-0
 15,2013-11-29,Getafe CF,Levante,1-0,0-0
 15,2013-11-29,Villarreal CF,Málaga CF,1-1,1-0
@@ -145,7 +145,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2013-11-30,Celta de Vigo,UD Almería,3-1,1-1
 15,2013-11-30,Real Madrid,Valladolid,4-0,2-0
 15,2013-11-30,Espanyol,Real Sociedad,1-2,1-0
-15,2013-12-01,Real Betis,Rayo Vallecano,2-2,1-0
+15,2013-12-01,Bétis,Rayo Vallecano,2-2,1-0
 15,2013-12-01,Granada,Sevilha FC,1-2,0-1
 15,2013-12-01,Valencia,Osasuna,3-0,1-0
 15,2013-12-01,Athletic Bilbao,Barcelona,1-0,0-0
@@ -155,13 +155,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2013-12-14,Barcelona,Villarreal CF,2-1,1-0
 16,2013-12-14,Málaga CF,Getafe CF,1-0,0-0
 16,2013-12-15,UD Almería,Espanyol,0-0,
-16,2013-12-15,Real Sociedad,Real Betis,5-1,1-1
+16,2013-12-15,Real Sociedad,Bétis,5-1,1-1
 16,2013-12-15,Sevilha FC,Athletic Bilbao,1-1,1-1
 16,2013-12-15,Atlético de Madrid,Valencia,3-0,0-0
 16,2013-12-16,Valladolid,Celta de Vigo,3-0,0-0
 17,2013-12-20,Elche,Málaga CF,0-1,0-1
 17,2013-12-21,Villarreal CF,Sevilha FC,1-2,0-1
-17,2013-12-21,Real Betis,UD Almería,0-1,0-1
+17,2013-12-21,Bétis,UD Almería,0-1,0-1
 17,2013-12-21,Atlético de Madrid,Levante,3-2,1-1
 17,2013-12-21,Granada,Real Sociedad,1-3,1-2
 17,2013-12-22,Espanyol,Valladolid,4-2,2-0
@@ -170,7 +170,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 17,2013-12-22,Celta de Vigo,Osasuna,1-1,1-1
 17,2013-12-22,Valencia,Real Madrid,2-3,1-2
 18,2014-01-04,Málaga CF,Atlético de Madrid,0-1,0-0
-18,2014-01-04,Valladolid,Real Betis,0-0,
+18,2014-01-04,Valladolid,Bétis,0-0,
 18,2014-01-04,Valencia,Levante,2-0,1-0
 18,2014-01-04,UD Almería,Granada,3-0,2-0
 18,2014-01-05,Sevilha FC,Getafe CF,3-0,1-0
@@ -185,12 +185,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2014-01-11,Atlético de Madrid,Barcelona,0-0,
 19,2014-01-11,Elche,Sevilha FC,1-1,0-0
 19,2014-01-12,Getafe CF,Rayo Vallecano,0-1,0-1
-19,2014-01-12,Real Betis,Osasuna,1-2,0-1
+19,2014-01-12,Bétis,Osasuna,1-2,0-1
 19,2014-01-12,Espanyol,Real Madrid,0-1,0-0
 19,2014-01-12,Levante,Málaga CF,1-0,1-0
 19,2014-01-13,Villarreal CF,Real Sociedad,5-1,3-0
 20,2014-01-17,Málaga CF,Valencia,0-0,
-20,2014-01-18,Real Betis,Real Madrid,0-5,0-3
+20,2014-01-18,Bétis,Real Madrid,0-5,0-3
 20,2014-01-18,Elche,Rayo Vallecano,2-0,1-0
 20,2014-01-18,Granada,Osasuna,0-0,
 20,2014-01-18,Espanyol,Celta de Vigo,1-0,0-0
@@ -199,7 +199,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 20,2014-01-19,Levante,Barcelona,1-1,1-1
 20,2014-01-19,Atlético de Madrid,Sevilha FC,1-1,1-0
 20,2014-01-20,Athletic Bilbao,Valladolid,4-2,0-1
-21,2014-01-24,Celta de Vigo,Real Betis,4-2,3-1
+21,2014-01-24,Celta de Vigo,Bétis,4-2,3-1
 21,2014-01-25,Real Madrid,Granada,2-0,0-0
 21,2014-01-25,Valladolid,Villarreal CF,1-0,1-0
 21,2014-01-25,Valencia,Espanyol,2-2,2-2
@@ -215,12 +215,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 22,2014-02-01,Getafe CF,Valladolid,0-0,
 22,2014-02-01,Málaga CF,Sevilha FC,3-2,1-0
 22,2014-02-02,Elche,UD Almería,1-0,0-0
-22,2014-02-02,Real Betis,Espanyol,2-0,0-0
+22,2014-02-02,Bétis,Espanyol,2-0,0-0
 22,2014-02-02,Atlético de Madrid,Real Sociedad,4-0,1-0
 22,2014-02-02,Athletic Bilbao,Real Madrid,1-1,0-0
 22,2014-02-03,Villarreal CF,Osasuna,3-1,0-0
 23,2014-02-07,Espanyol,Granada,1-0,0-0
-23,2014-02-08,Valencia,Real Betis,5-0,2-0
+23,2014-02-08,Valencia,Bétis,5-0,2-0
 23,2014-02-08,Rayo Vallecano,Málaga CF,4-1,3-0
 23,2014-02-08,Real Madrid,Villarreal CF,4-2,2-1
 23,2014-02-08,UD Almería,Atlético de Madrid,2-0,0-0
@@ -234,7 +234,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 24,2014-02-15,Levante,UD Almería,1-0,0-0
 24,2014-02-15,Barcelona,Rayo Vallecano,6-0,2-0
 24,2014-02-15,Villarreal CF,Celta de Vigo,0-2,0-0
-24,2014-02-16,Granada,Real Betis,1-0,1-0
+24,2014-02-16,Granada,Bétis,1-0,1-0
 24,2014-02-16,Getafe CF,Real Madrid,0-3,0-2
 24,2014-02-16,Athletic Bilbao,Espanyol,1-2,0-1
 24,2014-02-16,Sevilha FC,Valencia,0-0,
@@ -245,7 +245,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2014-02-22,Real Sociedad,Barcelona,3-1,1-1
 25,2014-02-22,UD Almería,Málaga CF,0-0,
 25,2014-02-23,Rayo Vallecano,Sevilha FC,0-1,0-0
-25,2014-02-23,Real Betis,Athletic Bilbao,0-2,0-1
+25,2014-02-23,Bétis,Athletic Bilbao,0-2,0-1
 25,2014-02-23,Valencia,Granada,2-1,0-0
 25,2014-02-23,Osasuna,Atlético de Madrid,3-0,3-0
 25,2014-02-24,Espanyol,Villarreal CF,1-2,0-1
@@ -254,13 +254,13 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 26,2014-03-01,Levante,Osasuna,2-0,2-0
 26,2014-03-01,Getafe CF,Espanyol,0-0,
 26,2014-03-01,Elche,Celta de Vigo,1-0,0-0
-26,2014-03-02,Villarreal CF,Real Betis,1-1,0-0
+26,2014-03-02,Villarreal CF,Bétis,1-1,0-0
 26,2014-03-02,Atlético de Madrid,Real Madrid,2-2,2-1
 26,2014-03-02,Sevilha FC,Real Sociedad,1-0,0-0
 26,2014-03-02,Barcelona,UD Almería,4-1,2-1
 26,2014-03-02,Rayo Vallecano,Valencia,1-0,0-0
 27,2014-03-08,Valladolid,Barcelona,1-0,1-0
-27,2014-03-08,Real Betis,Getafe CF,2-0,2-0
+27,2014-03-08,Bétis,Getafe CF,2-0,2-0
 27,2014-03-08,Celta de Vigo,Atlético de Madrid,0-2,0-0
 27,2014-03-08,Granada,Villarreal CF,2-0,2-0
 27,2014-03-09,Espanyol,Elche,3-1,2-0
@@ -274,7 +274,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 28,2014-03-15,Rayo Vallecano,UD Almería,3-1,1-0
 28,2014-03-15,Málaga CF,Real Madrid,0-1,0-1
 28,2014-03-15,Atlético de Madrid,Espanyol,1-0,0-0
-28,2014-03-16,Elche,Real Betis,0-0,
+28,2014-03-16,Elche,Bétis,0-0,
 28,2014-03-16,Barcelona,Osasuna,7-0,3-0
 28,2014-03-16,Sevilha FC,Valladolid,4-1,2-0
 28,2014-03-16,Real Sociedad,Valencia,1-0,0-0
@@ -285,7 +285,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 29,2014-03-22,Valladolid,Rayo Vallecano,1-1,1-1
 29,2014-03-22,Athletic Bilbao,Getafe CF,1-0,1-0
 29,2014-03-23,Osasuna,Sevilha FC,1-2,0-2
-29,2014-03-23,Real Betis,Atlético de Madrid,0-2,0-0
+29,2014-03-23,Bétis,Atlético de Madrid,0-2,0-0
 29,2014-03-23,Valencia,Villarreal CF,2-1,2-0
 29,2014-03-23,Real Madrid,Barcelona,3-4,2-2
 29,2014-03-24,UD Almería,Real Sociedad,4-3,1-1
@@ -297,7 +297,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 30,2014-03-26,Sevilha FC,Real Madrid,2-1,1-1
 30,2014-03-27,Getafe CF,Villarreal CF,0-1,0-1
 30,2014-03-27,Real Sociedad,Valladolid,1-0,1-0
-30,2014-03-27,Levante,Real Betis,1-3,1-1
+30,2014-03-27,Levante,Bétis,1-3,1-1
 30,2014-03-27,UD Almería,Valencia,2-2,0-2
 31,2014-03-29,Espanyol,Barcelona,0-1,0-0
 31,2014-03-29,Celta de Vigo,Sevilha FC,1-0,0-0
@@ -308,10 +308,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2014-03-30,Villarreal CF,Elche,1-1,1-1
 31,2014-03-30,Valencia,Getafe CF,1-3,1-2
 31,2014-03-31,Granada,Levante,0-2,0-0
-31,2014-03-31,Real Betis,Málaga CF,1-2,1-0
+31,2014-03-31,Bétis,Málaga CF,1-2,1-0
 32,2014-04-04,UD Almería,Osasuna,1-2,0-2
 32,2014-04-05,Atlético de Madrid,Villarreal CF,1-0,1-0
-32,2014-04-05,Barcelona,Real Betis,3-1,1-0
+32,2014-04-05,Barcelona,Bétis,3-1,1-0
 32,2014-04-05,Real Sociedad,Real Madrid,0-4,0-1
 32,2014-04-05,Rayo Vallecano,Celta de Vigo,3-0,1-0
 32,2014-04-06,Málaga CF,Granada,4-1,2-0
@@ -324,7 +324,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 33,2014-04-12,Villarreal CF,Levante,1-0,0-0
 33,2014-04-12,Granada,Barcelona,1-0,1-0
 33,2014-04-12,Real Madrid,UD Almería,4-0,1-0
-33,2014-04-13,Real Betis,Sevilha FC,0-2,0-1
+33,2014-04-13,Bétis,Sevilha FC,0-2,0-1
 33,2014-04-13,Valencia,Elche,2-1,1-1
 33,2014-04-13,Getafe CF,Atlético de Madrid,0-2,0-1
 33,2014-04-13,Espanyol,Rayo Vallecano,2-2,1-1
@@ -334,7 +334,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 34,2014-04-19,Levante,Getafe CF,0-0,
 34,2014-04-19,Real Sociedad,Espanyol,2-1,1-1
 34,2014-04-20,UD Almería,Celta de Vigo,2-4,1-1
-34,2014-04-20,Rayo Vallecano,Real Betis,3-1,2-0
+34,2014-04-20,Rayo Vallecano,Bétis,3-1,2-0
 34,2014-04-20,Sevilha FC,Granada,4-0,1-0
 34,2014-04-20,Barcelona,Athletic Bilbao,2-1,0-0
 34,2014-04-21,Málaga CF,Villarreal CF,2-0,1-0
@@ -343,7 +343,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 35,2014-04-26,Granada,Rayo Vallecano,0-3,0-0
 35,2014-04-26,Getafe CF,Málaga CF,1-0,1-0
 35,2014-04-26,Real Madrid,Osasuna,4-0,1-0
-35,2014-04-26,Real Betis,Real Sociedad,0-1,0-0
+35,2014-04-26,Bétis,Real Sociedad,0-1,0-0
 35,2014-04-27,Espanyol,UD Almería,1-2,1-0
 35,2014-04-27,Valencia,Atlético de Madrid,0-1,0-1
 35,2014-04-27,Athletic Bilbao,Sevilha FC,3-1,1-0
@@ -354,7 +354,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 36,2014-05-03,Málaga CF,Elche,0-1,0-1
 36,2014-05-03,Osasuna,Celta de Vigo,0-2,0-2
 36,2014-05-03,Valladolid,Espanyol,1-0,1-0
-36,2014-05-04,UD Almería,Real Betis,3-2,0-0
+36,2014-05-04,UD Almería,Bétis,3-2,0-0
 36,2014-05-04,Levante,Atlético de Madrid,2-0,1-0
 36,2014-05-04,Sevilha FC,Villarreal CF,0-0,
 36,2014-05-04,Real Madrid,Valencia,2-2,0-1
@@ -366,7 +366,7 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 37,2014-05-11,Elche,Barcelona,0-0,
 37,2014-05-11,Getafe CF,Sevilha FC,1-0,0-0
 37,2014-05-11,Granada,UD Almería,0-2,0-1
-37,2014-05-11,Real Betis,Valladolid,4-3,1-1
+37,2014-05-11,Bétis,Valladolid,4-3,1-1
 37,2014-05-11,Espanyol,Osasuna,1-1,1-1
 37,2014-05-11,Celta de Vigo,Real Madrid,2-0,1-0
 38,2014-05-16,Málaga CF,Levante,1-0,0-0
@@ -377,5 +377,5 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 38,2014-05-18,Rayo Vallecano,Getafe CF,1-2,0-1
 38,2014-05-18,UD Almería,Athletic Bilbao,0-0,
 38,2014-05-18,Valladolid,Granada,0-1,0-1
-38,2014-05-18,Osasuna,Real Betis,2-1,2-0
+38,2014-05-18,Osasuna,Bétis,2-1,2-0
 38,2014-05-18,Sevilha FC,Elche,3-1,1-0

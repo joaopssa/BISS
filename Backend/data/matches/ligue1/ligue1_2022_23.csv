@@ -1,9 +1,9 @@
 Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Fri,2022-08-05,Lyon,AC Ajaccio,2-1,2-1
 1,Sat,2022-08-06,Estrasburgo,Monaco,1-2,0-1
-1,Sat,2022-08-06,Clermont Foot 63,Paris Saint Germain,0-5,0-3
+1,Sat,2022-08-06,Clermont,Paris Saint Germain,0-5,0-3
 1,Sun,2022-08-07,Toulouse FC,Nice,1-1,1-0
-1,Sun,2022-08-07,Montpellier,ESTAC Troyes,3-2,2-2
+1,Sun,2022-08-07,Montpellier,Troyes,3-2,2-2
 1,Sun,2022-08-07,Lille,AJ Auxerre,4-1,3-0
 1,Sun,2022-08-07,Lens,Brestois,3-2,1-0
 1,Sun,2022-08-07,Angers,Nantes,0-0,
@@ -14,16 +14,16 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 2,Sat,2022-08-13,Paris Saint Germain,Montpellier,5-2,2-0
 2,Sun,2022-08-14,AC Ajaccio,Lens,0-0,
 2,Sun,2022-08-14,AJ Auxerre,Angers,2-2,2-1
-2,Sun,2022-08-14,ESTAC Troyes,Toulouse FC,0-3,0-1
-2,Sun,2022-08-14,Reims,Clermont Foot 63,2-4,2-0
+2,Sun,2022-08-14,Troyes,Toulouse FC,0-3,0-1
+2,Sun,2022-08-14,Reims,Clermont,2-4,2-0
 2,Sun,2022-08-14,Nice,Estrasburgo,1-1,1-0
 2,Sun,2022-08-14,Brestois,Olympique de Marseille,1-1,0-1
 2,Wed,2022-09-07,FC Lorient,Lyon,3-1,2-1
-3,Fri,2022-08-19,Lyon,ESTAC Troyes,4-1,1-1
+3,Fri,2022-08-19,Lyon,Troyes,4-1,1-1
 3,Sat,2022-08-20,Monaco,Lens,1-4,1-2
 3,Sat,2022-08-20,Olympique de Marseille,Nantes,2-1,0-0
 3,Sun,2022-08-21,Estrasburgo,Reims,1-1,1-0
-3,Sun,2022-08-21,Clermont Foot 63,Nice,1-0,1-0
+3,Sun,2022-08-21,Clermont,Nice,1-0,1-0
 3,Sun,2022-08-21,Toulouse FC,FC Lorient,2-2,1-1
 3,Sun,2022-08-21,Montpellier,AJ Auxerre,1-2,1-0
 3,Sun,2022-08-21,Angers,Brestois,1-3,0-2
@@ -33,19 +33,19 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Sat,2022-08-27,AJ Auxerre,Estrasburgo,1-0,1-0
 4,Sat,2022-08-27,Lens,Rennes,2-1,0-0
 4,Sun,2022-08-28,Nantes,Toulouse FC,3-1,0-1
-4,Sun,2022-08-28,ESTAC Troyes,Angers,3-1,1-0
-4,Sun,2022-08-28,FC Lorient,Clermont Foot 63,2-1,2-0
+4,Sun,2022-08-28,Troyes,Angers,3-1,1-0
+4,Sun,2022-08-28,FC Lorient,Clermont,2-1,2-0
 4,Sun,2022-08-28,Nice,Olympique de Marseille,0-3,0-3
 4,Sun,2022-08-28,Brestois,Montpellier,0-7,0-5
 4,Sun,2022-08-28,Reims,Lyon,1-1,1-0
 4,Sun,2022-08-28,Paris Saint Germain,Monaco,1-1,0-1
-5,Wed,2022-08-31,Monaco,ESTAC Troyes,2-4,1-2
+5,Wed,2022-08-31,Monaco,Troyes,2-4,1-2
 5,Wed,2022-08-31,Montpellier,AC Ajaccio,2-0,1-0
 5,Wed,2022-08-31,Lyon,AJ Auxerre,2-1,1-0
 5,Wed,2022-08-31,Estrasburgo,Nantes,1-1,1-0
 5,Wed,2022-08-31,Angers,Reims,2-4,0-2
 5,Wed,2022-08-31,Toulouse FC,Paris Saint Germain,0-3,0-1
-5,Wed,2022-08-31,Olympique de Marseille,Clermont Foot 63,1-0,0-0
+5,Wed,2022-08-31,Olympique de Marseille,Clermont,1-0,0-0
 5,Wed,2022-08-31,Lille,Nice,1-2,1-2
 5,Wed,2022-08-31,Lens,FC Lorient,5-2,2-1
 5,Wed,2022-08-31,Rennes,Brestois,3-1,0-0
@@ -54,15 +54,15 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 6,Sat,2022-09-03,Nantes,Paris Saint Germain,0-3,0-1
 6,Sun,2022-09-04,Montpellier,Lille,1-3,1-1
 6,Sun,2022-09-04,AC Ajaccio,FC Lorient,0-1,0-0
-6,Sun,2022-09-04,Clermont Foot 63,Toulouse FC,2-0,0-0
+6,Sun,2022-09-04,Clermont,Toulouse FC,2-0,0-0
 6,Sun,2022-09-04,Brestois,Estrasburgo,1-1,1-1
 6,Sun,2022-09-04,Reims,Lens,1-1,0-0
-6,Sun,2022-09-04,ESTAC Troyes,Rennes,1-1,1-0
+6,Sun,2022-09-04,Troyes,Rennes,1-1,1-0
 6,Sun,2022-09-04,Nice,Monaco,0-1,0-0
-7,Fri,2022-09-09,Lens,ESTAC Troyes,1-0,1-0
+7,Fri,2022-09-09,Lens,Troyes,1-0,1-0
 7,Sat,2022-09-10,Paris Saint Germain,Brestois,1-0,1-0
 7,Sat,2022-09-10,Olympique de Marseille,Lille,2-1,1-1
-7,Sun,2022-09-11,Estrasburgo,Clermont Foot 63,0-0,
+7,Sun,2022-09-11,Estrasburgo,Clermont,0-0,
 7,Sun,2022-09-11,AC Ajaccio,Nice,0-1,0-0
 7,Sun,2022-09-11,FC Lorient,Nantes,3-2,1-1
 7,Sun,2022-09-11,Toulouse FC,Reims,1-0,1-0
@@ -73,7 +73,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 8,Sat,2022-09-17,Montpellier,Estrasburgo,2-1,1-0
 8,Sat,2022-09-17,Lille,Toulouse FC,2-1,1-0
 8,Sun,2022-09-18,Reims,Monaco,0-3,0-0
-8,Sun,2022-09-18,Clermont Foot 63,ESTAC Troyes,1-3,1-1
+8,Sun,2022-09-18,Clermont,Troyes,1-3,1-1
 8,Sun,2022-09-18,Nice,Angers,0-1,0-1
 8,Sun,2022-09-18,Olympique de Marseille,Rennes,1-1,0-1
 8,Sun,2022-09-18,Brestois,AC Ajaccio,0-1,0-0
@@ -83,9 +83,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 9,Sat,2022-10-01,Estrasburgo,Rennes,1-3,0-1
 9,Sat,2022-10-01,Paris Saint Germain,Nice,2-1,1-0
 9,Sun,2022-10-02,FC Lorient,Lille,2-1,1-0
-9,Sun,2022-10-02,AC Ajaccio,Clermont Foot 63,1-3,0-1
+9,Sun,2022-10-02,AC Ajaccio,Clermont,1-3,0-1
 9,Sun,2022-10-02,AJ Auxerre,Brestois,1-1,0-0
-9,Sun,2022-10-02,ESTAC Troyes,Reims,2-2,0-1
+9,Sun,2022-10-02,Troyes,Reims,2-2,0-1
 9,Sun,2022-10-02,Toulouse FC,Montpellier,4-2,3-1
 9,Sun,2022-10-02,Monaco,Nantes,4-1,3-0
 9,Sun,2022-10-02,Lens,Lyon,1-0,0-0
@@ -93,8 +93,8 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Sat,2022-10-08,Olympique de Marseille,AC Ajaccio,1-2,1-1
 10,Sat,2022-10-08,Reims,Paris Saint Germain,0-0,
 10,Sun,2022-10-09,Montpellier,Monaco,0-2,0-1
-10,Sun,2022-10-09,Clermont Foot 63,AJ Auxerre,2-1,0-0
-10,Sun,2022-10-09,Nice,ESTAC Troyes,3-2,2-0
+10,Sun,2022-10-09,Clermont,AJ Auxerre,2-1,0-0
+10,Sun,2022-10-09,Nice,Troyes,3-2,2-0
 10,Sun,2022-10-09,Angers,Estrasburgo,2-3,1-2
 10,Sun,2022-10-09,Brestois,FC Lorient,1-2,1-1
 10,Sun,2022-10-09,Rennes,Nantes,3-0,1-0
@@ -104,55 +104,55 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 11,Sat,2022-10-15,Lens,Montpellier,1-0,0-0
 11,Sun,2022-10-16,Toulouse FC,Angers,3-2,2-1
 11,Sun,2022-10-16,AJ Auxerre,Nice,1-1,1-1
-11,Sun,2022-10-16,ESTAC Troyes,AC Ajaccio,1-1,0-0
+11,Sun,2022-10-16,Troyes,AC Ajaccio,1-1,0-0
 11,Sun,2022-10-16,Nantes,Brestois,4-1,2-1
 11,Sun,2022-10-16,Rennes,Lyon,3-2,1-1
-11,Sun,2022-10-16,Monaco,Clermont Foot 63,1-1,1-0
+11,Sun,2022-10-16,Monaco,Clermont,1-1,1-0
 11,Sun,2022-10-16,Paris Saint Germain,Olympique de Marseille,1-0,1-0
 12,Fri,2022-10-21,AC Ajaccio,Paris Saint Germain,0-3,0-1
 12,Sat,2022-10-22,Montpellier,Lyon,1-2,0-1
 12,Sat,2022-10-22,Olympique de Marseille,Lens,0-1,0-0
 12,Sun,2022-10-23,Angers,Rennes,1-2,0-1
-12,Sun,2022-10-23,Clermont Foot 63,Brestois,1-3,0-1
-12,Sun,2022-10-23,ESTAC Troyes,FC Lorient,2-2,1-0
+12,Sun,2022-10-23,Clermont,Brestois,1-3,0-1
+12,Sun,2022-10-23,Troyes,FC Lorient,2-2,1-0
 12,Sun,2022-10-23,Toulouse FC,Estrasburgo,2-2,1-0
 12,Sun,2022-10-23,Reims,AJ Auxerre,2-1,1-1
 12,Sun,2022-10-23,Nice,Nantes,1-1,0-0
 12,Sun,2022-10-23,Lille,Monaco,4-3,2-2
 13,Fri,2022-10-28,Lens,Toulouse FC,3-0,0-0
-13,Sat,2022-10-29,Paris Saint Germain,ESTAC Troyes,4-3,1-1
+13,Sat,2022-10-29,Paris Saint Germain,Troyes,4-3,1-1
 13,Sat,2022-10-29,Estrasburgo,Olympique de Marseille,2-2,0-2
 13,Sun,2022-10-30,AJ Auxerre,AC Ajaccio,1-0,1-0
 13,Sun,2022-10-30,Monaco,Angers,2-0,0-0
-13,Sun,2022-10-30,Nantes,Clermont Foot 63,1-1,0-0
+13,Sun,2022-10-30,Nantes,Clermont,1-1,0-0
 13,Sun,2022-10-30,Brestois,Reims,0-0,
 13,Sun,2022-10-30,Rennes,Montpellier,3-0,2-0
 13,Sun,2022-10-30,FC Lorient,Nice,1-2,1-0
 13,Sun,2022-10-30,Lyon,Lille,1-0,0-0
-14,Fri,2022-11-04,ESTAC Troyes,AJ Auxerre,1-1,1-0
+14,Fri,2022-11-04,Troyes,AJ Auxerre,1-1,1-0
 14,Sat,2022-11-05,AC Ajaccio,Estrasburgo,4-2,4-2
 14,Sat,2022-11-05,Angers,Lens,1-2,0-1
 14,Sun,2022-11-06,FC Lorient,Paris Saint Germain,1-2,0-1
-14,Sun,2022-11-06,Clermont Foot 63,Montpellier,1-1,0-1
+14,Sun,2022-11-06,Clermont,Montpellier,1-1,0-1
 14,Sun,2022-11-06,Toulouse FC,Monaco,0-2,0-0
 14,Sun,2022-11-06,Nice,Brestois,1-0,0-0
 14,Sun,2022-11-06,Reims,Nantes,1-0,0-0
 14,Sun,2022-11-06,Lille,Rennes,1-1,1-0
 14,Sun,2022-11-06,Olympique de Marseille,Lyon,1-0,1-0
 15,Fri,2022-11-11,Lyon,Nice,1-1,0-1
-15,Sat,2022-11-12,Lens,Clermont Foot 63,2-1,0-1
+15,Sat,2022-11-12,Lens,Clermont,2-1,0-1
 15,Sat,2022-11-12,Rennes,Toulouse FC,2-1,1-0
 15,Sun,2022-11-13,Paris Saint Germain,AJ Auxerre,5-0,1-0
 15,Sun,2022-11-13,Nantes,AC Ajaccio,2-2,0-0
 15,Sun,2022-11-13,Montpellier,Reims,1-1,0-0
 15,Sun,2022-11-13,Lille,Angers,1-0,1-0
-15,Sun,2022-11-13,Brestois,ESTAC Troyes,2-1,0-0
+15,Sun,2022-11-13,Brestois,Troyes,2-1,0-0
 15,Sun,2022-11-13,Estrasburgo,FC Lorient,1-1,0-1
 15,Sun,2022-11-13,Monaco,Olympique de Marseille,2-3,1-1
 16,Wed,2022-12-28,AC Ajaccio,Angers,1-0,1-0
-16,Wed,2022-12-28,ESTAC Troyes,Nantes,0-0,
+16,Wed,2022-12-28,Troyes,Nantes,0-0,
 16,Wed,2022-12-28,AJ Auxerre,Monaco,2-3,1-1
-16,Wed,2022-12-28,Clermont Foot 63,Lille,0-2,0-0
+16,Wed,2022-12-28,Clermont,Lille,0-2,0-0
 16,Wed,2022-12-28,Paris Saint Germain,Estrasburgo,2-1,1-0
 16,Wed,2022-12-28,Brestois,Lyon,2-4,1-3
 16,Thu,2022-12-29,FC Lorient,Montpellier,0-2,0-2
@@ -163,18 +163,18 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Sun,2023-01-01,Nantes,AJ Auxerre,1-0,0-0
 17,Sun,2023-01-01,Toulouse FC,AC Ajaccio,2-0,0-0
 17,Sun,2023-01-01,Angers,FC Lorient,1-2,1-0
-17,Sun,2023-01-01,Lyon,Clermont Foot 63,0-1,0-0
+17,Sun,2023-01-01,Lyon,Clermont,0-1,0-0
 17,Sun,2023-01-01,Lens,Paris Saint Germain,3-1,2-1
-17,Mon,2023-01-02,Estrasburgo,ESTAC Troyes,2-3,1-2
+17,Mon,2023-01-02,Estrasburgo,Troyes,2-3,1-2
 17,Mon,2023-01-02,Lille,Reims,1-1,1-0
 17,Mon,2023-01-02,Montpellier,Olympique de Marseille,1-2,0-0
 17,Mon,2023-01-02,Rennes,Nice,2-1,1-1
 18,Wed,2023-01-11,AC Ajaccio,Reims,0-1,0-1
 18,Wed,2023-01-11,AJ Auxerre,Toulouse FC,0-5,0-3
-18,Wed,2023-01-11,Clermont Foot 63,Rennes,2-1,1-0
+18,Wed,2023-01-11,Clermont,Rennes,2-1,1-0
 18,Wed,2023-01-11,Nantes,Lyon,0-0,
 18,Wed,2023-01-11,Brestois,Lille,0-0,
-18,Wed,2023-01-11,ESTAC Troyes,Olympique de Marseille,0-2,0-1
+18,Wed,2023-01-11,Troyes,Olympique de Marseille,0-2,0-1
 18,Wed,2023-01-11,FC Lorient,Monaco,2-2,0-0
 18,Wed,2023-01-11,Nice,Montpellier,6-1,2-0
 18,Wed,2023-01-11,Paris Saint Germain,Angers,2-0,1-0
@@ -182,26 +182,26 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sat,2023-01-14,Lens,AJ Auxerre,1-0,0-0
 19,Sat,2023-01-14,Olympique de Marseille,FC Lorient,3-1,1-1
 19,Sat,2023-01-14,Lyon,Estrasburgo,1-2,1-2
-19,Sun,2023-01-15,Lille,ESTAC Troyes,5-1,2-0
+19,Sun,2023-01-15,Lille,Troyes,5-1,2-0
 19,Sun,2023-01-15,Toulouse FC,Brestois,1-1,0-1
 19,Sun,2023-01-15,Montpellier,Nantes,0-3,0-1
-19,Sun,2023-01-15,Angers,Clermont Foot 63,1-2,0-1
+19,Sun,2023-01-15,Angers,Clermont,1-2,0-1
 19,Sun,2023-01-15,Reims,Nice,0-0,
 19,Sun,2023-01-15,Monaco,AC Ajaccio,7-1,5-1
 19,Sun,2023-01-15,Rennes,Paris Saint Germain,1-0,0-0
 20,Fri,2023-01-27,FC Lorient,Rennes,2-1,2-0
-20,Sat,2023-01-28,ESTAC Troyes,Lens,1-1,0-0
+20,Sat,2023-01-28,Troyes,Lens,1-1,0-0
 20,Sat,2023-01-28,Olympique de Marseille,Monaco,1-1,0-1
 20,Sun,2023-01-29,Nice,Lille,1-0,1-0
 20,Sun,2023-01-29,AJ Auxerre,Montpellier,0-2,0-0
-20,Sun,2023-01-29,Clermont Foot 63,Nantes,0-0,
+20,Sun,2023-01-29,Clermont,Nantes,0-0,
 20,Sun,2023-01-29,Estrasburgo,Toulouse FC,1-2,1-1
 20,Sun,2023-01-29,Brestois,Angers,4-0,2-0
 20,Sun,2023-01-29,AC Ajaccio,Lyon,0-2,0-1
 20,Sun,2023-01-29,Paris Saint Germain,Reims,1-1,0-0
 21,Wed,2023-02-01,Nantes,Olympique de Marseille,0-2,0-0
-21,Wed,2023-02-01,Toulouse FC,ESTAC Troyes,4-1,2-1
-21,Wed,2023-02-01,Lille,Clermont Foot 63,0-0,
+21,Wed,2023-02-01,Toulouse FC,Troyes,4-1,2-1
+21,Wed,2023-02-01,Lille,Clermont,0-0,
 21,Wed,2023-02-01,Angers,AC Ajaccio,1-2,1-0
 21,Wed,2023-02-01,Reims,FC Lorient,4-2,1-2
 21,Wed,2023-02-01,Monaco,AJ Auxerre,3-2,2-0
@@ -210,9 +210,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 21,Wed,2023-02-01,Lens,Nice,0-1,0-0
 21,Wed,2023-02-01,Rennes,Estrasburgo,3-0,2-0
 22,Sat,2023-02-04,Paris Saint Germain,Toulouse FC,2-1,1-1
-22,Sat,2023-02-04,ESTAC Troyes,Lyon,1-3,0-1
+22,Sat,2023-02-04,Troyes,Lyon,1-3,0-1
 22,Sat,2023-02-04,Rennes,Lille,1-3,1-0
-22,Sun,2023-02-05,Clermont Foot 63,Monaco,0-2,0-2
+22,Sun,2023-02-05,Clermont,Monaco,0-2,0-2
 22,Sun,2023-02-05,AC Ajaccio,Nantes,0-2,0-0
 22,Sun,2023-02-05,AJ Auxerre,Reims,0-0,
 22,Sun,2023-02-05,FC Lorient,Angers,0-0,
@@ -221,30 +221,30 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 22,Sun,2023-02-05,Olympique de Marseille,Nice,1-3,0-2
 23,Fri,2023-02-10,Nice,AC Ajaccio,3-0,1-0
 23,Sat,2023-02-11,Monaco,Paris Saint Germain,3-1,3-1
-23,Sat,2023-02-11,Clermont Foot 63,Olympique de Marseille,0-2,0-1
+23,Sat,2023-02-11,Clermont,Olympique de Marseille,0-2,0-1
 23,Sun,2023-02-12,Toulouse FC,Rennes,3-1,3-0
 23,Sun,2023-02-12,Montpellier,Brestois,3-0,2-0
 23,Sun,2023-02-12,Lille,Estrasburgo,2-0,2-0
 23,Sun,2023-02-12,Angers,AJ Auxerre,1-1,1-1
-23,Sun,2023-02-12,Reims,ESTAC Troyes,4-0,2-0
+23,Sun,2023-02-12,Reims,Troyes,4-0,2-0
 23,Sun,2023-02-12,Nantes,FC Lorient,1-0,0-0
 23,Sun,2023-02-12,Lyon,Lens,2-1,1-1
 24,Fri,2023-02-17,AJ Auxerre,Lyon,2-1,0-1
 24,Sat,2023-02-18,Nice,Reims,0-0,
 24,Sat,2023-02-18,Estrasburgo,Angers,2-1,2-0
 24,Sun,2023-02-19,Paris Saint Germain,Lille,4-3,2-1
-24,Sun,2023-02-19,ESTAC Troyes,Montpellier,0-1,0-0
+24,Sun,2023-02-19,Troyes,Montpellier,0-1,0-0
 24,Sun,2023-02-19,FC Lorient,AC Ajaccio,3-0,2-0
 24,Sun,2023-02-19,Brestois,Monaco,1-2,0-1
-24,Sun,2023-02-19,Rennes,Clermont Foot 63,2-0,1-0
+24,Sun,2023-02-19,Rennes,Clermont,2-0,1-0
 24,Sun,2023-02-19,Lens,Nantes,3-1,2-1
 24,Sun,2023-02-19,Toulouse FC,Olympique de Marseille,2-3,1-0
 25,Fri,2023-02-24,Lille,Brestois,2-1,0-1
 25,Sat,2023-02-25,Angers,Lyon,1-3,0-1
 25,Sat,2023-02-25,Montpellier,Lens,1-1,0-1
 25,Sun,2023-02-26,FC Lorient,AJ Auxerre,0-1,0-0
-25,Sun,2023-02-26,AC Ajaccio,ESTAC Troyes,2-1,0-1
-25,Sun,2023-02-26,Clermont Foot 63,Estrasburgo,1-1,0-1
+25,Sun,2023-02-26,AC Ajaccio,Troyes,2-1,0-1
+25,Sun,2023-02-26,Clermont,Estrasburgo,1-1,0-1
 25,Sun,2023-02-26,Nantes,Rennes,0-1,0-1
 25,Sun,2023-02-26,Reims,Toulouse FC,3-0,2-0
 25,Sun,2023-02-26,Monaco,Nice,0-3,0-3
@@ -252,8 +252,8 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 26,Fri,2023-03-03,Nice,AJ Auxerre,1-1,1-1
 26,Sat,2023-03-04,Lens,Lille,1-1,1-0
 26,Sat,2023-03-04,Paris Saint Germain,Nantes,4-2,2-2
-26,Sun,2023-03-05,ESTAC Troyes,Monaco,2-2,1-0
-26,Sun,2023-03-05,Toulouse FC,Clermont Foot 63,0-1,0-0
+26,Sun,2023-03-05,Troyes,Monaco,2-2,1-0
+26,Sun,2023-03-05,Toulouse FC,Clermont,0-1,0-0
 26,Sun,2023-03-05,Montpellier,Angers,5-0,3-0
 26,Sun,2023-03-05,Estrasburgo,Brestois,0-1,0-1
 26,Sun,2023-03-05,Reims,AC Ajaccio,1-0,0-0
@@ -262,9 +262,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Fri,2023-03-10,Lille,Lyon,3-3,0-0
 27,Sat,2023-03-11,AJ Auxerre,Rennes,0-0,
 27,Sat,2023-03-11,Brestois,Paris Saint Germain,1-2,1-1
-27,Sun,2023-03-12,Clermont Foot 63,Lens,0-4,0-3
+27,Sun,2023-03-12,Clermont,Lens,0-4,0-3
 27,Sun,2023-03-12,AC Ajaccio,Montpellier,0-1,0-0
-27,Sun,2023-03-12,FC Lorient,ESTAC Troyes,2-0,1-0
+27,Sun,2023-03-12,FC Lorient,Troyes,2-0,1-0
 27,Sun,2023-03-12,Nantes,Nice,2-2,1-1
 27,Sun,2023-03-12,Angers,Toulouse FC,0-2,0-1
 27,Sun,2023-03-12,Monaco,Reims,0-1,0-0
@@ -273,17 +273,17 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 28,Sat,2023-03-18,Toulouse FC,Lille,0-2,0-0
 28,Sat,2023-03-18,Lens,Angers,3-0,2-0
 28,Sun,2023-03-19,AC Ajaccio,Monaco,0-2,0-1
-28,Sun,2023-03-19,ESTAC Troyes,Brestois,2-2,2-1
-28,Sun,2023-03-19,Montpellier,Clermont Foot 63,2-1,0-1
+28,Sun,2023-03-19,Troyes,Brestois,2-2,2-1
+28,Sun,2023-03-19,Montpellier,Clermont,2-1,0-1
 28,Sun,2023-03-19,Nice,FC Lorient,1-1,0-1
 28,Sun,2023-03-19,Estrasburgo,AJ Auxerre,2-0,1-0
 28,Sun,2023-03-19,Paris Saint Germain,Rennes,0-2,0-1
 28,Sun,2023-03-19,Reims,Olympique de Marseille,1-2,1-2
 29,Fri,2023-03-31,Olympique de Marseille,Montpellier,1-1,1-1
-29,Sat,2023-04-01,AJ Auxerre,ESTAC Troyes,1-0,0-0
+29,Sat,2023-04-01,AJ Auxerre,Troyes,1-0,0-0
 29,Sat,2023-04-01,Rennes,Lens,0-1,0-1
 29,Sun,2023-04-02,Lille,FC Lorient,3-1,1-0
-29,Sun,2023-04-02,Clermont Foot 63,AC Ajaccio,2-1,0-1
+29,Sun,2023-04-02,Clermont,AC Ajaccio,2-1,0-1
 29,Sun,2023-04-02,Nantes,Reims,0-3,0-2
 29,Sun,2023-04-02,Angers,Nice,1-1,1-1
 29,Sun,2023-04-02,Brestois,Toulouse FC,3-1,1-1
@@ -294,7 +294,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 30,Sat,2023-04-08,Nice,Paris Saint Germain,0-2,0-1
 30,Sun,2023-04-09,Lyon,Rennes,3-1,0-1
 30,Sun,2023-04-09,AC Ajaccio,AJ Auxerre,0-3,0-3
-30,Sun,2023-04-09,ESTAC Troyes,Clermont Foot 63,0-2,0-2
+30,Sun,2023-04-09,Troyes,Clermont,0-2,0-2
 30,Sun,2023-04-09,Montpellier,Toulouse FC,1-2,0-1
 30,Sun,2023-04-09,Reims,Brestois,1-1,0-1
 30,Sun,2023-04-09,Nantes,Monaco,2-2,0-2
@@ -304,26 +304,26 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Sat,2023-04-15,Paris Saint Germain,Lens,3-1,3-0
 31,Sun,2023-04-16,Lille,Montpellier,2-1,0-1
 31,Sun,2023-04-16,AJ Auxerre,Nantes,2-1,2-0
-31,Sun,2023-04-16,Clermont Foot 63,Angers,2-1,2-1
+31,Sun,2023-04-16,Clermont,Angers,2-1,2-1
 31,Sun,2023-04-16,Estrasburgo,AC Ajaccio,3-1,1-0
 31,Sun,2023-04-16,Brestois,Nice,1-0,1-0
 31,Sun,2023-04-16,Monaco,FC Lorient,3-1,2-0
-31,Sun,2023-04-16,Olympique de Marseille,ESTAC Troyes,3-1,2-0
+31,Sun,2023-04-16,Olympique de Marseille,Troyes,3-1,2-0
 32,Fri,2023-04-21,Angers,Paris Saint Germain,1-2,0-2
 32,Sat,2023-04-22,AJ Auxerre,Lille,1-1,0-1
 32,Sat,2023-04-22,Lens,Monaco,3-0,2-0
 32,Sun,2023-04-23,Reims,Estrasburgo,0-2,0-2
 32,Sun,2023-04-23,AC Ajaccio,Brestois,0-0,
 32,Sun,2023-04-23,FC Lorient,Toulouse FC,0-1,0-0
-32,Sun,2023-04-23,Nantes,ESTAC Troyes,2-2,1-0
-32,Sun,2023-04-23,Nice,Clermont Foot 63,1-2,1-1
+32,Sun,2023-04-23,Nantes,Troyes,2-2,1-0
+32,Sun,2023-04-23,Nice,Clermont,1-2,1-1
 32,Sun,2023-04-23,Montpellier,Rennes,1-0,0-0
 32,Sun,2023-04-23,Lyon,Olympique de Marseille,1-2,0-1
 33,Fri,2023-04-28,Estrasburgo,Lyon,1-2,1-2
 33,Sat,2023-04-29,Lille,AC Ajaccio,3-0,3-0
 33,Sun,2023-04-30,Monaco,Montpellier,0-4,0-1
-33,Sun,2023-04-30,Clermont Foot 63,Reims,1-0,1-0
-33,Sun,2023-04-30,ESTAC Troyes,Nice,0-1,0-1
+33,Sun,2023-04-30,Clermont,Reims,1-0,1-0
+33,Sun,2023-04-30,Troyes,Nice,0-1,0-1
 33,Sun,2023-04-30,Rennes,Angers,4-2,2-2
 33,Sun,2023-04-30,Paris Saint Germain,FC Lorient,1-3,1-2
 33,Sun,2023-04-30,Olympique de Marseille,AJ Auxerre,2-1,0-1
@@ -334,18 +334,18 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Sat,2023-05-06,Lens,Olympique de Marseille,2-1,1-0
 34,Sun,2023-05-07,Angers,Monaco,1-2,0-1
 34,Sun,2023-05-07,AC Ajaccio,Toulouse FC,0-0,
-34,Sun,2023-05-07,AJ Auxerre,Clermont Foot 63,1-1,1-0
+34,Sun,2023-05-07,AJ Auxerre,Clermont,1-1,1-0
 34,Sun,2023-05-07,FC Lorient,Brestois,2-1,1-0
 34,Sun,2023-05-07,Nantes,Estrasburgo,0-2,0-1
 34,Sun,2023-05-07,Lyon,Montpellier,5-4,1-2
-34,Sun,2023-05-07,ESTAC Troyes,Paris Saint Germain,1-3,0-1
+34,Sun,2023-05-07,Troyes,Paris Saint Germain,1-3,0-1
 35,Fri,2023-05-12,Lens,Reims,2-1,1-1
 35,Sat,2023-05-13,Estrasburgo,Nice,2-0,1-0
 35,Sat,2023-05-13,Paris Saint Germain,AC Ajaccio,5-0,2-0
-35,Sun,2023-05-14,Clermont Foot 63,Lyon,2-1,1-1
+35,Sun,2023-05-14,Clermont,Lyon,2-1,1-1
 35,Sun,2023-05-14,Montpellier,FC Lorient,1-1,0-0
 35,Sun,2023-05-14,Brestois,AJ Auxerre,1-0,0-0
-35,Sun,2023-05-14,Rennes,ESTAC Troyes,4-0,1-0
+35,Sun,2023-05-14,Rennes,Troyes,4-0,1-0
 35,Sun,2023-05-14,Toulouse FC,Nantes,0-0,
 35,Sun,2023-05-14,Monaco,Lille,0-0,
 35,Sun,2023-05-14,Olympique de Marseille,Angers,3-1,1-1
@@ -353,13 +353,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Sat,2023-05-20,Nantes,Montpellier,0-3,0-1
 36,Sat,2023-05-20,Lille,Olympique de Marseille,2-1,0-1
 36,Sun,2023-05-21,AC Ajaccio,Rennes,0-5,0-4
-36,Sun,2023-05-21,ESTAC Troyes,Estrasburgo,1-1,0-1
+36,Sun,2023-05-21,Troyes,Estrasburgo,1-1,0-1
 36,Sun,2023-05-21,Nice,Toulouse FC,0-0,
-36,Sun,2023-05-21,Brestois,Clermont Foot 63,2-1,1-1
+36,Sun,2023-05-21,Brestois,Clermont,2-1,1-1
 36,Sun,2023-05-21,Reims,Angers,2-2,1-0
 36,Sun,2023-05-21,FC Lorient,Lens,1-3,1-2
 36,Sun,2023-05-21,AJ Auxerre,Paris Saint Germain,1-2,0-2
-37,Sat,2023-05-27,Clermont Foot 63,FC Lorient,2-0,1-0
+37,Sat,2023-05-27,Clermont,FC Lorient,2-0,1-0
 37,Sat,2023-05-27,Toulouse FC,AJ Auxerre,1-1,1-1
 37,Sat,2023-05-27,Montpellier,Nice,2-3,2-0
 37,Sat,2023-05-27,Olympique de Marseille,Brestois,1-2,0-0
@@ -367,15 +367,15 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 37,Sat,2023-05-27,Lille,Nantes,2-1,0-1
 37,Sat,2023-05-27,Estrasburgo,Paris Saint Germain,1-1,0-0
 37,Sat,2023-05-27,Lens,AC Ajaccio,3-0,3-0
-37,Sat,2023-05-27,Angers,ESTAC Troyes,2-1,1-1
+37,Sat,2023-05-27,Angers,Troyes,2-1,1-1
 37,Sat,2023-05-27,Rennes,Monaco,2-0,0-0
 38,Sat,2023-06-03,AC Ajaccio,Olympique de Marseille,1-0,0-0
 38,Sat,2023-06-03,AJ Auxerre,Lens,1-3,0-1
 38,Sat,2023-06-03,Monaco,Toulouse FC,1-2,0-0
-38,Sat,2023-06-03,ESTAC Troyes,Lille,1-1,0-0
+38,Sat,2023-06-03,Troyes,Lille,1-1,0-0
 38,Sat,2023-06-03,FC Lorient,Estrasburgo,2-1,2-0
 38,Sat,2023-06-03,Nantes,Angers,1-0,1-0
 38,Sat,2023-06-03,Nice,Lyon,3-1,3-1
-38,Sat,2023-06-03,Paris Saint Germain,Clermont Foot 63,2-3,2-2
+38,Sat,2023-06-03,Paris Saint Germain,Clermont,2-3,2-2
 38,Sat,2023-06-03,Brestois,Rennes,1-2,1-2
 38,Sat,2023-06-03,Reims,Montpellier,1-3,1-0

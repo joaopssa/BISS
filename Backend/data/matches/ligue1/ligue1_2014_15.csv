@@ -4,7 +4,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 1,Sat,2014-08-09,Evian Thonon Gaillard,Caen,0-3,0-3
 1,Sat,2014-08-09,Guingamp,Saint-Étienne,0-2,0-1
 1,Sat,2014-08-09,Lille,FC Metz,0-0,
-1,Sat,2014-08-09,Montpellier,Girondins Bordeaux,0-1,0-1
+1,Sat,2014-08-09,Montpellier,Bordeaux,0-1,0-1
 1,Sat,2014-08-09,Nantes,Lens,1-0,0-0
 1,Sat,2014-08-09,Nice,Toulouse FC,3-2,1-2
 1,Sun,2014-08-10,Lyon,Rennes,2-0,0-0
@@ -18,13 +18,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 2,Sat,2014-08-16,Toulouse FC,Lyon,2-1,2-0
 2,Sun,2014-08-17,Olympique de Marseille,Montpellier,0-2,0-1
 2,Sun,2014-08-17,Saint-Étienne,Reims,3-1,0-1
-2,Sun,2014-08-17,Girondins Bordeaux,Monaco,4-1,0-1
+2,Sun,2014-08-17,Bordeaux,Monaco,4-1,0-1
 3,Fri,2014-08-22,Evian Thonon Gaillard,Paris Saint Germain,0-0,
 3,Sat,2014-08-23,Guingamp,Olympique de Marseille,0-1,0-0
 3,Sat,2014-08-23,SC Bastia,Toulouse FC,1-0,1-0
 3,Sat,2014-08-23,Lille,FC Lorient,2-0,0-0
 3,Sat,2014-08-23,Montpellier,FC Metz,2-0,1-0
-3,Sat,2014-08-23,Nice,Girondins Bordeaux,1-3,1-1
+3,Sat,2014-08-23,Nice,Bordeaux,1-3,1-1
 3,Sat,2014-08-23,Reims,Caen,0-2,0-0
 3,Sun,2014-08-24,Lyon,Lens,0-1,0-1
 3,Sun,2014-08-24,Saint-Étienne,Rennes,0-0,
@@ -36,7 +36,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 4,Sat,2014-08-30,FC Lorient,Guingamp,4-0,0-0
 4,Sat,2014-08-30,Nantes,Montpellier,1-0,0-0
 4,Sat,2014-08-30,Toulouse FC,Evian Thonon Gaillard,1-0,0-0
-4,Sun,2014-08-31,Girondins Bordeaux,SC Bastia,1-1,0-1
+4,Sun,2014-08-31,Bordeaux,SC Bastia,1-1,0-1
 4,Sun,2014-08-31,FC Metz,Lyon,2-1,0-0
 4,Sun,2014-08-31,Paris Saint Germain,Saint-Étienne,5-0,2-0
 5,Fri,2014-09-12,Lyon,Monaco,2-1,1-1
@@ -47,9 +47,9 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 5,Sat,2014-09-13,Reims,Toulouse FC,2-0,1-0
 5,Sat,2014-09-13,Saint-Étienne,Caen,1-0,0-0
 5,Sun,2014-09-14,Lille,Nantes,2-0,0-0
-5,Sun,2014-09-14,Guingamp,Girondins Bordeaux,2-1,2-0
+5,Sun,2014-09-14,Guingamp,Bordeaux,2-1,2-0
 5,Sun,2014-09-14,Evian Thonon Gaillard,Olympique de Marseille,1-3,0-2
-6,Fri,2014-09-19,Girondins Bordeaux,Evian Thonon Gaillard,2-1,1-0
+6,Fri,2014-09-19,Bordeaux,Evian Thonon Gaillard,2-1,1-0
 6,Sat,2014-09-20,Olympique de Marseille,Rennes,3-0,0-0
 6,Sat,2014-09-20,FC Lorient,Reims,0-1,0-0
 6,Sat,2014-09-20,FC Metz,SC Bastia,3-1,1-1
@@ -68,18 +68,18 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 7,Wed,2014-09-24,Montpellier,Monaco,0-1,0-0
 7,Wed,2014-09-24,Nice,Lille,1-0,1-0
 7,Wed,2014-09-24,Caen,Paris Saint Germain,0-2,0-1
-7,Thu,2014-09-25,Saint-Étienne,Girondins Bordeaux,1-1,1-1
+7,Thu,2014-09-25,Saint-Étienne,Bordeaux,1-1,1-1
 8,Sat,2014-09-27,Monaco,Nice,0-1,0-1
 8,Sat,2014-09-27,Toulouse FC,Paris Saint Germain,1-1,1-1
 8,Sat,2014-09-27,Lille,SC Bastia,1-0,1-0
 8,Sat,2014-09-27,FC Lorient,Evian Thonon Gaillard,0-2,0-1
 8,Sat,2014-09-27,FC Metz,Reims,3-0,0-0
 8,Sat,2014-09-27,Montpellier,Guingamp,2-1,0-0
-8,Sun,2014-09-28,Girondins Bordeaux,Rennes,2-1,0-0
+8,Sun,2014-09-28,Bordeaux,Rennes,2-1,0-0
 8,Sun,2014-09-28,Lens,Caen,0-0,
 8,Sun,2014-09-28,Nantes,Lyon,1-1,0-0
 8,Sun,2014-09-28,Olympique de Marseille,Saint-Étienne,2-1,2-0
-9,Fri,2014-10-03,Reims,Girondins Bordeaux,1-0,1-0
+9,Fri,2014-10-03,Reims,Bordeaux,1-0,1-0
 9,Sat,2014-10-04,Caen,Olympique de Marseille,1-2,0-0
 9,Sat,2014-10-04,SC Bastia,FC Lorient,0-2,0-0
 9,Sat,2014-10-04,Evian Thonon Gaillard,FC Metz,3-0,0-0
@@ -97,10 +97,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 10,Sat,2014-10-18,Nantes,Reims,1-1,1-0
 10,Sat,2014-10-18,Nice,SC Bastia,0-1,0-0
 10,Sun,2014-10-19,Olympique de Marseille,Toulouse FC,2-0,2-0
-10,Sun,2014-10-19,Girondins Bordeaux,Caen,1-1,1-0
+10,Sun,2014-10-19,Bordeaux,Caen,1-1,1-0
 10,Sun,2014-10-19,Lyon,Montpellier,5-1,2-0
 11,Fri,2014-10-24,Toulouse FC,Lens,0-2,0-2
-11,Sat,2014-10-25,Paris Saint Germain,Girondins Bordeaux,3-0,1-0
+11,Sat,2014-10-25,Paris Saint Germain,Bordeaux,3-0,1-0
 11,Sat,2014-10-25,SC Bastia,Monaco,1-3,1-1
 11,Sat,2014-10-25,Caen,FC Lorient,2-1,1-1
 11,Sat,2014-10-25,Evian Thonon Gaillard,Nantes,0-2,0-1
@@ -117,10 +117,10 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 12,Sat,2014-11-01,Montpellier,Evian Thonon Gaillard,2-0,1-0
 12,Sat,2014-11-01,Nice,Lyon,1-3,0-0
 12,Sun,2014-11-02,Nantes,Rennes,1-1,1-1
-12,Sun,2014-11-02,Girondins Bordeaux,Toulouse FC,2-1,0-0
+12,Sun,2014-11-02,Bordeaux,Toulouse FC,2-1,0-0
 12,Sun,2014-11-02,Olympique de Marseille,Lens,2-1,1-1
 13,Fri,2014-11-07,Rennes,FC Lorient,1-0,0-0
-13,Sat,2014-11-08,Lens,Girondins Bordeaux,1-2,0-2
+13,Sat,2014-11-08,Lens,Bordeaux,1-2,0-2
 13,Sat,2014-11-08,SC Bastia,Montpellier,2-0,2-0
 13,Sat,2014-11-08,Caen,Nantes,1-2,1-1
 13,Sat,2014-11-08,Evian Thonon Gaillard,Nice,1-0,0-0
@@ -137,7 +137,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 14,Sat,2014-11-22,Nice,Reims,0-0,
 14,Sun,2014-11-23,Nantes,Saint-Étienne,0-0,
 14,Sun,2014-11-23,Montpellier,Toulouse FC,2-0,1-0
-14,Sun,2014-11-23,Olympique de Marseille,Girondins Bordeaux,3-1,0-0
+14,Sun,2014-11-23,Olympique de Marseille,Bordeaux,3-1,0-0
 14,Mon,15-01-07,Lille,Evian Thonon Gaillard,1-0,0-0
 15,Fri,2014-11-28,Olympique de Marseille,Nantes,2-0,2-0
 15,Sat,2014-11-29,Paris Saint Germain,Nice,1-0,1-0
@@ -146,7 +146,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 15,Sat,2014-11-29,Reims,SC Bastia,2-1,1-1
 15,Sat,2014-11-29,Rennes,Monaco,2-0,2-0
 15,Sat,2014-11-29,Toulouse FC,FC Lorient,2-3,1-0
-15,Sun,2014-11-30,Girondins Bordeaux,Lille,1-0,0-0
+15,Sun,2014-11-30,Bordeaux,Lille,1-0,0-0
 15,Sun,2014-11-30,Evian Thonon Gaillard,Guingamp,2-0,0-0
 15,Sun,2014-11-30,Saint-Étienne,Lyon,3-0,2-0
 16,Tue,2014-12-02,FC Lorient,Olympique de Marseille,1-1,1-1
@@ -154,14 +154,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 16,Tue,2014-12-02,Monaco,Lens,2-0,0-0
 16,Wed,2014-12-03,SC Bastia,Evian Thonon Gaillard,1-2,1-0
 16,Wed,2014-12-03,Guingamp,Caen,5-1,2-1
-16,Wed,2014-12-03,FC Metz,Girondins Bordeaux,0-0,
+16,Wed,2014-12-03,FC Metz,Bordeaux,0-0,
 16,Wed,2014-12-03,Montpellier,Saint-Étienne,0-2,0-2
 16,Wed,2014-12-03,Nice,Rennes,1-2,0-1
 16,Wed,2014-12-03,Lille,Paris Saint Germain,1-1,1-1
 16,Thu,2014-12-04,Lyon,Reims,2-1,1-1
 17,Fri,2014-12-05,Toulouse FC,Monaco,0-2,0-1
 17,Sat,2014-12-06,Paris Saint Germain,Nantes,2-1,1-1
-17,Sat,2014-12-06,Girondins Bordeaux,FC Lorient,3-2,1-1
+17,Sat,2014-12-06,Bordeaux,FC Lorient,3-2,1-1
 17,Sat,2014-12-06,Caen,Nice,2-3,2-1
 17,Sat,2014-12-06,Rennes,Montpellier,0-4,0-1
 17,Sat,2014-12-06,Saint-Étienne,SC Bastia,1-0,0-0
@@ -170,7 +170,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 17,Sun,2014-12-07,Reims,Guingamp,2-3,1-1
 17,Sun,2014-12-07,Olympique de Marseille,FC Metz,3-1,1-0
 18,Fri,2014-12-12,Lyon,Caen,3-0,1-0
-18,Sat,2014-12-13,Nantes,Girondins Bordeaux,2-1,1-1
+18,Sat,2014-12-13,Nantes,Bordeaux,2-1,1-1
 18,Sat,2014-12-13,SC Bastia,Rennes,2-0,1-0
 18,Sat,2014-12-13,FC Lorient,FC Metz,3-1,3-0
 18,Sat,2014-12-13,Montpellier,Lens,3-3,2-2
@@ -188,7 +188,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 19,Sat,2014-12-20,Toulouse FC,Guingamp,1-1,1-1
 19,Sun,2014-12-21,Olympique de Marseille,Lille,2-1,1-0
 19,Sun,2014-12-21,Saint-Étienne,Evian Thonon Gaillard,3-0,2-0
-19,Sun,2014-12-21,Girondins Bordeaux,Lyon,0-5,0-1
+19,Sun,2014-12-21,Bordeaux,Lyon,0-5,0-1
 20,Thu,2015-01-09,Montpellier,Olympique de Marseille,2-1,1-0
 20,Fri,2015-01-10,SC Bastia,Paris Saint Germain,4-2,2-2
 20,Fri,2015-01-10,Lille,Caen,1-0,1-0
@@ -198,8 +198,8 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 20,Fri,2015-01-10,Reims,Saint-Étienne,1-2,0-1
 20,Sat,2015-01-11,Nantes,FC Metz,0-0,
 20,Sat,2015-01-11,Lyon,Toulouse FC,3-0,2-0
-20,Sat,2015-01-11,Monaco,Girondins Bordeaux,0-0,
-21,Fri,2015-01-16,Girondins Bordeaux,Nice,1-2,1-0
+20,Sat,2015-01-11,Monaco,Bordeaux,0-0,
+21,Fri,2015-01-16,Bordeaux,Nice,1-2,1-0
 21,Sun,2015-01-17,Lens,Lyon,0-2,0-2
 21,Sun,2015-01-17,Toulouse FC,SC Bastia,1-1,0-0
 21,Sun,2015-01-17,FC Lorient,Lille,1-0,0-0
@@ -211,7 +211,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 21,Mon,2015-01-18,Olympique de Marseille,Guingamp,2-1,0-0
 22,Sun,2015-01-23,Nice,Olympique de Marseille,2-1,0-0
 22,Mon,2015-01-24,Lille,Monaco,0-1,0-0
-22,Mon,2015-01-24,SC Bastia,Girondins Bordeaux,0-0,
+22,Mon,2015-01-24,SC Bastia,Bordeaux,0-0,
 22,Mon,2015-01-24,Guingamp,FC Lorient,3-2,1-0
 22,Mon,2015-01-24,Montpellier,Nantes,4-0,1-0
 22,Wed,2015-01-25,Lyon,FC Metz,2-0,1-0
@@ -227,11 +227,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 23,Wed,2015-01-31,FC Metz,Nice,0-0,
 23,Wed,2015-01-31,Toulouse FC,Reims,1-0,1-0
 23,Thu,2015-02-01,Caen,Saint-Étienne,1-0,1-0
-23,Thu,2015-02-01,Girondins Bordeaux,Guingamp,1-1,0-1
+23,Thu,2015-02-01,Bordeaux,Guingamp,1-1,0-1
 23,Thu,2015-02-01,Monaco,Lyon,0-0,
 24,Wed,2015-02-06,Saint-Étienne,Lens,3-3,1-0
 24,Thu,2015-02-07,Rennes,Olympique de Marseille,1-1,1-0
-24,Thu,2015-02-07,Evian Thonon Gaillard,Girondins Bordeaux,0-1,0-1
+24,Thu,2015-02-07,Evian Thonon Gaillard,Bordeaux,0-1,0-1
 24,Thu,2015-02-07,Montpellier,Lille,1-2,0-1
 24,Thu,2015-02-07,Reims,FC Lorient,1-3,1-0
 24,Thu,2015-02-07,SC Bastia,FC Metz,2-0,0-0
@@ -245,13 +245,13 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 25,Sat,2015-02-14,Lens,Evian Thonon Gaillard,0-2,0-2
 25,Sat,2015-02-14,Lille,Nice,0-0,
 25,Sat,2015-02-14,Toulouse FC,Rennes,2-1,1-0
-25,Sun,2015-02-15,Girondins Bordeaux,Saint-Étienne,1-0,1-0
+25,Sun,2015-02-15,Bordeaux,Saint-Étienne,1-0,1-0
 25,Sun,2015-02-15,FC Metz,Guingamp,0-2,0-2
 25,Sun,2015-02-15,FC Lorient,Lyon,1-1,0-0
 25,Sun,2015-04-07,Monaco,Montpellier,0-0,
 26,Sat,2015-02-20,Nice,Monaco,0-1,0-0
 26,Mon,2015-02-21,Paris Saint Germain,Toulouse FC,3-1,1-0
-26,Mon,2015-02-21,Rennes,Girondins Bordeaux,1-1,1-0
+26,Mon,2015-02-21,Rennes,Bordeaux,1-1,1-0
 26,Mon,2015-02-21,Caen,Lens,4-1,3-1
 26,Mon,2015-02-21,SC Bastia,Lille,2-1,2-1
 26,Tue,2015-02-22,Guingamp,Montpellier,0-2,0-1
@@ -263,7 +263,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Tue,2015-02-28,Lille,Lyon,2-1,0-1
 27,Tue,2015-02-28,FC Lorient,SC Bastia,2-0,1-0
 27,Tue,2015-02-28,FC Metz,Evian Thonon Gaillard,1-2,1-1
-27,Tue,2015-02-28,Girondins Bordeaux,Reims,1-1,1-1
+27,Tue,2015-02-28,Bordeaux,Reims,1-1,1-1
 27,Tue,2015-02-28,Lens,Rennes,0-1,0-1
 27,Tue,2015-02-28,Toulouse FC,Saint-Étienne,1-1,0-1
 27,Thu,2015-03-01,Nantes,Guingamp,1-0,0-0
@@ -271,7 +271,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 27,Thu,2015-03-01,Monaco,Paris Saint Germain,0-0,
 28,Wed,2015-03-06,Toulouse FC,Olympique de Marseille,1-6,0-4
 28,Thu,2015-03-07,Paris Saint Germain,Lens,4-1,1-0
-28,Thu,2015-03-07,Caen,Girondins Bordeaux,1-2,0-0
+28,Thu,2015-03-07,Caen,Bordeaux,1-2,0-0
 28,Thu,2015-03-07,Rennes,FC Metz,1-0,1-0
 28,Thu,2015-03-07,Evian Thonon Gaillard,Monaco,1-3,0-2
 28,Thu,2015-03-07,Reims,Nantes,3-1,2-0
@@ -287,11 +287,11 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 29,Sat,2015-03-14,Montpellier,Reims,3-1,1-0
 29,Sat,2015-03-14,Lens,Toulouse FC,1-0,0-0
 29,Sun,2015-03-15,Lille,Rennes,3-0,1-0
-29,Sun,2015-03-15,Girondins Bordeaux,Paris Saint Germain,3-2,1-0
+29,Sun,2015-03-15,Bordeaux,Paris Saint Germain,3-2,1-0
 29,Sun,2015-03-15,Olympique de Marseille,Lyon,0-0,
 30,Sun,2015-03-20,Paris Saint Germain,FC Lorient,3-1,1-0
 30,Mon,2015-03-21,Lyon,Nice,1-2,0-1
-30,Mon,2015-03-21,Toulouse FC,Girondins Bordeaux,2-1,1-1
+30,Mon,2015-03-21,Toulouse FC,Bordeaux,2-1,1-1
 30,Mon,2015-03-21,SC Bastia,Guingamp,0-0,
 30,Mon,2015-03-21,Caen,FC Metz,0-0,
 30,Mon,2015-03-21,Evian Thonon Gaillard,Montpellier,1-0,0-0
@@ -306,7 +306,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 31,Thu,2015-04-04,Lille,Reims,3-1,1-0
 31,Thu,2015-04-04,FC Lorient,Rennes,0-3,0-2
 31,Thu,2015-04-04,FC Metz,Toulouse FC,3-2,2-1
-31,Fri,2015-04-05,Girondins Bordeaux,Lens,2-1,0-0
+31,Fri,2015-04-05,Bordeaux,Lens,2-1,0-0
 31,Fri,2015-04-05,Nantes,Caen,1-2,1-0
 31,Fri,2015-04-05,Olympique de Marseille,Paris Saint Germain,2-3,2-1
 32,Thu,2015-04-10,Caen,Monaco,0-3,0-1
@@ -316,7 +316,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 32,Sun,2015-04-12,Lens,FC Lorient,0-0,
 32,Sun,2015-04-12,Toulouse FC,Montpellier,1-0,1-0
 32,Sun,2015-04-12,Reims,Nice,0-1,0-1
-32,Sun,2015-04-12,Girondins Bordeaux,Olympique de Marseille,1-0,0-0
+32,Sun,2015-04-12,Bordeaux,Olympique de Marseille,1-0,0-0
 32,Wed,2015-04-15,Lyon,SC Bastia,2-0,0-0
 32,Sat,2015-04-28,Paris Saint Germain,FC Metz,3-1,2-0
 33,Sat,2015-04-17,Nantes,Olympique de Marseille,1-0,1-0
@@ -326,14 +326,14 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 33,Sun,2015-04-18,SC Bastia,Reims,1-2,0-2
 33,Sun,2015-04-18,Monaco,Rennes,1-1,1-0
 33,Sun,2015-04-18,FC Lorient,Toulouse FC,0-1,0-1
-33,Mon,2015-04-19,Lille,Girondins Bordeaux,2-0,1-0
+33,Mon,2015-04-19,Lille,Bordeaux,2-0,1-0
 33,Mon,2015-04-19,Montpellier,Caen,1-0,1-0
 33,Mon,2015-04-19,Lyon,Saint-Étienne,2-2,1-2
 34,Mon,2015-04-24,Olympique de Marseille,FC Lorient,3-5,0-2
 34,Tue,2015-04-25,Paris Saint Germain,Lille,6-1,4-0
 34,Tue,2015-04-25,Evian Thonon Gaillard,SC Bastia,1-2,1-0
 34,Tue,2015-04-25,Caen,Guingamp,0-2,0-0
-34,Tue,2015-04-25,Girondins Bordeaux,FC Metz,1-1,0-1
+34,Tue,2015-04-25,Bordeaux,FC Metz,1-1,0-1
 34,Tue,2015-04-25,Toulouse FC,Nantes,1-1,1-0
 34,Tue,2015-04-25,Rennes,Nice,2-1,0-1
 34,Wed,2015-04-26,Saint-Étienne,Montpellier,1-0,1-0
@@ -341,7 +341,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 34,Wed,2015-04-26,Reims,Lyon,2-4,1-3
 35,Tue,2015-05-01,FC Metz,Olympique de Marseille,0-2,0-1
 35,Wed,2015-05-02,Lyon,Evian Thonon Gaillard,2-0,2-0
-35,Wed,2015-05-02,FC Lorient,Girondins Bordeaux,0-0,
+35,Wed,2015-05-02,FC Lorient,Bordeaux,0-0,
 35,Wed,2015-05-02,Nice,Caen,1-1,1-1
 35,Wed,2015-05-02,Guingamp,Reims,2-0,0-0
 35,Wed,2015-05-02,Montpellier,Rennes,0-0,
@@ -354,12 +354,12 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 36,Fri,2015-05-09,Rennes,SC Bastia,0-1,0-0
 36,Fri,2015-05-09,Toulouse FC,Lille,3-2,1-1
 36,Fri,2015-05-09,FC Metz,FC Lorient,0-4,0-2
-36,Fri,2015-05-09,Girondins Bordeaux,Nantes,2-1,1-1
+36,Fri,2015-05-09,Bordeaux,Nantes,2-1,1-1
 36,Fri,2015-05-09,Evian Thonon Gaillard,Reims,2-3,1-1
 36,Sat,2015-05-10,Lens,Montpellier,0-1,0-0
 36,Sat,2015-05-10,Saint-Étienne,Nice,5-0,2-0
 36,Sat,2015-05-10,Olympique de Marseille,Monaco,2-1,0-1
-37,Sun,2015-05-16,Lyon,Girondins Bordeaux,1-1,1-1
+37,Sun,2015-05-16,Lyon,Bordeaux,1-1,1-1
 37,Sun,2015-05-16,SC Bastia,Caen,1-1,1-1
 37,Sun,2015-05-16,Nice,Lens,2-1,1-1
 37,Sun,2015-05-16,Nantes,FC Lorient,1-1,1-1
@@ -374,7 +374,7 @@ Matchday,Day,Date,Home,Away,FullTime,HalfTime
 38,Mon,2015-05-23,FC Metz,Lille,1-4,0-3
 38,Mon,2015-05-23,Rennes,Lyon,0-1,0-0
 38,Mon,2015-05-23,FC Lorient,Monaco,0-1,0-1
-38,Mon,2015-05-23,Girondins Bordeaux,Montpellier,2-1,2-0
+38,Mon,2015-05-23,Bordeaux,Montpellier,2-1,2-0
 38,Mon,2015-05-23,Lens,Nantes,1-0,1-0
 38,Mon,2015-05-23,Toulouse FC,Nice,2-3,0-2
 38,Mon,2015-05-23,Paris Saint Germain,Reims,3-2,2-0

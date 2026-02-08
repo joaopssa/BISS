@@ -1,7 +1,7 @@
 Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 1,Fri,2016-08-12,SC Bastia,Paris Saint Germain,0-1,0-0
 1,Fri,2016-08-12,Monaco,Guingamp,2-2,0-2
-1,Sat,2016-08-13,Girondins Bordeaux,Saint-Étienne,3-2,1-0
+1,Sat,2016-08-13,Bordeaux,Saint-Étienne,3-2,1-0
 1,Sat,2016-08-13,Caen,FC Lorient,3-2,2-2
 1,Sat,2016-08-13,Dijon FCO,Nantes,0-1,0-0,
 1,Sat,2016-08-13,FC Metz,Lille,3-2,0-1,
@@ -15,7 +15,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 2,Sat,2016-08-20,Lille,Dijon FCO,1-0,0-0,
 2,Sat,2016-08-20,FC Lorient,SC Bastia,0-3,0-2,
 2,Sat,2016-08-20,Rennes,AS Nancy Lorraine,2-0,1-0,
-2,Sat,2016-08-20,Toulouse FC,Girondins Bordeaux,4-1,2-0,
+2,Sat,2016-08-20,Toulouse FC,Bordeaux,4-1,2-0,
 2,Sun,2016-08-21,Guingamp,Olympique de Marseille,2-1,1-0
 2,Sun,2016-08-21,Saint-Étienne,Montpellier,3-1,0-1
 2,Sun,2016-08-21,Paris Saint Germain,FC Metz,3-0,0-0
@@ -26,11 +26,11 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 3,Sat,2016-08-27,Montpellier,Rennes,1-1,1-0,
 3,Sat,2016-08-27,AS Nancy Lorraine,Guingamp,0-2,0-0,
 3,Sat,2016-08-27,Nice,Lille,1-1,1-1,
-3,Sun,2016-08-28,Girondins Bordeaux,Nantes,1-0,1-0
+3,Sun,2016-08-28,Bordeaux,Nantes,1-0,1-0
 3,Sun,2016-08-28,Saint-Étienne,Toulouse FC,0-0,
 3,Sun,2016-08-28,Monaco,Paris Saint Germain,3-1,2-0
 4,Fri,2016-09-09,Paris Saint Germain,Saint-Étienne,1-1,0-0
-4,Sat,2016-09-10,Lyon,Girondins Bordeaux,1-3,1-1
+4,Sat,2016-09-10,Lyon,Bordeaux,1-3,1-1
 4,Sat,2016-09-10,Angers,Dijon FCO,3-1,1-1
 4,Sat,2016-09-10,SC Bastia,Toulouse FC,2-1,1-0,
 4,Sat,2016-09-10,Guingamp,Montpellier,1-1,1-1,
@@ -41,7 +41,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 4,Sun,2016-09-11,Nice,Olympique de Marseille,3-2,1-1
 5,Fri,2016-09-16,Caen,Paris Saint Germain,0-6,0-4
 5,Sat,2016-09-17,Monaco,Rennes,3-0,1-0
-5,Sat,2016-09-17,Girondins Bordeaux,Angers,0-1,0-1
+5,Sat,2016-09-17,Bordeaux,Angers,0-1,0-1
 5,Sat,2016-09-17,Dijon FCO,FC Metz,0-0,,
 5,Sat,2016-09-17,FC Lorient,Lille,1-0,0-0,
 5,Sat,2016-09-17,AS Nancy Lorraine,Nantes,1-1,0-0,
@@ -55,14 +55,14 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 6,Wed,2016-09-21,SC Bastia,AS Nancy Lorraine,0-0,,
 6,Wed,2016-09-21,Guingamp,FC Lorient,1-0,0-0,
 6,Wed,2016-09-21,Lyon,Montpellier,5-1,2-1,
-6,Wed,2016-09-21,FC Metz,Girondins Bordeaux,0-3,0-1,
+6,Wed,2016-09-21,FC Metz,Bordeaux,0-3,0-1,
 6,Wed,2016-09-21,Nantes,Saint-Étienne,0-0,,
 6,Wed,2016-09-21,Nice,Monaco,4-0,2-0,
 6,Wed,2016-09-21,Rennes,Olympique de Marseille,3-2,1-1
 7,Fri,2016-09-23,Toulouse FC,Paris Saint Germain,2-0,0-0
 7,Sat,2016-09-24,FC Lorient,Lyon,1-0,0-0
 7,Sat,2016-09-24,SC Bastia,Guingamp,1-0,0-0
-7,Sat,2016-09-24,Girondins Bordeaux,Caen,0-0,,
+7,Sat,2016-09-24,Bordeaux,Caen,0-0,,
 7,Sat,2016-09-24,Dijon FCO,Rennes,3-0,2-0,
 7,Sat,2016-09-24,Monaco,Angers,2-1,0-0,
 7,Sat,2016-09-24,Montpellier,FC Metz,0-1,0-1,
@@ -70,7 +70,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 7,Sun,2016-09-25,AS Nancy Lorraine,Nice,0-1,0-0
 7,Sun,2016-09-25,Olympique de Marseille,Nantes,2-1,1-1
 8,Fri,2016-09-30,Rennes,Guingamp,1-0,0-0
-8,Sat,2016-10-01,Paris Saint Germain,Girondins Bordeaux,2-0,2-0
+8,Sat,2016-10-01,Paris Saint Germain,Bordeaux,2-0,2-0
 8,Sat,2016-10-01,Caen,Toulouse FC,1-0,0-0
 8,Sat,2016-10-01,Dijon FCO,Montpellier,3-3,1-2,
 8,Sat,2016-10-01,Lille,AS Nancy Lorraine,1-0,0-0,
@@ -86,13 +86,13 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 9,Sat,2016-10-15,Guingamp,Lille,1-0,1-0,
 9,Sat,2016-10-15,FC Lorient,Nantes,1-2,0-1,
 9,Sat,2016-10-15,Montpellier,Caen,3-2,1-1,
-9,Sun,2016-10-16,Rennes,Girondins Bordeaux,1-1,1-0
+9,Sun,2016-10-16,Rennes,Bordeaux,1-1,1-0
 9,Sun,2016-10-16,Saint-Étienne,Dijon FCO,1-1,0-1
 9,Sun,2016-10-16,Olympique de Marseille,FC Metz,1-0,1-0
 10,Fri,2016-10-21,Monaco,Montpellier,6-2,1-1
 10,Sat,2016-10-22,Lyon,Guingamp,1-3,1-0
 10,Sat,2016-10-22,Angers,Toulouse FC,0-0,
-10,Sat,2016-10-22,Girondins Bordeaux,AS Nancy Lorraine,1-1,0-0,
+10,Sat,2016-10-22,Bordeaux,AS Nancy Lorraine,1-1,0-0,
 10,Sat,2016-10-22,Dijon FCO,FC Lorient,1-0,0-0,
 10,Sat,2016-10-22,Lille,SC Bastia,2-1,0-0,
 10,Sat,2016-10-22,Nantes,Rennes,1-2,1-0,
@@ -108,11 +108,11 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 11,Sat,2016-10-29,Saint-Étienne,Monaco,1-1,1-1,
 11,Sun,2016-10-30,Nice,Nantes,4-1,2-0
 11,Sun,2016-10-30,Rennes,FC Metz,1-0,0-0
-11,Sun,2016-10-30,Olympique de Marseille,Girondins Bordeaux,0-0,
+11,Sun,2016-10-30,Olympique de Marseille,Bordeaux,0-0,
 12,Fri,2016-11-04,Montpellier,Olympique de Marseille,3-1,2-0
 12,Sat,2016-11-05,Monaco,AS Nancy Lorraine,6-0,2-0
 12,Sat,2016-11-05,Angers,Lille,1-0,0-0
-12,Sat,2016-11-05,Girondins Bordeaux,FC Lorient,2-1,1-0,
+12,Sat,2016-11-05,Bordeaux,FC Lorient,2-1,1-0,
 12,Sat,2016-11-05,Dijon FCO,Guingamp,3-3,3-1,
 12,Sat,2016-11-05,Lyon,SC Bastia,2-1,1-0,
 12,Sat,2016-11-05,Nantes,Toulouse FC,1-1,0-1,
@@ -126,12 +126,12 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 13,Sat,2016-11-19,AS Nancy Lorraine,Dijon FCO,1-0,0-0,
 13,Sat,2016-11-19,Rennes,Angers,1-1,1-0,
 13,Sat,2016-11-19,Toulouse FC,FC Metz,1-2,0-1,
-13,Sun,2016-11-20,Guingamp,Girondins Bordeaux,1-1,0-1
+13,Sun,2016-11-20,Guingamp,Bordeaux,1-1,0-1
 13,Sun,2016-11-20,Olympique de Marseille,Caen,1-0,0-0
 13,Sun,2016-11-20,Saint-Étienne,Nice,0-1,0-0
 14,Fri,2016-11-25,Rennes,Toulouse FC,1-0,1-0
 14,Sat,2016-11-26,Monaco,Olympique de Marseille,4-0,3-0
-14,Sat,2016-11-26,Girondins Bordeaux,Dijon FCO,3-2,0-1
+14,Sat,2016-11-26,Bordeaux,Dijon FCO,3-2,0-1
 14,Sat,2016-11-26,Caen,Guingamp,1-1,0-0,
 14,Sat,2016-11-26,FC Metz,FC Lorient,3-3,1-1,
 14,Sat,2016-11-26,Montpellier,AS Nancy Lorraine,0-0,,
@@ -142,7 +142,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 15,Tue,2016-11-29,Lille,Caen,4-2,2-1
 15,Tue,2016-11-29,FC Lorient,Rennes,2-1,1-1,
 15,Tue,2016-11-29,Dijon FCO,Monaco,1-1,0-1
-15,Wed,2016-11-30,SC Bastia,Girondins Bordeaux,1-1,0-0
+15,Wed,2016-11-30,SC Bastia,Bordeaux,1-1,0-0
 15,Wed,2016-11-30,Guingamp,Nice,0-1,0-1,
 15,Wed,2016-11-30,AS Nancy Lorraine,FC Metz,4-0,1-0,
 15,Wed,2016-11-30,Nantes,Lyon,0-6,0-3,
@@ -152,7 +152,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 16,Fri,2016-12-02,Caen,Dijon FCO,3-3,3-1
 16,Sat,2016-12-03,Montpellier,Paris Saint Germain,3-0,1-0
 16,Sat,2016-12-03,Angers,FC Lorient,2-2,1-1
-16,Sat,2016-12-03,Girondins Bordeaux,Lille,0-1,0-1,
+16,Sat,2016-12-03,Bordeaux,Lille,0-1,0-1,
 16,Sat,2016-12-03,Guingamp,Nantes,2-0,1-0,
 16,Sat,2016-12-03,Monaco,SC Bastia,5-0,1-0,
 16,Sun,2016-12-04,Rennes,Saint-Étienne,2-0,0-0
@@ -160,7 +160,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 16,Sun,2016-12-04,Nice,Toulouse FC,3-0,2-0
 16,Sun,17-04-05,FC Metz,Lyon,0-3,0-0
 17,Sat,2016-12-10,Dijon FCO,Olympique de Marseille,1-2,0-1
-17,Sat,2016-12-10,Girondins Bordeaux,Monaco,0-4,0-2
+17,Sat,2016-12-10,Bordeaux,Monaco,0-4,0-2
 17,Sat,2016-12-10,SC Bastia,FC Metz,2-0,1-0
 17,Sat,2016-12-10,Lille,Montpellier,2-1,2-0,
 17,Sat,2016-12-10,AS Nancy Lorraine,Angers,2-0,1-0,
@@ -172,7 +172,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 18,Fri,2016-12-16,Angers,Nantes,0-2,0-1
 18,Sat,2016-12-17,Guingamp,Paris Saint Germain,2-1,0-0
 18,Sat,2016-12-17,FC Lorient,Saint-Étienne,2-1,1-0
-18,Sat,2016-12-17,Montpellier,Girondins Bordeaux,4-0,2-0,
+18,Sat,2016-12-17,Montpellier,Bordeaux,4-0,2-0,
 18,Sat,2016-12-17,Rennes,SC Bastia,1-2,0-0,
 18,Sat,2016-12-17,Toulouse FC,AS Nancy Lorraine,1-1,0-1,
 18,Sun,2016-12-18,Caen,FC Metz,3-0,1-0
@@ -180,7 +180,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 18,Sun,2016-12-18,Olympique de Marseille,Lille,2-0,0-0
 18,Sun,2016-12-18,Monaco,Lyon,1-3,0-1
 19,Wed,2016-12-21,SC Bastia,Olympique de Marseille,1-2,0-1
-19,Wed,2016-12-21,Girondins Bordeaux,Nice,0-0,,
+19,Wed,2016-12-21,Bordeaux,Nice,0-0,,
 19,Wed,2016-12-21,Dijon FCO,Toulouse FC,2-0,0-0,
 19,Wed,2016-12-21,Lille,Rennes,1-1,0-1,
 19,Wed,2016-12-21,Lyon,Angers,2-0,1-0,
@@ -191,7 +191,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 19,Wed,2016-12-21,Saint-Étienne,AS Nancy Lorraine,0-0,,
 20,Thu,2017-01-13,Lille,Saint-Étienne,1-1,0-1
 20,Fri,2017-01-14,Rennes,Paris Saint Germain,0-1,0-1
-20,Fri,2017-01-14,Angers,Girondins Bordeaux,1-1,1-1
+20,Fri,2017-01-14,Angers,Bordeaux,1-1,1-1
 20,Fri,2017-01-14,FC Lorient,Guingamp,3-1,0-1,
 20,Fri,2017-01-14,Montpellier,Dijon FCO,1-1,0-1,
 20,Fri,2017-01-14,AS Nancy Lorraine,SC Bastia,1-0,0-0,
@@ -201,7 +201,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 20,Sat,2017-01-15,Olympique de Marseille,Monaco,1-4,1-3
 21,Fri,2017-01-20,SC Bastia,Nice,1-1,1-1
 21,Sun,2017-01-21,Nantes,Paris Saint Germain,0-2,0-1
-21,Sun,2017-01-21,Girondins Bordeaux,Toulouse FC,1-0,1-0
+21,Sun,2017-01-21,Bordeaux,Toulouse FC,1-0,1-0
 21,Sun,2017-01-21,Dijon FCO,Lille,0-0,,
 21,Sun,2017-01-21,Guingamp,Rennes,1-1,1-0,
 21,Sun,2017-01-21,FC Metz,Montpellier,2-0,2-0,
@@ -214,14 +214,14 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 22,Mon,2017-01-28,Angers,FC Metz,2-1,2-1
 22,Mon,2017-01-28,SC Bastia,Caen,1-1,1-1,
 22,Mon,2017-01-28,FC Lorient,Dijon FCO,2-3,0-1,
-22,Mon,2017-01-28,AS Nancy Lorraine,Girondins Bordeaux,0-2,0-0,
+22,Mon,2017-01-28,AS Nancy Lorraine,Bordeaux,0-2,0-0,
 22,Mon,2017-01-28,Rennes,Nantes,1-1,0-1,
 22,Wed,2017-01-29,Nice,Guingamp,3-1,2-0
 22,Wed,2017-01-29,Toulouse FC,Saint-Étienne,0-3,0-1
 22,Wed,2017-01-29,Paris Saint Germain,Monaco,1-1,0-0
 23,Mon,2017-02-03,FC Metz,Olympique de Marseille,1-0,0-0
 23,Tue,2017-02-04,Monaco,Nice,3-0,0-0
-23,Tue,2017-02-04,Girondins Bordeaux,Rennes,1-1,0-0
+23,Tue,2017-02-04,Bordeaux,Rennes,1-1,0-0
 23,Tue,2017-02-04,Dijon FCO,Paris Saint Germain,1-3,1-1,
 23,Tue,2017-02-04,Guingamp,Caen,0-1,0-0,
 23,Tue,2017-02-04,Lille,FC Lorient,0-1,0-0,
@@ -229,7 +229,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 23,Thu,2017-02-05,Toulouse FC,Angers,4-0,0-0
 23,Thu,2017-02-05,Nantes,AS Nancy Lorraine,0-2,0-0
 23,Thu,2017-02-05,Saint-Étienne,Lyon,2-0,2-0
-24,Sat,2017-02-07,Caen,Girondins Bordeaux,0-4,0-2
+24,Sat,2017-02-07,Caen,Bordeaux,0-4,0-2
 24,Sat,2017-02-07,Montpellier,Monaco,1-2,0-2,
 24,Sat,2017-02-07,Paris Saint Germain,Lille,2-1,0-0
 24,Sun,2017-02-08,Angers,Rennes,0-0,
@@ -239,7 +239,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 24,Sun,2017-02-08,Nice,Saint-Étienne,1-0,1-0,
 24,Sun,2017-02-08,Olympique de Marseille,Guingamp,2-0,1-0
 24,Sat,2017-03-01,SC Bastia,Nantes,2-2,0-0
-25,Wed,2017-02-10,Girondins Bordeaux,Paris Saint Germain,0-3,0-2
+25,Wed,2017-02-10,Bordeaux,Paris Saint Germain,0-3,0-2
 25,Thu,2017-02-11,Guingamp,Lyon,2-1,2-1
 25,Thu,2017-02-11,Dijon FCO,Caen,2-0,1-0
 25,Thu,2017-02-11,Lille,Angers,1-2,1-1,
@@ -255,7 +255,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 26,Sat,2017-02-18,Caen,Lille,0-1,0-0,
 26,Sat,2017-02-18,FC Lorient,Nice,0-1,0-1,
 26,Sat,2017-02-18,FC Metz,Nantes,1-1,0-0,
-26,Sun,2017-02-19,Girondins Bordeaux,Guingamp,3-0,2-0
+26,Sun,2017-02-19,Bordeaux,Guingamp,3-0,2-0
 26,Sun,2017-02-19,Lyon,Dijon FCO,4-2,1-1
 26,Sun,2017-02-19,Montpellier,Saint-Étienne,2-1,0-1,
 26,Sun,2017-02-19,Paris Saint Germain,Toulouse FC,0-0,
@@ -263,13 +263,13 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 27,Sat,2017-02-24,Nice,Montpellier,2-1,0-1
 27,Mon,2017-02-25,Guingamp,Monaco,1-2,0-1
 27,Mon,2017-02-25,Angers,SC Bastia,3-0,1-0
-27,Mon,2017-02-25,Lille,Girondins Bordeaux,2-3,0-1,
+27,Mon,2017-02-25,Lille,Bordeaux,2-3,0-1,
 27,Mon,2017-02-25,AS Nancy Lorraine,Toulouse FC,0-0,,
 27,Mon,2017-02-25,Rennes,FC Lorient,1-0,1-0,
 27,Tue,2017-02-26,Saint-Étienne,Caen,0-1,0-1
 27,Tue,2017-02-26,Lyon,FC Metz,5-0,1-0
 27,Tue,2017-02-26,Olympique de Marseille,Paris Saint Germain,1-5,0-2
-28,Mon,2017-03-03,Girondins Bordeaux,Lyon,1-1,1-0
+28,Mon,2017-03-03,Bordeaux,Lyon,1-1,1-0
 28,Wed,2017-03-04,Paris Saint Germain,AS Nancy Lorraine,1-0,0-0
 28,Wed,2017-03-04,SC Bastia,Saint-Étienne,0-0,
 28,Wed,2017-03-04,Caen,Angers,2-3,1-2,
@@ -281,7 +281,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 28,Thu,2017-03-05,Monaco,Nantes,4-0,3-0
 29,Wed,2017-03-10,Nice,Caen,2-2,0-1
 29,Wed,2017-03-10,Olympique de Marseille,Angers,3-0,2-0
-29,Thu,2017-03-11,Monaco,Girondins Bordeaux,2-1,0-0
+29,Thu,2017-03-11,Monaco,Bordeaux,2-1,0-0
 29,Thu,2017-03-11,Guingamp,SC Bastia,5-0,0-0
 29,Thu,2017-03-11,Montpellier,Nantes,2-3,1-1,
 29,Thu,2017-03-11,AS Nancy Lorraine,Lille,1-2,1-0,
@@ -293,7 +293,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 30,Fri,2017-03-17,Lille,Olympique de Marseille,0-0,
 30,Sat,2017-03-18,Nantes,Nice,1-1,1-1
 30,Sat,2017-03-18,Angers,Guingamp,3-0,0-0
-30,Sat,2017-03-18,Girondins Bordeaux,Montpellier,5-1,3-0,
+30,Sat,2017-03-18,Bordeaux,Montpellier,5-1,3-0,
 30,Sat,2017-03-18,AS Nancy Lorraine,FC Lorient,2-3,2-0,
 30,Sat,2017-03-18,Toulouse FC,Rennes,0-0,,
 30,Sun,2017-03-19,Caen,Monaco,0-3,0-1
@@ -306,12 +306,12 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 31,Wed,2017-04-02,FC Lorient,Caen,1-0,1-0
 31,Wed,2017-04-02,Montpellier,Toulouse FC,0-1,0-1,
 31,Wed,2017-04-02,Nantes,Angers,2-1,0-0,
-31,Wed,2017-04-02,Nice,Girondins Bordeaux,2-1,2-1
+31,Wed,2017-04-02,Nice,Bordeaux,2-1,2-1
 31,Tue,2017-04-18,FC Metz,Paris Saint Germain,2-3,0-2
 31,Wed,2017-05-17,Monaco,Saint-Étienne,2-0,1-0
 32,Tue,2017-04-07,Lille,Nice,1-2,1-2
 32,Thu,2017-04-08,Angers,Monaco,0-1,0-0
-32,Thu,2017-04-08,Girondins Bordeaux,FC Metz,3-0,1-0
+32,Thu,2017-04-08,Bordeaux,FC Metz,3-0,1-0
 32,Thu,2017-04-08,Caen,Montpellier,0-2,0-0,
 32,Thu,2017-04-08,Dijon FCO,SC Bastia,1-2,1-1,
 32,Thu,2017-04-08,Lyon,FC Lorient,1-4,1-1,
@@ -326,12 +326,12 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 33,Fri,2017-04-15,Montpellier,FC Lorient,2-0,2-0,
 33,Fri,2017-04-15,Rennes,Lille,2-0,2-0,
 33,Fri,2017-04-15,Monaco,Dijon FCO,2-1,0-1
-33,Sun,2017-04-16,Nantes,Girondins Bordeaux,0-1,0-0
+33,Sun,2017-04-16,Nantes,Bordeaux,0-1,0-0
 33,Sun,2017-04-16,SC Bastia,Lyon,0-0,
 33,Sun,2017-04-16,Olympique de Marseille,Saint-Étienne,4-0,2-0
 34,Sat,2017-04-21,AS Nancy Lorraine,Olympique de Marseille,0-0,
 34,Sun,2017-04-22,Paris Saint Germain,Montpellier,2-0,1-0
-34,Sun,2017-04-22,Girondins Bordeaux,SC Bastia,2-0,0-0
+34,Sun,2017-04-22,Bordeaux,SC Bastia,2-0,0-0
 34,Sun,2017-04-22,Caen,Nantes,0-2,0-2,
 34,Sun,2017-04-22,Dijon FCO,Angers,3-2,3-0,
 34,Sun,2017-04-22,Lille,Guingamp,3-0,2-0,
@@ -347,9 +347,9 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 35,Tue,2017-04-29,Montpellier,Lille,0-3,0-1,
 35,Tue,2017-04-29,Nantes,FC Lorient,1-0,0-0,
 35,Wed,2017-04-30,Caen,Olympique de Marseille,1-5,1-3
-35,Wed,2017-04-30,Dijon FCO,Girondins Bordeaux,0-0,
+35,Wed,2017-04-30,Dijon FCO,Bordeaux,0-0,
 35,Wed,2017-04-30,Nice,Paris Saint Germain,3-1,1-0
-36,Tue,2017-05-05,Saint-Étienne,Girondins Bordeaux,2-2,1-1
+36,Tue,2017-05-05,Saint-Étienne,Bordeaux,2-2,1-1
 36,Wed,2017-05-06,Paris Saint Germain,SC Bastia,5-0,2-0
 36,Wed,2017-05-06,Guingamp,Dijon FCO,4-0,1-0
 36,Wed,2017-05-06,Lille,FC Metz,0-2,0-1,
@@ -360,7 +360,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 36,Thu,2017-05-07,Lyon,Nantes,3-2,0-1
 36,Thu,2017-05-07,Olympique de Marseille,Nice,2-1,1-0
 37,Sat,2017-05-14,SC Bastia,FC Lorient,2-0,0-0
-37,Sat,2017-05-14,Girondins Bordeaux,Olympique de Marseille,1-1,1-0,
+37,Sat,2017-05-14,Bordeaux,Olympique de Marseille,1-1,1-0,
 37,Sat,2017-05-14,Caen,Rennes,0-1,0-0,
 37,Sat,2017-05-14,Dijon FCO,AS Nancy Lorraine,2-0,0-0,
 37,Sat,2017-05-14,FC Metz,Toulouse FC,1-1,0-1,
@@ -372,7 +372,7 @@ Matchday,Day,Date,Time,Home,Away,FullTime,HalfTime
 38,Sun,2017-05-20,Angers,Montpellier,2-0,0-0
 38,Sun,2017-05-20,Guingamp,FC Metz,1-0,1-0,
 38,Sun,2017-05-20,Lille,Nantes,3-0,1-0,
-38,Sun,2017-05-20,FC Lorient,Girondins Bordeaux,1-1,0-1,
+38,Sun,2017-05-20,FC Lorient,Bordeaux,1-1,0-1,
 38,Sun,2017-05-20,Lyon,Nice,3-3,1-1,
 38,Sun,2017-05-20,Olympique de Marseille,SC Bastia,1-0,0-0,
 38,Sun,2017-05-20,AS Nancy Lorraine,Saint-Étienne,3-1,1-0,

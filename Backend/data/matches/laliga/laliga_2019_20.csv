@@ -3,11 +3,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 1,2019-08-17,Celta de Vigo,Real Madrid,1-3,0-1
 1,2019-08-17,Valencia,Real Sociedad,1-1,0-0
 1,2019-08-17,Mallorca,Eibar,2-1,1-0
-1,2019-08-17,CD Leganés,Osasuna,0-1,0-0
+1,2019-08-17,Leganés,Osasuna,0-1,0-0
 1,2019-08-17,Villarreal CF,Granada,4-4,1-1
 1,2019-08-18,Deportivo Alavés,Levante,1-0,0-0
 1,2019-08-18,Espanyol,Sevilha FC,0-2,0-1
-1,2019-08-18,Real Betis,Valladolid,1-2,0-0
+1,2019-08-18,Bétis,Valladolid,1-2,0-0
 1,2019-08-18,Atlético de Madrid,Getafe CF,1-0,1-0
 2,2019-08-23,Granada,Sevilha FC,0-1,0-0
 2,2019-08-23,Levante,Villarreal CF,2-1,0-1
@@ -17,60 +17,60 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 2,2019-08-24,Getafe CF,Athletic Bilbao,1-1,1-1
 2,2019-08-25,Deportivo Alavés,Espanyol,0-0,
 2,2019-08-25,Mallorca,Real Sociedad,0-1,0-0
-2,2019-08-25,CD Leganés,Atlético de Madrid,0-1,0-0
-2,2019-08-25,Barcelona,Real Betis,5-2,1-1
+2,2019-08-25,Leganés,Atlético de Madrid,0-1,0-0
+2,2019-08-25,Barcelona,Bétis,5-2,1-1
 3,2019-08-30,Sevilha FC,Celta de Vigo,1-1,0-0
 3,2019-08-30,Athletic Bilbao,Real Sociedad,2-0,2-0
 3,2019-08-31,Osasuna,Barcelona,2-2,1-0
 3,2019-08-31,Getafe CF,Deportivo Alavés,1-1,1-1
 3,2019-08-31,Levante,Valladolid,2-0,0-0
-3,2019-08-31,Real Betis,CD Leganés,2-1,0-0
+3,2019-08-31,Bétis,Leganés,2-1,0-0
 3,2019-09-01,Valencia,Mallorca,2-0,1-0
 3,2019-09-01,Atlético de Madrid,Eibar,3-2,1-2
 3,2019-09-01,Espanyol,Granada,0-3,0-1
 3,2019-09-01,Villarreal CF,Real Madrid,2-2,1-1
 4,2019-09-13,Mallorca,Athletic Bilbao,0-0,
 4,2019-09-14,Real Madrid,Levante,3-2,3-0
-4,2019-09-14,CD Leganés,Villarreal CF,0-3,0-2
+4,2019-09-14,Leganés,Villarreal CF,0-3,0-2
 4,2019-09-14,Real Sociedad,Atlético de Madrid,2-0,0-0
 4,2019-09-14,Barcelona,Valencia,5-2,2-1
 4,2019-09-15,Eibar,Espanyol,1-2,0-0
 4,2019-09-15,Deportivo Alavés,Sevilha FC,0-1,0-1
 4,2019-09-15,Celta de Vigo,Granada,0-2,0-1
 4,2019-09-15,Valladolid,Osasuna,1-1,0-0
-4,2019-09-15,Real Betis,Getafe CF,1-1,0-1
-5,2019-09-20,Osasuna,Real Betis,0-0,
+4,2019-09-15,Bétis,Getafe CF,1-1,0-1
+5,2019-09-20,Osasuna,Bétis,0-0,
 5,2019-09-21,Villarreal CF,Valladolid,2-0,0-0
 5,2019-09-21,Levante,Eibar,0-0,
 5,2019-09-21,Atlético de Madrid,Celta de Vigo,0-0,
 5,2019-09-21,Granada,Barcelona,2-0,1-0
 5,2019-09-22,Getafe CF,Mallorca,4-2,2-0
 5,2019-09-22,Espanyol,Real Sociedad,1-3,0-2
-5,2019-09-22,Valencia,CD Leganés,1-1,1-1
+5,2019-09-22,Valencia,Leganés,1-1,1-1
 5,2019-09-22,Athletic Bilbao,Deportivo Alavés,2-0,1-0
 5,2019-09-22,Sevilha FC,Real Madrid,0-1,0-0
 6,2019-09-24,Valladolid,Granada,1-1,1-1
-6,2019-09-24,Real Betis,Levante,3-1,1-1
+6,2019-09-24,Bétis,Levante,3-1,1-1
 6,2019-09-24,Barcelona,Villarreal CF,2-1,2-1
-6,2019-09-25,CD Leganés,Athletic Bilbao,1-1,0-0
+6,2019-09-25,Leganés,Athletic Bilbao,1-1,0-0
 6,2019-09-25,Mallorca,Atlético de Madrid,0-2,0-1
 6,2019-09-25,Valencia,Getafe CF,3-3,3-1
 6,2019-09-25,Real Madrid,Osasuna,2-0,1-0
 6,2019-09-26,Eibar,Sevilha FC,3-2,0-2
 6,2019-09-26,Celta de Vigo,Espanyol,1-1,0-0
 6,2019-09-26,Real Sociedad,Deportivo Alavés,3-0,3-0
-7,2019-09-27,Villarreal CF,Real Betis,5-1,1-0
+7,2019-09-27,Villarreal CF,Bétis,5-1,1-0
 7,2019-09-28,Athletic Bilbao,Valencia,0-1,0-1
 7,2019-09-28,Getafe CF,Barcelona,0-2,0-1
-7,2019-09-28,Granada,CD Leganés,1-0,1-0
+7,2019-09-28,Granada,Leganés,1-0,1-0
 7,2019-09-28,Atlético de Madrid,Real Madrid,0-0,
 7,2019-09-29,Espanyol,Valladolid,0-2,0-1
 7,2019-09-29,Eibar,Celta de Vigo,2-0,0-0
 7,2019-09-29,Deportivo Alavés,Mallorca,2-0,0-0
 7,2019-09-29,Levante,Osasuna,1-1,1-0
 7,2019-09-29,Sevilha FC,Real Sociedad,3-2,1-1
-8,2019-10-04,Real Betis,Eibar,1-1,0-1
-8,2019-10-05,CD Leganés,Levante,1-2,0-1
+8,2019-10-04,Bétis,Eibar,1-1,0-1
+8,2019-10-05,Leganés,Levante,1-2,0-1
 8,2019-10-05,Real Madrid,Granada,4-2,2-0
 8,2019-10-05,Valencia,Deportivo Alavés,2-1,1-0
 8,2019-10-05,Osasuna,Villarreal CF,2-1,0-1
@@ -82,19 +82,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 9,2019-10-18,Granada,Osasuna,1-0,1-0
 9,2019-10-19,Eibar,Barcelona,0-3,0-1
 9,2019-10-19,Atlético de Madrid,Valencia,1-1,1-0
-9,2019-10-19,Getafe CF,CD Leganés,2-0,0-0
+9,2019-10-19,Getafe CF,Leganés,2-0,0-0
 9,2019-10-19,Mallorca,Real Madrid,1-0,1-0
 9,2019-10-20,Deportivo Alavés,Celta de Vigo,2-0,0-0
-9,2019-10-20,Real Sociedad,Real Betis,3-1,2-1
+9,2019-10-20,Real Sociedad,Bétis,3-1,2-1
 9,2019-10-20,Espanyol,Villarreal CF,0-1,0-1
 9,2019-10-20,Athletic Bilbao,Valladolid,1-1,1-0
 9,2019-10-20,Sevilha FC,Levante,1-0,0-0
 10,2019-10-25,Villarreal CF,Deportivo Alavés,4-1,1-0
-10,2019-10-26,CD Leganés,Mallorca,1-0,1-0
+10,2019-10-26,Leganés,Mallorca,1-0,1-0
 10,2019-10-26,Valladolid,Eibar,2-0,2-0
 10,2019-10-26,Atlético de Madrid,Athletic Bilbao,2-0,1-0
 10,2019-10-27,Celta de Vigo,Real Sociedad,0-1,0-0
-10,2019-10-27,Granada,Real Betis,1-0,0-0
+10,2019-10-27,Granada,Bétis,1-0,0-0
 10,2019-10-27,Levante,Espanyol,0-1,0-1
 10,2019-10-27,Sevilha FC,Getafe CF,2-0,0-0
 10,2019-10-27,Osasuna,Valencia,3-1,1-1
@@ -104,22 +104,22 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 11,2019-10-30,Real Sociedad,Levante,1-2,0-2
 11,2019-10-30,Valencia,Sevilha FC,1-1,0-1
 11,2019-10-30,Athletic Bilbao,Espanyol,3-0,2-0
-11,2019-10-30,Real Betis,Celta de Vigo,2-1,1-0
-11,2019-10-30,Real Madrid,CD Leganés,5-0,3-0
+11,2019-10-30,Bétis,Celta de Vigo,2-1,1-0
+11,2019-10-30,Real Madrid,Leganés,5-0,3-0
 11,2019-10-31,Eibar,Villarreal CF,2-1,0-0
 11,2019-10-31,Mallorca,Osasuna,2-2,1-0
 11,2019-10-31,Getafe CF,Granada,3-1,2-0
 12,2019-11-02,Espanyol,Valencia,1-2,1-0
 12,2019-11-02,Levante,Barcelona,3-1,0-1
 12,2019-11-02,Sevilha FC,Atlético de Madrid,1-1,1-0
-12,2019-11-02,Real Madrid,Real Betis,0-0,
+12,2019-11-02,Real Madrid,Bétis,0-0,
 12,2019-11-03,Valladolid,Mallorca,3-0,1-0
 12,2019-11-03,Villarreal CF,Athletic Bilbao,0-0,
 12,2019-11-03,Osasuna,Deportivo Alavés,4-2,3-1
 12,2019-11-03,Celta de Vigo,Getafe CF,0-1,0-1
-12,2019-11-03,CD Leganés,Eibar,1-2,1-1
+12,2019-11-03,Leganés,Eibar,1-2,1-1
 12,2019-11-03,Granada,Real Sociedad,1-2,1-1
-13,2019-11-08,Real Sociedad,CD Leganés,1-1,0-0
+13,2019-11-08,Real Sociedad,Leganés,1-1,0-0
 13,2019-11-09,Deportivo Alavés,Valladolid,3-0,2-0
 13,2019-11-09,Valencia,Granada,2-0,0-0
 13,2019-11-09,Eibar,Real Madrid,0-4,0-3
@@ -128,10 +128,10 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 13,2019-11-10,Athletic Bilbao,Levante,2-1,0-1
 13,2019-11-10,Atlético de Madrid,Espanyol,3-1,1-1
 13,2019-11-10,Getafe CF,Osasuna,0-0,
-13,2019-11-10,Real Betis,Sevilha FC,1-2,1-1
+13,2019-11-10,Bétis,Sevilha FC,1-2,1-1
 14,2019-11-22,Levante,Mallorca,2-1,0-0
-14,2019-11-23,CD Leganés,Barcelona,1-2,1-0
-14,2019-11-23,Real Betis,Valencia,2-1,1-1
+14,2019-11-23,Leganés,Barcelona,1-2,1-0
+14,2019-11-23,Bétis,Valencia,2-1,1-1
 14,2019-11-23,Granada,Atlético de Madrid,1-1,0-0
 14,2019-11-23,Real Madrid,Real Sociedad,3-1,1-1
 14,2019-11-24,Espanyol,Getafe CF,1-1,1-1
@@ -142,9 +142,9 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 15,2019-11-29,Celta de Vigo,Valladolid,0-0,
 15,2019-11-30,Deportivo Alavés,Real Madrid,1-2,0-0
 15,2019-11-30,Real Sociedad,Eibar,4-1,1-1
-15,2019-11-30,Mallorca,Real Betis,1-2,0-2
+15,2019-11-30,Mallorca,Bétis,1-2,0-2
 15,2019-11-30,Valencia,Villarreal CF,2-1,0-0
-15,2019-12-01,Sevilha FC,CD Leganés,1-0,0-0
+15,2019-12-01,Sevilha FC,Leganés,1-0,0-0
 15,2019-12-01,Athletic Bilbao,Granada,2-0,1-0
 15,2019-12-01,Espanyol,Osasuna,2-4,1-0
 15,2019-12-01,Getafe CF,Levante,4-0,0-0
@@ -155,18 +155,18 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 16,2019-12-07,Levante,Valencia,2-4,2-1
 16,2019-12-07,Barcelona,Mallorca,5-2,4-1
 16,2019-12-08,Eibar,Getafe CF,0-1,0-0
-16,2019-12-08,Real Betis,Athletic Bilbao,3-2,3-1
+16,2019-12-08,Bétis,Athletic Bilbao,3-2,3-1
 16,2019-12-08,Valladolid,Real Sociedad,0-0,
-16,2019-12-08,CD Leganés,Celta de Vigo,3-2,2-0
+16,2019-12-08,Leganés,Celta de Vigo,3-2,2-0
 16,2019-12-08,Osasuna,Sevilha FC,1-1,1-1
-17,2019-12-13,Deportivo Alavés,CD Leganés,1-1,0-1
+17,2019-12-13,Deportivo Alavés,Leganés,1-1,0-1
 17,2019-12-14,Granada,Levante,1-2,0-0
 17,2019-12-14,Real Sociedad,Barcelona,2-2,1-1
 17,2019-12-14,Athletic Bilbao,Eibar,0-0,
 17,2019-12-14,Atlético de Madrid,Osasuna,2-0,0-0
 17,2019-12-15,Getafe CF,Valladolid,2-0,1-0
 17,2019-12-15,Celta de Vigo,Mallorca,2-2,1-1
-17,2019-12-15,Espanyol,Real Betis,2-2,2-1
+17,2019-12-15,Espanyol,Bétis,2-2,2-1
 17,2019-12-15,Sevilha FC,Villarreal CF,1-2,0-1
 17,2019-12-15,Valencia,Real Madrid,1-1,0-0
 18,2019-12-20,Eibar,Granada,3-0,2-0
@@ -174,12 +174,12 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 18,2019-12-21,Barcelona,Deportivo Alavés,4-1,2-0
 18,2019-12-21,Villarreal CF,Getafe CF,1-0,0-0
 18,2019-12-21,Valladolid,Valencia,1-1,0-0
-18,2019-12-22,CD Leganés,Espanyol,2-0,1-0
+18,2019-12-22,Leganés,Espanyol,2-0,1-0
 18,2019-12-22,Osasuna,Real Sociedad,3-4,1-3
-18,2019-12-22,Real Betis,Atlético de Madrid,1-2,0-0
+18,2019-12-22,Bétis,Atlético de Madrid,1-2,0-0
 18,2019-12-22,Levante,Celta de Vigo,3-1,0-1
 18,2019-12-22,Real Madrid,Athletic Bilbao,0-0,
-19,2020-01-03,Valladolid,CD Leganés,2-2,1-2
+19,2020-01-03,Valladolid,Leganés,2-2,1-2
 19,2020-01-03,Sevilha FC,Athletic Bilbao,1-1,0-1
 19,2020-01-04,Valencia,Eibar,1-0,1-0
 19,2020-01-04,Getafe CF,Real Madrid,0-3,0-1
@@ -187,15 +187,15 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 19,2020-01-04,Espanyol,Barcelona,2-2,1-0
 19,2020-01-05,Granada,Mallorca,1-0,1-0
 19,2020-01-05,Real Sociedad,Villarreal CF,1-2,1-0
-19,2020-01-05,Deportivo Alavés,Real Betis,1-1,1-0
+19,2020-01-05,Deportivo Alavés,Bétis,1-1,1-0
 19,2020-01-05,Celta de Vigo,Osasuna,1-1,0-0
-20,2020-01-17,CD Leganés,Getafe CF,0-3,0-3
+20,2020-01-17,Leganés,Getafe CF,0-3,0-3
 20,2020-01-18,Levante,Deportivo Alavés,0-1,0-0
 20,2020-01-18,Real Madrid,Sevilha FC,2-1,0-0
 20,2020-01-18,Osasuna,Valladolid,0-0,
 20,2020-01-18,Eibar,Atlético de Madrid,2-0,1-0
 20,2020-01-19,Mallorca,Valencia,4-1,3-0
-20,2020-01-19,Real Betis,Real Sociedad,3-0,2-0
+20,2020-01-19,Bétis,Real Sociedad,3-0,2-0
 20,2020-01-19,Villarreal CF,Espanyol,1-2,0-1
 20,2020-01-19,Athletic Bilbao,Celta de Vigo,1-1,0-0
 20,2020-01-19,Barcelona,Granada,1-0,0-0
@@ -204,23 +204,23 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 21,2020-01-25,Valencia,Barcelona,2-0,0-0
 21,2020-01-25,Deportivo Alavés,Villarreal CF,1-2,0-1
 21,2020-01-25,Sevilha FC,Granada,2-0,2-0
-21,2020-01-26,Atlético de Madrid,CD Leganés,0-0,
+21,2020-01-26,Atlético de Madrid,Leganés,0-0,
 21,2020-01-26,Celta de Vigo,Eibar,0-0,
-21,2020-01-26,Getafe CF,Real Betis,1-0,0-0
+21,2020-01-26,Getafe CF,Bétis,1-0,0-0
 21,2020-01-26,Real Sociedad,Mallorca,3-0,0-0
 21,2020-01-26,Valladolid,Real Madrid,0-1,0-0
 22,2020-02-01,Granada,Espanyol,2-1,1-1
 22,2020-02-01,Real Madrid,Atlético de Madrid,1-0,0-0
 22,2020-02-01,Mallorca,Valladolid,0-1,0-0
 22,2020-02-01,Valencia,Celta de Vigo,1-0,0-0
-22,2020-02-02,CD Leganés,Real Sociedad,2-1,0-1
-22,2020-02-02,Eibar,Real Betis,1-1,1-1
+22,2020-02-02,Leganés,Real Sociedad,2-1,0-1
+22,2020-02-02,Eibar,Bétis,1-1,1-1
 22,2020-02-02,Athletic Bilbao,Getafe CF,0-2,0-1
 22,2020-02-02,Sevilha FC,Deportivo Alavés,1-1,0-0
 22,2020-02-02,Villarreal CF,Osasuna,3-1,1-0
 22,2020-02-02,Barcelona,Levante,2-1,2-0
 23,2020-02-07,Deportivo Alavés,Eibar,2-1,0-0
-23,2020-02-08,Levante,CD Leganés,2-0,2-0
+23,2020-02-08,Levante,Leganés,2-0,2-0
 23,2020-02-08,Getafe CF,Valencia,3-0,0-0
 23,2020-02-08,Valladolid,Villarreal CF,1-1,1-0
 23,2020-02-08,Atlético de Madrid,Granada,1-0,1-0
@@ -228,19 +228,19 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 23,2020-02-09,Real Sociedad,Athletic Bilbao,2-1,0-0
 23,2020-02-09,Osasuna,Real Madrid,1-4,1-2
 23,2020-02-09,Celta de Vigo,Sevilha FC,2-1,0-1
-23,2020-02-09,Real Betis,Barcelona,2-3,2-2
+23,2020-02-09,Bétis,Barcelona,2-3,2-2
 24,2020-02-14,Valencia,Atlético de Madrid,2-2,1-2
 24,2020-02-15,Mallorca,Deportivo Alavés,1-0,0-0
 24,2020-02-15,Barcelona,Getafe CF,2-1,2-0
 24,2020-02-15,Villarreal CF,Levante,2-1,1-0
 24,2020-02-15,Granada,Valladolid,2-1,0-0
 24,2020-02-16,Sevilha FC,Espanyol,2-2,1-1
-24,2020-02-16,CD Leganés,Real Betis,0-0,
+24,2020-02-16,Leganés,Bétis,0-0,
 24,2020-02-16,Athletic Bilbao,Osasuna,0-1,0-1
 24,2020-02-16,Real Madrid,Celta de Vigo,2-2,0-1
 24,2020-03-10,Eibar,Real Sociedad,1-2,0-1
-25,2020-02-21,Real Betis,Mallorca,3-3,2-2
-25,2020-02-22,Celta de Vigo,CD Leganés,1-0,0-0
+25,2020-02-21,Bétis,Mallorca,3-3,2-2
+25,2020-02-22,Celta de Vigo,Leganés,1-0,0-0
 25,2020-02-22,Barcelona,Eibar,5-0,3-0
 25,2020-02-22,Real Sociedad,Valencia,3-0,2-0
 25,2020-02-22,Levante,Real Madrid,1-0,0-0
@@ -251,8 +251,8 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 25,2020-02-23,Atlético de Madrid,Villarreal CF,3-1,1-1
 26,2020-02-28,Real Sociedad,Valladolid,1-0,0-0
 26,2020-02-29,Eibar,Levante,3-0,1-0
-26,2020-02-29,Valencia,Real Betis,2-1,0-0
-26,2020-02-29,CD Leganés,Deportivo Alavés,1-1,0-0
+26,2020-02-29,Valencia,Bétis,2-1,0-0
+26,2020-02-29,Leganés,Deportivo Alavés,1-1,0-0
 26,2020-02-29,Granada,Celta de Vigo,0-0,
 26,2020-03-01,Sevilha FC,Osasuna,3-2,2-0
 26,2020-03-01,Athletic Bilbao,Villarreal CF,1-0,0-0
@@ -267,40 +267,40 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 27,2020-03-08,Osasuna,Espanyol,1-0,0-0
 27,2020-03-08,Valladolid,Athletic Bilbao,1-4,0-2
 27,2020-03-08,Levante,Granada,1-1,1-0
-27,2020-03-08,Villarreal CF,CD Leganés,1-2,1-0
-27,2020-03-08,Real Betis,Real Madrid,2-1,1-1
-28,2020-06-11,Sevilha FC,Real Betis,2-0,0-0
+27,2020-03-08,Villarreal CF,Leganés,1-2,1-0
+27,2020-03-08,Bétis,Real Madrid,2-1,1-1
+28,2020-06-11,Sevilha FC,Bétis,2-0,0-0
 28,2020-06-12,Granada,Getafe CF,2-1,0-1
 28,2020-06-12,Valencia,Levante,1-1,0-0
 28,2020-06-13,Espanyol,Deportivo Alavés,2-0,1-0
 28,2020-06-13,Celta de Vigo,Villarreal CF,0-1,0-0
-28,2020-06-13,CD Leganés,Valladolid,1-2,0-1
+28,2020-06-13,Leganés,Valladolid,1-2,0-1
 28,2020-06-13,Mallorca,Barcelona,0-4,0-2
 28,2020-06-14,Athletic Bilbao,Atlético de Madrid,1-1,1-1
 28,2020-06-14,Real Madrid,Eibar,3-1,3-0
 28,2020-06-14,Real Sociedad,Osasuna,1-1,0-1
 29,2020-06-15,Levante,Sevilha FC,1-1,0-0
-29,2020-06-15,Real Betis,Granada,2-2,0-1
+29,2020-06-15,Bétis,Granada,2-2,0-1
 29,2020-06-16,Getafe CF,Espanyol,0-0,
 29,2020-06-16,Villarreal CF,Mallorca,1-0,1-0
-29,2020-06-16,Barcelona,CD Leganés,2-0,1-0
+29,2020-06-16,Barcelona,Leganés,2-0,1-0
 29,2020-06-17,Eibar,Athletic Bilbao,2-2,1-1
 29,2020-06-17,Valladolid,Celta de Vigo,0-0,
 29,2020-06-17,Osasuna,Atlético de Madrid,0-5,0-1
 29,2020-06-18,Deportivo Alavés,Real Sociedad,2-0,0-0
 29,2020-06-18,Real Madrid,Valencia,3-0,0-0
 30,2020-06-19,Granada,Villarreal CF,0-1,0-1
-30,2020-06-19,Mallorca,CD Leganés,1-1,1-0
+30,2020-06-19,Mallorca,Leganés,1-1,1-0
 30,2020-06-19,Sevilha FC,Barcelona,0-0,
 30,2020-06-20,Espanyol,Levante,1-3,1-1
-30,2020-06-20,Athletic Bilbao,Real Betis,1-0,1-0
+30,2020-06-20,Athletic Bilbao,Bétis,1-0,1-0
 30,2020-06-20,Getafe CF,Eibar,1-1,1-1
 30,2020-06-20,Atlético de Madrid,Valladolid,1-0,0-0
 30,2020-06-21,Celta de Vigo,Deportivo Alavés,6-0,4-0
 30,2020-06-21,Valencia,Osasuna,2-0,2-0
 30,2020-06-21,Real Sociedad,Real Madrid,1-2,0-0
 31,2020-06-22,Villarreal CF,Sevilha FC,2-2,2-1
-31,2020-06-22,CD Leganés,Granada,0-0,
+31,2020-06-22,Leganés,Granada,0-0,
 31,2020-06-23,Levante,Atlético de Madrid,0-1,0-1
 31,2020-06-23,Valladolid,Getafe CF,1-1,1-1
 31,2020-06-23,Barcelona,Athletic Bilbao,1-0,0-0
@@ -308,61 +308,61 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 31,2020-06-24,Real Sociedad,Celta de Vigo,0-1,0-1
 31,2020-06-24,Real Madrid,Mallorca,2-0,1-0
 31,2020-06-25,Eibar,Valencia,1-0,1-0
-31,2020-06-25,Real Betis,Espanyol,1-0,0-0
+31,2020-06-25,Bétis,Espanyol,1-0,0-0
 32,2020-06-26,Sevilha FC,Valladolid,1-1,0-1
 32,2020-06-27,Athletic Bilbao,Mallorca,3-1,2-0
 32,2020-06-27,Celta de Vigo,Barcelona,2-2,0-1
-32,2020-06-27,Osasuna,CD Leganés,2-1,1-0
+32,2020-06-27,Osasuna,Leganés,2-1,1-0
 32,2020-06-27,Atlético de Madrid,Deportivo Alavés,2-1,0-0
-32,2020-06-28,Levante,Real Betis,4-2,2-0
+32,2020-06-28,Levante,Bétis,4-2,2-0
 32,2020-06-28,Villarreal CF,Valencia,2-0,2-0
 32,2020-06-28,Granada,Eibar,1-2,0-1
 32,2020-06-28,Espanyol,Real Madrid,0-1,0-1
 32,2020-06-29,Getafe CF,Real Sociedad,2-1,1-0
 33,2020-06-30,Mallorca,Celta de Vigo,5-1,3-0
-33,2020-06-30,CD Leganés,Sevilha FC,0-3,0-2
+33,2020-06-30,Leganés,Sevilha FC,0-3,0-2
 33,2020-06-30,Barcelona,Atlético de Madrid,2-2,1-1
 33,2020-07-01,Deportivo Alavés,Granada,0-2,0-1
 33,2020-07-01,Valencia,Athletic Bilbao,0-2,0-1
-33,2020-07-01,Real Betis,Villarreal CF,0-2,0-2
+33,2020-07-01,Bétis,Villarreal CF,0-2,0-2
 33,2020-07-01,Valladolid,Levante,0-0,
 33,2020-07-02,Eibar,Osasuna,0-2,0-1
 33,2020-07-02,Real Sociedad,Espanyol,2-1,0-1
 33,2020-07-02,Real Madrid,Getafe CF,1-0,0-0
 34,2020-07-03,Atlético de Madrid,Mallorca,3-0,2-0
-34,2020-07-04,Celta de Vigo,Real Betis,1-1,1-0
+34,2020-07-04,Celta de Vigo,Bétis,1-1,1-0
 34,2020-07-04,Valladolid,Deportivo Alavés,1-0,0-0
 34,2020-07-04,Granada,Valencia,2-2,0-0
 34,2020-07-05,Athletic Bilbao,Real Madrid,0-1,0-0
-34,2020-07-05,Espanyol,CD Leganés,0-1,0-0
+34,2020-07-05,Espanyol,Leganés,0-1,0-0
 34,2020-07-05,Osasuna,Getafe CF,0-0,
 34,2020-07-05,Villarreal CF,Barcelona,1-4,1-3
 34,2020-07-06,Levante,Real Sociedad,1-1,1-1
 34,2020-07-06,Sevilha FC,Eibar,1-0,0-0
 35,2020-07-07,Valencia,Valladolid,2-1,1-0
 35,2020-07-07,Celta de Vigo,Atlético de Madrid,1-1,0-1
-35,2020-07-08,Real Betis,Osasuna,3-0,2-0
+35,2020-07-08,Bétis,Osasuna,3-0,2-0
 35,2020-07-08,Getafe CF,Villarreal CF,1-3,0-0
 35,2020-07-08,Barcelona,Espanyol,1-0,0-0
-35,2020-07-09,Eibar,CD Leganés,0-0,
+35,2020-07-09,Eibar,Leganés,0-0,
 35,2020-07-09,Mallorca,Levante,2-0,1-0
 35,2020-07-09,Athletic Bilbao,Sevilha FC,1-2,1-0
 35,2020-07-10,Real Sociedad,Granada,2-3,0-2
 35,2020-07-10,Real Madrid,Deportivo Alavés,2-0,1-0
 36,2020-07-11,Osasuna,Celta de Vigo,2-1,1-1
 36,2020-07-11,Valladolid,Barcelona,0-1,0-1
-36,2020-07-11,Atlético de Madrid,Real Betis,1-0,0-0
+36,2020-07-11,Atlético de Madrid,Bétis,1-0,0-0
 36,2020-07-12,Espanyol,Eibar,0-2,0-2
 36,2020-07-12,Levante,Athletic Bilbao,1-2,0-2
-36,2020-07-12,CD Leganés,Valencia,1-0,1-0
+36,2020-07-12,Leganés,Valencia,1-0,1-0
 36,2020-07-12,Sevilha FC,Mallorca,2-0,1-0
 36,2020-07-13,Deportivo Alavés,Getafe CF,0-0,
 36,2020-07-13,Villarreal CF,Real Sociedad,1-2,0-0
 36,2020-07-13,Granada,Real Madrid,1-2,0-2
 37,2020-07-16,Eibar,Valladolid,3-1,2-0
-37,2020-07-16,Athletic Bilbao,CD Leganés,0-2,0-0
+37,2020-07-16,Athletic Bilbao,Leganés,0-2,0-0
 37,2020-07-16,Barcelona,Osasuna,1-2,0-1
-37,2020-07-16,Real Betis,Deportivo Alavés,1-2,0-0
+37,2020-07-16,Bétis,Deportivo Alavés,1-2,0-0
 37,2020-07-16,Celta de Vigo,Levante,2-3,2-2
 37,2020-07-16,Getafe CF,Atlético de Madrid,0-2,0-0
 37,2020-07-16,Mallorca,Granada,1-2,1-1
@@ -371,11 +371,11 @@ Matchday,Date,Home,Away,FullTime,HalfTime
 37,2020-07-16,Valencia,Espanyol,1-0,1-0
 38,2020-07-19,Deportivo Alavés,Barcelona,0-5,0-3
 38,2020-07-19,Villarreal CF,Eibar,4-0,0-0
-38,2020-07-19,Valladolid,Real Betis,2-0,1-0
+38,2020-07-19,Valladolid,Bétis,2-0,1-0
 38,2020-07-19,Atlético de Madrid,Real Sociedad,1-1,1-0
 38,2020-07-19,Espanyol,Celta de Vigo,0-0,
 38,2020-07-19,Granada,Athletic Bilbao,4-0,1-0
-38,2020-07-19,CD Leganés,Real Madrid,2-2,1-1
+38,2020-07-19,Leganés,Real Madrid,2-2,1-1
 38,2020-07-19,Levante,Getafe CF,1-0,0-0
 38,2020-07-19,Osasuna,Mallorca,2-2,1-1
 38,2020-07-19,Sevilha FC,Valencia,1-0,0-0
