@@ -350,6 +350,46 @@ def get_day_of_week(date_obj):
     days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
     return days[date_obj.weekday()]
 
+def compute_matchday_from_counts(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Calcula Matchday quando a fonte não fornece MW.
+    Estratégia: ordenar por Date e usar 'games played' por time:
+      Matchday = max(jogos_do_home, jogos_do_away) + 1
+
+    ✅ Funciona muito bem para ligas (E0, D1 etc.)
+    ⚠️ Pode ficar levemente imperfeito em casos de jogos muito adiados,
+       mas é MUITO melhor do que deixar tudo vazio.
+    """
+    if df.empty:
+        return df
+
+    out = df.copy()
+
+    # precisa de Date/Home/Away
+    if "Date" not in out.columns or "Home" not in out.columns or "Away" not in out.columns:
+        return out
+
+    dt = pd.to_datetime(out["Date"], errors="coerce")
+    out["_dt_sort"] = dt
+
+    out = out.sort_values(["_dt_sort", "Home", "Away"], na_position="last").reset_index(drop=True)
+
+    gp = {}  # jogos já "contados" por time
+    mds = []
+
+    for _, r in out.iterrows():
+        h = normalize_key(_clean_text(r.get("Home")))
+        a = normalize_key(_clean_text(r.get("Away")))
+        md = max(gp.get(h, 0), gp.get(a, 0)) + 1
+        mds.append(md)
+        gp[h] = gp.get(h, 0) + 1
+        gp[a] = gp.get(a, 0) + 1
+
+    out["Matchday"] = mds
+    out = out.drop(columns=["_dt_sort"], errors="ignore")
+    return out
+
+
 def safe_int(x):
     try:
         if x is None:
@@ -556,7 +596,16 @@ def parse_football_data_uk(url: str) -> pd.DataFrame:
             "Bet365HomeClose": None, "Bet365DrawClose": None, "Bet365AwayClose": None,
         })
 
-    return pd.DataFrame(matches)
+        df = pd.DataFrame(matches)
+
+        # ✅ se a fonte não traz MW e Matchday ficou toda vazia, calculamos
+        if not df.empty:
+            if "Matchday" in df.columns:
+                all_empty = df["Matchday"].isna().all()
+                if all_empty:
+                    df = compute_matchday_from_counts(df)
+
+    return df
 
 # ================= BRAZIL (new/BRA.csv) =================
 
@@ -900,9 +949,32 @@ def update_csv_merge(file_path: str, df_new: pd.DataFrame, season_key: str):
     # ✅ 3) dedup de novo depois do merge (casos sujos / duplicados residuais)
     df_local = dedup_matches(df_local, season_key)
 
+    # ✅ 4) ordenar por Matchday (quando existir) e depois por Date
+    if "Matchday" in df_local.columns:
+        df_local["_md_sort"] = pd.to_numeric(df_local["Matchday"], errors="coerce")
+    else:
+        df_local["_md_sort"] = None
+
+    df_local["_md_sort"] = df_local["_md_sort"].fillna(9999)  # sem matchday vai pro fim
+
     if "Date" in df_local.columns:
-        df_local["Date_sort"] = pd.to_datetime(df_local["Date"], errors="coerce")
-        df_local = df_local.sort_values(["Date_sort", "Home", "Away"]).drop(columns=["Date_sort"])
+        df_local["_date_sort"] = pd.to_datetime(df_local["Date"], errors="coerce")
+    else:
+        df_local["_date_sort"] = pd.NaT
+
+    if "Date" in df_local.columns and "Day" in df_local.columns:
+        dt = pd.to_datetime(df_local["Date"], errors="coerce")
+        mask = df_local["Day"].isna() | (df_local["Day"].astype(str).str.strip() == "")
+        df_local.loc[mask & dt.notna(), "Day"] = dt[mask & dt.notna()].dt.day_name().str[:3]
+        # vai ficar Mon/Tue/... em inglês; se quiser pt-BR eu adapto
+
+    # ✅ agrupa naturalmente por Matchday e ordena dentro
+    df_local = df_local.sort_values(
+        ["_md_sort", "_date_sort", "Home", "Away"],
+        ascending=[True, True, True, True],
+        na_position="last"
+    ).drop(columns=["_md_sort", "_date_sort"], errors="ignore")
+
 
     df_local.to_csv(file_path, index=False, encoding="utf-8")
     print(f"   [Sucesso] {updated} jogos atualizados, {added} novos adicionados. -> {os.path.basename(file_path)}")
