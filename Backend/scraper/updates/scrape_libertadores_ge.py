@@ -37,7 +37,7 @@ BASE_URL = "https://ge.globo.com/futebol/libertadores/"
 
 TEAM_MAP_LIBERTADORES = {
     "The Strongest": "The Strongest",
-    "Deportivo Táchira": "Deportivo Tachira",
+    "Deportivo Tachira": "Deportivo Táchira",
     "Juventud": "Juventud de Las Piedras",
     "Universidad de Quito": "Universidad Catolica Ecuador",
     "Alianza Lima": "Alianza Lima",
