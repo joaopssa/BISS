@@ -1,32 +1,32 @@
 {
   "data_path": "c:\\Users\\joaos\\OneDrive\\Desktop\\BISS\\Backend\\ml\\processed\\matches_enriched.csv",
-  "n_rows": 35427,
-  "date_min": "2000-08-19",
+  "n_rows": 42539,
+  "date_min": "2000-08-11",
   "date_max": "2026-02-06",
   "split": {
     "strategy": "temporal_by_pool_key",
-    "train_rows": 28340,
-    "val_rows": 3543,
-    "test_rows": 3544,
-    "train_end_date": "2024-06-15",
-    "val_end_date": "2025-04-25",
+    "train_rows": 34029,
+    "val_rows": 4254,
+    "test_rows": 4256,
+    "train_end_date": "2023-10-27",
+    "val_end_date": "2024-11-30",
     "test_end_date": "2026-02-06"
   },
   "metrics": {
     "train": {
-      "accuracy": 0.5662314749470713,
-      "logloss": 0.9361267069508922
+      "accuracy": 0.5552029151605983,
+      "logloss": 0.9514262173076937
     },
     "val": {
-      "accuracy": 0.5218741179791138,
-      "logloss": 0.987903011099184
+      "accuracy": 0.5249177244945933,
+      "logloss": 0.996829886654237
     },
     "test": {
-      "accuracy": 0.5220090293453724,
-      "logloss": 0.9875758499313673
+      "accuracy": 0.5220864661654135,
+      "logloss": 0.9850928191612345
     }
   },
-  "best_iteration": 202,
+  "best_iteration": 180,
   "num_cols": [
     "elo_home_pre",
     "elo_away_pre",
@@ -63,14 +63,14 @@
     "competition"
   ],
   "class_counts_train": {
-    "0": 12887,
-    "2": 8147,
-    "1": 7306
+    "0": 15640,
+    "2": 9660,
+    "1": 8729
   },
   "class_weights_train": {
-    "0": 0.8366296063468017,
-    "1": 1.1111413494117308,
-    "2": 1.052229044241467
+    "0": 0.8308010669568355,
+    "1": 1.1120726839462272,
+    "2": 1.0571262490969373
   },
   "xgb_params": {
     "objective": "multi:softprob",

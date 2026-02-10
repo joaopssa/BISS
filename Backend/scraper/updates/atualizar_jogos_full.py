@@ -305,7 +305,12 @@ TEAM_MAP = {
     "Bielefeld": "Arminia Bielefeld",
     "Bochum": "VfL Bochum",
     "VfL Bochum 1848": "VfL Bochum",
-
+    "Cottbus": "Energie Cottbus",
+    "Karlsruher": "Karlsruher SC",
+    "Karlsruhe": "Karlsruher SC",
+    "Duisburg": "MSV Duisburg",
+    "Aachen":"TSV Alemannia Aachen",
+    
     # --- LIGUE 1 ---
     "Marseille": "Olympique de Marseille",
     "Paris SG": "Paris Saint Germain",
