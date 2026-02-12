@@ -5,7 +5,7 @@
 # - NÃO usa XGBClassifier.fit callbacks/early_stopping_rounds
 # - Treina com xgboost.train (DMatrix) + early_stopping_rounds
 #
-# Entrada:  Backend/ml/processed/matches_enriched.csv
+# Entrada:  Backend/ml/datasets/matches_enriched.csv
 # Saídas:   Backend/ml/models/xgb_1x2.json
 #           Backend/ml/models/xgb_1x2_meta.json
 #           Backend/ml/models/xgb_1x2_columns.pkl
@@ -80,10 +80,10 @@ def main():
     # -------------------------
     # Paths
     # -------------------------
-    THIS_DIR = os.path.dirname(os.path.abspath(__file__))         # .../Backend/ml/train
+    THIS_DIR = os.path.dirname(os.path.abspath(__file__))  # .../Backend/ml/train
     BACKEND_DIR = os.path.abspath(os.path.join(THIS_DIR, "..", ".."))  # .../Backend
 
-    DATA_PATH = os.path.join(BACKEND_DIR, "ml", "processed", "matches_enriched.csv")
+    DATA_PATH = os.path.join(BACKEND_DIR, "ml", "datasets", "matches_enriched.csv")
     MODELS_DIR = os.path.join(BACKEND_DIR, "ml", "models")
     ensure_dir(MODELS_DIR)
 
@@ -223,7 +223,6 @@ def main():
     # -------------------------
     # DMatrix (xgboost.train)
     # -------------------------
-    # obs: para compatibilidade, converte para float32
     dtrain = xgb.DMatrix(X_train.values.astype(np.float32), label=y_train, weight=sample_weight)
     dval = xgb.DMatrix(X_val.values.astype(np.float32), label=y_val)
     dtest = xgb.DMatrix(X_test.values.astype(np.float32), label=y_test)
@@ -269,7 +268,6 @@ def main():
     # -------------------------
     def eval_split(name: str, dmat: xgb.DMatrix, y_true: np.ndarray):
         prob = booster.predict(dmat)
-        # prob shape: (n, 3)
         pred = np.argmax(prob, axis=1)
 
         acc = accuracy_score(y_true, pred)

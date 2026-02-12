@@ -2,7 +2,7 @@
 # ------------------------------------------------------------
 # Gera dataset enriquecido (Elo + forma rolling + odds pré-jogo)
 # Lê CSVs em Backend/data/matches/<pasta-liga>/*.csv
-# Salva em: Backend/ml/processed/matches_enriched.csv
+# Salva em: Backend/ml/datasets/matches_enriched.csv
 # ------------------------------------------------------------
 
 import os
@@ -273,7 +273,7 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
             if c not in df.columns:
                 df[c] = None
 
-        df["league"] = folder
+        df["league_folder"] = folder  # útil p/ relatórios espelho
         df["competition"] = competition_from_folder(folder)
         df["pool_key"] = df["competition"].apply(pool_key_for_comp)
         df["season"] = infer_season_from_filename(fp)
@@ -396,8 +396,9 @@ def build_enriched_dataset(matches_root: str, out_csv: str, elo_cfg: EloConfig =
             p_over, p_under, overround_ou = None, None, None
 
         row = {
+            "league_folder": r.get("league_folder"),
             "pool_key": pool_key,
-            "competition": r.get("competition", r.get("league")),
+            "competition": r.get("competition"),
             "season": r["season"],
             "date": r["date"].strftime("%Y-%m-%d"),
             "home": home,
@@ -480,7 +481,7 @@ if __name__ == "__main__":
     BACKEND_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))  # .../Backend
 
     MATCHES_ROOT = os.path.join(BACKEND_DIR, "data", "matches")
-    OUT_CSV = os.path.join(BACKEND_DIR, "ml", "processed", "matches_enriched.csv")
+    OUT_CSV = os.path.join(BACKEND_DIR, "ml", "datasets", "matches_enriched.csv")
 
     df = build_enriched_dataset(MATCHES_ROOT, OUT_CSV, EloConfig())
     print(df.head(10))
