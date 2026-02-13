@@ -1,0 +1,8 @@
+campeonato,casa,fora,odds_h,odds_a,odds_d,betano_ph,betano_pa,betano_pd,betano_overround,ai_ph,ai_pd,ai_pa,ai_pick_label,ai_confidence_pct,ai_bucket,score_estimated
+Brasileirão - Série A Betano,Internacional,Palmeiras,3.2,2.4,3.5,30.5,41.6,27.9,2.4,26.7,32.8,40.5,AWAY,40.5,BAIXA,1 - 2
+Bundesliga,Borussia Dortmund,Mainz 05,1.6,5.4,4.5,60.4,18.1,21.5,2.2,57.6,23.4,19.0,HOME,57.6,MÉDIA,2 - 1
+Copa Libertadores,Universidad Catolica Ecuador,Juventud de Las Piedras,1.5,6.1,4.4,63.5,15.3,21.2,7.1,59.6,23.0,17.4,HOME,59.6,MÉDIA,2 - 1
+La Liga,Elche,Osasuna,2.8,2.6,3.2,34.4,36.3,29.3,5.0,30.5,30.4,39.1,AWAY,39.1,BAIXA,1 - 1
+Ligue 1,Monaco,Nantes,1.5,6.3,4.8,64.2,15.5,20.3,2.5,62.4,18.7,18.9,HOME,62.4,MÉDIA,2 - 1
+Ligue 1,Rennes,Paris Saint Germain,7.8,1.4,5.6,12.6,70.0,17.5,2.1,15.3,20.0,64.7,AWAY,64.7,MÉDIA,1 - 2
+Série A,AC Pisa 1909,AC Milan,6.3,1.6,4.1,15.4,60.8,23.7,2.8,16.7,22.2,61.1,AWAY,61.1,MÉDIA,1 - 2
