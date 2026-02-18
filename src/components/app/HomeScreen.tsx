@@ -20,6 +20,31 @@ import { resolveLeagueName } from "@/utils/resolveLeagueName";
 
 import clubsMap from "@/utils/clubs-map.json";
 
+<<<<<<< Updated upstream
+=======
+// UI (novo)
+import { SkeletonMatchCard } from "@/components/ui/skeletons";
+import { getLocalLogo } from "@/utils/getLocalLogo";
+import { useNavigate } from "react-router-dom";
+import { leagueCountries } from "@/utils/league-countries";
+import { getFlagByCountryCode } from "@/utils/getFlagByCountryCode";
+import { getTierBadgeSource } from "@/utils/componentUtils";
+import { createPortal } from "react-dom";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
+  HoverCard,
+  HoverCardTrigger,
+  HoverCardContent,
+} from "@/components/ui/hover-card";
+
+
+
+>>>>>>> Stashed changes
  // ========= Helpers (copiados do MatchCard) =========
 
 const normalize = (str: string) =>
@@ -179,7 +204,76 @@ type Ticket = {
 
 };
 
+<<<<<<< Updated upstream
  
+=======
+// ===== BISS Tiers (reuso do ProfileRankingScreen) =====
+type BISSTier = {
+  key: string;
+  name: string;
+  xp: number;
+  bets: number;
+  wins: number;
+  acc: number;
+};
+
+const BISS_TIERS: BISSTier[] = [
+  { key: "INI", name: "Iniciante", xp: 0, bets: 0, wins: 0, acc: 0 },
+
+  { key: "AM1", name: "Amador I", xp: 2500, bets: 12, wins: 4, acc: 25 },
+  { key: "AM2", name: "Amador II", xp: 5000, bets: 25, wins: 10, acc: 25 },
+  { key: "AM3", name: "Amador III", xp: 8000, bets: 40, wins: 18, acc: 25 },
+
+  { key: "SP1", name: "Semi-Profissional I", xp: 12000, bets: 70, wins: 35, acc: 30 },
+  { key: "SP2", name: "Semi-Profissional II", xp: 18000, bets: 110, wins: 60, acc: 35 },
+  { key: "SP3", name: "Semi-Profissional III", xp: 25000, bets: 160, wins: 90, acc: 40 },
+
+  { key: "PR1", name: "Profissional I", xp: 35000, bets: 230, wins: 130, acc: 45 },
+  { key: "PR2", name: "Profissional II", xp: 50000, bets: 320, wins: 190, acc: 50 },
+  { key: "PR3", name: "Profissional III", xp: 70000, bets: 450, wins: 280, acc: 55 },
+
+  { key: "MW1", name: "Nível Mundial I", xp: 95000, bets: 650, wins: 420, acc: 60 },
+  { key: "MW2", name: "Nível Mundial II", xp: 125000, bets: 900, wins: 600, acc: 65 },
+  { key: "MW3", name: "Nível Mundial III", xp: 160000, bets: 1200, wins: 800, acc: 70 },
+
+  { key: "LE1", name: "Lendário I", xp: 210000, bets: 1500, wins: 1000, acc: 75 },
+  { key: "LE2", name: "Lendário II", xp: 270000, bets: 1700, wins: 1150, acc: 80 },
+  { key: "LE3", name: "Lendário III", xp: 340000, bets: 1900, wins: 1300, acc: 85 },
+
+  { key: "GM1", name: "Grão Mestre I", xp: 420000, bets: 2150, wins: 1600, acc: 90 },
+  { key: "GM2", name: "Grão Mestre II", xp: 520000, bets: 2250, wins: 1750, acc: 92 },
+  { key: "GM3", name: "Grão Mestre III", xp: 650000, bets: 2350, wins: 1900, acc: 95 },
+];
+
+const getXPForStreak = (streak: number) => {
+  if (streak <= 1) return 260;
+  if (streak === 2) return 285;
+  if (streak === 3) return 310;
+  if (streak === 4) return 335;
+  if (streak <= 9) return 360;
+  if (streak <= 14) return 410;
+  if (streak <= 19) return 460;
+  return 460 + Math.floor((streak - 15) / 5) * 50;
+};
+
+const XP_PER_BILHETE_CRIADO = 50;
+const XP_BONUS_BILHETE_GANHO = 100;
+const XP_PENALIDADE_ERRO = 100;
+
+const getUserTier = (xp: number, bets: number, wins: number, winRatePct: number) => {
+  return (
+    [...BISS_TIERS]
+      .reverse()
+      .find(
+        (t) =>
+          xp >= t.xp &&
+          bets >= t.bets &&
+          wins >= t.wins &&
+          winRatePct >= t.acc
+      ) || BISS_TIERS[0]
+  );
+};
+>>>>>>> Stashed changes
 
 type BetSelection = {
 
@@ -1468,7 +1562,400 @@ export const HomeScreen: React.FC = () => {
 
         </div>
 
+<<<<<<< Updated upstream
  
+=======
+        {/* BUSCA — AÇÃO PRINCIPAL (fase 2) */}
+        <div ref={searchWrapRef} className="relative flex-1 min-w-[220px]">
+          <input
+            ref={inputRef}
+            type="text"
+            value={query}
+            onFocus={() => setIsSuggestOpen(true)}
+            onChange={(e) => {
+              setQuery(e.currentTarget.value);
+              setSelectedMatchId(null);
+              setIsSuggestOpen(true);
+            }}
+            placeholder="Encontre aqui seu jogo"
+            className="
+              w-full h-9
+              pl-3 pr-10
+              text-xs sm:text-sm font-medium
+              text-white placeholder-white/70
+              bg-white/20 backdrop-blur
+              border border-white/30
+              rounded-xl
+              shadow-sm
+              focus:outline-none
+              focus:ring-2 focus:ring-white/60
+            "
+          />
+
+          {/* Botão limpar */}
+          {(query.trim().length > 0 || selectedMatchId != null) && (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                setSelectedMatchId(null);
+                setIsSuggestOpen(false);
+                inputRef.current?.focus();
+              }}
+              className="
+                absolute right-2 top-1/2 -translate-y-1/2
+                w-6 h-6 rounded-lg
+                text-white/80 hover:text-white
+                hover:bg-white/10
+                flex items-center justify-center
+                focus:outline-none focus:ring-2 focus:ring-white/40
+              "
+              aria-label="Limpar busca"
+              title="Limpar"
+            >
+              ×
+            </button>
+          )}
+
+
+          {/* Sugestões */}
+          {isSuggestOpen && suggestions.length > 0 && (
+            <div
+              className="
+                absolute left-0 mt-1 w-full sm:w-[26rem]
+                bg-white dark:bg-neutral-900
+                border border-gray-200 dark:border-neutral-800
+                rounded-md shadow-lg z-[9999] overflow-hidden
+              "
+            >
+              <ul className="max-h-56 overflow-auto">
+                {suggestions.map((m) => {
+                  const logoHome = findClubLogo(m.homeTeam);
+                  const logoAway = findClubLogo(m.awayTeam);
+
+                  return (
+                    <li
+                      key={`${m.id}-${m.homeTeam}-${m.awayTeam}`}
+                      // onMouseDown evita perder o foco antes do click (melhor em dropdown)
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+
+                        // (A) limpa input
+                        setQuery("");
+                        setIsSuggestOpen(false);
+
+                        // (B) não filtra a lista — só faz scroll até o card
+                        setSelectedMatchId(null);
+                        setTab("em-alta");
+                        setScrollToMatchId(m.id);
+
+                        // opcional: se quiser "fixar" como seleção, troque pra:
+                        // setSelectedMatchId(m.id);
+                      }}
+                      className="px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800 text-sm"
+                    >
+                      <div className="flex items-center gap-2">
+                        {logoHome ? (
+                          <img src={logoHome} className="w-5 h-5 object-contain shrink-0" />
+                        ) : (
+                          <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
+                        )}
+
+                        <div className="min-w-0 flex-1">
+                          <div className="text-gray-800 dark:text-gray-200 truncate">
+                            {m.homeTeam} <span className="text-gray-400">x</span> {m.awayTeam}
+                          </div>
+                          <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                            {m.competition} • {m.time}
+                          </div>
+                        </div>
+
+                        {logoAway ? (
+                          <img src={logoAway} className="w-5 h-5 object-contain shrink-0" />
+                        ) : (
+                          <div className="w-5 h-5 rounded-full bg-gray-200 dark:bg-neutral-700 shrink-0" />
+                        )}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+        </div>
+
+                {/* CONTEXTO — TIER + SALDO (com Hover) */}
+        <div
+          className="flex items-center gap-2 shrink-0
+                     rounded-xl border border-white/20
+                     bg-white/10 px-2.5 py-1.5"
+        >
+          {/* ===== HOVER: TIER ===== */}
+          <HoverCard openDelay={120}>
+            <HoverCardTrigger asChild>
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 rounded-lg px-1.5 py-1 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40"
+                title="Ver progresso do Tier"
+              >
+                <img
+                  src={getTierBadgeSource(tierKey)}
+                  alt={tierName}
+                  className="w-5 h-5 object-contain"
+                  loading="lazy"
+                />
+                <span className="hidden sm:inline text-xs font-medium whitespace-nowrap text-white/80">
+                  {tierName}
+                </span>
+              </button>
+            </HoverCardTrigger>
+
+            <HoverCardContent
+              align="end"
+              side="bottom"
+              className="w-[360px] p-4 dark:bg-neutral-950 dark:border-neutral-800"
+            >
+              {(() => {
+                const next = getNextTier(tierKey);
+                const xp = tierStats.xp || 0;
+                const bets = tierStats.bets || 0;
+                const wins = tierStats.wins || 0;
+                const acc = tierStats.winRate || 0;
+
+                if (!next) {
+                  return (
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                          Você está no topo 🎉
+                        </p>
+                        <span className="text-xs font-semibold px-2 py-1 rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-200">
+                          {tierName}
+                        </span>
+                      </div>
+                      <p className="text-xs text-gray-600 dark:text-gray-300">
+                        Agora é manter consistência pra defender o nível.
+                      </p>
+                    </div>
+                  );
+                }
+
+                const needXP = Math.max(0, next.xp - xp);
+                const needBets = Math.max(0, next.bets - bets);
+                const needWins = Math.max(0, next.wins - wins);
+                const needAcc = Math.max(0, next.acc - acc);
+
+                return (
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                          Próximo Tier
+                        </p>
+                        <p className="text-xs text-gray-600 dark:text-gray-300 truncate">
+                          {next.name}
+                        </p>
+                      </div>
+
+                      <div className="shrink-0 flex items-center gap-2">
+                        <img
+                          src={getTierBadgeSource(next.key)}
+                          alt={next.name}
+                          className="w-8 h-8 object-contain"
+                          loading="lazy"
+                        />
+                        <span className="text-xs font-semibold px-2 py-1 rounded-full bg-gray-100 text-gray-700 dark:bg-neutral-900 dark:text-gray-200">
+                          {next.xp.toLocaleString()} XP
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 p-3">
+                      <div className="text-[11px] font-bold tracking-wider text-gray-500 dark:text-gray-400 uppercase">
+                        Falta para subir
+                      </div>
+
+                      <div className="mt-2 grid grid-cols-2 gap-2 text-xs">
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">XP</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needXP.toLocaleString()}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">Apostas</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needBets}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">Vitórias</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needWins}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-gray-600 dark:text-gray-300">% Acerto</span>
+                          <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                            {needAcc > 0 ? fmtPct1(needAcc) : "OK"}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-[11px] text-gray-500 dark:text-gray-400">
+                      Atual: <b>{xp.toLocaleString()} XP</b> • {bets} apostas • {wins} vitórias • {fmtPct1(acc)} acerto
+                    </div>
+                  </div>
+                );
+              })()}
+            </HoverCardContent>
+          </HoverCard>
+
+          <span className="hidden sm:block h-4 w-px bg-white/20" />
+
+          {/* ===== HOVER: SALDO ===== */}
+          <HoverCard openDelay={120}>
+            <HoverCardTrigger asChild>
+              <button
+                type="button"
+                className="text-xs font-medium whitespace-nowrap text-white/75 tabular-nums rounded-lg px-1.5 py-1 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/40"
+                title="Ver saldo em apostas"
+              >
+                R$ {saldo.toFixed(2)}
+              </button>
+            </HoverCardTrigger>
+
+            <HoverCardContent
+              align="end"
+              side="bottom"
+              className="w-[320px] p-4 dark:bg-neutral-950 dark:border-neutral-800"
+            >
+              <div className="space-y-2">
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Detalhes do saldo
+                </p>
+
+                <div className="rounded-xl border border-gray-200/70 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 p-3 space-y-2 text-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600 dark:text-gray-300">Disponível</span>
+                    <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                      R$ {fmtMoney(saldo)}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600 dark:text-gray-300">Em apostas</span>
+                    <span className="font-semibold tabular-nums text-gray-900 dark:text-white">
+                      R$ {fmtMoney(saldoEmAposta)}
+                    </span>
+                  </div>
+
+                  <div className="h-px bg-gray-200/70 dark:bg-neutral-800 my-1" />
+
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600 dark:text-gray-300">Total estimado</span>
+                    <span className="font-extrabold tabular-nums text-[#0a2a5e] dark:text-white">
+                      R$ {fmtMoney(saldo + saldoEmAposta)}
+                    </span>
+                  </div>
+                </div>
+
+                <p className="text-[11px] text-gray-500 dark:text-gray-400">
+                  “Em apostas” soma o stake dos bilhetes pendentes.
+                </p>
+              </div>
+            </HoverCardContent>
+          </HoverCard>
+        </div>
+      </div>
+      
+
+        {/* Hero: Featured Match (apenas na aba Em Alta) */}
+        {tab === "em-alta" && !loading && featuredMatch && (
+          <div className="rounded-2xl border border-[#014a8f]/15 bg-gradient-to-r from-[#014a8f]/10 via-white to-emerald-50 dark:via-neutral-950 dark:to-emerald-950/20 p-5 shadow-xl shadow-blue-500/10">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div>
+                <div className="inline-flex items-center gap-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#014a8f] bg-white/70 border border-[#014a8f]/20 px-3 py-1 rounded-full">
+                    Destaque
+                  </span>
+                  <span className="text-xs text-gray-600 dark:text-gray-300">
+                    Partida mais próxima
+                  </span>
+                </div>
+
+
+                {/* Linha com escudos + times */}
+                <div className="mt-1 flex items-center gap-3">
+                  {findClubLogo((featuredMatch as any).homeTeam) && (
+                    <img
+                      src={findClubLogo((featuredMatch as any).homeTeam)!}
+                      alt={(featuredMatch as any).homeTeam}
+                      className="w-9 h-9 object-contain drop-shadow-sm"
+                    />
+                  )}
+
+                  <div className="text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-white">
+                    {(featuredMatch as any).homeTeam}{" "}
+                    <span className="text-gray-400">x</span>{" "}
+                    {(featuredMatch as any).awayTeam}
+                  </div>
+
+                  {findClubLogo((featuredMatch as any).awayTeam) && (
+                    <img
+                      src={findClubLogo((featuredMatch as any).awayTeam)!}
+                      alt={(featuredMatch as any).awayTeam}
+                      className="w-9 h-9 object-contain drop-shadow-sm"
+                    />
+                  )}
+                </div>
+
+                <div className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                  {(featuredMatch as any).competition} • {(featuredMatch as any).time}
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="rounded-xl border border-[#014a8f]/20 bg-white/70 dark:bg-neutral-900/60 px-4 py-2">
+                  <div className="text-[10px] uppercase tracking-wider text-gray-500">Começa em</div>
+
+                  {/* Fonte igual às odds */}
+                <div className="tabular-nums text-lg font-bold text-[#0a2a5e] dark:text-white">
+                  {featuredCountdown ?? "—"}
+                </div>
+                </div>
+
+                <Button
+                  className="
+                    bg-[#014a8f] hover:bg-[#003b70] text-white rounded-xl
+                    shadow-sm hover:shadow-md transition
+                  "
+                  onClick={() => {
+                    const id = (featuredMatch as any).id;
+
+                    // garante que estamos na aba correta
+                    setTab("em-alta");
+
+                    setQuery("");              // 🔥 NÃO filtra lista
+                    setSelectedMatchId(null);
+                     // garante lista completa
+                    setScrollToMatchId(id);    // scroll funciona
+                    // se você ainda quiser filtrar quando clicar, descomente:
+                    // setSelectedMatchId(id);
+                  }}
+                >
+                  Ver odds
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+
+>>>>>>> Stashed changes
 
         {/* Feedback de regras / erros */}
 

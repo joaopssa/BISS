@@ -4,6 +4,7 @@ import sys
 import shutil
 import subprocess
 from pathlib import Path
+from typing import Optional
 
 # --- Saída robusta: força UTF-8 ou substitui caracteres não suportados ---
 def _setup_stdout():
@@ -60,11 +61,11 @@ def has_dev_script(pkg_path: Path) -> bool:
             data = json.load(f)
         scripts = data.get("scripts", {})
         return isinstance(scripts, dict) and "dev" in scripts
-    except Exception:
+    except Exception as e:
         return False
 
 
-def find_frontend_dir(repo_root: Path) -> Path | None:
+def find_frontend_dir(repo_root: Path) -> Optional[Path]:
     candidates = [
         repo_root,
         repo_root / "src",
@@ -87,7 +88,7 @@ def find_frontend_dir(repo_root: Path) -> Path | None:
     return None
 
 
-def find_backend_dir(repo_root: Path) -> Path | None:
+def find_backend_dir(repo_root: Path) -> Optional[Path]:
     candidates = [
         repo_root / "Backend",
         repo_root / "backend",
@@ -101,19 +102,58 @@ def find_backend_dir(repo_root: Path) -> Path | None:
     return None
 
 
-def find_scraper_script(backend_dir: Path) -> Path | None:
+def find_scraper_script(backend_dir: Path) -> Optional[Path]:
     """
     Procura Backend/scraper/run_all_updates.py (ou variações).
     """
     candidates = [
         backend_dir / "scraper" / "run_all_updates.py",
         backend_dir / "scrapers" / "run_all_updates.py",
-        backend_dir / "Backend" / "scraper" / "run_all_updates.py",  # fallback extra
     ]
     for p in candidates:
         if p.exists():
             return p.resolve()
     return None
+
+
+def check_python_dependencies(backend_dir: Path) -> bool:
+    """
+    Verifica se as dependências Python necessárias estão instaladas
+    """
+    required_modules = {
+        "playwright": "Playwright (automação de navegador para scraping)",
+        "seleniumbase": "SeleniumBase (framework de automação)",
+        "pandas": "Pandas (processamento de dados)",
+        "requests": "Requests (requisições HTTP)",
+    }
+    
+    missing = []
+    for module, display_name in required_modules.items():
+        try:
+            __import__(module)
+        except ImportError:
+            missing.append(display_name)
+    
+    if missing:
+        safe_print("\n" + "="*60)
+        safe_print("⚠️  DEPENDÊNCIAS PYTHON AUSENTES")
+        safe_print("="*60)
+        safe_print("\nFaltam as seguintes dependências:")
+        for dep in missing:
+            safe_print(f"  • {dep}")
+        
+        safe_print("\n✅ SOLUÇÃO:")
+        safe_print("  1. Abra PowerShell na pasta Backend:")
+        safe_print(f"     cd Backend")
+        safe_print("  2. Execute um dos comandos abaixo:")
+        safe_print(f"     python install_dependencies.py")
+        safe_print(f"     ou: install_dependencies.bat")
+        safe_print(f"     ou: .\\install_dependencies.ps1")
+        safe_print("\n📖 Para mais detalhes, veja: INSTALACAO_DEPENDENCIAS.md")
+        safe_print("="*60)
+        return False
+    
+    return True
 
 
 def ensure_commands():
@@ -123,9 +163,16 @@ def ensure_commands():
     if shutil.which("npm") is None:
         missing.append("npm")
     if missing:
+        safe_print("\n" + "="*60)
+        safe_print("ERRO: Ferramentas ausentes no PATH")
+        safe_print("="*60)
+        for tool in missing:
+            safe_print(f" - {tool}")
+        safe_print("\nSolução: Instale o Node.js (que inclui o npm)")
+        safe_print("Download: https://nodejs.org/")
+        safe_print("="*60)
         raise RuntimeError(
-            "Ferramentas ausentes no PATH: " + ", ".join(missing) +
-            "\nInstale o Node.js (que inclui o npm) ou adicione-os ao PATH."
+            "Ferramentas ausentes: " + ", ".join(missing)
         )
 
 
@@ -160,6 +207,10 @@ def main():
     frontend_dir = find_frontend_dir(repo_root)
     backend_dir = find_backend_dir(repo_root)
 
+    # Verificar dependências Python
+    if backend_dir and not check_python_dependencies(backend_dir):
+        sys.exit(1)
+
     errors = []
     if frontend_dir is None:
         errors.append(
@@ -180,16 +231,20 @@ def main():
                    "ou mova o script para dentro do repositório BISS.")
         sys.exit(1)
 
-    safe_print("OK  Repositório:", repo_root)
-    safe_print("OK  Frontend   :", frontend_dir)
-    safe_print("OK  Backend    :", backend_dir)
+    safe_print("\n" + "="*60)
+    safe_print("INFORMAÇÕES DO PROJETO:")
+    safe_print("="*60)
+    safe_print("✓ Repositório:", repo_root)
+    safe_print("✓ Frontend   :", frontend_dir)
+    safe_print("✓ Backend    :", backend_dir)
 
     # --- NOVO: localizar script do scraper ---
     scraper_script = find_scraper_script(backend_dir)
     if scraper_script:
-        safe_print("OK  Scraper    :", scraper_script)
+        safe_print("✓ Scraper    :", scraper_script)
     else:
-        safe_print("AVISO: Não encontrei o script do scraper (run_all_updates.py) dentro de:", backend_dir)
+        safe_print("⚠ Scraper    : NÃO ENCONTRADO (run_all_updates.py não foi localizado)")
+    safe_print("="*60)
 
     try:
         # --- NOVO: abre a janela do scraper primeiro (opcional) ---
@@ -198,19 +253,27 @@ def main():
             # -u = saída sem buffer (melhor pra acompanhar logs)
             open_powershell_in_new_window(
                 scraper_script.parent,
-                f'& "{py}" -u "{scraper_script.name}"'
+                f'& "{py}" -u "{scraper_script}"'
             )
         open_powershell_in_new_window(frontend_dir, "npm run dev")
         open_powershell_in_new_window(backend_dir, "node server.js")
 
-        safe_print("\nINICIADO:")
+        safe_print("\n" + "="*60)
+        safe_print("PROCESSOS INICIADOS:")
         if scraper_script:
-            safe_print(f" - Scraper  -> {sys.executable} -u {scraper_script}")
-        safe_print(" - Frontend -> npm run dev")
-        safe_print(" - Backend  -> node server.js")
+            safe_print(f" ✓ Scraper  -> {scraper_script}")
+        safe_print(" ✓ Frontend -> npm run dev")
+        safe_print(" ✓ Backend  -> node server.js")
+        safe_print("="*60)
         safe_print("\nAs janelas do PowerShell foram abertas com os processos rodando.")
+        safe_print("Pressione Ctrl+C aqui para encerrar (as janelas permanecerão abertas).")
+    except KeyboardInterrupt:
+        safe_print("\n\nEncerrado pelo usuário.")
+        sys.exit(0)
     except Exception as e:
-        safe_print(f"ERRO ao iniciar os processos: {e}")
+        safe_print(f"\nERRO ao iniciar os processos: {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
 
 

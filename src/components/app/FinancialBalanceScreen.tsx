@@ -4,7 +4,23 @@ import React, { useEffect, useState, useRef, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import api from "@/services/api";
 import { useFinance } from "@/contexts/FinanceContext";
+<<<<<<< Updated upstream
 // Importações necessárias para o gráfico
+=======
+import { round2 } from "@/utils/numberFormatting";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  Cell,
+} from "recharts";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { LabelList } from "recharts";
+>>>>>>> Stashed changes
 
 // --- Ícones SVG ---
 const TargetIcon = () => (
@@ -34,6 +50,149 @@ type Movimentacao = {
   data_movimentacao: string;
 };
 
+<<<<<<< Updated upstream
+=======
+type MovTipo = Movimentacao["tipo"];
+
+const normalizeMovTipo = (raw: any): MovTipo => {
+  const t = String(raw || "").toLowerCase().trim();
+
+  if (t === "deposito" || t === "depósito") return "deposito";
+  if (t === "saque") return "saque";
+  if (t === "aposta") return "aposta";
+  if (t === "premio" || t === "prêmio") return "premio";
+  if (t === "ajuste") return "ajuste";
+
+  // fallback seguro (evita quebrar a tela por tipos inesperados)
+  return "ajuste";
+};
+
+const KPIBox = ({
+  label,
+  value,
+  footer,
+  valueClass = "text-3xl",
+}: {
+  label: string;
+  value: React.ReactNode;
+  footer?: React.ReactNode;
+  valueClass?: string;
+}) => {
+  return (
+    <div className="rounded-2xl bg-gray-50/70 dark:bg-neutral-950/40 border border-gray-200/60 dark:border-neutral-800 px-4 py-3 min-h-[110px] grid grid-rows-[auto_1fr_auto]">
+      <div className="text-[11px] font-bold tracking-wider text-gray-500 uppercase">
+        {label}
+      </div>
+
+      <div className="flex items-center min-h-[44px]">
+        <div className={`${valueClass} font-extrabold tabular-nums leading-none text-gray-900 dark:text-white`}>
+          {value}
+        </div>
+      </div>
+
+      <div className="min-h-[16px] text-xs text-gray-600 dark:text-gray-400 leading-none">
+        {footer ?? <span className="opacity-0">.</span>}
+      </div>
+    </div>
+  );
+};
+
+// =======================
+// LUCRO CORRETO POR BILHETES FINALIZADOS
+// =======================
+const normStatus = (s: any) => String(s || "").toLowerCase().trim();
+
+const isDecided = (statusRaw: any) => {
+  const st = normStatus(statusRaw);
+  return st === "ganho" || st === "ganha" || st === "perdido" || st === "perdida";
+};
+
+const isWin = (statusRaw: any) => {
+  const st = normStatus(statusRaw);
+  return st === "ganho" || st === "ganha";
+};
+
+// usa data de resultado/fechamento primeiro (decisão), depois updated/created
+const getBilheteDecisionDate = (b: any) => {
+  const s =
+    b.data_resultado ||
+    b.data_fechamento ||
+    b.data_finalizacao ||
+    b.updatedAt ||
+    b.data_atualizacao ||
+    b.data_criacao ||
+    b.createdAt ||
+    b.data_registro;
+
+  return typeof s === "string" ? parseDbDate(s) : new Date(s || Date.now());
+};
+
+const getStake = (b: any) => Number(b.stake_total ?? b.stake ?? 0);
+
+// payout/retorno: ajuste os nomes conforme seu backend
+const getOdd = (b: any) =>
+  Number(
+    b.odd_total ??
+    b.oddFinal ??
+    b.odd ??
+    b.odd_acumulada ??
+    b.oddAcumulada ??
+    b.cotacao_total ??
+    b.cotacao ??
+    0
+  );
+
+const getPayout = (b: any) => {
+  // 1) tenta achar "retorno/payout" explícito do backend
+  const explicit =
+    Number(
+      b.payout_total ??
+      b.retorno_total ??
+      b.valor_retorno ??
+      b.valorRetorno ??
+      b.premio_total ??
+      b.valor_premio ??
+      b.valorPremio ??
+      b.premio ??
+      b.retorno ??
+      0
+    ) || 0;
+
+  if (explicit > 0) return explicit;
+
+  // 2) fallback: calcula pelo odd * stake (se tiver odd)
+  const stake = getStake(b);
+  const odd = getOdd(b);
+
+  if (stake > 0 && odd > 0) {
+    return stake * odd; // payout bruto
+  }
+
+  return 0;
+};
+
+
+// lucro por bilhete FINALIZADO: (payout - stake) se ganhou; (-stake) se perdeu
+const profitFromDecidedBilhete = (b: any) => {
+  if (!isDecided(b.status)) return 0;
+
+  const stake = getStake(b);
+  if (!Number.isFinite(stake) || stake <= 0) return 0;
+
+  if (!isWin(b.status)) {
+    return -stake; // perdeu -> -stake
+  }
+
+  // ganhou -> lucro = payout - stake
+  const payout = getPayout(b);
+
+  // se payout veio 0 e odd/stake não existirem, não dá pra calcular (evita lixo)
+  if (!Number.isFinite(payout) || payout <= 0) return 0;
+
+  return payout - stake;
+};
+
+>>>>>>> Stashed changes
 export default function FinancialBalanceScreen() {
   // Scroll para o topo ao montar o componente
   useEffect(() => {

@@ -8,6 +8,18 @@ import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import clubsMap from "@/utils/clubs-map.json";
 import { getLocalLogo } from "@/utils/getLocalLogo";
+import { getTierBadgeSource, isSustainable } from "@/utils/componentUtils";
+import {
+  formatPercent1,
+  formatPercent0,
+  formatOdd2,
+  clamp,
+  clamp01,
+  parseMonetaryValue,
+  round2,
+  round1,
+} from "@/utils/numberFormatting";
+import { normalizeApostStatus, toNormalizedString } from "@/utils/stringUtils";
 import EditProfileCard from '@/components/app/EditProfileCard';
 
 type BISSTier = {
@@ -65,6 +77,187 @@ export const computeYieldPct = (premios: number, stakes: number) => {
   return ((premios - stakes) / stakes) * 100;
 };
 
+<<<<<<< Updated upstream
+=======
+const normStatus = normalizeApostStatus;
+
+const isWinBilhete = (b: any) => {
+  const st = normStatus(b?.status);
+  return st === "ganho" || st === "ganha";
+};
+
+/**
+ * NOTA: função toNum mantida localmente pois tem lógica específica para formatação de moeda (pt-BR e en-US)
+ * Pode ser refatorada para utils/numberFormatting.ts se necessário depois
+ */
+const toNum = (v: any) => {
+  if (v === null || v === undefined) return 0;
+  if (typeof v === "number") return Number.isFinite(v) ? v : 0;
+
+  let s = String(v).trim();
+
+  // remove moeda e espaços (inclui NBSP)
+  s = s.replace(/\s|\u00A0/g, "");
+  s = s.replace(/^R\$\s?/i, "");
+
+  // mantém só dígitos, ponto, vírgula e sinal
+  s = s.replace(/[^\d.,-]/g, "");
+
+  if (!s) return 0;
+
+  const hasDot = s.includes(".");
+  const hasComma = s.includes(",");
+
+  // ambos presentes: decidir qual é decimal pela última ocorrência
+  if (hasDot && hasComma) {
+    const lastDot = s.lastIndexOf(".");
+    const lastComma = s.lastIndexOf(",");
+
+    if (lastComma > lastDot) {
+      // 1.234,56 (pt-BR)
+      s = s.replace(/\./g, "").replace(",", ".");
+    } else {
+      // 1,234.56 (en-US)
+      s = s.replace(/,/g, "");
+    }
+  } else if (hasComma && !hasDot) {
+    // 1234,56
+    s = s.replace(",", ".");
+  }
+  // hasDot && !hasComma => 1234.56 (ok, não mexe)
+
+  const n = Number(s);
+  return Number.isFinite(n) ? n : 0;
+};
+
+
+const getStake = (b: any) =>
+  toNum(
+    b?.stake_total ??
+    b?.stakeTotal ??
+    b?.stake ??
+    b?.valor_apostado ??
+    b?.valorApostado ??
+    b?.valor ??
+    b?.total_apostado ??
+    b?.totalApostado ??
+    0
+  );
+
+
+const getOdd = (b: any) =>
+  toNum(
+    b?.odd_total ??
+    b?.oddTotal ??
+    b?.oddFinal ??
+    b?.odd ??
+    b?.odd_acumulada ??
+    b?.oddAcumulada ??
+    b?.cotacao_total ??
+    b?.cotacao ??
+    0
+  );
+
+const getPayout = (b: any) => {
+  const explicit = toNum(
+    b?.payout_total ??
+    b?.payoutTotal ??
+    b?.retorno_total ??
+    b?.retornoTotal ??
+    b?.valor_retorno ??
+    b?.valorRetorno ??
+    b?.premio_total ??
+    b?.premioTotal ??
+    b?.valor_premio ??
+    b?.valorPremio ??
+    b?.premio ??
+    b?.retorno ??
+    0
+  );
+
+  if (explicit > 0) return explicit;
+
+  const stake = getStake(b);
+  const odd = getOdd(b);
+  if (stake > 0 && odd > 0) return stake * odd;
+
+  return 0;
+};
+
+
+const profitFromDecidedBilhete = (b: any) => {
+  if (!isBilheteFinalizado(b)) return 0;
+
+  const stake = getStake(b);
+  if (!Number.isFinite(stake) || stake <= 0) return 0;
+
+  if (!isWinBilhete(b)) return -stake;
+
+  const payout = getPayout(b);
+  if (!Number.isFinite(payout) || payout <= 0) return 0; // evita lucro lixo
+
+  return payout - stake;
+};
+
+
+export const computeRoiPct = (retorno: number, investido: number) => {
+  const r = Number(retorno) || 0;
+  const i = Number(investido) || 0;
+  if (i <= 0) return 0; // sem base de investimento finalizado, ROI fica neutro
+  return ((r - i) / i) * 100;
+};
+
+const parseDbDate = (s: string) => {
+  if (!s) return new Date(NaN);
+
+  const m1 = s.match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+  if (m1) {
+    const [, Y, M, D, hh = "00", mm = "00", ss = "00"] = m1;
+    return new Date(Number(Y), Number(M) - 1, Number(D), Number(hh), Number(mm), Number(ss));
+  }
+
+  const m2 = s.match(/^(\d{2})\/(\d{2})\/(\d{4})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?/);
+  if (m2) {
+    const [, D, M, Y, hh = "00", mm = "00", ss = "00"] = m2;
+    return new Date(Number(Y), Number(M) - 1, Number(D), Number(hh), Number(mm), Number(ss));
+  }
+
+  return new Date(s);
+};
+
+const absValor = (x: any) => Math.abs(toNum(x));
+
+const signedFlow = (mv: any) => {
+  const t = String(mv?.tipo || "").toLowerCase();
+  const vAbs = absValor(mv?.valor);
+
+  if (t === "deposito" || t === "premio") return +vAbs;
+  if (t === "saque" || t === "aposta") return -vAbs;
+  if (t === "ajuste") return toNum(mv?.valor);
+ // pode ser +/-
+  return 0;
+};
+
+
+
+const calcNetDeposits = (extr: any[]) => {
+  let dep = 0, saq = 0;
+  for (const mv of extr) {
+    const t = String(mv?.tipo || "").toLowerCase();
+    const v = absValor(mv?.valor);
+    if (t === "deposito") dep += v;
+    if (t === "saque") saq += v;
+  }
+  return dep - saq;
+};
+
+const calcSaldoDisponivelFromExtrato = (extr: any[]) => {
+  // se seu backend sempre registra aposta/premio/ajuste, isso bate com o saldo disponível
+  return extr.reduce((acc, mv) => acc + signedFlow(mv), 0);
+};
+
+
+>>>>>>> Stashed changes
 export const getUserTier = (
   xp: number,
   bets: number,
@@ -97,7 +290,75 @@ const XP_PER_BILHETE_CRIADO = 50;       // placeholder (ajustável)
 const XP_BONUS_BILHETE_GANHO = 100;     // placeholder (ajustável)
 const XP_PENALIDADE_ERRO = 100;         // fixo por sua regra
 
+<<<<<<< Updated upstream
 const clamp = (v: number, min: number, max: number) => Math.max(min, Math.min(max, v));
+=======
+// Funções de formatting delegadas para utils centralizados
+const getTierBadgeSrc = getTierBadgeSource;
+const fmtPct1 = formatPercent1;
+const fmtOdd2 = formatOdd2;
+const fmtPct0 = formatPercent0;
+
+const sustainableByAvg = (p: number, avgOdd: number) => {
+  // p em 0..1, avgOdd > 0
+  if (!Number.isFinite(p) || p <= 0) return false;
+  if (!Number.isFinite(avgOdd) || avgOdd <= 0) return false;
+  // sustentável se sua odd média está acima (ou igual) do break-even para essa taxa de acerto
+  return avgOdd >= (1 / p);
+};
+
+const getAdviceText = (params: {
+  profit: number;      // userProfile.totalProfit
+  winRatePct: number;  // userProfile.winRate (0-100)
+  avgOdd: number;      // userProfile.avgOddUser
+  avgStake?: number;   // userProfile.avgStake (opcional)
+}) => {
+  const profit = Number(params.profit || 0);
+  const p = clamp01(Number(params.winRatePct || 0) / 100); // 0..1
+  const avgOdd = Number(params.avgOdd || 0);
+  const avgStake = Number(params.avgStake || 0);
+
+  // sem base suficiente -> sem mensagem
+  if (!Number.isFinite(p) || p <= 0 || !Number.isFinite(avgOdd) || avgOdd <= 0) {
+    return null;
+  }
+
+  const oddMinIdeal = 1 / p;         // break-even odd mínima para esse p
+  const accMinIdeal = 1 / avgOdd;    // break-even taxa mínima para essa odd (0..1)
+
+  const isSustainable = sustainableByAvg(p, avgOdd);
+
+  // 1) Lucro positivo: elogiar
+  if (profit > 0) {
+    return `Perfeito! Sua combinação de odd média (${fmtOdd2(avgOdd)}) e taxa de acerto (${fmtPct0(p * 100)}) está saudável! Continue consistente.`;
+  }
+
+  // 2) Lucro negativo e intervalo insustentável: oferecer ajuste "coerente"
+  if (!isSustainable) {
+    // Escolhe recomendação que faça sentido vs. a taxa atual:
+    // - Se a taxa mínima ideal (para manter a odd atual) for MAIOR que a taxa atual, sugerir aumentar acerto.
+    // - Caso contrário (raro aqui), sugerir aumentar odd mínima.
+    const needHigherAcc = accMinIdeal > p;
+
+    if (needHigherAcc) {
+      return `Hoje o seu intervalo está insustentável! Com odd média ${fmtOdd2(avgOdd)}, você precisaria elevar sua taxa de acerto para pelo menos ${fmtPct0(accMinIdeal * 100)} para ficar no positivo.`;
+    }
+
+    return `Hoje o seu intervalo está insustentável! Com taxa de acerto ${fmtPct0(p * 100)}, procure fazer apostas acima de ${fmtOdd2(oddMinIdeal)} para ficar no positivo.`;
+  }
+
+  // 3) Lucro negativo e intervalo sustentável: elogiar evolução + alertar stake (distribuição)
+  // Aqui o “culpado” provável é stake desbalanceada / outliers (apostas fora do usual com stake alto).
+  const stakeHint =
+    avgStake > 0
+      ? ` (sua stake média é R$ ${avgStake.toFixed(2)})`
+      : "";
+
+  return `No longo prazo, sua odd média (${fmtOdd2(avgOdd)}) com taxa de acerto (${fmtPct0(p * 100)}) tende a gerar lucro! O prejuízo atual indica que provavelmente você perdeu mais dinheiro em apostas fora do seu padrão. Tente equilibrar o valor em cada bilhete e evitar concentrar stakes altas em apostas.`;
+};
+
+
+>>>>>>> Stashed changes
 
 export const ProfileRankingScreen: React.FC = () => {
   const [loading, setLoading] = useState(true);
